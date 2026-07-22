@@ -15,8 +15,12 @@ import 'package:vocab_app/domain/retention_tuner.dart';
 import 'package:vocab_app/domain/session_engine.dart';
 import 'package:vocab_app/domain/streaks.dart';
 import 'package:vocab_app/games/cloze.dart';
+import 'package:vocab_app/games/dictation.dart';
 import 'package:vocab_app/games/flashcard_swipe.dart';
 import 'package:vocab_app/games/matching.dart';
+import 'package:vocab_app/games/odd_one_out.dart';
+import 'package:vocab_app/games/word_association.dart';
+import 'package:vocab_app/games/word_scramble.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_intro_page.dart';
@@ -45,6 +49,18 @@ class _PlayScreenState extends State<PlayScreen> {
   int _newIntroducedToday = 0;
   String? _error;
 
+  Map<int, Word> _wordById = {};
+  Map<int, List<RelatedWord>> _relatedByWord = {};
+  Set<int> _focusTopicWordIds = {};
+
+  // Cached payload for the batch/multi-choice games so the option/group
+  // ordering doesn't reshuffle on every rebuild (only when the queue
+  // actually advances to a new item).
+  List<Word>? _wordAssocOptions;
+  int? _wordAssocCorrectId;
+  Word? _oddOneOutTarget;
+  List<Word> _oddOneOutGroup = [];
+
   @override
   void initState() {
     super.initState();
@@ -56,9 +72,17 @@ class _PlayScreenState extends State<PlayScreen> {
       final state = await widget.store.load();
       final today = dateKey(DateTime.now());
       final stats = await widget.store.loadDailyStats(today);
+      final relatedByWord = await widget.store.loadAllRelatedWords();
+      final focusTopicId = int.tryParse(state.settings['focus_topic'] ?? '');
+      final focusTopicWordIds = focusTopicId == null
+          ? <int>{}
+          : await widget.store.loadWordIdsForTopic(focusTopicId);
       setState(() {
         _state = state;
         _newIntroducedToday = stats?.newIntroduced ?? 0;
+        _wordById = {for (final w in state.words) w.id: w};
+        _relatedByWord = relatedByWord;
+        _focusTopicWordIds = focusTopicWordIds;
       });
       await _refillQueue();
     } catch (e) {
@@ -82,9 +106,45 @@ class _PlayScreenState extends State<PlayScreen> {
       now: DateTime.now(),
       newCardCap: _newCardCap,
       newIntroducedToday: _newIntroducedToday,
+      focusTopicWordIds: _focusTopicWordIds,
     );
     await _loadNext();
   }
+
+  /// Family-A semantic hint (SPEC.md 8b): related words for [bundle],
+  /// excluding `is_giveaway` rows, ordered strongest-association-first
+  /// (`closeness` descending) so the earliest taps of the progressive
+  /// hint button surface the most useful-but-not-a-giveaway clue.
+  /// [excludeWordId] additionally drops one candidate — used by Word
+  /// Association so the hint list never includes the very word that's the
+  /// MCQ's correct answer (that would trivialize the round entirely).
+  List<String> _semanticHints(
+    WordBundle bundle, {
+    int maxHints = 3,
+    int? excludeWordId,
+  }) {
+    final candidates = bundle.related
+        .where((r) => !r.isGiveaway && r.relatedWordId != excludeWordId)
+        .toList()
+      ..sort((a, b) => b.closeness.compareTo(a.closeness));
+    return candidates
+        .map((r) => _wordById[r.relatedWordId]?.headword)
+        .whereType<String>()
+        .take(maxHints)
+        .toList();
+  }
+
+  /// Falls back to Flashcard (always buildable from just a WordBundle) when
+  /// a batch/multi-choice game can't be assembled for the current word —
+  /// e.g. Odd One Out/Word Association need `related_words` rows that many
+  /// words don't have yet given how sparse the current fallback dataset is
+  /// (see NOTES.md). Keeps the endless queue from ever stalling.
+  SessionItem _fallbackToFlashcard(SessionItem original) => SessionItem(
+    wordId: original.wordId,
+    gameType: GameType.flashcard,
+    direction: original.direction,
+    source: original.source,
+  );
 
   Future<void> _loadNext() async {
     if (_queue.isEmpty) {
@@ -95,6 +155,7 @@ class _PlayScreenState extends State<PlayScreen> {
       return;
     }
     final item = _queue.first;
+
     if (item.gameType == GameType.matching) {
       // Pull a small batch of due/learning words for matching.
       final batchIds = _pickMatchingBatch(item.wordId);
@@ -103,13 +164,64 @@ class _PlayScreenState extends State<PlayScreen> {
         _currentBatch = bundles;
         _currentBundle = null;
       });
-    } else {
+      return;
+    }
+
+    if (item.gameType == GameType.oddOneOut) {
+      final target = _wordById[item.wordId];
+      final group = target == null
+          ? null
+          : buildOddOneOutGroup(
+              target: target,
+              pool: _state!.words,
+              relatedByWord: _relatedByWord,
+            );
+      if (target == null || group == null) {
+        _queue[0] = _fallbackToFlashcard(item);
+        return _loadNext();
+      }
+      setState(() {
+        _oddOneOutTarget = target;
+        _oddOneOutGroup = group;
+        _currentBundle = null;
+        _currentBatch = [];
+      });
+      return;
+    }
+
+    if (item.gameType == GameType.wordAssociation) {
       final bundle = await widget.store.loadWordBundle(item.wordId);
+      final pick = pickAssociationTarget(bundle.related);
+      final correctWord = pick == null ? null : _wordById[pick.relatedWordId];
+      if (pick == null || correctWord == null) {
+        _queue[0] = _fallbackToFlashcard(item);
+        return _loadNext();
+      }
+      final excludeIds = {
+        bundle.word.id,
+        for (final r in bundle.related) r.relatedWordId,
+      };
+      final options = buildAssociationOptions(
+        correct: correctWord,
+        pool: _state!.words,
+        excludeIds: excludeIds,
+      );
       setState(() {
         _currentBundle = bundle;
         _currentBatch = [];
+        _wordAssocOptions = options;
+        _wordAssocCorrectId = correctWord.id;
       });
+      return;
     }
+
+    // Everything else (intro / flashcard / cloze / word scramble /
+    // dictation) just needs one WordBundle.
+    final bundle = await widget.store.loadWordBundle(item.wordId);
+    setState(() {
+      _currentBundle = bundle;
+      _currentBatch = [];
+    });
   }
 
   List<int> _pickMatchingBatch(int seedWordId) {
@@ -290,6 +402,7 @@ class _PlayScreenState extends State<PlayScreen> {
         return ClozeGame(
           bundle: _currentBundle!,
           tts: widget.tts,
+          hintWords: _semanticHints(_currentBundle!),
           onRated: (r) => _handleRated(item.wordId, r, GameType.cloze),
         );
       case GameType.matching:
@@ -297,6 +410,45 @@ class _PlayScreenState extends State<PlayScreen> {
         return MatchingGame(
           bundles: _currentBatch,
           onAllRated: _handleMatchingResult,
+        );
+      case GameType.wordAssociation:
+        if (_currentBundle == null ||
+            _wordAssocOptions == null ||
+            _wordAssocCorrectId == null) {
+          return const SizedBox.shrink();
+        }
+        return WordAssociationGame(
+          bundle: _currentBundle!,
+          options: _wordAssocOptions!,
+          correctWordId: _wordAssocCorrectId!,
+          tts: widget.tts,
+          hintWords: _semanticHints(
+            _currentBundle!,
+            excludeWordId: _wordAssocCorrectId,
+          ),
+          onRated: (r) => _handleRated(item.wordId, r, GameType.wordAssociation),
+        );
+      case GameType.wordScramble:
+        if (_currentBundle == null) return const SizedBox.shrink();
+        return WordScrambleGame(
+          bundle: _currentBundle!,
+          tts: widget.tts,
+          hintWords: _semanticHints(_currentBundle!),
+          onRated: (r) => _handleRated(item.wordId, r, GameType.wordScramble),
+        );
+      case GameType.dictation:
+        if (_currentBundle == null) return const SizedBox.shrink();
+        return DictationGame(
+          bundle: _currentBundle!,
+          tts: widget.tts,
+          onRated: (r) => _handleRated(item.wordId, r, GameType.dictation),
+        );
+      case GameType.oddOneOut:
+        if (_oddOneOutTarget == null) return const SizedBox.shrink();
+        return OddOneOutGame(
+          oddWord: _oddOneOutTarget!,
+          groupWords: _oddOneOutGroup,
+          onRated: (r) => _handleRated(item.wordId, r, GameType.oddOneOut),
         );
     }
   }

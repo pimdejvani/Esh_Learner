@@ -49,5 +49,19 @@ abstract class VocabStore {
     DateTime to,
   );
 
+  /// All rows in `topics` (SPEC.md section 4). Empty until the content
+  /// pipeline populates it — callers must handle that gracefully (e.g. hide
+  /// the focus-topic picker) rather than assume it's non-empty.
+  Future<List<Topic>> loadTopics();
+
+  /// Word ids in `word_topics` for one topic — used to bias new-word
+  /// selection toward a user's chosen focus topic (SPEC.md 6.4).
+  Future<Set<int>> loadWordIdsForTopic(int topicId);
+
+  /// Every `related_words` row, keyed by `word_id` — used by Odd One Out
+  /// (SPEC.md game 6) to find category "hub" words across the whole pool,
+  /// not just the one word currently being tested.
+  Future<Map<int, List<RelatedWord>>> loadAllRelatedWords();
+
   Future<void> close();
 }

@@ -10,20 +10,24 @@ import 'vocab_store.dart';
 class VocabStoreMemory implements VocabStore {
   VocabStoreMemory({
     List<Word> words = const [],
-    Map<int, Sense> coreSenses = const {},
+    Map<int, List<Sense>> senses = const {},
     Map<int, List<WordForm>> forms = const {},
     Map<int, List<ExampleSentence>> sentences = const {},
     Map<int, List<RelatedWord>> related = const {},
     Map<String, String>? settings,
+    List<Topic> topics = const [],
+    Map<int, Set<int>> topicWordIds = const {},
   }) : _words = List.of(words),
-       _coreSenses = Map.of(coreSenses),
+       _senses = Map.of(senses),
        _forms = Map.of(forms),
        _sentences = Map.of(sentences),
        _related = Map.of(related),
-       _settings = settings ?? {};
+       _settings = settings ?? {},
+       _topics = List.of(topics),
+       _topicWordIds = Map.of(topicWordIds);
 
   final List<Word> _words;
-  final Map<int, Sense> _coreSenses;
+  final Map<int, List<Sense>> _senses;
   final Map<int, List<WordForm>> _forms;
   final Map<int, List<ExampleSentence>> _sentences;
   final Map<int, List<RelatedWord>> _related;
@@ -31,6 +35,8 @@ class VocabStoreMemory implements VocabStore {
   final List<ReviewLogEntry> _reviewLog = [];
   final Map<String, String> _settings;
   final Map<String, DailyStats> _dailyStats = {};
+  final List<Topic> _topics;
+  final Map<int, Set<int>> _topicWordIds;
   int _reviewIdCounter = 1;
 
   @override
@@ -48,9 +54,15 @@ class VocabStoreMemory implements VocabStore {
   Future<List<WordBundle>> loadWordBundles(List<int> wordIds) async {
     final byId = {for (final w in _words) w.id: w};
     return wordIds.where(byId.containsKey).map((id) {
+      final senseList = _senses[id] ?? [];
+      final core = senseList.firstWhere(
+        (s) => s.isCore,
+        orElse: () => senseList.first,
+      );
       return WordBundle(
         word: byId[id]!,
-        coreSense: _coreSenses[id]!,
+        coreSense: core,
+        senses: senseList,
         forms: _forms[id] ?? [],
         sentences: _sentences[id] ?? [],
         related: _related[id] ?? [],
@@ -108,6 +120,17 @@ class VocabStoreMemory implements VocabStore {
           e.key: e.value,
     };
   }
+
+  @override
+  Future<List<Topic>> loadTopics() async => List.of(_topics);
+
+  @override
+  Future<Set<int>> loadWordIdsForTopic(int topicId) async =>
+      Set.of(_topicWordIds[topicId] ?? {});
+
+  @override
+  Future<Map<int, List<RelatedWord>>> loadAllRelatedWords() async =>
+      {for (final e in _related.entries) e.key: List.of(e.value)};
 
   @override
   Future<void> close() async {}

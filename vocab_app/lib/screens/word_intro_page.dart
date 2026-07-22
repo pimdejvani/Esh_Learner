@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 
 import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/models/word.dart';
+import 'package:vocab_app/screens/word_detail_page.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 class WordIntroPage extends StatefulWidget {
@@ -47,7 +48,15 @@ class _WordIntroPageState extends State<WordIntroPage> {
       children: [
         Chip(label: Text('คำใหม่ · ${widget.bundle.word.cefr}')),
         const SizedBox(height: 12),
-        WordResultCard(bundle: widget.bundle, tts: widget.tts),
+        WordResultCard(
+          bundle: widget.bundle,
+          tts: widget.tts,
+          onOpenDetail: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (_) => WordDetailPage(bundle: widget.bundle, tts: widget.tts),
+            ),
+          ),
+        ),
         const SizedBox(height: 12),
         if (rank1 != null)
           if (!_showExample)

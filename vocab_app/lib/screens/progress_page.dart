@@ -1,7 +1,9 @@
 /// Motivation layer (SPEC.md section 10): streak, calendar heatmap, word
 /// status counts. Heatmap grid pattern borrowed from Gymmer_App's
 /// month_grid/calendar widget, adapted from workout-days to
-/// review-counts-per-day.
+/// review-counts-per-day. Also hosts two small Phase 2 additions that
+/// didn't warrant their own tab: a focus-topic picker (SPEC.md 6.4/8 "ปัก
+/// หมวด focus ได้") and a link to the Credits/Licenses page (section 5).
 library;
 
 import 'package:flutter/material.dart';
@@ -9,6 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:vocab_app/data/vocab_store.dart';
 import 'package:vocab_app/domain/streaks.dart';
 import 'package:vocab_app/models/srs_state.dart';
+import 'package:vocab_app/models/word.dart';
+import 'package:vocab_app/screens/credits_page.dart';
 
 class ProgressPage extends StatefulWidget {
   const ProgressPage({super.key, required this.store});
@@ -22,6 +26,8 @@ class ProgressPage extends StatefulWidget {
 class _ProgressPageState extends State<ProgressPage> {
   Map<String, DailyStats> _stats = {};
   Map<CardState, int> _statusCounts = {};
+  List<Topic> _topics = [];
+  int? _focusTopicId;
   bool _loading = true;
 
   @override
@@ -35,6 +41,7 @@ class _ProgressPageState extends State<ProgressPage> {
     final from = DateTime(now.year, now.month - 2, 1);
     final stats = await widget.store.loadDailyStatsRange(from, now);
     final state = await widget.store.load();
+    final topics = await widget.store.loadTopics();
     final counts = <CardState, int>{
       for (final s in CardState.values) s: 0,
     };
@@ -46,8 +53,15 @@ class _ProgressPageState extends State<ProgressPage> {
     setState(() {
       _stats = stats;
       _statusCounts = counts;
+      _topics = topics;
+      _focusTopicId = int.tryParse(state.settings['focus_topic'] ?? '');
       _loading = false;
     });
+  }
+
+  Future<void> _setFocusTopic(int? topicId) async {
+    await widget.store.saveSetting('focus_topic', topicId?.toString() ?? '');
+    setState(() => _focusTopicId = topicId);
   }
 
   @override
@@ -85,6 +99,34 @@ class _ProgressPageState extends State<ProgressPage> {
         const SizedBox(height: 16),
         Text('ปฏิทินการทวน', style: Theme.of(context).textTheme.titleMedium),
         _HeatmapGrid(heat: heat),
+        // Focus topic (SPEC.md 6.4/8): hidden entirely when `topics` is
+        // still empty (content pipeline hasn't populated it yet) instead
+        // of showing a picker with nothing to pick.
+        if (_topics.isNotEmpty) ...[
+          const SizedBox(height: 16),
+          Text('หมวดที่อยากโฟกัส (Focus topic)', style: Theme.of(context).textTheme.titleMedium),
+          DropdownButton<int?>(
+            value: _focusTopicId,
+            hint: const Text('ไม่มี'),
+            items: [
+              const DropdownMenuItem<int?>(value: null, child: Text('ไม่มี')),
+              for (final t in _topics)
+                DropdownMenuItem<int?>(value: t.id, child: Text('${t.name} (${t.cefr})')),
+            ],
+            onChanged: _setFocusTopic,
+          ),
+        ],
+        const SizedBox(height: 16),
+        Card(
+          child: ListTile(
+            leading: const Icon(Icons.info_outline),
+            title: const Text('Credits / Licenses'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => CreditsPage(store: widget.store)),
+            ),
+          ),
+        ),
       ],
     );
   }

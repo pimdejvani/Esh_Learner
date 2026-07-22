@@ -8,10 +8,20 @@ library;
 
 import 'dart:math';
 
+import 'package:vocab_app/domain/new_card_governor.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 
-enum GameType { intro, flashcard, cloze, matching }
+enum GameType {
+  intro,
+  flashcard,
+  cloze,
+  matching,
+  wordAssociation,
+  wordScramble,
+  oddOneOut,
+  dictation,
+}
 
 enum QueueSource { overdueReview, newCard, extraPractice }
 
@@ -35,19 +45,26 @@ class SessionItem {
 }
 
 /// Maps a card's maturity state to the games allowed for it, per the
-/// Phase 1 ladder in SPEC.md section 7 (Word Association / Scramble /
-/// Odd One Out / Dictation are Phase 2 — young state falls back to Cloze
-/// only, mature state also falls back to Cloze since Dictation isn't built
-/// yet; that fallback is a deliberate, documented Phase 1 simplification).
+/// SPEC.md section 7 game-selection ladder table (Phase 2: all 7 games are
+/// now wired in, replacing the Phase 1 "young/mature both fall back to
+/// Cloze" placeholder documented in NOTES.md's Phase 1 section):
+///
+/// | state    | games                              |
+/// |----------|-------------------------------------|
+/// | new      | intro (not a game)                   |
+/// | learning | flashcard swipe · Matching · Odd One Out |
+/// | young    | Cloze · Word Association              |
+/// | mature   | Dictation · Word Scramble             |
 List<GameType> gamesForState(CardState state) {
   switch (state) {
     case CardState.newState:
       return [GameType.intro];
     case CardState.learning:
-      return [GameType.flashcard, GameType.matching];
+      return [GameType.flashcard, GameType.matching, GameType.oddOneOut];
     case CardState.young:
+      return [GameType.cloze, GameType.wordAssociation];
     case CardState.mature:
-      return [GameType.cloze];
+      return [GameType.dictation, GameType.wordScramble];
   }
 }
 
@@ -63,6 +80,10 @@ class SessionEngine {
   ///
   /// [now] current time. [newCardCap] today's remaining new-card budget.
   /// [newIntroducedToday] how many new cards already shown today.
+  /// [focusTopicWordIds] (SPEC.md 6.4): word ids in the user's chosen focus
+  /// topic, if any — biases which new words are introduced first without
+  /// touching overdue-review ordering. Empty (the default) is a no-op, so
+  /// omitting it keeps the plain freq_rank/CEFR new-card order.
   List<SessionItem> buildQueue({
     required List<Word> words,
     required Map<int, SrsState> srsStates,
@@ -70,6 +91,7 @@ class SessionEngine {
     required int newCardCap,
     required int newIntroducedToday,
     int matchingBatchSize = 6,
+    Set<int> focusTopicWordIds = const {},
   }) {
     final overdue = <_DueEntry>[];
     final newCandidates = <Word>[];
@@ -112,8 +134,13 @@ class SessionEngine {
       );
     }
 
+    final orderedNewCandidates = orderNewCandidates(
+      candidates: newCandidates,
+      focusTopicWordIds: focusTopicWordIds,
+    );
+
     var remainingCap = (newCardCap - newIntroducedToday).clamp(0, newCardCap);
-    for (final w in newCandidates.take(remainingCap)) {
+    for (final w in orderedNewCandidates.take(remainingCap)) {
       queue.add(
         SessionItem(
           wordId: w.id,

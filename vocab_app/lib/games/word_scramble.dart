@@ -1,10 +1,12 @@
-/// Cloze (SPEC.md section 8 game 2). Real example sentence with the target
-/// word blanked out; user types the answer. Uses answer_checker for
-/// typo-tolerant grading and supports the family-A hint (related word) per
-/// section 8b: a progressive "reveal next hint" button (tappable multiple
-/// times, section 12 "เปิดทีละขั้น") that surfaces one more `hintWords`
-/// entry per tap, capping the rating at Hard if any hint was used.
+/// Word Scramble (SPEC.md section 8 game 5, Phase 2). The headword's
+/// letters are shuffled; the user retypes the word — a pure production
+/// task (desirable difficulty), used for mature-state words per SPEC.md
+/// section 7's ladder. Uses `answer_checker` for typo-tolerant grading and
+/// supports the family-A semantic hint (SPEC.md 8b) with a progressive
+/// reveal button, same pattern as Cloze/Word Association.
 library;
+
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 
@@ -15,14 +17,33 @@ import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
-class ClozeGame extends StatefulWidget {
-  const ClozeGame({
+/// Shuffles [word]'s letters. Guarantees the result differs from the
+/// original whenever that's actually possible (retries up to 20 times);
+/// words of length <= 1, or made entirely of one repeated letter, can't
+/// produce a different permutation, so those are returned unscrambled
+/// rather than looping forever.
+String scrambleWord(String word, {Random? random}) {
+  if (word.length <= 1) return word;
+  final rnd = random ?? Random();
+  final chars = word.split('');
+  var shuffled = List<String>.from(chars);
+  var attempts = 0;
+  do {
+    shuffled = List<String>.from(chars)..shuffle(rnd);
+    attempts++;
+  } while (shuffled.join() == word && attempts < 20);
+  return shuffled.join();
+}
+
+class WordScrambleGame extends StatefulWidget {
+  const WordScrambleGame({
     super.key,
     required this.bundle,
     required this.tts,
     required this.onRated,
     this.hintWords = const [],
     this.checker = const AnswerChecker(),
+    this.random,
   });
 
   final WordBundle bundle;
@@ -31,36 +52,25 @@ class ClozeGame extends StatefulWidget {
   final List<String> hintWords;
   final AnswerChecker checker;
 
+  /// Injectable for deterministic tests; null uses a real [Random].
+  final Random? random;
+
   @override
-  State<ClozeGame> createState() => _ClozeGameState();
+  State<WordScrambleGame> createState() => _WordScrambleGameState();
 }
 
-class _ClozeGameState extends State<ClozeGame> {
+class _WordScrambleGameState extends State<WordScrambleGame> {
   final _controller = TextEditingController();
   final _stopwatch = Stopwatch()..start();
+  late final String _scrambled;
   bool _submitted = false;
   int _hintsRevealed = 0;
   AnswerCheckResult? _result;
 
-  ExampleSentence get _sentence {
-    final sentences = widget.bundle.sentences;
-    // Prefer a non-rank-1 sentence for retrieval variety; fall back to any.
-    return sentences.length > 1 ? sentences[1] : sentences.first;
-  }
-
-  void _submit() {
-    if (widget.bundle.sentences.isEmpty) return;
-    _stopwatch.stop();
-    final expected = _sentence.clozeTarget;
-    final result = widget.checker.check(
-      userInput: _controller.text,
-      expected: expected,
-      elapsedMs: _stopwatch.elapsedMilliseconds,
-    );
-    setState(() {
-      _submitted = true;
-      _result = result;
-    });
+  @override
+  void initState() {
+    super.initState();
+    _scrambled = scrambleWord(widget.bundle.word.headword, random: widget.random);
   }
 
   void _revealNextHint() {
@@ -69,21 +79,30 @@ class _ClozeGameState extends State<ClozeGame> {
     });
   }
 
+  void _submit() {
+    _stopwatch.stop();
+    final result = widget.checker.check(
+      userInput: _controller.text,
+      expected: widget.bundle.word.headword,
+      elapsedMs: _stopwatch.elapsedMilliseconds,
+    );
+    setState(() {
+      _submitted = true;
+      _result = result;
+    });
+  }
+
   void _rate() {
-    final base = _result!.rating;
-    final capped = widget.checker.capForHint(base, usedHint: _hintsRevealed > 0);
+    final capped = widget.checker.capForHint(
+      _result!.rating,
+      usedHint: _hintsRevealed > 0,
+    );
     widget.onRated(capped);
   }
 
   @override
   Widget build(BuildContext context) {
-    if (widget.bundle.sentences.isEmpty) {
-      return const Text('ไม่มีประโยคตัวอย่างสำหรับคำนี้');
-    }
-    final s = _sentence;
-    final before = s.enText.substring(0, s.clozeStart);
-    final after = s.enText.substring(s.clozeEnd);
-
+    final sense = widget.bundle.coreSense;
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -92,21 +111,14 @@ class _ClozeGameState extends State<ClozeGame> {
             padding: const EdgeInsets.all(24),
             child: Column(
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: DefaultTextStyle.of(context).style.copyWith(fontSize: 18),
-                    children: [
-                      TextSpan(text: before),
-                      const TextSpan(
-                        text: ' _____ ',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      TextSpan(text: after),
-                    ],
+                Text(
+                  _scrambled.split('').join(' '),
+                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                    letterSpacing: 2,
                   ),
                 ),
                 const SizedBox(height: 8),
-                Text(s.thText, style: Theme.of(context).textTheme.bodySmall),
+                Text(sense.meaningTh, style: Theme.of(context).textTheme.bodyMedium),
               ],
             ),
           ),
@@ -115,7 +127,7 @@ class _ClozeGameState extends State<ClozeGame> {
         if (!_submitted) ...[
           TextField(
             controller: _controller,
-            decoration: const InputDecoration(labelText: 'พิมพ์คำตอบ'),
+            decoration: const InputDecoration(labelText: 'เรียงตัวอักษรใหม่'),
             onSubmitted: (_) => _submit(),
           ),
           const SizedBox(height: 8),
@@ -143,7 +155,7 @@ class _ClozeGameState extends State<ClozeGame> {
                 ? 'ถูกต้อง!'
                 : _result!.verdict == AnswerVerdict.almostTypo
                 ? 'เกือบถูก (สะกดผิดนิดหน่อย)'
-                : 'คำตอบที่ถูกคือ "${s.clozeTarget}"',
+                : 'คำตอบที่ถูกคือ "${widget.bundle.word.headword}"',
             style: Theme.of(context).textTheme.titleMedium,
           ),
           const SizedBox(height: 8),

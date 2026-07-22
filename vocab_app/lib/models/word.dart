@@ -186,6 +186,7 @@ class WordBundle {
   const WordBundle({
     required this.word,
     required this.coreSense,
+    required this.senses,
     required this.forms,
     required this.sentences,
     required this.related,
@@ -193,7 +194,30 @@ class WordBundle {
 
   final Word word;
   final Sense coreSense;
+
+  /// All senses for the word (not just the core one), sorted by
+  /// `sense_rank` — used by the full dictionary entry (word_detail_page,
+  /// SPEC.md 9b layer 2). Phase 1 only ever populated the single core
+  /// sense per word in [coreSense]; this list degrades gracefully to that
+  /// same single sense when the seed data hasn't grown extra senses yet.
+  final List<Sense> senses;
   final List<WordForm> forms;
   final List<ExampleSentence> sentences;
   final List<RelatedWord> related;
+}
+
+/// A topic/theme category (SPEC.md section 4 `topics` table) — used for
+/// interleaving context and the Phase 2 "focus topic" setting (section 6.4).
+class Topic {
+  const Topic({required this.id, required this.name, required this.cefr});
+
+  final int id;
+  final String name;
+  final String cefr;
+
+  factory Topic.fromMap(Map<String, Object?> m) => Topic(
+    id: m['id'] as int,
+    name: m['name'] as String? ?? '',
+    cefr: m['cefr'] as String? ?? '',
+  );
 }

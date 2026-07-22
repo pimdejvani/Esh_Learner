@@ -172,16 +172,67 @@ void main() {
       expect(gamesForState(CardState.newState), [GameType.intro]);
     });
 
-    test('learning words map to flashcard/matching only', () {
+    test('learning words map to flashcard/Matching/Odd One Out', () {
       expect(
         gamesForState(CardState.learning).toSet(),
-        {GameType.flashcard, GameType.matching},
+        {GameType.flashcard, GameType.matching, GameType.oddOneOut},
       );
     });
 
-    test('young and mature words fall back to Cloze in Phase 1', () {
-      expect(gamesForState(CardState.young), [GameType.cloze]);
-      expect(gamesForState(CardState.mature), [GameType.cloze]);
+    test('young words map to Cloze + Word Association (Phase 2 ladder)', () {
+      expect(
+        gamesForState(CardState.young).toSet(),
+        {GameType.cloze, GameType.wordAssociation},
+      );
+    });
+
+    test('mature words map to Dictation + Word Scramble (Phase 2 ladder)', () {
+      expect(
+        gamesForState(CardState.mature).toSet(),
+        {GameType.dictation, GameType.wordScramble},
+      );
+    });
+  });
+
+  group('focus topic bias (SPEC.md 6.4)', () {
+    test('is a no-op on new-card ordering when no focus topic is set', () {
+      final words = List.generate(6, (i) => _word(i, freq: i));
+      final withoutBias = engine.buildQueue(
+        words: words,
+        srsStates: {},
+        now: now,
+        newCardCap: 3,
+        newIntroducedToday: 0,
+      );
+      final withEmptyBias = engine.buildQueue(
+        words: words,
+        srsStates: {},
+        now: now,
+        newCardCap: 3,
+        newIntroducedToday: 0,
+        focusTopicWordIds: const {},
+      );
+      expect(
+        withoutBias.map((i) => i.wordId).toList(),
+        withEmptyBias.map((i) => i.wordId).toList(),
+      );
+      // Default (no bias) new-card order still follows freq_rank.
+      expect(withoutBias.map((i) => i.wordId), [0, 1, 2]);
+    });
+
+    test('biases new words in the focus topic to the front of the queue', () {
+      final words = List.generate(6, (i) => _word(i, freq: i));
+      final queue = engine.buildQueue(
+        words: words,
+        srsStates: {},
+        now: now,
+        newCardCap: 3,
+        newIntroducedToday: 0,
+        // Word 5 has the worst freq_rank but is in the focus topic, so it
+        // should be introduced ahead of non-focus words 1 and 2.
+        focusTopicWordIds: {5},
+      );
+      expect(queue.map((i) => i.wordId), [5, 0, 1]);
     });
   });
 }

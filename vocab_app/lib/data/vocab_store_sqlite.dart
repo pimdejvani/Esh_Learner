@@ -81,13 +81,27 @@ class VocabStoreSqlite implements VocabStore {
       for (final r in wordRows) r['id'] as int: Word.fromMap(r),
     };
 
+    // All senses (not just is_core) so the full dictionary entry (word_
+    // detail_page, SPEC.md 9b layer 2) can group every sense by POS. The
+    // core sense used by games/layer-1 is derived from this same list
+    // instead of a second query.
     final senseRows = await _db.query(
       'senses',
-      where: 'word_id IN ($placeholders) AND is_core = 1',
+      where: 'word_id IN ($placeholders)',
       whereArgs: wordIds,
+      orderBy: 'sense_rank ASC',
     );
+    final sensesByWord = <int, List<Sense>>{};
+    for (final r in senseRows) {
+      final s = Sense.fromMap(r);
+      sensesByWord.putIfAbsent(s.wordId, () => []).add(s);
+    }
     final coreSenseByWord = {
-      for (final r in senseRows) r['word_id'] as int: Sense.fromMap(r),
+      for (final entry in sensesByWord.entries)
+        entry.key: entry.value.firstWhere(
+          (s) => s.isCore,
+          orElse: () => entry.value.first,
+        ),
     };
 
     final formRows = await _db.query(
@@ -128,6 +142,7 @@ class VocabStoreSqlite implements VocabStore {
       return WordBundle(
         word: wordsById[id]!,
         coreSense: coreSenseByWord[id]!,
+        senses: sensesByWord[id] ?? [],
         forms: formsByWord[id] ?? [],
         sentences: sentByWord[id] ?? [],
         related: relByWord[id] ?? [],
@@ -203,6 +218,34 @@ class VocabStoreSqlite implements VocabStore {
     return {
       for (final r in rows) r['date'] as String: DailyStats.fromMap(r),
     };
+  }
+
+  @override
+  Future<List<Topic>> loadTopics() async {
+    final rows = await _db.query('topics', orderBy: 'id ASC');
+    return rows.map(Topic.fromMap).toList();
+  }
+
+  @override
+  Future<Set<int>> loadWordIdsForTopic(int topicId) async {
+    final rows = await _db.query(
+      'word_topics',
+      columns: ['word_id'],
+      where: 'topic_id = ?',
+      whereArgs: [topicId],
+    );
+    return rows.map((r) => r['word_id'] as int).toSet();
+  }
+
+  @override
+  Future<Map<int, List<RelatedWord>>> loadAllRelatedWords() async {
+    final rows = await _db.query('related_words');
+    final map = <int, List<RelatedWord>>{};
+    for (final r in rows) {
+      final rel = RelatedWord.fromMap(r);
+      map.putIfAbsent(rel.wordId, () => []).add(rel);
+    }
+    return map;
   }
 
   @override

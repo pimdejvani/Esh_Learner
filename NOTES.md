@@ -259,3 +259,235 @@ within 3s else `Good`. `capForHint()` implements §8b's hint-usage cap
    up to `related_words`; build the 4 remaining games; build the full
    `word_detail_page.dart`; add `is_giveaway` WordNet flagging; add the
    Credits/Licenses page.
+
+---
+
+## Phase 2 build log
+
+Everything in this section builds SPEC.md §11's Phase 2 scope on top of the
+Phase 1 vertical slice above, per the same precision/honesty standard. Only
+`vocab_app/lib/**`, `vocab_app/test/**`, and this section were touched — the
+dataset/content side (`tools/*.py`, `vocab_app/assets/seed/vocab.db`) is a
+different, parallel effort and isn't described here.
+
+### 1. Four new games (`lib/games/`)
+
+- **`word_association.dart`** — target word + 4-option multiple choice;
+  correct answer is picked by `pickAssociationTarget()` (prefers
+  `relation_type='association'`, always excludes `is_giveaway`, highest
+  `closeness` wins among what's left). Distractor options come from
+  `buildAssociationOptions()`, drawn from the full word pool minus the
+  target and all its related words (so no distractor is ambiguously "also
+  kind of right"). Correctness/rating is by id-equality, not
+  `answer_checker.check()` string matching (there's no typed input here),
+  but the final rating is still routed through `capForHint()`.
+- **`word_scramble.dart`** — `scrambleWord()` shuffles the headword's
+  letters (retries up to 20 times to avoid returning the original
+  permutation by chance; length-<=1 words are returned as-is since no
+  different permutation exists). Typed answer graded via the existing
+  `answer_checker.check()` (typo tolerance included), rating capped via
+  `capForHint()`.
+- **`odd_one_out.dart`** — `buildOddOneOutGroup()` looks across *every*
+  word's `related_words` rows (not just the target's) for a "hub" word
+  whose related set has >= `groupSize` members that (a) aren't the target
+  and (b) aren't themselves related to the target — that's the category
+  the target genuinely doesn't belong to. Prefers `hypernym`/`category`/
+  `part_of`-typed rows per spec, but **falls back to any non-giveaway
+  relation type** (currently the *only* type in the seed is `association`,
+  per the Phase 1 `RELATED_FALLBACK` dict — see section 1 above), and falls
+  back from `groupSize=3` to `2` if 3 isn't reachable. Returns `null` when
+  no hub qualifies at all; `play_screen.dart` falls back to Flashcard for
+  that round rather than stalling the queue. No hint system (categorization
+  recognition isn't one of SPEC.md 8b's two hint families).
+- **`dictation.dart`** — TTS speaks the headword (via the existing
+  `TtsService`), user types the spelling; graded via `answer_checker`. Also
+  implements the **family-B spelling hint** (`DictationHint` class,
+  runtime-generated, no new table): stage 1 is a syllable-boundary skeleton
+  (letters hidden, hyphens shown) — the syllable *count* is derived from
+  `thai_reading`'s hyphen-split count (English has no dedicated syllable
+  field in the schema) and the headword is naively divided into that many
+  roughly-equal chunks; stages 2..N reveal one more letter left-to-right
+  per stage; the final stage (once every letter is already visible) is a
+  bare letter-count, kept because SPEC.md 8b lists it as one of the three
+  hint contents even though it adds little information by that point
+  (documented simplification, not silently dropped).
+
+### 2. Hint system (SPEC.md 8b), both families, fully wired
+
+- **Family A (semantic)** — `play_screen.dart`'s `_semanticHints()` sources
+  candidates from the already-loaded `WordBundle.related`, filters
+  `is_giveaway`, sorts by `closeness` descending (strongest legitimate clue
+  first), and is used by Cloze, Word Scramble, and Word Association. Word
+  Association additionally excludes its own correct answer's word id from
+  the hint pool (showing the MCQ's right answer as a "hint" would trivialize
+  the round). **Progressive reveal**: Cloze's previously single-shot hint
+  button (reveals every `hintWords` entry on one tap) was upgraded to
+  tap-to-reveal-one-more, matching the new games and SPEC.md §12's "เปิดที
+  ละขั้น" — this is the one small edit to already-shipped Phase 1 game code,
+  done because the task explicitly called out wiring `hintWords` end-to-end.
+- **Family B (spelling, Dictation only)** — see `DictationHint` above.
+- **Rating cap** — every game (old and new) that supports a hint routes its
+  final rating through `answer_checker.capForHint(usedHint: ...)` before
+  calling `onRated`, so a correct-with-hint answer never exceeds Hard,
+  consistently across all 7 games.
+
+### 3. Irregular-form flagging (SPEC.md 9.2)
+
+Added `IrregularBadge` (in `widgets/word_result_card.dart`, shared rather
+than duplicated) — a small `errorContainer`-colored chip reading "ผิดปกติ"
+next to any `WordForm` with `is_irregular = 1`; tapping it opens a dialog
+with the full `grammar_note_th`. Wired into both places SPEC.md 9.2 asks
+for it:
+- **Layer 1** (`WordResultCard`) — if the currently-shown example sentence
+  has a non-null `form_id`, the badge appears next to that sentence when
+  the matching `WordForm.isIrregular` is true.
+- **Layer 2** (`word_detail_page.dart`) — next to every irregular form in
+  the inline verb-forms row, and next to every example sentence that used
+  one.
+
+### 4. Focus topic (SPEC.md 6.4 / 8)
+
+- **Storage**: reuses the existing generic `settings` key/value table —
+  `key='focus_topic'`, `value=<topic id as string>` (or absent/empty for
+  "none"). No schema change needed.
+- **UI**: `progress_page.dart` gained a `DropdownButton` topic picker,
+  **hidden entirely** when `store.loadTopics()` returns empty (content
+  pipeline hasn't populated `topics`/`word_topics` yet) — per the task's
+  explicit "handle that gracefully" instruction, this degrades to simply
+  not showing the picker rather than showing an empty/broken one.
+- **Bias logic**: `new_card_governor.dart` gained a new top-level
+  `orderNewCandidates()` function — a **stable partition** (not a re-sort):
+  words whose id is in the focus-topic set move to the front, all other
+  words keep their existing relative freq_rank/CEFR order untouched.
+  `session_engine.buildQueue()` takes a new `focusTopicWordIds` parameter
+  (default `{}`) and calls this right before capping new candidates at
+  `newCardCap`. **Verified as a true no-op** when unset: a dedicated test
+  (`session_engine_test.dart`, "focus topic bias") asserts the resulting
+  queue is byte-for-byte identical with vs. without an explicitly-empty
+  `focusTopicWordIds`, and all pre-existing Phase 1 session_engine tests
+  (which never pass this parameter at all) still pass unmodified.
+- `VocabStore` gained `loadTopics()` and `loadWordIdsForTopic(topicId)`
+  (both sqlite + memory impls); `play_screen.dart` loads the focus topic's
+  word-id set once at boot and threads it through `buildQueue()`.
+
+### 5. Full `word_detail_page.dart` (SPEC.md 9b layer 2)
+
+Replaces the Phase 1 stub. Header matches layer 1 (headword + TTS + Thai
+reading with bold stress syllable, **no IPA** — confirmed `ipa` is still
+never rendered anywhere in the app, only stored for internal use per spec).
+Below that: every sense (not just the core one) grouped by POS and ordered
+by `sense_rank`, each showing a CEFR badge + meaning + collocation
+(`EN = TH`) when present, with the `is_core` sense starred (⭐). Verb-POS
+groups (`pos == 'v'`) get an inline word-forms row ("form1 · form2 · form3"
+style, in a fixed past/past_participle/ving/3sg preference order when
+those types exist) with the shared `IrregularBadge` on irregular ones; tap
+the row to expand every form's full `grammar_note_th`. All of the word's
+`example_sentences` are listed at the bottom (not just one).
+
+**Data-layer change needed to support this**: `WordBundle` only carried a
+single `coreSense` in Phase 1 (the store only ever queried `senses WHERE
+is_core=1`). Added a `senses: List<Sense>` field, and changed both store
+implementations to query **all** senses per word (ordered by
+`sense_rank`), deriving `coreSense` from that same list instead of a
+second query. Today's seed only has 1 sense/word so this is invisible in
+practice, but it's what makes the multi-sense grouping actually work
+without further code changes once the content pipeline adds more senses
+per word — consistent with the brief's "build against whatever's there
+now" instruction.
+
+**Tap-through wiring**: `WordResultCard` gained an optional
+`onOpenDetail` callback (null hides the tap affordance). Every game that
+shows a `WordResultCard` after answering (Flashcard, Cloze, Word Scramble,
+Word Association, Dictation) and `word_intro_page.dart` now pass one that
+pushes `WordDetailPage`, so SPEC.md 9b's "แตะการ์ดเพื่อเปิด entry เต็ม" is
+actually reachable — this was a real gap in the Phase 1 stub (the route
+existed but nothing in the running app ever navigated to it).
+
+### 6. Credits/Licenses page (SPEC.md §5)
+
+New `lib/screens/credits_page.dart`, reached via a ListTile on
+`progress_page.dart`. Per the task's instruction, the "คำแปล" (translations)
+and "รูปภาพ" (images) sections are populated from **distinct values actually
+present in the loaded `words` list** (`translation_source`/
+`translation_license`, `image_license`/`image_author`) rather than
+hardcoded, so they track the content pipeline automatically. The "คำที่
+เกี่ยวข้อง" (related words / SWOW+WordNet) section is **static text** —
+documented as a deliberate deviation: `related_words` has no per-row
+source/license column in the schema (SPEC.md §4), only a dataset-level
+attribution documented in SPEC.md §5/13 and section 1 of this file, so
+there's nothing per-word to query for that section specifically.
+
+### 7. Game-selection ladder — Phase 1 placeholder replaced
+
+`session_engine.dart`'s `gamesForState()` now matches SPEC.md §7's table
+in full (previously young/mature both fell back to Cloze only, a
+documented Phase 1 placeholder):
+
+| state | Phase 1 | Phase 2 (now) |
+|---|---|---|
+| learning | flashcard, matching | flashcard, matching, **Odd One Out** |
+| young | cloze only | cloze, **Word Association** |
+| mature | cloze only | **Dictation**, **Word Scramble** |
+
+**One resolved ambiguity worth flagging**: the task instructions explicitly
+named the young/mature replacements but only said to "wire all 4 games
+into the ladder... exactly per the §7 table" for Odd One Out's placement —
+the table itself puts Odd One Out under **learning**, not young/mature, so
+that's where it was added. This is the one row not explicitly called out
+in the task text; resolved by following SPEC.md §7's table literally
+since that's what "exactly per the table" points to, and it's also the
+only way all 4 new games actually get used somewhere in the ladder.
+
+`session_engine_test.dart`'s Phase 1 placeholder test ("young and mature
+words fall back to Cloze in Phase 1") was replaced with three tests
+matching the real ladder (learning/young/mature), plus two new tests for
+the focus-topic bias no-op/bias behavior.
+
+### 8. Known gaps / simplifications (documented, not silently skipped)
+
+- **Odd One Out and Word Association frequently can't build a round yet**,
+  because the current `related_words` data is the ~50-pair manually-curated
+  Phase 1 fallback (section 1 above), not real SWOW/WordNet data — most
+  words simply don't have enough related rows to form a 3+ member category
+  or even a single non-giveaway association. `play_screen.dart` handles
+  this by falling back to Flashcard for that round rather than stalling or
+  crashing. **This should resolve itself with no code changes** once the
+  content pipeline populates richer `related_words` data, per the task's
+  explicit "build against whatever's there now" instruction — but it's
+  worth knowing that on today's seed, these two games will show up rarely
+  in practice despite being fully wired into the ladder.
+- **`loadAllRelatedWords()` loads every `related_words` row into memory
+  once at `PlayScreen` boot** (needed so Odd One Out can search across
+  every word's related set for a category hub, not just the current
+  word's). Fine at 160 words; would want a narrower/lazier query if the
+  dataset grows to the full 3000-word Phase 3 scale.
+- **No widget-level (pumped) tests for any of the 7 games**, old or new —
+  this matches the existing Phase 1 pattern (there were no
+  `cloze_test.dart`/`flashcard_swipe_test.dart`/`matching_test.dart` either);
+  all game logic that has interesting behavior is factored into pure,
+  directly-testable top-level functions (`scrambleWord`,
+  `pickAssociationTarget`, `buildAssociationOptions`, `buildOddOneOutGroup`,
+  `DictationHint.stageText`, plus the existing `answer_checker`), and those
+  are what's unit-tested.
+- **Word Association's "hint" is arguably redundant with the game itself**
+  (the game already tests recognizing a related word; a "hint" that shows
+  *another* related word is a fairly weak scaffold). Implemented anyway
+  because the task explicitly listed Word Association under hint family A;
+  kept simple (progressive reveal of secondary related words, excluding the
+  correct answer) rather than inventing a different hint mechanism not in
+  the spec.
+
+### 9. Verification performed
+
+- **`flutter analyze`: clean, 0 issues** (re-ran after every new file).
+- **`flutter test`: 91/91 passing** — the Phase 1 44 plus new coverage in
+  `test/word_association_test.dart`, `test/word_scramble_test.dart`,
+  `test/odd_one_out_test.dart`, `test/dictation_test.dart` (game logic +
+  hint-cap-to-Hard routing for each), plus additions to
+  `test/session_engine_test.dart` (Phase 2 ladder, focus-topic bias) and
+  `test/new_card_governor_test.dart` (`orderNewCandidates`).
+- **Not done** (same gap as Phase 1, unchanged): on-device/simulator manual
+  click-through. Still the top item for whoever has iOS tooling available —
+  in particular the 4 new games' actual UI/UX (chip layout, hint button
+  feel, dictation TTS timing) has only been exercised through pure-function
+  unit tests, never rendered.

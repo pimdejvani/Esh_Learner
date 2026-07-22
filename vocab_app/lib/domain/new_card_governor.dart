@@ -3,6 +3,31 @@
 library;
 
 import 'package:vocab_app/models/srs_state.dart';
+import 'package:vocab_app/models/word.dart';
+
+/// SPEC.md 6.4: "ดึงคำใหม่ตาม freq_rank/CEFR order; ถ้ามี focus topic → bias
+/// คำจากหมวดนั้นก่อน". [candidates] is expected to already be in the
+/// engine's normal freq_rank/CEFR order; this only moves the words whose id
+/// is in [focusTopicWordIds] to the front, preserving the relative order
+/// within each of the two partitions (a stable partition, not a re-sort) so
+/// the underlying freq_rank ordering is never disturbed, just biased.
+///
+/// A no-op (returns [candidates] unchanged) when [focusTopicWordIds] is
+/// empty — i.e. no focus topic set, or the `topics`/`word_topics` tables
+/// aren't populated yet. This keeps the default (no focus topic) path
+/// byte-for-byte identical to the Phase 1 behaviour.
+List<Word> orderNewCandidates({
+  required List<Word> candidates,
+  required Set<int> focusTopicWordIds,
+}) {
+  if (focusTopicWordIds.isEmpty) return candidates;
+  final inTopic = <Word>[];
+  final rest = <Word>[];
+  for (final w in candidates) {
+    (focusTopicWordIds.contains(w.id) ? inTopic : rest).add(w);
+  }
+  return [...inTopic, ...rest];
+}
 
 class NewCardGovernor {
   const NewCardGovernor({
