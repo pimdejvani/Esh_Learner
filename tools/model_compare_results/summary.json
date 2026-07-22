@@ -1,0 +1,232 @@
+{
+  "gemini-2.5-flash-lite": {
+    "rounds": [
+      {
+        "round": 1,
+        "chunks": [],
+        "total_in_tok": 0,
+        "total_out_tok": 0,
+        "elapsed_s": 1.7,
+        "parse_errors": 4,
+        "qc": {
+          "n_words_returned": 0,
+          "n_expected": 160,
+          "missing_words": 160,
+          "pct_5_sentences": 0.0,
+          "pct_rank1_emotional": 0.0,
+          "pct_cloze_valid": 0.0,
+          "pct_varied_forms": 0.0,
+          "issues": [
+            "missing 160 words: ['English', 'a', 'about', 'after', 'again']..."
+          ]
+        },
+        "cost_usd": 0.0
+      },
+      {
+        "round": 2,
+        "chunks": [],
+        "total_in_tok": 0,
+        "total_out_tok": 0,
+        "elapsed_s": 1.3,
+        "parse_errors": 4,
+        "qc": {
+          "n_words_returned": 0,
+          "n_expected": 160,
+          "missing_words": 160,
+          "pct_5_sentences": 0.0,
+          "pct_rank1_emotional": 0.0,
+          "pct_cloze_valid": 0.0,
+          "pct_varied_forms": 0.0,
+          "issues": [
+            "missing 160 words: ['English', 'a', 'about', 'after', 'again']..."
+          ]
+        },
+        "cost_usd": 0.0
+      }
+    ]
+  },
+  "gemini-3.5-flash-lite": {
+    "rounds": [
+      {
+        "round": 1,
+        "chunks": [
+          {
+            "chunk_idx": 0,
+            "n_words": 50,
+            "in_tok": 948,
+            "out_tok": 19470
+          },
+          {
+            "chunk_idx": 1,
+            "n_words": 50,
+            "in_tok": 924,
+            "out_tok": 24553
+          },
+          {
+            "chunk_idx": 2,
+            "n_words": 50,
+            "in_tok": 938,
+            "out_tok": 20618
+          },
+          {
+            "chunk_idx": 3,
+            "n_words": 10,
+            "in_tok": 625,
+            "out_tok": 5402
+          }
+        ],
+        "total_in_tok": 3435,
+        "total_out_tok": 70043,
+        "elapsed_s": 179.5,
+        "parse_errors": 0,
+        "qc": {
+          "n_words_returned": 159,
+          "n_expected": 160,
+          "missing_words": 1,
+          "pct_5_sentences": 100.0,
+          "pct_rank1_emotional": 100.0,
+          "pct_cloze_valid": 98.7,
+          "pct_varied_forms": 56.0,
+          "issues": [
+            "missing 1 words: ['English']..."
+          ]
+        },
+        "cost_usd": 0.1761
+      },
+      {
+        "round": 2,
+        "chunks": [
+          {
+            "chunk_idx": 0,
+            "n_words": 50,
+            "in_tok": 948,
+            "out_tok": 23523
+          },
+          {
+            "chunk_idx": 1,
+            "n_words": 50,
+            "in_tok": 924,
+            "out_tok": 24983
+          },
+          {
+            "chunk_idx": 2,
+            "n_words": 50,
+            "in_tok": 938,
+            "out_tok": 23448
+          },
+          {
+            "chunk_idx": 3,
+            "n_words": 10,
+            "in_tok": 625,
+            "out_tok": 5311
+          }
+        ],
+        "total_in_tok": 3435,
+        "total_out_tok": 77265,
+        "elapsed_s": 190.6,
+        "parse_errors": 1,
+        "qc": {
+          "n_words_returned": 110,
+          "n_expected": 160,
+          "missing_words": 50,
+          "pct_5_sentences": 100.0,
+          "pct_rank1_emotional": 100.0,
+          "pct_cloze_valid": 99.1,
+          "pct_varied_forms": 34.5,
+          "issues": [
+            "missing 50 words: ['fast', 'father', 'find', 'fish', 'food']..."
+          ]
+        },
+        "cost_usd": 0.1942
+      }
+    ]
+  },
+  "gemini-3.6-flash": {
+    "rounds": [
+      {
+        "round": 1,
+        "chunks": [
+          {
+            "chunk_idx": 0,
+            "n_words": 50,
+            "in_tok": 948,
+            "out_tok": 21901
+          },
+          {
+            "chunk_idx": 1,
+            "n_words": 50,
+            "in_tok": 924,
+            "out_tok": 24452
+          },
+          {
+            "chunk_idx": 2,
+            "n_words": 50,
+            "in_tok": 938,
+            "out_tok": 24861
+          },
+          {
+            "chunk_idx": 3,
+            "n_words": 10,
+            "in_tok": 625,
+            "out_tok": 5424
+          }
+        ],
+        "total_in_tok": 3435,
+        "total_out_tok": 76638,
+        "elapsed_s": 381.9,
+        "parse_errors": 0,
+        "qc": {
+          "n_words_returned": 160,
+          "n_expected": 160,
+          "missing_words": 0,
+          "pct_5_sentences": 100.0,
+          "pct_rank1_emotional": 100.0,
+          "pct_cloze_valid": 99.4,
+          "pct_varied_forms": 83.1,
+          "issues": []
+        },
+        "cost_usd": 0.5799
+      },
+      {
+        "round": 2,
+        "chunks": [
+          {
+            "chunk_idx": 1,
+            "n_words": 50,
+            "in_tok": 924,
+            "out_tok": 25235
+          },
+          {
+            "chunk_idx": 2,
+            "n_words": 50,
+            "in_tok": 938,
+            "out_tok": 22509
+          },
+          {
+            "chunk_idx": 3,
+            "n_words": 10,
+            "in_tok": 625,
+            "out_tok": 5743
+          }
+        ],
+        "total_in_tok": 2487,
+        "total_out_tok": 53487,
+        "elapsed_s": 315.4,
+        "parse_errors": 1,
+        "qc": {
+          "n_words_returned": 110,
+          "n_expected": 160,
+          "missing_words": 50,
+          "pct_5_sentences": 100.0,
+          "pct_rank1_emotional": 100.0,
+          "pct_cloze_valid": 99.1,
+          "pct_varied_forms": 92.7,
+          "issues": [
+            "missing 50 words: ['English', 'a', 'about', 'after', 'again']..."
+          ]
+        },
+        "cost_usd": 0.4049
+      }
+    ]
+  }
+}

@@ -17,6 +17,7 @@ import os
 sys.path.insert(0, os.path.dirname(__file__))
 from wordlist import WORDS
 from thai_data import DATA
+from llm_sentences import DATA as LLM_SENTENCES
 
 OUT_DB = os.path.join(os.path.dirname(__file__), "..", "vocab_app", "assets", "seed", "vocab.db")
 
@@ -207,6 +208,36 @@ SENT_TEMPLATES = {
 
 def build_sentences(word, pos, meaning_th):
     forms = word_forms_for(word, pos)
+
+    # Prefer real LLM-generated (gemini-3.6-flash) sentences + grammar note
+    # when present for this headword (tools/llm_sentences.py) -- falls back
+    # to the SENT_TEMPLATES mechanism below only if the word is missing from
+    # that dataset, or (as a safety net) if its cloze spans somehow fail to
+    # resolve. See NOTES.md section 1 for which ~9 words fall back and why.
+    llm = LLM_SENTENCES.get(word)
+    if llm:
+        out = []
+        ok = True
+        for s in llm["sentences"]:
+            en = s["en_text"]
+            target = s["cloze_target"]
+            m = re.search(re.escape(target), en, re.IGNORECASE)
+            cloze_start, cloze_end = (m.start(), m.end()) if m else (0, 0)
+            if cloze_end <= cloze_start:
+                ok = False
+            out.append(dict(rank=s["rank"], en_text=en, th_text=s["th_text"],
+                             cloze_start=cloze_start, cloze_end=cloze_end,
+                             is_emotional=1 if s["is_emotional"] else 0,
+                             form_id=None))
+        if ok and len(out) == 5:
+            # The LLM note explains the reasoning across all 5 sentences'
+            # forms holistically (richer than the per-form template note),
+            # so it replaces grammar_note_th on every word_forms row for
+            # this word rather than the mechanically-generated one.
+            forms = [(f[0], f[1], f[2], llm["grammar_note_th"]) for f in forms]
+            return out, forms
+        # cloze resolution failed unexpectedly -- fall through to templates
+
     fmap = {f[1]: f[0] for f in forms}
     tmpl_key = pos if pos in SENT_TEMPLATES else "phrase"
     templates = SENT_TEMPLATES[tmpl_key]
@@ -447,12 +478,17 @@ def main():
     )
     if cur.fetchone()[0]:
         qc_errors.append("related_words has dangling related_word_id FK")
-    # cloze substring sanity: cloze text must be alphabetic-only slice of en_text
+    # cloze substring sanity: cloze text must be made only of alphabetic
+    # word(s) (+ apostrophes for possessives). Allows single interior spaces
+    # so multi-word comparative forms ("more beautiful", "most tired") --
+    # legitimate grammatical variety from the LLM-generated content -- pass,
+    # while still catching genuinely broken (empty/punctuation-only) spans.
     cur.execute("SELECT id, en_text, cloze_start, cloze_end FROM example_sentences")
     bad_slice = 0
     for _id, en_text, cs, ce in cur.fetchall():
         slice_ = en_text[cs:ce]
-        if not slice_ or not slice_.replace("'", "").isalpha():
+        words_in_slice = slice_.split(" ")
+        if not slice_ or not all(w.replace("'", "").isalpha() for w in words_in_slice):
             bad_slice += 1
     if bad_slice:
         qc_errors.append(f"{bad_slice} example_sentences with non-alphabetic cloze slice")

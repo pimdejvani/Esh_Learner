@@ -1,0 +1,4512 @@
+[
+  {
+    "headword": "a",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I saw a stray cat crying outside my door and my heart broke.",
+        "th_text": "ฉันเห็นแมวจรจัดตัวหนึ่งกำลังร้องไห้อยู่หน้าประตูแล้วใจสลายเลย",
+        "cloze_target": "a",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "She wants to buy a book for her brother.",
+        "th_text": "เธอต้องการซื้อหนังสือหนึ่งเล่มให้พี่ชายของเธอ",
+        "cloze_target": "a",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He has a big dog at home.",
+        "th_text": "เขามีสุนัขตัวใหญ่หนึ่งตัวอยู่ที่บ้าน",
+        "cloze_target": "a",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We need a clean chair in the room.",
+        "th_text": "พวกเราต้องการเก้าอี้สะอาดหนึ่งตัวในห้องนี้",
+        "cloze_target": "a",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "They want to eat an egg.",
+        "th_text": "พวกเขาต้องการกินไข่หนึ่งฟอง",
+        "cloze_target": "an",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า a เป็นคำนำหน้านามเอกพจน์ที่ไม่ชี้เฉพาะ โดยในประโยคที่ 1-4 ใช้ a นำหน้าคำนามที่ขึ้นต้นด้วยพยัญชนะ (เช่น cat, book, dog, chair) แต่ในประโยคที่ 5 คำว่า egg ขึ้นต้นด้วยเสียงสระ จึงต้องเปลี่ยนรูปจาก a เป็น an เพื่อความถูกต้องตามหลักไวยากรณ์ในการออกเสียง"
+  },
+  {
+    "headword": "about",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She was so worried about her little baby crying all night.",
+        "th_text": "เธอกังวลใจมากเกี่ยวกับเรื่องที่ลูกน้อยของเธอร้องไห้ตลอดทั้งคืน",
+        "cloze_target": "about",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "We can talk about the new book.",
+        "th_text": "พวกเราสามารถพูดคุยเกี่ยวกับหนังสือเล่มใหม่ได้",
+        "cloze_target": "about",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He knows about the big city.",
+        "th_text": "เขารู้เรื่องเกี่ยวกับเมืองใหญ่นั้น",
+        "cloze_target": "about",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They read a story about a bird.",
+        "th_text": "พวกเขาอ่านเรื่องราวเกี่ยวกับนกตัวหนึ่ง",
+        "cloze_target": "about",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "What do you think about this car?",
+        "th_text": "คุณคิดอย่างไรเกี่ยวกับรถยนต์คันนี้",
+        "cloze_target": "about",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า about เป็นคำบุพบท (preposition) ที่ใช้ตามหลังคำกริยาหรือคำคุณศัพท์เพื่อบอกความหมายว่า 'เกี่ยวกับ' โดยรูปคำของ about จะไม่มีการเปลี่ยนแปลงรูป ไม่ว่าจะใช้ในประโยคคำถาม บอกเล่า หรือตามหลังคำกริยาใดๆ ก็ตาม"
+  },
+  {
+    "headword": "after",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "After a long and busy day at work, she finally held her sleeping baby.",
+        "th_text": "หลังจากวันที่ยาวนานและยุ่งเหยิงในการทำงาน ในที่สุดเธอก็ได้อุ้มลูกน้อยที่กำลังนอนหลับ",
+        "cloze_target": "after",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He cleans the room after dinner.",
+        "th_text": "เขาทำความสะอาดห้องหลังจากมื้อเย็น",
+        "cloze_target": "after",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "They went home after the rain.",
+        "th_text": "พวกเขากลับบ้านหลังจากฝนตก",
+        "cloze_target": "after",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "I will drink water after eating bread.",
+        "th_text": "ฉันจะดื่มน้ำหลังจากกินขนมปัง",
+        "cloze_target": "after",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She reads a book after class.",
+        "th_text": "เธออ่านหนังสือหลังจากเลิกเรียน",
+        "cloze_target": "after",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า after ทำหน้าที่เป็นคำบุพบทบอกเวลา แปลว่า 'หลังจาก' ซึ่งวางไว้หน้าคำนามหรือกลุ่มคำเพื่อบอกลำดับเวลาของเหตุการณ์ โดยโครงสร้างคำจะไม่เปลี่ยนแปลง ไม่ว่าจะใช้กับกริยาช่องไหนหรือกาลเวลาใด"
+  },
+  {
+    "headword": "again",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "When she saw her lost cat come home again, she cried tears of joy.",
+        "th_text": "เมื่อเธอเห็นแมวที่หายไปกลับมาบ้านอีกครั้ง เธอก็ร้องไห้ออกมาด้วยความดีใจ",
+        "cloze_target": "again",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please read this book again.",
+        "th_text": "โปรดอ่านหนังสือเล่มนี้อีกครั้ง",
+        "cloze_target": "again",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He wants to eat bread again.",
+        "th_text": "เขาต้องการกินขนมปังอีกครั้ง",
+        "cloze_target": "again",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We will meet the family again.",
+        "th_text": "พวกเราจะได้พบกับครอบครัวอีกครั้ง",
+        "cloze_target": "again",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She plays the music again.",
+        "th_text": "เธอเปิดเพลงนั้นอีกครั้ง",
+        "cloze_target": "again",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า again เป็นคำกริยาวิเศษณ์ (adverb) แปลว่า 'อีกครั้ง' มักวางไว้ท้ายประโยคหรือหลังคำกริยาเพื่อแสดงว่าการกระทำนั้นเกิดขึ้นซ้ำอีก โดยรูปของคำจะไม่เปลี่ยนแปลงไม่ว่าจะอยู่ในประโยคคำสั่ง บอกเล่า หรืออนาคต"
+  },
+  {
+    "headword": "all",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She gave all her love and time to her sick baby.",
+        "th_text": "เธอมอบความรักและเวลาทั้งหมดของเธอให้กับลูกน้อยที่ป่วย",
+        "cloze_target": "all",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "All the children are playing outside.",
+        "th_text": "เด็กๆ ทุกคนกำลังเล่นอยู่ข้างนอก",
+        "cloze_target": "All",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He ate all the bread on the table.",
+        "th_text": "เขากินขนมปังทั้งหมดบนโต๊ะ",
+        "cloze_target": "all",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We cleaned all the rooms.",
+        "th_text": "พวกเราทำความสะอาดทุกห้องทั้งหมด",
+        "cloze_target": "all",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She wants to buy all these books.",
+        "th_text": "เธอต้องการซื้อหนังสือเหล่านี้ทั้งหมด",
+        "cloze_target": "all",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า all เป็นคำนำหน้านามหรือคำสรรพนามที่ใช้แสดงจำนวน 'ทั้งหมด' โดยมักจะวางไว้หน้าคำนามพหูพจน์หรือคำนามนับไม่ได้ (เช่น all the children, all the bread) และรูปคำไม่มีการผันตามประธาน"
+  },
+  {
+    "headword": "also",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "He lost his job, and his dog also got very sick on the same day.",
+        "th_text": "เขาตกงาน และสุนัขของเขาก็ล้มป่วยหนักในวันเดียวกันนั้นด้วยเช่นกัน",
+        "cloze_target": "also",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "She likes reading books, and she also likes writing.",
+        "th_text": "เธอชอบอ่านหนังสือ และเธอก็ชอบการเขียนด้วยเช่นกัน",
+        "cloze_target": "also",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He has a big car, and he also has a bike.",
+        "th_text": "เขามีรถยนต์คันใหญ่ และเขาก็มีจักรยานด้วยเช่นกัน",
+        "cloze_target": "also",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They want to eat bread, and they want water also.",
+        "th_text": "พวกเขาต้องการกินขนมปัง และพวกเขาต้องการน้ำด้วยเช่นกัน",
+        "cloze_target": "also",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "The small cat is cute, and it is also clean.",
+        "th_text": "แมวตัวเล็กนั้นน่ารัก และมันยังสะอาดด้วย",
+        "cloze_target": "also",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า also เป็นคำกริยาวิเศษณ์ (adverb) แปลว่า 'เช่นกัน' หรือ 'ด้วย' มักใช้เพื่อเพิ่มข้อมูลในทิศทางเดียวกัน โดยตำแหน่งมักจะอยู่หน้าคำกริยาแท้ หรือหลังกริยาช่วย (is/am/are) และไม่มีการเปลี่ยนรูปคำ"
+  },
+  {
+    "headword": "and",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The mother held her crying baby and sang a soft song to calm him.",
+        "th_text": "คุณแม่โอบกอดลูกน้อยที่กำลังร้องไห้และร้องเพลงเบาๆ เพื่อปลอบให้เขาสสงบลง",
+        "cloze_target": "and",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He has a dog and a cat.",
+        "th_text": "เขามีสุนัขหนึ่งตัวและแมวหนึ่งตัว",
+        "cloze_target": "and",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She ate bread and drank milk.",
+        "th_text": "เธอกินขนมปังและดื่มนม",
+        "cloze_target": "and",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The room is big and clean.",
+        "th_text": "ห้องนี้ใหญ่และสะอาด",
+        "cloze_target": "and",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We went home and slept early.",
+        "th_text": "พวกเรากลับบ้านและเข้านอนแต่หัวค่ำ",
+        "cloze_target": "and",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า and เป็นคำสันธาน (conjunction) ที่ใช้เชื่อมคำ วลี หรือประโยคเข้าด้วยกัน แปลว่า 'และ' โดยไม่มีการเปลี่ยนแปลงรูปคำไม่ว่าจะเชื่อมประโยคในกาลเวลาใดหรือโครงสร้างแบบใด"
+  },
+  {
+    "headword": "answer",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She waited by the phone all night, hoping he would finally answer her call.",
+        "th_text": "เธอนั่งรอข้างโทรศัพท์ตลอดทั้งคืนด้วยความหวังว่าในที่สุดเขาจะรับสายของเธอ",
+        "cloze_target": "answer",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please answer the easy question.",
+        "th_text": "โปรดตอบคำถามที่ง่ายข้อนี้",
+        "cloze_target": "answer",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He answered my question quickly.",
+        "th_text": "เขาตอบคำถามของฉันอย่างรวดเร็ว",
+        "cloze_target": "answered",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She is answering the phone right now.",
+        "th_text": "เธอกำลังรับโทรศัพท์อยู่ตอนนี้",
+        "cloze_target": "answering",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He always answers the door when I knock.",
+        "th_text": "เขาเปิดประตูตอบรับทุกครั้งที่ฉันเคาะ",
+        "cloze_target": "answers",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า answer เปลี่ยนรูปร่างไปตามกาลและโครงสร้างประโยค: ประโยคที่ 1 เป็นรูปฐาน (base form) หลังกริยาช่วย would, ประโยคที่ 2 เป็นคำสั่ง (imperative), ประโยคที่ 3 เป็นอดีต (Past Simple) เติม -ed เป็น answered, ประโยคที่ 4 กำลังทำอยู่เติม -ing เป็น answering, และประโยคที่ 5 เป็นปัจจุบันกาลประธานเอกพจน์บุรุษที่ 3 (He) จึงต้องเติม -s เป็น answers"
+  },
+  {
+    "headword": "ask",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The little boy looked up with tears and asked if his dog would ever come home.",
+        "th_text": "เด็กชายตัวน้อยเงยหน้าขึ้นพร้อมน้ำตาและเอ่ยถามว่าสุนัขของเขาจะได้กลับบ้านไหม",
+        "cloze_target": "asked",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please ask your brother for help.",
+        "th_text": "โปรดขอความช่วยเหลือจากพี่ชายของคุณ",
+        "cloze_target": "ask",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is asking a question about the book.",
+        "th_text": "เธอกำลังถามคำถามเกี่ยวกับหนังสือเล่มนั้น",
+        "cloze_target": "asking",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He always asks easy questions.",
+        "th_text": "เขาถามคำถามง่ายๆ อยู่เสมอ",
+        "cloze_target": "asks",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We want to ask about the family.",
+        "th_text": "พวกเราต้องการถามเกี่ยวกับครอบครัวนั้น",
+        "cloze_target": "ask",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า ask มีการผันรูปต่างกันตามไวยากรณ์: ประโยคที่ 1 เป็นอดีต (Past Simple) เติม -ed เป็น asked, ประโยคที่ 2 และ 5 เป็นรูปฐาน (base form) หลังคำสั่งและ to-infinitive, ประโยคที่ 3 กำลังเกิดขยายด้วย -ing เป็น asking, และประโยคที่ 4 เป็นปัจจุบันกาลกับประธาน He จึงต้องเติม -s เป็น asks"
+  },
+  {
+    "headword": "baby",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The tired mother held her crying baby close to her chest all night.",
+        "th_text": "คุณแม่ผู้เหนื่อยล้าโอบกอดลูกน้อยที่กำลังร้องไห้ไว้แนบอกตลอดทั้งคืน",
+        "cloze_target": "baby",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "That is a very cute baby.",
+        "th_text": "นั่นคือทารกที่น่ารักมากๆ",
+        "cloze_target": "baby",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The family has a new baby.",
+        "th_text": "ครอบครัวนั้นมีสมาชิกทารกคนใหม่",
+        "cloze_target": "baby",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Two cute babies are sleeping in the room.",
+        "th_text": "ทารกน่ารักสองคนกำลังนอนหลับอยู่ในห้อง",
+        "cloze_target": "babies",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She wants to buy clothes for the baby.",
+        "th_text": "เธอต้องการซื้อเสื้อผ้าให้ทารก",
+        "cloze_target": "baby",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า baby เป็นคำนามนับได้ รูปเอกพจน์คือ baby (ประโยคที่ 1,2,3,5) แต่เมื่อต้องการทำเป็นพหูพจน์ (มากกว่าหนึ่ง) เนื่องจากลงท้ายด้วย y และหน้า y เป็นพยัญชนะ จึงต้องเปลี่ยน y เป็น i แล้วเติม -es กลายเป็น babies (ประโยคที่ 4)"
+  },
+  {
+    "headword": "bad",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "Hearing the bad news about her dog made her cry uncontrollably.",
+        "th_text": "การได้ยินข่าวร้ายเรื่องสุนัขของเธอทำให้เธอร้องไห้ออกมาอย่างควบคุมไม่ได้",
+        "cloze_target": "bad",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "This is a bad book to read.",
+        "th_text": "นี่คือหนังสือที่ไม่ดีสำหรับการอ่าน",
+        "cloze_target": "bad",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The weather today is very bad.",
+        "th_text": "สภาพอากาศวันนี้แย่มาก",
+        "cloze_target": "bad",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He made a bad choice.",
+        "th_text": "เขาตัดสินใจเลือกในทางที่ไม่ดี",
+        "cloze_target": "bad",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Eating too much candy is bad for you.",
+        "th_text": "การกินลูกอมมากเกินไปเป็นสิ่งที่ไม่ดีสำหรับคุณ",
+        "cloze_target": "bad",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า bad เป็นคำคุณศัพท์ (adjective) ทำหน้าที่ขยายคำนามหรือตามหลัง Linking verb (เช่น is, was) เพื่อบอกลักษณะว่า 'แย่' หรือ 'ไม่ดี' โดยรูปคำคุณศัพท์ระดับปกติ (Positive degree) จะไม่มีการเปลี่ยนแปลงรูปใดๆ ไม่ว่าจะอยู่หน้าคำนามหรือตามหลังกริยา"
+  },
+  {
+    "headword": "bag",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She clutched her old school bag tightly as she cried on her first day alone.",
+        "th_text": "เธอคว้ากระเป๋าเรียนใบเก่าไว้แน่นขณะที่ร้องไห้ในวันแรกที่ต้องอยู่คนเดียว",
+        "cloze_target": "bag",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He has a big black bag.",
+        "th_text": "เขามีกระเป๋าสดสีดำใบใหญ่หนึ่งใบ",
+        "cloze_target": "bag",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Put the bread in the bag.",
+        "th_text": "ใส่ขนมปังลงในกระเป๋า",
+        "cloze_target": "bag",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She bought two new bags.",
+        "th_text": "เธอซื้อกระเป๋าใบใหม่สองใบ",
+        "cloze_target": "bags",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Where is my clean bag?",
+        "th_text": "กระเป๋าที่สะอาดของฉันอยู่ที่ไหน",
+        "cloze_target": "bag",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า bag เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) แต่เมื่อต้องการทำเป็นพหูพจน์เนื่องจากมีจำนวนมากกว่าหนึ่ง (เช่น two) ตามกฎการเติม -s ทั่วไป เนื่องจากลงท้ายด้วยตัวสะกดเดี่ยวและเสียงสั้น จึงต้องเบิ้ลตัวสะกด g อีกหนึ่งตัวก่อนเติม -s กลายเป็น bags (ประโยคที่ 4)"
+  },
+  {
+    "headword": "beautiful",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The lonely girl looked at the beautiful sunset and wept quietly.",
+        "th_text": "เด็กสาวผู้โดดเดี่ยวทอดสายตามองพระอาทิตย์ตกที่งดงามแล้วหลั่งน้ำตาเงียบๆ",
+        "cloze_target": "beautiful",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "She has a beautiful cat.",
+        "th_text": "เธอมีแมวที่สวยงามตัวหนึ่ง",
+        "cloze_target": "beautiful",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The city looks very beautiful at night.",
+        "th_text": "เมืองนี้ดูสวยงามมากในตอนกลางคืน",
+        "cloze_target": "beautiful",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We saw a beautiful bird.",
+        "th_text": "พวกเราเห็นนกที่สวยงามตัวหนึ่ง",
+        "cloze_target": "beautiful",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "That is a beautiful book.",
+        "th_text": "นั่นคือหนังสือที่สวยงามเล่มหนึ่ง",
+        "cloze_target": "beautiful",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า beautiful เป็นคำคุณศัพท์ (adjective) แปลว่า 'สวยงาม' ทำหน้าที่ขยายคำนามโดยวางไว้ข้างหน้า (เช่น a beautiful cat) หรือตามหลัง linking verb (เช่น looks beautiful) โดยรูปคำไม่มีการเปลี่ยนแปลงไม่ว่าจะใช้ในบริบทใด"
+  },
+  {
+    "headword": "bed",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The sick child lay on his cold bed, wishing his mother would come home.",
+        "th_text": "เด็กป่วยนอนอยู่บนเตียงอันเย็นเฉียบ พร้อมกับภาวนาให้แม่กลับมาบ้าน",
+        "cloze_target": "bed",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He wants to sleep on the bed.",
+        "th_text": "เขาต้องการนอนบนเตียง",
+        "cloze_target": "bed",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She cleans her bed every morning.",
+        "th_text": "เธอทำความสะอาดเตียงของเธอทุกเช้า",
+        "cloze_target": "bed",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "There are two beds in this room.",
+        "th_text": "มีเตียงนอนสองเตียงในห้องนี้",
+        "cloze_target": "beds",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Go to bed early tonight.",
+        "th_text": "เข้านอนแต่หัวค่ำคืนนี้นะ",
+        "cloze_target": "bed",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า bed เป็นคำนามนับได้ รูปเอกพจน์คือ bed (ประโยคที่ 1,2,3,5) แต่เมื่อต้องการทำให้เป็นพหูพจน์เนื่องจากมีจำนวนสองเตียง จึงเติม -s ต่อท้ายตามปกติกลายเป็น beds (ประโยคที่ 4)"
+  },
+  {
+    "headword": "big",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "Her big dog ran away, and she sat by the door crying for hours.",
+        "th_text": "สุนัขตัวใหญ่ของเธอวิ่งหนีหายไป และเธอนั่งอยู่ที่ประตูร้องไห้อยู่หลายชั่วโมง",
+        "cloze_target": "big",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "They live in a big city.",
+        "th_text": "พวกเขาอาศัยอยู่ในเมืองใหญ่",
+        "cloze_target": "big",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He drives a big car.",
+        "th_text": "เขาขับรถยนต์คันใหญ่",
+        "cloze_target": "big",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She bought a big bag.",
+        "th_text": "เธอซื้อกระเป๋าใบใหญ่หนึ่งใบ",
+        "cloze_target": "big",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "That tree is very big.",
+        "th_text": "ต้นไม้ต้นนั้นใหญ่มาก",
+        "cloze_target": "big",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า big เป็นคำคุณศัพท์ (adjective) แปลว่า 'ใหญ่' สามารถวางไว้หน้าคำนามเพื่อขยาย (เช่น a big dog, a big city) หรือตามหลัง linking verb (เช่น is very big) โดยรูปคำหลักไม่มีการเปลี่ยนแปลง"
+  },
+  {
+    "headword": "bird",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The injured little bird tried to fly, fell to the ground, and died.",
+        "th_text": "นกตัวน้อยที่บาดเจ็บพยายามจะบิน แต่มันตกลงมาที่พื้นแล้วสิ้นใจ",
+        "cloze_target": "bird",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "I saw a beautiful bird in the tree.",
+        "th_text": "ฉันเห็นนกที่สวยงามบนต้นไม้หนึ่งตัว",
+        "cloze_target": "bird",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The bird is singing early in the morning.",
+        "th_text": "นกกำลังร้องเพลงแต่เช้าตรู่",
+        "cloze_target": "bird",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Two small birds flew away.",
+        "th_text": "นกตัวเล็กสองตัวบินหนีไป",
+        "cloze_target": "birds",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She likes to draw a picture of a bird.",
+        "th_text": "เธอชอบวาดรูปนก",
+        "cloze_target": "bird",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า bird เป็นคำนามนับได้เอกพจน์คือ bird (ประโยคที่ 1,2,3,5) แต่เมื่อมีจำนวนมากกว่าหนึ่ง (เช่น two) ตามกฎทั่วไปจะต้องเติม -s กลายเป็นพหูพจน์ว่า birds (ประโยคที่ 4)"
+  },
+  {
+    "headword": "book",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She clutched her late mother's old recipe book and wept silently.",
+        "th_text": "เธอกอดตำราอาหารเล่มเก่าของคุณแม่ที่ล่วงลับไปแล้วและหลั่งน้ำตาอย่างเงียบงัน",
+        "cloze_target": "book",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please read this book.",
+        "th_text": "โปรดอ่านหนังสือเล่มนี้",
+        "cloze_target": "book",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He is reading an English book.",
+        "th_text": "เขากำลังอ่านหนังสือภาษาอังกฤษอยู่",
+        "cloze_target": "book",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She bought three new books.",
+        "th_text": "เธอซื้อหนังสือใหม่สามเล่ม",
+        "cloze_target": "books",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "This is a very good book.",
+        "th_text": "นี่คือหนังสือที่ดีมากๆ",
+        "cloze_target": "book",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า book เป็นคำนามนับได้เอกพจน์คือ book (ประโยคที่ 1,2,3,5) แต่ในประโยคที่ 4 มีจำนวนสามเล่ม (three) จึงต้องเปลี่ยนเป็นรูปพหูพจน์โดยการเติม -s กลายเป็น books"
+  },
+  {
+    "headword": "boy",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The poor little boy sat alone in the cold rain, crying for his lost puppy.",
+        "th_text": "เด็กชายตัวน้อยผู้ตาดำๆ นั่งอยู่คนเดียวในสายฝนอันหนาวเหน็บ ร้องไห้หาลูกสุนัขที่หายไป",
+        "cloze_target": "boy",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "That tall boy is my brother.",
+        "th_text": "เด็กชายตัวสูงคนนั้นคือพี่ชายของฉัน",
+        "cloze_target": "boy",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The little boy wants to buy a big car.",
+        "th_text": "เด็กชายตัวเล็กต้องการซื้อรถยนต์คันใหญ่",
+        "cloze_target": "boy",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Two boys are playing with a cat.",
+        "th_text": "เด็กชายสองคนกำลังเล่นกับแมว",
+        "cloze_target": "boys",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She gave an apple to the boy.",
+        "th_text": "เธอมอบแอปเปิ้ลให้เด็กชายคนนั้น",
+        "cloze_target": "boy",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า boy เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) การทำเป็นพหูพจน์เนื่องจากลงท้ายด้วย y แต่หน้า y เป็นสระ (o) จึงไม่ต้องเปลี่ยน y เป็น i แต่ให้เติม -s ต่อท้ายได้ทันที กลายเป็น boys (ประโยคที่ 4)"
+  },
+  {
+    "headword": "bread",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The hungry family had only a small piece of dry bread left to share.",
+        "th_text": "ครอบครัวที่หิวโหยเหลือขนมปังแห้งชิ้นเล็กๆ เพียงชิ้นเดียวไว้แบ่งกันกิน",
+        "cloze_target": "bread",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He wants to eat some bread.",
+        "th_text": "เขาต้องการกินขนมปัง",
+        "cloze_target": "bread",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She bought fresh bread this morning.",
+        "th_text": "เธอซื้อขนมปังสดใหม่เมื่อเช้านี้",
+        "cloze_target": "bread",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We ate all the bread on the table.",
+        "th_text": "พวกเรากินขนมปังทั้งหมดบนโต๊ะ",
+        "cloze_target": "bread",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "The cat wants a piece of bread.",
+        "th_text": "แมวตัวนั้นต้องการขนมปังหนึ่งชิ้น",
+        "cloze_target": "bread",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า bread เป็นคำนามนับไม่ได้ (uncountable noun) แปลว่า 'ขนมปัง' จึงไม่สามารถเติม -s หรือเปลี่ยนรูปเป็นพหูพจน์ได้โดยตรง รูปคำจะคงเดิมเสมอไม่ว่าจะอยู่ในบริบทใด"
+  },
+  {
+    "headword": "brother",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She cried as she watched her little brother go away on a long trip.",
+        "th_text": "เธอร้องไห้ขณะที่มองดูน้องชายของเธอดำเนินทางไปเที่ยวทริปยาวไกล",
+        "cloze_target": "brother",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "My older brother drives a big car.",
+        "th_text": "พี่ชายของฉันขับรถยนต์คันใหญ่",
+        "cloze_target": "brother",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He bought a new book for his brother.",
+        "th_text": "เขาซื้อหนังสือเล่มใหม่ให้พี่ชายของเขา",
+        "cloze_target": "brother",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Her two brothers are playing outside.",
+        "th_text": "พี่ชายและน้องชายสองคนของเธอกำลังเล่นอยู่ข้างนอก",
+        "cloze_target": "brothers",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Do you have a brother?",
+        "th_text": "คุณมีพี่ชายหรือน้องชายไหม",
+        "cloze_target": "brother",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า brother เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) แต่เมื่อมีจำนวนมากกว่าหนึ่ง (เช่น two brothers) จะต้องเติม -s กลายเป็นพหูพจน์ว่า brothers (ประโยคที่ 4)"
+  },
+  {
+    "headword": "busy",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She was so busy working hard that she missed her sick baby's first steps.",
+        "th_text": "เธอมัวแต่ยุ่งกับการทำงานหนักจนพลาดช่วงเวลาที่ลูกน้อยป่วยก้าวเดินเป็นก้าวแรก",
+        "cloze_target": "busy",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He is very busy today.",
+        "th_text": "เขายุ่งมากในวันนี้",
+        "cloze_target": "busy",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "We had a busy day at work.",
+        "th_text": "พวกเรามีวันที่ยุ่งเหยิงในการทำงาน",
+        "cloze_target": "busy",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The city streets are always busy.",
+        "th_text": "ถนนในเมืองพลุกพล่านและยุ่งอยู่เสมอ",
+        "cloze_target": "busy",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She was busy cleaning the room.",
+        "th_text": "เธอยุ่งอยู่กับการทำความสะอาดห้อง",
+        "cloze_target": "busy",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า busy เป็นคำคุณศัพท์ (adjective) แปลว่า 'ยุ่ง' ทำหน้าที่ขยายคำนาม (เช่น a busy day) หรือตามหลัง linking verb (เช่น is busy, was busy) โดยรูปคำในระดับปกติจะไม่เปลี่ยนแปลง"
+  },
+  {
+    "headword": "buy",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She wanted to buy medicine for her sick baby, but she had no money left.",
+        "th_text": "เธอต้องการซื้อยาให้ลูกน้อยที่ป่วย แต่เธอไม่เหลือเงินสักบาทเดียว",
+        "cloze_target": "buy",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He wants to buy a new car.",
+        "th_text": "เขาต้องการซื้อรถยนต์คันใหม่",
+        "cloze_target": "buy",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She bought some bread this morning.",
+        "th_text": "เธอซื้อขนมปังมาเมื่อเช้านี้",
+        "cloze_target": "bought",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They are buying a new book.",
+        "th_text": "พวกเขากำลังซื้อหนังสือเล่มใหม่",
+        "cloze_target": "buying",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He always buys gifts for his family.",
+        "th_text": "เขาซื้อมอบของขวัญให้ครอบครัวของเขาเสมอ",
+        "cloze_target": "buys",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า buy เป็นคำกริยาที่ไม่ปกติ (irregular verb) โดยประโยคที่ 1 และ 2 ใช้รูปฐานหลัง to-infinitive, ประโยคที่ 3 เป็นอดีต (Past Simple) ซึ่งเปลี่ยนรูปโดยสิ้นเชิงจาก buy เป็น bought (ไม่เติม -ed), ประโยคที่ 4 เติม -ing เป็น buying, และประโยคที่ 5 เป็นปัจจุบันกาลประธานเอกพจน์บุรุษที่ 3 (He) เติม -s เป็น buys"
+  },
+  {
+    "headword": "car",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She watched the red car drive away, knowing her love was never coming back.",
+        "th_text": "เธอมองดูรถยนต์สีแดงขับออกไป โดยรู้ว่าคนที่เธอรักไม่มีวันหวนคืนกลับมาอีกแล้ว",
+        "cloze_target": "car",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He drives a big black car.",
+        "th_text": "เขาขับรถยนต์สีดำคันใหญ่",
+        "cloze_target": "car",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "My family wants to buy a new car.",
+        "th_text": "ครอบครัวของฉันต้องการซื้อรถยนต์คันใหม่",
+        "cloze_target": "car",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Two cars are parked outside the door.",
+        "th_text": "รถยนต์สองคันจอดอยู่ข้างนอกประตู",
+        "cloze_target": "cars",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "This is a very clean car.",
+        "th_text": "นี่คือรถยนต์ที่สะอาดมากๆ",
+        "cloze_target": "car",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า car เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) แต่เมื่อมีจำนวนมากกว่าหนึ่ง (เช่น two cars) จะต้องเติม -s ตามกฎทั่วไปเพื่อให้เป็นพหูพจน์ กลายเป็น cars (ประโยคที่ 4)"
+  },
+  {
+    "headword": "cat",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "Her little cat was hit by a car, and she sat by its body crying all night.",
+        "th_text": "แมวตัวน้อยของเธอถูกรถชน และเธอก็นั่งอยู่ข้างร่างของมันร้องไห้ตลอดทั้งคืน",
+        "cloze_target": "cat",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "The small cat is sleeping on the bed.",
+        "th_text": "แมวตัวเล็กกำลังนอนหลับอยู่บนเตียง",
+        "cloze_target": "cat",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He has a black dog and a white cat.",
+        "th_text": "เขามีสุนัขสีดำและแมวสีขาว",
+        "cloze_target": "cat",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Three cute cats are playing outside.",
+        "th_text": "แมวน่ารักสามตัวกำลังเล่นอยู่ข้างนอก",
+        "cloze_target": "cats",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She wants to feed the hungry cat.",
+        "th_text": "เธอต้องการให้อาหารแมวที่หิวโหย",
+        "cloze_target": "cat",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า cat เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) แต่เมื่อทำเป็นพหูพจน์เนื่องจากมีจำนวนมากกว่าหนึ่ง (เช่น three cats) จะต้องเติม -s ต่อท้ายตามปกติ กลายเป็น cats (ประโยคที่ 4)"
+  },
+  {
+    "headword": "chair",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She sat on the empty wooden chair, staring at the cold and quiet room.",
+        "th_text": "เธอนั่งลงบนเก้าอี้ไม้ที่ว่างเปล่า จ้องมองไปที่ห้องอันเงียบเหงาและเย็นเยียบ",
+        "cloze_target": "chair",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please sit on this clean chair.",
+        "th_text": "โปรดนั่งลงบนเก้าอี้ที่สะอาดตัวนี้",
+        "cloze_target": "chair",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He is cleaning the old chair.",
+        "th_text": "เขากำลังทำความสะอาดเก้าอี้ตัวเก่า",
+        "cloze_target": "chair",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Four chairs are placed around the table.",
+        "th_text": "เก้าอี้สี่ตัวถูกจัดวางไว้รอบโต๊ะ",
+        "cloze_target": "chairs",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "The cat is sleeping under the chair.",
+        "th_text": "แมวกำลังนอนหลับอยู่ใต้เก้าอี้",
+        "cloze_target": "chair",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า chair เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) แต่ในประโยคที่ 4 มีจำนวนสี่ตัว (four chairs) จึงต้องเปลี่ยนเป็นรูปพหูพจน์ด้วยการเติม -s กลายเป็น chairs"
+  },
+  {
+    "headword": "child",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The poor sick child cried out for his mother in the dark night.",
+        "th_text": "เด็กน้อยผู้เจ็บป่วยร้องเรียกหาแม่ในยามค่ำคืนอันมืดมิด",
+        "cloze_target": "child",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "That is a very happy child.",
+        "th_text": "นั่นคือเด็กที่มีความสุขมากๆ",
+        "cloze_target": "child",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The family has only one child.",
+        "th_text": "ครอบครัวนั้นมีบุตรเพียงคนเดียว",
+        "cloze_target": "child",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Many happy children are playing outside.",
+        "th_text": "เด็กๆ ที่มีความสุขจำนวนมากกำลังเล่นอยู่ข้างนอก",
+        "cloze_target": "children",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She bought a book for the child.",
+        "th_text": "เธอซื้อหนังสือให้เด็กคนนั้น",
+        "cloze_target": "child",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า child เป็นคำนามเอกพจน์ที่ไม่เติม -s เมื่อทำเป็นรูปพหูพจน์ (มากกว่าหนึ่งคน) จึงเป็นคำนามผิดปกติ (irregular plural) ที่ต้องเปลี่ยนรูปไปเลยเป็น children (ประโยคที่ 4) ไม่ใช่ childs"
+  },
+  {
+    "headword": "city",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She left her quiet hometown and moved to the big city, feeling completely alone.",
+        "th_text": "เธอจากบ้านเกิดอันเงียบสงบมาสู่เมืองใหญ่ โดยรู้สึกโดดเดี่ยวอย่างสิ้นเชิง",
+        "cloze_target": "city",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "They live in a beautiful city.",
+        "th_text": "พวกเขาอาศัยอยู่ในเมืองที่สวยงาม",
+        "cloze_target": "city",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The city streets are very busy.",
+        "th_text": "ถนนหนทางในเมืองพลุกพล่านและยุ่งมาก",
+        "cloze_target": "city",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We visited three big cities last year.",
+        "th_text": "พวกเราไปเยี่ยมชมเมืองใหญ่สามแห่งเมื่อปีที่แล้ว",
+        "cloze_target": "cities",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He drives his car around the city.",
+        "th_text": "เขาขับรถยนต์รอบเมือง",
+        "cloze_target": "city",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า city เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) แต่เมื่อต้องการทำเป็นพหูพจน์ (เช่น three cities) เนื่องจากลงท้ายด้วย y และหน้า y เป็นพยัญชนะ จึงต้องเปลี่ยน y เป็น i แล้วเติม -es กลายเป็น cities (ประโยคที่ 4)"
+  },
+  {
+    "headword": "clean",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She cleaned her late brother's old room with tears falling from her eyes.",
+        "th_text": "เธอทำความสะอาดห้องเก่าของพี่ชายที่จากไป พร้อมกับน้ำตาที่ร่วงหล่นจากดวงตา",
+        "cloze_target": "cleaned",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please keep this room clean.",
+        "th_text": "โปรดรักษาห้องนี้ให้สะอาด",
+        "cloze_target": "clean",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is cleaning the table now.",
+        "th_text": "เธอกำลังทำความสะอาดโต๊ะอยู่ตอนนี้",
+        "cloze_target": "cleaning",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He always cleans his car on Sunday.",
+        "th_text": "เขาทำความสะอาดรถยนต์ของเขาในวันอาทิตย์เสมอ",
+        "cloze_target": "cleans",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We need a clean chair to sit on.",
+        "th_text": "พวกเราต้องการเก้าอี้สะอาดๆ สำหรับนั่ง",
+        "cloze_target": "clean",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า clean ทำหน้าที่ได้ทั้งคำกริยาและคุณศัพท์: ประโยคที่ 1 เป็นกริยาอดีต (Past Simple) เติม -ed เป็น cleaned, ประโยคที่ 2 และ 5 เป็นคำคุณศัพท์และกริยารูปฐาน, ประโยคที่ 3 กำลังกระทำเติม -ing เป็น cleaning, และประโยคที่ 4 เป็นกริยาปัจจุบันกาลประธานเอกพจน์ (He) จึงเติม -s เป็น cleans"
+  },
+  {
+    "headword": "clothes",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She held her little baby's tiny clothes to her face and cried for hours.",
+        "th_text": "เธอหยิบเสื้อผ้าตัวจิ๋วของลูกน้อยมาแนบหน้าแล้วร้องไห้อยู่หลายชั่วโมง",
+        "cloze_target": "clothes",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He bought new clothes for the trip.",
+        "th_text": "เขาซื้อเสื้อผ้าใหม่สำหรับการเดินทาง",
+        "cloze_target": "clothes",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She washed all her dirty clothes.",
+        "th_text": "เธอซักเสื้อผ้าที่สกปรกทั้งหมดของเธอ",
+        "cloze_target": "clothes",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Put your warm clothes on because it is cold.",
+        "th_text": "สวมเสื้อผ้าที่อบอุ่นของคุณซะเพราะอากาศหนาว",
+        "cloze_target": "clothes",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "The little boy has clean clothes.",
+        "th_text": "เด็กชายตัวน้อยมีเสื้อผ้าที่สะอาด",
+        "cloze_target": "clothes",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า clothes เป็นคำนามพหูพจน์เสมอ (plural noun) ใช้ระบุถึงเสื้อผ้า โดยมักจะลงท้ายด้วย -es เสมอและใช้ร่วมกับกริยาพหูพจน์ ไม่นิยมใช้รูปเอกพจน์ว่า clothe ในความหมายนี้"
+  },
+  {
+    "headword": "cold",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The homeless man shivered in the cold winter night, crying softly.",
+        "th_text": "ชายไร้บ้านสั่นเทาในคืนฤดูหนาวอันหนะวเหน็บ พร้อมกับส่งเสียงร้องไห้เบาๆ",
+        "cloze_target": "cold",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "The water in the river is very cold.",
+        "th_text": "น้ำในแม่น้ำเย็นมาก",
+        "cloze_target": "cold",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She drank a cold glass of milk.",
+        "th_text": "เธอดื่มนมเย็นๆ หนึ่งแก้ว",
+        "cloze_target": "cold",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Wear warm clothes because it is cold outside.",
+        "th_text": "สวมเสื้อผ้าอุ่นๆ เพราะข้างนอกอากาศหนาว",
+        "cloze_target": "cold",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He caught a cold after the rain.",
+        "th_text": "เขาเป็นหวัดหลังจากฝนตก",
+        "cloze_target": "cold",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า cold เป็นได้ทั้งคำคุณศัพท์ (adjective) บอกลักษณะอากาศหรืออุณหภูมิ (ประโยคที่ 1-4) และทำหน้าที่เป็นคำนามในสำนวน 'catch a cold' (ประโยคที่ 5 แปลว่า เป็นหวัด) โดยรูปคำศัพท์ปกติจะไม่เปลี่ยนแปลง"
+  },
+  {
+    "headword": "come",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She waited by the window, praying for her lost dog to come home safely.",
+        "th_text": "เธอนั่งรออยู่ริมหน้าต่าง ภาวนาให้สุนัขที่หายไปกลับมาบ้านอย่างปลอดภัย",
+        "cloze_target": "come",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please come to my house tomorrow.",
+        "th_text": "โปรดมาที่บ้านของฉันในวันพรุ่งนี้",
+        "cloze_target": "come",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He came home late last night.",
+        "th_text": "เขากลับมาบ้านดึกเมื่อคืนนี้",
+        "cloze_target": "came",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The family is coming for dinner.",
+        "th_text": "ครอบครัวกำลังจะมาทานมื้อเย็น",
+        "cloze_target": "coming",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She always comes early to class.",
+        "th_text": "เธอมาเรียนแต่เช้าตรู่เสมอ",
+        "cloze_target": "comes",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า come เป็นคำกริยาอปกติ (irregular verb): ประโยคที่ 1 และ 2 เป็นรูปฐาน (base form), ประโยคที่ 3 เป็นอดีต (Past Simple) เปลี่ยนรูปจาก come เป็น came, ประโยคที่ 4 เติม -ing ตัด e ออกเป็น coming, และประโยคที่ 5 เป็นปัจจุบันกาลประธานเอกพจน์ (She) จึงเติม -s เป็น comes"
+  },
+  {
+    "headword": "cook",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She cried as she cooked the favorite meal of her late husband.",
+        "th_text": "เธอร้องไห้ในขณะที่ทำอาหารมื้อโปรดของสามีผู้ล่วงลับ",
+        "cloze_target": "cooked",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He wants to cook dinner for his family.",
+        "th_text": "เขาต้องการทำอาหารมื้อเย็นให้ครอบครัวของเขา",
+        "cloze_target": "cook",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is cooking bread and eggs now.",
+        "th_text": "เธอกำลังทำขนมปังและไข่อยู่ตอนนี้",
+        "cloze_target": "cooking",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "My mother always cooks good food.",
+        "th_text": "คุณแม่ของฉันทำอาหารอร่อยอยู่เสมอ",
+        "cloze_target": "cooks",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Please help me cook.",
+        "th_text": "โปรดช่วยฉันทำอาหารหน่อย",
+        "cloze_target": "cook",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า cook ผันรูปตามไวยากรณ์: ประโยคที่ 1 เป็นรูปอดีต (Past Simple) เติม -ed เป็น cooked, ประโยคที่ 2 และ 5 เป็นรูปฐาน (base form), ประโยคที่ 3 กำลังทำเติม -ing เป็น cooking, และประโยคที่ 4 เป็นประธานเอกพจน์บุรุษที่ 3 (My mother) จึงเติม -s เป็น cooks"
+  },
+  {
+    "headword": "cry",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The lonely baby cried loudly in the dark room because nobody was there.",
+        "th_text": "ทารกผู้โดดเดี่ยวส่งเสียงร้องไห้ดังลั่นในห้องมืดเพราะไม่มีใครอยู่ตรงนั้นเลย",
+        "cloze_target": "cried",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do not cry, everything will be good.",
+        "th_text": "อย่าร้องไห้เลย ทุกๆ อย่างจะดีขึ้นเอง",
+        "cloze_target": "cry",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Why is that small child crying?",
+        "th_text": "ทำไมเด็กเล็กคนนั้นถึงกำลังร้องไห้อยู่ล่ะ",
+        "cloze_target": "crying",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The little boy sometimes cries when he falls.",
+        "th_text": "เด็กชายตัวน้อยบางครั้งก็ร้องไห้เวลาที่เขาล้ม",
+        "cloze_target": "cries",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She began to cry upon hearing the bad news.",
+        "th_text": "เธอเริ่มร้องไห้เมื่อได้ยินข่าวร้าย",
+        "cloze_target": "cry",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า cry ผันรูปตามกฎ: ประโยคที่ 1 เป็นอดีต (Past Simple) เนื่องจากลงท้ายด้วย y และหน้า y เป็นพยัญชนะ จึงเปลี่ยน y เป็น i แล้วเติม -ed กลายเป็น cried, ประโยคที่ 2 และ 5 เป็นรูปฐานหลัง do not และ to, ประโยคที่ 3 กำลังทำเติม -ing เป็น crying, ประโยคที่ 4 เป็นปัจจุบันกาลประธานเอกพจน์เปลี่ยน y เป็น i แล้วเติม -es เป็น cries"
+  },
+  {
+    "headword": "dance",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She looked at old pictures of them dancing together and wept silently.",
+        "th_text": "เธอมองดูรูปถ่ายเก่าๆ ตอนที่พวกเขากำลังเต้นรำด้วยกันแล้วหลั่งน้ำตาเงียบๆ",
+        "cloze_target": "dancing",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He wants to dance with his family.",
+        "th_text": "เขาต้องการเต้นรำกับครอบครัวของเขา",
+        "cloze_target": "dance",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "They danced happily at the party.",
+        "th_text": "พวกเขาเต้นรำอย่างมีความสุขในงานปาร์ตี้",
+        "cloze_target": "danced",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She always dances when she is happy.",
+        "th_text": "เธอเต้นรำเสมอเวลาที่เธอมีความสุข",
+        "cloze_target": "dances",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Let us dance to the music.",
+        "th_text": "มาเต้นรำตามเสียงเพลงกันเถอะ",
+        "cloze_target": "dance",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า dance ผันรูปดังนี้: ประโยคที่ 1 กำลังกระทำ เนื่องจากลงท้ายด้วย e จึงตัด e ออกแล้วเติม -ing เป็น dancing, ประโยคที่ 2 และ 5 เป็นรูปฐาน (base form), ประโยคที่ 3 เป็นอดีต (Past Simple) เนื่องจากลงท้ายด้วย e อยู่แล้วจึงเติมแค่ -d เป็น danced, ประโยคที่ 4 เป็นประธานเอกพจน์ (She) จึงเติม -s เป็น dances"
+  },
+  {
+    "headword": "day",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "It was the saddest day of her life when her little dog passed away.",
+        "th_text": "มันคือวันที่เศร้าที่สุดในชีวิตของเธอเมื่อสุนัขตัวน้อยของเธอจากไป",
+        "cloze_target": "day",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "We had a very busy day.",
+        "th_text": "พวกเรามีวันที่ยุ่งมากๆ",
+        "cloze_target": "day",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Today is a beautiful day.",
+        "th_text": "วันนี้เป็นวันที่สวยงาม",
+        "cloze_target": "day",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She cleans her room every day.",
+        "th_text": "เธอทำความสะอาดห้องของเธอทุกวัน",
+        "cloze_target": "day",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Three days passed and he still did not come home.",
+        "th_text": "ผ่านไปสามวันแล้วและเขายังไม่ยอมกลับบ้านอีก",
+        "cloze_target": "days",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า day เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,4) แต่เมื่อต้องการทำเป็นพหูพจน์เนื่องจากมีจำนวนมากกว่าหนึ่ง (เช่น three days) เนื่องจากลงท้ายด้วย y และหน้า y เป็นสระ (a) จึงสามารถเติม -s ต่อท้ายได้ทันที กลายเป็น days (ประโยคที่ 5)"
+  },
+  {
+    "headword": "different",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "Living in a completely different city made her feel so lonely and lost.",
+        "th_text": "การได้มาใช้ชีวิตอยู่ในเมืองที่แตกต่างออกไปอย่างสิ้นเชิงทำให้เธอรู้สึกเหงาและเคว้งคว้างมาก",
+        "cloze_target": "different",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He drives a different car today.",
+        "th_text": "เขากับรถยนต์คันที่แตกต่างออกไปในวันนี้",
+        "cloze_target": "different",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "These two books are very different.",
+        "th_text": "หนังสือสองเล่มนี้แตกต่างกันมาก",
+        "cloze_target": "different",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She bought a different bag.",
+        "th_text": "เธอซื้อกระเป๋าใบที่แตกต่างออกไป",
+        "cloze_target": "different",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We have different ideas about the food.",
+        "th_text": "พวกเรามีความคิดที่แตกต่างกันเกี่ยวกับอาหารนั้น",
+        "cloze_target": "different",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า different เป็นคำคุณศัพท์ (adjective) แปลว่า 'แตกต่าง' ทำหน้าที่ขยายคำนามโดยวางไว้ข้างหน้า (เช่น a different car) หรือตามหลัง linking verb (เช่น are very different) โดยรูปคำไม่มีการเปลี่ยนแปลง"
+  },
+  {
+    "headword": "dog",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "Her faithful old dog died in her arms, leaving her heart completely broken.",
+        "th_text": "สุนัขตัวเก่าผู้ซื่อสัตย์ของเธอสิ้นใจในอ้อมแขน ทำให้หัวใจของเธอแหลกสลายลงอย่างสิ้นเชิง",
+        "cloze_target": "dog",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "The big black dog is barking outside.",
+        "th_text": "สุนัขสีดำตัวใหญ่กำลังเห่าอยู่ข้างนอก",
+        "cloze_target": "dog",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He wants to buy a small dog.",
+        "th_text": "เขาต้องการซื้อสุนัขตัวเล็กหนึ่งตัว",
+        "cloze_target": "dog",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Two cute dogs are playing on the bed.",
+        "th_text": "สุนัขน่ารักสองตัวกำลังเล่นกันอยู่บนเตียง",
+        "cloze_target": "dogs",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She feeds her dog every morning.",
+        "th_text": "เธอให้อหารสุนัขของเธอทุกเช้า",
+        "cloze_target": "dog",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า dog เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) แต่เมื่อมีจำนวนสองตัว (two dogs) ตามกฎทั่วไปจะต้องเติม -s ต่อท้าย กลายเป็นพหูพจน์ว่า dogs (ประโยคที่ 4)"
+  },
+  {
+    "headword": "door",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She waited by the closed door for hours, crying for him to open it.",
+        "th_text": "เธอนั่งรออยู่หน้าประตูที่ปิดอยู่นานหลายชั่วโมง ร้องไห้ขอให้เขาเปิดมันออก",
+        "cloze_target": "door",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please open the door.",
+        "th_text": "โปรดเปิดประตู",
+        "cloze_target": "door",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He knocked on the big door.",
+        "th_text": "เขาเคาะที่ประตูบานใหญ่",
+        "cloze_target": "door",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Two doors of the house are clean.",
+        "th_text": "ประตูสองบานของบ้านสะอาดเรียบร้อย",
+        "cloze_target": "doors",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "The cat is sleeping near the door.",
+        "th_text": "แมวกำลังนอนหลับอยู่ใกล้ประตู",
+        "cloze_target": "door",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า door เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) แต่เมื่อมีจำนวนมากกว่าหนึ่งบาน (เช่น two doors) จะต้องเติม -s ต่อท้ายตามปกติเพื่อให้เป็นพหูพจน์ (ประโยคที่ 4)"
+  },
+  {
+    "headword": "drink",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The thirsty child cried and begged for a drink of cold water.",
+        "th_text": "เด็กน้อยผู้กระหายน้ำส่งเสียงร้องไห้และอ้อนวอนขอเครื่องดื่มน้ำเย็นๆ สักแก้ว",
+        "cloze_target": "drink",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He wants to drink some milk.",
+        "th_text": "เขาต้องการดื่มนม",
+        "cloze_target": "drink",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She drank a glass of water after class.",
+        "th_text": "เธอดื่มน้ำหนึ่งแก้วหลังเลิกเรียน",
+        "cloze_target": "drank",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They are drinking hot coffee.",
+        "th_text": "พวกเขากำลังดื่มกาแฟร้อนๆ อยู่",
+        "cloze_target": "drinking",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He always drinks water in the morning.",
+        "th_text": "เขาดื่มน้ำในตอนเช้าเสมอ",
+        "cloze_target": "drinks",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า drink เป็นกริยาอปกติ (irregular verb): ประโยคที่ 1 และ 2 ใช้รูปฐานหลัง to หรือคำนาม, ประโยคที่ 3 เป็นอดีต (Past Simple) เปลี่ยนรูปจาก i เป็น a กลายเป็น drank (ไม่เติม -ed), ประโยคที่ 4 กำลังทำเติม -ing เป็น drinking, และประโยคที่ 5 เป็นปัจจุบันกาลประธานเอกพจน์บุรุษที่ 3 (He) เติม -s เป็น drinks"
+  },
+  {
+    "headword": "drive",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "With tears in her eyes, she watched him drive away from her life forever.",
+        "th_text": "ด้วยน้ำตาที่คลอเบ้า เธอมองดูเขาขับรถยนต์ออกไปจากชีวิตของเธอตลอดกาล",
+        "cloze_target": "drive",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He knows how to drive a big car.",
+        "th_text": "เขารู้วิธีขับรถยนต์คันใหญ่",
+        "cloze_target": "drive",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She drove to the city yesterday.",
+        "th_text": "เธอขับรถไปยังเมืองนั้นเมื่อวานนี้",
+        "cloze_target": "drove",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They are driving home right now.",
+        "th_text": "พวกเขากำลังขับรถกลับบ้านอยู่ตอนนี้",
+        "cloze_target": "driving",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He always drives safely.",
+        "th_text": "เขาขับรถอย่างปลอดภัยอยู่เสมอ",
+        "cloze_target": "drives",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า drive เป็นกริยาอปกติ (irregular verb): ประโยคที่ 1 และ 2 เป็นรูปฐาน, ประโยคที่ 3 เป็นอดีต (Past Simple) เปลี่ยนรูปจาก drive เป็น drove, ประโยคที่ 4 กำลังทำ ตัด e แล้วเติม -ing เป็น driving, และประโยคที่ 5 เป็นปัจจุบันกาลประธาน He เติม -s เป็น drives"
+  },
+  {
+    "headword": "early",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She woke up too early to a quiet house, remembering her baby was gone.",
+        "th_text": "เธอตื่นนอนแต่เช้าตรู่ในบ้านที่เงียบเหงา นึกขึ้นได้ว่าลูกน้อยของเธอจากไปแล้ว",
+        "cloze_target": "early",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He always comes to class early.",
+        "th_text": "เขามาเข้าเรียนแต่เช้าตรู่เสมอ",
+        "cloze_target": "early",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "We went to bed early last night.",
+        "th_text": "พวกเราเข้านอนแต่หัวค่ำเมื่อคืนนี้",
+        "cloze_target": "early",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The bird sings early in the morning.",
+        "th_text": "นกร้องเพลงแต่เช้าตรู่",
+        "cloze_target": "early",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She started her work early today.",
+        "th_text": "เธอเริ่มทำงานแต่เช้าในวันนี้",
+        "cloze_target": "early",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า early ทำหน้าที่เป็นคำกริยาวิเศษณ์ (adverb) หรือคุณศัพท์ (adjective) แปลว่า 'แต่เช้า' หรือ 'แต่เนิ่นๆ' โดยรูปคำนี้จะคงเดิมไม่มีการเปลี่ยนแปลงรูปใดๆ ไม่ว่าจะใช้ขยายกริยาตัวไหน"
+  },
+  {
+    "headword": "easy",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "Saying goodbye to her beloved dog was not an easy thing to do.",
+        "th_text": "การกล่าวคำอำลาแก่สุนัขสุดที่รักไม่ใช่เรื่องง่ายเลยที่จะทำใจ",
+        "cloze_target": "easy",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "This is a very easy question to answer.",
+        "th_text": "นี่คือคำถามที่ง่ายมากที่จะตอบ",
+        "cloze_target": "easy",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Reading this book is easy.",
+        "th_text": "การอ่านหนังสือเล่มนี้เป็นเรื่องง่าย",
+        "cloze_target": "easy",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She found an easy way to clean the room.",
+        "th_text": "เธอพบวิธีง่ายๆ ในการทำความสะอาดห้อง",
+        "cloze_target": "easy",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "The test yesterday was easy.",
+        "th_text": "การทดสอบเมื่อวานนี้ง่ายมาก",
+        "cloze_target": "easy",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า easy เป็นคำคุณศัพท์ (adjective) แปลว่า 'ง่าย' ทำหน้าที่ขยายคำนามหรือตามหลัง linking verb โดยรูปคำขั้นปกติจะไม่มีการเปลี่ยนแปลงใดๆ"
+  },
+  {
+    "headword": "eat",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The poor grieving mother could not eat anything for days.",
+        "th_text": "คุณแม่ผู้โศกเศร้าไม่อาจกินอะไรลงเลยเป็นเวลาหลายวัน",
+        "cloze_target": "eat",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He wants to eat some bread and eggs.",
+        "th_text": "เขาต้องการกินขนมปังและไข่",
+        "cloze_target": "eat",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She ate a small apple this morning.",
+        "th_text": "เธอกินแอปเปิ้ลลูกเล็กๆ เมื่อเช้านี้",
+        "cloze_target": "ate",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The cat is eating fish right now.",
+        "th_text": "แมวกำลังกินปลาอยู่ตอนนี้",
+        "cloze_target": "eating",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He always eats breakfast early.",
+        "th_text": "เขากินอาหารเช้าแต่เช้าตรู่เสมอ",
+        "cloze_target": "eats",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า eat เป็นกริยาอปกติ (irregular verb): ประโยคที่ 1 และ 2 เป็นรูปฐาน (base form), ประโยคที่ 3 เป็นอดีต (Past Simple) เปลี่ยนรูปจาก eat เป็น ate (ไม่เติม -ed), ประโยคที่ 4 เติม -ing เป็น eating, และประโยคที่ 5 เป็นปัจจุบันกาลประธานเอกพจน์บุรุษที่ 3 (He) เติม -s เป็น eats"
+  },
+  {
+    "headword": "egg",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The poor child had only one small boiled egg to share with his brother.",
+        "th_text": "เด็กน้อยผู้ยากไร้มีไข่ต้มลูกเล็กๆ เพียงลูกเดียวไว้แบ่งกินกับน้องชาย",
+        "cloze_target": "egg",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He wants to eat an egg for breakfast.",
+        "th_text": "เขาต้องการกินไข่หนึ่งฟองเป็นอาหารเช้า",
+        "cloze_target": "egg",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She bought six fresh eggs.",
+        "th_text": "เธอซื้อไข่สดมาหกฟอง",
+        "cloze_target": "eggs",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The cat is looking at the egg.",
+        "th_text": "แมวกำลังมองดูไข่นั้นอยู่",
+        "cloze_target": "egg",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Please cook this egg.",
+        "th_text": "โปรดทำอาหารจากไข่ฟองนี้หน่อย",
+        "cloze_target": "egg",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า egg เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,4,5) แต่เมื่อมีจำนวนมากกว่าหนึ่ง (เช่น six eggs) จะต้องเติม -s ต่อท้ายตามกฎทั่วไป กลายเป็นพหูพจน์ว่า eggs (ประโยคที่ 3)"
+  },
+  {
+    "headword": "English",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She cried reading an English letter from the son who left her long ago.",
+        "th_text": "เธอร้องไห้ขณะอ่านจดหมายภาษาอังกฤษจากลูกชายที่จากเธอไปนานแล้ว",
+        "cloze_target": "English",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He is reading an English book.",
+        "th_text": "เขากำลังอ่านหนังสือภาษาอังกฤษ",
+        "cloze_target": "English",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "We study English every morning.",
+        "th_text": "พวกเราเรียนภาษาอังกฤษทุกเช้า",
+        "cloze_target": "English",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She speaks English very well.",
+        "th_text": "เธอพูดภาษาอังกฤษได้ดีมาก",
+        "cloze_target": "English",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "This is an easy English question.",
+        "th_text": "นี่คือคำถามภาษาอังกฤษที่ง่าย",
+        "cloze_target": "English",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า English เป็นคำนามหรือคุณศัพท์ที่ใช้ระบุภาษาหรือสัญชาติ โดยอักษรตัวแรก 'E' ต้องเป็นตัวพิมพ์ใหญ่เสมอ และรูปคำคงเดิมไม่ว่าจะทำหน้าที่เป็นคำนามหรือคำขยายคำนามอื่นๆ"
+  },
+  {
+    "headword": "evening",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "In the cold lonely evening, she sat by the door crying for her lost cat.",
+        "th_text": "ในยามเย็นอันหนาวยะเยือกและโดดเดี่ยว เธอนั่งอยู่ที่ประตูร้องไห้หาแมวที่หายไป",
+        "cloze_target": "evening",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He comes home late in the evening.",
+        "th_text": "เขากลับบ้านดึกในตอนเย็น",
+        "cloze_target": "evening",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "We had a family dinner yesterday evening.",
+        "th_text": "พวกเราทานมื้อเย็นร่วมกับครอบครัวเมื่อวานนี้ตอนเย็น",
+        "cloze_target": "evening",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The city looks beautiful in the evening.",
+        "th_text": "เมืองนี้ดูสวยงามมากในยามเย็น",
+        "cloze_target": "evening",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She reads a book every evening.",
+        "th_text": "เธออ่านหนังสือทุกๆ ตอนเย็น",
+        "cloze_target": "evening",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า evening เป็นคำนามนับได้ แปลว่า 'ตอนเย็น' มักใช้ร่วมกับคำบุพบท in (in the evening) หรือวางไว้หลังคำบอกเวลาอื่นเพื่อเจาะจงช่วงเวลา โดยรูปคำหลักจะคงเดิมไม่เปลี่ยนแปลง"
+  },
+  {
+    "headword": "every",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She wept every single night, missing her baby who was far away.",
+        "th_text": "เธอหลั่งน้ำตาทุกๆ ค่ำคืน ด้วยความคิดถึงลูกน้อยที่อยู่ไกลแสนไกล",
+        "cloze_target": "every",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He reads a book every morning.",
+        "th_text": "เขาอ่านหนังสือทุกๆ เช้า",
+        "cloze_target": "every",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She cleans her room every day.",
+        "th_text": "เธอทำความสะอาดห้องของเธอทุกๆ วัน",
+        "cloze_target": "every",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Every child wants to play outside.",
+        "th_text": "เด็กทุกคนต้องการออกไปเล่นข้างนอก",
+        "cloze_target": "Every",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He drives his car every evening.",
+        "th_text": "เขาขับรถยนต์ทุกๆ ตอนเย็น",
+        "cloze_target": "every",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า every เป็นคำนำหน้านาม (determiner) แปลว่า 'ทุกๆ' ซึ่งตามหลักไวยากรณ์จะต้องนำหน้าคำนามเอกพจน์เสมอ (เช่น every morning, every day, every child) และรูปคำจะไม่เปลี่ยนแปลง"
+  },
+  {
+    "headword": "eye",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "A tear fell slowly from her red eye as she looked at his empty bed.",
+        "th_text": "หยาดน้ำตาไหลรินช้าๆ จากดวงตาสดแดงของเธอขณะที่เธอมองเตียงที่ว่างเปล่าของเขา",
+        "cloze_target": "eye",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "The small cat opened one eye.",
+        "th_text": "แมวตัวเล็กเปิดดวงตาขึ้นข้างหนึ่ง",
+        "cloze_target": "eye",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He has a black eye after the fight.",
+        "th_text": "เขามีรอยช้ำที่ดวงตาหลังจากเหตุการณ์ต่อสู้",
+        "cloze_target": "eye",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Both of her eyes were filled with tears.",
+        "th_text": "ดวงตาทั้งสองข้างของเธอเต็มไปด้วยน้ำตา",
+        "cloze_target": "eyes",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She looked me straight in the eye.",
+        "th_text": "เธอมองตรงมาที่ดวงตาของฉันตรงๆ",
+        "cloze_target": "eye",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า eye เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) แต่เมื่อต้องการทำเป็นพหูพจน์เนื่องจากมีสองข้าง (เช่น both of her eyes) จึงเติม -s ต่อท้ายตามปกติ กลายเป็น eyes (ประโยคที่ 4)"
+  },
+  {
+    "headword": "family",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The poor family cried together when they lost their home in the big fire.",
+        "th_text": "ครอบครัวผู้ยากไร้กอดคอกันร้องไห้เมื่อพวกเขาต้องสูญเสียบ้านไปในกองเพลิงใหญ่",
+        "cloze_target": "family",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He wants to buy a house for his family.",
+        "th_text": "เขาต้องการซื้อบ้านให้ครอบครัวของเขา",
+        "cloze_target": "family",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "My family eats dinner together every evening.",
+        "th_text": "ครอบครัวของฉันทานมื้อเย็นด้วยกันทุกๆ ตอนเย็น",
+        "cloze_target": "family",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Two families live in that big house.",
+        "th_text": "สองครอบครัวอาศัยอยู่ในบ้านหลังใหญ่หลังนั้น",
+        "cloze_target": "families",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She loves her family very much.",
+        "th_text": "เธอรักครอบครัวของเธอมาก",
+        "cloze_target": "family",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า family เป็นคำนามนับได้เอกพจน์ (ประโยคที่ 1,2,3,5) แต่เมื่อต้องการทำเป็นพหูพจน์ (เช่น two families) เนื่องจากลงท้ายด้วย y และหน้า y เป็นพยัญชนะ จึงต้องเปลี่ยน y เป็น i แล้วเติม -es กลายเป็น families (ประโยคที่ 4)"
+  },
+  {
+    "headword": "far",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "Her only son went far away to work, and she sat crying all alone.",
+        "th_text": "ลูกชายคนเดียวของเธอเดินทางไปทำงานไกลแสนไกล และเธอก็นั่งร้องไห้อยู่ลำพัง",
+        "cloze_target": "far",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "The big city is not very far from here.",
+        "th_text": "เมืองใหญ่แห่งนั้นอยู่ไม่ไกลจากที่นี่มากนัก",
+        "cloze_target": "far",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Do not drive your car too far.",
+        "th_text": "อย่าขับรถยนต์ของคุณไปไกลเกินไปนะ",
+        "cloze_target": "far",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He walked far to find his lost dog.",
+        "th_text": "เขาเดินไปไกลมากเพื่อตามหาสุนัขที่หายไป",
+        "cloze_target": "far",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Is your house far?",
+        "th_text": "บ้านของคุณอยู่ไกลไหม",
+        "cloze_target": "far",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า far เป็นคำกริยาวิเศษณ์ (adverb) หรือคุณศัพท์ (adjective) แปลว่า 'ไกล' โดยทำหน้าที่ขยายกริยาหรือบอกระยะทาง และรูปคำหลักจะคงเดิมไม่เปลี่ยนแปลงรูปคำแต่อย่างใด"
+  },
+  {
+    "headword": "name",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I forgot my best friend's name when I saw her at the party, and I felt so bad.",
+        "th_text": "ฉันลืมชื่อเพื่อนสนิทตอนที่เจอเธอในงานปาร์ตี้ แล้วรู้สึกแย่มากๆ เลย",
+        "cloze_target": "name",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can you name three colors on the Thai flag?",
+        "th_text": "คุณช่วยบอกชื่อสีสามสีบนธงชาติไทยได้ไหม",
+        "cloze_target": "name",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The teacher named a new student for the class.",
+        "th_text": "คุณครูตั้งชื่อหรือเรียกชื่อนักเรียนใหม่สำหรับชั้นเรียนนี้",
+        "cloze_target": "named",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They are naming their new dog today.",
+        "th_text": "พวกเขากำลังตั้งชื่อสุนัขตัวใหม่ในวันนี้",
+        "cloze_target": "naming",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "My cat has a funny name.",
+        "th_text": "แมวของฉันมีชื่อตลกๆ",
+        "cloze_target": "name",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า name ทำหน้าที่ได้ทั้งคำนาม (noun) และคำกริยา (verb) ในประโยคที่ 1, 2 และ 5 ใช้ name ในรูปคำนามปกติ (เอกพจน์) เพื่อสื่อถึงชื่อ ส่วนประโยคที่ 3 ใช้ในรูป Past Simple Tense (-ed) เพื่อบอกการกระทำในอดีตว่าได้ตั้งชื่อหรือระบุชื่อแล้ว และประโยคที่ 4 ใช้ในรูป Present Continuous Tense (-ing) เพื่อบอกเหตุการณ์ที่กำลังกระทำอยู่ในขณะนี้"
+  },
+  {
+    "headword": "near",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "My cat likes to sleep near my bed every single night.",
+        "th_text": "แมวของฉันชอบนอนใกล้เตียงนอนของฉันทุกๆ คืนเลย",
+        "cloze_target": "near",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Is there a hospital near here?",
+        "th_text": "มีโรงพยาบาลอยู่ใกล้แถวนี้ไหม",
+        "cloze_target": "near",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The school is very near to the park.",
+        "th_text": "โรงเรียนอยู่ใกล้กับสวนสาธารณะมาก",
+        "cloze_target": "near",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We live near the sea.",
+        "th_text": "พวกเราอาศัยอยู่ใกล้ทะเล",
+        "cloze_target": "near",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Come near me, please.",
+        "th_text": "กรุณาเข้ามาใกล้ฉันหน่อย",
+        "cloze_target": "near",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า near ทำหน้าที่เป็นคำบุพบท (preposition) หรือคำวิเศษณ์บอกสถานที่ เพื่อแสดงตำแหน่งที่ตั้งว่าอยู่ใกล้กับสิ่งใด โดยโครงสร้างประโยคจะใช้ตามหลังคำกริยาหรือเชื่อมคำนามเข้าด้วยกัน เช่น sleep near, near here หรือ come near ซึ่งรูปคำจะไม่เปลี่ยนแปลงตามกาลเวลา (tense) เหมือนคำกริยา"
+  },
+  {
+    "headword": "need",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I really need a hug right now because I am so sad.",
+        "th_text": "ฉันต้องการอ้อมกอดจริงๆ ตอนนี้เพราะฉันเศร้ามากๆ",
+        "cloze_target": "need",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you need any help with your homework?",
+        "th_text": "คุณต้องการความช่วยเหลือเรื่องการบ้านไหม",
+        "cloze_target": "need",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She needed a new pair of shoes yesterday.",
+        "th_text": "เธอต้องการรองเท้าคู่ใหม่เมื่อวานนี้",
+        "cloze_target": "needed",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We are needing more water for the plants.",
+        "th_text": "พวกเรากำลังต้องการน้ำเพิ่มสำหรับต้นไม้เหล่านี้",
+        "cloze_target": "needing",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He needs to go home now.",
+        "th_text": "เขาจำเป็นต้องกลับบ้านตอนนี้",
+        "cloze_target": "needs",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า need เป็นคำกริยา (verb) ที่เปลี่ยนรูปไปตามประธานและกาลเวลา ประโยคที่ 1 และ 2 ใช้รูปช่องที่ 1 (base form) กับประธาน I และประโยคคำถาม ประโยคที่ 3 เป็นอดีตจึงเติม -ed เป็น needed ประโยคที่ 4 ใช้รูปกำลังกระทำ (-ing) และประโยคที่ 5 เติม -s เพราะประธานคือ He (เอกพจน์บุรุษที่ 3) ใน Present Simple Tense"
+  },
+  {
+    "headword": "new",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I got a new puppy today, and I am so happy!",
+        "th_text": "ฉันได้ลูกสุนัขตัวใหม่มาวันนี้ แล้วฉันมีความสุขมากๆ เลย",
+        "cloze_target": "new",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Is this car new or old?",
+        "th_text": "รถคันนี้ใหม่หรือเก่า",
+        "cloze_target": "new",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She bought a new dress for the party.",
+        "th_text": "เธอซื้อชุดเดรสตัวใหม่สำหรับงานปาร์ตี้",
+        "cloze_target": "new",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We have a new teacher at school.",
+        "th_text": "พวกเรามีคุณครูคนใหม่ที่โรงเรียน",
+        "cloze_target": "new",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "This is my new phone.",
+        "th_text": "นี่คือโทรศัพท์เครื่องใหม่ของฉัน",
+        "cloze_target": "new",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า new เป็นคำคุณศัพท์ (adjective) ทำหน้าที่ขยายคำนามที่อยู่ข้างหลัง (เช่น new puppy, new car, new dress) โดยคำคุณศัพท์ในภาษาอังกฤษจะไม่เปลี่ยนรูปไม่ว่าคำนามนั้นจะเป็นเอกพจน์หรือพหูพจน์"
+  },
+  {
+    "headword": "nice",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "You were so nice to me when I was sick, thank you.",
+        "th_text": "คุณใจดีกับฉันมากๆ ตอนที่ฉันไม่สบาย ขอบคุณนะ",
+        "cloze_target": "nice",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Have a nice day!",
+        "th_text": "ขอให้เป็นวันที่ดีนะ",
+        "cloze_target": "nice",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The weather is very nice today.",
+        "th_text": "อากาศวันนี้ดีมากๆ",
+        "cloze_target": "nice",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She is a nice teacher.",
+        "th_text": "เธอเป็นคุณครูใจดี",
+        "cloze_target": "nice",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "This is a nice house.",
+        "th_text": "นี่คือบ้านที่น่ารักและดี",
+        "cloze_target": "nice",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า nice เป็นคำคุณศัพท์ (adjective) ใช้ขยายคำนามหรือตามหลัง Verb to be เพื่อบอกคุณลักษณะที่ดีหรือน่ารัก โดยไม่มีการเปลี่ยนรูปเป็นอดีตหรือพหูพจน์เพราะไม่ใช่คำกริยา"
+  },
+  {
+    "headword": "night",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I was so scared alone in the dark room at night.",
+        "th_text": "ฉันกลัวมากๆ เลยที่ต้องอยู่คนเดียวในห้องมืดๆ ตอนกลางคืน",
+        "cloze_target": "night",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "What do you do at night?",
+        "th_text": "คุณทำอะไรตอนกลางคืน",
+        "cloze_target": "night",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The moon is bright tonight.",
+        "th_text": "พระจันทร์สว่างมากในคืนนี้",
+        "cloze_target": "night",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We slept early last night.",
+        "th_text": "พวกเราเข้านอนเร็วกว่าปกติเมื่อคืนนี้",
+        "cloze_target": "night",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Good night, my friend.",
+        "th_text": "ราตรีสวัสดิ์นะเพื่อนรัก",
+        "cloze_target": "night",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า night เป็นคำนาม (noun) แปลว่ากลางคืน ในประโยคที่ 4 มีการใช้คำว่า last night เพื่อเจาะจงเวลาในอดีต และประโยคที่ 3 ใช้คำว่า tonight (คืนนี้) ซึ่งเป็นการผสมคำเพื่อบอกเวลาปัจจุบัน แต่รูปหลักของคำนาม night จะคงเดิม"
+  },
+  {
+    "headword": "noisy",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cannot sleep because the dogs outside are so noisy.",
+        "th_text": "ฉันนอนไม่หลับเลยเพราะพวกสุนัขข้างนอกส่งเสียงดังหนวกหูมาก",
+        "cloze_target": "noisy",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Why is this room so noisy?",
+        "th_text": "ทำไมห้องนี้ถึงเสียงดังจัง",
+        "cloze_target": "noisy",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The children are noisy when they play.",
+        "th_text": "เด็กๆ ส่งเสียงดังเวลพวกเขาเล่น",
+        "cloze_target": "noisy",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "That street is very noisy.",
+        "th_text": "ถนนเส้นนั้นเสียงดังมาก",
+        "cloze_target": "noisy",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Please do not be noisy.",
+        "th_text": "กรุณาอย่าส่งเสียงดัง",
+        "cloze_target": "noisy",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า noisy เป็นคำคุณศัพท์ (adjective) แปลว่าเสียงดัง ใช้ขยายคำนามหรือตามหลัง Verb to be เพื่อบอกสภาพแวดล้อมหรือลักษณะของคนและสิ่งของ โดยคำคุณศัพท์นี้ไม่ต้องเปลี่ยนรูปตามกาลเวลา"
+  },
+  {
+    "headword": "old",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cried when my very old cat died yesterday.",
+        "th_text": "ฉันร้องไห้ตอนที่แมวแก่มากๆ ของฉันตายเมื่อวานนี้",
+        "cloze_target": "old",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "How old are you?",
+        "th_text": "คุณอายุเท่าไหร่แล้ว",
+        "cloze_target": "old",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "This house is very old.",
+        "th_text": "บ้านหลังนี้เก่ามาก",
+        "cloze_target": "old",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He is an old man.",
+        "th_text": "เขาเป็นชายชรา",
+        "cloze_target": "old",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "My shoes are old.",
+        "th_text": "รองเท้าของฉันเก่าแล้ว",
+        "cloze_target": "old",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า old เป็นคำคุณศัพท์ (adjective) ใช้บอกอายุ (สำหรับคน/สัตว์) หรือความเก่าแก่ (สำหรับสิ่งของ) โดยวางไว้หน้าคำนามหรือหลัง Verb to be และไม่มีการผันรูป"
+  },
+  {
+    "headword": "open",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I opened the door and saw my lost dog waiting for me!",
+        "th_text": "ฉันเปิดประตูออกไปแล้วเห็นสุนัขที่หายไปของฉันมารออยู่!",
+        "cloze_target": "opened",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can you open the window, please?",
+        "th_text": "คุณช่วยเปิดหน้าต่างหน่อยได้ไหม",
+        "cloze_target": "open",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The shop opens at 8 in the morning.",
+        "th_text": "ร้านค้านี้เปิดตอนแปดโมงเช้า",
+        "cloze_target": "opens",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She is opening a present now.",
+        "th_text": "เธอกำลังแกะหรือเปิดของขวัญอยู่ตอนนี้",
+        "cloze_target": "opening",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "The door is open.",
+        "th_text": "ประตูเปิดอยู่",
+        "cloze_target": "open",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า open ทำหน้าที่ได้ทั้งคำกริยา (verb) และคำคุณศัพท์ (adjective) ในประโยคที่ 2 ใช้รูป base form หลังคำขอร้อง ประโยคที่ 3 เติม -s เพราะประธานเป็นเอกพจน์บุรุษที่ 3 (The shop) ใน Present Simple Tense ประโยคที่ 1 เติม -ed เป็น opened ในรูป Past Simple Tense ประโยคที่ 4 เติม -ing เป็น opening ในรูป Continuous และประโยคที่ 5 ใช้เป็นคำคุณศัพท์บอกสภาพว่าเปิดอยู่"
+  },
+  {
+    "headword": "orange",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I dropped my sweet orange on the dirty floor and felt so sad.",
+        "th_text": "ฉันทำส้มรสหวานของฉันตกพื้นสกปรกแล้วรู้สึกเศร้ามาก",
+        "cloze_target": "orange",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you like eating oranges?",
+        "th_text": "คุณชอบกินส้มไหม",
+        "cloze_target": "oranges",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "My bag is orange.",
+        "th_text": "กระเป๋าของฉันเป็นสีส้ม",
+        "cloze_target": "orange",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She has an orange shirt.",
+        "th_text": "เธอมีเสื้อเชิ้ตสีส้มหนึ่งตัว",
+        "cloze_target": "orange",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "I want an orange juice.",
+        "th_text": "ฉันอยากได้น้ำส้ม",
+        "cloze_target": "orange",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า orange เป็นได้ทั้งคำนาม (ผลส้ม) และคำคุณศัพท์ (สีส้ม) ในประโยคที่ 1 ใช้เป็นคำนามเอกพจน์ ประโยคที่ 2 เติม -es เป็น oranges เพื่อทำเป็นรูปพหูพจน์ (ตามกฎการเติม -es หลังคำที่ลงท้ายด้วย -ge) และในประโยคที่ 3, 4, 5 ทำหน้าที่เป็นคำคุณศัพท์บอกสีหรือขยายคำนามอื่นๆ"
+  },
+  {
+    "headword": "page",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I tore my favorite page in my book and started to cry.",
+        "th_text": "ฉันทำหน้าหนังสือเล่มโปรดขาดแล้วก็เริ่มร้องไห้เลย",
+        "cloze_target": "page",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please open your book to page ten.",
+        "th_text": "กรุณาเปิดหนังสือของคุณไปที่หน้าสิบ",
+        "cloze_target": "page",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Read these three pages, please.",
+        "th_text": "กรุณาอ่านหนังสือสามหน้านี้ด้วย",
+        "cloze_target": "pages",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "This is a clean page.",
+        "th_text": "นี่คือหน้ากระดาษที่สะอาด",
+        "cloze_target": "page",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Look at the first page.",
+        "th_text": "มองไปที่หน้าแรกสิ",
+        "cloze_target": "page",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า page เป็นคำนาม (noun) แปลว่าหน้ากระดาษ ในประโยคที่ 1, 2, 4 และ 5 ใช้รูปเอกพจน์ปกติ ส่วนในประโยคที่ 3 เติม -s เป็น pages เนื่องจากมีจำนวนมากกว่าหนึ่ง (three pages) ตามกฎการทำคำนามพหูพจน์ทั่วไป"
+  },
+  {
+    "headword": "paper",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I worked all night on my paper, but my computer crashed and deleted it.",
+        "th_text": "ฉันทำงานเขียนรายงานโต้รุ่ง แต่คอมพิวเตอร์พังแล้วลบมันทิ้งหมดเลย",
+        "cloze_target": "paper",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can I have a piece of paper, please?",
+        "th_text": "ฉันขอกระดาษสักแผ่นหน่อยได้ไหม",
+        "cloze_target": "paper",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She draws pictures on white paper.",
+        "th_text": "เธอนาดรูปภาพบนกระดาษสีขาว",
+        "cloze_target": "paper",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He reads the morning paper.",
+        "th_text": "เขาอ่านหนังสือพิมพ์ยามเช้า",
+        "cloze_target": "paper",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Put the paper on the table.",
+        "th_text": "วางกระดาษไว้บนโต๊ะ",
+        "cloze_target": "paper",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า paper เป็นคำนามนับไม่ได้ (uncountable noun) เมื่อใช้หมายถึงเนื้อวัสดุกระดาษ จึงไม่มีการเติม -s ท้ายคำ แม้จะกล่าวถึงกระดาษทั่วไป หรืออาจใช้คำว่า piece of มาช่วยบอกจำนวน และในประโยคที่ 4 ใช้หมายถึงหนังสือพิมพ์ได้เช่นกัน"
+  },
+  {
+    "headword": "park",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I lost my lovely dog when we went for a walk in the park.",
+        "th_text": "ฉันทำสุนัขสุดที่รักหายตอนที่เราไปเดินเล่นกันในสวนสาธารณะ",
+        "cloze_target": "park",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you want to go to the park?",
+        "th_text": "เธออยากไปเที่ยวสวนสาธารณะไหม",
+        "cloze_target": "park",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He parked his red car near the tree.",
+        "th_text": "เขาจอดรถสีแดงของเขาไว้ใกล้ต้นไม้",
+        "cloze_target": "parked",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They are parking their car now.",
+        "th_text": "พวกเขากำลังจอดรถกันอยู่ตอนนี้",
+        "cloze_target": "parking",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We love playing in the park.",
+        "th_text": "พวกเรารักการเล่นในสวนสาธารณะ",
+        "cloze_target": "park",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า park ทำหน้าที่ได้ทั้งคำนาม (สวนสาธารณะ) และคำกริยา (จอดรถ) ในประโยคที่ 1, 2 และ 5 ใช้เป็นคำนามเอกพจน์ ส่วนในประโยคที่ 3 ใช้เป็นคำกริยาในรูป Past Simple Tense เติม -ed เป็น parked เพื่อบอกเหตุการณ์ในอดีต และประโยคที่ 4 เติม -ing เป็น parking ในรูป Present Continuous Tense"
+  },
+  {
+    "headword": "play",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "My cat died, and now no one wants to play with me.",
+        "th_text": "แมวของฉันตายแล้ว และตอนนี้ก็ไม่มีใครยอมเล่นกับฉันเลย",
+        "cloze_target": "play",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can you play football?",
+        "th_text": "คุณเล่นฟุตบอลเป็นไหม",
+        "cloze_target": "play",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The children played in the rain yesterday.",
+        "th_text": "เด็กๆ เล่นกันท่ามกลางสายฝนเมื่อวานนี้",
+        "cloze_target": "played",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She is playing with her new toy.",
+        "th_text": "เธอกำลังเล่นกับของเล่นชิ้นใหม่ของเธอ",
+        "cloze_target": "playing",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He plays computer games every night.",
+        "th_text": "เขาเล่นเกมคอมพิวเตอร์ทุกคืน",
+        "cloze_target": "plays",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า play เป็นคำกริยา (verb) ที่ผันรูปตามกาลและประธาน ประโยคที่ 1 และ 2 ใช้รูปช่องที่ 1 (base form) ประโยคที่ 3 เป็นอดีตจึงเติม -ed เป็น played ประโยคที่ 4 เติม -ing เป็น playing สำหรับเหตุการณ์กำลังกระทำ และประโยคที่ 5 เติม -s เป็น plays เพราะประธานคือ He ใน Present Simple Tense"
+  },
+  {
+    "headword": "please",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "Please don't leave me alone in this dark room; I am so scared.",
+        "th_text": "โปรดอย่าทิ้งฉันให้อยู่คนเดียวในห้องมืดๆ นี้เลย ฉันกลัวมากๆ",
+        "cloze_target": "Please",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can I have some water, please?",
+        "th_text": "ขอน้ำดื่มหน่อยได้ไหมครับ/ค่ะ",
+        "cloze_target": "please",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Your kind words pleased her very much.",
+        "th_text": "คำพูดใจดีของคุณทำให้เธอพอใจมากๆ เลย",
+        "cloze_target": "pleased",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She was pleased with her new test score.",
+        "th_text": "เธอรู้สึกพอใจกับคะแนนสอบใหม่ของเธอ",
+        "cloze_target": "pleased",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Open the door, please.",
+        "th_text": "กรุณาเปิดประตูด้วย",
+        "cloze_target": "please",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า please ส่วนใหญ่ใช้เป็นคำอุทานหรือคำสุภาพ (interjection/adverb) เพื่อขอร้องหรือทักทายอย่างสุภาพ (เช่น ประโยคที่ 1, 2 และ 5) แต่ในประโยคที่ 3 และ 4 สามารถทำหน้าที่เป็นคำกริยา (verb) แปลว่าทำให้พอใจ ซึ่งเติม -ed เป็น pleased เมื่อเป็นรูปอดีตหรือทำหน้าที่เป็นคำคุณศัพท์บอกความรู้สึก"
+  },
+  {
+    "headword": "pretty",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I felt so ugly when everyone laughed at my pretty new dress.",
+        "th_text": "ฉันรู้สึกแย่และอัปลักษณ์มากตอนที่ทุกคนหัวנהาะเยาะชุดเดรสสวยๆ ตัวใหม่ของฉัน",
+        "cloze_target": "pretty",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "That flower is very pretty.",
+        "th_text": "ดอกไม้นั้นสวยมาก",
+        "cloze_target": "pretty",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is a pretty girl.",
+        "th_text": "เธอเป็นเด็กผู้หญิงที่น่ารักสวยงาม",
+        "cloze_target": "pretty",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The garden has pretty red flowers.",
+        "th_text": "สวนนี้มีดอกไม้สีแดงสวยๆ",
+        "cloze_target": "pretty",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "This song is pretty good.",
+        "th_text": "เพลงนี้ค่อนข้างดีทีเดียว",
+        "cloze_target": "pretty",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า pretty ทำหน้าที่หลักเป็นคำคุณศัพท์ (adjective) แปลว่าสวยหรือน่ารัก (ประโยค 1-4) และยังสามารถทำหน้าที่เป็นคำวิเศษณ์ (adverb) แปลว่าค่อนข้าง ได้ด้วย (เช่น pretty good ในประโยคที่ 5) โดยคำนี้ไม่มีการเปลี่ยนรูปตามกาลเวลา"
+  },
+  {
+    "headword": "quiet",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "My house is so quiet now that my dog has gone away.",
+        "th_text": "บ้านของฉันเงียบเหงามากตอนนี้ตั้งแต่สุนัขของฉันจากไป",
+        "cloze_target": "quiet",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please be quiet in the library.",
+        "th_text": "กรุณาเงียบเสียงในห้องสมุดด้วย",
+        "cloze_target": "quiet",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The baby is sleeping, so the room is quiet.",
+        "th_text": "เด็กน้อยกำลังนอนหลับ ห้องจึงเงียบสงบ",
+        "cloze_target": "quiet",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We need a quiet place to study.",
+        "th_text": "พวกเราต้องการสถานที่เงียบๆ สำหรับอ่านหนังสือ",
+        "cloze_target": "quiet",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He is a quiet boy.",
+        "th_text": "เขาเป็นเด็กผู้ชายเงียบๆ เรียบร้อย",
+        "cloze_target": "quiet",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า quiet เป็นคำคุณศัพท์ (adjective) แปลว่าเงียบ สงบ หรือเรียบร้อย ใช้ขยายคำนามหรือตามหลัง Verb to be โดยไม่มีการเปลี่ยนแปลงรูปคำ เนื่องจากไม่ใช่คำกริยา"
+  },
+  {
+    "headword": "rain",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cried when the heavy rain ruined my birthday party outside.",
+        "th_text": "ฉันร้องไห้ตอนที่ฝนตกหนักทำลายงานวันเกิดกลางแจ้งของฉันพังหมดเลย",
+        "cloze_target": "rain",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Is it going to rain today?",
+        "th_text": "วันนี้ฝนจะตกไหม",
+        "cloze_target": "rain",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "It rained all night yesterday.",
+        "th_text": "ฝนตกตลอดทั้งคืนเมื่อวานนี้",
+        "cloze_target": "rained",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Listen, it is raining outside.",
+        "th_text": "ฟังซิ ฝนกำลังตกอยู่ข้างนอก",
+        "cloze_target": "raining",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We love the rain.",
+        "th_text": "พวกเรารักสายฝน",
+        "cloze_target": "rain",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า rain ทำหน้าที่ได้ทั้งคำนาม (สายฝน) และคำกริยา (ฝนตก) ในประโยคที่ 1 และ 5 ใช้เป็นคำนาม ส่วนในประโยคที่ 2 ใช้เป็นคำกริยาในรูป base form หลังกริยาช่วย ประโยคที่ 3 เป็นอดีตจึงเติม -ed เป็น rained และประโยคที่ 4 เติม -ing เป็น raining เพื่อบอกเหตุการณ์ที่กำลังเกิดขึ้น"
+  },
+  {
+    "headword": "read",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I read the sad letter from my friend and started crying.",
+        "th_text": "ฉันอ่านจดหมายเศร้าๆ จากเพื่อนแล้วก็เริ่มร้องไห้",
+        "cloze_target": "read",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can you read this word for me?",
+        "th_text": "คุณช่วยอ่านคำนี้ให้ฉันฟังหน่อยได้ไหม",
+        "cloze_target": "read",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is reading a book in her room.",
+        "th_text": "เธอกำลังอ่านหนังสืออยู่ในห้องของเธอ",
+        "cloze_target": "reading",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He reads the newspaper every morning.",
+        "th_text": "เขาอ่านหนังสือพิมพ์ทุกเช้า",
+        "cloze_target": "reads",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We read three books last month.",
+        "th_text": "พวกเราอ่านหนังสือสามเล่มเมื่อเดือนที่แล้ว",
+        "cloze_target": "read",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า read เป็นกริยาผิดปกติ (irregular verb) ที่สะกดเหมือนกันทุกช่องแต่การออกเสียงต่างกัน ในประโยคที่ 1 และ 5 ใช้เป็นรูป Past Simple Tense (ถึงแม้สะกดว่า read แต่จะออกเสียงเหมือน red ในอดีต) ประโยคที่ 2 ใช้รูปช่อง 1 ปกติ ประโยคที่ 3 เติม -ing เป็น reading และประโยคที่ 4 เติม -s เป็น reads สำหรับประธานเอกพจน์บุรุษที่ 3 ใน Present Simple"
+  },
+  {
+    "headword": "red",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "My face turned red with shame when I fell down in front of everyone.",
+        "th_text": "หน้าของฉันแดงก่ำด้วยความอายตอนที่ฉันล้มลงต่อหน้าทุกคน",
+        "cloze_target": "red",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you have a red pen?",
+        "th_text": "คุณมีปากกาแดงไหม",
+        "cloze_target": "red",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Her shirt is red.",
+        "th_text": "เสื้อเชิ้ตของเธอเป็นสีแดง",
+        "cloze_target": "red",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "I want the red apple.",
+        "th_text": "ฉันอยากได้แอปเปิ้ลสีแดงลูกนั้น",
+        "cloze_target": "red",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Roses are red.",
+        "th_text": "ดอกกุหลาบสีแดง",
+        "cloze_target": "red",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า red เป็นคำคุณศัพท์ (adjective) ใช้บอกสี โดยทำหน้าที่ขยายคำนามหรือตามหลัง Verb to be เช่นเดียวกับคำคุณศัพท์ทั่วไปคือไม่มีการเปลี่ยนรูปตามพหูพจน์หรือกาลเวลา"
+  },
+  {
+    "headword": "rest",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I was so exhausted from working all day that I needed to rest immediately.",
+        "th_text": "ฉันเหนื่อยล้าจากการทำงานมาทั้งวันจนต้องรีบพักผ่อนทันที",
+        "cloze_target": "rest",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "You should rest for a while.",
+        "th_text": "คุณควรพักผ่อนสักครู่",
+        "cloze_target": "rest",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She rested her tired legs on the chair.",
+        "th_text": "เธอพักขาที่เหนื่อยล้าของเธอบนเก้าอี้",
+        "cloze_target": "rested",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He is resting in his bedroom now.",
+        "th_text": "เขากำลังพักผ่อนอยู่ในห้องนอนตอนนี้",
+        "cloze_target": "resting",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Take a rest, please.",
+        "th_text": "พักผ่อนหน่อยนะ",
+        "cloze_target": "rest",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า rest ทำหน้าที่ได้ทั้งคำนาม (การพักผ่อน / ส่วนที่เหลือ) และคำกริยา (พักผ่อน) ในประโยคที่ 1, 2 และ 5 ใช้ในรูปคำกริยาหรือคำนามพื้นฐาน ประโยคที่ 3 เป็นอดีตจึงเติม -ed เป็น rested และประโยคที่ 4 เติม -ing เป็น resting ในรูปกำลังกระทำ"
+  },
+  {
+    "headword": "run",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cried when my scared cat ran away from home.",
+        "th_text": "ฉันร้องไห้ตอนที่แมวขี้ตกใจของฉันวิ่งหนีออกจากบ้านไป",
+        "cloze_target": "ran",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can you run fast?",
+        "th_text": "คุณวิ่งเร็วไหม",
+        "cloze_target": "run",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The children are running in the park.",
+        "th_text": "เด็กๆ กำลังวิ่งเล่นอยู่ในสวนสาธารณะ",
+        "cloze_target": "running",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He runs every morning to stay healthy.",
+        "th_text": "เขาไปวิ่งทุกเช้าเพื่อให้ร่างกายแข็งแรง",
+        "cloze_target": "runs",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We ran five kilometers yesterday.",
+        "th_text": "พวกเราวิ่งไปห้ากิโลเมตรเมื่อวานนี้",
+        "cloze_target": "ran",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า run เป็นกริยาผิดปกติ (irregular verb) ช่องที่ 1 คือ run ช่องที่ 2 คือ ran และช่องที่ 3 รวมถึงรูป -ing จะต้องเบิ้ลตัวอักษร N เป็น running ในประโยคที่ 1 และ 5 ใช้รูปอดีตคือ ran ส่วนประโยคที่ 3 เติม -ning เป็น running และประโยคที่ 4 เติม -s เป็น runs สำหรับ Present Simple Tense"
+  },
+  {
+    "headword": "sad",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I felt so sad when my best friend moved to another city.",
+        "th_text": "ฉันรู้สึกเศร้ามากๆ ตอนที่เพื่อนสนิทของฉันย้ายไปเมืองอื่น",
+        "cloze_target": "sad",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Why are you looking so sad today?",
+        "th_text": "ทำไมวันนี้คุณถึงดูเศร้าจัง",
+        "cloze_target": "sad",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "That was a sad movie.",
+        "th_text": "นั่นเป็นหนังที่เศร้ามาก",
+        "cloze_target": "sad",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She read a sad story.",
+        "th_text": "เธออ่านเรื่องราวที่เศร้าสลด",
+        "cloze_target": "sad",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Don't be sad, my friend.",
+        "th_text": "อย่าเศร้าเลยนะเพื่อนรัก",
+        "cloze_target": "sad",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า sad เป็นคำคุณศัพท์ (adjective) แปลว่าเศร้า ใช้ขยายคำนามหรือตามหลัง Verb to be เพื่อบอกอารมณ์ความรู้สึก โดยคำคุณศัพท์นี้ไม่ต้องเปลี่ยนรูปตามกาลเวลา"
+  },
+  {
+    "headword": "school",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I was bullied at school today, and I cried all the way home.",
+        "th_text": "ฉันโดนแกล้งที่โรงเรียนวันนี้ แล้วก็ร้องไห้ตลอดทางจนถึงบ้านเลย",
+        "cloze_target": "school",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you like going to school?",
+        "th_text": "คุณชอบไปโรงเรียนไหม",
+        "cloze_target": "school",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Our school is very big and nice.",
+        "th_text": "โรงเรียนของเราใหญ่และสวยงามมาก",
+        "cloze_target": "school",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She is a student at this school.",
+        "th_text": "เธอเป็นนักเรียนอยู่ที่โรงเรียนนี้",
+        "cloze_target": "school",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We start school at 8 o'clock.",
+        "th_text": "พวกเราเริ่มไปโรงเรียนตอนแปดโมง",
+        "cloze_target": "school",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า school เป็นคำนาม (noun) แปลว่าโรงเรียน ในประโยคส่วนใหญ่ใช้ในรูปเอกพจน์ปกติ โดยในภาษาอังกฤษมักใช้คำว่า at school หรือ to school โดยไม่จำเป็นต้องใส่ articles (a/an/the) ในบางสำนวนหลัก"
+  },
+  {
+    "headword": "sea",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I lost my favorite toy when big waves took it into the dark sea.",
+        "th_text": "ฉันทำของเล่นชิ้นโปรดหายตอนที่คลื่นลูกใหญ่ซัดมันลงไปในทะเลมืดๆ",
+        "cloze_target": "sea",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you want to visit the sea this weekend?",
+        "th_text": "คุณอยากไปเที่ยวทะเลสุดสัปดาห์นี้ไหม",
+        "cloze_target": "sea",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The sea is very blue today.",
+        "th_text": "น้ำทะเลเป็นสีฟ้าสวยมากวันนี้",
+        "cloze_target": "sea",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We love swimming in the sea.",
+        "th_text": "พวกเรารักการว่ายน้ำในทะเล",
+        "cloze_target": "sea",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Birds fly over the sea.",
+        "th_text": "นกบินอยู่เหนือท้องทะเล",
+        "cloze_target": "sea",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า sea เป็นคำนาม (noun) แปลว่าทะเล มักใช้ร่วมกับ The (the sea) เพื่อบ่งบอกถึงพื้นที่ธรรมชาติขนาดใหญ่ โดยเป็นคำนามเอกพจน์ที่ไม่ต้องเปลี่ยนรูปในบริบททั่วไปเหล่านี้"
+  },
+  {
+    "headword": "see",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cried when I saw my dog get hit by a car.",
+        "th_text": "ฉันร้องไห้ตอนที่เห็นสุนัขของฉันถูกรถชนต่อหน้าต่อตา",
+        "cloze_target": "saw",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can you see the cat in the tree?",
+        "th_text": "คุณเห็นแมวบนต้นไม้ไหม",
+        "cloze_target": "see",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is seeing her friend at the park.",
+        "th_text": "เธอกำลังจะไปพบเพื่อนของเธอที่สวนสาธารณะ",
+        "cloze_target": "seeing",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He sees a bird in the sky.",
+        "th_text": "เขาเห็นนกตัวหนึ่งบนท้องฟ้า",
+        "cloze_target": "sees",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We saw a nice movie yesterday.",
+        "th_text": "พวกเราดูหนังดีๆ เรื่องหนึ่งเมื่อวานนี้",
+        "cloze_target": "saw",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า see เป็นกริยาผิดปกติ (irregular verb) ช่องที่ 1 คือ see ช่องที่ 2 คือ saw (ไม่ใช่ *seed*) ในประโยคที่ 1 และ 5 ใช้รูปอดีตคือ saw ประโยคที่ 2 ใช้รูปช่อง 1 ปกติ ประโยคที่ 3 เติม -ing เป็น seeing และประโยคที่ 4 เติม -s เป็น sees สำหรับประธานเอกพจน์บุรุษที่ 3 ใน Present Simple"
+  },
+  {
+    "headword": "sell",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "My parents had to sell our lovely house because we had no money.",
+        "th_text": "พ่อแม่ของฉันจำเป็นต้องขายบ้านอันเป็นที่รักเพราะเราไม่มีเงินเลย",
+        "cloze_target": "sell",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you sell red apples here?",
+        "th_text": "ที่นี่ขายแอปเปิ้ลสีแดงไหม",
+        "cloze_target": "sell",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She sold her old car yesterday.",
+        "th_text": "เธอขายรถเก่าของเธอไปเมื่อวานนี้",
+        "cloze_target": "sold",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They are selling new clothes at the shop.",
+        "th_text": "พวกเขากำลังขายเสื้อผ้าใหม่กันอยู่ที่ร้านค้า",
+        "cloze_target": "selling",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He sells ice cream on the street.",
+        "th_text": "เขาขายไอศกรีมอยู่บนถนน",
+        "cloze_target": "sells",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า sell เป็นกริยาผิดปกติ (irregular verb) โดยช่องที่ 2 เปลี่ยนรูปจาก sell เป็น sold (ไม่ได้เติม -ed) ในประโยคที่ 3 ส่วนประโยคที่ 1 และ 2 ใช้รูปช่อง 1 ปกติ ประโยคที่ 4 เติม -ing เป็น selling และประโยคที่ 5 เติม -s เป็น sells ตามกฎ Present Simple สำหรับประธานเอกพจน์"
+  },
+  {
+    "headword": "shop",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I lost my money while I was running around the noisy shop.",
+        "th_text": "ฉันทำเงินหายในระหว่างที่กำลังวิ่งวุ่นอยู่ทั่วร้านค้าที่เสียงดังจอแจ",
+        "cloze_target": "shop",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you want to go to the pet shop?",
+        "th_text": "คุณอยากไปร้านขายสัตว์เลี้ยงไหม",
+        "cloze_target": "shop",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She shopped for new clothes yesterday.",
+        "th_text": "เธอไปซื้อของใช้เสื้อผ้าใหม่เมื่อวานนี้",
+        "cloze_target": "shopped",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They are shopping for food now.",
+        "th_text": "พวกเขากำลังซื้ออาหารกันอยู่ตอนนี้",
+        "cloze_target": "shopping",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "This is a small local shop.",
+        "th_text": "นี่คือร้านค้ารายย่อยขนาดเล็กในท้องถิ่น",
+        "cloze_target": "shop",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า shop เป็นได้ทั้งคำนาม (ร้านค้า) และคำกริยา (ซื้อของ) ในประโยคที่ 1, 2 และ 5 ใช้เป็นคำนามเอกพจน์ ส่วนในประโยคที่ 3 ทำหน้าที่เป็นคำกริยาในรูป Past Simple Tense ซึ่งต้องเบิ้ลตัวอักษร P แล้วเติม -ed เป็น shopped และประโยคที่ 4 เบิ้ล P แล้วเติม -ing เป็น shopping"
+  },
+  {
+    "headword": "sing",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cried when I forgot the words while singing on stage.",
+        "th_text": "ฉันร้องไห้ตอนที่ลืมเนื้อร้องเพลงระหว่างกำลังร้องอยู่บนเวที",
+        "cloze_target": "singing",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can you sing a happy song for me?",
+        "th_text": "คุณช่วยร้องเพลงที่มีความสุขให้ฉันฟังหน่อยได้ไหม",
+        "cloze_target": "sing",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She sang a very nice song yesterday.",
+        "th_text": "เธอร้องเพลงเพราะๆ เพลงหนึ่งเมื่อวานนี้",
+        "cloze_target": "sang",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The birds are singing in the tree.",
+        "th_text": "พวกนกกำลังส่งเสียงร้องอยู่บนต้นไม้",
+        "cloze_target": "singing",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He sings in the school choir.",
+        "th_text": "เขาร้องเพลงอยู่ในวงประสานเสียงของโรงเรียน",
+        "cloze_target": "sings",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า sing เป็นกริยาผิดปกติ (irregular verb) ช่องที่ 1 คือ sing ช่องที่ 2 เปลี่ยนเสียงสระเป็น sang (ไม่ใช่ *singed*) ในประโยคที่ 3 ส่วนประโยคที่ 1 และ 4 ใช้รูปกำลังกระทำคือ singing ประโยคที่ 2 ใช้รูปช่อง 1 ปกติ และประโยคที่ 5 เติม -s เป็น sings สำหรับประธานเอกพจน์"
+  },
+  {
+    "headword": "sister",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I was so worried when my little sister ran away and got lost.",
+        "th_text": "ฉันเป็นห่วงมากๆ ตอนที่น้องสาวตัวน้อยวิ่งหนีไปแล้วหลงทาง",
+        "cloze_target": "sister",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you have any brothers or sisters?",
+        "th_text": "คุณมีพี่ชาย น้องชาย หรือพี่สาว น้องสาวบ้างไหม",
+        "cloze_target": "sisters",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "My older sister is a nice teacher.",
+        "th_text": "พี่สาวคนโตของฉันเป็นคุณครูใจดี",
+        "cloze_target": "sister",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "His sister reads a book.",
+        "th_text": "น้องสาวของเขากำลังอ่านหนังสืออยู่",
+        "cloze_target": "sister",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We love our sisters.",
+        "th_text": "พวกเรารักพี่น้องผู้หญิงของเรา",
+        "cloze_target": "sisters",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า sister เป็นคำนาม (noun) แปลว่าพี่สาวหรือน้องสาว ในประโยคที่ 1, 3 และ 4 ใช้ในรูปคำนามเอกพจน์ปกติ ส่วนในประโยคที่ 2 และ 5 เติม -s เป็น sisters เพื่อทำเป็นรูปพหูพจน์ตามกฎทั่วไปของการเติม -s ท้ายคำนาม"
+  },
+  {
+    "headword": "sit",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I sat alone in the dark room, crying for my lost cat.",
+        "th_text": "ฉันนั่งอยู่คนเดียวในห้องมืดๆ นั่งร้องไห้หาแมวที่หายไป",
+        "cloze_target": "sat",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can I sit here, please?",
+        "th_text": "ฉันขอนั่งตรงนี้ได้ไหม",
+        "cloze_target": "sit",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is sitting on the chair near the window.",
+        "th_text": "เธอกำลังนั่งอยู่บนเก้าอี้ใกล้หน้าต่าง",
+        "cloze_target": "sitting",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He sits next to me in class.",
+        "th_text": "เขานั่งติดกับฉันในห้องเรียน",
+        "cloze_target": "sits",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We sat together under the tree yesterday.",
+        "th_text": "พวกเรานั่งด้วยกันใต้ต้นไม้เมื่อวานนี้",
+        "cloze_target": "sat",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า sit เป็นกริยาผิดปกติ (irregular verb) ช่องที่ 1 คือ sit ช่องที่ 2 เปลี่ยนรูปเป็น sat ในประโยคที่ 1 และ 5 สำหรับรูป -ing จะต้องเบิ้ลตัว T เป็น sitting ในประโยคที่ 3 ประโยคที่ 2 ใช้รูปช่อง 1 ปกติ และประโยคที่ 4 เติม -s เป็น sits สำหรับ Present Simple Tense"
+  },
+  {
+    "headword": "sleep",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I couldn't sleep all night because I was so worried about my sick dog.",
+        "th_text": "ฉันนอนไม่หลับเลยตลอดทั้งคืนเพราะเป็นห่วงสุนัขที่ไม่สบายมาก",
+        "cloze_target": "sleep",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you usually sleep early?",
+        "th_text": "ปกติคุณนอนเร็วกว่าปกติไหม",
+        "cloze_target": "sleep",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The baby slept for three hours yesterday.",
+        "th_text": "เด็กน้อยนอนหลับไปสามชั่วโมงเมื่อวานนี้",
+        "cloze_target": "slept",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She is sleeping in her quiet room.",
+        "th_text": "เธอกำลังนอนหลับอยู่ในห้องที่เงียบสงบของเธอ",
+        "cloze_target": "sleeping",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "My cat sleeps on my bed every night.",
+        "th_text": "แมวของฉันนอนบนเตียงของฉันทุกคืน",
+        "cloze_target": "sleeps",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า sleep เป็นกริยาผิดปกติ (irregular verb) ช่องที่ 1 คือ sleep ช่องที่ 2 เปลี่ยนรูปเป็น slept (ไม่ใช่ *sleeped*) ในประโยคที่ 3 ประโยคที่ 1 และ 2 ใช้รูปช่อง 1 ปกติ ประโยคที่ 4 เติม -ing เป็น sleeping และประโยคที่ 5 เติม -s เป็น sleeps สำหรับประธานเอกพจน์บุรุษที่ 3"
+  },
+  {
+    "headword": "slow",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I missed my bus because my tired legs were so slow today.",
+        "th_text": "ฉันตกรถบัสเพราะขาที่เหนื่อยล้าของฉันเดินช้ามากในวันนี้",
+        "cloze_target": "slow",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Why is your computer so slow?",
+        "th_text": "ทำไมคอมพิวเตอร์ของคุณถึงช้าจัง",
+        "cloze_target": "slow",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Please drive slow in the school zone.",
+        "th_text": "กรุณาขับรถช้าๆ ในเขตโรงเรียนด้วย",
+        "cloze_target": "slow",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The turtle is a very slow animal.",
+        "th_text": "เต่าเป็นสัตว์ที่เดินช้ามาก",
+        "cloze_target": "slow",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Be slow and careful, please.",
+        "th_text": "ทำช้าๆ และระมัดระวังด้วยนะ",
+        "cloze_target": "slow",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า slow ทำหน้าที่เป็นคำคุณศัพท์ (adjective) แปลว่าช้า ใช้ขยายคำนามหรือตามหลัง Verb to be (เช่น ประโยค 1, 2, 4, 5) และบางครั้งสามารถใช้เป็นคำวิเศษณ์แบบไม่เป็นทางการ (adverb) ในการให้คำแนะนำสั้นๆ เช่น drive slow โดยคำนี้ไม่มีการเปลี่ยนรูปผันคำ"
+  },
+  {
+    "headword": "small",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I lost my small puppy in the big park and cried.",
+        "th_text": "ฉันทำลูกสุนัขตัวเล็กๆ หายไปในสวนสาธารณะขนาดใหญ่แล้วก็ร้องไห้",
+        "cloze_target": "small",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you want a big or small apple?",
+        "th_text": "คุณอยากได้แอปเปิ้ลลูกใหญ่หรือลูกเล็ก",
+        "cloze_target": "small",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "My house is very small.",
+        "th_text": "บ้านของฉันหลังเล็กมาก",
+        "cloze_target": "small",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He has a small dog.",
+        "th_text": "เขามีสุนัขตัวเล็กหนึ่งตัว",
+        "cloze_target": "small",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "This is a small room.",
+        "th_text": "นี่คือห้องขนาดเล็ก",
+        "cloze_target": "small",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า small เป็นคำคุณศัพท์ (adjective) แปลว่าเล็ก ใช้ขยายคำนามที่อยู่ด้านหลังหรือตามหลัง Verb to be โดยไม่มีการเปลี่ยนรูปตามพหูพจน์หรือกาลเวลา"
+  },
+  {
+    "headword": "smile",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I was so sad, but her sweet smile made me happy again.",
+        "th_text": "ฉันรู้สึกเศร้ามาก แต่รอยยิ้มหวานๆ ของเธอทำให้ฉันมีความสุขขึ้นมาอีกครั้ง",
+        "cloze_target": "smile",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Why are you smiling now?",
+        "th_text": "ทำไมตอนนี้คุณถึงกำลังยิ้มอยู่ล่ะ",
+        "cloze_target": "smiling",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She smiled at me yesterday.",
+        "th_text": "เธอยิ้มให้ฉันเมื่อวานนี้",
+        "cloze_target": "smiled",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He always smiles when he sees his dog.",
+        "th_text": "เขามักจะยิ้มเสมอเวลาที่เห็นสุนัขของเขา",
+        "cloze_target": "smiles",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Give me a big smile, please.",
+        "th_text": "ยิ้มกว้างๆ ให้ฉันหน่อยสิ",
+        "cloze_target": "smile",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า smile ทำหน้าที่ได้ทั้งคำนาม (รอยยิ้ม ในประโยคที่ 1 และ 5) และคำกริยา (ยิ้ม ในประโยค 2-4) ในการผันรูปกริยา ประโยคที่ 3 เป็นอดีตเติมแค่ -d เป็น smiled (เนื่องจากลงท้ายด้วย e อยู่แล้ว) ประโยคที่ 2 ตัด e แล้วเติม -ing เป็น smiling และประโยคที่ 4 เติม -s เป็น smiles สำหรับ Present Simple Tense"
+  },
+  {
+    "headword": "speak",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I was so scared I couldn't speak when the teacher called my name.",
+        "th_text": "ฉันกลัวจนพูดไม่ออกเลยตอนที่คุณครูเรียกชื่อฉัน",
+        "cloze_target": "speak",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can you speak Thai?",
+        "th_text": "คุณพูดภาษาไทยได้ไหม",
+        "cloze_target": "speak",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She spoke to me yesterday.",
+        "th_text": "เธอพูดคุยกับฉันเมื่อวานนี้",
+        "cloze_target": "spoke",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He is speaking on the phone now.",
+        "th_text": "เขากำลังพูดโทรศัพท์อยู่ตอนนี้",
+        "cloze_target": "speaking",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "My teacher speaks very clearly.",
+        "th_text": "คุณครูของฉันพูดชัดเจนมาก",
+        "cloze_target": "speaks",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า speak เป็นกริยาผิดปกติ (irregular verb) ช่องที่ 1 คือ speak ช่องที่ 2 เปลี่ยนรูปเป็น spoke (ไม่ใช่ *speaked*) ในประโยคที่ 3 ประโยคที่ 1 และ 2 ใช้รูปช่อง 1 ปกติ ประโยคที่ 4 เติม -ing เป็น speaking และประโยคที่ 5 เติม -s เป็น speaks สำหรับประธานเอกพจน์บุรุษที่ 3"
+  },
+  {
+    "headword": "stand",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I stood alone in the rain for an hour, waiting for my ride.",
+        "th_text": "ฉันยืนตากฝนอยู่คนเดียวเป็นชั่วโมงเพื่อรอรถมารับ",
+        "cloze_target": "stood",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please stand up.",
+        "th_text": "กรุณาลุกขึ้นยืน",
+        "cloze_target": "stand",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is standing near the door.",
+        "th_text": "เธอกำลังยืนอยู่ใกล้ประตู",
+        "cloze_target": "standing",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He stands here every morning.",
+        "th_text": "เขายืนอยู่ตรงนี้ทุกเช้า",
+        "cloze_target": "stands",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We stood under the big tree yesterday.",
+        "th_text": "พวกเรายืนอยู่ใต้ต้นไม้ใหญ่เมื่อวานนี้",
+        "cloze_target": "stood",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า stand เป็นกริยาผิดปกติ (irregular verb) ช่องที่ 1 คือ stand ช่องที่ 2 เปลี่ยนรูปสระเป็น stood (ไม่ใช่ *standed*) ในประโยคที่ 1 และ 5 ประโยคที่ 2 ใช้รูปช่อง 1 ปกติหลังคำขอร้อง ประโยคที่ 3 เติม -ing เป็น standing และประโยคที่ 4 เติม -s เป็น stands สำหรับ Present Simple Tense"
+  },
+  {
+    "headword": "start",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I started crying when my beloved cat passed away.",
+        "th_text": "ฉันเริ่มร้องไห้ตอนที่แมวสุดที่รักของฉันจากไป",
+        "cloze_target": "started",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "When does the movie start?",
+        "th_text": "หนังจะเริ่มฉายเมื่อไหร่",
+        "cloze_target": "start",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is starting her new school today.",
+        "th_text": "เธอกำลังจะเริ่มไปเรียนโรงเรียนใหม่วันนี้",
+        "cloze_target": "starting",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The class starts at nine o'clock.",
+        "th_text": "ชั้นเรียนเริ่มตอนเก้าโมง",
+        "cloze_target": "starts",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Let's start our work, please.",
+        "th_text": "มาเริ่มทำงานของเรากันเถอะ",
+        "cloze_target": "start",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า start เป็นคำกริยา (verb) ปกติ ในประโยคที่ 1 ใช้รูปอดีตจึงเติม -ed เป็น started ประโยคที่ 2 และ 5 ใช้รูปช่องที่ 1 ปกติ ประโยคที่ 3 เติม -ing เป็น starting สำหรับเหตุการณ์กำลังเกิด และประโยคที่ 4 เติม -s เป็น starts เพราะประธาน (The class) เป็นเอกพจน์บุรุษที่ 3"
+  },
+  {
+    "headword": "student",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I was a very shy student, and nobody wanted to talk to me.",
+        "th_text": "ฉันเคยเป็นนักเรียนที่ขี้อายมาก และไม่มีใครอยากคุยกับฉันเลย",
+        "cloze_target": "student",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Are you a new student here?",
+        "th_text": "คุณเป็นนักเรียนใหม่ที่นี่ใช่ไหม",
+        "cloze_target": "student",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The students are reading books in the library.",
+        "th_text": "บรรดานักเรียนกำลังอ่านหนังสือกันอยู่ในห้องสมุด",
+        "cloze_target": "students",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She is a hard-working student.",
+        "th_text": "เธอเป็นนักเรียนที่ขยันขันแข็ง",
+        "cloze_target": "student",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We are happy students.",
+        "th_text": "พวกเราคือนักเรียนที่มีความสุข",
+        "cloze_target": "students",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า student เป็นคำนาม (noun) แปลว่านักเรียน ในประโยคที่ 1, 2 และ 4 ใช้ในรูปคำนามเอกพจน์ (มี a นำหน้า) ส่วนในประโยคที่ 3 และ 5 เติม -s เป็น students เพื่อทำเป็นรูปพหูพจน์ตามกฎทั่วไปเมื่อพูดถึงนักเรียนหลายคน"
+  },
+  {
+    "headword": "study",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cried all night because I failed my important study test.",
+        "th_text": "ฉันร้องไห้ตลอดคืนเพราะสอบตกข้อสอบสำคัญในการเรียน",
+        "cloze_target": "study",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you study English every day?",
+        "th_text": "คุณเรียนภาษาไทยหรืออังกฤษทุกวันไหม",
+        "cloze_target": "study",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She studied hard for the test yesterday.",
+        "th_text": "เธอตั้งใจเรียนและอ่านหนังสืออย่างหนักเพื่อสอบเมื่อวานนี้",
+        "cloze_target": "studied",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He is studying in his quiet room now.",
+        "th_text": "เขากำลังศึกษาหรืออ่านหนังสืออยู่ในห้องที่เงียบของเขาตอนนี้",
+        "cloze_target": "studying",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "My sister studies at this school.",
+        "th_text": "พี่สาวของฉันเรียนอยู่ที่โรงเรียนนี้",
+        "cloze_target": "studies",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า study ทำหน้าที่ได้ทั้งคำนาม (การเรียน ในประโยคที่ 1) และคำกริยา (เรียน ในประโยค 2-5) สำหรับการผันรูปกริยาที่ลงท้ายด้วย -y และหน้า -y เป็นพยัญชนะ ในรูปอดีตและเอกพจน์บุรุษที่ 3 จะต้องเปลี่ยน y เป็น i แล้วเติม -ed (studied) หรือ -es (studies) ส่วนรูป -ing เติม -ing ต่อท้ายได้เลยโดยไม่ต้องเปลี่ยน y เป็น i (studying)"
+  },
+  {
+    "headword": "sun",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "My skin turned red and hurt because the hot sun burned me.",
+        "th_text": "ผิวของฉันแดงและแสบเพราะโดนแสงแดดร้อนๆ เผาไหม้",
+        "cloze_target": "sun",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "The sun is very bright today.",
+        "th_text": "ดวงอาทิตย์สว่างจ้ามากในวันนี้",
+        "cloze_target": "sun",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "We like sitting in the sun.",
+        "th_text": "พวกเราชอบนั่งผิงแดด",
+        "cloze_target": "sun",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The sun goes down in the evening.",
+        "th_text": "ดวงอาทิตย์ตกดินในช่วงเย็น",
+        "cloze_target": "sun",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Look at the big sun.",
+        "th_text": "ดูดวงอาทิตย์ดวงใหญ่โน่นสิ",
+        "cloze_target": "sun",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า sun เป็นคำนาม (noun) แปลว่าดวงอาทิตย์ เนื่องจากมีเพียงหนึ่งเดียวในระบบสุริยะ จึงมักใช้ร่วมกับ The (the sun) ในรูปเอกพจน์เสมอโดยไม่มีการเติม -s"
+  },
+  {
+    "headword": "table",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I accidentally dropped my phone on the hard table and broke it.",
+        "th_text": "ฉันเผลอทำโทรศัพท์ตกใส่โต๊ะแข็งๆ จนหน้าจอแตกเลย",
+        "cloze_target": "table",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please put the book on the table.",
+        "th_text": "กรุณาวางหนังสือไว้บนโต๊ะด้วย",
+        "cloze_target": "table",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The small table is red.",
+        "th_text": "โต๊ะขนาดเล็กตัวนั้นเป็นสีแดง",
+        "cloze_target": "table",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We have four chairs and one table.",
+        "th_text": "พวกเรามีเก้าอี้สี่ตัวและโต๊ะหนึ่งตัว",
+        "cloze_target": "table",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Clean this dirty table, please.",
+        "th_text": "ช่วยทำความสะอาดโต๊ะสกปรกตัวนี้ด้วย",
+        "cloze_target": "table",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า table เป็นคำนาม (noun) แปลว่าโต๊ะ ในประโยคส่วนใหญ่ใช้ในรูปคำนามเอกพจน์ปกติ (เช่น a table, the table) ตามกฎทั่วไปของคำนามนับได้เมื่อกล่าวถึงวัตถุสิ่งของชิ้นเดี่ยว"
+  },
+  {
+    "headword": "talk",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cried when my best friend refused to talk to me.",
+        "th_text": "ฉันร้องไห้ตอนที่เพื่อนสนิทปฏิเสธที่จะพูดคุยกับฉัน",
+        "cloze_target": "talk",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Can I talk to you for a minute?",
+        "th_text": "ฉันขอคุยกับคุณสักครู่ได้ไหม",
+        "cloze_target": "talk",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She talked to her teacher yesterday.",
+        "th_text": "เธอพูดคุยกับคุณครูของเธอเมื่อวานนี้",
+        "cloze_target": "talked",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They are talking in the quiet room.",
+        "th_text": "พวกเขากำลังคุยกันอยู่ในห้องที่เงียบสงบ",
+        "cloze_target": "talking",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "He always talks a lot.",
+        "th_text": "เขามักจะพูดเก่งและพูดเยอะเสมอ",
+        "cloze_target": "talks",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า talk เป็นคำกริยา (verb) ปกติ ในประโยคที่ 1 และ 2 ใช้รูปช่องที่ 1 ประโยคที่ 3 เป็นอดีตจึงเติม -ed เป็น talked ประโยคที่ 4 เติม -ing เป็น talking สำหรับเหตุการณ์กำลังกระทำ และประโยคที่ 5 เติม -s เป็น talks สำหรับประธานเอกพจน์บุรุษที่ 3"
+  },
+  {
+    "headword": "teacher",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I was so scared when the strict teacher yelled at me.",
+        "th_text": "ฉันกลัวมากๆ ตอนที่คุณครูจอมดุตะคอกใส่ฉัน",
+        "cloze_target": "teacher",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Is she your English teacher?",
+        "th_text": "เธอคือคุณครูสอนภาษาอังกฤษของคุณใช่ไหม",
+        "cloze_target": "teacher",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Our teachers are very nice and kind.",
+        "th_text": "บรรดาคุณครูของเราใจดีและน่ารักมาก",
+        "cloze_target": "teachers",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He is a good student, not a teacher.",
+        "th_text": "เขาเป็นนักเรียนที่ดี ไม่ใช่คุณครู",
+        "cloze_target": "teacher",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Thank you, teacher.",
+        "th_text": "ขอบคุณครับ/ค่ะ คุณครู",
+        "cloze_target": "teacher",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า teacher เป็นคำนาม (noun) แปลว่าคุณครู ในประโยคที่ 1, 2, 4 และ 5 ใช้ในรูปคำนามเอกพจน์ปกติ ส่วนในประโยคที่ 3 เติม -s เป็น teachers เพื่อทำเป็นรูปพหูพจน์เมื่อกล่าวถึงคุณครูหลายท่าน"
+  },
+  {
+    "headword": "thank",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cried with joy when my friend saved my dog and I thanked him deeply.",
+        "th_text": "ฉันร้องไห้ออกมาด้วยความดีใจตอนที่เพื่อนช่วยชีวิตสุนัขไว้ แล้วฉันก็ขอบคุณเขาอย่างซาบซึ้ง",
+        "cloze_target": "thanked",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Thank you very much for your help.",
+        "th_text": "ขอบคุณคุณมากๆ สำหรับความช่วยเหลือ",
+        "cloze_target": "Thank",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is thanking the teacher now.",
+        "th_text": "เธอกำลังกล่าวขอบคุณคุณครูอยู่ตอนนี้",
+        "cloze_target": "thanking",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He always thanks his mother for dinner.",
+        "th_text": "เขามักจะกล่าวขอบคุณคุณแม่เสมอสำหรับมื้อเย็น",
+        "cloze_target": "thanks",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We thanked them yesterday.",
+        "th_text": "พวกเรากล่าวขอบคุณพวกเขาไปเมื่อวานนี้",
+        "cloze_target": "thanked",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า thank เป็นคำกริยา (verb) ปกติ ในประโยคที่ 1 และ 5 เป็นอดีตจึงเติม -ed เป็น thanked ประโยคที่ 2 ใช้ในสำนวนขอบคุณพื้นฐาน (Thank you) ประโยคที่ 3 เติม -ing เป็น thanking สำหรับเหตุการณ์กำลังกระทำ และประโยคที่ 4 เติม -s เป็น thanks สำหรับประธานเอกพจน์บุรุษที่ 3"
+  },
+  {
+    "headword": "time",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I wasted so much time waiting for a bus that never came.",
+        "th_text": "ฉันเสียเวลาไปเปล่าประโยชน์ตั้งนานกับการรอรถบัสที่ไม่ยอมมาสักที",
+        "cloze_target": "time",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "What time is it now?",
+        "th_text": "ตอนนี้เวลาเท่าไหร่แล้ว",
+        "cloze_target": "time",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "We had a great time at the park yesterday.",
+        "th_text": "พวกเรามีช่วงเวลาที่ดีมากๆ ที่สวนสาธารณะเมื่อวานนี้",
+        "cloze_target": "time",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "How many times do I have to tell you?",
+        "th_text": "ฉันต้องบอกคุณสักกี่ครั้งกันนะ",
+        "cloze_target": "times",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "It is time to go home.",
+        "th_text": "ถึงเวลาต้องกลับบ้านแล้ว",
+        "cloze_target": "time",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า time ทำหน้าที่เป็นคำนาม (noun) แปลว่าเวลา ในประโยคที่ 1, 2, 3 และ 5 ใช้ในรูปคำนามนับไม่ได้หรือเอกพจน์ทั่วไป ส่วนในประโยคที่ 4 เติม -s เป็น times เมื่อเปลี่ยนความหมายไปเป็น 'ครั้ง' (จำนวนครั้งที่เกิดเหตุการณ์ขึ้น)"
+  },
+  {
+    "headword": "tired",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I was so tired from crying all night that I fell asleep on the floor.",
+        "th_text": "ฉันเหนื่อยล้ามากจากการร้องไห้ทั้งคืนจนเผลอหลับไปบนพื้นห้อง",
+        "cloze_target": "tired",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Are you tired after running?",
+        "th_text": "คุณเหนื่อยไหมหลังจากวิ่งมา",
+        "cloze_target": "tired",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "My legs feel very tired today.",
+        "th_text": "ขาของฉันรู้สึกเหนื่อยล้ามากในวันนี้",
+        "cloze_target": "tired",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "He is a tired old man.",
+        "th_text": "เขาคือชายชราที่ดูเหนื่อยล้าอ่อนเพลีย",
+        "cloze_target": "tired",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We are tired, let's rest.",
+        "th_text": "พวกเราเหนื่อยแล้ว พักผ่อนกันเถอะ",
+        "cloze_target": "tired",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า tired เป็นคำคุณศัพท์ (adjective) แปลว่าเหนื่อยหรือเหนื่อยล้า ใช้ตามหลัง Verb to be หรือกริยาเชื่อมความรู้สึก (เช่น feel tired) โดยคำนี้ไม่มีการเปลี่ยนรูปตามกาลเวลา"
+  },
+  {
+    "headword": "today",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "Everything is going wrong for me today, and I just want to cry.",
+        "th_text": "วันนี้มีแต่เรื่องแย่ๆ เกิดขึ้นกับฉัน จนฉันแค่อยากจะร้องไห้",
+        "cloze_target": "today",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "What day is it today?",
+        "th_text": "วันนี้คือวันอะไร",
+        "cloze_target": "today",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The weather is nice today.",
+        "th_text": "อากาศวันนี้ดีมาก",
+        "cloze_target": "today",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We have an English test today.",
+        "th_text": "พวกเรามีสอบภาษาอังกฤษวันนี้",
+        "cloze_target": "today",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "I am so happy today.",
+        "th_text": "ฉันมีความสุขมากๆ ในวันนี้",
+        "cloze_target": "today",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า today เป็นคำวิเศษณ์บอกเวลา (adverb of time) แปลว่าในวันนี้ มักวางไว้ท้ายประโยคเพื่อระบุช่วงเวลาปัจจุบัน โดยคำนี้เป็นคำเฉพาะตัวจึงไม่มีการผันรูปเปลี่ยนแปลงใดๆ"
+  },
+  {
+    "headword": "tomorrow",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I am so scared because I have a big test tomorrow and I am not ready.",
+        "th_text": "ฉันกลัวมากๆ เพราะพรุ่งนี้มีสอบใหญ่แล้วฉันยังไม่พร้อมเลย",
+        "cloze_target": "tomorrow",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "What are you going to do tomorrow?",
+        "th_text": "พรุ่งนี้คุณจะทำอะไร",
+        "cloze_target": "tomorrow",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Will it rain tomorrow?",
+        "th_text": "พรุ่งนี้ฝนจะตกไหม",
+        "cloze_target": "tomorrow",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We will go to the park tomorrow.",
+        "th_text": "พวกเราจะไปสวนสาธารณะในวันพรุ่งนี้",
+        "cloze_target": "tomorrow",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "See you tomorrow.",
+        "th_text": "แล้วพบกันพรุ่งนี้",
+        "cloze_target": "tomorrow",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า tomorrow เป็นคำวิเศษณ์บอกเวลา (adverb of time) แปลว่าในวันพรุ่งนี้ มักใช้ร่วมกับประโยคที่บอกเหตุการณ์ในอนาคต (เช่น มี will หรือ going to) และเป็นคำคงรูปไม่มีการผันเปลี่ยนแปลง"
+  },
+  {
+    "headword": "tree",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I climbed up the high tree to save my scared cat, but then I got stuck.",
+        "th_text": "ฉันปีนขึ้นไปบนต้นไม้สูงเพื่อช่วยแมวขี้กลัว แต่แล้วฉันก็ติดอยู่ข้างบนลงมาไม่ได้",
+        "cloze_target": "tree",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Look at that big tree.",
+        "th_text": "มองไปที่ต้นไม้ใหญ่ต้นนั้นสิ",
+        "cloze_target": "tree",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The birds are singing in the trees.",
+        "th_text": "พวกนกกำลังส่งเสียงร้องอยู่ตามต้นไม้หลายๆ ต้น",
+        "cloze_target": "trees",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We sat under a green tree yesterday.",
+        "th_text": "พวกเรานั่งอยู่ใต้ต้นไม้เขียวขจีเมื่อวานนี้",
+        "cloze_target": "tree",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "This is a very old tree.",
+        "th_text": "นี่คือต้นไม้ที่เก่าแก่มากๆ ต้นหนึ่ง",
+        "cloze_target": "tree",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า tree เป็นคำนาม (noun) แปลว่าต้นไม้ ในประโยคที่ 1, 2, 4 และ 5 ใช้ในรูปคำนามเอกพจน์ปกติ ส่วนในประโยคที่ 3 เติม -s เป็น trees เพื่อทำเป็นรูปพหูพจน์เมื่อกล่าวถึงต้นไม้หลายต้นตามกฎทั่วไป"
+  },
+  {
+    "headword": "walk",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I walked home alone in the dark and felt very scared.",
+        "th_text": "ฉันเดินกลับบ้านคนเดียวในความมืดและรู้สึกกลัวมาก",
+        "cloze_target": "walked",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you want to walk with me in the park?",
+        "th_text": "เธออยากเดินเล่นกับฉันในสวนสาธารณะไหม",
+        "cloze_target": "walk",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She walks to school every morning.",
+        "th_text": "เธอเดินไปโรงเรียนทุกเช้า",
+        "cloze_target": "walks",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "My little baby is just learning to walking... I mean, to walk.",
+        "th_text": "ลูกน้อยของฉันกำลังเรียนรู้ที่จะเดิน",
+        "cloze_target": "walking",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "They are walking outside right now.",
+        "th_text": "พวกเขากำลังเดินอยู่ข้างนอกตอนนี้",
+        "cloze_target": "walking",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า walk มีการปรับเปลี่ยนรูปไปตามกาลและโครงสร้างไวยากรณ์ โดยประโยคแรกใช้ walked อยู่ในรูป Past Simple เพื่อบอกเล่าเหตุการณ์ที่เกิดขึ้นและจบลงแล้วในอดีต (เติม -ed เพราะเป็นกริยาปกติ) ประโยคที่สองใช้รูป base form ตามหลัง to-infinitive (want to walk) ประโยคที่สามเติม -s (walks) เพราะประธานเป็นเอกพจน์บุรุษที่ 3 (She) และใช้ใน Present Simple สำหรับกิจวัตร ส่วนประโยคที่ห้าใช้รูป -ing (walking) ร่วมกับ verb to be เพื่อบอกเหตุการณ์ที่กำลังดำเนินอยู่ในขณะนี้"
+  },
+  {
+    "headword": "want",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I wanted this toy so much, but mom said no.",
+        "th_text": "ฉันอยากได้ของเล่นชิ้นนี้มากๆ แต่แม่บอกว่าไม่ได้",
+        "cloze_target": "wanted",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Do you want some apple juice?",
+        "th_text": "คุณอยากดื่มน้ำแอปเปิ้ลหน่อยไหม",
+        "cloze_target": "want",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He wants a new red bicycle for his birthday.",
+        "th_text": "เขาอยากได้จักรยานสีแดงคันใหม่เป็นของวันเกิด",
+        "cloze_target": "wants",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She was wanting to help you, but she was too shy.",
+        "th_text": "เธออยากจะช่วยคุณนะ แต่เธอกลัวเกินไป (แต่ปกติรูป Continuous จะพบน้อยในกริยาแสดงความต้องการ)",
+        "cloze_target": "wanting",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "What do you want to eat for dinner?",
+        "th_text": "คุณอยากกินอะไรเป็นมื้อเย็น",
+        "cloze_target": "want",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "กริยา want เปลี่ยนแปลงรูปตามกาลและประธาน โดยในประโยคแรกใช้ wanted เติม -ed เพื่อเล่าถึงความต้องการที่เกิดขึ้นในอดีต ประโยคที่สองและห้าใช้รูปเดิม (want) ในประโยคคำถามที่ใช้กริยาช่วย Do ร่วมกับประธานพหูพจน์หรือ I/you/we/they ประโยคที่สามเติม -s เป็น wants เพราะประธานเป็นเอกพจน์บุรุษที่ 3 (He) ในประโยคบอกเล่าปัจจุบัน ส่วนประโยคที่สี่ใช้รูป -ing (wanting) ในรูปอดีตกาลกำลังกระทำเพื่อเน้นความรู้สึกที่ต่อเนื่องในอดีต"
+  },
+  {
+    "headword": "water",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I was so thirsty in the hot desert that I cried for water.",
+        "th_text": "ฉันกระหายน้ำมากในทะเลทรายที่ร้อนระอุจนร้องไห้ขอทานน้ำ",
+        "cloze_target": "water",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please drink a lot of water every day.",
+        "th_text": "โปรดดื่มน้ำมากๆ ทุกวัน",
+        "cloze_target": "water",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Dad is watering the plants in the garden.",
+        "th_text": "พ่อกำลังรดน้ำต้นไม้ในสวน",
+        "cloze_target": "watering",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "She watered the flowers yesterday.",
+        "th_text": "เธอน้ำต้นไม้ (รดน้ำดอกไม้) เมื่อวานนี้",
+        "cloze_target": "watered",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "My mom waters her small garden every morning.",
+        "th_text": "แม่ของฉันรดน้ำสวนเล็กๆ ของเธอทุกเช้า",
+        "cloze_target": "waters",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า water สามารถทำหน้าที่ได้ทั้งคำนามและคำกริยา ในประโยคที่ 1 และ 2 ทำหน้าที่เป็นคำนามนับไม่ได้ (noun) บอกถึงของเหลว ส่วนประโยคที่ 3, 4 และ 5 ทำหน้าที่เป็นคำกริยา (verb แปลว่า รดน้ำ) ซึ่งมีการผันรูปตามหลักไวยากรณ์ โดยประโยคที่ 3 ใช้ watering (-ing) ร่วมกับ is เพื่อบอกเหตุการณ์ที่กำลังทำอยู่ ประโยคที่ 4 เติม -ed เป็น watered เพื่อบอกเหตุการณ์ที่ทำในอดีต และประโยคที่ 5 เติม -s เป็น waters เนื่องจากประธานเป็นเอกพจน์บุรุษที่ 3 (My mom) ในประโยคบอกเล่าปัจจุบัน"
+  },
+  {
+    "headword": "weather",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "The dark storm weather made me feel so lonely and afraid.",
+        "th_text": "อากาศพายุที่มืดครึ้มทำให้ฉันรู้สึกเหงาและกลัวมาก",
+        "cloze_target": "weather",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "How is the weather today?",
+        "th_text": "วันนี้อากาศเป็นอย่างไรบ้าง",
+        "cloze_target": "weather",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Bad weather can stop our plans.",
+        "th_text": "สภาพอากาศที่แย่สามารถทำให้แผนของเราต้องหยุดลงได้",
+        "cloze_target": "weather",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We do not like cold weather.",
+        "th_text": "พวกเราไม่ชอบอากาศหนาว",
+        "cloze_target": "weather",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Is this hot weather normal for this month?",
+        "th_text": "อากาศที่ร้อนแบบนี้เป็นเรื่องปกติสำหรับเดือนนี้ไหม",
+        "cloze_target": "weather",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า weather เป็นคำนามเอกพจน์นับไม่ได้ (uncountable noun) จึงไม่มีการเติม -s หรือเปลี่ยนรูปพหูพจน์เหมือนคำนามทั่วไป การใช้คำนี้ในแต่ละประโยคจึงคงรูปเดิมเสมอ แต่จะถูกนำไปวางในโครงสร้างประโยคที่หลากหลาย เช่น เป็นประธานของประโยค (ประโยคที่ 1 และ 3) เป็นส่วนเติมเต็มในประโยคคำถาม (ประโยคที่ 2 และ 5) หรือตามหลังคำคุณศัพท์บอกลักษณะอากาศ (ประโยคที่ 4)"
+  },
+  {
+    "headword": "week",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cried every day for a whole week after my dog ran away.",
+        "th_text": "ฉันร้องไห้ทุกวันตลอดทั้งสัปดาห์หลังจากที่สุนัขของฉันหนีหายไป",
+        "cloze_target": "week",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "There are seven days in a week.",
+        "th_text": "มีเจ็ดวันในหนึ่งสัปดาห์",
+        "cloze_target": "week",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "I will see you next week.",
+        "th_text": "ฉันจะพบคุณสัปดาห์หน้า",
+        "cloze_target": "week",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "We stayed there for two weeks.",
+        "th_text": "พวกเราอยู่ที่นั่นเป็นเวลาสองสัปดาห์",
+        "cloze_target": "weeks",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Every week brings new things to learn.",
+        "th_text": "ทุกๆ สัปดาห์นำสิ่งใหม่ๆ มาให้เรียนรู้",
+        "cloze_target": "week",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า week เป็นคำนามนับได้ (countable noun) จึงสามารถเปลี่ยนรูปเป็นพหูพจน์ได้ตามจำนวน โดยในประโยคที่ 1, 2, 3 และ 5 ใช้รูปเอกพจน์ (week) เมื่อพูดถึงสัปดาห์เดียวหรือใช้กับคำว่า every/next แต่ในประโยคที่ 4 มีการเติม -s เป็น weeks เนื่องจากมีคำบอกจำนวนคือ two (สอง) มานำหน้า ซึ่งเป็นกฎการทำคำนามนับได้ให้เป็นพหูพจน์"
+  },
+  {
+    "headword": "wife",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "He cried softly when his sick wife had to go to the big hospital.",
+        "th_text": "เขาร้องไห้อย่างเงียบๆ เมื่อภรรยาที่ป่วยของเขาต้องไปโรงพยาบาลใหญ่",
+        "cloze_target": "wife",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "My wife cooks very delicious food for me.",
+        "th_text": "ภรรยาของฉันทำอาหารอร่อยมากๆ ให้ฉันกิน",
+        "cloze_target": "wife",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He loves his wife so much.",
+        "th_text": "เขารักภรรยาของเขามาก",
+        "cloze_target": "wife",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Those men love their wives.",
+        "th_text": "ผู้ชายเหล่านั้นรักภรรยาของพวกเขา",
+        "cloze_target": "wives",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Is she your new wife?",
+        "th_text": "เธอคือภรรยาคนใหม่ของคุณใช่ไหม",
+        "cloze_target": "wife",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า wife เป็นคำนามเอกพจน์นับได้ที่มีความพิเศษในการเปลี่ยนรูปเป็นพหูพจน์ โดยประโยคที่ 1, 2, 3 และ 5 ใช้รูปเอกพจน์ (wife) ปกติ แต่ในประโยคที่ 4 เมื่อต้องการทำให้เป็นพหูพจน์ (หลายคน) ตามประธาน Those men จะต้องเปลี่ยนรูปจาก -fe เป็น -ves กลายเป็น wives (เปลี่ยน f เป็น v แล้วเติม -es) ซึ่งเป็นกฎการเปลี่ยนรูปของคำนามที่ลงท้ายด้วย -fe"
+  },
+  {
+    "headword": "window",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I looked out the dark window and prayed for him to come back.",
+        "th_text": "ฉันมองออกไปนอกหน้าต่างที่มืดมิดและภาวนาให้เขากลับมา",
+        "cloze_target": "window",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please open the window.",
+        "th_text": "โปรดเปิดหน้าต่างหน่อย",
+        "cloze_target": "window",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The cat is sitting near the window.",
+        "th_text": "แมวกำลังนั่งอยู่ใกล้หน้าต่าง",
+        "cloze_target": "window",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Can you clean all the windows in this room?",
+        "th_text": "คุณช่วยทำความสะอาดหน้าต่างทุกบานในห้องนี้หน่อยได้ไหม",
+        "cloze_target": "windows",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "That big house has many old windows.",
+        "th_text": "บ้านหลังใหญ่หลังนั้นมีหน้าต่างเก่าๆ หลายบาน",
+        "cloze_target": "windows",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า window เป็นคำนามนับได้ทั่วไป (regular countable noun) ในประโยคที่ 1, 2 และ 3 ใช้รูปเอกพจน์ (window) เพราะพูดถึงหน้าต่างเพียงบานเดียว ส่วนในประโยคที่ 4 และ 5 มีการเติม -s เป็น windows เพื่อเปลี่ยนเป็นรูปพหูพจน์เมื่อต้องการสื่อถึงหน้าต่างหลายบาน ซึ่งเป็นไปตามกฎปกติของการเติม -s ท้ายคำนาม"
+  },
+  {
+    "headword": "work",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "My father worked so hard all night just to buy me a pair of shoes.",
+        "th_text": "พ่อของฉันทำงานหนักตลอดทั้งคืนเพียงเพื่อซื้อรองเท้าให้ฉันหนึ่งคู่",
+        "cloze_target": "worked",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "I need to work on my English today.",
+        "th_text": "ฉันต้องฝึกฝน/ทำงานเกี่ยวกับภาษาอังกฤษของฉันวันนี้",
+        "cloze_target": "work",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She works in a big office in the city.",
+        "th_text": "เธอทำงานอยู่ในสำนักงานใหญ่ในเมือง",
+        "cloze_target": "works",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They are working hard for their family.",
+        "th_text": "พวกเขากำลังทำงานหนักเพื่อครอบครัวของพวกเขา",
+        "cloze_target": "working",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Did you work yesterday?",
+        "th_text": "คุณได้ทำงานเมื่อวานนี้ไหม",
+        "cloze_target": "work",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า work มีการปรับเปลี่ยนรูปตามกาลและโครงสร้างไวยากรณ์ โดยประโยคแรกใช้ worked เติม -ed (กริยาปกติ) เพื่อบอกเล่าเหตุการณ์ที่เกิดขึ้นในอดีต ประโยคที่สองและห้าใช้รูป base form (work) โดยประโยคที่สองตามหลัง to-infinitive ส่วนประโยคที่ห้าใช้ตามหลังกริยาช่วย Did ในประโยคคำถามอดีตกาล ประโยคที่สามเติม -s เป็น works เพราะประธานเป็นเอกพจน์บุรุษที่ 3 (She) ใน Present Simple และประโยคที่สี่ใช้รูป -ing (working) ร่วมกับ verb to be เพื่อบอกเหตุการณ์ที่กำลังทำอยู่ในปัจจุบัน"
+  },
+  {
+    "headword": "write",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "She wrote a sad letter to her lost friend and cried.",
+        "th_text": "เธอเขียนจดหมายเศร้าๆ ถึงเพื่อนที่หายสาบสูญไปและร้องไห้",
+        "cloze_target": "wrote",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please write your name on this paper.",
+        "th_text": "โปรดเขียนชื่อของคุณลงบนกระดาษแผ่นนี้",
+        "cloze_target": "write",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "He writes a story every weekend.",
+        "th_text": "เขาเขียนเรื่องสั้นทุกๆ วันหยุดสุดสัปดาห์",
+        "cloze_target": "writes",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "I am writing an email to my teacher now.",
+        "th_text": "ฉันกำลังเขียนอีเมลหาคุณครูตอนนี้",
+        "cloze_target": "writing",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Have you ever written a book?",
+        "th_text": "คุณเคยเขียนหนังสือไหม",
+        "cloze_target": "written",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า write เป็นกริยาผิดปกติ (irregular verb) ที่เปลี่ยนรูปไปในแต่ละ Tense อย่างชัดเจน โดยประโยคแรกใช้ wrote (V2) สำหรับเล่าเรื่องในอดีต ประโยคที่สองใช้รูปเดิม write ตามหลังคำสั่ง/ขอร้อง ประโยคที่สามเติม -s เป็น writes เมื่อประธานเป็นเอกพจน์บุรุษที่ 3 (He) ประโยคที่สี่ตัด -e แล้วเติม -ing เป็น writing (writing) ร่วมกับ verb to be ในรูปกำลังทำ และประโยคที่ห้าใช้รูปกริยาช่องที่ 3 คือ written (V3) ตามหลังกริยาช่วย Have ในโครงสร้าง Present Perfect"
+  },
+  {
+    "headword": "year",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I waited alone for him for a whole year, but he never came back.",
+        "th_text": "ฉันรอเขาคนเดียวตลอดทั้งปี แต่เขาไม่เคยกลับมาเลย",
+        "cloze_target": "year",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "There are twelve months in a year.",
+        "th_text": "มีสิบสองเดือนในหนึ่งปี",
+        "cloze_target": "year",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "She is six years old this year.",
+        "th_text": "เธออายุหวิดหกขวบในปีนี้ (อายุ 6 ปีในปีนี้)",
+        "cloze_target": "year",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They lived in London for three years.",
+        "th_text": "พวกเขาอาศัยอยู่ในลอนดอนเป็นเวลาสามปี",
+        "cloze_target": "years",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Next year, I will go to a new school.",
+        "th_text": "ปีหน้า ฉันจะไปโรงเรียนใหม่",
+        "cloze_target": "year",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า year เป็นคำนามนับได้ (countable noun) ในประโยคที่ 1, 2, 3 (คำว่า this year) และ 5 (คำว่า Next year) ใช้รูปเอกพจน์ (year) เพราะสื่อถึงปีเดียวหรือใช้กับคำบอกเวลาเฉพาะ ส่วนในประโยคที่ 4 มีการเติม -s เป็น years เนื่องจากมีจำนวนตัวเลขคือ three (สาม) มานำหน้า ซึ่งเป็นไปตามหลักการทำคำนามนับได้ให้เป็นพหูพจน์เมื่อมีจำนวนมากกว่าหนึ่ง"
+  }
+]
