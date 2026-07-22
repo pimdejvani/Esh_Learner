@@ -18,6 +18,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from wordlist import WORDS
 from thai_data import DATA
 from llm_sentences import DATA as LLM_SENTENCES
+from swow_associations import SWOW_ASSOCIATIONS, SWOW_FALLBACK_EXCEPTIONS
 
 try:
     from nltk.corpus import wordnet as _wn
@@ -294,10 +295,15 @@ def build_sentences(word, pos, meaning_th):
     return out, forms
 
 
-# Small manually-curated related-words fallback (documented in NOTES.md as an
-# approximation of SWOW, since SWOW-EN could not be downloaded in this
-# session). Only added where a clear, non-giveaway semantic-neighbour exists
-# among the 160-word A1 seed itself (both endpoints must be in the seed).
+# Small manually-curated related-words fallback -- NO LONGER the primary
+# association source (see tools/swow_associations.py, which now has real
+# SWOW-EN18 data for all 153/153 current words). Kept only as the documented
+# per-word exception path in resolve_related() below, for any future word
+# that ends up in SWOW_FALLBACK_EXCEPTIONS (empty today). Historical/dead
+# code for the 153-word list as it stands, intentionally left in rather than
+# deleted so the fallback mechanism keeps working unattended. Only added
+# where a clear, non-giveaway semantic-neighbour exists among the 160-word
+# A1 seed itself (both endpoints must be in the seed).
 RELATED_FALLBACK = {
     "cat": ["dog", "milk"], "dog": ["cat", "run"], "car": ["drive", "road" if False else "fast"],
     "book": ["read", "school"], "school": ["student", "teacher", "book"],
@@ -380,24 +386,37 @@ def is_wn_antonym(w1, pos1, w2):
 
 
 def resolve_related(word_ids, pos_map):
-    """Association rows from RELATED_FALLBACK (still the SWOW-approximation
-    fallback -- SWOW-EN itself wasn't fetchable this pass either, see
-    NOTES.md section 3), but is_giveaway is now REAL: computed per pair by
-    checking WordNet for an actual synonym or antonym relation, rather than
-    the previous hardcoded is_giveaway=0 for every row."""
+    """Association rows sourced from REAL SWOW-EN18 data
+    (tools/swow_associations.py -- see that file's docstring for the exact
+    source file, date, and extraction method) for every word NOT in
+    SWOW_FALLBACK_EXCEPTIONS (empty for the current 153-word list -- every
+    word had enough real in-vocabulary SWOW rows). `closeness` is the
+    dataset's own real R123.Strength score, not a placeholder. Any word
+    that WOULD be in the exception list falls back to the old hand-curated
+    RELATED_FALLBACK dict with a flat 0.5 closeness, exactly as before.
+    is_giveaway is computed the same way as before (real WordNet
+    synonym/antonym check), now applied to the real SWOW pairs."""
     rows = []
-    for w, neighbours in RELATED_FALLBACK.items():
-        if w not in word_ids:
-            continue
-        for n in neighbours:
-            if n not in word_ids or n == w:
-                continue
-            pos_w = pos_map.get(w, "n")
-            is_giveaway = 0
-            if HAVE_WORDNET:
-                if is_wn_synonym(w, pos_w, n) or is_wn_antonym(w, pos_w, n):
-                    is_giveaway = 1
-            rows.append((word_ids[w], word_ids[n], "association", 0.5, is_giveaway))
+
+    def emit(w, n, closeness):
+        pos_w = pos_map.get(w, "n")
+        is_giveaway = 0
+        if HAVE_WORDNET:
+            if is_wn_synonym(w, pos_w, n) or is_wn_antonym(w, pos_w, n):
+                is_giveaway = 1
+        rows.append((word_ids[w], word_ids[n], "association", closeness, is_giveaway))
+
+    for w in word_ids:
+        if w in SWOW_FALLBACK_EXCEPTIONS:
+            for n in RELATED_FALLBACK.get(w, []):
+                if n not in word_ids or n == w:
+                    continue
+                emit(w, n, 0.5)
+        else:
+            for n, strength in SWOW_ASSOCIATIONS.get(w, []):
+                if n not in word_ids or n == w:
+                    continue
+                emit(w, n, strength)
     return rows
 
 
@@ -421,11 +440,18 @@ def build_hypernym_meronym_rows(word_ids, pos_map):
     seen_pairs = set()  # avoid duplicating an already-known synonym/antonym pair
 
     # pairs already covered as association+synonym/antonym -- skip adding a
-    # redundant hypernym/meronym row for the exact same two words.
+    # redundant hypernym/meronym row for the exact same two words. Sourced
+    # from whichever association source resolve_related() actually used
+    # per word (real SWOW_ASSOCIATIONS, or RELATED_FALLBACK for any word in
+    # SWOW_FALLBACK_EXCEPTIONS -- empty for the current 153-word list).
     existing_assoc_pairs = set()
-    for w, neighbours in RELATED_FALLBACK.items():
-        for n in neighbours:
-            existing_assoc_pairs.add(frozenset((w, n)))
+    for w in word_ids:
+        if w in SWOW_FALLBACK_EXCEPTIONS:
+            for n in RELATED_FALLBACK.get(w, []):
+                existing_assoc_pairs.add(frozenset((w, n)))
+        else:
+            for n, _strength in SWOW_ASSOCIATIONS.get(w, []):
+                existing_assoc_pairs.add(frozenset((w, n)))
 
     for w in noun_words:
         ssets = _wn_synsets(w, "n")

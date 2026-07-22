@@ -18,6 +18,34 @@ possibly replace the templated `example_sentences`/`grammar_note_th` content
 below with LLM-generated content. That is a follow-up, independent of
 everything in this document.~~
 
+**Update (2026-07-23, real SWOW-EN18 integration):** the one remaining
+approximated field flagged by the 2026-07-22 pass below — `related_words`'
+`association`/`closeness` data — is now real too. The user manually
+completed smallworldofwords.org's name/email request form (which can't be
+automated) and downloaded the actual SWOW-EN18 release to
+`C:\Users\pimde\Downloads\SWOW-EN18\`. `strength.SWOW-EN.R123.20180827.csv`
+(the cue→response associative-strength file, ~1.39M rows) was loaded and
+filtered to rows where both `cue` and `response` are in this app's 153-word
+seed. **All 153/153 words had enough real in-vocabulary SWOW data** (min 4,
+max 28, avg ~14.3 candidate rows per word before capping) — so, unlike the
+pass's own stated worry that some words might need to stay on the old
+hand-curated fallback, **that fallback path ended up not being needed for
+any word**. New file `tools/swow_associations.py` holds the real data (top
+6 per word by real `R123.Strength`, used directly as `closeness` — no
+longer a flat 0.5 placeholder); `build_dataset.py`'s `resolve_related()` now
+sources every word's association rows from there, with `RELATED_FALLBACK`
+kept only as a documented, currently-unused per-word exception mechanism
+(`SWOW_FALLBACK_EXCEPTIONS`, empty today) in case a future word-list change
+ever introduces a word SWOW has too little data for. `is_giveaway` is
+still computed the same way (real WordNet synonym/antonym check), now
+applied to the real SWOW pairs — this actually surfaced *more* real
+giveaway pairs than before (75, up from 26), since the real data includes
+antonym pairs (`hot`↔`cold`, `go`↔`come`, etc.) the old hand-curated set
+didn't happen to include. Full detail in section 1's `related_words` row
+below and in `tools/swow_associations.py`'s own docstring. Rebuilt the
+DB (`QC pass: OK`), and `vocab_app`'s `flutter test` (91/91) and
+`flutter analyze` were both re-run against it — see section 3.
+
 **Update (2026-07-22, real-sourcing pass):** every field this document
 previously flagged as "approximated" has now been re-done against a real
 external source where one was fetchable, and precisely documented where it
@@ -43,11 +71,15 @@ been rewritten below):
    synonym/antonym check (was a hardcoded 0 for every row before). New
    `hypernym`/`part_of` rows were added from a real WordNet hypernym-path /
    holonym closure over the word set, for the Odd-One-Out game. SWOW-EN
-   itself is still not fetchable (confirmed this pass: its GitHub repo
-   `.gitignore`s the actual response/strength data files, only per-word
-   summary stats are tracked) — `RELATED_FALLBACK`'s hand-curated
-   association pairs remain the closeness/association-strength source,
-   exactly as SPEC.md sanctions for this documented case.
+   itself was not fetchable *automatically* this pass (confirmed: its
+   GitHub repo `.gitignore`s the actual response/strength data files, only
+   per-word summary stats are tracked) — `RELATED_FALLBACK`'s hand-curated
+   association pairs remained the closeness/association-strength source at
+   the time, exactly as SPEC.md sanctions for this documented case.
+   **Superseded 2026-07-23**: the user manually completed
+   smallworldofwords.org's request form and downloaded the real SWOW-EN18
+   data — `association`/`closeness` is now real too, for all 153/153 words.
+   See the 2026-07-23 update above and section 1's `related_words` row.
 4. **9 fallback-template sentences**: regenerated with `gemini-3.6-flash`
    now that the API key has credits again. All 9 passed QC cleanly on the
    first retry. **All 153 words in the current seed now use real
@@ -73,7 +105,7 @@ wordnet`, one-time, no further internet access needed after that.
 | `meaning_th` (Thai gloss) | **Real for 152/153 words, fetched from Wiktionary's own translation tables.** `thai_reading`, `ipa`, `collocation_en/th`, `countable` remain hand-authored (see reasoning below). | `tools/thai_data.py`. Fetched via `GET https://api.wiktapi.dev/v1/en/word/{word}/translations` (a free, no-key API that mirrors en.wiktionary.org's own Translations tables) for all 153 headwords — collected every `lang_code="th"` entry for the word's part of speech, then for each word picked the real Wiktionary Thai word using this priority: (1) exact match to a term already in the previous hand-authored gloss (validates it as real and preserves the original sense-priority ordering, e.g. `old`'s `แก่, เก่า` kept แก่ since it was listed first), (2) else the candidate that's a substring of this word's own `collocation_th` (the collocation demonstrates which sense the app actually drills — used to disambiguate 11 words whose old gloss was a compound/paraphrase not itself a separate Wiktionary translation entry: `after`, `again`, `beautiful`, `different`, `evening`, `eye`, `kitchen`, `light`, `live`, `sleep`, `talk`), (3) otherwise the first available real candidate. **113/152 already matched a real Wiktionary word exactly unchanged** (validates the original hand-typed data was largely accurate); **40 changed** to a different (still real) Wiktionary word after this cross-check. **1 word, `make`, has NO Thai translation in Wiktionary's data at all** for any of its (very polysemous) verb senses — a WebFetch double-check of the plain `en.wiktionary.org/wiki/make` page didn't turn up a clean answer either, so the previous hand-authored `"ทำ, สร้าง"` is kept **unchanged and still explicitly flagged approximated** (`words.translation_source = "Wiktionary (approximated)"` for this one word only; every other word now gets a clean `"Wiktionary"`). `translation_license` was also corrected from the previously-recorded `"CC BY-SA 3.0"` to the actual current license: **`"CC BY-SA 4.0"`** (verified against `en.wiktionary.org/wiki/Wiktionary:Copyrights`, which states Wiktionary content is dual-licensed CC BY-SA 4.0 + GFDL). `thai_reading`/`stress_index` are still derived by hand from `ipa` (a syllable-hyphenated Thai-script transliteration, more specific than wiktapi.dev's loose romanization) — wiktapi's `roman` field was used only to sanity-check sense/word correctness, not as the reading source, per this pass's instructions. `ipa`, `collocation_en/th`, `countable` are unchanged from before (still hand-authored/rule-checked, not separately re-sourced this pass — SPEC.md's allowed non-definitional human/LLM judgment). |
 | `word_forms.form_text`/`form_type`/`is_irregular` | **Rule-generated (regex-based inflection rules + irregular-verb/plural lookup tables), unchanged** | `build_dataset.py` (`regular_past`, `ving`, `s3sg`, `plural`, `comparative`, `IRREGULAR_VERBS`, `IRREGULAR_PLURALS`). The inflected *forms themselves* are still computed this way for all 153 words (this part was never the flagged gap). |
 | `example_sentences` (5/word) + `word_forms.grammar_note_th` | **Real gemini-3.6-flash-generated content for ALL 153/153 words** (was 151/160, with 9 on old templates) | `tools/llm_sentences.py`, sourced from `tools/model_compare_results/gemini-3.6-flash_round1.json` (the original 160-word run) merged with `tools/model_compare_results/_regenerated.json` (the 2026-07-22 regeneration pass, see below) via `tools/_gen_llm_sentences.py`. `build_dataset.py`'s `build_sentences()` prefers this dataset per headword — for a hit, it also overwrites `grammar_note_th` on every `word_forms` row for that word with the LLM's one richer paragraph, in the SPEC §9.2 "explain why" style. The old `SENT_TEMPLATES` + rule-based note mechanism is **no longer exercised for any word in the current build** — it remains in the code purely as a defensive fallback. **Model selection** (unchanged from before, kept for history): 3 Gemini models were A/B-tested 2 rounds each over the full 160-word list against the SPEC §5 QC rules — `gemini-2.5-flash-lite` was dead/retired (404s), `gemini-3.5-flash-lite` was cheap but only 34–56% compliant on the varied-forms rule, `gemini-3.6-flash` cost more (~$0.40–0.58/run, trivial in absolute terms) but hit 83–93% compliance. Full numbers in `tools/model_compare_results/summary.json`. **The 9-word gap is now closed:** `bag`, `day`, `evening`, `name`, `night`, `orange`, `page`, `window` (countable nouns that previously only reached singular/plural — 2 forms — instead of 3+ via a possessive) and `different` (previously used the invalid derived-lemma cloze target "difference") were regenerated via `tools/_regenerate_llm.py` with `gemini-3.6-flash` now that the API key has credits again — **all 9 passed the full QC check (exactly 5 sentences, rank1 emotional, valid verbatim cloze span, ≥3 distinct inflected forms) cleanly on the very first retry**, no further API errors. `different`'s regenerated sentences now correctly cycle `different` / `different` / `more different` / `most different` / `different` — real inflected/comparative forms of `different` itself, not the noun "difference". An automated post-generation scan (double-space check, non-Thai/non-ASCII-script check, cloze-substring verification) found **0 issues** across all 45 new sentences — no manual `MANUAL_FIXES`-style correction was needed for this batch (unlike the original 160-word run, which needed 16 fixes across 14 words — that correction record is untouched and still baked into `llm_sentences.py`). |
-| `related_words` | **`is_giveaway` now real (WordNet-computed). `hypernym`/`part_of` rows now real (WordNet-derived). `association` pairs + their `closeness` remain the hand-curated fallback — SWOW-EN confirmed still not fetchable.** | `build_dataset.py`. **is_giveaway**: previously hardcoded 0 for every row; now computed per `RELATED_FALLBACK` pair by checking real WordNet data (`nltk.corpus.wordnet`) for an actual synonym (shares a synset) or antonym (WordNet's curated antonym links) relation, restricted to the word's POS as used in this app. **26 of 136 association rows (13 unique pairs) are real WordNet synonym/antonym pairs** and are now flagged `is_giveaway=1`: antonym pairs `mother↔father`, `brother↔sister`, `husband↔wife`, `boy↔girl`, `hot↔cold`, `big↔small`, `fast↔slow`; synonym pairs `small↔little`, `house↔home`, `home↔family`, `listen↔hear`, `speak↔talk`, `learn↔study`, `child↔baby`. Everything else stays `is_giveaway=0`. **New `hypernym`/`part_of` rows**: computed from each noun's primary WordNet sense's hypernym-path closure (IS-A, e.g. `bread` IS-A `food`) and holonym closure (part-of, e.g. `night` is part_of `day`), restricted to pairs where BOTH headwords are already in this app's 153-word set (so the FK constraint holds and the hint filter's own "must be in Oxford 3000" rule is automatically satisfied). Added **5 `hypernym`** rows (`bread`→`food`, `evening`→`day`, `milk`→`food`, `orange`→`food`, `page`→`paper`) and **2 `part_of`** rows (`kitchen`→`home`, `night`→`day`) after two kinds of filtering: (a) skipping any pair already covered by an existing `RELATED_FALLBACK` association row, to avoid a redundant duplicate row for the same two words (this is why e.g. `house`↔`home`, `baby`↔`child`, `lunch`↔`food`, `rain`↔`weather`, `sea`↔`water` — all real hypernym pairs too — don't get a *second* row; they're already connected via the association row), and (b) one explicit **sense-mismatch exclusion**: WordNet's only holonym for `fish` (the animal sense) is `school.n.07` ("a school OF FISH", i.e. a shoal) — completely unrelated to this app's `school` headword, which teaches `school.n.01` ("an educational institution"). Surfacing that pair in Odd-One-Out would be actively misleading, so it's excluded and documented in `build_dataset.py`'s `HYPERNYM_MERONYM_SENSE_MISMATCH_EXCLUDE`. `is_giveaway=0` for all hypernym/part_of rows (the auto-giveaway flag is specifically for synonym/antonym per SPEC.md §5; a broader category isn't the same as revealing the answer). `closeness=0.6` for these rows is a flat placeholder, same caveat as the association rows below — WordNet has no association-strength score, so this is NOT claimed as SWOW-sourced. **association pairs remain `RELATED_FALLBACK`'s ~50 hand-picked pairs, `closeness` remains a flat 0.5 placeholder.** SWOW-EN was actively re-attempted this pass: browsed `github.com/SimonDeDeyne/SWOWEN-2018`'s file listing via `gh api` — the repo's `data/raw/`, `data/processed/`, and `output/` directories only contain per-cue-word summary statistics (`cueStats.SWOW-EN.*.csv`, `responseStats.SWOW-EN.csv`); the actual pairwise cue→response *strength* file the task hoped to find (`strength.SWOW-EN.R1.csv`) isn't tracked in the repo at all — `data/raw/` and `data/processed/` contain only a `.gitignore` placeholder, confirming the raw response data is intentionally excluded from git (distributed separately via smallworldofwords.org's own download form instead). This is exactly the fallback path SPEC.md itself sanctions ("ถ้าไม่ได้... ยอมรับให้ fallback เป็น manually-curated set... แต่บันทึกใน NOTES.md"). |
+| `related_words` | **`is_giveaway` real (WordNet-computed). `hypernym`/`part_of` rows real (WordNet-derived). `association` pairs + their `closeness` are now ALSO real (SWOW-EN18, 2026-07-23) — the fallback caveat below is now historical.** | `build_dataset.py` + `tools/swow_associations.py`. **is_giveaway**: computed by checking real WordNet data (`nltk.corpus.wordnet`) for an actual synonym (shares a synset) or antonym (WordNet's curated antonym links) relation, restricted to the word's POS as used in this app — now applied to the real SWOW association pairs (see below), not the old hand-curated set. **75 of 913 association rows are real WordNet synonym/antonym pairs** and are flagged `is_giveaway=1` (up from 26/136 under the old hand-curated set — the real SWOW data includes more antonym pairs, e.g. `go`↔`come`, `hard`↔`easy`, `near`↔`far`, that weren't in the old manually-picked list). Everything else stays `is_giveaway=0`. **`hypernym`/`part_of` rows**: computed from each noun's primary WordNet sense's hypernym-path closure (IS-A, e.g. `bread` IS-A `food`) and holonym closure (part-of, e.g. `night` is part_of `day`), restricted to pairs where BOTH headwords are already in this app's 153-word set, skipping any pair already covered by an association row (now checked against the real SWOW pairs, not `RELATED_FALLBACK` — see the 2026-07-23 update below for why this shrank the hypernym/part_of row count) and excluding one documented sense mismatch (`fish`→`school`, in `build_dataset.py`'s `HYPERNYM_MERONYM_SENSE_MISMATCH_EXCLUDE` — WordNet's only holonym for `fish` is `school.n.07`, "a shoal", unrelated to this app's `school.n.01`, "an educational institution"). `is_giveaway=0` and `closeness=0.6` (flat placeholder — WordNet has no association-strength score) for all hypernym/part_of rows, unchanged from before. **Only 2 hypernym/part_of rows remain** (`milk`→`food` hypernym, `kitchen`→`home` part_of) — down from 7 previously, because the real SWOW data already connects most of the same pairs (`bread`↔`food`, `evening`↔`day`, `orange`↔`food`, `page`↔`paper`, `night`↔`day` are now real association rows instead, so the dedup logic correctly skips adding a redundant hypernym/part_of row for them). **association/closeness — REAL as of 2026-07-23.** Previously (2026-07-22 pass and earlier): SWOW-EN wasn't fetchable automatically — its GitHub repo (`SimonDeDeyne/SWOWEN-2018`) `.gitignore`s the actual response/strength files, only per-word summary stats are tracked — so `RELATED_FALLBACK`'s ~50 hand-picked pairs (136 rows) with a flat `closeness=0.5` were used, exactly the fallback path SPEC.md sanctions for this documented case. **That gap is now closed**: the user manually completed smallworldofwords.org's name/email request form (the one thing that can't be automated) and downloaded the real SWOW-EN18 release (De Deyne, Navarro, Perfors, Brysbaert & Storms, 2019, "The Small World of Words English word association norms for over 12,000 cue words," *Behavior Research Methods*) to `C:\Users\pimde\Downloads\SWOW-EN18\`. `tools/swow_associations.py` (new file, full methodology in its own docstring) loaded `strength.SWOW-EN.R123.20180827.csv` (the 2018-08-27 release's cue→response associative-strength file, ~1.39M rows — loading it with plain `pandas.read_csv(sep="\t")` silently dropped ~30% of rows because a few response fields contain literal `"` characters that the default CSV quoting rules mis-parse as multi-line records; fixed with `quoting=csv.QUOTE_NONE`, verified against `wc -l` before trusting the row count), filtered to rows where both `cue` and `response` are (case-insensitively) one of the 153 seed headwords, dropped self-loops, then for each word took its rows as cue sorted by real `R123.Strength` (SWOW's own conditional-probability score) descending and kept the top 6. **All 153/153 words had at least 2 real in-vocabulary associations** (min 4, max 28, avg ~14.3 candidates before capping) — so the per-word fallback-exception mechanism this task anticipated needing (`SWOW_FALLBACK_EXCEPTIONS` in `swow_associations.py`, checked by `build_dataset.py`'s `resolve_related()` before it would fall back to `RELATED_FALLBACK` for a specific word) **is not exercised by any word in the current list** — it's kept in place, empty, purely so the fallback still works unattended if a future word-list change ever adds a word SWOW has too little data for. Total real association rows in the built DB: **913** (up from 136), covering all 153 words (up from 64) — every word now has real association data, not just the ~40% the old hand-curated set happened to cover. Sample: `cat`'s real top rows are `dog` (0.2047), `house`/`hat`/`fish` (~0.0067), `food`/`home` (~0.0034) — vs. the old fallback's flat `cat → [dog(0.5), milk(0.5)]`. `RELATED_FALLBACK` itself is left in the code, now used only if `SWOW_FALLBACK_EXCEPTIONS` is ever non-empty. |
 | Images (`has_photo`, `image_url`, etc.) | **All 0 / null — no Openverse/Wikimedia fetch attempted** | Explicitly spec-sanctioned scope cut: "it's fine if most of the 150-word seed just has has_photo=0". `lib/data/image_cache.dart` is fully implemented and unit-test-ready (injectable `HttpGet`) but has nothing in the seed to exercise it against yet. |
 
 ### QC pass actually performed (not skipped)
@@ -308,10 +340,14 @@ within 3s else `Good`. `capForHint()` implements §8b's hint-usage cap
    were restored), and `related_words`' `is_giveaway` + `hypernym`/`part_of`
    rows are now real WordNet-computed data. **What's still genuinely
    approximated/fallback, precisely**: `make`'s `meaning_th` (no Wiktionary
-   Thai translation exists for it), and `RELATED_FALLBACK`'s association
-   pairs + their flat `closeness` values (SWOW-EN confirmed still not
-   fetchable — its GitHub repo excludes the actual response/strength data
-   from git). Nothing else in the dataset is silently approximated anymore.
+   Thai translation exists for it) — that's it. The other item this bullet
+   used to list, `RELATED_FALLBACK`'s association pairs + flat `closeness`
+   values, was resolved on 2026-07-23: the user manually downloaded the
+   real SWOW-EN18 dataset and `tools/swow_associations.py` now supplies
+   real association/closeness data for all 153/153 words — see the
+   2026-07-23 update near the top of this file and section 1's
+   `related_words` row. Nothing else in the dataset is silently
+   approximated anymore.
 2. **On-device verification**: run on an iOS simulator/device (`flutter run
    -d <ios-device>`) and walk the full loop described in SPEC.md §11's
    success criterion. Still not done, still the top real gap in this repo.
@@ -553,6 +589,21 @@ the focus-topic bias no-op/bias behavior.
   `word_association_test.dart`/`odd_one_out_test.dart` suites (91/91
   passing) already exercise the real is_giveaway values, not just
   hypothetical ones.
+- **Addendum 2 (2026-07-23, dataset-sourcing pass, not this section's
+  original author):** the data-sparsity half of the "frequently can't build
+  a round" gap immediately above is now resolved at the data layer — the
+  user manually downloaded the real SWOW-EN18 dataset and every word now
+  has real association rows (913 total across all 153 words, up from ~140
+  across 64 words). See the 2026-07-23 update near the top of this file and
+  section 1's `related_words` row for the full account. This pass only
+  touched `tools/*.py` and `vocab_app/assets/seed/vocab.db` — it did not
+  touch `vocab_app/lib/**`, so whether Odd One Out / Word Association
+  actually show up more often in the running app depends on that unedited
+  game logic (`buildOddOneOutGroup`/`pickAssociationTarget`, both in
+  `vocab_app/lib/games/`) behaving as documented against the richer data;
+  `flutter test`'s existing suites for both (91/91 passing, unchanged count)
+  already exercise it against the real values, but this pass did not add
+  new test cases or do on-device verification of round frequency.
 
 ### 9. Verification performed
 
