@@ -1,0 +1,141 @@
+/// Motivation layer (SPEC.md section 10): streak, calendar heatmap, word
+/// status counts. Heatmap grid pattern borrowed from Gymmer_App's
+/// month_grid/calendar widget, adapted from workout-days to
+/// review-counts-per-day.
+library;
+
+import 'package:flutter/material.dart';
+
+import 'package:vocab_app/data/vocab_store.dart';
+import 'package:vocab_app/domain/streaks.dart';
+import 'package:vocab_app/models/srs_state.dart';
+
+class ProgressPage extends StatefulWidget {
+  const ProgressPage({super.key, required this.store});
+
+  final VocabStore store;
+
+  @override
+  State<ProgressPage> createState() => _ProgressPageState();
+}
+
+class _ProgressPageState extends State<ProgressPage> {
+  Map<String, DailyStats> _stats = {};
+  Map<CardState, int> _statusCounts = {};
+  bool _loading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    final now = DateTime.now();
+    final from = DateTime(now.year, now.month - 2, 1);
+    final stats = await widget.store.loadDailyStatsRange(from, now);
+    final state = await widget.store.load();
+    final counts = <CardState, int>{
+      for (final s in CardState.values) s: 0,
+    };
+    for (final w in state.words) {
+      final srs = state.srsStates[w.id];
+      counts[srs?.state ?? CardState.newState] =
+          (counts[srs?.state ?? CardState.newState] ?? 0) + 1;
+    }
+    setState(() {
+      _stats = stats;
+      _statusCounts = counts;
+      _loading = false;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_loading) return const Center(child: CircularProgressIndicator());
+
+    final keptDates = {
+      for (final e in _stats.entries)
+        if (e.value.streakKept) e.key,
+    };
+    final streak = dayStreak(keptDates, now: DateTime.now());
+    final heat = monthHeatmap(
+      {for (final e in _stats.entries) e.key: e.value.reviewsDone},
+      DateTime.now(),
+    );
+
+    return ListView(
+      padding: const EdgeInsets.all(16),
+      children: [
+        Card(
+          child: ListTile(
+            leading: const Icon(Icons.local_fire_department, color: Colors.orange),
+            title: Text('Streak: $streak วัน'),
+          ),
+        ),
+        const SizedBox(height: 16),
+        Text('สถานะคำ', style: Theme.of(context).textTheme.titleMedium),
+        Wrap(
+          spacing: 8,
+          children: [
+            for (final state in CardState.values)
+              Chip(label: Text('${_labelFor(state)}: ${_statusCounts[state] ?? 0}')),
+          ],
+        ),
+        const SizedBox(height: 16),
+        Text('ปฏิทินการทวน', style: Theme.of(context).textTheme.titleMedium),
+        _HeatmapGrid(heat: heat),
+      ],
+    );
+  }
+
+  String _labelFor(CardState s) {
+    switch (s) {
+      case CardState.newState:
+        return 'New';
+      case CardState.learning:
+        return 'Learning';
+      case CardState.young:
+        return 'Young';
+      case CardState.mature:
+        return 'Mature';
+    }
+  }
+}
+
+class _HeatmapGrid extends StatelessWidget {
+  const _HeatmapGrid({required this.heat});
+
+  final Map<String, int> heat;
+
+  Color _colorFor(int count, BuildContext context) {
+    final base = Theme.of(context).colorScheme.primary;
+    if (count == 0) return base.withValues(alpha: 0.08);
+    if (count < 5) return base.withValues(alpha: 0.35);
+    if (count < 15) return base.withValues(alpha: 0.65);
+    return base;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final entries = heat.entries.toList()..sort((a, b) => a.key.compareTo(b.key));
+    return Wrap(
+      spacing: 4,
+      runSpacing: 4,
+      children: [
+        for (final e in entries)
+          Tooltip(
+            message: '${e.key}: ${e.value} ครั้ง',
+            child: Container(
+              width: 16,
+              height: 16,
+              decoration: BoxDecoration(
+                color: _colorFor(e.value, context),
+                borderRadius: BorderRadius.circular(3),
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+}

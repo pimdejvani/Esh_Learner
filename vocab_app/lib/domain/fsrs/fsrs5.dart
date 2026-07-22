@@ -68,13 +68,14 @@ class FsrsScheduler {
   double _nextStabilityOnSuccess(double d, double s, double r, int grade) {
     final hardPenalty = grade == 2 ? weights[15] : 1.0;
     final easyBonus = grade == 4 ? weights[16] : 1.0;
-    final factor =
-        math.exp(weights[8]) *
-        (11 - d) *
-        math.pow(s, -weights[9]) *
-        (math.exp((1 - r) * weights[10]) - 1) *
-        hardPenalty *
-        easyBonus;
+    final double factor =
+        (math.exp(weights[8]) *
+                (11 - d) *
+                math.pow(s, -weights[9]) *
+                (math.exp((1 - r) * weights[10]) - 1) *
+                hardPenalty *
+                easyBonus)
+            .toDouble();
     return s * (1 + factor);
   }
 
@@ -149,7 +150,8 @@ class FsrsScheduler {
   /// stability [s].
   double intervalForStability(double s, double requestRetention) {
     final r = requestRetention.clamp(0.70, 0.99);
-    final days = (s / kFsrsFactor) * (math.pow(r, 1 / kFsrsDecay) - 1);
+    final double days =
+        ((s / kFsrsFactor) * (math.pow(r, 1 / kFsrsDecay) - 1)).toDouble();
     return days.clamp(0.0, 36500.0);
   }
 }
