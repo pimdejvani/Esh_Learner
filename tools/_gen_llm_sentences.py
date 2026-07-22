@@ -13,17 +13,25 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
 IN_PATH = os.path.join(ROOT, "tools", "model_compare_results", "gemini-3.6-flash_round1.json")
+REGEN_PATH = os.path.join(ROOT, "tools", "model_compare_results", "_regenerated.json")
 OUT_PATH = os.path.join(ROOT, "tools", "llm_sentences.py")
 
-# Words excluded from this dataset: gemini-3.6-flash_round1.json's content for
-# these failed the varied-forms QC check (countable nouns that only reached 2
-# distinct cloze forms) or used an invalid derived-lemma cloze_target
-# ("different" -> "difference"). Regeneration was attempted
-# (tools/_regenerate_llm.py) but the Gemini API key's prepayment credits were
-# depleted (429 RESOURCE_EXHAUSTED) before a clean retry could complete.
-# These 9 words are intentionally left OUT of DATA below so build_dataset.py's
-# existing SENT_TEMPLATES fallback covers them instead. See NOTES.md.
-EXCLUDE = {"bag", "day", "evening", "name", "night", "orange", "page", "window", "different"}
+# Words excluded from this dataset:
+# - "a", "cry", "lady", "noisy", "rest", "smile", "english": dropped from
+#   the word list entirely in the 2026-07-22 Oxford-3000-A1 cross-check
+#   pass (see NOTES.md section 1 / tools/wordlist.py's docstring) -- these
+#   headwords no longer exist in the seed at all, so their LLM content
+#   (even though some of it originally passed QC, e.g. "a") is dropped too.
+#
+# NOTE: "bag", "day", "evening", "name", "night", "orange", "page", "window",
+# "different" USED to be excluded here (gemini-3.6-flash_round1.json's
+# content for them failed the varied-forms QC check / used an invalid
+# derived-lemma cloze_target). As of the 2026-07-22 regeneration pass
+# (tools/_regenerate_llm.py, once the API key was topped up) all 9 passed
+# cleanly on the first retry -- see REGENERATED below, which merges their
+# new content into `data` before this EXCLUDE filter runs. They are no
+# longer excluded. See NOTES.md section 4.
+EXCLUDE = {"a", "cry", "lady", "noisy", "rest", "smile", "english"}
 
 # Manual corrections found during the human spot-check (NOTES.md section 4)
 # of the raw gemini-3.6-flash_round1.json th_text -- real generation glitches
@@ -53,6 +61,24 @@ MANUAL_FIXES = {
 with open(IN_PATH, encoding="utf-8") as f:
     data = json.load(f)
 
+# Merge in the 2026-07-22 regeneration pass (tools/_regenerate_llm.py) for the
+# 9 words that failed QC in the original round-1 run (varied-forms / invalid
+# cloze-lemma) -- this time the Gemini API key had credits and all 9 passed
+# validate_item() cleanly on the first attempt. See NOTES.md section 4.
+REGENERATED = {}
+if os.path.exists(REGEN_PATH):
+    with open(REGEN_PATH, encoding="utf-8") as f:
+        REGENERATED = json.load(f)
+    # index by lowercased headword, same shape as items in `data`
+    regen_by_hw = {hw.lower(): item for hw, item in REGENERATED.items()}
+    # replace/insert into `data` (data is a list of dicts with "headword")
+    existing_hws = {item["headword"].lower() for item in data}
+    for hw, item in regen_by_hw.items():
+        if hw in existing_hws:
+            data = [item if d["headword"].lower() == hw else d for d in data]
+        else:
+            data.append(item)
+
 HEADER = '''# -*- coding: utf-8 -*-
 """
 LLM-generated example_sentences (5/word) + grammar_note_th, keyed by
@@ -81,14 +107,26 @@ meaning, and several stray mid-sentence spaces. These are corrected in
 MANUAL_FIXES in tools/_gen_llm_sentences.py and already applied to the
 th_text below -- see that dict for the exact before/after list.
 
-9 words that failed that check in the raw model output (countable nouns
+9 words failed that check in the raw round-1 model output (countable nouns
 that only reached 2 distinct forms -- singular/plural -- instead of the
 achievable 3+ via a possessive form, plus "different" which used an invalid
-derived-lemma cloze_target "difference") are intentionally NOT included
-here; build_dataset.py falls back to its SENT_TEMPLATES generator for those.
-A regeneration attempt (tools/_regenerate_llm.py) hit a depleted Gemini API
-key (429 RESOURCE_EXHAUSTED) before it could retry them cleanly. See
-NOTES.md for the exact word list and reasoning.
+derived-lemma cloze_target "difference"): bag, day, evening, name, night,
+orange, page, window, different. A first regeneration attempt
+(tools/_regenerate_llm.py) hit a depleted Gemini API key (429
+RESOURCE_EXHAUSTED) before it could retry them cleanly, so an earlier
+version of this file left them out entirely (build_dataset.py fell back to
+its SENT_TEMPLATES generator for those 9 only).
+
+**Update (2026-07-22, API key topped up):** re-ran tools/_regenerate_llm.py
+with a valid key -- all 9 words passed validate_item() cleanly on the FIRST
+retry attempt this time (no further API issues). Their content is stored in
+tools/model_compare_results/_regenerated.json and merged into `data` below
+(see the REGENERATED merge step above this HEADER in
+tools/_gen_llm_sentences.py) before EXCLUDE is applied. As a result this
+file now covers ALL 153 words in the seed -- build_dataset.py's
+SENT_TEMPLATES fallback is no longer exercised for any word in the current
+build (it remains in the code as a defensive fallback only). See NOTES.md
+section 4 for the before/after QC detail per word.
 
 `cloze_target` is kept per-sentence (not pre-resolved to start/end offsets)
 so build_dataset.py can compute cloze_start/cloze_end itself the same way
@@ -96,7 +134,8 @@ it already does for template sentences (case-insensitive substring search,
 verified against en_text) -- keeping one code path for that computation.
 
 Regenerate this file: python tools/_gen_llm_sentences.py
-(reads tools/model_compare_results/gemini-3.6-flash_round1.json)
+(reads tools/model_compare_results/gemini-3.6-flash_round1.json +
+tools/model_compare_results/_regenerated.json)
 """
 
 # word (lowercased headword) -> dict(sentences=[dict(rank, en_text, th_text,

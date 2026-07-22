@@ -19,6 +19,20 @@ from wordlist import WORDS
 from thai_data import DATA
 from llm_sentences import DATA as LLM_SENTENCES
 
+try:
+    from nltk.corpus import wordnet as _wn
+    _wn.synsets("test")  # forces a load; raises LookupError if corpus isn't downloaded
+    HAVE_WORDNET = True
+except LookupError:
+    HAVE_WORDNET = False
+    print("WARNING: nltk 'wordnet' corpus not downloaded -- run "
+          "python -m nltk.downloader wordnet . Falling back to is_giveaway=0 "
+          "for all related_words rows and skipping hypernym/part_of rows "
+          "(same as before this pass). See NOTES.md section 3.")
+except ImportError:
+    HAVE_WORDNET = False
+    print("WARNING: nltk not installed (pip install nltk) -- see above.")
+
 OUT_DB = os.path.join(os.path.dirname(__file__), "..", "vocab_app", "assets", "seed", "vocab.db")
 
 IRREGULAR_VERBS = {
@@ -296,8 +310,8 @@ RELATED_FALLBACK = {
     "mother": ["father", "family"], "father": ["mother", "family"],
     "brother": ["sister", "family"], "sister": ["brother", "family"],
     "husband": ["wife", "family"], "wife": ["husband", "family"],
-    "happy": ["sad", "smile"], "sad": ["happy", "cry"], "cry": ["sad"],
-    "smile": ["happy", "laugh"], "laugh": ["smile", "happy"],
+    "happy": ["sad"], "sad": ["happy"],
+    "laugh": ["happy"],
     "hot": ["cold", "sun"], "cold": ["hot", "rain"],
     "big": ["small"], "small": ["big", "little"],
     "fast": ["slow", "car", "run"], "slow": ["fast"],
@@ -307,7 +321,7 @@ RELATED_FALLBACK = {
     "home": ["house", "family"], "door": ["window", "house"],
     "window": ["door", "house"], "money": ["buy", "job"],
     "job": ["work", "money"], "work": ["job", "busy"],
-    "city": ["house", "noisy"], "park": ["garden", "tree"],
+    "city": ["house"], "park": ["garden", "tree"],
     "garden": ["park", "tree", "flower" if False else "green"],
     "tree": ["garden", "green"], "music": ["sing", "dance", "listen"],
     "sing": ["music", "song" if False else "dance"], "dance": ["music", "sing"],
@@ -316,11 +330,61 @@ RELATED_FALLBACK = {
     "language": ["speak", "learn"], "learn": ["study", "school", "language"],
     "study": ["learn", "school", "book"], "child": ["baby", "boy", "girl"],
     "baby": ["child", "family"], "boy": ["girl", "child"], "girl": ["boy", "child"],
-    "man": ["woman" if False else "boy", "lady"], "lady": ["man", "girl"],
+    "man": ["woman" if False else "boy"],
 }
 
 
-def resolve_related(word_ids):
+# Pairs where a purely mechanical WordNet hypernym/meronym closure check
+# (see build_hypernym_meronym_rows below) finds a real relation, but through
+# a WordNet SENSE that is not the sense this app actually teaches for that
+# headword -- documented human/LLM sense-selection judgment call (SPEC.md
+# section 5's sanctioned "เลือก sense" role), not a silent auto-accept of
+# whatever WordNet returns. See NOTES.md section 3 for the reasoning per
+# pair.
+HYPERNYM_MERONYM_SENSE_MISMATCH_EXCLUDE = {
+    # fish's ONLY WordNet member_holonym is "school.n.07" (a school OF FISH,
+    # i.e. a shoal) -- but this app's headword "school" teaches school.n.01
+    # ("an educational institution"), a completely unrelated sense. Showing
+    # this pair in the Odd-One-Out game would be actively misleading.
+    ("fish", "school"),
+}
+
+_POS_MAP = {"n": "n", "v": "v", "adj": "a", "adv": "r"}
+
+
+def _wn_synsets(word, pos):
+    if not HAVE_WORDNET:
+        return []
+    wn_pos = _POS_MAP.get(pos)
+    return _wn.synsets(word, pos=wn_pos) if wn_pos else _wn.synsets(word)
+
+
+def is_wn_synonym(w1, pos1, w2):
+    """True if w2 is a lemma in any of w1's synsets (restricted to w1's POS
+    in this app, since that's the sense actually being tested)."""
+    for s in _wn_synsets(w1, pos1):
+        if w2 in {l.name().lower().replace("_", " ") for l in s.lemmas()}:
+            return True
+    return False
+
+
+def is_wn_antonym(w1, pos1, w2):
+    """True if w2 is a WordNet-curated antonym of any lemma in one of w1's
+    synsets (restricted to w1's POS)."""
+    for s in _wn_synsets(w1, pos1):
+        for lemma in s.lemmas():
+            for ant in lemma.antonyms():
+                if ant.name().lower().replace("_", " ") == w2:
+                    return True
+    return False
+
+
+def resolve_related(word_ids, pos_map):
+    """Association rows from RELATED_FALLBACK (still the SWOW-approximation
+    fallback -- SWOW-EN itself wasn't fetchable this pass either, see
+    NOTES.md section 3), but is_giveaway is now REAL: computed per pair by
+    checking WordNet for an actual synonym or antonym relation, rather than
+    the previous hardcoded is_giveaway=0 for every row."""
     rows = []
     for w, neighbours in RELATED_FALLBACK.items():
         if w not in word_ids:
@@ -328,7 +392,73 @@ def resolve_related(word_ids):
         for n in neighbours:
             if n not in word_ids or n == w:
                 continue
-            rows.append((word_ids[w], word_ids[n], "association", 0.5, 0))
+            pos_w = pos_map.get(w, "n")
+            is_giveaway = 0
+            if HAVE_WORDNET:
+                if is_wn_synonym(w, pos_w, n) or is_wn_antonym(w, pos_w, n):
+                    is_giveaway = 1
+            rows.append((word_ids[w], word_ids[n], "association", 0.5, is_giveaway))
+    return rows
+
+
+def build_hypernym_meronym_rows(word_ids, pos_map):
+    """Real WordNet-derived category rows for the Odd-One-Out game:
+    relation_type='hypernym' (w IS-A other, e.g. bread IS-A food) and
+    relation_type='part_of' (w is a physical/temporal part of other, e.g.
+    night is part_of day) -- restricted to pairs where BOTH headwords are
+    in this app's own word set (per SPEC.md section 4's FK requirement),
+    computed from each word's primary (most common) WordNet noun sense's
+    hypernym-path / holonym closure. is_giveaway is left 0 for these (the
+    auto-giveaway flag is specifically for synonym/antonym per SPEC.md
+    section 5 -- a broader category isn't the same as revealing the
+    answer). closeness is a flat placeholder (WordNet has no association-
+    strength score the way SWOW does) -- NOT claimed as SWOW-sourced.
+    """
+    if not HAVE_WORDNET:
+        return []
+    noun_words = [w for w, pos in pos_map.items() if pos == "n" and w in word_ids]
+    rows = []
+    seen_pairs = set()  # avoid duplicating an already-known synonym/antonym pair
+
+    # pairs already covered as association+synonym/antonym -- skip adding a
+    # redundant hypernym/meronym row for the exact same two words.
+    existing_assoc_pairs = set()
+    for w, neighbours in RELATED_FALLBACK.items():
+        for n in neighbours:
+            existing_assoc_pairs.add(frozenset((w, n)))
+
+    for w in noun_words:
+        ssets = _wn_synsets(w, "n")
+        if not ssets:
+            continue
+        primary = ssets[0]
+
+        ancestors = set()
+        for path in primary.hypernym_paths():
+            for anc in path[:-1]:
+                for l in anc.lemmas():
+                    ancestors.add(l.name().lower().replace("_", " "))
+        wholes = set()
+        for holo in primary.part_holonyms() + primary.member_holonyms() + primary.substance_holonyms():
+            for l in holo.lemmas():
+                wholes.add(l.name().lower().replace("_", " "))
+
+        for other in noun_words:
+            if other == w:
+                continue
+            pair_key = (w, other)
+            if pair_key in HYPERNYM_MERONYM_SENSE_MISMATCH_EXCLUDE:
+                continue
+            if frozenset((w, other)) in existing_assoc_pairs:
+                continue
+            if (w, other) in seen_pairs:
+                continue
+            if other in ancestors:
+                rows.append((word_ids[w], word_ids[other], "hypernym", 0.6, 0))
+                seen_pairs.add((w, other))
+            elif other in wholes:
+                rows.append((word_ids[w], word_ids[other], "part_of", 0.6, 0))
+                seen_pairs.add((w, other))
     return rows
 
 
@@ -402,6 +532,16 @@ def main():
 
     word_ids = {}
     warnings = []
+    pos_map = {w.lower(): pos for w, pos, cefr, fr in WORDS}
+
+    # Words whose meaning_th could NOT be verified against a real Wiktionary
+    # Thai translation (tools/thai_data.py's docstring + NOTES.md section 2
+    # explain why per word) -- translation_source stays flagged as
+    # approximated for exactly these, instead of a blanket claim of "real"
+    # sourcing that wouldn't be true for them. Everyone else got a real,
+    # machine-fetched wiktapi.dev (mirrors en.wiktionary.org) Thai
+    # translation cross-check in this pass.
+    APPROXIMATED_TRANSLATION = {"make"}
 
     for headword, pos, cefr, freq_rank in WORDS:
         key = headword.lower()
@@ -409,11 +549,15 @@ def main():
         if d is None:
             warnings.append(f"MISSING thai_data for {headword}")
             continue
+        if key in APPROXIMATED_TRANSLATION:
+            translation_source = "Wiktionary (approximated)"
+        else:
+            translation_source = "Wiktionary"
         cur.execute(
             "INSERT INTO words (headword, cefr, freq_rank, thai_reading, stress_index, ipa, "
             "translation_source, translation_license, has_photo) VALUES (?,?,?,?,?,?,?,?,0)",
             (headword, cefr, freq_rank, d["thai_reading"], d["stress_index"], d["ipa"],
-             "Wiktionary (approximated)", "CC BY-SA 3.0"),
+             translation_source, "CC BY-SA 4.0"),
         )
         wid = cur.lastrowid
         word_ids[key] = wid
@@ -439,7 +583,8 @@ def main():
                  s["cloze_start"], s["cloze_end"], s["is_emotional"]),
             )
 
-    for row in resolve_related(word_ids):
+    related_rows = resolve_related(word_ids, pos_map) + build_hypernym_meronym_rows(word_ids, pos_map)
+    for row in related_rows:
         cur.execute(
             "INSERT INTO related_words (word_id, related_word_id, relation_type, closeness, is_giveaway) "
             "VALUES (?,?,?,?,?)",

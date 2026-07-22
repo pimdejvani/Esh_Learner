@@ -1,0 +1,371 @@
+{
+  "bag": {
+    "headword": "bag",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I cried when I lost my mother's bag at the airport.",
+        "th_text": "ฉันร้องไห้เมื่อทำกระเป๋าของคุณแม่หายที่สนามบิน",
+        "cloze_target": "bag",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "She carries two heavy bags to school every day.",
+        "th_text": "เธอถือกระเป๋าหนักๆ สองใบไปโรงเรียนทุกวัน",
+        "cloze_target": "bags",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "My bag's zipper is broken, so my coins fell out.",
+        "th_text": "ซิปของกระเป๋าฉันเสีย เหรียญก็เลยร่วงออกมา",
+        "cloze_target": "bag's",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The students' bags' sizes are all very big.",
+        "th_text": "ขนาดของกระเป๋าของพวกนักเรียนทุกคนใหญ่มาก",
+        "cloze_target": "bags'",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Put your shoes in a plastic bag.",
+        "th_text": "ใส่รองเท้าของคุณไว้ในถุงพลาสติก",
+        "cloze_target": "bag",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า bag เป็นคำนามนับได้ จึงมีการเปลี่ยนรูปตามจำนวนและการแสดงความเป็นเจ้าของ ในประโยคที่ 1 และ 5 ใช้ bag รูปเอกพจน์เพราะพูดถึงกระเป๋าใบเดียว ส่วนประโยคที่ 2 ใช้ bags รูปพหูพจน์เนื่องจากมีจำนวนสองใบ (two bags) สำหรับประโยคที่ 3 ใช้ bag's เป็นรูปเอกพจน์แสดงความเป็นเจ้าของ (ซิปของกระเป๋าใบนี้) และประโยคที่ 4 ใช้ bags' เป็นรูปพหูพจน์แสดงความเป็นเจ้าของเพื่อบอกว่ากระเป๋าหลายใบมีขนาดใหญ่"
+  },
+  "day": {
+    "headword": "day",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "This was the happiest day of my life because she said yes!",
+        "th_text": "นี่คือวันที่ฉันมีความสุขที่สุดในชีวิตเพราะเธอตอบตกลง!",
+        "cloze_target": "day",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "We stayed in Japan for seven days.",
+        "th_text": "พวกเราอยู่ที่ประเทศญี่ปุ่นเป็นเวลาเจ็ดวัน",
+        "cloze_target": "days",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "After a long day's work, he just wanted to sleep.",
+        "th_text": "หลังจากทำงานมาทั้งวัน เขาก็แค่อยากจะนอนหลับ",
+        "cloze_target": "day's",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "They had three days' rest before the test.",
+        "th_text": "พวกเขามีเวลาพักผ่อนสามวันก่อนการสอบ",
+        "cloze_target": "days'",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Have a nice day!",
+        "th_text": "ขอให้เป็นวันที่ดีนะ!",
+        "cloze_target": "day",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า day เป็นคำนามนับได้ที่บอกเวลา ประโยคที่ 1 และ 5 ใช้ day รูปเอกพจน์เพราะพูดถึงวันเพียงวันเดียว ประโยคที่ 2 ใช้ days รูปพหูพจน์เพราะตามหลังจำนวนเจ็ดวัน (seven days) สำหรับประโยคที่ 3 ใช้ day's (possessive singular) เพื่อแสดงความเป็นเจ้าของของช่วงเวลาหนึ่งวัน (งานของหนึ่งวัน) และประโยคที่ 4 ใช้ days' (possessive plural) เพื่อบอกระยะเวลาสะสมของหลายวัน (การพักผ่อนของสามวัน)"
+  },
+  "evening": {
+    "headword": "evening",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I feel so lonely in the quiet evening without you.",
+        "th_text": "ฉันรู้สึกเหงามากในตอนเย็นอันเงียบสงบที่ไม่มีคุณ",
+        "cloze_target": "evening",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "We usually watch movies on cold winter evenings.",
+        "th_text": "พวกเรามักจะดูภาพยนตร์ในตอนเย็นของฤดูหนาวที่เหน็บหนาว",
+        "cloze_target": "evenings",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The evening's performance was truly amazing.",
+        "th_text": "การแสดงในตอนเย็นนี้น่าทึ่งมากจริงๆ",
+        "cloze_target": "evening's",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "Good evening, welcome to our restaurant!",
+        "th_text": "สวัสดีตอนเย็น ยินดีต้อนรับสู่ร้านอาหารของเรา!",
+        "cloze_target": "evening",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She likes to walk in the early evening.",
+        "th_text": "เธอชอบไปเดินเล่นในช่วงหัวค่ำ",
+        "cloze_target": "evening",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า evening เป็นคำนามนับได้ที่ระบุช่วงเวลาเย็น ประโยคที่ 1, 4 และ 5 ใช้ evening รูปเอกพจน์เมื่อพูดถึงช่วงเย็นช่วงหนึ่งหรือคำทักทาย ประโยคที่ 2 ใช้ evenings รูปพหูพจน์เติม -s เพื่อสื่อถึงตอนเย็นหลายๆ เย็นเป็นประจำ และประโยคที่ 3 ใช้ evening's รูปแสดงความเป็นเจ้าของเพื่อขยายนามที่ตามมา (การแสดงของตอนเย็นนี้)"
+  },
+  "name": {
+    "headword": "name",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "My dog remembers his name and runs to me with joy.",
+        "th_text": "สุนัขของฉันจำชื่อของมันได้และวิ่งมาหาฉันด้วยความดีใจ",
+        "cloze_target": "name",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please write all your full names on the paper.",
+        "th_text": "กรุณาเขียนชื่อเต็มของพวกคุณทุกคนลงบนกระดาษ",
+        "cloze_target": "names",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The old name's meaning was very beautiful.",
+        "th_text": "ความหมายของชื่อเก่านั้นไพเราะมาก",
+        "cloze_target": "name's",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The names' meanings are written here.",
+        "th_text": "ความหมายของชื่อเหล่านั้นถูกเขียนไว้ที่นี่",
+        "cloze_target": "names'",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "What is your name?",
+        "th_text": "คุณชื่ออะไร",
+        "cloze_target": "name",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า name เป็นคำนามนับได้ ประโยคที่ 1 และ 5 ใช้ name รูปเอกพจน์เพราะพูดถึงชื่อเดียว ประโยคที่ 2 ใช้ names รูปพหูพจน์เนื่องจากพูดถึงชื่อของคนหลายคน สำหรับประโยคที่ 3 ใช้ name's เติม 's เพื่อแสดงความเป็นเจ้าของของชื่อเอกพจน์ (ความหมายของชื่อนั้น) และประโยคที่ 4 ใช้ names' เติม ' หลัง -s พหูพจน์เพื่อแสดงความเป็นเจ้าของของชื่อหลายๆ ชื่อ"
+  },
+  "night": {
+    "headword": "night",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I could not sleep all night because I missed my family so much.",
+        "th_text": "ฉันนอนไม่หลับตลอดทั้งคืนเพราะคิดถึงครอบครัวมาก",
+        "cloze_target": "night",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "He worked late for three nights in a row.",
+        "th_text": "เขาทำงานเลิกดึกเป็นเวลาสามคืนติดต่อกัน",
+        "cloze_target": "nights",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "A good night's sleep will help you feel better.",
+        "th_text": "การนอนหลับเต็มอิ่มสักคืนจะช่วยให้คุณรู้สึกดีขึ้น",
+        "cloze_target": "night's",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "After two nights' stay at the hotel, we left.",
+        "th_text": "หลังจากเข้าพักที่โรงแรมเป็นเวลาสองคืน พวกเราก็เดินทางออก",
+        "cloze_target": "nights'",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Good night, sweet dreams!",
+        "th_text": "ราตรีสวัสดิ์ ฝันดีนะ!",
+        "cloze_target": "night",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า night เป็นคำนามนับได้ ประโยคที่ 1 และ 5 ใช้ night รูปเอกพจน์เพื่อพูดถึงคืนเดียวหรือใช้ในการทักทายยามค่ำคืน ประโยคที่ 2 ใช้ nights รูปพหูพจน์เนื่องจากมีจำนวนสามคืน (three nights) ประโยคที่ 3 ใช้ night's แสดงความเป็นเจ้าของของระยะเวลาหนึ่งคืน (การนอนของหนึ่งคืน) และประโยคที่ 4 ใช้ nights' แสดงความเป็นเจ้าของของระยะเวลาหลายคืน (การพักสองคืน)"
+  },
+  "orange": {
+    "headword": "orange",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "My little brother cried when I ate his sweet orange!",
+        "th_text": "น้องชายของฉันร้องไห้เมื่อฉันกินส้มรสหวานของเขา!",
+        "cloze_target": "orange",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "She bought five big oranges from the market.",
+        "th_text": "เธอซื้อส้มผลใหญ่ห้าผลมาจากตลาด",
+        "cloze_target": "oranges",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "This orange's juice is very fresh and sweet.",
+        "th_text": "น้ำของส้มผลนี้สดและหวานมาก",
+        "cloze_target": "orange's",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "All these oranges' skins are bright orange.",
+        "th_text": "เปลือกของส้มทั้งหมดนี้มีสีส้มสดใส",
+        "cloze_target": "oranges'",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "I like to drink orange juice in the morning.",
+        "th_text": "ฉันชอบดื่มน้ำส้มในตอนเช้า",
+        "cloze_target": "orange",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า orange เป็นคำนามนับได้ ประโยคที่ 1 และ 5 ใช้ orange รูปเอกพจน์สื่อถึงผลส้มหนึ่งผลหรือใช้ขยายนาม ประโยคที่ 2 ใช้ oranges รูปพหูพจน์เนื่องจากมีจำนวนห้าผล (five oranges) ประโยคที่ 3 ใช้ orange's (possessive singular) เพื่อบอกว่าน้ำนั้นเป็นของส้มผลนี้ และประโยคที่ 4 ใช้ oranges' (possessive plural) เพื่อระบุเปลือกของส้มหลายผล"
+  },
+  "page": {
+    "headword": "page",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I turned the page and was shocked to see my old photo!",
+        "th_text": "ฉันเปิดหน้าต่อไปและตกใจมากที่ได้เห็นรูปเก่าของตัวเอง!",
+        "cloze_target": "page",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "This book has two hundred pages.",
+        "th_text": "หนังสือเล่มนี้มีสองร้อยหน้า",
+        "cloze_target": "pages",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The page's corner was torn and dirty.",
+        "th_text": "มุมของกระดาษหน้านี้ขาดและสกปรก",
+        "cloze_target": "page's",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "All the pages' numbers are written at the bottom.",
+        "th_text": "เลขหน้าของทุกๆ หน้าถูกเขียนไว้ที่ด้านล่าง",
+        "cloze_target": "pages'",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "Please open your book to page ten.",
+        "th_text": "กรุณาเปิดหนังสือของคุณไปที่หน้าสิบ",
+        "cloze_target": "page",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า page เป็นคำนามนับได้ ประโยคที่ 1 และ 5 ใช้ page รูปเอกพจน์สื่อถึงหน้าหนังสือหน้าเดียว ประโยคที่ 2 ใช้ pages รูปพหูพจน์เพราะตามหลังจำนวนหลายหน้า (two hundred pages) ประโยคที่ 3 ใช้ page's เพื่อแสดงความเป็นเจ้าของของหน้าเดียว (มุมของหน้านี้) และประโยคที่ 4 ใช้ pages' เพื่อแสดงความเป็นเจ้าของของหลายๆ หน้า (เลขหน้าของทุกหน้า)"
+  },
+  "window": {
+    "headword": "window",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "He broke the window in fear when he saw the fire!",
+        "th_text": "เขาต่อยหน้าต่างแตกด้วยความกลัวเมื่อเห็นไฟไหม้!",
+        "cloze_target": "window",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "Please close all the windows before you go out.",
+        "th_text": "กรุณาปิดหน้าต่างทุกบานก่อนที่คุณจะออกไปข้างนอก",
+        "cloze_target": "windows",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "The window's glass is dirty, so we cannot see outside.",
+        "th_text": "กระจกของหน้าต่างบานนี้สกปรก เราจึงมองไม่เห็นข้างนอก",
+        "cloze_target": "window's",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "The windows' frames are all painted white.",
+        "th_text": "กรอบของหน้าต่างทุกบานถูกทาสีขาว",
+        "cloze_target": "windows'",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "She sits near the window to read her book.",
+        "th_text": "เธอนั่งใกล้หน้าต่างเพื่ออ่านหนังสือ",
+        "cloze_target": "window",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า window เป็นคำนามนับได้ ประโยคที่ 1 และ 5 ใช้ window รูปเอกพจน์เพื่อสื่อถึงหน้าต่างบานเดียว ประโยคที่ 2 ใช้ windows รูปพหูพจน์เติม -s เพื่อบอกถึงหน้าต่างหลายบาน ประโยคที่ 3 ใช้ window's เป็นการแสดงความเป็นเจ้าของของหน้าต่างบานเดียว (กระจกของหน้าต่างนี้) และประโยคที่ 4 ใช้ windows' เพื่อแสดงความเป็นเจ้าของของหน้าต่างหลายบาน (กรอบของหน้าต่างเหล่านั้น)"
+  },
+  "different": {
+    "headword": "different",
+    "sentences": [
+      {
+        "rank": 1,
+        "en_text": "I felt so lonely because I was different from all the other kids.",
+        "th_text": "ฉันรู้สึกเหงามากเพราะฉันแตกต่างจากเด็กคนอื่นๆ ทั้งหมด",
+        "cloze_target": "different",
+        "is_emotional": true
+      },
+      {
+        "rank": 2,
+        "en_text": "They have very different opinions on this topic.",
+        "th_text": "พวกเขามีความคิดเห็นที่แตกต่างกันมากในหัวข้อนี้",
+        "cloze_target": "different",
+        "is_emotional": false
+      },
+      {
+        "rank": 3,
+        "en_text": "Her new plan is even more different than her old one.",
+        "th_text": "แผนใหม่ของเธอแตกต่างยิ่งกว่าแผนเก่าของเธอเสียอีก",
+        "cloze_target": "more different",
+        "is_emotional": false
+      },
+      {
+        "rank": 4,
+        "en_text": "This design is the most different one in the store.",
+        "th_text": "การออกแบบนี้แตกต่างที่สุดในร้าน",
+        "cloze_target": "most different",
+        "is_emotional": false
+      },
+      {
+        "rank": 5,
+        "en_text": "We went to three different places yesterday.",
+        "th_text": "พวกเราไปสามสถานที่ที่แตกต่างกันเมื่อวานนี้",
+        "cloze_target": "different",
+        "is_emotional": false
+      }
+    ],
+    "grammar_note_th": "คำว่า different เป็นคุณศัพท์ (Adjective) ใช้ขยายนามหรือตามหลัง Linking Verb ประโยคที่ 1, 2 และ 5 ใช้รูปปกติ (Base form) เพื่อบอกความแตกต่างทั่วไปหรือใช้ขยายนามพหูพจน์ (different places) ประโยคที่ 3 ใช้รูปเปรียบเทียบขั้นกว่า (Comparative) โดยเติม more ด้านหน้าเป็น 'more different' เมื่อเปรียบเทียบสองสิ่ง และประโยคที่ 4 ใช้รูปเปรียบเทียบขั้นสูงสุด (Superlative) โดยเติม the most ด้านหน้าเป็น 'most different' เมื่อเปรียบเทียบสิ่งหนึ่งกับกลุ่ม"
+  }
+}

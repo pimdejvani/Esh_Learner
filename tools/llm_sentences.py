@@ -26,14 +26,26 @@ meaning, and several stray mid-sentence spaces. These are corrected in
 MANUAL_FIXES in tools/_gen_llm_sentences.py and already applied to the
 th_text below -- see that dict for the exact before/after list.
 
-9 words that failed that check in the raw model output (countable nouns
+9 words failed that check in the raw round-1 model output (countable nouns
 that only reached 2 distinct forms -- singular/plural -- instead of the
 achievable 3+ via a possessive form, plus "different" which used an invalid
-derived-lemma cloze_target "difference") are intentionally NOT included
-here; build_dataset.py falls back to its SENT_TEMPLATES generator for those.
-A regeneration attempt (tools/_regenerate_llm.py) hit a depleted Gemini API
-key (429 RESOURCE_EXHAUSTED) before it could retry them cleanly. See
-NOTES.md for the exact word list and reasoning.
+derived-lemma cloze_target "difference"): bag, day, evening, name, night,
+orange, page, window, different. A first regeneration attempt
+(tools/_regenerate_llm.py) hit a depleted Gemini API key (429
+RESOURCE_EXHAUSTED) before it could retry them cleanly, so an earlier
+version of this file left them out entirely (build_dataset.py fell back to
+its SENT_TEMPLATES generator for those 9 only).
+
+**Update (2026-07-22, API key topped up):** re-ran tools/_regenerate_llm.py
+with a valid key -- all 9 words passed validate_item() cleanly on the FIRST
+retry attempt this time (no further API issues). Their content is stored in
+tools/model_compare_results/_regenerated.json and merged into `data` below
+(see the REGENERATED merge step above this HEADER in
+tools/_gen_llm_sentences.py) before EXCLUDE is applied. As a result this
+file now covers ALL 153 words in the seed -- build_dataset.py's
+SENT_TEMPLATES fallback is no longer exercised for any word in the current
+build (it remains in the code as a defensive fallback only). See NOTES.md
+section 4 for the before/after QC detail per word.
 
 `cloze_target` is kept per-sentence (not pre-resolved to start/end offsets)
 so build_dataset.py can compute cloze_start/cloze_end itself the same way
@@ -41,23 +53,14 @@ it already does for template sentences (case-insensitive substring search,
 verified against en_text) -- keeping one code path for that computation.
 
 Regenerate this file: python tools/_gen_llm_sentences.py
-(reads tools/model_compare_results/gemini-3.6-flash_round1.json)
+(reads tools/model_compare_results/gemini-3.6-flash_round1.json +
+tools/model_compare_results/_regenerated.json)
 """
 
 # word (lowercased headword) -> dict(sentences=[dict(rank, en_text, th_text,
 #                                    cloze_target, is_emotional), ...],
 #                                    grammar_note_th=str)
 DATA = {
-'a': dict(
-    sentences=[
-        dict(rank=1, en_text='I saw a terrible accident on the street today.', th_text='ฉันเห็นอุบัติเหตุที่น่ากลัวบนถนนวันนี้', cloze_target='a', is_emotional=1),
-        dict(rank=2, en_text='She wants to buy a new car.', th_text='เธอต้องการซื้อรถยนต์คันใหม่', cloze_target='a', is_emotional=0),
-        dict(rank=3, en_text='He is a friendly doctor at this hospital.', th_text='เขาเป็นหมอที่อัธยาศัยดีที่โรงพยาบาลแห่งนี้', cloze_target='a', is_emotional=0),
-        dict(rank=4, en_text='There is a small cat sleeping under the table.', th_text='มีแมวตัวเล็กๆ นอนอยู่ใต้โต๊ะ', cloze_target='a', is_emotional=0),
-        dict(rank=5, en_text='Do you need a cup of hot water?', th_text='คุณต้องการน้ำร้อนสักแก้วไหม', cloze_target='a', is_emotional=0),
-    ],
-    grammar_note_th="คำว่า 'a' เป็น Indefinite Article นำหน้านามนับได้เอกพจน์ที่ไม่ชี้เฉพาะและขึ้นต้นด้วยเสียงพยัญชนะ ในประโยคที่ 1 วางหน้า terrible เพราะอักษร t ออกเสียงพยัญชนะ ส่วนประโยคที่ 2 ถึง 5 นำหน้าคำนามนับได้เอกพจน์ทั่วไปอย่าง car, doctor, cat และ cup เพื่อบอกจำนวนเพียงหนึ่งสิ่งหรือหนึ่งคนโดยไม่ระบุเจาะจง",
-),
 'about': dict(
     sentences=[
         dict(rank=1, en_text='I am so worried about my sick dog.', th_text='ฉันเป็นห่วงสุนัขที่ป่วยของฉันมากๆ', cloze_target='about', is_emotional=1),
@@ -157,6 +160,16 @@ DATA = {
         dict(rank=5, en_text='The food tasted bad so we left it.', th_text='อาหารรสชาติแย่ พวกเราก็เลยเหลือมันไว้', cloze_target='bad', is_emotional=0),
     ],
     grammar_note_th="คำคุณศัพท์ 'bad' มีการเปรียบเทียบขั้นกว่าและขั้นสุดแบบเปลี่ยนรูปเป็นพิเศษ (Irregular Comparison): ประโยคที่ 1, 2 และ 5 ใช้รูปปกติ (bad) วางหลังกริยาแสดงสภาวะ feel/taste หรือหน้าคำนาม ประโยคที่ 3 เปลี่ยนเป็นขั้นกว่า 'worse' (แย่กว่า) และประโยคที่ 4 เปลี่ยนเป็นขั้นสุด 'worst' (แย่ที่สุด) โดยต้องมี the นำหน้าเสมอ",
+),
+'bag': dict(
+    sentences=[
+        dict(rank=1, en_text="I cried when I lost my mother's bag at the airport.", th_text='ฉันร้องไห้เมื่อทำกระเป๋าของคุณแม่หายที่สนามบิน', cloze_target='bag', is_emotional=1),
+        dict(rank=2, en_text='She carries two heavy bags to school every day.', th_text='เธอถือกระเป๋าหนักๆ สองใบไปโรงเรียนทุกวัน', cloze_target='bags', is_emotional=0),
+        dict(rank=3, en_text="My bag's zipper is broken, so my coins fell out.", th_text='ซิปของกระเป๋าฉันเสีย เหรียญก็เลยร่วงออกมา', cloze_target="bag's", is_emotional=0),
+        dict(rank=4, en_text="The students' bags' sizes are all very big.", th_text='ขนาดของกระเป๋าของพวกนักเรียนทุกคนใหญ่มาก', cloze_target="bags'", is_emotional=0),
+        dict(rank=5, en_text='Put your shoes in a plastic bag.', th_text='ใส่รองเท้าของคุณไว้ในถุงพลาสติก', cloze_target='bag', is_emotional=0),
+    ],
+    grammar_note_th="คำว่า bag เป็นคำนามนับได้ จึงมีการเปลี่ยนรูปตามจำนวนและการแสดงความเป็นเจ้าของ ในประโยคที่ 1 และ 5 ใช้ bag รูปเอกพจน์เพราะพูดถึงกระเป๋าใบเดียว ส่วนประโยคที่ 2 ใช้ bags รูปพหูพจน์เนื่องจากมีจำนวนสองใบ (two bags) สำหรับประโยคที่ 3 ใช้ bag's เป็นรูปเอกพจน์แสดงความเป็นเจ้าของ (ซิปของกระเป๋าใบนี้) และประโยคที่ 4 ใช้ bags' เป็นรูปพหูพจน์แสดงความเป็นเจ้าของเพื่อบอกว่ากระเป๋าหลายใบมีขนาดใหญ่",
 ),
 'beautiful': dict(
     sentences=[
@@ -358,16 +371,6 @@ DATA = {
     ],
     grammar_note_th="คำว่า 'cook' เป็นได้ทั้งกริยาและคำนาม: ประโยคที่ 1 เป็นกริยา Past Simple (cooked เติม -ed) ประโยคที่ 2 เป็น Infinitive ตามหลัง to (to cook) ประโยคที่ 3 เป็น Present Simple (cooks เติม -s) ตามประธานเอกพจน์ My father ประโยคที่ 4 เป็น Present Continuous (are cooking) และประโยคที่ 5 ทำหน้าที่เป็นคำนามหมายถึง 'พ่อครัว/แม่ครัว'",
 ),
-'cry': dict(
-    sentences=[
-        dict(rank=1, en_text='The poor child cried bitterly after losing her doll.', th_text='เด็กน้อยน่าสงสารร้องไห้อย่างหนักหลังจากทำตุ๊กตาหาย', cloze_target='cried', is_emotional=1),
-        dict(rank=2, en_text="Don't cry over simple things.", th_text='อย่าร้องไห้ให้กับเรื่องเล็กๆ น้อยๆ เลย', cloze_target='cry', is_emotional=0),
-        dict(rank=3, en_text='The baby cries whenever he is hungry.', th_text='ทารกร้องไห้ทุกครั้งที่เขาหิว', cloze_target='cries', is_emotional=0),
-        dict(rank=4, en_text='Why is that girl crying over there?', th_text='ทำไมเด็กผู้หญิงคนนั้นถึงกำลังร้องไห้อยู่ตรงนั้นล่ะ', cloze_target='crying', is_emotional=0),
-        dict(rank=5, en_text='We heard a loud cry from the dark garden.', th_text='พวกเราได้ยินเสียงร้องไห้ตะโกนดังมาจากสวนที่มืดมิด', cloze_target='cry', is_emotional=0),
-    ],
-    grammar_note_th="คำกริยา 'cry' ลงท้ายด้วยพยัญชนะ + y: ประโยคที่ 1 เป็น Past Simple เปลี่ยน y เป็น i แล้วเติม -ed เป็น 'cried' ประโยคที่ 2 เป็นรูปฐาน (cry) หลัง Don't ประโยคที่ 3 เป็น Present Simple เปลี่ยน y เป็น i แล้วเติม -es เป็น 'cries' ตามประธานเอกพจน์ The baby ประโยคที่ 4 เติม -ing เป็น 'crying' และประโยคที่ 5 ทำหน้าที่เป็นคำนามหมายถึง 'เสียงร้อง'",
-),
 'dance': dict(
     sentences=[
         dict(rank=1, en_text='They danced happily under the stars on their wedding day.', th_text='พวกเขาเต้นรำกันอย่างมีความสุขใต้แสงดาวในวันแต่งงานของพวกเขา', cloze_target='danced', is_emotional=1),
@@ -377,6 +380,26 @@ DATA = {
         dict(rank=5, en_text='They performed a traditional dance on stage.', th_text='พวกเขาแสดงการเต้นรำพื้นเมืองบนเวที', cloze_target='dance', is_emotional=0),
     ],
     grammar_note_th="คำว่า 'dance' เป็นได้ทั้งกริยาและคำนาม: ประโยคที่ 1 เป็น Past Simple (danced เติม -d) ประโยคที่ 2 เป็น Infinitive หลัง to (to dance) ประโยคที่ 3 เป็น Present Simple (dances เติม -s) ตามประธานเอกพจน์ She ประโยคที่ 4 ตัด e เติม -ing เป็น Present Continuous (are dancing) และประโยคที่ 5 ทำหน้าที่เป็นคำนามหมายถึง 'การเต้นรำ'",
+),
+'day': dict(
+    sentences=[
+        dict(rank=1, en_text='This was the happiest day of my life because she said yes!', th_text='นี่คือวันที่ฉันมีความสุขที่สุดในชีวิตเพราะเธอตอบตกลง!', cloze_target='day', is_emotional=1),
+        dict(rank=2, en_text='We stayed in Japan for seven days.', th_text='พวกเราอยู่ที่ประเทศญี่ปุ่นเป็นเวลาเจ็ดวัน', cloze_target='days', is_emotional=0),
+        dict(rank=3, en_text="After a long day's work, he just wanted to sleep.", th_text='หลังจากทำงานมาทั้งวัน เขาก็แค่อยากจะนอนหลับ', cloze_target="day's", is_emotional=0),
+        dict(rank=4, en_text="They had three days' rest before the test.", th_text='พวกเขามีเวลาพักผ่อนสามวันก่อนการสอบ', cloze_target="days'", is_emotional=0),
+        dict(rank=5, en_text='Have a nice day!', th_text='ขอให้เป็นวันที่ดีนะ!', cloze_target='day', is_emotional=0),
+    ],
+    grammar_note_th="คำว่า day เป็นคำนามนับได้ที่บอกเวลา ประโยคที่ 1 และ 5 ใช้ day รูปเอกพจน์เพราะพูดถึงวันเพียงวันเดียว ประโยคที่ 2 ใช้ days รูปพหูพจน์เพราะตามหลังจำนวนเจ็ดวัน (seven days) สำหรับประโยคที่ 3 ใช้ day's (possessive singular) เพื่อแสดงความเป็นเจ้าของของช่วงเวลาหนึ่งวัน (งานของหนึ่งวัน) และประโยคที่ 4 ใช้ days' (possessive plural) เพื่อบอกระยะเวลาสะสมของหลายวัน (การพักผ่อนของสามวัน)",
+),
+'different': dict(
+    sentences=[
+        dict(rank=1, en_text='I felt so lonely because I was different from all the other kids.', th_text='ฉันรู้สึกเหงามากเพราะฉันแตกต่างจากเด็กคนอื่นๆ ทั้งหมด', cloze_target='different', is_emotional=1),
+        dict(rank=2, en_text='They have very different opinions on this topic.', th_text='พวกเขามีความคิดเห็นที่แตกต่างกันมากในหัวข้อนี้', cloze_target='different', is_emotional=0),
+        dict(rank=3, en_text='Her new plan is even more different than her old one.', th_text='แผนใหม่ของเธอแตกต่างยิ่งกว่าแผนเก่าของเธอเสียอีก', cloze_target='more different', is_emotional=0),
+        dict(rank=4, en_text='This design is the most different one in the store.', th_text='การออกแบบนี้แตกต่างที่สุดในร้าน', cloze_target='most different', is_emotional=0),
+        dict(rank=5, en_text='We went to three different places yesterday.', th_text='พวกเราไปสามสถานที่ที่แตกต่างกันเมื่อวานนี้', cloze_target='different', is_emotional=0),
+    ],
+    grammar_note_th="คำว่า different เป็นคุณศัพท์ (Adjective) ใช้ขยายนามหรือตามหลัง Linking Verb ประโยคที่ 1, 2 และ 5 ใช้รูปปกติ (Base form) เพื่อบอกความแตกต่างทั่วไปหรือใช้ขยายนามพหูพจน์ (different places) ประโยคที่ 3 ใช้รูปเปรียบเทียบขั้นกว่า (Comparative) โดยเติม more ด้านหน้าเป็น 'more different' เมื่อเปรียบเทียบสองสิ่ง และประโยคที่ 4 ใช้รูปเปรียบเทียบขั้นสูงสุด (Superlative) โดยเติม the most ด้านหน้าเป็น 'most different' เมื่อเปรียบเทียบสิ่งหนึ่งกับกลุ่ม",
 ),
 'dog': dict(
     sentences=[
@@ -458,15 +481,15 @@ DATA = {
     ],
     grammar_note_th="คำนามนับได้ 'egg' ขึ้นต้นด้วยสระ (e): ในประโยคที่ 2 จึงต้องใช้ 'an' นำหน้า (an egg) ประโยคที่ 1 และ 5 เป็นเอกพจน์ (egg) ประโยคที่ 3 เป็นพหูพจน์เติม -s (eggs) ตามหลังจำนวน 'six' และประโยคที่ 4 เติม 's แสดงความเป็นเจ้าของ (egg's shell)",
 ),
-'english': dict(
+'evening': dict(
     sentences=[
-        dict(rank=1, en_text='I was too embarrassed to speak English in public.', th_text='ฉันอายเกินกว่าจะพูดภาษาอังกฤษในที่สาธารณะ', cloze_target='English', is_emotional=1),
-        dict(rank=2, en_text='She is an English teacher at our school.', th_text='เธอเป็นครูสอนภาษาอังกฤษที่โรงเรียนของเรา', cloze_target='English', is_emotional=0),
-        dict(rank=3, en_text='He speaks English fluently with his friends.', th_text='เขาพูดภาษาอังกฤษได้อย่างคล่องแคล่วกับเพื่อนๆ ของเขา', cloze_target='English', is_emotional=0),
-        dict(rank=4, en_text='We are studying English grammar today.', th_text='พวกเรากำลังเรียนไวยากรณ์ภาษาอังกฤษกันในวันนี้', cloze_target='English', is_emotional=0),
-        dict(rank=5, en_text='They love traditional English tea.', th_text='พวกเขารักชาอังกฤษแบบดั้งเดิม', cloze_target='English', is_emotional=0),
+        dict(rank=1, en_text='I feel so lonely in the quiet evening without you.', th_text='ฉันรู้สึกเหงามากในตอนเย็นอันเงียบสงบที่ไม่มีคุณ', cloze_target='evening', is_emotional=1),
+        dict(rank=2, en_text='We usually watch movies on cold winter evenings.', th_text='พวกเรามักจะดูภาพยนตร์ในตอนเย็นของฤดูหนาวที่เหน็บหนาว', cloze_target='evenings', is_emotional=0),
+        dict(rank=3, en_text="The evening's performance was truly amazing.", th_text='การแสดงในตอนเย็นนี้น่าทึ่งมากจริงๆ', cloze_target="evening's", is_emotional=0),
+        dict(rank=4, en_text='Good evening, welcome to our restaurant!', th_text='สวัสดีตอนเย็น ยินดีต้อนรับสู่ร้านอาหารของเรา!', cloze_target='evening', is_emotional=0),
+        dict(rank=5, en_text='She likes to walk in the early evening.', th_text='เธอชอบไปเดินเล่นในช่วงหัวค่ำ', cloze_target='evening', is_emotional=0),
     ],
-    grammar_note_th="คำว่า 'English' ต้องขึ้นต้นด้วยตัวพิมพ์ใหญ่ (Proper Noun/Proper Adjective) เสมอ: ในประโยคที่ 1, 3 ทำหน้าที่เป็นคำนามเฉพาะหมายถึง 'ภาษาอังกฤษ' ส่วนประโยคที่ 2, 4 และ 5 ทำหน้าที่เป็น Proper Adjective ขยายคำนามอื่น (English teacher, English grammar, English tea)",
+    grammar_note_th="คำว่า evening เป็นคำนามนับได้ที่ระบุช่วงเวลาเย็น ประโยคที่ 1, 4 และ 5 ใช้ evening รูปเอกพจน์เมื่อพูดถึงช่วงเย็นช่วงหนึ่งหรือคำทักทาย ประโยคที่ 2 ใช้ evenings รูปพหูพจน์เติม -s เพื่อสื่อถึงตอนเย็นหลายๆ เย็นเป็นประจำ และประโยคที่ 3 ใช้ evening's รูปแสดงความเป็นเจ้าของเพื่อขยายนามที่ตามมา (การแสดงของตอนเย็นนี้)",
 ),
 'every': dict(
     sentences=[
@@ -788,16 +811,6 @@ DATA = {
     ],
     grammar_note_th='คำว่า know เป็นกริยาไม่ปกติ V1=know, V2=knew, V3=known โดยประโยคที่ 1 เป็น Past Simple ใช้ knew ประโยคที่ 2 เติม -ing ขึ้นต้นประโยคทำหน้าที่เป็นคำนาม (Gerund: Knowing) ประโยคที่ 3 ใช้ known (V3) ในโครงสร้าง Passive Voice (is known) ประโยคที่ 4 เติม -s เป็น knows กับประธาน She ใน Present Simple และประโยคที่ 5 เป็นกริยาแท้รูปปกติในประโยคปฏิเสธ (do not know)',
 ),
-'lady': dict(
-    sentences=[
-        dict(rank=1, en_text='A kind lady helped me when I got lost!', th_text='สุภาพสตรีใจดีคนหนึ่งช่วยฉันไว้ตอนที่ฉันหลงทาง!', cloze_target='lady', is_emotional=1),
-        dict(rank=2, en_text='Two ladies are sitting in the garden.', th_text='สุภาพสตรีสองท่านกำลังนั่งอยู่ในสวน', cloze_target='ladies', is_emotional=0),
-        dict(rank=3, en_text="The old lady's cat is white.", th_text='แมวของหญิงชราคนนั้นมีสีขาว', cloze_target="lady's", is_emotional=0),
-        dict(rank=4, en_text="The ladies' room is on the second floor.", th_text='ห้องน้ำสำหรับสุภาพสตรีอยู่ที่ชั้นสอง', cloze_target="ladies'", is_emotional=0),
-        dict(rank=5, en_text="That lady is my mother's teacher.", th_text='สุภาพสตรีคนนั้นคือคุณครูของแม่ฉัน', cloze_target='lady', is_emotional=0),
-    ],
-    grammar_note_th="คำว่า lady เป็นคำนามนับได้ลงท้ายด้วย -y หน้า -y เป็นพยัญชนะ รูปพหูพจน์จึงต้องเปลี่ยน y เป็น i แล้วเติม -es เป็น ladies (ประโยคที่ 2) รูปเอกพจน์ใช้ lady (ประโยคที่ 1 และ 5) แสดงความเป็นเจ้าของของเอกพจน์ใช้ 's เป็น lady's (ประโยคที่ 3) และพหูพจน์แสดงความเป็นเจ้าของใส่เพียง ' เป็น ladies' (ประโยคที่ 4)",
-),
 'language': dict(
     sentences=[
         dict(rank=1, en_text='Learning a new language opened a whole new world for me!', th_text='การเรียนภาษาใหม่ได้เปิดโลกใบใหม่ทั้งหมดให้กับฉัน!', cloze_target='language', is_emotional=1),
@@ -1008,6 +1021,16 @@ DATA = {
     ],
     grammar_note_th="คำว่า music โดยปกติเป็นคำนามนับไม่ได้ (Uncountable Noun) ดังในประโยคที่ 1 และ 5 แสดงความเป็นเจ้าของด้วย 's เป็น music's (ประโยคที่ 2) ทำหน้าที่เป็นคำขยาย (Noun Adjunct) ใน music teacher (ประโยคที่ 3) และในประโยคที่ 4 สามารถเติม -s เป็น musics เมื่อใช้ในความหมายเฉพาะถึงประเภท/แนวทางดนตรีที่หลากหลาย",
 ),
+'name': dict(
+    sentences=[
+        dict(rank=1, en_text='My dog remembers his name and runs to me with joy.', th_text='สุนัขของฉันจำชื่อของมันได้และวิ่งมาหาฉันด้วยความดีใจ', cloze_target='name', is_emotional=1),
+        dict(rank=2, en_text='Please write all your full names on the paper.', th_text='กรุณาเขียนชื่อเต็มของพวกคุณทุกคนลงบนกระดาษ', cloze_target='names', is_emotional=0),
+        dict(rank=3, en_text="The old name's meaning was very beautiful.", th_text='ความหมายของชื่อเก่านั้นไพเราะมาก', cloze_target="name's", is_emotional=0),
+        dict(rank=4, en_text="The names' meanings are written here.", th_text='ความหมายของชื่อเหล่านั้นถูกเขียนไว้ที่นี่', cloze_target="names'", is_emotional=0),
+        dict(rank=5, en_text='What is your name?', th_text='คุณชื่ออะไร', cloze_target='name', is_emotional=0),
+    ],
+    grammar_note_th="คำว่า name เป็นคำนามนับได้ ประโยคที่ 1 และ 5 ใช้ name รูปเอกพจน์เพราะพูดถึงชื่อเดียว ประโยคที่ 2 ใช้ names รูปพหูพจน์เนื่องจากพูดถึงชื่อของคนหลายคน สำหรับประโยคที่ 3 ใช้ name's เติม 's เพื่อแสดงความเป็นเจ้าของของชื่อเอกพจน์ (ความหมายของชื่อนั้น) และประโยคที่ 4 ใช้ names' เติม ' หลัง -s พหูพจน์เพื่อแสดงความเป็นเจ้าของของชื่อหลายๆ ชื่อ",
+),
 'near': dict(
     sentences=[
         dict(rank=1, en_text='I feel safe when my mother is near me.', th_text='ฉันรู้สึกปลอดภัยเมื่อแม่อยู่ใกล้ๆ ฉัน', cloze_target='near', is_emotional=1),
@@ -1048,15 +1071,15 @@ DATA = {
     ],
     grammar_note_th='คำว่า nice เป็นคำคุณศัพท์ ประโยคที่ 1, 4 และ 5 ใช้รูปปกติ (nice) ขยายคำนามหรือทำหน้าที่หลัง Verb to be ประโยคที่ 2 ใช้รูปขั้นกว่า (nicer) เติมเพียง -r เนื่องจากลงท้ายด้วย e อยู่แล้ว ประโยคที่ 3 ใช้รูปขั้นสุด (nicest) เติม -st และมี the นำหน้าเพื่อบอกความเป็นที่สุด',
 ),
-'noisy': dict(
+'night': dict(
     sentences=[
-        dict(rank=1, en_text='The noisy fireworks scared the little dog.', th_text='เสียงพลุที่ดังอึกทึกทำให้สุนัขตัวน้อยตกใจกลัว', cloze_target='noisy', is_emotional=1),
-        dict(rank=2, en_text='This street is noisier than our old street.', th_text='ถนนเส้นนี้เสียงดังกว่าถนนเส้นเก่าของเรา', cloze_target='noisier', is_emotional=0),
-        dict(rank=3, en_text='That was the noisiest party in the city.', th_text='นั่นคืองานปาร์ตี้ที่ส่งเสียงดังที่สุดในเมือง', cloze_target='noisiest', is_emotional=0),
-        dict(rank=4, en_text='The children are very noisy today.', th_text='วันนี้เด็กๆ เสียงดังกันมาก', cloze_target='noisy', is_emotional=0),
-        dict(rank=5, en_text='I cannot study in a noisy room.', th_text='ฉันไม่สามารถอ่านหนังสือในห้องที่เสียงดังได้', cloze_target='noisy', is_emotional=0),
+        dict(rank=1, en_text='I could not sleep all night because I missed my family so much.', th_text='ฉันนอนไม่หลับตลอดทั้งคืนเพราะคิดถึงครอบครัวมาก', cloze_target='night', is_emotional=1),
+        dict(rank=2, en_text='He worked late for three nights in a row.', th_text='เขาทำงานเลิกดึกเป็นเวลาสามคืนติดต่อกัน', cloze_target='nights', is_emotional=0),
+        dict(rank=3, en_text="A good night's sleep will help you feel better.", th_text='การนอนหลับเต็มอิ่มสักคืนจะช่วยให้คุณรู้สึกดีขึ้น', cloze_target="night's", is_emotional=0),
+        dict(rank=4, en_text="After two nights' stay at the hotel, we left.", th_text='หลังจากเข้าพักที่โรงแรมเป็นเวลาสองคืน พวกเราก็เดินทางออก', cloze_target="nights'", is_emotional=0),
+        dict(rank=5, en_text='Good night, sweet dreams!', th_text='ราตรีสวัสดิ์ ฝันดีนะ!', cloze_target='night', is_emotional=0),
     ],
-    grammar_note_th='คำว่า noisy เป็นคำคุณศัพท์ ประโยคที่ 1, 4 และ 5 ใช้รูปปกติ (noisy) ขยายคำนามหรือเป็นส่วนเติมเต็ม ประโยคที่ 2 เปลี่ยน y เป็น i แล้วเติม -er เป็น noisier สำหรับขั้นกว่า และประโยคที่ 3 เปลี่ยน y เป็น i แล้วเติม -est เป็น noisiest สำหรับขั้นสุด',
+    grammar_note_th="คำว่า night เป็นคำนามนับได้ ประโยคที่ 1 และ 5 ใช้ night รูปเอกพจน์เพื่อพูดถึงคืนเดียวหรือใช้ในการทักทายยามค่ำคืน ประโยคที่ 2 ใช้ nights รูปพหูพจน์เนื่องจากมีจำนวนสามคืน (three nights) ประโยคที่ 3 ใช้ night's แสดงความเป็นเจ้าของของระยะเวลาหนึ่งคืน (การนอนของหนึ่งคืน) และประโยคที่ 4 ใช้ nights' แสดงความเป็นเจ้าของของระยะเวลาหลายคืน (การพักสองคืน)",
 ),
 'old': dict(
     sentences=[
@@ -1077,6 +1100,26 @@ DATA = {
         dict(rank=5, en_text='I want to open a small bakery.', th_text='ฉันต้องการเปิดร้านเบเกอรีเล็กๆ สักแห่ง', cloze_target='open', is_emotional=0),
     ],
     grammar_note_th='คำว่า open เป็นคำกริยา ประโยคที่ 1 เป็น Past Simple เติม -ed (opened) บอกเหตุการณ์ในอดีต ประโยคที่ 2 ใช้รูปกริยาฐาน (open) ในประโยคคำสั่งขอร้อง ประโยคที่ 3 ใช้ Present Simple กับประธานเอกพจน์ The shop จึงเติม -s (opens) ประโยคที่ 4 เป็น Present Continuous (is opening) และประโยคที่ 5 เป็น to-infinitive (to open) ตามหลัง want',
+),
+'orange': dict(
+    sentences=[
+        dict(rank=1, en_text='My little brother cried when I ate his sweet orange!', th_text='น้องชายของฉันร้องไห้เมื่อฉันกินส้มรสหวานของเขา!', cloze_target='orange', is_emotional=1),
+        dict(rank=2, en_text='She bought five big oranges from the market.', th_text='เธอซื้อส้มผลใหญ่ห้าผลมาจากตลาด', cloze_target='oranges', is_emotional=0),
+        dict(rank=3, en_text="This orange's juice is very fresh and sweet.", th_text='น้ำของส้มผลนี้สดและหวานมาก', cloze_target="orange's", is_emotional=0),
+        dict(rank=4, en_text="All these oranges' skins are bright orange.", th_text='เปลือกของส้มทั้งหมดนี้มีสีส้มสดใส', cloze_target="oranges'", is_emotional=0),
+        dict(rank=5, en_text='I like to drink orange juice in the morning.', th_text='ฉันชอบดื่มน้ำส้มในตอนเช้า', cloze_target='orange', is_emotional=0),
+    ],
+    grammar_note_th="คำว่า orange เป็นคำนามนับได้ ประโยคที่ 1 และ 5 ใช้ orange รูปเอกพจน์สื่อถึงผลส้มหนึ่งผลหรือใช้ขยายนาม ประโยคที่ 2 ใช้ oranges รูปพหูพจน์เนื่องจากมีจำนวนห้าผล (five oranges) ประโยคที่ 3 ใช้ orange's (possessive singular) เพื่อบอกว่าน้ำนั้นเป็นของส้มผลนี้ และประโยคที่ 4 ใช้ oranges' (possessive plural) เพื่อระบุเปลือกของส้มหลายผล",
+),
+'page': dict(
+    sentences=[
+        dict(rank=1, en_text='I turned the page and was shocked to see my old photo!', th_text='ฉันเปิดหน้าต่อไปและตกใจมากที่ได้เห็นรูปเก่าของตัวเอง!', cloze_target='page', is_emotional=1),
+        dict(rank=2, en_text='This book has two hundred pages.', th_text='หนังสือเล่มนี้มีสองร้อยหน้า', cloze_target='pages', is_emotional=0),
+        dict(rank=3, en_text="The page's corner was torn and dirty.", th_text='มุมของกระดาษหน้านี้ขาดและสกปรก', cloze_target="page's", is_emotional=0),
+        dict(rank=4, en_text="All the pages' numbers are written at the bottom.", th_text='เลขหน้าของทุกๆ หน้าถูกเขียนไว้ที่ด้านล่าง', cloze_target="pages'", is_emotional=0),
+        dict(rank=5, en_text='Please open your book to page ten.', th_text='กรุณาเปิดหนังสือของคุณไปที่หน้าสิบ', cloze_target='page', is_emotional=0),
+    ],
+    grammar_note_th="คำว่า page เป็นคำนามนับได้ ประโยคที่ 1 และ 5 ใช้ page รูปเอกพจน์สื่อถึงหน้าหนังสือหน้าเดียว ประโยคที่ 2 ใช้ pages รูปพหูพจน์เพราะตามหลังจำนวนหลายหน้า (two hundred pages) ประโยคที่ 3 ใช้ page's เพื่อแสดงความเป็นเจ้าของของหน้าเดียว (มุมของหน้านี้) และประโยคที่ 4 ใช้ pages' เพื่อแสดงความเป็นเจ้าของของหลายๆ หน้า (เลขหน้าของทุกหน้า)",
 ),
 'paper': dict(
     sentences=[
@@ -1167,16 +1210,6 @@ DATA = {
         dict(rank=5, en_text='Red is her absolute favorite color.', th_text='สีแดงคือสีโปรดที่สุดของเธอ', cloze_target='Red', is_emotional=0),
     ],
     grammar_note_th='คำว่า red เป็นได้ทั้งคำคุณศัพท์และคำนาม ประโยคที่ 1 และ 4 ใช้เป็นคุณศัพท์ปกติ (red) ประโยคที่ 2 เป็นขั้นกว่า ซ้ำพยัญชนะตัวท้าย -d แล้วเติม -er เป็น redder ประโยคที่ 3 เป็นขั้นสุด ซ้ำพยัญชนะตัวท้าย -d แล้วเติม -est เป็น reddest พร้อมมี the นำหน้า และประโยคที่ 5 ใช้ Red เป็นคำนามทำหน้าที่เป็นประธานของประโยค',
-),
-'rest': dict(
-    sentences=[
-        dict(rank=1, en_text="The tired child rested his head on his mother's shoulder.", th_text='เด็กที่เหนื่อยล้าเอนหัวพักลงบนไหล่ของแม่', cloze_target='rested', is_emotional=1),
-        dict(rank=2, en_text='He rests for thirty minutes after work.', th_text='เขาพักผ่อนเป็นเวลาสามสิบนาทีหลังเลิกงาน', cloze_target='rests', is_emotional=0),
-        dict(rank=3, en_text='We are resting under the big green tree.', th_text='พวกเรากำลังพักผ่อนอยู่ใต้ต้นไม้ใหญ่สีเขียว', cloze_target='resting', is_emotional=0),
-        dict(rank=4, en_text='You need to rest your feet now.', th_text='คุณจำเป็นต้องพักเท้าของคุณตอนนี้', cloze_target='rest', is_emotional=0),
-        dict(rank=5, en_text='Let us take a short rest here.', th_text='พวกเราหยุดพักผ่อนสั้นๆ ตรงนี้กันเถอะ', cloze_target='rest', is_emotional=0),
-    ],
-    grammar_note_th='คำว่า rest เป็นได้ทั้งคำกริยาและคำนาม ประโยคที่ 1 เป็น Past Simple เติม -ed (rested) ประโยคที่ 2 เป็น Present Simple ใช้กับประธาน He เติม -s (rests) ประโยคที่ 3 เป็น Present Continuous (are resting) ประโยคที่ 4 เป็น to-infinitive (to rest) ตามหลัง need และประโยคที่ 5 เป็นคำนาม (rest) ทำหน้าที่เป็นกรรมของคำกริยา take',
 ),
 'run': dict(
     sentences=[
@@ -1307,16 +1340,6 @@ DATA = {
         dict(rank=5, en_text='These shoes are too small for me.', th_text='รองเท้าพวกนี้เล็กเกินไปสำหรับฉัน', cloze_target='small', is_emotional=0),
     ],
     grammar_note_th='คำว่า small เป็นคำคุณศัพท์ ประโยคที่ 1, 4 และ 5 ใช้รูปปกติ (small) ทำหน้าที่ขยายคำนามหรืออยู่หลัง Verb to be ประโยคที่ 2 เป็นขั้นกว่า เติม -er เป็น smaller เพื่อเปรียบเทียบสิ่งสองสิ่ง และประโยคที่ 3 เป็นขั้นสุด เติม -est เป็น smallest พร้อมมี the นำหน้า',
-),
-'smile': dict(
-    sentences=[
-        dict(rank=1, en_text='She smiled warmly when she saw her mother after five years.', th_text='เธอยิ้มอย่างอบอุ่นเมื่อได้พบแม่หลังจากผ่านไปห้าปี', cloze_target='smiled', is_emotional=1),
-        dict(rank=2, en_text='He always smiles when he meets new people.', th_text='เขายิ้มเสมอเวลาพบเจอผู้คนใหม่ๆ', cloze_target='smiles', is_emotional=0),
-        dict(rank=3, en_text='Look at the happy boy smiling for the camera!', th_text='ดูเด็กชายผู้มีความสุขคนนั้นสิ กำลังยิ้มให้กล้องอยู่เลย!', cloze_target='smiling', is_emotional=0),
-        dict(rank=4, en_text='Remember to smile and say thank you.', th_text='อย่าลืมยิ้มและพูดขอบคุณนะ', cloze_target='smile', is_emotional=0),
-        dict(rank=5, en_text='Her bright smile made everyone feel happy.', th_text='รอยยิ้มที่สดใสของเธอทำให้ทุกคนรู้สึกมีความสุข', cloze_target='smile', is_emotional=0),
-    ],
-    grammar_note_th='คำว่า smile เป็นได้ทั้งคำกริยาและคำนาม ประโยคที่ 1 เป็น Past Simple เติม -d (smiled) ประโยคที่ 2 เป็น Present Simple ประธาน He เติม -s (smiles) ประโยคที่ 3 ใช้รูป participle/continuous (smiling) ประโยคที่ 4 เป็น to-infinitive (to smile) หลัง remember และประโยคที่ 5 ทำหน้าที่เป็นคำนาม (smile) เอกพจน์',
 ),
 'speak': dict(
     sentences=[
@@ -1527,6 +1550,16 @@ DATA = {
         dict(rank=5, en_text='Tom loves to cook dinner for his wife.', th_text='ทอมชอบทำอาหารเย็นให้ภรรยาของเขา', cloze_target='wife', is_emotional=0),
     ],
     grammar_note_th="คำว่า wife เป็นคำนามนับได้ที่มีการเปลี่ยนรูปตามไวยากรณ์: 1) wife เอกพจน์ทำหน้าที่เป็นกรรมตรงของกริยา saw 2) wife's เป็นรูปแสดงความเป็นเจ้าของ (Possessive) เติม 's เพื่อขยาย birthday party 3) wives เป็นรูปพหุพจน์แบบไม่ปกติ (Irregular Plural) เปลี่ยนท้าย -fe เป็น -ves เมื่อมีมากกว่าหนึ่ง 4) wife เอกพจน์ทำหน้าที่เป็นประธาน (Subject) ของประโยค และ 5) wife ทำหน้าที่เป็นกรรมของคำบุพบท (Object of Preposition) หลัง for",
+),
+'window': dict(
+    sentences=[
+        dict(rank=1, en_text='He broke the window in fear when he saw the fire!', th_text='เขาต่อยหน้าต่างแตกด้วยความกลัวเมื่อเห็นไฟไหม้!', cloze_target='window', is_emotional=1),
+        dict(rank=2, en_text='Please close all the windows before you go out.', th_text='กรุณาปิดหน้าต่างทุกบานก่อนที่คุณจะออกไปข้างนอก', cloze_target='windows', is_emotional=0),
+        dict(rank=3, en_text="The window's glass is dirty, so we cannot see outside.", th_text='กระจกของหน้าต่างบานนี้สกปรก เราจึงมองไม่เห็นข้างนอก', cloze_target="window's", is_emotional=0),
+        dict(rank=4, en_text="The windows' frames are all painted white.", th_text='กรอบของหน้าต่างทุกบานถูกทาสีขาว', cloze_target="windows'", is_emotional=0),
+        dict(rank=5, en_text='She sits near the window to read her book.', th_text='เธอนั่งใกล้หน้าต่างเพื่ออ่านหนังสือ', cloze_target='window', is_emotional=0),
+    ],
+    grammar_note_th="คำว่า window เป็นคำนามนับได้ ประโยคที่ 1 และ 5 ใช้ window รูปเอกพจน์เพื่อสื่อถึงหน้าต่างบานเดียว ประโยคที่ 2 ใช้ windows รูปพหูพจน์เติม -s เพื่อบอกถึงหน้าต่างหลายบาน ประโยคที่ 3 ใช้ window's เป็นการแสดงความเป็นเจ้าของของหน้าต่างบานเดียว (กระจกของหน้าต่างนี้) และประโยคที่ 4 ใช้ windows' เพื่อแสดงความเป็นเจ้าของของหน้าต่างหลายบาน (กรอบของหน้าต่างเหล่านั้น)",
 ),
 'work': dict(
     sentences=[

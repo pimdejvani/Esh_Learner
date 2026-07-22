@@ -18,23 +18,62 @@ possibly replace the templated `example_sentences`/`grammar_note_th` content
 below with LLM-generated content. That is a follow-up, independent of
 everything in this document.~~
 
+**Update (2026-07-22, real-sourcing pass):** every field this document
+previously flagged as "approximated" has now been re-done against a real
+external source where one was fetchable, and precisely documented where it
+still isn't. Short version (full detail in section 1's table, which has
+been rewritten below):
+
+1. **Word list**: cross-checked all 160 headwords against a real, fetched
+   Oxford 3000 CEFR JSON on GitHub. 7 words weren't actually in the real A1
+   band (5 were real Oxford words in the wrong band, 1 wasn't in the source
+   at all, 1 — the article "a" — has no article entries in the source or a
+   Thai translation either way, so it was dropped rather than swapped).
+   **The corpus is now 153 words, not 160** — see `tools/wordlist.py`'s
+   docstring for the exact 7 and why each one moved.
+2. **Thai translations**: 152/153 `meaning_th` values are now a real word
+   fetched from Wiktionary's own translation tables (via the wiktapi.dev
+   mirror API), sense-matched against this app's own collocation for each
+   word. 1 word (`make`) has no Thai translation in Wiktionary's data at
+   all for any of its verb senses and is explicitly still flagged
+   approximated in the DB (`translation_source`). The Wiktionary license
+   field was also corrected: it's CC BY-SA **4.0**, not 3.0 as previously
+   recorded.
+3. **related_words**: `is_giveaway` is now a real, computed WordNet
+   synonym/antonym check (was a hardcoded 0 for every row before). New
+   `hypernym`/`part_of` rows were added from a real WordNet hypernym-path /
+   holonym closure over the word set, for the Odd-One-Out game. SWOW-EN
+   itself is still not fetchable (confirmed this pass: its GitHub repo
+   `.gitignore`s the actual response/strength data files, only per-word
+   summary stats are tracked) — `RELATED_FALLBACK`'s hand-curated
+   association pairs remain the closeness/association-strength source,
+   exactly as SPEC.md sanctions for this documented case.
+4. **9 fallback-template sentences**: regenerated with `gemini-3.6-flash`
+   now that the API key has credits again. All 9 passed QC cleanly on the
+   first retry. **All 153 words in the current seed now use real
+   LLM-generated sentences — none fall back to the old templates.**
+
 ---
 
 ## 1. Dataset (`tools/`, output `vocab_app/assets/seed/vocab.db`)
 
 Run with `python tools/build_dataset.py` (rerunnable, idempotent — rebuilds
-the DB from scratch each time). Produces 160 words (target was ~150; slightly
-over to have headroom for POS variety) covering Oxford 3000 A1 band.
+the DB from scratch each time). Produces **153 words** (was 160 before the
+2026-07-22 real-sourcing pass below dropped 7 that weren't verifiably A1 —
+still comfortably over the ~150 target) covering Oxford 3000 A1 band.
+Requires `nltk`'s `wordnet` corpus for the `related_words` step now (see
+the `related_words` row below) — `pip install nltk && python -m nltk.downloader
+wordnet`, one-time, no further internet access needed after that.
 
 ### What's REAL / sourced vs. what's APPROXIMATED — be precise here:
 
 | Field | Status | Detail |
 |---|---|---|
-| Headwords + POS + CEFR band | **Approximated, not machine-fetched** | `tools/wordlist.py`. Could not reliably batch-pull the official OUP Oxford 3000/5000 PDF or a GitHub CSV mirror through the tools available in this session. The 160 words are the well-documented, publicly known Oxford 3000 A1 core-beginner set, typed in by hand with POS tags. **Action item for a future pass:** replace `wordlist.py`'s `WORDS` list with a direct parse of the official OUP source — the rest of the pipeline doesn't need to change, it's a pure data swap. |
-| `meaning_th` (Thai gloss), `thai_reading`, `ipa`, `collocation_en/th`, `countable` | **Hand-authored by the build author (Claude), not fetched from Wiktionary** | `tools/thai_data.py`. Could not reliably batch-fetch and parse 160 individual `en.wiktionary.org/wiki/<word>` pages within this session. Per SPEC.md §5 ("LLM/คน ทำแค่เลือก sense, จัด rank, mark is_core + เกลาให้กระชับ — ไม่ใช่แปลใหม่") this is explicitly an allowed human/LLM role, but the base data here was composed directly from standard EN-TH dictionary knowledge rather than traced to a specific fetched Wiktionary page. `words.translation_source` is deliberately stored as `"Wiktionary (approximated)"` (not a clean `"Wiktionary"`) so this distinction is visible in the DB itself, not just in this doc. **Action item:** swap in real Wiktionary-fetched glosses per word; the schema and pipeline already have the right shape for it. |
-| `word_forms.form_text`/`form_type`/`is_irregular` | **Rule-generated (regex-based inflection rules + irregular-verb/plural lookup tables), unchanged** | `build_dataset.py` (`regular_past`, `ving`, `s3sg`, `plural`, `comparative`, `IRREGULAR_VERBS`, `IRREGULAR_PLURALS`). The inflected *forms themselves* are still computed this way for all 160 words (this part was never the flagged gap — see next row for `grammar_note_th`, which now mostly comes from the LLM instead). |
-| `example_sentences` (5/word) + `word_forms.grammar_note_th` | **Real gemini-3.6-flash-generated content for 151/160 words** (was: template placeholders + mechanical per-form notes) | `tools/llm_sentences.py`, sourced from `tools/model_compare_results/gemini-3.6-flash_round1.json` (a complete 160/160-word run) via `tools/_gen_llm_sentences.py`. `build_dataset.py`'s `build_sentences()` prefers this dataset per headword — for a hit, it also overwrites `grammar_note_th` on every `word_forms` row for that word with the LLM's one richer paragraph (which already explains the reasoning across all 5 sentences' forms, in the SPEC §9.2 "explain why" style) instead of the old mechanical per-form template sentence. Falls back to the old `SENT_TEMPLATES` + rule-based note mechanism only when a word is missing from `llm_sentences.py`. **Model selection:** 3 Gemini models were A/B-tested 2 rounds each over the full 160-word list against the SPEC §5 QC rules (`tools/model_compare.py`) — `gemini-2.5-flash-lite` turned out to be a dead/retired model (404s), `gemini-3.5-flash-lite` is cheap ($0.18/run) but only hit 34–56% "≥3 distinct inflected forms per word" compliance, `gemini-3.6-flash` cost more ($0.40–0.58/run, still trivial in absolute terms — an estimated $10–15 even scaled to the full 3000-word Oxford list) but hit 83–93% compliance and 100% on the 5-sentences/rank-1-emotional checks. Full numbers in `tools/model_compare_results/summary.json`. **Per-word validation + fixes:** every one of the 160 words in the raw run was checked programmatically against the QC rules (exactly 5 sentences, rank1 `is_emotional=true`, `cloze_target` a case-insensitive substring of `en_text`, ≥3 distinct inflected forms across the 5 sentences for POS where inflection is possible — determiners/prepositions/conjunctions/pronouns/non-gradable adverbs/nationality adjectives are exempt since they structurally can't vary). **9 words failed** that check and could not be cleanly regenerated so they still use the old template mechanism end-to-end: `bag`, `day`, `evening`, `name`, `night`, `orange`, `page`, `window` (countable nouns that only reached singular/plural — 2 forms — instead of the achievable 3+ via a possessive form) and `different` (used the derived noun "difference" as an invalid cloze target instead of an actual inflected form). Regeneration was attempted for these 9 (`tools/_regenerate_llm.py`, same client pattern + retry/backoff) but the Gemini API key's prepayment credits were depleted (`429 RESOURCE_EXHAUSTED`) before a clean retry could land — falling back to templates for exactly these 9 words is the documented, anticipated fallback path, not a silent gap. A manual spot-check read of all 800 Thai sentences in the raw run (not just a 5–10-word sample) also caught **16 real generation glitches across 14 words** — a stray garbled syllable (`happy`), a literal Cyrillic "три" instead of Thai "สาม" (`school`), two dropped verbs/subject pronouns (`garden`, `write`, `tree`), one double-negative that flipped a sentence's meaning (`want`: "he doesn't want" became "he doesn't NOT want"), two stray parenthetical alt-glosses leaking into the translation (`beautiful`, `come`), and several stray mid-sentence spaces (`home`, `rest`, `start`, `study`, `thank`, `tree`, `door`) — all corrected via `MANUAL_FIXES` in `tools/_gen_llm_sentences.py` before being baked into `llm_sentences.py`. This was the single biggest content-quality gap flagged in the previous version of this doc; it is now addressed for 151/160 words, with the remaining 9 explicitly logged rather than silently left as-is. |
-| `related_words` | **Small manually-curated fallback, not SWOW** | `RELATED_FALLBACK` dict in `build_dataset.py`, ~50 hand-picked association pairs restricted to word-pairs that are both in the 160-word seed (e.g. cat↔dog, school↔teacher↔student, family↔mother/father/brother/sister). SWOW-EN (smallworldofwords.org) is a downloadable research dataset but wasn't fetchable in this session. This is exactly the documented fallback SPEC.md itself sanctions ("ถ้าไม่ได้... ยอมรับให้ fallback เป็น manually-curated set... แต่บันทึกใน NOTES.md"). No WordNet-based `is_giveaway` flagging was done (all rows have `is_giveaway=0`) — Phase 2 territory anyway since hint system (§8b) isn't wired into the UI yet beyond a stub hook in `ClozeGame`. |
+| Headwords + POS + CEFR band | **Word list + A1 band now REAL, machine-verified. POS tags remain hand-assigned (spec-sanctioned).** | `tools/wordlist.py`. Cross-checked all 160 originally-hand-typed headwords against a real, machine-fetched source: the "A1"/"A2"/"B1"/"B2" word-array JSON at `https://raw.githubusercontent.com/Kolia951/The_Oxford_3000_CEFR/main/package.txt` (892 words in its A1 array). 153/160 were confirmed present in the real A1 array verbatim. **7 were not**, and were handled per-word (documented in full in `wordlist.py`'s docstring): `cry`, `lady`, `noisy`, `rest`, `smile` are real Oxford words but the source lists them as A2, not A1 — dropped rather than mislabeled; `English` isn't in ANY band of this source at all (nationality adjectives seem excluded) — dropped; `a` also isn't in any band (unlike `the`, which is) — considered swapping for `the`, but Wiktionary has no Thai translation for either English article (Thai has no articles), so swapping wouldn't have fixed the *translation*-sourcing problem while still costing a word — dropped instead of swapped. **The corpus is now 153 words.** POS tags are still hand-assigned (the source has no POS field) — per SPEC.md this remains an explicitly allowed non-sourced human/LLM judgment call (grammatical fact, not translation/definition). `freq_rank` is this pipeline's own sequential ordering (renumbered 1..153), not a sourced frequency statistic. |
+| `meaning_th` (Thai gloss) | **Real for 152/153 words, fetched from Wiktionary's own translation tables.** `thai_reading`, `ipa`, `collocation_en/th`, `countable` remain hand-authored (see reasoning below). | `tools/thai_data.py`. Fetched via `GET https://api.wiktapi.dev/v1/en/word/{word}/translations` (a free, no-key API that mirrors en.wiktionary.org's own Translations tables) for all 153 headwords — collected every `lang_code="th"` entry for the word's part of speech, then for each word picked the real Wiktionary Thai word using this priority: (1) exact match to a term already in the previous hand-authored gloss (validates it as real and preserves the original sense-priority ordering, e.g. `old`'s `แก่, เก่า` kept แก่ since it was listed first), (2) else the candidate that's a substring of this word's own `collocation_th` (the collocation demonstrates which sense the app actually drills — used to disambiguate 11 words whose old gloss was a compound/paraphrase not itself a separate Wiktionary translation entry: `after`, `again`, `beautiful`, `different`, `evening`, `eye`, `kitchen`, `light`, `live`, `sleep`, `talk`), (3) otherwise the first available real candidate. **113/152 already matched a real Wiktionary word exactly unchanged** (validates the original hand-typed data was largely accurate); **40 changed** to a different (still real) Wiktionary word after this cross-check. **1 word, `make`, has NO Thai translation in Wiktionary's data at all** for any of its (very polysemous) verb senses — a WebFetch double-check of the plain `en.wiktionary.org/wiki/make` page didn't turn up a clean answer either, so the previous hand-authored `"ทำ, สร้าง"` is kept **unchanged and still explicitly flagged approximated** (`words.translation_source = "Wiktionary (approximated)"` for this one word only; every other word now gets a clean `"Wiktionary"`). `translation_license` was also corrected from the previously-recorded `"CC BY-SA 3.0"` to the actual current license: **`"CC BY-SA 4.0"`** (verified against `en.wiktionary.org/wiki/Wiktionary:Copyrights`, which states Wiktionary content is dual-licensed CC BY-SA 4.0 + GFDL). `thai_reading`/`stress_index` are still derived by hand from `ipa` (a syllable-hyphenated Thai-script transliteration, more specific than wiktapi.dev's loose romanization) — wiktapi's `roman` field was used only to sanity-check sense/word correctness, not as the reading source, per this pass's instructions. `ipa`, `collocation_en/th`, `countable` are unchanged from before (still hand-authored/rule-checked, not separately re-sourced this pass — SPEC.md's allowed non-definitional human/LLM judgment). |
+| `word_forms.form_text`/`form_type`/`is_irregular` | **Rule-generated (regex-based inflection rules + irregular-verb/plural lookup tables), unchanged** | `build_dataset.py` (`regular_past`, `ving`, `s3sg`, `plural`, `comparative`, `IRREGULAR_VERBS`, `IRREGULAR_PLURALS`). The inflected *forms themselves* are still computed this way for all 153 words (this part was never the flagged gap). |
+| `example_sentences` (5/word) + `word_forms.grammar_note_th` | **Real gemini-3.6-flash-generated content for ALL 153/153 words** (was 151/160, with 9 on old templates) | `tools/llm_sentences.py`, sourced from `tools/model_compare_results/gemini-3.6-flash_round1.json` (the original 160-word run) merged with `tools/model_compare_results/_regenerated.json` (the 2026-07-22 regeneration pass, see below) via `tools/_gen_llm_sentences.py`. `build_dataset.py`'s `build_sentences()` prefers this dataset per headword — for a hit, it also overwrites `grammar_note_th` on every `word_forms` row for that word with the LLM's one richer paragraph, in the SPEC §9.2 "explain why" style. The old `SENT_TEMPLATES` + rule-based note mechanism is **no longer exercised for any word in the current build** — it remains in the code purely as a defensive fallback. **Model selection** (unchanged from before, kept for history): 3 Gemini models were A/B-tested 2 rounds each over the full 160-word list against the SPEC §5 QC rules — `gemini-2.5-flash-lite` was dead/retired (404s), `gemini-3.5-flash-lite` was cheap but only 34–56% compliant on the varied-forms rule, `gemini-3.6-flash` cost more (~$0.40–0.58/run, trivial in absolute terms) but hit 83–93% compliance. Full numbers in `tools/model_compare_results/summary.json`. **The 9-word gap is now closed:** `bag`, `day`, `evening`, `name`, `night`, `orange`, `page`, `window` (countable nouns that previously only reached singular/plural — 2 forms — instead of 3+ via a possessive) and `different` (previously used the invalid derived-lemma cloze target "difference") were regenerated via `tools/_regenerate_llm.py` with `gemini-3.6-flash` now that the API key has credits again — **all 9 passed the full QC check (exactly 5 sentences, rank1 emotional, valid verbatim cloze span, ≥3 distinct inflected forms) cleanly on the very first retry**, no further API errors. `different`'s regenerated sentences now correctly cycle `different` / `different` / `more different` / `most different` / `different` — real inflected/comparative forms of `different` itself, not the noun "difference". An automated post-generation scan (double-space check, non-Thai/non-ASCII-script check, cloze-substring verification) found **0 issues** across all 45 new sentences — no manual `MANUAL_FIXES`-style correction was needed for this batch (unlike the original 160-word run, which needed 16 fixes across 14 words — that correction record is untouched and still baked into `llm_sentences.py`). |
+| `related_words` | **`is_giveaway` now real (WordNet-computed). `hypernym`/`part_of` rows now real (WordNet-derived). `association` pairs + their `closeness` remain the hand-curated fallback — SWOW-EN confirmed still not fetchable.** | `build_dataset.py`. **is_giveaway**: previously hardcoded 0 for every row; now computed per `RELATED_FALLBACK` pair by checking real WordNet data (`nltk.corpus.wordnet`) for an actual synonym (shares a synset) or antonym (WordNet's curated antonym links) relation, restricted to the word's POS as used in this app. **26 of 136 association rows (13 unique pairs) are real WordNet synonym/antonym pairs** and are now flagged `is_giveaway=1`: antonym pairs `mother↔father`, `brother↔sister`, `husband↔wife`, `boy↔girl`, `hot↔cold`, `big↔small`, `fast↔slow`; synonym pairs `small↔little`, `house↔home`, `home↔family`, `listen↔hear`, `speak↔talk`, `learn↔study`, `child↔baby`. Everything else stays `is_giveaway=0`. **New `hypernym`/`part_of` rows**: computed from each noun's primary WordNet sense's hypernym-path closure (IS-A, e.g. `bread` IS-A `food`) and holonym closure (part-of, e.g. `night` is part_of `day`), restricted to pairs where BOTH headwords are already in this app's 153-word set (so the FK constraint holds and the hint filter's own "must be in Oxford 3000" rule is automatically satisfied). Added **5 `hypernym`** rows (`bread`→`food`, `evening`→`day`, `milk`→`food`, `orange`→`food`, `page`→`paper`) and **2 `part_of`** rows (`kitchen`→`home`, `night`→`day`) after two kinds of filtering: (a) skipping any pair already covered by an existing `RELATED_FALLBACK` association row, to avoid a redundant duplicate row for the same two words (this is why e.g. `house`↔`home`, `baby`↔`child`, `lunch`↔`food`, `rain`↔`weather`, `sea`↔`water` — all real hypernym pairs too — don't get a *second* row; they're already connected via the association row), and (b) one explicit **sense-mismatch exclusion**: WordNet's only holonym for `fish` (the animal sense) is `school.n.07` ("a school OF FISH", i.e. a shoal) — completely unrelated to this app's `school` headword, which teaches `school.n.01` ("an educational institution"). Surfacing that pair in Odd-One-Out would be actively misleading, so it's excluded and documented in `build_dataset.py`'s `HYPERNYM_MERONYM_SENSE_MISMATCH_EXCLUDE`. `is_giveaway=0` for all hypernym/part_of rows (the auto-giveaway flag is specifically for synonym/antonym per SPEC.md §5; a broader category isn't the same as revealing the answer). `closeness=0.6` for these rows is a flat placeholder, same caveat as the association rows below — WordNet has no association-strength score, so this is NOT claimed as SWOW-sourced. **association pairs remain `RELATED_FALLBACK`'s ~50 hand-picked pairs, `closeness` remains a flat 0.5 placeholder.** SWOW-EN was actively re-attempted this pass: browsed `github.com/SimonDeDeyne/SWOWEN-2018`'s file listing via `gh api` — the repo's `data/raw/`, `data/processed/`, and `output/` directories only contain per-cue-word summary statistics (`cueStats.SWOW-EN.*.csv`, `responseStats.SWOW-EN.csv`); the actual pairwise cue→response *strength* file the task hoped to find (`strength.SWOW-EN.R1.csv`) isn't tracked in the repo at all — `data/raw/` and `data/processed/` contain only a `.gitignore` placeholder, confirming the raw response data is intentionally excluded from git (distributed separately via smallworldofwords.org's own download form instead). This is exactly the fallback path SPEC.md itself sanctions ("ถ้าไม่ได้... ยอมรับให้ fallback เป็น manually-curated set... แต่บันทึกใน NOTES.md"). |
 | Images (`has_photo`, `image_url`, etc.) | **All 0 / null — no Openverse/Wikimedia fetch attempted** | Explicitly spec-sanctioned scope cut: "it's fine if most of the 150-word seed just has has_photo=0". `lib/data/image_cache.dart` is fully implemented and unit-test-ready (injectable `HttpGet`) but has nothing in the seed to exercise it against yet. |
 
 ### QC pass actually performed (not skipped)
@@ -48,7 +87,7 @@ legitimate grammatical variety introduced by the LLM content — pass, while
 still catching genuinely broken/empty/punctuation-only spans; this check
 was loosened from a stricter single-word-only version when the LLM content
 first surfaced two real multi-word comparatives that are correct English).
-All pass on the current 160-word DB (see `tools/build_dataset.py` output:
+All pass on the current 153-word DB (see `tools/build_dataset.py` output:
 `QC pass: OK`).
 
 I also did a **manual spot check** (not just automated) on ~10 words
@@ -67,21 +106,27 @@ since this was the highest-value content to get right) plus an automated
 scan for stray non-Thai/non-ASCII script characters and mid-sentence double
 spaces to help triage. Found and fixed 16 real glitches across 14 words —
 full list and rationale in the `example_sentences` row above and in
-`MANUAL_FIXES` in `tools/_gen_llm_sentences.py`. Nothing else in the 151-word
-LLM set read as unnatural on this pass; the 9 words still on templates carry
-forward the same known-awkward-function-word caveat noted below.
+`MANUAL_FIXES` in `tools/_gen_llm_sentences.py`. Nothing else in that
+151-word LLM set read as unnatural on this pass; the 9 words that hadn't
+been generated yet at that point were later regenerated cleanly (see the
+2026-07-22 update in the `example_sentences` row above and section 4).
 
-**Known remaining quality gap (documented, not silently ignored):** function
-words with generic templates (`a`, `all`, `every`, `about`, `near`, `please`,
-`thank`, etc. — the `det`/`prep`/`interj` template families) produce
-grammatically *serviceable but occasionally awkward* Thai/English pairings
-(e.g. "I need a help with this." — "a" doesn't naturally combine with
-uncountable "help"). These ~15 words, plus the 9 words listed in the
-`example_sentences` row above that fell back to templates for a different
-reason (varied-forms QC failure + depleted API credits), would benefit most
-from a future hand review or another LLM regeneration pass once API access
-is restored. Content nouns/verbs/adjectives (the bulk of the 160) read
-naturally.
+**Known remaining quality gap — corrected while touching this section
+(2026-07-22):** an earlier version of this doc claimed ~15 function words
+(`all`, `every`, `about`, `near`, `please`, `thank`, etc.) "used generic
+templates" that could read as grammatically awkward. That claim was stale
+even before this pass: those words were already in `llm_sentences.py` from
+the original round-1 run (real LLM-generated content, e.g. `about`'s
+sentences are "I am so worried about my sick dog." / "The movie is about a
+young hero." / etc. — not template output), so `build_dataset.py`'s
+`build_sentences()` was already preferring the LLM version for them, not
+templates. Checked directly against the built DB while writing this
+update to be sure, rather than repeating the old claim uncorrected. **With
+the 9-word regeneration pass also done, `SENT_TEMPLATES` is no longer
+exercised for any of the 153 words in the current build** — every word has
+real LLM-generated `example_sentences`. The code path remains in
+`build_dataset.py` only as a defensive fallback (e.g. if a future word were
+added without LLM content prepared for it yet).
 
 ---
 
@@ -165,9 +210,18 @@ within 3s else `Good`. `capForHint()` implements §8b's hint-usage cap
   param + `capForHint`) but `play_screen.dart` doesn't currently populate
   `hintWords` from `related_words` — wiring that up is a small Phase 2 task,
   the data (`RelatedWord` on `WordBundle`) is already loaded and available.
-- `is_giveaway` (WordNet synonym/antonym flagging) — not computed; all
-  `related_words` rows have `is_giveaway=0`. Low risk in Phase 1 since the
-  hint UI isn't wired up yet anyway.
+- `is_giveaway` (WordNet synonym/antonym flagging) — **now computed for
+  real as of the 2026-07-22 dataset real-sourcing pass**, see section 1's
+  `related_words` row for the full detail (26 of 136 association rows are
+  real WordNet synonym/antonym pairs and are flagged `is_giveaway=1`; new
+  `hypernym`/`part_of` rows were also added). This bullet is left here
+  (rather than deleted) so the history of "not computed -> computed" is
+  visible. Note: by the time of this update, `vocab_app/test/word_association_test.dart`
+  and `vocab_app/test/odd_one_out_test.dart` already exist and pass, exercising
+  `is_giveaway`-exclusion logic against the real seed DB — that Phase 2 UI
+  work happened in parallel (a different agent's territory, `vocab_app/lib/**`,
+  not touched by this pass) and both suites still pass (`flutter test`:
+  91/91) against the real values computed here.
 - Focus topic / `topics`/`word_topics` tables — created empty in the seed
   schema, never populated or read. Phase 2/3 per §11.
 - Credits/Licenses page (mentioned in §5 copyright note) — not built. Should
@@ -175,10 +229,12 @@ within 3s else `Good`. `capForHint()` implements §8b's hint-usage cap
   sources.
 
 ### Deviations from spec, with reasoning
-1. **160 words instead of ~150.** Slight overshoot to keep POS variety
-   (some POS categories like `pron`/`conj`/`interj` needed a couple more
-   entries to have any representation at all). Not meaningful in either
-   direction; the pipeline is trivially rerunnable at a different count.
+1. **153 words instead of ~150** (was 160 until the 2026-07-22 real-sourcing
+   pass dropped 7 that weren't verifiably Oxford 3000 A1 band — see section
+   1). Slight overshoot to keep POS variety (some POS categories like
+   `pron`/`conj`/`interj` needed a couple more entries to have any
+   representation at all). Not meaningful in either direction; the pipeline
+   is trivially rerunnable at a different count.
 2. **`vocab_store_sqlite.dart` opens the copied seed DB directly** (rather
    than a separate "app db" + "content db" split) — simpler for Phase 1
    single-device local storage, matches "bundle dataset สำเร็จรูป" + layer
@@ -241,24 +297,30 @@ within 3s else `Good`. `capForHint()` implements §8b's hint-usage cap
 
 ## 4. How to pick this back up
 
-1. **Dataset quality pass**: swap `tools/wordlist.py` for a real OUP-sourced
-   list and `tools/thai_data.py` for real Wiktionary-fetched glosses — the
-   pipeline's insert/QC code doesn't need to change, only these two data
-   sources feeding it. (The third item that used to be listed here —
-   replacing `SENT_TEMPLATES`-generated sentences with Gemini-generated ones
-   — is done for 151/160 words, see the `example_sentences` row in section 1.
-   Remaining: regenerate the 9 words still on templates — `bag`, `day`,
-   `evening`, `name`, `night`, `orange`, `page`, `window`, `different` — once
-   the Gemini API key's prepayment credits are topped up; rerun
-   `tools/_regenerate_llm.py`, fold any newly-passing words into
-   `tools/llm_sentences.py`, then rebuild.)
+1. ~~**Dataset quality pass**: swap `tools/wordlist.py` for a real
+   OUP-sourced list and `tools/thai_data.py` for real Wiktionary-fetched
+   glosses...~~ **Done as of 2026-07-22** — see the "real-sourcing pass"
+   update near the top of this file and section 1's table for the full
+   account: word list cross-checked against a real Oxford 3000 CEFR source
+   (153/160 words verified, 7 dropped), 152/153 Thai glosses fetched from
+   real Wiktionary translation data, all 153 words now have real
+   LLM-generated sentences (the last 9 were regenerated once API credits
+   were restored), and `related_words`' `is_giveaway` + `hypernym`/`part_of`
+   rows are now real WordNet-computed data. **What's still genuinely
+   approximated/fallback, precisely**: `make`'s `meaning_th` (no Wiktionary
+   Thai translation exists for it), and `RELATED_FALLBACK`'s association
+   pairs + their flat `closeness` values (SWOW-EN confirmed still not
+   fetchable — its GitHub repo excludes the actual response/strength data
+   from git). Nothing else in the dataset is silently approximated anymore.
 2. **On-device verification**: run on an iOS simulator/device (`flutter run
    -d <ios-device>`) and walk the full loop described in SPEC.md §11's
-   success criterion.
-3. **Phase 2**: wire the `hintWords` param already present in `ClozeGame`
-   up to `related_words`; build the 4 remaining games; build the full
-   `word_detail_page.dart`; add `is_giveaway` WordNet flagging; add the
-   Credits/Licenses page.
+   success criterion. Still not done, still the top real gap in this repo.
+3. ~~**Phase 2**: wire the `hintWords` param...~~ **Done in parallel** — see
+   the "Phase 2 build log" section below (a different agent's work, on
+   `vocab_app/lib/**`, concurrent with this dataset-sourcing pass). The one
+   item from this old bullet not covered by that section is `is_giveaway`
+   WordNet flagging, which this pass (not Phase 2's UI work) implemented —
+   see point 1 above and section 1.
 
 ---
 
@@ -459,7 +521,9 @@ the focus-topic bias no-op/bias behavior.
 - **`loadAllRelatedWords()` loads every `related_words` row into memory
   once at `PlayScreen` boot** (needed so Odd One Out can search across
   every word's related set for a category hub, not just the current
-  word's). Fine at 160 words; would want a narrower/lazier query if the
+  word's). Fine at 153-160 words (written when the seed was 160; a parallel
+  pass later trimmed it to 153, see section 1 — the point about scale
+  doesn't change either way); would want a narrower/lazier query if the
   dataset grows to the full 3000-word Phase 3 scale.
 - **No widget-level (pumped) tests for any of the 7 games**, old or new —
   this matches the existing Phase 1 pattern (there were no
@@ -476,6 +540,19 @@ the focus-topic bias no-op/bias behavior.
   kept simple (progressive reveal of secondary related words, excluding the
   correct answer) rather than inventing a different hint mechanism not in
   the spec.
+- **Addendum, added by the parallel dataset-sourcing pass (2026-07-22, not
+  by this section's original author):** the `related_words` real-sourcing
+  gap this section describes above (`is_giveaway` all-0, no
+  `hypernym`/`part_of` rows, only `association`) is now partially closed —
+  see section 1's `related_words` row for the full account. `is_giveaway`
+  is now real (WordNet synonym/antonym check), and 7 real `hypernym`/
+  `part_of` rows now exist alongside the `association` fallback rows. This
+  doesn't fully resolve the "frequently can't build a round" issue noted
+  above (still only ~140 relation rows total across 153 words, and SWOW-EN
+  itself remains unfetchable — see section 1) but `flutter test`'s existing
+  `word_association_test.dart`/`odd_one_out_test.dart` suites (91/91
+  passing) already exercise the real is_giveaway values, not just
+  hypothetical ones.
 
 ### 9. Verification performed
 
