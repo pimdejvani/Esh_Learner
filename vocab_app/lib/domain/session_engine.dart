@@ -1,9 +1,10 @@
 /// Endless-queue session engine (SPEC.md section 7). Pulls "next item"
 /// requests one at a time. Priority: overdue reviews (oldest-due first) >
-/// new cards (up to today's cap) > extra practice (young/mature words just
-/// reviewed, light games only). Interleaves across topics/words instead of
-/// grinding one word repeatedly, and tracks last_direction per word so
-/// EN->TH/TH->EN alternates instead of repeating.
+/// practice cycle (random 3-6 games, flashcard always first — new cards
+/// up to today's cap are served as cards INSIDE the flashcard blocks).
+/// Interleaves across topics/words instead of grinding one word
+/// repeatedly, and tracks last_direction per word so EN->TH/TH->EN
+/// alternates instead of repeating.
 library;
 
 import 'dart:math';
@@ -231,18 +232,13 @@ class SessionEngine {
       focusTopicWordIds: focusTopicWordIds,
     );
 
-    var remainingCap = (newCardCap - newIntroducedToday).clamp(0, newCardCap);
-    final cappedNew = orderedNewCandidates.take(remainingCap).toList();
-    for (final w in cappedNew) {
-      queue.add(
-        SessionItem(
-          wordId: w.id,
-          gameType: GameType.flashcard,
-          direction: Direction.enTh,
-          source: QueueSource.newCard,
-        ),
-      );
-    }
+    final remainingCap =
+        (newCardCap - newIntroducedToday).clamp(0, newCardCap);
+    // How many new words have been queued so far. New words are no longer
+    // a standalone segment — they're served as cards INSIDE the practice
+    // cycle's flashcard blocks (user request 2026-07-24: "นับ new word
+    // เป็นกลุ่มเดียวกับรอบ flash card").
+    var newQueued = 0;
 
     // Extra practice (SPEC.md 7 revision 2026-07-23): any word that already
     // has SRS history and isn't due yet (learning included, not just
@@ -257,17 +253,36 @@ class SessionEngine {
       return s != null && s.reps > 0 && s.dueAt.isAfter(now);
     }).toList();
 
-    // Walk the practice cycle game by game; each game gets a RANDOM 2-4
-    // consecutive rounds (user request 2026-07-23 — "ไม่ได้มีแค่รอบเดียว
-    // ต่อเกม สุ่ม 2-4 รอบ") with a different word per round. For each
-    // round, candidates are narrowed to words still MISSING that game's
-    // cell in the current clean-round grid (passedPairs) when any exist —
-    // the loop drives the "You Pass" round toward completion — then the
-    // pick among candidates is weighted by practiceWeight so
-    // already-solid words fade out and weak/lapsed words dominate.
+    // Games this cycle (user request 2026-07-24): instead of walking all
+    // 7 games every cycle, each cycle plays a RANDOM 3-6 of them —
+    // triangular-ish mid-heavy count via the same dice trick as the
+    // flashcard block size: 3 + d2 + d3 gives 3..6 with P(4)=P(5)=1/3
+    // and the extremes 3/6 at 1/6 each. Flashcard is ALWAYS included and
+    // always first ("วนรอบเกมมาแล้ว ก็จะกลับไปที่ flash card"); the other
+    // slots are drawn from the remaining six games, keeping
+    // kPracticeGameCycle's shallow→deep order among those chosen.
+    final gameCount = 3 + _random.nextInt(2) + _random.nextInt(3);
+    final otherGames = kPracticeGameCycle
+        .where((g) => g != GameType.flashcard)
+        .toList()
+      ..shuffle(_random);
+    final chosen = otherGames.take(gameCount - 1).toSet();
+    final cycleGames = [
+      GameType.flashcard,
+      ...kPracticeGameCycle.where(chosen.contains),
+    ];
+
+    // Walk this cycle's games; each game gets a RANDOM 2-4 consecutive
+    // rounds (user request 2026-07-23 — "ไม่ได้มีแค่รอบเดียวต่อเกม
+    // สุ่ม 2-4 รอบ") with a different word per round. For each round,
+    // candidates are narrowed to words still MISSING that game's cell in
+    // the current clean-round grid (passedPairs) when any exist — the
+    // loop drives the "You Pass" round toward completion — then the pick
+    // among candidates is weighted by practiceWeight so already-solid
+    // words fade out and weak/lapsed words dominate.
     final usedIds = <int>{};
     outer:
-    for (final game in kPracticeGameCycle) {
+    for (final game in cycleGames) {
       // Flashcard blocks are longer: 4-8 cards, TRIANGULAR distribution
       // (user spec 2026-07-23: "โอกาสสุ่มยิ่งอยู่ตรงกลางค่าเฉลี่ยยิ่งออก
       // เยอะ"). Sum of two dice — the simplest bell-ish generator:
@@ -278,9 +293,32 @@ class SessionEngine {
           ? 4 + _random.nextInt(3) + _random.nextInt(3)
           : 2 + _random.nextInt(3);
       for (var r = 0; r < rounds; r++) {
+        // Flashcard-block slots are filled by today's capped new words
+        // FIRST, then topped up with practice words — a new word's
+        // first-meet card is just another card in the block instead of a
+        // separate up-front segment (user request 2026-07-24).
+        if (game == GameType.flashcard &&
+            newQueued < remainingCap &&
+            newQueued < orderedNewCandidates.length) {
+          final w = orderedNewCandidates[newQueued++];
+          queue.add(
+            SessionItem(
+              wordId: w.id,
+              gameType: GameType.flashcard,
+              direction: Direction.enTh,
+              source: QueueSource.newCard,
+            ),
+          );
+          continue;
+        }
         final unused =
             practicePool.where((w) => !usedIds.contains(w.id)).toList();
-        if (unused.isEmpty) break outer;
+        if (unused.isEmpty) {
+          // The flashcard block may simply be short on practice words
+          // while later games can still break the whole cycle.
+          if (game == GameType.flashcard) break;
+          break outer;
+        }
         final missingCell = unused
             .where((w) => !passedPairs.contains('${w.id}:${game.name}'))
             .toList();
@@ -310,7 +348,7 @@ class SessionEngine {
     // while there's still content left (product decision 2026-07-23 —
     // "no fixed size, if the user's ready let them continue").
     if (queue.isEmpty) {
-      for (final w in orderedNewCandidates.skip(cappedNew.length)) {
+      for (final w in orderedNewCandidates.skip(newQueued)) {
         queue.add(
           SessionItem(
             wordId: w.id,

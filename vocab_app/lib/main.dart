@@ -7,6 +7,7 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/data/vocab_store.dart';
 import 'package:vocab_app/data/vocab_store_sqlite.dart';
+import 'package:vocab_app/screens/dictionary_page.dart';
 import 'package:vocab_app/screens/play_screen.dart';
 import 'package:vocab_app/screens/progress_page.dart';
 import 'package:vocab_app/theme/app_theme.dart';
@@ -69,6 +70,7 @@ class _RootPageState extends State<_RootPage> {
     }
     final pages = [
       PlayScreen(store: store, tts: _tts),
+      DictionaryPage(store: store, tts: _tts),
       ProgressPage(store: store),
     ];
     // Floating pill top/bottom chrome (SPEC.md section 13 / NOTES.md's UI
@@ -92,6 +94,7 @@ class _RootPageState extends State<_RootPage> {
           onSelected: (i) => setState(() => _tab = i),
           items: const [
             FloatingNavItem(icon: Icons.play_arrow, label: 'เล่น'),
+            FloatingNavItem(icon: Icons.search, label: 'ค้นหา'),
             FloatingNavItem(icon: Icons.bar_chart, label: 'ความก้าวหน้า'),
           ],
         ),

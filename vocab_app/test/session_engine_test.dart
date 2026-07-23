@@ -271,48 +271,94 @@ void main() {
       expect(practice.length, 4);
     });
 
-    test('practice gives each game 2-4 consecutive rounds, in cycle order '
-        '(revision 2026-07-23: no longer a single round per game)', () {
+    test('practice cycle plays a random 3-6 games, flashcard always first, '
+        'in cycle order (revision 2026-07-24: no longer all 7 every cycle)', () {
       final words = List.generate(40, (i) => _word(i, freq: i));
       final srs = {
         for (final w in words)
           w.id: _due(w.id, now.add(const Duration(days: 2))),
       };
+      // Randomized game selection — assert the invariants over many builds.
+      for (var trial = 0; trial < 50; trial++) {
+        final queue = engine.buildQueue(
+          words: words,
+          srsStates: srs,
+          now: now,
+          newCardCap: 8,
+          newIntroducedToday: 8,
+        );
+        final practice =
+            queue.where((i) => i.source == QueueSource.extraPractice).toList();
+
+        // Compress the game sequence into consecutive runs.
+        final runGames = <GameType>[];
+        final runLengths = <int>[];
+        for (final item in practice) {
+          if (runGames.isNotEmpty && runGames.last == item.gameType) {
+            runLengths[runLengths.length - 1]++;
+          } else {
+            runGames.add(item.gameType);
+            runLengths.add(1);
+          }
+        }
+        // 3-6 games per cycle, flashcard always leading.
+        expect(runGames.length, inInclusiveRange(3, 6));
+        expect(runGames.first, GameType.flashcard);
+        // The chosen games keep kPracticeGameCycle's order (strictly
+        // increasing cycle indexes = ordered subset, no repeats).
+        final idxs = runGames.map(kPracticeGameCycle.indexOf).toList();
+        for (var i = 1; i < idxs.length; i++) {
+          expect(idxs[i], greaterThan(idxs[i - 1]));
+        }
+        for (var i = 0; i < runGames.length; i++) {
+          if (runGames[i] == GameType.flashcard) {
+            // Flashcard blocks: 4-8 cards (triangular, revision 2026-07-23).
+            expect(runLengths[i], inInclusiveRange(4, 8));
+          } else {
+            expect(runLengths[i], inInclusiveRange(2, 4));
+          }
+        }
+        // Every round uses a distinct word.
+        expect(
+          practice.map((i) => i.wordId).toSet().length,
+          practice.length,
+        );
+      }
+    });
+
+    test('new words are served inside the flashcard block, not as a '
+        'separate up-front segment (revision 2026-07-24)', () {
+      // 10 practice words + 5 brand-new, cap 3: the queue's flashcard
+      // block should open with the 3 capped new cards then top up with
+      // practice flashcards, and every new card must come before any
+      // non-flashcard game.
+      final words = List.generate(15, (i) => _word(i, freq: i));
+      final srs = {
+        for (var i = 5; i < 15; i++)
+          i: _due(i, now.add(const Duration(days: 2))),
+      };
       final queue = engine.buildQueue(
         words: words,
         srsStates: srs,
         now: now,
-        newCardCap: 8,
-        newIntroducedToday: 8,
+        newCardCap: 3,
+        newIntroducedToday: 0,
       );
-      final practice =
-          queue.where((i) => i.source == QueueSource.extraPractice).toList();
-
-      // Compress the game sequence into consecutive runs.
-      final runGames = <GameType>[];
-      final runLengths = <int>[];
-      for (final item in practice) {
-        if (runGames.isNotEmpty && runGames.last == item.gameType) {
-          runLengths[runLengths.length - 1]++;
-        } else {
-          runGames.add(item.gameType);
-          runLengths.add(1);
-        }
+      final newItems =
+          queue.where((i) => i.source == QueueSource.newCard).toList();
+      expect(newItems.length, 3);
+      expect(newItems.map((i) => i.wordId), [0, 1, 2]);
+      for (final item in newItems) {
+        expect(item.gameType, GameType.flashcard);
       }
-      expect(runGames, kPracticeGameCycle);
-      for (var i = 0; i < runGames.length; i++) {
-        if (runGames[i] == GameType.flashcard) {
-          // Flashcard blocks: 4-8 cards (triangular, revision 2026-07-23).
-          expect(runLengths[i], inInclusiveRange(4, 8));
-        } else {
-          expect(runLengths[i], inInclusiveRange(2, 4));
-        }
-      }
-      // Every round uses a distinct word.
-      expect(
-        practice.map((i) => i.wordId).toSet().length,
-        practice.length,
+      final firstNonFlashcard =
+          queue.indexWhere((i) => i.gameType != GameType.flashcard);
+      final lastNew = queue.lastIndexWhere(
+        (i) => i.source == QueueSource.newCard,
       );
+      if (firstNonFlashcard != -1) {
+        expect(lastNew, lessThan(firstNonFlashcard));
+      }
     });
 
     test('hotStreak tops the queue up to (at most) 40% new words', () {

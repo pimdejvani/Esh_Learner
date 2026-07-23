@@ -1131,6 +1131,43 @@ the exact Phase 1 sources:
   batch calls per retry round, JSON validation kept on the main thread.
   Rerun after the rewrite produced a byte-identical tools/ext_a2b1.py.
 
+## 2026-07-24: practice-cycle v2 (3-6 games), new-words-in-flashcard-block, dictionary search tab
+
+Three user requests, all in `session_engine.dart` + one new screen:
+
+1. **Random 3-6 games per cycle** (was: all 7 every cycle). Count uses
+   the same dice trick as the flashcard block size — `3 + d2 + d3`
+   gives 3..6 with P(4)=P(5)=1/3 and the extremes at 1/6 ("สูตร
+   สามเหลี่ยมเช่นกัน"). Flashcard is ALWAYS included and always first
+   ("วนรอบเกมมาแล้ว กลับไปที่ flash card"); the other slots are drawn
+   from the remaining six games but keep `kPracticeGameCycle`'s
+   shallow→deep order among those chosen.
+2. **New words are part of the flashcard block now** ("นับ new word
+   เป็นกลุ่มเดียวกับรอบ flash card") — the standalone capped-new
+   segment between overdue and practice is gone. Each flashcard
+   block's 4-8 slots are filled by today's capped new words FIRST,
+   then topped up with practice words. The queue-empty fallback
+   (beyond-cap new words) and the hot-streak 40% top-up are unchanged.
+   Gotcha: when the flashcard block runs out of BOTH new and practice
+   words it `break`s to the next game rather than `break outer` —
+   later games decide for themselves (a fresh install has zero
+   practice words but must still serve new cards).
+3. **Dictionary search tab** ("อยากให้มี feature หาคำศัพย์") — new
+   `screens/dictionary_page.dart`, third nav tab (เล่น · ค้นหา ·
+   ความก้าวหน้า). One search box filters live against headword, Thai
+   reading, every sense's meaning_th, and inflected forms; rows show
+   headword + CEFR chip + reading·core meaning + TTS button; tap opens
+   the existing `WordDetailPage`. All bundles are loaded once on tab
+   open (253 words ≈ 5 IN-clause queries) and filtered in memory.
+
+Tests: the runs-compression test now asserts invariants over 50 random
+builds (3-6 runs, flashcard first, strictly-increasing cycle indexes,
+4-8/2-4 lengths, distinct words) instead of one exact sequence, plus a
+new test that capped new cards sit inside the flashcard block before
+any non-flashcard item. Suite 118/118, analyze clean.
+
+---
+
 ## Current status & remaining work (as of 2026-07-23 evening)
 
 **Where things stand:** Phase 1 + Phase 2 are fully built (all 7 games,
@@ -1144,9 +1181,11 @@ boundary, endless continuous-play loop with 2-4 rounds/game (flashcard
 streak-only, global reset, missing-cell targeting + streak fade-out),
 ~80% retention zone, hot-streak burst + 40% new-word share, flashcard
 v2 swipe-first UX, matching v2 connect-the-lines, centered mobile
-layout. `flutter analyze` clean; `flutter test` 117/117; Windows
-desktop build works; repo is github.com/pimdejvani/Esh_Learner
-(public).
+layout — plus the 2026-07-24 batch (random 3-6 games per cycle, new
+words folded into the flashcard block, dictionary search tab; see the
+section above). `flutter analyze` clean; `flutter test` 118/118;
+Windows desktop build works; repo is
+github.com/pimdejvani/Esh_Learner (public).
 
 **Remaining work, in recommended order:**
 
