@@ -271,8 +271,9 @@ void main() {
       expect(practice.length, 4);
     });
 
-    test('practice rounds rotate through the full game cycle in order', () {
-      final words = List.generate(7, (i) => _word(i, freq: i));
+    test('practice gives each game 2-4 consecutive rounds, in cycle order '
+        '(revision 2026-07-23: no longer a single round per game)', () {
+      final words = List.generate(40, (i) => _word(i, freq: i));
       final srs = {
         for (final w in words)
           w.id: _due(w.id, now.add(const Duration(days: 2))),
@@ -286,7 +287,60 @@ void main() {
       );
       final practice =
           queue.where((i) => i.source == QueueSource.extraPractice).toList();
-      expect(practice.map((i) => i.gameType).toList(), kPracticeGameCycle);
+
+      // Compress the game sequence into consecutive runs.
+      final runGames = <GameType>[];
+      final runLengths = <int>[];
+      for (final item in practice) {
+        if (runGames.isNotEmpty && runGames.last == item.gameType) {
+          runLengths[runLengths.length - 1]++;
+        } else {
+          runGames.add(item.gameType);
+          runLengths.add(1);
+        }
+      }
+      expect(runGames, kPracticeGameCycle);
+      for (final len in runLengths) {
+        expect(len, inInclusiveRange(2, 4));
+      }
+      // Every round uses a distinct word.
+      expect(
+        practice.map((i) => i.wordId).toSet().length,
+        practice.length,
+      );
+    });
+
+    test('hotStreak tops the queue up to (at most) 40% new words', () {
+      final words = List.generate(60, (i) => _word(i, freq: i));
+      // 10 words already seen and due now; the other 50 are brand new.
+      final srs = {
+        for (var i = 0; i < 10; i++)
+          i: _due(i, now.subtract(const Duration(hours: 1))),
+      };
+      final hot = engine.buildQueue(
+        words: words,
+        srsStates: srs,
+        now: now,
+        newCardCap: 2,
+        newIntroducedToday: 0,
+        hotStreak: true,
+      );
+      final newCount =
+          hot.where((i) => i.source == QueueSource.newCard).length;
+      final share = newCount / hot.length;
+      expect(share, lessThanOrEqualTo(0.4 + 1e-9));
+      expect(share, greaterThan(0.3)); // actually topped up, not just cap
+
+      final cold = engine.buildQueue(
+        words: words,
+        srsStates: srs,
+        now: now,
+        newCardCap: 2,
+        newIntroducedToday: 0,
+      );
+      final coldNew =
+          cold.where((i) => i.source == QueueSource.newCard).length;
+      expect(coldNew, 2); // without the streak, the cap stands alone
     });
 
     test('practice slots target words still missing that game\'s cell', () {

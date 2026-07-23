@@ -1082,15 +1082,21 @@ github.com/pimdejvani/Esh_Learner (public).
    face at the 90° midpoint — the standard Flutter approach; research
    community packages e.g. `flip_card` vs hand-rolling before building).
    Today the tap swaps faces with a fade/scale AnimatedSwitcher only.
-5. **Images** — schema fields (`has_photo`/`image_url`/license/author)
+5. **Dictation: remove the Thai meaning from the game card** (user
+   request 2026-07-23, same tier as the 3,000-word job): today the game
+   shows `coreSense.meaningTh` under the listen buttons, which turns a
+   pure listening/spelling task into a translation-assisted one. Drop it
+   (keep audio + hints only); decide whether the reveal still shows the
+   meaning via WordResultCard (it should — reveal is post-answer).
+6. **Images** — schema fields (`has_photo`/`image_url`/license/author)
    exist but the Openverse/Wikimedia URL-resolution step was never run,
    and the app has no runtime image fetch/cache yet (SPEC.md decision #3).
-6. **iOS build** — SPEC.md targets iOS-first but everything so far is
+7. **iOS build** — SPEC.md targets iOS-first but everything so far is
    verified on Windows/web only; needs a Mac/Xcode (not possible on this
    machine).
-7. **Tune FSRS/governor from real logs** — blocked on accumulated play
+8. **Tune FSRS/governor from real logs** — blocked on accumulated play
    data, revisit after the user has played for a while.
-8. **Backlog (explicitly deferred):** confusables ("อย่าสับสนกับ"), app
+9. **Backlog (explicitly deferred):** confusables ("อย่าสับสนกับ"), app
    name + logo, Android/iPad decision, multi-device sync, full XP/badge
    layer.
 

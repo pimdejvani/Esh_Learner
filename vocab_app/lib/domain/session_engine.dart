@@ -168,6 +168,10 @@ class SessionEngine {
   /// practice slot prefers words still MISSING that slot's game cell, so
   /// the loop actively drives the round toward completion instead of
   /// re-serving cells that are already earned.
+  /// [hotStreak] (user request 2026-07-23 "ถ้าตอบถูกบ่อยมากๆ ให้แต่ละรอบ
+  /// มีคำใหม่ได้ถึง 40%"): when the player's recent answers are
+  /// near-perfect, top the queue up with extra beyond-cap new words,
+  /// spread evenly, until new cards make up to 40% of the queue.
   List<SessionItem> buildQueue({
     required List<Word> words,
     required Map<int, SrsState> srsStates,
@@ -179,6 +183,7 @@ class SessionEngine {
     bool firstSessionOfDay = false,
     Map<int, int> correctStreaks = const {},
     Set<String> passedPairs = const {},
+    bool hotStreak = false,
   }) {
     final overdue = <_DueEntry>[];
     final newCandidates = <Word>[];
@@ -252,38 +257,43 @@ class SessionEngine {
       return s != null && s.reps > 0 && s.dueAt.isAfter(now);
     }).toList();
 
-    // Fill up to 10 practice slots. Slot i plays kPracticeGameCycle[i%7];
-    // for each slot, candidates are narrowed to words still MISSING that
-    // game's cell in the current clean-round grid (passedPairs) when any
-    // exist — the loop drives the "You Pass" round toward completion —
-    // then the pick among candidates is weighted by practiceWeight so
+    // Walk the practice cycle game by game; each game gets a RANDOM 2-4
+    // consecutive rounds (user request 2026-07-23 — "ไม่ได้มีแค่รอบเดียว
+    // ต่อเกม สุ่ม 2-4 รอบ") with a different word per round. For each
+    // round, candidates are narrowed to words still MISSING that game's
+    // cell in the current clean-round grid (passedPairs) when any exist —
+    // the loop drives the "You Pass" round toward completion — then the
+    // pick among candidates is weighted by practiceWeight so
     // already-solid words fade out and weak/lapsed words dominate.
     final usedIds = <int>{};
-    for (var slot = 0; slot < 10; slot++) {
-      final game = kPracticeGameCycle[slot % kPracticeGameCycle.length];
-      final unused =
-          practicePool.where((w) => !usedIds.contains(w.id)).toList();
-      if (unused.isEmpty) break;
-      final missingCell = unused
-          .where((w) => !passedPairs.contains('${w.id}:${game.name}'))
-          .toList();
-      final candidates = missingCell.isNotEmpty ? missingCell : unused;
-      final w = weightedPracticeSample(
-        pool: candidates,
-        streaks: correctStreaks,
-        count: 1,
-        random: _random,
-      ).single;
-      usedIds.add(w.id);
-      final srs = srsStates[w.id]!;
-      queue.add(
-        SessionItem(
-          wordId: w.id,
-          gameType: game,
-          direction: _nextDirection(srs.lastDirection),
-          source: QueueSource.extraPractice,
-        ),
-      );
+    outer:
+    for (final game in kPracticeGameCycle) {
+      final rounds = 2 + _random.nextInt(3); // 2..4 rounds of this game
+      for (var r = 0; r < rounds; r++) {
+        final unused =
+            practicePool.where((w) => !usedIds.contains(w.id)).toList();
+        if (unused.isEmpty) break outer;
+        final missingCell = unused
+            .where((w) => !passedPairs.contains('${w.id}:${game.name}'))
+            .toList();
+        final candidates = missingCell.isNotEmpty ? missingCell : unused;
+        final w = weightedPracticeSample(
+          pool: candidates,
+          streaks: correctStreaks,
+          count: 1,
+          random: _random,
+        ).single;
+        usedIds.add(w.id);
+        final srs = srsStates[w.id]!;
+        queue.add(
+          SessionItem(
+            wordId: w.id,
+            gameType: game,
+            direction: _nextDirection(srs.lastDirection),
+            source: QueueSource.extraPractice,
+          ),
+        );
+      }
     }
 
     // newCardCap paces an ordinary day, but it should never be a hard wall:
@@ -301,6 +311,47 @@ class SessionEngine {
             source: QueueSource.newCard,
           ),
         );
+      }
+    }
+
+    // Hot streak (user request 2026-07-23): answering nearly everything
+    // right means the current material is too comfortable — top the queue
+    // up with beyond-cap new words, spread evenly through it, until new
+    // cards are up to 40% of the whole queue.
+    if (hotStreak) {
+      final currentNew =
+          queue.where((i) => i.source == QueueSource.newCard).length;
+      final nonNew = queue.length - currentNew;
+      // Solve N/(nonNew+N) <= 0.40  ->  N <= (2/3)*nonNew.
+      final targetNew = (nonNew * 2) ~/ 3;
+      final alreadyQueuedNew = queue
+          .where((i) => i.source == QueueSource.newCard)
+          .map((i) => i.wordId)
+          .toSet();
+      final extras = orderedNewCandidates
+          .where((w) => !alreadyQueuedNew.contains(w.id))
+          .take((targetNew - currentNew).clamp(0, orderedNewCandidates.length))
+          .toList();
+      if (extras.isNotEmpty) {
+        // Spread the extra new words evenly instead of dumping them at
+        // the end: insert one every `gap` items from the back so earlier
+        // review/practice ordering is preserved.
+        final gap = (queue.length / (extras.length + 1)).ceil().clamp(1, 1 << 30);
+        var insertAt = gap;
+        for (final w in extras) {
+          final item = SessionItem(
+            wordId: w.id,
+            gameType: GameType.flashcard,
+            direction: Direction.enTh,
+            source: QueueSource.newCard,
+          );
+          if (insertAt >= queue.length) {
+            queue.add(item);
+          } else {
+            queue.insert(insertAt, item);
+          }
+          insertAt += gap + 1;
+        }
       }
     }
 

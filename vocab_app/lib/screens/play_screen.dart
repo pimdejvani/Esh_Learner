@@ -4,6 +4,8 @@
 /// + governors, persists it, then advances.
 library;
 
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import 'package:vocab_app/data/tts_service.dart';
@@ -37,6 +39,7 @@ class PlayScreen extends StatefulWidget {
 }
 
 class _PlayScreenState extends State<PlayScreen> {
+  final _random = Random();
   final _sessionEngine = SessionEngine();
   final _scheduler = const FsrsScheduler();
   final _tuner = const RetentionTuner();
@@ -134,6 +137,12 @@ class _PlayScreenState extends State<PlayScreen> {
     final correctStreaks = await widget.store.loadCorrectStreaks();
     _correctStreaks = correctStreaks;
     final passedPairs = await widget.store.loadPassedWordGamePairs();
+    // Hot streak = same last-20-reviews signal the governor burst uses;
+    // lets the queue raise its new-word share to 40%.
+    final recentReviews = await widget.store.loadRecentReviews(
+      since: DateTime.now().subtract(const Duration(days: 7)),
+    );
+    final hotStreak = _governor.isHotStreak(recentReviews);
     _queue = _sessionEngine.buildQueue(
       words: state.words,
       srsStates: state.srsStates,
@@ -144,6 +153,7 @@ class _PlayScreenState extends State<PlayScreen> {
       firstSessionOfDay: _firstSessionOfDay,
       correctStreaks: correctStreaks,
       passedPairs: passedPairs,
+      hotStreak: hotStreak,
     );
     _firstSessionOfDay = false; // consumed — only the day's opening queue
     await _loadNext();
@@ -270,7 +280,8 @@ class _PlayScreenState extends State<PlayScreen> {
   /// words → more seen words by weakness → any word.
   List<int> _pickMatchingBatch(int seedWordId) {
     const minPairs = 4;
-    const maxPairs = 6;
+    // Randomized round size (user request 2026-07-23): 4-6 pairs.
+    final maxPairs = minPairs + _random.nextInt(3);
     final picked = <int>{seedWordId};
 
     int streakOf(int id) => _correctStreaks[id] ?? 0;
@@ -445,24 +456,32 @@ class _PlayScreenState extends State<PlayScreen> {
 
     final item = _queue.first;
 
+    // Mobile-first layout (user feedback 2026-07-23): everything centered
+    // in a single column that stretches its children, max-width capped so
+    // the desktop dev build doesn't smear content across the full window.
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          AnimatedSwitcher(
-            duration: const Duration(milliseconds: 220),
-            child: _GameModeIndicator(
-              key: ValueKey(
-                (item.gameType, _state!.srsStates[item.wordId] == null),
+      child: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 480),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              AnimatedSwitcher(
+                duration: const Duration(milliseconds: 220),
+                child: _GameModeIndicator(
+                  key: ValueKey(
+                    (item.gameType, _state!.srsStates[item.wordId] == null),
+                  ),
+                  gameType: item.gameType,
+                  isNewWord: _state!.srsStates[item.wordId] == null,
+                ),
               ),
-              gameType: item.gameType,
-              isNewWord: _state!.srsStates[item.wordId] == null,
-            ),
+              const SizedBox(height: 12),
+              KeyedSubtree(key: ValueKey(_itemSeq), child: _buildItem(item)),
+            ],
           ),
-          const SizedBox(height: 12),
-          KeyedSubtree(key: ValueKey(_itemSeq), child: _buildItem(item)),
-        ],
+        ),
       ),
     );
   }

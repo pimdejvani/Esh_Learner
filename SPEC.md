@@ -265,6 +265,7 @@ settings(key TEXT PK, value TEXT)   -- new_card_cap, focus_topic, request_retent
 ### 6.4 New-card governor (chunking) — แก้ไข 2026-07-23
 - `new_card_cap` เริ่ม 8/วัน ยังปรับอัตโนมัติเหมือนเดิม (backlog สูง → ลด, backlog ต่ำ+accuracy ดี → เพิ่ม, เพดาน 15) — ใช้เป็น **จังหวะแนะนำของวันปกติ** เท่านั้น
 - **Hot-streak burst** (เพิ่ม 2026-07-23): ดู 20 review ล่าสุด (ไม่สนหน้าต่าง 7 วัน ต้องมีอย่างน้อย 10) — ถ้าถูก ≥92% และไม่มี backlog กด → เพิ่ม cap ทีละ **+3** แทน +1; retune ทุกครั้งที่ตอบ ดังนั้นตอบถูกรัวๆ = คำใหม่ไหลออกมาเร็วขึ้นกลาง session เลย
+- **Hot-streak 40% new-word share** (เพิ่ม 2026-07-23): สัญญาณ hot streak เดียวกันยังส่งเข้า `buildQueue` — คิวจะเติมคำใหม่เกิน cap แทรกกระจายทั่วคิว จนคำใหม่เป็นได้สูงสุด **40% ของคิวทั้งรอบ**
 - **ไม่ใช่กำแพงแข็ง**: ถ้าเคลียร์ overdue + คำใหม่ตาม cap + extra practice หมดแล้ว แต่ user ยังอยากเล่นต่อ (คิวจะว่าง) และยังมีคำที่ยังไม่เคยเรียน → ระบบดึงคำใหม่ต่อ เกิน cap ได้ ไม่ตัดจบ session ทิ้งไว้ทั้งที่ยังมีเนื้อหาเหลือ (`session_engine.dart` buildQueue fallback)
 - ดึงคำใหม่ตาม `freq_rank`/CEFR order; ถ้ามี focus topic → bias คำจากหมวดนั้นก่อน
 
@@ -276,7 +277,7 @@ settings(key TEXT PK, value TEXT)   -- new_card_cap, focus_topic, request_retent
 
 1. **คำ due ที่ค้างนานสุดก่อน** (overdue reviews)
 2. **คำใหม่** (ตาม cap ของวัน) → **เข้าเกม flashcard เลย ไม่มีการ์ด intro แยกอีกแล้ว** — หน้าการ์ดโชว์คำ กดเผยด้านหลัง (คำแปล+ข้อมูลครบ) แล้วปัด **ขวา = รู้จัก (Good) / ซ้าย = ไม่รู้จัก (Again)** — การปัดครั้งแรกนี้ = review แรกของคำเข้า FSRS ทันที
-3. **extra practice** — ถ้าเคลียร์หมดแล้วยังอยากเล่นต่อ: คำที่มีประวัติแล้วและยังไม่ถึงคิว due (รวม learning ด้วย ไม่ใช่แค่ young/mature) **วนเกมครบทุกแบบตามลำดับตื้น→ลึก (levels of processing) แล้ววนกลับมา flashcard ใหม่** (`kPracticeGameCycle`): flashcard (recognition) → Matching (recognition แบบชุด) → Odd One Out (จัดหมวดความหมาย) → Word Association (ดึงผ่านโครงข่ายความหมาย) → Cloze (cued recall ในบริบท) → Scramble (ประกอบรูปคำ) → Dictation (ผลิตเต็มจากเสียง) — การดึงตื้นสำเร็จก่อนช่วย boost accessibility ให้ขั้นลึกถัดไป (expanding retrieval)
+3. **extra practice** — ถ้าเคลียร์หมดแล้วยังอยากเล่นต่อ: คำที่มีประวัติแล้วและยังไม่ถึงคิว due (รวม learning ด้วย ไม่ใช่แค่ young/mature) **วนเกมครบทุกแบบตามลำดับตื้น→ลึก (levels of processing) แล้ววนกลับมา flashcard ใหม่** (`kPracticeGameCycle`): flashcard (recognition) → Matching (recognition แบบชุด) → Odd One Out (จัดหมวดความหมาย) → Word Association (ดึงผ่านโครงข่ายความหมาย) → Cloze (cued recall ในบริบท) → Scramble (ประกอบรูปคำ) → Dictation (ผลิตเต็มจากเสียง) — การดึงตื้นสำเร็จก่อนช่วย boost accessibility ให้ขั้นลึกถัดไป (expanding retrieval) · **แต่ละเกมในรอบวนได้ครั้งละ 2–4 รอบ (สุ่ม) คำไม่ซ้ำกันในรอบ** ไม่ใช่เกมละรอบเดียว (แก้ไข 2026-07-23) · Matching สุ่มขนาดรอบ 4–6 คู่
 4. **คำใหม่เกิน cap** — ถ้าทุกอย่างข้างบนหมดแล้วยังมีคำที่ไม่เคยเรียน → ดึงต่อได้เลย ไม่ตัดจบ session (§6.4)
 
 **เริ่มวัน:** ครั้งแรกที่เข้าแอปหลังตี 3 (วันใหม่ตาม §6.2) item แรกของคิวถูกบังคับเป็น **flashcard เสมอ** — เปิดวันด้วยจังหวะเบาที่คุ้นเคยก่อนค่อยไล่ ladder

@@ -126,6 +126,7 @@ class _ClozeGameState extends State<ClozeGame> {
             child: Column(
               children: [
                 RichText(
+                  textAlign: TextAlign.center,
                   text: TextSpan(
                     style: DefaultTextStyle.of(context).style.copyWith(fontSize: 18),
                     children: [
@@ -139,7 +140,11 @@ class _ClozeGameState extends State<ClozeGame> {
                   ),
                 ),
                 const SizedBox(height: 8),
-                Text(s.thText, style: Theme.of(context).textTheme.bodySmall),
+                Text(
+                  s.thText,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
                 const SizedBox(height: 4),
                 IconButton.filledTonal(
                   icon: const Icon(Icons.volume_up),
