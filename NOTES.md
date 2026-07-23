@@ -1248,6 +1248,33 @@ Suite 121/121, analyze clean.
 
 Suite 124/124.
 
+### Play-test round 3 (2026-07-24, screenshot feedback)
+
+1. **Odd: uniform pick among ALL qualifying groups** — passing the
+   coherence bar IS the quality gate; the top-5 ranking removed.
+   Threshold raised +20% per user: 0.03 → **0.036**.
+2. **Odd wrong answer penalizes both words** — OddOneOutGame.onRated
+   now reports `(rating, wrongPickedWordId)`; play_screen records
+   Again for the wrongly-picked group word before the target's rating.
+3. **Odd result chips carry explicit ✓/✗ icons** (color alone was
+   ambiguous).
+4. **New-word indicator reverted to single "คำใหม่" chip** (round-2
+   change un-done at user's request — the word still sits inside the
+   flashcard block; only the label differs).
+5. **Seen-words-only pools everywhere extra words are pulled**:
+   Matching pairs (fewer than 4 seen words → the round becomes
+   flashcard, the pad-with-unseen fallback is gone), Odd group members,
+   Word Association answer + distractors. Single-word games already
+   only use queue words, which always have history.
+6. **Flashcard fixed card height (380)** — front and revealed back
+   render in the same box (back scales down via FittedBox if too
+   tall), so the layout no longer jumps between faces/cards.
+7. Deferred to the 3,000-word tier: Odd should explain WHY the group
+   words connect — ask the user about the explanation format before
+   starting that job (their instruction).
+
+Suite 124/124, analyze clean.
+
 ---
 
 ## Current status & remaining work (as of 2026-07-23 evening)
@@ -1300,23 +1327,29 @@ github.com/pimdejvani/Esh_Learner (public).
    face at the 90° midpoint — the standard Flutter approach; research
    community packages e.g. `flip_card` vs hand-rolling before building).
    Today the tap swaps faces with a fade/scale AnimatedSwitcher only.
-5. **Dictation: remove the Thai meaning from the game card** (user
+5. **Odd One Out: explain WHY the group connects** (user request
+   2026-07-24, same tier as the 3,000-word job): after answering, show
+   what ties the group words together (the hub word / category). The
+   user explicitly said to ASK THEM about the explanation format/idea
+   when starting the 3,000-word job — don't design it unilaterally.
+6. **Dictation: remove the Thai meaning from the game card** (user
    request 2026-07-23, same tier as the 3,000-word job): today the game
    shows `coreSense.meaningTh` under the listen buttons, which turns a
    pure listening/spelling task into a translation-assisted one. Drop it
    (keep audio + hints only); decide whether the reveal still shows the
    meaning via WordResultCard (it should — reveal is post-answer).
-6. **Images** — schema fields (`has_photo`/`image_url`/license/author)
+7. **Images** — schema fields (`has_photo`/`image_url`/license/author)
    exist but the Openverse/Wikimedia URL-resolution step was never run,
    and the app has no runtime image fetch/cache yet (SPEC.md decision #3).
-7. **iOS build** — SPEC.md targets iOS-first but everything so far is
+8. **iOS build** — SPEC.md targets iOS-first but everything so far is
    verified on Windows/web only; needs a Mac/Xcode (not possible on this
    machine).
-8. **Tune FSRS/governor from real logs** — blocked on accumulated play
+9. **Tune FSRS/governor from real logs** — blocked on accumulated play
    data, revisit after the user has played for a while.
-9. **Backlog (explicitly deferred):** confusables ("อย่าสับสนกับ"), app
-   name + logo, Android/iPad decision, multi-device sync, full XP/badge
-   layer.
+10. **Backlog (explicitly deferred):** confusables ("อย่าสับสนกับ"), app
+    name + logo, Android/iPad decision, multi-device sync, full XP/badge
+    layer, content-version reseed that preserves app-state tables (today
+    a seed update only reaches an install by deleting its vocab.db).
 
 ### Verification performed
 - `flutter analyze`: clean, 0 issues.

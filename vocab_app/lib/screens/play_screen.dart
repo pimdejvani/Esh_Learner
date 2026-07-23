@@ -204,6 +204,16 @@ class _PlayScreenState extends State<PlayScreen> {
         .toList();
   }
 
+  /// Words the player has actually met (any SRS history). Every game that
+  /// pulls EXTRA words beyond the queue item — Matching pairs, Odd One
+  /// Out group members, Word Association answer + distractors — draws
+  /// from this pool only (user request 2026-07-24: "คำที่นำมาต้องเคยอยู่
+  /// ใน new word แล้ว" — never quiz with words the player has never been
+  /// shown).
+  List<Word> get _seenWords => _state!.words
+      .where((w) => _state!.srsStates[w.id] != null)
+      .toList();
+
   /// Falls back to Flashcard (always buildable from just a WordBundle) when
   /// a batch/multi-choice game can't be assembled for the current word —
   /// e.g. Odd One Out/Word Association need `related_words` rows that many
@@ -227,8 +237,15 @@ class _PlayScreenState extends State<PlayScreen> {
     final item = _queue.first;
 
     if (item.gameType == GameType.matching) {
-      // Pull a small batch of due/learning words for matching.
+      // Pull a small batch of due/learning words for matching. Seen words
+      // only — if the player hasn't met 4 words yet there's no valid
+      // matching round, so re-route to flashcard instead of padding the
+      // batch with never-shown words (2026-07-24).
       final batchIds = _pickMatchingBatch(item.wordId);
+      if (batchIds.length < 4) {
+        _queue[0] = _fallbackToFlashcard(item);
+        return _loadNext();
+      }
       final bundles = await widget.store.loadWordBundles(batchIds);
       setState(() {
         _currentBatch = bundles;
@@ -243,7 +260,9 @@ class _PlayScreenState extends State<PlayScreen> {
           ? null
           : buildOddOneOutGroup(
               target: target,
-              pool: _state!.words,
+              // Seen words only — group members the player has never
+              // been shown make the round unanswerable (2026-07-24).
+              pool: _seenWords,
               relatedByWord: _relatedByWord,
               // Early game (first ~2 new-word blocks / ~8 words with any
               // history): only serve Odd when >2 coherent groups exist to
@@ -267,7 +286,13 @@ class _PlayScreenState extends State<PlayScreen> {
 
     if (item.gameType == GameType.wordAssociation) {
       final bundle = await widget.store.loadWordBundle(item.wordId);
-      final pick = pickAssociationTarget(bundle.related);
+      // Seen words only, both for the correct answer and the distractor
+      // pool — the player can't pick an association they've never been
+      // shown (2026-07-24).
+      final seenRelated = bundle.related
+          .where((r) => _state!.srsStates[r.relatedWordId] != null)
+          .toList();
+      final pick = pickAssociationTarget(seenRelated);
       final correctWord = pick == null ? null : _wordById[pick.relatedWordId];
       if (pick == null || correctWord == null) {
         _queue[0] = _fallbackToFlashcard(item);
@@ -279,7 +304,7 @@ class _PlayScreenState extends State<PlayScreen> {
       };
       final options = buildAssociationOptions(
         correct: correctWord,
-        pool: _state!.words,
+        pool: _seenWords,
         excludeIds: excludeIds,
       );
       setState(() {
@@ -336,14 +361,12 @@ class _PlayScreenState extends State<PlayScreen> {
     }
 
     // 3) Still short of the 4-pair minimum -> more seen words by
-    //    weakness, then any word at all (fresh profile fallback).
+    //    weakness. NO fallback to never-shown words (2026-07-24): if the
+    //    player hasn't met 4 words yet, the caller re-routes the round
+    //    to flashcard instead.
     for (final id in seen) {
       if (picked.length >= minPairs) break;
       picked.add(id);
-    }
-    for (final w in _state!.words) {
-      if (picked.length >= minPairs) break;
-      picked.add(w.id);
     }
     return picked.take(maxPairs).toList();
   }
@@ -620,7 +643,19 @@ class _PlayScreenState extends State<PlayScreen> {
         return OddOneOutGame(
           oddWord: _oddOneOutTarget!,
           groupWords: _oddOneOutGroup,
-          onRated: (r) => _handleRated(item.wordId, r, GameType.oddOneOut),
+          onRated: (r, wrongPickedId) async {
+            // A wrong pick also costs the PICKED word's proficiency, not
+            // just the target's (user request 2026-07-24) — record it
+            // first, then the target's rating + advance.
+            if (wrongPickedId != null) {
+              await _recordRating(
+                wrongPickedId,
+                Rating.again,
+                GameType.oddOneOut,
+              );
+            }
+            await _handleRated(item.wordId, r, GameType.oddOneOut);
+          },
         );
     }
   }
@@ -648,31 +683,12 @@ class _GameModeIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // A new word IS a flashcard round (2026-07-24 feedback): keep the
-    // Flashcard mode card and add a compact "คำใหม่" badge beside it
-    // instead of replacing the game label entirely.
-    if (gameType == GameType.flashcard && isNewWord) {
-      return const Row(
-        children: [
-          Expanded(
-            child: HighlightCard(
-              icon: Icons.style,
-              title: 'Flashcard',
-              tone: HighlightTone.sky,
-              dense: true,
-            ),
-          ),
-          SizedBox(width: 8),
-          HighlightCard(
-            icon: Icons.auto_awesome,
-            title: 'คำใหม่',
-            tone: HighlightTone.lavender,
-            dense: true,
-          ),
-        ],
-      );
-    }
     final (icon, label, tone) = switch (gameType) {
+      // A new word is still just a card in the flashcard block, but its
+      // indicator shows ONLY "คำใหม่" (user 2026-07-24 round 2: "ไม่ต้อง
+      // ขึ้น flashcard เลย ให้เป็น new word อย่างเดียวพอ").
+      GameType.flashcard when isNewWord =>
+        (Icons.auto_awesome, 'คำใหม่', HighlightTone.lavender),
       GameType.flashcard => (Icons.style, 'Flashcard', HighlightTone.sky),
       GameType.matching => (Icons.grid_view, 'Matching', HighlightTone.sky),
       GameType.oddOneOut => (Icons.category, 'Odd One Out', HighlightTone.sky),

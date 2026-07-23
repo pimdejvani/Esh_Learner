@@ -58,6 +58,13 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
   static const _distanceThreshold = 110.0;
   static const _velocityThreshold = 650.0;
 
+  /// Fixed card height (user request 2026-07-24 "อยากให้ความสูงของกล่อง
+  /// คงที่"): the front (word only) and the revealed back (full result
+  /// card) render inside the same box so the layout never jumps when the
+  /// card flips or between cards. A too-tall back face scales down to
+  /// fit instead of growing the box.
+  static const _cardHeight = 380.0;
+
   bool _revealed = false;
   bool _resolved = false; // guards double-fire once a fly-off is committed
   Offset _dragOffset = Offset.zero;
@@ -157,37 +164,58 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
     // live inside the SAME drag transform so the card is swipeable from
     // the very first frame — no reveal gate.
     final face = !_revealed
-        ? Card(
+        ? SizedBox(
             key: const ValueKey('prompt'),
-            child: Padding(
-              padding: const EdgeInsets.all(32),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(_promptText, style: Theme.of(context).textTheme.headlineMedium),
-                  if (widget.direction == Direction.enTh)
-                    IconButton(
-                      icon: const Icon(Icons.volume_up),
-                      onPressed: () => widget.tts.speak(widget.bundle.word.headword),
-                    ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'แตะการ์ดเพื่อดูคำตอบ',
-                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: Theme.of(context).colorScheme.onSurfaceVariant,
-                    ),
+            height: _cardHeight,
+            width: double.infinity,
+            child: Card(
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(32),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(_promptText, style: Theme.of(context).textTheme.headlineMedium),
+                      if (widget.direction == Direction.enTh)
+                        IconButton(
+                          icon: const Icon(Icons.volume_up),
+                          onPressed: () => widget.tts.speak(widget.bundle.word.headword),
+                        ),
+                      const SizedBox(height: 8),
+                      Text(
+                        'แตะการ์ดเพื่อดูคำตอบ',
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
                   ),
-                ],
+                ),
               ),
             ),
           )
-        : WordResultCard(
+        : SizedBox(
             key: const ValueKey('result'),
-            bundle: widget.bundle,
-            tts: widget.tts,
-            onOpenDetail: () => Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (_) => WordDetailPage(bundle: widget.bundle, tts: widget.tts),
+            height: _cardHeight,
+            width: double.infinity,
+            // scaleDown: an unusually tall back face shrinks to fit the
+            // fixed box instead of overflowing; normal content renders
+            // at natural size.
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              alignment: Alignment.topCenter,
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 448),
+                child: WordResultCard(
+                  bundle: widget.bundle,
+                  tts: widget.tts,
+                  onOpenDetail: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) =>
+                          WordDetailPage(bundle: widget.bundle, tts: widget.tts),
+                    ),
+                  ),
+                ),
               ),
             ),
           );

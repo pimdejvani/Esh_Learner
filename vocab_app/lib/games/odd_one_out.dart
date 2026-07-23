@@ -25,9 +25,10 @@ import 'package:vocab_app/widgets/staggered_entrance.dart';
 /// 2026-07-24 revision (user feedback "กลุ่มคำรู้สึกไม่ค่อยเหมือนกัน"):
 /// - **One consistent coherence bar**: a row only counts as "same group"
 ///   when it's typed category data (`hypernym`/`category`/`part_of`) OR
-///   its SWOW `closeness` ≥ [minCloseness]. Default 0.03 ≈ the 75th
-///   percentile of the seed's association strengths — weak free-
-///   association ties (the majority) no longer qualify.
+///   its SWOW `closeness` ≥ [minCloseness]. Default 0.036 — started at
+///   0.03 (≈ p75 of the seed's association strengths), raised +20% on
+///   user feedback 2026-07-24 ("คำยังไม่เข้ากันเท่าที่ควร ปรับเพิ่มอีก
+///   20%").
 /// - **Minimum 3 group members**: the old fallback to a 2-word group is
 ///   gone. Fewer than [groupSize] strong members = no Odd round (caller
 ///   re-routes to flashcard).
@@ -36,9 +37,11 @@ import 'package:vocab_app/widgets/staggered_entrance.dart';
 ///   fewer means the data around today's words is too thin to guarantee
 ///   a clean round, so skip Odd entirely. Beyond that the normal rules
 ///   above apply.
-/// - Groups are scored by total member closeness; [random] (when given)
-///   picks uniformly among the top few so rounds don't repeat the same
-///   strongest hub forever.
+/// - Any group above the bar is fair game: [random] (when given) picks
+///   uniformly among ALL qualifying groups — passing the threshold is
+///   the quality gate, no extra ranking needed (user 2026-07-24 "ถ้ามี
+///   กลุ่มที่คะแนนเกินเกณฑ์ก็สุ่มกลุ่มได้เลย"). Without [random] the
+///   best-scoring group is returned (deterministic for tests).
 ///
 /// Returns null when no hub qualifies — callers should skip/re-route the
 /// round rather than force a bad one.
@@ -47,7 +50,7 @@ List<Word>? buildOddOneOutGroup({
   required List<Word> pool,
   required Map<int, List<RelatedWord>> relatedByWord,
   int groupSize = 3,
-  double minCloseness = 0.03,
+  double minCloseness = 0.036,
   bool strict = false,
   Random? random,
 }) {
@@ -82,10 +85,9 @@ List<Word>? buildOddOneOutGroup({
 
   if (candidates.isEmpty) return null;
   if (strict && candidates.length <= 2) return null;
+  if (random != null) return candidates[random.nextInt(candidates.length)].$2;
   candidates.sort((a, b) => b.$1.compareTo(a.$1));
-  if (random == null) return candidates.first.$2;
-  final span = candidates.length < 5 ? candidates.length : 5;
-  return candidates[random.nextInt(span)].$2;
+  return candidates.first.$2;
 }
 
 class OddOneOutGame extends StatefulWidget {
@@ -99,9 +101,14 @@ class OddOneOutGame extends StatefulWidget {
   /// The word actually being tested (the true "odd one out").
   final Word oddWord;
 
-  /// The words that belong together (distractors, not themselves rated).
+  /// The words that belong together (distractors).
   final List<Word> groupWords;
-  final ValueChanged<Rating> onRated;
+
+  /// Called once with the target's rating and, on a wrong answer, the id
+  /// of the group word the player wrongly picked (null when correct) —
+  /// user request 2026-07-24: a wrong pick should also cost the PICKED
+  /// word's proficiency, not just the target's.
+  final void Function(Rating rating, int? wrongPickedWordId) onRated;
 
   @override
   State<OddOneOutGame> createState() => _OddOneOutGameState();
@@ -131,7 +138,10 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
   void _rate() {
     final correct = _selectedId == widget.oddWord.id;
     final fast = _stopwatch.elapsedMilliseconds <= 3000;
-    widget.onRated(correct ? (fast ? Rating.easy : Rating.good) : Rating.again);
+    widget.onRated(
+      correct ? (fast ? Rating.easy : Rating.good) : Rating.again,
+      correct ? null : _selectedId,
+    );
   }
 
   @override
@@ -188,14 +198,24 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
     final selected = _selectedId == w.id;
     final isOdd = w.id == widget.oddWord.id;
     Color? color;
+    Widget? avatar;
     if (_submitted && selected) {
       color = isOdd
           ? colors.success.withValues(alpha: 0.35)
           : colors.danger.withValues(alpha: 0.35);
+      // Explicit right/wrong icon on the chip the player chose (user
+      // feedback 2026-07-24 — the color alone read as "correct").
+      avatar = Icon(
+        isOdd ? Icons.check_circle : Icons.cancel,
+        size: 18,
+        color: isOdd ? colors.success : colors.danger,
+      );
     } else if (_submitted && isOdd) {
       color = colors.success.withValues(alpha: 0.18);
+      avatar = Icon(Icons.check_circle, size: 18, color: colors.success);
     }
     return ChoiceChip(
+      avatar: avatar,
       label: Text(w.headword),
       selected: selected,
       selectedColor: color,
