@@ -102,12 +102,17 @@ const List<GameType> kPracticeGameCycle = [
 
 /// Selection weight for one word in the extra-practice sample, given its
 /// current consecutive-correct [streak] (correct answers since its last
-/// Again). Monotonically decreasing: a word you keep getting right
-/// gradually fades out of the loop (streak 0 → 1.0, 4 → 0.2, 9 → 0.1),
-/// freeing rounds for the words that actually need work — otherwise a
-/// late-stage lapse would restart the loop on easy words and take forever
-/// to get back to the hard ones (product decision 2026-07-23).
-double practiceWeight(int streak) => 1 / (1 + streak);
+/// Again) and its FSRS [difficulty] (1..10, initial ≈ 5). Two factors
+/// multiplied:
+/// - `1/(1+streak)` — a word you keep getting right gradually fades out
+///   of the loop (streak 0 → 1.0, 4 → 0.2, 9 → 0.1), freeing rounds for
+///   the words that actually need work (product decision 2026-07-23).
+/// - `difficulty/5` (user request 2026-07-24 "เอาความยากของคำมา weight"):
+///   FSRS already learns each word's difficulty from the player's own
+///   answers — a hard word (d 9) is drawn ~1.8× a neutral one, an easy
+///   word (d 2) only 0.4×. Words with no SRS row yet use the neutral 5.
+double practiceWeight(int streak, {double difficulty = 5}) =>
+    (1 / (1 + streak)) * (difficulty / 5);
 
 /// Weighted sample without replacement of up to [count] words from
 /// [pool], weighting each by [practiceWeight] of its streak. Words with
@@ -119,12 +124,17 @@ List<Word> weightedPracticeSample({
   required Map<int, int> streaks,
   required int count,
   required Random random,
+  Map<int, double> difficulties = const {},
 }) {
   final remaining = List.of(pool);
   final out = <Word>[];
   while (out.length < count && remaining.isNotEmpty) {
     final weights = [
-      for (final w in remaining) practiceWeight(streaks[w.id] ?? 0),
+      for (final w in remaining)
+        practiceWeight(
+          streaks[w.id] ?? 0,
+          difficulty: difficulties[w.id] ?? 5,
+        ),
     ];
     var total = 0.0;
     for (final wt in weights) {
@@ -169,10 +179,13 @@ class SessionEngine {
   /// practice slot prefers words still MISSING that slot's game cell, so
   /// the loop actively drives the round toward completion instead of
   /// re-serving cells that are already earned.
-  /// [hotStreak] (user request 2026-07-23 "ถ้าตอบถูกบ่อยมากๆ ให้แต่ละรอบ
-  /// มีคำใหม่ได้ถึง 40%"): when the player's recent answers are
-  /// near-perfect, top the queue up with extra beyond-cap new words,
-  /// spread evenly, until new cards make up to 40% of the queue.
+  /// [recentAccuracy] (user request 2026-07-24, replaces the old
+  /// hotStreak queue-wide top-up): the player's recent answer accuracy
+  /// (0..1, null = not enough data yet). It scales how much of each
+  /// flashcard block may be NEW words — up to 40% of the block when
+  /// accuracy is high (≥0.9), tapering to 0% at ≤0.5 ("ถ้าตอบถูกน้อย
+  /// ก็ให้คำใหม่ออกมาลดลง"). Ignored when there is nothing to review
+  /// (fresh install): a mix ratio is meaningless with nothing to mix.
   List<SessionItem> buildQueue({
     required List<Word> words,
     required Map<int, SrsState> srsStates,
@@ -184,7 +197,7 @@ class SessionEngine {
     bool firstSessionOfDay = false,
     Map<int, int> correctStreaks = const {},
     Set<String> passedPairs = const {},
-    bool hotStreak = false,
+    double? recentAccuracy,
   }) {
     final overdue = <_DueEntry>[];
     final newCandidates = <Word>[];
@@ -280,6 +293,24 @@ class SessionEngine {
     // loop drives the "You Pass" round toward completion — then the pick
     // among candidates is weighted by practiceWeight so already-solid
     // words fade out and weak/lapsed words dominate.
+    // New-word share of each flashcard block (user request 2026-07-24):
+    // at most 40% of the block, scaled down by recent overall accuracy —
+    // acc ≥ 0.9 → full 40%, linear taper, acc ≤ 0.5 → no new words.
+    // No accuracy data yet (null) counts as "doing fine" → 40%. When the
+    // practice pool is EMPTY (fresh install / nothing to review) the
+    // share is ignored and the block fills with new words up to the cap:
+    // a mix ratio can't apply when there's nothing to mix with.
+    final newShare = recentAccuracy == null
+        ? 0.4
+        : 0.4 * (((recentAccuracy - 0.5) / 0.4).clamp(0.0, 1.0));
+
+    // FSRS per-word difficulty (1..10) feeds the practice sampler so the
+    // words the scheduler has learned are hard for THIS player surface
+    // more often (user request 2026-07-24).
+    final difficulties = {
+      for (final e in srsStates.entries) e.key: e.value.difficulty,
+    };
+
     final usedIds = <int>{};
     outer:
     for (final game in cycleGames) {
@@ -292,15 +323,26 @@ class SessionEngine {
       final rounds = game == GameType.flashcard
           ? 4 + _random.nextInt(3) + _random.nextInt(3)
           : 2 + _random.nextInt(3);
+      // Per-block new-word budget: share of the block size, or cap-only
+      // when there's no practice material to mix with.
+      final maxNewThisBlock = game != GameType.flashcard
+          ? 0
+          : practicePool.isEmpty
+              ? remainingCap
+              : (rounds * newShare).floor();
+      var newThisBlock = 0;
       for (var r = 0; r < rounds; r++) {
         // Flashcard-block slots are filled by today's capped new words
-        // FIRST, then topped up with practice words — a new word's
-        // first-meet card is just another card in the block instead of a
-        // separate up-front segment (user request 2026-07-24).
+        // FIRST (within the block's share budget), then topped up with
+        // practice words — a new word's first-meet card is just another
+        // card in the block instead of a separate up-front segment
+        // (user request 2026-07-24).
         if (game == GameType.flashcard &&
+            newThisBlock < maxNewThisBlock &&
             newQueued < remainingCap &&
             newQueued < orderedNewCandidates.length) {
           final w = orderedNewCandidates[newQueued++];
+          newThisBlock++;
           queue.add(
             SessionItem(
               wordId: w.id,
@@ -328,6 +370,7 @@ class SessionEngine {
           streaks: correctStreaks,
           count: 1,
           random: _random,
+          difficulties: difficulties,
         ).single;
         usedIds.add(w.id);
         final srs = srsStates[w.id]!;
@@ -357,47 +400,6 @@ class SessionEngine {
             source: QueueSource.newCard,
           ),
         );
-      }
-    }
-
-    // Hot streak (user request 2026-07-23): answering nearly everything
-    // right means the current material is too comfortable — top the queue
-    // up with beyond-cap new words, spread evenly through it, until new
-    // cards are up to 40% of the whole queue.
-    if (hotStreak) {
-      final currentNew =
-          queue.where((i) => i.source == QueueSource.newCard).length;
-      final nonNew = queue.length - currentNew;
-      // Solve N/(nonNew+N) <= 0.40  ->  N <= (2/3)*nonNew.
-      final targetNew = (nonNew * 2) ~/ 3;
-      final alreadyQueuedNew = queue
-          .where((i) => i.source == QueueSource.newCard)
-          .map((i) => i.wordId)
-          .toSet();
-      final extras = orderedNewCandidates
-          .where((w) => !alreadyQueuedNew.contains(w.id))
-          .take((targetNew - currentNew).clamp(0, orderedNewCandidates.length))
-          .toList();
-      if (extras.isNotEmpty) {
-        // Spread the extra new words evenly instead of dumping them at
-        // the end: insert one every `gap` items from the back so earlier
-        // review/practice ordering is preserved.
-        final gap = (queue.length / (extras.length + 1)).ceil().clamp(1, 1 << 30);
-        var insertAt = gap;
-        for (final w in extras) {
-          final item = SessionItem(
-            wordId: w.id,
-            gameType: GameType.flashcard,
-            direction: Direction.enTh,
-            source: QueueSource.newCard,
-          );
-          if (insertAt >= queue.length) {
-            queue.add(item);
-          } else {
-            queue.insert(insertAt, item);
-          }
-          insertAt += gap + 1;
-        }
       }
     }
 

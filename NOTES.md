@@ -1168,6 +1168,53 @@ any non-flashcard item. Suite 118/118, analyze clean.
 
 ---
 
+## 2026-07-24 (2): SWOW re-rank, difficulty-weighted sampling, accuracy-scaled new-word share, 4-round cap reset
+
+Four user requests in one batch:
+
+1. **SWOW re-rank** ("คำใช้บ่อย rerank ด้วย swow") — the A1 chunk's
+   freq_rank was the curated Oxford-list order, not a measured
+   frequency; now the WHOLE 253-word list is ranked band-major
+   (A1<A2<B1) by SWOW-EN18 responseStats Freq.R123, the same metric
+   Stage A used for A2/B1. New A1 top: money, water, food, car, music.
+   `tools/rerank_swow.py` (deterministic) generates
+   `tools/swow_rerank.py` (RANKS dict); a shim at the end of
+   wordlist.py remaps rank VALUES only — the WORDS list order (and so
+   build_dataset's insert order and every word id srs_state references)
+   is untouched. Seed vocab.db rebuilt, QC OK, ids verified stable
+   (money id 93 / rank 1; pain still id 154).
+   **Gotcha:** the app only copies the seed DB when the writable copy
+   is MISSING (vocab_store_sqlite.open) — an existing install keeps its
+   old content until its Documents/vocab.db is deleted. True for the
+   A2/B1 extension too. A content-version reseed that preserves
+   app-state tables is future work.
+2. **FSRS difficulty joins the practice weight** — practiceWeight is
+   now `(1/(1+streak)) × (difficulty/5)` (d∈[1,10], neutral 5): a
+   word FSRS has learned is hard for this player is drawn ~1.8×, an
+   easy one 0.4×. Applied in weightedPracticeSample (all practice
+   rounds) and the Matching weakest-2 pick (same weight replaces the
+   plain streak sort).
+3. **New-word share per flashcard block scales with recent accuracy**
+   (replaces the on/off hotStreak 40% queue-wide top-up):
+   `share = 0.4 × clamp((acc20 − 0.5)/0.4)` — ≥90% right → 40% of the
+   block is new words, 70% → 20%, ≤50% → none; no data yet → 40%.
+   Share ignored when the practice pool is empty (fresh install: a mix
+   ratio can't apply with nothing to mix), where the cap alone rules.
+   Governor gained public `recentAccuracy()` (null under 10 samples);
+   `isHotStreak`/burst cap growth unchanged.
+4. **Every 4 completed flashcard rounds reset the day's new-word
+   count** ("ไม่อยาก limit flash") — play_screen detects a flashcard
+   block ending in _advance (leaving item is flashcard, next isn't),
+   counts it in settings `fc_rounds` = "date:count"; on the 4th the
+   day's introduced count is forgiven via `new_intro_forgiven` =
+   "date:total" (daily_stats keeps the real total for stats; the
+   effective count = stats − forgiven, clamped ≥0, re-derived on
+   boot). Both keys self-reset when the logical date changes.
+
+Suite 121/121, analyze clean.
+
+---
+
 ## Current status & remaining work (as of 2026-07-23 evening)
 
 **Where things stand:** Phase 1 + Phase 2 are fully built (all 7 games,
@@ -1181,10 +1228,11 @@ boundary, endless continuous-play loop with 2-4 rounds/game (flashcard
 streak-only, global reset, missing-cell targeting + streak fade-out),
 ~80% retention zone, hot-streak burst + 40% new-word share, flashcard
 v2 swipe-first UX, matching v2 connect-the-lines, centered mobile
-layout — plus the 2026-07-24 batch (random 3-6 games per cycle, new
-words folded into the flashcard block, dictionary search tab; see the
-section above). `flutter analyze` clean; `flutter test` 118/118;
-Windows desktop build works; repo is
+layout — plus the 2026-07-24 batches (random 3-6 games per cycle, new
+words folded into the flashcard block, dictionary search tab, SWOW
+re-rank, difficulty-weighted sampling, accuracy-scaled new-word share,
+4-round cap reset; see the sections above). `flutter analyze` clean;
+`flutter test` 121/121; Windows desktop build works; repo is
 github.com/pimdejvani/Esh_Learner (public).
 
 **Remaining work, in recommended order:**

@@ -104,10 +104,17 @@ class NewCardGovernor {
   }
 
   /// Whether the player is currently on a hot streak (same signal the
-  /// burst uses) — exposed so the session engine can also raise the
-  /// new-word share of the queue to 40% (user request 2026-07-23).
+  /// burst uses).
   bool isHotStreak(List<ReviewLogEntry> reviews) =>
       _recentAccuracy(reviews) >= burstAccuracy;
+
+  /// Accuracy over the newest [burstWindow] reviews, or null when there
+  /// are fewer than [burstMinReviews] samples — feeds the session
+  /// engine's per-flashcard-block new-word share (2026-07-24 revision:
+  /// the share scales continuously with this instead of the on/off
+  /// hotStreak 40% queue top-up).
+  double? recentAccuracy(List<ReviewLogEntry> reviews) =>
+      reviews.length < burstMinReviews ? null : _recentAccuracy(reviews);
 
   /// Accuracy over the newest [burstWindow] reviews (by timestamp),
   /// ignoring the 7-day window entirely. Returns 0 when there are fewer

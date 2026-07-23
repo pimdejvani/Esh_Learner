@@ -54,6 +54,14 @@ class _PlayScreenState extends State<PlayScreen> {
   // True until the first queue of a new logical day (3am boundary) has
   // been built — that queue always opens with a flashcard round.
   bool _firstSessionOfDay = false;
+  // Completed flashcard rounds (blocks) today — every 4th one resets the
+  // daily new-word count so the cap refills instead of hard-limiting the
+  // day (user request 2026-07-24: "เล่น flash card ครบ 4 รอบ → รีเซ็ต
+  // limit คำใหม่ของวันนั้น"). Persisted as settings "fc_rounds" =
+  // "<logicalDate>:<count>" alongside "new_intro_forgiven" =
+  // "<logicalDate>:<count>" (how many of today's introduced words have
+  // been forgiven from the cap so far).
+  int _fcRoundsToday = 0;
   String? _error;
   // Monotonic per-item sequence used as the game widget's key. Without it
   // Flutter reuses the previous game's State when two same-type games run
@@ -103,9 +111,21 @@ class _PlayScreenState extends State<PlayScreen> {
       final focusTopicWordIds = focusTopicId == null
           ? <int>{}
           : await widget.store.loadWordIdsForTopic(focusTopicId);
+      // Parse "<logicalDate>:<count>" settings, treating other days'
+      // values as 0 (they reset naturally at the 3am boundary).
+      int todayCount(String key) {
+        final parts = (state.settings[key] ?? '').split(':');
+        return parts.length == 2 && parts[0] == today
+            ? int.tryParse(parts[1]) ?? 0
+            : 0;
+      }
+
+      final forgiven = todayCount('new_intro_forgiven');
       setState(() {
         _state = state;
-        _newIntroducedToday = stats?.newIntroduced ?? 0;
+        _newIntroducedToday =
+            max(0, (stats?.newIntroduced ?? 0) - forgiven);
+        _fcRoundsToday = todayCount('fc_rounds');
         // No daily_stats row yet for today's logical date = nothing has
         // been played since the 3am boundary -> open the day with a
         // flashcard round.
@@ -137,12 +157,14 @@ class _PlayScreenState extends State<PlayScreen> {
     final correctStreaks = await widget.store.loadCorrectStreaks();
     _correctStreaks = correctStreaks;
     final passedPairs = await widget.store.loadPassedWordGamePairs();
-    // Hot streak = same last-20-reviews signal the governor burst uses;
-    // lets the queue raise its new-word share to 40%.
+    // Recent accuracy (last-20-reviews window, null = not enough data)
+    // scales the new-word share of each flashcard block: high accuracy
+    // → up to 40% of the block is new words, low accuracy → fewer/none
+    // (2026-07-24 revision, replaces the on/off hotStreak top-up).
     final recentReviews = await widget.store.loadRecentReviews(
       since: DateTime.now().subtract(const Duration(days: 7)),
     );
-    final hotStreak = _governor.isHotStreak(recentReviews);
+    final recentAccuracy = _governor.recentAccuracy(recentReviews);
     _queue = _sessionEngine.buildQueue(
       words: state.words,
       srsStates: state.srsStates,
@@ -153,7 +175,7 @@ class _PlayScreenState extends State<PlayScreen> {
       firstSessionOfDay: _firstSessionOfDay,
       correctStreaks: correctStreaks,
       passedPairs: passedPairs,
-      hotStreak: hotStreak,
+      recentAccuracy: recentAccuracy,
     );
     _firstSessionOfDay = false; // consumed — only the day's opening queue
     await _loadNext();
@@ -284,12 +306,18 @@ class _PlayScreenState extends State<PlayScreen> {
     final maxPairs = minPairs + _random.nextInt(3);
     final picked = <int>{seedWordId};
 
-    int streakOf(int id) => _correctStreaks[id] ?? 0;
+    // "Weakness" = the same practiceWeight the engine's sampler uses
+    // (low streak × high FSRS difficulty = weakest) — 2026-07-24
+    // revision folding the learned per-word difficulty in.
+    double weightOf(int id) => practiceWeight(
+          _correctStreaks[id] ?? 0,
+          difficulty: _state!.srsStates[id]?.difficulty ?? 5,
+        );
     final seen = _state!.words
         .where((w) => _state!.srsStates[w.id] != null && w.id != seedWordId)
         .map((w) => w.id)
         .toList()
-      ..sort((a, b) => streakOf(a).compareTo(streakOf(b)));
+      ..sort((a, b) => weightOf(b).compareTo(weightOf(a)));
 
     // 1) At least 2 weakest words the player has actually seen.
     picked.addAll(seen.take(2));
@@ -438,12 +466,37 @@ class _PlayScreenState extends State<PlayScreen> {
 
   Future<void> _advance() async {
     _itemSeq++;
-    _queue.removeAt(0);
+    final leaving = _queue.removeAt(0);
+    // A flashcard ROUND (consecutive block of flashcards) just ended when
+    // the item we leave was a flashcard and the next one isn't (or the
+    // queue ran out). Every 4th completed round today forgives the day's
+    // introduced-new count so the cap refills (user request 2026-07-24 —
+    // "ไม่อยาก limit flash: เล่นครบ 4 รอบแล้วรีเซ็ต limit คำใหม่").
+    final blockEnded = leaving.gameType == GameType.flashcard &&
+        (_queue.isEmpty || _queue.first.gameType != GameType.flashcard);
+    if (blockEnded) await _onFlashcardRoundComplete();
     if (_queue.isEmpty) {
       await _refillQueue();
     } else {
       await _loadNext();
     }
+  }
+
+  Future<void> _onFlashcardRoundComplete() async {
+    final today = logicalDateKey(DateTime.now());
+    _fcRoundsToday++;
+    if (_fcRoundsToday >= 4) {
+      _fcRoundsToday = 0;
+      // Forgive everything introduced so far today: the effective count
+      // drops to 0 while daily_stats keeps the true total for stats.
+      final stats = await widget.store.loadDailyStats(today);
+      final total = stats?.newIntroduced ?? 0;
+      await widget.store.saveSetting('new_intro_forgiven', '$today:$total');
+      _state!.settings['new_intro_forgiven'] = '$today:$total';
+      _newIntroducedToday = 0;
+    }
+    await widget.store.saveSetting('fc_rounds', '$today:$_fcRoundsToday');
+    _state!.settings['fc_rounds'] = '$today:$_fcRoundsToday';
   }
 
   @override

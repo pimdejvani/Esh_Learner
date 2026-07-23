@@ -329,9 +329,10 @@ void main() {
     test('new words are served inside the flashcard block, not as a '
         'separate up-front segment (revision 2026-07-24)', () {
       // 10 practice words + 5 brand-new, cap 3: the queue's flashcard
-      // block should open with the 3 capped new cards then top up with
-      // practice flashcards, and every new card must come before any
-      // non-flashcard game.
+      // block opens with the new cards (limited by the block's 40%
+      // share since practice words exist) then tops up with practice
+      // flashcards; every new card must come before any non-flashcard
+      // game.
       final words = List.generate(15, (i) => _word(i, freq: i));
       final srs = {
         for (var i = 5; i < 15; i++)
@@ -346,8 +347,12 @@ void main() {
       );
       final newItems =
           queue.where((i) => i.source == QueueSource.newCard).toList();
-      expect(newItems.length, 3);
-      expect(newItems.map((i) => i.wordId), [0, 1, 2]);
+      // Block is 4-8 cards; 40% share -> 1-3 new, lowest freq_rank first.
+      expect(newItems.length, inInclusiveRange(1, 3));
+      expect(
+        newItems.map((i) => i.wordId),
+        [0, 1, 2].take(newItems.length),
+      );
       for (final item in newItems) {
         expect(item.gameType, GameType.flashcard);
       }
@@ -361,37 +366,99 @@ void main() {
       }
     });
 
-    test('hotStreak tops the queue up to (at most) 40% new words', () {
-      final words = List.generate(60, (i) => _word(i, freq: i));
-      // 10 words already seen and due now; the other 50 are brand new.
+    test('new-word share of the flashcard block scales with recent '
+        'accuracy: high -> up to 40%, low -> zero (revision 2026-07-24)', () {
+      // 20 practice words + 30 brand new, generous cap.
+      final words = List.generate(50, (i) => _word(i, freq: i));
       final srs = {
-        for (var i = 0; i < 10; i++)
-          i: _due(i, now.subtract(const Duration(hours: 1))),
+        for (var i = 30; i < 50; i++)
+          i: _due(i, now.add(const Duration(days: 2))),
       };
-      final hot = engine.buildQueue(
-        words: words,
-        srsStates: srs,
-        now: now,
-        newCardCap: 2,
-        newIntroducedToday: 0,
-        hotStreak: true,
-      );
-      final newCount =
-          hot.where((i) => i.source == QueueSource.newCard).length;
-      final share = newCount / hot.length;
-      expect(share, lessThanOrEqualTo(0.4 + 1e-9));
-      expect(share, greaterThan(0.3)); // actually topped up, not just cap
+      for (var trial = 0; trial < 30; trial++) {
+        // High accuracy: some new words, never more than 40% of the block.
+        final hot = engine.buildQueue(
+          words: words,
+          srsStates: srs,
+          now: now,
+          newCardCap: 15,
+          newIntroducedToday: 0,
+          recentAccuracy: 0.95,
+        );
+        final newCount =
+            hot.where((i) => i.source == QueueSource.newCard).length;
+        final blockLen = hot
+            .takeWhile((i) => i.gameType == GameType.flashcard)
+            .length;
+        expect(newCount, greaterThanOrEqualTo(1));
+        expect(newCount, lessThanOrEqualTo((0.4 * blockLen).floor()));
 
-      final cold = engine.buildQueue(
+        // Low accuracy: no new words at all, even with cap available.
+        final cold = engine.buildQueue(
+          words: words,
+          srsStates: srs,
+          now: now,
+          newCardCap: 15,
+          newIntroducedToday: 0,
+          recentAccuracy: 0.5,
+        );
+        expect(
+          cold.where((i) => i.source == QueueSource.newCard).length,
+          0,
+        );
+      }
+    });
+
+    test('share is ignored when there is nothing to review — a fresh '
+        'install still gets new words up to the cap', () {
+      final words = List.generate(10, (i) => _word(i, freq: i));
+      final queue = engine.buildQueue(
         words: words,
-        srsStates: srs,
+        srsStates: {},
         now: now,
-        newCardCap: 2,
+        newCardCap: 3,
         newIntroducedToday: 0,
+        recentAccuracy: 0.2, // terrible accuracy but nothing to mix with
       );
-      final coldNew =
-          cold.where((i) => i.source == QueueSource.newCard).length;
-      expect(coldNew, 2); // without the streak, the cap stands alone
+      expect(
+        queue.where((i) => i.source == QueueSource.newCard).length,
+        3,
+      );
+    });
+
+    test('practiceWeight scales with FSRS difficulty (hard words drawn '
+        'more, easy words less)', () {
+      expect(
+        practiceWeight(0, difficulty: 9),
+        greaterThan(practiceWeight(0, difficulty: 5)),
+      );
+      expect(
+        practiceWeight(0, difficulty: 2),
+        lessThan(practiceWeight(0, difficulty: 5)),
+      );
+      // Difficulty never resurrects a fully-faded word above a fresh one.
+      expect(
+        practiceWeight(9, difficulty: 10),
+        lessThan(practiceWeight(0, difficulty: 5)),
+      );
+    });
+
+    test('a high-difficulty word is drawn more often than an equal-streak '
+        'easy word', () {
+      final pool = [_word(1), _word(2)];
+      final random = Random(7);
+      var hardFirst = 0;
+      for (var i = 0; i < 300; i++) {
+        final sample = weightedPracticeSample(
+          pool: pool,
+          streaks: {1: 0, 2: 0},
+          count: 1,
+          random: random,
+          difficulties: {1: 9.0, 2: 2.0},
+        );
+        if (sample.single.id == 1) hardFirst++;
+      }
+      // Expected ratio 9:2 -> ~82% of draws.
+      expect(hardFirst, greaterThan(200));
     });
 
     test('practice slots target words still missing that game\'s cell', () {
