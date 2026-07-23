@@ -91,6 +91,17 @@ class _ClozeGameState extends State<ClozeGame> {
     });
   }
 
+  /// Listen to the sentence (user request 2026-07-23). Before answering,
+  /// the blanked word is replaced with "blank" so the audio doesn't give
+  /// the answer away; after the reveal it reads the full real sentence.
+  void _speakSentence() {
+    final s = _sentence;
+    final text = _submitted
+        ? s.enText
+        : s.enText.replaceRange(s.clozeStart, s.clozeEnd, 'blank');
+    widget.tts.speak(text);
+  }
+
   void _rate() {
     final base = _result!.rating;
     final capped = widget.checker.capForHint(base, usedHint: _hintsRevealed > 0);
@@ -129,6 +140,12 @@ class _ClozeGameState extends State<ClozeGame> {
                 ),
                 const SizedBox(height: 8),
                 Text(s.thText, style: Theme.of(context).textTheme.bodySmall),
+                const SizedBox(height: 4),
+                IconButton.filledTonal(
+                  icon: const Icon(Icons.volume_up),
+                  tooltip: 'ฟังประโยค',
+                  onPressed: _speakSentence,
+                ),
               ],
             ),
           ),

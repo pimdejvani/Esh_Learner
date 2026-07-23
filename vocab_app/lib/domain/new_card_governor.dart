@@ -37,6 +37,10 @@ class NewCardGovernor {
     this.backlogHighThreshold = 20,
     this.backlogLowThreshold = 5,
     this.goodAccuracy = 0.85,
+    this.burstWindow = 20,
+    this.burstMinReviews = 10,
+    this.burstAccuracy = 0.92,
+    this.burstStep = 3,
   });
 
   final int initialCap;
@@ -51,6 +55,18 @@ class NewCardGovernor {
 
   /// Accuracy needed (rolling, last 7 days) to allow the cap to grow.
   final double goodAccuracy;
+
+  /// Hot-streak burst (user request 2026-07-23: "ถ้ารอบนั้นตอบถูกแทบทุกคำ
+  /// ช่วยเร่ง speed เอาคำใหม่ออกมา"): look at the last [burstWindow]
+  /// reviews regardless of date — a much faster signal than the 7-day
+  /// average — and if at least [burstMinReviews] of them exist with
+  /// accuracy >= [burstAccuracy] (and no backlog pressure), grow the cap
+  /// by [burstStep] instead of the usual +1. Because the cap is retuned
+  /// after every answer, this kicks in mid-session, not tomorrow.
+  final int burstWindow;
+  final int burstMinReviews;
+  final double burstAccuracy;
+  final int burstStep;
 
   double _accuracy(List<ReviewLogEntry> reviews, DateTime now) {
     final cutoff = now.subtract(const Duration(days: 7));
@@ -74,6 +90,10 @@ class NewCardGovernor {
     int next = currentCap;
     if (backlogCount >= backlogHighThreshold) {
       next = currentCap - 2;
+    } else if (backlogCount <= backlogLowThreshold &&
+        _recentAccuracy(reviews) >= burstAccuracy) {
+      // Hot streak right now -> open the tap wider immediately.
+      next = currentCap + burstStep;
     } else if (backlogCount <= backlogLowThreshold && accuracy >= goodAccuracy) {
       next = currentCap + 1;
     } else if (accuracy < goodAccuracy - 0.10) {
@@ -81,5 +101,19 @@ class NewCardGovernor {
       next = currentCap - 1;
     }
     return next.clamp(minCap, maxCap);
+  }
+
+  /// Accuracy over the newest [burstWindow] reviews (by timestamp),
+  /// ignoring the 7-day window entirely. Returns 0 when there are fewer
+  /// than [burstMinReviews] samples so a lucky first answer or two can't
+  /// trigger the burst.
+  double _recentAccuracy(List<ReviewLogEntry> reviews) {
+    if (reviews.length < burstMinReviews) return 0;
+    final sorted = [...reviews]..sort((a, b) => b.ts.compareTo(a.ts));
+    final window = sorted.take(burstWindow).toList();
+    final correct = window
+        .where((r) => r.rating == Rating.good || r.rating == Rating.easy)
+        .length;
+    return correct / window.length;
   }
 }

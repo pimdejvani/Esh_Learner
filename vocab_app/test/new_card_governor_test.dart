@@ -67,6 +67,69 @@ void main() {
     expect(next, lessThanOrEqualTo(8));
   });
 
+  group('hot-streak burst (answer nearly everything right -> new words faster)', () {
+    test('near-perfect recent window grows the cap by burstStep, not +1', () {
+      final reviews = List.generate(
+        20,
+        (i) => _rev(i == 0 ? Rating.hard : Rating.good, now.subtract(Duration(minutes: i))),
+      ); // 19/20 = 95% >= burstAccuracy
+      final next = governor.nextCap(
+        currentCap: 8,
+        backlogCount: 0,
+        reviews: reviews,
+        now: now,
+      );
+      expect(next, 8 + governor.burstStep);
+    });
+
+    test('too few reviews cannot trigger the burst (no lucky-start jump)', () {
+      final reviews = List.generate(
+        governor.burstMinReviews - 1,
+        (i) => _rev(Rating.easy, now.subtract(Duration(minutes: i))),
+      );
+      final next = governor.nextCap(
+        currentCap: 8,
+        backlogCount: 0,
+        reviews: reviews,
+        now: now,
+      );
+      // Falls back to the normal +1 path (7-day accuracy is still fine).
+      expect(next, 8 + 1);
+    });
+
+    test('burst ignores old-but-perfect history when the recent window is mixed', () {
+      final reviews = [
+        // Newest 20: ~75% correct — hot streak is over.
+        for (var i = 0; i < 20; i++)
+          _rev(i % 4 == 0 ? Rating.again : Rating.good, now.subtract(Duration(minutes: i))),
+        // Older: perfect.
+        for (var i = 0; i < 30; i++)
+          _rev(Rating.easy, now.subtract(Duration(hours: 1 + i))),
+      ];
+      final next = governor.nextCap(
+        currentCap: 8,
+        backlogCount: 0,
+        reviews: reviews,
+        now: now,
+      );
+      expect(next, lessThan(8 + governor.burstStep));
+    });
+
+    test('backlog pressure blocks the burst even on a hot streak', () {
+      final reviews = List.generate(
+        20,
+        (i) => _rev(Rating.easy, now.subtract(Duration(minutes: i))),
+      );
+      final next = governor.nextCap(
+        currentCap: 8,
+        backlogCount: 25,
+        reviews: reviews,
+        now: now,
+      );
+      expect(next, lessThan(8));
+    });
+  });
+
   test('cap never drops below minCap or exceeds maxCap', () {
     var cap = 8;
     for (var i = 0; i < 30; i++) {

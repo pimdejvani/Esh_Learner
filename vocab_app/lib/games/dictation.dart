@@ -157,11 +157,26 @@ class _DictationGameState extends State<DictationGame> {
             padding: const EdgeInsets.all(24),
             child: Column(
               children: [
-                IconButton.filled(
-                  icon: const Icon(Icons.volume_up),
-                  onPressed: () => widget.tts.speak(word.headword),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    IconButton.filled(
+                      icon: const Icon(Icons.volume_up),
+                      tooltip: 'ฟังอีกครั้ง',
+                      onPressed: () => widget.tts.speak(word.headword),
+                    ),
+                    const SizedBox(width: 12),
+                    // Slow-speech replay (user request 2026-07-23): same
+                    // word at ~half rate so each phoneme is audible.
+                    IconButton.filledTonal(
+                      icon: const Icon(Icons.slow_motion_video),
+                      tooltip: 'พูดช้า ๆ',
+                      onPressed: () => widget.tts.speakSlow(word.headword),
+                    ),
+                  ],
                 ),
-                Text('ฟังแล้วพิมพ์สะกดคำ', style: Theme.of(context).textTheme.bodyMedium),
+                Text('ฟังแล้วพิมพ์สะกดคำ · ปุ่มขวา = พูดช้า',
+                    style: Theme.of(context).textTheme.bodyMedium),
                 const SizedBox(height: 8),
                 Text(sense.meaningTh, style: Theme.of(context).textTheme.titleMedium),
                 AnimatedSwitcher(

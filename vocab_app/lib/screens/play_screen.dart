@@ -60,6 +60,9 @@ class _PlayScreenState extends State<PlayScreen> {
   int _itemSeq = 0;
 
   Map<int, Word> _wordById = {};
+  // Cached per-word consecutive-correct streaks (refreshed on every queue
+  // refill) — the matching batch uses them to pull in weak words.
+  Map<int, int> _correctStreaks = {};
   Map<int, List<RelatedWord>> _relatedByWord = {};
   Set<int> _focusTopicWordIds = {};
 
@@ -129,6 +132,7 @@ class _PlayScreenState extends State<PlayScreen> {
     // words so the loop spends its rounds on the hard ones — plus the
     // current clean-round grid so practice slots target missing cells.
     final correctStreaks = await widget.store.loadCorrectStreaks();
+    _correctStreaks = correctStreaks;
     final passedPairs = await widget.store.loadPassedWordGamePairs();
     _queue = _sessionEngine.buildQueue(
       words: state.words,
@@ -258,13 +262,45 @@ class _PlayScreenState extends State<PlayScreen> {
     });
   }
 
+  /// Matching batch (user feedback 2026-07-23): ALWAYS at least 4 pairs
+  /// (was sometimes 1 when few words were in learning state), and at
+  /// least 2 of them are the player's weakest words (lowest
+  /// consecutive-correct streak) so the game keeps drilling what isn't
+  /// solid yet. Fill order: seed → 2 weakest seen words → learning-state
+  /// words → more seen words by weakness → any word.
   List<int> _pickMatchingBatch(int seedWordId) {
-    final learningWords = _state!.words.where((w) {
+    const minPairs = 4;
+    const maxPairs = 6;
+    final picked = <int>{seedWordId};
+
+    int streakOf(int id) => _correctStreaks[id] ?? 0;
+    final seen = _state!.words
+        .where((w) => _state!.srsStates[w.id] != null && w.id != seedWordId)
+        .map((w) => w.id)
+        .toList()
+      ..sort((a, b) => streakOf(a).compareTo(streakOf(b)));
+
+    // 1) At least 2 weakest words the player has actually seen.
+    picked.addAll(seen.take(2));
+
+    // 2) Learning-state words (the batch's original purpose).
+    for (final w in _state!.words) {
+      if (picked.length >= maxPairs) break;
       final s = _state!.srsStates[w.id];
-      return s != null && s.state == CardState.learning;
-    }).map((w) => w.id).toList();
-    if (!learningWords.contains(seedWordId)) learningWords.insert(0, seedWordId);
-    return learningWords.take(6).toList();
+      if (s != null && s.state == CardState.learning) picked.add(w.id);
+    }
+
+    // 3) Still short of the 4-pair minimum -> more seen words by
+    //    weakness, then any word at all (fresh profile fallback).
+    for (final id in seen) {
+      if (picked.length >= minPairs) break;
+      picked.add(id);
+    }
+    for (final w in _state!.words) {
+      if (picked.length >= minPairs) break;
+      picked.add(w.id);
+    }
+    return picked.take(maxPairs).toList();
   }
 
   Future<void> _handleRated(int wordId, Rating rating, GameType game) async {

@@ -1,0 +1,1 @@
+cd "C:\Users\pimde\Desktop\pimdej\English\vocab_app"; flutter run -d windows
