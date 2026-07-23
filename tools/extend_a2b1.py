@@ -33,8 +33,10 @@ import json
 import os
 import re
 import sys
+import threading
 import time
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -53,6 +55,11 @@ STRENGTH = SWOW_DIR / "strength.SWOW-EN.R123.20180827.csv"
 
 PER_BAND_TARGET = 50
 PER_BAND_BUFFER = 62  # extra candidates so QC drops don't leave us short
+
+# Parallelism (2026-07-23: stages B/C redesigned to run concurrently per
+# the user's standing bulk-task preference — see memory/NOTES.md):
+B_WORKERS = 8   # simultaneous wiktapi HTTP fetches
+C_WORKERS = 5   # simultaneous Gemini batch calls per round
 
 # Hand overrides where WordNet's most-frequent-synset POS is wrong for the
 # sense a learner drills first.
@@ -162,45 +169,58 @@ POS_TO_WIKT = {"n": "noun", "v": "verb", "adj": "adj", "adv": "adv",
                "prep": "prep", "conj": "conj", "det": "det", "pron": "pron"}
 
 
+def _fetch_translations(cand):
+    """One wiktapi fetch + Thai-candidate extraction (runs on a worker
+    thread — everything here is local to the call, no shared state)."""
+    hw = cand["headword"]
+    try:
+        data = http_json(f"https://api.wiktapi.dev/v1/en/word/{hw}/translations")
+    except Exception as e:
+        return hw, {"candidates": [], "error": str(e)}
+    wanted_pos = POS_TO_WIKT.get(cand["pos"], "")
+    th_same_pos, th_any = [], []
+
+    # wiktapi shape: list/dict of translation groups with pos + entries.
+    def walk(node, pos_hint=""):
+        if isinstance(node, dict):
+            p = str(node.get("pos", pos_hint)).lower()
+            if str(node.get("lang_code", "")).lower() == "th" and node.get("word"):
+                (th_same_pos if wanted_pos and wanted_pos in p else th_any).append(
+                    str(node["word"]))
+            for v in node.values():
+                walk(v, p)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v, pos_hint)
+    walk(data)
+    seen = set()
+    cands = [w for w in th_same_pos + th_any
+             if not (w in seen or seen.add(w))][:8]
+    return hw, {"candidates": cands}
+
+
 def stage_b(candidates):
     out = WORK / "stageB.json"
     done = json.loads(out.read_text(encoding="utf-8")) if out.exists() else {}
     words = [c for band in candidates.values() for c in band]
     todo = [c for c in words if c["headword"] not in done]
     log(f"Stage B: wiktapi translations for {len(todo)} words "
-        f"({len(done)} already cached)...")
-    for i, c in enumerate(todo):
-        hw = c["headword"]
-        try:
-            data = http_json(f"https://api.wiktapi.dev/v1/en/word/{hw}/translations")
-        except Exception as e:
-            log(f"  [{hw}] wiktapi error: {e}")
-            done[hw] = {"candidates": [], "error": str(e)}
-            out.write_text(json.dumps(done, ensure_ascii=False), encoding="utf-8")
-            continue
-        wanted_pos = POS_TO_WIKT.get(c["pos"], "")
-        th_same_pos, th_any = [], []
-        # wiktapi shape: list/dict of translation groups with pos + entries.
-        def walk(node, pos_hint=""):
-            if isinstance(node, dict):
-                p = str(node.get("pos", pos_hint)).lower()
-                if str(node.get("lang_code", "")).lower() == "th" and node.get("word"):
-                    (th_same_pos if wanted_pos and wanted_pos in p else th_any).append(
-                        str(node["word"]))
-                for v in node.values():
-                    walk(v, p)
-            elif isinstance(node, list):
-                for v in node:
-                    walk(v, pos_hint)
-        walk(data)
-        seen = set()
-        cands = [w for w in th_same_pos + th_any
-                 if not (w in seen or seen.add(w))][:8]
-        done[hw] = {"candidates": cands}
-        if (i + 1) % 10 == 0 or i == len(todo) - 1:
-            log(f"  {i+1}/{len(todo)} fetched")
-            out.write_text(json.dumps(done, ensure_ascii=False), encoding="utf-8")
-        time.sleep(0.4)  # be polite
+        f"({len(done)} cached), {B_WORKERS} parallel workers...")
+    lock = threading.Lock()
+    n_done = 0
+    with ThreadPoolExecutor(max_workers=B_WORKERS) as ex:
+        futures = [ex.submit(_fetch_translations, c) for c in todo]
+        for fut in as_completed(futures):
+            hw, res = fut.result()
+            with lock:
+                done[hw] = res
+                n_done += 1
+                if res.get("error"):
+                    log(f"  [{hw}] wiktapi error: {res['error']}")
+                if n_done % 20 == 0:  # periodic checkpoint
+                    out.write_text(json.dumps(done, ensure_ascii=False),
+                                   encoding="utf-8")
+                    log(f"  {n_done}/{len(todo)} fetched")
     out.write_text(json.dumps(done, ensure_ascii=False, indent=1), encoding="utf-8")
     n_empty = sum(1 for v in done.values() if not v.get("candidates"))
     log(f"Stage B done: {n_empty} words with no Thai row (will be approx-flagged)")
@@ -365,32 +385,40 @@ def stage_c(candidates, translations):
     for round_no in range(1, 4):
         if not remaining:
             break
-        log(f"  --- round {round_no}: {len(remaining)} words ---")
+        batches = [remaining[i:i + 5] for i in range(0, len(remaining), 5)]
+        log(f"  --- round {round_no}: {len(remaining)} words in "
+            f"{len(batches)} batches, {C_WORKERS} parallel calls ---")
         next_remaining = []
-        for i in range(0, len(remaining), 5):
-            batch = remaining[i:i + 5]
-            parsed, err = call(batch)
-            if parsed is None:
-                log(f"    batch {batch} API-failed: {err}")
-                next_remaining.extend(batch)
-                continue
-            parsed_by_hw = {str(p.get("headword", "")).lower(): p for p in parsed}
-            for hw in batch:
-                item = parsed_by_hw.get(hw)
-                if item is None:
-                    next_remaining.append(hw)
+        # All batches of this round fly concurrently; validation of the
+        # returned JSON is cheap and runs on the main thread as results
+        # come in (each worker only talks to the API + parses).
+        with ThreadPoolExecutor(max_workers=C_WORKERS) as ex:
+            futures = {ex.submit(call, b): b for b in batches}
+            for fut in as_completed(futures):
+                batch = futures[fut]
+                parsed, err = fut.result()
+                if parsed is None:
+                    log(f"    batch {batch} API-failed: {err}")
+                    next_remaining.extend(batch)
                     continue
-                pos = by_hw[hw]["pos"]
-                cands = translations.get(hw, {}).get("candidates", [])
-                ok1, r1 = validate_sentences(item, hw, pos)
-                ok2, r2 = validate_meta(item, cands)
-                if ok1 and ok2:
-                    done[hw] = item
-                    log(f"    [{hw}] PASSED")
-                else:
-                    log(f"    [{hw}] FAILED: {r1 if not ok1 else ''} {r2 if not ok2 else ''}")
-                    next_remaining.append(hw)
-            out.write_text(json.dumps(done, ensure_ascii=False), encoding="utf-8")
+                parsed_by_hw = {str(p.get("headword", "")).lower(): p for p in parsed}
+                for hw in batch:
+                    item = parsed_by_hw.get(hw)
+                    if item is None:
+                        next_remaining.append(hw)
+                        continue
+                    pos = by_hw[hw]["pos"]
+                    cands = translations.get(hw, {}).get("candidates", [])
+                    ok1, r1 = validate_sentences(item, hw, pos)
+                    ok2, r2 = validate_meta(item, cands)
+                    if ok1 and ok2:
+                        done[hw] = item
+                        log(f"    [{hw}] PASSED")
+                    else:
+                        log(f"    [{hw}] FAILED: "
+                            f"{r1 if not ok1 else ''} {r2 if not ok2 else ''}")
+                        next_remaining.append(hw)
+                out.write_text(json.dumps(done, ensure_ascii=False), encoding="utf-8")
         remaining = next_remaining
     out.write_text(json.dumps(done, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Stage C done: {len(done)} passed, {len(remaining)} unrecoverable: {remaining}")

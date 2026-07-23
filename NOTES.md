@@ -1122,9 +1122,13 @@ the exact Phase 1 sources:
   1,265 sentences, 0 new words missing sentences or related_words, QC
   pass OK, `flutter test` 117/117. freq_rank continues 154..253 (A2
   before B1) so new-card introduction finishes A1 first.
-- **Process debt noted**: stages B/C ran serially (polite 0.4s/req
-  wiktapi, sequential Gemini batches) — should be parallelized per the
-  user's standing preference before the full 3,000-word run.
+- **Process debt noted**: stages B/C originally ran serially — fixed
+  the same evening on the user's instruction ("แก้ตอนนี้เลย ออกแบบให้
+  code ทำงาน parallel"): stage B = ThreadPoolExecutor(8) over per-word
+  fetches (each worker fully self-contained, periodic checkpoint under
+  a lock; 124 fetches 2.1s vs ~90s), stage C = 5 concurrent Gemini
+  batch calls per retry round, JSON validation kept on the main thread.
+  Rerun after the rewrite produced a byte-identical tools/ext_a2b1.py.
 
 ## Current status & remaining work (as of 2026-07-23 evening)
 
@@ -1155,10 +1159,13 @@ desktop build works; repo is github.com/pimdejvani/Esh_Learner
    but hasn't chosen yet).
 3. **Scale dataset 253 → 3,000 words** (Phase 3, biggest job): the
    machinery now exists — `tools/extend_a2b1.py` did 100 words
-   end-to-end (2026-07-23) and is resumable/rerunnable. Before the full
-   run: (a) parallelize stages B/C (currently serial — user's standing
-   preference), (b) teach the cloze validator irregular inflections
-   (armies/knives/stuck were wrongly rejected), (c) raise
+   end-to-end (2026-07-23) and is resumable/rerunnable, and is now
+   PARALLEL (same evening): stage B fans out over 8 worker threads
+   (124 wiktapi fetches: ~90s serial → 2.1s) and stage C runs 5 Gemini
+   batches concurrently per round with validation on the main thread;
+   verified byte-identical ext output on rerun. Before the full run:
+   (a) teach the cloze validator irregular inflections
+   (armies/knives/stuck were wrongly rejected), (b) raise
    PER_BAND_TARGET / add B2. Real API cost.
 4. **3D card-flip motion for Flashcard** (user request 2026-07-23, same
    tier as the 3,000-word job): tapping the card should show a real

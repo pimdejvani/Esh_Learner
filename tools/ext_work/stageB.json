@@ -1,288 +1,7 @@
 {
- "wild": {
+ "wood": {
   "candidates": [
-   "ป่า",
-   "เถื่อน"
-  ]
- },
- "virus": {
-  "candidates": [
-   "เชื้อ",
-   "ไวรัส",
-   "ไวรัสคอมพิวเตอร์"
-  ]
- },
- "vehicle": {
-  "candidates": [
-   "รถ",
-   "ยานพาหนะ",
-   "พาหนะ"
-  ]
- },
- "use": {
-  "candidates": [
-   "ใช้",
-   "นำมาใช้"
-  ]
- },
- "unit": {
-  "candidates": []
- },
- "top": {
-  "candidates": [
-   "ยอด",
-   "ฝา",
-   "เกย์คิง",
-   "รุก"
-  ]
- },
- "tool": {
-  "candidates": [
-   "เครื่อง",
-   "อุปกรณ์",
-   "เครื่องมือ"
-  ]
- },
- "thought": {
-  "candidates": [
-   "ความคิด"
-  ]
- },
- "successful": {
-  "candidates": []
- },
- "succeed": {
-  "candidates": [
-   "ประสบความสำเร็จ",
-   "ได้ดี"
-  ]
- },
- "stupid": {
-  "candidates": [
-   "โง่"
-  ]
- },
- "strategy": {
-  "candidates": [
-   "ยุทธศาสตร์"
-  ]
- },
- "straight": {
-  "candidates": [
-   "ตรง"
-  ]
- },
- "steal": {
-  "candidates": [
-   "ขโมย",
-   "ลัก"
-  ]
- },
- "star": {
-  "candidates": [
-   "ดาว",
-   "ดาวฤกษ์",
-   "ดารา"
-  ]
- },
- "speed": {
-  "candidates": [
-   "ความเร็ว"
-  ]
- },
- "speech": {
-  "candidates": [
-   "คำพูด",
-   "ถ้อย",
-   "พาท",
-   "วจนะ",
-   "ภารดี",
-   "การพูด"
-  ]
- },
- "specific": {
-  "candidates": []
- },
- "speaker": {
-  "candidates": [
-   "ลำโพง",
-   "โฆษก"
-  ]
- },
- "solution": {
-  "candidates": [
-   "สารละลาย",
-   "ทางแก้",
-   "ทางออก",
-   "ผลเฉลย",
-   "การชำระหนี้"
-  ]
- },
- "soccer": {
-  "candidates": [
-   "ฟุตบอล"
-  ]
- },
- "secondly": {
-  "candidates": []
- },
- "season": {
-  "candidates": [
-   "ฤดู",
-   "หน้า",
-   "ซีซัน"
-  ]
- },
- "schedule": {
-  "candidates": [
-   "ตาราง",
-   "กำหนดการ"
-  ]
- },
- "running": {
-  "candidates": []
- },
- "round": {
-  "candidates": []
- },
- "rock": {
-  "candidates": [
-   "หิน",
-   "ร็อก"
-  ]
- },
- "recognize": {
-  "candidates": []
- },
- "question": {
-  "candidates": [
-   "คำถาม"
-  ]
- },
- "public": {
-  "candidates": [
-   "ประชาชน",
-   "มหาชน",
-   "สาธารณชน",
-   "สาธารณะ"
-  ]
- },
- "pub": {
-  "candidates": [
-   "ร้านเหล้า",
-   "ผับ",
-   "ร้านสุรา",
-   "บาร์"
-  ]
- },
- "professional": {
-  "candidates": [
-   "มืออาชีพ"
-  ]
- },
- "produce": {
-  "candidates": [
-   "ผลิต",
-   "ผลิตภัณฑ์",
-   "ผลผลิต"
-  ]
- },
- "position": {
-  "candidates": [
-   "ตำแหน่ง",
-   "อัตรา",
-   "จุดยืน"
-  ]
- },
- "penny": {
-  "candidates": [
-   "เพนนี"
-  ]
- },
- "particular": {
-  "candidates": []
- },
- "organize": {
-  "candidates": []
- },
- "opportunity": {
-  "candidates": [
-   "โอกาส"
-  ]
- },
- "nervous": {
-  "candidates": []
- },
- "nature": {
-  "candidates": [
-   "ธรรมชาติ"
-  ]
- },
- "motorcycle": {
-  "candidates": [
-   "จักรยานยนต์",
-   "มอเตอร์ไซค์",
-   "รถเครื่อง",
-   "มอไซค์"
-  ]
- },
- "method": {
-  "candidates": [
-   "วิธี"
-  ]
- },
- "memory": {
-  "candidates": [
-   "ความจำ",
-   "ความทรงจำ"
-  ]
- },
- "medicine": {
-  "candidates": [
-   "ยา",
-   "การรักษา",
-   "แพทยศาสตร์",
-   "แพทย์"
-  ]
- },
- "medical": {
-  "candidates": []
- },
- "low": {
-  "candidates": [
-   "ต่ำ"
-  ]
- },
- "link": {
-  "candidates": [
-   "ลูกโซ่",
-   "ไฮเปอร์ลิงก์",
-   "ลิงก์"
-  ]
- },
- "likely": {
-  "candidates": []
- },
- "learning": {
-  "candidates": [
-   "การเรียนรู้"
-  ]
- },
- "intelligent": {
-  "candidates": [
-   "ฉลาด"
-  ]
- },
- "fun": {
-  "candidates": [
-   "ความสนุก",
-   "สนุก",
-   "มันส์"
-  ]
- },
- "pain": {
-  "candidates": [
-   "ความเจ็บ"
+   "ไม้"
   ]
  },
  "death": {
@@ -291,9 +10,9 @@
    "มรณะ"
   ]
  },
- "war": {
+ "loud": {
   "candidates": [
-   "สงคราม"
+   "ดัง"
   ]
  },
  "church": {
@@ -301,11 +20,6 @@
    "โบสถ์",
    "โบสถ์คริสต์",
    "คริสตจักร"
-  ]
- },
- "wood": {
-  "candidates": [
-   "ไม้"
   ]
  },
  "sweet": {
@@ -318,20 +32,9 @@
    "จ๊าบ"
   ]
  },
- "fat": {
+ "pain": {
   "candidates": [
-   "ไขมัน",
-   "อ้วน"
-  ]
- },
- "dark": {
-  "candidates": [
-   "มืด"
-  ]
- },
- "loud": {
-  "candidates": [
-   "ดัง"
+   "ความเจ็บ"
   ]
  },
  "blood": {
@@ -341,6 +44,11 @@
    "โรหิต",
    "สายเลือด",
    "สายโลหิต"
+  ]
+ },
+ "war": {
+  "candidates": [
+   "สงคราม"
   ]
  },
  "god": {
@@ -357,22 +65,28 @@
    "นิ่ม"
   ]
  },
- "smell": {
-  "candidates": [
-   "กลิ่น",
-   "ดม",
-   "มีกลิ่น"
-  ]
- },
  "ocean": {
   "candidates": [
    "มหาสมุทร"
+  ]
+ },
+ "crazy": {
+  "candidates": [
+   "บ้า",
+   "คลั่ง"
   ]
  },
  "hurt": {
   "candidates": [
    "เจ็บ",
    "ปวด"
+  ]
+ },
+ "smell": {
+  "candidates": [
+   "กลิ่น",
+   "ดม",
+   "มีกลิ่น"
   ]
  },
  "fight": {
@@ -383,12 +97,6 @@
    "รบ"
   ]
  },
- "metal": {
-  "candidates": [
-   "โลหะ",
-   "เมทัล"
-  ]
- },
  "wet": {
   "candidates": [
    "เปียก",
@@ -396,18 +104,15 @@
    "ชุ่มชื้น"
   ]
  },
- "crazy": {
+ "metal": {
   "candidates": [
-   "บ้า",
-   "คลั่ง"
+   "โลหะ",
+   "เมทัล"
   ]
  },
- "ship": {
+ "stupid": {
   "candidates": [
-   "จิ้น",
-   "เรือ",
-   "กำปั่น",
-   "คู่จิ้น"
+   "โง่"
   ]
  },
  "gun": {
@@ -439,31 +144,37 @@
    "เลขยกกำลัง"
   ]
  },
+ "rude": {
+  "candidates": []
+ },
+ "ship": {
+  "candidates": [
+   "จิ้น",
+   "เรือ",
+   "กำปั่น",
+   "คู่จิ้น"
+  ]
+ },
  "law": {
   "candidates": [
    "กฎหมาย"
   ]
  },
- "high": {
-  "candidates": [
-   "ที่สูง",
-   "สูง",
-   "เมา"
-  ]
- },
- "dead": {
-  "candidates": [
-   "ตาย",
-   "เสียชีวิต"
-  ]
- },
- "rude": {
-  "candidates": []
- },
  "skin": {
   "candidates": [
    "ผิวหนัง",
    "หนัง"
+  ]
+ },
+ "scary": {
+  "candidates": [
+   "น่ากลัว"
+  ]
+ },
+ "brain": {
+  "candidates": [
+   "มันสมอง",
+   "สมอง"
   ]
  },
  "king": {
@@ -477,15 +188,9 @@
    "ฮอส"
   ]
  },
- "brain": {
+ "grass": {
   "candidates": [
-   "มันสมอง",
-   "สมอง"
-  ]
- },
- "scary": {
-  "candidates": [
-   "น่ากลัว"
+   "หญ้า"
   ]
  },
  "gold": {
@@ -495,30 +200,13 @@
    "เหรียญทอง"
   ]
  },
- "grass": {
-  "candidates": [
-   "หญ้า"
-  ]
- },
- "crime": {
-  "candidates": [
-   "อาชญากรรม"
-  ]
- },
- "fall": {
-  "candidates": [
-   "ตก",
-   "ร่วง",
-   "หล่น"
-  ]
+ "bright": {
+  "candidates": []
  },
  "alone": {
   "candidates": [
    "เดียว"
   ]
- },
- "bright": {
-  "candidates": []
  },
  "heart": {
   "candidates": [
@@ -532,12 +220,9 @@
    "โพแดง"
   ]
  },
- "army": {
+ "crime": {
   "candidates": [
-   "ทัพ",
-   "กองทัพ",
-   "พล",
-   "กองทัพบก"
+   "อาชญากรรม"
   ]
  },
  "government": {
@@ -551,19 +236,34 @@
    "รอยยิ้ม"
   ]
  },
+ "army": {
+  "candidates": [
+   "ทัพ",
+   "กองทัพ",
+   "พล",
+   "กองทัพบก"
+  ]
+ },
  "noise": {
   "candidates": [
    "เสียง"
   ]
  },
- "wind": {
-  "candidates": [
-   "ลม"
-  ]
- },
  "disease": {
   "candidates": [
    "โรค"
+  ]
+ },
+ "rock": {
+  "candidates": [
+   "หิน",
+   "ร็อก"
+  ]
+ },
+ "dead": {
+  "candidates": [
+   "ตาย",
+   "เสียชีวิต"
   ]
  },
  "mind": {
@@ -574,14 +274,12 @@
    "ดูแล"
   ]
  },
- "danger": {
-  "candidates": [
-   "อันตราย"
-  ]
+ "round": {
+  "candidates": []
  },
- "earth": {
+ "wind": {
   "candidates": [
-   "ดิน"
+   "ลม"
   ]
  },
  "sky": {
@@ -598,6 +296,11 @@
    "วิทยา"
   ]
  },
+ "earth": {
+  "candidates": [
+   "ดิน"
+  ]
+ },
  "heavy": {
   "candidates": [
    "หนัก"
@@ -609,6 +312,14 @@
  "broken": {
   "candidates": []
  },
+ "top": {
+  "candidates": [
+   "ยอด",
+   "ฝา",
+   "เกย์คิง",
+   "รุก"
+  ]
+ },
  "scared": {
   "candidates": [
    "หวาด"
@@ -618,14 +329,6 @@
   "candidates": [
    "ว้าง",
    "หว่า"
-  ]
- },
- "oil": {
-  "candidates": [
-   "น้ำมัน",
-   "มัน",
-   "น้ำมันพืช",
-   "ปิโตรเลียม"
   ]
  },
  "knife": {
@@ -642,6 +345,14 @@
    "นิ่ว"
   ]
  },
+ "oil": {
+  "candidates": [
+   "น้ำมัน",
+   "มัน",
+   "น้ำมันพืช",
+   "ปิโตรเลียม"
+  ]
+ },
  "circle": {
   "candidates": [
    "แหวน",
@@ -652,12 +363,6 @@
    "แวดวง",
    "วงการ",
    "ถุงใต้ตา"
-  ]
- },
- "hole": {
-  "candidates": [
-   "หลุม",
-   "รู"
   ]
  },
  "peace": {
@@ -683,6 +388,11 @@
    "ลิงค์"
   ]
  },
+ "annoying": {
+  "candidates": [
+   "น่ารำคาญ"
+  ]
+ },
  "religion": {
   "candidates": [
    "ศาสนา"
@@ -693,9 +403,12 @@
    "ฉลาด"
   ]
  },
- "annoying": {
+ "medicine": {
   "candidates": [
-   "น่ารำคาญ"
+   "ยา",
+   "การรักษา",
+   "แพทยศาสตร์",
+   "แพทย์"
   ]
  },
  "alcohol": {
@@ -705,9 +418,19 @@
    "เหล้า"
   ]
  },
+ "danger": {
+  "candidates": [
+   "อันตราย"
+  ]
+ },
  "dirt": {
   "candidates": [
    "ดิน"
+  ]
+ },
+ "politics": {
+  "candidates": [
+   "การเมือง"
   ]
  },
  "sharp": {
@@ -716,11 +439,6 @@
    "ฉลาด",
    "แหลม",
    "ชาร์ป"
-  ]
- },
- "politics": {
-  "candidates": [
-   "การเมือง"
   ]
  },
  "calm": {
@@ -738,11 +456,9 @@
    "นักเลงสุรา"
   ]
  },
- "court": {
+ "ugly": {
   "candidates": [
-   "ลาน",
-   "ศาล",
-   "คอร์ต"
+   "น่าเกลียด"
   ]
  },
  "shiny": {
@@ -754,9 +470,23 @@
    "มายากล"
   ]
  },
- "ugly": {
+ "court": {
   "candidates": [
-   "น่าเกลียด"
+   "ลาน",
+   "ศาล",
+   "คอร์ต"
+  ]
+ },
+ "silly": {
+  "candidates": [
+   "โง่"
+  ]
+ },
+ "tiny": {
+  "candidates": [
+   "จี๊ด",
+   "นิด",
+   "จิ๋ว"
   ]
  },
  "marriage": {
@@ -771,16 +501,24 @@
    "เรียบ"
   ]
  },
- "tiny": {
+ "beauty": {
   "candidates": [
-   "จี๊ด",
-   "นิด",
-   "จิ๋ว"
+   "ความสวย",
+   "ความสวยงาม"
   ]
  },
- "silly": {
+ "hole": {
   "candidates": [
-   "โง่"
+   "หลุม",
+   "รู"
+  ]
+ },
+ "ghost": {
+  "candidates": [
+   "ผี",
+   "ภูต",
+   "ปิศาจ",
+   "พราย"
   ]
  },
  "stick": {
@@ -796,30 +534,11 @@
    "สัจธรรม"
   ]
  },
- "beauty": {
-  "candidates": [
-   "ความสวย",
-   "ความสวยงาม"
-  ]
- },
- "ghost": {
-  "candidates": [
-   "ผี",
-   "ภูต",
-   "ปิศาจ",
-   "พราย"
-  ]
- },
  "strength": {
   "candidates": [
    "แรง",
    "กำลัง",
    "ความแข็งแรง"
-  ]
- },
- "rope": {
-  "candidates": [
-   "เชือก"
   ]
  },
  "mad": {
@@ -828,31 +547,23 @@
    "วิกลจริต"
   ]
  },
- "judge": {
-  "candidates": [
-   "ตุลาการ",
-   "ผู้พิพากษา"
-  ]
- },
- "happiness": {
-  "candidates": [
-   "ความสุข"
-  ]
- },
  "needle": {
   "candidates": [
    "เข็ม"
   ]
  },
- "murder": {
-  "candidates": [
-   "ฆาตกรรม"
-  ]
+ "fancy": {
+  "candidates": []
  },
  "tight": {
   "candidates": [
    "แน่น",
    "คับ"
+  ]
+ },
+ "murder": {
+  "candidates": [
+   "ฆาตกรรม"
   ]
  },
  "bee": {
@@ -863,12 +574,15 @@
    "บี"
   ]
  },
- "fancy": {
-  "candidates": []
- },
  "mess": {
   "candidates": [
    "ความสับสน"
+  ]
+ },
+ "lonely": {
+  "candidates": [
+   "เหงา",
+   "รกร้าง"
   ]
  },
  "force": {
@@ -878,20 +592,14 @@
    "ฝืน"
   ]
  },
- "lonely": {
-  "candidates": [
-   "เหงา",
-   "รกร้าง"
-  ]
- },
- "rough": {
-  "candidates": []
- },
  "iron": {
   "candidates": [
    "เหล็ก",
    "รีด"
   ]
+ },
+ "rough": {
+  "candidates": []
  },
  "honest": {
   "candidates": [
@@ -901,6 +609,12 @@
  "cloth": {
   "candidates": [
    "ผ้า"
+  ]
+ },
+ "brave": {
+  "candidates": [
+   "กล้าหาญ",
+   "กล้า"
   ]
  },
  "shy": {
@@ -913,12 +627,6 @@
    "เหลว",
    "ของเหลว",
    "พยัญชนะเหลว"
-  ]
- },
- "brave": {
-  "candidates": [
-   "กล้าหาญ",
-   "กล้า"
   ]
  },
  "waste": {
@@ -936,16 +644,33 @@
    "กล้าม"
   ]
  },
+ "bomb": {
+  "candidates": [
+   "ระเบิด",
+   "บอมบ์"
+  ]
+ },
  "forever": {
   "candidates": [
    "ตลอดไป",
    "นิรันดร"
   ]
  },
- "bomb": {
+ "dust": {
   "candidates": [
-   "ระเบิด",
-   "บอมบ์"
+   "ฝุ่น",
+   "ผง",
+   "ธุลี"
+  ]
+ },
+ "happiness": {
+  "candidates": [
+   "ความสุข"
+  ]
+ },
+ "flag": {
+  "candidates": [
+   "ธง"
   ]
  },
  "priest": {
@@ -957,16 +682,9 @@
    "มุนิ"
   ]
  },
- "dust": {
+ "illegal": {
   "candidates": [
-   "ฝุ่น",
-   "ผง",
-   "ธุลี"
-  ]
- },
- "flag": {
-  "candidates": [
-   "ธง"
+   "ที่ผิดกฎหมาย"
   ]
  },
  "pot": {
@@ -980,16 +698,6 @@
    "มึนงง"
   ]
  },
- "illegal": {
-  "candidates": [
-   "ที่ผิดกฎหมาย"
-  ]
- },
- "measure": {
-  "candidates": [
-   "วัด"
-  ]
- },
  "odd": {
   "candidates": [
    "คี่"
@@ -1000,22 +708,32 @@
    "ไม่พอใจ"
   ]
  },
+ "measure": {
+  "candidates": [
+   "วัด"
+  ]
+ },
  "mud": {
   "candidates": [
    "โคลน",
    "เลน"
   ]
  },
- "religious": {
-  "candidates": []
- },
  "weapon": {
   "candidates": [
    "อาวุธ"
   ]
  },
+ "religious": {
+  "candidates": []
+ },
  "loss": {
   "candidates": []
+ },
+ "leather": {
+  "candidates": [
+   "หนัง"
+  ]
  },
  "poison": {
   "candidates": [
@@ -1026,9 +744,15 @@
    "ยาเบื่อ"
   ]
  },
- "leather": {
+ "rope": {
   "candidates": [
-   "หนัง"
+   "เชือก"
+  ]
+ },
+ "judge": {
+  "candidates": [
+   "ตุลาการ",
+   "ผู้พิพากษา"
   ]
  }
 }
