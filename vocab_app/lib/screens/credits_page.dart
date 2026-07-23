@@ -64,6 +64,14 @@ class _CreditsPageState extends State<CreditsPage> {
           '${w.imageAuthor ?? 'ไม่ทราบผู้สร้าง'} — ${w.imageLicense ?? ''}',
     };
 
+    // Sorted copies BEFORE the ternaries below. Inlining `x.toList()..sort()`
+    // as a ternary branch is a trap: the cascade binds to the WHOLE
+    // conditional (`(cond ? constList : list)..sort()`), so the empty case
+    // sorted the const fallback list -> "Cannot modify an unmodifiable
+    // list" crash (bug reported 2026-07-23).
+    final sortedTranslations = translationSources.toList()..sort();
+    final sortedImages = imageSources.toList()..sort();
+
     return Scaffold(
       appBar: AppBar(title: const Text('Credits / Licenses')),
       body: ListView(
@@ -71,9 +79,9 @@ class _CreditsPageState extends State<CreditsPage> {
         children: [
           _Section(
             title: 'คำแปล (Translations)',
-            items: translationSources.isEmpty
+            items: sortedTranslations.isEmpty
                 ? const ['ไม่มีข้อมูลแหล่งที่มาในฐานข้อมูลนี้']
-                : translationSources.toList()..sort(),
+                : sortedTranslations,
           ),
           const SizedBox(height: 16),
           const _Section(
@@ -88,9 +96,9 @@ class _CreditsPageState extends State<CreditsPage> {
           const SizedBox(height: 16),
           _Section(
             title: 'รูปภาพ (Images)',
-            items: imageSources.isEmpty
+            items: sortedImages.isEmpty
                 ? const ['ยังไม่มีรูปภาพในฐานข้อมูลนี้ (Openverse/Wikimedia, CC BY variants)']
-                : imageSources.toList()..sort(),
+                : sortedImages,
           ),
           const SizedBox(height: 16),
           const _Section(

@@ -1075,15 +1075,22 @@ github.com/pimdejvani/Esh_Learner (public).
    WordNet flags, SWOW associations (source file already on disk covers
    the full vocabulary), gemini-3.6-flash sentences/grammar notes for
    ~2,850 more words (real API cost), QC pass, rebuild seed DB.
-4. **Images** — schema fields (`has_photo`/`image_url`/license/author)
+4. **3D card-flip motion for Flashcard** (user request 2026-07-23, same
+   tier as the 3,000-word job): tapping the card should show a real
+   flip animation (rotateY via `AnimationController` +
+   `Transform(Matrix4.rotationY)` with a perspective entry, swapping
+   face at the 90° midpoint — the standard Flutter approach; research
+   community packages e.g. `flip_card` vs hand-rolling before building).
+   Today the tap swaps faces with a fade/scale AnimatedSwitcher only.
+5. **Images** — schema fields (`has_photo`/`image_url`/license/author)
    exist but the Openverse/Wikimedia URL-resolution step was never run,
    and the app has no runtime image fetch/cache yet (SPEC.md decision #3).
-5. **iOS build** — SPEC.md targets iOS-first but everything so far is
+6. **iOS build** — SPEC.md targets iOS-first but everything so far is
    verified on Windows/web only; needs a Mac/Xcode (not possible on this
    machine).
-6. **Tune FSRS/governor from real logs** — blocked on accumulated play
+7. **Tune FSRS/governor from real logs** — blocked on accumulated play
    data, revisit after the user has played for a while.
-7. **Backlog (explicitly deferred):** confusables ("อย่าสับสนกับ"), app
+8. **Backlog (explicitly deferred):** confusables ("อย่าสับสนกับ"), app
    name + logo, Android/iPad decision, multi-device sync, full XP/badge
    layer.
 
