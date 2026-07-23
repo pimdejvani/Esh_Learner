@@ -69,18 +69,32 @@ List<GameType> gamesForState(CardState state) {
   }
 }
 
-/// Fixed light→heavy rotation used by the extra-practice loop (SPEC.md 7
-/// revision 2026-07-23): once dues + capped-new are cleared and the user
-/// keeps playing, practice rounds cycle through every game in ladder order
-/// and wrap back around to flashcard — "ทำ loop ทุกเกมแล้ว กลับมา
-/// flashcard ใหม่". Unbuildable rounds (e.g. Odd One Out without enough
-/// related_words) fall back to flashcard at render time in play_screen.
+/// Fixed rotation used by the extra-practice loop (SPEC.md 7 revision
+/// 2026-07-23): once dues + capped-new are cleared and the user keeps
+/// playing, practice rounds cycle through every game and wrap back around
+/// to flashcard — "ทำ loop ทุกเกมแล้ว กลับมา flashcard ใหม่".
+///
+/// Order follows the desirable-difficulty / levels-of-processing gradient
+/// the SPEC.md §7 ladder is built on, shallow→deep:
+/// 1. flashcard        — pure recognition (lowest retrieval effort)
+/// 2. matching         — recognition, batched (discriminating among pairs)
+/// 3. oddOneOut        — semantic categorization (deeper: judge meaning)
+/// 4. wordAssociation  — semantic-network retrieval (spreading activation)
+/// 5. cloze            — cued recall in sentence context (retrieval w/ cues)
+/// 6. wordScramble     — orthographic production (assemble the form)
+/// 7. dictation        — full production from audio (hardest: no visual cue)
+///
+/// Ramping shallow→deep within one sitting mirrors expanding retrieval
+/// practice: each successful shallower retrieval boosts accessibility for
+/// the deeper one that follows. Unbuildable rounds (e.g. Odd One Out
+/// without enough related_words) fall back to flashcard at render time in
+/// play_screen.
 const List<GameType> kPracticeGameCycle = [
   GameType.flashcard,
   GameType.matching,
   GameType.oddOneOut,
-  GameType.cloze,
   GameType.wordAssociation,
+  GameType.cloze,
   GameType.wordScramble,
   GameType.dictation,
 ];

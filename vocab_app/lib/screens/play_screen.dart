@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/data/vocab_store.dart';
 import 'package:vocab_app/domain/fsrs/fsrs5.dart';
+import 'package:vocab_app/domain/mastery.dart';
 import 'package:vocab_app/domain/new_card_governor.dart';
 import 'package:vocab_app/domain/retention_tuner.dart';
 import 'package:vocab_app/domain/session_engine.dart';
@@ -22,6 +23,7 @@ import 'package:vocab_app/games/word_association.dart';
 import 'package:vocab_app/games/word_scramble.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
+import 'package:vocab_app/screens/you_pass_page.dart';
 import 'package:vocab_app/widgets/highlight_card.dart';
 
 class PlayScreen extends StatefulWidget {
@@ -276,7 +278,29 @@ class _PlayScreenState extends State<PlayScreen> {
       newIntroducedDelta: isFirstEncounter ? 1 : 0,
     );
     await _maybeRetune();
+    await _maybeCelebrateMastery(rating);
     await _advance();
+  }
+
+  /// "You Pass" (domain/mastery.dart): after a correct answer, check
+  /// whether every word has now been passed in every game type; the first
+  /// time that becomes true, show the full-screen celebration once
+  /// (persisted via the `you_pass_shown` setting so it never re-fires).
+  Future<void> _maybeCelebrateMastery(Rating rating) async {
+    if (rating == Rating.again) return; // an Again can't complete the grid
+    if (_state!.settings['you_pass_shown'] == '1') return;
+    final passed = await widget.store.loadPassedWordGamePairs();
+    if (!fullMasteryReached(words: _state!.words, passedPairs: passed)) {
+      return;
+    }
+    await widget.store.saveSetting('you_pass_shown', '1');
+    _state!.settings['you_pass_shown'] = '1';
+    if (!mounted) return;
+    await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => YouPassPage(wordCount: _state!.words.length),
+      ),
+    );
   }
 
   Future<void> _handleMatchingResult(Map<int, Rating> ratings) async {

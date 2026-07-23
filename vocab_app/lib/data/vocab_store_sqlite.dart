@@ -176,6 +176,17 @@ class VocabStoreSqlite implements VocabStore {
   }
 
   @override
+  Future<Set<String>> loadPassedWordGamePairs() async {
+    final rows = await _db.rawQuery(
+      "SELECT DISTINCT word_id, game_type FROM reviews_log "
+      "WHERE rating != 'again'",
+    );
+    return {
+      for (final r in rows) '${r['word_id']}:${r['game_type']}',
+    };
+  }
+
+  @override
   Future<void> saveSetting(String key, String value) async {
     await _db.insert('settings', {
       'key': key,

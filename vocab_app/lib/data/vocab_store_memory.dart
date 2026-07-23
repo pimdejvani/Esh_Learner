@@ -96,6 +96,12 @@ class VocabStoreMemory implements VocabStore {
   }) async => _reviewLog.where((r) => !r.ts.isBefore(since)).toList();
 
   @override
+  Future<Set<String>> loadPassedWordGamePairs() async => {
+    for (final r in _reviewLog)
+      if (r.rating != Rating.again) '${r.wordId}:${r.gameType}',
+  };
+
+  @override
   Future<void> saveSetting(String key, String value) async {
     _settings[key] = value;
   }

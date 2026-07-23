@@ -37,6 +37,11 @@ abstract class VocabStore {
 
   Future<List<ReviewLogEntry>> loadRecentReviews({required DateTime since});
 
+  /// Distinct (word, game) pairs ever answered correctly (rating !=
+  /// again), as `"$wordId:$gameType"` strings — the mastery grid behind
+  /// the "You Pass" screen (domain/mastery.dart).
+  Future<Set<String>> loadPassedWordGamePairs();
+
   Future<void> saveSetting(String key, String value);
 
   Future<DailyStats?> loadDailyStats(String date);

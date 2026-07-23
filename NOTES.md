@@ -943,3 +943,41 @@ with the day (post-3am boundary) always opening on a flashcard.
   practice rounds rotate through the full `kPracticeGameCycle` in order;
   `firstSessionOfDay` forces the opening item to flashcard while
   preserving word/source.
+
+## "You Pass" full-mastery screen + practice-cycle order rationale (2026-07-23)
+
+Two follow-ups in the same session:
+
+- **"You Pass" screen** (user: "ถ้าฉันสามารถผ่านทุกคำในทุกเกมได้จะให้ขึ้น
+  หน้าจอ You Pass"). Condition: every word answered correctly (rating ≠
+  Again — Hard counts, it's still a correct answer) **at least once in
+  every one of the 7 game types**, derived from `reviews_log` rather than
+  new state: `loadPassedWordGamePairs()` on the store interface (SQLite:
+  one `SELECT DISTINCT word_id, game_type ... WHERE rating != 'again'`;
+  memory impl mirrors it) returns the passed cells of the words×games
+  grid, and `domain/mastery.dart` (`fullMasteryReached` /
+  `masteryProgress`) evaluates it. `play_screen._maybeCelebrateMastery`
+  runs after each *correct* rating (skips on Again — an Again can never
+  complete the grid; also skips once shown), and the first time the grid
+  is complete it persists `you_pass_shown=1` and pushes the full-screen
+  `screens/you_pass_page.dart` — trophy badge, "You Pass", "X คำ × 7
+  เกม", staggered entrance, "เล่นต่อ" button popping back to the endless
+  session. Fires exactly once per profile.
+- **Practice-cycle order finalized** (user delegated the rotation order:
+  "เกมเป็นคนกำหนดได้เลยเอาตามความเหมาะสมที่สอดคล้องกับวิจัย").
+  `kPracticeGameCycle` now ramps shallow→deep per levels-of-processing /
+  expanding-retrieval logic, with the rationale documented on the
+  constant: flashcard (recognition) → matching (batched recognition) →
+  oddOneOut (semantic categorization) → **wordAssociation (semantic
+  network — moved before cloze)** → cloze (cued recall in context) →
+  wordScramble (orthographic production) → dictation (full production
+  from audio). Only change from the initial order: association now
+  precedes cloze, since semantic-network retrieval is shallower than
+  producing the word inside a sentence.
+
+### Verification performed
+- `flutter analyze`: clean, 0 issues.
+- `flutter test`: **102/102 passing** — new `mastery_test.dart` (5 cases:
+  full grid true; single missing cell false; fresh profile false;
+  progress counting; memory-store pair collection ignoring Again and
+  deduping repeats).
