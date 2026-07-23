@@ -1,9 +1,11 @@
-# NOTES — Phase 1 build log
+# NOTES — build log
 
 Working dir: `C:\Users\pimde\Desktop\pimdej\English`. This is the single doc to read to
 understand what happened. It covers: what data sources were actually used vs.
-approximated, what's built/tested, what's explicitly deferred to Phase 2/3, and
-deviations from SPEC.md with reasoning.
+approximated, what's built/tested, what's explicitly deferred, and
+deviations from SPEC.md with reasoning. Newest sections are at the bottom;
+the **"Current status & remaining work"** section at the very end is the
+quickest way to see where things stand.
 
 **Update (2026-07-22):** the A/B test mentioned below (`tools/model_compare.py`,
 results in `tools/model_compare_results/`) is done and its winner
@@ -1043,6 +1045,47 @@ Again lookup; streaks still count all 7 games). play_screen's
 YouPassPage shows "X คำ × 4 เกม". Tests: 111/111 (new cases: mastery
 list is exactly the 4; streak-only passes add no cell; streak-only Again
 does NOT reset the grid).
+
+## Current status & remaining work (as of 2026-07-23, commit f170bb4)
+
+**Where things stand:** Phase 1 + Phase 2 are fully built (all 7 games,
+both hint families, full grammar notes, word detail page, focus topic,
+credits). The dataset is 153 real-sourced A1 words (sole exception:
+"make"'s Thai gloss — no Wiktionary Thai entry exists). The meeting-iq
+UI design pass is applied. The 2026-07-23 product revisions (all above)
+are in: no intro card, no forced sleep-gap, 3am day boundary,
+endless continuous-play loop, and the You Pass clean-round system
+(4 mastery games / 3 streak-only games, global reset on a mastery-game
+miss, missing-cell targeting + streak fade-out). `flutter analyze`
+clean; `flutter test` 111/111; Windows desktop build works; repo is
+github.com/pimdejvani/Esh_Learner (public).
+
+**Remaining work, in recommended order:**
+
+1. **User plays the current build and gives UI/feel feedback** — none of
+   today's flow changes have been play-tested by a human yet.
+   (`cd vocab_app; flutter run -d windows`)
+2. **Show clean-round progress** — the You Pass grid fills silently;
+   the player can't see "340/612" or notice a reset happened.
+   `masteryProgress()` already computes the numbers; only the UI surface
+   is undecided (play screen chip vs progress page card — user was asked
+   but hasn't chosen yet).
+3. **Scale dataset 153 → 3,000 words** (Phase 3, biggest job): run the
+   full pipeline — Oxford list all bands, Wiktionary translations,
+   WordNet flags, SWOW associations (source file already on disk covers
+   the full vocabulary), gemini-3.6-flash sentences/grammar notes for
+   ~2,850 more words (real API cost), QC pass, rebuild seed DB.
+4. **Images** — schema fields (`has_photo`/`image_url`/license/author)
+   exist but the Openverse/Wikimedia URL-resolution step was never run,
+   and the app has no runtime image fetch/cache yet (SPEC.md decision #3).
+5. **iOS build** — SPEC.md targets iOS-first but everything so far is
+   verified on Windows/web only; needs a Mac/Xcode (not possible on this
+   machine).
+6. **Tune FSRS/governor from real logs** — blocked on accumulated play
+   data, revisit after the user has played for a while.
+7. **Backlog (explicitly deferred):** confusables ("อย่าสับสนกับ"), app
+   name + logo, Android/iPad decision, multi-device sync, full XP/badge
+   layer.
 
 ### Verification performed
 - `flutter analyze`: clean, 0 issues.
