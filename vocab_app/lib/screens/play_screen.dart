@@ -52,6 +52,12 @@ class _PlayScreenState extends State<PlayScreen> {
   // been built — that queue always opens with a flashcard round.
   bool _firstSessionOfDay = false;
   String? _error;
+  // Monotonic per-item sequence used as the game widget's key. Without it
+  // Flutter reuses the previous game's State when two same-type games run
+  // back to back — the old flashcard's "already flew off-screen, input
+  // locked" state leaked into the next card, leaving an invisible stuck
+  // card (bug reported 2026-07-23).
+  int _itemSeq = 0;
 
   Map<int, Word> _wordById = {};
   Map<int, List<RelatedWord>> _relatedByWord = {};
@@ -374,6 +380,7 @@ class _PlayScreenState extends State<PlayScreen> {
   }
 
   Future<void> _advance() async {
+    _itemSeq++;
     _queue.removeAt(0);
     if (_queue.isEmpty) {
       await _refillQueue();
@@ -408,7 +415,7 @@ class _PlayScreenState extends State<PlayScreen> {
             ),
           ),
           const SizedBox(height: 12),
-          _buildItem(item),
+          KeyedSubtree(key: ValueKey(_itemSeq), child: _buildItem(item)),
         ],
       ),
     );
