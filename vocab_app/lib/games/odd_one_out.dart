@@ -117,8 +117,13 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text('คำไหนไม่เข้าพวก?', style: Theme.of(context).textTheme.titleMedium),
+        Text(
+          'คำไหนไม่เข้าพวก?',
+          textAlign: TextAlign.center,
+          style: Theme.of(context).textTheme.titleMedium,
+        ),
         const SizedBox(height: 16),
         Wrap(
           spacing: 8,
@@ -144,6 +149,7 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
                       _selectedId == widget.oddWord.id
                           ? 'ถูกต้อง! "${widget.oddWord.headword}" ไม่เข้าพวก'
                           : 'คำที่ไม่เข้าพวกคือ "${widget.oddWord.headword}"',
+                      textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.bodyLarge,
                     ),
                     const SizedBox(height: 16),

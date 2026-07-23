@@ -268,7 +268,15 @@ class SessionEngine {
     final usedIds = <int>{};
     outer:
     for (final game in kPracticeGameCycle) {
-      final rounds = 2 + _random.nextInt(3); // 2..4 rounds of this game
+      // Flashcard blocks are longer: 4-8 cards, TRIANGULAR distribution
+      // (user spec 2026-07-23: "โอกาสสุ่มยิ่งอยู่ตรงกลางค่าเฉลี่ยยิ่งออก
+      // เยอะ"). Sum of two dice — the simplest bell-ish generator:
+      // 4 + d3 + d3 gives 4..8 with P(6) highest (3/9), P(5)=P(7)=2/9,
+      // and the extremes 4/8 rarest (1/9 each). Other games stay a
+      // uniform 2-4 rounds.
+      final rounds = game == GameType.flashcard
+          ? 4 + _random.nextInt(3) + _random.nextInt(3)
+          : 2 + _random.nextInt(3);
       for (var r = 0; r < rounds; r++) {
         final unused =
             practicePool.where((w) => !usedIds.contains(w.id)).toList();

@@ -300,8 +300,13 @@ void main() {
         }
       }
       expect(runGames, kPracticeGameCycle);
-      for (final len in runLengths) {
-        expect(len, inInclusiveRange(2, 4));
+      for (var i = 0; i < runGames.length; i++) {
+        if (runGames[i] == GameType.flashcard) {
+          // Flashcard blocks: 4-8 cards (triangular, revision 2026-07-23).
+          expect(runLengths[i], inInclusiveRange(4, 8));
+        } else {
+          expect(runLengths[i], inInclusiveRange(2, 4));
+        }
       }
       // Every round uses a distinct word.
       expect(
