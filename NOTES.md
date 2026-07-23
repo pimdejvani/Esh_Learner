@@ -1035,7 +1035,8 @@ games); the counting exists purely to finish that single flawless round.
 the full 7-game clean round was statistically unreachable (0.99^1071 ≈
 0.002%), so the mastery grid now counts only the games with unambiguous
 right/wrong answers — **Flashcard, Matching, Cloze, Dictation**
-(`kMasteryGames` in domain/mastery.dart, 153×4 = 612 cells). The other
+(`kMasteryGames` in domain/mastery.dart, 153×4 = 612 cells at the time
+— 253×4 = 1,012 after the same evening's A2/B1 extension). The other
 three (Odd One Out / Word Association / Word Scramble) stay in the play
 rotation but are **streak-only**: their passes don't fill grid cells and
 their misses don't reset the round (both store impls filter
@@ -1149,11 +1150,14 @@ desktop build works; repo is github.com/pimdejvani/Esh_Learner
 
 **Remaining work, in recommended order:**
 
-1. **User plays the current build and gives UI/feel feedback** — none of
-   today's flow changes have been play-tested by a human yet.
+1. **User plays the current build and gives UI/feel feedback** — the
+   evening batch hasn't been play-tested by a human yet: matching
+   connect-the-lines v2, 4-8-card flashcard blocks, the 100 new A2/B1
+   words, the ~80% retention zone, hot-streak burst + 40% new share.
    (`cd vocab_app; flutter run -d windows`)
 2. **Show clean-round progress** — the You Pass grid fills silently;
-   the player can't see "340/612" or notice a reset happened.
+   the player can't see "xxx/1,012" (253 words × 4 mastery games after
+   the dataset extension) or notice a reset happened.
    `masteryProgress()` already computes the numbers; only the UI surface
    is undecided (play screen chip vs progress page card — user was asked
    but hasn't chosen yet).
