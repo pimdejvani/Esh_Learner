@@ -67,6 +67,26 @@ class _MatchingGameState extends State<MatchingGame> {
   final Map<int, GlobalKey> _leftKeys = {};
   final Map<int, GlobalKey> _rightKeys = {};
 
+  /// Each pair gets its own line color (user request) so crossing lines
+  /// stay readable. Keyed by the LEFT word id, assigned from the shuffled
+  /// left column's order.
+  final Map<int, Color> _pairColor = {};
+
+  static const List<Color> _palette = [
+    Color(0xFF1E88E5), // blue
+    Color(0xFFF4511E), // deep orange
+    Color(0xFF8E24AA), // purple
+    Color(0xFF00897B), // teal
+    Color(0xFFD81B60), // pink
+    Color(0xFF3949AB), // indigo
+    Color(0xFF6D4C41), // brown
+    Color(0xFF00ACC1), // cyan
+    Color(0xFF7CB342), // light green
+    Color(0xFFFFB300), // amber
+    Color(0xFF5E35B1), // deep purple
+    Color(0xFFC0CA33), // lime
+  ];
+
   @override
   void initState() {
     super.initState();
@@ -78,8 +98,9 @@ class _MatchingGameState extends State<MatchingGame> {
         .map((b) => _MatchingTile(b.word.id, b.coreSense.meaningTh))
         .toList()
       ..shuffle();
-    for (final t in _left) {
+    for (final (i, t) in _left.indexed) {
       _leftKeys[t.wordId] = GlobalKey();
+      _pairColor[t.wordId] = _palette[i % _palette.length];
     }
     for (final t in _right) {
       _rightKeys[t.wordId] = GlobalKey();
@@ -111,15 +132,38 @@ class _MatchingGameState extends State<MatchingGame> {
     });
   }
 
+  /// Tap on a LEFT chip. If it already has a (unlocked) link, a single tap
+  /// removes it AND selects the chip — one tap = "undo, ready to redo",
+  /// the fix-a-pair gesture users kept reaching for. Otherwise it just
+  /// toggles selection.
   void _tapLeft(int wordId) {
     if (_locked.contains(wordId) || _finished) return;
-    setState(() => _selectedLeft = _selectedLeft == wordId ? null : wordId);
+    setState(() {
+      if (_links.containsKey(wordId)) {
+        _links.remove(wordId);
+        _wrongNow.remove(wordId);
+        _selectedLeft = wordId;
+      } else {
+        _selectedLeft = _selectedLeft == wordId ? null : wordId;
+      }
+    });
   }
 
+  /// Tap on a RIGHT chip. With a left chip selected it links; with nothing
+  /// selected, tapping a linked right chip breaks that pair (so a mistake
+  /// can be fixed from either end).
   void _tapRight(int wordId) {
     if (_finished) return;
     final sel = _selectedLeft;
-    if (sel != null) _link(sel, wordId);
+    if (sel != null) {
+      _link(sel, wordId);
+      return;
+    }
+    final linkedLeft = _links.entries
+        .where((e) => e.value == wordId && !_locked.contains(e.key))
+        .map((e) => e.key)
+        .firstOrNull;
+    if (linkedLeft != null) _unlink(linkedLeft);
   }
 
   void _check() {
@@ -201,7 +245,7 @@ class _MatchingGameState extends State<MatchingGame> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
-          'ลากเส้นจับคู่ (หรือแตะซ้ายแล้วแตะขวา) · แก้คู่ได้จนกว่าจะกดตรวจ',
+          'ลากเส้นจับคู่ (หรือแตะซ้ายแล้วแตะขวา) · แตะคำที่โยงแล้วเพื่อแก้คู่',
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
             color: Theme.of(context).colorScheme.onSurfaceVariant,
           ),
@@ -218,9 +262,8 @@ class _MatchingGameState extends State<MatchingGame> {
             wrong: Set.of(_wrongNow),
             dragFromLeft: _dragFromLeft,
             dragPos: _dragPos,
-            lockedColor: colors.success,
+            pairColors: _pairColor,
             wrongColor: colors.danger,
-            tentativeColor: Theme.of(context).colorScheme.primary,
           ),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -264,7 +307,7 @@ class _MatchingGameState extends State<MatchingGame> {
                     ? colors.danger.withValues(alpha: 0.2)
                     : null,
             side: linked && !locked && !wrong
-                ? BorderSide(color: Theme.of(context).colorScheme.primary)
+                ? BorderSide(color: _pairColor[t.wordId]!, width: 2)
                 : null,
             onSelected: locked ? null : (_) => _tapLeft(t.wordId),
           ),
@@ -275,7 +318,12 @@ class _MatchingGameState extends State<MatchingGame> {
 
   Widget _rightChip(_MatchingTile t) {
     final lockedTo = _locked.any((l) => _links[l] == t.wordId);
-    final linked = _links.containsValue(t.wordId);
+    // Which (unlocked) left word points at this right chip — used to tint
+    // the border with that pair's line color.
+    final linkedLeft = _links.entries
+        .where((e) => e.value == t.wordId)
+        .map((e) => e.key)
+        .firstOrNull;
     final colors = context.appColors;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
@@ -285,8 +333,13 @@ class _MatchingGameState extends State<MatchingGame> {
           label: Text(t.text),
           backgroundColor:
               lockedTo ? colors.success.withValues(alpha: 0.3) : null,
-          side: linked && !lockedTo
-              ? BorderSide(color: Theme.of(context).colorScheme.primary)
+          side: linkedLeft != null && !lockedTo
+              ? BorderSide(
+                  color: _wrongNow.contains(linkedLeft)
+                      ? colors.danger
+                      : _pairColor[linkedLeft]!,
+                  width: 2,
+                )
               : null,
           onPressed: lockedTo ? null : () => _tapRight(t.wordId),
         ),
@@ -309,9 +362,8 @@ class _LinkLinePainter extends CustomPainter {
     required this.wrong,
     required this.dragFromLeft,
     required this.dragPos,
-    required this.lockedColor,
+    required this.pairColors,
     required this.wrongColor,
-    required this.tentativeColor,
   });
 
   final GlobalKey paintKey;
@@ -322,9 +374,10 @@ class _LinkLinePainter extends CustomPainter {
   final Set<int> wrong;
   final int? dragFromLeft;
   final Offset? dragPos;
-  final Color lockedColor;
+
+  /// Per-pair line color, keyed by left word id.
+  final Map<int, Color> pairColors;
   final Color wrongColor;
-  final Color tentativeColor;
 
   Offset? _anchor(GlobalKey key, {required bool rightEdge}) {
     final stackBox = paintKey.currentContext?.findRenderObject() as RenderBox?;
@@ -358,11 +411,9 @@ class _LinkLinePainter extends CustomPainter {
       final rightKey = rightKeys[rightId];
       final b = rightKey == null ? null : _anchor(rightKey, rightEdge: false);
       if (a == null || b == null) return;
-      final color = locked.contains(leftId)
-          ? lockedColor
-          : wrong.contains(leftId)
-              ? wrongColor
-              : tentativeColor;
+      final color = wrong.contains(leftId)
+          ? wrongColor
+          : pairColors[leftId] ?? wrongColor;
       _line(canvas, a, b, color);
     });
     // Live drag preview.
@@ -371,7 +422,8 @@ class _LinkLinePainter extends CustomPainter {
     if (from != null && pos != null) {
       final a = _anchor(leftKeys[from]!, rightEdge: true);
       if (a != null) {
-        _line(canvas, a, pos, tentativeColor.withValues(alpha: 0.7));
+        final c = pairColors[from] ?? wrongColor;
+        _line(canvas, a, pos, c.withValues(alpha: 0.7));
       }
     }
   }

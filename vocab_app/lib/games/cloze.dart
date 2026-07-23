@@ -49,6 +49,27 @@ class _ClozeGameState extends State<ClozeGame> {
     return sentences.length > 1 ? sentences[1] : sentences.first;
   }
 
+  /// Grammar reasoning for the reveal (SPEC.md 9.2, user feedback
+  /// 2026-07-23): when the sentence's blank uses an inflected form, find
+  /// its `word_forms` row — via the sentence's explicit `form_id` link
+  /// first, else by matching the cloze target text — so the answer card
+  /// can explain WHY that form is used, not just show the right string.
+  WordForm? get _grammarForm {
+    final s = _sentence;
+    final forms = widget.bundle.forms;
+    if (s.formId != null) {
+      for (final f in forms) {
+        if (f.id == s.formId) return f;
+      }
+    }
+    final target = s.clozeTarget.toLowerCase();
+    if (target == widget.bundle.word.headword.toLowerCase()) return null;
+    for (final f in forms) {
+      if (f.formText.toLowerCase() == target) return f;
+    }
+    return null;
+  }
+
   void _submit() {
     if (widget.bundle.sentences.isEmpty) return;
     _stopwatch.stop();
@@ -158,6 +179,13 @@ class _ClozeGameState extends State<ClozeGame> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     ResultBanner(result: _result!, correctText: s.clozeTarget),
+                    if (_grammarForm != null) ...[
+                      const SizedBox(height: 8),
+                      _GrammarReasonCard(
+                        form: _grammarForm!,
+                        headword: widget.bundle.word.headword,
+                      ),
+                    ],
                     const SizedBox(height: 8),
                     WordResultCard(
                       bundle: widget.bundle,
@@ -174,6 +202,59 @@ class _ClozeGameState extends State<ClozeGame> {
                 ),
         ),
       ],
+    );
+  }
+}
+
+/// "ทำไมถึงใช้รูปนี้" — grammar reasoning shown with the cloze reveal when
+/// the blank was an inflected form (SPEC.md 9.2). Surfaces the word_forms
+/// row's Thai grammar note so the player learns the RULE, not just the
+/// string that happened to fit.
+class _GrammarReasonCard extends StatelessWidget {
+  const _GrammarReasonCard({required this.form, required this.headword});
+
+  final WordForm form;
+  final String headword;
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Card(
+      color: scheme.secondaryContainer.withValues(alpha: 0.5),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(Icons.menu_book, size: 18, color: scheme.primary),
+                const SizedBox(width: 6),
+                Text(
+                  'ทำไมถึงเป็น "${form.formText}"',
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
+                if (form.isIrregular) ...[
+                  const SizedBox(width: 6),
+                  Text(
+                    'ผันไม่ปกติ',
+                    style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                      color: scheme.error,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ],
+              ],
+            ),
+            const SizedBox(height: 6),
+            Text('$headword → ${form.formText} (${form.formType})'),
+            if (form.grammarNoteTh.isNotEmpty) ...[
+              const SizedBox(height: 4),
+              Text(form.grammarNoteTh),
+            ],
+          ],
+        ),
+      ),
     );
   }
 }
