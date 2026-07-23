@@ -1,0 +1,197 @@
+Stage A: fetching CEFR lists + ranking by SWOW response frequency...
+  A2: 768 eligible, keeping top 62 (freq 5115..1583)
+  B1: 680 eligible, keeping top 62 (freq 6589..802)
+Stage B: wiktapi translations for 84 words (90 already cached)...
+  10/84 fetched
+  20/84 fetched
+  30/84 fetched
+  40/84 fetched
+  50/84 fetched
+  60/84 fetched
+  70/84 fetched
+  80/84 fetched
+  84/84 fetched
+Stage B done: 22 words with no Thai row (will be approx-flagged)
+Stage C: generating content for 124 words (0 already done)...
+  --- round 1: 124 words ---
+    [pain] PASSED
+    [death] PASSED
+    [war] PASSED
+    [church] PASSED
+    [wood] PASSED
+    [sweet] PASSED
+    [loud] PASSED
+    [blood] PASSED
+    [god] PASSED
+    [soft] PASSE       [smell] PASSED
+    [ocean] PASSED
+    [hurt] PASSED
+    [fight] PASSED
+    [metal] PASSED
+    [wet] PASSED
+    [crazy] PASSED
+    [stupid] PASSED
+    [ship] PASSED
+    [gun] PASSED
+    [fear] PASSED
+    [power] PASSED
+    [round] PASSED
+    [law] PASSED
+    [dead] PASSED
+    attempt 1 failed: 503 UNAVAILABLE. {'error': {'code': 503, 'me    [round] PASSED
+    [law] PASSED
+    [h    [soccer] PASSED
+    [secondly] PASSED
+    [se    [skin] PASSED
+    [king] PASSED
+    [brain] PASSED
+    [scary] PASSED
+    [gold] PASSED
+    [grass] PASSED
+    [crime] PASSED
+    [fall] FAILED: cloze_target 'fell' not a form of 'fall' 
+    [alone] PASSED
+    [bright] PASS        [heart] FAILED: cloze_target "heart's" not in en_text 
+    [army] FAILED: cloze_target 'armies' not a    [particular] PASSED
+    [organize] PASSED
+    [opportunity] PASSED
+    [nerv    [noise] FAILED: only 2 distinc    [motorcycle] PASSED
+    [method] PASSED
+    [memory] PASSED
+    [medicine] PASSED
+    [medical] PASSED
+    [low] PASSED
+    [link] PASSED
+    [likely] PASSED
+    [learning] PASSED
+    [intelligent] PASSED
+    [insect] PASSED
+    [informal] PASSED
+    [incredible] PASSED
+    [hill] PASSED
+    [high] PASSED
+    [helpful] PASSED
+    [heavy] PASSED
+    [hall] PASSED
+    [ground] PASSED
+    [greet] PASSED
+    [grass] PASSED
+    [future] PASSED
+    [worldwide] PASSED
+    [violent] PASSED
+    [unnecessary] FAILED: cloze_target 'un-necessary' not a form of 'unnecessary' 
+    [ugly] FAILED: cloze_target 'uglier' not a form of 'ugly' 
+    [truth] PASSED
+    [total] PASSED
+    [tent] PASSED
+    [tax] PASSED
+    [successfully] PASSED
+    [software] PASSED
+    [smooth] PASSED
+    [shiny] PASSED
+    [shelf] PASSED
+    [sharp] PASSED
+    [set] PASSED
+    [scientific] FAILED: only 1 distinct forms 
+    [sailor] PASSED
+    [safety] PASSED
+    [revise] PASSED
+    [responsible] PASSED
+    [respect] PASSED
+    [relaxing] PASSED
+    [relative] PASSED
+    [private] PASSED
+    [princess] PASSED
+    [press] PASSED
+    [poisonous] PASSED
+    [poison] PASSED
+    [persuade] PASSED
+    [painful] PASSED
+    [obvious] PASSED
+    [nation] PASSED
+    [muscle] PASSED
+    attempt 1 failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    [murder] PASSED
+    [mental] FAILED: only 1 distinct forms 
+    [locate] PASSED
+    [length] FAILED: only 2 distinct forms 
+    [legal] FAILED: only 1 distinct forms 
+    [laboratory] PASSED
+    [intelligence] PASSED
+    [injure] PASSED
+    [importance] PASSED
+    [impact] PASSED
+    [hunt] FAILED: cloze_target "hunt's" not in en_text 
+    [growth] PASSED
+    [grateful] PASSED
+    [glad] PASSED
+    [generous] PASSED
+    [garage] PASSED
+    [freeze] FAILED: cloze_target 'froze' not a form of 'freeze' 
+    [flood] PASSED
+    [fasten] PASSED
+    [familiar] PASSED
+    [fairly] FAILED: only 1 distinct forms 
+    [face] PASSED
+    [experience] PASSED
+    [exchange] PASSED
+    [entertainment] PASSED
+    [employment] PASSED
+    [embarrassing] PASSED
+    [election] PASSED
+    [economy] PASSED
+  --- round 2: 13 words ---
+    [top] PASSED
+    [steal] FAILED: cloze_target 'stole' not a form of 'steal' 
+    [running] FAILED: cloze_target 'runs' not a form of 'running' 
+    [public] PASSED
+    [unnecessary] PASSED
+    [ugly] FAILED: cloze_target 'uglier' not a form of 'ugly' 
+    [scientific] PASSED
+    [mental] PASSED
+    [length] PASSED
+    [legal] PASSED
+    [hunt] PASSED
+    [freeze] FAILED: cloze_target 'froze' not a form of 'freeze' 
+    [fairly] PASSED
+  --- round 3: 4 words ---
+    [steal] FAILED: cloze_target 'stole' not a form of 'steal' 
+    [running] FAILED: cloze_target 'runs' not a form of 'running' 
+    [ugly] FAILED: cloze_target 'uglier' not a form of 'ugly' 
+    [freeze] FAILED: cloze_target 'froze' not a form of 'freeze' 
+Stage C done: 120 passed, 4 unrecoverable: ['steal', 'running', 'ugly', 'freeze']
+Stage D: A2 -> 50 words
+Stage D: B1 -> 50 words
+Stage D: scanning SWOW strength file (~1.4M rows)...
+Traceback (most recent call last):
+  File "C:\Users\pimde\Desktop\pimdej\English\tools\extend_a2b1.py", line 509, in <module>
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
+    ^^^^^^
+  File "C:\Users\pimde\Desktop\pimdej\English\tools\extend_a2b1.py", line 504, in main
+    log(f"Stage D: wrote {out}")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pimde\Desktop\pimdej\English\tools\extend_a2b1.py", line 416, in stage_d
+    vocab = old_set | new_set
+                ~~~~^~~~~~~~~
+StopIteration
+] FAILED: cloze_ta    [broken] FAILED: cloze_target 'break' not a form of 'broken' 
+    [lie] FAILED: cloze_target 'lying' not a form of 'lie' 
+    [empty] PASSED
+    [move] FAILED: cloze_target 'mov    [knife] FAILED: cloze_target 'knives' not a form of 'knife' 
+    [ugly] FAILED: cloze_t    [win] FAILED: cloze_target 'won' not a form of 'win' 
+    [tiny] FAILED: cloze_target 'tinier' not a form of 'tiny' 
+    [stick] FAILED: cloze_target 'stuck' not a form of 'stick' approx despite having wiktionary candidates
+Stage C done: 111 passed, 12 unrecoverable: ['fall', 'army', 'sky', 'lost', 'fly', 'broken', 'lie', 'move', 'ugly', 'win', 'tiny', 'stick']
+Stage D: A2 -> 50 words
+Stage D: B1 -> 50 words
+Stage D: scanning SWOW strength file (~1.4M rows)...
+Traceback (most recent call last):
+  File "C:\Users\pimde\Desktop\pimdej\English\tools\extend_a2b1.py", line 511, in <module>
+    def main():
+        ~~~~^^
+  File "C:\Users\pimde\Desktop\pimdej\English\tools\extend_a2b1.py", line 506, in main
+    "b1": [c["headword"] for c in final["B1"]],
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pimde\Desktop\pimdej\English\tools\extend_a2b1.py", line 418, in stage_d
+    # SWOW: new words as cues -> top 6 in-vocab responses; old cues also
+StopIteration

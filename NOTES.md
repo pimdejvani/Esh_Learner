@@ -1046,19 +1046,102 @@ YouPassPage shows "X คำ × 4 เกม". Tests: 111/111 (new cases: mastery
 list is exactly the 4; streak-only passes add no cell; streak-only Again
 does NOT reset the grid).
 
-## Current status & remaining work (as of 2026-07-23, commit f170bb4)
+## 2026-07-23 (afternoon): play-test feedback rounds 1-6
+
+Rapid feedback loop with the user playing the Windows build. Each round
+committed separately — see git log between 53d8032 and this section's
+commit. Summary of what changed:
+
+- **Flashcard v2**: swipeable immediately (no reveal-button gate), tap
+  flips to the answer (optional), only รู้จัก/ไม่รู้จัก everywhere
+  (Hard/Easy buttons removed), first-encounter รู้จัก upgrades to
+  Rating.easy. Stuck-invisible-card bug fixed (per-item KeyedSubtree —
+  Flutter was reusing the previous card's flown-off-screen State).
+- **Matching v2**: connect-the-lines — drag (or tap-tap) to link, lines
+  drawn with a per-pair color from a 12-color palette, chip borders
+  match their line color, tap a linked chip to break/redo the pair,
+  "ตรวจคำตอบ" grades all at once (correct locks green, wrong turns red
+  and stays editable). Ratings unchanged (Good/Hard, never Again).
+  Batch: always 4-6 pairs (random), ≥2 of them the player's
+  weakest-streak words.
+- **Cloze**: sentence TTS button (pre-answer reads the blank as
+  "blank"), center-aligned text, grammar reason card on reveal when the
+  blank is an inflected form (283/362 inflected sentences covered via
+  form-text matching; form_id was never populated by the pipeline).
+- **Dictation**: slow-speech replay button (TtsService.speakSlow, rate
+  0.22 vs 0.45). Credits page crash fixed (cascade-precedence bug
+  sorting a const list).
+- **Difficulty/pacing**: retention target moved to the ~80% zone
+  (initial/target 0.80, range [0.70,0.90], one-time boot migration for
+  stored >0.84 values). NewCardGovernor hot-streak burst: last-20
+  accuracy ≥92% + no backlog → cap +3 per answer; same signal lets
+  buildQueue top the queue up with beyond-cap new words to 40% share.
+- **Practice loop shape**: each game in the cycle now runs 2-4 random
+  consecutive rounds (distinct words); flashcard blocks are 4-8 cards
+  with a triangular distribution (4 + d3 + d3 — user asked that middle
+  counts be most likely). Play screen content centered, max-width 480
+  (mobile-first).
+
+## 2026-07-23 (evening): dataset extension — +50 A2, +50 B1 (253 total)
+
+User request: "เพิ่มคำศัพท์ A2 มาสัก 50 คำ B1 50 คำ". Built
+`tools/extend_a2b1.py`, a resumable 4-stage extension pipeline reusing
+the exact Phase 1 sources:
+
+- **Selection**: Oxford CEFR JSON (same Kolia951 source), each band
+  EXCLUDING words listed in any lower band (the source lists a word
+  under every band one of its senses belongs to — without this filter
+  "face"/"head"/"now" showed up as B1). Candidates ranked by SWOW-EN18
+  responseStats `Freq.R123` (real human-association frequency; also
+  guarantees SWOW coverage). Top 62/band as buffer, first 50 passing
+  all QC kept.
+- **POS**: WordNet most-frequent synset POS (+ manual override map).
+- **meaning_th**: real Wiktionary Thai rows via wiktapi.dev; the model
+  only PICKS among them. 7 words had no Thai row and are approx-flagged
+  like "make": round, rude, bright, calm, shiny, fancy, rough.
+- **Readings/collocations/sentences/grammar notes**: gemini-3.6-flash,
+  5-word batches, validated with the Phase 1 QC rules + new metadata
+  checks (Thai-script reading, stress within syllable count, IPA shape,
+  wiktionary-pick honesty). 9 words were dropped as "unrecoverable"
+  purely because the cheap same-stem cloze check rejects legitimate
+  irregular forms (armies, skies, knives, uglier, tinier, stuck, shied):
+  army, sky, lost, broken, knife, ugly, tiny, stick, shy — future pass
+  should teach the validator irregular inflection instead.
+- **SWOW**: new words as cues get top-6 in-vocab rows (all 100/100 have
+  real data); old A1 cues additionally gain up to 2 strongest new-word
+  responses. Gotchas hit: the strength file is TAB-delimited (unlike
+  responseStats) and effectively unquoted (needs QUOTE_NONE +
+  field_size_limit); responseStats' first unnamed column is a row index
+  that dwarfs the real Freq columns.
+- **Merge**: generated `tools/ext_a2b1.py` (WORDS_EXT/THAI_EXT/
+  SENT_EXT/SWOW_EXT), consumed by try/except-import shims appended to
+  wordlist.py / thai_data.py / llm_sentences.py / swow_associations.py —
+  build_dataset.py itself unchanged except widening the irregular
+  verb/plural tables for A2/B1 coverage (break/broke, foot/feet, ...).
+- **Result**: vocab.db rebuilt — 253 words (153 A1 + 50 A2 + 50 B1),
+  1,265 sentences, 0 new words missing sentences or related_words, QC
+  pass OK, `flutter test` 117/117. freq_rank continues 154..253 (A2
+  before B1) so new-card introduction finishes A1 first.
+- **Process debt noted**: stages B/C ran serially (polite 0.4s/req
+  wiktapi, sequential Gemini batches) — should be parallelized per the
+  user's standing preference before the full 3,000-word run.
+
+## Current status & remaining work (as of 2026-07-23 evening)
 
 **Where things stand:** Phase 1 + Phase 2 are fully built (all 7 games,
 both hint families, full grammar notes, word detail page, focus topic,
-credits). The dataset is 153 real-sourced A1 words (sole exception:
-"make"'s Thai gloss — no Wiktionary Thai entry exists). The meeting-iq
-UI design pass is applied. The 2026-07-23 product revisions (all above)
-are in: no intro card, no forced sleep-gap, 3am day boundary,
-endless continuous-play loop, and the You Pass clean-round system
-(4 mastery games / 3 streak-only games, global reset on a mastery-game
-miss, missing-cell targeting + streak fade-out). `flutter analyze`
-clean; `flutter test` 111/111; Windows desktop build works; repo is
-github.com/pimdejvani/Esh_Learner (public).
+credits). The dataset is **253 real-sourced words — 153 A1 + 50 A2 +
+50 B1** (approx-flagged Thai glosses: "make" + the 7 adjectives listed
+above). The meeting-iq UI design pass is applied. All 2026-07-23
+product revisions are in: no intro card, no forced sleep-gap, 3am day
+boundary, endless continuous-play loop with 2-4 rounds/game (flashcard
+4-8 triangular), You Pass clean-round system (4 mastery games / 3
+streak-only, global reset, missing-cell targeting + streak fade-out),
+~80% retention zone, hot-streak burst + 40% new-word share, flashcard
+v2 swipe-first UX, matching v2 connect-the-lines, centered mobile
+layout. `flutter analyze` clean; `flutter test` 117/117; Windows
+desktop build works; repo is github.com/pimdejvani/Esh_Learner
+(public).
 
 **Remaining work, in recommended order:**
 
@@ -1070,11 +1153,13 @@ github.com/pimdejvani/Esh_Learner (public).
    `masteryProgress()` already computes the numbers; only the UI surface
    is undecided (play screen chip vs progress page card — user was asked
    but hasn't chosen yet).
-3. **Scale dataset 153 → 3,000 words** (Phase 3, biggest job): run the
-   full pipeline — Oxford list all bands, Wiktionary translations,
-   WordNet flags, SWOW associations (source file already on disk covers
-   the full vocabulary), gemini-3.6-flash sentences/grammar notes for
-   ~2,850 more words (real API cost), QC pass, rebuild seed DB.
+3. **Scale dataset 253 → 3,000 words** (Phase 3, biggest job): the
+   machinery now exists — `tools/extend_a2b1.py` did 100 words
+   end-to-end (2026-07-23) and is resumable/rerunnable. Before the full
+   run: (a) parallelize stages B/C (currently serial — user's standing
+   preference), (b) teach the cloze validator irregular inflections
+   (armies/knives/stuck were wrongly rejected), (c) raise
+   PER_BAND_TARGET / add B2. Real API cost.
 4. **3D card-flip motion for Flashcard** (user request 2026-07-23, same
    tier as the 3,000-word job): tapping the card should show a real
    flip animation (rotateY via `AnimationController` +

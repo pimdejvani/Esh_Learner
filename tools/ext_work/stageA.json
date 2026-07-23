@@ -1,0 +1,750 @@
+{
+ "A2": [
+  {
+   "headword": "pain",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 5115.0
+  },
+  {
+   "headword": "death",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 5049.0
+  },
+  {
+   "headword": "war",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 4279.0
+  },
+  {
+   "headword": "church",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 3971.0
+  },
+  {
+   "headword": "wood",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 3938.0
+  },
+  {
+   "headword": "sweet",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 3593.0
+  },
+  {
+   "headword": "loud",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 3444.0
+  },
+  {
+   "headword": "blood",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 3298.0
+  },
+  {
+   "headword": "god",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 3277.0
+  },
+  {
+   "headword": "soft",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 3073.0
+  },
+  {
+   "headword": "smell",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2968.0
+  },
+  {
+   "headword": "ocean",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2954.0
+  },
+  {
+   "headword": "hurt",
+   "pos": "v",
+   "cefr": "A2",
+   "swow_freq": 2909.0
+  },
+  {
+   "headword": "fight",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2882.0
+  },
+  {
+   "headword": "metal",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2877.0
+  },
+  {
+   "headword": "wet",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 2870.0
+  },
+  {
+   "headword": "crazy",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 2798.0
+  },
+  {
+   "headword": "stupid",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 2626.0
+  },
+  {
+   "headword": "ship",
+   "pos": "v",
+   "cefr": "A2",
+   "swow_freq": 2524.0
+  },
+  {
+   "headword": "gun",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2493.0
+  },
+  {
+   "headword": "fear",
+   "pos": "v",
+   "cefr": "A2",
+   "swow_freq": 2471.0
+  },
+  {
+   "headword": "power",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2469.0
+  },
+  {
+   "headword": "round",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2372.0
+  },
+  {
+   "headword": "law",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2358.0
+  },
+  {
+   "headword": "dead",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 2274.0
+  },
+  {
+   "headword": "rude",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 2263.0
+  },
+  {
+   "headword": "skin",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2219.0
+  },
+  {
+   "headword": "king",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2214.0
+  },
+  {
+   "headword": "brain",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2204.0
+  },
+  {
+   "headword": "scary",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 2176.0
+  },
+  {
+   "headword": "gold",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2166.0
+  },
+  {
+   "headword": "grass",
+   "pos": "v",
+   "cefr": "A2",
+   "swow_freq": 2117.0
+  },
+  {
+   "headword": "crime",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2093.0
+  },
+  {
+   "headword": "alone",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 2050.0
+  },
+  {
+   "headword": "bright",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 2045.0
+  },
+  {
+   "headword": "heart",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2045.0
+  },
+  {
+   "headword": "army",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2033.0
+  },
+  {
+   "headword": "government",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 2026.0
+  },
+  {
+   "headword": "smile",
+   "pos": "v",
+   "cefr": "A2",
+   "swow_freq": 2015.0
+  },
+  {
+   "headword": "noise",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1973.0
+  },
+  {
+   "headword": "rock",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1957.0
+  },
+  {
+   "headword": "wind",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1957.0
+  },
+  {
+   "headword": "disease",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1942.0
+  },
+  {
+   "headword": "medicine",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1909.0
+  },
+  {
+   "headword": "mind",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1892.0
+  },
+  {
+   "headword": "danger",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1835.0
+  },
+  {
+   "headword": "earth",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1835.0
+  },
+  {
+   "headword": "sky",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1832.0
+  },
+  {
+   "headword": "knowledge",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1780.0
+  },
+  {
+   "headword": "heavy",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 1763.0
+  },
+  {
+   "headword": "lost",
+   "pos": "v",
+   "cefr": "A2",
+   "swow_freq": 1752.0
+  },
+  {
+   "headword": "top",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1741.0
+  },
+  {
+   "headword": "broken",
+   "pos": "v",
+   "cefr": "A2",
+   "swow_freq": 1724.0
+  },
+  {
+   "headword": "scared",
+   "pos": "v",
+   "cefr": "A2",
+   "swow_freq": 1711.0
+  },
+  {
+   "headword": "empty",
+   "pos": "v",
+   "cefr": "A2",
+   "swow_freq": 1697.0
+  },
+  {
+   "headword": "oil",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1655.0
+  },
+  {
+   "headword": "knife",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1642.0
+  },
+  {
+   "headword": "stone",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1630.0
+  },
+  {
+   "headword": "circle",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1629.0
+  },
+  {
+   "headword": "hole",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1610.0
+  },
+  {
+   "headword": "peace",
+   "pos": "n",
+   "cefr": "A2",
+   "swow_freq": 1600.0
+  },
+  {
+   "headword": "secret",
+   "pos": "adj",
+   "cefr": "A2",
+   "swow_freq": 1583.0
+  }
+ ],
+ "B1": [
+  {
+   "headword": "sex",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 6589.0
+  },
+  {
+   "headword": "religion",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 3861.0
+  },
+  {
+   "headword": "smart",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 3062.0
+  },
+  {
+   "headword": "annoying",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 2662.0
+  },
+  {
+   "headword": "alcohol",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 2060.0
+  },
+  {
+   "headword": "dirt",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1997.0
+  },
+  {
+   "headword": "sharp",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1973.0
+  },
+  {
+   "headword": "politics",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1854.0
+  },
+  {
+   "headword": "calm",
+   "pos": "v",
+   "cefr": "B1",
+   "swow_freq": 1781.0
+  },
+  {
+   "headword": "sand",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1741.0
+  },
+  {
+   "headword": "drunk",
+   "pos": "v",
+   "cefr": "B1",
+   "swow_freq": 1693.0
+  },
+  {
+   "headword": "court",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1644.0
+  },
+  {
+   "headword": "shiny",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1616.0
+  },
+  {
+   "headword": "magic",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1556.0
+  },
+  {
+   "headword": "ugly",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1530.0
+  },
+  {
+   "headword": "marriage",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1459.0
+  },
+  {
+   "headword": "smooth",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1453.0
+  },
+  {
+   "headword": "tiny",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1416.0
+  },
+  {
+   "headword": "silly",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1378.0
+  },
+  {
+   "headword": "stick",
+   "pos": "v",
+   "cefr": "B1",
+   "swow_freq": 1368.0
+  },
+  {
+   "headword": "truth",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1341.0
+  },
+  {
+   "headword": "beauty",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1302.0
+  },
+  {
+   "headword": "ghost",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1293.0
+  },
+  {
+   "headword": "strength",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1266.0
+  },
+  {
+   "headword": "rope",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1235.0
+  },
+  {
+   "headword": "mad",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1208.0
+  },
+  {
+   "headword": "judge",
+   "pos": "v",
+   "cefr": "B1",
+   "swow_freq": 1201.0
+  },
+  {
+   "headword": "happiness",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1180.0
+  },
+  {
+   "headword": "needle",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1171.0
+  },
+  {
+   "headword": "murder",
+   "pos": "v",
+   "cefr": "B1",
+   "swow_freq": 1160.0
+  },
+  {
+   "headword": "tight",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1153.0
+  },
+  {
+   "headword": "bee",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1120.0
+  },
+  {
+   "headword": "fancy",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1101.0
+  },
+  {
+   "headword": "mess",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1094.0
+  },
+  {
+   "headword": "force",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1093.0
+  },
+  {
+   "headword": "lonely",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1085.0
+  },
+  {
+   "headword": "rough",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1085.0
+  },
+  {
+   "headword": "iron",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1076.0
+  },
+  {
+   "headword": "honest",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 1041.0
+  },
+  {
+   "headword": "cloth",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 1035.0
+  },
+  {
+   "headword": "shy",
+   "pos": "v",
+   "cefr": "B1",
+   "swow_freq": 1020.0
+  },
+  {
+   "headword": "liquid",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 996.0
+  },
+  {
+   "headword": "brave",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 986.0
+  },
+  {
+   "headword": "waste",
+   "pos": "v",
+   "cefr": "B1",
+   "swow_freq": 985.0
+  },
+  {
+   "headword": "muscle",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 952.0
+  },
+  {
+   "headword": "forever",
+   "pos": "adv",
+   "cefr": "B1",
+   "swow_freq": 942.0
+  },
+  {
+   "headword": "bomb",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 902.0
+  },
+  {
+   "headword": "priest",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 901.0
+  },
+  {
+   "headword": "dust",
+   "pos": "v",
+   "cefr": "B1",
+   "swow_freq": 894.0
+  },
+  {
+   "headword": "flag",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 877.0
+  },
+  {
+   "headword": "pot",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 876.0
+  },
+  {
+   "headword": "confused",
+   "pos": "v",
+   "cefr": "B1",
+   "swow_freq": 875.0
+  },
+  {
+   "headword": "illegal",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 870.0
+  },
+  {
+   "headword": "measure",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 869.0
+  },
+  {
+   "headword": "odd",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 842.0
+  },
+  {
+   "headword": "upset",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 841.0
+  },
+  {
+   "headword": "mud",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 831.0
+  },
+  {
+   "headword": "religious",
+   "pos": "adj",
+   "cefr": "B1",
+   "swow_freq": 831.0
+  },
+  {
+   "headword": "weapon",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 826.0
+  },
+  {
+   "headword": "loss",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 814.0
+  },
+  {
+   "headword": "poison",
+   "pos": "v",
+   "cefr": "B1",
+   "swow_freq": 805.0
+  },
+  {
+   "headword": "leather",
+   "pos": "n",
+   "cefr": "B1",
+   "swow_freq": 802.0
+  }
+ ]
+}

@@ -46,9 +46,33 @@ IRREGULAR_VERBS = {
     "read": ("read", "read"), "write": ("wrote", "written"), "meet": ("met", "met"),
     "drink": ("drank", "drunk"), "drive": ("drove", "driven"), "run": ("ran", "run"),
     "sing": ("sang", "sung"), "buy": ("bought", "bought"),
+    # A2/B1 extension coverage (2026-07-23) -- superset is harmless, only
+    # consulted for words actually tagged pos='v' in the word list:
+    "be": ("was", "been"), "become": ("became", "become"), "begin": ("began", "begun"),
+    "break": ("broke", "broken"), "bring": ("brought", "brought"), "build": ("built", "built"),
+    "catch": ("caught", "caught"), "choose": ("chose", "chosen"), "cut": ("cut", "cut"),
+    "do": ("did", "done"), "draw": ("drew", "drawn"), "fall": ("fell", "fallen"),
+    "feel": ("felt", "felt"), "fight": ("fought", "fought"), "fly": ("flew", "flown"),
+    "forget": ("forgot", "forgotten"), "get": ("got", "got"), "grow": ("grew", "grown"),
+    "hit": ("hit", "hit"), "hold": ("held", "held"), "hurt": ("hurt", "hurt"),
+    "keep": ("kept", "kept"), "leave": ("left", "left"), "lend": ("lent", "lent"),
+    "let": ("let", "let"), "lie": ("lay", "lain"), "lose": ("lost", "lost"),
+    "mean": ("meant", "meant"), "pay": ("paid", "paid"), "put": ("put", "put"),
+    "ride": ("rode", "ridden"), "ring": ("rang", "rung"), "rise": ("rose", "risen"),
+    "say": ("said", "said"), "send": ("sent", "sent"), "shine": ("shone", "shone"),
+    "shut": ("shut", "shut"), "spend": ("spent", "spent"), "steal": ("stole", "stolen"),
+    "swim": ("swam", "swum"), "take": ("took", "taken"), "teach": ("taught", "taught"),
+    "tell": ("told", "told"), "think": ("thought", "thought"), "throw": ("threw", "thrown"),
+    "understand": ("understood", "understood"), "wake": ("woke", "woken"),
+    "wear": ("wore", "worn"), "win": ("won", "won"),
 }
 
-IRREGULAR_PLURALS = {"child": "children", "man": "men", "woman": "women"}
+IRREGULAR_PLURALS = {
+    "child": "children", "man": "men", "woman": "women",
+    # A2/B1 extension coverage (2026-07-23):
+    "foot": "feet", "tooth": "teeth", "person": "people",
+    "mouse": "mice", "sheep": "sheep", "fish": "fish",
+}
 
 VERBS = {w for w, pos, *_ in WORDS if pos == "v"}
 NOUNS = {w for w, pos, *_ in WORDS if pos == "n"}
