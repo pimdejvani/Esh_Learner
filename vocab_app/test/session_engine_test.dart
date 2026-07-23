@@ -95,6 +95,48 @@ void main() {
       final newCards = queue.where((i) => i.source == QueueSource.newCard).toList();
       expect(newCards.length, 1);
     });
+
+    test(
+      'cap never dead-ends the queue: once the cap is used up for the day, '
+      'remaining new words still fill in rather than ending the session',
+      () {
+        final words = List.generate(5, (i) => _word(i, freq: i));
+        final queue = engine.buildQueue(
+          words: words,
+          srsStates: {},
+          now: now,
+          newCardCap: 2,
+          // Cap already fully used (e.g. earlier rebuilds this session
+          // already introduced 2 words, which flip to CardState.learning
+          // and drop out of newCandidates on the next rebuild — simulated
+          // here directly via newIntroducedToday). With no overdue/practice
+          // content, remainingCap alone would leave the queue empty; the
+          // fallback should surface the rest instead of ending the session.
+          newIntroducedToday: 2,
+        );
+        expect(queue, isNotEmpty);
+        final newCards = queue.where((i) => i.source == QueueSource.newCard).toList();
+        expect(newCards.length, 5);
+        expect(newCards.map((i) => i.wordId), [0, 1, 2, 3, 4]);
+      },
+    );
+
+    test('cap is respected as-is when other content already fills the queue', () {
+      final words = List.generate(5, (i) => _word(i, freq: i));
+      final srs = {0: _due(0, now.subtract(const Duration(hours: 1)))};
+      final queue = engine.buildQueue(
+        words: words,
+        srsStates: srs,
+        now: now,
+        newCardCap: 2,
+        newIntroducedToday: 0,
+      );
+      final newCards = queue.where((i) => i.source == QueueSource.newCard).toList();
+      // Word 0 already has SRS state so it's not a new candidate; of the
+      // remaining 4, only 2 should be admitted since the queue is non-empty
+      // (the overdue review) and the fallback shouldn't kick in.
+      expect(newCards.length, 2);
+    });
   });
 
   group('interleaving', () {
@@ -168,8 +210,8 @@ void main() {
   });
 
   group('game selection ladder', () {
-    test('new words map to intro, not a game', () {
-      expect(gamesForState(CardState.newState), [GameType.intro]);
+    test('new words map to flashcard (first-meet round, no separate intro)', () {
+      expect(gamesForState(CardState.newState), [GameType.flashcard]);
     });
 
     test('learning words map to flashcard/Matching/Odd One Out', () {
@@ -191,6 +233,79 @@ void main() {
         gamesForState(CardState.mature).toSet(),
         {GameType.dictation, GameType.wordScramble},
       );
+    });
+  });
+
+  group('continuous-play loop (SPEC.md 7 revision 2026-07-23)', () {
+    test('new-card items are flashcard rounds, not a separate intro type', () {
+      final queue = engine.buildQueue(
+        words: [_word(1)],
+        srsStates: {},
+        now: now,
+        newCardCap: 3,
+        newIntroducedToday: 0,
+      );
+      expect(queue.single.source, QueueSource.newCard);
+      expect(queue.single.gameType, GameType.flashcard);
+    });
+
+    test('extra practice includes learning words (loop never dead-ends early)', () {
+      // All words already met today (learning, not due) — the old
+      // young/mature-only pool would be empty here and end the session.
+      final words = List.generate(4, (i) => _word(i, freq: i));
+      final srs = {
+        for (final w in words)
+          w.id: _due(w.id, now.add(const Duration(days: 2))),
+      };
+      final queue = engine.buildQueue(
+        words: words,
+        srsStates: srs,
+        now: now,
+        newCardCap: 8,
+        newIntroducedToday: 8,
+      );
+      final practice =
+          queue.where((i) => i.source == QueueSource.extraPractice).toList();
+      expect(practice.length, 4);
+    });
+
+    test('practice rounds rotate through the full game cycle in order', () {
+      final words = List.generate(7, (i) => _word(i, freq: i));
+      final srs = {
+        for (final w in words)
+          w.id: _due(w.id, now.add(const Duration(days: 2))),
+      };
+      final queue = engine.buildQueue(
+        words: words,
+        srsStates: srs,
+        now: now,
+        newCardCap: 8,
+        newIntroducedToday: 8,
+      );
+      final practice =
+          queue.where((i) => i.source == QueueSource.extraPractice).toList();
+      expect(practice.map((i) => i.gameType).toList(), kPracticeGameCycle);
+    });
+
+    test('first session of the day always opens with a flashcard round', () {
+      // A due mature word would normally get Dictation/Scramble first.
+      final words = [_word(1)];
+      final srs = {
+        1: _due(1, now.subtract(const Duration(hours: 5)),
+            state: CardState.mature),
+      };
+      final queue = engine.buildQueue(
+        words: words,
+        srsStates: srs,
+        now: now,
+        newCardCap: 0,
+        newIntroducedToday: 0,
+        firstSessionOfDay: true,
+      );
+      expect(queue.first.gameType, GameType.flashcard);
+      // Source/word are preserved — only the game is overridden.
+      expect(queue.first.source, QueueSource.overdueReview);
+      expect(queue.first.wordId, 1);
     });
   });
 

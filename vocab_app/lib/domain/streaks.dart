@@ -14,6 +14,25 @@ String dateKey(DateTime d) {
   return '${x.year}-$mm-$dd';
 }
 
+/// Local hour (0-23) a new "logical day" starts for bookkeeping (streaks,
+/// daily stats, new-word pacing) — SPEC.md 6.2 revision: no more forced
+/// multi-day review gap, but the app still needs to know when "today"
+/// rolls over. A session at 1am still belongs to the day before; one after
+/// 3am is already the next day.
+const int kDayBoundaryHour = 3;
+
+/// Maps a real wall-clock moment [realNow] to the calendar date of the
+/// logical day it belongs to (see [kDayBoundaryHour]). Use this — not
+/// [dateKey] directly — whenever converting an actual "now" timestamp for
+/// streak/daily-stats bookkeeping. [dateKey]/[dayStreak]/[monthHeatmap]
+/// stay plain calendar-date math so grid/date-range iteration (which walks
+/// synthetic midnight timestamps, not real events) isn't thrown off by the
+/// shift.
+DateTime logicalDate(DateTime realNow, {int boundaryHour = kDayBoundaryHour}) =>
+    _dateOnly(realNow.subtract(Duration(hours: boundaryHour)));
+
+String logicalDateKey(DateTime realNow) => dateKey(logicalDate(realNow));
+
 /// Consecutive days (counting back from [now]) with `streak_kept == true`.
 /// Today not having been kept yet doesn't break the streak (it just hasn't
 /// been earned yet) — mirrors Gymmer's "current week may still be open"

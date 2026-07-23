@@ -2,6 +2,13 @@
 /// TTS + [image if has_photo]); reveal answer, then swipe/tap left=Again,
 /// right=Good (buttons for Hard/Easy per 6.1 mapping table).
 ///
+/// 2026-07-23 revision: this game also replaces the old separate intro
+/// card for brand-new words ([isNewWord]) — the front shows just the
+/// word, the reveal shows the full back (meaning/reading/sentence), and
+/// the swipe labels become รู้จัก (right = Good) / ไม่รู้จัก (left =
+/// Again) with only those two buttons; that first swipe doubles as the
+/// word's first FSRS review.
+///
 /// Real drag-follow-the-finger physics (NOTES.md's UI design pass): once
 /// revealed, the result card translates and rotates live under the
 /// finger via `onPanUpdate` (not a fixed-direction dismiss animation with
@@ -27,12 +34,17 @@ class FlashcardSwipeGame extends StatefulWidget {
     required this.direction,
     required this.tts,
     required this.onRated,
+    this.isNewWord = false,
   });
 
   final WordBundle bundle;
   final Direction direction;
   final TtsService tts;
   final ValueChanged<Rating> onRated;
+
+  /// First-ever encounter of this word (no SRS history yet): swipe labels
+  /// become รู้จัก/ไม่รู้จัก and the Hard/Easy buttons are hidden.
+  final bool isNewWord;
 
   @override
   State<FlashcardSwipeGame> createState() => _FlashcardSwipeGameState();
@@ -64,6 +76,9 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
       final anim = _releaseAnimation;
       if (anim != null) setState(() => _dragOffset = anim.value);
     });
+    // First-ever encounter: auto-pronounce, same dual-coding behaviour the
+    // old intro card had (word + sound together on first sight).
+    if (widget.isNewWord) widget.tts.speak(widget.bundle.word.headword);
   }
 
   @override
@@ -128,6 +143,8 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
     final colors = context.appColors;
     final rotation = (_dragOffset.dx / 900).clamp(-0.35, 0.35);
     final swipeProgress = (_dragOffset.dx.abs() / _distanceThreshold).clamp(0.0, 1.0);
+    final rightLabel = widget.isNewWord ? 'รู้จัก' : 'จำได้';
+    final leftLabel = widget.isNewWord ? 'ไม่รู้จัก' : 'ลืม';
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -182,7 +199,7 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
                               top: 12,
                               left: 16,
                               child: _SwipeStamp(
-                                label: 'จำได้',
+                                label: rightLabel,
                                 color: colors.success,
                                 opacity: swipeProgress,
                               ),
@@ -192,7 +209,7 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
                               top: 12,
                               right: 16,
                               child: _SwipeStamp(
-                                label: 'ลืม',
+                                label: leftLabel,
                                 color: colors.danger,
                                 opacity: swipeProgress,
                               ),
@@ -211,7 +228,7 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
           )
         else ...[
           Text(
-            'ปัดขวา = จำได้ · ปัดซ้าย = ลืม',
+            'ปัดขวา = $rightLabel · ปัดซ้าย = $leftLabel',
             style: Theme.of(context).textTheme.bodySmall?.copyWith(
               color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
@@ -221,29 +238,31 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               _RateButton(
-                label: 'ลืม',
+                label: leftLabel,
                 icon: Icons.close,
                 color: colors.danger,
                 onTap: () => _rateViaButton(Rating.again),
               ),
+              if (!widget.isNewWord)
+                _RateButton(
+                  label: 'Hard',
+                  icon: Icons.trending_flat,
+                  color: colors.warning,
+                  onTap: () => _rateViaButton(Rating.hard),
+                ),
               _RateButton(
-                label: 'Hard',
-                icon: Icons.trending_flat,
-                color: colors.warning,
-                onTap: () => _rateViaButton(Rating.hard),
-              ),
-              _RateButton(
-                label: 'จำได้',
+                label: rightLabel,
                 icon: Icons.check,
                 color: colors.success,
                 onTap: () => _rateViaButton(Rating.good),
               ),
-              _RateButton(
-                label: 'ง่ายมาก',
-                icon: Icons.star,
-                color: Theme.of(context).colorScheme.primary,
-                onTap: () => _rateViaButton(Rating.easy),
-              ),
+              if (!widget.isNewWord)
+                _RateButton(
+                  label: 'ง่ายมาก',
+                  icon: Icons.star,
+                  color: Theme.of(context).colorScheme.primary,
+                  onTap: () => _rateViaButton(Rating.easy),
+                ),
             ],
           ),
         ],

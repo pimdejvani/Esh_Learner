@@ -9,7 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/data/vocab_store.dart';
 import 'package:vocab_app/domain/fsrs/fsrs5.dart';
-import 'package:vocab_app/domain/fsrs/sleep_gap.dart';
 import 'package:vocab_app/domain/new_card_governor.dart';
 import 'package:vocab_app/domain/retention_tuner.dart';
 import 'package:vocab_app/domain/session_engine.dart';
@@ -23,7 +22,6 @@ import 'package:vocab_app/games/word_association.dart';
 import 'package:vocab_app/games/word_scramble.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
-import 'package:vocab_app/screens/word_intro_page.dart';
 import 'package:vocab_app/widgets/highlight_card.dart';
 
 class PlayScreen extends StatefulWidget {
@@ -48,6 +46,9 @@ class _PlayScreenState extends State<PlayScreen> {
   List<WordBundle> _currentBatch = [];
   bool _loading = true;
   int _newIntroducedToday = 0;
+  // True until the first queue of a new logical day (3am boundary) has
+  // been built — that queue always opens with a flashcard round.
+  bool _firstSessionOfDay = false;
   String? _error;
 
   Map<int, Word> _wordById = {};
@@ -71,7 +72,7 @@ class _PlayScreenState extends State<PlayScreen> {
   Future<void> _boot() async {
     try {
       final state = await widget.store.load();
-      final today = dateKey(DateTime.now());
+      final today = logicalDateKey(DateTime.now());
       final stats = await widget.store.loadDailyStats(today);
       final relatedByWord = await widget.store.loadAllRelatedWords();
       final focusTopicId = int.tryParse(state.settings['focus_topic'] ?? '');
@@ -81,6 +82,10 @@ class _PlayScreenState extends State<PlayScreen> {
       setState(() {
         _state = state;
         _newIntroducedToday = stats?.newIntroduced ?? 0;
+        // No daily_stats row yet for today's logical date = nothing has
+        // been played since the 3am boundary -> open the day with a
+        // flashcard round.
+        _firstSessionOfDay = stats == null;
         _wordById = {for (final w in state.words) w.id: w};
         _relatedByWord = relatedByWord;
         _focusTopicWordIds = focusTopicWordIds;
@@ -108,7 +113,9 @@ class _PlayScreenState extends State<PlayScreen> {
       newCardCap: _newCardCap,
       newIntroducedToday: _newIntroducedToday,
       focusTopicWordIds: _focusTopicWordIds,
+      firstSessionOfDay: _firstSessionOfDay,
     );
+    _firstSessionOfDay = false; // consumed — only the day's opening queue
     await _loadNext();
   }
 
@@ -234,49 +241,22 @@ class _PlayScreenState extends State<PlayScreen> {
     return learningWords.take(6).toList();
   }
 
-  Future<void> _handleIntroContinue() async {
-    final bundle = _currentBundle!;
-    final now = DateTime.now();
-    final srs = SrsState.initial(bundle.word.id, now);
-    final candidateDue = _scheduler
-        .review(
-          current: srs,
-          rating: Rating.good,
-          now: now,
-          requestRetention: _requestRetention,
-        )
-        .dueAt;
-    final sleepGapped = applySleepGap(now, candidateDue);
-    final updated = srs.copyWith(
-      state: CardState.learning,
-      dueAt: sleepGapped,
-      lastReview: now,
-      reps: 1,
-    );
-    await widget.store.upsertSrsState(updated);
-    _state!.srsStates[bundle.word.id] = updated;
-    _newIntroducedToday++;
-    await _persistDailyStats(newIntroducedDelta: 1);
-    await _advance();
-  }
-
   Future<void> _handleRated(int wordId, Rating rating, GameType game) async {
     final now = DateTime.now();
+    // A word with no SRS row yet is a brand-new word whose first flashcard
+    // swipe (รู้จัก/ไม่รู้จัก) doubles as both its introduction AND its
+    // first FSRS review (2026-07-23 revision — no separate intro step).
+    final isFirstEncounter = _state!.srsStates[wordId] == null;
     final current = _state!.srsStates[wordId] ?? SrsState.initial(wordId, now);
-    var updated = _scheduler.review(
+    final updated = _scheduler.review(
       current: current,
       rating: rating,
       now: now,
       requestRetention: _requestRetention,
     );
-    // Sleep-gap only meaningfully applies to a word's very first
-    // post-intro review; subsequent FSRS intervals are already >= 1 day
-    // in virtually all cases, so we only special-case reps==1.
-    if (current.reps <= 1) {
-      updated = updated.copyWith(dueAt: applySleepGap(now, updated.dueAt));
-    }
     await widget.store.upsertSrsState(updated);
     _state!.srsStates[wordId] = updated;
+    if (isFirstEncounter) _newIntroducedToday++;
 
     final direction = current.lastDirection == Direction.enTh
         ? Direction.thEn
@@ -291,7 +271,10 @@ class _PlayScreenState extends State<PlayScreen> {
         elapsedMs: 0,
       ),
     );
-    await _persistDailyStats(reviewsDelta: 1);
+    await _persistDailyStats(
+      reviewsDelta: 1,
+      newIntroducedDelta: isFirstEncounter ? 1 : 0,
+    );
     await _maybeRetune();
     await _advance();
   }
@@ -334,7 +317,7 @@ class _PlayScreenState extends State<PlayScreen> {
     int newIntroducedDelta = 0,
     int reviewsDelta = 0,
   }) async {
-    final today = dateKey(DateTime.now());
+    final today = logicalDateKey(DateTime.now());
     final existing =
         await widget.store.loadDailyStats(today) ??
         const DailyStats(
@@ -380,16 +363,17 @@ class _PlayScreenState extends State<PlayScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (item.gameType != GameType.intro) ...[
-            AnimatedSwitcher(
-              duration: const Duration(milliseconds: 220),
-              child: _GameModeIndicator(
-                key: ValueKey(item.gameType),
-                gameType: item.gameType,
+          AnimatedSwitcher(
+            duration: const Duration(milliseconds: 220),
+            child: _GameModeIndicator(
+              key: ValueKey(
+                (item.gameType, _state!.srsStates[item.wordId] == null),
               ),
+              gameType: item.gameType,
+              isNewWord: _state!.srsStates[item.wordId] == null,
             ),
-            const SizedBox(height: 12),
-          ],
+          ),
+          const SizedBox(height: 12),
           _buildItem(item),
         ],
       ),
@@ -398,19 +382,13 @@ class _PlayScreenState extends State<PlayScreen> {
 
   Widget _buildItem(SessionItem item) {
     switch (item.gameType) {
-      case GameType.intro:
-        if (_currentBundle == null) return const SizedBox.shrink();
-        return WordIntroPage(
-          bundle: _currentBundle!,
-          tts: widget.tts,
-          onContinue: _handleIntroContinue,
-        );
       case GameType.flashcard:
         if (_currentBundle == null) return const SizedBox.shrink();
         return FlashcardSwipeGame(
           bundle: _currentBundle!,
           direction: item.direction,
           tts: widget.tts,
+          isNewWord: _state!.srsStates[item.wordId] == null,
           onRated: (r) => _handleRated(item.wordId, r, GameType.flashcard),
         );
       case GameType.cloze:
@@ -477,13 +455,24 @@ class _PlayScreenState extends State<PlayScreen> {
 /// ladder) so the player gets a quick at-a-glance read of what kind of
 /// round they're in.
 class _GameModeIndicator extends StatelessWidget {
-  const _GameModeIndicator({super.key, required this.gameType});
+  const _GameModeIndicator({
+    super.key,
+    required this.gameType,
+    this.isNewWord = false,
+  });
 
   final GameType gameType;
+
+  /// First-ever encounter (flashcard round doubling as the word's
+  /// introduction) — labelled "คำใหม่" so the player knows this card has
+  /// no history yet.
+  final bool isNewWord;
 
   @override
   Widget build(BuildContext context) {
     final (icon, label, tone) = switch (gameType) {
+      GameType.flashcard when isNewWord =>
+        (Icons.auto_awesome, 'คำใหม่', HighlightTone.lavender),
       GameType.flashcard => (Icons.style, 'Flashcard', HighlightTone.sky),
       GameType.matching => (Icons.grid_view, 'Matching', HighlightTone.sky),
       GameType.oddOneOut => (Icons.category, 'Odd One Out', HighlightTone.sky),
@@ -491,7 +480,6 @@ class _GameModeIndicator extends StatelessWidget {
       GameType.wordAssociation => (Icons.hub, 'Word Association', HighlightTone.lavender),
       GameType.wordScramble => (Icons.shuffle, 'Word Scramble', HighlightTone.blue),
       GameType.dictation => (Icons.hearing, 'Dictation', HighlightTone.blue),
-      GameType.intro => (Icons.auto_awesome, 'คำใหม่', HighlightTone.lavender),
     };
     return HighlightCard(icon: icon, title: label, tone: tone, dense: true);
   }

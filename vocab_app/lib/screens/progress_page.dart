@@ -77,7 +77,7 @@ class _ProgressPageState extends State<ProgressPage> {
       for (final e in _stats.entries)
         if (e.value.streakKept) e.key,
     };
-    final streak = dayStreak(keptDates, now: DateTime.now());
+    final streak = dayStreak(keptDates, now: logicalDate(DateTime.now()));
     final heat = monthHeatmap(
       {for (final e in _stats.entries) e.key: e.value.reviewsDone},
       DateTime.now(),
@@ -113,7 +113,7 @@ class _ProgressPageState extends State<ProgressPage> {
             Expanded(
               child: HighlightCard(
                 icon: Icons.auto_awesome,
-                title: '${_stats[dateKey(DateTime.now())]?.newIntroduced ?? 0} คำ',
+                title: '${_stats[logicalDateKey(DateTime.now())]?.newIntroduced ?? 0} คำ',
                 subtitle: 'คำใหม่วันนี้',
                 tone: HighlightTone.lavender,
               ),

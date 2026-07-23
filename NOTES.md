@@ -849,3 +849,97 @@ This pass adds real Tinder/Hinge-style drag-follow physics:
   `credits_page.dart`, false positives from "auth" being a substring of
   "Author"). Matches the task's expectation for a single-device, local-only
   app with no account system; no changes were needed here.
+
+## Scheduling revision: no forced sleep-gap wait, 3am day boundary (2026-07-23)
+
+User tested the desktop build and hit the sleep-gap wall almost immediately
+(a handful of intro cards, then "เคลียร์หมดแล้ว เก่งมาก! กลับมาใหม่พรุ่งนี้"
+with zero games played) — reasonable per the original spec, but the user
+decided the design should change: **no fixed number of games/days per word
+— if the user is ready to keep going, let them**, while still needing to
+know when "today" rolls over, anchored at **3am** instead of midnight.
+
+Changes (SPEC.md §6.2/§6.4 updated to match):
+
+- **Removed the sleep-anchored floor entirely.** `lib/domain/fsrs/sleep_gap.dart`
+  deleted; `play_screen.dart`'s `_handleIntroContinue`/`_handleRated` no
+  longer override `dueAt` — it's whatever FSRS-5 computes natively (for a
+  first "Good" that's ~3.9 days at the default 0.88 retention target; for an
+  "Again" it's ~12h, so same-day re-review is now possible again, which
+  `fsrs5.dart`'s doc comment now documents instead of claiming it's
+  unreachable).
+- **New-card cap no longer dead-ends a session.** `session_engine.dart`'s
+  `buildQueue` still uses `new_card_cap` to pace an ordinary day, but if
+  overdue + capped-new + extra-practice would leave the queue empty while
+  un-introduced words remain, it now falls back to adding the rest rather
+  than ending the session. The governor (backlog/accuracy-based cap
+  adjustment) is unchanged — it's a pacing suggestion now, not a hard wall.
+- **3am logical-day boundary**, added as `kDayBoundaryHour`/`logicalDate`/
+  `logicalDateKey` in `streaks.dart`. Deliberately kept separate from the
+  existing `dateKey`/`dayStreak`/`monthHeatmap` (which stay plain
+  calendar-date math, since they iterate synthetic calendar grid dates, not
+  real event timestamps) — `logicalDateKey` is only used at the handful of
+  call sites that convert a genuine `DateTime.now()` for bookkeeping
+  (`play_screen.dart`'s daily-stats keys, `progress_page.dart`'s streak
+  cursor + "new words today" stat lookup). A session at 1am still counts
+  toward yesterday; one after 3am already starts a new logical day.
+
+### Verification performed
+
+- `flutter analyze`: clean, 0 issues.
+- `flutter test`: 93/93 passing (removed 3 stale `sleep_gap` tests from
+  `fsrs5_test.dart` since that file no longer exists; added 2 new
+  `session_engine_test.dart` cases covering the never-dead-ends fallback
+  and confirming the cap is still respected when other content already
+  fills the queue, plus 3 new `streaks_test.dart` cases for the 3am
+  boundary).
+
+## Intro card removed + continuous-play loop (2026-07-23, same session)
+
+Follow-up product decision from the user right after the scheduling
+revision above: **remove the separate new-word intro page entirely** — a
+brand-new word is just a flashcard round now — and design the endless
+session so play can genuinely continue for as long as the user wants,
+with the day (post-3am boundary) always opening on a flashcard.
+
+- **`word_intro_page.dart` deleted; `GameType.intro` removed from the
+  enum.** New words enter `GameType.flashcard` directly with a new
+  `isNewWord` mode on `FlashcardSwipeGame`: front = headword + TTS
+  (auto-spoken once, preserving the old intro's dual-coding), reveal =
+  the full `WordResultCard` back (reading/meaning/sentence/word-detail
+  link), swipe labels change to **ขวา = รู้จัก (Good) / ซ้าย = ไม่รู้จัก
+  (Again)**, Hard/Easy buttons hidden. That first swipe doubles as the
+  word's first FSRS review — `play_screen._handleRated` now detects the
+  absent SRS row (`isFirstEncounter`), counts `new_introduced` for the
+  day, and logs the review, replacing the deleted
+  `_handleIntroContinue`'s auto-"Good" (the rating is now the user's real
+  answer instead of an assumed Good).
+- **Continuous-play loop** (`session_engine.buildQueue`, SPEC.md §7
+  updated): priority stays overdue → capped-new → extra practice →
+  beyond-cap new words. Extra practice widened from young/mature-only to
+  *any* word with SRS history not currently due (early on everything is
+  learning — the old pool was empty exactly when the loop needed it) and
+  now rotates deterministically through `kPracticeGameCycle`
+  (flashcard → matching → oddOneOut → cloze → wordAssociation →
+  wordScramble → dictation), wrapping back to flashcard, instead of
+  random ladder-tier picks — per the user's "ทำ loop ทุกเกมแล้ว กลับมา
+  flashcard ใหม่". Unbuildable rounds still fall back to flashcard at
+  render time (existing `_fallbackToFlashcard` path).
+- **Day opens with flashcard**: `buildQueue` gained
+  `firstSessionOfDay` — when true (play_screen sets it when today's
+  logical date has no `daily_stats` row yet, i.e. first entry after the
+  3am boundary) the queue's first item is forced to
+  `GameType.flashcard`, preserving word/source/direction. Consumed after
+  the day's opening build.
+- `_GameModeIndicator` shows "คำใหม่" (lavender) for a first-encounter
+  flashcard and plain "Flashcard" (sky) otherwise.
+- SPEC.md §1/§2 defaults/§3 tree/§7/§8/§9.1 all updated to match.
+
+### Verification performed
+- `flutter analyze`: clean, 0 issues.
+- `flutter test`: **97/97 passing** — updated the ladder test (new →
+  flashcard), added 4 new `session_engine_test.dart` cases: new-card
+  items are flashcard rounds; extra practice includes learning words;
+  practice rounds rotate through the full `kPracticeGameCycle` in order;
+  `firstSessionOfDay` forces the opening item to flashcard while
+  preserving word/source.

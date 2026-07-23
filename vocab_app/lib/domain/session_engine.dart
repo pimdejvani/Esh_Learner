@@ -13,7 +13,6 @@ import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 
 enum GameType {
-  intro,
   flashcard,
   cloze,
   matching,
@@ -45,20 +44,22 @@ class SessionItem {
 }
 
 /// Maps a card's maturity state to the games allowed for it, per the
-/// SPEC.md section 7 game-selection ladder table (Phase 2: all 7 games are
-/// now wired in, replacing the Phase 1 "young/mature both fall back to
-/// Cloze" placeholder documented in NOTES.md's Phase 1 section):
+/// SPEC.md section 7 game-selection ladder table (2026-07-23 revision: the
+/// separate "intro card" page was removed — a brand-new word IS a
+/// flashcard round now: reveal the back, swipe right = รู้จัก (Good),
+/// left = ไม่รู้จัก (Again), and that first swipe doubles as its first
+/// FSRS review):
 ///
 /// | state    | games                              |
 /// |----------|-------------------------------------|
-/// | new      | intro (not a game)                   |
+/// | new      | flashcard (first-meet, รู้จัก/ไม่รู้จัก) |
 /// | learning | flashcard swipe · Matching · Odd One Out |
 /// | young    | Cloze · Word Association              |
 /// | mature   | Dictation · Word Scramble             |
 List<GameType> gamesForState(CardState state) {
   switch (state) {
     case CardState.newState:
-      return [GameType.intro];
+      return [GameType.flashcard];
     case CardState.learning:
       return [GameType.flashcard, GameType.matching, GameType.oddOneOut];
     case CardState.young:
@@ -67,6 +68,22 @@ List<GameType> gamesForState(CardState state) {
       return [GameType.dictation, GameType.wordScramble];
   }
 }
+
+/// Fixed light→heavy rotation used by the extra-practice loop (SPEC.md 7
+/// revision 2026-07-23): once dues + capped-new are cleared and the user
+/// keeps playing, practice rounds cycle through every game in ladder order
+/// and wrap back around to flashcard — "ทำ loop ทุกเกมแล้ว กลับมา
+/// flashcard ใหม่". Unbuildable rounds (e.g. Odd One Out without enough
+/// related_words) fall back to flashcard at render time in play_screen.
+const List<GameType> kPracticeGameCycle = [
+  GameType.flashcard,
+  GameType.matching,
+  GameType.oddOneOut,
+  GameType.cloze,
+  GameType.wordAssociation,
+  GameType.wordScramble,
+  GameType.dictation,
+];
 
 class SessionEngine {
   SessionEngine({Random? random}) : _random = random ?? Random();
@@ -84,6 +101,10 @@ class SessionEngine {
   /// topic, if any — biases which new words are introduced first without
   /// touching overdue-review ordering. Empty (the default) is a no-op, so
   /// omitting it keeps the plain freq_rank/CEFR new-card order.
+  /// [firstSessionOfDay] (SPEC.md 7 revision 2026-07-23): true when this is
+  /// the first queue built after the 3am logical-day boundary — the day
+  /// always opens with a flashcard round, so the first item's game is
+  /// forced to flashcard regardless of what the ladder picked.
   List<SessionItem> buildQueue({
     required List<Word> words,
     required Map<int, SrsState> srsStates,
@@ -92,6 +113,7 @@ class SessionEngine {
     required int newIntroducedToday,
     int matchingBatchSize = 6,
     Set<int> focusTopicWordIds = const {},
+    bool firstSessionOfDay = false,
   }) {
     final overdue = <_DueEntry>[];
     final newCandidates = <Word>[];
@@ -140,39 +162,74 @@ class SessionEngine {
     );
 
     var remainingCap = (newCardCap - newIntroducedToday).clamp(0, newCardCap);
-    for (final w in orderedNewCandidates.take(remainingCap)) {
+    final cappedNew = orderedNewCandidates.take(remainingCap).toList();
+    for (final w in cappedNew) {
       queue.add(
         SessionItem(
           wordId: w.id,
-          gameType: GameType.intro,
+          gameType: GameType.flashcard,
           direction: Direction.enTh,
           source: QueueSource.newCard,
         ),
       );
     }
 
-    // Extra practice: young/mature words reviewed recently (last_review
-    // set) offered again as light games if the user keeps playing after
-    // clearing due + new. Doesn't touch schedule (game outcome still logs
-    // for stats, but session_engine doesn't force it into the due path).
+    // Extra practice (SPEC.md 7 revision 2026-07-23): any word that already
+    // has SRS history and isn't due yet (learning included, not just
+    // young/mature — early on everything is learning and the loop must not
+    // dead-end) offered again if the user keeps playing after clearing
+    // due + new. Games rotate through the full kPracticeGameCycle in
+    // light→heavy order, wrapping back to flashcard, instead of being
+    // limited to the word's ladder tier — practice rounds don't touch the
+    // schedule hard anyway, and the variety is the point of the loop.
     final practicePool =
         words.where((w) {
           final s = srsStates[w.id];
-          return s != null &&
-              (s.state == CardState.young || s.state == CardState.mature) &&
-              s.dueAt.isAfter(now);
+          return s != null && s.reps > 0 && s.dueAt.isAfter(now);
         }).toList()..shuffle(_random);
 
+    var cycleIndex = 0;
     for (final w in practicePool.take(10)) {
       final srs = srsStates[w.id]!;
-      final games = gamesForState(srs.state);
       queue.add(
         SessionItem(
           wordId: w.id,
-          gameType: games[_random.nextInt(games.length)],
+          gameType: kPracticeGameCycle[cycleIndex % kPracticeGameCycle.length],
           direction: _nextDirection(srs.lastDirection),
           source: QueueSource.extraPractice,
         ),
+      );
+      cycleIndex++;
+    }
+
+    // newCardCap paces an ordinary day, but it should never be a hard wall:
+    // if everything else is exhausted and the user keeps playing, keep
+    // introducing the rest of the word list rather than ending the session
+    // while there's still content left (product decision 2026-07-23 —
+    // "no fixed size, if the user's ready let them continue").
+    if (queue.isEmpty) {
+      for (final w in orderedNewCandidates.skip(cappedNew.length)) {
+        queue.add(
+          SessionItem(
+            wordId: w.id,
+            gameType: GameType.flashcard,
+            direction: Direction.enTh,
+            source: QueueSource.newCard,
+          ),
+        );
+      }
+    }
+
+    // The first session after the 3am day boundary always opens with a
+    // flashcard round ("เริ่มวันด้วย flashcard เหมือนเดิม ในครั้งแรกที่เข้าแอป").
+    if (firstSessionOfDay && queue.isNotEmpty &&
+        queue.first.gameType != GameType.flashcard) {
+      final first = queue.first;
+      queue[0] = SessionItem(
+        wordId: first.wordId,
+        gameType: GameType.flashcard,
+        direction: first.direction,
+        source: first.source,
       );
     }
 

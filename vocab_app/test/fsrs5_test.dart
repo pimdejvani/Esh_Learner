@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:vocab_app/domain/fsrs/fsrs5.dart';
-import 'package:vocab_app/domain/fsrs/sleep_gap.dart';
 import 'package:vocab_app/models/srs_state.dart';
 
 void main() {
@@ -136,28 +135,4 @@ void main() {
     });
   });
 
-  group('sleep-anchored minimum gap', () {
-    test('sleepGapDueAt always lands the next calendar day at anchor hour', () {
-      final earlyMorning = DateTime(2026, 7, 22, 1);
-      final lateNight = DateTime(2026, 7, 22, 23, 59);
-      final d1 = sleepGapDueAt(earlyMorning);
-      final d2 = sleepGapDueAt(lateNight);
-      expect(d1.day, 23);
-      expect(d1.hour, kMorningAnchorHour);
-      expect(d2.day, 23);
-      expect(d2.hour, kMorningAnchorHour);
-    });
-
-    test('applySleepGap never allows same-day due for a first review', () {
-      final candidateSameDay = DateTime(2026, 7, 22, 18);
-      final result = applySleepGap(now, candidateSameDay);
-      expect(result.day, isNot(now.day));
-    });
-
-    test('applySleepGap keeps FSRS due date if already beyond the floor', () {
-      final candidateFarFuture = DateTime(2026, 8, 1);
-      final result = applySleepGap(now, candidateFarFuture);
-      expect(result, candidateFarFuture);
-    });
-  });
 }

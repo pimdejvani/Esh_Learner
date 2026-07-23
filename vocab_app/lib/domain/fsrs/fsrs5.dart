@@ -4,10 +4,12 @@
 /// intervals. See SPEC.md section 6.1.
 ///
 /// Short-term/same-day re-review formulas (FSRS-5 w[17]/w[18]) are
-/// intentionally NOT implemented: SPEC.md section 6.2's sleep-anchored
-/// minimum gap means a card is never reviewed twice within the same day, so
-/// the same-day path of the algorithm is unreachable in this app and is
-/// left as a documented simplification (see NOTES.md).
+/// intentionally NOT implemented. A card CAN legitimately come due again
+/// the same day now (e.g. an early "Again" rating gives roughly a
+/// half-day interval, SPEC.md 6.2 revision — no forced minimum gap
+/// anymore), but we still use the standard long-term formula for that
+/// case rather than the separate same-day model; documented as a known
+/// simplification (see NOTES.md).
 library;
 
 import 'dart:math' as math;
@@ -88,9 +90,8 @@ class FsrsScheduler {
   }
 
   /// Applies a review [rating] to [current] state at time [now], returning
-  /// the new SrsState (state/stability/difficulty updated; due_at is NOT
-  /// set here for new/first reviews — the sleep-gap governor does that;
-  /// for subsequent reviews we compute due_at from target retention).
+  /// the new SrsState with stability/difficulty/due_at all computed here
+  /// (due_at from the target retention interval — no external floor).
   SrsState review({
     required SrsState current,
     required Rating rating,

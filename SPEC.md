@@ -17,8 +17,8 @@
 - **Semantic network / spreading activation** → hint และเกมใช้คำข้างเคียงจากข้อมูล association ของมนุษย์จริง (SWOW)
 - **Production effect** → เกม Dictation/Scramble บังคับผลิตคำเอง
 - **Interleaving** → session สลับคำจากหลายหมวด
-- **Chunking** → จำกัดคำใหม่/วัน ปรับตาม backlog
-- **Sleep consolidation** → คำใหม่ทวนรอบแรกหลังผ่านการนอน (เช้าวันถัดไป)
+- **Chunking** → จำกัดคำใหม่/วัน ปรับตาม backlog (จังหวะแนะนำ ไม่ใช่กำแพง — ดู §6.4)
+- ~~Sleep consolidation~~ → ตัดออก 2026-07-23: ไม่บังคับรอข้ามคืน ให้ FSRS จัดเองล้วน ๆ (ดู §6.2)
 
 ---
 
@@ -44,8 +44,8 @@
 ### Default ที่ตั้งไว้ (แก้ได้)
 - **ตรวจคำตอบพิมพ์:** normalize case/whitespace + ยอม typo ระยะ Levenshtein 1 (คำยาว >4 ตัว) → นับเป็น "เกือบถูก" = rating **Hard** ไม่ใช่ Again
 - **FSRS:** FSRS-5 default weights, `requestRetention` เริ่มที่ **0.88**
-- **Sleep-gap:** คำใหม่ → รอบทวนแรกตั้ง due เช้าวันถัดไป (ไม่ทวนซ้ำในวันเดียวกัน)
-- **New-card-cap:** เริ่ม **8 คำ/วัน** ปรับอัตโนมัติตาม backlog + accuracy (ช่วง 3–15)
+- ~~Sleep-gap~~ — ตัดออก 2026-07-23 (ดู §6.2): due ใช้ค่า FSRS ล้วน ๆ, วันใหม่เริ่มหลังตี 3
+- **New-card-cap:** เริ่ม **8 คำ/วัน** ปรับอัตโนมัติตาม backlog + accuracy (ช่วง 3–15) — เป็นจังหวะแนะนำ ไม่ใช่กำแพง (§6.4)
 - **ลิขสิทธิ์:** ใช้เฉพาะ headword list + คำแปล/ประโยคที่เราเขียนเอง — **ไม่ก๊อป** definition/ตัวอย่างประโยคของ OUP; เก็บ author + license ของภาพ CC เพื่อแสดง attribution
 - **การใช้งาน:** แอปนี้เป็น **non-commercial** (ส่วนตัว/GitHub) — เป็นเงื่อนไขที่ทำให้ใช้ SWOW (CC BY-NC) ได้; ถ้าวันหน้าจะขาย ต้องเปลี่ยนแหล่ง related_words
 
@@ -74,7 +74,6 @@ lib/
 │   └── streaks.dart              # borrowed pattern from Gymmer
 ├── screens/
 │   ├── play_screen.dart          # หน้าเล่นหลัก (การ์ด/เกมไหลต่อเนื่อง)
-│   ├── word_intro_page.dart      # การ์ด intro คำใหม่ (รูป+เสียง+ความหมาย+ประโยค)
 │   ├── word_detail_page.dart     # dictionary entry เต็ม: senses, forms, grammar, sentences
 │   └── progress_page.dart        # streak, heatmap, สถานะคำ
 ├── games/                  # แต่ละเกมเป็น widget แยก (รับ payload จาก session_engine)
@@ -255,47 +254,50 @@ settings(key TEXT PK, value TEXT)   -- new_card_cap, focus_topic, request_retent
   - **Flashcard swipe:** ซ้าย = Again, ขวา = Good (กดค้าง/ปุ่มเสริม = Hard/Easy)
   - **เกมพิมพ์:** ถูกเป๊ะเร็ว = Easy, ถูก = Good, เกือบถูก(typo)/ใช้ hint = Hard, ผิด = Again
 
-### 6.2 Sleep-anchored minimum-gap
-- คำใหม่ (state=new) หลังเรียนครั้งแรก → บังคับ `due_at` = **เช้าวันถัดไป** (เช่น 08:00 local) เสมอ
-- ไม่ให้ทวนคำใหม่ซ้ำภายในวันเดียว (ให้ผ่านการนอนก่อน)
+### 6.2 Day-boundary (แก้ไข 2026-07-23 — ตัดการบังคับรอข้ามวัน)
+- ~~เดิม: บังคับ `due_at` = เช้าวันถัดไปเสมอ~~ **ตัดออก** — `due_at` ของทุกคำ (รวมครั้งแรกหลัง intro) ใช้ค่าที่ FSRS-5 คำนวณเองล้วน ๆ ไม่มี floor บังคับข้ามวัน — ถ้า user พร้อมเล่นต่อก็ให้ต่อไปเลย ไม่กำหนดขนาดตายตัวว่าต้องกี่เกม/กี่วันต่อคำ
+- ยังต้องรู้ "วันนี้" สำหรับ bookkeeping (streak, daily stats, new-card pacing) — ใช้ **เส้นแบ่งวันตี 3 (03:00 local)** แทนเที่ยงคืน: เล่นตอนตี 1 ยังนับเป็นเมื่อวาน, เล่นหลังตี 3 นับเป็นวันใหม่แล้ว (`logicalDateKey` ใน `streaks.dart`)
 
 ### 6.3 Adaptive success-rate targeting (`retention_tuner`)
 - ตั้ง `requestRetention` เริ่ม 0.88 (โซน desirable difficulty ~85–90%)
 - ดู rolling accuracy 7 วัน: ถ้าถูกสูงกว่าเป้ามากติดกัน → ลด requestRetention เล็กน้อย (interval ยาวขึ้น, ท้าทายขึ้น); ถ้าต่ำกว่าเป้า → เพิ่ม (ทวนถี่ขึ้น)
 
-### 6.4 New-card governor (chunking)
-- `new_card_cap` เริ่ม 8/วัน
-- ถ้า backlog (คำ due ค้าง) สูง → ลด cap อัตโนมัติ; ถ้า backlog ต่ำ + accuracy ดี → เพิ่ม (เพดาน 15)
+### 6.4 New-card governor (chunking) — แก้ไข 2026-07-23
+- `new_card_cap` เริ่ม 8/วัน ยังปรับอัตโนมัติเหมือนเดิม (backlog สูง → ลด, backlog ต่ำ+accuracy ดี → เพิ่ม, เพดาน 15) — ใช้เป็น **จังหวะแนะนำของวันปกติ** เท่านั้น
+- **ไม่ใช่กำแพงแข็ง**: ถ้าเคลียร์ overdue + คำใหม่ตาม cap + extra practice หมดแล้ว แต่ user ยังอยากเล่นต่อ (คิวจะว่าง) และยังมีคำที่ยังไม่เคยเรียน → ระบบดึงคำใหม่ต่อ เกิน cap ได้ ไม่ตัดจบ session ทิ้งไว้ทั้งที่ยังมีเนื้อหาเหลือ (`session_engine.dart` buildQueue fallback)
 - ดึงคำใหม่ตาม `freq_rank`/CEFR order; ถ้ามี focus topic → bias คำจากหมวดนั้นก่อน
 
 ---
 
 ## 7. Session Engine (endless queue)
 
-หน้าเล่นดึง "item ถัดไป" จาก session_engine เรื่อย ๆ ไม่มีเส้นจบ ลำดับความสำคัญ:
+หน้าเล่นดึง "item ถัดไป" จาก session_engine เรื่อย ๆ ไม่มีเส้นจบ ลำดับความสำคัญ (แก้ไข 2026-07-23):
 
 1. **คำ due ที่ค้างนานสุดก่อน** (overdue reviews)
-2. **คำใหม่** (ถ้ายังไม่ถึง cap วันนี้) → เข้าการ์ด intro
-3. **extra practice** — ถ้าเคลียร์หมดแล้วยังอยากเล่นต่อ: เกมเบา ๆ กับคำ young/mature ที่เพิ่งทวน (ไม่กระทบ schedule แรง)
+2. **คำใหม่** (ตาม cap ของวัน) → **เข้าเกม flashcard เลย ไม่มีการ์ด intro แยกอีกแล้ว** — หน้าการ์ดโชว์คำ กดเผยด้านหลัง (คำแปล+ข้อมูลครบ) แล้วปัด **ขวา = รู้จัก (Good) / ซ้าย = ไม่รู้จัก (Again)** — การปัดครั้งแรกนี้ = review แรกของคำเข้า FSRS ทันที
+3. **extra practice** — ถ้าเคลียร์หมดแล้วยังอยากเล่นต่อ: คำที่มีประวัติแล้วและยังไม่ถึงคิว due (รวม learning ด้วย ไม่ใช่แค่ young/mature) **วนเกมครบทุกแบบตามลำดับเบา→หนัก แล้ววนกลับมา flashcard ใหม่** (`kPracticeGameCycle`)
+4. **คำใหม่เกิน cap** — ถ้าทุกอย่างข้างบนหมดแล้วยังมีคำที่ไม่เคยเรียน → ดึงต่อได้เลย ไม่ตัดจบ session (§6.4)
 
+**เริ่มวัน:** ครั้งแรกที่เข้าแอปหลังตี 3 (วันใหม่ตาม §6.2) item แรกของคิวถูกบังคับเป็น **flashcard เสมอ** — เปิดวันด้วยจังหวะเบาที่คุ้นเคยก่อนค่อยไล่ ladder
 **Interleaving:** queue สลับคำจากหลายหมวด ไม่เรียงทีละบท
 **Bidirectional:** ทุก review สุ่มทิศ EN→TH / TH→EN (เก็บ `last_direction` กันซ้ำติดกัน)
 
 ### Game selection ladder (ข้อ 6)
 | สถานะคำ | เกมที่ระบบเลือก | เหตุผล (research) |
 |---------|-----------------|-------------------|
-| **new** | การ์ด intro (ไม่ใช่เกม) | encoding: dual coding + บริบทประโยค |
+| **new** | flashcard (โหมดพบครั้งแรก รู้จัก/ไม่รู้จัก) | encoding: dual coding + เริ่ม retrieval ทันที |
 | **learning** | flashcard swipe · Matching · Odd One Out | recognition ง่าย ตั้งหลัก |
 | **young** | Cloze · Word Association | retrieval มีบริบท/โยงความหมาย |
 | **mature** | Dictation · Word Scramble | production ยาก ตอกย้ำระยะยาว |
 
 > batch games (Matching / Odd One Out / Word Association) ดึงหลายคำ due พร้อมกันข้ามหมวด
+> ladder ใช้กับคิว due ปกติ — รอบ extra practice วนทุกเกมข้าม tier ได้ (ความหลากหลายคือจุดประสงค์ และรอบ practice ไม่กระทบ schedule แรง)
 
 ---
 
 ## 8. เกม 7 แบบ (spec ย่อ)
 
-1. **Flashcard swipe** — การ์ด dual-coding (ภาพ+เสียง TTS+คำ) กดเผยเฉลย แล้วปัดซ้าย(ลืม=Again)/ขวา(จำได้=Good) *[Phase 1]*
+1. **Flashcard swipe** — การ์ด dual-coding (ภาพ+เสียง TTS+คำ) กดเผยเฉลย แล้วปัดซ้าย(ลืม=Again)/ขวา(จำได้=Good) · **โหมดคำใหม่ (พบครั้งแรก):** ป้ายเปลี่ยนเป็น ขวา=รู้จัก/ซ้าย=ไม่รู้จัก ซ่อนปุ่ม Hard/Easy อ่านออกเสียงอัตโนมัติ — แทนการ์ด intro เดิมทั้งหมด *[Phase 1]*
 2. **Cloze** — ประโยคจริงเจาะช่องคำเป้า ให้เติม (พิมพ์หรือเลือก) มีบริบทช่วย → testing + context *[Phase 1]*
 3. **Matching** — จับคู่ EN–TH หรือ คำ–ภาพ 6–12 คู่ ปรับจำนวนตามเวลาว่าง *[Phase 1]*
 4. **Word Association** — โยงคำใหม่เข้ากับคำที่รู้แล้วในโครงข่ายความหมาย *[Phase 2]*
@@ -334,12 +336,12 @@ Dictation ได้ยินเสียงแล้ว รู้อยู่แ
 
 ---
 
-## 9. New-word Intro Flow & Grammar
+## 9. New-word Flow & Grammar
 
-### 9.1 การ์ด intro (คำใหม่)
-โชว์: รูป (fetch) + เสียง TTS + headword + คำอ่านไทย (พยางค์เน้นตัวหนา) + ความหมาย core sense
-- ประโยคตัวอย่าง `rank=1` (emotional/สถานการณ์จริง) **ซ่อนไว้** — กด "ดูตัวอย่าง" เพื่อเผย
-- ปัดผ่านได้ทันที ไม่มีขั้นตอนบังคับ → คำเข้าคิว FSRS (due เช้าวันถัดไปตาม sleep-gap)
+### 9.1 คำใหม่ = flashcard พบครั้งแรก (แก้ไข 2026-07-23 — ตัดการ์ด intro แยกทิ้ง)
+- ~~เดิม: การ์ด intro แยกหน้า มีปุ่ม "ต่อไป"~~ **ตัดออก** — คำใหม่เข้า **เกม flashcard ตรง ๆ**: หน้าการ์ด = headword + ปุ่ม TTS (อ่านออกเสียงอัตโนมัติครั้งแรก), กด "เผยคำตอบ" → ด้านหลังโชว์ข้อมูลครบ (คำอ่านไทยเน้นพยางค์, ความหมาย core sense, ประโยคตัวอย่าง, แตะเปิด word detail เต็ม)
+- ปัด **ขวา = รู้จัก (Good) / ซ้าย = ไม่รู้จัก (Again)** — ปุ่ม Hard/Easy ซ่อนในโหมดนี้
+- การปัดครั้งแรก = review แรกของคำเข้า FSRS ทันที (นับ new_introduced ของวันด้วย) — ไม่มีขั้น "ดูเฉย ๆ" แยกจากการตอบอีกต่อไป
 
 ### 9.2 Grammar note (ติดประโยค/คำตอบที่ใช้รูปผัน)
 เมื่อประโยคหรือคำตอบใช้รูปผัน แสดงโน้ตแบบ **อธิบายเหตุผล ไม่ใช่แค่ป้ายชื่อ**:
