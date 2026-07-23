@@ -34,13 +34,20 @@ void main() {
   });
 
   test('accuracy within the desirable-difficulty band leaves retention unchanged', () {
-    // Roughly 87% good rate, close to the 87.5% target.
+    // Roughly 80% good rate, right on the ~80% target (product decision
+    // 2026-07-23: user prefers the harder 80% zone over ~95%).
     final reviews = [
       for (var i = 0; i < 100; i++)
-        _rev(i < 87 ? Rating.good : Rating.again, now.subtract(Duration(minutes: i))),
+        _rev(i < 80 ? Rating.good : Rating.again, now.subtract(Duration(minutes: i))),
     ];
-    final next = tuner.nextRetention(current: 0.88, reviews: reviews, now: now);
-    expect(next, closeTo(0.88, 1e-9));
+    final next = tuner.nextRetention(current: 0.80, reviews: reviews, now: now);
+    expect(next, closeTo(0.80, 1e-9));
+  });
+
+  test('defaults target the ~80% zone, capped below 0.95', () {
+    expect(tuner.targetAccuracy, closeTo(0.80, 1e-9));
+    expect(tuner.initialRetention, closeTo(0.80, 1e-9));
+    expect(tuner.maxRetention, lessThanOrEqualTo(0.90));
   });
 
   test('reviews older than 7 days are ignored by rollingAccuracy', () {

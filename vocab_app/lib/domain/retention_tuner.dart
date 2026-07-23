@@ -1,16 +1,18 @@
 /// Adaptive success-rate targeting (SPEC.md 6.3). Nudges `requestRetention`
-/// based on rolling 7-day accuracy so the app sits in the ~85-90% desirable
-/// difficulty zone instead of a fixed target forever.
+/// based on rolling 7-day accuracy so the app sits around ~80% success
+/// (product decision 2026-07-23: the user prefers the harder ~80% zone
+/// over a comfortable ~95% — more forgetting pressure per review, faster
+/// long-term gains) instead of a fixed target forever.
 library;
 
 import 'package:vocab_app/models/srs_state.dart';
 
 class RetentionTuner {
   const RetentionTuner({
-    this.initialRetention = 0.88,
-    this.minRetention = 0.75,
-    this.maxRetention = 0.95,
-    this.targetAccuracy = 0.875, // midpoint of desirable-difficulty band
+    this.initialRetention = 0.80,
+    this.minRetention = 0.70,
+    this.maxRetention = 0.90,
+    this.targetAccuracy = 0.80, // ~80% correct, per user preference
     this.band = 0.03,
     this.step = 0.01,
   });

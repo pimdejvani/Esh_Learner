@@ -80,6 +80,16 @@ class _PlayScreenState extends State<PlayScreen> {
   Future<void> _boot() async {
     try {
       final state = await widget.store.load();
+      // One-time migration (2026-07-23): the retention target moved from
+      // ~88-95% down to the ~80% zone. A profile that already stored the
+      // old default would otherwise take dozens of reviews to walk down
+      // 0.01 at a time — snap it into the new range instead.
+      final storedRetention =
+          double.tryParse(state.settings['request_retention'] ?? '');
+      if (storedRetention != null && storedRetention > 0.84) {
+        await widget.store.saveSetting('request_retention', '0.8000');
+        state.settings['request_retention'] = '0.8000';
+      }
       final today = logicalDateKey(DateTime.now());
       final stats = await widget.store.loadDailyStats(today);
       final relatedByWord = await widget.store.loadAllRelatedWords();
@@ -110,7 +120,7 @@ class _PlayScreenState extends State<PlayScreen> {
       int.tryParse(_state?.settings['new_card_cap'] ?? '') ?? 8;
 
   double get _requestRetention =>
-      double.tryParse(_state?.settings['request_retention'] ?? '') ?? 0.88;
+      double.tryParse(_state?.settings['request_retention'] ?? '') ?? 0.80;
 
   Future<void> _refillQueue() async {
     final state = _state!;

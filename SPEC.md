@@ -43,7 +43,7 @@
 
 ### Default ที่ตั้งไว้ (แก้ได้)
 - **ตรวจคำตอบพิมพ์:** normalize case/whitespace + ยอม typo ระยะ Levenshtein 1 (คำยาว >4 ตัว) → นับเป็น "เกือบถูก" = rating **Hard** ไม่ใช่ Again
-- **FSRS:** FSRS-5 default weights, `requestRetention` เริ่มที่ **0.88**
+- **FSRS:** FSRS-5 default weights, `requestRetention` เริ่มที่ **0.80** (แก้ไข 2026-07-23 — เป้า ~80% ไม่เอา ~95%)
 - ~~Sleep-gap~~ — ตัดออก 2026-07-23 (ดู §6.2): due ใช้ค่า FSRS ล้วน ๆ, วันใหม่เริ่มหลังตี 3
 - **New-card-cap:** เริ่ม **8 คำ/วัน** ปรับอัตโนมัติตาม backlog + accuracy (ช่วง 3–15) — เป็นจังหวะแนะนำ ไม่ใช่กำแพง (§6.4)
 - **ลิขสิทธิ์:** ใช้เฉพาะ headword list + คำแปล/ประโยคที่เราเขียนเอง — **ไม่ก๊อป** definition/ตัวอย่างประโยคของ OUP; เก็บ author + license ของภาพ CC เพื่อแสดง attribution
@@ -259,7 +259,7 @@ settings(key TEXT PK, value TEXT)   -- new_card_cap, focus_topic, request_retent
 - ยังต้องรู้ "วันนี้" สำหรับ bookkeeping (streak, daily stats, new-card pacing) — ใช้ **เส้นแบ่งวันตี 3 (03:00 local)** แทนเที่ยงคืน: เล่นตอนตี 1 ยังนับเป็นเมื่อวาน, เล่นหลังตี 3 นับเป็นวันใหม่แล้ว (`logicalDateKey` ใน `streaks.dart`)
 
 ### 6.3 Adaptive success-rate targeting (`retention_tuner`)
-- ตั้ง `requestRetention` เริ่ม 0.88 (โซน desirable difficulty ~85–90%)
+- ตั้ง `requestRetention` เริ่ม **0.80** ขอบเขต [0.70, 0.90] เป้า accuracy ~80% (แก้ไข 2026-07-23 — ผู้ใช้เลือกโซนยากที่ตอบถูก ~80% แทนโซนสบาย ~95%: ลืมมากขึ้นต่อรอบ = ได้ retrieval effort สูงกว่า จำระยะยาวดีกว่า; โปรไฟล์เก่าที่เซฟ >0.84 ไว้จะถูก migrate ลง 0.80 ตอนบูต)
 - ดู rolling accuracy 7 วัน: ถ้าถูกสูงกว่าเป้ามากติดกัน → ลด requestRetention เล็กน้อย (interval ยาวขึ้น, ท้าทายขึ้น); ถ้าต่ำกว่าเป้า → เพิ่ม (ทวนถี่ขึ้น)
 
 ### 6.4 New-card governor (chunking) — แก้ไข 2026-07-23
