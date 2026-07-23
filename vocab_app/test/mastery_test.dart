@@ -63,7 +63,7 @@ void main() {
     });
   });
 
-  group('VocabStoreMemory.loadPassedWordGamePairs (lapse resets the row)', () {
+  group('VocabStoreMemory.loadPassedWordGamePairs (a lapse resets EVERYTHING)', () {
     var tick = 0;
     Future<void> log(
       VocabStoreMemory store,
@@ -94,37 +94,40 @@ void main() {
       });
     });
 
-    test('one Again wipes ALL of that word\'s earlier passes, any game', () async {
+    test('one Again on ANY word wipes the whole grid, all words all games', () async {
       final store = VocabStoreMemory(words: [_word(1), _word(2)]);
       await log(store, Rating.good, GameType.cloze);
       await log(store, Rating.good, GameType.dictation);
       await log(store, Rating.good, GameType.flashcard, wordId: 2);
-      // Wrong answer on word 1 in a DIFFERENT game than its passes:
+      // Wrong answer on word 1 only — but the round is no longer clean,
+      // so word 2's pass is wiped too (start the round over).
       await log(store, Rating.again, GameType.matching);
 
-      final pairs = await store.loadPassedWordGamePairs();
-      // Word 1's entire row is gone; word 2 untouched.
-      expect(pairs, {masteryKey(2, GameType.flashcard.name)});
+      expect(await store.loadPassedWordGamePairs(), isEmpty);
     });
 
-    test('passes re-earned after the lapse count again', () async {
-      final store = VocabStoreMemory(words: [_word(1)]);
+    test('passes re-earned after the reset count toward the new round', () async {
+      final store = VocabStoreMemory(words: [_word(1), _word(2)]);
       await log(store, Rating.good, GameType.cloze);
-      await log(store, Rating.again, GameType.cloze); // reset
-      await log(store, Rating.good, GameType.dictation); // after reset
+      await log(store, Rating.again, GameType.cloze); // reset everything
+      await log(store, Rating.good, GameType.dictation); // new round
+      await log(store, Rating.good, GameType.flashcard, wordId: 2);
 
-      final pairs = await store.loadPassedWordGamePairs();
-      expect(pairs, {masteryKey(1, GameType.dictation.name)});
+      expect(await store.loadPassedWordGamePairs(), {
+        masteryKey(1, GameType.dictation.name),
+        masteryKey(2, GameType.flashcard.name),
+      });
     });
   });
 
   group('correct streaks + practice down-weighting', () {
-    test('loadCorrectStreaks counts passes since the last Again', () async {
-      final store = VocabStoreMemory(words: [_word(1)]);
+    test('loadCorrectStreaks counts passes since that word\'s own last Again '
+        '(per-word — a miss on one word does NOT weaken another)', () async {
+      final store = VocabStoreMemory(words: [_word(1), _word(2)]);
       var t = 0;
-      Future<void> log(Rating r) => store.logReview(
+      Future<void> log(Rating r, {int wordId = 1}) => store.logReview(
         ReviewLogEntry(
-          wordId: 1,
+          wordId: wordId,
           ts: DateTime(2026, 7, 23).add(Duration(minutes: t++)),
           rating: r,
           gameType: GameType.flashcard.name,
@@ -132,12 +135,15 @@ void main() {
           elapsedMs: 0,
         ),
       );
+      await log(Rating.good, wordId: 2);
+      await log(Rating.good, wordId: 2);
+      await log(Rating.good, wordId: 2);
       await log(Rating.good);
       await log(Rating.good);
-      await log(Rating.again); // resets the streak
+      await log(Rating.again); // resets word 1's streak ONLY
       await log(Rating.good);
       await log(Rating.hard);
-      expect(await store.loadCorrectStreaks(), {1: 2});
+      expect(await store.loadCorrectStreaks(), {1: 2, 2: 3});
     });
 
     test('practiceWeight decreases monotonically with streak', () {

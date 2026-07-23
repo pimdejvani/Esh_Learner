@@ -1,13 +1,17 @@
 /// Full-mastery "You Pass" condition (product decision 2026-07-23): the
-/// player passes the whole app once **every word has been answered
-/// correctly in every game type since that word's most recent wrong
-/// answer** (rating hard/good/easy counts as a pass; one Again wipes the
-/// word's entire row — all games — and it must re-earn every cell; the
-/// stores' `loadPassedWordGamePairs()` implements the reset by only
-/// counting passes after the word's latest Again in `reviews_log`).
-/// When the condition first becomes true, play_screen shows the
-/// full-screen YouPassPage exactly once (persisted via the
-/// `you_pass_shown` setting).
+/// player passes the whole app by completing **one clean round** — every
+/// word answered correctly in every game type **with zero wrong answers
+/// anywhere in between**. One Again on ANY word resets the ENTIRE grid
+/// (all words, all games) and the round starts over; the counting exists
+/// purely to finish that single flawless round. Rating hard/good/easy
+/// counts as a pass. The stores' `loadPassedWordGamePairs()` implements
+/// the reset by only counting passes after the latest Again anywhere in
+/// `reviews_log`. When the condition first becomes true, play_screen
+/// shows the full-screen YouPassPage exactly once (persisted via the
+/// `you_pass_shown` setting). The practice loop softens the grind: slots
+/// target still-missing cells, and per-word streak weighting
+/// (session_engine's `practiceWeight`) keeps already-solid words from
+/// hogging rounds after a reset.
 library;
 
 import 'package:vocab_app/domain/session_engine.dart';

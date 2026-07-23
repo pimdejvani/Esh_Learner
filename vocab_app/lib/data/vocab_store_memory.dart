@@ -95,9 +95,10 @@ class VocabStoreMemory implements VocabStore {
     required DateTime since,
   }) async => _reviewLog.where((r) => !r.ts.isBefore(since)).toList();
 
-  /// Latest Again timestamp per word — passes only count after this
-  /// (a wrong answer resets the word's whole mastery row).
-  Map<int, DateTime> _lastLapseTs() {
+  /// Latest Again timestamp per word — used by [loadCorrectStreaks]
+  /// (per-word solidity for the practice fade-out weighting; a miss on
+  /// word A shouldn't make word B look weak).
+  Map<int, DateTime> _lastLapseTsPerWord() {
     final out = <int, DateTime>{};
     for (final r in _reviewLog) {
       if (r.rating != Rating.again) continue;
@@ -107,27 +108,37 @@ class VocabStoreMemory implements VocabStore {
     return out;
   }
 
-  bool _isPostLapsePass(ReviewLogEntry r, Map<int, DateTime> lastLapse) {
-    if (r.rating == Rating.again) return false;
-    final lapse = lastLapse[r.wordId];
-    return lapse == null || r.ts.isAfter(lapse);
+  /// Latest Again timestamp ANYWHERE — used by [loadPassedWordGamePairs]:
+  /// one wrong answer on any word resets the whole "You Pass" grid.
+  DateTime? _globalLastLapseTs() {
+    DateTime? out;
+    for (final r in _reviewLog) {
+      if (r.rating == Rating.again && (out == null || r.ts.isAfter(out))) {
+        out = r.ts;
+      }
+    }
+    return out;
   }
 
   @override
   Future<Set<String>> loadPassedWordGamePairs() async {
-    final lastLapse = _lastLapseTs();
+    final lapse = _globalLastLapseTs();
     return {
       for (final r in _reviewLog)
-        if (_isPostLapsePass(r, lastLapse)) '${r.wordId}:${r.gameType}',
+        if (r.rating != Rating.again &&
+            (lapse == null || r.ts.isAfter(lapse)))
+          '${r.wordId}:${r.gameType}',
     };
   }
 
   @override
   Future<Map<int, int>> loadCorrectStreaks() async {
-    final lastLapse = _lastLapseTs();
+    final lastLapse = _lastLapseTsPerWord();
     final out = <int, int>{};
     for (final r in _reviewLog) {
-      if (_isPostLapsePass(r, lastLapse)) {
+      if (r.rating == Rating.again) continue;
+      final lapse = lastLapse[r.wordId];
+      if (lapse == null || r.ts.isAfter(lapse)) {
         out[r.wordId] = (out[r.wordId] ?? 0) + 1;
       }
     }

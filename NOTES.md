@@ -1007,6 +1007,28 @@ User refinement of the "You Pass" rules immediately after v1 shipped:
 - `_maybeCelebrateMastery`'s skip-on-Again shortcut still holds (an
   Again can only shrink the grid). `you_pass_shown` once-ever unchanged.
 
+**v3 correction (same day, user clarified intent):** the v2 per-word
+reset was too narrow. The real rule: "You Pass" = **one clean round** —
+every word × every game passed **with zero wrong answers anywhere in
+between**. One Again on ANY word resets the ENTIRE grid (all words, all
+games); the counting exists purely to finish that single flawless round.
+
+- `loadPassedWordGamePairs()` (both stores) now only counts passes after
+  the latest Again **anywhere** in `reviews_log` (global MAX(ts)
+  subquery), not per-word.
+- `loadCorrectStreaks()` deliberately stays **per-word** — the fade-out
+  weighting measures how solid each word is, and missing word A must not
+  make word B look weak (documented on both impls).
+- The practice loop now actively drives round completion: `buildQueue`
+  gained `passedPairs`, and each of the 10 practice slots narrows its
+  candidates to words **still missing that slot's game cell** in the
+  current round (falling back to any unused word when none are missing)
+  before applying the `practiceWeight` sampling. Without this, after a
+  late reset the loop would keep re-serving already-earned cells and a
+  153×7=1071-cell clean round would be practically unreachable.
+- Tests updated to the global-reset semantics + new targeting test
+  (`flutter test`: 109/109; `flutter analyze` clean).
+
 ### Verification performed
 - `flutter analyze`: clean, 0 issues.
 - `flutter test`: **108/108 passing** — mastery_test reworked with real

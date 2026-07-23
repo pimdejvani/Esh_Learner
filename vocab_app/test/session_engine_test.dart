@@ -289,6 +289,29 @@ void main() {
       expect(practice.map((i) => i.gameType).toList(), kPracticeGameCycle);
     });
 
+    test('practice slots target words still missing that game\'s cell', () {
+      // Both words in the practice pool. Word 1 already passed flashcard
+      // (slot 0's game) in the current clean round; word 2 hasn't — the
+      // flashcard slot must pick word 2 regardless of random weighting.
+      final words = [_word(1), _word(2)];
+      final srs = {
+        1: _due(1, now.add(const Duration(days: 2))),
+        2: _due(2, now.add(const Duration(days: 2))),
+      };
+      final queue = engine.buildQueue(
+        words: words,
+        srsStates: srs,
+        now: now,
+        newCardCap: 8,
+        newIntroducedToday: 8,
+        passedPairs: {'1:${GameType.flashcard.name}'},
+      );
+      final practice =
+          queue.where((i) => i.source == QueueSource.extraPractice).toList();
+      expect(practice.first.gameType, GameType.flashcard);
+      expect(practice.first.wordId, 2);
+    });
+
     test('weightedPracticeSample includes every word when pool <= count', () {
       final pool = List.generate(4, (i) => _word(i));
       final sample = weightedPracticeSample(

@@ -163,6 +163,11 @@ class SessionEngine {
   /// [correctStreaks] per-word consecutive-correct counts (store's
   /// `loadCorrectStreaks()`): down-weights already-solid words in the
   /// extra-practice sample via [practiceWeight].
+  /// [passedPairs] the current clean-round "You Pass" grid (store's
+  /// `loadPassedWordGamePairs()`, `"$wordId:$gameType"` keys): each
+  /// practice slot prefers words still MISSING that slot's game cell, so
+  /// the loop actively drives the round toward completion instead of
+  /// re-serving cells that are already earned.
   List<SessionItem> buildQueue({
     required List<Word> words,
     required Map<int, SrsState> srsStates,
@@ -173,6 +178,7 @@ class SessionEngine {
     Set<int> focusTopicWordIds = const {},
     bool firstSessionOfDay = false,
     Map<int, int> correctStreaks = const {},
+    Set<String> passedPairs = const {},
   }) {
     final overdue = <_DueEntry>[];
     final newCandidates = <Word>[];
@@ -245,25 +251,39 @@ class SessionEngine {
       final s = srsStates[w.id];
       return s != null && s.reps > 0 && s.dueAt.isAfter(now);
     }).toList();
-    final practiceSample = weightedPracticeSample(
-      pool: practicePool,
-      streaks: correctStreaks,
-      count: 10,
-      random: _random,
-    );
 
-    var cycleIndex = 0;
-    for (final w in practiceSample) {
+    // Fill up to 10 practice slots. Slot i plays kPracticeGameCycle[i%7];
+    // for each slot, candidates are narrowed to words still MISSING that
+    // game's cell in the current clean-round grid (passedPairs) when any
+    // exist — the loop drives the "You Pass" round toward completion —
+    // then the pick among candidates is weighted by practiceWeight so
+    // already-solid words fade out and weak/lapsed words dominate.
+    final usedIds = <int>{};
+    for (var slot = 0; slot < 10; slot++) {
+      final game = kPracticeGameCycle[slot % kPracticeGameCycle.length];
+      final unused =
+          practicePool.where((w) => !usedIds.contains(w.id)).toList();
+      if (unused.isEmpty) break;
+      final missingCell = unused
+          .where((w) => !passedPairs.contains('${w.id}:${game.name}'))
+          .toList();
+      final candidates = missingCell.isNotEmpty ? missingCell : unused;
+      final w = weightedPracticeSample(
+        pool: candidates,
+        streaks: correctStreaks,
+        count: 1,
+        random: _random,
+      ).single;
+      usedIds.add(w.id);
       final srs = srsStates[w.id]!;
       queue.add(
         SessionItem(
           wordId: w.id,
-          gameType: kPracticeGameCycle[cycleIndex % kPracticeGameCycle.length],
+          gameType: game,
           direction: _nextDirection(srs.lastDirection),
           source: QueueSource.extraPractice,
         ),
       );
-      cycleIndex++;
     }
 
     // newCardCap paces an ordinary day, but it should never be a hard wall:

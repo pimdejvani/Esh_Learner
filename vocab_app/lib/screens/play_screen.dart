@@ -110,8 +110,10 @@ class _PlayScreenState extends State<PlayScreen> {
     final state = _state!;
     // Current consecutive-correct streaks (since each word's last Again)
     // — the extra-practice sampler uses them to fade out already-solid
-    // words so the loop spends its rounds on the hard ones.
+    // words so the loop spends its rounds on the hard ones — plus the
+    // current clean-round grid so practice slots target missing cells.
     final correctStreaks = await widget.store.loadCorrectStreaks();
+    final passedPairs = await widget.store.loadPassedWordGamePairs();
     _queue = _sessionEngine.buildQueue(
       words: state.words,
       srsStates: state.srsStates,
@@ -121,6 +123,7 @@ class _PlayScreenState extends State<PlayScreen> {
       focusTopicWordIds: _focusTopicWordIds,
       firstSessionOfDay: _firstSessionOfDay,
       correctStreaks: correctStreaks,
+      passedPairs: passedPairs,
     );
     _firstSessionOfDay = false; // consumed — only the day's opening queue
     await _loadNext();
