@@ -3,6 +3,7 @@
 /// Gymmer_App's workout_store_memory.dart.
 library;
 
+import 'package:vocab_app/domain/mastery.dart' show kMasteryGameNames;
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'vocab_store.dart';
@@ -108,12 +109,16 @@ class VocabStoreMemory implements VocabStore {
     return out;
   }
 
-  /// Latest Again timestamp ANYWHERE — used by [loadPassedWordGamePairs]:
-  /// one wrong answer on any word resets the whole "You Pass" grid.
+  /// Latest Again timestamp anywhere IN A MASTERY GAME — used by
+  /// [loadPassedWordGamePairs]: one wrong answer on any word in a mastery
+  /// game resets the whole "You Pass" grid (non-mastery games are
+  /// streak-only and never reset it).
   DateTime? _globalLastLapseTs() {
     DateTime? out;
     for (final r in _reviewLog) {
-      if (r.rating == Rating.again && (out == null || r.ts.isAfter(out))) {
+      if (r.rating == Rating.again &&
+          kMasteryGameNames.contains(r.gameType) &&
+          (out == null || r.ts.isAfter(out))) {
         out = r.ts;
       }
     }
@@ -126,6 +131,7 @@ class VocabStoreMemory implements VocabStore {
     return {
       for (final r in _reviewLog)
         if (r.rating != Rating.again &&
+            kMasteryGameNames.contains(r.gameType) &&
             (lapse == null || r.ts.isAfter(lapse)))
           '${r.wordId}:${r.gameType}',
     };

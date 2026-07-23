@@ -6,7 +6,7 @@ library;
 
 import 'package:flutter/material.dart';
 
-import 'package:vocab_app/domain/session_engine.dart';
+import 'package:vocab_app/domain/mastery.dart';
 import 'package:vocab_app/theme/app_theme.dart';
 import 'package:vocab_app/widgets/staggered_entrance.dart';
 
@@ -19,7 +19,7 @@ class YouPassPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = context.appColors;
     final textTheme = Theme.of(context).textTheme;
-    final gameCount = GameType.values.length;
+    final gameCount = kMasteryGames.length;
 
     return Scaffold(
       body: SafeArea(
@@ -60,7 +60,7 @@ class YouPassPage extends StatelessWidget {
                 StaggeredEntrance(
                   index: 2,
                   child: Text(
-                    'ผ่านครบทุกคำในทุกเกมแล้ว\n$wordCount คำ × $gameCount เกม 🎉',
+                    'ผ่านครบทุกคำในทุกเกมหลักแล้ว\n$wordCount คำ × $gameCount เกม 🎉',
                     textAlign: TextAlign.center,
                     style: textTheme.titleMedium?.copyWith(
                       color: Theme.of(context).colorScheme.onSurfaceVariant,

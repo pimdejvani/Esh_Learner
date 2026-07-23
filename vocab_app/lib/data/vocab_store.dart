@@ -38,10 +38,11 @@ abstract class VocabStore {
   Future<List<ReviewLogEntry>> loadRecentReviews({required DateTime since});
 
   /// Distinct (word, game) pairs answered correctly (rating != again)
-  /// **since that word's most recent Again**, as `"$wordId:$gameType"`
-  /// strings — the mastery grid behind the "You Pass" screen
-  /// (domain/mastery.dart). A single wrong answer on a word wipes its
-  /// whole row (all games) and it must re-earn every cell.
+  /// **in a mastery game** (domain/mastery.dart kMasteryGames: flashcard/
+  /// matching/cloze/dictation) **since the most recent mastery-game Again
+  /// anywhere**, as `"$wordId:$gameType"` strings — the "You Pass" clean-
+  /// round grid. One wrong answer in a mastery game resets the entire
+  /// grid; non-mastery games neither fill cells nor reset.
   Future<Set<String>> loadPassedWordGamePairs();
 
   /// Per-word current consecutive-correct streak: how many reviews the

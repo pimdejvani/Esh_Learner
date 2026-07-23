@@ -12,6 +12,7 @@ import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 
+import 'package:vocab_app/domain/mastery.dart' show kMasteryGameNames;
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'migrations/migration_runner.dart';
@@ -177,13 +178,19 @@ class VocabStoreSqlite implements VocabStore {
 
   @override
   Future<Set<String>> loadPassedWordGamePairs() async {
-    // Only correct answers AFTER the latest Again ANYWHERE count — one
-    // wrong answer on any word resets the ENTIRE mastery grid (the "You
-    // Pass" round must be one clean sweep of every word x every game).
+    // Mastery games only (domain/mastery.dart kMasteryGames). Only
+    // correct answers AFTER the latest mastery-game Again ANYWHERE count
+    // — one wrong answer on any word in a mastery game resets the ENTIRE
+    // grid (the "You Pass" round must be one clean sweep). Non-mastery
+    // games neither fill cells nor trigger resets.
+    final inClause =
+        kMasteryGameNames.map((n) => "'$n'").join(',');
     final rows = await _db.rawQuery(
       "SELECT DISTINCT r.word_id, r.game_type FROM reviews_log r "
-      "WHERE r.rating != 'again' AND r.ts > COALESCE("
-      "  (SELECT MAX(l.ts) FROM reviews_log l WHERE l.rating = 'again'), -1)",
+      "WHERE r.rating != 'again' AND r.game_type IN ($inClause) "
+      "AND r.ts > COALESCE("
+      "  (SELECT MAX(l.ts) FROM reviews_log l "
+      "   WHERE l.rating = 'again' AND l.game_type IN ($inClause)), -1)",
     );
     return {
       for (final r in rows) '${r['word_id']}:${r['game_type']}',

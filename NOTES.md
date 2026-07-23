@@ -1029,6 +1029,21 @@ games); the counting exists purely to finish that single flawless round.
 - Tests updated to the global-reset semantics + new targeting test
   (`flutter test`: 109/109; `flutter analyze` clean).
 
+**v4 (same day): grid narrowed to the 4 "serious" games.** User decision:
+the full 7-game clean round was statistically unreachable (0.99^1071 ≈
+0.002%), so the mastery grid now counts only the games with unambiguous
+right/wrong answers — **Flashcard, Matching, Cloze, Dictation**
+(`kMasteryGames` in domain/mastery.dart, 153×4 = 612 cells). The other
+three (Odd One Out / Word Association / Word Scramble) stay in the play
+rotation but are **streak-only**: their passes don't fill grid cells and
+their misses don't reset the round (both store impls filter
+`reviews_log` by `kMasteryGameNames` for cells AND for the global-reset
+Again lookup; streaks still count all 7 games). play_screen's
+`_maybeCelebrateMastery` also short-circuits on non-mastery games;
+YouPassPage shows "X คำ × 4 เกม". Tests: 111/111 (new cases: mastery
+list is exactly the 4; streak-only passes add no cell; streak-only Again
+does NOT reset the grid).
+
 ### Verification performed
 - `flutter analyze`: clean, 0 issues.
 - `flutter test`: **108/108 passing** — mastery_test reworked with real

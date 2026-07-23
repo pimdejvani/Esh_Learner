@@ -18,10 +18,10 @@ Word _word(int id) => Word(
   hasPhoto: false,
 );
 
-/// Every (word, game) pair for [words] — the fully-passed grid.
+/// Every (word, mastery game) pair for [words] — the fully-passed grid.
 Set<String> _fullGrid(List<Word> words) => {
   for (final w in words)
-    for (final g in GameType.values) masteryKey(w.id, g.name),
+    for (final g in kMasteryGames) masteryKey(w.id, g.name),
 };
 
 void main() {
@@ -48,7 +48,7 @@ void main() {
       );
     });
 
-    test('masteryProgress counts passed cells over words x games', () {
+    test('masteryProgress counts passed cells over words x mastery games', () {
       final words = [_word(1)];
       final grid = {
         masteryKey(1, GameType.flashcard.name),
@@ -59,7 +59,23 @@ void main() {
         passedPairs: grid,
       );
       expect(passed, 2);
-      expect(total, GameType.values.length);
+      expect(total, kMasteryGames.length);
+    });
+
+    test('only the 4 serious games count toward the grid', () {
+      expect(kMasteryGames, [
+        GameType.flashcard,
+        GameType.matching,
+        GameType.cloze,
+        GameType.dictation,
+      ]);
+      // Passing every mastery game is enough — the streak-only games
+      // (oddOneOut / wordAssociation / wordScramble) are not required.
+      final words = [_word(1)];
+      expect(
+        fullMasteryReached(words: words, passedPairs: _fullGrid(words)),
+        isTrue,
+      );
     });
   });
 
@@ -116,6 +132,19 @@ void main() {
       expect(await store.loadPassedWordGamePairs(), {
         masteryKey(1, GameType.dictation.name),
         masteryKey(2, GameType.flashcard.name),
+      });
+    });
+
+    test('streak-only games neither fill cells nor reset the grid', () async {
+      final store = VocabStoreMemory(words: [_word(1)]);
+      await log(store, Rating.good, GameType.cloze); // mastery cell
+      // Pass in a streak-only game -> no new cell:
+      await log(store, Rating.good, GameType.wordScramble);
+      // MISS in a streak-only game -> must NOT reset the round:
+      await log(store, Rating.again, GameType.oddOneOut);
+
+      expect(await store.loadPassedWordGamePairs(), {
+        masteryKey(1, GameType.cloze.name),
       });
     });
   });

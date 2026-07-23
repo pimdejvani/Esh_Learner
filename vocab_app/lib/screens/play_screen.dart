@@ -286,16 +286,18 @@ class _PlayScreenState extends State<PlayScreen> {
       newIntroducedDelta: isFirstEncounter ? 1 : 0,
     );
     await _maybeRetune();
-    await _maybeCelebrateMastery(rating);
+    await _maybeCelebrateMastery(rating, game);
     await _advance();
   }
 
-  /// "You Pass" (domain/mastery.dart): after a correct answer, check
-  /// whether every word has now been passed in every game type; the first
-  /// time that becomes true, show the full-screen celebration once
-  /// (persisted via the `you_pass_shown` setting so it never re-fires).
-  Future<void> _maybeCelebrateMastery(Rating rating) async {
+  /// "You Pass" (domain/mastery.dart): after a correct answer in a
+  /// mastery game, check whether every word has now been passed in every
+  /// mastery game this clean round; the first time that becomes true,
+  /// show the full-screen celebration once (persisted via the
+  /// `you_pass_shown` setting so it never re-fires).
+  Future<void> _maybeCelebrateMastery(Rating rating, GameType game) async {
     if (rating == Rating.again) return; // an Again can't complete the grid
+    if (!kMasteryGames.contains(game)) return; // streak-only games
     if (_state!.settings['you_pass_shown'] == '1') return;
     final passed = await widget.store.loadPassedWordGamePairs();
     if (!fullMasteryReached(words: _state!.words, passedPairs: passed)) {
