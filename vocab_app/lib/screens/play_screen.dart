@@ -343,6 +343,17 @@ class _PlayScreenState extends State<PlayScreen> {
   }
 
   Future<void> _handleRated(int wordId, Rating rating, GameType game) async {
+    await _recordRating(wordId, rating, game);
+    await _advance();
+  }
+
+  /// Persists one rating (FSRS + review log + stats + retune) WITHOUT
+  /// advancing the queue. Split out of [_handleRated] (bug 2026-07-24):
+  /// Matching emits one rating per pair, and routing each through
+  /// _handleRated advanced the queue 4-6 items per round — silently
+  /// skipping the games behind it, so every cycle looked like it had
+  /// only one game and stray new-word cards popped up mid-cycle.
+  Future<void> _recordRating(int wordId, Rating rating, GameType game) async {
     final now = DateTime.now();
     // A word with no SRS row yet is a brand-new word whose first flashcard
     // swipe (รู้จัก/ไม่รู้จัก) doubles as both its introduction AND its
@@ -378,7 +389,6 @@ class _PlayScreenState extends State<PlayScreen> {
     );
     await _maybeRetune();
     await _maybeCelebrateMastery(rating, game);
-    await _advance();
   }
 
   /// "You Pass" (domain/mastery.dart): after a correct answer in a
@@ -405,9 +415,12 @@ class _PlayScreenState extends State<PlayScreen> {
   }
 
   Future<void> _handleMatchingResult(Map<int, Rating> ratings) async {
+    // Record every pair's rating, then advance the queue ONCE — the whole
+    // matching round is a single queue item.
     for (final entry in ratings.entries) {
-      await _handleRated(entry.key, entry.value, GameType.matching);
+      await _recordRating(entry.key, entry.value, GameType.matching);
     }
+    await _advance();
   }
 
   Future<void> _maybeRetune() async {
@@ -629,9 +642,31 @@ class _GameModeIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // A new word IS a flashcard round (2026-07-24 feedback): keep the
+    // Flashcard mode card and add a compact "คำใหม่" badge beside it
+    // instead of replacing the game label entirely.
+    if (gameType == GameType.flashcard && isNewWord) {
+      return const Row(
+        children: [
+          Expanded(
+            child: HighlightCard(
+              icon: Icons.style,
+              title: 'Flashcard',
+              tone: HighlightTone.sky,
+              dense: true,
+            ),
+          ),
+          SizedBox(width: 8),
+          HighlightCard(
+            icon: Icons.auto_awesome,
+            title: 'คำใหม่',
+            tone: HighlightTone.lavender,
+            dense: true,
+          ),
+        ],
+      );
+    }
     final (icon, label, tone) = switch (gameType) {
-      GameType.flashcard when isNewWord =>
-        (Icons.auto_awesome, 'คำใหม่', HighlightTone.lavender),
       GameType.flashcard => (Icons.style, 'Flashcard', HighlightTone.sky),
       GameType.matching => (Icons.grid_view, 'Matching', HighlightTone.sky),
       GameType.oddOneOut => (Icons.category, 'Odd One Out', HighlightTone.sky),

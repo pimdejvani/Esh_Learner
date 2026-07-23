@@ -1213,6 +1213,22 @@ Four user requests in one batch:
 
 Suite 121/121, analyze clean.
 
+### Play-test round 2 fixes (same day, after the DB reset)
+
+- **Matching advanced the queue 4-6 items per round** — the real cause
+  of "แต่ละรอบมีเกมเดียว / เหมือนกดเล่นอัตโนมัติ": _handleMatchingResult
+  routed every pair's rating through _handleRated, and each of those
+  ended with `_advance()`. One 5-pair matching round silently consumed
+  5 queue items, skipping the games (and the folded-in new-word cards)
+  behind it — which also made new words LOOK like they weren't part of
+  the flashcard block. Fixed by splitting `_recordRating` (persist
+  only) out of `_handleRated` (persist + advance): matching records
+  all pairs then advances exactly once.
+- **New-word indicator**: was replacing the game label with "คำใหม่";
+  now shows the normal Flashcard mode card + a compact lavender
+  "คำใหม่" badge beside it (user: a new word IS a flashcard, keep only
+  the icon distinct).
+
 ---
 
 ## Current status & remaining work (as of 2026-07-23 evening)
