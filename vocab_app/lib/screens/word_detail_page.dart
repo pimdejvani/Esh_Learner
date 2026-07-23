@@ -14,6 +14,7 @@ import 'package:flutter/material.dart';
 
 import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/models/word.dart';
+import 'package:vocab_app/theme/app_theme.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 class WordDetailPage extends StatelessWidget {
@@ -153,7 +154,8 @@ class _SenseTile extends StatelessWidget {
         children: [
           Row(
             children: [
-              if (sense.isCore) const Icon(Icons.star, size: 16, color: Colors.amber),
+              if (sense.isCore)
+                Icon(Icons.star, size: 16, color: context.appColors.warning),
               if (sense.isCore) const SizedBox(width: 4),
               Chip(
                 label: Text(sense.cefr, style: const TextStyle(fontSize: 11)),
@@ -226,23 +228,33 @@ class _InflectionRowState extends State<_InflectionRow> {
                 if (display[i].isIrregular) IrregularBadge(form: display[i]),
               ],
               const SizedBox(width: 6),
-              Icon(_expanded ? Icons.expand_less : Icons.expand_more, size: 18),
+              AnimatedRotation(
+                turns: _expanded ? 0.5 : 0,
+                duration: const Duration(milliseconds: 220),
+                child: const Icon(Icons.expand_more, size: 18),
+              ),
             ],
           ),
-          if (_expanded)
-            Padding(
-              padding: const EdgeInsets.only(top: 8),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  for (final f in [...display, ...rest])
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 6),
-                      child: Text('${f.formText} (${f.formType}): ${f.grammarNoteTh}'),
+          AnimatedSize(
+            duration: const Duration(milliseconds: 220),
+            curve: Curves.easeOut,
+            alignment: Alignment.topLeft,
+            child: !_expanded
+                ? const SizedBox(width: double.infinity)
+                : Padding(
+                    padding: const EdgeInsets.only(top: 8),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        for (final f in [...display, ...rest])
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 6),
+                            child: Text('${f.formText} (${f.formType}): ${f.grammarNoteTh}'),
+                          ),
+                      ],
                     ),
-                ],
-              ),
-            ),
+                  ),
+          ),
         ],
       ),
     );

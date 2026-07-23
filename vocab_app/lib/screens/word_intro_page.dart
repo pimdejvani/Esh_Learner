@@ -59,23 +59,31 @@ class _WordIntroPageState extends State<WordIntroPage> {
         ),
         const SizedBox(height: 12),
         if (rank1 != null)
-          if (!_showExample)
-            OutlinedButton(
-              onPressed: () => setState(() => _showExample = true),
-              child: const Text('ดูตัวอย่างประโยค'),
-            )
-          else
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(12),
-                child: Column(
-                  children: [
-                    Text(rank1.enText),
-                    Text(rank1.thText, style: Theme.of(context).textTheme.bodySmall),
-                  ],
-                ),
-              ),
+          AnimatedSwitcher(
+            duration: const Duration(milliseconds: 260),
+            transitionBuilder: (child, anim) => FadeTransition(
+              opacity: anim,
+              child: SizeTransition(sizeFactor: anim, child: child),
             ),
+            child: !_showExample
+                ? OutlinedButton(
+                    key: const ValueKey('reveal-button'),
+                    onPressed: () => setState(() => _showExample = true),
+                    child: const Text('ดูตัวอย่างประโยค'),
+                  )
+                : Card(
+                    key: const ValueKey('example'),
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Column(
+                        children: [
+                          Text(rank1.enText),
+                          Text(rank1.thText, style: Theme.of(context).textTheme.bodySmall),
+                        ],
+                      ),
+                    ),
+                  ),
+          ),
         const SizedBox(height: 20),
         FilledButton(onPressed: widget.onContinue, child: const Text('ต่อไป')),
       ],

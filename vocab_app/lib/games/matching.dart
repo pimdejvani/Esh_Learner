@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
+import 'package:vocab_app/theme/app_theme.dart';
 
 class MatchingGame extends StatefulWidget {
   const MatchingGame({
@@ -98,25 +99,40 @@ class _MatchingGameState extends State<MatchingGame> {
   Widget _leftChip(_MatchingTile t) {
     final matched = _matchedWordIds.contains(t.wordId);
     final selected = _selectedLeftWordId == t.wordId;
+    final success = context.appColors.success;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
-      child: ChoiceChip(
-        label: Text(t.text),
-        selected: selected,
-        disabledColor: Colors.green.withValues(alpha: 0.3),
-        onSelected: matched ? null : (_) => _tapLeft(t.wordId),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 260),
+        curve: Curves.easeOut,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(999),
+          color: matched ? success.withValues(alpha: 0.25) : null,
+        ),
+        child: ChoiceChip(
+          label: Text(t.text),
+          selected: selected,
+          disabledColor: success.withValues(alpha: 0.3),
+          onSelected: matched ? null : (_) => _tapLeft(t.wordId),
+        ),
       ),
     );
   }
 
   Widget _rightChip(_MatchingTile t) {
     final matched = _matchedWordIds.contains(t.wordId);
+    final success = context.appColors.success;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
-      child: ActionChip(
-        label: Text(t.text),
-        backgroundColor: matched ? Colors.green.withValues(alpha: 0.3) : null,
-        onPressed: matched ? null : () => _tapRight(t.wordId),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 260),
+        curve: Curves.easeOut,
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(999)),
+        child: ActionChip(
+          label: Text(t.text),
+          backgroundColor: matched ? success.withValues(alpha: 0.3) : null,
+          onPressed: matched ? null : () => _tapRight(t.wordId),
+        ),
       ),
     );
   }

@@ -11,6 +11,8 @@ import 'package:flutter/material.dart';
 
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
+import 'package:vocab_app/theme/app_theme.dart';
+import 'package:vocab_app/widgets/staggered_entrance.dart';
 
 /// Builds an odd-one-out round: finds a "hub" word whose `related_words`
 /// rows (any word_id in [relatedByWord]) name at least [groupSize] other
@@ -122,31 +124,49 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
           spacing: 8,
           runSpacing: 8,
           alignment: WrapAlignment.center,
-          children: _options.map(_optionChip).toList(),
+          children: [
+            for (var i = 0; i < _options.length; i++)
+              StaggeredEntrance(index: i, child: _optionChip(_options[i])),
+          ],
         ),
-        if (_submitted) ...[
-          const SizedBox(height: 16),
-          Text(
-            _selectedId == widget.oddWord.id
-                ? 'ถูกต้อง! "${widget.oddWord.headword}" ไม่เข้าพวก'
-                : 'คำที่ไม่เข้าพวกคือ "${widget.oddWord.headword}"',
-            style: Theme.of(context).textTheme.bodyLarge,
+        AnimatedSwitcher(
+          duration: const Duration(milliseconds: 260),
+          transitionBuilder: (child, anim) => FadeTransition(
+            opacity: anim,
+            child: SizeTransition(sizeFactor: anim, child: child),
           ),
-          const SizedBox(height: 16),
-          FilledButton(onPressed: _rate, child: const Text('ถัดไป')),
-        ],
+          child: _submitted
+              ? Column(
+                  key: const ValueKey('result'),
+                  children: [
+                    const SizedBox(height: 16),
+                    Text(
+                      _selectedId == widget.oddWord.id
+                          ? 'ถูกต้อง! "${widget.oddWord.headword}" ไม่เข้าพวก'
+                          : 'คำที่ไม่เข้าพวกคือ "${widget.oddWord.headword}"',
+                      style: Theme.of(context).textTheme.bodyLarge,
+                    ),
+                    const SizedBox(height: 16),
+                    FilledButton(onPressed: _rate, child: const Text('ถัดไป')),
+                  ],
+                )
+              : const SizedBox.shrink(key: ValueKey('empty')),
+        ),
       ],
     );
   }
 
   Widget _optionChip(Word w) {
+    final colors = context.appColors;
     final selected = _selectedId == w.id;
     final isOdd = w.id == widget.oddWord.id;
     Color? color;
     if (_submitted && selected) {
-      color = isOdd ? Colors.green.withValues(alpha: 0.4) : Colors.red.withValues(alpha: 0.4);
+      color = isOdd
+          ? colors.success.withValues(alpha: 0.35)
+          : colors.danger.withValues(alpha: 0.35);
     } else if (_submitted && isOdd) {
-      color = Colors.green.withValues(alpha: 0.2);
+      color = colors.success.withValues(alpha: 0.18);
     }
     return ChoiceChip(
       label: Text(w.headword),

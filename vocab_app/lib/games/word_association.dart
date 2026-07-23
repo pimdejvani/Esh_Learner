@@ -19,6 +19,8 @@ import 'package:vocab_app/domain/answer_checker.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
+import 'package:vocab_app/theme/app_theme.dart';
+import 'package:vocab_app/widgets/staggered_entrance.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 /// Picks the related word to test this round: prefers `relation_type ==
@@ -154,7 +156,10 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
           spacing: 8,
           runSpacing: 8,
           alignment: WrapAlignment.center,
-          children: widget.options.map(_optionChip).toList(),
+          children: [
+            for (var i = 0; i < widget.options.length; i++)
+              StaggeredEntrance(index: i, child: _optionChip(widget.options[i])),
+          ],
         ),
         const SizedBox(height: 8),
         if (!_submitted && widget.hintWords.isNotEmpty)
@@ -167,39 +172,58 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
                   : widget.hintWords.take(_hintsRevealed).join(', '),
             ),
           ),
-        if (_submitted) ...[
-          const SizedBox(height: 8),
-          WordResultCard(
-            bundle: widget.bundle,
-            tts: widget.tts,
-            onOpenDetail: () => Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (_) => WordDetailPage(bundle: widget.bundle, tts: widget.tts),
-              ),
-            ),
+        AnimatedSwitcher(
+          duration: const Duration(milliseconds: 260),
+          transitionBuilder: (child, anim) => FadeTransition(
+            opacity: anim,
+            child: SizeTransition(sizeFactor: anim, child: child),
           ),
-          const SizedBox(height: 16),
-          FilledButton(onPressed: _rate, child: const Text('ถัดไป')),
-        ],
+          child: _submitted
+              ? Column(
+                  key: const ValueKey('result'),
+                  children: [
+                    const SizedBox(height: 8),
+                    WordResultCard(
+                      bundle: widget.bundle,
+                      tts: widget.tts,
+                      onOpenDetail: () => Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => WordDetailPage(bundle: widget.bundle, tts: widget.tts),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    FilledButton(onPressed: _rate, child: const Text('ถัดไป')),
+                  ],
+                )
+              : const SizedBox.shrink(key: ValueKey('empty')),
+        ),
       ],
     );
   }
 
   Widget _optionChip(Word w) {
+    final colors = context.appColors;
     final selected = _selectedId == w.id;
     final isCorrect = w.id == widget.correctWordId;
     Color? color;
     if (_submitted && selected) {
-      color = isCorrect ? Colors.green.withValues(alpha: 0.4) : Colors.red.withValues(alpha: 0.4);
+      color = isCorrect
+          ? colors.success.withValues(alpha: 0.35)
+          : colors.danger.withValues(alpha: 0.35);
     } else if (_submitted && isCorrect) {
-      color = Colors.green.withValues(alpha: 0.2);
+      color = colors.success.withValues(alpha: 0.18);
     }
-    return ChoiceChip(
-      label: Text(w.headword),
-      selected: selected,
-      selectedColor: color,
-      backgroundColor: color,
-      onSelected: _submitted ? null : (_) => _select(w.id),
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 220),
+      curve: Curves.easeOut,
+      child: ChoiceChip(
+        label: Text(w.headword),
+        selected: selected,
+        selectedColor: color,
+        backgroundColor: color,
+        onSelected: _submitted ? null : (_) => _select(w.id),
+      ),
     );
   }
 }

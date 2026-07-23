@@ -20,6 +20,7 @@ import 'package:vocab_app/domain/answer_checker.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
+import 'package:vocab_app/widgets/result_banner.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 /// Pure spelling-hint logic for Dictation, kept as static helpers so it's
@@ -163,58 +164,79 @@ class _DictationGameState extends State<DictationGame> {
                 Text('ฟังแล้วพิมพ์สะกดคำ', style: Theme.of(context).textTheme.bodyMedium),
                 const SizedBox(height: 8),
                 Text(sense.meaningTh, style: Theme.of(context).textTheme.titleMedium),
-                if (_hintStage > 0) ...[
-                  const SizedBox(height: 8),
-                  Text(
-                    DictationHint.stageText(word.headword, word.thaiReading, _hintStage),
-                    style: Theme.of(context).textTheme.titleLarge?.copyWith(letterSpacing: 2),
+                AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 220),
+                  transitionBuilder: (child, anim) => FadeTransition(
+                    opacity: anim,
+                    child: SizeTransition(sizeFactor: anim, child: child),
                   ),
-                ],
+                  child: _hintStage > 0
+                      ? Padding(
+                          key: ValueKey(_hintStage),
+                          padding: const EdgeInsets.only(top: 8),
+                          child: Text(
+                            DictationHint.stageText(word.headword, word.thaiReading, _hintStage),
+                            style: Theme.of(
+                              context,
+                            ).textTheme.titleLarge?.copyWith(letterSpacing: 2),
+                          ),
+                        )
+                      : const SizedBox.shrink(),
+                ),
               ],
             ),
           ),
         ),
         const SizedBox(height: 16),
-        if (!_submitted) ...[
-          TextField(
-            controller: _controller,
-            decoration: const InputDecoration(labelText: 'พิมพ์คำที่ได้ยิน'),
-            onSubmitted: (_) => _submit(),
+        AnimatedSwitcher(
+          duration: const Duration(milliseconds: 260),
+          transitionBuilder: (child, anim) => FadeTransition(
+            opacity: anim,
+            child: SizeTransition(sizeFactor: anim, child: child),
           ),
-          const SizedBox(height: 8),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TextButton.icon(
-                onPressed: _hintStage < maxStage ? _revealNextHint : null,
-                icon: const Icon(Icons.lightbulb_outline),
-                label: const Text('ใบ้'),
-              ),
-              FilledButton(onPressed: _submit, child: const Text('ตอบ')),
-            ],
-          ),
-        ] else ...[
-          Text(
-            _result!.verdict == AnswerVerdict.correct
-                ? 'ถูกต้อง!'
-                : _result!.verdict == AnswerVerdict.almostTypo
-                ? 'เกือบถูก (สะกดผิดนิดหน่อย)'
-                : 'คำตอบที่ถูกคือ "${word.headword}"',
-            style: Theme.of(context).textTheme.titleMedium,
-          ),
-          const SizedBox(height: 8),
-          WordResultCard(
-            bundle: widget.bundle,
-            tts: widget.tts,
-            onOpenDetail: () => Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (_) => WordDetailPage(bundle: widget.bundle, tts: widget.tts),
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-          FilledButton(onPressed: _rate, child: const Text('ถัดไป')),
-        ],
+          child: !_submitted
+              ? Column(
+                  key: const ValueKey('input'),
+                  children: [
+                    TextField(
+                      controller: _controller,
+                      decoration: const InputDecoration(labelText: 'พิมพ์คำที่ได้ยิน'),
+                      onSubmitted: (_) => _submit(),
+                    ),
+                    const SizedBox(height: 8),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        TextButton.icon(
+                          onPressed: _hintStage < maxStage ? _revealNextHint : null,
+                          icon: const Icon(Icons.lightbulb_outline),
+                          label: const Text('ใบ้'),
+                        ),
+                        FilledButton(onPressed: _submit, child: const Text('ตอบ')),
+                      ],
+                    ),
+                  ],
+                )
+              : Column(
+                  key: const ValueKey('result'),
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    ResultBanner(result: _result!, correctText: word.headword),
+                    const SizedBox(height: 8),
+                    WordResultCard(
+                      bundle: widget.bundle,
+                      tts: widget.tts,
+                      onOpenDetail: () => Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => WordDetailPage(bundle: widget.bundle, tts: widget.tts),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    FilledButton(onPressed: _rate, child: const Text('ถัดไป')),
+                  ],
+                ),
+        ),
       ],
     );
   }

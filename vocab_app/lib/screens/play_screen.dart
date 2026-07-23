@@ -24,6 +24,7 @@ import 'package:vocab_app/games/word_scramble.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_intro_page.dart';
+import 'package:vocab_app/widgets/highlight_card.dart';
 
 class PlayScreen extends StatefulWidget {
   const PlayScreen({super.key, required this.store, required this.tts});
@@ -376,7 +377,22 @@ class _PlayScreenState extends State<PlayScreen> {
 
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16),
-      child: _buildItem(item),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (item.gameType != GameType.intro) ...[
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 220),
+              child: _GameModeIndicator(
+                key: ValueKey(item.gameType),
+                gameType: item.gameType,
+              ),
+            ),
+            const SizedBox(height: 12),
+          ],
+          _buildItem(item),
+        ],
+      ),
     );
   }
 
@@ -451,5 +467,32 @@ class _PlayScreenState extends State<PlayScreen> {
           onRated: (r) => _handleRated(item.wordId, r, GameType.oddOneOut),
         );
     }
+  }
+}
+
+/// Small "what game am I playing right now" indicator (NOTES.md's UI design
+/// pass: a colorful highlight-card use case explicitly called out for the
+/// play screen) — tone cycles across the three pastel tones by desirable-
+/// difficulty tier (recognition/retrieval/production, SPEC.md section 7's
+/// ladder) so the player gets a quick at-a-glance read of what kind of
+/// round they're in.
+class _GameModeIndicator extends StatelessWidget {
+  const _GameModeIndicator({super.key, required this.gameType});
+
+  final GameType gameType;
+
+  @override
+  Widget build(BuildContext context) {
+    final (icon, label, tone) = switch (gameType) {
+      GameType.flashcard => (Icons.style, 'Flashcard', HighlightTone.sky),
+      GameType.matching => (Icons.grid_view, 'Matching', HighlightTone.sky),
+      GameType.oddOneOut => (Icons.category, 'Odd One Out', HighlightTone.sky),
+      GameType.cloze => (Icons.edit_note, 'Cloze', HighlightTone.lavender),
+      GameType.wordAssociation => (Icons.hub, 'Word Association', HighlightTone.lavender),
+      GameType.wordScramble => (Icons.shuffle, 'Word Scramble', HighlightTone.blue),
+      GameType.dictation => (Icons.hearing, 'Dictation', HighlightTone.blue),
+      GameType.intro => (Icons.auto_awesome, 'คำใหม่', HighlightTone.lavender),
+    };
+    return HighlightCard(icon: icon, title: label, tone: tone, dense: true);
   }
 }

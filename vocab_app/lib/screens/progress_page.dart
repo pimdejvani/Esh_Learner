@@ -13,6 +13,7 @@ import 'package:vocab_app/domain/streaks.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/credits_page.dart';
+import 'package:vocab_app/widgets/highlight_card.dart';
 
 class ProgressPage extends StatefulWidget {
   const ProgressPage({super.key, required this.store});
@@ -28,6 +29,7 @@ class _ProgressPageState extends State<ProgressPage> {
   Map<CardState, int> _statusCounts = {};
   List<Topic> _topics = [];
   int? _focusTopicId;
+  int _dueCount = 0;
   bool _loading = true;
 
   @override
@@ -45,16 +47,19 @@ class _ProgressPageState extends State<ProgressPage> {
     final counts = <CardState, int>{
       for (final s in CardState.values) s: 0,
     };
+    var dueCount = 0;
     for (final w in state.words) {
       final srs = state.srsStates[w.id];
       counts[srs?.state ?? CardState.newState] =
           (counts[srs?.state ?? CardState.newState] ?? 0) + 1;
+      if (srs != null && !srs.dueAt.isAfter(now)) dueCount++;
     }
     setState(() {
       _stats = stats;
       _statusCounts = counts;
       _topics = topics;
       _focusTopicId = int.tryParse(state.settings['focus_topic'] ?? '');
+      _dueCount = dueCount;
       _loading = false;
     });
   }
@@ -81,13 +86,41 @@ class _ProgressPageState extends State<ProgressPage> {
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
-        Card(
-          child: ListTile(
-            leading: const Icon(Icons.local_fire_department, color: Colors.orange),
-            title: Text('Streak: $streak วัน'),
-          ),
+        // "At-a-glance" summary — the reference site's colorful pastel
+        // highlight-card pattern (SPEC.md section 13 / NOTES.md's UI design
+        // pass), distinct from the clean white-bordered content cards used
+        // further down this page.
+        Row(
+          children: [
+            Expanded(
+              child: HighlightCard(
+                icon: Icons.local_fire_department,
+                title: '$streak วัน',
+                subtitle: 'Streak',
+                tone: HighlightTone.blue,
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: HighlightCard(
+                icon: Icons.event_available,
+                title: '$_dueCount คำ',
+                subtitle: 'ค้างทวนวันนี้',
+                tone: HighlightTone.sky,
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: HighlightCard(
+                icon: Icons.auto_awesome,
+                title: '${_stats[dateKey(DateTime.now())]?.newIntroduced ?? 0} คำ',
+                subtitle: 'คำใหม่วันนี้',
+                tone: HighlightTone.lavender,
+              ),
+            ),
+          ],
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 20),
         Text('สถานะคำ', style: Theme.of(context).textTheme.titleMedium),
         Wrap(
           spacing: 8,
@@ -165,15 +198,22 @@ class _HeatmapGrid extends StatelessWidget {
       spacing: 4,
       runSpacing: 4,
       children: [
-        for (final e in entries)
+        for (var i = 0; i < entries.length; i++)
           Tooltip(
-            message: '${e.key}: ${e.value} ครั้ง',
-            child: Container(
-              width: 16,
-              height: 16,
-              decoration: BoxDecoration(
-                color: _colorFor(e.value, context),
-                borderRadius: BorderRadius.circular(3),
+            message: '${entries[i].key}: ${entries[i].value} ครั้ง',
+            child: TweenAnimationBuilder<double>(
+              tween: Tween(begin: 0, end: 1),
+              duration: Duration(milliseconds: 200 + (i % 31) * 8),
+              curve: Curves.easeOut,
+              builder: (context, t, child) => Opacity(opacity: t, child: child),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 300),
+                width: 16,
+                height: 16,
+                decoration: BoxDecoration(
+                  color: _colorFor(entries[i].value, context),
+                  borderRadius: BorderRadius.circular(3),
+                ),
               ),
             ),
           ),

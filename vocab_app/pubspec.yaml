@@ -18,6 +18,7 @@ dependencies:
   flutter_tts: ^4.2.2
   http: ^1.2.2
   crypto: ^3.0.6
+  google_fonts: ^8.2.0
 
 dev_dependencies:
   flutter_test:

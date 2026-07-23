@@ -619,3 +619,233 @@ the focus-topic bias no-op/bias behavior.
   in particular the 4 new games' actual UI/UX (chip layout, hint button
   feel, dictation TTS timing) has only been exercised through pure-function
   unit tests, never rendered.
+
+---
+
+## UI design pass (2026-07-23, Phase 3 UI, `vocab_app/lib/**` only)
+
+UX/logic was declared settled per SPEC.md section 13's ordering rule ("ทำ
+UX ทั้งหมดให้เสร็จก่อน แล้วค่อยทำ UI") — all 7 games + hint system + word
+detail + credits page are built and covered by `flutter test` (91/91, see
+section 9 above) — so this pass replaces the Phase 1-2 placeholder theme
+(`lib/theme/app_theme.dart`'s old plain `ColorScheme.fromSeed`) with a real
+design-language theme, and audits every screen/game/widget to actually use
+it instead of hardcoded colors. This pass only touched `vocab_app/lib/**`
+(theme, screens, games, widgets) and `pubspec.yaml`/`pubspec.lock` (one new
+dependency, `google_fonts`) — no changes to `tools/*.py`, the seed DB, or
+domain logic (`lib/domain/**`, `lib/data/**`), which is why `flutter test`
+still passes 91/91 unchanged.
+
+### Design tokens — where they came from
+
+Per SPEC.md section 13, the reference is the `meeting-iq` shadcn.io
+template (`https://meetingiq.shadcn.io`). Rather than re-deriving tokens
+from guesswork, the exact values below were extracted by inspecting the
+**live rendered site** directly via browser devtools (computed CSS
+variables + a follow-up screenshot pass that corrected two initial
+misreadings — see the "corrections" note below) and used verbatim:
+
+| Token | Light | Dark (derived — see note) |
+|---|---|---|
+| Page background | `#E9FBFF` | `#0A1418` |
+| Card background | `#FFFFFF` | `#101B20` |
+| Card border | thin (1px) solid `#010101`-ish | thin (1px) `#E9FBFF` @ ~17% alpha |
+| Card radius | 12px | 12px |
+| Primary accent | `#49ADFF` | `#49ADFF` (same — reads fine on dark) |
+| Text | `#010101` | `#F2FBFD` |
+| Muted surface | `#F5F5F5` | `#172226` |
+| Muted text | `#737373` | `#93A3A8` |
+| Buttons | pill (`StadiumBorder`), semibold, ~32px h-padding | same |
+| Font | Plus Jakarta Sans (Google Fonts) | same |
+
+The reference site didn't expose a dark variant in what was inspected
+(SPEC.md section 13 says the *original* template has "dark/light ครบ", but
+that wasn't reachable from the live inspection session) — the dark column
+above is derived to follow the same structural language (thin light border
+on dark card instead of thin dark border on white card, same accent,
+same radius/pill-button treatment), not extracted from a real dark
+snapshot. Documented here as the one token set that's a design judgment
+call rather than a direct extraction, per the same honesty standard as
+section 1's dataset table.
+
+**Two corrections mid-pass**, from a later screenshot-based re-inspection
+of the reference (the first devtools pass read computed CSS but missed
+these) — both are baked into the current `app_theme.dart`, not the
+originally-briefed values:
+1. **Headings are bold, not regular.** The reference's big display/headline
+   text (H1/H2-equivalent) is visually heavy (700-800 weight), not the
+   originally-assumed "let size carry hierarchy, weight stays regular"
+   reading. `AppTheme._buildTextTheme()` now sets `displayLarge/Medium/
+   Small` to `FontWeight.w800` and `headlineLarge/Medium/Small` to `w700`;
+   body text stays `w400`, buttons/labels/chips stay `w600`.
+2. **There's a second, colorful card style** alongside the white/thin-
+   border one — pastel tonal blocks (a family riffing on `#49ADFF`: light
+   sky-blue, light lavender-blue, medium blue) each with a small black
+   (light mode) / off-white (dark mode) rounded-square icon badge, used for
+   at-a-glance highlight/summary sections, not dense content. Modeled as
+   `lib/widgets/highlight_card.dart`'s `HighlightCard` + the `highlightSky/
+   highlightLavender/highlightBlue/badgeBackground/badgeForeground` fields
+   on the new `AppColors` theme extension (see below). Used for: the play
+   screen's current-game-mode indicator (`_GameModeIndicator` in
+   `play_screen.dart`, a `dense: true` `HighlightCard` shown above every
+   non-intro round) and the progress page's 3-tile "at a glance" row
+   (streak / due-today count / new-today count, top of `progress_page.dart`
+   now instead of a single plain streak `ListTile`). Left as the clean
+   white-bordered `Card` everywhere denser content lives (word detail
+   entries, sentence lists, credits page, the games' own content cards) —
+   judgment call per the brief's "don't force every card into one style"
+   instruction.
+3. **Floating pill nav.** The reference's persistent top/bottom chrome is
+   itself a rounded-full bar with the same thin-border/white-bg treatment
+   as its cards, floating with margin from the screen edge rather than a
+   flush Material `AppBar`/`NavigationBar`. Applied to the app's root shell
+   only (`main.dart`'s `_RootPage`, via the new `lib/widgets/
+   floating_pill_bar.dart`'s `FloatingTopBar`/`FloatingBottomNav`) — pushed
+   detail screens (`word_detail_page.dart`, `credits_page.dart`) keep a
+   plain themed `AppBar` (flat, background-colored, no elevation, via the
+   theme's `AppBarTheme`) since those aren't the persistent nav this
+   pattern is meant for, and forcing the floating-pill treatment onto every
+   pushed page seemed like overreach past what the reference actually
+   shows.
+
+### What changed, file by file
+
+- **`lib/theme/app_theme.dart`** — full rewrite. Real `ThemeData` (light +
+  dark) built from the tokens above: `ColorScheme` (explicit constructor,
+  not `.fromSeed`, so the exact extracted hex values are used rather than
+  algorithmically derived from a single seed color), `CardThemeData` with
+  the thin-border/no-shadow/12px-radius look, pill-shaped `ElevatedButton`/
+  `FilledButton`/`OutlinedButton`/`TextButton` themes, `ChipThemeData`,
+  `InputDecorationTheme`, themed `AppBarTheme`/`NavigationBarTheme`/
+  `TooltipTheme`/`SnackBarTheme`, and a `TextTheme` built from
+  `GoogleFonts.plusJakartaSansTextTheme()` with the weight rhythm from
+  correction #1 above. Also defines a new `AppColors` `ThemeExtension` —
+  `success`/`warning`/`danger` (the four FSRS rating semantics every game
+  needs a color for) plus the `highlightSky/Lavender/Blue` +
+  `badgeBackground/Foreground` colorful-card family from correction #2 —
+  with a `context.appColors` convenience accessor, so every game/screen
+  reaches semantic colors through the theme instead of a hardcoded
+  `Colors.red`/`Colors.green`/etc. literal.
+- **New `lib/widgets/highlight_card.dart`** — `HighlightCard` (colorful
+  pastel tile + icon badge, `dense` variant for inline indicators).
+- **New `lib/widgets/floating_pill_bar.dart`** — `FloatingTopBar` +
+  `FloatingBottomNav` for the root shell (correction #3).
+- **New `lib/widgets/result_banner.dart`** — shared correct/almost/wrong
+  feedback banner (colored per `AppColors`, animated fade+rise-in) used by
+  Cloze/Word Scramble/Dictation, replacing 3 copies of the same unstyled
+  ternary `Text`.
+- **New `lib/widgets/staggered_entrance.dart`** — shared per-option
+  fade+rise entrance animation for MCQ chip grids (Word Association, Odd
+  One Out).
+- **`lib/main.dart`** — root shell now uses `FloatingTopBar`/
+  `FloatingBottomNav` instead of `AppBar`/`NavigationBar`.
+- **`lib/games/flashcard_swipe.dart`** — see "Flashcard drag physics" below
+  (the task's other headline requirement); also switched its 4 rating
+  button colors from hardcoded `Colors.red/orange/green/blue` to
+  `context.appColors.danger/warning/success` + `colorScheme.primary`.
+- **`lib/games/cloze.dart` / `word_scramble.dart` / `dictation.dart`** —
+  input↔result sections wrapped in `AnimatedSwitcher` (fade+size) instead
+  of an instant `if/else` swap; result text replaced with the new
+  `ResultBanner`; hint-reveal text also animates via a keyed
+  `AnimatedSwitcher`. Word Scramble additionally renders its scrambled
+  letters as individual `_LetterTile`s with a staggered pop-in
+  (`TweenAnimationBuilder` + `easeOutBack`) instead of one static `Text`
+  with manual spacing.
+- **`lib/games/word_association.dart` / `odd_one_out.dart`** — MCQ chip
+  grids now use `StaggeredEntrance` per option; correct/incorrect chip
+  tinting switched from hardcoded `Colors.green`/`Colors.red` literals to
+  `context.appColors.success`/`danger`; result section wrapped in
+  `AnimatedSwitcher`.
+- **`lib/games/matching.dart`** — matched-pair chip tinting switched from
+  `Colors.green` to `context.appColors.success`, now transitions via
+  `AnimatedContainer` instead of an instant color swap.
+- **`lib/screens/progress_page.dart`** — top of the page is now a 3-tile
+  `HighlightCard` row (streak / due-today / new-today) instead of a plain
+  `ListTile` with a hardcoded `Colors.orange` fire icon; heatmap cells gained
+  a staggered fade-in + `AnimatedContainer` color transition.
+- **`lib/screens/word_detail_page.dart`** — the `is_core` star switched from
+  `Colors.amber` to `context.appColors.warning`; the inflection-forms
+  expand/collapse (`_InflectionRow`) now animates via `AnimatedSize` +
+  `AnimatedRotation` on the chevron instead of an instant conditional
+  render, per the brief's explicit callout of this widget as a motion
+  candidate.
+- **`lib/screens/word_intro_page.dart`** — the rank-1 example-sentence
+  reveal (`OutlinedButton` → `Card`) now crossfades/grows via
+  `AnimatedSwitcher` instead of an instant swap.
+- **`lib/screens/play_screen.dart`** — new `_GameModeIndicator` (a dense
+  `HighlightCard`, tone cycled by desirable-difficulty tier per SPEC.md
+  section 7's ladder) shown above every non-intro round.
+- **No changes needed**: `lib/widgets/word_result_card.dart` and
+  `lib/screens/credits_page.dart` already read entirely from `Theme.of
+  (context)`/`Card`/`Chip` (no hardcoded color literals to begin with, only
+  `IrregularBadge`'s `scheme.errorContainer`/`onErrorContainer`, which is
+  still theme-driven), so the new theme applies to them automatically
+  without edits.
+- **`pubspec.yaml`**: added `google_fonts: ^8.2.0` (`flutter pub add
+  google_fonts`, resolved cleanly, no version conflicts against the
+  existing dependency set).
+
+### Flashcard drag physics — upgraded, did not already exist
+
+**Checked the pre-pass implementation first, per the task's instruction.**
+`lib/games/flashcard_swipe.dart` before this pass had **no drag gesture at
+all** — reveal was a `FilledButton` tap, and rating (Again/Hard/Good/Easy)
+was purely 4 static `IconButton`s with an instant `onRated` call. There was
+no `GestureDetector`, no `Transform.translate`, no live finger-tracking of
+any kind — the "swipe" in the class name and doc comment described the
+*intended* SPEC.md section 6.1 interaction, not anything actually
+implemented yet.
+
+This pass adds real Tinder/Hinge-style drag-follow physics:
+- `onPanUpdate` accumulates a live `_dragOffset`, and the revealed
+  `WordResultCard` is wrapped in `Transform.translate(offset: _dragOffset)`
+  + `Transform.rotate(angle: dragOffset.dx / 900)` — the card visibly
+  translates and tilts under the finger in real time, not just at release.
+- Two overlay stamps ("จำได้"/"ลืม", colored via `AppColors.success`/
+  `danger`) fade in proportionally to drag distance as the user drags,
+  giving live directional feedback.
+- `onPanEnd` checks both distance (`>110px`) and velocity (`>650px/s`)
+  thresholds (either one alone is enough, matching how real card-swipe UIs
+  feel — a fast flick shouldn't need to travel as far as a slow drag): past
+  threshold, the card animates the rest of the way off-screen in the drag
+  direction (`Tween` + `Curves.easeIn`) and *then* calls `onRated`; below
+  threshold, it snaps back to center with `Curves.elasticOut` (a visible
+  spring-back, not an instant reset).
+- The 4 rating buttons still exist (kept per SPEC.md 6.1's "ปุ่มเสริม" for
+  Hard/Easy, which have no natural swipe direction) but Again/Good now
+  route through the *same* `_flyOffAndRate` animation instead of firing
+  `onRated` instantly, so button-tap and swipe feel like the same
+  interaction language rather than two different response speeds.
+- A `_resolved` guard flag prevents double-firing `onRated` if a drag
+  release animation is already in flight when a button is somehow also
+  tapped.
+
+### Verification performed
+
+- **`flutter analyze`: clean, 0 issues** (one deprecation warning surfaced
+  mid-pass — `SizeTransition.axisAlignment` in `word_intro_page.dart` — and
+  was fixed by dropping the now-redundant parameter rather than left as a
+  lint).
+- **`flutter test`: 91/91 passing, unchanged from before this pass** — this
+  was a presentation-only pass (no `lib/domain/**`/`lib/data/**` edits), and
+  no new widget tests were added (the repo has never had pumped widget
+  tests for any game — see section 9's "Not done" note above, which is
+  still accurate; this pass didn't change that, since verifying it was
+  scoped to `flutter analyze`/`flutter test`/`flutter build web` per the
+  task, not adding new test coverage).
+- **`flutter build web`: succeeds** — same pre-existing non-fatal
+  `flutter_tts` web-shim wasm-compat lint warnings as every prior build in
+  this repo (see section 3's Phase 1 verification), no new errors from the
+  theme/`google_fonts` changes.
+- **Not done, same as every prior pass**: actual on-device/simulator visual
+  verification (no iOS simulator/Android emulator/working desktop build in
+  this environment — see section 3's "Not done" note, unchanged). The user
+  will review the real rendered UI themselves in a browser per the task's
+  own instruction; this pass's target was correct, compiling theme/widget
+  code, not self-verified pixels.
+- **Confirmed no account/auth UI exists anywhere** (`grep`-checked
+  `lib/**` for login/account/password/auth-shaped identifiers — the only
+  hits were `imageAuthor`/`translationSource` field names on
+  `credits_page.dart`, false positives from "auth" being a substring of
+  "Author"). Matches the task's expectation for a single-device, local-only
+  app with no account system; no changes were needed here.

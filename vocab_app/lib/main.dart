@@ -10,6 +10,7 @@ import 'package:vocab_app/data/vocab_store_sqlite.dart';
 import 'package:vocab_app/screens/play_screen.dart';
 import 'package:vocab_app/screens/progress_page.dart';
 import 'package:vocab_app/theme/app_theme.dart';
+import 'package:vocab_app/widgets/floating_pill_bar.dart';
 
 void main() {
   // iOS/Android use the platform sqflite plugin directly. Desktop targets
@@ -70,16 +71,30 @@ class _RootPageState extends State<_RootPage> {
       PlayScreen(store: store, tts: _tts),
       ProgressPage(store: store),
     ];
+    // Floating pill top/bottom chrome (SPEC.md section 13 / NOTES.md's UI
+    // design pass) instead of a flush Material AppBar/NavigationBar — the
+    // reference site's own persistent nav is a rounded-full bar with
+    // visible margin from the screen edge.
     return Scaffold(
-      appBar: AppBar(title: const Text('Oxford 3000 -> Thai')),
-      body: pages[_tab],
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: _tab,
-        onDestinationSelected: (i) => setState(() => _tab = i),
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.play_arrow), label: 'เล่น'),
-          NavigationDestination(icon: Icon(Icons.bar_chart), label: 'ความก้าวหน้า'),
-        ],
+      body: SafeArea(
+        bottom: false,
+        child: Column(
+          children: [
+            const FloatingTopBar(title: 'Oxford 3000 -> Thai'),
+            Expanded(child: pages[_tab]),
+          ],
+        ),
+      ),
+      bottomNavigationBar: SafeArea(
+        top: false,
+        child: FloatingBottomNav(
+          selectedIndex: _tab,
+          onSelected: (i) => setState(() => _tab = i),
+          items: const [
+            FloatingNavItem(icon: Icons.play_arrow, label: 'เล่น'),
+            FloatingNavItem(icon: Icons.bar_chart, label: 'ความก้าวหน้า'),
+          ],
+        ),
       ),
     );
   }
