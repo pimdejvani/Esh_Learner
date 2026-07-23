@@ -981,3 +981,38 @@ Two follow-ups in the same session:
   full grid true; single missing cell false; fresh profile false;
   progress counting; memory-store pair collection ignoring Again and
   deduping repeats).
+
+## Mastery rules v2: lapse resets the word's row + solid-word fade-out (2026-07-23)
+
+User refinement of the "You Pass" rules immediately after v1 shipped:
+
+- **A wrong answer resets the whole word, not just that game.** One
+  Again on a word — in *any* game — wipes its entire mastery row (all 7
+  cells) and it must re-earn every game from scratch. The goal is "keep
+  looping until you can get through everything without a single miss".
+  Implemented in `loadPassedWordGamePairs()` (both stores) by only
+  counting correct answers with `ts >` the word's latest Again in
+  `reviews_log` (SQLite: correlated `MAX(ts)` subquery; memory impl
+  mirrors it). No schema change — still derived purely from the log.
+- **Already-solid words fade out of the loop.** New store method
+  `loadCorrectStreaks()` (passes since last Again, per word) feeds
+  `buildQueue`'s new `correctStreaks` param; the extra-practice pick is
+  now a **weighted sample without replacement**
+  (`weightedPracticeSample`, weight `1/(1+streak)`) instead of a plain
+  shuffle — a word on a 9-streak has 10% the draw weight of a fresh or
+  just-lapsed word. Rationale (user): after a late-stage lapse, an
+  unweighted loop would keep re-serving easy words and take forever to
+  get back to the hard ones. Monotonic-decreasing weight documented on
+  `practiceWeight`.
+- `_maybeCelebrateMastery`'s skip-on-Again shortcut still holds (an
+  Again can only shrink the grid). `you_pass_shown` once-ever unchanged.
+
+### Verification performed
+- `flutter analyze`: clean, 0 issues.
+- `flutter test`: **108/108 passing** — mastery_test reworked with real
+  timestamp ordering (3 reset cases: post-lapse pairs only; Again in one
+  game wipes passes earned in other games while other words keep theirs;
+  re-earned passes count again) + streak counting + `practiceWeight`
+  monotonicity; session_engine_test adds pool-smaller-than-count
+  inclusion and a 200-draw statistical check that a streak-1M word
+  almost never beats a streak-0 word (>195/200 with a fixed seed).

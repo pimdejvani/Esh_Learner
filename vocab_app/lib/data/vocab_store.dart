@@ -37,10 +37,19 @@ abstract class VocabStore {
 
   Future<List<ReviewLogEntry>> loadRecentReviews({required DateTime since});
 
-  /// Distinct (word, game) pairs ever answered correctly (rating !=
-  /// again), as `"$wordId:$gameType"` strings — the mastery grid behind
-  /// the "You Pass" screen (domain/mastery.dart).
+  /// Distinct (word, game) pairs answered correctly (rating != again)
+  /// **since that word's most recent Again**, as `"$wordId:$gameType"`
+  /// strings — the mastery grid behind the "You Pass" screen
+  /// (domain/mastery.dart). A single wrong answer on a word wipes its
+  /// whole row (all games) and it must re-earn every cell.
   Future<Set<String>> loadPassedWordGamePairs();
+
+  /// Per-word current consecutive-correct streak: how many reviews the
+  /// word has passed since its most recent Again (0 / absent = none or
+  /// just lapsed). Used to progressively down-weight already-solid words
+  /// in the extra-practice loop so post-lapse grinding doesn't waste time
+  /// re-showing easy words (session_engine's weighted practice sample).
+  Future<Map<int, int>> loadCorrectStreaks();
 
   Future<void> saveSetting(String key, String value);
 

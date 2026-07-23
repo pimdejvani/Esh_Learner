@@ -177,12 +177,30 @@ class VocabStoreSqlite implements VocabStore {
 
   @override
   Future<Set<String>> loadPassedWordGamePairs() async {
+    // Only correct answers AFTER the word's latest Again count — one
+    // wrong answer resets that word's whole row of the mastery grid.
     final rows = await _db.rawQuery(
-      "SELECT DISTINCT word_id, game_type FROM reviews_log "
-      "WHERE rating != 'again'",
+      "SELECT DISTINCT r.word_id, r.game_type FROM reviews_log r "
+      "WHERE r.rating != 'again' AND r.ts > COALESCE("
+      "  (SELECT MAX(l.ts) FROM reviews_log l "
+      "   WHERE l.word_id = r.word_id AND l.rating = 'again'), -1)",
     );
     return {
       for (final r in rows) '${r['word_id']}:${r['game_type']}',
+    };
+  }
+
+  @override
+  Future<Map<int, int>> loadCorrectStreaks() async {
+    final rows = await _db.rawQuery(
+      "SELECT r.word_id, COUNT(*) AS streak FROM reviews_log r "
+      "WHERE r.rating != 'again' AND r.ts > COALESCE("
+      "  (SELECT MAX(l.ts) FROM reviews_log l "
+      "   WHERE l.word_id = r.word_id AND l.rating = 'again'), -1) "
+      "GROUP BY r.word_id",
+    );
+    return {
+      for (final r in rows) r['word_id'] as int: r['streak'] as int,
     };
   }
 

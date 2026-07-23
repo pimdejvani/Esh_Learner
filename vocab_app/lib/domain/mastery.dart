@@ -1,7 +1,10 @@
 /// Full-mastery "You Pass" condition (product decision 2026-07-23): the
 /// player passes the whole app once **every word has been answered
-/// correctly at least once in every game type** (rating hard/good/easy —
-/// anything but Again — counts as a pass; derived from `reviews_log`).
+/// correctly in every game type since that word's most recent wrong
+/// answer** (rating hard/good/easy counts as a pass; one Again wipes the
+/// word's entire row — all games — and it must re-earn every cell; the
+/// stores' `loadPassedWordGamePairs()` implements the reset by only
+/// counting passes after the word's latest Again in `reviews_log`).
 /// When the condition first becomes true, play_screen shows the
 /// full-screen YouPassPage exactly once (persisted via the
 /// `you_pass_shown` setting).

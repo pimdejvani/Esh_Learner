@@ -108,6 +108,10 @@ class _PlayScreenState extends State<PlayScreen> {
 
   Future<void> _refillQueue() async {
     final state = _state!;
+    // Current consecutive-correct streaks (since each word's last Again)
+    // — the extra-practice sampler uses them to fade out already-solid
+    // words so the loop spends its rounds on the hard ones.
+    final correctStreaks = await widget.store.loadCorrectStreaks();
     _queue = _sessionEngine.buildQueue(
       words: state.words,
       srsStates: state.srsStates,
@@ -116,6 +120,7 @@ class _PlayScreenState extends State<PlayScreen> {
       newIntroducedToday: _newIntroducedToday,
       focusTopicWordIds: _focusTopicWordIds,
       firstSessionOfDay: _firstSessionOfDay,
+      correctStreaks: correctStreaks,
     );
     _firstSessionOfDay = false; // consumed — only the day's opening queue
     await _loadNext();

@@ -99,6 +99,47 @@ const List<GameType> kPracticeGameCycle = [
   GameType.dictation,
 ];
 
+/// Selection weight for one word in the extra-practice sample, given its
+/// current consecutive-correct [streak] (correct answers since its last
+/// Again). Monotonically decreasing: a word you keep getting right
+/// gradually fades out of the loop (streak 0 → 1.0, 4 → 0.2, 9 → 0.1),
+/// freeing rounds for the words that actually need work — otherwise a
+/// late-stage lapse would restart the loop on easy words and take forever
+/// to get back to the hard ones (product decision 2026-07-23).
+double practiceWeight(int streak) => 1 / (1 + streak);
+
+/// Weighted sample without replacement of up to [count] words from
+/// [pool], weighting each by [practiceWeight] of its streak. Words with
+/// no entry in [streaks] count as streak 0 (full weight). When
+/// `pool.length <= count` every word is still included (weights only
+/// affect order); low-streak words are drawn earlier on average.
+List<Word> weightedPracticeSample({
+  required List<Word> pool,
+  required Map<int, int> streaks,
+  required int count,
+  required Random random,
+}) {
+  final remaining = List.of(pool);
+  final out = <Word>[];
+  while (out.length < count && remaining.isNotEmpty) {
+    final weights = [
+      for (final w in remaining) practiceWeight(streaks[w.id] ?? 0),
+    ];
+    var total = 0.0;
+    for (final wt in weights) {
+      total += wt;
+    }
+    var roll = random.nextDouble() * total;
+    var idx = 0;
+    for (; idx < remaining.length - 1; idx++) {
+      roll -= weights[idx];
+      if (roll <= 0) break;
+    }
+    out.add(remaining.removeAt(idx));
+  }
+  return out;
+}
+
 class SessionEngine {
   SessionEngine({Random? random}) : _random = random ?? Random();
 
@@ -119,6 +160,9 @@ class SessionEngine {
   /// the first queue built after the 3am logical-day boundary — the day
   /// always opens with a flashcard round, so the first item's game is
   /// forced to flashcard regardless of what the ladder picked.
+  /// [correctStreaks] per-word consecutive-correct counts (store's
+  /// `loadCorrectStreaks()`): down-weights already-solid words in the
+  /// extra-practice sample via [practiceWeight].
   List<SessionItem> buildQueue({
     required List<Word> words,
     required Map<int, SrsState> srsStates,
@@ -128,6 +172,7 @@ class SessionEngine {
     int matchingBatchSize = 6,
     Set<int> focusTopicWordIds = const {},
     bool firstSessionOfDay = false,
+    Map<int, int> correctStreaks = const {},
   }) {
     final overdue = <_DueEntry>[];
     final newCandidates = <Word>[];
@@ -196,14 +241,19 @@ class SessionEngine {
     // light→heavy order, wrapping back to flashcard, instead of being
     // limited to the word's ladder tier — practice rounds don't touch the
     // schedule hard anyway, and the variety is the point of the loop.
-    final practicePool =
-        words.where((w) {
-          final s = srsStates[w.id];
-          return s != null && s.reps > 0 && s.dueAt.isAfter(now);
-        }).toList()..shuffle(_random);
+    final practicePool = words.where((w) {
+      final s = srsStates[w.id];
+      return s != null && s.reps > 0 && s.dueAt.isAfter(now);
+    }).toList();
+    final practiceSample = weightedPracticeSample(
+      pool: practicePool,
+      streaks: correctStreaks,
+      count: 10,
+      random: _random,
+    );
 
     var cycleIndex = 0;
-    for (final w in practicePool.take(10)) {
+    for (final w in practiceSample) {
       final srs = srsStates[w.id]!;
       queue.add(
         SessionItem(

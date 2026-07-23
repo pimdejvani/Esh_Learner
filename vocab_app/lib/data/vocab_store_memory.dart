@@ -95,11 +95,44 @@ class VocabStoreMemory implements VocabStore {
     required DateTime since,
   }) async => _reviewLog.where((r) => !r.ts.isBefore(since)).toList();
 
+  /// Latest Again timestamp per word — passes only count after this
+  /// (a wrong answer resets the word's whole mastery row).
+  Map<int, DateTime> _lastLapseTs() {
+    final out = <int, DateTime>{};
+    for (final r in _reviewLog) {
+      if (r.rating != Rating.again) continue;
+      final prev = out[r.wordId];
+      if (prev == null || r.ts.isAfter(prev)) out[r.wordId] = r.ts;
+    }
+    return out;
+  }
+
+  bool _isPostLapsePass(ReviewLogEntry r, Map<int, DateTime> lastLapse) {
+    if (r.rating == Rating.again) return false;
+    final lapse = lastLapse[r.wordId];
+    return lapse == null || r.ts.isAfter(lapse);
+  }
+
   @override
-  Future<Set<String>> loadPassedWordGamePairs() async => {
-    for (final r in _reviewLog)
-      if (r.rating != Rating.again) '${r.wordId}:${r.gameType}',
-  };
+  Future<Set<String>> loadPassedWordGamePairs() async {
+    final lastLapse = _lastLapseTs();
+    return {
+      for (final r in _reviewLog)
+        if (_isPostLapsePass(r, lastLapse)) '${r.wordId}:${r.gameType}',
+    };
+  }
+
+  @override
+  Future<Map<int, int>> loadCorrectStreaks() async {
+    final lastLapse = _lastLapseTs();
+    final out = <int, int>{};
+    for (final r in _reviewLog) {
+      if (_isPostLapsePass(r, lastLapse)) {
+        out[r.wordId] = (out[r.wordId] ?? 0) + 1;
+      }
+    }
+    return out;
+  }
 
   @override
   Future<void> saveSetting(String key, String value) async {

@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:vocab_app/domain/session_engine.dart';
 import 'package:vocab_app/models/srs_state.dart';
@@ -285,6 +287,36 @@ void main() {
       final practice =
           queue.where((i) => i.source == QueueSource.extraPractice).toList();
       expect(practice.map((i) => i.gameType).toList(), kPracticeGameCycle);
+    });
+
+    test('weightedPracticeSample includes every word when pool <= count', () {
+      final pool = List.generate(4, (i) => _word(i));
+      final sample = weightedPracticeSample(
+        pool: pool,
+        streaks: {0: 100, 1: 0, 2: 50, 3: 3},
+        count: 10,
+        random: Random(1),
+      );
+      expect(sample.map((w) => w.id).toSet(), {0, 1, 2, 3});
+    });
+
+    test('a high-streak word is drawn far less often than a fresh one', () {
+      // Word 0: streak 0 (full weight). Word 1: huge streak (~zero
+      // weight). Over many draws of 1-of-2, word 0 should dominate.
+      final pool = [_word(1), _word(0)]; // heavy word listed FIRST
+      final streaks = {0: 0, 1: 1000000};
+      final random = Random(42);
+      var word0First = 0;
+      for (var i = 0; i < 200; i++) {
+        final sample = weightedPracticeSample(
+          pool: pool,
+          streaks: streaks,
+          count: 1,
+          random: random,
+        );
+        if (sample.single.id == 0) word0First++;
+      }
+      expect(word0First, greaterThan(195));
     });
 
     test('first session of the day always opens with a flashcard round', () {
