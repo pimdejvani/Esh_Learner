@@ -20,12 +20,13 @@ RelatedWord _rel(
   int relatedWordId, {
   String type = 'association',
   bool giveaway = false,
+  double closeness = 0.5,
 }) => RelatedWord(
   id: relatedWordId,
   wordId: wordId,
   relatedWordId: relatedWordId,
   relationType: type,
-  closeness: 0.5,
+  closeness: closeness,
   isGiveaway: giveaway,
 );
 
@@ -88,7 +89,8 @@ void main() {
       expect(group, isNull);
     });
 
-    test('falls back to a smaller group size (2) when 3 isn\'t reachable', () {
+    test('no longer falls back below 3 group members — 2 strong members '
+        'means no Odd round (revision 2026-07-24)', () {
       final twoMember = {
         1: [_rel(1, 2), _rel(1, 3)],
       };
@@ -98,8 +100,86 @@ void main() {
         relatedByWord: twoMember,
         groupSize: 3,
       );
+      expect(group, isNull);
+    });
+
+    test('weak association ties below minCloseness do not count as '
+        'same-group (consistent coherence bar, revision 2026-07-24)', () {
+      // Hub has 3 members but one tie is weak (0.01 < 0.03 default bar)
+      // -> only 2 qualify -> no round.
+      final mixed = {
+        1: [_rel(1, 2), _rel(1, 3), _rel(1, 4, closeness: 0.01)],
+      };
+      final group = buildOddOneOutGroup(
+        target: _word(5, 'cat'),
+        pool: pool,
+        relatedByWord: mixed,
+      );
+      expect(group, isNull);
+    });
+
+    test('typed category data (hypernym) qualifies regardless of '
+        'closeness', () {
+      final typed = {
+        1: [
+          _rel(1, 2, type: 'hypernym', closeness: 0.001),
+          _rel(1, 3, type: 'hypernym', closeness: 0.001),
+          _rel(1, 4, type: 'hypernym', closeness: 0.001),
+        ],
+      };
+      final group = buildOddOneOutGroup(
+        target: _word(5, 'cat'),
+        pool: pool,
+        relatedByWord: typed,
+      );
       expect(group, isNotNull);
-      expect(group!.length, 2);
+      expect(group!.map((w) => w.id).toSet(), {2, 3, 4});
+    });
+
+    test('strict early-game mode needs MORE THAN 2 qualifying groups '
+        '(revision 2026-07-24)', () {
+      final bigPool = [
+        for (var i = 1; i <= 12; i++) _word(i, 'w$i'),
+      ];
+      Map<int, List<RelatedWord>> hubs(int count) => {
+        // Hub h relates to 3 members each, none of them word 12.
+        for (var h = 0; h < count; h++)
+          h + 1: [
+            _rel(h + 1, (h * 3 + 2) % 11 + 1),
+            _rel(h + 1, (h * 3 + 3) % 11 + 1),
+            _rel(h + 1, (h * 3 + 4) % 11 + 1),
+          ],
+      };
+      final target = _word(12, 'odd');
+      // 2 groups only -> strict refuses.
+      expect(
+        buildOddOneOutGroup(
+          target: target,
+          pool: bigPool,
+          relatedByWord: hubs(2),
+          strict: true,
+        ),
+        isNull,
+      );
+      // Same data, non-strict -> fine.
+      expect(
+        buildOddOneOutGroup(
+          target: target,
+          pool: bigPool,
+          relatedByWord: hubs(2),
+        ),
+        isNotNull,
+      );
+      // 3 groups -> strict allows.
+      expect(
+        buildOddOneOutGroup(
+          target: target,
+          pool: bigPool,
+          relatedByWord: hubs(3),
+          strict: true,
+        ),
+        isNotNull,
+      );
     });
 
     test('excludes is_giveaway rows from candidate group members', () {

@@ -307,7 +307,7 @@ settings(key TEXT PK, value TEXT)   -- new_card_cap, focus_topic, request_retent
 3. **Matching** — โยงเส้นจับคู่ EN–TH · อย่างน้อย **4 คู่** เสมอ (สูงสุด 6) และอย่างน้อย 2 คู่เป็นคำที่ streak ต่ำสุดของผู้เล่น (แก้ไข 2026-07-23) *[Phase 1]*
 4. **Word Association** — โยงคำใหม่เข้ากับคำที่รู้แล้วในโครงข่ายความหมาย *[Phase 2]*
 5. **Word Scramble** — เรียงตัวอักษรที่สลับให้เป็นคำ → production + desirable difficulty *[Phase 2]*
-6. **Odd One Out** — เลือกคำที่ไม่เข้าพวกจากกลุ่ม → semantic categorization *[Phase 2]*
+6. **Odd One Out** — เลือกคำที่ไม่เข้าพวกจากกลุ่ม → semantic categorization *[Phase 2]* · เกณฑ์ความเหมือน (แก้ไข 2026-07-24): คำนับเป็นพวกเดียวกันเมื่อเป็นข้อมูลหมวดชนิด typed (hypernym/category/part_of) หรือ closeness SWOW ≥ **0.03** (≈p75 ของข้อมูล) · กลุ่มต้องมี **อย่างน้อย 3 คำ** + 1 คำแปลก (ตัด fallback 2 คำทิ้ง) หาไม่ได้ = ข้ามไป flashcard · **ช่วงเริ่มเล่นแอป** (คำที่มีประวัติ ≤8 ≈ 2 บล็อกคำใหม่แรก) เข้มพิเศษ: ต้องมีกลุ่มที่ผ่านเกณฑ์ **มากกว่า 2 กลุ่ม** ให้เลือก ไม่งั้นไม่ออกเกม Odd เลย · กลุ่มให้คะแนนตาม closeness รวม สุ่มจาก top ≤5 กันซ้ำ hub เดิม
 7. **Dictation** — ฟังเสียง (TTS) แล้วพิมพ์สะกด → listening + spelling + production *[Phase 2]*
 
 ทุกเกมส่งผล rating กลับเข้า FSRS ผ่าน `answer_checker`

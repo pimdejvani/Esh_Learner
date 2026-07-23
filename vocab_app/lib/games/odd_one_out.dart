@@ -7,6 +7,8 @@
 /// (Dictation) respectively — categorization recognition isn't either.
 library;
 
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import 'package:vocab_app/models/srs_state.dart';
@@ -20,51 +22,70 @@ import 'package:vocab_app/widgets/staggered_entrance.dart';
 /// related to [target] — i.e. a coherent group that [target] genuinely
 /// doesn't belong to.
 ///
-/// Prefers hubs where those rows are typed `hypernym`/`category`/`part_of`
-/// (the WordNet-style category data SPEC.md sections 4/5 describe for this
-/// game), but falls back to any non-`is_giveaway` relation type — the
-/// current seed only has `relation_type='association'` rows (see
-/// NOTES.md's Phase 1 section on `RELATED_FALLBACK`), so this fallback is
-/// what actually produces rounds today; it'll prefer the richer typed data
-/// automatically once the content pipeline adds it, no code change needed.
+/// 2026-07-24 revision (user feedback "กลุ่มคำรู้สึกไม่ค่อยเหมือนกัน"):
+/// - **One consistent coherence bar**: a row only counts as "same group"
+///   when it's typed category data (`hypernym`/`category`/`part_of`) OR
+///   its SWOW `closeness` ≥ [minCloseness]. Default 0.03 ≈ the 75th
+///   percentile of the seed's association strengths — weak free-
+///   association ties (the majority) no longer qualify.
+/// - **Minimum 3 group members**: the old fallback to a 2-word group is
+///   gone. Fewer than [groupSize] strong members = no Odd round (caller
+///   re-routes to flashcard).
+/// - **[strict] early-game mode** (the player's first ~2 new-word blocks,
+///   ~8 words): require MORE THAN 2 qualifying groups to choose from —
+///   fewer means the data around today's words is too thin to guarantee
+///   a clean round, so skip Odd entirely. Beyond that the normal rules
+///   above apply.
+/// - Groups are scored by total member closeness; [random] (when given)
+///   picks uniformly among the top few so rounds don't repeat the same
+///   strongest hub forever.
 ///
-/// Returns null when no hub in the data has enough qualifying members yet
-/// (expected for many words given how sparse the current fallback data is)
-/// — callers should skip/re-route the round rather than force a bad one.
+/// Returns null when no hub qualifies — callers should skip/re-route the
+/// round rather than force a bad one.
 List<Word>? buildOddOneOutGroup({
   required Word target,
   required List<Word> pool,
   required Map<int, List<RelatedWord>> relatedByWord,
   int groupSize = 3,
+  double minCloseness = 0.03,
+  bool strict = false,
+  Random? random,
 }) {
   const preferredTypes = {'hypernym', 'category', 'part_of'};
   final poolById = {for (final w in pool) w.id: w};
 
-  for (final size in [groupSize, 2]) {
-    if (size < 2) continue;
-    for (final preferOnly in [true, false]) {
-      for (final hub in relatedByWord.entries) {
-        if (hub.key == target.id) continue;
-        final rows = hub.value.where((r) {
-          if (r.isGiveaway) return false;
-          if (preferOnly && !preferredTypes.contains(r.relationType)) return false;
-          return true;
-        }).toList();
-        if (rows.any((r) => r.relatedWordId == target.id)) {
-          continue; // target IS related to this hub -> not a fair "odd one"
-        }
-        final memberIds = rows
-            .map((r) => r.relatedWordId)
-            .where((id) => id != target.id && poolById.containsKey(id))
-            .toSet()
-            .toList();
-        if (memberIds.length >= size) {
-          return memberIds.take(size).map((id) => poolById[id]!).toList();
-        }
-      }
+  final candidates = <(double, List<Word>)>[];
+  for (final hub in relatedByWord.entries) {
+    if (hub.key == target.id) continue;
+    if (hub.value.any((r) => r.relatedWordId == target.id)) {
+      continue; // target IS related to this hub -> not a fair "odd one"
     }
+    final rows = hub.value.where((r) {
+      if (r.isGiveaway) return false;
+      return preferredTypes.contains(r.relationType) ||
+          r.closeness >= minCloseness;
+    }).toList()
+      ..sort((a, b) => b.closeness.compareTo(a.closeness));
+    final seen = <int>{};
+    final members = <RelatedWord>[];
+    for (final r in rows) {
+      if (r.relatedWordId == target.id) continue;
+      if (!poolById.containsKey(r.relatedWordId)) continue;
+      if (!seen.add(r.relatedWordId)) continue;
+      members.add(r);
+    }
+    if (members.length < groupSize) continue;
+    final top = members.take(groupSize).toList();
+    final score = top.fold(0.0, (s, r) => s + r.closeness);
+    candidates.add((score, [for (final r in top) poolById[r.relatedWordId]!]));
   }
-  return null;
+
+  if (candidates.isEmpty) return null;
+  if (strict && candidates.length <= 2) return null;
+  candidates.sort((a, b) => b.$1.compareTo(a.$1));
+  if (random == null) return candidates.first.$2;
+  final span = candidates.length < 5 ? candidates.length : 5;
+  return candidates[random.nextInt(span)].$2;
 }
 
 class OddOneOutGame extends StatefulWidget {

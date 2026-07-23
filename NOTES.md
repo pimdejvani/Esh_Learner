@@ -1229,6 +1229,25 @@ Suite 121/121, analyze clean.
   "คำใหม่" badge beside it (user: a new word IS a flashcard, keep only
   the icon distinct).
 
+### Odd One Out coherence pass (2026-07-24, user: "กลุ่มคำไม่ค่อยเหมือนกัน")
+
+`buildOddOneOutGroup` rewritten around one consistent coherence bar:
+- A row counts as same-group only if it's typed category data
+  (hypernym/category/part_of) or its SWOW closeness ≥ **0.03** —
+  chosen as ≈ the seed data's 75th percentile (distribution: min
+  0.003, median 0.014, p75 0.034, p90 0.082); 68/253 hubs still have
+  ≥3 strong in-vocab members at that bar.
+- Minimum **3 group members**, the old fallback-to-2 removed.
+- **Strict early-game mode** (play_screen passes
+  `strict: srsStates.length <= 8`, ≈ the first 2 new-word blocks):
+  requires >2 qualifying groups to exist or Odd is skipped entirely
+  (falls back to flashcard as before). User picked this scope
+  explicitly ("ช่วงเริ่มเล่นแอป").
+- Groups scored by total closeness; a Random picks among the top ≤5 so
+  rounds don't repeat the single strongest hub forever.
+
+Suite 124/124.
+
 ---
 
 ## Current status & remaining work (as of 2026-07-23 evening)

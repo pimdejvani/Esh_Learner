@@ -245,6 +245,12 @@ class _PlayScreenState extends State<PlayScreen> {
               target: target,
               pool: _state!.words,
               relatedByWord: _relatedByWord,
+              // Early game (first ~2 new-word blocks / ~8 words with any
+              // history): only serve Odd when >2 coherent groups exist to
+              // choose from (user request 2026-07-24); afterwards the
+              // normal coherence bar + 3-member minimum stand alone.
+              strict: _state!.srsStates.length <= 8,
+              random: _random,
             );
       if (target == null || group == null) {
         _queue[0] = _fallbackToFlashcard(item);
