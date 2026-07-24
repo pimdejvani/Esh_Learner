@@ -198,6 +198,8 @@ class SessionEngine {
     Map<int, int> correctStreaks = const {},
     Set<String> passedPairs = const {},
     double? recentAccuracy,
+    int? onboardingNewCount,
+    int? forcedFlashcardSize,
   }) {
     final overdue = <_DueEntry>[];
     final newCandidates = <Word>[];
@@ -215,9 +217,17 @@ class SessionEngine {
 
     // Oldest-due first (most overdue = highest priority).
     overdue.sort((a, b) => a.srs.dueAt.compareTo(b.srs.dueAt));
-    // New cards by freq_rank / CEFR order (word list is already loaded in
-    // that order by the store, but sort defensively).
-    newCandidates.sort((a, b) => a.freqRank.compareTo(b.freqRank));
+    // New-card order. Normally easy→hard by freq_rank. On a HOT streak
+    // (recent accuracy very high) surface HARDER new words first instead —
+    // "ดันคำใหม่ยากขึ้นตอน hot" (item 15). New words have no FSRS
+    // difficulty yet, so hardness is proxied by CEFR band then rarity
+    // (freq_rank): B1 > A2 > A1, rarer before commoner within a band.
+    final hot = recentAccuracy != null && recentAccuracy >= 0.9;
+    if (hot) {
+      newCandidates.sort((a, b) => _newHardness(b).compareTo(_newHardness(a)));
+    } else {
+      newCandidates.sort((a, b) => a.freqRank.compareTo(b.freqRank));
+    }
 
     final queue = <SessionItem>[];
 
@@ -300,9 +310,18 @@ class SessionEngine {
     // practice pool is EMPTY (fresh install / nothing to review) the
     // share is ignored and the block fills with new words up to the cap:
     // a mix ratio can't apply when there's nothing to mix with.
+    // Cap raised 0.4 -> 0.5 (item 17, 2026-07-24): when the player is
+    // crushing it, up to HALF the flashcard block may be new words.
     final newShare = recentAccuracy == null
-        ? 0.4
-        : 0.4 * (((recentAccuracy - 0.5) / 0.4).clamp(0.0, 1.0));
+        ? 0.5
+        : 0.5 * (((recentAccuracy - 0.5) / 0.4).clamp(0.0, 1.0));
+
+    // Early game (< 40 words with any history): non-flashcard games get a
+    // shorter 1-2 rounds instead of 2-4 (item 18) so the still-thin word
+    // pool isn't stretched across long same-game runs.
+    final learnedCount =
+        srsStates.values.where((s) => s.reps > 0).length;
+    final earlyGame = learnedCount < 40;
 
     // FSRS per-word difficulty (1..10) feeds the practice sampler so the
     // words the scheduler has learned are hard for THIS player surface
@@ -314,22 +333,32 @@ class SessionEngine {
     final usedIds = <int>{};
     outer:
     for (final game in cycleGames) {
-      // Flashcard blocks are longer: 4-8 cards, TRIANGULAR distribution
-      // (user spec 2026-07-23: "โอกาสสุ่มยิ่งอยู่ตรงกลางค่าเฉลี่ยยิ่งออก
-      // เยอะ"). Sum of two dice — the simplest bell-ish generator:
-      // 4 + d3 + d3 gives 4..8 with P(6) highest (3/9), P(5)=P(7)=2/9,
-      // and the extremes 4/8 rarest (1/9 each). Other games stay a
-      // uniform 2-4 rounds.
-      final rounds = game == GameType.flashcard
-          ? 4 + _random.nextInt(3) + _random.nextInt(3)
-          : 2 + _random.nextInt(3);
-      // Per-block new-word budget: share of the block size, or cap-only
-      // when there's no practice material to mix with.
+      final blockStart = queue.length;
+      // Flashcard block size:
+      // - Onboarding (item 19): forced to exactly onboardingNewCount all-
+      //   new cards for the first ramp blocks.
+      // - forcedFlashcardSize (item 19 exit): the block right after
+      //   onboarding fails is a fixed 8.
+      // - Otherwise 4-8, TRIANGULAR (4 + d3 + d3: P(6) highest). Other
+      //   games are a uniform 2-4 rounds, or 1-2 in the early game (item
+      //   18, < 40 learned words).
+      final int rounds;
+      if (game == GameType.flashcard) {
+        rounds = onboardingNewCount ??
+            forcedFlashcardSize ??
+            (4 + _random.nextInt(3) + _random.nextInt(3));
+      } else {
+        rounds = earlyGame ? 1 + _random.nextInt(2) : 2 + _random.nextInt(3);
+      }
+      // Per-block new-word budget: during onboarding the whole block is
+      // new; otherwise a share of the block size, or cap-only when there's
+      // no practice material to mix with.
       final maxNewThisBlock = game != GameType.flashcard
           ? 0
-          : practicePool.isEmpty
-              ? remainingCap
-              : (rounds * newShare).floor();
+          : onboardingNewCount ??
+              (practicePool.isEmpty
+                  ? remainingCap
+                  : (rounds * newShare).floor());
       var newThisBlock = 0;
       for (var r = 0; r < rounds; r++) {
         // Flashcard-block slots are filled by today's capped new words
@@ -383,6 +412,14 @@ class SessionEngine {
           ),
         );
       }
+      // Flashcard block: randomise the EN/TH prompt mix (item 14, user:
+      // the review felt "ไทยล้วน"). Only REVIEW cards are re-mixed —
+      // brand-new cards always meet the player as EN->TH. Among the review
+      // cards, a triangular-random count show EN->TH and the rest TH->EN,
+      // at shuffled positions.
+      if (game == GameType.flashcard) {
+        _mixFlashcardDirections(queue, blockStart);
+      }
     }
 
     // newCardCap paces an ordinary day, but it should never be a hard wall:
@@ -422,6 +459,42 @@ class SessionEngine {
   Direction _nextDirection(Direction? last) {
     if (last == null) return Direction.enTh;
     return last == Direction.enTh ? Direction.thEn : Direction.enTh;
+  }
+
+  /// New-word hardness proxy (item 15): CEFR band dominates, rarity
+  /// (freq_rank) breaks ties. Higher = harder. Used to surface harder new
+  /// words first on a hot streak.
+  static int _newHardness(Word w) {
+    const band = {'A1': 0, 'A2': 1, 'B1': 2, 'B2': 3, 'C1': 4, 'C2': 5};
+    return (band[w.cefr] ?? 0) * 100000 + w.freqRank;
+  }
+
+  /// Re-assigns EN/TH prompt directions across the flashcard block that
+  /// occupies queue[start..end] (item 14). New-word cards are left as-is
+  /// (always EN->TH on first meeting); the review cards get a
+  /// triangular-random count of EN->TH prompts at shuffled positions so a
+  /// block is never all-Thai or all-English.
+  void _mixFlashcardDirections(List<SessionItem> queue, int start) {
+    final reviewIdx = [
+      for (var i = start; i < queue.length; i++)
+        if (queue[i].source != QueueSource.newCard) i,
+    ];
+    final n = reviewIdx.length;
+    if (n == 0) return;
+    // Triangular count in 0..n (average of two uniform draws), then pick
+    // which positions get EN->TH.
+    final enCount = (_random.nextInt(n + 1) + _random.nextInt(n + 1)) ~/ 2;
+    final shuffled = List.of(reviewIdx)..shuffle(_random);
+    final enPositions = shuffled.take(enCount).toSet();
+    for (final i in reviewIdx) {
+      final it = queue[i];
+      queue[i] = SessionItem(
+        wordId: it.wordId,
+        gameType: it.gameType,
+        direction: enPositions.contains(i) ? Direction.enTh : Direction.thEn,
+        source: it.source,
+      );
+    }
   }
 
   /// Round-robins consecutive-different words so the same word doesn't

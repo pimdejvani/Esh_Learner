@@ -5,10 +5,10 @@ import 'package:vocab_app/domain/session_engine.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 
-Word _word(int id, {int freq = 0}) => Word(
+Word _word(int id, {int freq = 0, String cefr = 'A1'}) => Word(
   id: id,
   headword: 'w$id',
-  cefr: 'A1',
+  cefr: cefr,
   freqRank: freq,
   thaiReading: 'w$id',
   stressIndex: 1,
@@ -367,7 +367,7 @@ void main() {
     });
 
     test('new-word share of the flashcard block scales with recent '
-        'accuracy: high -> up to 40%, low -> zero (revision 2026-07-24)', () {
+        'accuracy: high -> up to 50%, low -> zero (revision 2026-07-24)', () {
       // 20 practice words + 30 brand new, generous cap.
       final words = List.generate(50, (i) => _word(i, freq: i));
       final srs = {
@@ -375,7 +375,7 @@ void main() {
           i: _due(i, now.add(const Duration(days: 2))),
       };
       for (var trial = 0; trial < 30; trial++) {
-        // High accuracy: some new words, never more than 40% of the block.
+        // High accuracy: some new words, never more than 50% of the block.
         final hot = engine.buildQueue(
           words: words,
           srsStates: srs,
@@ -390,7 +390,7 @@ void main() {
             .takeWhile((i) => i.gameType == GameType.flashcard)
             .length;
         expect(newCount, greaterThanOrEqualTo(1));
-        expect(newCount, lessThanOrEqualTo((0.4 * blockLen).floor()));
+        expect(newCount, lessThanOrEqualTo((0.5 * blockLen).floor()));
 
         // Low accuracy: no new words at all, even with cap available.
         final cold = engine.buildQueue(
@@ -406,6 +406,92 @@ void main() {
           0,
         );
       }
+    });
+
+    test('new-word flashcards always meet the player as EN->TH even when '
+        'the block direction mix randomizes review cards (item 14)', () {
+      final words = List.generate(50, (i) => _word(i, freq: i));
+      final srs = {
+        for (var i = 30; i < 50; i++)
+          i: _due(i, now.add(const Duration(days: 2))),
+      };
+      for (var trial = 0; trial < 20; trial++) {
+        final queue = engine.buildQueue(
+          words: words,
+          srsStates: srs,
+          now: now,
+          newCardCap: 15,
+          newIntroducedToday: 0,
+          recentAccuracy: 0.95,
+        );
+        for (final item in queue.where((i) => i.source == QueueSource.newCard)) {
+          expect(item.direction, Direction.enTh);
+        }
+      }
+    });
+
+    test('early game (< 40 learned) gives non-flashcard games 1-2 rounds '
+        '(item 18)', () {
+      // 20 learned words, all due-later -> pure practice cycle, early game.
+      final words = List.generate(20, (i) => _word(i, freq: i));
+      final srs = {
+        for (final w in words)
+          w.id: _due(w.id, now.add(const Duration(days: 2))),
+      };
+      for (var trial = 0; trial < 40; trial++) {
+        final queue = engine.buildQueue(
+          words: words,
+          srsStates: srs,
+          now: now,
+          newCardCap: 8,
+          newIntroducedToday: 8,
+        );
+        final practice =
+            queue.where((i) => i.source == QueueSource.extraPractice).toList();
+        // Compress into runs and check every non-flashcard run is 1-2.
+        final runGames = <GameType>[];
+        final runLengths = <int>[];
+        for (final item in practice) {
+          if (runGames.isNotEmpty && runGames.last == item.gameType) {
+            runLengths[runLengths.length - 1]++;
+          } else {
+            runGames.add(item.gameType);
+            runLengths.add(1);
+          }
+        }
+        for (var i = 0; i < runGames.length; i++) {
+          if (runGames[i] != GameType.flashcard) {
+            expect(runLengths[i], inInclusiveRange(1, 2));
+          }
+        }
+      }
+    });
+
+    test('hot streak surfaces harder (higher CEFR) new words first (item 15)',
+        () {
+      // 10 seen words + 3 new: one A1, one A2, one B1.
+      final seen = [
+        for (var i = 0; i < 10; i++) _word(i, freq: i),
+      ];
+      final newWords = [
+        _word(100, freq: 100, cefr: 'A1'),
+        _word(101, freq: 101, cefr: 'A2'),
+        _word(102, freq: 102, cefr: 'B1'),
+      ];
+      final srs = {
+        for (final w in seen) w.id: _due(w.id, now.add(const Duration(days: 2))),
+      };
+      final hot = engine.buildQueue(
+        words: [...seen, ...newWords],
+        srsStates: srs,
+        now: now,
+        newCardCap: 15,
+        newIntroducedToday: 0,
+        recentAccuracy: 0.95,
+      );
+      final firstNew =
+          hot.firstWhere((i) => i.source == QueueSource.newCard);
+      expect(firstNew.wordId, 102); // the B1 word, hardest first
     });
 
     test('share is ignored when there is nothing to review — a fresh '

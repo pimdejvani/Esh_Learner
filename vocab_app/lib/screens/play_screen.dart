@@ -165,6 +165,8 @@ class _PlayScreenState extends State<PlayScreen> {
       since: DateTime.now().subtract(const Duration(days: 7)),
     );
     final recentAccuracy = _governor.recentAccuracy(recentReviews);
+    final (onboardingNewCount, forcedFlashcardSize) =
+        await _onboardingRamp(state, recentAccuracy);
     _queue = _sessionEngine.buildQueue(
       words: state.words,
       srsStates: state.srsStates,
@@ -176,9 +178,45 @@ class _PlayScreenState extends State<PlayScreen> {
       correctStreaks: correctStreaks,
       passedPairs: passedPairs,
       recentAccuracy: recentAccuracy,
+      onboardingNewCount: onboardingNewCount,
+      forcedFlashcardSize: forcedFlashcardSize,
     );
     _firstSessionOfDay = false; // consumed — only the day's opening queue
     await _loadNext();
+  }
+
+  /// Onboarding ramp (item 19, 2026-07-24). The first flashcard block is
+  /// 10 all-new words; if the player scores ≥90% they get another 10, up
+  /// to 3 blocks (30 words), then normal mode. The first block that misses
+  /// 90% ends onboarding and is served as a plain 8-card block, after
+  /// which new-word share follows the usual accuracy-scaled calc.
+  ///
+  /// Returns `(onboardingNewCount, forcedFlashcardSize)`:
+  /// - `(10, null)` while ramping,
+  /// - `(null, 8)` on the block that just ended onboarding by falling short,
+  /// - `(null, null)` in normal mode.
+  Future<(int?, int?)> _onboardingRamp(
+    VocabStoreState state,
+    double? recentAccuracy,
+  ) async {
+    if (state.settings['onboarding_done'] == 'true') return (null, null);
+    final learned =
+        state.srsStates.values.where((s) => s.reps > 0).length;
+    if (learned >= 30) {
+      await widget.store.saveSetting('onboarding_done', 'true');
+      state.settings['onboarding_done'] = 'true';
+      return (null, null);
+    }
+    // Stage 0 (0-9 learned): always ramp. Stages 1-2 (10-29) require the
+    // previous block to have hit ≥90% — judged by the recent-window
+    // accuracy (null = not enough data yet = keep ramping).
+    final stage = learned ~/ 10; // 0, 1, or 2
+    if (stage >= 1 && recentAccuracy != null && recentAccuracy < 0.9) {
+      await widget.store.saveSetting('onboarding_done', 'true');
+      state.settings['onboarding_done'] = 'true';
+      return (null, 8); // the block that ends onboarding is a fixed 8
+    }
+    return (10, null);
   }
 
   /// Family-A semantic hint (SPEC.md 8b): related words for [bundle],
