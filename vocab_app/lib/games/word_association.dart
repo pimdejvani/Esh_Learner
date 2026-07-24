@@ -22,6 +22,7 @@ import 'package:vocab_app/screens/word_detail_page.dart';
 import 'package:vocab_app/theme/app_theme.dart';
 import 'package:vocab_app/widgets/speak_buttons.dart';
 import 'package:vocab_app/widgets/staggered_entrance.dart';
+import 'package:vocab_app/widgets/swipe_up_detector.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 /// Picks the related word to test this round: prefers `relation_type ==
@@ -126,7 +127,11 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
   @override
   Widget build(BuildContext context) {
     final word = widget.bundle.word;
-    return Column(
+    return SwipeUpDetector(
+      onSwipeUp: () {
+        if (_submitted) _rate();
+      },
+      child: Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         Card(
@@ -197,6 +202,7 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
               : const SizedBox.shrink(key: ValueKey('empty')),
         ),
       ],
+      ),
     );
   }
 

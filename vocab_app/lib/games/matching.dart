@@ -18,6 +18,8 @@ import 'package:flutter/material.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/theme/app_theme.dart';
+import 'package:vocab_app/widgets/game_top_bar.dart';
+import 'package:vocab_app/widgets/swipe_up_detector.dart';
 
 class MatchingGame extends StatefulWidget {
   const MatchingGame({
@@ -241,14 +243,18 @@ class _MatchingGameState extends State<MatchingGame> {
   @override
   Widget build(BuildContext context) {
     final colors = context.appColors;
-    return Column(
+    return SwipeUpDetector(
+      // Swipe up = check answers once every pair is linked (item 10).
+      onSwipeUp: () {
+        if (_allLinked && !_finished) _check();
+      },
+      child: Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(
-          'ลากเส้นจับคู่ (หรือแตะซ้ายแล้วแตะขวา) · แตะคำที่โยงแล้วเพื่อแก้คู่',
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Theme.of(context).colorScheme.onSurfaceVariant,
-          ),
+        const GameTopBar(
+          infoMessage: 'Drag a line to match each pair (or tap left then '
+              'right). Tap a linked word to break the pair.\n'
+              'Swipe up to check once every pair is linked.',
         ),
         const SizedBox(height: 8),
         CustomPaint(
@@ -280,6 +286,7 @@ class _MatchingGameState extends State<MatchingGame> {
           child: const Text('ตรวจคำตอบ'),
         ),
       ],
+      ),
     );
   }
 

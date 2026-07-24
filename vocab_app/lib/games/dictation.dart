@@ -20,7 +20,10 @@ import 'package:vocab_app/domain/answer_checker.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
+import 'package:vocab_app/widgets/game_top_bar.dart';
 import 'package:vocab_app/widgets/result_banner.dart';
+import 'package:vocab_app/widgets/swipe_up_detector.dart';
+import 'package:vocab_app/widgets/ui_prefs.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 /// Pure spelling-hint logic for Dictation, kept as static helpers so it's
@@ -106,6 +109,7 @@ class DictationGame extends StatefulWidget {
 
 class _DictationGameState extends State<DictationGame> {
   final _controller = TextEditingController();
+  final _focus = FocusNode();
   final _stopwatch = Stopwatch()..start();
   bool _submitted = false;
   int _hintStage = 0;
@@ -115,6 +119,21 @@ class _DictationGameState extends State<DictationGame> {
   void initState() {
     super.initState();
     widget.tts.speak(widget.bundle.word.headword);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    _focus.dispose();
+    super.dispose();
+  }
+
+  void _onSwipeUp() => !_submitted ? _submit() : _rate();
+
+  void _toggleKeyboard() {
+    autoKeyboardEnabled.value = !autoKeyboardEnabled.value;
+    autoKeyboardEnabled.value ? _focus.requestFocus() : _focus.unfocus();
+    setState(() {});
   }
 
   void _revealNextHint() {
@@ -149,9 +168,17 @@ class _DictationGameState extends State<DictationGame> {
     final sense = widget.bundle.coreSense;
     final maxStage = DictationHint.maxStage(word.headword);
 
-    return Column(
+    return SwipeUpDetector(
+      onSwipeUp: _onSwipeUp,
+      child: Column(
       mainAxisSize: MainAxisSize.min,
       children: [
+        GameTopBar(
+          infoMessage: 'Listen, then type the spelling. Use the hint if '
+              'stuck.\nSwipe up to submit, then again to continue.',
+          keyboardEnabled: autoKeyboardEnabled.value,
+          onToggleKeyboard: _toggleKeyboard,
+        ),
         Card(
           child: Padding(
             padding: const EdgeInsets.all(24),
@@ -216,6 +243,8 @@ class _DictationGameState extends State<DictationGame> {
                   children: [
                     TextField(
                       controller: _controller,
+                      focusNode: _focus,
+                      autofocus: autoKeyboardEnabled.value,
                       decoration: const InputDecoration(labelText: 'พิมพ์คำที่ได้ยิน'),
                       onSubmitted: (_) => _submit(),
                     ),
@@ -254,6 +283,7 @@ class _DictationGameState extends State<DictationGame> {
                 ),
         ),
       ],
+      ),
     );
   }
 }

@@ -27,6 +27,7 @@ import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
 import 'package:vocab_app/theme/app_theme.dart';
+import 'package:vocab_app/widgets/info_hint.dart';
 import 'package:vocab_app/widgets/speak_buttons.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
@@ -105,8 +106,16 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
 
   void _onPanUpdate(DragUpdateDetails details) {
     if (_resolved) return;
-    setState(() => _dragOffset += details.delta);
+    // Horizontal-only: the card never follows a vertical drag (user
+    // 2026-07-24: "คำศัพท์จะไม่รองรับการปัดขึ้นปัดลง").
+    setState(() => _dragOffset += Offset(details.delta.dx, 0));
   }
+
+  static const _frontHint =
+      'Tap the card to reveal the answer.\n'
+      'Swipe right = you know it, left = you don\'t.';
+  static const _revealedHint =
+      'Swipe right if you knew it, left if you didn\'t.';
 
   void _onPanEnd(DragEndDetails details) {
     if (_resolved) return;
@@ -140,16 +149,6 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
     });
   }
 
-  /// Buttons drive the same fly-off animation so tapping รู้จัก/ไม่รู้จัก
-  /// looks consistent with swiping, instead of an instant cut.
-  void _rateViaButton({required bool known}) {
-    if (_resolved) return;
-    _flyOffAndRate(
-      toRight: known,
-      rating: known ? _knownRating : Rating.again,
-    );
-  }
-
   void _flip() {
     if (_resolved) return;
     setState(() => _revealed = true);
@@ -179,13 +178,6 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
                       Text(_promptText, style: Theme.of(context).textTheme.headlineMedium),
                       if (widget.direction == Direction.enTh)
                         SpeakButtons(tts: widget.tts, text: widget.bundle.word.headword),
-                      const SizedBox(height: 8),
-                      Text(
-                        'แตะการ์ดเพื่อดูคำตอบ',
-                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: Theme.of(context).colorScheme.onSurfaceVariant,
-                        ),
-                      ),
                     ],
                   ),
                 ),
@@ -221,6 +213,12 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
+        // Standard "!" info affordance (top-right) replaces the faint
+        // on-card instruction lines; message reflects front vs revealed.
+        Align(
+          alignment: Alignment.centerRight,
+          child: InfoHint(message: _revealed ? _revealedHint : _frontHint),
+        ),
         GestureDetector(
           onTap: _flip,
           onPanUpdate: _onPanUpdate,
@@ -268,31 +266,6 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
             ),
           ),
         ),
-        const SizedBox(height: 16),
-        Text(
-          'ปัดขวา = รู้จัก · ปัดซ้าย = ไม่รู้จัก',
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Theme.of(context).colorScheme.onSurfaceVariant,
-          ),
-        ),
-        const SizedBox(height: 12),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            _RateButton(
-              label: 'ไม่รู้จัก',
-              icon: Icons.close,
-              color: colors.danger,
-              onTap: () => _rateViaButton(known: false),
-            ),
-            _RateButton(
-              label: 'รู้จัก',
-              icon: Icons.check,
-              color: colors.success,
-              onTap: () => _rateViaButton(known: true),
-            ),
-          ],
-        ),
       ],
     );
   }
@@ -327,30 +300,3 @@ class _SwipeStamp extends StatelessWidget {
   }
 }
 
-class _RateButton extends StatelessWidget {
-  const _RateButton({
-    required this.label,
-    required this.icon,
-    required this.color,
-    required this.onTap,
-  });
-
-  final String label;
-  final IconData icon;
-  final Color color;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        IconButton.filled(
-          style: IconButton.styleFrom(backgroundColor: color, foregroundColor: Colors.white),
-          icon: Icon(icon),
-          onPressed: onTap,
-        ),
-        Text(label, style: Theme.of(context).textTheme.labelSmall),
-      ],
-    );
-  }
-}

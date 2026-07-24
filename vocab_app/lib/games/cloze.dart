@@ -13,7 +13,10 @@ import 'package:vocab_app/domain/answer_checker.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
+import 'package:vocab_app/widgets/game_top_bar.dart';
 import 'package:vocab_app/widgets/result_banner.dart';
+import 'package:vocab_app/widgets/swipe_up_detector.dart';
+import 'package:vocab_app/widgets/ui_prefs.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 class ClozeGame extends StatefulWidget {
@@ -38,10 +41,26 @@ class ClozeGame extends StatefulWidget {
 
 class _ClozeGameState extends State<ClozeGame> {
   final _controller = TextEditingController();
+  final _focus = FocusNode();
   final _stopwatch = Stopwatch()..start();
   bool _submitted = false;
   int _hintsRevealed = 0;
   AnswerCheckResult? _result;
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    _focus.dispose();
+    super.dispose();
+  }
+
+  void _onSwipeUp() => !_submitted ? _submit() : _rate();
+
+  void _toggleKeyboard() {
+    autoKeyboardEnabled.value = !autoKeyboardEnabled.value;
+    autoKeyboardEnabled.value ? _focus.requestFocus() : _focus.unfocus();
+    setState(() {});
+  }
 
   ExampleSentence get _sentence {
     final sentences = widget.bundle.sentences;
@@ -117,9 +136,17 @@ class _ClozeGameState extends State<ClozeGame> {
     final before = s.enText.substring(0, s.clozeStart);
     final after = s.enText.substring(s.clozeEnd);
 
-    return Column(
+    return SwipeUpDetector(
+      onSwipeUp: _onSwipeUp,
+      child: Column(
       mainAxisSize: MainAxisSize.min,
       children: [
+        GameTopBar(
+          infoMessage: 'Type the missing word. Tap Listen to hear the '
+              'sentence.\nSwipe up to submit, then again to continue.',
+          keyboardEnabled: autoKeyboardEnabled.value,
+          onToggleKeyboard: _toggleKeyboard,
+        ),
         Card(
           child: Padding(
             padding: const EdgeInsets.all(24),
@@ -179,6 +206,8 @@ class _ClozeGameState extends State<ClozeGame> {
                   children: [
                     TextField(
                       controller: _controller,
+                      focusNode: _focus,
+                      autofocus: autoKeyboardEnabled.value,
                       decoration: const InputDecoration(labelText: 'พิมพ์คำตอบ'),
                       onSubmitted: (_) => _submit(),
                     ),
@@ -235,6 +264,7 @@ class _ClozeGameState extends State<ClozeGame> {
                 ),
         ),
       ],
+      ),
     );
   }
 }

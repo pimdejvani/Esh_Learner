@@ -15,6 +15,7 @@ import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/theme/app_theme.dart';
 import 'package:vocab_app/widgets/staggered_entrance.dart';
+import 'package:vocab_app/widgets/swipe_up_detector.dart';
 
 /// Builds an odd-one-out round: finds a "hub" word whose `related_words`
 /// rows (any word_id in [relatedByWord]) name at least [groupSize] other
@@ -146,7 +147,13 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return SwipeUpDetector(
+      // Swipe up advances once answered (item 10); before that a pick is
+      // still required, so it's a no-op.
+      onSwipeUp: () {
+        if (_submitted) _rate();
+      },
+      child: Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -190,6 +197,7 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
               : const SizedBox.shrink(key: ValueKey('empty')),
         ),
       ],
+      ),
     );
   }
 

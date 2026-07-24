@@ -15,7 +15,10 @@ import 'package:vocab_app/domain/answer_checker.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
+import 'package:vocab_app/widgets/game_top_bar.dart';
 import 'package:vocab_app/widgets/result_banner.dart';
+import 'package:vocab_app/widgets/swipe_up_detector.dart';
+import 'package:vocab_app/widgets/ui_prefs.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 /// Shuffles [word]'s letters. Guarantees the result differs from the
@@ -62,6 +65,7 @@ class WordScrambleGame extends StatefulWidget {
 
 class _WordScrambleGameState extends State<WordScrambleGame> {
   final _controller = TextEditingController();
+  final _focus = FocusNode();
   final _stopwatch = Stopwatch()..start();
   late final String _scrambled;
   bool _submitted = false;
@@ -72,6 +76,22 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
   void initState() {
     super.initState();
     _scrambled = scrambleWord(widget.bundle.word.headword, random: widget.random);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    _focus.dispose();
+    super.dispose();
+  }
+
+  /// Swipe up = submit if still answering, else advance (item 10).
+  void _onSwipeUp() => !_submitted ? _submit() : _rate();
+
+  void _toggleKeyboard() {
+    autoKeyboardEnabled.value = !autoKeyboardEnabled.value;
+    autoKeyboardEnabled.value ? _focus.requestFocus() : _focus.unfocus();
+    setState(() {});
   }
 
   void _revealNextHint() {
@@ -104,9 +124,17 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
   @override
   Widget build(BuildContext context) {
     final sense = widget.bundle.coreSense;
-    return Column(
+    return SwipeUpDetector(
+      onSwipeUp: _onSwipeUp,
+      child: Column(
       mainAxisSize: MainAxisSize.min,
       children: [
+        GameTopBar(
+          infoMessage: 'Unscramble the letters and type the word.\n'
+              'Swipe up to submit, then again to continue.',
+          keyboardEnabled: autoKeyboardEnabled.value,
+          onToggleKeyboard: _toggleKeyboard,
+        ),
         Card(
           child: Padding(
             padding: const EdgeInsets.all(24),
@@ -139,6 +167,8 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
                   children: [
                     TextField(
                       controller: _controller,
+                      focusNode: _focus,
+                      autofocus: autoKeyboardEnabled.value,
                       decoration: const InputDecoration(labelText: 'เรียงตัวอักษรใหม่'),
                       onSubmitted: (_) => _submit(),
                     ),
@@ -184,6 +214,7 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
                 ),
         ),
       ],
+      ),
     );
   }
 }
