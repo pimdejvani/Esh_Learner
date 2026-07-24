@@ -147,7 +147,7 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
                   ],
                 ),
                 Text(
-                  'คำไหนที่คนส่วนใหญ่นึกถึงเมื่อเห็นคำนี้?',
+                  'Which word do most people associate with this?',
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ],
@@ -171,7 +171,7 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
             icon: const Icon(Icons.lightbulb_outline),
             label: Text(
               _hintsRevealed == 0
-                  ? 'ใบ้'
+                  ? 'Hint'
                   : widget.hintWords.take(_hintsRevealed).join(', '),
             ),
           ),
@@ -196,7 +196,7 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    FilledButton(onPressed: _rate, child: const Text('ถัดไป')),
+                    FilledButton(onPressed: _rate, child: const Text('Next')),
                   ],
                 )
               : const SizedBox.shrink(key: ValueKey('empty')),

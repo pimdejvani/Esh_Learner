@@ -19,13 +19,13 @@ class ResultBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = context.appColors;
     final (color, icon, message) = switch (result.verdict) {
-      AnswerVerdict.correct => (colors.success, Icons.check_circle, 'ถูกต้อง!'),
+      AnswerVerdict.correct => (colors.success, Icons.check_circle, 'Correct!'),
       AnswerVerdict.almostTypo => (
         colors.warning,
         Icons.info,
-        'เกือบถูก (สะกดผิดนิดหน่อย)',
+        'Almost (minor spelling slip)',
       ),
-      AnswerVerdict.wrong => (colors.danger, Icons.cancel, 'คำตอบที่ถูกคือ "$correctText"'),
+      AnswerVerdict.wrong => (colors.danger, Icons.cancel, 'Answer: "$correctText"'),
     };
 
     return TweenAnimationBuilder<double>(

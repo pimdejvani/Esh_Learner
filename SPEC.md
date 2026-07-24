@@ -312,6 +312,11 @@ settings(key TEXT PK, value TEXT)   -- new_card_cap, focus_topic, request_retent
 
 ทุกเกมส่งผล rating กลับเข้า FSRS ผ่าน `answer_checker`
 
+> **การคำนวณทั้งระบบ** (การสุ่ม/ความสำคัญของคำ/การเลือกคำ ทุกเกม) รวมไว้ที่ **`ALGORITHM.md`** (เพิ่ม 2026-07-24)
+> **Hint ladder เกมพิมพ์คำตอบ** (Dictation/Cloze/Scramble, แก้ไข 2026-07-24): จำนวนตัวอักษร → คำใกล้เคียงที่รู้แล้ว → ตัวอักษรหน้า → ความหมาย → ตัวอักษรหน้า+ท้าย แล้วหยุด (`buildHintLadder`)
+> **UI chrome เป็นอังกฤษ** (ปุ่ม/ป้าย/nav) ส่วนคำแปล/คำอ่าน/grammar note คงเป็นไทย
+> **แท็บค้นหา** แสดง 5 คำ closeness สูงสุด (SWOW) แตะไปหน้าคำนั้นได้
+
 ---
 
 ## 8b. Hint System (เกมยาก / คำยาก)

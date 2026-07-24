@@ -283,7 +283,7 @@ class _MatchingGameState extends State<MatchingGame> {
         const SizedBox(height: 16),
         FilledButton(
           onPressed: _allLinked && !_finished ? _check : null,
-          child: const Text('ตรวจคำตอบ'),
+          child: const Text('Check'),
         ),
       ],
       ),

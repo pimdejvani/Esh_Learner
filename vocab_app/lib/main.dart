@@ -142,9 +142,9 @@ class _RootPageState extends State<_RootPage> {
           selectedIndex: _tab,
           onSelected: (i) => setState(() => _tab = i),
           items: const [
-            FloatingNavItem(icon: Icons.play_arrow, label: 'เล่น'),
-            FloatingNavItem(icon: Icons.search, label: 'ค้นหา'),
-            FloatingNavItem(icon: Icons.bar_chart, label: 'ความก้าวหน้า'),
+            FloatingNavItem(icon: Icons.play_arrow, label: 'Play'),
+            FloatingNavItem(icon: Icons.search, label: 'Search'),
+            FloatingNavItem(icon: Icons.bar_chart, label: 'Progress'),
           ],
         ),
       ),

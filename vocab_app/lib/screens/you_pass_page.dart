@@ -60,7 +60,7 @@ class YouPassPage extends StatelessWidget {
                 StaggeredEntrance(
                   index: 2,
                   child: Text(
-                    'ผ่านครบทุกคำในทุกเกมหลักแล้ว\n$wordCount คำ × $gameCount เกม 🎉',
+                    'Every word passed in every core game!\n$wordCount words × $gameCount games 🎉',
                     textAlign: TextAlign.center,
                     style: textTheme.titleMedium?.copyWith(
                       color: Theme.of(context).colorScheme.onSurfaceVariant,
@@ -74,7 +74,7 @@ class YouPassPage extends StatelessWidget {
                     onPressed: () => Navigator.of(context).pop(),
                     child: const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 24, vertical: 4),
-                      child: Text('เล่นต่อ'),
+                      child: Text('Keep playing'),
                     ),
                   ),
                 ),

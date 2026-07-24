@@ -46,6 +46,38 @@ class _DictionaryPageState extends State<DictionaryPage> {
     }
   }
 
+  /// Opens a word's full entry with its 5 closest words (item 1). Closeness
+  /// from `related_words`, resolved to Words we have loaded, top 5 — shown
+  /// regardless of whether the player has met them. Tapping a similar word
+  /// opens ITS entry the same way (recursively).
+  void _openWord(BuildContext context, WordBundle bundle) {
+    final byId = {for (final b in _bundles ?? <WordBundle>[]) b.word.id: b};
+    final similar = [
+      ...bundle.related.where((r) => !r.isGiveaway),
+    ]..sort((a, b) => b.closeness.compareTo(a.closeness));
+    final seen = <int>{};
+    final words = <Word>[];
+    for (final r in similar) {
+      if (words.length >= 5) break;
+      final b = byId[r.relatedWordId];
+      if (b == null || !seen.add(b.word.id)) continue;
+      words.add(b.word);
+    }
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => WordDetailPage(
+          bundle: bundle,
+          tts: widget.tts,
+          similar: words,
+          onOpenSimilar: (w) {
+            final b = byId[w.id];
+            if (b != null) _openWord(context, b);
+          },
+        ),
+      ),
+    );
+  }
+
   bool _matches(WordBundle b, String q) {
     if (b.word.headword.toLowerCase().contains(q)) return true;
     if (b.word.thaiReading.contains(q)) return true;
@@ -62,7 +94,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
   Widget build(BuildContext context) {
     final error = _error;
     if (error != null) {
-      return Center(child: Text('โหลดคำศัพท์ไม่สำเร็จ: $error'));
+      return Center(child: Text('Failed to load words: $error'));
     }
     final bundles = _bundles;
     if (bundles == null) {
@@ -84,7 +116,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
               child: TextField(
                 autofocus: false,
                 decoration: InputDecoration(
-                  hintText: 'ค้นหา: อังกฤษ / คำอ่าน / ความหมายไทย',
+                  hintText: 'Search: English / reading / Thai meaning',
                   prefixIcon: const Icon(Icons.search),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(24),
@@ -97,19 +129,22 @@ class _DictionaryPageState extends State<DictionaryPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
-                'พบ ${results.length} คำ',
+                '${results.length} words',
                 style: Theme.of(context).textTheme.bodySmall,
                 textAlign: TextAlign.center,
               ),
             ),
             Expanded(
               child: results.isEmpty
-                  ? const Center(child: Text('ไม่พบคำที่ค้นหา'))
+                  ? const Center(child: Text('No matches'))
                   : ListView.builder(
                       padding: const EdgeInsets.only(bottom: 96),
                       itemCount: results.length,
-                      itemBuilder: (context, i) =>
-                          _WordTile(bundle: results[i], tts: widget.tts),
+                      itemBuilder: (context, i) => _WordTile(
+                        bundle: results[i],
+                        tts: widget.tts,
+                        onOpen: () => _openWord(context, results[i]),
+                      ),
                     ),
             ),
           ],
@@ -120,10 +155,11 @@ class _DictionaryPageState extends State<DictionaryPage> {
 }
 
 class _WordTile extends StatelessWidget {
-  const _WordTile({required this.bundle, required this.tts});
+  const _WordTile({required this.bundle, required this.tts, required this.onOpen});
 
   final WordBundle bundle;
   final TtsService tts;
+  final VoidCallback onOpen;
 
   @override
   Widget build(BuildContext context) {
@@ -140,11 +176,7 @@ class _WordTile extends StatelessWidget {
         overflow: TextOverflow.ellipsis,
       ),
       trailing: SpeakButtons(tts: tts, text: word.headword),
-      onTap: () => Navigator.of(context).push(
-        MaterialPageRoute(
-          builder: (_) => WordDetailPage(bundle: bundle, tts: tts),
-        ),
-      ),
+      onTap: onOpen,
     );
   }
 }

@@ -19,10 +19,24 @@ import 'package:vocab_app/widgets/speak_buttons.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 class WordDetailPage extends StatelessWidget {
-  const WordDetailPage({super.key, required this.bundle, required this.tts});
+  const WordDetailPage({
+    super.key,
+    required this.bundle,
+    required this.tts,
+    this.similar = const [],
+    this.onOpenSimilar,
+  });
 
   final WordBundle bundle;
   final TtsService tts;
+
+  /// Up to 5 closest words by SWOW closeness (item 1, 2026-07-24), shown as
+  /// tappable chips; empty hides the section. Populated from the dictionary
+  /// tab which has every word loaded.
+  final List<Word> similar;
+
+  /// Tapping a similar word opens ITS entry (item 1). Null disables the tap.
+  final void Function(Word)? onOpenSimilar;
 
   @override
   Widget build(BuildContext context) {
@@ -50,9 +64,26 @@ class WordDetailPage extends StatelessWidget {
             const SizedBox(height: 16),
           ],
           if (bundle.sentences.isNotEmpty) ...[
-            Text('ประโยคตัวอย่าง', style: Theme.of(context).textTheme.titleMedium),
+            Text('Example sentences', style: Theme.of(context).textTheme.titleMedium),
             const SizedBox(height: 8),
             for (final s in bundle.sentences) _SentenceTile(sentence: s, forms: bundle.forms),
+          ],
+          if (similar.isNotEmpty) ...[
+            const SizedBox(height: 16),
+            Text('Similar words', style: Theme.of(context).textTheme.titleMedium),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                for (final w in similar)
+                  ActionChip(
+                    label: Text(w.headword),
+                    onPressed:
+                        onOpenSimilar == null ? null : () => onOpenSimilar!(w),
+                  ),
+              ],
+            ),
           ],
         ],
       ),
@@ -158,9 +189,9 @@ class _SenseTile extends StatelessWidget {
               // CEFR chip removed (user 2026-07-24: hide language-difficulty
               // tag from the UI).
               if (sense.countable == 1)
-                const Text('นับได้', style: TextStyle(fontSize: 12)),
+                const Text('countable', style: TextStyle(fontSize: 12)),
               if (sense.countable == 0)
-                const Text('นับไม่ได้', style: TextStyle(fontSize: 12)),
+                const Text('uncountable', style: TextStyle(fontSize: 12)),
             ],
           ),
           const SizedBox(height: 4),

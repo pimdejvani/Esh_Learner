@@ -74,8 +74,8 @@ class WordResultCard extends StatelessWidget {
               spacing: 6,
               children: [
                 Chip(label: Text(sense.pos.toUpperCase())),
-                if (sense.countable == 1) const Chip(label: Text('นับได้')),
-                if (sense.countable == 0) const Chip(label: Text('นับไม่ได้')),
+                if (sense.countable == 1) const Chip(label: Text('countable')),
+                if (sense.countable == 0) const Chip(label: Text('uncountable')),
               ],
             ),
             const SizedBox(height: 8),
@@ -124,12 +124,12 @@ class IrregularBadge extends StatelessWidget {
         onTap: () => showDialog<void>(
           context: context,
           builder: (_) => AlertDialog(
-            title: Text('${form.formText} (ผิดปกติ)'),
+            title: Text('${form.formText} (irregular)'),
             content: Text(form.grammarNoteTh),
             actions: [
               TextButton(
                 onPressed: () => Navigator.of(context).pop(),
-                child: const Text('ปิด'),
+                child: const Text('Close'),
               ),
             ],
           ),
@@ -142,7 +142,7 @@ class IrregularBadge extends StatelessWidget {
             borderRadius: BorderRadius.circular(6),
           ),
           child: Text(
-            'ผิดปกติ',
+            'irregular',
             style: TextStyle(
               color: scheme.onErrorContainer,
               fontSize: 11,

@@ -1277,6 +1277,52 @@ Suite 124/124, analyze clean.
 
 ---
 
+## 2026-07-24: 19-item feedback batch (UI + engine overhaul)
+
+Big feedback round, delivered in 4 commits. New umbrella doc
+**`ALGORITHM.md`** documents every calculation (randomness, word
+importance, word selection) across all games (item 16).
+
+**Batch 1 — small UI:** slow TTS 0.22→0.15; new `SpeakButtons` (normal +
+slow) everywhere a word/sentence is heard; CEFR difficulty tag removed
+from result card / word detail / dictionary (item 2); Word Association
+wrong pick shows a cross icon (item 8); Dictation faint caption gone
+(item 11); Credits pinned to the progress page's bottom edge (item 4).
+
+**Batch 2 — flashcard/swipe UX:** flashcard known/unknown buttons removed,
+horizontal-only drag (no up/down), faint instructions folded into a new
+top-right `InfoHint` "!" popup — the standard pattern for any screen with
+instructions now (item 6/7). `SwipeUpDetector` (passive `Listener`, works
+inside the scroll view) gives every game "swipe up = submit / advance"
+(item 10). Typed games (cloze/dictation/scramble) auto-focus the answer
+field with a keyboard-toggle in a shared `GameTopBar` (item 13).
+
+**Batch 3 — engine:** flashcard block randomizes EN/TH prompt mix on
+review cards (triangular count + shuffled positions; new cards stay EN→TH)
+(item 14); hot streak surfaces harder new words first (item 15); per-block
+new-word share cap 0.4→0.5 (item 17); < 40 learned words shortens
+non-flashcard games to 1–2 rounds (item 18); onboarding ramp — first
+flashcard block 10 all-new, +10 per block up to 30 while ≥ 90%, else exit
+to a fixed-8 block (item 19).
+
+**Batch 4 — hints, dictionary, English chrome:** unified `buildHintLadder`
+(letter count → known similar word → first letter → meaning → first+last)
+for the 3 typed games, replacing DictationHint and the old family-A hint
+in cloze/scramble (item 12); word-detail page shows 5 closest words by
+SWOW closeness with tap-to-navigate, wired from the dictionary tab
+(item 1); UI chrome translated to English throughout while Thai meanings /
+readings / grammar notes stay Thai (item 5).
+
+Deferred to the 3,000-word tier (recorded, not built): generate a sentence
+per meaning + the multi-sense dictionary layout (item 1 remainder); fix
+grammar notes so each explains its own sentence without referencing other
+generated sentences (item 9); Odd One Out group-connection explanation
+(ask user for format first); remove Thai meaning from the Dictation card.
+
+Tests 121/121, analyze clean across all four commits.
+
+---
+
 ## Current status & remaining work (as of 2026-07-23 evening)
 
 **Where things stand:** Phase 1 + Phase 2 are fully built (all 7 games,

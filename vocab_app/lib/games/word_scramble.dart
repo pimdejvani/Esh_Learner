@@ -12,10 +12,12 @@ import 'package:flutter/material.dart';
 
 import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/domain/answer_checker.dart';
+import 'package:vocab_app/domain/hint_ladder.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
 import 'package:vocab_app/widgets/game_top_bar.dart';
+import 'package:vocab_app/widgets/hint_ladder_view.dart';
 import 'package:vocab_app/widgets/result_banner.dart';
 import 'package:vocab_app/widgets/swipe_up_detector.dart';
 import 'package:vocab_app/widgets/ui_prefs.dart';
@@ -45,7 +47,7 @@ class WordScrambleGame extends StatefulWidget {
     required this.bundle,
     required this.tts,
     required this.onRated,
-    this.hintWords = const [],
+    this.similarKnownWord,
     this.checker = const AnswerChecker(),
     this.random,
   });
@@ -53,7 +55,10 @@ class WordScrambleGame extends StatefulWidget {
   final WordBundle bundle;
   final TtsService tts;
   final ValueChanged<Rating> onRated;
-  final List<String> hintWords;
+
+  /// Step-2 hint (item 12): the closest meaning-related word the player
+  /// already knows, or null if none.
+  final String? similarKnownWord;
   final AnswerChecker checker;
 
   /// Injectable for deterministic tests; null uses a real [Random].
@@ -68,6 +73,7 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
   final _focus = FocusNode();
   final _stopwatch = Stopwatch()..start();
   late final String _scrambled;
+  late final List<String> _ladder;
   bool _submitted = false;
   int _hintsRevealed = 0;
   AnswerCheckResult? _result;
@@ -76,6 +82,11 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
   void initState() {
     super.initState();
     _scrambled = scrambleWord(widget.bundle.word.headword, random: widget.random);
+    _ladder = buildHintLadder(
+      target: widget.bundle.word.headword,
+      meaningTh: widget.bundle.coreSense.meaningTh,
+      similarKnownWord: widget.similarKnownWord,
+    );
   }
 
   @override
@@ -96,7 +107,7 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
 
   void _revealNextHint() {
     setState(() {
-      _hintsRevealed = (_hintsRevealed + 1).clamp(0, widget.hintWords.length);
+      _hintsRevealed = (_hintsRevealed + 1).clamp(0, _ladder.length);
     });
   }
 
@@ -169,26 +180,22 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
                       controller: _controller,
                       focusNode: _focus,
                       autofocus: autoKeyboardEnabled.value,
-                      decoration: const InputDecoration(labelText: 'เรียงตัวอักษรใหม่'),
+                      decoration: const InputDecoration(labelText: 'Unscramble the word'),
                       onSubmitted: (_) => _submit(),
                     ),
                     const SizedBox(height: 8),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        if (widget.hintWords.isNotEmpty)
-                          TextButton.icon(
-                            onPressed: _hintsRevealed < widget.hintWords.length
-                                ? _revealNextHint
-                                : null,
-                            icon: const Icon(Icons.lightbulb_outline),
-                            label: Text(
-                              _hintsRevealed == 0
-                                  ? 'ใบ้'
-                                  : widget.hintWords.take(_hintsRevealed).join(', '),
-                            ),
+                        Expanded(
+                          child: HintLadderView(
+                            stages: _ladder,
+                            revealed: _hintsRevealed,
+                            onReveal: _revealNextHint,
                           ),
-                        FilledButton(onPressed: _submit, child: const Text('ตอบ')),
+                        ),
+                        const SizedBox(width: 8),
+                        FilledButton(onPressed: _submit, child: const Text('Submit')),
                       ],
                     ),
                   ],
@@ -209,7 +216,7 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    FilledButton(onPressed: _rate, child: const Text('ถัดไป')),
+                    FilledButton(onPressed: _rate, child: const Text('Next')),
                   ],
                 ),
         ),

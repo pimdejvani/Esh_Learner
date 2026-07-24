@@ -10,10 +10,12 @@ import 'package:flutter/material.dart';
 
 import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/domain/answer_checker.dart';
+import 'package:vocab_app/domain/hint_ladder.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
 import 'package:vocab_app/widgets/game_top_bar.dart';
+import 'package:vocab_app/widgets/hint_ladder_view.dart';
 import 'package:vocab_app/widgets/result_banner.dart';
 import 'package:vocab_app/widgets/swipe_up_detector.dart';
 import 'package:vocab_app/widgets/ui_prefs.dart';
@@ -25,14 +27,16 @@ class ClozeGame extends StatefulWidget {
     required this.bundle,
     required this.tts,
     required this.onRated,
-    this.hintWords = const [],
+    this.similarKnownWord,
     this.checker = const AnswerChecker(),
   });
 
   final WordBundle bundle;
   final TtsService tts;
   final ValueChanged<Rating> onRated;
-  final List<String> hintWords;
+
+  /// Step-2 hint (item 12): closest known related word, or null.
+  final String? similarKnownWord;
   final AnswerChecker checker;
 
   @override
@@ -67,6 +71,16 @@ class _ClozeGameState extends State<ClozeGame> {
     // Prefer a non-rank-1 sentence for retrieval variety; fall back to any.
     return sentences.length > 1 ? sentences[1] : sentences.first;
   }
+
+  /// Unified hint ladder for the missing word (item 12). Empty when there's
+  /// no sentence to blank.
+  List<String> get _ladder => widget.bundle.sentences.isEmpty
+      ? const []
+      : buildHintLadder(
+          target: _sentence.clozeTarget,
+          meaningTh: widget.bundle.coreSense.meaningTh,
+          similarKnownWord: widget.similarKnownWord,
+        );
 
   /// Grammar reasoning for the reveal (SPEC.md 9.2, user feedback
   /// 2026-07-23): when the sentence's blank uses an inflected form, find
@@ -106,7 +120,7 @@ class _ClozeGameState extends State<ClozeGame> {
 
   void _revealNextHint() {
     setState(() {
-      _hintsRevealed = (_hintsRevealed + 1).clamp(0, widget.hintWords.length);
+      _hintsRevealed = (_hintsRevealed + 1).clamp(0, _ladder.length);
     });
   }
 
@@ -130,7 +144,7 @@ class _ClozeGameState extends State<ClozeGame> {
   @override
   Widget build(BuildContext context) {
     if (widget.bundle.sentences.isEmpty) {
-      return const Text('ไม่มีประโยคตัวอย่างสำหรับคำนี้');
+      return const Text('No example sentence for this word');
     }
     final s = _sentence;
     final before = s.enText.substring(0, s.clozeStart);
@@ -178,7 +192,7 @@ class _ClozeGameState extends State<ClozeGame> {
                   children: [
                     IconButton.filled(
                       icon: const Icon(Icons.volume_up),
-                      tooltip: 'Listen',
+                      tooltip: 'Listen to the sentence',
                       onPressed: () => _speakSentence(),
                     ),
                     const SizedBox(width: 8),
@@ -208,30 +222,22 @@ class _ClozeGameState extends State<ClozeGame> {
                       controller: _controller,
                       focusNode: _focus,
                       autofocus: autoKeyboardEnabled.value,
-                      decoration: const InputDecoration(labelText: 'พิมพ์คำตอบ'),
+                      decoration: const InputDecoration(labelText: 'Type the answer'),
                       onSubmitted: (_) => _submit(),
                     ),
                     const SizedBox(height: 8),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        if (widget.hintWords.isNotEmpty)
-                          TextButton.icon(
-                            onPressed: _hintsRevealed < widget.hintWords.length
-                                ? _revealNextHint
-                                : null,
-                            icon: const Icon(Icons.lightbulb_outline),
-                            label: AnimatedSwitcher(
-                              duration: const Duration(milliseconds: 200),
-                              child: Text(
-                                _hintsRevealed == 0
-                                    ? 'ใบ้'
-                                    : widget.hintWords.take(_hintsRevealed).join(', '),
-                                key: ValueKey(_hintsRevealed),
-                              ),
-                            ),
+                        Expanded(
+                          child: HintLadderView(
+                            stages: _ladder,
+                            revealed: _hintsRevealed,
+                            onReveal: _revealNextHint,
                           ),
-                        FilledButton(onPressed: _submit, child: const Text('ตอบ')),
+                        ),
+                        const SizedBox(width: 8),
+                        FilledButton(onPressed: _submit, child: const Text('Submit')),
                       ],
                     ),
                   ],
@@ -259,7 +265,7 @@ class _ClozeGameState extends State<ClozeGame> {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    FilledButton(onPressed: _rate, child: const Text('ถัดไป')),
+                    FilledButton(onPressed: _rate, child: const Text('Next')),
                   ],
                 ),
         ),
@@ -294,13 +300,13 @@ class _GrammarReasonCard extends StatelessWidget {
                 Icon(Icons.menu_book, size: 18, color: scheme.primary),
                 const SizedBox(width: 6),
                 Text(
-                  'ทำไมถึงเป็น "${form.formText}"',
+                  'Why "${form.formText}"?',
                   style: Theme.of(context).textTheme.titleSmall,
                 ),
                 if (form.isIrregular) ...[
                   const SizedBox(width: 6),
                   Text(
-                    'ผันไม่ปกติ',
+                    'irregular',
                     style: Theme.of(context).textTheme.labelSmall?.copyWith(
                       color: scheme.error,
                       fontWeight: FontWeight.w700,

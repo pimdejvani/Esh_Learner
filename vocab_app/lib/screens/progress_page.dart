@@ -100,7 +100,7 @@ class _ProgressPageState extends State<ProgressPage> {
             Expanded(
               child: HighlightCard(
                 icon: Icons.local_fire_department,
-                title: '$streak วัน',
+                title: '$streak d',
                 subtitle: 'Streak',
                 tone: HighlightTone.blue,
               ),
@@ -109,8 +109,8 @@ class _ProgressPageState extends State<ProgressPage> {
             Expanded(
               child: HighlightCard(
                 icon: Icons.event_available,
-                title: '$_dueCount คำ',
-                subtitle: 'ค้างทวนวันนี้',
+                title: '$_dueCount',
+                subtitle: 'Due today',
                 tone: HighlightTone.sky,
               ),
             ),
@@ -118,15 +118,15 @@ class _ProgressPageState extends State<ProgressPage> {
             Expanded(
               child: HighlightCard(
                 icon: Icons.auto_awesome,
-                title: '${_stats[logicalDateKey(DateTime.now())]?.newIntroduced ?? 0} คำ',
-                subtitle: 'คำใหม่วันนี้',
+                title: '${_stats[logicalDateKey(DateTime.now())]?.newIntroduced ?? 0}',
+                subtitle: 'New today',
                 tone: HighlightTone.lavender,
               ),
             ),
           ],
         ),
         const SizedBox(height: 20),
-        Text('สถานะคำ', style: Theme.of(context).textTheme.titleMedium),
+        Text('Word status', style: Theme.of(context).textTheme.titleMedium),
         Wrap(
           spacing: 8,
           children: [
@@ -135,19 +135,19 @@ class _ProgressPageState extends State<ProgressPage> {
           ],
         ),
         const SizedBox(height: 16),
-        Text('ปฏิทินการทวน', style: Theme.of(context).textTheme.titleMedium),
+        Text('Review calendar', style: Theme.of(context).textTheme.titleMedium),
         _HeatmapGrid(heat: heat),
         // Focus topic (SPEC.md 6.4/8): hidden entirely when `topics` is
         // still empty (content pipeline hasn't populated it yet) instead
         // of showing a picker with nothing to pick.
         if (_topics.isNotEmpty) ...[
           const SizedBox(height: 16),
-          Text('หมวดที่อยากโฟกัส (Focus topic)', style: Theme.of(context).textTheme.titleMedium),
+          Text('Focus topic', style: Theme.of(context).textTheme.titleMedium),
           DropdownButton<int?>(
             value: _focusTopicId,
-            hint: const Text('ไม่มี'),
+            hint: const Text('None'),
             items: [
-              const DropdownMenuItem<int?>(value: null, child: Text('ไม่มี')),
+              const DropdownMenuItem<int?>(value: null, child: Text('None')),
               for (final t in _topics)
                 DropdownMenuItem<int?>(value: t.id, child: Text('${t.name} (${t.cefr})')),
             ],
@@ -211,7 +211,7 @@ class _HeatmapGrid extends StatelessWidget {
       children: [
         for (var i = 0; i < entries.length; i++)
           Tooltip(
-            message: '${entries[i].key}: ${entries[i].value} ครั้ง',
+            message: '${entries[i].key}: ${entries[i].value}',
             child: TweenAnimationBuilder<double>(
               tween: Tween(begin: 0, end: 1),
               duration: Duration(milliseconds: 200 + (i % 31) * 8),

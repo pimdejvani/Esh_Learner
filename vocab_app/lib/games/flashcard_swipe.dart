@@ -246,7 +246,7 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
                       top: 12,
                       left: 16,
                       child: _SwipeStamp(
-                        label: 'รู้จัก',
+                        label: 'Know',
                         color: colors.success,
                         opacity: swipeProgress,
                       ),
@@ -256,7 +256,7 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
                       top: 12,
                       right: 16,
                       child: _SwipeStamp(
-                        label: 'ไม่รู้จัก',
+                        label: 'Don\'t know',
                         color: colors.danger,
                         opacity: swipeProgress,
                       ),

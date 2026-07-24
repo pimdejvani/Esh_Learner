@@ -252,6 +252,23 @@ class _PlayScreenState extends State<PlayScreen> {
       .where((w) => _state!.srsStates[w.id] != null)
       .toList();
 
+  /// Step-2 of the typed-game hint ladder (item 12): the closest
+  /// meaning-related word the player ALREADY KNOWS (has SRS history for),
+  /// or null when none qualifies. Uses `related_words` closeness, skipping
+  /// giveaway rows, seen-only.
+  String? _similarKnownWord(WordBundle bundle) {
+    final related = bundle.related
+        .where((r) =>
+            !r.isGiveaway && _state!.srsStates[r.relatedWordId] != null)
+        .toList()
+      ..sort((a, b) => b.closeness.compareTo(a.closeness));
+    for (final r in related) {
+      final w = _wordById[r.relatedWordId];
+      if (w != null) return w.headword;
+    }
+    return null;
+  }
+
   /// Falls back to Flashcard (always buildable from just a WordBundle) when
   /// a batch/multi-choice game can't be assembled for the current word —
   /// e.g. Odd One Out/Word Association need `related_words` rows that many
@@ -584,7 +601,7 @@ class _PlayScreenState extends State<PlayScreen> {
     if (_loading) return const Center(child: CircularProgressIndicator());
     if (_error != null) return Center(child: Text('Error: $_error'));
     if (_queue.isEmpty) {
-      return const Center(child: Text('เคลียร์หมดแล้ว เก่งมาก! กลับมาใหม่พรุ่งนี้'));
+      return const Center(child: Text('All clear — great work! Come back tomorrow.'));
     }
 
     final item = _queue.first;
@@ -635,7 +652,7 @@ class _PlayScreenState extends State<PlayScreen> {
         return ClozeGame(
           bundle: _currentBundle!,
           tts: widget.tts,
-          hintWords: _semanticHints(_currentBundle!),
+          similarKnownWord: _similarKnownWord(_currentBundle!),
           onRated: (r) => _handleRated(item.wordId, r, GameType.cloze),
         );
       case GameType.matching:
@@ -666,7 +683,7 @@ class _PlayScreenState extends State<PlayScreen> {
         return WordScrambleGame(
           bundle: _currentBundle!,
           tts: widget.tts,
-          hintWords: _semanticHints(_currentBundle!),
+          similarKnownWord: _similarKnownWord(_currentBundle!),
           onRated: (r) => _handleRated(item.wordId, r, GameType.wordScramble),
         );
       case GameType.dictation:
@@ -674,6 +691,7 @@ class _PlayScreenState extends State<PlayScreen> {
         return DictationGame(
           bundle: _currentBundle!,
           tts: widget.tts,
+          similarKnownWord: _similarKnownWord(_currentBundle!),
           onRated: (r) => _handleRated(item.wordId, r, GameType.dictation),
         );
       case GameType.oddOneOut:
@@ -726,7 +744,7 @@ class _GameModeIndicator extends StatelessWidget {
       // indicator shows ONLY "คำใหม่" (user 2026-07-24 round 2: "ไม่ต้อง
       // ขึ้น flashcard เลย ให้เป็น new word อย่างเดียวพอ").
       GameType.flashcard when isNewWord =>
-        (Icons.auto_awesome, 'คำใหม่', HighlightTone.lavender),
+        (Icons.auto_awesome, 'New word', HighlightTone.lavender),
       GameType.flashcard => (Icons.style, 'Flashcard', HighlightTone.sky),
       GameType.matching => (Icons.grid_view, 'Matching', HighlightTone.sky),
       GameType.oddOneOut => (Icons.category, 'Odd One Out', HighlightTone.sky),

@@ -158,7 +158,7 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
-          'คำไหนไม่เข้าพวก?',
+          'Which word doesn\'t belong?',
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.titleMedium,
         ),
@@ -185,13 +185,13 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
                     const SizedBox(height: 16),
                     Text(
                       _selectedId == widget.oddWord.id
-                          ? 'ถูกต้อง! "${widget.oddWord.headword}" ไม่เข้าพวก'
-                          : 'คำที่ไม่เข้าพวกคือ "${widget.oddWord.headword}"',
+                          ? 'Correct! "${widget.oddWord.headword}" doesn\'t belong'
+                          : 'The odd one out is "${widget.oddWord.headword}"',
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.bodyLarge,
                     ),
                     const SizedBox(height: 16),
-                    FilledButton(onPressed: _rate, child: const Text('ถัดไป')),
+                    FilledButton(onPressed: _rate, child: const Text('Next')),
                   ],
                 )
               : const SizedBox.shrink(key: ValueKey('empty')),
