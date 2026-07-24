@@ -34,7 +34,56 @@ class VocabApp extends StatelessWidget {
       title: 'Oxford 3000 -> Thai',
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),
+      // Dev preview: on web / desktop the app runs inside an iPhone 12 Pro
+      // -sized frame (390x844) so what you see matches the real phone
+      // target instead of smearing across a wide browser window. On an
+      // actual phone it's a no-op (uses the real screen).
+      builder: (context, child) => _PhoneFrame(child: child!),
       home: const _RootPage(),
+    );
+  }
+}
+
+/// Wraps [child] in a fixed iPhone 12 Pro viewport (390x844 logical px,
+/// the shipping target's reference device) when running on web or a
+/// desktop OS — a dev-time convenience so the mobile-first layout is seen
+/// at true phone proportions. On Android/iOS it returns the child
+/// untouched so the app fills the real device screen.
+class _PhoneFrame extends StatelessWidget {
+  const _PhoneFrame({required this.child});
+
+  final Widget child;
+
+  // iPhone 12 Pro logical resolution.
+  static const _size = Size(390, 844);
+
+  bool get _framed {
+    if (kIsWeb) return true;
+    return Platform.isWindows || Platform.isLinux || Platform.isMacOS;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (!_framed) return child;
+    // Override MediaQuery so the app's own layout (SafeArea, max-width
+    // clamps, responsive breakpoints) sees the phone size, not the window.
+    final framed = MediaQuery(
+      data: MediaQuery.of(context).copyWith(
+        size: _size,
+        padding: EdgeInsets.zero,
+        viewInsets: EdgeInsets.zero,
+        viewPadding: EdgeInsets.zero,
+      ),
+      child: SizedBox.fromSize(size: _size, child: child),
+    );
+    return ColoredBox(
+      color: const Color(0xFF1C1C1E),
+      child: Center(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(40),
+          child: SizedBox.fromSize(size: _size, child: framed),
+        ),
+      ),
     );
   }
 }
