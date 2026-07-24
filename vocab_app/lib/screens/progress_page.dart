@@ -83,9 +83,14 @@ class _ProgressPageState extends State<ProgressPage> {
       DateTime.now(),
     );
 
-    return ListView(
-      padding: const EdgeInsets.all(16),
+    // Credits pinned to the bottom edge (just above the nav bar) rather
+    // than scrolling with the content (user request 2026-07-24).
+    return Column(
       children: [
+        Expanded(
+          child: ListView(
+            padding: const EdgeInsets.all(16),
+            children: [
         // "At-a-glance" summary — the reference site's colorful pastel
         // highlight-card pattern (SPEC.md section 13 / NOTES.md's UI design
         // pass), distinct from the clean white-bordered content cards used
@@ -148,15 +153,21 @@ class _ProgressPageState extends State<ProgressPage> {
             ],
             onChanged: _setFocusTopic,
           ),
-        ],
-        const SizedBox(height: 16),
-        Card(
-          child: ListTile(
-            leading: const Icon(Icons.info_outline),
-            title: const Text('Credits / Licenses'),
-            trailing: const Icon(Icons.chevron_right),
-            onTap: () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (_) => CreditsPage(store: widget.store)),
+            ],
+          ],
+        ),
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+          child: Card(
+            margin: EdgeInsets.zero,
+            child: ListTile(
+              leading: const Icon(Icons.info_outline),
+              title: const Text('Credits / Licenses'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => CreditsPage(store: widget.store)),
+              ),
             ),
           ),
         ),

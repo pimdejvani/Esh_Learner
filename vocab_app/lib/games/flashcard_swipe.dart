@@ -27,6 +27,7 @@ import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
 import 'package:vocab_app/theme/app_theme.dart';
+import 'package:vocab_app/widgets/speak_buttons.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 class FlashcardSwipeGame extends StatefulWidget {
@@ -177,10 +178,7 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
                     children: [
                       Text(_promptText, style: Theme.of(context).textTheme.headlineMedium),
                       if (widget.direction == Direction.enTh)
-                        IconButton(
-                          icon: const Icon(Icons.volume_up),
-                          onPressed: () => widget.tts.speak(widget.bundle.word.headword),
-                        ),
+                        SpeakButtons(tts: widget.tts, text: widget.bundle.word.headword),
                       const SizedBox(height: 8),
                       Text(
                         'แตะการ์ดเพื่อดูคำตอบ',

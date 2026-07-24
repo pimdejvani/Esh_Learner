@@ -20,6 +20,7 @@ import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
 import 'package:vocab_app/theme/app_theme.dart';
+import 'package:vocab_app/widgets/speak_buttons.dart';
 import 'package:vocab_app/widgets/staggered_entrance.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
@@ -137,10 +138,7 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(word.headword, style: Theme.of(context).textTheme.headlineSmall),
-                    IconButton(
-                      icon: const Icon(Icons.volume_up),
-                      onPressed: () => widget.tts.speak(word.headword),
-                    ),
+                    SpeakButtons(tts: widget.tts, text: word.headword),
                   ],
                 ),
                 Text(
@@ -207,17 +205,27 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
     final selected = _selectedId == w.id;
     final isCorrect = w.id == widget.correctWordId;
     Color? color;
+    Widget? avatar;
     if (_submitted && selected) {
       color = isCorrect
           ? colors.success.withValues(alpha: 0.35)
           : colors.danger.withValues(alpha: 0.35);
+      // Explicit right/wrong icon on the picked chip (user 2026-07-24:
+      // a wrong answer must show a cross, not read as correct).
+      avatar = Icon(
+        isCorrect ? Icons.check_circle : Icons.cancel,
+        size: 18,
+        color: isCorrect ? colors.success : colors.danger,
+      );
     } else if (_submitted && isCorrect) {
       color = colors.success.withValues(alpha: 0.18);
+      avatar = Icon(Icons.check_circle, size: 18, color: colors.success);
     }
     return AnimatedContainer(
       duration: const Duration(milliseconds: 220),
       curve: Curves.easeOut,
       child: ChoiceChip(
+        avatar: avatar,
         label: Text(w.headword),
         selected: selected,
         selectedColor: color,

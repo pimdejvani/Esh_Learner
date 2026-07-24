@@ -12,6 +12,7 @@ import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/data/vocab_store.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
+import 'package:vocab_app/widgets/speak_buttons.dart';
 
 class DictionaryPage extends StatefulWidget {
   const DictionaryPage({super.key, required this.store, required this.tts});
@@ -128,34 +129,17 @@ class _WordTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final word = bundle.word;
     return ListTile(
-      title: Row(
-        children: [
-          Flexible(
-            child: Text(
-              word.headword,
-              style: const TextStyle(fontWeight: FontWeight.w600),
-              overflow: TextOverflow.ellipsis,
-            ),
-          ),
-          const SizedBox(width: 8),
-          Chip(
-            label: Text(word.cefr, style: const TextStyle(fontSize: 11)),
-            visualDensity: VisualDensity.compact,
-            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-            padding: EdgeInsets.zero,
-          ),
-        ],
+      title: Text(
+        word.headword,
+        style: const TextStyle(fontWeight: FontWeight.w600),
+        overflow: TextOverflow.ellipsis,
       ),
       subtitle: Text(
         '${word.thaiReading} · ${bundle.coreSense.meaningTh}',
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
       ),
-      trailing: IconButton(
-        icon: const Icon(Icons.volume_up),
-        tooltip: 'ฟังเสียง',
-        onPressed: () => tts.speak(word.headword),
-      ),
+      trailing: SpeakButtons(tts: tts, text: word.headword),
       onTap: () => Navigator.of(context).push(
         MaterialPageRoute(
           builder: (_) => WordDetailPage(bundle: bundle, tts: tts),

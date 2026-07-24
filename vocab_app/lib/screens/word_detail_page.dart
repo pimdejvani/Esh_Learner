@@ -15,6 +15,7 @@ import 'package:flutter/material.dart';
 import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/theme/app_theme.dart';
+import 'package:vocab_app/widgets/speak_buttons.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 class WordDetailPage extends StatelessWidget {
@@ -71,10 +72,7 @@ class _Header extends StatelessWidget {
       children: [
         Text(word.headword, style: Theme.of(context).textTheme.headlineMedium),
         const SizedBox(width: 8),
-        IconButton(
-          icon: const Icon(Icons.volume_up),
-          onPressed: () => tts.speak(word.headword),
-        ),
+        SpeakButtons(tts: tts, text: word.headword),
         const SizedBox(width: 8),
         Expanded(child: _StressedReading(reading: word.thaiReading, stress: word.stressIndex)),
       ],
@@ -157,12 +155,8 @@ class _SenseTile extends StatelessWidget {
               if (sense.isCore)
                 Icon(Icons.star, size: 16, color: context.appColors.warning),
               if (sense.isCore) const SizedBox(width: 4),
-              Chip(
-                label: Text(sense.cefr, style: const TextStyle(fontSize: 11)),
-                visualDensity: VisualDensity.compact,
-                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              ),
-              const SizedBox(width: 6),
+              // CEFR chip removed (user 2026-07-24: hide language-difficulty
+              // tag from the UI).
               if (sense.countable == 1)
                 const Text('นับได้', style: TextStyle(fontSize: 12)),
               if (sense.countable == 0)

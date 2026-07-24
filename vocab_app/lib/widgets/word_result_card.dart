@@ -12,6 +12,7 @@ import 'package:flutter/material.dart';
 
 import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/models/word.dart';
+import 'package:vocab_app/widgets/speak_buttons.dart';
 
 class WordResultCard extends StatelessWidget {
   const WordResultCard({
@@ -62,18 +63,16 @@ class WordResultCard extends StatelessWidget {
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
                 const SizedBox(width: 8),
-                IconButton(
-                  icon: const Icon(Icons.volume_up),
-                  onPressed: () => tts.speak(word.headword),
-                ),
+                SpeakButtons(tts: tts, text: word.headword),
               ],
             ),
             _StressedReading(reading: word.thaiReading, stress: word.stressIndex),
             const SizedBox(height: 8),
+            // CEFR difficulty tag removed (user 2026-07-24: "เอา tag ความยาก
+            // ระดับภาษาออก"); POS / countability kept.
             Wrap(
               spacing: 6,
               children: [
-                Chip(label: Text(word.cefr)),
                 Chip(label: Text(sense.pos.toUpperCase())),
                 if (sense.countable == 1) const Chip(label: Text('นับได้')),
                 if (sense.countable == 0) const Chip(label: Text('นับไม่ได้')),

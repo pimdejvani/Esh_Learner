@@ -11,7 +11,9 @@ class TtsService {
   }
 
   static const _normalRate = 0.45;
-  static const _slowRate = 0.22;
+  // Slow replay. Lowered 0.22 -> 0.15 (user 2026-07-24: the slow speech
+  // was still too fast) so each phoneme is clearly separated.
+  static const _slowRate = 0.15;
 
   final FlutterTts _tts;
 

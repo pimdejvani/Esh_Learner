@@ -94,12 +94,12 @@ class _ClozeGameState extends State<ClozeGame> {
   /// Listen to the sentence (user request 2026-07-23). Before answering,
   /// the blanked word is replaced with "blank" so the audio doesn't give
   /// the answer away; after the reveal it reads the full real sentence.
-  void _speakSentence() {
+  void _speakSentence({bool slow = false}) {
     final s = _sentence;
     final text = _submitted
         ? s.enText
         : s.enText.replaceRange(s.clozeStart, s.clozeEnd, 'blank');
-    widget.tts.speak(text);
+    slow ? widget.tts.speakSlow(text) : widget.tts.speak(text);
   }
 
   void _rate() {
@@ -146,10 +146,21 @@ class _ClozeGameState extends State<ClozeGame> {
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 const SizedBox(height: 4),
-                IconButton.filledTonal(
-                  icon: const Icon(Icons.volume_up),
-                  tooltip: 'ฟังประโยค',
-                  onPressed: _speakSentence,
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    IconButton.filled(
+                      icon: const Icon(Icons.volume_up),
+                      tooltip: 'Listen',
+                      onPressed: () => _speakSentence(),
+                    ),
+                    const SizedBox(width: 8),
+                    IconButton.filledTonal(
+                      icon: const Icon(Icons.slow_motion_video),
+                      tooltip: 'Listen slowly',
+                      onPressed: () => _speakSentence(slow: true),
+                    ),
+                  ],
                 ),
               ],
             ),

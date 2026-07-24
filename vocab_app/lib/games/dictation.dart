@@ -175,8 +175,9 @@ class _DictationGameState extends State<DictationGame> {
                     ),
                   ],
                 ),
-                Text('ฟังแล้วพิมพ์สะกดคำ · ปุ่มขวา = พูดช้า',
-                    style: Theme.of(context).textTheme.bodyMedium),
+                // Faint instruction caption removed (user 2026-07-24) — the
+                // "!" info affordance carries hints elsewhere; the two audio
+                // buttons are self-explanatory.
                 const SizedBox(height: 8),
                 Text(sense.meaningTh, style: Theme.of(context).textTheme.titleMedium),
                 AnimatedSwitcher(
