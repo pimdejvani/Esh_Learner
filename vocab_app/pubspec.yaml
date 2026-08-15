@@ -1,5 +1,5 @@
 name: vocab_app
-description: "Oxford 3000 -> Thai vocabulary learning app (Phase 1 vertical slice)."
+description: "Esh - an offline English/Thai vocabulary trainer built on FSRS spaced repetition."
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -16,14 +16,38 @@ dependencies:
   path: ^1.9.0
   path_provider: ^2.1.5
   flutter_tts: ^4.2.2
-  google_fonts: ^8.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+# Regenerate the launcher icons with: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/icon/esh_logo.png"
+  remove_alpha_ios: true
+  ios: true
+  android: true
 
 flutter:
   uses-material-design: true
   assets:
     - assets/seed/vocab.db
+  # Bundled rather than fetched through google_fonts: the app is offline-first,
+  # and a first launch with no network would otherwise fall back to the system
+  # font. Static instances cut from the upstream variable font (SIL OFL, see
+  # assets/fonts/OFL.txt) at the five weights the theme actually asks for.
+  fonts:
+    - family: PlusJakartaSans
+      fonts:
+        - asset: assets/fonts/PlusJakartaSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/PlusJakartaSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/PlusJakartaSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PlusJakartaSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/PlusJakartaSans-ExtraBold.ttf
+          weight: 800

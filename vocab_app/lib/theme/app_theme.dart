@@ -19,7 +19,10 @@
 library;
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
+/// Bundled in `assets/fonts/` and declared in pubspec.yaml, not downloaded at
+/// runtime — the app has to look right on a first launch with no network.
+const String _fontFamily = 'PlusJakartaSans';
 
 /// Colors this app needs that don't have a natural home in Flutter's
 /// [ColorScheme] — the rating semantics (again/hard/good/easy) every game
@@ -234,7 +237,7 @@ class AppTheme {
       colorScheme: colorScheme,
       scaffoldBackgroundColor: background,
       canvasColor: background,
-      fontFamily: GoogleFonts.plusJakartaSans().fontFamily,
+      fontFamily: _fontFamily,
       textTheme: textTheme,
       extensions: [colors],
 
@@ -368,7 +371,7 @@ class AppTheme {
   /// text stays regular and only small emphasis labels (buttons, chips) use
   /// semibold (600).
   static TextTheme _buildTextTheme(TextTheme base, Color color) {
-    final withFont = GoogleFonts.plusJakartaSansTextTheme(base);
+    final withFont = base.apply(fontFamily: _fontFamily);
     TextStyle? w(TextStyle? s, FontWeight weight) =>
         s?.copyWith(fontWeight: weight, color: color);
 
