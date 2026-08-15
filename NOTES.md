@@ -1406,3 +1406,36 @@ github.com/pimdejvani/Esh_Learner (public).
   monotonicity; session_engine_test adds pool-smaller-than-count
   inclusion and a 200-draw statistical check that a streak-1M word
   almost never beats a streak-0 word (>195/200 with a fixed seed).
+
+---
+
+# 2026-08-13 — Content schema v2: RE ทั้งคำศัพท์และคำอธิบาย
+
+งานทั้งชุดของ `after_revocab.md` (ข้อ 2–13) ทำเสร็จในรอบนี้ · รายละเอียดคำศัพท์และวิธีทำอยู่ใน
+`done_vocab.md` · ข้อสรุปที่ควรจำ:
+
+**เลิกใช้ legacy drafts 255 คำแรก** — มี `sense_id=0` และประโยคที่ผ่าน source validator ได้แต่
+สอนไม่ได้ ("They were coffeeing after lunch.", "We are dinnering with our neighbours tonight.")
+เจอเพราะสองในนั้นหลุดเข้ามาใน pilot 100 · **บทเรียน: validator ที่ถามแค่ "source ยืนยันไหม"
+ไม่พอ** ต้องมีอีกชั้นที่ถามว่า "ผู้เรียนใช้ได้จริงไหม" → `tools/validate_content_db.py`
+· 241 คำที่เหลือขึ้นบัญชีรอ regenerate ใน `data/regenerate_manifest.json`
+
+**เกณฑ์เลือกคำเปลี่ยน** — ไม่ใช่แค่เรียงตามความถี่ แต่เลือกแบบให้คำ**เกาะกลุ่มความหมาย**
+(SWOW closeness ≥ 0.036) เพราะเกม Matching / Odd One Out / Word Association เล่นไม่ได้ถ้าคำ
+กระจัดกระจาย · `tools/select_pilot_100.py` จะ fail ถ้าได้กลุ่มน้อยกว่า 3 หรือคำหลาย POS น้อยกว่า 10
+
+**Explanation ทุกชนิดเป็นข้อมูล ไม่ใช่โค้ด** — ประโยคมี `explanation_th` ของตัวเอง (อ่านเดี่ยวได้
+เพราะผู้เล่นอาจเห็นประโยคเดียว), คู่คำมีเหตุผลของคู่นั้น, กลุ่มมีหมวดและเหตุผลของกลุ่ม ·
+เกมแค่หยิบมาแสดง ไม่ประกอบข้อความเองหลังตอบ
+
+**Content-version migration** (`lib/data/content_reseed.dart`) — อัปเดตเนื้อหาได้โดยไม่ลบ progress
+· key คือ **map `word_id` ด้วย headword** เพราะ id ของเนื้อหาเปลี่ยนทุกครั้งที่ build
+· แถวที่ชี้ไปคำที่หายไปจะถูกทิ้งและรายงานจำนวน ไม่เงียบ
+
+**ประสิทธิภาพ** — pipeline จาก ~90 วินาที เหลือ ~14 วินาที ด้วย `tools/swow_cache.py`
+(เดิม parse ไฟล์ SWOW 53 MB ซ้ำสองที่) · ระวัง: ตอนย้ายไป cache ทำ `max()` ของ Freq.R123 หล่นไป
+ครั้งหนึ่ง แล้วรายชื่อคำที่เลือกได้เปลี่ยนทันที — pipeline ต้อง reproduce รายการเดิมได้เป๊ะ
+
+**Scaffolding ที่ต้องลบก่อน ship** — `lib/domain/test_hooks.dart` (บังคับให้มีคำหลาย POS ใน
+flashcard ทุกรอบ) และคำชุดทดสอบ 30 คำ (`is_test_only=1`) · `export_app_seed.py` ตัดออกให้เป็น
+ค่าเริ่มต้นอยู่แล้ว ต้องใส่ `--include-test-words` เองถึงจะติดไป

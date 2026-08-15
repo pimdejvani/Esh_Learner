@@ -92,111 +92,151 @@ lib/
 
 ---
 
-## 4. Data Model (SQLite)
+## 4. Data Model (SQLite) — content schema v2
+
+> **v2 (2026-08-13)** สร้างโดย `tools/build_content_db.py` → `data/content_v2.db` → export เป็น
+> seed ของแอปด้วย `tools/export_app_seed.py` · ของเดิม (v1) รองรับ Flashcard ตัวจริงไม่ครบ
+> จึงเปลี่ยนสามเรื่อง: **sense ผูกกับ POS จริง**, **forms แยก inflection กับ derived**,
+> และ **ทุก explanation เป็นข้อมูลในตาราง ไม่ generate ตอนเล่น**
 
 ```sql
--- คำหลัก (lemma) = SRS item
+-- ตารางเนื้อหา (มาจาก seed, อ่านอย่างเดียว) --------------------------------
+
+content_meta(key TEXT PK, value TEXT)
+-- content_version (ใช้ตัดสินใจ reseed), built_at, word_count, licenses
+
 words(
   id INTEGER PK,
-  headword TEXT,             -- "answer"
-  cefr TEXT,                 -- CEFR ของ core sense (ใช้เรียงลำดับ intro)
-  freq_rank INTEGER,         -- ลำดับความถี่ (คุมลำดับ intro)
-  thai_reading TEXT,         -- คำอ่านทับศัพท์ "แอน-เซอร์" (แบ่งพยางค์ด้วย -)
-  stress_index INTEGER,      -- พยางค์ที่เน้นเสียง (แสดงตัวหนา) เริ่มนับ 1
-  ipa TEXT,                  -- ใช้ภายในเท่านั้น (สร้าง thai_reading/stress/แบ่งพยางค์ Dictation hint) ไม่แสดงผล
-  translation_source TEXT,   -- เช่น "Wiktionary"
-  translation_license TEXT,  -- เช่น "CC BY-SA 3.0"
-  has_photo INTEGER,         -- 1 ถ้าเป็นคำรูปธรรมที่หาภาพได้
-  image_url TEXT,            -- open-license URL (resolve ตอน build)
-  image_license TEXT,        -- เช่น "CC BY 2.0"
-  image_author TEXT
+  headword TEXT UNIQUE,
+  cefr TEXT,                 -- band ของคำ (A1/A2/B1/B2)
+  freq_rank INTEGER,         -- ลำดับ intro = อันดับความถี่ SWOW
+  ipa TEXT,                  -- ใช้ภายใน ไม่แสดงบนการ์ด
+  thai_reading TEXT,         -- "แอน-เซอร์" (แบ่งพยางค์ด้วย -)
+  stress_index INTEGER,      -- พยางค์ที่เน้น เริ่มนับ 1
+  is_test_only INTEGER,      -- 1 = ชุดทดสอบยาก 30 คำ ต้องไม่ติดไปกับแอปจริง
+  source_word_id INTEGER     -- ย้อนกลับไป data/vocabulary_source.db ได้
 )
 
--- ความหมายแยกตามชนิดคำ (แสดงแบบ dictionary entry ดู §9b)
+-- หนึ่งคำมีหลาย POS · หนึ่ง POS มีหลายความหมาย · ทุกความหมายมี source
 senses(
   id INTEGER PK,
   word_id INTEGER FK,
-  pos TEXT,                  -- N. / V. / ADJ. / ADV. ...
-  meaning_th TEXT,           -- "คำตอบ, คำเฉลย"
-  cefr TEXT,                 -- CEFR ต่อ sense (Oxford ให้แยกตามความหมาย)
-  countable INTEGER NULL,    -- เฉพาะ N.: 1 นับได้ / 0 นับไม่ได้
-  collocation_en TEXT,       -- "answer the phone"
-  collocation_th TEXT,       -- "รับโทรศัพท์"
-  sense_rank INTEGER,        -- ลำดับแสดงใน entry
-  is_core INTEGER            -- 1 = sense หลักที่แอปใช้ทดสอบ (ติดดาว)
+  pos TEXT,                  -- noun / verb / adj / adv / prep / det / name
+  sense_rank INTEGER,        -- ลำดับภายใน POS นั้น
+  is_core INTEGER,           -- 1 = ความหมายหลักที่เกมใช้ทดสอบ
+  gloss_en TEXT,             -- gloss ต้นทางแบบตรงตัว (พิสูจน์ว่าไม่ได้แต่ง)
+  meaning_th TEXT,           -- สั้นพอสำหรับหนึ่งบรรทัดบนการ์ด (validator คุมความยาว)
+  meaning_source TEXT,       -- provenance ของคำแปล
+  source_sense_id INTEGER UNIQUE,
+  source_name TEXT,
+  UNIQUE(word_id, pos, sense_rank)
 )
 
--- รูปผัน (แสดง/สอน grammar แต่ไม่ใช่ SRS item แยก)
+-- inflection กับ derived family เป็นคนละเรื่องสำหรับผู้เรียน จึงมี form_type คุม
 word_forms(
   id INTEGER PK,
   word_id INTEGER FK,
-  form_text TEXT,            -- "went"
-  form_type TEXT,            -- past / past_participle / plural / 3sg / ving / comparative / superlative
+  sense_id INTEGER NULL FK,
+  form_text TEXT,            -- "drank" / "drinker"
+  form_type TEXT,            -- inflection | derived
+  pos TEXT,
+  relation TEXT,             -- "past participle" / "plural" / "derived"
+  meaning_th TEXT NULL,      -- derived ต้องมีเสมอ (validator บังคับ) · inflection ไม่ต้องมี
   is_irregular INTEGER,
-  grammar_note_th TEXT       -- คำอธิบายเต็ม ดูข้อ 9
+  source_name TEXT, source_license TEXT,
+  UNIQUE(word_id, form_text, form_type, pos)
 )
 
--- ประโยคตัวอย่าง 5 ประโยค/คำ (backup)
+-- 5 ประโยค/คำ ทุกประโยคผูก sense และมีคำอธิบายของตัวเอง
 example_sentences(
   id INTEGER PK,
   word_id INTEGER FK,
-  form_id INTEGER NULL,      -- ประโยคนี้ใช้รูปผันไหน (NULL = base)
-  rank INTEGER,              -- 1..5 (1 = ดีสุด/emotional/สถานการณ์จริง)
-  en_text TEXT,
-  th_text TEXT,
-  cloze_start INTEGER,       -- ตำแหน่งคำเป้าใน en_text (สำหรับเกม Cloze)
-  cloze_end INTEGER,
-  is_emotional INTEGER
+  sense_id INTEGER FK,       -- ประโยคนี้สอนความหมายไหน
+  rank INTEGER,              -- 1..5 (1 = emotional)
+  en_text TEXT, th_text TEXT,
+  cloze_target TEXT, cloze_start INTEGER, cloze_end INTEGER,
+  form_used TEXT,            -- รูปคำที่ปรากฏจริงในประโยค
+  is_emotional INTEGER,
+  explanation_th TEXT,       -- อ่านเดี่ยว ๆ ได้ ห้ามอ้างประโยคอื่น (validator บังคับ)
+  explanation_source TEXT,
+  UNIQUE(word_id, rank)
 )
 
--- คำที่เกี่ยวข้องในหมวด (ดู §8b ตระกูล A)
--- ใช้ร่วม 3 ที่: hint semantic + เกม Word Association + ตัวลวง Odd One Out
--- ที่มา: SWOW (association + strength) + WordNet (flag giveaway + หมวด) — ดู §5
+-- related ผูกกับ sense ไม่ใช่คำ: bank(ธนาคาร) กับ bank(ริมฝั่ง) ต้องไม่ปนกัน
 related_words(
   id INTEGER PK,
   word_id INTEGER FK,
-  related_word_id INTEGER FK, -- FK เข้าตาราง words (คำใบ้ต้องอยู่ใน Oxford 3000 ด้วยกัน)
-  relation_type TEXT,        -- association (SWOW) / hypernym / part_of (WordNet)
-  closeness REAL,            -- ความแรงจากความถี่คำตอบ SWOW (คุมลำดับการใบ้/ความยาก distractor)
-  is_giveaway INTEGER        -- 1 = synonym/antonym (auto-flag จาก WordNet) → ห้ามใช้เป็น hint
-)
--- Dictation hint (ตระกูล B, สะกด) generate runtime จาก headword — ไม่ต้องมีตาราง
-
--- สถานะ FSRS ต่อคำต่อผู้ใช้
-srs_state(
-  word_id INTEGER PK FK,
-  state TEXT,                -- new / learning / young / mature
-  stability REAL,
-  difficulty REAL,
-  due_at INTEGER,
-  last_review INTEGER,
-  reps INTEGER,
-  lapses INTEGER,
-  last_direction TEXT        -- en_th / th_en (สลับทิศ)
+  sense_id INTEGER NULL FK,
+  related_word_id INTEGER NULL FK, related_headword TEXT,
+  relation_type TEXT,        -- association | opposite | used_for | part_of | produces | causes | kind_of | pays
+  closeness REAL,            -- ความแรงจาก SWOW
+  confidence REAL,
+  explanation_th TEXT,       -- เหตุผลที่คู่นี้สัมพันธ์กัน (เขียนตอน build)
+  is_giveaway INTEGER,
+  source_name TEXT, source_license TEXT,
+  UNIQUE(word_id, related_headword, relation_type)
 )
 
--- log ทุกครั้งที่ตอบ (ใช้ปรับ retention + heatmap + วิเคราะห์)
-reviews_log(
-  id INTEGER PK,
-  word_id INTEGER FK,
-  ts INTEGER,
-  rating TEXT,               -- again / hard / good / easy
-  game_type TEXT,
-  direction TEXT,
-  elapsed_ms INTEGER
+-- Odd One Out อธิบายตัวเองจากกลุ่มที่ใช้สร้างรอบนั้นจริง
+relation_groups(
+  id INTEGER PK, hub_word_id INTEGER FK,
+  category TEXT,             -- "อาหารและการกิน"
+  explanation_th TEXT,       -- "คำกลุ่มนี้เกี่ยวกับอาหาร มื้ออาหาร และของที่ใช้กิน"
+  source_name TEXT
 )
+relation_group_members(group_id INTEGER FK, word_id INTEGER FK, closeness REAL, PK(group_id, word_id))
 
--- หมวด/ธีม (สำหรับ interleaving + focus)
-topics(id INTEGER PK, name TEXT, cefr TEXT)
+topics(id INTEGER PK, name TEXT, cefr TEXT)      -- ยังว่าง รอ pipeline หมวด
 word_topics(word_id INTEGER FK, topic_id INTEGER FK)
 
+-- ตารางของผู้เล่น (สร้างโดย migration ทับลงบน seed) -------------------------
+-- reseed ข้ามเวอร์ชันจะย้ายตารางกลุ่มนี้ตามมาเสมอ ดู §12b
+
+srs_state(
+  word_id INTEGER PK FK, state TEXT, stability REAL, difficulty REAL,
+  due_at INTEGER, last_review INTEGER, reps INTEGER, lapses INTEGER, last_direction TEXT
+)
+reviews_log(
+  id INTEGER PK, word_id INTEGER FK, ts INTEGER, rating TEXT,
+  game_type TEXT, direction TEXT, elapsed_ms INTEGER
+)
 daily_stats(date TEXT PK, new_introduced INTEGER, reviews_done INTEGER, streak_kept INTEGER)
 settings(key TEXT PK, value TEXT)   -- new_card_cap, focus_topic, request_retention, ...
 ```
 
----
+**ที่หายไปจาก v1 และเหตุผล:** `senses.cefr/countable/collocation_*`, `word_forms.grammar_note_th`,
+`example_sentences.form_id`, `words.translation_*` และ `words.image_*` — ไม่มีข้อมูลจริงรองรับ
+จาก source จึงว่างเปล่าตลอด · ความรู้ที่มันควรสื่อย้ายไปอยู่ใน `explanation_th` ต่อประโยค
+(ซึ่งอธิบายเหตุผลไวยากรณ์จริง) และ `word_forms.relation` · attribution ย้ายไป `content_meta.licenses`
+กับ `*.source_license` เพราะ license เป็นของทั้งชุดข้อมูล ไม่ใช่ของแต่ละคำ
+
+### 4b. Content-version migration
+
+`vocab.db` ของผู้เล่นมีทั้งเนื้อหาและ progress อยู่ไฟล์เดียวกัน เดิมการอัปเดตเนื้อหาต้องลบไฟล์ทิ้ง
+= ข้อมูลผู้เล่นหายหมด · v2 แก้ด้วย `lib/data/content_reseed.dart`:
+
+1. เทียบ `content_meta.content_version` ของ seed ที่ bundle มากับของไฟล์ที่ติดตั้งอยู่
+2. ถ้าใหม่กว่า → เริ่มจาก seed ใหม่ แล้วคัดลอกตารางของผู้เล่นเข้าไป
+3. **map `word_id` ด้วย headword** เพราะ id ของเนื้อหาเปลี่ยนทุกครั้งที่ build แต่ headword ไม่เปลี่ยน
+4. แถวที่ชี้ไปยังคำที่หายไปจากเนื้อหาใหม่จะถูกทิ้ง (ไม่มีอะไรให้ทบทวนแล้ว) และรายงานจำนวนออกมา
+
+ครอบด้วยเทสใน `test/vocab_store_sqlite_test.dart`
 
 ## 5. Content Pipeline (build-time, ทำครั้งเดียว)
+
+> **สถานะจริง (2026-08-13):** pipeline v2 รันแล้วบน subset 100 คำ + ชุดทดสอบ 30 คำ
+> ทั้งชุดใช้เวลา ~14 วินาที (เดิม ~90 วินาที ก่อนทำ SWOW cache)
+>
+> ```bash
+> python tools/select_pilot_100.py      # เลือกคำ (โควตา band + ต้องเกาะกลุ่มความหมาย)
+> python tools/build_content_db.py      # ประกอบ data/content_v2.db
+> python tools/validate_content_db.py   # 17 ด่าน ต้องได้ 0 problems
+> python tools/export_app_seed.py       # → vocab_app/assets/seed/vocab.db
+> ```
+>
+> `tools/swow_cache.py` เก็บข้อมูล SWOW ที่กรองแล้วไว้ใน `data/swow_cache.json`
+> (สร้างครั้งเดียว) — ทั้ง selector และ builder ใช้ร่วมกัน จึงไม่ต้องอ่านไฟล์ 53 MB ซ้ำทุกครั้ง
+> และไม่มีโค้ด parse SWOW ซ้ำสองที่อีก · รายละเอียดคำที่มีอยู่จริงดู `done_vocab.md`
 
 สคริปต์แยก (Python หรือ Dart CLI) รันตอน build ไม่ได้อยู่ในแอป:
 
@@ -305,9 +345,9 @@ settings(key TEXT PK, value TEXT)   -- new_card_cap, focus_topic, request_retent
 1. **Flashcard swipe** — การ์ด dual-coding (ภาพ+เสียง TTS+คำ) **ปัดได้ทันทีไม่ต้องกดเผยเฉลยก่อน** (แก้ไข 2026-07-23 v2): ปัดขวา = รู้จัก / ปัดซ้าย = ไม่รู้จัก บันทึกผลทันทีที่ปัด · แตะการ์ดเพื่อพลิกดูเฉลย (ทางเลือก ไม่บังคับ) · มีแค่ 2 ปุ่ม รู้จัก/ไม่รู้จัก — **ตัดปุ่ม Hard/ง่ายมากทิ้งทุกโหมด** · **พบครั้งแรกแล้วตอบรู้จัก = Rating.easy** (รู้อยู่แล้วให้คะแนนสูงกว่าปกติ FSRS เลื่อน due ไกล) อ่านออกเสียงอัตโนมัติ — แทนการ์ด intro เดิมทั้งหมด *[Phase 1]*
 2. **Cloze** — ประโยคจริงเจาะช่องคำเป้า ให้เติม (พิมพ์หรือเลือก) มีบริบทช่วย → testing + context *[Phase 1]*
 3. **Matching** — โยงเส้นจับคู่ EN–TH · อย่างน้อย **4 คู่** เสมอ (สูงสุด 6) และอย่างน้อย 2 คู่เป็นคำอ่อนสุดของผู้เล่น (weight streak×difficulty) · ใช้เฉพาะ**คำที่เคยเจอแล้ว** — เคยเจอไม่ถึง 4 คำ = เปลี่ยนรอบเป็น flashcard (แก้ไข 2026-07-24) *[Phase 1]*
-4. **Word Association** — โยงคำเข้ากับคำที่รู้แล้วในโครงข่ายความหมาย · คำตอบ+ตัวลวงดึงจาก**คำที่เคยเจอแล้วเท่านั้น** (แก้ไข 2026-07-24) *[Phase 2]*
+4. **Word Association** — โยงคำเข้ากับคำที่รู้แล้วในโครงข่ายความหมาย · คำตอบ+ตัวลวงดึงจาก**คำที่เคยเจอแล้วเท่านั้น** (แก้ไข 2026-07-24) · **หลังเฉลยต้องอธิบายว่าคำเป้ากับคำตอบสัมพันธ์กันอย่างไร** ไม่แสดงเพียงว่าถูก/ผิด เช่น `bird → egg: นกวางไข่` หรือ `doctor → hospital: เป็นสถานที่ทำงานที่พบได้บ่อย` โดยคำอธิบายต้องอิง relation/sense ที่ใช้สร้างโจทย์จริง *[Phase 2]*
 5. **Word Scramble** — เรียงตัวอักษรที่สลับให้เป็นคำ → production + desirable difficulty *[Phase 2]*
-6. **Odd One Out** — เลือกคำที่ไม่เข้าพวกจากกลุ่ม → semantic categorization *[Phase 2]* · เกณฑ์ความเหมือน (แก้ไข 2026-07-24 รอบ 2): คำนับเป็นพวกเดียวกันเมื่อเป็นข้อมูลหมวดชนิด typed (hypernym/category/part_of) หรือ closeness SWOW ≥ **0.036** (เริ่ม 0.03 ≈ p75 ของข้อมูล แล้วผู้ใช้ให้เพิ่มอีก 20%) · กลุ่มต้องมี **อย่างน้อย 3 คำ** + 1 คำแปลก (ตัด fallback 2 คำทิ้ง) หาไม่ได้ = ข้ามไป flashcard · **ช่วงเริ่มเล่นแอป** (คำที่มีประวัติ ≤8) เข้มพิเศษ: ต้องมีกลุ่มผ่านเกณฑ์ **มากกว่า 2 กลุ่ม** ไม่งั้นไม่ออกเกม Odd · กลุ่มไหนผ่านเกณฑ์ = ใช้ได้เลย **สุ่ม uniform จากทุกกลุ่มที่ผ่าน** (ไม่จัดอันดับเพิ่ม) · สมาชิกกลุ่มดึงจาก**คำที่ผู้เล่นเคยเจอแล้วเท่านั้น** · ตอบผิด: บันทึก Again ทั้ง**คำเป้า**และ**คำที่กดผิด** · ตัวเลือกหลังตรวจมี icon ✓/✗ ชัดเจน · *(note ระดับงาน 3,000 คำ: เพิ่มคำอธิบาย "กลุ่มนี้เชื่อมกันยังไง" — ถามผู้ใช้เรื่องรูปแบบคำอธิบายก่อนเริ่มทำ)*
+6. **Odd One Out** — เลือกคำที่ไม่เข้าพวกจากกลุ่ม → semantic categorization *[Phase 2]* · เกณฑ์ความเหมือน (แก้ไข 2026-07-24 รอบ 2): คำนับเป็นพวกเดียวกันเมื่อเป็นข้อมูลหมวดชนิด typed (hypernym/category/part_of) หรือ closeness SWOW ≥ **0.036** (เริ่ม 0.03 ≈ p75 ของข้อมูล แล้วผู้ใช้ให้เพิ่มอีก 20%) · กลุ่มต้องมี **อย่างน้อย 3 คำ** + 1 คำแปลก (ตัด fallback 2 คำทิ้ง) หาไม่ได้ = ข้ามไป flashcard · **ช่วงเริ่มเล่นแอป** (คำที่มีประวัติ ≤8) เข้มพิเศษ: ต้องมีกลุ่มผ่านเกณฑ์ **มากกว่า 2 กลุ่ม** ไม่งั้นไม่ออกเกม Odd · กลุ่มไหนผ่านเกณฑ์ = ใช้ได้เลย **สุ่ม uniform จากทุกกลุ่มที่ผ่าน** (ไม่จัดอันดับเพิ่ม) · สมาชิกกลุ่มดึงจาก**คำที่ผู้เล่นเคยเจอแล้วเท่านั้น** · ตอบผิด: บันทึก Again ทั้ง**คำเป้า**และ**คำที่กดผิด** · ตัวเลือกหลังตรวจมี icon ✓/✗ ชัดเจน · **หลังเฉลยต้องบอกว่าคำในกลุ่มสัมพันธ์กันอย่างไร และเหตุใดคำเป้าจึงไม่เข้าพวก** โดยอิง hub/category/relation ที่ใช้สร้างรอบนั้นจริง ไม่ให้โมเดลเดาเหตุผลย้อนหลัง (อนุมัติ 2026-08-12)
 7. **Dictation** — ฟังเสียง (TTS) แล้วพิมพ์สะกด → listening + spelling + production *[Phase 2]*
 
 ทุกเกมส่งผล rating กลับเข้า FSRS ผ่าน `answer_checker`
@@ -316,6 +356,18 @@ settings(key TEXT PK, value TEXT)   -- new_card_cap, focus_topic, request_retent
 > **Hint ladder เกมพิมพ์คำตอบ** (Dictation/Cloze/Scramble, แก้ไข 2026-07-24): จำนวนตัวอักษร → คำใกล้เคียงที่รู้แล้ว → ตัวอักษรหน้า → ความหมาย → ตัวอักษรหน้า+ท้าย แล้วหยุด (`buildHintLadder`)
 > **UI chrome เป็นอังกฤษ** (ปุ่ม/ป้าย/nav) ส่วนคำแปล/คำอ่าน/grammar note คงเป็นไทย
 > **แท็บค้นหา** แสดง 5 คำ closeness สูงสุด (SWOW) แตะไปหน้าคำนั้นได้
+
+---
+
+### คำอธิบายหลังตอบ (ทำจริง 2026-08-13)
+
+ทุกคำอธิบายเป็น**ข้อมูลในตาราง เขียนตอน build** ไม่ generate สดหลังตอบ:
+
+| เกม | แสดงอะไร | มาจากไหน |
+|---|---|---|
+| Cloze / เติมคำ | บริบทหมายถึงอะไร ทำไมใช้คำนี้ ทำไมใช้รูปนี้ + ถ้าผิดบอกว่าตอบอะไรไป | `example_sentences.explanation_th` (ต่อประโยค) + `word_forms.relation` |
+| Word Association | คำที่ถูก + ชนิดความสัมพันธ์ + เหตุผล | `related_words.relation_type` / `.explanation_th` |
+| Odd One Out | คำที่ไม่เข้าพวก + hub/หมวด + เหตุผลที่กลุ่มเชื่อมกัน + เหตุผลที่คำเป้าไม่เข้าพวก | `relation_groups.category` / `.explanation_th` ของกลุ่มที่ใช้สร้างรอบนั้นจริง |
 
 ---
 
@@ -352,6 +404,9 @@ Dictation ได้ยินเสียงแล้ว รู้อยู่แ
 - ~~เดิม: การ์ด intro แยกหน้า มีปุ่ม "ต่อไป"~~ **ตัดออก** — คำใหม่เข้า **เกม flashcard ตรง ๆ**: หน้าการ์ด = headword + ปุ่ม TTS (อ่านออกเสียงอัตโนมัติครั้งแรก), **แตะการ์ด** → พลิกโชว์ข้อมูลครบ (คำอ่านไทยเน้นพยางค์, ความหมาย core sense, ประโยคตัวอย่าง, แตะเปิด word detail เต็ม) — ไม่มีปุ่ม "เผยคำตอบ" แล้ว ปัดได้ตั้งแต่แรก
 - ปัด **ขวา = รู้จัก / ซ้าย = ไม่รู้จัก (Again)** — พบครั้งแรกแล้วรู้จักเลย = **Easy** (บูสต์คะแนน), รอบถัด ๆ ไป = Good · ไม่มีปุ่ม Hard/Easy ในทุกโหมด
 - การปัดครั้งแรก = review แรกของคำเข้า FSRS ทันที (นับ new_introduced ของวันด้วย) — ไม่มีขั้น "ดูเฉย ๆ" แยกจากการตอบอีกต่อไป
+- **รูปแบบด้านหลัง Flashcard (อนุมัติ 2026-08-12):** แสดงแต่ละ Part of Speech เป็น **หนึ่งบรรทัด** เช่น `n. ท่าม้ากระโดดและดีดขาหลัง, ท่ากระโดดโลดเต้น` และ `v. กระโดดโลดเต้น, บังคับม้าให้แสดงท่า capriole` — หาก POS เดียวมีหลายความหมาย ให้ใช้ comma คั่นในบรรทัดเดียวกัน ไม่แตกเป็น bullet หลายบรรทัด · ใต้แต่ละ POS แสดง example ของ POS นั้น 1 ประโยคพร้อมคำแปลไทย
+- **ส่วนพับได้บน Flashcard:** `Word family & forms` และ `Related words` เป็น dropdown/accordion สองส่วน แยกกันและ **ปิดไว้เป็นค่าเริ่มต้น**; เมื่อกดจึงขยายรายการลงมา · family/form ที่เปลี่ยน POS หรือความหมายต้องระบุ POS + ความหมายไทยใหม่ ส่วนรูปผันที่ความหมายเดิมไม่ต้องแปลซ้ำ · Related word แต่ละคำแสดง POS และความหมายไทยสั้น ๆ
+- **Final Flashcard design ที่ยืนยันแล้ว (2026-08-12):** ด้านหน้า = headword + TTS + คำอ่านไทย โดยยังไม่เฉลยความหมาย · ด้านหลัง = headword/TTS/คำอ่าน → บรรทัด POS+ความหมายตามกติกาด้านบน → example EN+TH หนึ่งชุดต่อ POS → dropdown `Word family & forms` → dropdown `Related words` → ทางลัดเปิด Dictionary entry เต็ม · ไม่แสดง symbol, IPA หรือ CEFR บน Flashcard และไม่ย่อฟอนต์เพื่อยัดข้อมูล; ถ้ายาวให้ scroll หรือเปิด Dictionary เต็ม
 
 ### 9.2 Grammar note (ติดประโยค/คำตอบที่ใช้รูปผัน)
 เมื่อประโยคหรือคำตอบใช้รูปผัน แสดงโน้ตแบบ **อธิบายเหตุผล ไม่ใช่แค่ป้ายชื่อ**:
@@ -361,24 +416,41 @@ Dictation ได้ยินเสียงแล้ว รู้อยู่แ
 
 irregular forms ถูก flag และมีโน้ตเน้นเป็นพิเศษ
 
+**Cloze/เกมเติมคำ — คำอธิบายต้องเป็นอิสระต่อประโยค (อนุมัติ 2026-08-12):**
+- ประโยคตัวอย่างแต่ละประโยคของคำศัพท์เดียวกันต้องมี explanation ของตัวเอง โดยอธิบายจากบริบทและรูปไวยากรณ์ของ **ประโยคนั้นเท่านั้น**
+- ห้ามใช้คำอธิบายรวมที่อ้างว่า “ประโยคก่อนหน้า”, “ประโยคที่ 2”, “จากตัวอย่างอื่น” หรือสมมติว่าผู้เล่นได้เห็นประโยคอื่นของคำนี้แล้ว เพราะแต่ละรอบอาจสุ่มออกมาเดี่ยว ๆ
+- explanation ต้องอ่านรู้เรื่องได้โดยลำพัง: บอกว่าบริบทสื่ออะไร, เหตุใดช่องว่างจึงต้องใช้คำหรือรูปผันนั้น และถ้าจำเป็นให้บอกโครงสร้างไวยากรณ์สั้น ๆ
+- ดังนั้นข้อมูลต้องผูก explanation กับ `example_sentence` แต่ละแถว ไม่เก็บ grammar note รวมหนึ่งย่อหน้าต่อคำหรือคัดลอก note เดียวใช้กับทั้ง 5 ประโยค
+
 ---
 
 ## 9b. การแสดงผลคำแปล (Dictionary Entry)
 
 แสดงแบบ dictionary: `headword (คำอ่านไทย) N. ... V. ...` แบ่งเป็น **2 ชั้นตามจังหวะใช้งาน**
 
-### ชั้นที่ 1 — ในเกม หลังเฉลย (ย่อ)
-- headword + คำอ่านไทย (**พยางค์เน้นเสียงเป็นตัวหนา** เช่น **แอน**-เซอร์) + ปุ่มฟังเสียง TTS
-- ป้าย CEFR + ป้าย POS (N. ระบุ นับได้/นับไม่ได้)
-- ความหมายเฉพาะ **core sense ที่ทดสอบ** + ประโยคตัวอย่าง 1 ประโยค
-- แตะการ์ดเพื่อเปิด entry เต็ม — ไม่บังคับ เพื่อไม่ถ่วงจังหวะ "ว่างนิดเล่นนิด"
+### ชั้นที่ 1 — ด้านหลังการ์ด / หลังเฉลยในเกม (`widgets/word_result_card.dart`)
 
-### ชั้นที่ 2 — หน้า word detail (entry เต็ม)
-- header เหมือนชั้น 1 (**ไม่แสดง IPA** — IPA ใช้ภายในเท่านั้น)
-- sense ทุกตัวจัดกลุ่มตาม POS เรียง `sense_rank` แต่ละ sense มี: ป้าย CEFR, ความหมาย, collocation 1 วลี (EN = TH)
-- sense ที่ `is_core` ติดดาว — บอกผู้ใช้ว่าเกมทดสอบความหมายไหน
-- entry ของ V. โชว์รูปผัน inline (`answered · answered · answering`) — แตะเปิด grammar note เต็ม
-- ประโยคตัวอย่างทั้ง 5 อยู่ล่าง entry
+ลำดับล็อกแล้ว (ทำจริง 2026-08-13):
+
+1. headword + ปุ่ม TTS + คำอ่านไทย (**พยางค์เน้นเป็นตัวหนา**)
+2. **หนึ่งบรรทัดต่อ POS** — `n. เงิน, เงินตรา` · หลายความหมายของ POS เดียวกันคั่นด้วย comma
+3. ตัวอย่าง EN + TH **หนึ่งชุดต่อ POS** (เลือกประโยคที่ `sense_id` อยู่ใน POS นั้นจริง)
+4. dropdown **Word family & forms** — แยก "รูปผันของคำ" กับ "คำในตระกูลเดียวกัน"
+5. dropdown **Related words** — คำ + ชนิดความสัมพันธ์ + เหตุผล
+6. ปุ่ม **เปิด Dictionary เต็ม**
+
+dropdown ปิดไว้เป็นค่าเริ่มต้น · ถ้าเนื้อหายาวให้ scroll **ห้ามย่อฟอนต์เพื่อยัดข้อมูล** ·
+ไม่แสดง IPA, symbol หรือ CEFR บนการ์ด
+
+### ชั้นที่ 2 — Dictionary เต็ม (`screens/word_detail_page.dart`)
+
+อ่าน dataset ชุดเดียวกับการ์ด ไม่สร้างข้อมูลคนละชุด แต่แสดงมากกว่า:
+
+- ทุก POS · ทุก sense พร้อม `gloss_en` ต้นทาง (ให้เห็นว่าคำแปลไทยมาจากไหน) · sense หลักติดดาว
+- ตัวอย่างของแต่ละ sense อยู่ใต้ sense นั้น พร้อม **คำอธิบายของประโยคนั้นเอง**
+- Forms กับ Word family แยกหัวข้อ แต่ละแถวมี relation + POS + ที่มา
+- Related words พร้อมชนิดความสัมพันธ์และเหตุผลที่บันทึกไว้
+- ท้ายหน้า: source attribution ที่รวบรวมจากแถวที่แสดงจริง
 
 ### แท็บค้นหาคำศัพท์ (เพิ่ม 2026-07-24)
 - แท็บ "ค้นหา" ใน bottom nav (เล่น · ค้นหา · ความก้าวหน้า) — `dictionary_page.dart`
@@ -400,6 +472,7 @@ irregular forms ถูก flag และมีโน้ตเน้นเป็�
 - **สถานะคำ** New → Learning → Young → Mature ให้เห็น progress จริง
 - **"You Pass"** (เพิ่ม 2026-07-23, กติกาสุดท้าย) — นับเฉพาะ **4 เกมหลักที่ถูก/ผิดชัดเจน: Flashcard, Matching, Cloze, Dictation** (`kMasteryGames`) — ผ่านเมื่อทำได้ **1 รอบสมบูรณ์: ทุกคำตอบถูกครบทั้ง 4 เกมหลัก โดยไม่มีการตอบผิดในเกมหลักแทรกเลยแม้แต่ครั้งเดียว** — ตอบผิด (Again) ในเกมหลัก 1 ครั้ง**กับคำไหนก็ตาม = รีเซ็ตทั้งกระดาน เริ่มนับ 1 ใหม่** การนับมีไว้เพื่อจบรอบ clean รอบเดียวเท่านั้น (เช็คจาก `reviews_log` ผ่าน `domain/mastery.dart`) · **อีก 3 เกม (Odd One Out / Word Association / Scramble) ยังอยู่ใน loop ตามเดิมแต่นับแค่ streak** — ไม่เติมช่องกระดาน และผิดในเกมพวกนี้ไม่รีเซ็ตกระดาน · ขึ้นหน้าจอฉลองเต็มจอ "You Pass" **ครั้งเดียว** (setting `you_pass_shown`)
 - **Loop ช่วยปิดรอบ + fade-out คำที่แน่น** (คู่กับกติกา reset) — แต่ละตาใน practice loop **เลือกคำที่ยังขาดช่องของเกมนั้นในรอบปัจจุบันก่อน** (ไม่เสิร์ฟช่องที่เก็บแล้วซ้ำ) และในบรรดาคำที่เข้าเกณฑ์ ใช้ weight = 1/(1+streak) โดย **streak นับต่อคำ** (ตั้งแต่ Again ล่าสุดของคำนั้นเอง — พลาดคำ A ไม่ทำให้คำ B ดูอ่อน) — หลังรีเซ็ตทั้งกระดาน คำที่เคยตอบถูกมาหลายรอบจึงโผล่น้อย เวลาส่วนใหญ่ไปลงกับคำที่พลาด/คำยาก ปิดรอบใหม่ได้เร็ว
+- **หน้า Progress แสดง You Pass จริงแล้ว** (2026-08-13, `widgets/progress_mastery_view.dart`) — จำนวนช่องที่ผ่าน/ทั้งหมด, เปอร์เซ็นต์, แถบความคืบหน้า, **แยกรายเกม**, บอก**คำที่ยังขาดของแต่ละเกม** (ผู้เล่นจึงเข้าใจว่าทำไมเกมถัดไปถูกเลือก) และ**แจ้งเมื่อรอบสะอาดถูกรีเซ็ต** พร้อมเวลาและคำที่ตอบผิด — เดิมคำนวณไว้แต่ไม่มี UI การรีเซ็ตจึงดูเหมือน progress หายไปเฉย ๆ · มี `ProgressMasteryChip` สำหรับหน้า Play (ยังไม่ได้ wire)
 - ⏸ XP / level / badge เต็มรูปแบบ = เก็บไว้เฟสหลัง
 
 ---

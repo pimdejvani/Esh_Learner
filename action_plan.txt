@@ -1,0 +1,283 @@
+ระยะที่ 1 — ปิดงาน UI ล่าสุดและตรวจของจริง
+1. ทดลองเล่น build ปัจจุบัน
+ตรวจทุกเกมบน Windows หลัง restart แอป โดยเฉพาะ:
+ปุ่ม i อยู่ระดับเดียวกับ Oxford 3000
+ช่องตอบไม่ตัดข้อความ
+แตะพื้นที่ว่างหลังเฉลยแล้วไปเกมถัดไป
+การ scroll, Hint และเปิดรายละเอียดศัพท์ไม่ทำให้ข้ามเกม
+Matching รอบติดกันไม่มีคำซ้ำ
+ไม่มี Auto-keyboard
+Word Association เป็นแนวตั้ง
+Content ทุกเกมอยู่กลางหน้าจอ
+Dictation ซ่อนคำแปลและแสดงเป็น Hint ลำดับที่ 2
+หากผ่านจึงถือว่าชุด UI ล่าสุดปิดงานได้
+ระยะที่ 2 — ปรับโครงสร้างข้อมูลก่อนขยายคำศัพท์
+นี่เป็นขั้นสำคัญที่สุด เพราะ schema ปัจจุบันยังรองรับ final Flashcard ไม่ครบ
+2. เพิ่มโครงสร้าง Sense และ POS ที่สมบูรณ์
+ปัจจุบันคำหนึ่งมีหลาย senses ได้ แต่ระบบเกมส่วนใหญ่ยังอ้างอิง word_id และ coreSense เป็นหลัก
+ต้องปรับให้รองรับ:
+หนึ่งคำมีหลาย Part of Speech
+แต่ละ POS มีหลายความหมาย
+แต่ละความหมายมี source และลำดับความสำคัญ
+เกมและตัวอย่างสามารถระบุได้ว่ากำลังใช้ sense/POS ใด
+Related words ผูกกับ sense/POS ไม่ใช่ผูกกับคำแบบรวมทั้งหมด
+ตัวอย่าง bank:
+n. ธนาคาร → related: money, account
+n. ริมฝั่งแม่น้ำ → related: river, shore
+สองกลุ่มนี้ต้องไม่ปนกัน
+3. เพิ่มตาราง Word family และ forms
+แยกข้อมูลสองประเภท:
+Inflection: capriole → caprioles, caprioled, caprioling
+Derived family: capricious → capriciously, capriciousness
+ข้อมูลแต่ละรายการควรมี:
+คำ
+ชนิด inflection หรือ derived
+Part of Speech
+ความหมายไทย หาก POS หรือความหมายเปลี่ยน
+ความสัมพันธ์กับคำหลัก
+Source และ license
+4. เพิ่ม explanation ต่อประโยค
+ตาราง example_sentences ต้องมีข้อมูลประมาณ:
+sense_id
+explanation_th
+explanation_source
+รูปคำที่ใช้
+เหตุผลทางไวยากรณ์ของประโยคนั้น
+คำอธิบายต้องเป็นอิสระ เช่น:
+ประโยคนี้กล่าวถึงเหตุการณ์ที่เกิดขึ้นแล้ว จึงใช้ went ซึ่งเป็น Past Simple ของ go
+
+ห้ามเป็นคำอธิบายรวมแบบ:
+ประโยคที่ 1 ใช้ base form ส่วนประโยคที่ 2 ใช้ past tense...
+
+เพราะผู้เล่นอาจเห็นเพียงประโยคเดียว
+5. เพิ่มข้อมูลอธิบายความสัมพันธ์
+Related relation ต้องเก็บมากกว่าแค่คะแนน เช่น:
+relation_type
+sense_id
+explanation_th
+source
+confidence
+hub/category สำหรับ Odd One Out
+ตัวอย่าง:
+bird → egg
+Relation: produces
+Explanation: นกวางไข่
+หรือ:
+กลุ่ม cat, dog, bird
+Hub: animal
+Explanation: ทั้งหมดเป็นสัตว์
+Odd word: table
+Explanation: table เป็นสิ่งของ ไม่ใช่สัตว์
+ระยะที่ 3 — สร้าง Content Pipeline รุ่นใหม่
+6. นำ prototype ที่ทดลองแล้วมาเป็น pipeline จริง
+Source stack ที่ควรใช้:
+Kaikki/Wiktextract
+POS
+English senses
+Forms
+Derived words
+IPA
+Examples ที่มี
+
+Wiktionary/wiktapi
+คำแปลไทยที่มีอยู่จริง
+
+SWOW
+ความสัมพันธ์ที่คนจริงมักเชื่อมโยงกัน
+ใช้คะแนน association strength
+
+WordNet
+Synonym
+Antonym
+Hypernym
+Category
+Part-of
+Word-family validation บางส่วน
+
+Tatoeba
+ประโยคธรรมชาติพร้อม attribution/license
+
+Datamuse
+Fallback สำหรับ related words เมื่อแหล่งหลักไม่พอ
+
+Gemini
+แปล gloss เป็นไทยเมื่อไม่มีคำแปล
+ทำคำอ่านไทยจาก IPA
+สร้างคำอธิบายความสัมพันธ์
+สร้างประโยคเฉพาะเมื่อ source ไม่มี
+ห้ามสร้าง POS, forms หรือ word family ที่ไม่มี source รองรับ
+
+7. เพิ่ม Validator
+ตัวตรวจต้องปฏิเสธข้อมูลต่อไปนี้:
+Word family ที่ไม่มีใน source
+รูปผันผิด
+Related word ที่ไม่สัมพันธ์กับ sense
+ความหมายไทยยาวเกินรูปแบบ Flashcard
+ความหมายซ้ำกัน
+Related word ที่เป็นเพียงคำคล้ายทางรากศัพท์แต่ไม่ช่วยผู้เรียน
+Explanation ที่อ้างถึงประโยคอื่น
+Explanation ที่ไม่ตรง relation จริง
+ประโยคที่ใช้ความหมายคนละ sense
+Thai translation ที่ไม่มี provenance
+ตัวอย่างที่ไม่ใช้คำหรือรูปผันจริง
+8. ทดลองกับชุดคำที่ยากขึ้น
+ไม่ควรทดสอบเพียงสามคำ ต้องทำ test set ประมาณ 30–50 คำ ครอบคลุม:
+หลาย POS: light, run, round
+หลาย sense: bank, match, spring
+Irregular forms: go, stick, knife
+Word family เยอะ: decide, decision, decisive
+Proper nouns: Capricorn
+คำเฉพาะทาง: capriole
+Phrasal verbs
+Countable/uncountable nouns
+คำที่มี UK/US usage ต่างกัน
+จากนั้นตรวจทั้ง coverage, correctness และความสั้นของข้อความ
+ระยะที่ 4 — ทำ Final Flashcard
+9. ปรับด้านหน้าการ์ด
+แสดง:
+Headword
+TTS
+คำอ่านไทยพร้อมเน้นพยางค์
+ยังไม่แสดงความหมาย
+10. ปรับด้านหลังการ์ด
+ลำดับสุดท้าย:
+Headword + TTS + คำอ่าน
+หนึ่งบรรทัดต่อ Part of Speech
+หลายความหมายคั่นด้วย comma
+ตัวอย่าง EN–TH หนึ่งชุดต่อ POS
+Dropdown Word family & forms
+Dropdown Related words
+ปุ่มเปิด Dictionary เต็ม
+ตัวอย่าง:
+n. ท่าม้ากระโดดและดีดขาหลัง, ท่ากระโดดโลดเต้น
+The trained horse performed a capriole.
+ม้าที่ผ่านการฝึกแสดงท่ากระโดดและดีดขาหลัง
+v. กระโดดโลดเต้น, บังคับม้าให้แสดงท่า capriole
+The horse caprioled across the field.
+ม้ากระโดดโลดเต้นข้ามทุ่งไป
+
+Dropdown ปิดไว้ตามค่าเริ่มต้น เพื่อไม่ให้การ์ดยาวเกินไป
+11. ทำ 3D card flip
+หลังข้อมูลและ layout นิ่งแล้วจึงเพิ่ม:
+การหมุนแกน Y
+Perspective
+เปลี่ยนหน้าการ์ดเมื่อหมุนถึง 90°
+ปัดซ้าย–ขวายังต้องทำงานได้เหมือนเดิม
+ไม่ให้ animation ชนกับ scroll ภายในด้านหลังการ์ด
+ระยะที่ 5 — ปรับ Dictionary เต็ม
+12. ใช้ข้อมูลชุดเดียวกับ Flashcard
+Dictionary เต็มแสดงรายละเอียดมากกว่า ได้แก่:
+ทุก POS
+ทุก sense ที่เหมาะกับผู้เรียน
+Word family และ forms แบบเต็ม
+Related words พร้อมชนิดความสัมพันธ์
+Collocation ต่อ sense
+Usage labels เช่น formal/informal/UK/US
+Countable/uncountable
+Transitive/intransitive
+ตัวอย่างเพิ่มเติม
+Source attribution
+Flashcard กับ Dictionary ต้องอ่านจาก dataset เดียวกัน ไม่สร้างข้อมูลคนละชุด
+ระยะที่ 6 — ปรับคำอธิบายในเกม
+13. Word Association
+หลังตอบแล้วแสดง:
+คำตอบที่ถูก
+Relation
+คำอธิบายสั้นว่าทำไมจึงสัมพันธ์กัน
+ตัวอย่าง:
+bird → egg
+นกวางไข่ จึงเป็นความสัมพันธ์แบบสิ่งมีชีวิตกับสิ่งที่มันผลิต
+
+คำอธิบายต้องมาจาก relation ที่บันทึกไว้ ไม่ generate สดหลังตอบ
+14. Odd One Out
+หลังตอบแล้วแสดง:
+คำที่ไม่เข้าพวก
+Hub/category ของกลุ่ม
+เหตุผลที่คำในกลุ่มเชื่อมกัน
+เหตุผลที่คำเป้าไม่เข้ากลุ่ม
+ตัวอย่าง:
+cat, dog, bird เป็นสัตว์
+table เป็นสิ่งของ จึงไม่เข้าพวก
+
+15. Cloze และเกมเติมคำ
+หลังตอบแล้วแสดง explanation ของประโยคนั้น:
+บริบทหมายถึงอะไร
+ทำไมต้องใช้คำนี้
+ทำไมใช้รูปผันนี้
+ถ้าผิด ให้บอกว่าคำตอบของผู้ใช้ผิดตรงไหน
+แต่ละประโยคต้องมี explanation แยกกันในฐานข้อมูล
+ระยะที่ 7 — Motivation และ Progress
+16. แสดง You Pass progress
+ระบบคำนวณอยู่แล้ว แต่ยังไม่มี UI
+ควรเพิ่มในหน้า Progress เป็นหลัก:
+จำนวนช่องที่ผ่านแล้ว
+จำนวนทั้งหมด
+เปอร์เซ็นต์
+แยกตามเกม
+แจ้งเมื่อ clean round ถูก reset เพราะตอบ Again
+แสดงช่องที่ยังขาดเพื่อให้ผู้ใช้เข้าใจว่าเกมถัดไปถูกเลือกเพราะอะไร
+อาจมี chip ย่อในหน้า Play เพื่อดูความคืบหน้าเร็ว ๆ
+ระยะที่ 8 — ขยาย Dataset เป็น 3,000 คำ
+17. แก้ pipeline เดิมก่อน
+รองรับ irregular inflections เช่น armies, knives, stuck
+เพิ่ม B2
+กำหนดเป้าหมายจำนวนคำแต่ละ CEFR
+เพิ่ม sense/POS/family/relation/explanation schema ใหม่
+เพิ่ม resumable checkpoints
+เก็บ provenance ทุก field
+คำนวณ license attribution
+18. รันเป็นช่วง
+ไม่ควรรัน 2,747 คำที่เหลือทีเดียว แนะนำ:
+50 คำทดสอบ
+ตรวจ QC และ UI
+250 คำ
+ตรวจ sample ตามความเสี่ยง
+1,000 คำ
+รันส่วนที่เหลือ
+Final audit ทั้งชุด
+ระยะที่ 9 — งานระบบและแพลตฟอร์ม
+19. Content-version migration
+ตอนนี้การอัปเดต seed database อาจต้องลบ vocab.db ซึ่งทำให้ข้อมูลผู้เล่นเสี่ยงสูญหาย
+ต้องทำระบบ:
+Content DB version
+Migration/reseed
+รักษา SRS state
+รักษา review logs
+รักษา progress และ settings
+Map word/sense เดิมไป schema ใหม่
+ควรทำก่อนปล่อย dataset 3,000 คำให้ผู้ใช้จริง
+20. ระบบรูปภาพ
+Resolve URL จาก Openverse/Wikimedia
+ตรวจ license และ attribution
+Runtime fetch/cache
+Placeholder และ offline behavior
+เลือกภาพตาม sense ไม่ใช่เพียง headword
+21. iOS build
+ต้องใช้ Mac/Xcode เพื่อตรวจ:
+Build และ signing
+SQLite migration
+TTS
+Gesture
+Keyboard
+Safe areas
+Performance กับฐานข้อมูล 3,000 คำ
+ระยะที่ 10 — ปรับระบบจากข้อมูลผู้ใช้จริง
+22. Tune FSRS และ New-word governor
+ต้องรอ review logs จริงก่อนวิเคราะห์:
+Retention จริง
+คำที่ผิดซ้ำ
+เวลาตอบ
+Hint usage
+Game difficulty
+จำนวนคำใหม่ที่เหมาะสม
+Matching/Odd/Association ส่งผลต่อ retention อย่างไร
+จากนั้นจึงปรับ parameter โดยอิงข้อมูล ไม่เดาล่วงหน้า
+Backlog ระยะยาว
+ยังไม่ควรทำก่อนงานหลัก:
+Confusables — “อย่าสับสนกับ”
+ชื่อแอปและโลโก้
+Android/iPad
+Multi-device sync
+Account system
+XP และ badge เต็มรูปแบบ
+Hybrid LLM ระหว่างเล่น
