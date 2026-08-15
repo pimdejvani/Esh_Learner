@@ -27,7 +27,6 @@ import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
 import 'package:vocab_app/theme/app_theme.dart';
-import 'package:vocab_app/widgets/info_hint.dart';
 import 'package:vocab_app/widgets/speak_buttons.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
@@ -86,13 +85,14 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
   @override
   void initState() {
     super.initState();
-    _releaseController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 320),
-    )..addListener(() {
-      final anim = _releaseAnimation;
-      if (anim != null) setState(() => _dragOffset = anim.value);
-    });
+    _releaseController =
+        AnimationController(
+          vsync: this,
+          duration: const Duration(milliseconds: 320),
+        )..addListener(() {
+          final anim = _releaseAnimation;
+          if (anim != null) setState(() => _dragOffset = anim.value);
+        });
     // First-ever encounter: auto-pronounce (dual coding — word + sound
     // together on first sight).
     if (widget.isNewWord) widget.tts.speak(widget.bundle.word.headword);
@@ -111,12 +111,6 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
     setState(() => _dragOffset += Offset(details.delta.dx, 0));
   }
 
-  static const _frontHint =
-      'Tap the card to reveal the answer.\n'
-      'Swipe right = you know it, left = you don\'t.';
-  static const _revealedHint =
-      'Swipe right if you knew it, left if you didn\'t.';
-
   void _onPanEnd(DragEndDetails details) {
     if (_resolved) return;
     final dx = _dragOffset.dx;
@@ -131,9 +125,10 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
   }
 
   void _snapBack() {
-    _releaseAnimation = Tween<Offset>(begin: _dragOffset, end: Offset.zero).animate(
-      CurvedAnimation(parent: _releaseController, curve: Curves.elasticOut),
-    );
+    _releaseAnimation = Tween<Offset>(begin: _dragOffset, end: Offset.zero)
+        .animate(
+          CurvedAnimation(parent: _releaseController, curve: Curves.elasticOut),
+        );
     _releaseController.forward(from: 0);
   }
 
@@ -158,7 +153,10 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
   Widget build(BuildContext context) {
     final colors = context.appColors;
     final rotation = (_dragOffset.dx / 900).clamp(-0.35, 0.35);
-    final swipeProgress = (_dragOffset.dx.abs() / _distanceThreshold).clamp(0.0, 1.0);
+    final swipeProgress = (_dragOffset.dx.abs() / _distanceThreshold).clamp(
+      0.0,
+      1.0,
+    );
 
     // Front (word only, tap to flip) vs back (full word info). Both faces
     // live inside the SAME drag transform so the card is swipeable from
@@ -175,9 +173,15 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text(_promptText, style: Theme.of(context).textTheme.headlineMedium),
+                      Text(
+                        _promptText,
+                        style: Theme.of(context).textTheme.headlineMedium,
+                      ),
                       if (widget.direction == Direction.enTh)
-                        SpeakButtons(tts: widget.tts, text: widget.bundle.word.headword),
+                        SpeakButtons(
+                          tts: widget.tts,
+                          text: widget.bundle.word.headword,
+                        ),
                     ],
                   ),
                 ),
@@ -188,91 +192,82 @@ class _FlashcardSwipeGameState extends State<FlashcardSwipeGame>
             key: const ValueKey('result'),
             height: _cardHeight,
             width: double.infinity,
-            // scaleDown: an unusually tall back face shrinks to fit the
-            // fixed box instead of overflowing; normal content renders
-            // at natural size.
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              alignment: Alignment.topCenter,
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 448),
-                child: WordResultCard(
-                  bundle: widget.bundle,
-                  tts: widget.tts,
-                  onOpenDetail: () => Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) =>
-                          WordDetailPage(bundle: widget.bundle, tts: widget.tts),
-                    ),
-                  ),
+            child: WordResultCard(
+              bundle: widget.bundle,
+              tts: widget.tts,
+              fillHeight: true,
+              onOpenDetail: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) =>
+                      WordDetailPage(bundle: widget.bundle, tts: widget.tts),
                 ),
               ),
             ),
           );
 
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        // Standard "!" info affordance (top-right) replaces the faint
-        // on-card instruction lines; message reflects front vs revealed.
-        Align(
-          alignment: Alignment.centerRight,
-          child: InfoHint(message: _revealed ? _revealedHint : _frontHint),
-        ),
-        GestureDetector(
-          onTap: _flip,
-          onPanUpdate: _onPanUpdate,
-          onPanEnd: _onPanEnd,
-          child: Transform.translate(
-            offset: _dragOffset,
-            child: Transform.rotate(
-              angle: rotation,
-              child: Stack(
-                clipBehavior: Clip.none,
-                children: [
-                  AnimatedSwitcher(
-                    duration: const Duration(milliseconds: 260),
-                    transitionBuilder: (child, anim) => FadeTransition(
-                      opacity: anim,
-                      child: ScaleTransition(
-                        scale: Tween(begin: 0.96, end: 1.0).animate(anim),
-                        child: child,
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          GestureDetector(
+            onTap: _flip,
+            onPanUpdate: _onPanUpdate,
+            onPanEnd: _onPanEnd,
+            child: Transform.translate(
+              offset: _dragOffset,
+              child: Transform.rotate(
+                angle: rotation,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    AnimatedSwitcher(
+                      duration: const Duration(milliseconds: 260),
+                      transitionBuilder: (child, anim) => FadeTransition(
+                        opacity: anim,
+                        child: ScaleTransition(
+                          scale: Tween(begin: 0.96, end: 1.0).animate(anim),
+                          child: child,
+                        ),
                       ),
+                      child: face,
                     ),
-                    child: face,
-                  ),
-                  if (_dragOffset.dx > 4)
-                    Positioned(
-                      top: 12,
-                      left: 16,
-                      child: _SwipeStamp(
-                        label: 'Know',
-                        color: colors.success,
-                        opacity: swipeProgress,
+                    if (_dragOffset.dx > 4)
+                      Positioned(
+                        top: 12,
+                        left: 16,
+                        child: _SwipeStamp(
+                          label: 'Know',
+                          color: colors.success,
+                          opacity: swipeProgress,
+                        ),
                       ),
-                    ),
-                  if (_dragOffset.dx < -4)
-                    Positioned(
-                      top: 12,
-                      right: 16,
-                      child: _SwipeStamp(
-                        label: 'Don\'t know',
-                        color: colors.danger,
-                        opacity: swipeProgress,
+                    if (_dragOffset.dx < -4)
+                      Positioned(
+                        top: 12,
+                        right: 16,
+                        child: _SwipeStamp(
+                          label: 'Don\'t know',
+                          color: colors.danger,
+                          opacity: swipeProgress,
+                        ),
                       ),
-                    ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
 
 class _SwipeStamp extends StatelessWidget {
-  const _SwipeStamp({required this.label, required this.color, required this.opacity});
+  const _SwipeStamp({
+    required this.label,
+    required this.color,
+    required this.opacity,
+  });
 
   final String label;
   final Color color;
@@ -292,11 +287,14 @@ class _SwipeStamp extends StatelessWidget {
           ),
           child: Text(
             label,
-            style: TextStyle(color: color, fontWeight: FontWeight.w800, fontSize: 16),
+            style: TextStyle(
+              color: color,
+              fontWeight: FontWeight.w800,
+              fontSize: 16,
+            ),
           ),
         ),
       ),
     );
   }
 }
-

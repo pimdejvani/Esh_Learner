@@ -14,6 +14,7 @@ import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/credits_page.dart';
 import 'package:vocab_app/widgets/highlight_card.dart';
+import 'package:vocab_app/widgets/progress_mastery_view.dart';
 
 class ProgressPage extends StatefulWidget {
   const ProgressPage({super.key, required this.store});
@@ -30,6 +31,7 @@ class _ProgressPageState extends State<ProgressPage> {
   List<Topic> _topics = [];
   int? _focusTopicId;
   int _dueCount = 0;
+  MasterySnapshot? _mastery;
   bool _loading = true;
 
   @override
@@ -54,7 +56,20 @@ class _ProgressPageState extends State<ProgressPage> {
           (counts[srs?.state ?? CardState.newState] ?? 0) + 1;
       if (srs != null && !srs.dueAt.isAfter(now)) dueCount++;
     }
+    // The You Pass grid and the reset that wipes it (domain/mastery.dart).
+    final passedPairs = await widget.store.loadPassedWordGamePairs();
+    final reviews = await widget.store.loadRecentReviews(
+      since: now.subtract(const Duration(days: 90)),
+    );
+    final mastery = MasterySnapshot.from(
+      words: state.words,
+      passedPairs: passedPairs,
+      recentReviews: reviews,
+      headwordById: {for (final w in state.words) w.id: w.headword},
+    );
+
     setState(() {
+      _mastery = mastery;
       _stats = stats;
       _statusCounts = counts;
       _topics = topics;
@@ -83,14 +98,13 @@ class _ProgressPageState extends State<ProgressPage> {
       DateTime.now(),
     );
 
-    // Credits pinned to the bottom edge (just above the nav bar) rather
-    // than scrolling with the content (user request 2026-07-24).
-    return Column(
+    // Credits sit at the END of the page's content, not pinned to a fixed
+    // spot on screen (user request 2026-07-24 round 2: "อยากให้แถบ credit
+    // อยู่ใต้สุดของหน้า ไม่ต้องให้อยู่ตำแหน่งนั้นของจอ") — pinned, it cut
+    // across the mastery list mid-scroll.
+    return ListView(
+      padding: const EdgeInsets.all(16),
       children: [
-        Expanded(
-          child: ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
         // "At-a-glance" summary — the reference site's colorful pastel
         // highlight-card pattern (SPEC.md section 13 / NOTES.md's UI design
         // pass), distinct from the clean white-bordered content cards used
@@ -126,6 +140,10 @@ class _ProgressPageState extends State<ProgressPage> {
           ],
         ),
         const SizedBox(height: 20),
+        if (_mastery != null) ...[
+          ProgressMasteryView(snapshot: _mastery!),
+          const SizedBox(height: 20),
+        ],
         Text('Word status', style: Theme.of(context).textTheme.titleMedium),
         Wrap(
           spacing: 8,
@@ -153,21 +171,16 @@ class _ProgressPageState extends State<ProgressPage> {
             ],
             onChanged: _setFocusTopic,
           ),
-            ],
-          ],
-        ),
-        ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-          child: Card(
-            margin: EdgeInsets.zero,
-            child: ListTile(
-              leading: const Icon(Icons.info_outline),
-              title: const Text('Credits / Licenses'),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => CreditsPage(store: widget.store)),
-              ),
+        ],
+        const SizedBox(height: 20),
+        Card(
+          margin: EdgeInsets.zero,
+          child: ListTile(
+            leading: const Icon(Icons.info_outline),
+            title: const Text('Credits / Licenses'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => CreditsPage(store: widget.store)),
             ),
           ),
         ),

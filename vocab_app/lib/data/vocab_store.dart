@@ -78,5 +78,20 @@ abstract class VocabStore {
   /// not just the one word currently being tested.
   Future<Map<int, List<RelatedWord>>> loadAllRelatedWords();
 
+  /// Every `relation_groups` row with its members. Odd One Out builds a round
+  /// from one of these and explains the answer with the group's stored
+  /// category and reason instead of inventing one after the fact.
+  Future<List<RelationGroup>> loadRelationGroups();
+
+  /// Ids of words that have senses under two or more parts of speech.
+  /// Used only by the temporary multi-POS Flashcard hook
+  /// (`domain/test_hooks.dart`) — delete with it.
+  Future<Set<int>> loadMultiPosWordIds();
+
+  /// `content_meta` as a plain map: content_version, built_at, licenses.
+  /// The Credits page reads attribution from here instead of from per-word
+  /// columns, because licensing applies to the whole content build.
+  Future<Map<String, String>> loadContentMeta();
+
   Future<void> close();
 }

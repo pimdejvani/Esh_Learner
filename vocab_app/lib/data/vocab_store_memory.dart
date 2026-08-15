@@ -189,5 +189,24 @@ class VocabStoreMemory implements VocabStore {
       {for (final e in _related.entries) e.key: List.of(e.value)};
 
   @override
+  Future<List<RelationGroup>> loadRelationGroups() async =>
+      List.of(relationGroups);
+
+  /// Set by tests that exercise Odd One Out's group explanations.
+  final List<RelationGroup> relationGroups = [];
+
+  @override
+  Future<Set<int>> loadMultiPosWordIds() async => {
+    for (final entry in _senses.entries)
+      if (entry.value.map((s) => s.pos).toSet().length >= 2) entry.key,
+  };
+
+  @override
+  Future<Map<String, String>> loadContentMeta() async => Map.of(contentMeta);
+
+  /// Set by tests that assert on Credits/attribution.
+  final Map<String, String> contentMeta = {};
+
+  @override
   Future<void> close() async {}
 }

@@ -1,13 +1,12 @@
-/// SQLite implementation of [VocabStore] (production). On first launch,
-/// copies the bundled read-only content seed (assets/seed/vocab.db) into
-/// the app's writable documents directory, then layers app-state tables
-/// (srs_state, reviews_log, daily_stats, settings) on top via numbered
-/// migrations. Pattern borrowed from Gymmer_App's workout_store_sqlite.dart.
+/// SQLite implementation of [VocabStore] (production). On first launch the
+/// bundled read-only content seed (assets/seed/vocab.db) is copied into the
+/// app's writable directory, and on later launches it is reseeded in place when
+/// the build ships newer content — see [installOrReseed], which keeps the
+/// player's rows. App-state tables (srs_state, reviews_log, daily_stats,
+/// settings) are layered on top via numbered migrations. Pattern borrowed from
+/// Gymmer_App's workout_store_sqlite.dart.
 library;
 
-import 'dart:io';
-
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
@@ -15,6 +14,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:vocab_app/domain/mastery.dart' show kMasteryGameNames;
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
+import 'content_reseed.dart';
 import 'migrations/migration_runner.dart';
 import 'vocab_store.dart';
 
@@ -27,12 +27,9 @@ class VocabStoreSqlite implements VocabStore {
     final docsDir = await getApplicationDocumentsDirectory();
     final dbPath = p.join(docsDir.path, dbFileName);
 
-    if (!await File(dbPath).exists()) {
-      final bytes = await rootBundle.load('assets/seed/vocab.db');
-      await File(
-        dbPath,
-      ).writeAsBytes(bytes.buffer.asUint8List(), flush: true);
-    }
+    // Installs the seed on first launch and, when a build ships newer content,
+    // rebuilds the file around it while keeping the player's reviews.
+    await installOrReseed(dbPath);
 
     final db = await openDatabase(dbPath);
     await runMigrations(db);
@@ -90,7 +87,7 @@ class VocabStoreSqlite implements VocabStore {
       'senses',
       where: 'word_id IN ($placeholders)',
       whereArgs: wordIds,
-      orderBy: 'sense_rank ASC',
+      orderBy: 'pos ASC, sense_rank ASC',
     );
     final sensesByWord = <int, List<Sense>>{};
     for (final r in senseRows) {
@@ -109,6 +106,7 @@ class VocabStoreSqlite implements VocabStore {
       'word_forms',
       where: 'word_id IN ($placeholders)',
       whereArgs: wordIds,
+      orderBy: 'form_type ASC, form_text ASC',
     );
     final formsByWord = <int, List<WordForm>>{};
     for (final r in formRows) {
@@ -282,6 +280,49 @@ class VocabStoreSqlite implements VocabStore {
       map.putIfAbsent(rel.wordId, () => []).add(rel);
     }
     return map;
+  }
+
+  @override
+  Future<List<RelationGroup>> loadRelationGroups() async {
+    final groupRows = await _db.query('relation_groups', orderBy: 'id ASC');
+    if (groupRows.isEmpty) return const [];
+    final memberRows = await _db.query(
+      'relation_group_members',
+      orderBy: 'closeness DESC',
+    );
+    final membersByGroup = <int, List<int>>{};
+    for (final r in memberRows) {
+      membersByGroup
+          .putIfAbsent(r['group_id'] as int, () => [])
+          .add(r['word_id'] as int);
+    }
+    return groupRows.map((r) {
+      final id = r['id'] as int;
+      return RelationGroup(
+        id: id,
+        hubWordId: r['hub_word_id'] as int,
+        category: r['category'] as String? ?? '',
+        explanationTh: r['explanation_th'] as String? ?? '',
+        memberWordIds: membersByGroup[id] ?? const [],
+        sourceName: r['source_name'] as String? ?? '',
+      );
+    }).toList();
+  }
+
+  @override
+  Future<Set<int>> loadMultiPosWordIds() async {
+    final rows = await _db.rawQuery(
+      'SELECT word_id FROM senses GROUP BY word_id HAVING COUNT(DISTINCT pos) >= 2',
+    );
+    return {for (final r in rows) r['word_id'] as int};
+  }
+
+  @override
+  Future<Map<String, String>> loadContentMeta() async {
+    final rows = await _db.query('content_meta');
+    return {
+      for (final r in rows) r['key'] as String: (r['value'] as String?) ?? '',
+    };
   }
 
   @override

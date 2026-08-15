@@ -131,7 +131,7 @@ class _RootPageState extends State<_RootPage> {
         bottom: false,
         child: Column(
           children: [
-            const FloatingTopBar(title: 'Oxford 3000 -> Thai'),
+            if (_tab != 0) const FloatingTopBar(title: 'Oxford 3000 -> Thai'),
             Expanded(child: pages[_tab]),
           ],
         ),

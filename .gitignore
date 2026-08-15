@@ -1,3 +1,21 @@
+# Secrets — never commit
 .env
+
+# Python
 __pycache__/
 *.pyc
+
+# Local data lake (383 MB, incl. the 377 MB vocabulary_source.db).
+# Rebuildable from tools/; only the exported app seed
+# (vocab_app/assets/seed/vocab.db) is tracked.
+# Leading slash so it matches only the repo-root data/, not vocab_app/lib/data/.
+/data/
+
+# Pipeline scratch output
+/tools/dictionary_probe_results/
+/tools/one_word_benchmark_results/
+/tools/ext_work/
+
+# iOS build artefacts — IPAs live on GitHub Releases, never in the repo
+*.ipa
+Payload/

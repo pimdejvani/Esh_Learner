@@ -13,9 +13,6 @@ Word _word(int id) => Word(
   thaiReading: 'w$id',
   stressIndex: 1,
   ipa: '',
-  translationSource: '',
-  translationLicense: '',
-  hasPhoto: false,
 );
 
 /// Every (word, mastery game) pair for [words] — the fully-passed grid.

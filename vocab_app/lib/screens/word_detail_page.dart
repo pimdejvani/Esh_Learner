@@ -1,13 +1,11 @@
-/// Full dictionary entry (SPEC.md section 9b, layer 2), replacing the
-/// Phase 1 stub that just reused the layer-1 result card (see NOTES.md's
-/// Phase 1 section). Header matches layer 1 (headword + Thai reading with
-/// bold stress syllable + TTS button, no IPA — IPA is internal-only per
-/// spec). Below that: every sense grouped by POS and ordered by
-/// `sense_rank`, each with a CEFR badge + meaning + collocation (EN = TH),
-/// the `is_core` sense starred; for verb entries, the inflected forms
-/// inline ("answered · answered · answering" style) with irregular forms
-/// flagged (SPEC.md 9.2) and tappable to expand the full grammar note; and
-/// finally all 5 example sentences.
+/// Full dictionary entry (SPEC.md section 9b, layer 2).
+///
+/// It reads the same rows as the Flashcard back — never a second dataset — and
+/// simply shows more of them: every part of speech with every sense (Thai
+/// meaning plus the English gloss it was taken from), the examples filed under
+/// each sense with that sentence's own explanation, forms split into
+/// inflections and word family, related words with their relation type and
+/// stored reason, and the source attribution behind all of it.
 library;
 
 import 'package:flutter/material.dart';
@@ -31,8 +29,7 @@ class WordDetailPage extends StatelessWidget {
   final TtsService tts;
 
   /// Up to 5 closest words by SWOW closeness (item 1, 2026-07-24), shown as
-  /// tappable chips; empty hides the section. Populated from the dictionary
-  /// tab which has every word loaded.
+  /// tappable chips; empty hides the section.
   final List<Word> similar;
 
   /// Tapping a similar word opens ITS entry (item 1). Null disables the tap.
@@ -40,13 +37,10 @@ class WordDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     final word = bundle.word;
-    // Group senses by POS, preserving sense_rank order within each group
-    // (bundle.senses is already loaded ordered by sense_rank ASC).
-    final byPos = <String, List<Sense>>{};
-    for (final s in bundle.senses.isNotEmpty ? bundle.senses : [bundle.coreSense]) {
-      byPos.putIfAbsent(s.pos, () => []).add(s);
-    }
+    final grouped = bundle.sensesByPos;
+    final positions = grouped.keys.toList()..sort(comparePos);
 
     return Scaffold(
       appBar: AppBar(title: Text(word.headword)),
@@ -55,22 +49,31 @@ class WordDetailPage extends StatelessWidget {
         children: [
           _Header(word: word, tts: tts),
           const SizedBox(height: 20),
-          for (final entry in byPos.entries) ...[
+          for (final pos in positions) ...[
             _SenseGroup(
-              pos: entry.key,
-              senses: entry.value,
-              forms: bundle.forms,
+              pos: pos,
+              senses: grouped[pos]!,
+              bundle: bundle,
+              tts: tts,
             ),
             const SizedBox(height: 16),
           ],
-          if (bundle.sentences.isNotEmpty) ...[
-            Text('Example sentences', style: Theme.of(context).textTheme.titleMedium),
-            const SizedBox(height: 8),
-            for (final s in bundle.sentences) _SentenceTile(sentence: s, forms: bundle.forms),
-          ],
+          if (bundle.inflections.isNotEmpty)
+            _FormSection(
+              title: 'Forms',
+              subtitle: 'รูปผันของคำเดียวกัน',
+              forms: bundle.inflections,
+            ),
+          if (bundle.family.isNotEmpty)
+            _FormSection(
+              title: 'Word family',
+              subtitle: 'คำที่สร้างจากรากเดียวกัน',
+              forms: bundle.family,
+            ),
+          if (bundle.related.isNotEmpty) _RelatedSection(related: bundle.related),
           if (similar.isNotEmpty) ...[
             const SizedBox(height: 16),
-            Text('Similar words', style: Theme.of(context).textTheme.titleMedium),
+            Text('Similar words', style: theme.textTheme.titleMedium),
             const SizedBox(height: 8),
             Wrap(
               spacing: 8,
@@ -85,6 +88,8 @@ class WordDetailPage extends StatelessWidget {
               ],
             ),
           ],
+          const SizedBox(height: 20),
+          _Attribution(bundle: bundle),
         ],
       ),
     );
@@ -101,11 +106,19 @@ class _Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(word.headword, style: Theme.of(context).textTheme.headlineMedium),
+        Flexible(
+          child:
+              Text(word.headword, style: Theme.of(context).textTheme.headlineMedium),
+        ),
         const SizedBox(width: 8),
         SpeakButtons(tts: tts, text: word.headword),
         const SizedBox(width: 8),
-        Expanded(child: _StressedReading(reading: word.thaiReading, stress: word.stressIndex)),
+        Expanded(
+          child: _StressedReading(
+            reading: word.thaiReading,
+            stress: word.stressIndex,
+          ),
+        ),
       ],
     );
   }
@@ -122,11 +135,12 @@ class _StressedReading extends StatelessWidget {
     final syllables = reading.split('-');
     final spans = <InlineSpan>[];
     for (var i = 0; i < syllables.length; i++) {
-      final isStressed = i + 1 == stress;
       spans.add(
         TextSpan(
           text: syllables[i],
-          style: TextStyle(fontWeight: isStressed ? FontWeight.bold : FontWeight.normal),
+          style: TextStyle(
+            fontWeight: i + 1 == stress ? FontWeight.bold : FontWeight.normal,
+          ),
         ),
       );
       if (i != syllables.length - 1) spans.add(const TextSpan(text: '-'));
@@ -140,12 +154,20 @@ class _StressedReading extends StatelessWidget {
   }
 }
 
+/// One part of speech: each of its senses, with the examples that teach that
+/// exact sense underneath it.
 class _SenseGroup extends StatelessWidget {
-  const _SenseGroup({required this.pos, required this.senses, required this.forms});
+  const _SenseGroup({
+    required this.pos,
+    required this.senses,
+    required this.bundle,
+    required this.tts,
+  });
 
   final String pos;
   final List<Sense> senses;
-  final List<WordForm> forms;
+  final WordBundle bundle;
+  final TtsService tts;
 
   @override
   Widget build(BuildContext context) {
@@ -157,11 +179,14 @@ class _SenseGroup extends StatelessWidget {
           children: [
             Chip(label: Text(pos.toUpperCase())),
             const SizedBox(height: 8),
-            for (final s in senses) _SenseTile(sense: s),
-            if (pos == 'v' && forms.isNotEmpty) ...[
-              const Divider(),
-              _InflectionRow(forms: forms),
-            ],
+            for (final sense in senses)
+              _SenseTile(
+                sense: sense,
+                examples: bundle.sentences
+                    .where((s) => s.senseId == sense.id)
+                    .toList(growable: false),
+                tts: tts,
+              ),
           ],
         ),
       ),
@@ -170,116 +195,49 @@ class _SenseGroup extends StatelessWidget {
 }
 
 class _SenseTile extends StatelessWidget {
-  const _SenseTile({required this.sense});
+  const _SenseTile({
+    required this.sense,
+    required this.examples,
+    required this.tts,
+  });
 
   final Sense sense;
+  final List<ExampleSentence> examples;
+  final TtsService tts;
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 6),
+      padding: const EdgeInsets.symmetric(vertical: 8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              if (sense.isCore)
+              if (sense.isCore) ...[
                 Icon(Icons.star, size: 16, color: context.appColors.warning),
-              if (sense.isCore) const SizedBox(width: 4),
-              // CEFR chip removed (user 2026-07-24: hide language-difficulty
-              // tag from the UI).
-              if (sense.countable == 1)
-                const Text('countable', style: TextStyle(fontSize: 12)),
-              if (sense.countable == 0)
-                const Text('uncountable', style: TextStyle(fontSize: 12)),
+                const SizedBox(width: 4),
+              ],
+              Expanded(
+                child: Text(sense.meaningTh, style: theme.textTheme.bodyLarge),
+              ),
             ],
           ),
-          const SizedBox(height: 4),
-          Text(sense.meaningTh, style: Theme.of(context).textTheme.bodyLarge),
-          if ((sense.collocationEn ?? '').isNotEmpty)
+          // The English gloss the Thai meaning was written from, so a learner
+          // (and a reviewer) can see it was not invented.
+          if (sense.glossEn.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 2),
               child: Text(
-                '${sense.collocationEn} = ${sense.collocationTh}',
-                style: Theme.of(
-                  context,
-                ).textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+                sense.glossEn,
+                style: theme.textTheme.bodySmall
+                    ?.copyWith(fontStyle: FontStyle.italic),
               ),
             ),
-        ],
-      ),
-    );
-  }
-}
-
-/// Inline word-forms row ("answered · answered · answering" style per
-/// SPEC.md 9b), tap to expand the full grammar note for each form.
-/// Irregular forms get the shared [IrregularBadge] highlight.
-class _InflectionRow extends StatefulWidget {
-  const _InflectionRow({required this.forms});
-
-  final List<WordForm> forms;
-
-  @override
-  State<_InflectionRow> createState() => _InflectionRowState();
-}
-
-class _InflectionRowState extends State<_InflectionRow> {
-  bool _expanded = false;
-
-  /// Preferred display order for the inline verb-forms summary.
-  static const _order = ['past', 'past_participle', 'ving', '3sg'];
-
-  @override
-  Widget build(BuildContext context) {
-    final ordered = [
-      for (final type in _order)
-        ...widget.forms.where((f) => f.formType == type),
-    ];
-    final rest = widget.forms.where((f) => !_order.contains(f.formType)).toList();
-    final display = ordered.isNotEmpty ? ordered : widget.forms;
-
-    return InkWell(
-      onTap: () => setState(() => _expanded = !_expanded),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Wrap(
-            crossAxisAlignment: WrapCrossAlignment.center,
-            children: [
-              for (var i = 0; i < display.length; i++) ...[
-                if (i != 0) const Text(' · '),
-                Text(display[i].formText),
-                if (display[i].isIrregular) IrregularBadge(form: display[i]),
-              ],
-              const SizedBox(width: 6),
-              AnimatedRotation(
-                turns: _expanded ? 0.5 : 0,
-                duration: const Duration(milliseconds: 220),
-                child: const Icon(Icons.expand_more, size: 18),
-              ),
-            ],
-          ),
-          AnimatedSize(
-            duration: const Duration(milliseconds: 220),
-            curve: Curves.easeOut,
-            alignment: Alignment.topLeft,
-            child: !_expanded
-                ? const SizedBox(width: double.infinity)
-                : Padding(
-                    padding: const EdgeInsets.only(top: 8),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        for (final f in [...display, ...rest])
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 6),
-                            child: Text('${f.formText} (${f.formType}): ${f.grammarNoteTh}'),
-                          ),
-                      ],
-                    ),
-                  ),
-          ),
+          for (final example in examples)
+            _SentenceTile(sentence: example, tts: tts),
         ],
       ),
     );
@@ -287,39 +245,165 @@ class _InflectionRowState extends State<_InflectionRow> {
 }
 
 class _SentenceTile extends StatelessWidget {
-  const _SentenceTile({required this.sentence, required this.forms});
+  const _SentenceTile({required this.sentence, required this.tts});
 
   final ExampleSentence sentence;
+  final TtsService tts;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(top: 10, left: 4),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(child: Text(sentence.enText)),
+              SpeakButtons(tts: tts, text: sentence.enText),
+            ],
+          ),
+          Text(sentence.thText, style: theme.textTheme.bodySmall),
+          if (sentence.explanationTh.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(top: 4),
+              child: Text(
+                sentence.explanationTh,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.primary,
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _FormSection extends StatelessWidget {
+  const _FormSection({
+    required this.title,
+    required this.subtitle,
+    required this.forms,
+  });
+
+  final String title;
+  final String subtitle;
   final List<WordForm> forms;
 
   @override
   Widget build(BuildContext context) {
-    WordForm? usedForm;
-    if (sentence.formId != null) {
-      for (final f in forms) {
-        if (f.id == sentence.formId) {
-          usedForm = f;
-          break;
-        }
-      }
-    }
+    final theme = Theme.of(context);
     return Padding(
-      padding: const EdgeInsets.only(bottom: 12),
-      child: Row(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(sentence.enText),
-                Text(sentence.thText, style: Theme.of(context).textTheme.bodySmall),
-              ],
+          Text(title, style: theme.textTheme.titleMedium),
+          Text(subtitle, style: theme.textTheme.bodySmall),
+          const SizedBox(height: 8),
+          for (final form in forms)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 3),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(form.formText, style: theme.textTheme.bodyMedium),
+                  if (form.isIrregular) const IrregularBadge(),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text(
+                      form.isDerived
+                          ? '${form.pos} · ${form.meaningTh ?? ''}'
+                          : '${form.relation} · ${form.pos}',
+                      style: theme.textTheme.bodySmall,
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
-          if (usedForm != null && usedForm.isIrregular) IrregularBadge(form: usedForm),
         ],
       ),
+    );
+  }
+}
+
+class _RelatedSection extends StatelessWidget {
+  const _RelatedSection({required this.related});
+
+  final List<RelatedWord> related;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final sorted = [...related]
+      ..sort((a, b) => b.closeness.compareTo(a.closeness));
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Related words', style: theme.textTheme.titleMedium),
+          Text('คำที่สัมพันธ์กันและเหตุผล', style: theme.textTheme.bodySmall),
+          const SizedBox(height: 8),
+          for (final item in sorted)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 4),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text(item.relatedHeadword,
+                          style: theme.textTheme.bodyMedium),
+                      const SizedBox(width: 8),
+                      Text(
+                        item.relationType,
+                        style: theme.textTheme.labelSmall
+                            ?.copyWith(color: theme.colorScheme.primary),
+                      ),
+                    ],
+                  ),
+                  if ((item.explanationTh ?? '').isNotEmpty)
+                    Text(item.explanationTh!, style: theme.textTheme.bodySmall),
+                ],
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Where the entry's facts came from. Licences are per source, so they are
+/// collected from the rows actually shown rather than hardcoded.
+class _Attribution extends StatelessWidget {
+  const _Attribution({required this.bundle});
+
+  final WordBundle bundle;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final sources = <String>{
+      for (final sense in bundle.senses)
+        if (sense.meaningSource.isNotEmpty) sense.meaningSource,
+      for (final form in bundle.forms)
+        if (form.sourceLicense.isNotEmpty)
+          '${form.sourceName} — ${form.sourceLicense}',
+    }.toList()
+      ..sort();
+    if (sources.isEmpty) return const SizedBox.shrink();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('Sources', style: theme.textTheme.titleSmall),
+        const SizedBox(height: 4),
+        for (final source in sources)
+          Text(source, style: theme.textTheme.bodySmall),
+      ],
     );
   }
 }

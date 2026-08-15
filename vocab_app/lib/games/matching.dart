@@ -15,10 +15,11 @@ library;
 
 import 'package:flutter/material.dart';
 
+import 'package:vocab_app/domain/gloss_fit.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/theme/app_theme.dart';
-import 'package:vocab_app/widgets/game_top_bar.dart';
+import 'package:vocab_app/widgets/game_stage.dart';
 import 'package:vocab_app/widgets/swipe_up_detector.dart';
 
 class MatchingGame extends StatefulWidget {
@@ -92,14 +93,20 @@ class _MatchingGameState extends State<MatchingGame> {
   @override
   void initState() {
     super.initState();
-    _left = widget.bundles
-        .map((b) => _MatchingTile(b.word.id, b.word.headword))
-        .toList()
-      ..shuffle();
-    _right = widget.bundles
-        .map((b) => _MatchingTile(b.word.id, b.coreSense.meaningTh))
-        .toList()
-      ..shuffle();
+    _left =
+        widget.bundles
+            .map((b) => _MatchingTile(b.word.id, b.word.headword))
+            .toList()
+          ..shuffle();
+    // Thai glosses are comma-separated sense lists; a chip half the phone's
+    // width can only show a couple of lines, so keep whole senses that fit
+    // instead of letting the string be clipped mid-word (user feedback
+    // 2026-07-24 — "หาได้, ได้มาด้วยคว" on screen).
+    _right =
+        widget.bundles
+            .map((b) => _MatchingTile(b.word.id, fitGloss(b.coreSense.meaningTh)))
+            .toList()
+          ..shuffle();
     for (final (i, t) in _left.indexed) {
       _leftKeys[t.wordId] = GlobalKey();
       _pairColor[t.wordId] = _palette[i % _palette.length];
@@ -109,8 +116,9 @@ class _MatchingGameState extends State<MatchingGame> {
     }
   }
 
-  bool get _allLinked =>
-      _left.every((t) => _locked.contains(t.wordId) || _links.containsKey(t.wordId));
+  bool get _allLinked => _left.every(
+    (t) => _locked.contains(t.wordId) || _links.containsKey(t.wordId),
+  );
 
   /// Link left->right (one-to-one: steals the right chip from any other
   /// left word, replaces the left word's previous link). Editing clears
@@ -170,6 +178,7 @@ class _MatchingGameState extends State<MatchingGame> {
 
   void _check() {
     if (_finished) return;
+    Map<int, Rating>? completedRatings;
     setState(() {
       _wrongNow.clear();
       _links.forEach((l, r) {
@@ -181,16 +190,17 @@ class _MatchingGameState extends State<MatchingGame> {
           _wrongAttempts[l] = (_wrongAttempts[l] ?? 0) + 1;
         }
       });
+      if (_locked.length == widget.bundles.length) {
+        _finished = true;
+        completedRatings = {
+          for (final b in widget.bundles)
+            b.word.id: (_wrongAttempts[b.word.id] ?? 0) == 0
+                ? Rating.good
+                : Rating.hard,
+        };
+      }
     });
-    if (_locked.length == widget.bundles.length) {
-      _finished = true;
-      widget.onAllRated({
-        for (final b in widget.bundles)
-          b.word.id: (_wrongAttempts[b.word.id] ?? 0) == 0
-              ? Rating.good
-              : Rating.hard,
-      });
-    }
+    if (completedRatings != null) widget.onAllRated(completedRatings!);
   }
 
   // ---- drag-a-line gestures (start on a left chip, release on a right chip)
@@ -231,8 +241,9 @@ class _MatchingGameState extends State<MatchingGame> {
     final stackBox = _paintKey.currentContext?.findRenderObject() as RenderBox?;
     if (stackBox == null) return null;
     for (final t in _right) {
-      final box = _rightKeys[t.wordId]?.currentContext?.findRenderObject()
-          as RenderBox?;
+      final box =
+          _rightKeys[t.wordId]?.currentContext?.findRenderObject()
+              as RenderBox?;
       if (box == null || !box.hasSize) continue;
       final topLeft = box.localToGlobal(Offset.zero, ancestor: stackBox);
       if ((topLeft & box.size).inflate(6).contains(local)) return t.wordId;
@@ -248,44 +259,43 @@ class _MatchingGameState extends State<MatchingGame> {
       onSwipeUp: () {
         if (_allLinked && !_finished) _check();
       },
-      child: Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        const GameTopBar(
-          infoMessage: 'Drag a line to match each pair (or tap left then '
-              'right). Tap a linked word to break the pair.\n'
-              'Swipe up to check once every pair is linked.',
-        ),
-        const SizedBox(height: 8),
-        CustomPaint(
-          key: _paintKey,
-          foregroundPainter: _LinkLinePainter(
-            paintKey: _paintKey,
-            leftKeys: _leftKeys,
-            rightKeys: _rightKeys,
-            links: Map.of(_links),
-            locked: Set.of(_locked),
-            wrong: Set.of(_wrongNow),
-            dragFromLeft: _dragFromLeft,
-            dragPos: _dragPos,
-            pairColors: _pairColor,
-            wrongColor: colors.danger,
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(child: Column(children: _left.map(_leftChip).toList())),
-              const SizedBox(width: 40), // room for the lines to breathe
-              Expanded(child: Column(children: _right.map(_rightChip).toList())),
-            ],
-          ),
-        ),
-        const SizedBox(height: 16),
-        FilledButton(
+      child: GameStage(
+        bottomAction: FilledButton(
           onPressed: _allLinked && !_finished ? _check : null,
-          child: const Text('Check'),
+          child: Text(_finished ? 'Completed' : 'Check'),
         ),
-      ],
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            CustomPaint(
+              key: _paintKey,
+              foregroundPainter: _LinkLinePainter(
+                paintKey: _paintKey,
+                leftKeys: _leftKeys,
+                rightKeys: _rightKeys,
+                links: Map.of(_links),
+                locked: Set.of(_locked),
+                wrong: Set.of(_wrongNow),
+                dragFromLeft: _dragFromLeft,
+                dragPos: _dragPos,
+                pairColors: _pairColor,
+                wrongColor: colors.danger,
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Column(children: _left.map(_leftChip).toList()),
+                  ),
+                  const SizedBox(width: 40), // room for the lines to breathe
+                  Expanded(
+                    child: Column(children: _right.map(_rightChip).toList()),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -306,16 +316,19 @@ class _MatchingGameState extends State<MatchingGame> {
         child: Container(
           key: _leftKeys[t.wordId],
           child: ChoiceChip(
-            label: Text(t.text),
+            label: Text(t.text, maxLines: 2, overflow: TextOverflow.ellipsis),
             selected: selected,
             backgroundColor: locked
                 ? colors.success.withValues(alpha: 0.3)
                 : wrong
-                    ? colors.danger.withValues(alpha: 0.2)
-                    : null,
-            side: linked && !locked && !wrong
-                ? BorderSide(color: _pairColor[t.wordId]!, width: 2)
+                ? colors.danger.withValues(alpha: 0.2)
                 : null,
+            side: BorderSide(
+              color: linked && !locked && !wrong
+                  ? _pairColor[t.wordId]!
+                  : Colors.transparent,
+              width: 2,
+            ),
             onSelected: locked ? null : (_) => _tapLeft(t.wordId),
           ),
         ),
@@ -337,17 +350,18 @@ class _MatchingGameState extends State<MatchingGame> {
       child: Container(
         key: _rightKeys[t.wordId],
         child: ActionChip(
-          label: Text(t.text),
-          backgroundColor:
-              lockedTo ? colors.success.withValues(alpha: 0.3) : null,
-          side: linkedLeft != null && !lockedTo
-              ? BorderSide(
-                  color: _wrongNow.contains(linkedLeft)
-                      ? colors.danger
-                      : _pairColor[linkedLeft]!,
-                  width: 2,
-                )
+          label: Text(t.text, maxLines: 2, overflow: TextOverflow.ellipsis),
+          backgroundColor: lockedTo
+              ? colors.success.withValues(alpha: 0.3)
               : null,
+          side: BorderSide(
+            color: linkedLeft != null && !lockedTo
+                ? (_wrongNow.contains(linkedLeft)
+                      ? colors.danger
+                      : _pairColor[linkedLeft]!)
+                : Colors.transparent,
+            width: 2,
+          ),
           onPressed: lockedTo ? null : () => _tapRight(t.wordId),
         ),
       ),
@@ -391,7 +405,8 @@ class _LinkLinePainter extends CustomPainter {
     final box = key.currentContext?.findRenderObject() as RenderBox?;
     if (stackBox == null || box == null || !box.hasSize) return null;
     final topLeft = box.localToGlobal(Offset.zero, ancestor: stackBox);
-    return topLeft + Offset(rightEdge ? box.size.width : 0, box.size.height / 2);
+    return topLeft +
+        Offset(rightEdge ? box.size.width : 0, box.size.height / 2);
   }
 
   void _line(Canvas canvas, Offset a, Offset b, Color color) {

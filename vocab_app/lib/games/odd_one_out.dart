@@ -11,11 +11,15 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import 'package:vocab_app/data/tts_service.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
+import 'package:vocab_app/screens/word_detail_page.dart';
 import 'package:vocab_app/theme/app_theme.dart';
 import 'package:vocab_app/widgets/staggered_entrance.dart';
 import 'package:vocab_app/widgets/swipe_up_detector.dart';
+import 'package:vocab_app/widgets/game_stage.dart';
+import 'package:vocab_app/widgets/word_result_card.dart';
 
 /// Builds an odd-one-out round: finds a "hub" word whose `related_words`
 /// rows (any word_id in [relatedByWord]) name at least [groupSize] other
@@ -46,10 +50,31 @@ import 'package:vocab_app/widgets/swipe_up_detector.dart';
 ///
 /// Returns null when no hub qualifies — callers should skip/re-route the
 /// round rather than force a bad one.
-List<Word>? buildOddOneOutGroup({
+class OddOneOutRound {
+  const OddOneOutRound({
+    required this.hubWordId,
+    required this.groupWords,
+    required this.memberRelations,
+    this.category = '',
+    this.explanationTh = '',
+  });
+
+  final int hubWordId;
+  final List<Word> groupWords;
+  final List<RelatedWord> memberRelations;
+
+  /// The category the group shares and the reason it holds, both written when
+  /// the content was built (`relation_groups`). The reveal shows these instead
+  /// of reconstructing a reason after the answer.
+  final String category;
+  final String explanationTh;
+}
+
+OddOneOutRound? buildOddOneOutRound({
   required Word target,
   required List<Word> pool,
   required Map<int, List<RelatedWord>> relatedByWord,
+  Map<int, RelationGroup> groupsByHub = const {},
   int groupSize = 3,
   double minCloseness = 0.036,
   bool strict = false,
@@ -58,7 +83,7 @@ List<Word>? buildOddOneOutGroup({
   const preferredTypes = {'hypernym', 'category', 'part_of'};
   final poolById = {for (final w in pool) w.id: w};
 
-  final candidates = <(double, List<Word>)>[];
+  final candidates = <(double, OddOneOutRound)>[];
   for (final hub in relatedByWord.entries) {
     if (hub.key == target.id) continue;
     if (hub.value.any((r) => r.relatedWordId == target.id)) {
@@ -68,8 +93,7 @@ List<Word>? buildOddOneOutGroup({
       if (r.isGiveaway) return false;
       return preferredTypes.contains(r.relationType) ||
           r.closeness >= minCloseness;
-    }).toList()
-      ..sort((a, b) => b.closeness.compareTo(a.closeness));
+    }).toList()..sort((a, b) => b.closeness.compareTo(a.closeness));
     final seen = <int>{};
     final members = <RelatedWord>[];
     for (final r in rows) {
@@ -81,7 +105,17 @@ List<Word>? buildOddOneOutGroup({
     if (members.length < groupSize) continue;
     final top = members.take(groupSize).toList();
     final score = top.fold(0.0, (s, r) => s + r.closeness);
-    candidates.add((score, [for (final r in top) poolById[r.relatedWordId]!]));
+    final group = groupsByHub[hub.key];
+    candidates.add((
+      score,
+      OddOneOutRound(
+        hubWordId: hub.key,
+        groupWords: [for (final r in top) poolById[r.relatedWordId]!],
+        memberRelations: top,
+        category: group?.category ?? '',
+        explanationTh: group?.explanationTh ?? '',
+      ),
+    ));
   }
 
   if (candidates.isEmpty) return null;
@@ -91,12 +125,108 @@ List<Word>? buildOddOneOutGroup({
   return candidates.first.$2;
 }
 
+/// Backward-compatible group-only API used by existing callers/tests.
+List<Word>? buildOddOneOutGroup({
+  required Word target,
+  required List<Word> pool,
+  required Map<int, List<RelatedWord>> relatedByWord,
+  Map<int, RelationGroup> groupsByHub = const {},
+  int groupSize = 3,
+  double minCloseness = 0.036,
+  bool strict = false,
+  Random? random,
+}) => buildOddOneOutRound(
+  target: target,
+  pool: pool,
+  relatedByWord: relatedByWord,
+  groupsByHub: groupsByHub,
+  groupSize: groupSize,
+  minCloseness: minCloseness,
+  strict: strict,
+  random: random,
+)?.groupWords;
+
+/// One line explaining why a member belongs. The stored `explanation_th` is
+/// the real answer; the typed fallbacks only cover rows written before the
+/// content build started storing one.
+String oddOneOutRelationText({
+  required Word hub,
+  required Word member,
+  required String relationType,
+  String? explanationTh,
+}) {
+  if ((explanationTh ?? '').isNotEmpty) return explanationTh!;
+  return switch (relationType) {
+    'hypernym' || 'kind_of' => '${member.headword} เป็นประเภทหนึ่งของ ${hub.headword}',
+    'part_of' => '${member.headword} เป็นส่วนหนึ่งของ ${hub.headword}',
+    'produces' => '${hub.headword} ทำให้เกิด ${member.headword}',
+    'used_for' => '${member.headword} ใช้คู่กับ ${hub.headword}',
+    'opposite' => '${member.headword} ตรงข้ามกับ ${hub.headword}',
+    _ => '${hub.headword} กับ ${member.headword} มักถูกนึกถึงคู่กัน',
+  };
+}
+
+/// The reveal's reason lines, with members that share a reason collapsed
+/// into ONE line (user request 2026-07-24: "หากแต่ละคำมีการอธิบายเหมือนกัน
+/// ให้อธิบายแค่รอบเดียว").
+///
+/// Group rows usually differ only in which member they name — three lines
+/// of "career กับ X เป็นคำที่คนมักนึกถึงคู่กัน…" is the same sentence read
+/// three times. Two lines are treated as the same reason when they match
+/// after blanking out the member's headword; the collapsed line then names
+/// every member of that reason at once ("career กับ job, work, money …").
+/// Genuinely different reasons stay on their own lines, in member order.
+List<String> oddOneOutReasonLines({
+  required Word hub,
+  required List<Word> members,
+  required List<RelatedWord> relations,
+}) {
+  const slot = '{member}'; // sentinel: never appears in content text
+  final order = <String>[];
+  final names = <String, List<String>>{};
+  final shapes = <String, String>{};
+
+  for (final relation in relations) {
+    final member = members
+        .where((w) => w.id == relation.relatedWordId)
+        .firstOrNull;
+    if (member == null) continue;
+    final text = oddOneOutRelationText(
+      hub: hub,
+      member: member,
+      relationType: relation.relationType,
+      explanationTh: relation.explanationTh,
+    );
+    final shape = text.replaceAll(member.headword, slot);
+    if (!names.containsKey(shape)) {
+      order.add(shape);
+      shapes[shape] = text;
+    }
+    names.putIfAbsent(shape, () => []).add(member.headword);
+  }
+
+  return [
+    for (final shape in order)
+      // No slot in the shape means the line never named its member, so the
+      // members' texts were identical outright — show it once, as written.
+      shape.contains(slot)
+          ? shape.replaceAll(slot, names[shape]!.join(', '))
+          : shapes[shape]!,
+  ];
+}
+
 class OddOneOutGame extends StatefulWidget {
   const OddOneOutGame({
     super.key,
     required this.oddWord,
     required this.groupWords,
+    required this.hubWord,
+    required this.memberRelations,
     required this.onRated,
+    this.category = '',
+    this.groupExplanationTh = '',
+    this.oddBundle,
+    this.tts,
   });
 
   /// The word actually being tested (the true "odd one out").
@@ -105,11 +235,28 @@ class OddOneOutGame extends StatefulWidget {
   /// The words that belong together (distractors).
   final List<Word> groupWords;
 
+  /// Stored relation data used to explain the round without generated text.
+  final Word hubWord;
+
+  /// The group's shared category and the stored reason it holds — written when
+  /// the content was built, not composed here after the answer.
+  final String category;
+  final String groupExplanationTh;
+  final List<RelatedWord> memberRelations;
+
   /// Called once with the target's rating and, on a wrong answer, the id
   /// of the group word the player wrongly picked (null when correct) —
   /// user request 2026-07-24: a wrong pick should also cost the PICKED
   /// word's proficiency, not just the target's.
   final void Function(Rating rating, int? wrongPickedWordId) onRated;
+
+  /// The odd word's own entry, shown on the reveal (user request
+  /// 2026-07-24: "ตอนที่เฉลยให้มีการใช้อธิบายคำศัพท์ของคำนั้นด้วย") — being
+  /// told a word doesn't belong teaches nothing unless you also learn what
+  /// it means. Null (with [tts] null) simply omits the card, so the game
+  /// still renders for callers/tests that have no bundle loaded.
+  final WordBundle? oddBundle;
+  final TtsService? tts;
 
   @override
   State<OddOneOutGame> createState() => _OddOneOutGameState();
@@ -153,50 +300,120 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
       onSwipeUp: () {
         if (_submitted) _rate();
       },
-      child: Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Text(
-          'Which word doesn\'t belong?',
-          textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.titleMedium,
-        ),
-        const SizedBox(height: 16),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          alignment: WrapAlignment.center,
+      child: GameStage(
+        onTapToContinue: _submitted ? _rate : null,
+        bottomAction: _submitted
+            ? FilledButton(onPressed: _rate, child: const Text('Next'))
+            : null,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            for (var i = 0; i < _options.length; i++)
-              StaggeredEntrance(index: i, child: _optionChip(_options[i])),
+            Text(
+              'Which word doesn\'t belong?',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            const SizedBox(height: 16),
+            // One option per row (user request 2026-07-24: "อยากให้ทั้งสี่คำ
+            // เป็นแนวตั้ง") — a wrapped row put two words on one line and
+            // two on the next, which reads as two pairs rather than four
+            // equal choices.
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                for (var i = 0; i < _options.length; i++)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4),
+                    child: StaggeredEntrance(
+                      index: i,
+                      child: _optionChip(_options[i]),
+                    ),
+                  ),
+              ],
+            ),
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 260),
+              transitionBuilder: (child, anim) => FadeTransition(
+                opacity: anim,
+                child: SizeTransition(sizeFactor: anim, child: child),
+              ),
+              child: _submitted
+                  ? Column(
+                      key: const ValueKey('result'),
+                      children: [
+                        const SizedBox(height: 16),
+                        Text(
+                          _selectedId == widget.oddWord.id
+                              ? 'Correct! "${widget.oddWord.headword}" doesn\'t belong'
+                              : 'The odd one out is "${widget.oddWord.headword}"',
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.bodyLarge,
+                        ),
+                        const SizedBox(height: 10),
+                        Text(
+                          widget.category.isNotEmpty
+                              ? 'กลุ่มนี้คือ ${widget.category} (${widget.hubWord.headword})'
+                              : 'Common link: ${widget.hubWord.headword}',
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.titleSmall,
+                        ),
+                        if (widget.groupExplanationTh.isNotEmpty) ...[
+                          const SizedBox(height: 4),
+                          Text(
+                            widget.groupExplanationTh,
+                            textAlign: TextAlign.center,
+                            style: Theme.of(context).textTheme.bodySmall,
+                          ),
+                        ],
+                        const SizedBox(height: 4),
+                        for (final line in oddOneOutReasonLines(
+                          hub: widget.hubWord,
+                          members: widget.groupWords,
+                          relations: widget.memberRelations,
+                        ))
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 2),
+                            child: Text(
+                              line,
+                              textAlign: TextAlign.center,
+                              style: Theme.of(context).textTheme.bodySmall,
+                            ),
+                          ),
+                        const SizedBox(height: 6),
+                        // Why the target is out: it is the one word with no
+                        // qualifying link to the hub, which is exactly how the
+                        // round was built.
+                        Text(
+                          '"${widget.oddWord.headword}" ไม่มีความเชื่อมโยงกับ'
+                          '${widget.category.isNotEmpty ? widget.category : widget.hubWord.headword}'
+                          ' จึงไม่เข้าพวก',
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.bodySmall,
+                        ),
+                        // …and what that word actually means, same card the
+                        // other games show after an answer.
+                        if (widget.oddBundle != null && widget.tts != null) ...[
+                          const SizedBox(height: 12),
+                          WordResultCard(
+                            bundle: widget.oddBundle!,
+                            tts: widget.tts!,
+                            onOpenDetail: () => Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => WordDetailPage(
+                                  bundle: widget.oddBundle!,
+                                  tts: widget.tts!,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ],
+                    )
+                  : const SizedBox.shrink(key: ValueKey('empty')),
+            ),
           ],
         ),
-        AnimatedSwitcher(
-          duration: const Duration(milliseconds: 260),
-          transitionBuilder: (child, anim) => FadeTransition(
-            opacity: anim,
-            child: SizeTransition(sizeFactor: anim, child: child),
-          ),
-          child: _submitted
-              ? Column(
-                  key: const ValueKey('result'),
-                  children: [
-                    const SizedBox(height: 16),
-                    Text(
-                      _selectedId == widget.oddWord.id
-                          ? 'Correct! "${widget.oddWord.headword}" doesn\'t belong'
-                          : 'The odd one out is "${widget.oddWord.headword}"',
-                      textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.bodyLarge,
-                    ),
-                    const SizedBox(height: 16),
-                    FilledButton(onPressed: _rate, child: const Text('Next')),
-                  ],
-                )
-              : const SizedBox.shrink(key: ValueKey('empty')),
-        ),
-      ],
       ),
     );
   }
@@ -222,13 +439,23 @@ class _OddOneOutGameState extends State<OddOneOutGame> {
       color = colors.success.withValues(alpha: 0.18);
       avatar = Icon(Icons.check_circle, size: 18, color: colors.success);
     }
-    return ChoiceChip(
-      avatar: avatar,
-      label: Text(w.headword),
-      selected: selected,
-      selectedColor: color,
-      backgroundColor: color,
-      onSelected: _submitted ? null : (_) => _select(w.id),
+    // Same full-width option button as Word Association, so a stacked list
+    // of four reads as four equal choices with comfortable tap targets.
+    return SizedBox(
+      width: double.infinity,
+      child: ChoiceChip(
+        avatar: avatar,
+        labelPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+        label: Text(
+          w.headword,
+          textAlign: TextAlign.center,
+          style: Theme.of(context).textTheme.titleMedium,
+        ),
+        selected: selected,
+        selectedColor: color,
+        backgroundColor: color,
+        onSelected: _submitted ? null : (_) => _select(w.id),
+      ),
     );
   }
 }

@@ -1,20 +1,14 @@
 /// Credits/Licenses page (SPEC.md section 5's copyright note: "ต้องมีหน้า
 /// 'Credits/Licenses' ในแอปแสดงที่มาของคำแปล, related words และภาพ").
-/// Translation and image attribution are read from the distinct
-/// `words.translation_source/translation_license` and
-/// `words.image_license/image_author` values actually present in the DB
-/// (via [VocabStore.load]'s already-loaded word list), not hardcoded, so
-/// this stays accurate as the content pipeline's data changes. The
-/// related-words (SWOW/WordNet) attribution is static text — `related_words`
-/// has no per-row source/license column in the schema (SPEC.md section 4),
-/// only a dataset-level source documented in SPEC.md section 5/13 and
-/// NOTES.md, so there's nothing per-word to query for that section.
+/// Attribution is read from the content build itself — `content_meta.licenses`
+/// plus the distinct `source_license` values on the rows actually shipped — so
+/// it stays accurate as the content pipeline's data changes instead of being
+/// hardcoded here.
 library;
 
 import 'package:flutter/material.dart';
 
 import 'package:vocab_app/data/vocab_store.dart';
-import 'package:vocab_app/models/word.dart';
 
 class CreditsPage extends StatefulWidget {
   const CreditsPage({super.key, required this.store});
@@ -26,7 +20,7 @@ class CreditsPage extends StatefulWidget {
 }
 
 class _CreditsPageState extends State<CreditsPage> {
-  List<Word> _words = [];
+  Map<String, String> _meta = const {};
   bool _loading = true;
 
   @override
@@ -36,9 +30,10 @@ class _CreditsPageState extends State<CreditsPage> {
   }
 
   Future<void> _load() async {
-    final state = await widget.store.load();
+    final meta = await widget.store.loadContentMeta();
+    if (!mounted) return;
     setState(() {
-      _words = state.words;
+      _meta = meta;
       _loading = false;
     });
   }
@@ -52,17 +47,16 @@ class _CreditsPageState extends State<CreditsPage> {
       );
     }
 
+    // `content_meta.licenses` is a "; "-separated list written by the content
+    // build, covering every source that fed the shipped rows.
     final translationSources = <String>{
-      for (final w in _words)
-        if (w.translationSource.isNotEmpty)
-          '${w.translationSource} — ${w.translationLicense}',
-    }..removeWhere((s) => s.trim() == '—');
-
-    final imageSources = <String>{
-      for (final w in _words)
-        if ((w.imageLicense ?? '').isNotEmpty || (w.imageAuthor ?? '').isNotEmpty)
-          '${w.imageAuthor ?? 'Unknown author'} — ${w.imageLicense ?? ''}',
+      for (final entry in (_meta['licenses'] ?? '').split(';'))
+        if (entry.trim().isNotEmpty) entry.trim(),
     };
+
+    // No image pipeline ships yet; the section stays empty rather than
+    // claiming attribution the build cannot back up.
+    final imageSources = <String>{};
 
     // Sorted copies BEFORE the ternaries below. Inlining `x.toList()..sort()`
     // as a ternary branch is a trap: the cascade binds to the WHOLE

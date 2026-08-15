@@ -11,23 +11,45 @@ library;
 import 'package:flutter/material.dart';
 
 class FloatingTopBar extends StatelessWidget {
-  const FloatingTopBar({super.key, required this.title});
+  const FloatingTopBar({super.key, required this.title, this.trailing});
 
   final String title;
+  final Widget? trailing;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    // The trailing affordance (the games' "?" info button) sits in the
+    // screen's top-right corner, clear of the centered title pill — it used
+    // to be laid over the pill's right edge and covered the title text
+    // (user feedback 2026-07-24). The pill keeps symmetric breathing room
+    // on both sides so it stays visually centered, and shrinks instead of
+    // sliding under the button when the title is long.
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-        decoration: BoxDecoration(
-          color: theme.cardTheme.color,
-          borderRadius: BorderRadius.circular(999),
-          border: Border.all(color: theme.colorScheme.outline, width: 1),
-        ),
-        child: Text(title, style: theme.textTheme.titleMedium),
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: trailing == null ? 0 : 48),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+              decoration: BoxDecoration(
+                color: theme.cardTheme.color,
+                borderRadius: BorderRadius.circular(999),
+                border: Border.all(color: theme.colorScheme.outline, width: 1),
+              ),
+              child: Text(
+                title,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: theme.textTheme.titleMedium,
+              ),
+            ),
+          ),
+          if (trailing != null)
+            Positioned(top: 0, right: 0, child: trailing!),
+        ],
       ),
     );
   }
@@ -107,7 +129,9 @@ class _NavButton extends StatelessWidget {
         curve: Curves.easeOut,
         padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
         decoration: BoxDecoration(
-          color: selected ? theme.colorScheme.primary.withValues(alpha: 0.14) : null,
+          color: selected
+              ? theme.colorScheme.primary.withValues(alpha: 0.14)
+              : null,
           borderRadius: BorderRadius.circular(999),
         ),
         child: Row(

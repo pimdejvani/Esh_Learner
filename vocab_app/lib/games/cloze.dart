@@ -14,11 +14,11 @@ import 'package:vocab_app/domain/hint_ladder.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
-import 'package:vocab_app/widgets/game_top_bar.dart';
+import 'package:vocab_app/widgets/game_answer_field.dart';
+import 'package:vocab_app/widgets/game_stage.dart';
 import 'package:vocab_app/widgets/hint_ladder_view.dart';
 import 'package:vocab_app/widgets/result_banner.dart';
 import 'package:vocab_app/widgets/swipe_up_detector.dart';
-import 'package:vocab_app/widgets/ui_prefs.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 class ClozeGame extends StatefulWidget {
@@ -45,26 +45,19 @@ class ClozeGame extends StatefulWidget {
 
 class _ClozeGameState extends State<ClozeGame> {
   final _controller = TextEditingController();
-  final _focus = FocusNode();
   final _stopwatch = Stopwatch()..start();
   bool _submitted = false;
   int _hintsRevealed = 0;
   AnswerCheckResult? _result;
+  bool _showWrongReason = false;
 
   @override
   void dispose() {
     _controller.dispose();
-    _focus.dispose();
     super.dispose();
   }
 
   void _onSwipeUp() => !_submitted ? _submit() : _rate();
-
-  void _toggleKeyboard() {
-    autoKeyboardEnabled.value = !autoKeyboardEnabled.value;
-    autoKeyboardEnabled.value ? _focus.requestFocus() : _focus.unfocus();
-    setState(() {});
-  }
 
   ExampleSentence get _sentence {
     final sentences = widget.bundle.sentences;
@@ -82,23 +75,17 @@ class _ClozeGameState extends State<ClozeGame> {
           similarKnownWord: widget.similarKnownWord,
         );
 
-  /// Grammar reasoning for the reveal (SPEC.md 9.2, user feedback
-  /// 2026-07-23): when the sentence's blank uses an inflected form, find
-  /// its `word_forms` row — via the sentence's explicit `form_id` link
-  /// first, else by matching the cloze target text — so the answer card
-  /// can explain WHY that form is used, not just show the right string.
+  /// The `word_forms` row for the blank, when the blank was an inflection
+  /// rather than the headword itself. Used only to label the form; the
+  /// reasoning itself comes from the sentence's own explanation.
   WordForm? get _grammarForm {
-    final s = _sentence;
-    final forms = widget.bundle.forms;
-    if (s.formId != null) {
-      for (final f in forms) {
-        if (f.id == s.formId) return f;
-      }
+    final target = _sentence.formUsed.toLowerCase();
+    if (target.isEmpty ||
+        target == widget.bundle.word.headword.toLowerCase()) {
+      return null;
     }
-    final target = s.clozeTarget.toLowerCase();
-    if (target == widget.bundle.word.headword.toLowerCase()) return null;
-    for (final f in forms) {
-      if (f.formText.toLowerCase() == target) return f;
+    for (final f in widget.bundle.forms) {
+      if (f.isInflection && f.formText.toLowerCase() == target) return f;
     }
     return null;
   }
@@ -137,7 +124,10 @@ class _ClozeGameState extends State<ClozeGame> {
 
   void _rate() {
     final base = _result!.rating;
-    final capped = widget.checker.capForHint(base, usedHint: _hintsRevealed > 0);
+    final capped = widget.checker.capForHint(
+      base,
+      usedHint: _hintsRevealed > 0,
+    );
     widget.onRated(capped);
   }
 
@@ -152,142 +142,171 @@ class _ClozeGameState extends State<ClozeGame> {
 
     return SwipeUpDetector(
       onSwipeUp: _onSwipeUp,
-      child: Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        GameTopBar(
-          infoMessage: 'Type the missing word. Tap Listen to hear the '
-              'sentence.\nSwipe up to submit, then again to continue.',
-          keyboardEnabled: autoKeyboardEnabled.value,
-          onToggleKeyboard: _toggleKeyboard,
-        ),
-        Card(
-          child: Padding(
-            padding: const EdgeInsets.all(24),
-            child: Column(
-              children: [
-                RichText(
-                  textAlign: TextAlign.center,
-                  text: TextSpan(
-                    style: DefaultTextStyle.of(context).style.copyWith(fontSize: 18),
-                    children: [
-                      TextSpan(text: before),
-                      const TextSpan(
-                        text: ' _____ ',
-                        style: TextStyle(fontWeight: FontWeight.bold),
+      child: GameStage(
+        onTapToContinue: _submitted ? _rate : null,
+        bottomAction: _submitted
+            ? FilledButton(onPressed: _rate, child: const Text('Next'))
+            : null,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(24),
+                child: Column(
+                  children: [
+                    RichText(
+                      textAlign: TextAlign.center,
+                      text: TextSpan(
+                        style: DefaultTextStyle.of(
+                          context,
+                        ).style.copyWith(fontSize: 18),
+                        children: [
+                          TextSpan(text: before),
+                          const TextSpan(
+                            text: ' _____ ',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          TextSpan(text: after),
+                        ],
                       ),
-                      TextSpan(text: after),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  s.thText,
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.bodySmall,
-                ),
-                const SizedBox(height: 4),
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    IconButton.filled(
-                      icon: const Icon(Icons.volume_up),
-                      tooltip: 'Listen to the sentence',
-                      onPressed: () => _speakSentence(),
-                    ),
-                    const SizedBox(width: 8),
-                    IconButton.filledTonal(
-                      icon: const Icon(Icons.slow_motion_video),
-                      tooltip: 'Listen slowly',
-                      onPressed: () => _speakSentence(slow: true),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-        ),
-        const SizedBox(height: 16),
-        AnimatedSwitcher(
-          duration: const Duration(milliseconds: 260),
-          transitionBuilder: (child, anim) => FadeTransition(
-            opacity: anim,
-            child: SizeTransition(sizeFactor: anim, child: child),
-          ),
-          child: !_submitted
-              ? Column(
-                  key: const ValueKey('input'),
-                  children: [
-                    TextField(
-                      controller: _controller,
-                      focusNode: _focus,
-                      autofocus: autoKeyboardEnabled.value,
-                      decoration: const InputDecoration(labelText: 'Type the answer'),
-                      onSubmitted: (_) => _submit(),
                     ),
                     const SizedBox(height: 8),
+                    Text(
+                      s.thText,
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
+                    const SizedBox(height: 4),
                     Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        Expanded(
-                          child: HintLadderView(
-                            stages: _ladder,
-                            revealed: _hintsRevealed,
-                            onReveal: _revealNextHint,
-                          ),
+                        IconButton.filled(
+                          icon: const Icon(Icons.volume_up),
+                          tooltip: 'Listen to the sentence',
+                          onPressed: () => _speakSentence(),
                         ),
                         const SizedBox(width: 8),
-                        FilledButton(onPressed: _submit, child: const Text('Submit')),
+                        IconButton.filledTonal(
+                          icon: const Icon(Icons.slow_motion_video),
+                          tooltip: 'Listen slowly',
+                          onPressed: () => _speakSentence(slow: true),
+                        ),
                       ],
                     ),
                   ],
-                )
-              : Column(
-                  key: const ValueKey('result'),
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    ResultBanner(result: _result!, correctText: s.clozeTarget),
-                    if (_grammarForm != null) ...[
-                      const SizedBox(height: 8),
-                      _GrammarReasonCard(
-                        form: _grammarForm!,
-                        headword: widget.bundle.word.headword,
-                      ),
-                    ],
-                    const SizedBox(height: 8),
-                    WordResultCard(
-                      bundle: widget.bundle,
-                      tts: widget.tts,
-                      onOpenDetail: () => Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => WordDetailPage(bundle: widget.bundle, tts: widget.tts),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    FilledButton(onPressed: _rate, child: const Text('Next')),
-                  ],
                 ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 260),
+              transitionBuilder: (child, anim) => FadeTransition(
+                opacity: anim,
+                child: SizeTransition(sizeFactor: anim, child: child),
+              ),
+              child: !_submitted
+                  ? Column(
+                      key: const ValueKey('input'),
+                      children: [
+                        GameAnswerField(
+                          controller: _controller,
+                          label: 'Type the answer',
+                          onSubmitted: (_) => _submit(),
+                        ),
+                        const SizedBox(height: 8),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: HintLadderView(
+                                stages: _ladder,
+                                revealed: _hintsRevealed,
+                                onReveal: _revealNextHint,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            FilledButton(
+                              onPressed: _submit,
+                              child: const Text('Submit'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    )
+                  : Column(
+                      key: const ValueKey('result'),
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        ResultBanner(
+                          result: _result!,
+                          correctText: s.clozeTarget,
+                          onToggleDetails:
+                              _result!.verdict == AnswerVerdict.wrong
+                              ? () => setState(
+                                  () => _showWrongReason = !_showWrongReason,
+                                )
+                              : null,
+                          detailsExpanded: _showWrongReason,
+                        ),
+                        if (_result!.verdict != AnswerVerdict.wrong ||
+                            _showWrongReason) ...[
+                          const SizedBox(height: 8),
+                          _SentenceReasonCard(
+                            sentence: s,
+                            form: _grammarForm,
+                            headword: widget.bundle.word.headword,
+                            answered: _controller.text.trim(),
+                            wasWrong: _result!.verdict == AnswerVerdict.wrong,
+                          ),
+                        ],
+                        const SizedBox(height: 8),
+                        WordResultCard(
+                          bundle: widget.bundle,
+                          tts: widget.tts,
+                          onOpenDetail: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => WordDetailPage(
+                                bundle: widget.bundle,
+                                tts: widget.tts,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+            ),
+          ],
         ),
-      ],
       ),
     );
   }
 }
 
-/// "ทำไมถึงใช้รูปนี้" — grammar reasoning shown with the cloze reveal when
-/// the blank was an inflected form (SPEC.md 9.2). Surfaces the word_forms
-/// row's Thai grammar note so the player learns the RULE, not just the
-/// string that happened to fit.
-class _GrammarReasonCard extends StatelessWidget {
-  const _GrammarReasonCard({required this.form, required this.headword});
+/// The reveal's explanation. The text is the sentence's own `explanation_th`,
+/// written when the content was built and stored per sentence — a player may
+/// see this sentence and nothing else, so it never refers to another one. When
+/// the answer was wrong, the card also names what the player typed instead, so
+/// the mistake is concrete rather than just "incorrect".
+class _SentenceReasonCard extends StatelessWidget {
+  const _SentenceReasonCard({
+    required this.sentence,
+    required this.form,
+    required this.headword,
+    required this.answered,
+    required this.wasWrong,
+  });
 
-  final WordForm form;
+  final ExampleSentence sentence;
+  final WordForm? form;
   final String headword;
+  final String answered;
+  final bool wasWrong;
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
+    final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
     return Card(
       color: scheme.secondaryContainer.withValues(alpha: 0.5),
       child: Padding(
@@ -299,27 +318,36 @@ class _GrammarReasonCard extends StatelessWidget {
               children: [
                 Icon(Icons.menu_book, size: 18, color: scheme.primary),
                 const SizedBox(width: 6),
-                Text(
-                  'Why "${form.formText}"?',
-                  style: Theme.of(context).textTheme.titleSmall,
+                Expanded(
+                  child: Text(
+                    'ทำไมถึงใช้ "${sentence.clozeTarget}"',
+                    style: theme.textTheme.titleSmall,
+                  ),
                 ),
-                if (form.isIrregular) ...[
-                  const SizedBox(width: 6),
+                if (form?.isIrregular ?? false)
                   Text(
                     'irregular',
-                    style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                    style: theme.textTheme.labelSmall?.copyWith(
                       color: scheme.error,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                ],
               ],
             ),
-            const SizedBox(height: 6),
-            Text('$headword → ${form.formText} (${form.formType})'),
-            if (form.grammarNoteTh.isNotEmpty) ...[
-              const SizedBox(height: 4),
-              Text(form.grammarNoteTh),
+            if (form != null) ...[
+              const SizedBox(height: 6),
+              Text('$headword → ${form!.formText} (${form!.relation})'),
+            ],
+            if (sentence.explanationTh.isNotEmpty) ...[
+              const SizedBox(height: 6),
+              Text(sentence.explanationTh),
+            ],
+            if (wasWrong && answered.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              Text(
+                'คุณตอบ "$answered" ซึ่งไม่ใช่รูปที่ประโยคนี้ต้องการ',
+                style: theme.textTheme.bodySmall?.copyWith(color: scheme.error),
+              ),
             ],
           ],
         ),

@@ -10,10 +10,18 @@ import 'package:vocab_app/domain/answer_checker.dart';
 import 'package:vocab_app/theme/app_theme.dart';
 
 class ResultBanner extends StatelessWidget {
-  const ResultBanner({super.key, required this.result, required this.correctText});
+  const ResultBanner({
+    super.key,
+    required this.result,
+    required this.correctText,
+    this.onToggleDetails,
+    this.detailsExpanded = false,
+  });
 
   final AnswerCheckResult result;
   final String correctText;
+  final VoidCallback? onToggleDetails;
+  final bool detailsExpanded;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +33,11 @@ class ResultBanner extends StatelessWidget {
         Icons.info,
         'Almost (minor spelling slip)',
       ),
-      AnswerVerdict.wrong => (colors.danger, Icons.cancel, 'Answer: "$correctText"'),
+      AnswerVerdict.wrong => (
+        colors.danger,
+        Icons.cancel,
+        'Answer: "$correctText"',
+      ),
     };
 
     return TweenAnimationBuilder<double>(
@@ -34,28 +46,50 @@ class ResultBanner extends StatelessWidget {
       curve: Curves.easeOut,
       builder: (context, t, child) => Opacity(
         opacity: t,
-        child: Transform.translate(offset: Offset(0, (1 - t) * 8), child: child),
-      ),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-        decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.14),
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: color.withValues(alpha: 0.4)),
+        child: Transform.translate(
+          offset: Offset(0, (1 - t) * 8),
+          child: child,
         ),
-        child: Row(
-          children: [
-            Icon(icon, color: color),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                message,
-                style: Theme.of(
-                  context,
-                ).textTheme.titleMedium?.copyWith(color: color),
-              ),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onToggleDetails,
+          borderRadius: BorderRadius.circular(12),
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            decoration: BoxDecoration(
+              color: color.withValues(alpha: 0.14),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: color.withValues(alpha: 0.4)),
             ),
-          ],
+            child: Row(
+              children: [
+                Icon(icon, color: color),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    message,
+                    style: Theme.of(
+                      context,
+                    ).textTheme.titleMedium?.copyWith(color: color),
+                  ),
+                ),
+                if (onToggleDetails != null)
+                  IconButton(
+                    onPressed: onToggleDetails,
+                    tooltip: detailsExpanded
+                        ? 'Hide explanation'
+                        : 'Show explanation',
+                    icon: AnimatedRotation(
+                      turns: detailsExpanded ? .5 : 0,
+                      duration: const Duration(milliseconds: 180),
+                      child: Icon(Icons.keyboard_arrow_down, color: color),
+                    ),
+                  ),
+              ],
+            ),
+          ),
         ),
       ),
     );

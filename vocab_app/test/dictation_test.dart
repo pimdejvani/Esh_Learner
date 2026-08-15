@@ -29,6 +29,19 @@ void main() {
       expect(ladder.first, '3 letters');
     });
 
+    test('dictation drops the translation step entirely', () {
+      final ladder = buildHintLadder(
+        target: 'light',
+        meaningTh: 'แสง',
+        similarKnownWord: 'lamp',
+        includeMeaning: false,
+      );
+      expect(ladder.any((s) => s.contains('แสง')), isFalse);
+      expect(ladder.any((s) => s.startsWith('Meaning')), isFalse);
+      expect(ladder[0], '5 letters');
+      expect(ladder[1], contains('lamp'));
+    });
+
     test('a single-letter word has no first-and-last step', () {
       final ladder = buildHintLadder(target: 'a', meaningTh: 'x');
       expect(ladder.any((s) => s.startsWith('First & last')), isFalse);

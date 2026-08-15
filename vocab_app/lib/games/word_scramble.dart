@@ -16,11 +16,11 @@ import 'package:vocab_app/domain/hint_ladder.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/word_detail_page.dart';
-import 'package:vocab_app/widgets/game_top_bar.dart';
+import 'package:vocab_app/widgets/game_answer_field.dart';
+import 'package:vocab_app/widgets/game_stage.dart';
 import 'package:vocab_app/widgets/hint_ladder_view.dart';
 import 'package:vocab_app/widgets/result_banner.dart';
 import 'package:vocab_app/widgets/swipe_up_detector.dart';
-import 'package:vocab_app/widgets/ui_prefs.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 /// Shuffles [word]'s letters. Guarantees the result differs from the
@@ -70,7 +70,6 @@ class WordScrambleGame extends StatefulWidget {
 
 class _WordScrambleGameState extends State<WordScrambleGame> {
   final _controller = TextEditingController();
-  final _focus = FocusNode();
   final _stopwatch = Stopwatch()..start();
   late final String _scrambled;
   late final List<String> _ladder;
@@ -81,7 +80,10 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
   @override
   void initState() {
     super.initState();
-    _scrambled = scrambleWord(widget.bundle.word.headword, random: widget.random);
+    _scrambled = scrambleWord(
+      widget.bundle.word.headword,
+      random: widget.random,
+    );
     _ladder = buildHintLadder(
       target: widget.bundle.word.headword,
       meaningTh: widget.bundle.coreSense.meaningTh,
@@ -92,18 +94,11 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
   @override
   void dispose() {
     _controller.dispose();
-    _focus.dispose();
     super.dispose();
   }
 
   /// Swipe up = submit if still answering, else advance (item 10).
   void _onSwipeUp() => !_submitted ? _submit() : _rate();
-
-  void _toggleKeyboard() {
-    autoKeyboardEnabled.value = !autoKeyboardEnabled.value;
-    autoKeyboardEnabled.value ? _focus.requestFocus() : _focus.unfocus();
-    setState(() {});
-  }
 
   void _revealNextHint() {
     setState(() {
@@ -137,90 +132,98 @@ class _WordScrambleGameState extends State<WordScrambleGame> {
     final sense = widget.bundle.coreSense;
     return SwipeUpDetector(
       onSwipeUp: _onSwipeUp,
-      child: Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        GameTopBar(
-          infoMessage: 'Unscramble the letters and type the word.\n'
-              'Swipe up to submit, then again to continue.',
-          keyboardEnabled: autoKeyboardEnabled.value,
-          onToggleKeyboard: _toggleKeyboard,
-        ),
-        Card(
-          child: Padding(
-            padding: const EdgeInsets.all(24),
-            child: Column(
-              children: [
-                Wrap(
-                  alignment: WrapAlignment.center,
-                  spacing: 6,
+      child: GameStage(
+        onTapToContinue: _submitted ? _rate : null,
+        bottomAction: _submitted
+            ? FilledButton(onPressed: _rate, child: const Text('Next'))
+            : null,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(24),
+                child: Column(
                   children: [
-                    for (var i = 0; i < _scrambled.length; i++)
-                      _LetterTile(letter: _scrambled[i], index: i),
-                  ],
-                ),
-                const SizedBox(height: 12),
-                Text(sense.meaningTh, style: Theme.of(context).textTheme.bodyMedium),
-              ],
-            ),
-          ),
-        ),
-        const SizedBox(height: 16),
-        AnimatedSwitcher(
-          duration: const Duration(milliseconds: 260),
-          transitionBuilder: (child, anim) => FadeTransition(
-            opacity: anim,
-            child: SizeTransition(sizeFactor: anim, child: child),
-          ),
-          child: !_submitted
-              ? Column(
-                  key: const ValueKey('input'),
-                  children: [
-                    TextField(
-                      controller: _controller,
-                      focusNode: _focus,
-                      autofocus: autoKeyboardEnabled.value,
-                      decoration: const InputDecoration(labelText: 'Unscramble the word'),
-                      onSubmitted: (_) => _submit(),
-                    ),
-                    const SizedBox(height: 8),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    Wrap(
+                      alignment: WrapAlignment.center,
+                      spacing: 6,
                       children: [
-                        Expanded(
-                          child: HintLadderView(
-                            stages: _ladder,
-                            revealed: _hintsRevealed,
-                            onReveal: _revealNextHint,
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        FilledButton(onPressed: _submit, child: const Text('Submit')),
+                        for (var i = 0; i < _scrambled.length; i++)
+                          _LetterTile(letter: _scrambled[i], index: i),
                       ],
                     ),
-                  ],
-                )
-              : Column(
-                  key: const ValueKey('result'),
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    ResultBanner(result: _result!, correctText: widget.bundle.word.headword),
-                    const SizedBox(height: 8),
-                    WordResultCard(
-                      bundle: widget.bundle,
-                      tts: widget.tts,
-                      onOpenDetail: () => Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => WordDetailPage(bundle: widget.bundle, tts: widget.tts),
-                        ),
-                      ),
+                    const SizedBox(height: 12),
+                    Text(
+                      sense.meaningTh,
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
-                    const SizedBox(height: 16),
-                    FilledButton(onPressed: _rate, child: const Text('Next')),
                   ],
                 ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 260),
+              transitionBuilder: (child, anim) => FadeTransition(
+                opacity: anim,
+                child: SizeTransition(sizeFactor: anim, child: child),
+              ),
+              child: !_submitted
+                  ? Column(
+                      key: const ValueKey('input'),
+                      children: [
+                        GameAnswerField(
+                          controller: _controller,
+                          label: 'Unscramble the word',
+                          onSubmitted: (_) => _submit(),
+                        ),
+                        const SizedBox(height: 8),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: HintLadderView(
+                                stages: _ladder,
+                                revealed: _hintsRevealed,
+                                onReveal: _revealNextHint,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            FilledButton(
+                              onPressed: _submit,
+                              child: const Text('Submit'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    )
+                  : Column(
+                      key: const ValueKey('result'),
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        ResultBanner(
+                          result: _result!,
+                          correctText: widget.bundle.word.headword,
+                        ),
+                        const SizedBox(height: 8),
+                        WordResultCard(
+                          bundle: widget.bundle,
+                          tts: widget.tts,
+                          onOpenDetail: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => WordDetailPage(
+                                bundle: widget.bundle,
+                                tts: widget.tts,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+            ),
+          ],
         ),
-      ],
       ),
     );
   }

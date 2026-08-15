@@ -23,6 +23,7 @@ import 'package:vocab_app/theme/app_theme.dart';
 import 'package:vocab_app/widgets/speak_buttons.dart';
 import 'package:vocab_app/widgets/staggered_entrance.dart';
 import 'package:vocab_app/widgets/swipe_up_detector.dart';
+import 'package:vocab_app/widgets/game_stage.dart';
 import 'package:vocab_app/widgets/word_result_card.dart';
 
 /// Picks the related word to test this round: prefers `relation_type ==
@@ -57,7 +58,9 @@ List<Word> buildAssociationOptions({
 }) {
   final rnd = random ?? Random();
   final candidates =
-      pool.where((w) => w.id != correct.id && !excludeIds.contains(w.id)).toList()
+      pool
+          .where((w) => w.id != correct.id && !excludeIds.contains(w.id))
+          .toList()
         ..shuffle(rnd);
   final options = [correct, ...candidates.take(distractorCount)];
   options.shuffle(rnd);
@@ -74,6 +77,7 @@ class WordAssociationGame extends StatefulWidget {
     required this.onRated,
     this.hintWords = const [],
     this.checker = const AnswerChecker(),
+    this.correctRelation,
   });
 
   /// Target word being tested.
@@ -90,6 +94,11 @@ class WordAssociationGame extends StatefulWidget {
   /// play_screen.dart for how these are sourced from `related_words`).
   final List<String> hintWords;
   final AnswerChecker checker;
+
+  /// The `related_words` row the round was built from. Its `relationType` and
+  /// stored `explanationTh` are what the reveal shows — the reason is content,
+  /// written when the pair was built, never composed at answer time.
+  final RelatedWord? correctRelation;
 
   @override
   State<WordAssociationGame> createState() => _WordAssociationGameState();
@@ -120,7 +129,10 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
     final correct = _selectedId == widget.correctWordId;
     final fast = _stopwatch.elapsedMilliseconds <= 3000;
     final base = correct ? (fast ? Rating.easy : Rating.good) : Rating.again;
-    final capped = widget.checker.capForHint(base, usedHint: _hintsRevealed > 0);
+    final capped = widget.checker.capForHint(
+      base,
+      usedHint: _hintsRevealed > 0,
+    );
     widget.onRated(capped);
   }
 
@@ -131,77 +143,97 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
       onSwipeUp: () {
         if (_submitted) _rate();
       },
-      child: Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Card(
-          child: Padding(
-            padding: const EdgeInsets.all(24),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+      child: GameStage(
+        onTapToContinue: _submitted ? _rate : null,
+        bottomAction: _submitted
+            ? FilledButton(onPressed: _rate, child: const Text('Next'))
+            : null,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(24),
+                child: Column(
                   children: [
-                    Text(word.headword, style: Theme.of(context).textTheme.headlineSmall),
-                    SpeakButtons(tts: widget.tts, text: word.headword),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          word.headword,
+                          style: Theme.of(context).textTheme.headlineSmall,
+                        ),
+                        SpeakButtons(tts: widget.tts, text: word.headword),
+                      ],
+                    ),
                   ],
                 ),
-                Text(
-                  'Which word do most people associate with this?',
-                  style: Theme.of(context).textTheme.bodyMedium,
-                ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                for (var i = 0; i < widget.options.length; i++)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4),
+                    child: StaggeredEntrance(
+                      index: i,
+                      child: _optionChip(widget.options[i]),
+                    ),
+                  ),
               ],
             ),
-          ),
-        ),
-        const SizedBox(height: 16),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          alignment: WrapAlignment.center,
-          children: [
-            for (var i = 0; i < widget.options.length; i++)
-              StaggeredEntrance(index: i, child: _optionChip(widget.options[i])),
+            const SizedBox(height: 8),
+            if (!_submitted && widget.hintWords.isNotEmpty)
+              TextButton.icon(
+                onPressed: _hintsRevealed < widget.hintWords.length
+                    ? _revealNextHint
+                    : null,
+                icon: const Icon(Icons.lightbulb_outline),
+                label: Text(
+                  _hintsRevealed == 0
+                      ? 'Hint'
+                      : widget.hintWords.take(_hintsRevealed).join(', '),
+                ),
+              ),
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 260),
+              transitionBuilder: (child, anim) => FadeTransition(
+                opacity: anim,
+                child: SizeTransition(sizeFactor: anim, child: child),
+              ),
+              child: _submitted
+                  ? Column(
+                      key: const ValueKey('result'),
+                      children: [
+                        if (widget.correctRelation != null) ...[
+                          const SizedBox(height: 8),
+                          _RelationReveal(
+                            headword: widget.bundle.word.headword,
+                            relation: widget.correctRelation!,
+                          ),
+                        ],
+                        const SizedBox(height: 8),
+                        WordResultCard(
+                          bundle: widget.bundle,
+                          tts: widget.tts,
+                          onOpenDetail: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => WordDetailPage(
+                                bundle: widget.bundle,
+                                tts: widget.tts,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  : const SizedBox.shrink(key: ValueKey('empty')),
+            ),
           ],
         ),
-        const SizedBox(height: 8),
-        if (!_submitted && widget.hintWords.isNotEmpty)
-          TextButton.icon(
-            onPressed: _hintsRevealed < widget.hintWords.length ? _revealNextHint : null,
-            icon: const Icon(Icons.lightbulb_outline),
-            label: Text(
-              _hintsRevealed == 0
-                  ? 'Hint'
-                  : widget.hintWords.take(_hintsRevealed).join(', '),
-            ),
-          ),
-        AnimatedSwitcher(
-          duration: const Duration(milliseconds: 260),
-          transitionBuilder: (child, anim) => FadeTransition(
-            opacity: anim,
-            child: SizeTransition(sizeFactor: anim, child: child),
-          ),
-          child: _submitted
-              ? Column(
-                  key: const ValueKey('result'),
-                  children: [
-                    const SizedBox(height: 8),
-                    WordResultCard(
-                      bundle: widget.bundle,
-                      tts: widget.tts,
-                      onOpenDetail: () => Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => WordDetailPage(bundle: widget.bundle, tts: widget.tts),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    FilledButton(onPressed: _rate, child: const Text('Next')),
-                  ],
-                )
-              : const SizedBox.shrink(key: ValueKey('empty')),
-        ),
-      ],
       ),
     );
   }
@@ -227,16 +259,70 @@ class _WordAssociationGameState extends State<WordAssociationGame> {
       color = colors.success.withValues(alpha: 0.18);
       avatar = Icon(Icons.check_circle, size: 18, color: colors.success);
     }
+    // Full-width, generously padded options (user request 2026-07-24: "ทำให้
+    // ปุ่มที่เลือกคำที่เกี่ยวข้องมันใหญ่ขึ้นกว่านี้") — the compact chips
+    // were a small tap target sitting in a lot of empty space.
     return AnimatedContainer(
       duration: const Duration(milliseconds: 220),
       curve: Curves.easeOut,
+      width: double.infinity,
       child: ChoiceChip(
         avatar: avatar,
-        label: Text(w.headword),
+        labelPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+        label: Text(
+          w.headword,
+          textAlign: TextAlign.center,
+          style: Theme.of(context).textTheme.titleMedium,
+        ),
         selected: selected,
         selectedColor: color,
         backgroundColor: color,
         onSelected: _submitted ? null : (_) => _select(w.id),
+      ),
+    );
+  }
+}
+
+/// The answer's reason: the correct word, the relation type, and the stored
+/// Thai explanation of why the pair belongs together.
+class _RelationReveal extends StatelessWidget {
+  const _RelationReveal({required this.headword, required this.relation});
+
+  final String headword;
+  final RelatedWord relation;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
+    return Card(
+      color: scheme.secondaryContainer.withValues(alpha: 0.5),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    '$headword → ${relation.relatedHeadword}',
+                    style: theme.textTheme.titleSmall,
+                  ),
+                ),
+                Text(
+                  relation.relationType,
+                  style: theme.textTheme.labelSmall
+                      ?.copyWith(color: scheme.primary),
+                ),
+              ],
+            ),
+            if ((relation.explanationTh ?? '').isNotEmpty) ...[
+              const SizedBox(height: 6),
+              Text(relation.explanationTh!),
+            ],
+          ],
+        ),
       ),
     );
   }

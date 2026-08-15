@@ -15,6 +15,7 @@ import 'package:vocab_app/domain/mastery.dart';
 import 'package:vocab_app/domain/new_card_governor.dart';
 import 'package:vocab_app/domain/retention_tuner.dart';
 import 'package:vocab_app/domain/session_engine.dart';
+import 'package:vocab_app/domain/test_hooks.dart';
 import 'package:vocab_app/domain/streaks.dart';
 import 'package:vocab_app/games/cloze.dart';
 import 'package:vocab_app/games/dictation.dart';
@@ -26,7 +27,9 @@ import 'package:vocab_app/games/word_scramble.dart';
 import 'package:vocab_app/models/srs_state.dart';
 import 'package:vocab_app/models/word.dart';
 import 'package:vocab_app/screens/you_pass_page.dart';
+import 'package:vocab_app/widgets/floating_pill_bar.dart';
 import 'package:vocab_app/widgets/highlight_card.dart';
+import 'package:vocab_app/widgets/info_hint.dart';
 
 class PlayScreen extends StatefulWidget {
   const PlayScreen({super.key, required this.store, required this.tts});
@@ -49,6 +52,7 @@ class _PlayScreenState extends State<PlayScreen> {
   List<SessionItem> _queue = [];
   WordBundle? _currentBundle;
   List<WordBundle> _currentBatch = [];
+  Set<int> _lastMatchingWordIds = {};
   bool _loading = true;
   int _newIntroducedToday = 0;
   // True until the first queue of a new logical day (3am boundary) has
@@ -84,6 +88,17 @@ class _PlayScreenState extends State<PlayScreen> {
   int? _wordAssocCorrectId;
   Word? _oddOneOutTarget;
   List<Word> _oddOneOutGroup = [];
+  Word? _oddOneOutHub;
+  List<RelatedWord> _oddOneOutRelations = [];
+  String _oddOneOutCategory = '';
+  String _oddOneOutExplanation = '';
+
+  /// `relation_groups` keyed by hub word — the category and reason Odd One Out
+  /// explains a round with, loaded once with the rest of the content.
+  Map<int, RelationGroup> _groupsByHub = const {};
+
+  // Temporary scaffolding — see domain/test_hooks.dart, delete before ship.
+  bool _multiPosHookPending = kForceMultiPosFlashcard;
 
   @override
   void initState() {
@@ -98,8 +113,9 @@ class _PlayScreenState extends State<PlayScreen> {
       // ~88-95% down to the ~80% zone. A profile that already stored the
       // old default would otherwise take dozens of reviews to walk down
       // 0.01 at a time — snap it into the new range instead.
-      final storedRetention =
-          double.tryParse(state.settings['request_retention'] ?? '');
+      final storedRetention = double.tryParse(
+        state.settings['request_retention'] ?? '',
+      );
       if (storedRetention != null && storedRetention > 0.84) {
         await widget.store.saveSetting('request_retention', '0.8000');
         state.settings['request_retention'] = '0.8000';
@@ -107,6 +123,8 @@ class _PlayScreenState extends State<PlayScreen> {
       final today = logicalDateKey(DateTime.now());
       final stats = await widget.store.loadDailyStats(today);
       final relatedByWord = await widget.store.loadAllRelatedWords();
+      final relationGroups = await widget.store.loadRelationGroups();
+      _groupsByHub = {for (final g in relationGroups) g.hubWordId: g};
       final focusTopicId = int.tryParse(state.settings['focus_topic'] ?? '');
       final focusTopicWordIds = focusTopicId == null
           ? <int>{}
@@ -123,8 +141,7 @@ class _PlayScreenState extends State<PlayScreen> {
       final forgiven = todayCount('new_intro_forgiven');
       setState(() {
         _state = state;
-        _newIntroducedToday =
-            max(0, (stats?.newIntroduced ?? 0) - forgiven);
+        _newIntroducedToday = max(0, (stats?.newIntroduced ?? 0) - forgiven);
         _fcRoundsToday = todayCount('fc_rounds');
         // No daily_stats row yet for today's logical date = nothing has
         // been played since the 3am boundary -> open the day with a
@@ -165,8 +182,10 @@ class _PlayScreenState extends State<PlayScreen> {
       since: DateTime.now().subtract(const Duration(days: 7)),
     );
     final recentAccuracy = _governor.recentAccuracy(recentReviews);
-    final (onboardingNewCount, forcedFlashcardSize) =
-        await _onboardingRamp(state, recentAccuracy);
+    final (onboardingNewCount, forcedFlashcardSize) = await _onboardingRamp(
+      state,
+      recentAccuracy,
+    );
     _queue = _sessionEngine.buildQueue(
       words: state.words,
       srsStates: state.srsStates,
@@ -181,6 +200,29 @@ class _PlayScreenState extends State<PlayScreen> {
       onboardingNewCount: onboardingNewCount,
       forcedFlashcardSize: forcedFlashcardSize,
     );
+    if (_multiPosHookPending && _queue.isNotEmpty) {
+      // Show one genuinely multi-POS word up front so the Flashcard back's
+      // per-POS layout is exercised on every run while content is being built.
+      final multiPos = await widget.store.loadMultiPosWordIds();
+      final candidates = state.words.where((w) => multiPos.contains(w.id));
+      if (candidates.isNotEmpty) {
+        final word = candidates.firstWhere(
+          (w) => state.srsStates[w.id] != null,
+          orElse: () => candidates.first,
+        );
+        _queue.insert(
+          0,
+          SessionItem(
+            wordId: word.id,
+            gameType: GameType.flashcard,
+            direction: Direction.enTh,
+            source: state.srsStates[word.id] == null
+                ? QueueSource.newCard
+                : QueueSource.extraPractice,
+          ),
+        );
+      }
+    }
     _firstSessionOfDay = false; // consumed — only the day's opening queue
     await _loadNext();
   }
@@ -200,8 +242,7 @@ class _PlayScreenState extends State<PlayScreen> {
     double? recentAccuracy,
   ) async {
     if (state.settings['onboarding_done'] == 'true') return (null, null);
-    final learned =
-        state.srsStates.values.where((s) => s.reps > 0).length;
+    final learned = state.srsStates.values.where((s) => s.reps > 0).length;
     if (learned >= 30) {
       await widget.store.saveSetting('onboarding_done', 'true');
       state.settings['onboarding_done'] = 'true';
@@ -231,10 +272,11 @@ class _PlayScreenState extends State<PlayScreen> {
     int maxHints = 3,
     int? excludeWordId,
   }) {
-    final candidates = bundle.related
-        .where((r) => !r.isGiveaway && r.relatedWordId != excludeWordId)
-        .toList()
-      ..sort((a, b) => b.closeness.compareTo(a.closeness));
+    final candidates =
+        bundle.related
+            .where((r) => !r.isGiveaway && r.relatedWordId != excludeWordId)
+            .toList()
+          ..sort((a, b) => b.closeness.compareTo(a.closeness));
     return candidates
         .map((r) => _wordById[r.relatedWordId]?.headword)
         .whereType<String>()
@@ -248,20 +290,22 @@ class _PlayScreenState extends State<PlayScreen> {
   /// from this pool only (user request 2026-07-24: "คำที่นำมาต้องเคยอยู่
   /// ใน new word แล้ว" — never quiz with words the player has never been
   /// shown).
-  List<Word> get _seenWords => _state!.words
-      .where((w) => _state!.srsStates[w.id] != null)
-      .toList();
+  List<Word> get _seenWords =>
+      _state!.words.where((w) => _state!.srsStates[w.id] != null).toList();
 
   /// Step-2 of the typed-game hint ladder (item 12): the closest
   /// meaning-related word the player ALREADY KNOWS (has SRS history for),
   /// or null when none qualifies. Uses `related_words` closeness, skipping
   /// giveaway rows, seen-only.
   String? _similarKnownWord(WordBundle bundle) {
-    final related = bundle.related
-        .where((r) =>
-            !r.isGiveaway && _state!.srsStates[r.relatedWordId] != null)
-        .toList()
-      ..sort((a, b) => b.closeness.compareTo(a.closeness));
+    final related =
+        bundle.related
+            .where(
+              (r) =>
+                  !r.isGiveaway && _state!.srsStates[r.relatedWordId] != null,
+            )
+            .toList()
+          ..sort((a, b) => b.closeness.compareTo(a.closeness));
     for (final r in related) {
       final w = _wordById[r.relatedWordId];
       if (w != null) return w.headword;
@@ -304,6 +348,7 @@ class _PlayScreenState extends State<PlayScreen> {
       final bundles = await widget.store.loadWordBundles(batchIds);
       setState(() {
         _currentBatch = bundles;
+        _lastMatchingWordIds = batchIds.toSet();
         _currentBundle = null;
       });
       return;
@@ -311,14 +356,15 @@ class _PlayScreenState extends State<PlayScreen> {
 
     if (item.gameType == GameType.oddOneOut) {
       final target = _wordById[item.wordId];
-      final group = target == null
+      final round = target == null
           ? null
-          : buildOddOneOutGroup(
+          : buildOddOneOutRound(
               target: target,
               // Seen words only — group members the player has never
               // been shown make the round unanswerable (2026-07-24).
               pool: _seenWords,
               relatedByWord: _relatedByWord,
+              groupsByHub: _groupsByHub,
               // Early game (first ~2 new-word blocks / ~8 words with any
               // history): only serve Odd when >2 coherent groups exist to
               // choose from (user request 2026-07-24); afterwards the
@@ -326,14 +372,22 @@ class _PlayScreenState extends State<PlayScreen> {
               strict: _state!.srsStates.length <= 8,
               random: _random,
             );
-      if (target == null || group == null) {
+      final hub = round == null ? null : _wordById[round.hubWordId];
+      if (target == null || round == null || hub == null) {
         _queue[0] = _fallbackToFlashcard(item);
         return _loadNext();
       }
+      // The target's full entry, so the reveal can also teach what the odd
+      // word means (user request 2026-07-24).
+      final bundle = await widget.store.loadWordBundle(item.wordId);
       setState(() {
         _oddOneOutTarget = target;
-        _oddOneOutGroup = group;
-        _currentBundle = null;
+        _oddOneOutGroup = round.groupWords;
+        _oddOneOutHub = hub;
+        _oddOneOutRelations = round.memberRelations;
+        _oddOneOutCategory = round.category;
+        _oddOneOutExplanation = round.explanationTh;
+        _currentBundle = bundle;
         _currentBatch = [];
       });
       return;
@@ -374,6 +428,9 @@ class _PlayScreenState extends State<PlayScreen> {
     // Everything else (intro / flashcard / cloze / word scramble /
     // dictation) just needs one WordBundle.
     final bundle = await widget.store.loadWordBundle(item.wordId);
+    if (_multiPosHookPending && item.gameType == GameType.flashcard) {
+      _multiPosHookPending = false;
+    }
     setState(() {
       _currentBundle = bundle;
       _currentBatch = [];
@@ -390,20 +447,27 @@ class _PlayScreenState extends State<PlayScreen> {
     const minPairs = 4;
     // Randomized round size (user request 2026-07-23): 4-6 pairs.
     final maxPairs = minPairs + _random.nextInt(3);
-    final picked = <int>{seedWordId};
+    final picked = <int>{};
+    if (!_lastMatchingWordIds.contains(seedWordId)) picked.add(seedWordId);
 
     // "Weakness" = the same practiceWeight the engine's sampler uses
     // (low streak × high FSRS difficulty = weakest) — 2026-07-24
     // revision folding the learned per-word difficulty in.
     double weightOf(int id) => practiceWeight(
-          _correctStreaks[id] ?? 0,
-          difficulty: _state!.srsStates[id]?.difficulty ?? 5,
-        );
-    final seen = _state!.words
-        .where((w) => _state!.srsStates[w.id] != null && w.id != seedWordId)
-        .map((w) => w.id)
-        .toList()
-      ..sort((a, b) => weightOf(b).compareTo(weightOf(a)));
+      _correctStreaks[id] ?? 0,
+      difficulty: _state!.srsStates[id]?.difficulty ?? 5,
+    );
+    final seen =
+        _state!.words
+            .where(
+              (w) =>
+                  _state!.srsStates[w.id] != null &&
+                  w.id != seedWordId &&
+                  !_lastMatchingWordIds.contains(w.id),
+            )
+            .map((w) => w.id)
+            .toList()
+          ..sort((a, b) => weightOf(b).compareTo(weightOf(a)));
 
     // 1) At least 2 weakest words the player has actually seen.
     picked.addAll(seen.take(2));
@@ -412,7 +476,11 @@ class _PlayScreenState extends State<PlayScreen> {
     for (final w in _state!.words) {
       if (picked.length >= maxPairs) break;
       final s = _state!.srsStates[w.id];
-      if (s != null && s.state == CardState.learning) picked.add(w.id);
+      if (s != null &&
+          s.state == CardState.learning &&
+          !_lastMatchingWordIds.contains(w.id)) {
+        picked.add(w.id);
+      }
     }
 
     // 3) Still short of the 4-pair minimum -> more seen words by
@@ -569,7 +637,8 @@ class _PlayScreenState extends State<PlayScreen> {
     // queue ran out). Every 4th completed round today forgives the day's
     // introduced-new count so the cap refills (user request 2026-07-24 —
     // "ไม่อยาก limit flash: เล่นครบ 4 รอบแล้วรีเซ็ต limit คำใหม่").
-    final blockEnded = leaving.gameType == GameType.flashcard &&
+    final blockEnded =
+        leaving.gameType == GameType.flashcard &&
         (_queue.isEmpty || _queue.first.gameType != GameType.flashcard);
     if (blockEnded) await _onFlashcardRoundComplete();
     if (_queue.isEmpty) {
@@ -601,7 +670,9 @@ class _PlayScreenState extends State<PlayScreen> {
     if (_loading) return const Center(child: CircularProgressIndicator());
     if (_error != null) return Center(child: Text('Error: $_error'));
     if (_queue.isEmpty) {
-      return const Center(child: Text('All clear — great work! Come back tomorrow.'));
+      return const Center(
+        child: Text('All clear — great work! Come back tomorrow.'),
+      );
     }
 
     final item = _queue.first;
@@ -609,32 +680,64 @@ class _PlayScreenState extends State<PlayScreen> {
     // Mobile-first layout (user feedback 2026-07-23): everything centered
     // in a single column that stretches its children, max-width capped so
     // the desktop dev build doesn't smear content across the full window.
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(16),
-      child: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 480),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              AnimatedSwitcher(
-                duration: const Duration(milliseconds: 220),
-                child: _GameModeIndicator(
-                  key: ValueKey(
-                    (item.gameType, _state!.srsStates[item.wordId] == null),
-                  ),
-                  gameType: item.gameType,
-                  isNewWord: _state!.srsStates[item.wordId] == null,
+    return Column(
+      children: [
+        FloatingTopBar(
+          title: 'Oxford 3000 -> Thai',
+          trailing: InfoHint(message: _infoMessage(item.gameType)),
+        ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 480),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    AnimatedSwitcher(
+                      duration: const Duration(milliseconds: 220),
+                      child: _GameModeIndicator(
+                        key: ValueKey((
+                          item.gameType,
+                          _state!.srsStates[item.wordId] == null,
+                        )),
+                        gameType: item.gameType,
+                        isNewWord: _state!.srsStates[item.wordId] == null,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Expanded(
+                      child: KeyedSubtree(
+                        key: ValueKey(_itemSeq),
+                        child: _buildItem(item),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              const SizedBox(height: 12),
-              KeyedSubtree(key: ValueKey(_itemSeq), child: _buildItem(item)),
-            ],
+            ),
           ),
         ),
-      ),
+      ],
     );
   }
+
+  String _infoMessage(GameType gameType) => switch (gameType) {
+    GameType.flashcard =>
+      'Tap the card to reveal the answer. Swipe right if you know it, left if you do not.',
+    GameType.cloze =>
+      'Type the missing word. Swipe up to submit, then again to continue.',
+    GameType.matching =>
+      'Drag a line to match each pair, or tap a word on each side.',
+    GameType.wordAssociation =>
+      'Choose the word most strongly associated with the word shown.',
+    GameType.wordScramble =>
+      'Unscramble the letters and type the word. Swipe up to submit.',
+    GameType.dictation =>
+      'Listen, then type the spelling. Use hints if you are stuck.',
+    GameType.oddOneOut => 'Choose the word that does not belong.',
+  };
 
   Widget _buildItem(SessionItem item) {
     switch (item.gameType) {
@@ -672,11 +775,17 @@ class _PlayScreenState extends State<PlayScreen> {
           options: _wordAssocOptions!,
           correctWordId: _wordAssocCorrectId!,
           tts: widget.tts,
+          // The row the round was built from, so the reveal explains the pair
+          // from stored content instead of guessing after the answer.
+          correctRelation: _currentBundle!.related
+              .where((r) => r.relatedWordId == _wordAssocCorrectId)
+              .firstOrNull,
           hintWords: _semanticHints(
             _currentBundle!,
             excludeWordId: _wordAssocCorrectId,
           ),
-          onRated: (r) => _handleRated(item.wordId, r, GameType.wordAssociation),
+          onRated: (r) =>
+              _handleRated(item.wordId, r, GameType.wordAssociation),
         );
       case GameType.wordScramble:
         if (_currentBundle == null) return const SizedBox.shrink();
@@ -695,10 +804,18 @@ class _PlayScreenState extends State<PlayScreen> {
           onRated: (r) => _handleRated(item.wordId, r, GameType.dictation),
         );
       case GameType.oddOneOut:
-        if (_oddOneOutTarget == null) return const SizedBox.shrink();
+        if (_oddOneOutTarget == null || _oddOneOutHub == null) {
+          return const SizedBox.shrink();
+        }
         return OddOneOutGame(
           oddWord: _oddOneOutTarget!,
           groupWords: _oddOneOutGroup,
+          hubWord: _oddOneOutHub!,
+          memberRelations: _oddOneOutRelations,
+          category: _oddOneOutCategory,
+          groupExplanationTh: _oddOneOutExplanation,
+          oddBundle: _currentBundle,
+          tts: widget.tts,
           onRated: (r, wrongPickedId) async {
             // A wrong pick also costs the PICKED word's proficiency, not
             // just the target's (user request 2026-07-24) — record it
@@ -743,14 +860,25 @@ class _GameModeIndicator extends StatelessWidget {
       // A new word is still just a card in the flashcard block, but its
       // indicator shows ONLY "คำใหม่" (user 2026-07-24 round 2: "ไม่ต้อง
       // ขึ้น flashcard เลย ให้เป็น new word อย่างเดียวพอ").
-      GameType.flashcard when isNewWord =>
-        (Icons.auto_awesome, 'New word', HighlightTone.lavender),
+      GameType.flashcard when isNewWord => (
+        Icons.auto_awesome,
+        'New word',
+        HighlightTone.lavender,
+      ),
       GameType.flashcard => (Icons.style, 'Flashcard', HighlightTone.sky),
       GameType.matching => (Icons.grid_view, 'Matching', HighlightTone.sky),
       GameType.oddOneOut => (Icons.category, 'Odd One Out', HighlightTone.sky),
       GameType.cloze => (Icons.edit_note, 'Cloze', HighlightTone.lavender),
-      GameType.wordAssociation => (Icons.hub, 'Word Association', HighlightTone.lavender),
-      GameType.wordScramble => (Icons.shuffle, 'Word Scramble', HighlightTone.blue),
+      GameType.wordAssociation => (
+        Icons.hub,
+        'Word Association',
+        HighlightTone.lavender,
+      ),
+      GameType.wordScramble => (
+        Icons.shuffle,
+        'Word Scramble',
+        HighlightTone.blue,
+      ),
       GameType.dictation => (Icons.hearing, 'Dictation', HighlightTone.blue),
     };
     return HighlightCard(icon: icon, title: label, tone: tone, dense: true);

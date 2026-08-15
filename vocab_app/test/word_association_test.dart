@@ -14,9 +14,6 @@ Word _word(int id, String headword) => Word(
   thaiReading: headword,
   stressIndex: 1,
   ipa: '',
-  translationSource: '',
-  translationLicense: '',
-  hasPhoto: false,
 );
 
 RelatedWord _rel(
@@ -29,6 +26,7 @@ RelatedWord _rel(
   id: relatedWordId,
   wordId: wordId,
   relatedWordId: relatedWordId,
+  relatedHeadword: 'w$relatedWordId',
   relationType: type,
   closeness: closeness,
   isGiveaway: giveaway,

@@ -10,9 +10,6 @@ Word _word(int id, String headword) => Word(
   thaiReading: headword,
   stressIndex: 1,
   ipa: '',
-  translationSource: '',
-  translationLicense: '',
-  hasPhoto: false,
 );
 
 RelatedWord _rel(
@@ -25,6 +22,7 @@ RelatedWord _rel(
   id: relatedWordId,
   wordId: wordId,
   relatedWordId: relatedWordId,
+  relatedHeadword: 'w$relatedWordId',
   relationType: type,
   closeness: closeness,
   isGiveaway: giveaway,
@@ -45,6 +43,86 @@ void main() {
   };
 
   group('buildOddOneOutGroup', () {
+    test('keeps the hub and member relations for a sourced explanation', () {
+      final round = buildOddOneOutRound(
+        target: _word(5, 'cat'),
+        pool: pool,
+        relatedByWord: relatedByWord,
+      );
+      expect(round, isNotNull);
+      expect(round!.hubWordId, 1);
+      expect(round.groupWords.map((word) => word.id), [2, 3, 4]);
+      expect(round.memberRelations.map((row) => row.relatedWordId), [2, 3, 4]);
+    });
+
+    test(
+      'the reveal uses the stored explanation, falling back to the type',
+      () {
+        // The authored explanation wins whenever the content build wrote one.
+        expect(
+          oddOneOutRelationText(
+            hub: _word(1, 'day'),
+            member: _word(2, 'measure'),
+            relationType: 'hypernym',
+            explanationTh: 'measure เป็นหน่วยที่ใช้วัด day',
+          ),
+          'measure เป็นหน่วยที่ใช้วัด day',
+        );
+        // Rows written before explanations were stored still read sensibly.
+        expect(
+          oddOneOutRelationText(
+            hub: _word(1, 'day'),
+            member: _word(2, 'measure'),
+            relationType: 'hypernym',
+          ),
+          'measure เป็นประเภทหนึ่งของ day',
+        );
+      },
+    );
+
+    test('collapses members that share one reason into a single line', () {
+      // The classic case from the screenshots: three rows saying the very
+      // same thing about career, differing only in the member they name.
+      const reason = 'เป็นคำที่คนมักนึกถึงคู่กันในเรื่องเส้นทางอาชีพ';
+      final hub = _word(1, 'career');
+      final members = [_word(2, 'job'), _word(3, 'work'), _word(4, 'money')];
+      final lines = oddOneOutReasonLines(
+        hub: hub,
+        members: members,
+        relations: [
+          for (final m in members)
+            RelatedWord(
+              id: m.id,
+              wordId: 1,
+              relatedWordId: m.id,
+              relatedHeadword: m.headword,
+              relationType: 'association',
+              closeness: 0.5,
+              isGiveaway: false,
+              explanationTh: 'career กับ ${m.headword} $reason',
+            ),
+        ],
+      );
+      expect(lines, ['career กับ job, work, money $reason']);
+    });
+
+    test('keeps genuinely different reasons on their own lines', () {
+      final hub = _word(1, 'car');
+      final members = [_word(2, 'wheel'), _word(3, 'drive')];
+      final lines = oddOneOutReasonLines(
+        hub: hub,
+        members: members,
+        relations: [
+          _rel(1, 2, type: 'part_of'),
+          _rel(1, 3, type: 'used_for'),
+        ],
+      );
+      expect(lines, [
+        'wheel เป็นส่วนหนึ่งของ car',
+        'drive ใช้คู่กับ car',
+      ]);
+    });
+
     test('builds a group from words that all relate to a common hub', () {
       final group = buildOddOneOutGroup(
         target: _word(5, 'cat'),
@@ -138,9 +216,7 @@ void main() {
 
     test('strict early-game mode needs MORE THAN 2 qualifying groups '
         '(revision 2026-07-24)', () {
-      final bigPool = [
-        for (var i = 1; i <= 12; i++) _word(i, 'w$i'),
-      ];
+      final bigPool = [for (var i = 1; i <= 12; i++) _word(i, 'w$i')];
       Map<int, List<RelatedWord>> hubs(int count) => {
         // Hub h relates to 3 members each, none of them word 12.
         for (var h = 0; h < count; h++)

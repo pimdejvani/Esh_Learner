@@ -13,9 +13,6 @@ Word _word(int id, {int freq = 0, String cefr = 'A1'}) => Word(
   thaiReading: 'w$id',
   stressIndex: 1,
   ipa: '',
-  translationSource: '',
-  translationLicense: '',
-  hasPhoto: false,
 );
 
 SrsState _due(int id, DateTime dueAt, {CardState state = CardState.learning}) =>

@@ -19,10 +19,16 @@
 /// [similarKnownWord] is the step-2 clue (null/empty → that step is
 /// dropped). Labels are English chrome (item 5); the meaning stays Thai
 /// because it is content, not chrome.
+///
+/// [includeMeaning] false drops the translation step entirely — Dictation
+/// passes false (user request 2026-07-24: "เกม dictation เอาคำแปลไม่ต้อง
+/// เอามาใส่ในคำใบ้"), since hearing the word and being handed its meaning
+/// turns a spelling round into a recall-the-gloss round.
 List<String> buildHintLadder({
   required String target,
   required String meaningTh,
   String? similarKnownWord,
+  bool includeMeaning = true,
 }) {
   final n = target.length;
   if (n == 0) return const [];
@@ -31,11 +37,9 @@ List<String> buildHintLadder({
     stages.add('Similar word you know: ${similarKnownWord.trim()}');
   }
   stages.add('Starts with:  ${target[0]}${'·' * (n - 1)}');
-  stages.add('Meaning:  $meaningTh');
+  if (includeMeaning) stages.add('Meaning:  $meaningTh');
   if (n > 1) {
-    stages.add(
-      'First & last:  ${target[0]}${'·' * (n - 2)}${target[n - 1]}',
-    );
+    stages.add('First & last:  ${target[0]}${'·' * (n - 2)}${target[n - 1]}');
   }
   return stages;
 }
