@@ -1,0 +1,20 @@
+{
+  "name": "Esh",
+  "identifier": "com.pimdej.esh-source",
+  "apps": [
+    {
+      "name": "Esh",
+      "bundleIdentifier": "com.pimdej.vocabApp",
+      "developerName": "pimdejvani",
+      "subtitle": "Offline English/Thai vocabulary trainer",
+      "localizedDescription": "Spaced-repetition vocabulary practice built on FSRS. Works fully offline.",
+      "iconURL": "https://raw.githubusercontent.com/pimdejvani/Esh_Learner/master/vocab_app/assets/icon/esh_logo.png",
+      "tintColor": "49ADFF",
+      "version": "1.0.1",
+      "versionDate": "2026-08-15",
+      "versionDescription": "Automated build.",
+      "downloadURL": "https://github.com/pimdejvani/Esh_Learner/releases/download/build-1/Esh.ipa",
+      "size": 8407270
+    }
+  ]
+}
