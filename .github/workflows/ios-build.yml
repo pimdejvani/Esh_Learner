@@ -1,0 +1,147 @@
+# Builds an unsigned Esh IPA on GitHub's macOS runners and publishes it as a
+# GitHub Release, plus a SideStore source manifest so the phone can install and
+# auto-update it. There is no Mac and no paid Apple Developer account in this
+# loop: the IPA ships unsigned and SideStore re-signs it on-device with a free
+# Apple ID.
+name: iOS build
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/ios-build.yml'
+      - 'vocab_app/**'
+      - '!vocab_app/**/*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write # publish the Release and push apps.json back
+
+concurrency:
+  group: ios-build-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: 3.44.4
+
+jobs:
+  flutter-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: vocab_app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+
+  build-ios:
+    needs: flutter-tests
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: vocab_app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+
+      # The version is the CI run number rather than pubspec's, so every push
+      # produces a strictly higher version and SideStore sees an update without
+      # anyone bumping a file by hand.
+      - name: Build unsigned .app
+        run: |
+          flutter build ios --release --no-codesign \
+            --build-name=1.0.${{ github.run_number }} \
+            --build-number=${{ github.run_number }}
+
+      # No signing identity means `xcodebuild -exportArchive` cannot run, so the
+      # IPA is assembled by hand. An IPA is just a zip with the .app inside a
+      # Payload/ directory.
+      - name: Package IPA
+        run: |
+          cd build/ios/iphoneos
+          rm -rf Payload Esh.ipa
+          mkdir -p Payload
+          cp -R Runner.app Payload/
+          zip -qr6 Esh.ipa Payload
+          ls -lh Esh.ipa
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: esh-ipa
+          path: vocab_app/build/ios/iphoneos/Esh.ipa
+          retention-days: 7
+
+  publish:
+    needs: build-ios
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: esh-ipa
+          path: dist
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "build-${{ github.run_number }}" dist/Esh.ipa \
+            --title "Esh 1.0.${{ github.run_number }}" \
+            --notes "Automated build from ${{ github.sha }}."
+
+      # SideStore polls this file. It must stay on a public raw.githubusercontent
+      # URL, which is why this repo is public.
+      - name: Regenerate SideStore source
+        run: |
+          REPO="${{ github.repository }}"
+          RUN="${{ github.run_number }}"
+          jq -n \
+            --arg version "1.0.$RUN" \
+            --arg date "$(date -u +%Y-%m-%d)" \
+            --arg url "https://github.com/$REPO/releases/download/build-$RUN/Esh.ipa" \
+            --arg icon "https://raw.githubusercontent.com/$REPO/master/vocab_app/assets/icon/esh_logo.png" \
+            --argjson size "$(stat -c%s dist/Esh.ipa)" \
+            '{
+              name: "Esh",
+              identifier: "com.pimdej.esh-source",
+              apps: [{
+                name: "Esh",
+                bundleIdentifier: "com.pimdej.vocabApp",
+                developerName: "pimdejvani",
+                subtitle: "Offline English/Thai vocabulary trainer",
+                localizedDescription: "Spaced-repetition vocabulary practice built on FSRS. Works fully offline.",
+                iconURL: $icon,
+                tintColor: "49ADFF",
+                version: $version,
+                versionDate: $date,
+                versionDescription: "Automated build.",
+                downloadURL: $url,
+                size: $size
+              }]
+            }' > apps.json
+          cat apps.json
+
+      - name: Commit apps.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps.json
+          if git diff --cached --quiet; then
+            echo "apps.json unchanged"
+          else
+            git commit -m "Update SideStore source to build ${{ github.run_number }} [skip ci]"
+            git push
+          fi
