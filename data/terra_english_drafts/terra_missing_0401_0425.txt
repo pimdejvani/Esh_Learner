@@ -1,0 +1,150 @@
+@ aggressive
+1	61489	adj	aggressive	1	The aggressive dog barked and lunged at the fence when we walked past.
+2	61489	adj	aggressive	0	Someone ready to attack or argue is aggressive.
+3	61489	adj	aggressive	0	His aggressive tone made the discussion unpleasant.
+4	61489	adj	aggressive	0	The coach stopped the aggressive player from pushing others.
+5	61489	adj	aggressive	0	An aggressive response can make a small problem worse.
+@ aid
+1	61534	noun	aid	1	First aid from a passerby helped the cyclist until the ambulance arrived.
+2	61534	noun	aid	0	Help given to someone in need is aid.
+3	61534	noun	aid	0	The village received aid after the flood.
+4	61534	noun	aid	0	Her teacher offered extra aid with the project.
+5	61534	noun	aid	0	Food aid reached families in the remote area.
+@ aircraft
+1	61532	noun	aircraft	1	The small aircraft flew low over the field before landing.
+2	61532	noun	aircraft	0	A vehicle that can fly through the air is an aircraft.
+3	61532	noun	aircraft	0	The airport tracks every aircraft in the sky.
+4	61532	noun	aircraft	0	An aircraft carried supplies to the island.
+5	61532	noun	aircraft	0	We watched the aircraft disappear into the clouds.
+@ alter
+1	61544	verb	altered	1	The tailor altered my jacket so the sleeves fit properly.
+2	61544	verb	alter	0	To change the form of something is to alter it.
+3	61544	verb	alter	0	You can alter the photo by making it brighter.
+4	61544	verb	alter	0	Do not alter the document after signing it.
+5	61544	verb	alter	0	Heat can alter the shape of plastic.
+@ anger
+1	61562	noun	anger	1	Anger rose in him when someone blamed his sister for the broken window.
+2	61562	noun	anger	0	A strong feeling of hostility is anger.
+3	61562	noun	anger	0	She took a walk to calm her anger.
+4	61562	noun	anger	0	His anger showed in the way he slammed the door.
+5	61562	noun	anger	0	The unfair decision caused anger among the workers.
+@ angle
+1	61570	noun	angle	1	The two roads met at an angle near the old church.
+2	61570	noun	angle	0	A shape made when two lines meet is an angle.
+3	61570	noun	angle	0	Draw a right angle in the corner of the page.
+4	61570	noun	angle	0	The roof has a steep angle to let rain run off.
+5	61570	noun	angle	0	Measure the angle between the two sides of the triangle.
+@ anniversary
+1	61551	noun	anniversary	1	They returned to the same little restaurant on their tenth anniversary.
+2	61551	noun	anniversary	0	The date marking a number of years since an event is an anniversary.
+3	61551	noun	anniversary	0	We celebrated the anniversary of the school opening.
+4	61551	noun	anniversary	0	Their wedding anniversary is next Saturday.
+5	61551	noun	anniversary	0	The town held a concert for its hundredth anniversary.
+@ annual
+1	61554	adj	annual	1	The annual school fair filled the playground with games and food stalls.
+2	61554	adj	annual	0	An event that happens every year is annual.
+3	61554	adj	annual	0	We attend the annual family reunion in July.
+4	61554	adj	annual	0	The museum publishes an annual report.
+5	61554	adj	annual	0	The annual race raises money for the hospital.
+@ anxious
+1	61566	adj	anxious	1	I felt anxious while waiting for the doctor to call with the test results.
+2	61566	adj	anxious	0	Someone who is worried and nervous is anxious.
+3	61566	adj	anxious	0	She grew anxious when her brother was late.
+4	61566	adj	anxious	0	The anxious parents waited outside the exam room.
+5	61566	adj	anxious	0	He was anxious about starting a new job.
+@ apparent
+1	61588	adj	apparent	1	The crack in the glass became apparent when sunlight hit the window.
+2	61588	adj	apparent	0	Something easy to see is apparent.
+3	61588	adj	apparent	0	It was apparent that the road was closed.
+4	61588	adj	apparent	0	Her disappointment was apparent on her face.
+5	61588	adj	apparent	0	The difference between the two colors is apparent in daylight.
+@ apparently
+1	61591	adv	apparently	1	Apparently, the lights were left on all night because the switch was broken.
+2	61591	adv	apparently	0	If something is clearly true, it is apparently true.
+3	61591	adv	apparently	0	Apparently, the shop closes early on Sundays.
+4	61591	adv	apparently	0	The train was apparently delayed by snow.
+5	61591	adv	apparently	0	Apparently, no one saw the lost wallet.
+@ appeal
+1	61595	noun	appeal	1	The lawyer filed an appeal after the judge's decision went against her client.
+2	61595	noun	appeal	0	A request for a higher court to review a decision is an appeal.
+3	61595	noun	appeal	0	The court will hear the appeal next month.
+4	61595	noun	appeal	0	He made an appeal against the earlier ruling.
+5	61595	noun	appeal	0	The lawyer explained the appeal to her client.
+@ approach
+1	61634	verb	approached	1	As we approached the cabin, a warm light appeared in the window.
+2	61634	verb	approach	0	To move nearer to something is to approach it.
+3	61634	verb	approach	0	Do not approach the wild deer.
+4	61634	verb	approach	0	The train will approach the platform slowly.
+5	61634	verb	approach	0	Winter begins to approach after the leaves fall.
+@ appropriate
+1	61618	verb	appropriate	1	The manager tried to appropriate the team's idea as his own.
+2	61618	verb	appropriate	0	To take something for your own use is to appropriate it.
+3	61618	verb	appropriated	0	The thief appropriated money from the charity fund.
+4	61618	verb	appropriate	0	It is wrong to appropriate someone else's work.
+5	61618	verb	appropriate	0	The official was accused of trying to appropriate public land.
+@ approval
+1	61627	noun	approval	1	The architect waited for city approval before starting construction.
+2	61627	noun	approval	0	Official permission or agreement is approval.
+3	61627	noun	approval	0	The plan needs the principal's approval.
+4	61627	noun	approval	0	We cannot begin without approval from the manager.
+5	61627	noun	approval	0	Her request received approval the next day.
+@ approve
+1	61668	verb	approved	1	The council approved the plan to build a new playground.
+2	61668	verb	approve	0	To officially accept a plan is to approve it.
+3	61668	verb	approve	0	The manager will approve your vacation request.
+4	61668	verb	approve	0	The school must approve the trip before we go.
+5	61668	verb	approve	0	They voted to approve the new rules.
+@ arise
+1	61655	verb	arose	1	A pale moon arose above the hills as the sun disappeared.
+2	61655	verb	arise	0	To move up from a lower position is to arise.
+3	61655	verb	arise	0	Steam can arise from a pot of hot soup.
+4	61655	verb	arise	0	The sun will arise early tomorrow.
+5	61655	verb	arise	0	Smoke began to arise from the chimney.
+@ armed
+1	61659	adj	armed	1	The armed guard stood at the entrance with a rifle.
+2	61659	adj	armed	0	Someone carrying a weapon is armed.
+3	61659	adj	armed	0	Armed officers guarded the building.
+4	61659	adj	armed	0	The report said the suspect was armed.
+5	61659	adj	armed	0	An armed soldier checked every vehicle.
+@ arms
+1	61630	noun	arms	1	The soldiers locked their arms in a secure room after training.
+2	61630	noun	arms	0	Weapons used for fighting are arms.
+3	61630	noun	arms	0	The guards carried arms during the patrol.
+4	61630	noun	arms	0	The country reduced its stock of arms.
+5	61630	noun	arms	0	Police collected illegal arms from the building.
+@ artificial
+1	61674	adj	artificial	1	The artificial flowers looked real from across the room.
+2	61674	adj	artificial	0	Something made by people rather than nature is artificial.
+3	61674	adj	artificial	0	The field has artificial grass instead of real grass.
+4	61674	adj	artificial	0	She bought an artificial tree for the holiday.
+5	61674	adj	artificial	0	The pond is artificial and was built last year.
+@ artistic
+1	61681	adj	artistic	1	His artistic skill turned a plain wall into a colorful mural.
+2	61681	adj	artistic	0	Someone showing creative skill is artistic.
+3	61681	adj	artistic	0	She has an artistic eye for color.
+4	61681	adj	artistic	0	The school displayed students' artistic work.
+5	61681	adj	artistic	0	Their artistic design made the poster stand out.
+@ ashamed
+1	61679	adj	ashamed	1	I felt ashamed after laughing at a classmate's mistake.
+2	61679	adj	ashamed	0	Someone who feels guilty about doing wrong is ashamed.
+3	61679	adj	ashamed	0	He was ashamed of the lie he told.
+4	61679	adj	ashamed	0	She looked ashamed when the teacher found the note.
+5	61679	adj	ashamed	0	They were ashamed to admit they had broken the vase.
+@ aspect
+1	61689	noun	aspect	1	Safety was the most important aspect of planning the mountain trip.
+2	61689	noun	aspect	0	One particular part of something is an aspect.
+3	61689	noun	aspect	0	We considered every aspect of the problem.
+4	61689	noun	aspect	0	The cost is one aspect of choosing a new car.
+5	61689	noun	aspect	0	She enjoys the creative aspect of her job.
+@ assess
+1	61706	verb	assessed	1	The mechanic assessed the damage before giving us a price.
+2	61706	verb	assess	0	To judge the value or condition of something is to assess it.
+3	61706	verb	assess	0	Teachers assess students' work at the end of the term.
+4	61706	verb	assess	0	The doctor will assess your injury.
+5	61706	verb	assess	0	We need to assess the risks before we begin.
+@ assessment
+1	61709	noun	assessment	1	The teacher's assessment showed which students needed extra help.
+2	61709	noun	assessment	0	A careful judgment of something is an assessment.
+3	61709	noun	assessment	0	The bank completed an assessment of the house's value.
+4	61709	noun	assessment	0	Her assessment of the situation was accurate.
+5	61709	noun	assessment	0	The doctor made an assessment before suggesting treatment.

@@ -1,0 +1,150 @@
+@ spending
+1	59996	noun	spending	1	The family reduced its spending after moving to a smaller home.
+2	59995	noun	spending	0	Government spending on schools increased this year.
+3	59996	noun	spending	0	Her spending on coffee was higher than she expected.
+4	59995	noun	spending	0	Careful spending can help you save money.
+5	59996	noun	spending	0	The budget limits spending on unnecessary items.
+@ spirit
+1	60094	noun	spirit	1	The team's spirit stayed high even after a difficult loss.
+2	60092	noun	spirit	0	Some people believe a spirit lives in the old house.
+3	60093	noun	spirit	0	She spoke with great spirit about her project.
+4	60097	noun	spirit	0	Follow the spirit of the rule, not just its words.
+5	60098	noun	spirits	0	The bar sells wine, beer, and other spirits.
+@ spoken
+1	60069	adj	spoken	1	The spoken instructions were easy to follow.
+2	60071	adj	spoken	0	Spanish is a widely spoken language.
+3	60069	adj	spoken	0	We received a spoken warning from the guard.
+4	60070	adj	spoken	0	She is softly spoken but very confident.
+5	60069	adj	spoken	0	The agreement was spoken, not written down.
+@ spot
+1	60120	noun	spot	1	We found a quiet spot beside the river for lunch.
+2	60114	noun	spot	0	There is a dark spot on your shirt.
+3	60116	noun	spot	0	He has a spot on his chin.
+4	60121	noun	spot	0	That empty space is my parking spot.
+5	60120	noun	spots	0	The guide showed us the best spots to see birds.
+@ spread
+1	60184	verb	spread	1	Spread butter on the bread before adding cheese.
+2	60180	verb	spread	0	The news spread quickly through the school.
+3	60177	verb	spread	0	Spread the map across the table so we can see it.
+4	60179	verb	spread	0	The workers spread sand over the icy path.
+5	60181	verb	spreading	0	She is spreading the message about the charity event.
+@ stadium
+1	60108	noun	stadium	1	Thousands of fans filled the stadium for the final match.
+2	60108	noun	stadium	0	The concert will take place in the city stadium.
+3	60108	noun	stadium	0	We parked near the stadium before the game.
+4	60108	noun	stadiums	0	Modern stadiums often have large screens for fans.
+5	60108	noun	stadium	0	The runners entered the stadium to loud applause.
+@ staff
+1	60165	noun	staff	1	The hotel staff helped us carry our bags upstairs.
+2	60165	noun	staff	0	All staff must wear an identification badge.
+3	60163	noun	staff	0	The hiker used a wooden staff for support.
+4	60165	noun	staff	0	The manager thanked the staff for working late.
+5	60175	verb	staffed	0	The clinic is staffed by experienced nurses.
+@ standard
+1	60239	adj	standard	1	This phone has a standard charging cable.
+2	60239	adj	standard	0	The room has a standard double bed.
+3	60241	adj	standard	0	Her work is of a high standard.
+4	60242	adj	standard	0	The food was standard but not memorable.
+5	60244	adj	standard	0	Breakfast is included as standard with every room.
+@ statistic
+1	60156	adj	statistic	1	The report includes statistic information about local jobs.
+2	60156	adj	statistic	0	We used a statistic method to compare the results.
+3	60156	adj	statistic	0	The statistic data came from a large survey.
+4	60156	adj	statistic	0	She learned statistic techniques in her research class.
+5	60156	adj	statistic	0	A statistic analysis can reveal useful patterns.
+@ statue
+1	60214	noun	statue	1	A bronze statue stands in the middle of the town square.
+2	60214	noun	statue	0	The museum displayed a statue of an ancient king.
+3	60214	noun	statue	0	Birds often sit on the statue in the park.
+4	60214	noun	statues	0	The garden is decorated with small stone statues.
+5	60214	noun	statue	0	We took a photo beside the famous statue.
+@ stranger
+1	60217	adj	stranger	1	This street feels stranger at night than it does by day.
+2	60217	adj	stranger	0	The story became stranger with every new detail.
+3	60217	adj	stranger	0	Her excuse sounded stranger than the truth.
+4	60217	adj	stranger	0	The weather grew stranger as the storm approached.
+5	60217	adj	stranger	0	Nothing could be stranger than that dream.
+@ strength
+1	60231	noun	strength	1	Carrying the suitcase upstairs took all my strength.
+2	60231	noun	strength	0	Regular exercise builds strength in your legs.
+3	60233	noun	strengths	0	Patience is one of her greatest strengths.
+4	60232	noun	strength	0	The strength of the wind knocked over a sign.
+5	60231	noun	strength	0	He slowly recovered his strength after the illness.
+@ string
+1	60272	noun	string	1	Tie the package with a piece of string.
+2	60272	noun	string	0	The child made a necklace with beads and string.
+3	60282	noun	string	0	One broken string changed the sound of the guitar.
+4	60291	noun	string	0	A string of lights brightened the balcony.
+5	60272	noun	strings	0	She used colorful strings to decorate the gift.
+@ strongly
+1	60229	adv	strongly	1	I strongly recommend taking an umbrella today.
+2	60228	adv	strongly	0	The coffee smelled strongly of cinnamon.
+3	60229	adv	strongly	0	She strongly disagrees with the decision.
+4	60228	adv	strongly	0	The wind was blowing strongly from the north.
+5	60229	adv	strongly	0	He strongly believes that practice leads to progress.
+@ studio
+1	60421	noun	studio	1	The band recorded its new song in a studio downtown.
+2	60419	noun	studio	0	The painter works alone in her bright studio.
+3	60421	noun	studio	0	The news studio was busy before the evening broadcast.
+4	60423	noun	studio	0	They rented a studio apartment near the station.
+5	60422	noun	studio	0	The studio released the film last summer.
+@ stuff
+1	60430	noun	stuff	1	Please put your stuff away before dinner.
+2	60432	noun	stuff	0	What is all this stuff on the floor?
+3	60444	verb	stuffed	0	She stuffed clothes into her suitcase.
+4	60433	noun	stuff	0	The box was made from strong stuff.
+5	60441	noun	stuff	0	Do not believe that silly stuff online.
+@ substance
+1	60461	noun	substance	1	Water is a substance made from hydrogen and oxygen.
+2	60460	noun	substance	0	The scientist tested the unknown substance in the lab.
+3	60462	noun	substance	0	The summary gives the substance of the long report.
+4	60461	noun	substances	0	Some substances dissolve easily in water.
+5	60460	noun	substance	0	Keep this dangerous substance away from children.
+@ successfully
+1	60424	adv	successfully	1	She successfully completed the course while working full-time.
+2	60424	adv	successfully	0	The firefighters successfully rescued the trapped cat.
+3	60424	adv	successfully	0	He successfully fixed the computer without help.
+4	60424	adv	successfully	0	The team successfully reached the top of the mountain.
+5	60424	adv	successfully	0	We successfully found the address using the map.
+@ sudden
+1	60425	adj	sudden	1	A sudden clap of thunder made the baby cry.
+2	60425	adj	sudden	0	The sudden rain forced us indoors.
+3	60425	adj	sudden	0	She felt a sudden pain in her ankle.
+4	60425	adj	sudden	0	His sudden change of plans surprised everyone.
+5	60425	adj	sudden	0	There was a sudden drop in temperature overnight.
+@ suffer
+1	60476	verb	suffered	1	He suffered a painful injury during the game.
+2	60475	verb	suffer	0	Many people suffer when food is too expensive.
+3	60476	verb	suffering	0	She is suffering from a bad headache.
+4	60477	verb	suffered	0	The plants suffered because they had no water.
+5	60478	verb	suffer	0	We all suffer losses at some point in life.
+@ suitable
+1	60470	adj	suitable	1	These boots are suitable for walking in the rain.
+2	60470	adj	suitable	0	Choose clothing suitable for the weather.
+3	60470	adj	suitable	0	The film is not suitable for young children.
+4	60470	adj	suitable	0	This room is suitable for a small meeting.
+5	60470	adj	suitable	0	She found a suitable gift for her aunt.
+@ summarize
+1	60468	verb	summarize	1	Please summarize the article in three short sentences.
+2	60468	verb	summarize	0	Can you summarize the main points of the meeting?
+3	60468	verb	summarized	0	He summarized the book for the class.
+4	60469	verb	summarizing	0	She is summarizing the results in her final paragraph.
+5	60468	verb	summarizes	0	This chart summarizes our monthly sales.
+@ summary
+1	60471	adj	summary	1	We received a summary report after the meeting.
+2	60471	adj	summary	0	The teacher gave a summary explanation of the lesson.
+3	60471	adj	summary	0	Read the summary page before the full report.
+4	60471	adj	summary	0	His summary notes helped us review quickly.
+5	60471	adj	summary	0	The summary table shows the key results.
+@ supply
+1	60489	verb	supply	1	The shop can supply fresh bread every morning.
+2	60489	verb	supply	0	Local farms supply vegetables to the market.
+3	60490	verb	supplied	0	The school supplied each student with a laptop.
+4	60491	verb	supply	0	These tanks supply water to the village.
+5	60489	verb	supplying	0	The company is supplying masks to hospitals.
+@ supporter
+1	60483	noun	supporter	1	As a lifelong supporter, he never misses a home game.
+2	60480	noun	supporter	0	She is a strong supporter of the new library.
+3	60481	noun	supporter	0	Every supporter of the campaign received a badge.
+4	60483	noun	supporters	0	Supporters cheered loudly after the goal.
+5	60480	noun	supporter	0	The charity thanked each supporter personally.

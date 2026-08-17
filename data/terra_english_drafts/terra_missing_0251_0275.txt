@@ -1,0 +1,150 @@
+@ sexual
+1	59466	adj	sexual	1	The course discusses sexual health in an age-appropriate way.
+2	59466	adj	sexual	0	The law protects people from sexual discrimination.
+3	59468	adj	sexual	0	The clinic provides advice about sexual health.
+4	59466	adj	sexual	0	They studied sexual differences in animal behavior.
+5	59470	adj	sexual	0	The article examines sexual attitudes in modern society.
+@ sharp
+1	59658	adj	sharp	1	Be careful: this knife is sharp enough to cut bread easily.
+2	59659	adj	sharp	0	She is a sharp student who notices small mistakes.
+3	59663	adj	sharp	0	He felt a sharp pain in his knee.
+4	59666	adj	sharp	0	Please arrive at nine o'clock sharp.
+5	59658	adj	sharp	0	The thorn had a sharp point.
+@ shelf
+1	59475	noun	shelf	1	I put the heavy books on the bottom shelf.
+2	59475	noun	shelf	0	The jar is on the highest shelf in the cupboard.
+3	59475	noun	shelves	0	The shop has shelves full of fresh fruit.
+4	59476	noun	shelf	0	There is no shelf space left for more boxes.
+5	59475	noun	shelf	0	Please return the game to its shelf after playing.
+@ shell
+1	59713	noun	shell	1	The chick broke through its shell at sunrise.
+2	59708	noun	shell	0	We found a pink shell on the beach.
+3	59716	noun	shell	0	Crack the hard shell before eating the nut.
+4	59714	noun	shell	0	Remove the dry shell from the onion.
+5	59748	verb	shelled	0	He shelled the peas into a bowl.
+@ shift
+1	59602	noun	shift	1	My mother works the night shift at the hospital.
+2	59602	noun	shift	0	The morning shift begins at seven o'clock.
+3	59598	noun	shift	0	There was a sudden shift in the wind.
+4	59603	noun	shift	0	The car needs a smooth gear shift.
+5	59602	noun	shifts	0	The factory runs two shifts every day.
+@ shiny
+1	59481	adj	shiny	1	The child found a shiny coin under the sofa.
+2	59481	adj	shiny	0	Her shoes were shiny after she polished them.
+3	59482	adj	shiny	0	A shiny star appeared in the dark sky.
+4	59481	adj	shinier	0	This new table is shinier than the old one.
+5	59481	adj	shiny	0	The shiny floor reflected the ceiling lights.
+@ shoot
+1	59791	verb	shoot	1	The photographer will shoot the wedding in the garden.
+2	59790	verb	shoot	0	He can shoot the ball into the goal from far away.
+3	59802	verb	shooting	0	They are shooting a film at the old station.
+4	59823	verb	shoots	0	New green shoots appear on the plant in spring.
+5	59794	verb	shoot	0	Never shoot a gun without checking the target.
+@ shy
+1	59758	adj	shy	1	The shy child spoke quietly to her new teacher.
+2	59758	adj	shy	0	He is too shy to sing in front of the class.
+3	59757	adj	shy	0	The shy cat hid when visitors arrived.
+4	59758	adj	shyer	0	Mia is shyer than her outgoing sister.
+5	59758	adj	shy	0	She gave a shy smile and looked down.
+@ sight
+1	59776	noun	sight	1	The sight of the sea after the long drive made us happy.
+2	59774	noun	sight	0	His sight improved after he got new glasses.
+3	59777	noun	sight	0	The old castle is a beautiful sight at night.
+4	59775	noun	sight	0	The boat disappeared from sight behind the island.
+5	59776	noun	sights	0	We saw many famous sights during our visit.
+@ signal
+1	59854	noun	signal	1	The traffic light gave a green signal to cross the road.
+2	59854	noun	signal	0	Raise your hand as a signal that you need help.
+3	59855	noun	signal	0	The train stopped when the signal turned red.
+4	59859	noun	signal	0	His yawn was a signal that he was tired.
+5	59854	noun	signals	0	The referee uses hand signals during the game.
+@ silent
+1	59866	adj	silent	1	The room became silent when the principal entered.
+2	59867	adj	silent	0	He stayed silent during the argument.
+3	59871	adj	silent	0	Please put your phone on silent during the film.
+4	59866	adj	silent	0	The forest was silent after the birds flew away.
+5	59867	adj	silent	0	She was silent because she did not know the answer.
+@ silly
+1	59880	adj	silly	1	We laughed at the silly hat he wore to the party.
+2	59880	adj	silly	0	It was silly to leave your keys in the car.
+3	59897	adj	silly	0	Do not make a silly decision when you are angry.
+4	59880	adj	sillier	0	That joke is even sillier than the first one.
+5	59880	adj	silly	0	The puppy made a silly face in the photo.
+@ similarity
+1	59848	noun	similarity	1	The similarity between the twins was easy to see.
+2	59849	noun	similarity	0	There is a strong similarity between these two designs.
+3	59848	noun	similarity	0	Their similarity in voice confused the caller.
+4	59849	noun	similarities	0	The teacher asked us to find similarities in the pictures.
+5	59848	noun	similarity	0	The similarity of the names caused a mistake.
+@ similarly
+1	59788	adv	similarly	1	My sister likes hiking, and I feel similarly.
+2	59788	adv	similarly	0	The two machines work similarly but use different parts.
+3	59789	adv	similarly	0	Tom chose tea; similarly, Ana ordered tea.
+4	59788	adv	similarly	0	Both children were dressed similarly for the show.
+5	59788	adv	similarly	0	The new model is similarly priced to the old one.
+@ simply
+1	59908	adv	simply	1	I simply forgot to set my alarm last night.
+2	59905	adv	simply	0	Explain the rule simply so everyone understands it.
+3	59909	adv	simply	0	The view from the hill was simply beautiful.
+4	59908	adv	simply	0	This is simply the best option we have.
+5	59910	adv	simply	0	Simply put, we need more time.
+@ sink
+1	59940	verb	sank	1	The small boat sank after water filled the bottom.
+2	59940	verb	sink	0	A stone will sink if you drop it in deep water.
+3	59957	noun	sink	0	Wash the dishes in the kitchen sink.
+4	59945	verb	sinking	0	My heart was sinking as I waited for the results.
+5	59942	verb	sink	0	Sink the post deep into the ground for support.
+@ slice
+1	59914	noun	slice	1	She put a slice of lemon in her glass of water.
+2	59914	noun	slice	0	Would you like a slice of bread with your soup?
+3	59916	noun	slice	0	He ordered one large slice of pizza.
+4	59930	verb	sliced	0	She sliced the tomato for the sandwich.
+5	59914	noun	slices	0	Arrange the apple slices on a plate.
+@ slightly
+1	59912	adv	slightly	1	The soup was slightly too salty for me.
+2	59912	adv	slightly	0	Turn the music slightly lower, please.
+3	59912	adv	slightly	0	Her train arrived slightly later than usual.
+4	59912	adv	slightly	0	The road rises slightly after the bridge.
+5	59912	adv	slightly	0	He looked slightly worried before the interview.
+@ smart
+1	59974	verb	smarted	1	My eyes smarted after smoke blew into my face.
+2	59974	verb	smart	0	This cut will smart when you wash it.
+3	59975	verb	smarted	0	The strong soap smarted on her dry hands.
+4	59976	verb	smarting	0	His bruised arm is still smarting.
+5	59974	verb	smart	0	The scratch may smart for a minute.
+@ smooth
+1	60008	adj	smooth	1	The stone felt smooth after years in the river.
+2	60009	adj	smooth	0	The trip was smooth because the roads were clear.
+3	60008	adj	smooth	0	Use smooth paper for this kind of drawing.
+4	60011	adj	smooth	0	She gave a smooth presentation without stopping.
+5	60017	adj	smooth	0	Stir the sauce until it is smooth.
+@ software
+1	59998	noun	software	1	Install the software before connecting the new printer.
+2	59998	noun	software	0	The software needs an update to fix the error.
+3	59998	noun	software	0	This software helps students learn vocabulary.
+4	59998	noun	software	0	The engineer tested the software carefully.
+5	59998	noun	software	0	You can download the software from the company's website.
+@ soil
+1	60073	noun	soil	1	The gardener added compost to the soil before planting seeds.
+2	60073	noun	soil	0	Rich soil helps vegetables grow well.
+3	60081	verb	soiled	0	The muddy path soiled his white shoes.
+4	60074	noun	soil	0	The roots spread through the soil under the tree.
+5	60073	noun	soil	0	Dry soil needs water before you plant flowers.
+@ solid
+1	60035	adj	solid	1	Ice is solid water, unlike liquid water in a glass.
+2	60038	adj	solid	0	The bridge is solid enough to carry heavy trucks.
+3	60040	adj	solid	0	She gave a solid performance in the interview.
+4	60036	adj	solid	0	He earned a solid amount of money from the job.
+5	60035	adj	solid	0	The statue is carved from one solid piece of wood.
+@ southern
+1	60002	adj	southern	1	We drove through the southern part of the country.
+2	60002	adj	southern	0	The hotel is on the southern edge of the island.
+3	60003	adj	southern	0	Southern cities are often warmer in winter.
+4	60004	adj	southern	0	A southern wind brought warm air from the coast.
+5	60002	adj	southern	0	The southern entrance is closed after dark.
+@ specifically
+1	60006	adv	specifically	1	The teacher specifically asked us to check our spelling.
+2	60007	adv	specifically	0	This bag was designed specifically for carrying laptops.
+3	60006	adv	specifically	0	Which topic do you specifically want to discuss?
+4	60007	adv	specifically	0	She trained specifically for the long-distance race.
+5	60006	adv	specifically	0	The sign specifically says that parking is not allowed.

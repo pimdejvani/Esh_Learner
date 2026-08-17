@@ -1,0 +1,150 @@
+@ wonder
+1	61274	noun	wonder	1	The northern lights filled the children with wonder.
+2	61274	noun	wonder	0	A feeling of awe and curiosity is wonder.
+3	61274	noun	wonder	0	She looked at the huge whale in wonder.
+4	61274	noun	wonder	0	The tiny seed growing into a tree is a wonder of nature.
+5	61274	noun	wonder	0	We watched the magician's trick with wonder.
+@ wool
+1	61287	noun	wool	1	My grandmother knitted a warm wool scarf for winter.
+2	61287	noun	wool	0	The hair from sheep that is used for clothing is wool.
+3	61287	noun	wool	0	This sweater is made from soft wool.
+4	61287	noun	wool	0	The farmer sheared wool from the sheep in spring.
+5	61287	noun	wool	0	Wool keeps people warm even in cold weather.
+@ worldwide
+1	61285	adj	worldwide	1	The song became a worldwide hit within a month.
+2	61285	adj	worldwide	0	Something that reaches all parts of the world is worldwide.
+3	61285	adj	worldwide	0	The company has worldwide customers.
+4	61285	adj	worldwide	0	The news spread worldwide through social media.
+5	61285	adj	worldwide	0	Scientists joined a worldwide project to study the ocean.
+@ worth
+1	61342	adj	worth	1	This old coin is worth more than I expected.
+2	61342	adj	worth	0	If something can be exchanged for a certain value, it is worth that value.
+3	61342	adj	worth	0	The jacket is worth fifty dollars.
+4	61342	adj	worth	0	That painting may be worth a lot of money.
+5	61342	adj	worth	0	The damaged phone is not worth much now.
+@ written
+1	61338	adj	written	1	We received written instructions for the science experiment.
+2	61338	adj	written	0	Information expressed in writing is written.
+3	61338	adj	written	0	Please give your answer in written form.
+4	61338	adj	written	0	The school sent a written notice to every parent.
+5	61338	adj	written	0	A written agreement can prevent misunderstandings.
+@ yard
+1	61376	noun	yard	1	The children played football in the yard after school.
+2	61376	noun	yard	0	The outdoor area next to a house is a yard.
+3	61376	noun	yard	0	We planted tomatoes in the back yard.
+4	61376	noun	yard	0	The dog ran across the muddy yard.
+5	61376	noun	yard	0	Leaves covered the yard after the storm.
+@ youth
+1	61351	noun	youth	1	He spent his youth riding bicycles with friends in the neighborhood.
+2	61351	noun	youth	0	The state of being young is youth.
+3	61351	noun	youth	0	She enjoyed music throughout her youth.
+4	61351	noun	youth	0	The coach remembered his youth in a small town.
+5	61351	noun	youth	0	Good habits formed in youth can last a lifetime.
+@ abandon
+1	61367	verb	abandon	1	We had to abandon the picnic when the storm arrived.
+2	61367	verb	abandon	0	To leave something behind or give it up is to abandon it.
+3	61367	verb	abandoned	0	The crew abandoned the boat after it began to sink.
+4	61367	verb	abandoned	0	She abandoned her old plan and tried a new idea.
+5	61367	verb	abandon	0	Do not abandon your bicycle in front of the gate.
+@ absolute
+1	61399	adj	absolute	1	The rule gave the coach absolute control over the final choice.
+2	61399	adj	absolute	0	Something with no limits or conditions is absolute.
+3	61399	adj	absolute	0	The king once had absolute power over the country.
+4	61399	adj	absolute	0	We need absolute proof before making that claim.
+5	61399	adj	absolute	0	There is no absolute guarantee that the train will be on time.
+@ acceptable
+1	61356	adj	acceptable	1	Jeans are acceptable clothing for the school trip.
+2	61356	adj	acceptable	0	Something good enough to be approved is acceptable.
+3	61356	adj	acceptable	0	Your answer is acceptable, but it needs more detail.
+4	61356	adj	acceptable	0	The noise level is acceptable during the day.
+5	61356	adj	acceptable	0	This is an acceptable solution to the problem.
+@ accompany
+1	61359	verb	accompany	1	My father will accompany me to the dentist.
+2	61359	verb	accompany	0	To go somewhere with another person is to accompany them.
+3	61359	verb	accompanied	0	A guide accompanied the visitors through the museum.
+4	61359	verb	accompanied	0	Soft music accompanied the evening meal.
+5	61359	verb	accompany	0	Will you accompany us on the walk?
+@ accurate
+1	61429	adj	accurate	1	The map gave accurate directions to the campsite.
+2	61429	adj	accurate	0	Information that is correct and exact is accurate.
+3	61429	adj	accurate	0	Please make an accurate copy of the address.
+4	61429	adj	accurate	0	The clock is accurate to the second.
+5	61429	adj	accurate	0	Her accurate report helped us find the lost dog.
+@ accuse
+1	61439	verb	accuse	1	Do not accuse your brother before you know what happened.
+2	61439	verb	accuse	0	To say that someone did something wrong is to accuse them.
+3	61439	verb	accused	0	She accused him of taking her notebook.
+4	61439	verb	accused	0	The coach accused the player of breaking the rule.
+5	61439	verb	accuse	0	They should not accuse anyone without evidence.
+@ acknowledge
+1	61434	verb	acknowledged	1	Mia acknowledged that she had made a mistake.
+2	61434	verb	acknowledge	0	To admit that something is true is to acknowledge it.
+3	61434	verb	acknowledge	0	Please acknowledge receipt of this message.
+4	61434	verb	acknowledged	0	He acknowledged the problem and offered to fix it.
+5	61434	verb	acknowledge	0	The mayor will acknowledge the volunteers at the event.
+@ acquire
+1	61443	verb	acquire	1	She hopes to acquire a new skill by taking cooking classes.
+2	61443	verb	acquire	0	To get something is to acquire it.
+3	61443	verb	acquire	0	The museum wants to acquire the old painting.
+4	61443	verb	acquired	0	He acquired a bicycle with his saved money.
+5	61443	verb	acquire	0	Children acquire language by hearing people speak.
+@ actual
+1	61448	adj	actual	1	The actual work of repairing the roof began at dawn.
+2	61448	adj	actual	0	Something relating to a person's actions or deeds is actual.
+3	61448	adj	actual	0	The report described the actual tasks completed by the team.
+4	61448	adj	actual	0	Her actual work showed how carefully she planned.
+5	61448	adj	actual	0	The actual actions of the volunteers helped the family.
+@ adapt
+1	61458	verb	adapt	1	We had to adapt the recipe because we had no eggs.
+2	61458	verb	adapt	0	To change something so it fits a new use is to adapt it.
+3	61458	verb	adapt	0	The teacher will adapt the lesson for younger students.
+4	61458	verb	adapted	0	They adapted the game so everyone could play.
+5	61458	verb	adapt	0	Plants adapt to different amounts of sunlight.
+@ additional
+1	61456	adj	additional	1	We packed additional water for the long hike.
+2	61456	adj	additional	0	Something extra that is added is additional.
+3	61456	adj	additional	0	The teacher gave us additional time to finish.
+4	61456	adj	additional	0	There is an additional fee for a larger bag.
+5	61456	adj	additional	0	Please bring additional chairs for the guests.
+@ administration
+1	61482	noun	administration	1	The school administration announced a new lunch schedule.
+2	61482	noun	administration	0	The management of public or official affairs is administration.
+3	61482	noun	administration	0	The city administration repaired the damaged road.
+4	61482	noun	administration	0	She works in the administration of the hospital.
+5	61482	noun	administration	0	Good administration keeps a large office organized.
+@ adopt
+1	61463	verb	adopt	1	The family decided to adopt a child from another city.
+2	61463	verb	adopt	0	To choose a child as part of your family is to adopt them.
+3	61463	verb	adopt	0	They hope to adopt a puppy from the shelter.
+4	61463	verb	adopted	0	Her parents adopted her when she was a baby.
+5	61463	verb	adopt	0	The couple plans to adopt a child next year.
+@ advance
+1	61509	verb	advance	1	The company will advance her to a more responsible position.
+2	61509	verb	advance	0	To move someone to a better position is to advance them.
+3	61509	verb	advance	0	Hard work can advance your career.
+4	61509	verb	advanced	0	The manager advanced him after he led the project well.
+5	61509	verb	advance	0	The award may advance her chances of getting the job.
+@ affair
+1	61472	noun	affair	1	Planning the school fair was a complicated affair.
+2	61472	noun	affair	0	A matter of business or activity is an affair.
+3	61472	noun	affair	0	The meeting was an important public affair.
+4	61472	noun	affair	0	Managing the shop is a daily affair for her family.
+5	61472	noun	affair	0	The charity event was a successful affair.
+@ afterwards
+1	61481	adv	afterwards	1	We ate dinner and afterwards played a board game.
+2	61481	adv	afterwards	0	At a later time means afterwards.
+3	61481	adv	afterwards	0	She finished her homework and went outside afterwards.
+4	61481	adv	afterwards	0	The rain stopped; afterwards, we walked to the park.
+5	61481	adv	afterwards	0	Call me afterwards if you have questions.
+@ agency
+1	61496	noun	agency	1	The rescue agency acted quickly when the flood began.
+2	61496	noun	agency	0	The ability or power to act is agency.
+3	61496	noun	agency	0	The program gives students agency over their own projects.
+4	61496	noun	agency	0	Having agency means being able to make choices and act.
+5	61496	noun	agency	0	The coach encouraged agency by letting players choose their roles.
+@ agenda
+1	61502	noun	agenda	1	The teacher wrote the day's agenda on the board.
+2	61502	noun	agenda	0	A plan of topics to discuss is an agenda.
+3	61502	noun	agenda	0	The first item on the agenda was the budget.
+4	61502	noun	agenda	0	Please send the meeting agenda before noon.
+5	61502	noun	agenda	0	We finished every point on the agenda.

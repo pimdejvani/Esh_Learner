@@ -1,0 +1,90 @@
+@ enjoy
+1	32385	verb	enjoy	1	On the quiet beach, we learned to enjoy the sound of the waves without speaking.
+2	32385	verb	enjoy	0	After school, the children enjoy playing together in the park.
+3	32385	verb	enjoyed	0	We enjoyed the warm soup after our long walk.
+4	32385	verb	enjoys	0	She enjoys her new job at the library.
+5	32385	verb	enjoying	0	They are enjoying a quiet evening at home.
+@ exam
+1	32462	noun	exam	1	Before the exam, Arun took a deep breath and remembered how hard he had studied.
+2	32462	noun	exam	0	You must answer every question before the exam ends.
+3	32462	noun	exams	0	Our final exams begin next Monday.
+4	32462	noun	exam	0	She passed her science exam with a high score.
+5	32462	noun	exam	0	The teacher gave us an hour to finish the exam.
+@ example
+1	32466	noun	example	1	By returning the lost wallet, Leo set an example of honesty for the whole class.
+2	32465	noun	example	0	The teacher wrote an example on the board to explain the grammar rule.
+3	32464	noun	example	0	A whale is an example of a mammal that lives in the sea.
+4	32469	noun	examples	0	We solved three examples before trying the math exercise alone.
+5	32466	noun	example	0	Parents can set a good example by admitting their mistakes.
+@ explain
+1	32496	verb	explain	1	The nurse took time to explain the medicine so the child would not be afraid.
+2	32496	verb	explain	0	The diagram helps explain how rain forms.
+3	32497	verb	explained	0	Mina explained why she was late for class.
+4	32496	verb	explaining	0	The guide is explaining the map to the visitors.
+5	32496	verb	explains	0	This short video explains how to change a bicycle tire.
+@ front
+1	33539	noun	front	1	We sat at the front of the bus so we could see the mountain road.
+2	33540	noun	front	0	The front of the house has a bright blue door.
+3	33559	adj	front	0	Please leave the package by the front gate.
+4	33562	verb	fronts	0	Our hotel room fronts the sea.
+5	33563	verb	fronted	0	The cafe fronted a busy street.
+@ give
+1	33761	verb	give	1	Please give me a minute to catch my breath.
+2	33759	verb	give	0	I will give her a book for her birthday.
+3	33761	verb	gives	0	The teacher gives us homework every Friday.
+4	33758	verb	gave	0	He gave his old coat to a neighbor.
+5	33761	verb	giving	0	She is giving her brother some useful advice.
+@ guess
+1	34062	verb	guess	1	Can you guess what is inside the box?
+2	34063	verb	guessed	0	Nina guessed the right answer without seeing the clues.
+3	34067	noun	guess	0	My guess is that the late bus will arrive soon.
+4	34062	verb	guessing	0	Stop guessing and read the instructions carefully.
+5	34062	verb	guesses	0	He guesses each word from the picture beside it.
+@ hat
+1	34211	noun	hat	1	My red hat flew away in the wind.
+2	34211	noun	hat	0	Please wear a hat to protect your face from the hot sun.
+3	34211	noun	hats	0	The children placed their hats on the table.
+4	34212	noun	hats	0	As a teacher and a coach, she wears many hats at school.
+5	34211	noun	hat	0	The magician pulled a white rabbit from his hat.
+@ i
+1	34737	noun	i	1	Mia smiled when she wrote the letter i correctly for the first time.
+2	34737	noun	i	0	The name Mia contains one i.
+3	34737	noun	i	0	Please write a lowercase i beside the capital letter.
+4	34737	noun	i	0	A small i usually has a dot above it.
+5	34737	noun	i	0	Circle every i in the title.
+@ important
+1	34790	adj	important	1	An important phone call brought the family the good news they had hoped for.
+2	34790	adj	important	0	A passport is an important document for international travel.
+3	34790	adj	important	0	Clean water plays an important role in keeping people healthy.
+4	34790	adj	more important	0	For this hike, water is more important than extra clothes.
+5	34790	adj	most important	0	Safety is the most important rule in the science lab.
+@ include
+1	34847	verb	include	1	Please include your phone number so we can tell you that your lost dog is safe.
+2	34848	verb	includes	0	The hotel price includes breakfast and airport transport.
+3	34848	verb	included	0	All taxes were included in the final price.
+4	34847	verb	including	0	We are including two vegetarian dishes on the new menu.
+5	34847	verb	include	0	The coach will include Maya in the team for Saturday's game.
+@ introduce
+1	34917	verb	introduce	1	Let me introduce my friend Anna, who helped me find my lost bag.
+2	34918	verb	introduced	0	The host introduced the first speaker to the audience.
+3	34919	verb	introduces	0	This pipe introduces fresh air into the room.
+4	34917	verb	introduced	0	Our teacher introduced us to the new student.
+5	34920	verb	introducing	0	The school is introducing a new lunch system next month.
+@ job
+1	34980	noun	job	1	My mother celebrated when she got the new job she had wanted for months.
+2	34979	noun	job	0	Washing the dishes is my job tonight.
+3	34980	noun	jobs	0	The new factory will create fifty jobs in the town.
+4	34980	noun	job	0	He found a summer job at the local cafe.
+5	34979	noun	job	0	You did a good job cleaning the classroom.
+@ make
+1	35974	verb	make	1	We can make a paper boat and sail it across the pond.
+2	35979	verb	makes	0	My dad makes vegetable soup every Sunday.
+3	35976	verb	made	0	She made a short poem for her friend's wedding.
+4	35974	verb	making	0	They are making a large sign for the school fair.
+5	35983	verb	make	0	Two and two make four.
+@ mean
+1	36189	verb	mean	1	When the red warning light flashes, it can mean danger.
+2	36184	verb	mean	0	Please forgive me; I did not mean to hurt you.
+3	36184	verb	meant	0	She meant to call you after dinner.
+4	36184	verb	meaning	0	I have been meaning to thank you for your help.
+5	36199	adj	mean	0	Laughing at his mistake was mean and hurt his feelings.

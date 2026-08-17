@@ -1,0 +1,174 @@
+@ tradition
+1	53050	noun	tradition	1	Our family tradition brought everyone home for the winter holiday.
+2	53050	noun	tradition	0	Lighting candles is an old tradition here.
+3	53050	noun	traditions	0	Families pass traditions to younger generations.
+4	53050	noun	tradition	0	This holiday tradition began with my grandmother.
+5	53050	noun	traditions	0	Local traditions may differ between villages.
+
+@ traditional
+1	53056	adj	traditional	1	It is traditional.
+2	53056	adj	traditional	0	They wore traditional clothing at the festival.
+3	53056	adj	traditional	0	My grandmother taught me a traditional song.
+4	53056	adj	traditional	0	The meal follows a traditional family recipe.
+5	53056	adj	traditional	0	We watched a traditional dance.
+
+@ trainer
+1	53067	noun	trainer	1	The trainer helped the injured runner return to competition.
+2	53067	noun	trainer	0	The trainer showed us how to lift safely.
+3	53067	noun	trainers	0	Good trainers explain each exercise clearly.
+4	53067	noun	trainer	0	She works as a personal trainer.
+5	53067	noun	trainers	0	The club hired two new trainers.
+
+@ training
+1	53074	verb	training	1	We training every day.
+2	53074	verb	training	0	She is training for a long race.
+3	53074	verb	training	0	Training a new worker takes time.
+4	53074	verb	training	0	They are training the dog to sit.
+5	53074	verb	training	0	He began training with the team last week.
+
+@ transport
+1	53080	verb	transport	1	We transport every day.
+2	53080	verb	transport	0	Trucks transport food between cities.
+3	53080	verb	transport	0	These pipes transport water to the village.
+4	53080	verb	transport	0	The ship can transport heavy equipment.
+5	53080	verb	transport	0	Buses transport workers to the factory.
+
+@ traveller
+1	53090	noun	traveller	1	A tired traveller found shelter in our home during the storm.
+2	53090	noun	traveller	0	The traveller crossed the desert alone.
+3	53090	noun	travellers	0	Travellers often stop at this village.
+4	53090	noun	traveller	0	She became an experienced traveller.
+5	53090	noun	travellers	0	The hotel welcomes travellers from distant countries.
+
+@ trouble
+1	53101	noun	trouble	1	The rescue team arrived when the boat was in serious trouble.
+2	53101	noun	trouble	0	Call me if you are in trouble.
+3	53101	noun	troubles	0	The family faced many troubles that year.
+4	53101	noun	trouble	0	The engine trouble left us beside the road.
+5	53101	noun	troubles	0	Financial troubles forced the shop to close.
+
+@ truck
+1	53121	noun	truck	1	A broken truck caused the heavy gun carriage to stop suddenly.
+2	53121	noun	truck	0	Each truck beneath the gun carriage was made of iron.
+3	53121	noun	trucks	0	The small trucks allowed the carriage to roll.
+4	53121	noun	truck	0	Workers replaced a damaged truck on the gun carriage.
+5	53121	noun	trucks	0	The museum displayed the carriage's original trucks.
+
+@ twin
+1	53150	noun	twin	1	Her twin found her in the crowd when she became lost.
+2	53150	noun	twin	0	My twin was born five minutes before me.
+3	53150	noun	twins	0	The twins share the same birthday.
+4	53150	noun	twin	0	He is the taller twin.
+5	53150	noun	twins	0	These twins look very different.
+
+@ typical
+1	53169	adj	typical	1	It is typical.
+2	53169	adj	typical	0	This meal is typical of the region.
+3	53169	adj	typical	0	The picture shows a typical village house.
+4	53169	adj	typical	0	Her response was typical of a careful leader.
+5	53169	adj	typical	0	This weather is typical for early spring.
+
+@ underground
+1	53174	adj	underground	1	It is underground.
+2	53174	adj	underground	0	The city has an underground railway.
+3	53174	adj	underground	0	Water flows through an underground pipe.
+4	53174	adj	underground	0	They discovered an underground room.
+5	53174	adj	underground	0	The seeds formed underground roots.
+
+@ understanding
+1	53185	noun	understanding	1	Her understanding of the warning helped everyone escape in time.
+2	53185	noun	understanding	0	Reading improved my understanding of the topic.
+3	53185	noun	understanding	0	His understanding of the instructions was incomplete.
+4	53185	noun	understanding	0	The lesson tests our understanding of fractions.
+5	53185	noun	understanding	0	Careful listening leads to better understanding.
+
+@ unfortunately
+1	53195	adv	unfortunately	1	We do it unfortunately.
+2	53195	adv	unfortunately	0	Unfortunately, the last bus had already left.
+3	53195	adv	unfortunately	0	The match was unfortunately canceled by rain.
+4	53195	adv	unfortunately	0	Unfortunately, she lost her keys on the journey.
+5	53195	adv	unfortunately	0	Our flight was unfortunately delayed by the storm.
+
+@ unhappy
+1	53197	adj	unhappy	1	It is unhappy.
+2	53197	adj	unhappy	0	The child felt unhappy after moving away.
+3	53197	adj	unhappy	0	She looked unhappy with the result.
+4	53197	adj	unhappy	0	He became unhappy when his friend left.
+5	53197	adj	unhappy	0	The unhappy dog waited by the empty door.
+
+@ uniform
+1	53203	adj	uniform	1	It is uniform.
+2	53203	adj	uniform	0	The wall has a uniform color.
+3	53203	adj	uniform	0	The machine produces pieces of uniform size.
+4	53203	adj	uniform	0	Heat must remain uniform across the surface.
+5	53203	adj	uniform	0	The plants grew at a uniform rate.
+
+@ unit
+1	53213	noun	unit	1	The child finally understood that each mark represented one unit.
+2	53213	noun	unit	0	A unit represents a magnitude of one.
+3	53213	noun	units	0	The number five contains five units.
+4	53213	noun	unit	0	Add one unit to make the total six.
+5	53213	noun	units	0	Three units plus two units equal five.
+
+@ united
+1	53242	verb	united	1	We united every day.
+2	53242	verb	united	0	The crisis united the two communities.
+3	53242	verb	united	0	The shared goal united the team.
+4	53242	verb	united	0	Several small groups united to protect the forest.
+5	53242	verb	united	0	Their love of music united them.
+
+@ unusual
+1	53245	adj	unusual	1	It is unusual.
+2	53245	adj	unusual	0	We heard an unusual sound outside.
+3	53245	adj	unusual	0	Snow is unusual in this region.
+4	53245	adj	unusual	0	She wore an unusual hat.
+5	53245	adj	unusual	0	The bird has an unusual blue tail.
+
+@ used
+1	53247	verb	used	1	We used every day.
+2	53247	verb	used	0	We used the map to find the hotel.
+3	53247	verb	used	0	She used my phone yesterday.
+4	53247	verb	used	0	The workers used a ladder to reach the roof.
+5	53247	verb	used	0	I have used this tool before.
+
+@ user
+1	53252	noun	user	1	A careful user reported the error before anyone lost their work.
+2	53252	noun	user	0	Each user needs a password.
+3	53252	noun	users	0	The app has thousands of users.
+4	53252	noun	user	0	The guide helps a new user begin.
+5	53252	noun	users	0	Users can change these settings.
+
+@ usual
+1	53258	adj	usual	1	It is usual.
+2	53258	adj	usual	0	We met at our usual place.
+3	53258	adj	usual	0	She arrived at the usual time.
+4	53258	adj	usual	0	The train followed its usual route.
+5	53258	adj	usual	0	He ordered his usual breakfast.
+
+@ valley
+1	53261	noun	valley	1	The deep valley sheltered the village from the strongest winds.
+2	53261	noun	valley	0	A river flows through the valley.
+3	53261	noun	valleys	0	Green valleys lie between the mountains.
+4	53261	noun	valley	0	The road crosses the valley.
+5	53261	noun	valleys	0	These valleys were shaped by glaciers.
+
+@ van
+1	53265	noun	van	1	The rescue van carried the injured hikers to safety.
+2	53265	noun	van	0	The van delivered furniture to our house.
+3	53265	noun	vans	0	Two vans waited outside the hotel.
+4	53265	noun	van	0	We rented a van for the journey.
+5	53265	noun	vans	0	Delivery vans use the rear gate.
+
+@ variety
+1	53276	noun	variety	1	A tiny variety between the two parts caused the machine to fail.
+2	53276	noun	variety	0	There is a slight variety between the two designs.
+3	53276	noun	varieties	0	The copies show small varieties in color.
+4	53276	noun	variety	0	The second version has one variety in shape.
+5	53276	noun	varieties	0	Researchers recorded varieties between the samples.
+
+@ vehicle
+1	53289	noun	vehicle	1	The rescue vehicle reached us before the flood covered the road.
+2	53289	noun	vehicle	0	This vehicle can carry eight people.
+3	53289	noun	vehicles	0	Heavy vehicles use the left lane.
+4	53289	noun	vehicle	0	The police stopped the damaged vehicle.
+5	53289	noun	vehicles	0	Electric vehicles produce no exhaust while moving.

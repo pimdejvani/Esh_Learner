@@ -1,0 +1,150 @@
+@ natural
+1	36624	adj	natural	1	A natural spring saved the hikers when their bottles were empty.
+2	36624	adj	natural	0	Natural food has no artificial colours or flavours.
+3	36624	adj	natural	0	She chose natural wood for the table.
+4	36624	adj	natural	0	The garden uses natural compost.
+5	36624	adj	natural	0	His smile looked natural in the photo.
+@ near
+1	36658	adj	near	1	The near exit was beside our seats during the fire alarm.
+2	36658	adj	near	0	The near side of the road is closest to us.
+3	36658	adj	near	0	They used the near door to leave quickly.
+4	36658	adj	near	0	A near shop sold cold water.
+5	36658	adj	near	0	The near wall held the map.
+@ need
+1	36678	noun	need	1	Her greatest need was a safe place to sleep.
+2	36678	noun	need	0	Clean water is a basic need for every family.
+3	36678	noun	need	0	The clinic met a need in the village.
+4	36678	noun	need	0	His need for rest was clear.
+5	36678	noun	need	0	They discussed the need for more chairs.
+@ negative
+1	36686	adj	negative	1	The negative review made the chef rethink the recipe.
+2	36686	adj	negative	0	A negative test result means the illness was not found.
+3	36686	adj	negative	0	Negative numbers are below zero.
+4	36686	adj	negative	0	She avoided negative comments online.
+5	36686	adj	negative	0	The teacher gave negative feedback privately.
+@ neighbour
+1	36713	noun	neighbour	1	Our neighbour brought soup when Mum was ill.
+2	36713	noun	neighbour	0	A neighbour lives in a home close to yours.
+3	36713	noun	neighbour	0	The neighbour waved over the fence.
+4	36713	noun	neighbour	0	We asked our neighbour to collect the mail.
+5	36713	noun	neighbour	0	Every neighbour joined the street party.
+@ never
+1	36720	adv	never	1	I will never forget the dog that found us in the storm.
+2	36720	adv	never	0	Never means not at any time.
+3	36720	adv	never	0	She never misses the early bus.
+4	36720	adv	never	0	We never leave food outside overnight.
+5	36720	adv	never	0	He had never seen snow before.
+@ new
+1	36724	adj	new	1	The new bicycle waited by the door on her birthday.
+2	36724	adj	new	0	A new book has not been used before.
+3	36724	adj	new	0	They painted the room a new colour.
+4	36724	adj	new	0	Our new teacher learned every name.
+5	36724	adj	new	0	The shop sells new phones.
+@ news
+1	36743	noun	news	1	The news of the rescue made the whole town cheer.
+2	36743	noun	news	0	News gives people information about recent events.
+3	36743	noun	news	0	Dad watched the evening news.
+4	36743	noun	news	0	The news spread quickly at school.
+5	36743	noun	news	0	Good news arrived before dinner.
+@ newspaper
+1	36748	noun	newspaper	1	The newspaper printed her photo after the race.
+2	36748	noun	newspaper	0	A newspaper contains news stories and articles.
+3	36748	noun	newspaper	0	He folded the newspaper on the train.
+4	36748	noun	newspaper	0	The newspaper arrived before breakfast.
+5	36748	noun	newspaper	0	She read the newspaper online.
+@ next
+1	36754	adj	next	1	The next train carried us home after midnight.
+2	36754	adj	next	0	The next item comes immediately after this one.
+3	36754	adj	next	0	Please sit in the next chair.
+4	36754	adj	next	0	Who is next in line?
+5	36754	adj	next	0	We will meet next week.
+@ nice
+1	36766	adj	nice	1	Her nice note made the new student smile.
+2	36766	adj	nice	0	Nice means pleasant or kind.
+3	36766	adj	nice	0	They had a nice meal together.
+4	36766	adj	nice	0	He is nice to every customer.
+5	36766	adj	nice	0	What a nice surprise!
+@ night
+1	36782	noun	night	1	At night, the stars filled the sky above the camp.
+2	36782	noun	night	0	Night is the dark time after evening.
+3	36782	noun	night	0	The fox hunts at night.
+4	36782	noun	night	0	We stayed up late one night.
+5	36782	noun	night	0	The night felt cool and quiet.
+@ nine
+1	36792	noun	nine	1	Nine candles glowed on the cake at her party.
+2	36792	noun	nine	0	Nine is the number after eight.
+3	36792	noun	nine	0	There are nine players on the field.
+4	36792	noun	nine	0	He counted to nine.
+5	36792	noun	nine	0	Page nine has the answer.
+@ nineteen
+1	67734	num	nineteen	1	Nineteen students came to the science club.
+2	67734	num	nineteen	0	Nineteen is the number after eighteen.
+3	67734	num	nineteen	0	She turned nineteen in July.
+4	67734	num	nineteen	0	They found nineteen shells.
+5	67734	num	nineteen	0	The bus carried nineteen passengers.
+@ ninety
+1	67735	num	ninety	1	Ninety candles shone during Grandpa's birthday dinner.
+2	67735	num	ninety	0	Ninety is the number after eighty-nine.
+3	67735	num	ninety	0	The road bends ninety degrees here.
+4	67735	num	ninety	0	The box held ninety postcards.
+5	67735	num	ninety	0	She scored ninety points.
+@ no
+1	36797	det	no	1	There was no light in the cabin during the storm.
+2	36797	det	no	0	No means not any.
+3	36797	det	no	0	No visitors came today.
+4	36797	det	no	0	He gave no answer.
+5	36797	det	no	0	There is no sugar left.
+@ nobody
+1	36814	pron	nobody	1	Nobody left the lost child alone at the station.
+2	36814	pron	nobody	0	Nobody means not any person.
+3	36814	pron	nobody	0	Nobody knew the secret.
+4	36814	pron	nobody	0	I saw nobody on the path.
+5	36814	pron	nobody	0	Nobody answered the phone.
+@ north
+1	36817	noun	north	1	We drove north until we reached the snowy hills.
+2	36817	noun	north	0	North is the direction toward the North Pole.
+3	36817	noun	north	0	The map shows north at the top.
+4	36817	noun	north	0	Birds flew north in spring.
+5	36817	noun	north	0	Our house faces north.
+@ nose
+1	36830	noun	nose	1	Her nose turned red in the cold wind.
+2	36830	noun	nose	0	A nose is the part of the face used for smelling.
+3	36830	noun	nose	0	The puppy pressed its nose to the glass.
+4	36830	noun	nose	0	He touched his nose.
+5	36830	noun	nose	0	A strong smell reached my nose.
+@ not
+1	36853	adv	not	1	The door was not locked, so we entered quietly.
+2	36853	adv	not	0	Not makes a statement negative.
+3	36853	adv	not	0	She is not ready yet.
+4	36853	adv	not	0	Do not touch the paint.
+5	36853	adv	not	0	It was not raining.
+@ note
+1	36861	noun	note	1	She left a note on the fridge for her brother.
+2	36861	noun	note	0	A note is a short written message.
+3	36861	noun	note	0	Please write a note to the teacher.
+4	36861	noun	note	0	He read the note twice.
+5	36861	noun	note	0	The note said dinner was ready.
+@ nothing
+1	36895	pron	nothing	1	Nothing could stop the little boat from reaching shore.
+2	36895	pron	nothing	0	Nothing means not any thing.
+3	36895	pron	nothing	0	There was nothing in the box.
+4	36895	pron	nothing	0	I heard nothing outside.
+5	36895	pron	nothing	0	Nothing changed after the call.
+@ november
+1	36903	noun	november	1	November rain soaked the paper lanterns before the parade.
+2	36903	noun	november	0	November is the month after October.
+3	36903	noun	november	0	School closes for two days in November.
+4	36903	noun	november	0	Her birthday is in November.
+5	36903	noun	november	0	The trees lost their leaves in November.
+@ now
+1	36904	adj	now	1	The now moment felt precious after the long journey.
+2	36904	adj	now	0	Now means the present time.
+3	36904	adj	now	0	We need an answer now.
+4	36904	adj	now	0	The now situation is calmer.
+5	36904	adj	now	0	Focus on now, not yesterday.
+@ number
+1	36920	noun	number	1	The number on the ticket won a bicycle.
+2	36920	noun	number	0	A number tells how many things there are.
+3	36920	noun	number	0	Write your phone number here.
+4	36920	noun	number	0	The number of seats is limited.
+5	36920	noun	number	0	She chose a number between one and ten.

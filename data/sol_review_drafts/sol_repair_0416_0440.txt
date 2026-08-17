@@ -1,0 +1,174 @@
+@ round
+1	50745	adj	round	1	It is round.
+2	50746	adj	rounder	0	This table is rounder than the old one.
+3	50747	adj	roundest	0	Choose the roundest orange in the basket.
+4	50761	noun	round	0	The children formed a round on the floor.
+5	50794	verb	rounded	0	The carpenter rounded the sharp corner.
+
+@ route
+1	50811	noun	route	1	The rescue team found a safe route through the flooded streets.
+2	50812	noun	routes	0	The company operates three bus routes.
+3	50813	noun	route	0	We followed a mountain route to the village.
+4	50819	verb	routed	0	Police routed traffic around the accident.
+5	50821	verb	routing	0	The device is routing messages through another server.
+
+@ rubbish
+1	50823	noun	rubbish	1	The volunteers cleared the rubbish and made the beach safe for turtles again.
+2	50823	noun	rubbish	0	Put the empty package in the rubbish bin.
+3	50825	noun	rubbish	0	His claim that the moon is made of cheese is rubbish.
+4	50827	adj	rubbish	0	We had rubbish weather throughout the holiday.
+5	50828	verb	rubbished	0	The critic rubbished the new film.
+
+@ rude
+1	50830	adj	rude	1	It is rude.
+2	50830	adj	ruder	0	His second comment was even ruder than the first.
+3	50830	adj	rudest	0	That was the rudest reply I have ever heard.
+4	50833	adj	rude	0	The show contains a few rude jokes.
+5	50832	adj	rude	0	A rude storm forced the boats back to shore.
+
+@ runner
+1	50840	noun	runner	1	The exhausted runner crossed the finish line and hugged her coach.
+2	50839	noun	runners	0	Several runners train in the park each morning.
+3	50841	noun	runner	0	Our horse is the youngest runner in the race.
+4	50843	noun	runner	0	She is the runner of the community program.
+5	50840	noun	runners	0	The fastest runners started at the front.
+
+@ running
+1	50883	verb	running	1	We running every day.
+2	50883	verb	running	0	She is running to catch the bus.
+3	50884	adj	running	0	The running child nearly dropped his bag.
+4	50896	noun	running	0	Running is good exercise for many people.
+5	50888	adj	running	0	Keep a running record of every payment.
+
+@ sadly
+1	50902	adv	sadly	1	We do it sadly.
+2	50902	adv	sadly	0	She smiled sadly as the train left.
+3	50903	adv	sadly	0	Sadly, the old theater closed last year.
+4	50904	adv	more sadly	0	The plan ended more sadly than anyone expected.
+5	50902	adv	most sadly	0	He spoke most sadly about losing his friend.
+
+@ safe
+1	50907	adj	safe	1	It is safe.
+2	50907	adj	safer	0	This path is safer after dark.
+3	50907	adj	safest	0	The basement is the safest place during the storm.
+4	50921	noun	safe	0	Keep the passports in the hotel safe.
+5	50925	verb	safed	0	The engineers safed the machine before repairing it.
+
+@ sail
+1	50926	noun	sail	1	The torn sail was repaired just in time for the family to return home.
+2	50926	noun	sails	0	The boat has two white sails.
+3	50929	noun	sail	0	We went for a short sail around the bay.
+4	50938	verb	sailed	0	The ship sailed across the ocean.
+5	50940	verb	sailing	0	They are sailing near the island today.
+
+@ sailing
+1	50945	verb	sailing	1	We sailing every day.
+2	50945	verb	sailing	0	The boat is sailing toward the harbor.
+3	50946	adj	sailing	0	The sailing ship crossed the bay.
+4	50947	noun	sailing	0	She learned sailing during her summer holiday.
+5	50950	noun	sailings	0	The storm caused three ferry sailings to be canceled.
+
+@ salary
+1	50951	noun	salary	1	Her first salary allowed her to buy medicine for her mother.
+2	50951	noun	salaries	0	The company reviews employee salaries each year.
+3	50951	noun	salary	0	His annual salary is paid monthly.
+4	50952	verb	salaried	0	The organization salaried its full-time staff.
+5	50952	verb	salarying	0	The firm is salarying new employees instead of paying hourly wages.
+
+@ sale
+1	50955	noun	sale	1	The charity sale raised enough money to repair the children's playground.
+2	50954	noun	sale	0	The sale of the house took three months.
+3	50954	noun	sales	0	Online sales increased this year.
+4	50955	noun	sale	0	These shoes are on sale today.
+5	50956	noun	sale	0	The painting was offered for sale to the highest bidder.
+
+@ sauce
+1	50958	noun	sauce	1	Grandma's tomato sauce made the whole kitchen smell like home.
+2	50958	noun	sauces	0	The restaurant serves three spicy sauces.
+3	50959	noun	sauce	0	Would you like tomato sauce with your chips?
+4	50967	verb	sauced	0	The cook sauced the pasta before serving it.
+5	50967	verb	saucing	0	She is saucing the vegetables with butter and herbs.
+
+@ save
+1	50973	verb	save	1	We save every day.
+2	50974	verb	saved	0	The firefighter saved a child from the burning house.
+3	50973	verb	saves	0	A helmet saves riders from serious injury.
+4	50975	verb	saving	0	She is saving the photographs in a waterproof box.
+5	50991	noun	save	0	The goalkeeper made a difficult save.
+
+@ scared
+1	50999	adj	scared	1	It is scared.
+2	50999	adj	more scared	0	I felt more scared when the lights went out.
+3	50999	adj	most scared	0	The youngest child looked the most scared.
+4	51000	verb	scared	0	The sudden noise scared the birds away.
+5	50999	adj	scared	0	She was scared of walking home alone.
+
+@ scary
+1	51001	adj	scary	1	It is scary.
+2	51001	adj	scarier	0	The second film was scarier than the first.
+3	51001	adj	scariest	0	That was the scariest storm I can remember.
+4	51002	adj	scary	0	Her guess was scary in its accuracy.
+5	51004	adv	scary	0	The price was scary high for such a small room.
+
+@ scene
+1	51006	noun	scene	1	The rescue scene filled everyone watching with relief.
+2	51009	noun	scenes	0	The final act contains three short scenes.
+3	51010	noun	scene	0	The story's opening scene takes place in a forest.
+4	51011	noun	scene	0	The window looked out on a peaceful country scene.
+5	51019	verb	scened	0	The artist scened the story with bright village images.
+
+@ schedule
+1	51022	noun	schedule	1	The rescue train arrived ahead of schedule and brought everyone home.
+2	51022	noun	schedules	0	The two buses follow different schedules.
+3	51030	verb	scheduled	0	We scheduled the meeting for Monday morning.
+4	51029	verb	scheduling	0	The manager is scheduling next month's training.
+5	51023	noun	schedule	0	The report includes a schedule of equipment.
+
+@ score
+1	51034	noun	score	1	The final score appeared, and our school celebrated its first championship.
+2	51035	noun	score	0	The score is two goals to one.
+3	51036	noun	scores	0	Students can view their test scores online.
+4	51061	verb	scored	0	Mina scored the winning goal.
+5	51059	verb	scoring	0	Two judges are scoring the competition.
+
+@ screen
+1	51071	noun	screen	1	The safety screen protected the family when the glass broke.
+2	51070	noun	screens	0	Tall screens hide the changing area.
+3	51073	noun	screen	0	A line of trees forms a screen against the wind.
+4	51096	verb	screened	0	The clinic screened visitors for fever.
+5	51099	verb	screening	0	The cinema is screening a new documentary.
+
+@ search
+1	51105	noun	search	1	After an all-night search, the missing child was found safe.
+2	51105	noun	searches	0	Police carried out several searches of the building.
+3	51107	verb	searched	0	We searched the room for the missing key.
+4	51108	verb	searching	0	They are searching for a cheaper apartment.
+5	51110	verb	search	0	Search the phrase online for more examples.
+
+@ season
+1	51113	noun	season	1	The first rain of the season brought new life to the dry fields.
+2	51113	noun	seasons	0	Spring and autumn are my favorite seasons.
+3	51114	noun	season	0	The football season begins next month.
+4	51124	verb	seasoned	0	Years at sea seasoned the young sailor.
+5	51125	verb	seasoning	0	The carpenter is seasoning the wood before use.
+
+@ seat
+1	51132	noun	seat	1	A passenger offered her seat to the tired woman carrying a baby.
+2	51131	noun	seats	0	The theater has five hundred seats.
+3	51133	noun	seat	0	The chair's seat is made of wood.
+4	51151	verb	seated	0	The host seated us near the window.
+5	51150	verb	seating	0	The new hall is seating more guests this year.
+
+@ secondly
+1	51158	adv	secondly	1	We do it secondly.
+2	51158	adv	secondly	0	Secondly, we need to discuss the budget.
+3	51158	adv	secondly	0	First check the address; secondly, confirm the date.
+4	51158	adv	secondly	0	Secondly, the plan would take too much time.
+5	51158	adv	secondly	0	The route is shorter and, secondly, much safer.
+
+@ secret
+1	51159	noun	secret	1	She finally shared the secret that had kept the family apart for years.
+2	51159	noun	secrets	0	Close friends sometimes share secrets.
+3	51160	noun	secret	0	The secret to good bread is patience.
+4	51168	adj	secret	0	They used a secret entrance behind the library.
+5	51167	verb	secreted	0	The documents were secreted beneath the floor.

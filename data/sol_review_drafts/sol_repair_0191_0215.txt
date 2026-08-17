@@ -1,0 +1,150 @@
+@ greet
+1	47048	verb	greet	1	We greet every day.
+2	47048	verb	greet	0	Please greet each visitor with a smile.
+3	47048	verb	greets	0	The hotel manager greets guests at the door.
+4	47048	verb	greeted	0	Her family greeted her warmly at the airport.
+5	47048	verb	greeting	0	The children are greeting their new teacher.
+@ ground
+1	47056	noun	ground	1	We found the missing ring shining on the ground beside the gate.
+2	47056	noun	ground	0	The ball fell to the ground and rolled away.
+3	47058	noun	ground	0	The farmer planted the seeds in soft ground.
+4	47081	verb	grounded	0	His parents grounded him for coming home late.
+5	47093	adj	ground	0	Add one spoonful of ground coffee to the cup.
+@ guest
+1	47095	noun	guest	1	Our elderly guest smiled when we prepared her favorite meal.
+2	47095	noun	guest	0	Each guest left a coat beside the front door.
+3	47096	noun	guests	0	Hotel guests must return their keys before noon.
+4	47097	noun	guest	0	The radio host interviewed a special guest.
+5	47101	verb	guested	0	The singer guested on a popular television show.
+@ guide
+1	47104	noun	guide	1	Our guide led us safely back when thick fog covered the mountain trail.
+2	47105	noun	guide	0	This guide explains how to repair a bicycle tire.
+3	47115	verb	guides	0	A yellow line guides visitors through the museum.
+4	47115	verb	guided	0	The nurse guided the patient to a quiet room.
+5	47115	verb	guiding	0	Mina is guiding the children across the busy road.
+@ gun
+1	47120	noun	gun	1	The officer locked the gun away so the children could not reach it.
+2	47126	noun	gun	0	The children filled the water gun before playing outside.
+3	47129	noun	gun	0	Use the glue gun carefully when repairing the chair.
+4	47125	noun	gun	0	The starting gun signaled the beginning of the race.
+5	47120	noun	guns	0	Museum staff displayed several old guns behind glass.
+@ guy
+1	47148	noun	guy	1	The kind guy found my phone and ran after me to return it.
+2	47148	noun	guy	0	The guy at the counter showed us the menu.
+3	47149	noun	guys	0	Those guys play football in the park every Sunday.
+4	47148	noun	guy	0	A tall guy opened the door for the family.
+5	47150	noun	guy	0	The injured puppy is a brave little guy.
+@ habit
+1	47160	noun	habit	1	Calling her mother every evening became a comforting habit after she moved away.
+2	47160	noun	habit	0	Brushing your teeth before bed is a healthy habit.
+3	47161	noun	habit	0	He checked his pocket for his keys out of habit.
+4	47160	noun	habits	0	Small daily habits can improve your health.
+5	47162	noun	habit	0	She finally broke her habit of smoking.
+@ hall
+1	47170	noun	hall	1	The crowded hall became silent when the lost child walked onto the stage.
+2	47169	noun	hall	0	Your classroom is at the end of the hall.
+3	47170	noun	hall	0	The meeting will take place in the main hall.
+4	47172	noun	halls	0	Students from different halls attended the university event.
+5	47169	noun	hall	0	A drinking fountain stands across the hall.
+@ happily
+1	47179	adv	happily	1	We do it happily.
+2	47179	adv	happily	0	The children played happily beside the river.
+3	47181	adv	happily	0	I will happily help you look for your lost wallet.
+4	47180	adv	happily	0	Happily, everyone escaped from the building safely.
+5	47179	adv	more happily	0	She works more happily when music is playing.
+@ headache
+1	47183	noun	headache	1	After hours of worry, her headache disappeared when the doctor said the child was safe.
+2	47183	noun	headache	0	Drink some water if you have a headache.
+3	47183	noun	headaches	0	Bright lights often give him headaches.
+4	47184	noun	headache	0	The confusing filing system causes a daily headache.
+5	47183	noun	headache	0	She went to bed early because of her headache.
+@ heart
+1	47185	noun	heart	1	My heart raced when I heard my missing dog's bark outside.
+2	47185	noun	heart	0	The heart pumps blood around the body.
+3	47191	noun	heart	0	The team lost the match but showed great heart.
+4	47199	noun	heart	0	The old market lies at the heart of the town.
+5	47189	noun	hearts	0	The singer won the hearts of the audience.
+@ heat
+1	47207	noun	heat	1	We carried the tired dog inside to protect it from the summer heat.
+2	47206	noun	heat	0	The engine produces enough heat to warm the room.
+3	47227	verb	heat	0	Heat the soup slowly on the stove.
+4	47228	verb	heating	0	A pot of water is heating in the kitchen.
+5	47227	verb	heated	0	She heated the milk before adding it to the coffee.
+@ heavy
+1	47233	adj	heavy	1	It is heavy.
+2	47233	adj	heavy	0	This suitcase is too heavy for me to lift alone.
+3	47233	adj	heavier	0	The blue box is heavier than the red one.
+4	47233	adj	heaviest	0	Put the heaviest bag on the floor of the car.
+5	47246	adj	heavy	0	Heavy rain flooded several roads last night.
+@ height
+1	47273	noun	height	1	Despite her fear of the height, Lina climbed the tower to rescue the frightened cat.
+2	47273	noun	height	0	Measure the height of the door before buying the shelf.
+3	47274	noun	height	0	The nurse recorded the child's height and weight.
+4	47277	noun	heights	0	The birds were flying at different heights.
+5	47279	noun	height	0	She reached the height of her career after winning the award.
+@ helpful
+1	47283	adj	helpful	1	It is helpful.
+2	47283	adj	helpful	0	The map was helpful when we lost the trail.
+3	47283	adj	more helpful	0	A clear example is more helpful than a long explanation.
+4	47283	adj	most helpful	0	The receptionist was the most helpful person at the hotel.
+5	47283	adj	helpful	0	Thank you for your helpful advice.
+@ hero
+1	47284	noun	hero	1	The firefighter became a hero after carrying the child from the burning house.
+2	47285	noun	hero	0	My grandmother is my hero because she never gives up.
+3	47286	noun	hero	0	The hero of the story returns home in the final chapter.
+4	47284	noun	heroes	0	The town welcomed the rescue workers as heroes.
+5	47285	noun	hero	0	The young athlete called her coach a hero and role model.
+@ hers
+1	47295	pron	hers	1	hers is here.
+2	47295	pron	hers	0	The red bicycle is hers.
+3	47295	pron	hers	0	My desk is near the door, and hers is by the window.
+4	47295	pron	hers	0	That lovely painting is a favorite of hers.
+5	47296	pron	hers	0	We can meet at hers after school.
+@ herself
+1	47298	pron	herself	1	herself is here.
+2	47298	pron	herself	0	She taught herself to play the guitar.
+3	47298	pron	herself	0	Maya looked at herself in the mirror.
+4	47299	pron	herself	0	The manager herself answered our questions.
+5	47298	pron	herself	0	She bought herself a warm coat for winter.
+@ hide
+1	47301	verb	hide	1	We hide every day.
+2	47301	verb	hide	0	The children hide their gifts under the bed.
+3	47301	verb	hid	0	Dad hid the birthday cake behind the boxes.
+4	47301	verb	hidden	0	The key was hidden beneath a loose stone.
+5	47302	verb	hiding	0	The frightened kitten is hiding behind the sofa.
+@ hill
+1	47311	noun	hill	1	We reached the top of the hill just as the sun rose over our village.
+2	47311	noun	hill	0	A small house stands on the hill above the lake.
+3	47311	noun	hills	0	Green hills surround the quiet town.
+4	47312	noun	hill	0	The bicycle slowed as we climbed the steep hill.
+5	47311	noun	hill	0	The park is sheltered from the wind by a hill.
+@ himself
+1	47319	pron	himself	1	himself is here.
+2	47319	pron	himself	0	He taught himself to cook simple meals.
+3	47319	pron	himself	0	The boy saw himself in the shop window.
+4	47320	pron	himself	0	The doctor himself called us with the good news.
+5	47319	pron	himself	0	He bought himself a sandwich for lunch.
+@ hit
+1	47323	verb	hit	1	We hit every day.
+2	47325	verb	hit	0	The ball hit the fence and bounced back.
+3	47327	verb	hit	0	Hit the green button to start the machine.
+4	47323	verb	hitting	0	The child is hitting the drum with a wooden stick.
+5	47352	noun	hit	0	The band's new song became a worldwide hit.
+@ hockey
+1	47370	noun	hockey	1	Our hockey team cheered when the winning puck entered the goal.
+2	47368	noun	hockey	0	Players use sticks to move a puck or ball in hockey.
+3	47369	noun	hockey	0	Field hockey is played on solid ground.
+4	47370	noun	hockey	0	Ice hockey players wear skates and helmets.
+5	47368	noun	hockey	0	The children practice hockey after school.
+@ hold
+1	47374	verb	hold	1	We hold every day.
+2	47374	verb	hold	0	Hold the handle firmly while you climb the steps.
+3	47375	verb	holds	0	This bottle holds two liters of water.
+4	47374	verb	held	0	She held the baby's hand while crossing the road.
+5	47378	verb	holding	0	The hotel is holding a room for our late arrival.
+@ hole
+1	47422	noun	hole	1	The frightened puppy cried until we lifted it from the deep hole.
+2	47422	noun	hole	0	Dig a small hole before planting the tree.
+3	47423	noun	hole	0	There is a hole in the toe of my sock.
+4	47422	noun	holes	0	The children filled the holes in the garden with soil.
+5	47432	noun	hole	0	The lawyer found a hole in the witness's argument.

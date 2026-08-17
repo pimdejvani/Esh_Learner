@@ -1,0 +1,150 @@
+@ commonly
+1	62293	adv	commonly	1	In this town, people commonly cycle to the market.
+2	62293	adv	commonly	0	Rice is commonly served with this dish.
+3	62293	adv	commonly	0	These birds are commonly seen near the river.
+4	62293	adv	commonly	0	The problem commonly occurs after heavy rain.
+5	62294	adv	commonly	0	They spoke commonly with their neighbors.
+@ complicated
+1	62347	adj	complicated	1	The instructions looked complicated, but the task was easy after practice.
+2	62347	adj	complicated	0	This machine is too complicated for young children to use alone.
+3	62347	adj	complicated	0	Their relationship became complicated after the move.
+4	62347	adj	complicated	0	The map makes the route seem more complicated than it is.
+5	62347	adj	complicated	0	He gave a complicated answer to a simple question.
+@ component
+1	62332	noun	component	1	The battery is an important component of the alarm system.
+2	62332	noun	component	0	Replace the broken component before using the machine.
+3	62332	noun	components	0	All the components arrived in separate boxes.
+4	62332	noun	component	0	This small component connects the screen to the computer.
+5	62332	noun	component	0	Each component has a different purpose in the device.
+@ concentration
+1	62340	noun	concentration	1	Please work quietly so everyone can keep their concentration.
+2	62339	noun	concentration	0	Reading requires concentration when the room is noisy.
+3	62344	noun	concentration	0	The concentration of salt in the water was high.
+4	62343	noun	concentration	0	Her concentration is biology at university.
+5	62340	noun	concentration	0	A short break helped him regain concentration.
+@ concept
+1	62350	noun	concept	1	The concept of saving energy was easy for the class to understand.
+2	62350	noun	concept	0	Freedom is an important concept in this book.
+3	62351	noun	concept	0	Children slowly develop the concept of time.
+4	62350	noun	concepts	0	The lesson introduces basic science concepts.
+5	62350	noun	concept	0	Her design is based on a simple concept.
+@ concern
+1	62359	noun	concern	1	The dark clouds were a concern for the picnic organizers.
+2	62359	noun	concern	0	Safety is the main concern in this factory.
+3	62357	noun	concern	0	The price of food is a concern for many families.
+4	62360	noun	concern	0	She showed concern when her friend was ill.
+5	62359	noun	concerns	0	Parents shared their concerns with the teacher.
+@ concerned
+1	62354	adj	concerned	1	Her parents were concerned when she did not come home.
+2	62354	adj	concerned	0	I am concerned about the loud noise from the engine.
+3	62355	adj	concerned	0	Only staff concerned with safety may enter this room.
+4	62354	adj	concerned	0	The doctor looked concerned after checking the results.
+5	62354	adj	concerned	0	We are concerned that the road may close.
+@ conduct
+1	62374	noun	conduct	1	Polite conduct is expected from every student.
+2	62374	noun	conduct	0	His conduct during the meeting was respectful.
+3	62372	noun	conduct	0	The guide was praised for the conduct of the tour.
+4	62373	noun	conduct	0	Good conduct helps a team work well together.
+5	62374	noun	conduct	0	The rules explain acceptable conduct at school.
+@ confidence
+1	62366	noun	confidence	1	She gained confidence after giving her first presentation.
+2	62366	noun	confidence	0	Practice gives you confidence before an exam.
+3	62367	noun	confidence	0	I have confidence that he will finish the job.
+4	62368	noun	confidence	0	She told me the news in confidence.
+5	62366	noun	confidence	0	His confidence grew as he learned to drive.
+@ conflict
+1	62404	noun	conflict	1	The conflict between the two teams ended after a calm discussion.
+2	62404	noun	conflict	0	They tried to avoid conflict with their neighbors.
+3	62405	noun	conflict	0	There is a conflict between the two meeting times.
+4	62404	noun	conflicts	0	Small conflicts can grow if nobody listens.
+5	62404	noun	conflict	0	The manager helped solve the conflict at work.
+@ confusing
+1	62370	adj	confusing	1	The new bus map is confusing because the colors are too similar.
+2	62370	adj	confusing	0	The instructions were confusing, so I asked for help.
+3	62370	adj	confusing	0	It is confusing when two people have the same name.
+4	62370	adj	confusing	0	The teacher explained the confusing rule again.
+5	62370	adj	confusing	0	This game seems confusing at first but becomes easy.
+@ conscious
+1	62386	adj	conscious	1	He was conscious and able to answer questions after the fall.
+2	62388	adj	conscious	0	She is conscious of how much water she uses.
+3	62389	adj	conscious	0	It was a conscious choice to walk instead of drive.
+4	62386	adj	conscious	0	The patient remained conscious during the journey.
+5	62388	adj	conscious	0	They are conscious of the need to save money.
+@ conservative
+1	62419	noun	conservative	1	The conservative voted against changing the old law.
+2	62420	noun	conservative	0	A conservative may prefer traditional family values.
+3	62419	noun	conservatives	0	Several conservatives spoke at the meeting.
+4	62421	noun	conservative	0	He is a conservative in financial matters.
+5	62419	noun	conservative	0	The local conservative supported the proposal.
+@ consideration
+1	62398	noun	consideration	1	After careful consideration, she accepted the job offer.
+2	62399	noun	consideration	0	Cost is an important consideration when buying a car.
+3	62400	noun	consideration	0	He showed consideration by keeping the music low.
+4	62398	noun	consideration	0	The plan needs more consideration before we decide.
+5	62399	noun	considerations	0	Safety and price are both key considerations.
+@ consistent
+1	62393	adj	consistent	1	Her consistent practice helped her become a better pianist.
+2	62393	adj	consistent	0	The bus service is consistent even on rainy days.
+3	62394	adj	consistent	0	His explanation is consistent with the facts.
+4	62393	adj	consistent	0	Use a consistent style throughout your report.
+5	62394	adj	consistent	0	The two accounts are consistent with each other.
+@ constant
+1	62410	adj	constant	1	The constant noise from the road made it hard to sleep.
+2	62409	adj	constant	0	The temperature remained constant all day.
+3	62411	adj	constant	0	Her constant support gave him courage.
+4	62410	adj	constant	0	The baby needs constant care at the moment.
+5	62409	adj	constant	0	The speed stayed constant on the straight road.
+@ constantly
+1	62435	adv	constantly	1	My phone is constantly running out of battery.
+2	62435	adv	constantly	0	The dog was constantly barking at the gate.
+3	62436	adv	constantly	0	She constantly checks the weather before cycling.
+4	62435	adv	constantly	0	The machine is constantly making a strange sound.
+5	62434	adv	constantly	0	He constantly supported his friends when they needed help.
+@ construct
+1	62438	noun	construct	1	The bridge is a complex construct of steel and concrete.
+2	62439	noun	construct	0	Trust is a social construct shaped by experience.
+3	62438	noun	construct	0	The model is a simple construct made from blocks.
+4	62439	noun	construct	0	The researcher used a construct to explain the behavior.
+5	62438	noun	constructs	0	The artist creates unusual constructs from recycled wood.
+@ construction
+1	62450	noun	construction	1	Road construction will block this street until Friday.
+2	62452	noun	construction	0	He works in construction and builds new homes.
+3	62451	noun	construction	0	The tower is an impressive construction of glass.
+4	62450	noun	construction	0	Construction of the new school begins next month.
+5	62455	noun	construction	0	The strong construction of the chair makes it safe.
+@ contemporary
+1	62445	adj	contemporary	1	The gallery displays contemporary art by young artists.
+2	62445	adj	contemporary	0	She enjoys contemporary music more than classical music.
+3	62444	adj	contemporary	0	The two writers were contemporary with each other.
+4	62445	adj	contemporary	0	The building has a clean, contemporary style.
+5	62444	adj	contemporary	0	These paintings are contemporary records of that period.
+@ contest
+1	62464	noun	contest	1	She won first prize in the school singing contest.
+2	62464	noun	contest	0	The photo contest closes at the end of June.
+3	62463	noun	contest	0	The race was a close contest until the final lap.
+4	62462	noun	contest	0	The policy became a contest between two groups.
+5	62464	noun	contests	0	He enters cooking contests every summer.
+@ contract
+1	62484	noun	contract	1	She signed a contract to work at the hotel for one year.
+2	62487	noun	contract	0	Read the contract carefully before you sign it.
+3	62485	noun	contract	0	His contract ends at the end of this month.
+4	62486	noun	contract	0	A contract is legally binding once both sides agree.
+5	62484	noun	contracts	0	The company has contracts with several local suppliers.
+@ contribute
+1	62449	verb	contribute	1	Every student can contribute an idea to the class project.
+2	62449	verb	contribute	0	Small donations contribute to the cost of the event.
+3	62449	verb	contributed	0	She contributed money to the food bank.
+4	62449	verb	contributing	0	He is contributing useful information to the discussion.
+5	62449	verb	contributes	0	Regular exercise contributes to good health.
+@ contribution
+1	62469	noun	contribution	1	Her contribution of books helped the new library open.
+2	62470	noun	contribution	0	We made a small contribution to the charity.
+3	62469	noun	contribution	0	Thank you for your contribution to the group project.
+4	62471	noun	contribution	0	His contribution made the event possible.
+5	62469	noun	contributions	0	The museum depends on contributions from visitors.
+@ convert
+1	62502	verb	convert	1	They plan to convert the old school into apartments.
+2	62503	verb	converted	0	We converted the spare room into an office.
+3	62505	verb	convert	0	You can convert dollars into euros at the bank.
+4	62506	verb	convert	0	Convert the distance from miles to kilometers.
+5	62502	verb	converting	0	The factory is converting waste into useful fuel.

@@ -1,0 +1,174 @@
+@ sort
+1	51898	noun	sort	1	This sort of rope held firm when the boat broke loose.
+2	51898	noun	sort	0	What sort of music do you enjoy?
+3	51898	noun	sorts	0	The shop sells many sorts of tea.
+4	51898	noun	sort	0	This sort of plant needs little water.
+5	51898	noun	sorts	0	Different sorts of bread require different flour.
+
+@ source
+1	51921	noun	source	1	The radio was our only source of news during the storm.
+2	51921	noun	source	0	The river is the town's main source of water.
+3	51921	noun	sources	0	The reporter checked several sources.
+4	51921	noun	source	0	We need to find the source of the strange noise.
+5	51921	noun	sources	0	Solar and wind power are clean energy sources.
+
+@ speaker
+1	51930	noun	speaker	1	The speaker's warning helped everyone leave before the fire spread.
+2	51930	noun	speaker	0	The speaker answered questions after the talk.
+3	51930	noun	speakers	0	Several speakers addressed the meeting.
+4	51930	noun	speaker	0	She is a confident public speaker.
+5	51930	noun	speakers	0	The conference invited speakers from five countries.
+
+@ specific
+1	51940	adj	specific	1	It is specific.
+2	51940	adj	specific	0	Please give a specific reason for the delay.
+3	51940	adj	specific	0	The doctor asked about one specific symptom.
+4	51940	adj	specific	0	We need specific instructions before starting.
+5	51940	adj	specific	0	She chose a specific date for the meeting.
+
+@ speech
+1	51955	noun	speech	1	After months of practice, the child regained her speech.
+2	51955	noun	speech	0	The injury affected his speech.
+3	51955	noun	speech	0	Human speech uses many different sounds.
+4	51955	noun	speech	0	The baby is beginning to develop speech.
+5	51955	noun	speech	0	Clear speech helps people communicate.
+
+@ speed
+1	51963	noun	speed	1	The driver's quick speed brought help to the village in time.
+2	51963	noun	speed	0	The train increased its speed.
+3	51963	noun	speeds	0	The machine operates at three speeds.
+4	51963	noun	speed	0	Cheetahs are known for their speed.
+5	51963	noun	speeds	0	High speeds make the road dangerous.
+
+@ spider
+1	51984	noun	spider	1	A large spider dropped onto my pillow in the night.
+2	51984	noun	spider	0	The spider built a web near the window.
+3	51984	noun	spiders	0	Most spiders have eight legs.
+4	51984	noun	spider	0	A spider waited for prey in its web.
+5	51984	noun	spiders	0	These spiders hunt at night.
+
+@ spoon
+1	52007	noun	spoon	1	The hungry child found one last spoon in the empty kitchen.
+2	52007	noun	spoon	0	Eat the soup with a spoon.
+3	52007	noun	spoons	0	Put the clean spoons in the drawer.
+4	52007	noun	spoon	0	She stirred her tea with a spoon.
+5	52007	noun	spoons	0	We need more spoons for dessert.
+
+@ square
+1	52026	noun	square	1	The four children formed a perfect square with the rescue rope.
+2	52026	noun	square	0	A square has four equal sides.
+3	52026	noun	squares	0	Draw three squares on the paper.
+4	52026	noun	square	0	Each corner of a square is a right angle.
+5	52026	noun	squares	0	The pattern contains blue and red squares.
+
+@ stage
+1	52087	noun	stage	1	The treatment reached its final stage, and the patient began to recover.
+2	52087	noun	stage	0	The project is still in an early stage.
+3	52087	noun	stages	0	The plan has three stages.
+4	52087	noun	stage	0	The disease entered a more serious stage.
+5	52087	noun	stages	0	Children pass through many stages of development.
+
+@ stair
+1	52114	noun	stair	1	The broken stair nearly made him fall.
+2	52114	noun	stair	0	Her bag was lying on the bottom stair.
+3	52114	noun	stairs	0	The wooden stairs lead to the bedroom.
+4	52114	noun	stair	0	Each stair is made of stone.
+5	52114	noun	stairs	0	He ran up the stairs.
+
+@ stamp
+1	52116	noun	stamp	1	One angry stamp of the horse's hoof warned us to step back.
+2	52116	noun	stamp	0	She gave a stamp of her foot.
+3	52116	noun	stamps	0	We heard several impatient stamps behind the door.
+4	52116	noun	stamp	0	The child's stamp shook mud from his boot.
+5	52116	noun	stamps	0	The horse's loud stamps echoed through the stable.
+
+@ state
+1	52132	noun	state	1	The damaged boat returned to port in a terrible state.
+2	52132	noun	state	0	The room was in a clean state.
+3	52132	noun	states	0	Water exists in several physical states.
+4	52132	noun	state	0	The patient is in a stable state.
+5	52132	noun	states	0	The machine can operate in two states.
+
+@ steal
+1	52157	verb	steal	1	We steal every day.
+2	52157	verb	steal	0	Someone tried to steal my bicycle.
+3	52157	verb	steal	0	Do not steal food from the shop.
+4	52157	verb	steal	0	Thieves sometimes steal valuable paintings.
+5	52157	verb	steal	0	He would never steal another person's money.
+
+@ step
+1	52175	noun	step	1	One careful step carried her across the narrow gap.
+2	52175	noun	step	0	Take a step toward the door.
+3	52175	noun	steps	0	He moved forward three steps.
+4	52175	noun	step	0	She took one slow step backward.
+5	52175	noun	steps	0	Small steps carried us through the deep snow.
+
+@ stomach
+1	52209	noun	stomach	1	The doctor removed the object before it reached the child's stomach.
+2	52209	noun	stomach	0	Food moves from the mouth to the stomach.
+3	52209	noun	stomachs	0	Cows have complex stomachs.
+4	52209	noun	stomach	0	The stomach stores food during digestion.
+5	52209	noun	stomachs	0	Some animals have very small stomachs.
+
+@ stone
+1	52219	noun	stone	1	The shelter's thick stone walls protected us from the storm.
+2	52219	noun	stone	0	The house is built of stone.
+3	52219	noun	stone	0	Workers cut the stone into blocks.
+4	52219	noun	stone	0	A stone floor stays cool in summer.
+5	52219	noun	stone	0	The bridge uses local stone.
+
+@ store
+1	52246	noun	store	1	The hidden food store kept the village alive through winter.
+2	52246	noun	store	0	The farm has a dry store for grain.
+3	52246	noun	stores	0	Emergency stores contain food and water.
+4	52246	noun	store	0	Tools are kept in a locked store.
+5	52246	noun	stores	0	The ship has separate stores for fuel and supplies.
+
+@ storm
+1	52257	noun	storm	1	The storm destroyed our house, but everyone escaped safely.
+2	52257	noun	storm	0	A powerful storm reached the coast.
+3	52257	noun	storms	0	Winter storms often bring strong winds.
+4	52257	noun	storm	0	The boat returned before the storm.
+5	52257	noun	storms	0	Several storms damaged the road last year.
+
+@ straight
+1	52281	adj	straight	1	It is straight.
+2	52281	adj	straight	0	Draw a straight line across the page.
+3	52281	adj	straight	0	The road is long and straight.
+4	52281	adj	straight	0	She has straight black hair.
+5	52281	adj	straight	0	Use a straight piece of wood.
+
+@ strange
+1	52320	adj	strange	1	It is strange.
+2	52320	adj	strange	0	We heard a strange sound upstairs.
+3	52320	adj	strange	0	The milk has a strange smell.
+4	52320	adj	strange	0	A strange light appeared in the sky.
+5	52320	adj	strange	0	His sudden silence seemed strange.
+
+@ strategy
+1	52335	noun	strategy	1	The general's new strategy ended the long battle without further loss.
+2	52335	noun	strategy	0	The army changed its strategy before the attack.
+3	52335	noun	strategies	0	Military leaders discussed several strategies.
+4	52335	noun	strategy	0	Their strategy focused on defending the bridge.
+5	52335	noun	strategies	0	Successful strategies depend on good information about the enemy.
+
+@ stress
+1	52338	noun	stress	1	Heat stress killed many young plants during the drought.
+2	52338	noun	stress	0	The crop suffered stress from a lack of water.
+3	52338	noun	stresses	0	Chemical stresses can damage living cells.
+4	52338	noun	stress	0	Cold stress slowed the animal's growth.
+5	52338	noun	stresses	0	Plants respond differently to environmental stresses.
+
+@ structure
+1	52354	noun	structure	1	The damaged structure remained standing long enough for everyone to escape.
+2	52354	noun	structure	0	The bridge is a complex structure.
+3	52354	noun	structures	0	These structures contain many separate parts.
+4	52354	noun	structure	0	The cell has an organized internal structure.
+5	52354	noun	structures	0	Engineers examined the metal structures.
+
+@ stupid
+1	52363	adj	stupid	1	It is stupid.
+2	52363	adj	stupid	0	The stupid character could not solve a simple puzzle.
+3	52363	adj	stupid	0	He felt stupid when he forgot his own address.
+4	52363	adj	stupid	0	The story describes a stupid giant.
+5	52363	adj	stupid	0	Calling someone stupid is unkind.

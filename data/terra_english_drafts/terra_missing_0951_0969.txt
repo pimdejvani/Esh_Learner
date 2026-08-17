@@ -1,0 +1,114 @@
+@ vital
+1	67472	adj	vital	1	A beating heart is a vital sign that the body is alive.
+2	67472	adj	vital	0	Connected with life is vital.
+3	67472	adj	vital	0	The doctor checked the patient's vital functions.
+4	67472	adj	vital	0	Oxygen is vital for living cells.
+5	67472	adj	vital	0	The nurse monitored his vital signs.
+@ vitamin
+1	67469	noun	vitamin	1	Oranges contain vitamin C, which helps keep the body healthy.
+2	67469	noun	vitamin	0	A nutrient needed in small amounts for health is a vitamin.
+3	67469	noun	vitamin	0	She takes a vitamin each morning with breakfast.
+4	67469	noun	vitamins	0	Fresh vegetables provide many vitamins.
+5	67469	noun	vitamin	0	A lack of one vitamin can cause illness.
+@ volume
+1	67522	noun	volume	1	We calculated the volume of the fish tank before filling it with water.
+2	67522	noun	volume	0	The amount of space inside a three-dimensional object is its volume.
+3	67522	noun	volume	0	The box has a volume of twelve cubic meters.
+4	67522	noun	volume	0	Find the volume by multiplying length, width, and height.
+5	67522	noun	volume	0	The volume of the pool tells us how much water it holds.
+@ weakness
+1	67512	noun	weakness	1	After the fever, she still felt weakness in her legs.
+2	67512	noun	weakness	0	The condition of not being strong is weakness.
+3	67512	noun	weakness	0	His weakness made it hard to lift the bag.
+4	67512	noun	weakness	0	The illness caused muscle weakness.
+5	67512	noun	weakness	0	Rest can help recover from weakness.
+@ wealth
+1	67541	noun	wealth	1	The family's wealth included land, a house, and several businesses.
+2	67541	noun	wealth	0	A large amount of money and valuable possessions is wealth.
+3	67541	noun	wealth	0	Her wealth allowed her to support the library.
+4	67541	noun	wealth	0	The city gained wealth through trade.
+5	67541	noun	wealth	0	They donated part of their wealth to charity.
+@ wealthy
+1	67544	adj	wealthy	1	The wealthy couple paid to rebuild the damaged school roof.
+2	67544	adj	wealthy	0	Having a lot of money is wealthy.
+3	67544	adj	wealthy	0	He grew wealthy after his business succeeded.
+4	67544	adj	wealthy	0	The wealthy family owns a large house by the sea.
+5	67544	adj	wealthy	0	She came from a wealthy background.
+@ whereas
+1	67548	adv	whereas	1	This is the room whereas the old photographs were found.
+2	67548	adv	whereas	0	I remember the street whereas we first met.
+3	67548	adv	whereas	0	That is the village whereas my grandfather once lived.
+4	67548	adv	whereas	0	Show me the shelf whereas you placed the boxes.
+5	67548	adv	whereas	0	The guide pointed to the field whereas the battle happened.
+@ wherever
+1	67552	adv	wherever	1	Wherever we travel, Dad looks for a small local bakery.
+2	67552	adv	wherever	0	You can sit wherever you like in the garden.
+3	67552	adv	wherever	0	Wherever the cat hides, the dog finds it.
+4	67552	adv	wherever	0	Keep this map wherever you can reach it quickly.
+5	67552	adv	wherever	0	Wherever she goes, she carries a notebook.
+@ whisper
+1	67572	noun	whisper	1	I heard a whisper behind the curtain, then the room went quiet.
+2	67572	noun	whisper	0	A very quiet voice is a whisper.
+3	67572	noun	whisper	0	She spoke in a whisper during the play.
+4	67572	noun	whisper	0	His whisper was too soft to hear.
+5	67572	noun	whisper	0	The children exchanged a whisper in the library.
+@ whom
+1	67561	pron	whom	1	Whom did you invite to the picnic on Saturday?
+2	67561	pron	whom	0	Whom should I call if the bus is late?
+3	67561	pron	whom	0	To whom did you give the keys?
+4	67561	pron	whom	0	Whom did the teacher choose for the prize?
+5	67561	pron	whom	0	With whom are you traveling tomorrow?
+@ widely
+1	67567	adv	widely	1	Wildflowers grew widely across the open hillside in spring.
+2	67567	adv	widely	0	Over a large area means widely.
+3	67567	adv	widely	0	The news spread widely through the town.
+4	67567	adv	widely	0	This bird is found widely along the coast.
+5	67567	adv	widely	0	The road curves widely around the lake.
+@ wildlife
+1	67559	noun	wildlife	1	The new pond gives wildlife a safe place to drink and rest.
+2	67559	noun	wildlife	0	Animals living freely in nature are wildlife.
+3	67559	noun	wildlife	0	The ranger protects wildlife in the forest.
+4	67559	noun	wildlife	0	We watched wildlife from a quiet trail.
+5	67559	noun	wildlife	0	Plastic litter can harm wildlife near the beach.
+@ willing
+1	67569	adj	willing	1	Maya was willing to stay late and help clean up after the event.
+2	67569	adj	willing	0	Ready to do something is willing.
+3	67569	adj	willing	0	He is willing to try the new recipe.
+4	67569	adj	willing	0	Are you willing to carry this box?
+5	67569	adj	willing	0	They were willing to change their plan.
+@ wire
+1	67588	noun	wire	1	The electrician bent a thin wire to connect the two parts.
+2	67588	noun	wire	0	A thin thread of metal is wire.
+3	67588	noun	wire	0	Birds sat on the wire above the road.
+4	67588	noun	wire	0	She shaped the wire into a small star.
+5	67588	noun	wire	0	The fence was made from strong wire.
+@ wise
+1	67617	adj	wise	1	It was wise to bring extra water for the long walk in the heat.
+2	67617	adj	wise	0	Showing good judgment is wise.
+3	67617	adj	wise	0	She made a wise decision to save her money.
+4	67617	adj	wise	0	A wise teacher listens before speaking.
+5	67617	adj	wise	0	It would be wise to check the weather first.
+@ witness
+1	67628	noun	witness	1	The witness described the accident exactly as she had seen it.
+2	67628	noun	witness	0	A statement confirming an event is witness.
+3	67628	noun	witness	0	His witness helped explain what happened.
+4	67628	noun	witness	0	The lawyer recorded the witness from the neighbor.
+5	67628	noun	witness	0	Their witness proved that the car had stopped.
+@ wound
+1	67640	noun	wound	1	The nurse cleaned the wound on his knee after he fell from his bike.
+2	67640	noun	wound	0	A cut or tear in the body is a wound.
+3	67640	noun	wound	0	The wound needed a bandage to stay clean.
+4	67640	noun	wound	0	The doctor checked whether the wound was healing.
+5	67640	noun	wound	0	He covered the wound before going outside.
+@ wrap
+1	67646	verb	wrapped	1	We wrapped the birthday present in bright paper and tied it with string.
+2	67646	verb	wrap	0	To cover something completely with paper or cloth is to wrap it.
+3	67646	verb	wrap	0	Please wrap the glass carefully before moving it.
+4	67646	verb	wrap	0	She will wrap the sandwiches in foil.
+5	67646	verb	wrap	0	Wrap a scarf around your neck in cold weather.
+@ zone
+1	67664	noun	zone	1	Thailand lies in a warm zone between the tropics.
+2	67664	noun	zone	0	A climate region of the earth is a zone.
+3	67664	noun	zone	0	The polar zone is cold for most of the year.
+4	67664	noun	zone	0	Plants in the temperate zone face four seasons.
+5	67664	noun	zone	0	The map shows each climate zone in a different color.

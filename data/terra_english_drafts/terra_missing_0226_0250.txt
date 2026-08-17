@@ -1,0 +1,150 @@
+@ risk
+1	59100	noun	risk	1	Climbing the wet ladder without help was a real risk.
+2	59100	noun	risk	0	The chance that something bad may happen is a risk.
+3	59100	noun	risk	0	Wearing a helmet reduces the risk of injury.
+4	59100	noun	risk	0	There is little risk of rain this afternoon.
+5	59100	noun	risk	0	The doctor explained the risk before the operation.
+@ robot
+1	59112	noun	robot	1	The history book explained robot, the forced labor owed by some tenants.
+2	59112	noun	robot	0	In old Central Europe, robot was required unpaid labor for a landlord.
+3	59112	noun	robot	0	The farmer had to perform robot as part of his rent.
+4	59112	noun	robot	0	The law later ended robot for many rural workers.
+5	59112	noun	robot	0	The museum described robot as a system of forced labor.
+@ roll
+1	59188	verb	roll	1	The orange began to roll across the kitchen floor.
+2	59188	verb	roll	0	To move by turning over and over is to roll.
+3	59188	verb	roll	0	Please roll the ball to your partner.
+4	59188	verb	rolled	0	The wheel rolled down the hill.
+5	59188	verb	roll	0	Clouds of fog roll slowly over the field.
+@ romantic
+1	59145	adj	romantic	1	The novel told a romantic tale of a knight and a hidden castle.
+2	59145	adj	romantic	0	A story with a fantastic, poetic tale from long ago is romantic.
+3	59145	adj	romantic	0	The artist painted a romantic scene of a moonlit forest.
+4	59145	adj	romantic	0	The film used a romantic style to show an old legend.
+5	59145	adj	romantic	0	Her romantic poem described a magical kingdom.
+@ rope
+1	59121	noun	rope	1	We used a rope to pull the canoe onto the beach.
+2	59121	noun	rope	0	A thick twisted line used for pulling is a rope.
+3	59121	noun	rope	0	The climber checked the rope before going up.
+4	59121	noun	rope	0	Tie the rope around the post securely.
+5	59121	noun	rope	0	The dog held the rope in its teeth during the game.
+@ rough
+1	59154	adj	rough	1	The rough road made the bus ride bumpy.
+2	59154	adj	rough	0	A surface that is not smooth is rough.
+3	59154	adj	rough	0	The rough wall scratched my hand.
+4	59154	adj	rough	0	We walked over rough stones near the river.
+5	59154	adj	rough	0	This sandpaper feels rough to the touch.
+@ row
+1	59275	noun	row	1	We sat in the front row to see the play clearly.
+2	59275	noun	row	0	A line of seats or plants is a row.
+3	59275	noun	row	0	The farmer planted beans in a straight row.
+4	59275	noun	row	0	Please stand in the last row with your classmates.
+5	59275	noun	row	0	Each row of chairs faced the stage.
+@ royal
+1	59256	adj	royal	1	The royal family greeted the crowd from the palace balcony.
+2	59256	adj	royal	0	Something connected to a king or queen is royal.
+3	59256	adj	royal	0	Visitors toured the royal gardens in spring.
+4	59256	adj	royal	0	The royal carriage passed through the town square.
+5	59256	adj	royal	0	A royal portrait hung above the fireplace.
+@ rugby
+1	59183	noun	rugby	1	Our school rugby team practiced passing the oval ball.
+2	59183	noun	rugby	0	A sport played with an oval ball that can be carried or kicked is rugby.
+3	59183	noun	rugby	0	They watched rugby at the local stadium.
+4	59183	noun	rugby	0	In rugby, players score by grounding the ball beyond the other team's area.
+5	59183	noun	rugby	0	He joined the rugby club after moving to the city.
+@ safety
+1	59287	noun	safety	1	For your safety, hold the rail while using the stairs.
+2	59287	noun	safety	0	The condition of being protected from danger is safety.
+3	59287	noun	safety	0	The coach checked the equipment for safety.
+4	59287	noun	safety	0	Seat belts improve safety in a car.
+5	59287	noun	safety	0	The school teaches children about road safety.
+@ sailor
+1	59297	noun	sailor	1	The sailor watched the stars to guide the ship home.
+2	59297	noun	sailor	0	A person whose job is sailing ships is a sailor.
+3	59297	noun	sailor	0	The sailor tied the boat to the dock.
+4	59297	noun	sailor	0	Every sailor wore a life jacket during the storm.
+5	59297	noun	sailor	0	The old sailor told stories about the sea.
+@ sample
+1	59303	noun	sample	1	The baker gave us a sample of warm chocolate cake.
+2	59303	noun	sample	0	A small part used to show the quality of something is a sample.
+3	59303	noun	sample	0	The shop offered a free sample of its new tea.
+4	59303	noun	sample	0	Scientists tested a sample of water from the lake.
+5	59303	noun	sample	0	She chose a paint sample before decorating the room.
+@ sand
+1	59369	noun	sand	1	Hot sand burned our feet at the beach.
+2	59369	noun	sand	0	The fine material covering a beach is sand.
+3	59369	noun	sand	0	The children built a castle from wet sand.
+4	59369	noun	sand	0	Wind blew sand across the desert road.
+5	59369	noun	sand	0	There was sand inside my shoes after the walk.
+@ scan
+1	59317	verb	scanned	1	The nurse scanned the report for the patient's name.
+2	59317	verb	scan	0	To examine a page carefully is to scan it.
+3	59317	verb	scan	0	Please scan the list before you choose an item.
+4	59317	verb	scanned	0	He scanned the room for his missing backpack.
+5	59317	verb	scan	0	The guard will scan each ticket at the entrance.
+@ scientific
+1	59313	adj	scientific	1	The students used a scientific method to test their idea.
+2	59313	adj	scientific	0	Something related to science is scientific.
+3	59313	adj	scientific	0	The museum has a scientific display about space.
+4	59313	adj	scientific	0	She read a scientific article about insects.
+5	59313	adj	scientific	0	The experiment needs careful scientific observation.
+@ script
+1	59356	noun	script	1	The actor highlighted her lines in the script before rehearsal.
+2	59356	noun	script	0	A written document containing an actor's lines is a script.
+3	59356	noun	script	0	He wrote a script for a short school movie.
+4	59356	noun	script	0	Please read the script before the audition.
+5	59356	noun	script	0	The director changed the ending of the script.
+@ sculpture
+1	59385	noun	sculpture	1	The stone sculpture of a bird stood in the park.
+2	59385	noun	sculpture	0	A three-dimensional work of art shaped from stone or clay is a sculpture.
+3	59385	noun	sculpture	0	The artist made a sculpture from recycled metal.
+4	59385	noun	sculpture	0	We admired the large sculpture in the museum garden.
+5	59385	noun	sculpture	0	Her first sculpture was a small clay horse.
+@ secondary
+1	59332	adj	secondary	1	The broken window was a secondary problem after the flood.
+2	59332	adj	secondary	0	Something less important than the main thing is secondary.
+3	59332	adj	secondary	0	The teacher treated spelling as a secondary concern.
+4	59332	adj	secondary	0	The secondary road joins the main highway.
+5	59332	adj	secondary	0	Cost is secondary to safety in this decision.
+@ security
+1	59393	noun	security	1	The locked gate gave the family a sense of security at night.
+2	59393	noun	security	0	The condition of being protected from threats is security.
+3	59393	noun	security	0	The guard improved security at the entrance.
+4	59393	noun	security	0	Online security protects your personal information.
+5	59393	noun	security	0	Good lighting can increase security around a building.
+@ seed
+1	59418	noun	seed	1	I planted one seed and watched it become a sunflower.
+2	59418	noun	seed	0	A small part of a plant that can grow into a new plant is a seed.
+3	59418	noun	seed	0	The bird picked up a seed from the feeder.
+4	59418	noun	seed	0	Put each seed into a small hole in the soil.
+5	59418	noun	seed	0	The packet contains enough seed for two rows of carrots.
+@ sensible
+1	59403	adj	sensible	1	Taking an umbrella was a sensible choice on the cloudy morning.
+2	59403	adj	sensible	0	A decision based on good judgment is sensible.
+3	59403	adj	sensible	0	It is sensible to save some money every month.
+4	59403	adj	sensible	0	She gave a sensible answer to the problem.
+5	59403	adj	sensible	0	Wearing a helmet is sensible when cycling.
+@ seriously
+1	59413	adv	seriously	1	Please take the warning seriously and stay away from the river.
+2	59413	adv	seriously	0	If you mean something without joking, you say it seriously.
+3	59413	adv	seriously	0	He seriously considered moving to a smaller apartment.
+4	59413	adv	seriously	0	The teacher spoke seriously about the safety rules.
+5	59413	adv	seriously	0	She was seriously worried about her missing cat.
+@ servant
+1	59448	noun	servant	1	The servant brought breakfast to the guests in the old house.
+2	59448	noun	servant	0	A person hired to do regular household work is a servant.
+3	59448	noun	servant	0	The servant cleaned the dining room every morning.
+4	59448	noun	servant	0	In the novel, a servant delivered the king's message.
+5	59448	noun	servant	0	The family employed a servant to help with cooking.
+@ setting
+1	59454	noun	setting	1	The mountain setting made the story feel peaceful and remote.
+2	59454	noun	setting	0	The time and place of a story is its setting.
+3	59454	noun	setting	0	The setting of the film is a small fishing village.
+4	59454	noun	setting	0	The author chose a winter setting for the mystery.
+5	59454	noun	setting	0	The classroom was the setting for the first scene.
+@ sex
+1	59488	noun	sex	1	The form asked for each child's sex for the health record.
+2	59488	noun	sex	0	A biological category based on reproductive roles is sex.
+3	59488	noun	sex	0	The study recorded the sex of each animal.
+4	59488	noun	sex	0	Some forms ask for a person's sex.
+5	59488	noun	sex	0	The vet noted the puppy's sex before the checkup.

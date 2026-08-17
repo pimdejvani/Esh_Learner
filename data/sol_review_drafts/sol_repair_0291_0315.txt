@@ -1,0 +1,150 @@
+@ loudly
+1	48346	adv	loudly	1	We do it loudly.
+2	48346	adv	loudly	0	Please speak loudly so everyone can hear you.
+3	48346	adv	more loudly	0	The crowd cheered more loudly after the second goal.
+4	48346	adv	most loudly	0	Of all the babies, Mia cried most loudly.
+5	48346	adv	loudly	0	The alarm rang loudly throughout the building.
+@ lovely
+1	48348	adj	lovely	1	It is lovely.
+2	48348	adj	lovely	0	The garden looks lovely in the morning light.
+3	48348	adj	lovelier	0	The beach is even lovelier at sunset.
+4	48348	adj	loveliest	0	That was the loveliest song at the concert.
+5	48349	adj	lovely	0	We had a lovely time at your home.
+@ low
+1	48357	adj	low	1	It is low.
+2	48357	adj	low	0	The child climbed over the low wall.
+3	48370	adj	lower	0	This shop offers lower prices than the market.
+4	48370	adj	lowest	0	January had the lowest temperature of the year.
+5	48377	adj	low	0	They spoke in low voices inside the library.
+@ luck
+1	48405	noun	luck	1	I could not believe my luck when a stranger returned my lost wallet.
+2	48404	noun	luck	0	Winning the raffle is mostly a matter of luck.
+3	48404	noun	luck	0	We had bad luck when both buses arrived late.
+4	48406	noun	luck	0	She wore her red scarf for luck during the exam.
+5	48407	noun	luck	0	He searched all day but had no luck finding the key.
+@ lucky
+1	48410	adj	lucky	1	It is lucky.
+2	48410	adj	lucky	0	We were lucky to catch the last train home.
+3	48410	adj	luckier	0	Nina was luckier than me and found her bag quickly.
+4	48410	adj	luckiest	0	He felt like the luckiest person alive after hearing the good news.
+5	48411	adj	lucky	0	A lucky mistake led the scientist to a useful discovery.
+@ mail
+1	48416	noun	mail	1	The missing letter finally arrived in the mail on her birthday.
+2	48415	noun	mail	0	Please collect the mail from the box by the gate.
+3	48423	verb	mail	0	I will mail the package tomorrow morning.
+4	48423	verb	mailed	0	She mailed the signed form to the office.
+5	48424	verb	mailing	0	The assistant is mailing the report to every manager.
+@ major
+1	48437	adj	major	1	It is major.
+2	48439	adj	major	0	The school completed a major renovation last summer.
+3	48441	adj	major	0	The patient needs treatment for a major illness.
+4	48460	noun	major	0	Nina chose history as her college major.
+5	48461	noun	majors	0	All biology majors must take this laboratory course.
+@ male
+1	48471	adj	male	1	It is male.
+2	48471	adj	male	0	The male bird has bright blue feathers.
+3	48477	noun	male	0	The smaller fish is a male.
+4	48479	noun	males	0	The zoo keeps the adult males in a separate area.
+5	48471	adj	male	0	The survey included equal numbers of male and female students.
+@ manage
+1	48483	verb	manage	1	We manage every day.
+2	48483	verb	manages	0	Rita manages a busy restaurant near the station.
+3	48484	verb	managed	0	The nurse managed the difficult situation calmly.
+4	48486	verb	manage	0	Can you manage to finish the report by Friday?
+5	48483	verb	managing	0	He is managing the shop while his parents are away.
+@ manager
+1	48495	noun	manager	1	The manager stayed late to help an employee find her missing child.
+2	48495	noun	manager	0	Ask the restaurant manager about the missing bag.
+3	48495	noun	managers	0	The store managers meet every Monday morning.
+4	48496	noun	manager	0	The team hired a new manager before the season began.
+5	48498	noun	manager	0	Open the file manager to find the saved document.
+@ manner
+1	48499	noun	manner	1	The doctor explained the bad news in a calm and gentle manner.
+2	48499	noun	manner	0	Please complete the form in the manner shown below.
+3	48500	noun	manner	0	His friendly manner helped the guests feel welcome.
+4	48502	noun	manners	0	Good manners include listening while others speak.
+5	48505	noun	manner	0	All manner of birds visit the lake in winter.
+@ mark
+1	48519	noun	mark	1	The ink left a blue mark on the letter from her missing brother.
+2	48532	noun	mark	0	What mark did you receive on the history test?
+3	48547	verb	mark	0	Use a pencil to mark the correct answer.
+4	48547	verb	marked	0	The guide marked our route on the map.
+5	48564	verb	marking	0	The teacher is marking the students' exams.
+@ marry
+1	48577	verb	marry	1	We marry every day.
+2	48577	verb	marry	0	They hope to marry next spring.
+3	48578	verb	married	0	Jack and Mina married soon after college.
+4	48579	verb	marries	0	In the final chapter, the prince marries his childhood friend.
+5	48581	verb	marrying	0	The judge is marrying the couple at the town hall.
+@ material
+1	48587	adj	material	1	It is material.
+2	48594	noun	material	0	Wood is a common material for making furniture.
+3	48598	noun	material	0	We bought enough material to make two curtains.
+4	48597	noun	materials	0	The teacher prepared reading materials for the class.
+5	48590	adj	material	0	The new evidence made a material difference to the case.
+@ mathematics
+1	48606	noun	mathematics	1	Understanding the mathematics helped the students land their model rocket safely.
+2	48606	noun	mathematics	0	Mathematics studies numbers, shapes, and patterns.
+3	48606	noun	mathematics	0	She teaches mathematics at the local high school.
+4	48607	noun	mathematics	0	His mathematics improved after months of practice.
+5	48606	noun	mathematics	0	The bridge design depends on careful mathematics.
+@ maths
+1	48608	noun	maths	1	A quick lesson in maths helped Arun count the money needed for his journey home.
+2	48608	noun	maths	0	We have maths after lunch on Tuesdays.
+3	48608	noun	maths	0	Mina enjoys maths because she likes solving problems.
+4	48608	noun	maths	0	The maths in this exercise is quite simple.
+5	48608	noun	maths	0	Our maths teacher explained fractions with a cake.
+@ matter
+1	48624	verb	matter	1	Her final words still matter to everyone who loved her.
+2	48617	noun	matter	0	The police are looking into the matter.
+3	48624	verb	matters	0	What matters most is that everyone returned safely.
+4	48611	noun	matter	0	Dead leaves add organic matter to the soil.
+5	48617	noun	matters	0	The diplomats discussed several urgent matters.
+@ media
+1	48634	noun	media	1	The media shared the family's appeal, and the missing dog was found that evening.
+2	48634	noun	media	0	Social media can spread news very quickly.
+3	48635	noun	media	0	The course examines how families appear in popular media.
+4	48636	noun	media	0	The media asked the mayor many questions after the meeting.
+5	48637	noun	media	0	Store the photos and other media on an external drive.
+@ medical
+1	48639	adj	medical	1	It is medical.
+2	48639	adj	medical	0	Do you have any medical experience?
+3	48641	adj	medical	0	His injury requires immediate medical treatment.
+4	48642	adj	medical	0	Please write your medical history on the form.
+5	48645	noun	medical	0	You must pass a medical before starting the job.
+@ medicine
+1	48647	noun	medicine	1	The child's fever fell after the nurse gave her the medicine.
+2	48647	noun	medicine	0	Take this medicine with food twice a day.
+3	48647	noun	medicines	0	Keep all medicines away from young children.
+4	48649	noun	medicine	0	She studies medicine because she wants to become a doctor.
+5	48650	noun	medicine	0	Modern medicine has improved the treatment of many diseases.
+@ memory
+1	48661	noun	memory	1	Hearing that song brought back a warm memory of her father.
+2	48660	noun	memory	0	Regular sleep can help improve your memory.
+3	48661	noun	memories	0	The old photographs brought back happy memories.
+4	48662	noun	memory	0	This computer needs more memory to run the program.
+5	48661	noun	memory	0	I have no memory of visiting that place.
+@ mention
+1	48670	verb	mention	1	She smiled when the teacher chose to mention her kindness in front of the class.
+2	48670	verb	mention	0	Please mention any food allergies when you book the meal.
+3	48670	verb	mentions	0	The report mentions three possible causes of the problem.
+4	48670	verb	mentioned	0	He mentioned your name during the meeting.
+5	48668	noun	mention	0	The article made no mention of the missing documents.
+@ metal
+1	48673	noun	metal	1	The firefighter cut through the bent metal and freed the trapped driver.
+2	48673	noun	metal	0	Copper is a metal that carries electricity well.
+3	48674	noun	metals	0	The factory recycles metals such as steel and aluminum.
+4	48673	noun	metal	0	The metal spoon became hot in the soup.
+5	48681	noun	metal	0	My brother listens to metal with loud guitars and drums.
+@ method
+1	48689	noun	method	1	A simple breathing method helped her stay calm until help arrived.
+2	48689	noun	method	0	This method of cooking uses very little oil.
+3	48689	noun	methods	0	The book describes several methods for saving water.
+4	48689	noun	method	0	We need a safer method to lift the heavy box.
+5	48690	noun	method	0	Her work shows method and careful organization.
+@ middle
+1	48699	noun	middle	1	In the middle of the storm, the family heard rescuers at the door.
+2	48698	noun	middle	0	Place the vase in the middle of the table.
+3	48699	noun	middle	0	I woke up in the middle of the night.
+4	48705	adj	middle	0	The answer appears in the middle column.
+5	48698	noun	middles	0	Draw lines through the middles of both circles.

@@ -1,0 +1,150 @@
+@ powerful
+1	58362	adj	powerful	1	The powerful wind pushed the boat toward the shore.
+2	58362	adj	powerful	0	Something with great strength or influence is powerful.
+3	58362	adj	powerful	0	The engine is powerful enough to pull the heavy truck.
+4	58362	adj	powerful	0	Her speech had a powerful effect on the audience.
+5	58362	adj	powerful	0	A powerful computer can process large files quickly.
+@ practical
+1	58369	adj	practical	1	Buying a waterproof jacket was a practical choice for the rainy season.
+2	58369	adj	practical	0	A useful choice that works well in real life is practical.
+3	58369	adj	practical	0	She gave me practical advice about saving money.
+4	58369	adj	practical	0	This bag is practical because it has many pockets.
+5	58369	adj	practical	0	We need a practical plan that we can use today.
+@ pray
+1	58442	verb	pray	1	Before the meal, the family gathered to pray together.
+2	58442	verb	pray	0	To speak to God for help or thanks is to pray.
+3	58442	verb	pray	0	She went to the temple to pray for her friend.
+4	58442	verb	pray	0	They pray every morning before school.
+5	58442	verb	prayed	0	We prayed for safe travel during the storm.
+@ prayer
+1	58435	noun	prayer	1	His quiet prayer helped him feel calm before the exam.
+2	58435	noun	prayer	0	Words spoken to God for help or thanks are a prayer.
+3	58435	noun	prayer	0	The service ended with a short prayer.
+4	58435	noun	prayer	0	She said a prayer for her sick grandmother.
+5	58435	noun	prayer	0	The children listened respectfully during the prayer.
+@ prediction
+1	58451	noun	prediction	1	My prediction that it would rain was correct.
+2	58451	noun	prediction	0	A statement about what will happen in the future is a prediction.
+3	58451	noun	prediction	0	The weather prediction says it will be sunny tomorrow.
+4	58451	noun	prediction	0	His prediction about the game's winner surprised us.
+5	58451	noun	prediction	0	Nobody knew whether her prediction would come true.
+@ prepared
+1	58449	adj	prepared	1	I felt prepared because I had packed my bag the night before.
+2	58449	adj	prepared	0	If you are ready for an event, you are prepared.
+3	58449	adj	prepared	0	The students were prepared for the final test.
+4	58449	adj	prepared	0	She arrived prepared with a map and extra water.
+5	58449	adj	prepared	0	Are you prepared to answer the first question?
+@ presentation
+1	58453	noun	presentation	1	Nina gave a presentation about sea turtles to her class.
+2	58453	noun	presentation	0	A talk given to a group with information is a presentation.
+3	58453	noun	presentation	0	Our presentation included photos and a short video.
+4	58453	noun	presentation	0	He practiced his presentation before the meeting.
+5	58453	noun	presentation	0	The teacher praised her clear presentation.
+@ press
+1	58475	noun	press	1	A firm press on the button opened the elevator door.
+2	58475	noun	press	0	One act of pushing a button is a press.
+3	58475	noun	press	0	With one press of the switch, the room became bright.
+4	58475	noun	press	0	The machine starts after a gentle press on the handle.
+5	58475	noun	press	0	A quick press of his finger answered the call.
+@ pressure
+1	58504	noun	pressure	1	The pressure of the water made the pipe burst.
+2	58504	noun	pressure	0	A force pushing against a surface is pressure.
+3	58504	noun	pressure	0	Too much pressure can crack the thin glass.
+4	58504	noun	pressure	0	The nurse checked his blood pressure.
+5	58504	noun	pressure	0	The tire lost pressure after hitting a sharp stone.
+@ pretend
+1	58513	verb	pretended	1	The children pretended that the sofa was a pirate ship.
+2	58513	verb	pretend	0	To act as if something false is true is to pretend.
+3	58513	verb	pretend	0	He likes to pretend he is a famous astronaut.
+4	58513	verb	pretended	0	She pretended not to notice the surprise.
+5	58513	verb	pretend	0	Let's pretend this blanket is a magic cape.
+@ previous
+1	58467	adj	previous	1	I kept my previous phone after buying a newer one.
+2	58467	adj	previous	0	Something that happened before another thing is previous.
+3	58467	adj	previous	0	Please read the previous chapter before class.
+4	58467	adj	previous	0	The previous owner painted the kitchen yellow.
+5	58467	adj	previous	0	Our previous meeting ended earlier than expected.
+@ previously
+1	58472	adv	previously	1	I had previously met the author at a book fair.
+2	58472	adv	previously	0	If something happened before now, it happened previously.
+3	58472	adv	previously	0	The room was previously used as a storage area.
+4	58472	adv	previously	0	She had previously worked at a small café.
+5	58472	adv	previously	0	Previously, the park closed at six o'clock.
+@ priest
+1	58522	noun	priest	1	The priest welcomed visitors to the old church.
+2	58522	noun	priest	0	A religious person trained to lead services is a priest.
+3	58522	noun	priest	0	The priest spoke to the family after the ceremony.
+4	58522	noun	priest	0	People asked the priest to bless the new building.
+5	58522	noun	priest	0	The priest wore special clothes during the service.
+@ primary
+1	58526	adj	primary	1	Safety is our primary concern during the school trip.
+2	58526	adj	primary	0	The first or most important thing is primary.
+3	58526	adj	primary	0	Her primary goal is to finish the project on time.
+4	58526	adj	primary	0	The primary reason for the delay was heavy rain.
+5	58526	adj	primary	0	Reading is a primary skill for young learners.
+@ prince
+1	58561	noun	prince	1	The prince rode through the town in a golden carriage.
+2	58561	noun	prince	0	A male member of a royal family can be a prince.
+3	58561	noun	prince	0	In the story, the prince searched for the lost crown.
+4	58561	noun	prince	0	The young prince greeted the crowd from the balcony.
+5	58561	noun	prince	0	A prince visited the school during the festival.
+@ princess
+1	58550	noun	princess	1	The princess waved to the children from the palace garden.
+2	58550	noun	princess	0	A female member of a royal family can be a princess.
+3	58550	noun	princess	0	The princess wore a silver crown in the parade.
+4	58550	noun	princess	0	In the tale, the princess rescued the trapped bird.
+5	58550	noun	princess	0	Everyone cheered when the princess arrived.
+@ printing
+1	58545	noun	printing	1	The smell of fresh printing filled the school newspaper room.
+2	58545	noun	printing	0	The process of making pages with ink is printing.
+3	58545	noun	printing	0	The shop offers printing for posters and invitations.
+4	58545	noun	printing	0	We waited while the printing of the tickets finished.
+5	58545	noun	printing	0	Modern printing can produce thousands of books quickly.
+@ prisoner
+1	58592	noun	prisoner	1	The prisoner wrote a letter to his family from the prison.
+2	58592	noun	prisoner	0	A person kept in prison is a prisoner.
+3	58592	noun	prisoner	0	The guard brought the prisoner to the courtroom.
+4	58592	noun	prisoner	0	The prisoner waited for news about the trial.
+5	58592	noun	prisoner	0	A prisoner may be serving a sentence for a crime.
+@ private
+1	58572	adj	private	1	She took the call in a private room away from the crowd.
+2	58572	adj	private	0	Something meant only for one person or group is private.
+3	58572	adj	private	0	Please do not read my private messages.
+4	58572	adj	private	0	The family held a private dinner at home.
+5	58572	adj	private	0	This road is private, so visitors cannot drive here.
+@ producer
+1	58595	noun	producer	1	The local producer sells fresh cheese at the weekend market.
+2	58595	noun	producer	0	A person or company that makes goods is a producer.
+3	58595	noun	producer	0	The film producer chose the actors for the movie.
+4	58595	noun	producer	0	Our country is a major producer of rice.
+5	58595	noun	producer	0	The producer delivered vegetables to several shops.
+@ production
+1	58608	noun	production	1	The factory increased production before the holiday season.
+2	58608	noun	production	0	The process of making something is production.
+3	58608	noun	production	0	Car production stopped when the parts did not arrive.
+4	58608	noun	production	0	The company improved production by using new machines.
+5	58608	noun	production	0	The play's production took months of careful planning.
+@ profit
+1	58631	noun	profit	1	The bakery made a small profit after selling all its bread.
+2	58631	noun	profit	0	Money left after a business pays its costs is profit.
+3	58631	noun	profit	0	The shop's profit rose during the busy season.
+4	58631	noun	profit	0	They used the profit to buy better equipment.
+5	58631	noun	profit	0	The company hopes to earn a profit this year.
+@ promote
+1	58600	verb	promote	1	The manager decided to promote Ana to team leader.
+2	58600	verb	promote	0	To give someone a more important job is to promote them.
+3	58600	verb	promote	0	The school may promote him to the next grade.
+4	58600	verb	promoted	0	Her boss promoted her after a successful year.
+5	58600	verb	promote	0	The company will promote two workers next month.
+@ proper
+1	58637	adj	proper	1	Wear proper shoes before you hike on the rocky trail.
+2	58637	adj	proper	0	Something suitable for a situation is proper.
+3	58637	adj	proper	0	Please use the proper tool to fix the loose screw.
+4	58637	adj	proper	0	A proper answer includes your full name.
+5	58637	adj	proper	0	They followed the proper steps for washing their hands.
+@ properly
+1	58621	adv	properly	1	The door will not close properly unless you lift the handle.
+2	58621	adv	properly	0	If you do something in the correct way, you do it properly.
+3	58621	adv	properly	0	Please read the instructions properly before you begin.
+4	58621	adv	properly	0	The machine works properly after the repair.
+5	58621	adv	properly	0	She packed the glass carefully so it would travel properly.

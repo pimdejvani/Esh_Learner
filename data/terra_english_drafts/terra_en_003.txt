@@ -1,0 +1,600 @@
+@ horror
+1	56856	noun	horror	1	She felt horror when the dog ran into the busy road.
+2	56856	noun	horror	0	The news filled the family with horror.
+3	56856	noun	horror	0	He watched in horror as the glass fell.
+4	56856	noun	horror	0	There was horror on her face after the crash.
+5	56856	noun	horror	0	The child cried out in horror at the loud noise.
+@ host
+1	56926	noun	host	1	Our host welcomed us at the door with tea.
+2	56926	noun	host	0	The host showed the guests where to sit.
+3	56926	noun	host	0	Thank your host before you leave the party.
+4	56926	noun	host	0	The host cooked a simple meal for everyone.
+5	56926	noun	host	0	As host, Maya made sure nobody felt left out.
+@ hunt
+1	56875	verb	hunt	1	People hunt deer in the forest during the season.
+2	56875	verb	hunt	0	Some people hunt animals for food.
+3	56875	verb	hunt	0	The men hunt only where it is allowed.
+4	56875	verb	hunt	0	We do not hunt near the village.
+5	56875	verb	hunt	0	They hunt rabbits early in the morning.
+@ hurricane
+1	56897	noun	hurricane	1	The family moved inland before the hurricane arrived.
+2	56897	noun	hurricane	0	A hurricane is a powerful tropical storm.
+3	56897	noun	hurricane	0	The hurricane damaged roofs along the coast.
+4	56897	noun	hurricane	0	Schools closed because of the hurricane.
+5	56897	noun	hurricane	0	Weather reports tracked the hurricane all day.
+@ hurry
+1	56887	noun	hurry	1	In her hurry to catch the bus, Ana forgot her lunch.
+2	56887	noun	hurry	0	There is no need for such a hurry.
+3	56887	noun	hurry	0	He left home in a hurry this morning.
+4	56887	noun	hurry	0	The waiter took our order in a hurry.
+5	56887	noun	hurry	0	Doing homework in a hurry can cause mistakes.
+@ identity
+1	56941	noun	identity	1	The matching fingerprints proved the man's identity.
+2	56941	noun	identity	0	Identity means being exactly the same.
+3	56941	noun	identity	0	The two shapes have the same identity.
+4	56941	noun	identity	0	Scientists checked the identity of the two samples.
+5	56941	noun	identity	0	Their identity was clear after we compared them.
+@ ignore
+1	56916	verb	ignore	1	Liam tried to ignore his phone during dinner.
+2	56916	verb	ignore	0	Please do not ignore the warning sign.
+3	56916	verb	ignore	0	She chose to ignore his rude comment.
+4	56916	verb	ignore	0	It is hard to ignore a crying baby.
+5	56916	verb	ignore	0	We cannot ignore this small problem.
+@ illegal
+1	56948	adj	illegal	1	It is illegal to drive without a licence.
+2	56948	adj	illegal	0	Taking someone else's bike is illegal.
+3	56948	adj	illegal	0	The shop was fined for selling illegal goods.
+4	56948	adj	illegal	0	Parking here is illegal after midnight.
+5	56948	adj	illegal	0	The police stopped an illegal sale.
+@ imaginary
+1	56910	adj	imaginary	1	The little boy talked to an imaginary dragon.
+2	56910	adj	imaginary	0	An imaginary friend exists only in your mind.
+3	56910	adj	imaginary	0	The map showed an imaginary island.
+4	56910	adj	imaginary	0	Her fear of monsters was imaginary.
+5	56910	adj	imaginary	0	We used imaginary money in the game.
+@ immediate
+1	56920	adj	immediate	1	The cut needed immediate care from a nurse.
+2	56920	adj	immediate	0	The fire alarm required immediate action.
+3	56920	adj	immediate	0	She got an immediate reply to her email.
+4	56920	adj	immediate	0	Call for immediate help if someone cannot breathe.
+5	56920	adj	immediate	0	There was no immediate answer to the question.
+@ immigrant
+1	56957	noun	immigrant	1	The immigrant came to Canada to build a new life.
+2	56957	noun	immigrant	0	An immigrant settles in a country from another country.
+3	56957	noun	immigrant	0	The immigrant opened a small bakery.
+4	56957	noun	immigrant	0	Each immigrant can learn the local language.
+5	56957	noun	immigrant	0	Her grandfather was an immigrant from Italy.
+@ impact
+1	56960	noun	impact	1	The impact of the ball broke the window.
+2	56960	noun	impact	0	The impact happened when the two cars met.
+3	56960	noun	impact	0	He felt the impact on his shoulder.
+4	56960	noun	impact	0	The helmet reduced the impact of the fall.
+5	56960	noun	impact	0	The loud impact made everyone turn around.
+@ import
+1	56985	noun	import	1	Coffee is an important import for this small shop.
+2	56985	noun	import	0	An import is a product brought in from another country.
+3	56985	noun	import	0	The car was an expensive import from Japan.
+4	56985	noun	import	0	Fruit import prices rose after the storm.
+5	56985	noun	import	0	This cheese is a French import.
+@ importance
+1	56974	noun	importance	1	The teacher explained the importance of clean water.
+2	56974	noun	importance	0	The importance of sleep is easy to understand.
+3	56974	noun	importance	0	She knows the importance of being on time.
+4	56974	noun	importance	0	We discussed the importance of honesty.
+5	56974	noun	importance	0	His role grew in importance over time.
+@ impression
+1	57017	noun	impression	1	The chair left an impression in the soft grass.
+2	57017	noun	impression	0	The stamp made an impression in the wax.
+3	57017	noun	impression	0	Her shoe left a clear impression in the mud.
+4	57017	noun	impression	0	Press the leaf gently to make an impression.
+5	57017	noun	impression	0	The coin's impression was visible in the clay.
+@ impressive
+1	56971	adj	impressive	1	Her calm speech was impressive for a young student.
+2	56971	adj	impressive	0	The new bridge looks impressive at night.
+3	56971	adj	impressive	0	He gave an impressive answer to the difficult question.
+4	56971	adj	impressive	0	The team's score was very impressive.
+5	56971	adj	impressive	0	We saw an impressive view from the hill.
+@ improvement
+1	56978	noun	improvement	1	After practice, there was a clear improvement in her swimming.
+2	56978	noun	improvement	0	The new plan brought an improvement in service.
+3	56978	noun	improvement	0	His spelling shows steady improvement.
+4	56978	noun	improvement	0	The paint job is a big improvement.
+5	56978	noun	improvement	0	We noticed an improvement after the repair.
+@ incredibly
+1	56968	adv	incredibly	1	The baby slept incredibly well on the long flight.
+2	56968	adv	incredibly	0	The story sounds incredibly strange.
+3	56968	adv	incredibly	0	This old computer is incredibly slow.
+4	56968	adv	incredibly	0	The mountain looked incredibly high from below.
+5	56968	adv	incredibly	0	She was incredibly lucky to find her keys.
+@ indeed
+1	56999	adv	indeed	1	It was indeed the same cat we saw yesterday.
+2	56999	adv	indeed	0	Yes, that is indeed my backpack.
+3	56999	adv	indeed	0	The test was indeed harder than I expected.
+4	56999	adv	indeed	0	He did indeed call before he arrived.
+5	56999	adv	indeed	0	This is indeed a useful map.
+@ indicate
+1	57001	verb	indicate	1	The dark clouds indicate that rain may come soon.
+2	57001	verb	indicate	0	The arrow will indicate the correct door.
+3	57001	verb	indicate	0	These marks indicate where to cut.
+4	57001	verb	indicate	0	Please indicate your choice with a tick.
+5	57001	verb	indicate	0	The sign can indicate the way to the station.
+@ indirect
+1	57006	adj	indirect	1	She gave an indirect answer instead of saying no.
+2	57006	adj	indirect	0	An indirect route takes a longer way around.
+3	57006	adj	indirect	0	He made an indirect request for help.
+4	57006	adj	indirect	0	The message was indirect but clear enough.
+5	57006	adj	indirect	0	We took an indirect road to avoid traffic.
+@ indoor
+1	56998	adj	indoor	1	We played an indoor game because it was raining.
+2	56998	adj	indoor	0	An indoor pool is inside a building.
+3	56998	adj	indoor	0	The school has an indoor sports hall.
+4	56998	adj	indoor	0	Indoor shoes keep the floor clean.
+5	56998	adj	indoor	0	They chose an indoor table near the window.
+@ indoors
+1	57028	adv	indoors	1	When the storm began, the children went indoors.
+2	57028	adv	indoors	0	We stayed indoors during the heavy rain.
+3	57028	adv	indoors	0	The cat prefers to sleep indoors.
+4	57028	adv	indoors	0	Please keep the plants indoors tonight.
+5	57028	adv	indoors	0	It was too cold to eat indoors or outside.
+@ influence
+1	57038	noun	influence	1	Her older sister had a strong influence on her music taste.
+2	57038	noun	influence	0	Parents can have influence on a child's choices.
+3	57038	noun	influence	0	The coach's influence helped the team improve.
+4	57038	noun	influence	0	Friends often have influence over each other.
+5	57038	noun	influence	0	His influence changed the final decision.
+@ ingredient
+1	57032	noun	ingredient	1	Garlic is the main ingredient in this soup.
+2	57032	noun	ingredient	0	An ingredient is one part of a food mixture.
+3	57032	noun	ingredient	0	Check each ingredient before you start cooking.
+4	57032	noun	ingredient	0	Each ingredient in this cake is simple.
+5	57032	noun	ingredient	0	Sugar is not an ingredient in this recipe.
+@ injure
+1	57047	verb	injure	1	Wear gloves so you do not injure your hands.
+2	57047	verb	injure	0	A sharp knife can injure a finger.
+3	57047	verb	injure	0	The fall could injure the small dog.
+4	57047	verb	injure	0	Do not injure yourself while lifting the box.
+5	57047	verb	injure	0	Fast cars can injure people on the road.
+@ injured
+1	57030	verb	injured	1	The player was injured during the final match.
+2	57030	verb	injured	0	She injured her knee while running.
+3	57030	verb	injured	0	He injured his arm in the fall.
+4	57030	verb	injured	0	The dog injured its paw on glass.
+5	57030	verb	injured	0	I injured my back moving furniture.
+@ innocent
+1	57070	adj	innocent	1	The innocent child did not take the missing toy.
+2	57070	adj	innocent	0	The judge decided that the man was innocent.
+3	57070	adj	innocent	0	She was innocent of the crime.
+4	57070	adj	innocent	0	An innocent person should not be punished.
+5	57070	adj	innocent	0	The puppy looked innocent beside the broken vase.
+@ intelligence
+1	57080	noun	intelligence	1	Her intelligence helped her solve the puzzle quickly.
+2	57080	noun	intelligence	0	Intelligence helps us learn and understand.
+3	57080	noun	intelligence	0	The test measured the child's intelligence.
+4	57080	noun	intelligence	0	His intelligence impressed the science teacher.
+5	57080	noun	intelligence	0	Hard work can develop intelligence.
+@ intend
+1	57050	verb	intend	1	I intend to call Grandma after school.
+2	57050	verb	intend	0	We intend to leave before noon.
+3	57050	verb	intend	0	They intend to paint the kitchen blue.
+4	57050	verb	intend	0	Do you intend to join the club?
+5	57050	verb	intend	0	She did not intend to hurt his feelings.
+@ intention
+1	57059	noun	intention	1	My intention was to help, not to upset you.
+2	57059	noun	intention	0	Her intention is to study medicine.
+3	57059	noun	intention	0	He explained his intention before the meeting.
+4	57059	noun	intention	0	The plan failed, but the intention was good.
+5	57059	noun	intention	0	What is your intention for this money?
+@ invest
+1	57087	verb	invest	1	They invest in better tools for their small farm.
+2	57087	verb	invest	0	People invest money to gain a future benefit.
+3	57087	verb	invest	0	We invest time in learning English.
+4	57087	verb	invest	0	She wants to invest in a new business.
+5	57087	verb	invest	0	The city will invest in safer roads.
+@ investigate
+1	57067	verb	investigate	1	The teacher will investigate why the computer stopped working.
+2	57067	verb	investigate	0	Police investigate a crime to find the facts.
+3	57067	verb	investigate	0	Scientists investigate the cause of the disease.
+4	57067	verb	investigate	0	We need to investigate this strange noise.
+5	57067	verb	investigate	0	The company will investigate the complaint.
+@ involved
+1	57034	adj	involved	1	The instructions were too involved for the new student.
+2	57034	adj	involved	0	An involved problem has many difficult parts.
+3	57034	adj	involved	0	The story became involved near the end.
+4	57034	adj	involved	0	This is an involved process with several steps.
+5	57034	adj	involved	0	The map looks involved, so ask for help.
+@ iron
+1	57102	noun	iron	1	The old gate was made of iron and had rusted.
+2	57102	noun	iron	0	Iron is a metal used to make steel.
+3	57102	noun	iron	0	A magnet can attract iron.
+4	57102	noun	iron	0	The worker cut the iron bar carefully.
+5	57102	noun	iron	0	The bridge has strong iron supports.
+@ issue
+1	57122	noun	issue	1	The issue of water from the pipe flooded the floor.
+2	57122	noun	issue	0	The issue of smoke from the building caused alarm.
+3	57122	noun	issue	0	An issue of steam came from the kettle.
+4	57122	noun	issue	0	We watched water issue from the spring.
+5	57122	noun	issue	0	The issue of gas made the room unsafe.
+@ journal
+1	57176	noun	journal	1	Ella writes one good thing in her journal each night.
+2	57176	noun	journal	0	A journal is a daily written record.
+3	57176	noun	journal	0	He kept a travel journal during the trip.
+4	57176	noun	journal	0	The captain recorded the weather in the ship's journal.
+5	57176	noun	journal	0	My journal helps me remember busy days.
+@ judge
+1	57231	noun	judge	1	The judge listened quietly to both sides of the case.
+2	57231	noun	judge	0	A judge makes decisions in a court of law.
+3	57231	noun	judge	0	The judge asked the witness a question.
+4	57231	noun	judge	0	Everyone stood when the judge entered the room.
+5	57231	noun	judge	0	The judge read the final decision aloud.
+@ keen
+1	57198	adj	keen	1	Noah is keen to learn how to play the guitar.
+2	57198	adj	keen	0	She is keen to start her new job.
+3	57198	adj	keen	0	We are keen on swimming after school.
+4	57198	adj	keen	0	He is keen to help with the project.
+5	57198	adj	keen	0	The children were keen to see the puppies.
+@ keyboard
+1	57194	noun	keyboard	1	She typed her name slowly on the computer keyboard.
+2	57194	noun	keyboard	0	A keyboard has keys for typing letters.
+3	57194	noun	keyboard	0	Crumbs fell between the keys of my keyboard.
+4	57194	noun	keyboard	0	The new keyboard is quieter than the old one.
+5	57194	noun	keyboard	0	Put the keyboard in front of the screen.
+@ kick
+1	57248	verb	kick	1	The boy tried to kick the ball into the goal.
+2	57248	verb	kick	0	Do not kick the door when you are angry.
+3	57248	verb	kick	0	She can kick higher than her brother.
+4	57248	verb	kick	0	The horse may kick if it is frightened.
+5	57248	verb	kick	0	Please do not kick sand at other children.
+@ killing
+1	57187	adj	killing	1	The doctor said the poison could be killing in a large amount.
+2	57187	adj	killing	0	A killing disease can cause death.
+3	57187	adj	killing	0	The snake has a killing bite.
+4	57187	adj	killing	0	A killing dose would be dangerous.
+5	57187	adj	killing	0	The report warned of a killing gas.
+@ kiss
+1	57291	verb	kiss	1	Before leaving the room, she will kiss her baby goodnight.
+2	57291	verb	kiss	0	People often kiss to show love.
+3	57291	verb	kiss	0	He will kiss his mother on the cheek.
+4	57291	verb	kiss	0	The couple may kiss at the station.
+5	57291	verb	kiss	0	Do not kiss someone who does not want it.
+@ label
+1	57214	noun	label	1	The label on the jar says it contains honey.
+2	57214	noun	label	0	A label gives information about an item.
+3	57214	noun	label	0	Read the label before washing the shirt.
+4	57214	noun	label	0	The label helps us find the right box.
+5	57214	noun	label	0	Put a label on your school bag.
+@ laboratory
+1	57212	noun	laboratory	1	The class wore safety glasses in the science laboratory.
+2	57212	noun	laboratory	0	A laboratory is a place for scientific work.
+3	57212	noun	laboratory	0	The samples were tested in a laboratory.
+4	57212	noun	laboratory	0	No food is allowed in the laboratory.
+5	57212	noun	laboratory	0	The laboratory has special equipment for experiments.
+@ lack
+1	57283	noun	lack	1	A lack of sleep made him tired at school.
+2	57283	noun	lack	0	Lack means not having enough of something.
+3	57283	noun	lack	0	The plant died from lack of water.
+4	57283	noun	lack	0	Their lack of money delayed the trip.
+5	57283	noun	lack	0	There is a lack of chairs in this room.
+@ latest
+1	57300	adj	latest	1	Have you read the latest message from the teacher?
+2	57300	adj	latest	0	The latest news is at the top of the page.
+3	57300	adj	latest	0	She bought the latest model of the phone.
+4	57300	adj	latest	0	Our latest train leaves at nine.
+5	57300	adj	latest	0	This is the latest version of the map.
+@ lay
+1	57326	verb	lay	1	Please lay the baby gently on the bed.
+2	57326	verb	lay	0	Lay the book flat on the table.
+3	57326	verb	lay	0	Do not lay wet clothes on the sofa.
+4	57326	verb	lay	0	She will lay the plates beside the sink.
+5	57326	verb	lay	0	Lay the blanket over the sleeping child.
+@ layer
+1	57313	noun	layer	1	A thick layer of snow covered the playground.
+2	57313	noun	layer	0	A layer is one thickness of material.
+3	57313	noun	layer	0	Spread a layer of butter on the bread.
+4	57313	noun	layer	0	Dust formed a grey layer on the shelf.
+5	57313	noun	layer	0	The cake has a layer of cream inside.
+@ leading
+1	57306	verb	leading	1	The guide is leading our group to the museum.
+2	57306	verb	leading	0	She is leading the children across the road.
+3	57306	verb	leading	0	He is leading the team in practice.
+4	57306	verb	leading	0	The dog is leading us home.
+5	57306	verb	leading	0	They are leading the visitors to their seats.
+@ leather
+1	57370	noun	leather	1	His grandfather gave him a brown leather belt.
+2	57370	noun	leather	0	Leather is made from animal skin.
+3	57370	noun	leather	0	The bag is covered in soft leather.
+4	57370	noun	leather	0	She cleaned her leather boots after the walk.
+5	57370	noun	leather	0	The chair has a leather seat.
+@ legal
+1	57418	adj	legal	1	The family asked for legal advice before signing.
+2	57418	adj	legal	0	A legal question is connected with the law.
+3	57418	adj	legal	0	She works in a legal office.
+4	57418	adj	legal	0	They needed legal help after the accident.
+5	57418	adj	legal	0	The document uses legal language.
+@ leisure
+1	57385	noun	leisure	1	On weekends, she enjoys reading for leisure.
+2	57385	noun	leisure	0	Leisure is free time away from work.
+3	57385	noun	leisure	0	He has little leisure during exam week.
+4	57385	noun	leisure	0	Walking is a good leisure activity.
+5	57385	noun	leisure	0	The park gives people space for leisure.
+@ length
+1	57406	noun	length	1	Measure the length of the table before buying a cloth.
+2	57406	noun	length	0	Length is how long something is.
+3	57406	noun	length	0	The rope has a length of three metres.
+4	57406	noun	length	0	The length of the room is six metres.
+5	57406	noun	length	0	We cut the wood to the right length.
+@ limit
+1	57429	noun	limit	1	The school set a limit of two cookies per child.
+2	57429	noun	limit	0	A limit is the highest amount allowed.
+3	57429	noun	limit	0	There is a speed limit on this road.
+4	57429	noun	limit	0	The bag is over the weight limit.
+5	57429	noun	limit	0	We reached the limit of our budget.
+@ lip
+1	57446	noun	lip	1	She had a little chocolate on her lower lip.
+2	57446	noun	lip	0	A lip is one of the soft parts around the mouth.
+3	57446	noun	lip	0	He bit his lip while thinking.
+4	57446	noun	lip	0	The cold wind made my lip dry.
+5	57446	noun	lip	0	The child touched her lip with one finger.
+@ literature
+1	57466	noun	literature	1	We studied children's literature in English class.
+2	57466	noun	literature	0	Literature includes written stories, poems, and plays.
+3	57466	noun	literature	0	The library has a section for world literature.
+4	57466	noun	literature	0	She enjoys literature from the nineteenth century.
+5	57466	noun	literature	0	This course introduces modern literature.
+@ living
+1	57484	verb	living	1	My aunt is living with us while her house is repaired.
+2	57484	verb	living	0	He is living in a small flat near work.
+3	57484	verb	living	0	They are living happily by the sea.
+4	57484	verb	living	0	She is living with her grandparents this year.
+5	57484	verb	living	0	The birds are living in the old tree.
+@ locate
+1	57480	verb	locate	1	Use the map to locate the nearest bus stop.
+2	57480	verb	locate	0	We need to locate the missing keys.
+3	57480	verb	locate	0	Can you locate the village on this map?
+4	57480	verb	locate	0	The team tried to locate the lost dog.
+5	57480	verb	locate	0	Please locate your name on the list.
+@ located
+1	57479	verb	located	1	The missing phone was located under the sofa.
+2	57479	verb	located	0	Police located the car near the river.
+3	57479	verb	located	0	We located the right house at last.
+4	57479	verb	located	0	The nurse located the patient's file quickly.
+5	57479	verb	located	0	They located a safe place to park.
+@ location
+1	57496	noun	location	1	The map shows the location of the new library.
+2	57496	noun	location	0	A location is a particular place.
+3	57496	noun	location	0	Please send me your current location.
+4	57496	noun	location	0	The shop's location is near the station.
+5	57496	noun	location	0	We chose a quiet location for the picnic.
+@ lonely
+1	57503	adj	lonely	1	He felt lonely after moving to a new town.
+2	57503	adj	lonely	0	A lonely person feels isolated from others.
+3	57503	adj	lonely	0	The old man was lonely without his friends.
+4	57503	adj	lonely	0	She gets lonely when her family travels.
+5	57503	adj	lonely	0	The empty house looked lonely at night.
+@ loss
+1	57518	noun	loss	1	The loss of her wallet spoiled the day.
+2	57518	noun	loss	0	Loss means no longer having something.
+3	57518	noun	loss	0	The company reported a loss this year.
+4	57518	noun	loss	0	He felt sad after the loss of his dog.
+5	57518	noun	loss	0	There was a loss of power during the storm.
+@ luxury
+1	57506	noun	luxury	1	A warm bath felt like a luxury after camping.
+2	57506	noun	luxury	0	Luxury means great comfort and expense.
+3	57506	noun	luxury	0	A private pool is a luxury for most families.
+4	57506	noun	luxury	0	The hotel offers a little luxury by the beach.
+5	57506	noun	luxury	0	Fresh flowers are a small luxury in winter.
+@ mad
+1	57527	adj	mad	1	The old story says the king went mad with fear.
+2	57527	adj	mad	0	The doctor cared for a mad man in the story.
+3	57527	adj	mad	0	People once called someone mad when they were mentally ill.
+4	57527	adj	mad	0	The character seemed mad after days without sleep.
+5	57527	adj	mad	0	The novel is about a mad scientist.
+@ magic
+1	57559	noun	magic	1	In the story, magic opened the locked castle door.
+2	57559	noun	magic	0	Magic uses special powers in stories and beliefs.
+3	57559	noun	magic	0	The wizard used magic to change the weather.
+4	57559	noun	magic	0	The children watched a show about magic.
+5	57559	noun	magic	0	She wore a ring that was said to have magic.
+@ mainly
+1	57514	adv	mainly	1	We chose the café mainly because it was nearby.
+2	57514	adv	mainly	0	The class is mainly for new students.
+3	57514	adv	mainly	0	He eats rice mainly at lunchtime.
+4	57514	adv	mainly	0	The book is mainly about animals.
+5	57514	adv	mainly	0	Our work is mainly done online.
+@ mall
+1	57540	noun	mall	1	We met at the mall to buy a birthday gift.
+2	57540	noun	mall	0	A mall is a street or area with many shops.
+3	57540	noun	mall	0	The mall is busy on Saturday afternoons.
+4	57540	noun	mall	0	There is a bakery at the end of the mall.
+5	57540	noun	mall	0	They walked through the mall after lunch.
+@ management
+1	57555	noun	management	1	Good management helped the small shop save money.
+2	57555	noun	management	0	Management is the work of planning and directing.
+3	57555	noun	management	0	The hotel needs better management.
+4	57555	noun	management	0	She studied management at college.
+5	57555	noun	management	0	Time management helps students finish work.
+@ marketing
+1	57550	verb	marketing	1	The company is marketing its new drink to teenagers.
+2	57550	verb	marketing	0	She is marketing the product online.
+3	57550	verb	marketing	0	They are marketing tickets for the summer show.
+4	57550	verb	marketing	0	He is marketing his art through social media.
+5	57550	verb	marketing	0	The team is marketing a cheaper service.
+@ marriage
+1	57578	noun	marriage	1	Their marriage became stronger after they solved problems together.
+2	57578	noun	marriage	0	Marriage is the state of being married.
+3	57578	noun	marriage	0	They celebrated ten years of marriage.
+4	57578	noun	marriage	0	Her parents have a happy marriage.
+5	57578	noun	marriage	0	The couple talked about marriage before the wedding.
+@ meanwhile
+1	57574	noun	meanwhile	1	Meanwhile, Dad cooked dinner while we set the table.
+2	57574	noun	meanwhile	0	Meanwhile means during the time between events.
+3	57574	noun	meanwhile	0	The bus was late; meanwhile, we waited in the rain.
+4	57574	noun	meanwhile	0	She studied; meanwhile, her brother played outside.
+5	57574	noun	meanwhile	0	Meanwhile, the cake cooled on the table.
+@ measure
+1	57634	noun	measure	1	Add one measure of rice to two measures of water.
+2	57634	noun	measure	0	A measure is a fixed amount of something.
+3	57634	noun	measure	0	Use a small measure of sugar in the tea.
+4	57634	noun	measure	0	The recipe needs one measure of flour.
+5	57634	noun	measure	0	Pour a measure of soap into the machine.
+@ medium
+1	57604	noun	medium	1	Water is the medium where fish live and move.
+2	57604	noun	medium	0	Air is the medium that carries sound to our ears.
+3	57604	noun	medium	0	The plant grew in a medium of sand and soil.
+4	57604	noun	medium	0	Scientists tested the medium around the cells.
+5	57604	noun	medium	0	A liquid can be a medium for a chemical reaction.
+@ mental
+1	57588	adj	mental	1	Taking breaks can support your mental health.
+2	57588	adj	mental	0	Mental means connected with the mind.
+3	57588	adj	mental	0	The game needs mental skill as well as luck.
+4	57588	adj	mental	0	The long test caused mental tiredness.
+5	57588	adj	mental	0	Reading can be good mental exercise.
+@ mess
+1	57675	noun	mess	1	The puppy made a mess with its muddy paws.
+2	57675	noun	mess	0	A mess is a dirty or untidy group of things.
+3	57675	noun	mess	0	Please clean up this mess before dinner.
+4	57675	noun	mess	0	The kitchen was a mess after the party.
+5	57675	noun	mess	0	He dropped the paint and made a mess.
+@ mild
+1	57666	adj	mild	1	Our teacher is mild even when the class is noisy.
+2	57666	adj	mild	0	A mild person is gentle and not easily angry.
+3	57666	adj	mild	0	She gave him a mild answer.
+4	57666	adj	mild	0	He has a mild way of speaking.
+5	57666	adj	mild	0	The mild coach explained the mistake calmly.
+@ mix
+1	57697	verb	mix	1	Mix the eggs and milk in a large bowl.
+2	57697	verb	mix	0	Mix the paint until the colour is even.
+3	57697	verb	mix	0	Do not mix red socks with white clothes.
+4	57697	verb	mix	0	We mix flour and water to make dough.
+5	57697	verb	mix	0	Mix the salad before serving it.
+@ mixture
+1	57627	noun	mixture	1	The baker made a mixture of flour, eggs, and milk.
+2	57627	noun	mixture	0	A mixture contains two or more things together.
+3	57627	noun	mixture	0	Stir the mixture until it is smooth.
+4	57627	noun	mixture	0	The mixture smelled strongly of garlic.
+5	57627	noun	mixture	0	Pour the mixture into the cake tin.
+@ mood
+1	57710	noun	mood	1	The music put everyone in a cheerful mood.
+2	57710	noun	mood	0	Mood is the way a person feels.
+3	57710	noun	mood	0	She was in a quiet mood after work.
+4	57710	noun	mood	0	His mood changed when he heard the news.
+5	57710	noun	mood	0	A good walk can lift your mood.
+@ mud
+1	57717	noun	mud	1	The children came home covered in mud after the game.
+2	57717	noun	mud	0	Mud is a mixture of water and soil.
+3	57717	noun	mud	0	My boots were stuck in the mud.
+4	57717	noun	mud	0	The rain turned the path into mud.
+5	57717	noun	mud	0	The pig rolled happily in the mud.
+@ murder
+1	57738	noun	murder	1	The detective read every clue in the murder case.
+2	57738	noun	murder	0	Murder is the unlawful killing of a person.
+3	57738	noun	murder	0	Police were called after the murder.
+4	57738	noun	murder	0	The book is about a murder in a small town.
+5	57738	noun	murder	0	The court heard evidence about the murder.
+@ muscle
+1	57752	noun	muscle	1	Swimming helps build muscle in your arms and legs.
+2	57752	noun	muscle	0	A muscle is body tissue that helps us move.
+3	57752	noun	muscle	0	He pulled a muscle while lifting the box.
+4	57752	noun	muscle	0	This exercise makes each muscle work.
+5	57752	noun	muscle	0	Her leg muscle was sore after the race.
+@ mystery
+1	57759	noun	mystery	1	Who left the flowers was still a mystery.
+2	57759	noun	mystery	0	A mystery is something secret or unexplained.
+3	57759	noun	mystery	0	The missing key remains a mystery.
+4	57759	noun	mystery	0	We watched a film about a mystery at sea.
+5	57759	noun	mystery	0	Solving the mystery took the whole afternoon.
+@ nail
+1	57796	noun	nail	1	She painted each nail bright blue for the party.
+2	57796	noun	nail	0	A nail is the hard covering at the end of a finger.
+3	57796	noun	nail	0	He cut a broken nail carefully.
+4	57796	noun	nail	0	Dirt was under the child's nail.
+5	57796	noun	nail	0	My nail caught on the rough wall.
+@ narrative
+1	57769	adj	narrative	1	The narrative part of the film tells the story.
+2	57769	adj	narrative	0	A narrative text tells a story.
+3	57769	adj	narrative	0	She wrote a narrative essay about her holiday.
+4	57769	adj	narrative	0	The teacher explained the narrative structure.
+5	57769	adj	narrative	0	The book uses a simple narrative style.
+@ nation
+1	57814	noun	nation	1	The nation celebrated when its team won the final.
+2	57814	noun	nation	0	A nation is a large community of people with a shared culture.
+3	57814	noun	nation	0	The nation has its own language and traditions.
+4	57814	noun	nation	0	People across the nation watched the speech.
+5	57814	noun	nation	0	The new law affected the whole nation.
+@ native
+1	57781	adj	native	1	Thai is her native language because she learned it from birth.
+2	57781	adj	native	0	A native language is learned from birth.
+3	57781	adj	native	0	He returned to his native country.
+4	57781	adj	native	0	The bird is native to this island.
+5	57781	adj	native	0	They use native plants in the garden.
+@ naturally
+1	57776	adv	naturally	1	The bird naturally builds its nest in the spring.
+2	57776	adv	naturally	0	Cats naturally like to climb high places.
+3	57776	adv	naturally	0	The river naturally follows the lowest ground.
+4	57776	adv	naturally	0	Children naturally ask many questions.
+5	57776	adv	naturally	0	The leaves naturally fall in autumn.
+@ necessarily
+1	57779	adv	necessarily	1	A bigger bag does not necessarily hold more books.
+2	57779	adv	necessarily	0	More expensive does not necessarily mean better.
+3	57779	adv	necessarily	0	Rain does not necessarily stop the match.
+4	57779	adv	necessarily	0	Being quiet does not necessarily mean being unhappy.
+5	57779	adv	necessarily	0	A mistake does not necessarily ruin the plan.
+@ needle
+1	57835	noun	needle	1	Use a needle and thread to mend the torn shirt.
+2	57835	noun	needle	0	A needle is a thin tool used for sewing.
+3	57835	noun	needle	0	Be careful because the needle is sharp.
+4	57835	noun	needle	0	She pushed the needle through the cloth.
+5	57835	noun	needle	0	The nurse used a clean needle for the injection.
+@ neighbourhood
+1	57780	noun	neighbourhood	1	Our neighbourhood has a park where children play.
+2	57780	noun	neighbourhood	0	A neighbourhood is the area where people live nearby.
+3	57780	noun	neighbourhood	0	She knows every street in the neighbourhood.
+4	57780	noun	neighbourhood	0	The neighbourhood is quiet after ten o'clock.
+5	57780	noun	neighbourhood	0	They opened a café in the neighbourhood.
+@ nor
+1	57823	conj	nor	1	Neither the bus nor the train arrived on time.
+2	57823	conj	nor	0	Nor joins a second negative idea.
+3	57823	conj	nor	0	She likes neither coffee nor tea.
+4	57823	conj	nor	0	He did not smile, nor did he speak.
+5	57823	conj	nor	0	Neither rain nor wind stopped the race.
+@ northern
+1	57829	adj	northern	1	They visited a northern village near the mountains.
+2	57829	adj	northern	0	Northern means in or toward the north.
+3	57829	adj	northern	0	The northern road is closed in winter.
+4	57829	adj	northern	0	We saw northern lights in the sky.
+5	57829	adj	northern	0	The northern side of the house is cooler.
+@ nuclear
+1	57851	adj	nuclear	1	The lesson explained how nuclear energy can make electricity.
+2	57851	adj	nuclear	0	Nuclear means related to the centre of an atom.
+3	57851	adj	nuclear	0	Scientists study nuclear changes in the laboratory.
+4	57851	adj	nuclear	0	The book has a chapter on nuclear physics.
+5	57851	adj	nuclear	0	A nuclear reaction releases energy.
+@ obvious
+1	57848	adj	obvious	1	It was obvious that the child was tired.
+2	57848	adj	obvious	0	The answer was obvious after we read the clue.
+3	57848	adj	obvious	0	Her wet coat made the rain obvious.
+4	57848	adj	obvious	0	There was an obvious mistake in the total.
+5	57848	adj	obvious	0	The path is obvious from the gate.
+@ obviously
+1	57849	adv	obviously	1	He was obviously happy when he saw the puppy.
+2	57849	adv	obviously	0	Obviously, we need more chairs for the guests.
+3	57849	adv	obviously	0	The bag was obviously too heavy for her.
+4	57849	adv	obviously	0	She obviously knew the answer.
+5	57849	adv	obviously	0	It was obviously safer to wait inside.
+@ occasion
+1	57896	noun	occasion	1	The school concert was a special occasion for the family.
+2	57896	noun	occasion	0	An occasion is a suitable or special time for something.
+3	57896	noun	occasion	0	This dress is for a formal occasion.
+4	57896	noun	occasion	0	We saved the cake for a happy occasion.
+5	57896	noun	occasion	0	Her birthday was the perfect occasion for a picnic.
+@ occur
+1	57888	verb	occur	1	Power cuts often occur during strong storms.
+2	57888	verb	occur	0	An accident can occur when people drive too fast.
+3	57888	verb	occur	0	The problem did not occur again.
+4	57888	verb	occur	0	Wildfires can occur in very dry weather.
+5	57888	verb	occur	0	These mistakes occur when we hurry.
+@ odd
+1	57906	adj	odd	1	It felt odd to see snow in the middle of summer.
+2	57906	adj	odd	0	An odd thing is unusual or unexpected.
+3	57906	adj	odd	0	There was an odd smell in the kitchen.
+4	57906	adj	odd	0	He wore an odd hat to school.
+5	57906	adj	odd	0	The machine made an odd sound.

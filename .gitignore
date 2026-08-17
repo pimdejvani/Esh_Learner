@@ -9,7 +9,20 @@ __pycache__/
 # Rebuildable from tools/; only the exported app seed
 # (vocab_app/assets/seed/vocab.db) is tracked.
 # Leading slash so it matches only the repo-root data/, not vocab_app/lib/data/.
-/data/
+# `/data/*` rather than `/data/` so the drafts below can be un-ignored: git will
+# not descend into an excluded directory, so a negation inside it never matches.
+/data/*
+
+# Exception: the generated English corpus and its review trail (~1.5 MB total).
+# This is our own content, not harvested evidence, and a session working from a
+# phone or a cloud sandbox needs it in the clone. The lexical evidence it is
+# checked against ships separately as the vocab-evidence-v1 Release asset built
+# by tools/export_evidence_db.py.
+!/data/terra_english_drafts/
+!/data/sol_review_drafts/
+!/data/sol_review_reports/
+!/data/sol_review_manifest.txt
+!/data/terra_missing_manifest.txt
 
 # Pipeline scratch output
 /tools/dictionary_probe_results/

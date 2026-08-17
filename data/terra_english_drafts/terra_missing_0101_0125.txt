@@ -1,0 +1,150 @@
+@ official
+1	57924	adj	official	1	The school website posted the official exam schedule.
+2	57923	adj	official	0	Wait for an official announcement before booking tickets.
+3	57922	adj	official	0	She received an official letter from the city office.
+4	57924	adj	official	0	Only official documents are accepted at the border.
+5	57927	adj	official	0	His official role is to check the safety rules.
+@ old-fashioned
+1	57892	adj	old-fashioned	1	My grandfather still uses an old-fashioned camera with film.
+2	57892	adj	old-fashioned	0	The shop sells old-fashioned sweets in glass jars.
+3	57893	adj	old-fashioned	0	Her old-fashioned views surprised the younger workers.
+4	57892	adj	old-fashioned	0	Writing letters by hand can seem old-fashioned now.
+5	57892	adj	old-fashioned	0	They chose an old-fashioned stove for the cottage.
+@ operation
+1	57945	noun	operation	1	After the operation, the patient rested in a quiet room.
+2	57945	noun	operation	0	The doctor explained how long the operation would take.
+3	57944	noun	operation	0	The family business is a small operation with five workers.
+4	57943	noun	operation	0	The rescue operation began at sunrise.
+5	57940	noun	operation	0	The manual describes the safe operation of the machine.
+@ organized
+1	57934	adj	organized	1	Our organized teacher always knows where every paper is.
+2	57933	adj	organized	0	The kitchen looks organized because everything has a label.
+3	57934	adj	organized	0	An organized student plans homework before the weekend.
+4	57933	adj	organized	0	Her organized desk made the report easy to find.
+5	57934	adj	organized	0	He is organized enough to arrive early for every meeting.
+@ organizer
+1	57950	noun	organizer	1	The festival organizer checked that every band had a stage time.
+2	57950	noun	organizer	0	Contact the event organizer if you need a ticket refund.
+3	57952	noun	organizer	0	She writes appointments in her paper organizer.
+4	57954	noun	organizer	0	The drawer organizer keeps my pens and clips separate.
+5	57950	noun	organizer	0	The organizer sent volunteers their instructions by email.
+@ originally
+1	57938	adv	originally	1	This building was originally a train station.
+2	57938	adv	originally	0	The plan originally included a larger garden.
+3	57938	adv	originally	0	She originally wanted to study music.
+4	57938	adv	originally	0	The recipe was originally created by his grandmother.
+5	57938	adv	originally	0	We originally booked a room for two nights.
+@ ought
+1	57968	verb	ought	1	You ought to wear a helmet when riding a bicycle.
+2	57969	verb	ought	0	We ought to leave now if we want to catch the train.
+3	57968	verb	ought	0	Children ought to be kind to one another.
+4	57971	verb	ought	0	The package ought to arrive by Friday.
+5	57970	verb	ought	0	This new key ought to open the front door.
+@ ours
+1	57958	pron	ours	1	That blue suitcase is ours, not theirs.
+2	57958	pron	ours	0	The table by the window is ours.
+3	57958	pron	ours	0	Your garden is bigger than ours.
+4	57961	pron	ours	0	The school team defended ours with great pride.
+5	57958	pron	ours	0	Those coats are ours, so please do not move them.
+@ outdoor
+1	57955	adj	outdoor	1	We planned an outdoor picnic beside the lake.
+2	57955	adj	outdoor	0	The camp offers outdoor activities such as climbing and kayaking.
+3	57955	adj	outdoor	0	They bought outdoor chairs for the balcony.
+4	57955	adj	outdoor	0	An outdoor concert is scheduled for Saturday evening.
+5	57955	adj	outdoor	0	Wear outdoor shoes if the path is muddy.
+@ outdoors
+1	57976	adv	outdoors	1	The children played outdoors until dinner was ready.
+2	57976	adv	outdoors	0	It is too cold to eat outdoors today.
+3	57976	adv	outdoors	0	We prefer exercising outdoors in the morning.
+4	57976	adv	outdoors	0	The dog loves running outdoors after rain.
+5	57976	adv	outdoors	0	They slept outdoors under the stars.
+@ package
+1	57985	noun	package	1	A package with my name on it was waiting at the door.
+2	57985	noun	package	0	The courier left the package with our neighbor.
+3	57986	noun	package	0	The travel package includes flights and a hotel.
+4	57987	noun	package	0	Install the software package before opening the program.
+5	57985	noun	package	0	Please wrap the gift in a small package.
+@ painful
+1	57980	adj	painful	1	It was painful to watch her leave without saying goodbye.
+2	57980	adj	painful	0	Touching the cut was painful for several days.
+3	57982	adj	painful	0	Filling out all the forms was a painful process.
+4	57981	adj	painful	0	His injured shoulder was still painful this morning.
+5	57980	adj	painful	0	The memory of that argument is painful for both of us.
+@ pale
+1	58009	adj	pale	1	She looked pale after hearing the sudden news.
+2	58008	adj	pale	0	He chose a pale blue shirt for the interview.
+3	58009	adj	pale	0	The patient became pale and asked to sit down.
+4	58008	adj	pale	0	A pale moon appeared above the trees.
+5	58008	adj	pale	0	The walls are painted a pale shade of green.
+@ pan
+1	58026	noun	pan	1	Heat the oil in a pan before adding the onions.
+2	58026	noun	pan	0	She washed the pan after cooking breakfast.
+3	58028	noun	pan	0	Use a deep pan to make the soup.
+4	58030	noun	pan	0	They used a pan to search for gold in the stream.
+5	58038	noun	pan	0	The critic gave the new movie a harsh pan.
+@ participate
+1	57999	verb	participate	1	Everyone can participate in the school sports day.
+2	57999	verb	participate	0	Students must participate in the group discussion.
+3	57999	verb	participated	0	More than fifty people participated in the clean-up.
+4	57999	verb	participating	0	She is participating in a charity run this weekend.
+5	57999	verb	participate	0	You do not have to participate if you feel unwell.
+@ particularly
+1	58003	adv	particularly	1	I particularly enjoyed the last chapter of the book.
+2	58003	adv	particularly	0	The road is particularly dangerous when it rains.
+3	58005	adv	particularly	0	This rule applies particularly to new employees.
+4	58003	adv	particularly	0	She is particularly good at explaining difficult ideas.
+5	58005	adv	particularly	0	We need particularly quiet rooms for the exam.
+@ passion
+1	58067	noun	passion	1	Her passion for cooking began when she was a child.
+2	58067	noun	passion	0	He speaks about music with real passion.
+3	58068	noun	passion	0	Their shared passion brought them closer together.
+4	58067	noun	passion	0	Painting is not just a hobby; it is her passion.
+5	58069	noun	passion	0	The team played with passion until the final whistle.
+@ path
+1	58094	noun	path	1	Follow the narrow path through the woods to reach the lake.
+2	58094	noun	path	0	The path becomes steep after the bridge.
+3	58096	noun	path	0	College put her on a new career path.
+4	58097	noun	path	0	There is no easy path to learning a language.
+5	58094	noun	path	0	Leaves covered the path after the storm.
+@ payment
+1	58082	noun	payment	1	I made the payment for the concert tickets online.
+2	58082	noun	payment	0	Your payment is due by the end of the month.
+3	58081	noun	payment	0	The store accepts payment by card or cash.
+4	58082	noun	payment	0	She received a payment for her freelance work.
+5	58082	noun	payment	0	Please keep the receipt as proof of payment.
+@ peaceful
+1	58086	adj	peaceful	1	The lake was peaceful in the early morning light.
+2	58084	adj	peaceful	0	They spent a peaceful afternoon reading in the garden.
+3	58085	adj	peaceful	0	She is a peaceful person who avoids arguments.
+4	58084	adj	peaceful	0	The town remained peaceful during the holiday.
+5	58086	adj	peaceful	0	We found a peaceful place to sit beside the river.
+@ percentage
+1	58091	noun	percentage	1	A high percentage of students passed the final exam.
+2	58091	noun	percentage	0	What percentage of the budget goes to transport?
+3	58091	noun	percentage	0	The percentage of rainy days is higher in July.
+4	58092	noun	percentage	0	The artist receives a percentage of each sale.
+5	58091	noun	percentage	0	Only a small percentage of voters chose that option.
+@ perfectly
+1	58090	adv	perfectly	1	The key fits perfectly in the old lock.
+2	58089	adv	perfectly	0	She sang the difficult song perfectly.
+3	58090	adv	perfectly	0	I understand your instructions perfectly.
+4	58090	adv	perfectly	0	The new sofa fits perfectly against the wall.
+5	58089	adv	perfectly	0	The machine is working perfectly again.
+@ performance
+1	58116	noun	performance	1	The audience applauded after the dancers' performance.
+2	58116	noun	performance	0	We bought tickets for the evening performance.
+3	58117	noun	performance	0	The car's performance improved after the repair.
+4	58114	noun	performance	0	Her performance of the task was quick and accurate.
+5	58115	noun	performance	0	Winning the race was his best performance this season.
+@ personally
+1	58108	adv	personally	1	The manager personally thanked every volunteer.
+2	58109	adv	personally	0	I personally think the blue one looks better.
+3	58108	adv	personally	0	She personally delivered the flowers to the hospital.
+4	58107	adv	personally	0	He answered the complaint personally.
+5	58109	adv	personally	0	Personally, I would choose the earlier train.
+@ persuade
+1	58111	verb	persuaded	1	She persuaded her brother to try the new restaurant.
+2	58111	verb	persuade	0	Can you persuade him to come to the meeting?
+3	58111	verb	persuaded	0	The teacher persuaded the class to stay calm.
+4	58112	verb	persuade	0	The evidence may persuade the jury that he is innocent.
+5	58113	verb	persuading	0	They are persuading local people to recycle more.

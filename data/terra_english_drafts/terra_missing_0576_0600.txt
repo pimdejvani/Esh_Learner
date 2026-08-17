@@ -1,0 +1,150 @@
+@ enable
+1	63220	verb	enable	1	The new ramp will enable wheelchair users to enter the building.
+2	63220	verb	enables	0	A good map enables hikers to stay on the path.
+3	63223	verb	enabled	0	The grant enabled the school to buy new computers.
+4	63226	verb	enable	0	Enable the alarm before you leave the house.
+5	63220	verb	enabling	0	The course is enabling students to work independently.
+@ encounter
+1	63254	verb	encountered	1	We encountered a deer while walking through the forest.
+2	63254	verb	encounter	0	You may encounter delays during the roadworks.
+3	63255	verb	encountered	0	She encountered a difficult problem in the report.
+4	63256	verb	encounter	0	The two hikers encounter each other near the lake.
+5	63254	verb	encountering	0	He is encountering new words every day.
+@ engage
+1	63228	verb	engage	1	The teacher used a game to engage the quiet students.
+2	63227	verb	engage	0	Try to engage with your classmates during the activity.
+3	63235	verb	engaged	0	They engaged a guide for the mountain trip.
+4	63229	verb	engaging	0	She is engaging the child in conversation.
+5	63228	verb	engages	0	The film engages viewers from the first scene.
+@ enhance
+1	63246	verb	enhance	1	Fresh herbs enhance the flavor of the soup.
+2	63245	verb	enhance	0	More light can enhance the room's appearance.
+3	63246	verb	enhanced	0	The update enhanced the camera quality.
+4	63245	verb	enhancing	0	They are enhancing the park with new trees.
+5	63246	verb	enhances	0	A clear title enhances the report.
+@ enquiry
+1	63219	noun	enquiry	1	Please send an enquiry if you need more information.
+2	63219	noun	enquiry	0	The receptionist answered my enquiry about the course.
+3	63219	noun	enquiries	0	The office receives many enquiries each day.
+4	63219	noun	enquiry	0	Her enquiry led to a quick reply from the hotel.
+5	63219	noun	enquiry	0	The website has a form for every enquiry.
+@ ensure
+1	63249	verb	ensure	1	Check the address carefully to ensure your package arrives.
+2	63249	verb	ensure	0	Please ensure that all doors are locked.
+3	63249	verb	ensured	0	The teacher ensured that everyone understood the task.
+4	63249	verb	ensuring	0	Wearing a helmet is ensuring better safety on a bike.
+5	63250	verb	ensure	0	We ensure our guests that their details are private.
+@ enthusiasm
+1	63251	noun	enthusiasm	1	Her enthusiasm for the project encouraged the whole team.
+2	63251	noun	enthusiasm	0	The children showed enthusiasm for the science experiment.
+3	63252	noun	enthusiasm	0	Gardening is his greatest enthusiasm.
+4	63251	noun	enthusiasm	0	She spoke with enthusiasm about her new job.
+5	63251	noun	enthusiasm	0	Their enthusiasm made the event feel lively.
+@ enthusiastic
+1	63265	adj	enthusiastic	1	The enthusiastic crowd cheered when the band arrived.
+2	63265	adj	enthusiastic	0	She is enthusiastic about learning to cook.
+3	63265	adj	enthusiastic	0	An enthusiastic volunteer offered to help us.
+4	63265	adj	enthusiastic	0	The children were enthusiastic about the trip.
+5	63265	adj	enthusiastic	0	He gave an enthusiastic reply to the invitation.
+@ entire
+1	63267	adj	entire	1	We spent the entire afternoon painting the bedroom.
+2	63267	adj	entire	0	The entire class passed the final test.
+3	63267	adj	entire	0	She read the entire book in one weekend.
+4	63267	adj	entire	0	The entire family came to the celebration.
+5	63267	adj	entire	0	This rule applies to the entire building.
+@ entirely
+1	63278	adv	entirely	1	The answer was entirely different from what I expected.
+2	63278	adv	entirely	0	She entirely forgot about the appointment.
+3	63279	adv	entirely	0	The project was entirely funded by local donations.
+4	63278	adv	entirely	0	I am not entirely sure which bus to take.
+5	63279	adv	entirely	0	The room was entirely empty after the move.
+@ establish
+1	63287	verb	established	1	They established a small café near the station.
+2	63287	verb	establish	0	The group hopes to establish a new community garden.
+3	63286	verb	established	0	The routine established a calm start to each day.
+4	63289	verb	establish	0	The test will establish whether the water is clean.
+5	63288	verb	establishing	0	The council is establishing new safety rules.
+@ estate
+1	63297	noun	estate	1	The old estate includes a large house and several fields.
+2	63299	noun	estate	0	They live on a housing estate outside the city.
+3	63290	noun	estate	0	The lawyer managed the estate after her uncle died.
+4	63297	noun	estates	0	Several estates surround the village.
+5	63296	noun	estate	0	She inherited an estate near the coast.
+@ estimate
+1	63280	noun	estimate	1	The builder gave us an estimate for repairing the roof.
+2	63281	noun	estimate	0	Ask for a written estimate before the work starts.
+3	63280	noun	estimate	0	Our estimate of the cost was too low.
+4	63280	noun	estimates	0	The report includes estimates for next year's sales.
+5	63280	noun	estimate	0	The time estimate for the journey is two hours.
+@ ethical
+1	63308	adj	ethical	1	The company wants to make ethical choices about its suppliers.
+2	63307	adj	ethical	0	Doctors must follow ethical rules when treating patients.
+3	63308	adj	ethical	0	It is ethical to give credit for someone else's work.
+4	63306	adj	ethical	0	The class discussed ethical questions about technology.
+5	63308	adj	ethical	0	She made an ethical decision to return the lost wallet.
+@ evaluate
+1	63311	verb	evaluate	1	The teacher will evaluate each student's final project.
+2	63311	verb	evaluate	0	We need to evaluate the results before making a decision.
+3	63311	verb	evaluated	0	The doctor evaluated his condition carefully.
+4	63311	verb	evaluating	0	They are evaluating several possible locations.
+5	63312	verb	evaluate	0	Evaluate the expression before writing your answer.
+@ evil
+1	63323	adj	evil	1	The story has an evil character who tries to steal the crown.
+2	63324	adj	evil	0	An evil person may hurt others without regret.
+3	63325	adj	evil	0	An evil smell came from the old refrigerator.
+4	63327	adj	evil	0	Smoking is an evil habit for your health.
+5	63326	adj	evil	0	The storm brought evil news to the fishing village.
+@ examination
+1	63345	noun	examination	1	She studied all weekend for her mathematics examination.
+2	63344	noun	examination	0	The doctor performed an examination of his injured arm.
+3	63343	noun	examination	0	A careful examination of the map revealed a shortcut.
+4	63345	noun	examinations	0	Final examinations begin next Monday.
+5	63346	noun	examination	0	The lawyer began the examination of the witness.
+@ excuse
+1	63347	verb	excuse	1	Please excuse me for arriving late to the meeting.
+2	63348	verb	excuse	0	The teacher may excuse you from gym class today.
+3	63349	verb	excused	0	The rain excused our decision to stay indoors.
+4	63347	verb	excuse	0	Can you excuse her mistake this time?
+5	63350	verb	excusing	0	He is excusing his behavior instead of apologizing.
+@ executive
+1	63315	adj	executive	1	She has an executive role in the company.
+2	63315	adj	executive	0	The executive team meets every Monday morning.
+3	63314	adj	executive	0	This office has executive power to carry out decisions.
+4	63316	adj	executive	0	They stayed in an executive lounge at the airport.
+5	63315	adj	executive	0	He attended an executive training program.
+@ existence
+1	63321	noun	existence	1	Scientists found evidence for the existence of water on Mars.
+2	63321	noun	existence	0	The existence of the old tunnel was a surprise.
+3	63321	noun	existence	0	Nobody doubted the existence of the rare bird.
+4	63322	noun	existence	0	The book asks questions about human existence.
+5	63321	noun	existence	0	The law recognizes the existence of this right.
+@ expectation
+1	63335	noun	expectation	1	The surprise party exceeded her expectation.
+2	63336	noun	expectation	0	The meal was better than our expectation.
+3	63337	noun	expectation	0	Parents have an expectation that children will be polite.
+4	63335	noun	expectations	0	His expectations were high before the interview.
+5	63335	noun	expectation	0	There is an expectation that the train will arrive on time.
+@ expense
+1	63354	noun	expense	1	The cost of the repair was a large expense for the family.
+2	63354	noun	expense	0	Travel is the biggest expense in our monthly budget.
+3	63354	noun	expenses	0	Keep your receipts to claim work expenses.
+4	63355	noun	expense	0	The trip happened at the expense of our savings.
+5	63354	noun	expense	0	They shared the expense of renting the car.
+@ exploration
+1	63358	noun	exploration	1	The children enjoyed exploration of the cave with their guide.
+2	63359	noun	exploration	0	Space exploration has taught us much about other planets.
+3	63358	noun	exploration	0	The book encourages exploration of new ideas.
+4	63360	noun	exploration	0	The company began mineral exploration in the hills.
+5	63358	noun	explorations	0	Their explorations led them to a hidden beach.
+@ expose
+1	63362	verb	exposed	1	The storm exposed the old pipes beneath the road.
+2	63362	verb	expose	0	Do not expose the food to direct sunlight.
+3	63364	verb	exposed	0	Workers were exposed to harmful chemicals.
+4	63362	verb	exposing	0	The article is exposing a serious problem.
+5	63362	verb	exposes	0	This window exposes the room to cold air.
+@ extend
+1	63370	verb	extend	1	The library will extend its opening hours during exams.
+2	63367	verb	extends	0	The road extends from the village to the coast.
+3	63369	verb	extended	0	They extended the kitchen by adding a small room.
+4	63368	verb	extends	0	The beach extends for several kilometers.
+5	63372	verb	extend	0	We extend our thanks to everyone who helped.

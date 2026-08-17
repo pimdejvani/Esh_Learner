@@ -1,0 +1,150 @@
+@ fundamental
+1	63746	noun	fundamental	1	Learning the alphabet is a fundamental of reading and writing.
+2	63746	noun	fundamental	0	A basic principle is a fundamental.
+3	63746	noun	fundamental	0	Trust is a fundamental of a strong friendship.
+4	63746	noun	fundamentals	0	The course begins with the fundamentals of science.
+5	63746	noun	fundamentals	0	Good balance is one of the fundamentals of skating.
+@ funding
+1	63725	verb	funding	1	The town is funding a new playground beside the library.
+2	63725	verb	funding	0	The charity is funding meals for hungry families.
+3	63725	verb	funding	0	They are funding research into cleaner energy.
+4	63725	verb	funding	0	Funding the project requires support from local businesses.
+5	63725	verb	funding	0	The school is funding a trip for the winning team.
+@ furthermore
+1	63752	adv	furthermore	1	The road is icy; furthermore, thick fog makes it hard to see.
+2	63752	adv	furthermore	0	Furthermore, the ticket includes a free map of the city.
+3	63752	adv	furthermore	0	The room is small; furthermore, it has no window.
+4	63752	adv	furthermore	0	Furthermore, we need everyone's agreement before we begin.
+5	63752	adv	furthermore	0	The film is funny and, furthermore, very short.
+@ gain
+1	63760	verb	gained	1	After months of training, she gained the confidence to swim across the pool.
+2	63760	verb	gain	0	To get possession of something is to gain it.
+3	63760	verb	gain	0	You can gain experience by helping at the shop.
+4	63760	verb	gain	0	The team hopes to gain new supporters.
+5	63760	verb	gain	0	He worked hard to gain the manager's trust.
+@ gang
+1	63783	verb	gang	1	We will gang along the path until we reach the village.
+2	63783	verb	gang	0	To go or proceed is to gang.
+3	63783	verb	ganged	0	The travelers ganged slowly up the hill.
+4	63783	verb	gang	0	Gang on ahead while I tie my shoe.
+5	63783	verb	ganged	0	They ganged home before the rain began.
+@ generate
+1	63754	verb	generated	1	The spinning wheel generated enough electricity to light the small cabin.
+2	63754	verb	generate	0	To produce or create something is to generate it.
+3	63754	verb	generate	0	Solar panels generate power from sunlight.
+4	63754	verb	generate	0	The new campaign may generate more interest in the event.
+5	63754	verb	generate	0	Warm water can generate steam.
+@ genre
+1	63781	noun	genre	1	Mystery is her favorite genre because she loves solving clues.
+2	63781	noun	genre	0	A category of books, films, or art is a genre.
+3	63781	noun	genre	0	This novel belongs to the fantasy genre.
+4	63781	noun	genre	0	The library organizes movies by genre.
+5	63781	noun	genre	0	Jazz is a musical genre with many styles.
+@ govern
+1	63805	verb	governed	1	The elected council governed the town and set its local rules.
+2	63805	verb	govern	0	To manage a country's public affairs is to govern it.
+3	63805	verb	govern	0	The president must govern according to the law.
+4	63805	verb	govern	0	People vote for leaders who will govern the city.
+5	63805	verb	govern	0	A parliament helps govern the nation.
+@ grab
+1	63840	verb	grabbed	1	The child grabbed her hat before the wind carried it away.
+2	63840	verb	grab	0	To take hold of something suddenly is to grab it.
+3	63840	verb	grab	0	Grab the rope before the boat moves.
+4	63840	verb	grab	0	He tried to grab the falling glass.
+5	63840	verb	grabbed	0	She grabbed her bag and ran for the bus.
+@ gradually
+1	63817	adv	gradually	1	Gradually, the sky changed from black to pale blue before sunrise.
+2	63817	adv	gradually	0	If something changes slowly, it changes gradually.
+3	63817	adv	gradually	0	The pain gradually became less severe.
+4	63817	adv	gradually	0	The room gradually filled with warm sunlight.
+5	63817	adv	gradually	0	He gradually learned to trust the new dog.
+@ grand
+1	63819	adj	grand	1	They held a grand celebration in the town's largest hall.
+2	63819	adj	grand	0	Something large, impressive, or important is grand.
+3	63819	adj	grand	0	The hotel has a grand entrance with tall columns.
+4	63819	adj	grand	0	She had a grand plan for improving the garden.
+5	63819	adj	grand	0	The orchestra gave a grand performance.
+@ grant
+1	63830	verb	granted	1	The teacher granted us permission to use the art room after class.
+2	63830	verb	grant	0	To give official permission is to grant it.
+3	63830	verb	grant	0	The library may grant you extra time with the book.
+4	63830	verb	grant	0	The judge can grant a request for more time.
+5	63830	verb	grant	0	Please grant me a chance to explain.
+@ guarantee
+1	63856	noun	guarantee	1	A locked door is no guarantee that a determined cat will stay outside.
+2	63856	noun	guarantee	0	Something that assures an outcome is a guarantee.
+3	63856	noun	guarantee	0	The receipt is your guarantee that the product was bought here.
+4	63856	noun	guarantee	0	Hard work is no guarantee of success.
+5	63856	noun	guarantee	0	The contract gives a guarantee of payment.
+@ handle
+1	63870	noun	handle	1	The mug's handle broke when it fell onto the kitchen floor.
+2	63870	noun	handle	0	The part of an object made for holding is its handle.
+3	63870	noun	handle	0	Hold the pan by its handle.
+4	63870	noun	handle	0	The suitcase has a strong handle for carrying it.
+5	63870	noun	handle	0	She pulled the door open by the handle.
+@ harm
+1	63864	noun	harm	1	The helmet protected him from harm when he fell from his bike.
+2	63864	noun	harm	0	Physical injury or damage is harm.
+3	63864	noun	harm	0	The medicine should not cause harm when used correctly.
+4	63864	noun	harm	0	Keep the knife away from children to prevent harm.
+5	63864	noun	harm	0	The storm did little harm to the house.
+@ harmful
+1	63869	adj	harmful	1	Too much smoke can be harmful to your lungs.
+2	63869	adj	harmful	0	Something that can cause damage is harmful.
+3	63869	adj	harmful	0	Harmful chemicals must be kept in a locked cabinet.
+4	63869	adj	harmful	0	The doctor explained why too much sugar can be harmful.
+5	63869	adj	harmful	0	Plastic waste is harmful to sea animals.
+@ hearing
+1	63897	adj	hearing	1	The hearing child listened carefully while the deaf child watched the signs.
+2	63897	adj	hearing	0	A person able to hear is hearing.
+3	63897	adj	hearing	0	The hearing students learned some sign language.
+4	63897	adj	hearing	0	The school supports both hearing and deaf children.
+5	63897	adj	hearing	0	Her hearing friends described the sound of the bell.
+@ heaven
+1	63911	noun	heaven	1	Dark clouds covered the heaven just before the rain began.
+2	63911	noun	heaven	0	The sky above the earth can be called heaven.
+3	63911	noun	heaven	0	Birds crossed the clear blue heaven.
+4	63911	noun	heaven	0	A bright star appeared in the evening heaven.
+5	63911	noun	heaven	0	The rocket rose high into heaven.
+@ heel
+1	63930	noun	heel	1	A blister formed on my heel after walking in new shoes.
+2	63930	noun	heel	0	The back part of your foot is your heel.
+3	63930	noun	heel	0	She stepped on his heel in the crowded bus.
+4	63930	noun	heel	0	The doctor examined the pain in my heel.
+5	63930	noun	heel	0	Sand rubbed against her heel inside the shoe.
+@ hell
+1	63993	name	hell	1	In the old story, the villain feared being sent to hell after death.
+2	63993	name	hell	0	A place of torment after death is called hell in some beliefs.
+3	63993	name	hell	0	The poem describes hell as a place of fire and suffering.
+4	63993	name	hell	0	Some religions teach that evil spirits live in hell.
+5	63993	name	hell	0	The character begged not to be taken to hell.
+@ hesitate
+1	63908	verb	hesitated	1	She hesitated at the diving board, then jumped into the pool.
+2	63908	verb	hesitate	0	To pause because you are uncertain is to hesitate.
+3	63908	verb	hesitate	0	Do not hesitate to ask for help.
+4	63908	verb	hesitate	0	He may hesitate before making such a big decision.
+5	63908	verb	hesitate	0	I did not hesitate when the alarm sounded.
+@ hollow
+1	63965	noun	hollow	1	We walked through a quiet hollow between two forested hills.
+2	63965	noun	hollow	0	A small valley between hills is a hollow.
+3	63965	noun	hollow	0	The stream runs through the hollow after heavy rain.
+4	63965	noun	hollow	0	A cabin stood alone in the hollow.
+5	63965	noun	hollow	0	Morning mist filled the hollow below the road.
+@ holy
+1	63979	adj	holy	1	Visitors removed their shoes before entering the holy temple.
+2	63979	adj	holy	0	Something dedicated to a god or religion is holy.
+3	63979	adj	holy	0	The river is holy to many people in the region.
+4	63979	adj	holy	0	They gathered at a holy place for prayer.
+5	63979	adj	holy	0	The priest carried a holy book into the ceremony.
+@ honour
+1	63906	noun	honour	1	It was an honour to receive the award from our former teacher.
+2	63906	noun	honour	0	A special privilege or mark of respect is an honour.
+3	63906	noun	honour	0	The medal was given in honour of the brave firefighter.
+4	63906	noun	honour	0	She considered it an honour to lead the parade.
+5	63906	noun	honour	0	Guests stood in honour of the visiting author.
+@ household
+1	63986	noun	household	1	Everyone in the household helped prepare dinner for the guests.
+2	63986	noun	household	0	All the people living in one home are a household.
+3	63986	noun	household	0	The household shares one small kitchen.
+4	63986	noun	household	0	Each household received a recycling bin.
+5	63986	noun	household	0	The survey asked how many people lived in each household.

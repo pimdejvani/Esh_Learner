@@ -1,0 +1,174 @@
+@ patient
+1	49336	adj	patient	1	It is patient.
+2	49336	adj	more patient	0	Please be more patient with the new student.
+3	49336	adj	most patient	0	Maya is the most patient teacher in the school.
+4	49339	noun	patient	0	The doctor examined the patient carefully.
+5	49339	noun	patients	0	The nurse brought food to the patients.
+
+@ pattern
+1	49343	noun	pattern	1	I found my grandmother's old dress pattern and made the same dress for my daughter.
+2	49342	noun	patterns	0	The tiles form simple blue patterns.
+3	49347	noun	pattern	0	This leaf is a typical pattern for the species.
+4	49364	verb	patterned	0	The artist patterned the wall with small circles.
+5	49367	verb	patterns	0	The new data patterns with earlier results.
+
+@ peace
+1	49380	noun	peace	1	After years apart, the two brothers finally made peace.
+2	49377	noun	peace	0	The village is quiet and full of peace.
+3	49378	noun	peace	0	She found peace after talking about her worries.
+4	49381	noun	peace	0	Both countries signed an agreement for peace.
+5	49382	verb	peaced	0	The two groups peaced after a long dispute.
+
+@ penny
+1	49387	noun	penny	1	The child gave his last penny to help the lost dog.
+2	49385	noun	pence	0	The sweet costs fifty pence.
+3	49387	noun	pennies	0	She collected old pennies in a jar.
+4	49390	noun	penny	0	The repair did not cost me a penny.
+5	49387	noun	penny	0	A US penny is worth one cent.
+
+@ per
+1	49394	prep	per	1	We walk per home.
+2	49394	prep	per	0	The hotel charges eighty dollars per night.
+3	49395	prep	per	0	The speed limit is sixty kilometers per hour.
+4	49397	prep	per	0	Per the agreement, payment is due on Friday.
+5	49398	prep	per	0	The meeting starts at nine, per the manager.
+
+@ perform
+1	49402	verb	perform	1	We perform every day.
+2	49402	verb	performed	0	The surgeon performed the operation successfully.
+3	49403	verb	performs	0	This engine performs well in cold weather.
+4	49408	verb	performing	0	The band is performing in the park tonight.
+5	49408	verb	perform	0	Students will perform a short play for their parents.
+
+@ perhaps
+1	49413	adv	perhaps	1	We do it perhaps.
+2	49413	adv	perhaps	0	Perhaps we should take an umbrella.
+3	49413	adv	perhaps	0	She is perhaps the best singer in the group.
+4	49413	adv	perhaps	0	The train will arrive late, perhaps after midnight.
+5	49415	noun	perhapses	0	The plan contains too many perhapses and no firm decisions.
+
+@ permission
+1	49416	noun	permission	1	When her parents gave permission, she hugged them and ran to join the trip.
+2	49416	noun	permission	0	You need permission to enter this room.
+3	49416	noun	permissions	0	The app requests several permissions.
+4	49418	noun	permission	0	Change the file permission to allow editing.
+5	49419	verb	permissioned	0	The administrator permissioned the account for access.
+
+@ personality
+1	49420	noun	personality	1	Her warm personality helped the frightened child feel safe.
+2	49420	noun	personalities	0	The twins have very different personalities.
+3	49421	noun	personality	0	The host's lively personality made the show popular.
+4	49422	noun	personality	0	Bright colors give the room personality.
+5	49424	noun	personalities	0	Several television personalities attended the event.
+
+@ pet
+1	49428	noun	pet	1	Our missing pet ran through the door, and everyone cheered.
+2	49428	noun	pets	0	The hotel allows small pets.
+3	49432	verb	petted	0	She gently petted the nervous dog.
+4	49432	verb	petting	0	The child is petting a friendly rabbit.
+5	49438	adj	pet	0	Road safety is the mayor's pet subject.
+
+@ petrol
+1	49445	noun	petrol	1	We found a petrol station just before the car's tank became empty.
+2	49445	noun	petrol	0	The car needs more petrol.
+3	49445	noun	petrols	0	The laboratory compared several petrols.
+4	49446	noun	petrol	0	He chose a petrol instead of a diesel car.
+5	49447	verb	petrolled	0	The mechanic petrolled the vehicle before the journey.
+
+@ physical
+1	49448	adj	physical	1	It is physical.
+2	49452	adj	physical	0	Exercise improves physical strength.
+3	49453	adj	physical	0	The shop sells physical books as well as digital ones.
+4	49452	adj	more physical	0	This job is more physical than my previous one.
+5	49461	noun	physical	0	The doctor gave me a physical yesterday.
+
+@ physics
+1	49463	noun	physics	1	Physics helped the students understand how their small rocket reached the sky.
+2	49463	noun	physics	0	She studies physics at university.
+3	49464	noun	physics	0	The course explains the physics of ocean waves.
+4	49463	noun	physics	0	Modern physics examines matter and energy.
+5	49464	noun	physics	0	Understanding the physics of flight helps pilots.
+
+@ pick
+1	49490	verb	picked	1	The coach picked Mia for the team, and she hugged her parents with joy.
+2	49486	verb	pick	0	We pick fresh tomatoes every morning.
+3	49490	verb	picks	0	Each student picks one book to read.
+4	49472	noun	pick	0	The guitarist dropped his pick on the floor.
+5	49467	noun	picks	0	The workers used picks to break the hard ground.
+
+@ pilot
+1	49523	verb	piloted	1	The pilot piloted the damaged plane to a safe landing.
+2	49503	noun	pilot	0	The ship's pilot held the wheel steady.
+3	49520	adj	pilot	0	The school started a pilot program for free lunches.
+4	49525	verb	piloting	0	The company is piloting a four-day workweek.
+5	49509	noun	pilots	0	Local pilots guided the visitors through the dangerous valley.
+
+@ planet
+1	49531	noun	planet	1	The children promised to protect the planet after seeing the polluted beach.
+2	49530	noun	planets	0	Eight major planets orbit the Sun.
+3	49530	noun	planet	0	Mars is a rocky planet.
+4	49531	noun	planet	0	Climate change affects the whole planet.
+5	49530	noun	planets	0	Scientists search for planets around distant stars.
+
+@ plastic
+1	49532	noun	plastic	1	The children removed bags of plastic from the beach and watched turtles return.
+2	49532	noun	plastics	0	Some plastics can be recycled.
+3	49533	noun	plastic	0	I paid with plastic because I had no cash.
+4	49544	adj	plastic	0	Use a plastic container for the leftovers.
+5	49539	adj	more plastic	0	Warm clay becomes more plastic and easier to shape.
+
+@ plate
+1	49549	noun	plate	1	The hungry child smiled when the volunteer handed her a full plate.
+2	49549	noun	plates	0	Put the clean plates in the cupboard.
+3	49551	noun	plate	0	He ate a whole plate of rice.
+4	49586	verb	plated	0	The jeweler plated the ring with gold.
+5	49587	verb	plating	0	The chef is plating the main course.
+
+@ platform
+1	49602	noun	platform	1	She stepped onto the platform just as the last train arrived.
+2	49597	noun	platform	0	The speaker stood on a raised platform.
+3	49599	noun	platform	0	The program gives young artists a platform for their work.
+4	49602	noun	platforms	0	Passengers waited on separate platforms.
+5	49616	verb	platformed	0	The website platformed several new writers.
+
+@ pleased
+1	49619	adj	pleased	1	It is pleased.
+2	49619	adj	pleased	0	I am pleased with the final result.
+3	49619	adj	more pleased	0	She looked more pleased after hearing the good news.
+4	49619	adj	most pleased	0	Grandpa was most pleased to see the whole family.
+5	49621	verb	pleased	0	The surprise gift pleased her greatly.
+
+@ pocket
+1	49622	noun	pocket	1	I reached into my pocket and found the ring I thought I had lost.
+2	49622	noun	pockets	0	This jacket has four deep pockets.
+3	49624	noun	pocket	0	The red ball rolled into the corner pocket.
+4	49643	verb	pocketed	0	He pocketed the keys before leaving.
+5	49647	adj	pocket	0	She carries a pocket dictionary when traveling.
+
+@ polite
+1	49650	adj	polite	1	It is polite.
+2	49650	adj	politer	0	His second reply was politer than the first.
+3	49650	adj	politest	0	She was the politest guest at the dinner.
+4	49650	adj	polite	0	It is polite to thank your host.
+5	49650	adj	more polite	0	Please use a more polite tone.
+
+@ pollution
+1	49653	noun	pollution	1	After the pollution was removed, fish returned to the river.
+2	49653	noun	pollution	0	Traffic causes air pollution in the city.
+3	49653	noun	pollution	0	Bright signs create light pollution at night.
+4	49654	noun	pollution	0	Oil in the water is a dangerous pollution.
+5	49653	noun	pollutions	0	The report compares air and water pollutions.
+
+@ pop
+1	49658	noun	pop	1	We heard a pop, and colorful balloons filled the room for her surprise party.
+2	49659	noun	pop	0	Would you like water or pop with lunch?
+3	49673	verb	popped	0	The balloon popped near the door.
+4	49676	verb	popping	0	She is popping into the shop for some milk.
+5	49695	adj	pop	0	He writes songs for several pop singers.
+
+@ population
+1	49699	noun	population	1	The whole population celebrated when clean water finally reached the village.
+2	49701	noun	population	0	The town has a population of ten thousand.
+3	49699	noun	populations	0	Large cities have diverse populations.
+4	49700	noun	population	0	The study focuses on the elderly population.
+5	49703	noun	populations	0	Researchers compared two bird populations.

@@ -1,0 +1,150 @@
+@ protection
+1	65484	noun	protection	1	The helmet gave Mia protection when she rode her bike.
+2	65484	noun	protection	0	Keeping someone or something safe is protection.
+3	65484	noun	protection	0	The fence offers protection for the young plants.
+4	65484	noun	protection	0	Sunscreen provides protection from strong sunlight.
+5	65484	noun	protection	0	The shelter gave the family protection from the rain.
+@ psychologist
+1	65469	noun	psychologist	1	The psychologist helped the student understand her worries.
+2	65469	noun	psychologist	0	An expert who studies the mind is a psychologist.
+3	65469	noun	psychologist	0	The school psychologist spoke with the parents.
+4	65469	noun	psychologist	0	A psychologist can help people talk about their feelings.
+5	65469	noun	psychologist	0	The psychologist conducted a study about memory.
+@ psychology
+1	65494	noun	psychology	1	She chose psychology because she wants to learn how people think.
+2	65494	noun	psychology	0	The study of the human mind is psychology.
+3	65494	noun	psychology	0	Our psychology class discussed dreams and memory.
+4	65494	noun	psychology	0	He read a book about child psychology.
+5	65494	noun	psychology	0	Psychology can explain some patterns in human behavior.
+@ publication
+1	65498	noun	publication	1	The publication of the school magazine made the young writers proud.
+2	65498	noun	publication	0	The act of making printed material available is publication.
+3	65498	noun	publication	0	The newspaper delayed publication because of the storm.
+4	65498	noun	publication	0	Her book is ready for publication next month.
+5	65498	noun	publication	0	The editor checked every page before publication.
+@ pupil
+1	65501	noun	pupil	1	Each pupil brought a picture for the classroom wall.
+2	65501	noun	pupil	0	A school learner under a teacher's care is a pupil.
+3	65501	noun	pupil	0	The teacher gave every pupil a worksheet.
+4	65501	noun	pupil	0	One pupil answered the difficult question.
+5	65501	noun	pupil	0	The new pupil quickly made friends.
+@ purchase
+1	65506	noun	purchase	1	My first purchase with my own money was a blue notebook.
+2	65506	noun	purchase	0	Buying something for money is a purchase.
+3	65506	noun	purchase	0	Keep the receipt for your purchase.
+4	65506	noun	purchase	0	The new laptop was an expensive purchase.
+5	65506	noun	purchase	0	She thought carefully before making the purchase.
+@ pursue
+1	65522	verb	pursue	1	The dog began to pursue the ball across the field.
+2	65522	verb	pursue	0	To chase someone or something urgently is to pursue it.
+3	65522	verb	pursue	0	The cat will pursue the mouse if it runs.
+4	65522	verb	pursued	0	The guard pursued the thief down the street.
+5	65522	verb	pursue	0	The fox tried to pursue a rabbit through the snow.
+@ rank
+1	65530	adj	rank	1	The rank smell from the rubbish made us step back.
+2	65530	adj	rank	0	Strong and powerful in effect is rank.
+3	65530	adj	rank	0	The rank smoke filled the small room.
+4	65530	adj	rank	0	A rank odor came from the old drain.
+5	65530	adj	rank	0	The rank weeds grew quickly after the rain.
+@ rapid
+1	65572	adj	rapid	1	The rapid river carried the leaves downstream.
+2	65572	adj	rapid	0	Very quick means rapid.
+3	65572	adj	rapid	0	The patient made a rapid recovery after resting.
+4	65572	adj	rapid	0	We saw rapid changes in the weather.
+5	65572	adj	rapid	0	A rapid response can prevent a small problem from growing.
+@ rapidly
+1	65529	adv	rapidly	1	The ice melted rapidly in the hot sun.
+2	65529	adv	rapidly	0	With great speed means rapidly.
+3	65529	adv	rapidly	0	The crowd rapidly filled the hall.
+4	65529	adv	rapidly	0	Her heart beat rapidly after the run.
+5	65529	adv	rapidly	0	The water level rose rapidly overnight.
+@ raw
+1	65589	adj	raw	1	We should not eat raw chicken because it can make us ill.
+2	65589	adj	raw	0	Food that has not been cooked is raw.
+3	65589	adj	raw	0	The chef served raw vegetables with the dip.
+4	65589	adj	raw	0	Raw fish is used in some dishes.
+5	65589	adj	raw	0	Keep raw meat away from cooked food.
+@ realistic
+1	65581	adj	realistic	1	Saving a little each month is a realistic plan for buying a bike.
+2	65581	adj	realistic	0	Practical and likely to work means realistic.
+3	65581	adj	realistic	0	Her drawing of the cat looks realistic.
+4	65581	adj	realistic	0	Choose a realistic time to finish the project.
+5	65581	adj	realistic	0	It is not realistic to walk fifty miles in one day.
+@ reasonable
+1	65584	adj	reasonable	1	It was reasonable to take an umbrella because rain was forecast.
+2	65584	adj	reasonable	0	Able to think and judge logically means reasonable.
+3	65584	adj	reasonable	0	She made a reasonable decision after hearing both sides.
+4	65584	adj	reasonable	0	A reasonable person checks the map before leaving.
+5	65584	adj	reasonable	0	His answer was reasonable and calm.
+@ recall
+1	65610	verb	recall	1	The company will recall the unsafe toy from shops.
+2	65610	verb	recall	0	To withdraw something that was said or ordered is to recall it.
+3	65610	verb	recall	0	Please recall the message before anyone reads it.
+4	65610	verb	recalled	0	The store recalled the product after a safety problem.
+5	65610	verb	recall	0	The leader may recall the order if conditions change.
+@ recover
+1	65624	verb	recover	1	I hope we can recover the lost photo from the old phone.
+2	65624	verb	recover	0	To get something back is to recover it.
+3	65624	verb	recover	0	The police worked to recover the stolen bicycle.
+4	65624	verb	recovered	0	She recovered her keys from under the sofa.
+5	65624	verb	recover	0	The team hopes to recover the missing equipment.
+@ reduction
+1	65640	noun	reduction	1	The sale offered a reduction in the price of winter coats.
+2	65640	noun	reduction	0	The process or result of making something smaller is reduction.
+3	65640	noun	reduction	0	The doctor suggested a reduction in sugar.
+4	65640	noun	reduction	0	The new rule caused a reduction in plastic waste.
+5	65640	noun	reduction	0	We noticed a reduction in noise after the road closed.
+@ regard
+1	65652	noun	regard	1	She looked at the painting with quiet regard.
+2	65652	noun	regard	0	A steady look at something is a regard.
+3	65652	noun	regard	0	His regard stayed fixed on the moving boat.
+4	65652	noun	regard	0	The child watched the bird with a curious regard.
+5	65652	noun	regard	0	Their regard met across the crowded room.
+@ regional
+1	65663	adj	regional	1	The regional train stops at every town between here and the city.
+2	65663	adj	regional	0	Related to a particular area or district is regional.
+3	65663	adj	regional	0	The museum has a regional collection of art.
+4	65663	adj	regional	0	Regional news reported the storm.
+5	65663	adj	regional	0	They serve regional food from the nearby farms.
+@ register
+1	65682	noun	register	1	The teacher checked the register before starting class.
+2	65682	noun	register	0	An official list of names or events is a register.
+3	65682	noun	register	0	Write your name in the visitor register.
+4	65682	noun	register	0	The museum keeps a register of donated objects.
+5	65682	noun	register	0	The nurse updated the patient register.
+@ regret
+1	65713	verb	regret	1	I regret saying those angry words to my friend.
+2	65713	verb	regret	0	To feel sorry about something that happened is to regret it.
+3	65713	verb	regret	0	She will regret leaving her coat at home.
+4	65713	verb	regretted	0	He regretted missing the last bus.
+5	65713	verb	regret	0	We regret that the concert has been cancelled.
+@ regulation
+1	65670	noun	regulation	1	The new safety regulation requires cyclists to wear helmets.
+2	65670	noun	regulation	0	A rule that controls an activity is a regulation.
+3	65670	noun	regulation	0	The school regulation bans running in the hall.
+4	65670	noun	regulation	0	Everyone must follow the parking regulation.
+5	65670	noun	regulation	0	The regulation protects workers from danger.
+@ relatively
+1	65668	adv	relatively	1	The walk was relatively easy compared with yesterday's hike.
+2	65668	adv	relatively	0	When compared with something else, you speak relatively.
+3	65668	adv	relatively	0	This phone is relatively cheap for its features.
+4	65668	adv	relatively	0	The lake is relatively warm in summer.
+5	65668	adv	relatively	0	Her new job is relatively close to home.
+@ relevant
+1	65678	adj	relevant	1	Please include only relevant details in your report.
+2	65678	adj	relevant	0	Connected to the topic being discussed is relevant.
+3	65678	adj	relevant	0	His question was relevant to the lesson.
+4	65678	adj	relevant	0	The librarian found relevant books for our project.
+5	65678	adj	relevant	0	This information is not relevant to the problem.
+@ relief
+1	65721	noun	relief	1	I felt relief when the doctor said my dog would be fine.
+2	65721	noun	relief	0	The removal of pain, stress, or discomfort is relief.
+3	65721	noun	relief	0	The cool water brought relief from the heat.
+4	65721	noun	relief	0	She sighed with relief after finding her passport.
+5	65721	noun	relief	0	Rest can provide relief for a sore back.
+@ rely
+1	65720	verb	rely	1	I rely on my alarm clock to wake me for school.
+2	65720	verb	rely	0	To trust or depend on someone or something is to rely on it.
+3	65720	verb	rely	0	You can rely on her to keep a secret.
+4	65720	verb	relied	0	We relied on the map to find the campsite.
+5	65720	verb	rely	0	Farmers rely on rain to grow their crops.

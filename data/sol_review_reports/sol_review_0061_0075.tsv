@@ -1,0 +1,15 @@
+tree	repaired	Replaced five duplicated placeholder rows with distinct examples of the common plant sense.
+trip	repaired	Replaced five duplicated placeholders with natural journey and stumbling examples.
+trousers	repaired	Replaced five ungrammatical duplicated placeholders with distinct plural-clothing examples.
+true	repaired	Preserved rank 1 and replaced ranks 2-5 only to remove duplicate sentences.
+try	repaired	Preserved rank 1 and replaced ranks 2-5 only to remove duplicate sentences.
+tuesday	repaired	Replaced five duplicated placeholders with distinct day-of-week examples and correct capitalization.
+umbrella	repaired	Corrected the inflected verb target in rank 4.
+use	repaired	Corrected the plural noun target and matched it to the function sense.
+visitor	repaired	Corrected only the missing plural target in rank 4.
+wear	repaired	Corrected only the missing inflected target in rank 2.
+which	repaired	Preserved rank 1 and replaced ranks 2-5 only to remove duplicate sentences.
+white	repaired	Preserved rank 1 and replaced ranks 2-5 only to remove duplicate sentences.
+who	repaired	Preserved rank 1 and replaced ranks 2-5 only to remove duplicate sentences.
+why	repaired	Preserved rank 1 and replaced ranks 2-5 only to remove duplicate sentences.
+wife	repaired	Replaced five duplicated placeholders with distinct married-woman examples.

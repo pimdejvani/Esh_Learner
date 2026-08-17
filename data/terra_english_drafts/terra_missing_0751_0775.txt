@@ -1,0 +1,150 @@
+@ offensive
+1	64911	adj	offensive	1	The joke was offensive and made several people uncomfortable.
+2	64911	adj	offensive	0	Avoid using offensive language at work.
+3	64912	adj	offensive	0	The team used an offensive strategy to score early.
+4	64913	adj	offensive	0	He plays in an offensive position on the field.
+5	64911	adj	offensive	0	The smell from the bin was offensive.
+@ opening
+1	64916	verb	opening	1	The shop is opening early for the holiday sale.
+2	64916	verb	opening	0	She is opening the window because the room is hot.
+3	64916	verb	opening	0	They are opening a new café near the station.
+4	64916	verb	opening	0	The flowers are opening in the morning sun.
+5	64916	verb	opening	0	He is opening the package carefully.
+@ operate
+1	64933	verb	operate	1	Only trained staff may operate this machine.
+2	64933	verb	operate	0	The lift will not operate during the power cut.
+3	64938	verb	operated	0	The surgeon operated on his injured knee.
+4	64940	verb	operating	0	They are operating the new system today.
+5	64933	verb	operates	0	This button operates the door lock.
+@ opponent
+1	64941	noun	opponent	1	Her opponent shook hands after the tennis match.
+2	64942	noun	opponent	0	The boxer studied his opponent before the fight.
+3	64944	noun	opponent	0	He is an opponent of the proposed law.
+4	64941	noun	opponents	0	The team defeated three strong opponents.
+5	64943	noun	opponent	0	She listened carefully to her opponent in the debate.
+@ oppose
+1	64948	verb	oppose	1	Many residents oppose building a road through the park.
+2	64949	verb	oppose	0	I oppose the plan because it costs too much.
+3	64948	verb	opposed	0	They opposed the change at the meeting.
+4	64948	verb	opposing	0	Several groups are opposing the new rule.
+5	64948	verb	opposes	0	The mayor opposes closing the local library.
+@ opposed
+1	64907	adj	opposed	1	The workers were opposed to losing their lunch break.
+2	64907	adj	opposed	0	She is opposed to using plastic bags.
+3	64908	adj	opposed	0	The candidate faced several opposed voters.
+4	64907	adj	opposed	0	They remained opposed to the final decision.
+5	64909	adj	opposed	0	The two teams stood opposed on either side.
+@ opposition
+1	64952	noun	opposition	1	The plan faced strong opposition from local families.
+2	64955	noun	opposition	0	The opposition criticized the government in parliament.
+3	64952	noun	opposition	0	There was little opposition to the new library.
+4	64953	noun	opposition	0	Her opinion is in opposition to mine.
+5	64955	noun	oppositions	0	Several oppositions formed before the election.
+@ organ
+1	64973	noun	organ	1	The heart is an organ that pumps blood around the body.
+2	64976	noun	organ	0	She plays the organ at the local church.
+3	64974	noun	organ	0	The committee is an organ of the university.
+4	64973	noun	organs	0	The body has many organs with different jobs.
+5	64977	noun	organ	0	The newspaper is the official organ of the club.
+@ origin
+1	64967	noun	origin	1	The origin of the river is high in the mountains.
+2	64968	noun	origin	0	The label shows the origin of the coffee beans.
+3	64972	noun	origin	0	She is proud of her family's origin.
+4	64967	noun	origins	0	The festival has ancient origins.
+5	64967	noun	origin	0	Nobody knows the origin of this tradition.
+@ otherwise
+1	64964	adv	otherwise	1	Wear a coat; otherwise, you will be cold.
+2	64963	adv	otherwise	0	Try doing it otherwise if this method fails.
+3	64965	adv	otherwise	0	The room was small but otherwise comfortable.
+4	64964	adv	otherwise	0	Leave now, otherwise you will miss the bus.
+5	64963	adv	otherwise	0	She would have acted otherwise with more time.
+@ outcome
+1	64959	noun	outcome	1	The outcome of the match depended on the final goal.
+2	64959	noun	outcome	0	We are waiting to hear the outcome of the test.
+3	64961	noun	outcome	0	Passing the course is the desired outcome.
+4	64959	noun	outcomes	0	Different choices can lead to different outcomes.
+5	64962	noun	outcome	0	The final score was the outcome of a close game.
+@ outer
+1	64983	adj	outer	1	The outer door is locked after six o'clock.
+2	64984	adj	outer	0	The outer edge of the plate is painted blue.
+3	64983	adj	outer	0	Wear an outer coat when it is cold.
+4	64984	adj	outer	0	The outer seats are farther from the stage.
+5	64983	adj	outer	0	Clean the outer surface of the window.
+@ outline
+1	65004	noun	outline	1	Trace the outline of your hand on the paper.
+2	65007	noun	outline	0	The teacher gave an outline of the lesson.
+3	65009	noun	outline	0	We made an outline before starting the project.
+4	65008	noun	outline	0	The outline summarizes the important points.
+5	65004	noun	outlines	0	Dark outlines make the drawing easier to see.
+@ overall
+1	64996	adj	overall	1	The overall result of the project was very positive.
+2	64996	adj	overall	0	The overall cost includes food and transport.
+3	64996	adj	overall	0	Her overall health has improved this year.
+4	64996	adj	overall	0	We need an overall plan before we begin.
+5	64996	adj	overall	0	The overall picture is clearer now.
+@ owe
+1	65001	verb	owe	1	I owe my sister twenty dollars from yesterday.
+2	65002	verb	owe	0	We still owe money for the hotel room.
+3	65003	verb	owes	0	The town owes its beauty to the river.
+4	65001	verb	owed	0	He owed his friend a favor.
+5	65001	verb	owing	0	She is owing more than she can pay.
+@ pace
+1	65042	noun	pace	1	Walk at a slow pace so everyone can keep up.
+2	65044	noun	pace	0	The runner increased her pace near the finish.
+3	65039	noun	pace	0	He took one pace forward and stopped.
+4	65042	noun	paces	0	The guide walked twenty paces ahead of us.
+5	65044	noun	pace	0	The music set a fast pace for the dance.
+@ panel
+1	65017	noun	panel	1	A panel of judges chose the winner of the contest.
+2	65015	noun	panel	0	The door has a glass panel in the middle.
+3	65020	noun	panel	0	Use the control panel to change the settings.
+4	65019	noun	panel	0	This comic panel shows the hero running away.
+5	65017	noun	panels	0	Several panels discussed climate change.
+@ parliament
+1	65059	noun	parliament	1	Parliament voted on the new education law yesterday.
+2	65059	noun	parliament	0	The minister spoke in parliament this afternoon.
+3	65058	noun	parliament	0	The king called a parliament to discuss the crisis.
+4	65060	noun	parliament	0	The new parliament begins after the election.
+5	65059	noun	parliaments	0	Many parliaments debate national laws.
+@ participant
+1	65064	noun	participant	1	Each participant received a number before the race.
+2	65065	noun	participant	0	Every participant in the study signed a form.
+3	65064	noun	participants	0	The participants discussed their ideas in groups.
+4	65064	noun	participant	0	A participant asked a useful question.
+5	65064	noun	participant	0	The organizer thanked every participant.
+@ partly
+1	65067	adv	partly	1	The delay was partly caused by heavy rain.
+2	65067	adv	partly	0	The door was partly open when I arrived.
+3	65067	adv	partly	0	She was partly responsible for the mistake.
+4	65067	adv	partly	0	The film is partly based on a true story.
+5	65067	adv	partly	0	The room was partly filled with boxes.
+@ passage
+1	65068	noun	passage	1	Read the short passage and answer the questions.
+2	65074	noun	passage	0	The narrow passage leads to the garden.
+3	65069	noun	passage	0	The boat had a safe passage across the sea.
+4	65071	noun	passage	0	The passage of the law took several months.
+5	65068	noun	passages	0	The novel contains many moving passages.
+@ pension
+1	65088	noun	pension	1	Her pension helps pay for food after she retired.
+2	65088	noun	pension	0	He receives a small pension from his old job.
+3	65095	noun	pension	0	They stayed at a pension near the beach.
+4	65088	noun	pensions	0	The government plans to increase pensions next year.
+5	65088	noun	pension	0	She started saving for her pension early.
+@ permanent
+1	65097	adj	permanent	1	The tattoo is permanent and cannot be easily removed.
+2	65098	adj	permanent	0	She found a permanent job after years of temporary work.
+3	65098	adj	permanent	0	This is not a permanent solution to the problem.
+4	65097	adj	permanent	0	The damage left a permanent mark on the wall.
+5	65098	adj	permanent	0	They moved into a permanent home last year.
+@ permit
+1	65113	verb	permit	1	The rules permit dogs in the park on a leash.
+2	65114	verb	permit	0	My parents do not permit me to stay out late.
+3	65117	verb	permitted	0	The city permitted the event in the square.
+4	65113	verb	permitting	0	The weather is permitting us to travel today.
+5	65115	verb	permit	0	The new road will permit faster travel.
+@ perspective
+1	65103	noun	perspective	1	From my perspective, the new plan seems fair.
+2	65107	noun	perspective	0	Try to see the problem from a different perspective.
+3	65105	noun	perspective	0	The artist used perspective to make the road look long.
+4	65103	noun	perspectives	0	The discussion included several different perspectives.
+5	65108	noun	perspective	0	Travel can give you perspective on your own life.

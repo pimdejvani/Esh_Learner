@@ -1,0 +1,150 @@
+@ limited
+1	64382	verb	limited	1	The small backpack limited what we could bring on the hike.
+2	64382	verb	limited	0	Heavy rain limited the number of visitors to the park.
+3	64382	verb	limited	0	The rules limited each player to one turn.
+4	64382	verb	limited	0	A broken leg limited his ability to walk.
+5	64382	verb	limited	0	The budget limited our choices for the trip.
+@ lively
+1	64386	adj	lively	1	The lively market rang with music, laughter, and vendors calling out prices.
+2	64386	adj	lively	0	Full of energy and activity means lively.
+3	64386	adj	lively	0	The children had a lively game in the yard.
+4	64386	adj	lively	0	She gave a lively talk about her travels.
+5	64386	adj	lively	0	The restaurant becomes lively on Friday evenings.
+@ load
+1	64409	noun	load	1	Dad carried a heavy load of firewood into the house before the rain.
+2	64409	noun	load	0	A weight carried by someone is a load.
+3	64409	noun	load	0	The donkey carried its load up the hill.
+4	64409	noun	load	0	The truck had a load of fresh vegetables.
+5	64409	noun	load	0	She set down the load to rest her arms.
+@ loan
+1	64403	noun	loan	1	The bank approved a loan so they could buy their first home.
+2	64403	noun	loan	0	Money lent for a time is a loan.
+3	64403	noun	loan	0	He paid back the loan every month.
+4	64403	noun	loan	0	She asked her sister for a small loan.
+5	64403	noun	loan	0	The library offered the book on loan for two weeks.
+@ logical
+1	64396	adj	logical	1	It was logical to bring an umbrella because dark clouds covered the sky.
+2	64396	adj	logical	0	An idea that follows clear reasoning is logical.
+3	64396	adj	logical	0	Her explanation was simple and logical.
+4	64396	adj	logical	0	Taking the bus is the logical choice when parking is expensive.
+5	64396	adj	logical	0	The detective made a logical guess from the clues.
+@ long-term
+1	64400	adj	long-term	1	Regular exercise has long-term benefits for your health.
+2	64400	adj	long-term	0	A result appearing after a long time is long-term.
+3	64400	adj	long-term	0	They made a long-term plan for saving money.
+4	64400	adj	long-term	0	The long-term effects of the storm are still unknown.
+5	64400	adj	long-term	0	This decision may have long-term consequences.
+@ loose
+1	64451	verb	loosed	1	The ranger loosed the rescued bird from its cage at sunrise.
+2	64451	verb	loose	0	To free something from a restraint is to loose it.
+3	64451	verb	loose	0	Please loose the knot before pulling the rope.
+4	64451	verb	loosed	0	They loosed the horses into the field.
+5	64451	verb	loose	0	The sailor tried to loose the stuck rope.
+@ lord
+1	64478	noun	lord	1	The lord of the manor collected rent from farmers who lived on his land.
+2	64478	noun	lord	0	The master of a feudal manor was called a lord.
+3	64478	noun	lord	0	The servants prepared dinner for their lord.
+4	64478	noun	lord	0	The lord owned the castle and the nearby fields.
+5	64478	noun	lord	0	In the story, the lord welcomed travelers to his hall.
+@ lower
+1	64506	adj	lower	1	We chose the lower shelf because the children could reach it easily.
+2	64506	adj	lower	0	A position closer to the ground is lower.
+3	64506	adj	lower	0	The lower road follows the river.
+4	64506	adj	lower	0	Prices are lower after the sale begins.
+5	64506	adj	lower	0	She sat in the lower row of seats.
+@ lung
+1	64503	noun	lung	1	The doctor listened to my lung while I took a deep breath.
+2	64503	noun	lung	0	An organ used for breathing is a lung.
+3	64503	noun	lungs	0	Smoke can damage the lungs over time.
+4	64503	noun	lung	0	Each lung helps move oxygen into the blood.
+5	64503	noun	lungs	0	Running makes your lungs work harder.
+@ maintain
+1	64492	verb	maintain	1	The gardeners maintain the park so its paths stay clean and safe.
+2	64492	verb	maintain	0	To keep something in good condition is to maintain it.
+3	64492	verb	maintain	0	You must maintain the bicycle by oiling the chain.
+4	64492	verb	maintain	0	The school works to maintain a quiet learning space.
+5	64492	verb	maintain	0	She exercises to maintain her strength.
+@ majority
+1	64497	noun	majority	1	The majority of voters supported the plan for a new park.
+2	64497	noun	majority	0	More than half of a group is the majority.
+3	64497	noun	majority	0	A majority of the class chose blue for the shirts.
+4	64497	noun	majority	0	The proposal passed by a clear majority.
+5	64497	noun	majority	0	The majority of guests arrived before dinner.
+@ mass
+1	64541	noun	mass	1	A dark mass of clouds rolled over the mountains before sunset.
+2	64541	noun	mass	0	A large amount of material is a mass.
+3	64541	noun	mass	0	The sculptor shaped the clay mass with both hands.
+4	64541	noun	mass	0	A mass of snow blocked the narrow road.
+5	64541	noun	mass	0	The machine pressed the soft mass into a flat sheet.
+@ massive
+1	64525	adj	massive	1	A massive whale rose beside our small boat and sprayed water into the air.
+2	64525	adj	massive	0	Very large in size is massive.
+3	64525	adj	massive	0	The storm caused massive waves along the coast.
+4	64525	adj	massive	0	They built a massive wall around the garden.
+5	64525	adj	massive	0	The museum has a massive collection of old maps.
+@ master
+1	64576	noun	master	1	The dog ran to its master as soon as the gate opened.
+2	64576	noun	master	0	Someone who controls another person or thing is a master.
+3	64576	noun	master	0	The servant waited for his master to return.
+4	64576	noun	master	0	In the old tale, the master owned the farm.
+5	64576	noun	master	0	The horse obeyed its master.
+@ matching
+1	64536	verb	matching	1	She is matching the blue curtains with a blue rug.
+2	64536	verb	matching	0	The designer is matching colors for the new room.
+3	64536	verb	matching	0	Matching the socks took longer than folding them.
+4	64536	verb	matching	0	He is matching each photo with its label.
+5	64536	verb	matching	0	The clerk is matching names to ticket numbers.
+@ maximum
+1	64562	noun	maximum	1	The elevator reached its maximum of eight people before the doors closed.
+2	64562	noun	maximum	0	The highest possible limit is the maximum.
+3	64562	noun	maximum	0	The speed limit is the maximum speed allowed.
+4	64562	noun	maximum	0	Fill the bottle only to the maximum line.
+5	64562	noun	maximum	0	The room has a maximum capacity of fifty guests.
+@ means
+1	64571	noun	means	1	A bicycle is a cheap means of getting to school every day.
+2	64571	noun	means	0	A way of achieving something is a means.
+3	64571	noun	means	0	Saving money is a means to reach her goal.
+4	64571	noun	means	0	Email is a quick means of communication.
+5	64571	noun	means	0	They used every means to find the missing dog.
+@ measurement
+1	64616	noun	measurement	1	The tailor took a careful measurement of my arm before cutting the fabric.
+2	64616	noun	measurement	0	The act of finding a size or amount is measurement.
+3	64616	noun	measurement	0	The carpenter checked each measurement before cutting the wood.
+4	64616	noun	measurement	0	The recipe gives the measurement for each ingredient.
+5	64616	noun	measurement	0	She wrote down every measurement in her notebook.
+@ military
+1	64647	adj	military	1	The military parade marched through the capital on national day.
+2	64647	adj	military	0	Connected with armed forces means military.
+3	64647	adj	military	0	He wore a military uniform in the ceremony.
+4	64647	adj	military	0	The museum has a collection of military equipment.
+5	64647	adj	military	0	They visited a former military base.
+@ mineral
+1	64608	noun	mineral	1	The guide showed us a sparkling mineral inside the rock.
+2	64608	noun	mineral	0	A naturally occurring solid material in the earth is a mineral.
+3	64608	noun	mineral	0	Quartz is a common mineral found in many rocks.
+4	64608	noun	minerals	0	The soil contains minerals that plants need.
+5	64608	noun	mineral	0	The museum displayed each mineral with a label.
+@ minimum
+1	64618	noun	minimum	1	The minimum age for the ride is ten years old.
+2	64618	noun	minimum	0	The smallest amount allowed is the minimum.
+3	64618	noun	minimum	0	The job requires a minimum of two years of experience.
+4	64618	noun	minimum	0	Keep the room at a minimum temperature of eighteen degrees.
+5	64618	noun	minimum	0	We need a minimum of four players to start.
+@ minister
+1	64652	noun	minister	1	The minister spoke kindly with the family after the church service.
+2	64652	noun	minister	0	A Protestant church leader who performs ceremonies is a minister.
+3	64652	noun	minister	0	The minister led the wedding ceremony.
+4	64652	noun	minister	0	She asked the minister for advice.
+5	64652	noun	minister	0	The new minister visited members of the church.
+@ minor
+1	64660	adj	minor	1	The doctor said the cut was minor and needed only a small bandage.
+2	64660	adj	minor	0	Less serious or important is minor.
+3	64660	adj	minor	0	We had a minor problem with the car engine.
+4	64660	adj	minor	0	The delay was minor, so nobody worried.
+5	64660	adj	minor	0	She made a minor change to the schedule.
+@ minority
+1	64639	noun	minority	1	Only a minority of the class wanted to stay late after school.
+2	64639	noun	minority	0	A smaller group compared with a larger one is a minority.
+3	64639	noun	minority	0	The minority of voters opposed the plan.
+4	64639	noun	minority	0	She belonged to a minority within the club.
+5	64639	noun	minority	0	A minority of the seats were empty.

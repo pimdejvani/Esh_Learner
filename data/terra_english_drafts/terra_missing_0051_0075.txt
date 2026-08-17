@@ -1,0 +1,150 @@
+@ flour
+1	56212	noun	flour	1	A cloud of flour rose when Mia dropped the bag while baking bread.
+2	56212	noun	flour	0	The recipe needs flour before the dough can be made.
+3	56212	noun	flour	0	He measured two cups of flour into a large bowl.
+4	56212	noun	flour	0	The baker keeps flour in a dry cupboard.
+5	56212	noun	flour	0	White flour covered the counter after we made cookies.
+@ flow
+1	56219	noun	flow	1	The steady flow of cyclists filled the bridge at sunset.
+2	56219	noun	flow	0	A continuous movement of people through a station is called a flow.
+3	56219	noun	flow	0	Police redirected the flow of traffic after the accident.
+4	56219	noun	flow	0	The flow of visitors slowed when the museum closed.
+5	56219	noun	flow	0	We watched the flow of boats pass beneath the riverbank cafe.
+@ fold
+1	56242	verb	folded	1	Lena carefully folded the letter before slipping it into the envelope.
+2	56242	verb	fold	0	To make the paper smaller, fold it in half.
+3	56242	verb	fold	0	Please fold the map along the blue line.
+4	56242	verb	folded	0	He folded the napkin and placed it beside the plate.
+5	56242	verb	fold	0	The child tried to fold the paper into a small boat.
+@ folk
+1	56288	noun	folk	1	Local folk gathered in the square for the summer festival.
+2	56288	noun	folk	0	The people who live in a small village are often called local folk.
+3	56288	noun	folk	0	The old song tells a story about mountain folk.
+4	56288	noun	folk	0	Friendly folk from the neighborhood brought food to the picnic.
+5	56288	noun	folk	0	The market was popular with country folk and tourists alike.
+@ force
+1	56296	noun	force	1	The force of the crashing wave knocked the bucket from his hands.
+2	56296	noun	force	0	The strength that pushes an object is called force.
+3	56296	noun	force	0	The wind's force bent the tall grass flat.
+4	56296	noun	force	0	She used enough force to open the stuck window.
+5	56296	noun	force	0	The force of the collision damaged both cars.
+@ forever
+1	56333	adv	forever	1	After the power returned, the children said the storm had lasted forever.
+2	56333	adv	forever	0	Something that never ends lasts forever.
+3	56333	adv	forever	0	They promised to remember that sunny afternoon forever.
+4	56333	adv	forever	0	The broken elevator seemed to take forever to arrive.
+5	56333	adv	forever	0	This photo will keep the memory alive forever.
+@ frame
+1	56339	verb	framed	1	We framed the family photo and hung it above the fireplace.
+2	56339	verb	frame	0	To put a picture inside a border for display is to frame it.
+3	56339	verb	frame	0	The gallery will frame the painting before the exhibition.
+4	56339	verb	frame	0	She chose dark wood to frame her watercolor.
+5	56339	verb	frame	0	Please frame the certificate so it will not bend.
+@ freeze
+1	56383	verb	froze	1	We froze the ripe bananas so we could use them in smoothies later.
+2	56383	verb	freeze	0	To preserve the berries for months, freeze them.
+3	56383	verb	freeze	0	The lake can freeze overnight when the temperature falls below zero.
+4	56383	verb	freeze	0	Do not freeze the lettuce because it will become soft.
+5	56383	verb	freeze	0	The water pipes may freeze during a cold winter night.
+@ frequently
+1	56402	adv	frequently	1	My grandmother frequently calls just as I start cooking dinner.
+2	56402	adv	frequently	0	If something happens often, it happens frequently.
+3	56402	adv	frequently	0	The bus frequently arrives late during heavy rain.
+4	56402	adv	frequently	0	He frequently checks the weather before cycling to work.
+5	56402	adv	frequently	0	This question is frequently asked by new students.
+@ friendship
+1	56404	noun	friendship	1	Their friendship began when they shared an umbrella on a rainy day.
+2	56404	noun	friendship	0	A close relationship between friends is a friendship.
+3	56404	noun	friendship	0	Years of trust made their friendship stronger.
+4	56404	noun	friendship	0	The team trip helped build friendship among the players.
+5	56404	noun	friendship	0	Her friendship with Noor survived many long-distance calls.
+@ frighten
+1	56407	verb	frightened	1	The sudden thunder frightened the dog under the table.
+2	56407	verb	frighten	0	A loud noise can frighten a small child.
+3	56407	verb	frighten	0	Do not frighten the birds by running toward them.
+4	56407	verb	frighten	0	The mask was meant to frighten people at the party.
+5	56407	verb	frighten	0	Dark shadows can frighten someone walking home alone.
+@ frightened
+1	56409	adj	frightened	1	The frightened kitten hid behind the washing machine during the storm.
+2	56409	adj	frightened	0	Someone who feels afraid is frightened.
+3	56409	adj	frightened	0	He looked frightened when the alarm began to ring.
+4	56409	adj	frightened	0	The frightened child held her father's hand tightly.
+5	56409	adj	frightened	0	I was frightened by the strange sound outside.
+@ frightening
+1	56411	adj	frightening	1	The frightening noise from the attic stopped as soon as Dad climbed the stairs.
+2	56411	adj	frightening	0	Something that makes people feel afraid is frightening.
+3	56411	adj	frightening	0	The film's frightening ending made everyone quiet.
+4	56411	adj	frightening	0	Driving through the storm was a frightening experience.
+5	56411	adj	frightening	0	The frightening growl came from behind the closed gate.
+@ frozen
+1	56414	adj	frozen	1	We found the frozen pond shining like glass in the morning sun.
+2	56414	adj	frozen	0	Water that has turned to ice is frozen.
+3	56414	adj	frozen	0	Keep the frozen peas in the freezer until dinner.
+4	56414	adj	frozen	0	The ground was frozen after a night of frost.
+5	56414	adj	frozen	0	She bought frozen pizza for an easy meal.
+@ fuel
+1	56441	noun	fuel	1	The truck stopped because it had no fuel left for the mountain road.
+2	56441	noun	fuel	0	Gasoline is fuel for many cars.
+3	56441	noun	fuel	0	The fire needs dry wood as fuel.
+4	56441	noun	fuel	0	We checked the fuel level before starting the boat.
+5	56441	noun	fuel	0	The plane carries enough fuel for the long flight.
+@ function
+1	56446	noun	function	1	The main function of this button is to turn on the light.
+2	56446	noun	function	0	The purpose of a tool is its function.
+3	56446	noun	function	0	The heart's function is to pump blood around the body.
+4	56446	noun	function	0	Each key on the keyboard has a different function.
+5	56446	noun	function	0	The teacher explained the function of each part of the plant.
+@ fur
+1	56459	noun	fur	1	The cat's soft fur was covered with tiny drops of rain.
+2	56459	noun	fur	0	The thick hair covering many animals is called fur.
+3	56459	noun	fur	0	The rabbit's fur turns white in winter.
+4	56459	noun	fur	0	She brushed loose fur from the dog's coat.
+5	56459	noun	fur	0	The bear's fur kept it warm in the cold forest.
+@ garage
+1	56479	noun	garage	1	Dad repaired the bicycle in the garage while rain tapped on the roof.
+2	56479	noun	garage	0	A building where a family keeps its car is a garage.
+3	56479	noun	garage	0	The car is parked in the garage tonight.
+4	56479	noun	garage	0	We stored old boxes in the back of the garage.
+5	56479	noun	garage	0	The garage door opened with a loud rattle.
+@ gather
+1	56487	verb	gathered	1	Neighbors gathered around the street musician as the sky grew dark.
+2	56487	verb	gather	0	When people come together in one place, they gather.
+3	56487	verb	gather	0	Please gather the papers from every desk.
+4	56487	verb	gather	0	Clouds began to gather before the afternoon storm.
+5	56487	verb	gathered	0	The children gathered shells along the beach.
+@ generally
+1	56506	adv	generally	1	Generally, the cafe is quiet until students arrive after school.
+2	56506	adv	generally	0	When something is true in most cases, it is generally true.
+3	56506	adv	generally	0	People generally wear coats here in January.
+4	56506	adv	generally	0	The trains are generally on time in the morning.
+5	56506	adv	generally	0	Generally, cats prefer a warm place to sleep.
+@ generation
+1	56511	noun	generations	1	Three generations of the family gathered to celebrate Grandma's birthday.
+2	56511	noun	generations	0	Parents, their children, and their grandchildren belong to different generations.
+3	56511	noun	generation	0	This new phone is faster than the previous generation.
+4	56511	noun	generation	0	Each generation learns from the stories of older relatives.
+5	56511	noun	generation	0	The museum shows how music changed from one generation to the next.
+@ generous
+1	56523	adj	generous	1	Our generous neighbor brought soup when everyone in our house was sick.
+2	56523	adj	generous	0	A person who gladly gives time or money is generous.
+3	56523	adj	generous	0	It was generous of him to share his lunch.
+4	56523	adj	generous	0	The generous donation paid for new library books.
+5	56523	adj	generous	0	She is generous with praise when her students work hard.
+@ gentle
+1	56528	adj	gentle	1	The gentle nurse spoke softly to the nervous child.
+2	56528	adj	gentle	0	Someone who is kind and careful is gentle.
+3	56528	adj	gentle	0	Use a gentle touch when holding the baby bird.
+4	56528	adj	gentle	0	A gentle breeze moved the curtains by the window.
+5	56528	adj	gentle	0	The horse was gentle enough for beginners to ride.
+@ gentleman
+1	56541	noun	gentleman	1	The elderly gentleman tipped his hat and held the door open for her.
+2	56541	noun	gentleman	0	A polite adult man can be called a gentleman.
+3	56541	noun	gentleman	0	The gentleman at the desk gave us directions.
+4	56541	noun	gentleman	0	That gentleman offered his seat to the woman with a baby.
+5	56541	noun	gentleman	0	Everyone thanked the gentleman for his help.
+@ ghost
+1	56547	noun	ghost	1	A ghost appeared at the end of the hallway in the old film.
+2	56547	noun	ghost	0	The spirit of a dead person in a story is a ghost.
+3	56547	noun	ghost	0	The children told a ghost story beside the campfire.
+4	56547	noun	ghost	0	He said he saw a ghost near the abandoned house.
+5	56547	noun	ghost	0	The castle guide described a friendly ghost in the tower.

@@ -1,0 +1,150 @@
+@ farming
+1	46339	noun	farming	1	Farming keeps many families busy from sunrise to sunset.
+2	46339	noun	farming	0	Farming is the work of growing crops or raising animals.
+3	46339	noun	farming	0	Their farming depends on rain.
+4	46339	noun	farming	0	Modern farming uses large machines.
+5	46339	noun	farming	0	She learned about farming from her uncle.
+@ fashion
+1	46344	noun	fashion	1	Wide trousers came back into fashion this year.
+2	46344	noun	fashion	0	Fashion is a style that many people like at one time.
+3	46344	noun	fashion	0	Fashion changes quickly.
+4	46344	noun	fashion	0	She follows fashion magazines.
+5	46344	noun	fashion	0	That hat is no longer in fashion.
+@ fear
+1	46353	noun	fear	1	His fear of heights made the bridge feel very long.
+2	46353	noun	fear	0	Fear is the unpleasant feeling caused by danger.
+3	46353	noun	fear	0	The noise filled her with fear.
+4	46353	noun	fear	0	Do not let fear stop you.
+5	46353	noun	fear	0	The child showed no fear.
+@ feature
+1	46367	noun	feature	1	Her sharp nose is a feature she shares with her father.
+2	46367	noun	feature	0	A feature is a noticeable part of a person's shape or appearance.
+3	46367	noun	feature	0	His smile is his best feature.
+4	46367	noun	feature	0	The artist copied every feature.
+5	46367	noun	feature	0	Her delicate facial feature appears in the portrait.
+@ feed
+1	46385	verb	feed	1	Please feed the rabbit before you leave for school.
+2	46385	verb	feed	0	To feed someone or something is to give it food.
+3	46385	verb	feed	0	We feed the fish every morning.
+4	46385	verb	feed	0	The mother will feed the baby.
+5	46385	verb	feed	0	Do not feed the wild animals.
+@ female
+1	46408	adj	female	1	The female bird sat on the eggs in the nest.
+2	46408	adj	female	0	Female describes the sex that usually produces eggs.
+3	46408	adj	female	0	The female lion hunts for food.
+4	46408	adj	female	0	A female student won the race.
+5	46408	adj	female	0	The vet examined the female cat.
+@ fiction
+1	46420	noun	fiction	1	The novel is fiction, so its characters are invented.
+2	46420	noun	fiction	0	Fiction is writing about imagined people or events.
+3	46420	noun	fiction	0	He prefers fiction to history books.
+4	46420	noun	fiction	0	The library has a fiction section.
+5	46420	noun	fiction	0	She writes science fiction.
+@ field
+1	46423	noun	field	1	The children ran across the green field after lunch.
+2	46423	noun	field	0	A field is an open area of land without buildings or trees.
+3	46423	noun	field	0	Cows grazed in the field.
+4	46423	noun	field	0	We walked through a muddy field.
+5	46423	noun	field	0	A gate leads into the field.
+@ fight
+1	46460	verb	fight	1	The two boys began to fight over the red ball.
+2	46460	verb	fight	0	To fight is to take part in a physical conflict.
+3	46460	verb	fight	0	Do not fight at school.
+4	46460	verb	fight	0	The soldiers will fight at dawn.
+5	46460	verb	fight	0	They fight only in the game.
+@ figure
+1	46476	noun	figure	1	The figure in the textbook showed how the heart works.
+2	46476	noun	figure	0	A figure is a drawing or diagram that gives information.
+3	46476	noun	figure	0	Look at figure three on the page.
+4	46476	noun	figure	0	The figure has clear labels.
+5	46476	noun	figure	0	Our teacher explained the figure.
+@ finally
+1	46505	adv	finally	1	After a long wait, the bus finally arrived.
+2	46505	adv	finally	0	Finally means at the end of a process or wait.
+3	46505	adv	finally	0	I finally found my glove.
+4	46505	adv	finally	0	The rain finally stopped.
+5	46505	adv	finally	0	She finally understood the rule.
+@ finger
+1	46509	noun	finger	1	A splinter in my finger hurt whenever I touched it.
+2	46509	noun	finger	0	A finger is one of the long parts of a hand.
+3	46509	noun	finger	0	Raise one finger to answer.
+4	46509	noun	finger	0	He wore a ring on his finger.
+5	46509	noun	finger	0	The baby held my finger.
+@ firstly
+1	46556	adv	firstly	1	Firstly, wash your hands before you start cooking.
+2	46556	adv	firstly	0	Firstly is used to introduce the first point.
+3	46556	adv	firstly	0	Firstly, read the question carefully.
+4	46556	adv	firstly	0	Firstly, we need a plan.
+5	46556	adv	firstly	0	Firstly, check the map.
+@ fishing
+1	46557	noun	fishing	1	Fishing was quiet until a silver fish pulled the line.
+2	46557	noun	fishing	0	Fishing is the activity of catching fish.
+3	46557	noun	fishing	0	They went fishing at dawn.
+4	46557	noun	fishing	0	Fishing requires patience.
+5	46557	noun	fishing	0	The lake is good for fishing.
+@ fit
+1	46562	adj	fit	1	This waterproof coat is fit for a rainy walk.
+2	46562	adj	fit	0	Fit means suitable for a particular purpose.
+3	46562	adj	fit	0	The room is fit for guests.
+4	46562	adj	fit	0	Is this food fit to eat?
+5	46562	adj	fit	0	The box is not fit for glass.
+@ fix
+1	46595	verb	fix	1	The arrow will fix the target to the tree trunk.
+2	46595	verb	fix	0	To fix can mean to pierce something through.
+3	46595	verb	fix	0	A thorn can fix itself in a shoe.
+4	46595	verb	fix	0	The spear may fix the cloth to the wall.
+5	46595	verb	fix	0	Sharp pins can fix the note in place.
+@ flu
+1	46623	noun	flu	1	I stayed home with the flu and drank warm soup.
+2	46623	noun	flu	0	Flu is an illness that can cause fever and coughing.
+3	46623	noun	flu	0	The flu spread through the class.
+4	46623	noun	flu	0	She has the flu this week.
+5	46623	noun	flu	0	Rest can help with flu.
+@ flying
+1	46625	adj	flying	1	We watched a flying kite rise above the beach.
+2	46625	adj	flying	0	Flying describes something that moves through the air.
+3	46625	adj	flying	0	A flying bird crossed the moon.
+4	46625	adj	flying	0	The flying ball hit the window.
+5	46625	adj	flying	0	She saw a flying insect.
+@ focus
+1	46636	noun	focus	1	The lens brought the sunlight to a bright focus on the paper.
+2	46636	noun	focus	0	A focus is the point where rays of light meet.
+3	46636	noun	focus	0	Move the lens until the focus is sharp.
+4	46636	noun	focus	0	The camera found its focus.
+5	46636	noun	focus	0	Light gathered at the focus.
+@ following
+1	46655	adj	following	1	Read the following page before answering the question.
+2	46655	adj	following	0	Following describes something that comes next.
+3	46655	adj	following	0	The following day was sunny.
+4	46655	adj	following	0	Use the following steps.
+5	46655	adj	following	0	The following week was busy.
+@ foreign
+1	46665	adj	foreign	1	We tried a foreign dish at the street market.
+2	46665	adj	foreign	0	Foreign describes something from another country or place.
+3	46665	adj	foreign	0	She is learning a foreign language.
+4	46665	adj	foreign	0	The shop sells foreign coins.
+5	46665	adj	foreign	0	He traveled to a foreign country.
+@ forest
+1	46686	noun	forest	1	A deer stepped quietly from the dark forest.
+2	46686	noun	forest	0	A forest is a large area covered with trees.
+3	46686	noun	forest	0	We walked through the forest.
+4	46686	noun	forest	0	The forest was full of birds.
+5	46686	noun	forest	0	Rangers protect the forest.
+@ fork
+1	46693	noun	fork	1	Use a fork to lift the hot noodles from the bowl.
+2	46693	noun	fork	0	A fork is a tool with pointed parts for picking up food.
+3	46693	noun	fork	0	Put your fork beside the plate.
+4	46693	noun	fork	0	The fork has four metal points.
+5	46693	noun	fork	0	He dropped his fork.
+@ formal
+1	46732	adj	formal	1	The guests wore formal clothes to the award ceremony.
+2	46732	adj	formal	0	Formal describes something that follows accepted rules or customs.
+3	46732	adj	formal	0	She wrote a formal letter.
+4	46732	adj	formal	0	The meeting was formal.
+5	46732	adj	formal	0	Use formal language with the judge.
+@ fortunately
+1	46747	adv	fortunately	1	Fortunately, the lifeguard saw the child in time.
+2	46747	adv	fortunately	0	Fortunately means in a way that brings good luck.
+3	46747	adv	fortunately	0	Fortunately, nobody was hurt.
+4	46747	adv	fortunately	0	Fortunately, we caught the last bus.
+5	46747	adv	fortunately	0	Fortunately, I had an umbrella.

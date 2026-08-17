@@ -1,0 +1,150 @@
+@ stretch
+1	66853	verb	stretch	1	Stretch your arms above your head after sitting all day.
+2	66853	verb	stretches	0	The road stretches along the coast.
+3	66853	verb	stretched	0	She stretched the rope between two trees.
+4	66853	verb	stretching	0	The cat is stretching in the sun.
+5	66853	verb	stretches	0	This fabric stretches easily.
+@ strict
+1	66821	adj	strict	1	Our teacher is strict about arriving on time.
+2	66821	adj	strict	0	The school has strict safety rules.
+3	66821	adj	strict	0	Her parents were strict but fair.
+4	66821	adj	stricter	0	This test is stricter than the last one.
+5	66821	adj	strict	0	The coach follows a strict schedule.
+@ strike
+1	66949	verb	struck	1	Lightning struck the tree during the storm.
+2	66949	verb	strike	0	Do not strike the ball too hard.
+3	66949	verb	striking	0	The clock is striking twelve.
+4	66949	verb	strikes	0	The hammer strikes the nail.
+5	66949	verb	struck	0	The idea struck her suddenly.
+@ struggle
+1	66944	noun	struggle	1	Learning to swim was a struggle at first.
+2	66944	noun	struggle	0	The climb became a struggle in the rain.
+3	66944	noun	struggles	0	He shares his struggles with close friends.
+4	66944	noun	struggle	0	Their struggle ended when help arrived.
+5	66944	noun	struggle	0	The struggle for clean water continues.
+@ submit
+1	66846	verb	submit	1	Please submit your homework by Friday.
+2	66846	verb	submit	0	Students must submit the form online.
+3	66846	verb	submitted	0	She submitted her application yesterday.
+4	66846	verb	submitting	0	He is submitting his final report.
+5	66846	verb	submits	0	The website submits the request automatically.
+@ sum
+1	67021	noun	sum	1	The sum of five and three is eight.
+2	67021	noun	sum	0	Check the sum before paying the bill.
+3	67021	noun	sums	0	The worksheet has ten simple sums.
+4	67021	noun	sum	0	A large sum of money was donated.
+5	67021	noun	sum	0	Write the final sum at the bottom.
+@ surgery
+1	67035	noun	surgery	1	He needed surgery to repair his broken leg.
+2	67035	noun	surgery	0	The doctor explained the surgery carefully.
+3	67035	noun	surgeries	0	The hospital performs many surgeries each day.
+4	67035	noun	surgery	0	She recovered quickly after surgery.
+5	67035	noun	surgery	0	The surgeon scheduled the surgery for Monday.
+@ surround
+1	67044	verb	surround	1	Tall trees surround the small lake.
+2	67044	verb	surrounds	0	A fence surrounds the garden.
+3	67044	verb	surrounded	0	The house was surrounded by snow.
+4	67044	verb	surrounding	0	People were surrounding the musician.
+5	67044	verb	surrounds	0	A wall surrounds the old city.
+@ surrounding
+1	66941	verb	surrounding	1	The fans are surrounding the player after the win.
+2	66941	verb	surrounding	0	Police are surrounding the building.
+3	66941	verb	surrounding	0	Trees are surrounding the playground.
+4	66941	verb	surrounding	0	Clouds are surrounding the mountain.
+5	66941	verb	surrounding	0	Children are surrounding the storyteller.
+@ suspect
+1	67061	verb	suspect	1	Police suspect that the window was broken at night.
+2	67061	verb	suspect	0	I suspect the train will be late.
+3	67061	verb	suspected	0	They suspected a problem with the engine.
+4	67061	verb	suspecting	0	She is suspecting that he lied.
+5	67061	verb	suspects	0	The doctor suspects an infection.
+@ swear
+1	67048	verb	swear	1	Do not swear when children are nearby.
+2	67048	verb	swore	0	He swore that he would return the book.
+3	67048	verb	swearing	0	She is swearing because she is angry.
+4	67048	verb	swears	0	He swears he saw a fox.
+5	67048	verb	swore	0	They swore to keep the secret.
+@ sweep
+1	67069	verb	sweep	1	Please sweep the floor before the guests arrive.
+2	67069	verb	sweep	0	Leaves sweep across the path in the wind.
+3	67069	verb	swept	0	She swept the kitchen after dinner.
+4	67069	verb	sweeping	0	He is sweeping dust under the table.
+5	67069	verb	sweeps	0	The cleaner sweeps every morning.
+@ sympathy
+1	67112	noun	sympathy	1	We felt sympathy for the family after the fire.
+2	67112	noun	sympathy	0	She showed sympathy when her friend was ill.
+3	67112	noun	sympathy	0	His letter expressed deep sympathy.
+4	67112	noun	sympathies	0	Our sympathies are with the victims.
+5	67112	noun	sympathy	0	A little sympathy can help someone feel better.
+@ tale
+1	67125	noun	tale	1	Grandpa told us a tale about a clever fox.
+2	67125	noun	tale	0	The book is a tale of adventure.
+3	67125	noun	tales	0	Children enjoy tales before bedtime.
+4	67125	noun	tale	0	Her tale made everyone laugh.
+5	67125	noun	tale	0	The old tale has a happy ending.
+@ tank
+1	67158	noun	tank	1	The fish swim in a large glass tank.
+2	67158	noun	tank	0	Fill the water tank before leaving.
+3	67158	noun	tanks	0	The farm has tanks for rainwater.
+4	67158	noun	tank	0	The car has a full fuel tank.
+5	67158	noun	tank	0	Clean the tank once a month.
+@ tear
+1	67184	verb	tore	1	She tore the paper into tiny pieces.
+2	67184	verb	tear	0	Do not tear the page from the book.
+3	67184	verb	tearing	0	He is tearing open the package.
+4	67184	verb	tears	0	This old fabric tears easily.
+5	67184	verb	torn	0	The flag was torn by the wind.
+@ temporary
+1	67121	adj	temporary	1	We found a temporary home while our house was repaired.
+2	67121	adj	temporary	0	The road closure is only temporary.
+3	67121	adj	temporary	0	She has a temporary job at the museum.
+4	67121	adj	temporary	0	Use this temporary password first.
+5	67121	adj	temporary	0	The tent is a temporary shelter.
+@ therapy
+1	67144	noun	therapy	1	Physical therapy helped her walk again.
+2	67144	noun	therapy	0	He started therapy to manage stress.
+3	67144	noun	therapies	0	New therapies can help many patients.
+4	67144	noun	therapy	0	The doctor recommended speech therapy.
+5	67144	noun	therapy	0	She attends therapy once a week.
+@ threat
+1	67152	noun	threat	1	The dark clouds were a threat to the picnic.
+2	67152	noun	threat	0	The virus is a serious threat to health.
+3	67152	noun	threats	0	The police took the threats seriously.
+4	67152	noun	threat	0	Fire is always a threat in dry forests.
+5	67152	noun	threat	0	The warning described a possible threat.
+@ threaten
+1	67139	verb	threaten	1	Dark clouds threaten to ruin the outdoor concert.
+2	67139	verb	threaten	0	The flood may threaten nearby homes.
+3	67139	verb	threatened	0	The storm threatened the small boats.
+4	67139	verb	threatening	0	The fire is threatening the village.
+5	67139	verb	threatens	0	This disease threatens many animals.
+@ thus
+1	67149	adv	thus	1	The road was closed; thus, we took a different route.
+2	67149	adv	thus	0	She studied hard and thus passed the exam.
+3	67149	adv	thus	0	The bus was late; thus, we missed the train.
+4	67149	adv	thus	0	He forgot the map and thus got lost.
+5	67149	adv	thus	0	The rain stopped; thus, we continued walking.
+@ tone
+1	67201	noun	tone	1	Her friendly tone made the call less stressful.
+2	67201	noun	tone	0	Use a polite tone when you disagree.
+3	67201	noun	tones	0	The singer can produce many high tones.
+4	67201	noun	tone	0	His tone changed when he heard the news.
+5	67201	noun	tone	0	The blue tone suits this room.
+@ tough
+1	67222	adj	tough	1	The final climb was tough, but we reached the top.
+2	67222	adj	tough	0	It is tough to work outside in this heat.
+3	67222	adj	tough	0	She made a tough decision.
+4	67222	adj	tougher	0	This exercise is tougher than the last one.
+5	67222	adj	tough	0	The meat was too tough to eat.
+@ transfer
+1	67277	verb	transfer	1	Please transfer the photos to your computer.
+2	67277	verb	transfer	0	We need to transfer money to her account.
+3	67277	verb	transferred	0	He transferred to another school.
+4	67277	verb	transferring	0	She is transferring the files now.
+5	67277	verb	transfers	0	The bank transfers payments quickly.
+@ transform
+1	67250	verb	transform	1	Fresh paint can transform a dark room.
+2	67250	verb	transform	0	The caterpillar will transform into a butterfly.
+3	67250	verb	transformed	0	The renovation transformed the old shop.
+4	67250	verb	transforming	0	Technology is transforming the way we work.
+5	67250	verb	transforms	0	Sunlight transforms the garden in spring.

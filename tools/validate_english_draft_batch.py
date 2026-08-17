@@ -11,7 +11,7 @@ import translate_vocab_content as drafts
 
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCE_DB = ROOT / "data" / "vocabulary_source.db"
+SOURCE_DB = drafts.SOURCE_DB
 MANIFEST = ROOT / "data" / "terra_missing_manifest.txt"
 CANONICAL = ROOT / "data" / "terra_english_drafts"
 

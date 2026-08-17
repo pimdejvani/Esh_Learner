@@ -1,0 +1,150 @@
+@ view
+1	53302	noun	view	1	The family cried with relief when their missing village came into view below the helicopter.
+2	53302	noun	view	0	Our hotel room has a beautiful view of the sea.
+3	53306	noun	view	0	She explained her view of the new school rule.
+4	53314	verb	view	0	Visitors can view the paintings until six.
+5	53314	verb	viewed	0	Thousands of people viewed the video online.
+@ virus
+1	53320	noun	virus	1	The child recovered from the virus and returned home to her family.
+2	53316	noun	virus	0	A virus needs a living cell in order to reproduce.
+3	53316	noun	viruses	0	Some viruses spread through the air.
+4	53322	noun	virus	0	The security program found a virus on my computer.
+5	53320	noun	virus	0	He stayed home from work because of a stomach virus.
+@ voice
+1	53326	noun	voice	1	She recognized her missing son's voice on the telephone.
+2	53326	noun	voice	0	Please speak in a clear voice.
+3	53331	noun	voice	0	Every student should have a voice in the decision.
+4	53338	verb	voiced	0	Several residents voiced concerns about the road.
+5	53344	verb	voicing	0	The actor is voicing a character in the new film.
+@ war
+1	53346	noun	war	1	After years of war, the families finally returned to their homes.
+2	53345	noun	war	0	War can force people to leave their country.
+3	53346	noun	wars	0	The museum explains how two wars changed the region.
+4	53349	noun	war	0	The city began a war against illegal dumping.
+5	53355	noun	war	0	The children played war with a deck of cards.
+@ washing
+1	53359	noun	washing	1	The missing ring fell from the washing when Mia lifted the wet clothes.
+2	53358	noun	washing	0	Regular hand washing helps prevent illness.
+3	53359	noun	washing	0	Please hang the washing outside to dry.
+4	53366	verb	washing	0	She is washing the dishes after dinner.
+5	53358	noun	washings	0	Two washings removed the paint from the shirt.
+@ wave
+1	53367	verb	wave	1	We wave every day.
+2	53368	verb	wave	0	Wave goodbye before the train leaves.
+3	53368	verb	waves	0	The child waves to her father from the window.
+4	53368	verb	waved	0	We waved when the rescue boat reached the shore.
+5	53378	noun	waves	0	Large waves struck the rocks during the storm.
+@ weak
+1	53391	adj	weak	1	It is weak.
+2	53391	adj	weak	0	He felt weak after being ill for a week.
+3	53391	adj	weaker	0	The old bridge is weaker than the new one.
+4	53391	adj	weakest	0	This rope is the weakest of the three.
+5	53396	adj	weak	0	The tea tastes weak because there is too much water.
+@ web
+1	53417	noun	web	1	The morning sun revealed the lost ring caught in a spider's web.
+2	53417	noun	web	0	A spider built a web between two branches.
+3	53418	noun	web	0	The police uncovered a web of connected crimes.
+4	53441	name	the web	0	You can find the train schedule on the web.
+5	53417	noun	webs	0	Raindrops covered the webs in the garden.
+@ wedding
+1	53447	noun	wedding	1	Her grandfather left the hospital in time to attend her wedding.
+2	53447	noun	wedding	0	The wedding will take place in a small village church.
+3	53447	noun	weddings	0	The hotel hosts many weddings during the summer.
+4	53449	verb	wedding	0	The couple is wedding in a quiet ceremony by the sea.
+5	53447	noun	wedding	0	We took hundreds of photographs at the wedding.
+@ weight
+1	53460	noun	weight	1	The rescued child slowly returned to a healthy weight.
+2	53460	noun	weight	0	The nurse recorded the baby's weight.
+3	53452	noun	weight	0	Place a weight on the papers so they do not blow away.
+4	53455	noun	weights	0	She lifts weights at the gym twice a week.
+5	53454	noun	weight	0	His years of experience give his opinion more weight.
+@ wet
+1	53484	adj	wet	1	It is wet.
+2	53485	adj	wet	0	My shoes are wet from the rain.
+3	53485	adj	wetter	0	The grass is wetter near the river.
+4	53489	adj	wettest	0	August is usually the wettest month here.
+5	53511	verb	wet	0	Wet the cloth before cleaning the table.
+@ wheel
+1	53518	noun	wheel	1	A mechanic repaired the broken wheel so the family could continue home.
+2	53518	noun	wheel	0	The bicycle needs a new front wheel.
+3	53518	noun	wheels	0	The cart has four small wheels.
+4	53542	verb	wheeled	0	A nurse wheeled the patient into the garden.
+5	53548	verb	wheeling	0	Birds were wheeling above the field.
+@ while
+1	53555	conj	while	1	While the storm raged outside, the family waited together in safety.
+2	53552	noun	while	0	Please wait here for a while.
+3	53555	conj	while	0	She listened to music while she cooked dinner.
+4	53556	conj	while	0	While the task is difficult, it is not impossible.
+5	53560	verb	whiled	0	We whiled away the afternoon by playing cards.
+@ whole
+1	53564	adj	whole	1	It is whole.
+2	53564	adj	whole	0	The whole family came to the celebration.
+3	53564	adj	whole	0	She ate the whole apple, including the skin.
+4	53570	noun	whole	0	The parts fit together to form a whole.
+5	53571	noun	wholes	0	The lesson compares two wholes divided into equal parts.
+@ whose
+1	53572	det	whose	1	whose book is here.
+2	53572	det	whose	0	Whose coat is hanging by the door?
+3	53573	det	whose	0	I met the writer whose book won the prize.
+4	53574	det	whose	0	We visited a house whose roof was covered in flowers.
+5	53575	pron	whose	0	These keys are mine, but whose are those?
+@ wide
+1	53576	adj	wide	1	It is wide.
+2	53576	adj	wide	0	The river is too wide to swim across safely.
+3	53576	adj	wider	0	This road is wider than the old one.
+4	53576	adj	widest	0	That is the widest bridge in the city.
+5	53590	adv	wide	0	Open the window wide to let in fresh air.
+@ wild
+1	53592	adj	wild	1	It is wild.
+2	53592	adj	wild	0	A wild deer appeared beside the road.
+3	53592	adj	wilder	0	The forest becomes wilder beyond the marked path.
+4	53592	adj	wildest	0	This is the wildest part of the national park.
+5	53599	adj	wild	0	Her parents were wild with worry when she disappeared.
+@ wind
+1	53619	noun	wind	1	The strong wind carried the rescue boat safely toward the shore.
+2	53619	noun	wind	0	The wind shook the windows all night.
+3	53619	noun	winds	0	Cold winds blow across the hills in winter.
+4	53646	verb	wind	0	Wind the rope around the wooden post.
+5	53647	verb	wound	0	He wound the old clock before going to bed.
+@ winner
+1	53656	noun	winner	1	The young winner gave her prize money to families who lost their homes.
+2	53656	noun	winner	0	The race winner crossed the line in record time.
+3	53656	noun	winners	0	All three winners received a gold medal.
+4	53657	noun	winner	0	Her final goal was the winner in a close match.
+5	53656	noun	winner	0	The judges will announce the winner tonight.
+@ wish
+1	53658	noun	wish	1	Her birthday wish came true when her missing dog returned home.
+2	53658	noun	wish	0	My greatest wish is to travel around the world.
+3	53662	verb	wish	0	I wish to speak with the manager.
+4	53665	verb	wished	0	We wished the team good luck before the match.
+5	53658	noun	wishes	0	Please send our best wishes to your family.
+@ wood
+1	53668	noun	wood	1	The dry wood kept the lost hikers warm through the cold night.
+2	53668	noun	wood	0	This table is made from solid wood.
+3	53670	noun	woods	0	The children walked through the woods with a guide.
+4	53671	noun	wood	0	We collected wood for the campfire.
+5	53669	noun	wood	0	Oak is a strong wood used for furniture.
+@ wooden
+1	53682	adj	wooden	1	It is wooden.
+2	53682	adj	wooden	0	A wooden bridge crosses the narrow stream.
+3	53682	adj	wooden	0	She served the salad in a wooden bowl.
+4	53683	adj	more wooden	0	His second performance sounded more wooden than the first.
+5	53683	adj	most wooden	0	The actor gave his most wooden performance in the final scene.
+@ working
+1	53684	noun	working	1	Understanding the machine's working helped the engineer rescue the trapped worker.
+2	53685	noun	working	0	The diagram explains the working of the water pump.
+3	53686	noun	working	0	Show your working below each mathematics problem.
+4	53691	verb	working	0	Mina is working at the library today.
+5	53692	adj	working	0	We finally found a working telephone.
+@ worried
+1	53699	adj	worried	1	It is worried.
+2	53699	adj	worried	0	Her parents were worried when she missed the bus home.
+3	53699	adj	more worried	0	The doctor became more worried when the fever rose.
+4	53699	adj	most worried	0	I was most worried during the long wait for news.
+5	53700	verb	worried	0	The sudden silence worried everyone in the room.
+@ worry
+1	53701	verb	worry	1	We worry every day.
+2	53701	verb	worry	0	Try not to worry about the exam.
+3	53701	verb	worries	0	He worries whenever his daughter travels alone.
+4	53702	verb	worried	0	The strange noise worried the children.
+5	53707	noun	worry	0	Money was a constant worry for the family.

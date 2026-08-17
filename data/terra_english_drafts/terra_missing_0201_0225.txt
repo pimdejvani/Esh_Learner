@@ -1,0 +1,150 @@
+@ relate
+1	58888	verb	related	1	Grandpa related a funny story about getting lost on his first day at work.
+2	58888	verb	relate	0	To tell a story in detail is to relate it.
+3	58888	verb	related	0	She related everything that happened during the trip.
+4	58888	verb	related	0	The guide related the history of the old castle.
+5	58888	verb	relate	0	He can relate the event clearly from memory.
+@ related
+1	58896	adj	related	1	The teacher placed all the related books on one shelf for our project.
+2	58896	adj	related	0	Things connected to the same subject are related.
+3	58896	adj	related	0	The two problems are closely related.
+4	58896	adj	related	0	She found several related articles online.
+5	58896	adj	related	0	We discussed related topics in the next lesson.
+@ relation
+1	58906	noun	relation	1	The map showed the relation between the river and the nearby farms.
+2	58906	noun	relation	0	The way two things are connected is their relation.
+3	58906	noun	relation	0	Scientists studied the relation between sleep and health.
+4	58906	noun	relation	0	There is a clear relation between practice and improvement.
+5	58906	noun	relation	0	The report explains the relation of price to quality.
+@ relative
+1	58922	adj	relative	1	The hotel price is relative to the size of the room and the season.
+2	58922	adj	relative	0	If something depends on another thing, it is relative to it.
+3	58922	adj	relative	0	Success is relative to the goals you set.
+4	58922	adj	relative	0	The cost is relative to how far you travel.
+5	58922	adj	relative	0	What feels warm is relative to the weather outside.
+@ relaxed
+1	58916	adj	relaxed	1	After the long bath, his relaxed muscles no longer felt tight.
+2	58916	adj	relaxed	0	Muscles that are loose rather than tight are relaxed.
+3	58916	adj	relaxed	0	Her relaxed grip made the rope slip from her hand.
+4	58916	adj	relaxed	0	The doctor said the relaxed muscles needed exercise.
+5	58916	adj	relaxed	0	His face looked relaxed after the tension disappeared.
+@ relaxing
+1	58903	adj	relaxing	1	The sound of rain on the roof was so relaxing that I fell asleep.
+2	58903	adj	relaxing	0	An activity that helps you feel calm is relaxing.
+3	58903	adj	relaxing	0	She finds gardening relaxing after a busy day.
+4	58903	adj	relaxing	0	A warm cup of tea can be relaxing.
+5	58903	adj	relaxing	0	The quiet beach was a relaxing place to read.
+@ release
+1	58940	noun	release	1	The crowd cheered at the release of the rescued turtle into the sea.
+2	58940	noun	release	0	The act of setting an animal free is its release.
+3	58940	noun	release	0	The release of the trapped bird took only a minute.
+4	58940	noun	release	0	Police announced the release of the hostages.
+5	58940	noun	release	0	Everyone watched the release of the balloons into the sky.
+@ reliable
+1	58932	adj	reliable	1	Our reliable old bus arrived even though heavy rain flooded the streets.
+2	58932	adj	reliable	0	Someone you can depend on is reliable.
+3	58932	adj	reliable	0	She is reliable and always keeps her promises.
+4	58932	adj	reliable	0	Use a reliable source when researching online.
+5	58932	adj	reliable	0	This car is reliable enough for long trips.
+@ religion
+1	58976	noun	religion	1	Religion brought the family together for a special holiday meal.
+2	58976	noun	religion	0	A set of spiritual beliefs and practices is a religion.
+3	58976	noun	religions	0	They learned about different religions in class.
+4	58976	noun	religion	0	Religion plays an important role in many communities.
+5	58976	noun	religion	0	The museum has an exhibit about religion and art.
+@ religious
+1	58935	adj	religious	1	The town held a religious ceremony in the old temple.
+2	58935	adj	religious	0	Something connected with religion is religious.
+3	58935	adj	religious	0	They wore religious symbols during the celebration.
+4	58935	adj	religious	0	The book describes several religious traditions.
+5	58935	adj	religious	0	A religious holiday closed the local schools.
+@ remain
+1	58989	noun	remains	1	Only the remains of the old stone wall stood after the storm.
+2	58989	noun	remains	0	The parts left after something is gone are its remains.
+3	58989	noun	remains	0	Workers cleared the remains of the burned shed.
+4	58989	noun	remains	0	The remains of dinner were stored in the fridge.
+5	58989	noun	remains	0	Archaeologists examined the remains of an ancient village.
+@ remind
+1	58985	verb	reminds	1	The smell of cinnamon reminds me of my mother's holiday cakes.
+2	58985	verb	remind	0	Please remind me to call the dentist tomorrow.
+3	58985	verb	remind	0	This song can remind people of their childhood.
+4	58985	verb	reminds	0	Her calendar reminds her about every appointment.
+5	58985	verb	remind	0	The photograph will remind us of our trip.
+@ remote
+1	58967	adj	remote	1	We stayed in a remote cabin where the nearest shop was an hour away.
+2	58967	adj	remote	0	A place far from towns and cities is remote.
+3	58967	adj	remote	0	The village is remote and difficult to reach in winter.
+4	58967	adj	remote	0	They explored a remote island in the north.
+5	58967	adj	remote	0	The school serves several remote farming communities.
+@ rent
+1	58998	noun	rent	1	After paying rent, Maya had just enough money left for groceries.
+2	58998	noun	rent	0	The regular payment for living in a house you do not own is rent.
+3	58998	noun	rent	0	Their rent is due on the first day of every month.
+4	58998	noun	rent	0	The landlord raised the rent last year.
+5	58998	noun	rent	0	He saves money by sharing the rent with a roommate.
+@ repeated
+1	58987	verb	repeated	1	The teacher repeated the directions when the class looked confused.
+2	58987	verb	repeated	0	She repeated the phone number so I could write it down.
+3	58987	verb	repeated	0	He repeated the question slowly for his grandfather.
+4	58987	verb	repeated	0	The child repeated the new word several times.
+5	58987	verb	repeated	0	The announcer repeated the safety message before the flight.
+@ represent
+1	59012	verb	represents	1	The blue line on the map represents the river through the city.
+2	59012	verb	represent	0	A symbol can represent an idea or thing.
+3	59012	verb	represents	0	The flag represents the country at international events.
+4	59012	verb	represent	0	These figures represent last year's sales.
+5	59012	verb	represent	0	The actor will represent the king in the play.
+@ require
+1	59028	verb	requires	1	The job requires employees to arrive before the store opens.
+2	59028	verb	require	0	A rule can require students to wear uniforms.
+3	59028	verb	requires	0	This recipe requires three eggs and a cup of milk.
+4	59028	verb	requires	0	The museum requires visitors to buy tickets online.
+5	59028	verb	require	0	Long walks require comfortable shoes.
+@ reservation
+1	59032	noun	reservation	1	Our reservation kept a table by the window for our anniversary dinner.
+2	59032	noun	reservation	0	An arrangement to keep a hotel room or table for you is a reservation.
+3	59032	noun	reservation	0	She made a reservation for two at the restaurant.
+4	59032	noun	reservation	0	Please confirm your reservation before you travel.
+5	59032	noun	reservation	0	The hotel could not find our reservation.
+@ resource
+1	59042	noun	resource	1	Clean water is a vital resource for every village.
+2	59042	noun	resource	0	Something useful for reaching a goal is a resource.
+3	59042	noun	resource	0	The library is a valuable resource for students.
+4	59042	noun	resource	0	Time is our most limited resource today.
+5	59042	noun	resource	0	The team used every available resource to finish the project.
+@ respect
+1	59088	noun	respect	1	The students showed respect by listening quietly while the guest spoke.
+2	59088	noun	respect	0	A feeling of admiration for someone is respect.
+3	59088	noun	respect	0	She earned everyone's respect through hard work.
+4	59088	noun	respect	0	Treat your opponents with respect after the game.
+5	59088	noun	respect	0	His respect for the coach grew over the season.
+@ responsibility
+1	59048	noun	responsibility	1	Feeding the dog every morning is Leo's responsibility.
+2	59048	noun	responsibility	0	A duty that you must take care of is a responsibility.
+3	59048	noun	responsibility	0	Parents share the responsibility of caring for their children.
+4	59048	noun	responsibility	0	Taking responsibility for mistakes shows maturity.
+5	59048	noun	responsibility	0	The manager gave her responsibility for the new project.
+@ responsible
+1	59079	adj	responsible	1	As the oldest child, Nita was responsible for locking the door each night.
+2	59079	adj	responsible	0	Someone with the duty to care for something is responsible.
+3	59079	adj	responsible	0	He is responsible for keeping the classroom tidy.
+4	59079	adj	responsible	0	The driver was responsible for the damage to the car.
+5	59079	adj	responsible	0	Please find the person responsible for this decision.
+@ retire
+1	59063	verb	retire	1	After forty years at the hospital, Dr. Lim will retire this spring.
+2	59063	verb	retire	0	People often retire when they stop working because they are older.
+3	59063	verb	retire	0	My uncle hopes to retire at sixty-five.
+4	59063	verb	retire	0	She plans to retire after finishing this school year.
+5	59063	verb	retire	0	Workers can retire when they have saved enough money.
+@ retired
+1	59053	adj	retired	1	The retired couple enjoyed quiet mornings in their garden.
+2	59053	adj	retired	0	A private and quiet lifestyle away from society is retired.
+3	59053	adj	retired	0	He preferred a retired life in the countryside.
+4	59053	adj	retired	0	The artist lived in a retired house near the woods.
+5	59053	adj	retired	0	They chose a retired spot for their small cabin.
+@ revise
+1	59058	verb	revised	1	Before the test, I revised my notes at the kitchen table.
+2	59058	verb	revise	0	To review and improve written work is to revise it.
+3	59058	verb	revise	0	Please revise your essay before handing it in.
+4	59058	verb	revise	0	The editor will revise the article for clarity.
+5	59058	verb	revised	0	She revised the report after receiving feedback.

@@ -1,0 +1,150 @@
+@ nurse
+1	36947	noun	nurse	1	The nurse stayed calm while the child cried after the fall.
+2	36947	noun	nurse	0	A nurse cares for sick or injured people.
+3	36947	noun	nurse	0	The nurse checked my temperature.
+4	36947	noun	nurse	0	We thanked the nurse before leaving the clinic.
+5	36947	noun	nurse	0	A nurse brought medicine to the patient.
+@ object
+1	36967	noun	object	1	The metal object at the bottom of the lake was a lost key.
+2	36967	noun	object	0	An object is a physical thing that is not alive.
+3	36967	noun	object	0	Please put the object on the shelf.
+4	36967	noun	object	0	The museum displayed a strange object.
+5	36967	noun	object	0	She picked up the small object.
+@ october
+1	67710	name	october	1	October brought cool evenings and yellow leaves to the village.
+2	67710	name	october	0	October is the month after September.
+3	67710	name	october	0	Their holiday begins in October.
+4	67710	name	october	0	School reopens in October.
+5	67710	name	october	0	We planted bulbs in October.
+@ of
+1	36978	prep	of	1	The cabin stood north of the river, hidden by pine trees.
+2	36978	prep	of	0	The bakery is one block north of the station.
+3	36978	prep	of	0	A path runs east of the lake.
+4	36978	prep	of	0	The shop is two miles west of town.
+5	36978	prep	of	0	Their house lies south of the school.
+@ off
+1	37029	adv	off	1	The puppy ran off with the birthday ribbon before anyone noticed.
+2	37029	adv	off	0	Off means away from a place or person.
+3	37029	adv	off	0	Please move off the wet floor.
+4	37029	adv	off	0	The boat drifted off from the shore.
+5	37029	adv	off	0	He stepped off the bus carefully.
+@ office
+1	37070	noun	office	1	The choir gathered for the evening office in the old chapel.
+2	37070	noun	office	0	An office can be a formal church service.
+3	37070	noun	office	0	They attended morning office before breakfast.
+4	37070	noun	office	0	The priest led the office at noon.
+5	37070	noun	office	0	The church held a quiet office for prayer.
+@ often
+1	37107	adv	often	1	We often watched lightning from the porch during the rainy season.
+2	37107	adv	often	0	Often means many times or frequently.
+3	37107	adv	often	0	She often walks to school.
+4	37107	adv	often	0	I often call my grandmother.
+5	37107	adv	often	0	They often eat dinner outside.
+@ oh
+1	37109	noun	oh	1	"Oh!" shouted Mina when the kitten climbed onto the table.
+2	37109	noun	oh	0	Oh is an expression of surprise or understanding.
+3	37109	noun	oh	0	He said "oh" when he understood the joke.
+4	37109	noun	oh	0	An excited oh came from the crowd.
+5	37109	noun	oh	0	She whispered "oh" at the beautiful view.
+@ ok
+1	37113	adj	ok	1	After the storm passed, the children were ok and laughing again.
+2	37113	adj	ok	0	Ok means acceptable or all right.
+3	37113	adj	ok	0	Is it ok to open the window?
+4	37113	adj	ok	0	The soup tastes ok now.
+5	37113	adj	ok	0	He said he was ok.
+@ old
+1	37114	adj	old	1	An old photograph showed the village before the bridge was built.
+2	37114	adj	old	0	Old things have existed for a long time.
+3	37114	adj	old	0	Her old coat still kept her warm.
+4	37114	adj	old	0	We visited an old castle.
+5	37114	adj	old	0	This old map is hard to read.
+@ on
+1	37136	adj	on	1	The lights stayed on while the family waited for the doctor.
+2	37136	adj	on	0	On means active or working.
+3	37136	adj	on	0	The computer is on now.
+4	37136	adj	on	0	Leave the radio on for news.
+5	37136	adj	on	0	The oven is still on.
+@ once
+1	37209	adv	once	1	She rang the bell once, then waited quietly outside.
+2	37209	adv	once	0	Once means one time only.
+3	37209	adv	once	0	I have visited Japan once.
+4	37209	adv	once	0	Tap the screen once.
+5	37209	adv	once	0	The alarm sounded once.
+@ one
+1	37216	pron	one	1	Only one lantern stayed lit through the windy night.
+2	37216	pron	one	0	One means a single thing or person.
+3	37216	pron	one	0	This is the one I want.
+4	37216	pron	one	0	Choose one from the box.
+5	37216	pron	one	0	One was missing from the group.
+@ onion
+1	37248	noun	onion	1	The smell of frying onion filled the kitchen before dinner.
+2	37248	noun	onion	0	An onion is a vegetable with layers and a strong smell.
+3	37248	noun	onion	0	She chopped an onion for the soup.
+4	37248	noun	onion	0	The onion made his eyes water.
+5	37248	noun	onion	0	Add onion and garlic to the pan.
+@ online
+1	37256	adj	online	1	The class went online when heavy rain flooded the roads.
+2	37256	adj	online	0	Online means connected to the internet.
+3	37256	adj	online	0	I paid the bill online.
+4	37256	adj	online	0	The online meeting starts at ten.
+5	37256	adj	online	0	She found the timetable online.
+@ only
+1	37266	adj	only	1	The only dry match saved the campers from a cold night.
+2	37266	adj	only	0	Only means there is no other one.
+3	37266	adj	only	0	He was the only child awake.
+4	37266	adj	only	0	This is our only chance.
+5	37266	adj	only	0	The only key was under the mat.
+@ open
+1	37282	adj	open	1	The open window let rain blow across the kitchen floor.
+2	37282	adj	open	0	Open means not closed or covered.
+3	37282	adj	open	0	Leave the door open for the cat.
+4	37282	adj	open	0	The open box held old letters.
+5	37282	adj	open	0	An open gate led into the field.
+@ opinion
+1	37358	noun	opinion	1	In my opinion, the small blue tent is safer in this wind.
+2	37358	noun	opinion	0	An opinion is what someone thinks about something.
+3	37358	noun	opinion	0	Her opinion changed after the meeting.
+4	37358	noun	opinion	0	Everyone shared an opinion.
+5	37358	noun	opinion	0	We respect your opinion.
+@ opposite
+1	37365	adj	opposite	1	The bakery stood on the opposite side of the busy road.
+2	37365	adj	opposite	0	Opposite means directly across from something.
+3	37365	adj	opposite	0	They sat at opposite ends of the table.
+4	37365	adj	opposite	0	The opposite wall has a mirror.
+5	37365	adj	opposite	0	Our rooms are on opposite sides.
+@ or
+1	37382	conj	or	1	Take an umbrella or you will get soaked on the walk home.
+2	37382	conj	or	0	Or joins two possible choices.
+3	37382	conj	or	0	Would you like tea or coffee?
+4	37382	conj	or	0	We can walk or take the bus.
+5	37382	conj	or	0	Choose red or blue paint.
+@ orange
+1	37393	noun	orange	1	An orange tree shaded the bench outside Grandma's kitchen.
+2	37393	noun	orange	0	An orange tree produces round citrus fruit.
+3	37393	noun	orange	0	The orange tree was full of blossoms.
+4	37393	noun	orange	0	Birds nested in the orange tree.
+5	37393	noun	orange	0	He planted an orange tree by the wall.
+@ order
+1	37407	noun	order	1	The children lined up in order before the museum opened.
+2	37407	noun	order	0	Order is the correct arrangement or sequence of things.
+3	37407	noun	order	0	Put the pictures in order.
+4	37407	noun	order	0	The files are in alphabetical order.
+5	37407	noun	order	0	The steps must be done in order.
+@ other
+1	37438	adj	other	1	The other glove was still buried in the snow.
+2	37438	adj	other	0	Other means different from the one already mentioned.
+3	37438	adj	other	0	Try the other door.
+4	37438	adj	other	0	Where is the other shoe?
+5	37438	adj	other	0	The other team scored first.
+@ our
+1	37449	det	our	1	Our little boat reached the shore just before dark.
+2	37449	det	our	0	Our means belonging to us.
+3	37449	det	our	0	Our teacher gave us homework.
+4	37449	det	our	0	This is our house.
+5	37449	det	our	0	Our friends arrived early.
+@ out
+1	37459	adv	out	1	The kitten slipped out through the open gate before breakfast.
+2	37459	adv	out	0	Out means away from the inside.
+3	37459	adv	out	0	Please take the rubbish out.
+4	37459	adv	out	0	He ran out of the room.
+5	37459	adv	out	0	The bird flew out of its cage.

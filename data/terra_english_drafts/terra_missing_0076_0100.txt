@@ -1,0 +1,150 @@
+@ giant
+1	56586	noun	giant	1	The giant in the story carried a house-sized backpack.
+2	56586	noun	giant	0	A very large person in a fairy tale is a giant.
+3	56586	noun	giant	0	The children ran away when the giant woke up.
+4	56586	noun	giant	0	A friendly giant helped the lost traveler cross the river.
+5	56586	noun	giant	0	The book described a giant living high in the mountains.
+@ glad
+1	56598	adj	glad	1	I was glad when my lost dog came home safely.
+2	56598	adj	glad	0	If good news makes you happy, you are glad.
+3	56598	adj	glad	0	She was glad to see her friend after the holiday.
+4	56598	adj	glad	0	We are glad that you could join us tonight.
+5	56598	adj	glad	0	He felt glad after passing the driving test.
+@ global
+1	56602	adj	global	1	The team discussed a global problem: plastic in the oceans.
+2	56602	adj	global	0	An issue affecting countries around the world is global.
+3	56602	adj	global	0	The company has a global network of offices.
+4	56602	adj	global	0	Climate change is a global concern.
+5	56602	adj	global	0	The concert was watched by a global audience online.
+@ glove
+1	56611	noun	glove	1	I found one red glove under the snowy bench.
+2	56611	noun	glove	0	A covering for your hand and fingers is a glove.
+3	56611	noun	glove	0	Wear a glove when you take the hot tray from the oven.
+4	56611	noun	glove	0	Her glove fell from her pocket on the bus.
+5	56611	noun	glove	0	He put on a glove before working in the garden.
+@ goods
+1	56619	noun	goods	1	The truck delivered goods to the small village store.
+2	56619	noun	goods	0	Products that a shop sells are called goods.
+3	56619	noun	goods	0	The train carried goods instead of passengers.
+4	56619	noun	goods	0	Imported goods can cost more than local products.
+5	56619	noun	goods	0	The workers packed the goods into large boxes.
+@ grade
+1	56628	noun	grade	1	I earned a high grade on my science project.
+2	56628	noun	grade	0	A score that shows how well you did on a test is a grade.
+3	56628	noun	grade	0	Her grade improved after she studied every evening.
+4	56628	noun	grade	0	The teacher wrote each grade in the online record.
+5	56628	noun	grade	0	He was pleased with his grade in mathematics.
+@ graduate
+1	56652	noun	graduate	1	My sister became a graduate after finishing university.
+2	56652	noun	graduate	0	Someone who has completed a course of study is a graduate.
+3	56652	noun	graduate	0	The graduate thanked her teachers at the ceremony.
+4	56652	noun	graduate	0	Each graduate received a certificate on stage.
+5	56652	noun	graduate	0	The college invited every graduate to the reunion.
+@ grain
+1	56669	noun	grain	1	The farmer stored grain in a tall wooden barn.
+2	56669	noun	grain	0	Wheat and rice are types of grain.
+3	56669	noun	grain	0	The chickens ate grain from a metal bowl.
+4	56669	noun	grain	0	The field produced enough grain for the whole village.
+5	56669	noun	grain	0	She added a spoonful of grain to the soup.
+@ grateful
+1	56709	adj	grateful	1	I was grateful when my neighbor helped carry the boxes.
+2	56709	adj	grateful	0	If you appreciate someone's help, you feel grateful.
+3	56709	adj	grateful	0	She was grateful for the warm meal.
+4	56709	adj	grateful	0	We are grateful to our coach for her patience.
+5	56709	adj	grateful	0	He sent a grateful message after receiving the gift.
+@ growth
+1	56711	noun	growth	1	The baby's growth surprised everyone at the family picnic.
+2	56711	noun	growth	0	An increase in size or number is growth.
+3	56711	noun	growth	0	The business reported steady growth this year.
+4	56711	noun	growth	0	Good soil supports the growth of healthy plants.
+5	56711	noun	growth	0	The town's growth created a need for more schools.
+@ guard
+1	56717	noun	guard	1	The guard checked our tickets at the museum door.
+2	56717	noun	guard	0	A person who watches over a building for safety is a guard.
+3	56717	noun	guard	0	The guard asked visitors not to touch the paintings.
+4	56717	noun	guard	0	A night guard walked around the empty office.
+5	56717	noun	guard	0	The guard called for help when the alarm rang.
+@ guilty
+1	56740	adj	guilty	1	Leo felt guilty after breaking his sister's lamp.
+2	56740	adj	guilty	0	If you are responsible for doing something wrong, you are guilty.
+3	56740	adj	guilty	0	She looked guilty when her mother found the broken vase.
+4	56740	adj	guilty	0	The jury decided that the man was guilty.
+5	56740	adj	guilty	0	He admitted feeling guilty about the lie.
+@ hang
+1	56820	verb	hang	1	A bright kite can hang in the sky for a moment before falling.
+2	56820	verb	hang	0	To remain suspended from a hook is to hang.
+3	56820	verb	hang	0	The picture will hang above the fireplace.
+4	56820	verb	hung	0	A wet towel hung from the balcony rail.
+5	56820	verb	hang	0	The clouds seemed to hang low over the hills.
+@ happiness
+1	56795	noun	happiness	1	Sharing breakfast with my family brings me happiness.
+2	56795	noun	happiness	0	The feeling of joy is happiness.
+3	56795	noun	happiness	0	Her face showed happiness when she opened the letter.
+4	56795	noun	happiness	0	Music can bring happiness after a difficult day.
+5	56795	noun	happiness	0	They wished each other health and happiness.
+@ hardly
+1	56782	adv	hardly	1	I could hardly see the path in the thick fog.
+2	56782	adv	hardly	0	If you can almost not hear a sound, you can hardly hear it.
+3	56782	adv	hardly	0	She hardly had time to eat breakfast.
+4	56782	adv	hardly	0	There was hardly any milk left in the fridge.
+5	56782	adv	hardly	0	He could hardly believe the surprising news.
+@ headline
+1	56776	noun	headline	1	The headline announced that the school would close for snow.
+2	56776	noun	headline	0	The large title above a news article is a headline.
+3	56776	noun	headline	0	That headline caught my attention at the newsstand.
+4	56776	noun	headline	0	The editor changed the headline before printing the paper.
+5	56776	noun	headline	0	A short headline can make readers curious about an article.
+@ heating
+1	56754	noun	heating	1	The heating kept our apartment warm during the storm.
+2	56754	noun	heating	0	A system that makes a building warm is heating.
+3	56754	noun	heating	0	We turned on the heating when the weather became cold.
+4	56754	noun	heating	0	The heating stopped working overnight.
+5	56754	noun	heating	0	The landlord repaired the heating before winter.
+@ heavily
+1	56747	adv	heavily	1	Rain fell heavily as we hurried home from school.
+2	56747	adv	heavily	0	If rain falls with a lot of force, it falls heavily.
+3	56747	adv	heavily	0	The box was heavily loaded with books.
+4	56747	adv	heavily	0	Snow covered the road heavily overnight.
+5	56747	adv	heavily	0	He breathed heavily after running up the stairs.
+@ helicopter
+1	56810	noun	helicopter	1	A helicopter landed beside the hospital after the rescue.
+2	56810	noun	helicopter	0	An aircraft with spinning blades that can hover is a helicopter.
+3	56810	noun	helicopter	0	We watched the helicopter fly over the beach.
+4	56810	noun	helicopter	0	The helicopter carried supplies to the mountain village.
+5	56810	noun	helicopter	0	Its helicopter blades made a loud chopping sound.
+@ highlight
+1	56787	noun	highlight	1	Seeing the waterfall was the highlight of our trip.
+2	56787	noun	highlight	0	The best or most exciting part of an event is its highlight.
+3	56787	noun	highlight	0	The concert was the highlight of the festival.
+4	56787	noun	highlight	0	Winning the race became the highlight of his year.
+5	56787	noun	highlight	0	The chef's dessert was a highlight of the meal.
+@ highly
+1	56752	adv	highly	1	The teacher highly recommended this book to our class.
+2	56752	adv	highly	0	If something is very popular, it is highly valued by many people.
+3	56752	adv	highly	0	She is highly skilled at drawing animals.
+4	56752	adv	highly	0	This restaurant is highly rated by local families.
+5	56752	adv	highly	0	The job requires a highly trained nurse.
+@ historic
+1	56758	adj	historic	1	The team won a historic match after sixty years without a title.
+2	56758	adj	historic	0	An event important enough to be remembered in history is historic.
+3	56758	adj	historic	0	The speech was a historic moment for the country.
+4	56758	adj	historic	0	People gathered to see the historic launch.
+5	56758	adj	historic	0	The agreement marked a historic change in the law.
+@ historical
+1	56764	adj	historical	1	We saw historical photographs of the town in the museum.
+2	56764	adj	historical	0	Information about events from the past is historical.
+3	56764	adj	historical	0	The guide told us a historical story about the castle.
+4	56764	adj	historical	0	She enjoys reading historical novels set in ancient Rome.
+5	56764	adj	historical	0	The library keeps historical records of the village.
+@ honest
+1	56864	adj	honest	1	Be honest with me if you broke the window.
+2	56864	adj	honest	0	A person who tells the truth is honest.
+3	56864	adj	honest	0	She gave an honest answer to the difficult question.
+4	56864	adj	honest	0	I trust him because he is honest.
+5	56864	adj	honest	0	Please be honest about how you feel.
+@ horrible
+1	56852	noun	horrible	1	In the old story, a horrible waited beneath the bridge.
+2	56852	noun	horrible	0	A terrifying creature in a story can be called a horrible.
+3	56852	noun	horrible	0	The movie showed a horrible chasing the hero through the forest.
+4	56852	noun	horrible	0	The children drew a horrible for their monster-book project.
+5	56852	noun	horrible	0	A horrible appeared at the end of the ghost tale.

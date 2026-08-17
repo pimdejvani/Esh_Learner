@@ -1,0 +1,150 @@
+@ excitement
+1	55976	noun	excitement	1	The children could hardly contain their excitement before the concert began.
+2	55976	noun	excitement	0	The crowd's cheers showed its excitement when the team scored.
+3	55976	noun	excitement	0	She felt a rush of excitement when the acceptance email arrived.
+4	55976	noun	excitement	0	There was real excitement in the room before the winner was announced.
+5	55976	noun	excitement	0	His excitement made it difficult for him to fall asleep.
+@ exhibition
+1	55979	noun	exhibition	1	We spent Saturday afternoon at an exhibition of local paintings.
+2	55979	noun	exhibition	0	The museum opened a new exhibition of ancient tools.
+3	55979	noun	exhibition	0	Her photographs were chosen for the school exhibition.
+4	55979	noun	exhibition	0	Visitors lined up early to see the science exhibition.
+5	55979	noun	exhibition	0	The exhibition includes costumes from famous films.
+@ expand
+1	55986	verb	expand	1	The bakery plans to expand by opening a second shop.
+2	55986	verb	expand	0	The company wants to expand its business into new cities.
+3	55991	verb	expanded	0	The balloon expanded as warm air filled it.
+4	55986	verb	expanding	0	The library is expanding its collection of children's books.
+5	55985	verb	expand	0	Press this button to expand the map on your screen.
+@ expected
+1	55996	adj	expected	1	The expected delivery date is Friday morning.
+2	55996	adj	expected	0	The expected number of guests is twenty.
+3	55996	adj	expected	0	Rain is expected later this afternoon.
+4	55996	adj	expected	0	The train arrived at its expected time.
+5	55996	adj	expected	0	Her expected promotion was announced at the meeting.
+@ expedition
+1	56000	noun	expedition	1	The class went on an expedition to study birds in the forest.
+2	56000	noun	expedition	0	Their expedition to the mountain lasted two weeks.
+3	56000	noun	expedition	0	The research expedition collected samples from the ocean floor.
+4	56000	noun	expedition	0	She packed carefully for the desert expedition.
+5	56001	noun	expedition	0	The expedition returned safely after exploring the cave.
+@ experienced
+1	56006	adj	experienced	1	An experienced nurse showed the new staff how to use the equipment.
+2	56006	adj	experienced	0	The company hired an experienced driver for the long trip.
+3	56006	adj	experienced	0	Ask an experienced gardener which plants need shade.
+4	56006	adj	experienced	0	She is experienced in planning large events.
+5	56006	adj	experienced	0	An experienced guide led us along the mountain trail.
+@ explode
+1	56009	verb	exploded	1	The fireworks exploded above the river in bright colors.
+2	56009	verb	explode	0	A gas leak can cause a building to explode.
+3	56011	verb	exploded	0	He exploded with anger when he saw the broken window.
+4	56012	verb	exploded	0	Online sales exploded after the product appeared on television.
+5	56009	verb	exploding	0	Everyone moved back from the car before it started exploding.
+@ explore
+1	56025	verb	explore	1	We used the holiday to explore the old streets of the city.
+2	56024	verb	explore	0	The scientists will explore why the river is polluted.
+3	56025	verb	explored	0	They explored the island by bicycle.
+4	56024	verb	exploring	0	The report is exploring several possible solutions.
+5	56027	verb	explore	0	The course lets students explore different careers.
+@ explosion
+1	56032	noun	explosion	1	The explosion shattered windows across the street.
+2	56032	noun	explosion	0	Police closed the road after the explosion at the factory.
+3	56033	noun	explosion	0	We heard an explosion from the garage.
+4	56034	noun	explosion	0	The town saw an explosion in tourism during the summer.
+5	56032	noun	explosion	0	The workers escaped before the explosion damaged the building.
+@ export
+1	56035	adj	export	1	Export goods are packed carefully before leaving the country.
+2	56035	adj	export	0	The factory makes export products for overseas customers.
+3	56035	adj	export	0	Coffee is an important export crop in this region.
+4	56035	adj	export	0	The government supports export businesses with loans.
+5	56035	adj	export	0	The port has a special area for export containers.
+@ fairly
+1	56043	adv	fairly	1	The teacher graded every student's work fairly.
+2	56047	adv	fairly	0	The test was fairly easy for most of the class.
+3	56043	adv	fairly	0	Both sides were treated fairly during the discussion.
+4	56047	adv	fairly	0	The hotel was fairly close to the train station.
+5	56048	adv	fairly	0	We were fairly finished with dinner when the lights went out.
+@ familiar
+1	56050	adj	familiar	1	The song sounded familiar, but I could not remember its title.
+2	56050	adj	familiar	0	This street looks familiar because we walked here yesterday.
+3	56051	adj	familiar	0	She is familiar with the rules of the game.
+4	56052	adj	familiar	0	He gave the dog a familiar pat on the head.
+5	56050	adj	familiar	0	The smell of fresh bread was familiar from childhood.
+@ fancy
+1	56064	noun	fancy	1	I have a fancy for chocolate cake after dinner.
+2	56061	noun	fancy	0	The idea that he could fly was only a fancy.
+3	56059	noun	fancy	0	The story came entirely from the writer's fancy.
+4	56062	noun	fancy	0	On a fancy, she took the bus to the beach.
+5	56064	noun	fancy	0	His fancy for old maps filled every wall in his office.
+@ fascinating
+1	56087	adj	fascinating	1	The guide told us a fascinating story about the castle.
+2	56087	adj	fascinating	0	The documentary made space travel seem fascinating.
+3	56087	adj	fascinating	0	She found the ancient coins fascinating to study.
+4	56087	adj	fascinating	0	It is fascinating to watch a seed grow into a plant.
+5	56087	adj	fascinating	0	His fascinating talk kept the audience quiet.
+@ fashionable
+1	56089	adj	fashionable	1	That café is fashionable because it is popular with young artists.
+2	56089	adj	fashionable	0	Wide-leg trousers are fashionable again this year.
+3	56089	adj	fashionable	0	They live in a fashionable part of the city.
+4	56090	adj	fashionable	0	It became fashionable to work from home.
+5	56089	adj	fashionable	0	She wore a fashionable coat to the party.
+@ fasten
+1	56093	verb	fasten	1	Please fasten your seat belt before the car moves.
+2	56093	verb	fasten	0	Use this strap to fasten the box shut.
+3	56093	verb	fastened	0	He fastened the gate with a strong lock.
+4	56093	verb	fastening	0	She is fastening the buttons on her coat.
+5	56093	verb	fasten	0	Remember to fasten the dog’s collar securely.
+@ favour
+1	56095	noun	favour	1	Could you do me a favour and hold this door open?
+2	56095	noun	favour	0	She asked her neighbor for a favour.
+3	56095	noun	favour	0	The coach chose Mia in favour of the older player.
+4	56095	noun	favour	0	Their plan found favour with the local council.
+5	56095	noun	favours	0	He often returns favours when friends help him.
+@ fence
+1	56097	noun	fence	1	The dog jumped over the fence and ran into the garden.
+2	56097	noun	fence	0	They built a wooden fence around the vegetable patch.
+3	56097	noun	fence	0	A tall fence keeps the children away from the road.
+4	56097	noun	fence	0	Paint the fence before the rainy season begins.
+5	56097	noun	fence	0	The fence marks the boundary between the two farms.
+@ fighting
+1	56113	adj	fighting	1	The fighting soldiers moved carefully through the ruined town.
+2	56113	adj	fighting	0	The fighting forces agreed to stop shooting for one day.
+3	56114	adj	fighting	0	He has a fighting attitude when someone insults his friends.
+4	56113	adj	fighting	0	Many families left the area because of the fighting groups.
+5	56113	adj	fighting	0	The fighting troops needed food and medical supplies.
+@ file
+1	56118	noun	file	1	I found the missing contract in a file on my desk.
+2	56121	noun	file	0	Save the report as a file on your computer.
+3	56118	noun	file	0	The lawyer placed the letters in the correct file.
+4	56134	noun	file	0	He used a metal file to smooth the sharp edge.
+5	56130	noun	file	0	The children walked in single file to the bus.
+@ financial
+1	56140	adj	financial	1	The family asked for financial help to pay the hospital bill.
+2	56140	adj	financial	0	She works as a financial adviser at a bank.
+3	56140	adj	financial	0	The charity published its financial report online.
+4	56140	adj	financial	0	They faced financial problems after losing their jobs.
+5	56140	adj	financial	0	Good financial planning can reduce stress.
+@ fitness
+1	56143	noun	fitness	1	Regular swimming improved her fitness over the summer.
+2	56143	noun	fitness	0	The gym offers classes for people who want better fitness.
+3	56142	noun	fitness	0	The doctor checked his fitness before the race.
+4	56143	noun	fitness	0	Walking every day is good for physical fitness.
+5	56142	noun	fitness	0	Her fitness for the job was clear from her experience.
+@ fixed
+1	56157	adj	fixed	1	The mechanic returned my fixed bicycle the next day.
+2	56149	adj	fixed	0	The rent is fixed and will not increase this year.
+3	56148	adj	fixed	0	The shelf is fixed to the wall.
+4	56150	adj	fixed	0	We meet at a fixed time every Monday.
+5	56155	adj	fixed	0	The referee suspected that the match was fixed.
+@ flag
+1	56159	noun	flag	1	The children raised the flag at the start of the school day.
+2	56159	noun	flag	0	Each country carried its flag in the parade.
+3	56160	noun	flag	0	The red cross is part of the flag design.
+4	56162	noun	flag	0	The sailor used a flag to signal that the boat needed help.
+5	56159	noun	flag	0	A small flag flew above the castle tower.
+@ flood
+1	56201	noun	flood	1	After days of heavy rain, a flood covered the village streets.
+2	56201	noun	flood	0	The flood forced families to leave their homes.
+3	56202	noun	flood	0	A flood of messages arrived after the announcement.
+4	56201	noun	flood	0	Sandbags helped protect the house from the flood.
+5	56203	noun	flood	0	Boats returned to the harbor with the flood tide.

@@ -1,0 +1,150 @@
+@ mission
+1	64706	noun	mission	1	Our mission was to collect food for families after the storm.
+2	64706	noun	mission	0	A set of tasks given for a purpose is a mission.
+3	64706	noun	mission	0	The rescue team's mission began before sunrise.
+4	64706	noun	mission	0	Her mission at work is to train new staff.
+5	64706	noun	mission	0	We completed our mission before the deadline.
+@ mixed
+1	64696	verb	mixed	1	The baker mixed the flour and sugar in a large bowl.
+2	64696	verb	mixed	0	Mixed is the past form of mix.
+3	64696	verb	mixed	0	She mixed blue and yellow paint to make green.
+4	64696	verb	mixed	0	He mixed the cards before dealing them.
+5	64696	verb	mixed	0	We mixed the soup until it was smooth.
+@ modify
+1	64702	verb	modify	1	We had to modify the game so the younger children could play.
+2	64702	verb	modify	0	To change part of something is to modify it.
+3	64702	verb	modify	0	The tailor can modify the dress to fit you.
+4	64702	verb	modified	0	She modified the recipe by adding less sugar.
+5	64702	verb	modify	0	Please modify the plan after reading the new rules.
+@ monitor
+1	64720	noun	monitor	1	The hall monitor reminded us to walk quietly.
+2	64720	noun	monitor	0	A person who watches over an activity is a monitor.
+3	64720	noun	monitor	0	The monitor checked that everyone wore a helmet.
+4	64720	noun	monitor	0	Our monitor stayed with the class during lunch.
+5	64720	noun	monitor	0	The camp monitor counted the children before leaving.
+@ moral
+1	64746	adj	moral	1	Telling the truth is a moral choice, even when it is hard.
+2	64746	adj	moral	0	Related to ideas of right and wrong is moral.
+3	64746	adj	moral	0	The story teaches a moral lesson about honesty.
+4	64746	adj	moral	0	She faced a moral question at work.
+5	64746	adj	moral	0	A moral rule can guide people's behavior.
+@ motor
+1	64763	noun	motor	1	The motor in the fan stopped working on the hottest day.
+2	64763	noun	motor	0	A device that changes energy into movement is a motor.
+3	64763	noun	motor	0	The small motor makes the toy car move.
+4	64763	noun	motor	0	The mechanic repaired the motor in the washing machine.
+5	64763	noun	motor	0	An electric motor powers this bicycle.
+@ mount
+1	64775	noun	mount	1	We climbed the mount before sunrise to see the valley below.
+2	64775	noun	mount	0	A hill or mountain is a mount.
+3	64775	noun	mount	0	The village lies at the foot of the mount.
+4	64775	noun	mount	0	Snow covered the top of the mount.
+5	64775	noun	mount	0	The guide pointed to the tallest mount on the map.
+@ multiple
+1	64735	det	multiple	1	Multiple candles lit the table during the power cut.
+2	64735	det	multiple	0	More than one means multiple.
+3	64735	det	multiple	0	The teacher gave us multiple choices for the project.
+4	64735	det	multiple	0	Multiple buses stop near the library.
+5	64735	det	multiple	0	The app has multiple ways to save a file.
+@ multiply
+1	64804	verb	multiply	1	Warm weather can multiply the number of mosquitoes quickly.
+2	64804	verb	multiply	0	To increase the amount or number of something is to multiply it.
+3	64804	verb	multiply	0	The rabbits multiply when they have plenty of food.
+4	64804	verb	multiplied	0	The crowd multiplied after the concert began.
+5	64804	verb	multiply	0	Bacteria can multiply in warm food.
+@ mysterious
+1	64759	adj	mysterious	1	A mysterious light appeared in the empty house every night.
+2	64759	adj	mysterious	0	Something with an unknown origin is mysterious.
+3	64759	adj	mysterious	0	Nobody knew who sent the mysterious letter.
+4	64759	adj	mysterious	0	We heard a mysterious sound outside the tent.
+5	64759	adj	mysterious	0	The old box had a mysterious symbol on its lid.
+@ neat
+1	64813	adj	neat	1	Her desk was neat, with every pencil in its place.
+2	64813	adj	neat	0	Clean and tidy means neat.
+3	64813	adj	neat	0	Please keep your room neat before guests arrive.
+4	64813	adj	neat	0	He wrote a neat list for the shopping trip.
+5	64813	adj	neat	0	The garden looked neat after we pulled the weeds.
+@ nerve
+1	64825	noun	nerve	1	The doctor explained that a nerve sends messages from the hand to the brain.
+2	64825	noun	nerve	0	A bundle of cells that carries messages in the body is a nerve.
+3	64825	noun	nerve	0	The injury damaged a nerve in her arm.
+4	64825	noun	nerve	0	The dentist avoided touching the nerve near the tooth.
+5	64825	noun	nerve	0	Pain can travel along a nerve.
+@ nevertheless
+1	64847	adv	nevertheless	1	The path was muddy; nevertheless, we reached the waterfall.
+2	64847	adv	nevertheless	0	Despite what was said before, nevertheless introduces a different result.
+3	64847	adv	nevertheless	0	It was cold; nevertheless, the children played outside.
+4	64847	adv	nevertheless	0	The task was difficult. Nevertheless, she finished it.
+5	64847	adv	nevertheless	0	He was tired; nevertheless, he helped us move the boxes.
+@ nightmare
+1	64848	noun	nightmare	1	I woke up shaking after a nightmare about being lost in the woods.
+2	64848	noun	nightmare	0	A frightening and unpleasant dream is a nightmare.
+3	64848	noun	nightmare	0	The movie gave my little brother a nightmare.
+4	64848	noun	nightmare	0	She told her mother about the nightmare at breakfast.
+5	64848	noun	nightmare	0	Reading a calm book helped him forget the nightmare.
+@ notion
+1	64840	noun	notion	1	I had the notion that the shop closed at six.
+2	64840	noun	notion	0	An idea or concept in your mind is a notion.
+3	64840	noun	notion	0	She rejected the notion that science is boring.
+4	64840	noun	notion	0	The children had a funny notion about where rain comes from.
+5	64840	noun	notion	0	His notion of a perfect day includes fishing.
+@ numerous
+1	64855	det	numerous	1	Numerous stars appeared after the clouds moved away.
+2	64855	det	numerous	0	A large but not exact number of things is numerous.
+3	64855	det	numerous	0	Numerous shops sell food near the station.
+4	64855	det	numerous	0	The library has numerous books about animals.
+5	64855	det	numerous	0	Numerous people came to the school concert.
+@ obey
+1	64859	verb	obey	1	The dog learned to obey the command to sit.
+2	64859	verb	obey	0	To do what a person or rule tells you to do is to obey.
+3	64859	verb	obey	0	Please obey the signs near the swimming pool.
+4	64859	verb	obeyed	0	The children obeyed the teacher's safety rules.
+5	64859	verb	obey	0	Drivers must obey traffic lights.
+@ objective
+1	64875	adj	objective	1	The report gives an objective account of what happened.
+2	64875	adj	objective	0	Related to real objects or actual existence is objective.
+3	64875	adj	objective	0	The scientist looked for objective evidence.
+4	64875	adj	objective	0	An objective fact can be checked by other people.
+5	64875	adj	objective	0	The judge needs objective information before deciding.
+@ obligation
+1	64862	noun	obligation	1	I had an obligation to return the book to the library.
+2	64862	noun	obligation	0	A social, legal, or moral duty to someone is an obligation.
+3	64862	noun	obligation	0	Parents have an obligation to care for their children.
+4	64862	noun	obligation	0	Paying the bill was his obligation.
+5	64862	noun	obligation	0	She felt no obligation to accept the invitation.
+@ observation
+1	64867	noun	observation	1	My observation of the birds showed that they feed at dawn.
+2	64867	noun	observation	0	The act of watching something carefully is observation.
+3	64867	noun	observation	0	The scientist recorded each observation in a notebook.
+4	64867	noun	observation	0	Close observation helped us find the insect.
+5	64867	noun	observation	0	Her observation of the sky predicted rain.
+@ observe
+1	64886	verb	observe	1	We stopped to observe a family of ducks by the pond.
+2	64886	verb	observe	0	To watch something carefully is to observe it.
+3	64886	verb	observe	0	Please observe the experiment before writing your answer.
+4	64886	verb	observed	0	The scientist observed a change in the water.
+5	64886	verb	observe	0	Visitors can observe the animals from behind the glass.
+@ obtain
+1	64895	verb	obtain	1	You need a ticket to obtain entry to the concert.
+2	64895	verb	obtain	0	To get or gain possession of something is to obtain it.
+3	64895	verb	obtain	0	She hopes to obtain a copy of the report.
+4	64895	verb	obtained	0	He obtained permission to use the hall.
+5	64895	verb	obtain	0	We can obtain fresh bread at the corner shop.
+@ occasionally
+1	64891	adv	occasionally	1	We occasionally eat dinner outside when the weather is warm.
+2	64891	adv	occasionally	0	Sometimes, but not often, means occasionally.
+3	64891	adv	occasionally	0	She occasionally visits her cousins on weekends.
+4	64891	adv	occasionally	0	The old computer occasionally freezes.
+5	64891	adv	occasionally	0	I occasionally take the bus instead of walking.
+@ offence
+1	64894	noun	offence	1	Taking someone else's bicycle without asking is an offence.
+2	64894	noun	offence	0	Offence is the standard British spelling of offense.
+3	64894	noun	offence	0	The police investigated the offence.
+4	64894	noun	offence	0	He apologized after causing offence at the meeting.
+5	64894	noun	offence	0	The law describes this action as an offence.
+@ offend
+1	64900	verb	offend	1	I did not mean to offend you with my careless joke.
+2	64900	verb	offend	0	To hurt someone's feelings or insult them is to offend them.
+3	64900	verb	offend	0	His rude words may offend the guests.
+4	64900	verb	offended	0	She offended her friend by laughing at the mistake.
+5	64900	verb	offend	0	Try not to offend people with unkind comments.

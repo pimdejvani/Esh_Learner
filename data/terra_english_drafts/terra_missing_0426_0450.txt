@@ -1,0 +1,150 @@
+@ associate
+1	61719	adj	associate	1	An associate manager works with the manager but has a lower position.
+2	61719	adj	associate	0	A worker joined with others but with lower status is associate.
+3	61719	adj	associate	0	She became an associate editor after working as an assistant.
+4	61719	adj	associate	0	The associate coach reports to the head coach.
+5	61719	adj	associate	0	An associate professor has a lower rank than a full professor.
+@ associated
+1	61686	adj	associated	1	The sound of rain is associated with peaceful afternoons for me.
+2	61686	adj	associated	0	If two things are connected, they are associated.
+3	61686	adj	associated	0	This logo is associated with the local football club.
+4	61686	adj	associated	0	Headaches can be associated with a lack of sleep.
+5	61686	adj	associated	0	The museum is associated with the nearby university.
+@ association
+1	61751	noun	association	1	The association of smoke with fire helped us find the campsite.
+2	61751	noun	association	0	The act of connecting one thing with another is association.
+3	61751	noun	association	0	Her association with the project began last year.
+4	61751	noun	association	0	The association between rain and dark clouds is easy to see.
+5	61751	noun	association	0	We learned word meanings through association with pictures.
+@ assume
+1	61711	verb	assume	1	Do not assume the door is locked without checking it.
+2	61711	verb	assume	0	To believe something is true without proof is to assume it.
+3	61711	verb	assume	0	I assume the bus will arrive soon.
+4	61711	verb	assumed	0	She assumed he knew the meeting time.
+5	61711	verb	assume	0	We should not assume that every map is accurate.
+@ attempt
+1	61757	verb	attempt	1	I will attempt the difficult puzzle after lunch.
+2	61757	verb	attempt	0	To try to do something is to attempt it.
+3	61757	verb	attempted	0	She attempted to lift the heavy box.
+4	61757	verb	attempted	0	He attempted the climb despite the rain.
+5	61757	verb	attempt	0	Please attempt every question on the test.
+@ bacteria
+1	61738	noun	bacteria	1	Bacteria on dirty hands can make people sick.
+2	61738	noun	bacteria	0	Tiny living things that can cause illness are bacteria.
+3	61738	noun	bacteria	0	Soap and water remove many bacteria from your skin.
+4	61738	noun	bacteria	0	Some bacteria help turn milk into yogurt.
+5	61738	noun	bacteria	0	The scientist studied bacteria under a microscope.
+@ barrier
+1	61743	noun	barrier	1	A metal barrier kept cars away from the roadworks.
+2	61743	noun	barrier	0	A structure that blocks people or vehicles from passing is a barrier.
+3	61743	noun	barrier	0	The gate forms a barrier between the garden and the street.
+4	61743	noun	barrier	0	Workers put up a barrier around the deep hole.
+5	61743	noun	barrier	0	The river was a natural barrier to travel.
+@ basically
+1	61716	adv	basically	1	Basically, the game is about finding hidden clues.
+2	61716	adv	basically	0	When you state the most important part of something, you speak basically.
+3	61716	adv	basically	0	The two plans are basically the same.
+4	61716	adv	basically	0	Basically, we need more time to finish.
+5	61716	adv	basically	0	This machine basically turns sunlight into electricity.
+@ beg
+1	61766	verb	beg	1	The child began to beg for one more bedtime story.
+2	61766	verb	beg	0	To ask strongly for help or money is to beg.
+3	61766	verb	begged	0	He begged his parents to let him stay up late.
+4	61766	verb	begged	0	She begged for help when she was lost.
+5	61766	verb	beg	0	Please do not beg strangers for money.
+@ being
+1	61813	verb	being	1	Being kind to a new student can make a big difference.
+2	61813	verb	being	0	The -ing form of the verb be is being.
+3	61813	verb	being	0	Being early gave us time to choose good seats.
+4	61813	verb	being	0	He apologized for being late to class.
+5	61813	verb	being	0	Being outside in the sunshine improved her mood.
+@ bent
+1	61777	verb	bent	1	The strong wind bent the young tree toward the fence.
+2	61777	verb	bent	0	Bent is the past form of bend.
+3	61777	verb	bent	0	She bent down to tie her shoe.
+4	61777	verb	bent	0	The wire was bent into a circle.
+5	61777	verb	bent	0	He bent the paper along the dotted line.
+@ bet
+1	61820	noun	bet	1	I made a bet with my brother about who would win the game.
+2	61820	noun	bet	0	An agreement to risk money on an outcome is a bet.
+3	61820	noun	bet	0	Her bet was that the blue team would score first.
+4	61820	noun	bet	0	He lost the bet and bought his friend a snack.
+5	61820	noun	bet	0	They placed a small bet on the race.
+@ beyond
+1	61800	prep	beyond	1	The village lies beyond the hill at the end of this road.
+2	61800	prep	beyond	0	Further away than a place is beyond that place.
+3	61800	prep	beyond	0	The beach is just beyond the bridge.
+4	61800	prep	beyond	0	We could see mountains beyond the fields.
+5	61800	prep	beyond	0	The store is beyond the traffic lights.
+@ bitter
+1	61906	adj	bitter	1	The medicine tasted bitter, so I drank water afterward.
+2	61906	adj	bitter	0	A sharp, unpleasant taste is bitter.
+3	61906	adj	bitter	0	The dark chocolate was too bitter for my little brother.
+4	61906	adj	bitter	0	This tea becomes bitter if you leave it too long.
+5	61906	adj	bitter	0	The lemon peel had a bitter flavor.
+@ blame
+1	61828	noun	blame	1	There was no blame for the broken vase because it fell by itself.
+2	61828	noun	blame	0	Criticism for doing something wrong is blame.
+3	61828	noun	blame	0	She accepted the blame for forgetting the keys.
+4	61828	noun	blame	0	Do not place blame before you know the facts.
+5	61828	noun	blame	0	The team shared the blame for the mistake.
+@ blind
+1	61916	adj	blind	1	The blind man used a white cane to cross the street.
+2	61916	adj	blind	0	Someone who cannot see is blind.
+3	61916	adj	blind	0	The blind dog followed the sound of its owner's voice.
+4	61916	adj	blind	0	She works with a school for blind students.
+5	61916	adj	blind	0	The guide helped the blind visitor find the exit.
+@ bond
+1	61837	noun	bond	1	My aunt bought a bond that will pay interest every year.
+2	61837	noun	bond	0	A document showing a long-term loan that pays interest is a bond.
+3	61837	noun	bond	0	The company sold a bond to raise money for a new factory.
+4	61837	noun	bond	0	He kept the bond until its payment date.
+5	61837	noun	bond	0	The bank explained how a bond earns interest.
+@ breast
+1	61948	noun	breast	1	The doctor examined her breast after she noticed a lump.
+2	61948	noun	breast	0	One of the two organs on the front of a woman's chest is a breast.
+3	61948	noun	breast	0	Breast health checks can help find problems early.
+4	61948	noun	breast	0	The clinic gave information about breast cancer screening.
+5	61948	noun	breast	0	She asked the nurse about pain in her breast.
+@ brief
+1	61865	adj	brief	1	We had a brief chat before the bus arrived.
+2	61865	adj	brief	0	Something that lasts only a short time is brief.
+3	61865	adj	brief	0	The teacher gave a brief explanation of the task.
+4	61865	adj	brief	0	There was a brief pause before the music started.
+5	61865	adj	brief	0	His visit was brief but enjoyable.
+@ broad
+1	61888	adj	broad	1	A broad river flowed through the middle of the city.
+2	61888	adj	broad	0	Something wide in size or range is broad.
+3	61888	adj	broad	0	The path became broad near the playground.
+4	61888	adj	broad	0	She gave us a broad overview of the plan.
+5	61888	adj	broad	0	The table has a broad wooden surface.
+@ broadcast
+1	61999	adj	broadcast	1	The farmer scattered broadcast seeds across the field by hand.
+2	61999	adj	broadcast	0	Something spread widely in many directions is broadcast.
+3	61999	adj	broadcast	0	Broadcast fertilizer covered the field evenly.
+4	61999	adj	broadcast	0	The gardener used broadcast seeds rather than planting rows.
+5	61999	adj	broadcast	0	A broadcast layer of grass seed covered the bare ground.
+@ budget
+1	61963	noun	budget	1	Our family made a budget before planning the vacation.
+2	61963	noun	budget	0	A plan for how much money to spend is a budget.
+3	61963	noun	budget	0	The school has a budget for new books.
+4	61963	noun	budget	0	We stayed within our budget at the grocery store.
+5	61963	noun	budget	0	The club discussed its budget at the meeting.
+@ bullet
+1	61973	noun	bullet	1	The officer found a bullet near the target at the shooting range.
+2	61973	noun	bullet	0	A small metal object fired from a gun is a bullet.
+3	61973	noun	bullet	0	The bullet struck the wooden board.
+4	61973	noun	bullet	0	The police removed a bullet from the wall.
+5	61973	noun	bullet	0	A bullet can travel very fast after a gun is fired.
+@ bunch
+1	62012	noun	bunch	1	She carried a bunch of yellow flowers home from the market.
+2	62012	noun	bunch	0	A group of similar things held together is a bunch.
+3	62012	noun	bunch	0	He bought a bunch of bananas for breakfast.
+4	62012	noun	bunch	0	A bunch of keys hung beside the door.
+5	62012	noun	bunch	0	The grapes grew in a bunch on the vine.
+@ bush
+1	62028	noun	bush	1	A small bird flew out of the bush near the path.
+2	62028	noun	bush	0	A low woody plant with several stems is a bush.
+3	62028	noun	bush	0	We planted a rose bush by the gate.
+4	62028	noun	bush	0	The cat hid behind a bush in the garden.
+5	62028	noun	bush	0	The bush needs water during the dry season.

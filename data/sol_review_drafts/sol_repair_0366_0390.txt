@@ -1,0 +1,150 @@
+@ position
+1	49707	noun	position	1	The rescue team found the child's position from the light on her phone.
+2	49708	noun	position	0	She applied for a teaching position at the local school.
+3	49710	noun	position	0	The mayor explained his position on the new road.
+4	49711	noun	position	0	Hold this position for ten seconds during the exercise.
+5	49720	verb	positioned	0	The photographer positioned the family beside the window.
+@ pronounce
+1	49929	verb	pronounce	1	After weeks of practice, Lina could finally pronounce her new friend's name correctly.
+2	49925	verb	pronounce	0	I can pronounce it.
+3	49925	verb	pronounced	0	She pronounced the name well.
+4	49925	verb	pronouncing	0	He is pronouncing each sound.
+5	49925	verb	pronounces	0	She pronounces English clearly.
+@ pull
+1	49983	verb	pull	1	We pull every day.
+2	49983	verb	pull	0	Pull the rope when I give the signal.
+3	49983	verb	pulls	0	This engine pulls a heavy trailer.
+4	49983	verb	pulled	0	She pulled the chair closer to the table.
+5	49984	verb	pulling	0	The children are pulling apples from the tree.
+@ purpose
+1	50033	noun	purpose	1	Finding her lost brother gave the long journey a clear purpose.
+2	50033	noun	purpose	0	What is the purpose of your visit?
+3	50034	noun	purpose	0	This small tool serves the purpose of opening cans.
+4	50033	noun	purposes	0	The hall is used for meetings and other purposes.
+5	50035	noun	purpose	0	He found a new sense of purpose by helping his community.
+@ push
+1	50041	verb	push	1	We push every day.
+2	50041	verb	push	0	Push the door firmly to open it.
+3	50041	verb	pushes	0	The nurse pushes the wheelchair down the hall.
+4	50041	verb	pushed	0	They pushed the broken car off the road.
+5	50041	verb	pushing	0	Mina is pushing the cart toward the checkout.
+@ quality
+1	50073	noun	quality	1	The high quality of the rope helped the climbers return safely.
+2	50072	noun	quality	0	Patience is a useful quality in a teacher.
+3	50073	noun	quality	0	This restaurant is known for the quality of its food.
+4	50072	noun	qualities	0	Honesty and kindness are qualities we value.
+5	50074	noun	quality	0	The builders chose quality materials for the roof.
+@ quantity
+1	50082	noun	quantity	1	The nurse checked the quantity of medicine before giving it to the child.
+2	50080	noun	quantity	0	The label shows the quantity of juice in the bottle.
+3	50081	noun	quantity	0	Add a small quantity of salt to the soup.
+4	50080	noun	quantities	0	The shop sells rice in several quantities.
+5	50083	noun	quantity	0	A large quantity of rain fell during the storm.
+@ queen
+1	50088	noun	queen	1	The young queen opened the palace gates to families seeking safety.
+2	50087	noun	queen	0	The queen stood beside the king during the ceremony.
+3	50097	noun	queen	0	In chess, the queen can move in many directions.
+4	50100	noun	queen	0	The queen bee lays eggs for the colony.
+5	50094	noun	queens	0	The festival queens rode through town in decorated cars.
+@ quietly
+1	50119	adv	quietly	1	We do it quietly.
+2	50119	adv	quietly	0	Please close the door quietly while the baby sleeps.
+3	50119	adv	more quietly	0	The students spoke more quietly after the teacher entered.
+4	50119	adv	most quietly	0	Of all the children, Mia walked most quietly.
+5	50120	adv	quietly	0	The company quietly changed the rule without an announcement.
+@ race
+1	50121	noun	race	1	After falling near the finish line, Maya stood up and completed the race.
+2	50121	noun	race	0	The bicycle race begins at nine tomorrow.
+3	50132	verb	race	0	Students will race around the field after lunch.
+4	50132	verb	raced	0	The two friends raced to the top of the hill.
+5	50132	verb	racing	0	Three boats are racing toward the harbor.
+@ railway
+1	50169	noun	railway	1	The new railway brought food and medicine to the flooded town.
+2	50169	noun	railway	0	The railway carries passengers between the two cities.
+3	50170	noun	railway	0	Workers repaired the railway after the storm.
+4	50169	noun	railways	0	Modern railways connect many parts of the country.
+5	50170	noun	railway	0	Never walk across a railway when the warning light is on.
+@ raise
+1	50171	verb	raise	1	We raise every day.
+2	50171	verb	raise	0	Please raise your hand before asking a question.
+3	50180	verb	raises	0	The new bridge raises the road above the floodwater.
+4	50183	verb	raised	0	Her grandparents raised her in a small village.
+5	50181	verb	raising	0	The students are raising money for the hospital.
+@ rate
+1	50205	noun	rate	1	The driver reduced his rate of speed and avoided hitting the child.
+2	50204	noun	rate	0	The exchange rate changes from day to day.
+3	50208	noun	rate	0	The hotel offers a lower weekend rate.
+4	50216	verb	rate	0	Please rate the service from one to five.
+5	50217	verb	rated	0	Customers rated the new restaurant highly.
+@ rather
+1	50230	adv	rather	1	We do it rather.
+2	50230	adv	rather	0	I would rather walk than wait for another bus.
+3	50233	adv	rather	0	The exam was rather easier than I expected.
+4	50232	adv	rather	0	We met on Monday, or rather, early Tuesday morning.
+5	50231	adv	rather	0	She was not angry; rather, she was disappointed.
+@ reach
+1	50238	verb	reach	1	We reach every day.
+2	50241	verb	reach	0	I cannot reach the box on the top shelf.
+3	50245	verb	reached	0	The rescue team reached the village before dark.
+4	50245	verb	reaches	0	The morning train reaches Bangkok at eight.
+5	50240	verb	reaching	0	The baby is reaching for the bright toy.
+@ react
+1	50271	verb	react	1	We react every day.
+2	50271	verb	react	0	How did she react when she heard the news?
+3	50271	verb	reacts	0	This dog reacts calmly to loud noises.
+4	50271	verb	reacted	0	The crowd reacted with surprise to the result.
+5	50274	verb	reacting	0	The two chemicals are reacting inside the glass tube.
+@ realize
+1	50278	verb	realize	1	We realize every day.
+2	50278	verb	realize	0	I did not realize that the shop closed so early.
+3	50278	verb	realizes	0	She realizes how much the team depends on her.
+4	50278	verb	realized	0	He realized that his wallet was missing.
+5	50278	verb	realizing	0	They are finally realizing the size of the problem.
+@ receive
+1	50297	verb	receive	1	We receive every day.
+2	50297	verb	receive	0	You will receive a message when the package arrives.
+3	50297	verb	receives	0	The school receives new books every month.
+4	50297	verb	received	0	She received a letter from her old friend.
+5	50297	verb	receiving	0	The hospital is receiving supplies this afternoon.
+@ recent
+1	50309	adj	recent	1	It is recent.
+2	50309	adj	recent	0	Recent rain has filled the village pond.
+3	50309	adj	more recent	0	This photograph is more recent than the others.
+4	50309	adj	most recent	0	Please read the most recent version of the report.
+5	50311	adj	recent	0	A recent graduate joined our office this week.
+@ recently
+1	50314	adv	recently	1	We do it recently.
+2	50314	adv	recently	0	I recently moved to a quieter neighborhood.
+3	50314	adv	more recently	0	She worked in a bank and, more recently, at a school.
+4	50314	adv	most recently	0	The building was most recently used as a library.
+5	50316	adv	recently	0	People have recently become more interested in local food.
+@ reception
+1	50320	noun	reception	1	The rescued athletes received a warm reception when they returned home.
+2	50321	noun	reception	0	Leave your room key at reception before you depart.
+3	50318	noun	reception	0	Phone reception is weak inside the tunnel.
+4	50319	noun	reception	0	The museum held a reception for the visiting artist.
+5	50320	noun	receptions	0	The two films received very different receptions from audiences.
+@ recipe
+1	50329	noun	recipe	1	Grandmother's soup recipe brought the whole family together again.
+2	50329	noun	recipe	0	This recipe makes enough bread for four people.
+3	50329	noun	recipes	0	The book contains simple recipes for healthy meals.
+4	50327	noun	recipe	0	Follow the recipe carefully when mixing the paint.
+5	50328	noun	recipe	0	Clear goals and steady practice are a recipe for success.
+@ recognize
+1	50331	verb	recognize	1	We recognize every day.
+2	50331	verb	recognize	0	I did not recognize him with his new haircut.
+3	50331	verb	recognizes	0	The baby recognizes her mother's voice.
+4	50331	verb	recognized	0	She recognized the song after hearing two notes.
+5	50335	verb	recognizing	0	The school is recognizing volunteers at tonight's ceremony.
+@ recommend
+1	50340	verb	recommend	1	We recommend every day.
+2	50340	verb	recommend	0	I recommend the vegetable soup at this restaurant.
+3	50340	verb	recommends	0	The doctor recommends a short walk each morning.
+4	50342	verb	recommended	0	She recommended that we take the earlier train.
+5	50340	verb	recommending	0	They are recommending this book to new students.
+@ record
+1	50345	noun	record	1	The old hospital record helped doctors identify the medicine that saved her life.
+2	50345	noun	record	0	The office keeps a record of every payment.
+3	50351	noun	record	0	The runner broke the national record by two seconds.
+4	50353	verb	record	0	Please record the temperature every morning.
+5	50354	verb	recorded	0	The students recorded the interview for their project.

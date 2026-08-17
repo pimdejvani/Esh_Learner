@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "data" / "sol_review_manifest.txt"
 REPORT_DIR = ROOT / "data" / "sol_review_reports"
 OVERLAY_DIR = ROOT / "data" / "sol_review_drafts"
-SOURCE_DB = ROOT / "data" / "vocabulary_source.db"
+SOURCE_DB = drafts.SOURCE_DB
 NAME = re.compile(r"sol_review_(\d{4})_(\d{4})\.tsv$")
 
 

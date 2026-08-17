@@ -1,0 +1,150 @@
+@ doctor
+1	31778	noun	doctor	1	The doctor stayed late to make sure the frightened child could breathe easily.
+2	31778	noun	doctor	0	A doctor treats sick and injured people.
+3	31778	noun	doctor	0	The doctor listened to my heart.
+4	31778	noun	doctor	0	She called the doctor when her fever rose.
+5	31778	noun	doctor	0	Our doctor gave us clear advice.
+@ dog
+1	31795	noun	dog	1	The lost dog followed the sound of its owner’s whistle all the way home.
+2	31795	noun	dog	0	A dog is barking in the yard.
+3	31795	noun	dog	0	The dog wagged its tail.
+4	31795	noun	dog	0	We took the dog for a walk.
+5	31795	noun	dog	0	That dog likes to chase balls.
+@ dollar
+1	31829	noun	dollar	1	With her first dollar from the lemonade stand, May bought a seed packet for the garden.
+2	31829	noun	dollar	0	A dollar is a unit of money.
+3	31829	noun	dollar	0	The apple costs one dollar.
+4	31829	noun	dollar	0	He found a dollar in his coat pocket.
+5	31829	noun	dollar	0	This drink is only a dollar.
+@ door
+1	31835	noun	door	1	When the storm grew louder, Grandpa closed the door and gathered everyone inside.
+2	31835	noun	door	0	Open the door with this key.
+3	31835	noun	door	0	The door has a round handle.
+4	31835	noun	door	0	Someone knocked on the door.
+5	31835	noun	door	0	Please close the door behind you.
+@ down
+1	31845	adv	down	1	The kite came down slowly after the wind finally became calm.
+2	31845	adv	down	0	The ball rolled down the hill.
+3	31845	adv	down	0	Please sit down here.
+4	31845	adv	down	0	She looked down from the bridge.
+5	31845	adv	down	0	Walk down the stairs carefully.
+@ downstairs
+1	31921	adj	downstairs	1	The downstairs room filled with laughter while rain tapped the upstairs windows.
+2	31921	adj	downstairs	0	The kitchen is downstairs.
+3	31921	adj	downstairs	0	Please take this box downstairs.
+4	31921	adj	downstairs	0	We heard music from the downstairs room.
+5	31921	adj	downstairs	0	Her bedroom is not downstairs.
+@ draw
+1	31928	verb	draw	1	Niko used one black pencil to draw the face of his missing grandfather.
+2	31928	verb	draw	0	Draw a circle on the paper.
+3	31928	verb	draw	0	She likes to draw animals.
+4	31928	verb	draw	0	Use a ruler to draw a straight line.
+5	31928	verb	draw	0	I will draw a map for you.
+@ dress
+1	32093	verb	dress	1	Before the school play, Maya helped dress her little brother as a brave king.
+2	32093	verb	dress	0	Dress the baby in warm clothes.
+3	32093	verb	dress	0	I dress quickly before school.
+4	32093	verb	dress	0	She will dress for the party upstairs.
+5	32093	verb	dress	0	Please dress yourself before breakfast.
+@ drink
+1	32135	verb	drink	1	After the long race, the team stopped to drink cold water together.
+2	32135	verb	drink	0	Drink this medicine after dinner.
+3	32135	verb	drink	0	We drink tea in the morning.
+4	32135	verb	drink	0	Do not drink water from that stream.
+5	32135	verb	drink	0	I drink milk with my breakfast.
+@ drive
+1	32156	verb	drive	1	On the first clear morning, Dad taught Ana to drive along the empty road.
+2	32156	verb	drive	0	You need a license to drive a car.
+3	32156	verb	drive	0	They drive to work every day.
+4	32156	verb	drive	0	Please drive slowly in the rain.
+5	32156	verb	drive	0	I can drive us to the station.
+@ driver
+1	32219	noun	driver	1	The bus driver waited until every child had crossed the street safely.
+2	32219	noun	driver	0	A driver controls a vehicle.
+3	32219	noun	driver	0	The driver stopped at the red light.
+4	32219	noun	driver	0	We thanked the driver after the trip.
+5	32219	noun	driver	0	The driver checked the mirrors.
+@ during
+1	32235	prep	during	1	During the blackout, neighbors shared candles and stories in the hallway.
+2	32235	prep	during	0	Do not use your phone during the exam.
+3	32235	prep	during	0	It rained during the match.
+4	32235	prep	during	0	She slept during the long flight.
+5	32235	prep	during	0	We met many people during our trip.
+@ dvd
+1	67721	noun	dvd	1	On the rainy afternoon, the family found an old DVD and watched it together.
+2	67721	noun	dvd	0	A DVD can hold a movie in digital form.
+3	67721	noun	dvd	0	He borrowed a DVD from the library.
+4	67721	noun	dvd	0	The DVD case is on the shelf.
+5	67721	noun	dvd	0	We put the DVD into the player.
+@ each
+1	32238	det	each	1	Each child added one painted stone to the path leading to the new garden.
+2	32238	det	each	0	Each student has one desk.
+3	32238	det	each	0	Give each person a ticket.
+4	32238	det	each	0	Each book has a number.
+5	32238	det	each	0	We thanked each guest at the door.
+@ ear
+1	32243	noun	ear	1	The puppy lifted one ear when it heard the familiar sound of the key.
+2	32243	noun	ear	0	Your ear helps you hear sounds.
+3	32243	noun	ear	0	She whispered into his ear.
+4	32243	noun	ear	0	The doctor checked my ear.
+5	32243	noun	ear	0	He covered one ear during the thunder.
+@ early
+1	32260	adj	early	1	We arrived early enough to watch the sun rise over the silent lake.
+2	32260	adj	early	0	The train leaves early in the morning.
+3	32260	adj	early	0	She was early for the meeting.
+4	32260	adj	early	0	Go to bed early tonight.
+5	32260	adj	early	0	An early start gives us more time.
+@ east
+1	32269	noun	east	1	At sunrise, the clouds in the east turned gold above the hills.
+2	32269	noun	east	0	The sun rises in the east.
+3	32269	noun	east	0	Our town lies east of the river.
+4	32269	noun	east	0	Travel east to reach the coast.
+5	32269	noun	east	0	The wind came from the east.
+@ easy
+1	32278	adj	easy	1	The first lesson felt easy, giving Finn the courage to keep learning.
+2	32278	adj	easy	0	This question is easy to answer.
+3	32278	adj	easy	0	The path is easy to follow.
+4	32278	adj	easy	0	She made the job look easy.
+5	32278	adj	easy	0	It is easy to forget a name.
+@ eat
+1	32290	verb	eat	1	After planting the seeds, the children hoped to eat their own tomatoes in summer.
+2	32290	verb	eat	0	Eat your vegetables before dessert.
+3	32290	verb	eat	0	We eat lunch at noon.
+4	32290	verb	eat	0	Do not eat food from the floor.
+5	32290	verb	eat	0	I like to eat oranges.
+@ egg
+1	32310	noun	egg	1	In the nest, one small egg cracked open just as the children looked closer.
+2	32310	noun	egg	0	An egg has a shell around it.
+3	32310	noun	egg	0	She boiled an egg for breakfast.
+4	32310	noun	egg	0	The bird sat on its egg.
+5	32310	noun	egg	0	Put one egg into the bowl.
+@ eight
+1	32337	noun	eight	1	At eight, the birthday candles glowed while everyone sang around the table.
+2	32337	noun	eight	0	Eight comes after seven.
+3	32337	noun	eight	0	The clock shows eight o’clock.
+4	32337	noun	eight	0	There are eight chairs in the room.
+5	32337	noun	eight	0	She has eight apples.
+@ eighteen
+1	67730	num	eighteen	1	At eighteen, Kai opened a letter his mother had saved for years.
+2	67730	num	eighteen	0	Eighteen comes after seventeen.
+3	67730	num	eighteen	0	There are eighteen students in the class.
+4	67730	num	eighteen	0	She turned eighteen last month.
+5	67730	num	eighteen	0	The bus arrives at eighteen minutes past nine.
+@ eighty
+1	67731	num	eighty	1	At eighty, Grandma planted eighty flowers along the front path.
+2	67731	num	eighty	0	Eighty comes after seventy-nine.
+3	67731	num	eighty	0	The room has space for eighty people.
+4	67731	num	eighty	0	He drove eighty kilometers today.
+5	67731	num	eighty	0	The book costs eighty dollars.
+@ elephant
+1	32345	noun	elephant	1	The young elephant used its trunk to help a calf climb out of the mud.
+2	32345	noun	elephant	0	An elephant has a long trunk.
+3	32345	noun	elephant	0	The elephant walked slowly across the grass.
+4	32345	noun	elephant	0	We saw an elephant at the zoo.
+5	32345	noun	elephant	0	An elephant is larger than a horse.
+@ eleven
+1	32351	noun	eleven	1	The school eleven celebrated when their captain scored the winning run.
+2	32351	noun	eleven	0	An eleven is a cricket team with eleven players.
+3	32351	noun	eleven	0	Our school eleven practiced after class.
+4	32351	noun	eleven	0	The eleven selected its best bowlers.
+5	32351	noun	eleven	0	He hopes to join the first eleven next year.

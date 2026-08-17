@@ -1,0 +1,150 @@
+@ housing
+1	64008	noun	housing	1	The charity provides housing for families after a flood.
+2	64008	noun	housing	0	Providing people with a place to live is housing.
+3	64008	noun	housing	0	Affordable housing is needed near the new factory.
+4	64008	noun	housing	0	The city is building housing for older residents.
+5	64008	noun	housing	0	Good housing protects people from bad weather.
+@ humorous
+1	64018	adj	humorous	1	His humorous story made the whole class laugh.
+2	64018	adj	humorous	0	Something funny that makes people laugh is humorous.
+3	64018	adj	humorous	0	She wrote a humorous note to cheer up her friend.
+4	64018	adj	humorous	0	The film has a humorous ending.
+5	64018	adj	humorous	0	Our teacher is humorous but also strict.
+@ humour
+1	64027	noun	humour	1	Her dry humour made us laugh during the long wait.
+2	64027	noun	humour	0	The quality of being funny is humour.
+3	64027	noun	humour	0	The cartoon uses humour to tell its story.
+4	64027	noun	humour	0	His humour helped everyone relax.
+5	64027	noun	humour	0	A little humour can brighten a difficult day.
+@ hunting
+1	64022	noun	hunting	1	Grandfather kept his hunting boots by the door before an early trip to the woods.
+2	64022	noun	hunting	0	Finding and killing wild animals for sport or food is hunting.
+3	64022	noun	hunting	0	The forest has rules about hunting during spring.
+4	64022	noun	hunting	0	They learned about traditional hunting at the museum.
+5	64022	noun	hunting	0	Hunting is not allowed in this wildlife park.
+@ illustrate
+1	64033	verb	illustrate	1	The teacher used a glass of water to illustrate the idea.
+2	64033	verb	illustrate	0	To make an idea clear by giving an example is to illustrate it.
+3	64033	verb	illustrate	0	This picture can illustrate how the machine works.
+4	64033	verb	illustrated	0	Her story illustrated the importance of kindness.
+5	64033	verb	illustrate	0	Use a simple example to illustrate your point.
+@ illustration
+1	64037	noun	illustration	1	The teacher's illustration made the difficult rule easy to understand.
+2	64037	noun	illustration	0	An act that makes an idea clear is an illustration.
+3	64037	noun	illustration	0	The diagram is an illustration of how the heart works.
+4	64037	noun	illustration	0	Her illustration of the problem helped the group decide.
+5	64037	noun	illustration	0	The example served as a useful illustration.
+@ imagination
+1	64042	noun	imagination	1	With imagination, the children turned boxes into a spaceship.
+2	64042	noun	imagination	0	The ability to create pictures and ideas in your mind is imagination.
+3	64042	noun	imagination	0	The story came from the writer's imagination.
+4	64042	noun	imagination	0	Use your imagination to draw an animal from another planet.
+5	64042	noun	imagination	0	Her imagination helped her invent a new game.
+@ impatient
+1	64046	adj	impatient	1	The impatient child kept asking when the cake would be ready.
+2	64046	adj	impatient	0	Restless and annoyed by waiting means impatient.
+3	64046	adj	impatient	0	He grew impatient in the long line.
+4	64046	adj	impatient	0	Do not be impatient; the bus will come soon.
+5	64046	adj	impatient	0	She sounded impatient when the computer was slow.
+@ imply
+1	64055	verb	imply	1	Dark clouds imply that rain may be coming.
+2	64055	verb	imply	0	To suggest something as a necessary result is to imply it.
+3	64055	verb	imply	0	His question may imply that he disagrees.
+4	64055	verb	implied	0	The empty fridge implied that nobody had been home.
+5	64055	verb	imply	0	A red light can imply that you should stop.
+@ impose
+1	64074	verb	impose	1	Please impose the blanket gently on the sleeping baby.
+2	64074	verb	impose	0	To place one thing onto another is to impose it.
+3	64074	verb	impose	0	The worker will impose the cover on the table.
+4	64074	verb	imposed	0	She imposed the sheet over the muddy ground.
+5	64074	verb	impose	0	Carefully impose the label on the box.
+@ impress
+1	64059	verb	impress	1	The young pianist will impress the audience with her skill.
+2	64059	verb	impress	0	To affect someone strongly and favorably is to impress them.
+3	64059	verb	impress	0	Your careful work will impress the teacher.
+4	64059	verb	impressed	0	The clean design impressed everyone at the meeting.
+5	64059	verb	impress	0	He hopes to impress his coach at practice.
+@ impressed
+1	64050	adj	impressed	1	I was impressed by the way she calmly solved the problem.
+2	64050	adj	impressed	0	Strongly affected in a positive way means impressed.
+3	64050	adj	impressed	0	The visitors were impressed by the beautiful garden.
+4	64050	adj	impressed	0	He felt impressed after hearing the talented singer.
+5	64050	adj	impressed	0	We were impressed with their kind welcome.
+@ inch
+1	64091	noun	inch	1	The snail moved only one inch across the leaf.
+2	64091	noun	inch	0	A unit of length equal to 2.54 centimeters is an inch.
+3	64091	noun	inches	0	The picture frame is twelve inches wide.
+4	64091	noun	inch	0	Leave an inch of space around the edge.
+5	64091	noun	inches	0	The rain fell two inches overnight.
+@ incident
+1	64103	noun	incident	1	The incident at the bus stop delayed everyone for an hour.
+2	64103	noun	incident	0	An event that happens is an incident.
+3	64103	noun	incident	0	The teacher wrote a report about the incident.
+4	64103	noun	incident	0	Nobody was hurt in the incident.
+5	64103	noun	incident	0	The police investigated the strange incident.
+@ increasingly
+1	64090	adv	increasingly	1	The sky became increasingly dark before the storm.
+2	64090	adv	increasingly	0	More and more in amount or intensity means increasingly.
+3	64090	adv	increasingly	0	This book is becoming increasingly popular.
+4	64090	adv	increasingly	0	The road grew increasingly busy after lunch.
+5	64090	adv	increasingly	0	We are increasingly worried about the dry weather.
+@ industrial
+1	64122	adj	industrial	1	The industrial area is full of factories and warehouses.
+2	64122	adj	industrial	0	Related to manufacturing or industry means industrial.
+3	64122	adj	industrial	0	Smoke rose from the industrial buildings.
+4	64122	adj	industrial	0	The town grew because of industrial jobs.
+5	64122	adj	industrial	0	They visited an industrial museum near the old mill.
+@ infection
+1	64136	noun	infection	1	The doctor gave medicine to treat the ear infection.
+2	64136	noun	infection	0	The process of becoming infected is an infection.
+3	64136	noun	infection	0	Cleaning the cut can prevent infection.
+4	64136	noun	infection	0	The nurse checked for signs of infection.
+5	64136	noun	infection	0	The infection spread when people did not wash their hands.
+@ inform
+1	64140	verb	inform	1	The guide will inform us about the animals in the park.
+2	64140	verb	inform	0	To teach someone by giving knowledge is to inform them.
+3	64140	verb	inform	0	Please inform the class about the schedule change.
+4	64140	verb	informed	0	The nurse informed him about the medicine.
+5	64140	verb	inform	0	The leaflet will inform visitors about safety rules.
+@ initial
+1	64155	adj	initial	1	Our initial plan was to walk, but then it started raining.
+2	64155	adj	initial	0	First or from the beginning is initial.
+3	64155	adj	initial	0	The initial step is to read the instructions.
+4	64155	adj	initial	0	Her initial idea changed after the meeting.
+5	64155	adj	initial	0	The initial results looked promising.
+@ initially
+1	64121	adv	initially	1	Initially, I thought the puzzle was impossible.
+2	64121	adv	initially	0	At the beginning means initially.
+3	64121	adv	initially	0	The room was initially too cold for swimming.
+4	64121	adv	initially	0	Initially, only three people joined the club.
+5	64121	adv	initially	0	We initially planned to leave at noon.
+@ initiative
+1	64149	adj	initiative	1	The initiative meeting began the school's recycling project.
+2	64149	adj	initiative	0	Serving to begin something is initiative.
+3	64149	adj	initiative	0	An initiative step started the work on the garden.
+4	64149	adj	initiative	0	The initiative action brought the group together.
+5	64149	adj	initiative	0	Their initiative plan launched a new program.
+@ inner
+1	64161	adj	inner	1	The inner pocket of my bag holds my keys safely.
+2	64161	adj	inner	0	Located farther inside something is inner.
+3	64161	adj	inner	0	The inner door leads to the quiet room.
+4	64161	adj	inner	0	The inner layer of the jacket is soft.
+5	64161	adj	inner	0	Paint the inner wall before the outer wall.
+@ insight
+1	64173	noun	insight	1	The interview gave us insight into the artist's private thoughts.
+2	64173	noun	insight	0	A deep understanding of something is insight.
+3	64173	noun	insight	0	Her insight into the problem helped the team.
+4	64173	noun	insight	0	The book offers insight into life at sea.
+5	64173	noun	insight	0	He gained insight after talking with the expert.
+@ insist
+1	64179	verb	insist	1	Mum will insist that we wear helmets on the bike ride.
+2	64179	verb	insist	0	To state a claim strongly is to insist.
+3	64179	verb	insist	0	They insist that the rule is fair.
+4	64179	verb	insisted	0	She insisted on carrying the heavy bag herself.
+5	64179	verb	insist	0	I insist that you take an umbrella.
+@ inspire
+1	64182	verb	inspire	1	The old story can inspire courage in young readers.
+2	64182	verb	inspire	0	To put an idea or feeling into someone's mind is to inspire them.
+3	64182	verb	inspire	0	Her speech may inspire the class to help others.
+4	64182	verb	inspired	0	The beautiful view inspired him to paint.
+5	64182	verb	inspire	0	A teacher can inspire students to keep learning.

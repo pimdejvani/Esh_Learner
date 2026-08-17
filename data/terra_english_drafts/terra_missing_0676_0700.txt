@@ -1,0 +1,150 @@
+@ install
+1	64188	verb	install	1	We will install the new washing machine tomorrow.
+2	64189	verb	install	0	Install the app before you connect the printer.
+3	64188	verb	installed	0	The workers installed new lights in the hallway.
+4	64190	verb	installing	0	The city is installing a new school principal today.
+5	64188	verb	installs	0	This shop installs home security systems.
+@ instance
+1	64199	noun	instance	1	For instance, a bicycle is a simple way to travel nearby.
+2	64198	noun	instance	0	This was the first instance of snow that winter.
+3	64197	noun	instance	0	The broken seal is an instance of poor handling.
+4	64199	noun	instances	0	The teacher gave several instances from real life.
+5	64198	noun	instance	0	In this instance, we should wait for more information.
+@ institute
+1	64209	noun	institute	1	The health institute offers free classes about nutrition.
+2	64210	noun	institute	0	She studies engineering at a technical institute.
+3	64211	noun	institute	0	The institute is in a modern building near the park.
+4	64209	noun	institutes	0	Several institutes work together on the project.
+5	64213	noun	institute	0	The institute follows an old local custom.
+@ institution
+1	64226	noun	institution	1	The university is an important institution in the city.
+2	64227	noun	institution	0	Marriage is a social institution in many cultures.
+3	64228	noun	institution	0	The institution moved to a larger building.
+4	64231	noun	institution	0	That bakery has become a local institution.
+5	64226	noun	institutions	0	Public institutions need enough funding to serve people.
+@ insurance
+1	64220	noun	insurance	1	Car insurance can help pay for damage after an accident.
+2	64224	noun	insurance	0	Read your insurance policy before you travel.
+3	64221	noun	insurance	0	She works in insurance for a large company.
+4	64222	noun	insurance	0	Saving extra money is insurance against unexpected costs.
+5	64220	noun	insurance	0	Health insurance covers some doctor visits.
+@ intended
+1	64237	adj	intended	1	This gift is intended for your sister's birthday.
+2	64237	adj	intended	0	The intended result was a cleaner park.
+3	64237	adj	intended	0	The instructions are intended for new users.
+4	64237	adj	intended	0	Her intended journey was delayed by rain.
+5	64237	adj	intended	0	The intended audience for the film is teenagers.
+@ intense
+1	64241	adj	intense	1	The intense heat made it difficult to work outside.
+2	64243	adj	intense	0	She felt intense excitement before the race.
+3	64241	adj	intense	0	The intense storm knocked down several trees.
+4	64244	adj	intense	0	He is intense when he talks about his favorite sport.
+5	64245	adj	intense	0	There was an intense silence before the results.
+@ internal
+1	64246	adj	internal	1	The doctor checked for internal injuries after the fall.
+2	64249	adj	internal	0	This is an internal message for staff only.
+3	64248	adj	internal	0	The minister discussed internal affairs of the country.
+4	64246	adj	internal	0	The machine has an internal battery.
+5	64252	adj	internal	0	She kept her internal worries to herself.
+@ interpret
+1	64256	verb	interpret	1	Can you interpret this sign for me?
+2	64256	verb	interpret	0	People may interpret the same story differently.
+3	64258	verb	interpreted	0	The guide interpreted the speaker's words for visitors.
+4	64255	verb	interpreting	0	She is interpreting the results of the survey.
+5	64257	verb	interprets	0	The actor interprets the character with great energy.
+@ interrupt
+1	64260	verb	interrupted	1	The loud phone call interrupted our lesson.
+2	64260	verb	interrupt	0	Please do not interrupt when someone is speaking.
+3	64261	verb	interrupted	0	A short break interrupted the long journey.
+4	64260	verb	interrupting	0	He keeps interrupting his sister during dinner.
+5	64260	verb	interrupts	0	The alarm interrupts the meeting every week.
+@ investigation
+1	64265	noun	investigation	1	The police began an investigation after the bike disappeared.
+2	64265	noun	investigation	0	A careful investigation found the cause of the fire.
+3	64265	noun	investigation	0	The report is based on a long investigation.
+4	64265	noun	investigations	0	Several investigations are still underway.
+5	64265	noun	investigation	0	The company promised a full investigation of the accident.
+@ investment
+1	64267	noun	investment	1	Buying the new oven was a good investment for the bakery.
+2	64267	noun	investment	0	She made a small investment in a local business.
+3	64266	noun	investment	0	The investment of time improved his skills.
+4	64267	noun	investments	0	His investments grew in value over several years.
+5	64267	noun	investment	0	Careful research can make an investment safer.
+@ joy
+1	64294	noun	joy	1	The children's joy was clear when the snow began to fall.
+2	64294	noun	joy	0	She felt great joy after hearing the good news.
+3	64295	noun	joys	0	Reading is one of his greatest joys.
+4	64297	noun	joy	0	The room was full of joy during the celebration.
+5	64294	noun	joy	0	The puppy brought joy to the whole family.
+@ judgement
+1	64264	noun	judgement	1	Use your best judgement when crossing the busy road.
+2	64264	noun	judgement	0	Her judgement helped the team choose the right plan.
+3	64264	noun	judgement	0	The judge will give a judgement tomorrow.
+4	64264	noun	judgements	0	Quick judgements can sometimes be unfair.
+5	64264	noun	judgement	0	Good judgement comes from experience.
+@ junior
+1	64271	adj	junior	1	As a junior assistant, he learns from more experienced workers.
+2	64272	adj	junior	0	Her junior brother is still in primary school.
+3	64276	adj	junior	0	The club has a junior football team.
+4	64271	adj	junior	0	She began in a junior role at the company.
+5	64273	adj	junior	0	He wore his junior school uniform proudly.
+@ justice
+1	64303	noun	justice	1	The judge promised to treat both sides with justice.
+2	64302	noun	justice	0	Everyone deserves justice after being treated unfairly.
+3	64304	noun	justice	0	The victims waited years for justice.
+4	64305	noun	justice	0	The ministry of justice handles legal matters.
+5	64302	noun	justice	0	The story is about justice and forgiveness.
+@ justify
+1	64286	verb	justify	1	You cannot justify being rude to someone who is helping you.
+2	64287	verb	justify	0	The high cost does not justify buying a new phone.
+3	64286	verb	justified	0	She justified her choice by explaining the benefits.
+4	64290	verb	justifying	0	He kept justifying his late arrival.
+5	64288	verb	justify	0	Use this button to justify the text on the page.
+@ labour
+1	64312	noun	labour	1	The workers' labour helped finish the bridge on time.
+2	64314	noun	labour	0	The company depends on skilled labour.
+3	64316	noun	labour	0	She went into labour early in the morning.
+4	64312	noun	labour	0	Farm labour is hard work during harvest season.
+5	64321	verb	labouring	0	They are labouring in the hot sun.
+@ landscape
+1	64328	noun	landscape	1	The mountain landscape looked beautiful after the rain.
+2	64329	noun	landscape	0	From the hill, we saw the whole landscape below.
+3	64331	noun	landscape	0	She painted a landscape of the lake at sunset.
+4	64334	noun	landscape	0	The garden is part of the designed landscape.
+5	64328	noun	landscapes	0	The trip showed us many different landscapes.
+@ largely
+1	64309	adv	largely	1	The project was largely finished by the end of Friday.
+2	64309	adv	largely	0	The town is largely dependent on tourism.
+3	64308	adv	largely	0	The farm is largely surrounded by trees.
+4	64309	adv	largely	0	Her success is largely due to hard work.
+5	64310	adv	largely	0	The company operates largely on a local scale.
+@ launch
+1	64346	verb	launch	1	The company will launch its new product next month.
+2	64343	verb	launch	0	The space agency plans to launch a rocket tonight.
+3	64344	verb	launched	0	They launched a campaign to clean the beach.
+4	64345	verb	launching	0	She is launching the program from her computer.
+5	64342	verb	launch	0	Workers will launch the boat into the water tomorrow.
+@ leadership
+1	64337	noun	leadership	1	Her leadership kept the team calm during the emergency.
+2	64337	noun	leadership	0	Good leadership helps people work toward one goal.
+3	64339	noun	leadership	0	He took leadership of the project after the manager left.
+4	64338	noun	leadership	0	The leadership met to discuss the new policy.
+5	64337	noun	leadership	0	The course teaches leadership skills to young people.
+@ league
+1	64357	noun	league	1	Our team joined a local football league this year.
+2	64356	noun	league	0	The countries formed a league to protect the river.
+3	64357	noun	league	0	She plays in the highest league for her age group.
+4	64359	noun	league	0	That restaurant is in a different league from this one.
+5	64357	noun	leagues	0	Several leagues hold matches every weekend.
+@ lean
+1	64366	verb	lean	1	Lean against the wall if you need to rest.
+2	64368	verb	leaned	0	She leaned on her friend for support.
+3	64366	verb	leaning	0	The old fence is leaning toward the road.
+4	64367	verb	leans	0	He leans toward taking the earlier train.
+5	64370	verb	leaned	0	The child leaned against the window.
+@ licence
+1	64326	noun	licence	1	You need a driving licence before you can drive alone.
+2	64326	noun	licence	0	The restaurant has a licence to sell alcohol.
+3	64326	noun	licence	0	Show your fishing licence to the park officer.
+4	64326	noun	licences	0	The office checks business licences every year.
+5	64326	noun	licence	0	Her licence expires at the end of the month.

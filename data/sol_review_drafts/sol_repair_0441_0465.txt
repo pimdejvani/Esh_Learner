@@ -1,0 +1,150 @@
+@ secretary
+1	51172	noun	secretary	1	The secretary found the missing file just before the important meeting began.
+2	51172	noun	secretary	0	The secretary answered the phone and took a message.
+3	51172	noun	secretaries	0	The two secretaries organized the office records.
+4	51173	noun	secretary	0	The education secretary announced the new policy.
+5	51172	noun	secretary	0	Please give the signed form to the secretary.
+@ seem
+1	51180	verb	seem	1	We seem every day.
+2	51180	verb	seem	0	You seem tired after the long journey.
+3	51180	verb	seems	0	The new student seems friendly.
+4	51180	verb	seemed	0	The task seemed difficult at first.
+5	51180	verb	seem	0	The road began to seem longer as we grew tired.
+@ sense
+1	51185	noun	sense	1	The final clue made sense, and Maya suddenly knew where to find her brother.
+2	51182	noun	sense	0	I have a sense of danger.
+3	51182	noun	sense	0	Use your sense to choose.
+4	51193	verb	sense	0	I sense that he is tired.
+5	51182	noun	sense	0	The smell affects my sense.
+@ serve
+1	51224	verb	serve	1	They serve food here.
+2	51224	verb	serve	0	Please serve the soup.
+3	51224	verb	serves	0	She serves customers well.
+4	51221	noun	serve	0	His serve was fast.
+5	51224	verb	serve	0	We serve dinner at six.
+@ shake
+1	51285	verb	shake	1	Shake the bottle well.
+2	51285	verb	shake	0	My hands shake when cold.
+3	51285	verb	shake	0	Please shake my hand.
+4	51296	noun	shake	0	The earthquake gave a shake.
+5	51285	verb	shakes	0	The wind shakes the tree.
+@ ski
+1	51651	verb	ski	1	After weeks of practice, Lina learned to ski down the snowy hill without falling.
+2	51648	noun	ski	0	One ski came loose from his boot.
+3	51648	noun	skis	0	Place your skis beside the cabin door.
+4	51651	verb	skied	0	We skied across the frozen valley yesterday.
+5	51651	verb	skiing	0	The children are skiing on the gentle slope.
+@ skiing
+1	51653	verb	skiing	1	We skiing every day.
+2	51654	noun	skiing	0	Skiing is a popular winter sport in the mountains.
+3	51653	verb	skiing	0	Maya is skiing down the beginner slope.
+4	51654	noun	skiing	0	Safe skiing requires warm clothes and proper equipment.
+5	51653	verb	skiing	0	They were skiing when the snow began to fall.
+@ skin
+1	51655	noun	skin	1	The nurse gently cleaned the child's skin after the rescue.
+2	51655	noun	skin	0	Wear sunscreen to protect your skin.
+3	51656	noun	skin	0	Remove the orange skin before eating the fruit.
+4	51655	noun	skin	0	Cold air can make dry skin feel worse.
+5	51674	verb	skinned	0	He fell from his bicycle and skinned his knee.
+@ sky
+1	51686	noun	sky	1	A rescue helicopter appeared in the sky above the flooded village.
+2	51686	noun	sky	0	Dark clouds covered the sky before the storm.
+3	51686	noun	skies	0	Clear skies are expected throughout the weekend.
+4	51687	noun	sky	0	The evening sky turned orange and pink.
+5	51686	noun	sky	0	We could see every star in the night sky.
+@ slowly
+1	51704	adv	slowly	1	We do it slowly.
+2	51704	adv	slowly	0	Please drive slowly near the school.
+3	51704	adv	more slowly	0	The old train moves more slowly than the new one.
+4	51704	adv	most slowly	0	Of all the animals, the turtle moved most slowly.
+5	51704	adv	slowly	0	The sun slowly disappeared behind the hills.
+@ smartphone
+1	51705	noun	smartphone	1	Her smartphone showed rescuers the family's exact location.
+2	51705	noun	smartphone	0	I use my smartphone to check the train schedule.
+3	51705	noun	smartphones	0	Most smartphones can take high-quality photographs.
+4	51705	noun	smartphone	0	Please turn off your smartphone during the film.
+5	51705	noun	smartphone	0	The new smartphone has a larger screen.
+@ smell
+1	51706	noun	smell	1	The smell of smoke warned the sleeping family about the fire.
+2	51706	noun	smell	0	The bread has a wonderful smell.
+3	51709	verb	smell	0	Can you smell the flowers from here?
+4	51711	verb	smells	0	The soup smells delicious.
+5	51709	verb	smelled	0	She smelled gas and opened the windows.
+@ smile
+1	51716	noun	smile	1	Her father's smile told her that the operation had gone well.
+2	51716	noun	smile	0	The baby gave us a wide smile.
+3	51721	verb	smile	0	Please smile for the photograph.
+4	51721	verb	smiled	0	She smiled when she saw her old friend.
+5	51721	verb	smiling	0	The children are smiling at the camera.
+@ smoke
+1	51725	noun	smoke	1	The alarm sounded when smoke began filling the kitchen.
+2	51725	noun	smoke	0	Black smoke rose from the old engine.
+3	51741	verb	smokes	0	The fire still smokes after the flames disappear.
+4	51744	verb	smoked	0	They smoked the fish to preserve it.
+5	51741	verb	smoking	0	The wet wood is smoking but not burning well.
+@ smoking
+1	51759	verb	smoking	1	We smoking every day.
+2	51765	noun	smoking	0	Smoking can seriously damage your health.
+3	51760	adj	smoking	0	Firefighters watched the smoking roof carefully.
+4	51767	noun	smoking	0	Smoking gives the cheese a rich flavor.
+5	51759	verb	smoking	0	He is smoking a fish over a small fire.
+@ soap
+1	51769	noun	soap	1	The nurse used soap and clean water to wash the injured child's hands.
+2	51769	noun	soap	0	Wash your hands with soap before eating.
+3	51769	noun	soaps	0	The shop sells soaps made with flower oils.
+4	51774	verb	soaping	0	She is soaping the dirty cloth before rinsing it.
+5	51774	verb	soaped	0	He soaped his hands and washed them under warm water.
+@ soccer
+1	51779	noun	soccer	1	The injured player returned to the field and scored the winning soccer goal.
+2	51779	noun	soccer	0	We play soccer in the park every Saturday.
+3	51779	noun	soccer	0	A soccer team usually has eleven players on the field.
+4	51779	noun	soccer	0	The children need a ball and two goals for soccer.
+5	51779	noun	soccer	0	Her favorite sport is soccer.
+@ social
+1	51781	adj	social	1	It is social.
+2	51781	adj	social	0	Mina is social and enjoys meeting new people.
+3	51782	adj	social	0	The report examines social changes in the city.
+4	51783	adj	social	0	The shop announced the sale on social media.
+5	51781	adj	more social	0	He became more social after joining the club.
+@ society
+1	51798	noun	society	1	The volunteers showed how society can unite to help families after a disaster.
+2	51794	noun	society	0	Language and customs change as society develops.
+3	51795	noun	society	0	She joined the university science society.
+4	51795	noun	societies	0	Several local societies organized the festival.
+5	51798	noun	society	0	Education benefits society as a whole.
+@ sock
+1	51801	noun	sock	1	The child laughed when the missing sock appeared inside her shoe.
+2	51801	noun	sock	0	There is a hole in my left sock.
+3	51801	noun	socks	0	Wear thick socks to keep your feet warm.
+4	51801	noun	sock	0	He found one blue sock under the bed.
+5	51801	noun	socks	0	These wool socks are soft and comfortable.
+@ soft
+1	51814	adj	soft	1	It is soft.
+2	51815	adj	soft	0	The baby slept under a soft blanket.
+3	51814	adj	softer	0	This pillow is softer than the old one.
+4	51814	adj	softest	0	Choose the softest towel for the baby.
+5	51816	adj	soft	0	A soft voice came from the next room.
+@ soldier
+1	51860	noun	soldier	1	The soldier carried an injured child away from the flooded road.
+2	51860	noun	soldier	0	The young soldier wrote a letter home.
+3	51860	noun	soldiers	0	The soldiers returned to camp before dark.
+4	51860	noun	soldier	0	Each soldier received new boots and a coat.
+5	51868	noun	soldier	0	She was a brave soldier in the fight against disease.
+@ solution
+1	51879	noun	solution	1	The engineer found a solution that brought clean water to the village.
+2	51880	noun	solution	0	We finally found the solution to the puzzle.
+3	51879	noun	solutions	0	The team discussed several solutions to the traffic problem.
+4	51878	noun	solution	0	Mix the salt into the water to make a solution.
+5	51879	noun	solution	0	Building a bridge may be the best solution.
+@ solve
+1	51886	verb	solve	1	We solve every day.
+2	51886	verb	solve	0	Can you solve this math problem?
+3	51886	verb	solves	0	The final clue solves the mystery.
+4	51887	verb	solved	0	The detective solved the case in two days.
+5	51886	verb	solving	0	The students are solving the puzzle together.
+@ somewhere
+1	51893	adv	somewhere	1	We do it somewhere.
+2	51893	adv	somewhere	0	My keys are somewhere in this room.
+3	51894	adv	somewhere	0	Let us go somewhere quiet for lunch.
+4	51895	adv	somewhere	0	The mistake happened somewhere near the end of the process.
+5	51893	adv	somewhere	0	She left her notebook somewhere near the front desk.

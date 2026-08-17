@@ -1,0 +1,600 @@
+@ about
+1	28374	prep	about	1	We sat about the campfire and told stories.
+2	28374	prep	about	0	The children stood about the teacher.
+3	28374	prep	about	0	A small fence runs about the garden.
+4	28374	prep	about	0	Clouds gathered about the mountain.
+5	28374	prep	about	0	The family gathered about the table.
+@ above
+1	28402	prep	above	1	A bright kite flew above the beach.
+2	28402	prep	above	0	Hang the picture above the sofa.
+3	28402	prep	above	0	The lamp is above the desk.
+4	28402	prep	above	0	We heard birds above our heads.
+5	28402	prep	above	0	A shelf sits above the sink.
+@ across
+1	28429	prep	across	1	We walked across the old bridge at sunset.
+2	28429	prep	across	0	The shop is across the road.
+3	28429	prep	across	0	She swam across the pool.
+4	28429	prep	across	0	A path leads across the field.
+5	28429	prep	across	0	He ran across the street.
+@ action
+1	28443	noun	action	1	Quick action saved the puppy from the road.
+2	28443	noun	action	0	The doctor took action right away.
+3	28443	noun	action	0	We need action before the rain starts.
+4	28443	noun	action	0	Her action solved the problem.
+5	28443	noun	action	0	The plan needs more action.
+@ activity
+1	28470	noun	activity	1	Painting was our favourite rainy-day activity.
+2	28470	noun	activity	0	Swimming is a healthy activity.
+3	28470	noun	activity	0	The class chose an outdoor activity.
+4	28470	noun	activity	0	This activity takes ten minutes.
+5	28470	noun	activity	0	Reading is a quiet activity.
+@ actor
+1	28476	noun	actor	1	The actor started a court case against the company.
+2	28476	noun	actor	0	The actor filed a claim yesterday.
+3	28476	noun	actor	0	A lawyer spoke for the actor in court.
+4	28476	noun	actor	0	The actor asked the judge for help.
+5	28476	noun	actor	0	The actor won the legal case.
+@ actress
+1	28483	noun	actress	1	The actress smiled as the curtain opened.
+2	28483	noun	actress	0	The actress learned her lines.
+3	28483	noun	actress	0	We saw the actress in a new film.
+4	28483	noun	actress	0	The actress waved to the crowd.
+5	28483	noun	actress	0	That actress performs on stage tonight.
+@ add
+1	28485	verb	add	1	Add some cheese to the warm soup.
+2	28485	verb	add	0	Please add your name to the list.
+3	28485	verb	add	0	Add two cups of water.
+4	28485	verb	add	0	We can add a chair to the room.
+5	28485	verb	add	0	Do not add sugar to my tea.
+@ address
+1	28497	noun	address	1	The map gave us the right address for the park.
+2	28497	noun	address	0	Write the address on the envelope.
+3	28497	noun	address	0	What is your new address?
+4	28497	noun	address	0	The driver checked the address twice.
+5	28497	noun	address	0	I sent the card to her address.
+@ adult
+1	28528	noun	adult	1	The young bird now looks like an adult.
+2	28528	noun	adult	0	An adult fed the baby animal.
+3	28528	noun	adult	0	The adult stood beside its young.
+4	28528	noun	adult	0	A full-grown dog is an adult.
+5	28528	noun	adult	0	The adult stayed near the nest.
+@ advice
+1	28540	noun	advice	1	My grandmother gave me good advice before the trip.
+2	28540	noun	advice	0	Please follow the teacher's advice.
+3	28540	noun	advice	0	I need your advice about my job.
+4	28540	noun	advice	0	His advice helped me decide.
+5	28540	noun	advice	0	She asked for advice from her coach.
+@ afraid
+1	28550	adj	afraid	1	The child was afraid of the loud thunder.
+2	28550	adj	afraid	0	I am afraid of spiders.
+3	28550	adj	afraid	0	The dog felt afraid in the storm.
+4	28550	adj	afraid	0	She was afraid to open the door.
+5	28550	adj	afraid	0	Are you afraid of the dark?
+@ after
+1	28553	adv	after	1	We cleaned the kitchen after the party.
+2	28553	adv	after	0	She arrived soon after.
+3	28553	adv	after	0	The bus came ten minutes after.
+4	28553	adv	after	0	He called again after.
+5	28553	adv	after	0	I will explain it after.
+@ again
+1	28576	adv	again	1	We watched the funny video again at lunch.
+2	28576	adv	again	0	Please say that again.
+3	28576	adv	again	0	Try the question again.
+4	28576	adv	again	0	The bell rang again.
+5	28576	adv	again	0	I met her again yesterday.
+@ ago
+1	28613	adj	ago	1	Those ago days are still remembered by the village.
+2	28613	adj	ago	0	The ago years seem far away now.
+3	28613	adj	ago	0	An ago story filled the old book.
+4	28613	adj	ago	0	We spoke about ago times at dinner.
+5	28613	adj	ago	0	His ago life was very different.
+@ agree
+1	28615	verb	agree	1	Mia and I agree about the best route home.
+2	28615	verb	agree	0	Do you agree with me?
+3	28615	verb	agree	0	The friends agree on the plan.
+4	28615	verb	agree	0	We all agree about the answer.
+5	28615	verb	agree	0	They agree that school starts early.
+@ air
+1	28623	noun	air	1	Fresh air filled the room when we opened the window.
+2	28623	noun	air	0	The air feels cool today.
+3	28623	noun	air	0	Plants need air to grow.
+4	28623	noun	air	0	Smoke made the air dirty.
+5	28623	noun	air	0	Take a deep breath of air.
+@ airport
+1	28648	noun	airport	1	We arrived at the airport before sunrise.
+2	28648	noun	airport	0	The airport has two long runways.
+3	28648	noun	airport	0	Her flight leaves from the airport.
+4	28648	noun	airport	0	A taxi took us to the airport.
+5	28648	noun	airport	0	The airport was busy this morning.
+@ all
+1	28649	det	all	1	All the lights came on at once.
+2	28649	det	all	0	All students need a pencil.
+3	28649	det	all	0	All the cake is gone.
+4	28649	det	all	0	All children like this game.
+5	28649	det	all	0	All my books are here.
+@ also
+1	28667	adv	also	1	Nina brought sandwiches and also some fruit.
+2	28667	adv	also	0	He also plays the guitar.
+3	28667	adv	also	0	I also need a new bag.
+4	28667	adv	also	0	The shop also sells bread.
+5	28667	adv	also	0	She also speaks Spanish.
+@ always
+1	28670	adv	always	1	My father always checks the door before bed.
+2	28670	adv	always	0	The sun always rises in the east.
+3	28670	adv	always	0	She always walks to school.
+4	28670	adv	always	0	I always drink water at lunch.
+5	28670	adv	always	0	They always arrive on time.
+@ amazing
+1	28673	verb	amazing	1	The magician is amazing the children with card tricks.
+2	28673	verb	amazing	0	The guide is amazing us with local stories.
+3	28673	verb	amazing	0	Her skill is amazing the crowd.
+4	28673	verb	amazing	0	The robot is amazing visitors today.
+5	28673	verb	amazing	0	The singer is amazing everyone tonight.
+@ and
+1	28676	conj	and	1	We packed sandwiches and juice for the picnic.
+2	28676	conj	and	0	Sam and Lee are friends.
+3	28676	conj	and	0	Open the door and come in.
+4	28676	conj	and	0	I bought pens and paper.
+5	28676	conj	and	0	Wash your hands and sit down.
+@ angry
+1	28697	adj	angry	1	Dad was angry when the rain ruined his plans.
+2	28697	adj	angry	0	She felt angry about the lie.
+3	28697	adj	angry	0	Do not talk when you are angry.
+4	28697	adj	angry	0	The customer sounded angry.
+5	28697	adj	angry	0	He was angry with his brother.
+@ animal
+1	28702	noun	animal	1	The animal drank water beside the forest path.
+2	28702	noun	animal	0	A cat is an animal.
+3	28702	noun	animal	0	Every animal needs food.
+4	28702	noun	animal	0	The animal moved quietly.
+5	28702	noun	animal	0	We saw a small animal outside.
+@ another
+1	28716	det	another	1	Could I have another piece of pizza?
+2	28716	det	another	0	Try another chair.
+3	28716	det	another	0	She needs another minute.
+4	28716	det	another	0	Let us choose another game.
+5	28716	det	another	0	He bought another ticket.
+@ answer
+1	28722	noun	answer	1	Lina raised her hand because she knew the answer.
+2	28722	noun	answer	0	Your answer is correct.
+3	28722	noun	answer	0	Write the answer here.
+4	28722	noun	answer	0	I do not know the answer.
+5	28722	noun	answer	0	The teacher explained the answer.
+@ any
+1	28740	adv	any	1	I cannot run any faster than this.
+2	28740	adv	any	0	Is it any warmer outside?
+3	28740	adv	any	0	She did not feel any better.
+4	28740	adv	any	0	Can you speak any louder?
+5	28740	adv	any	0	The bag is not any heavier.
+@ anyone
+1	28747	pron	anyone	1	Does anyone know where my keys are?
+2	28747	pron	anyone	0	Anyone can join the club.
+3	28747	pron	anyone	0	I did not tell anyone.
+4	28747	pron	anyone	0	Can anyone help me?
+5	28747	pron	anyone	0	Is anyone at home?
+@ anything
+1	28748	pron	anything	1	Did you find anything interesting at the market?
+2	28748	pron	anything	0	I cannot see anything.
+3	28748	pron	anything	0	Do you need anything else?
+4	28748	pron	anything	0	Anything can happen outside.
+5	28748	pron	anything	0	She did not say anything.
+@ apartment
+1	28753	noun	apartment	1	Their apartment has a balcony full of plants.
+2	28753	noun	apartment	0	We rent a small apartment.
+3	28753	noun	apartment	0	The apartment is on the third floor.
+4	28753	noun	apartment	0	Her apartment is near the station.
+5	28753	noun	apartment	0	They painted the apartment white.
+@ apple
+1	28758	noun	apple	1	An apple rolled out of my lunch bag.
+2	28758	noun	apple	0	She ate a red apple.
+3	28758	noun	apple	0	This apple tastes sweet.
+4	28758	noun	apple	0	Put the apple on the plate.
+5	28758	noun	apple	0	I packed an apple for school.
+@ april
+1	67696	name	april	1	Our school picnic is in April this year.
+2	67696	name	April	0	April comes after March.
+3	67696	name	April	0	It often rains in April.
+4	67696	name	April	0	My uncle visits in April.
+5	67696	name	April	0	April has thirty days.
+@ area
+1	28783	noun	area	1	We measured the area of the classroom floor.
+2	28783	noun	area	0	Find the area of this square.
+3	28783	noun	area	0	The garden has a large area.
+4	28783	noun	area	0	This area needs more paint.
+5	28783	noun	area	0	The map shows the area clearly.
+@ arm
+1	28790	noun	arm	1	She carried the sleepy child in her arm.
+2	28790	noun	arm	0	My arm hurts after tennis.
+3	28790	noun	arm	0	Raise your arm slowly.
+4	28790	noun	arm	0	He broke his arm last year.
+5	28790	noun	arm	0	The baby held my arm.
+@ around
+1	28815	prep	around	1	We walked around the lake before breakfast.
+2	28815	prep	around	0	Put a ribbon around the box.
+3	28815	prep	around	0	The children ran around the tree.
+4	28815	prep	around	0	A wall stands around the garden.
+5	28815	prep	around	0	She wrapped a scarf around her neck.
+@ arrive
+1	28832	verb	arrive	1	We will arrive at the cabin before dark.
+2	28832	verb	arrive	0	What time does the train arrive?
+3	28832	verb	arrive	0	Please arrive early tomorrow.
+4	28832	verb	arrive	0	They arrive at school by eight.
+5	28832	verb	arrive	0	The guests will arrive soon.
+@ art
+1	28839	noun	art	1	Her art brightened the wall in the hallway.
+2	28839	noun	art	0	We made art in class.
+3	28839	noun	art	0	The museum shows modern art.
+4	28839	noun	art	0	Drawing is a kind of art.
+5	28839	noun	art	0	He loves colourful art.
+@ article
+1	28850	noun	article	1	I read an article about sea turtles at breakfast.
+2	28850	noun	article	0	The article was in the newspaper.
+3	28850	noun	article	0	She wrote a short article.
+4	28850	noun	article	0	This article has useful facts.
+5	28850	noun	article	0	Please save the article for me.
+@ artist
+1	28864	noun	artist	1	The artist painted a bright bird on the wall.
+2	28864	noun	artist	0	My sister wants to be an artist.
+3	28864	noun	artist	0	The artist signed the picture.
+4	28864	noun	artist	0	We met the artist at the show.
+5	28864	noun	artist	0	That artist uses watercolours.
+@ as
+1	28870	adv	as	1	This soup is as warm as the tea.
+2	28870	adv	as	0	The bag is as heavy as mine.
+3	28870	adv	as	0	Run as fast as you can.
+4	28870	adv	as	0	Her room is as clean as ours.
+5	28870	adv	as	0	Today is as cold as yesterday.
+@ ask
+1	28893	verb	ask	1	Ask the librarian where the history books are.
+2	28893	verb	ask	0	Please ask your teacher.
+3	28893	verb	ask	0	I need to ask a question.
+4	28893	verb	ask	0	They ask for more time.
+5	28893	verb	ask	0	Do not be afraid to ask.
+@ at
+1	28911	prep	at	1	We met at the gate after school.
+2	28911	prep	at	0	She is at the bus stop.
+3	28911	prep	at	0	Wait at the corner.
+4	28911	prep	at	0	He works at the library.
+5	28911	prep	at	0	Meet me at the park.
+@ august
+1	28936	adj	august	1	The august judge entered the quiet hall.
+2	28936	adj	august	0	Everyone respected the august leader.
+3	28936	adj	august	0	The august building looked grand.
+4	28936	adj	august	0	He spoke to the august visitor.
+5	28936	adj	august	0	An august figure led the ceremony.
+@ aunt
+1	28941	noun	aunt	1	My aunt taught me how to bake bread.
+2	28941	noun	aunt	0	My aunt lives near us.
+3	28941	noun	aunt	0	We visited Aunt May on Sunday.
+4	28941	noun	aunt	0	Her aunt brought a cake.
+5	28941	noun	aunt	0	I called my aunt last night.
+@ autumn
+1	28946	noun	autumn	1	In autumn, orange leaves covered the playground.
+2	28946	noun	autumn	0	Autumn comes after summer.
+3	28946	noun	autumn	0	We picked apples in autumn.
+4	28946	noun	autumn	0	The days get cooler in autumn.
+5	28946	noun	autumn	0	Autumn is a windy season.
+@ away
+1	28951	adv	away	1	The small boat sailed away from the shore.
+2	28951	adv	away	0	Please move away from the door.
+3	28951	adv	away	0	The birds flew away.
+4	28951	adv	away	0	He walked away quietly.
+5	28951	adv	away	0	Keep away from the fire.
+@ baby
+1	28969	noun	baby	1	The baby laughed at the falling snow.
+2	28969	noun	baby	0	The baby is asleep.
+3	28969	noun	baby	0	Her baby has blue eyes.
+4	28969	noun	baby	0	The baby drank some milk.
+5	28969	noun	baby	0	A baby needs gentle care.
+@ bad
+1	29047	adj	bad	1	The milk smelled bad, so we threw it away.
+2	29047	adj	bad	0	This pen is bad quality.
+3	29047	adj	bad	0	The picture is too bad to use.
+4	29047	adj	bad	0	We returned the bad product.
+5	29047	adj	bad	0	That was a bad choice.
+@ bag
+1	29081	noun	bag	1	A paper bag held the warm bread.
+2	29081	noun	bag	0	Put the apples in a bag.
+3	29081	noun	bag	0	My bag is under the chair.
+4	29081	noun	bag	0	She carried a bag of rice.
+5	29081	noun	bag	0	The bag has a hole.
+@ ball
+1	29120	noun	ball	1	The red ball rolled under the sofa.
+2	29120	noun	ball	0	Kick the ball to me.
+3	29120	noun	ball	0	The dog found the ball.
+4	29120	noun	ball	0	Catch the ball with both hands.
+5	29120	noun	ball	0	A ball bounced across the floor.
+@ banana
+1	29162	noun	banana	1	A banana made a quick snack on the bus.
+2	29162	noun	banana	0	Peel the banana first.
+3	29162	noun	banana	0	The banana is yellow.
+4	29162	noun	banana	0	She put a banana in her bag.
+5	29162	noun	banana	0	I ate one banana.
+@ band
+1	29174	noun	band	1	A rubber band held the letters together.
+2	29174	noun	band	0	Tie the papers with a band.
+3	29174	noun	band	0	The band around the box was blue.
+4	29174	noun	band	0	This band keeps the lid closed.
+5	29174	noun	band	0	She wore a band on her hat.
+@ bath
+1	29249	noun	bath	1	The child splashed in a warm bath before bed.
+2	29249	noun	bath	0	The bath is full of water.
+3	29249	noun	bath	0	Run a bath for the baby.
+4	29249	noun	bath	0	The dog needs a bath.
+5	29249	noun	bath	0	She sat in the bath.
+@ bathroom
+1	29260	noun	bathroom	1	The bathroom window was open after the shower.
+2	29260	noun	bathroom	0	The bathroom is upstairs.
+3	29260	noun	bathroom	0	Please clean the bathroom.
+4	29260	noun	bathroom	0	There is a mirror in the bathroom.
+5	29260	noun	bathroom	0	He left his towel in the bathroom.
+@ be
+1	29263	verb	be	1	The doors will be locked at nine.
+2	29263	verb	be	0	Please be quiet in the library.
+3	29263	verb	be	0	The game will be fun.
+4	29263	verb	be	0	Try to be ready by noon.
+5	29263	verb	be	0	The room may be cold.
+@ beach
+1	29292	noun	beach	1	We built a sandcastle on the beach.
+2	29292	noun	beach	0	The beach was empty early.
+3	29292	noun	beach	0	Shells covered the beach.
+4	29292	noun	beach	0	They walked along the beach.
+5	29292	noun	beach	0	The beach has soft sand.
+@ beautiful
+1	29301	adj	beautiful	1	The sunset made the lake look beautiful.
+2	29301	adj	beautiful	0	She has a beautiful smile.
+3	29301	adj	beautiful	0	This garden is beautiful.
+4	29301	adj	beautiful	0	We saw beautiful flowers.
+5	29301	adj	beautiful	0	It was a beautiful day.
+@ because
+1	29307	conj	because	1	We stayed inside because the rain was heavy.
+2	29307	conj	because	0	I smiled because I was happy.
+3	29307	conj	because	0	He was late because of traffic.
+4	29307	conj	because	0	She ran because she was late.
+5	29307	conj	because	0	Because it was cold, we wore coats.
+@ become
+1	29313	verb	become	1	The sky will become orange at sunset.
+2	29313	verb	become	0	The soup will become cold.
+3	29313	verb	become	0	She hopes to become a doctor.
+4	29313	verb	become	0	The room will become quiet.
+5	29313	verb	become	0	Leaves become brown in autumn.
+@ bed
+1	29319	noun	bed	1	The tired puppy climbed onto its bed.
+2	29319	noun	bed	0	I made my bed today.
+3	29319	noun	bed	0	The bed feels soft.
+4	29319	noun	bed	0	She sat on the bed.
+5	29319	noun	bed	0	Put the book by the bed.
+@ bedroom
+1	29363	noun	bedroom	1	Her bedroom has stars on the ceiling.
+2	29363	noun	bedroom	0	My bedroom is small.
+3	29363	noun	bedroom	0	The bedroom door is closed.
+4	29363	noun	bedroom	0	He cleaned his bedroom.
+5	29363	noun	bedroom	0	There is a bed in the bedroom.
+@ beer
+1	29366	noun	beer	1	He ordered a cold beer with his meal.
+2	29366	noun	beer	0	The beer is in the fridge.
+3	29366	noun	beer	0	They served beer at the party.
+4	29366	noun	beer	0	This beer tastes bitter.
+5	29366	noun	beer	0	She bought a bottle of beer.
+@ before
+1	29374	prep	before	1	Wash your hands before dinner.
+2	29374	prep	before	0	I arrived before the bus.
+3	29374	prep	before	0	Finish your work before lunch.
+4	29374	prep	before	0	Call me before the meeting.
+5	29374	prep	before	0	We slept before the flight.
+@ begin
+1	29389	verb	begin	1	The concert will begin when everyone arrives.
+2	29389	verb	begin	0	Begin with the first question.
+3	29389	verb	begin	0	Class will begin at eight.
+4	29389	verb	begin	0	Let us begin the game.
+5	29389	verb	begin	0	The movie will begin soon.
+@ beginning
+1	29392	noun	beginning	1	At the beginning of the story, a cat gets lost.
+2	29392	noun	beginning	0	Read from the beginning.
+3	29392	noun	beginning	0	The beginning was exciting.
+4	29392	noun	beginning	0	We missed the beginning of class.
+5	29392	noun	beginning	0	Write your name at the beginning.
+@ behind
+1	29398	prep	behind	1	The kitten hid behind the blue curtain.
+2	29398	prep	behind	0	Park behind the shop.
+3	29398	prep	behind	0	He stood behind me.
+4	29398	prep	behind	0	The garden is behind the house.
+5	29398	prep	behind	0	Leave your bag behind the door.
+@ believe
+1	29424	verb	believe	1	I believe the lost key is under the sofa.
+2	29424	verb	believe	0	Do you believe her story?
+3	29424	verb	believe	0	We believe that he is honest.
+4	29424	verb	believe	0	She did not believe the news.
+5	29424	verb	believe	0	I believe you are right.
+@ below
+1	29435	prep	below	1	The fish swam below the clear water.
+2	29435	prep	below	0	Write your name below the line.
+3	29435	prep	below	0	The town lies below the hill.
+4	29435	prep	below	0	Read the notes below the picture.
+5	29435	prep	below	0	The temperature fell below zero.
+@ best
+1	29446	adj	best	1	This is the best seat for watching the parade.
+2	29446	adj	best	0	She chose the best answer.
+3	29446	adj	best	0	Today was the best day.
+4	29446	adj	best	0	He is my best friend.
+5	29446	adj	best	0	That was the best idea.
+@ better
+1	29457	adj	better	1	I feel better after a long sleep.
+2	29457	adj	better	0	This road is better than the old one.
+3	29457	adj	better	0	Her drawing looks better now.
+4	29457	adj	better	0	Choose the better option.
+5	29457	adj	better	0	The weather is better today.
+@ between
+1	29469	prep	between	1	The bakery is between the bank and the park.
+2	29469	prep	between	0	Sit between your two friends.
+3	29469	prep	between	0	The ball rolled between the chairs.
+4	29469	prep	between	0	Choose between tea and juice.
+5	29469	prep	between	0	A fence stands between the gardens.
+@ bicycle
+1	29477	noun	bicycle	1	My bicycle has a bell and a basket.
+2	29477	noun	bicycle	0	She rides her bicycle to school.
+3	29477	noun	bicycle	0	The bicycle is by the gate.
+4	29477	noun	bicycle	0	He fixed his bicycle chain.
+5	29477	noun	bicycle	0	I need a new bicycle helmet.
+@ big
+1	29489	adj	big	1	A big yellow bus stopped outside the school.
+2	29489	adj	big	0	That box is too big.
+3	29489	adj	big	0	They live in a big house.
+4	29489	adj	big	0	The dog has big ears.
+5	29489	adj	big	0	We need a big table.
+@ bike
+1	29521	noun	bike	1	I rode my bike through the quiet park.
+2	29521	noun	bike	0	His bike is blue.
+3	29521	noun	bike	0	Lock your bike here.
+4	29521	noun	bike	0	She fell off her bike.
+5	29521	noun	bike	0	The bike needs air in its tyres.
+@ bill
+1	29530	noun	bill	1	The bill listed every item we ordered.
+2	29530	noun	bill	0	Check the bill before you pay.
+3	29530	noun	bill	0	The bill has three items.
+4	29530	noun	bill	0	He read the bill carefully.
+5	29530	noun	bill	0	The waiter brought the bill.
+@ bird
+1	29558	noun	bird	1	A small bird built a nest above our door.
+2	29558	noun	bird	0	The bird sang at dawn.
+3	29558	noun	bird	0	We saw a blue bird.
+4	29558	noun	bird	0	The bird flew away.
+5	29558	noun	bird	0	Feed the bird some seeds.
+@ birthday
+1	29579	noun	birthday	1	We hung balloons for Maya's birthday.
+2	29579	noun	birthday	0	My birthday is in June.
+3	29579	noun	birthday	0	She got a cake for her birthday.
+4	29579	noun	birthday	0	Happy birthday, Dad!
+5	29579	noun	birthday	0	His birthday party was fun.
+@ blog
+1	29625	noun	blog	1	Her blog shared photos from the train trip.
+2	29625	noun	blog	0	I read a cooking blog.
+3	29625	noun	blog	0	The blog has a new post.
+4	29625	noun	blog	0	She writes a travel blog.
+5	29625	noun	blog	0	Leave a comment on the blog.
+@ blonde
+1	29631	noun	blonde	1	The blonde waved from across the room.
+2	29631	noun	blonde	0	A blonde sat by the window.
+3	29631	noun	blonde	0	The blonde wore a green coat.
+4	29631	noun	blonde	0	We spoke to the blonde outside.
+5	29631	noun	blonde	0	That blonde is my cousin.
+@ blue
+1	29638	adj	blue	1	A blue umbrella kept us dry in the rain.
+2	29638	adj	blue	0	Her shoes are blue.
+3	29638	adj	blue	0	The sky looks blue today.
+4	29638	adj	blue	0	Choose the blue cup.
+5	29638	adj	blue	0	He painted the wall blue.
+@ boat
+1	29685	noun	boat	1	The boat crossed the lake before sunset.
+2	29685	noun	boat	0	The boat is tied to the dock.
+3	29685	noun	boat	0	We rode in a small boat.
+4	29685	noun	boat	0	The boat moved slowly.
+5	29685	noun	boat	0	A boat sailed past us.
+@ body
+1	29702	noun	body	1	After the race, my body felt tired but happy.
+2	29702	noun	body	0	Your body needs rest.
+3	29702	noun	body	0	The doctor checked his body.
+4	29702	noun	body	0	Move your body every day.
+5	29702	noun	body	0	The body has many bones.
+@ book
+1	29734	noun	book	1	I found a mystery book at the library sale.
+2	29734	noun	book	0	Put the book on the shelf.
+3	29734	noun	book	0	This book is very funny.
+4	29734	noun	book	0	She reads a book each night.
+5	29734	noun	book	0	The book has pictures.
+@ boot
+1	29765	noun	boot	1	One muddy boot was left by the back door.
+2	29765	noun	boot	0	My boot is wet.
+3	29765	noun	boot	0	Tie your boot tightly.
+4	29765	noun	boot	0	He wore a black boot.
+5	29765	noun	boot	0	The boot covers her ankle.
+@ bored
+1	29806	verb	bored	1	The long wait bored the children at the station.
+2	29806	verb	bored	0	The film bored my brother.
+3	29806	verb	bored	0	The lesson bored the class.
+4	29806	verb	bored	0	The talk bored everyone.
+5	29806	verb	bored	0	The game bored the visitors.
+@ boring
+1	29809	noun	boring	1	Boring through the rock took all morning.
+2	29809	noun	boring	0	Boring makes holes in wood.
+3	29809	noun	boring	0	The workers finished the boring today.
+4	29809	noun	boring	0	Boring needs the right tools.
+5	29809	noun	boring	0	We watched the boring from a distance.
+@ born
+1	29820	verb	born	1	My cousin was born during a summer storm.
+2	29820	verb	born	0	She was born in May.
+3	29820	verb	born	0	The baby was born last night.
+4	29820	verb	born	0	He was born near the sea.
+5	29820	verb	born	0	I was born in this town.
+@ both
+1	29825	det	both	1	Both dogs ran to the open gate.
+2	29825	det	both	0	Both answers are right.
+3	29825	det	both	0	Both children were laughing.
+4	29825	det	both	0	We need both books.
+5	29825	det	both	0	Both teams played well.
+@ bottle
+1	29829	noun	bottle	1	A bottle of water stayed cold in my bag.
+2	29829	noun	bottle	0	Fill the bottle with juice.
+3	29829	noun	bottle	0	The bottle is made of glass.
+4	29829	noun	bottle	0	She dropped the bottle.
+5	29829	noun	bottle	0	Put the bottle in the fridge.
+@ box
+1	29845	noun	box	1	The kitten slept inside a cardboard box.
+2	29845	noun	box	0	Put the toy in the box.
+3	29845	noun	box	0	The box is under the table.
+4	29845	noun	box	0	He opened the box carefully.
+5	29845	noun	box	0	This box holds old photos.
+@ boy
+1	29902	noun	boy	1	The boy carried a kite to the windy hill.
+2	29902	noun	boy	0	A boy rang the doorbell.
+3	29902	noun	boy	0	The boy likes trains.
+4	29902	noun	boy	0	That boy is my neighbour.
+5	29902	noun	boy	0	The boy found a coin.
+@ boyfriend
+1	29922	noun	boyfriend	1	Her boyfriend brought flowers to the picnic.
+2	29922	noun	boyfriend	0	My boyfriend loves football.
+3	29922	noun	boyfriend	0	She called her boyfriend.
+4	29922	noun	boyfriend	0	His boyfriend lives nearby.
+5	29922	noun	boyfriend	0	I met her boyfriend yesterday.
+@ bread
+1	29927	noun	bread	1	The smell of fresh bread filled the kitchen.
+2	29927	noun	bread	0	We bought bread this morning.
+3	29927	noun	bread	0	Toast the bread, please.
+4	29927	noun	bread	0	The bread is still warm.
+5	29927	noun	bread	0	She made bread for lunch.
+@ bring
+1	30034	verb	bring	1	Please bring your raincoat on the class trip.
+2	30034	verb	bring	0	Bring me a glass of water.
+3	30034	verb	bring	0	Can you bring your keys?
+4	30034	verb	bring	0	They bring lunch from home.
+5	30034	verb	bring	0	I will bring the maps.
+@ brother
+1	30042	noun	brother	1	My brother taught me to ride a bike.
+2	30042	noun	brother	0	Her brother is older.
+3	30042	noun	brother	0	I called my brother.
+4	30042	noun	brother	0	His brother likes chess.
+5	30042	noun	brother	0	My brother made dinner.
+@ brown
+1	30051	noun	brown	1	The artist mixed red and yellow to make brown.
+2	30051	noun	brown	0	Brown is a warm colour.
+3	30051	noun	brown	0	The room uses brown and gold.
+4	30051	noun	brown	0	She chose brown for the fence.
+5	30051	noun	brown	0	Add brown to the painting.
+@ build
+1	30075	verb	build	1	We will build a birdhouse this weekend.
+2	30075	verb	build	0	They build houses from wood.
+3	30075	verb	build	0	Build the model step by step.
+4	30075	verb	build	0	Can you build a shelf?
+5	30075	verb	build	0	Workers build the new bridge.
+@ building
+1	30088	noun	building	1	The building of the playground began in spring.
+2	30088	noun	building	0	Building takes careful planning.
+3	30088	noun	building	0	The building of the road took months.
+4	30088	noun	building	0	We watched the building from afar.
+5	30088	noun	building	0	Building a house needs many workers.
+@ bus
+1	30092	noun	bus	1	The yellow bus waited outside the museum.
+2	30092	noun	bus	0	I take the bus to school.
+3	30092	noun	bus	0	The bus is late today.
+4	30092	noun	bus	0	We got off the bus here.
+5	30092	noun	bus	0	The bus carries many people.

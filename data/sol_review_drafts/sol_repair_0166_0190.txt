@@ -1,0 +1,174 @@
+@ boss
+1	43959	noun	boss	1	My boss let me leave early when my son became ill.
+2	43959	noun	boss	0	The boss called a meeting this morning.
+3	43959	noun	bosses	0	Good bosses listen to their workers.
+4	43959	noun	boss	0	Ask your boss before changing the schedule.
+5	43959	noun	bosses	0	The two bosses agreed on a new plan.
+
+@ bottom
+1	43981	noun	bottom	1	My lost ring was shining at the bottom of the pool.
+2	43981	noun	bottom	0	The shoes are at the bottom of the cupboard.
+3	43981	noun	bottoms	0	The bottoms of the boxes were wet.
+4	43981	noun	bottom	0	Write your name at the bottom of the page.
+5	43981	noun	bottom	0	A coin lay on the bottom of the jar.
+
+@ bowl
+1	44019	noun	bowl	1	The dog ran away with its food bowl in its mouth.
+2	44019	noun	bowl	0	Pour the soup into a bowl.
+3	44019	noun	bowls	0	We placed three bowls on the table.
+4	44019	noun	bowl	0	She mixed the salad in a large bowl.
+5	44019	noun	bowls	0	These bowls are made of glass.
+
+@ brain
+1	44049	noun	brain	1	The helmet protected his brain during the crash.
+2	44049	noun	brain	0	The brain controls memory and movement.
+3	44049	noun	brains	0	Human brains continue to develop during childhood.
+4	44049	noun	brain	0	Sleep helps the brain process new information.
+5	44049	noun	brains	0	Animal brains vary greatly in size.
+
+@ bridge
+1	44065	noun	bridge	1	The old bridge stayed standing through the great flood.
+2	44065	noun	bridge	0	A stone bridge crosses the river.
+3	44065	noun	bridges	0	The storm damaged several bridges.
+4	44065	noun	bridge	0	We stopped in the middle of the bridge.
+5	44065	noun	bridges	0	These bridges connect the two islands.
+
+@ bright
+1	44106	adj	bright	1	It is bright.
+2	44106	adj	bright	0	The sun is bright today.
+3	44106	adj	bright	0	A bright lamp lit the room.
+4	44106	adj	bright	0	The phone screen is too bright at night.
+5	44106	adj	bright	0	Bright stars filled the clear sky.
+
+@ decision
+1	45436	noun	decision	1	Her decision to call for help saved the lost hikers.
+2	45436	noun	decision	0	We must make a decision by Friday.
+3	45436	noun	decisions	0	Important decisions require careful thought.
+4	45436	noun	decision	0	The final decision belongs to the manager.
+5	45436	noun	decisions	0	His recent decisions surprised the team.
+
+@ forward
+1	46749	adj	forward	1	It is forward.
+2	46749	adj	forward	0	We sat in the forward seats of the bus.
+3	46749	adj	forward	0	Smoke filled the forward section of the ship.
+4	46749	adj	forward	0	Use the forward door when you leave.
+5	46749	adj	forward	0	The crew slept in the forward cabin.
+
+@ fresh
+1	46782	adj	fresh	1	It is fresh.
+2	46782	adj	fresh	0	The bakery sells fresh bread each morning.
+3	46782	adj	fresh	0	We found fresh tracks in the snow.
+4	46782	adj	fresh	0	Do not touch the fresh paint.
+5	46782	adj	fresh	0	She brought fresh fruit from the market.
+
+@ fridge
+1	46806	noun	fridge	1	A cake was waiting in the fridge for my birthday.
+2	46806	noun	fridge	0	Put the milk back in the fridge.
+3	46806	noun	fridges	0	The shop sells small fridges for offices.
+4	46806	noun	fridge	0	There are some eggs in the fridge.
+5	46806	noun	fridges	0	Modern fridges use less electricity.
+
+@ frog
+1	46813	noun	frog	1	A tiny frog jumped out of my shoe.
+2	46813	noun	frog	0	The frog hopped into the pond.
+3	46813	noun	frogs	0	We heard frogs calling after the rain.
+4	46813	noun	frog	0	A frog has no tail as an adult.
+5	46813	noun	frogs	0	These frogs live near the river.
+
+@ furniture
+1	46835	noun	furniture	1	We saved the old furniture before the flood reached the house.
+2	46835	noun	furniture	0	The apartment has very little furniture.
+3	46835	noun	furniture	0	They moved the furniture into the living room.
+4	46835	noun	furniture	0	This furniture is made of wood.
+5	46835	noun	furniture	0	We need new furniture for the office.
+
+@ further
+1	46854	verb	further	1	We further every day.
+2	46854	verb	further	0	The grant will further medical research.
+3	46854	verb	further	0	These talks may further peace between the countries.
+4	46854	verb	further	0	Extra training could further her career.
+5	46854	verb	further	0	The project aims to further cooperation among schools.
+
+@ gallery
+1	46863	noun	gallery	1	The gallery displayed the painting everyone thought was lost.
+2	46863	noun	gallery	0	We saw local art in the gallery.
+3	46863	noun	galleries	0	Several galleries stay open late on Fridays.
+4	46863	noun	gallery	0	The museum added a new gallery for photographs.
+5	46863	noun	galleries	0	These galleries protect many important works of art.
+
+@ gap
+1	46879	noun	gap	1	The puppy escaped through a gap in the fence.
+2	46879	noun	gap	0	Cold air entered through the gap under the door.
+3	46879	noun	gaps	0	We filled the gaps in the wall.
+4	46879	noun	gap	0	A narrow gap opened between the boards.
+5	46879	noun	gaps	0	Small gaps appeared in the old roof.
+
+@ gas
+1	46901	noun	gas	1	We left the building quickly when we smelled gas.
+2	46901	noun	gas	0	The balloon contains a light gas.
+3	46901	noun	gases	0	Some gases become liquid when cooled.
+4	46901	noun	gas	0	Gas escaped from the damaged cylinder.
+5	46901	noun	gases	0	Scientists measured the gases in the air.
+
+@ gate
+1	46927	noun	gate	1	The dog waited at the gate every evening for its owner.
+2	46927	noun	gate	0	Please close the gate behind you.
+3	46927	noun	gates	0	Both gates lead into the garden.
+4	46927	noun	gate	0	A wooden gate stands outside the house.
+5	46927	noun	gates	0	The workers painted the gates green.
+
+@ general
+1	46956	adj	general	1	It is general.
+2	46956	adj	general	0	The general opinion was that the plan would work.
+3	46956	adj	general	0	This is a general rule for all employees.
+4	46956	adj	general	0	There was general agreement among the members.
+5	46956	adj	general	0	The general feeling in the town was hopeful.
+
+@ gift
+1	46975	noun	gift	1	The handmade gift brought tears to her eyes.
+2	46975	noun	gift	0	He gave me a book as a birthday gift.
+3	46975	noun	gifts	0	The children opened their gifts after dinner.
+4	46975	noun	gift	0	This watch was a gift from my father.
+5	46975	noun	gifts	0	We collected gifts for families in need.
+
+@ goal
+1	46982	noun	goal	1	Her goal of walking again kept her working through therapy.
+2	46982	noun	goal	0	My main goal is to finish the course.
+3	46982	noun	goals	0	Write down three goals for this year.
+4	46982	noun	goal	0	The team reached its sales goal.
+5	46982	noun	goals	0	Clear goals help people stay focused.
+
+@ god
+1	46991	noun	god	1	The sailors prayed to their god during the storm.
+2	46991	noun	god	0	The temple was built for a local god.
+3	46991	noun	gods	0	Ancient Greeks told stories about many gods.
+4	46991	noun	god	0	People believed the god controlled the sea.
+5	46991	noun	gods	0	The museum contains statues of Roman gods.
+
+@ gold
+1	47002	noun	gold	1	The ring proved to be real gold, not painted metal.
+2	47002	noun	gold	0	Gold is a heavy yellow metal.
+3	47002	noun	gold	0	The bracelet is made of gold.
+4	47002	noun	gold	0	Miners discovered gold near the river.
+5	47002	noun	gold	0	The museum keeps the gold in a secure room.
+
+@ golf
+1	47017	noun	golf	1	She won her first golf competition with one final shot.
+2	47017	noun	golf	0	My uncle plays golf every weekend.
+3	47017	noun	golf	0	Golf is usually played on a large outdoor course.
+4	47017	noun	golf	0	They watched golf on television.
+5	47017	noun	golf	0	He learned golf from his father.
+
+@ government
+1	47021	noun	government	1	The government sent rescue teams after the earthquake.
+2	47021	noun	government	0	The government makes laws for the country.
+3	47021	noun	governments	0	Local governments manage many public services.
+4	47021	noun	government	0	The new government promised to improve schools.
+5	47021	noun	governments	0	The two governments signed an agreement.
+
+@ grass
+1	47030	noun	grass	1	The wet grass softened the child's fall.
+2	47030	noun	grass	0	The cows are eating grass in the field.
+3	47030	noun	grasses	0	Different grasses grow across the plain.
+4	47030	noun	grass	0	Please keep off the new grass.
+5	47030	noun	grasses	0	These grasses survive in dry soil.

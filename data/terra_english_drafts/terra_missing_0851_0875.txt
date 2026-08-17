@@ -1,0 +1,150 @@
+@ scale
+1	66113	noun	scale	1	The worker climbed a scale to reach the high window.
+2	66113	noun	scale	0	A ladder used for climbing is a scale.
+3	66113	noun	scale	0	He carried the wooden scale to the orchard.
+4	66113	noun	scale	0	The painter set a scale against the wall.
+5	66113	noun	scale	0	Use the scale carefully when climbing to the roof.
+@ scheme
+1	66060	noun	scheme	1	The poet used a scheme that placed the verb before the subject for emphasis.
+2	66060	noun	scheme	0	An unusual arrangement of words in writing is a scheme.
+3	66060	noun	scheme	0	The teacher explained the scheme in the old poem.
+4	66060	noun	scheme	0	This scheme changes normal word order to create a stronger effect.
+5	66060	noun	scheme	0	Writers sometimes use a scheme to make a line memorable.
+@ scream
+1	66087	noun	scream	1	A scream from the dark hallway made everyone stop talking.
+2	66087	noun	scream	0	A loud cry of fear or excitement is a scream.
+3	66087	noun	scream	0	We heard a scream when the roller coaster dropped.
+4	66087	noun	scream	0	Her scream brought the neighbors outside.
+5	66087	noun	scream	0	The surprise caused a happy scream from the children.
+@ sector
+1	66072	noun	sector	1	The guide led us to the quietest sector of the large museum.
+2	66072	noun	sector	0	One separate section of a larger area is a sector.
+3	66072	noun	sectors	0	The park is divided into several sectors.
+4	66072	noun	sector	0	Each sector of the stadium has its own entrance.
+5	66072	noun	sector	0	Workers cleaned one sector of the beach at a time.
+@ secure
+1	66099	adj	secure	1	The children felt secure inside the locked cabin during the storm.
+2	66099	adj	secure	0	Protected from danger is secure.
+3	66099	adj	secure	0	Keep your passport in a secure place.
+4	66099	adj	secure	0	The bridge is secure after the repairs.
+5	66099	adj	secure	0	The door has a secure lock.
+@ seek
+1	66159	verb	sought	1	We sought shelter under a tree when the rain began.
+2	66159	verb	seek	0	To look for something is to seek it.
+3	66159	verb	seek	0	They seek a new home near the school.
+4	66159	verb	seek	0	Please seek help if you feel unwell.
+5	66159	verb	seek	0	The detective will seek clues at the scene.
+@ select
+1	66095	adj	select	1	Only a select group of students was invited to the special workshop.
+2	66095	adj	select	0	Specially chosen or privileged means select.
+3	66095	adj	select	0	The restaurant serves a select group of guests.
+4	66095	adj	select	0	This select club accepts only a few new members.
+5	66095	adj	select	0	They offered the prize to a select audience.
+@ selection
+1	66147	noun	selection	1	The selection of a captain took longer than the team expected.
+2	66147	noun	selection	0	The act of choosing is selection.
+3	66147	noun	selection	0	Her selection of blue paint brightened the room.
+4	66147	noun	selection	0	The selection process begins next week.
+5	66147	noun	selection	0	Careful selection of fruit makes better jam.
+@ self
+1	66189	pron	selves	1	After the race, the runners were proud of their tired selves.
+2	66189	pron	selves	0	The children were their usual cheerful selves after lunch.
+3	66189	pron	selves	0	After the game, the players felt like their old selves again.
+4	66189	pron	selves	0	The twins drew pictures of their future selves.
+5	66189	pron	selves	0	On stage, the actors became completely different selves.
+@ senior
+1	66168	adj	senior	1	My senior cousin showed me how to ride the bus alone.
+2	66168	adj	senior	0	Older than another person is senior.
+3	66168	adj	senior	0	She is the senior member of the family.
+4	66168	adj	senior	0	A senior student helped the new class.
+5	66168	adj	senior	0	His senior brother started college this year.
+@ sensitive
+1	66179	adj	sensitive	1	Her sensitive fingers could feel the tiny crack in the glass.
+2	66179	adj	sensitive	0	Able to feel or notice through the senses is sensitive.
+3	66179	adj	sensitive	0	The sensitive skin on his hand felt the heat quickly.
+4	66179	adj	sensitive	0	A sensitive nose can detect faint smells.
+5	66179	adj	sensitive	0	The plant has sensitive leaves that close when touched.
+@ sequence
+1	66204	noun	sequence	1	The teacher showed a sequence of pictures explaining how a seed becomes a flower.
+2	66204	noun	sequence	0	A series arranged in a set order is a sequence.
+3	66204	noun	sequence	0	Put the numbers in the correct sequence.
+4	66204	noun	sequence	0	The dance has a sequence of simple steps.
+5	66204	noun	sequence	0	The events happened in a surprising sequence.
+@ session
+1	66224	noun	session	1	Our study session lasted until the library closed.
+2	66224	noun	session	0	A period devoted to one activity is a session.
+3	66224	noun	session	0	The coach planned a training session for Saturday.
+4	66224	noun	session	0	We had a short session to practice speaking.
+5	66224	noun	session	0	The art session begins at ten o'clock.
+@ settle
+1	66234	verb	settled	1	The two friends settled their argument by talking calmly.
+2	66234	verb	settle	0	To resolve a problem is to settle it.
+3	66234	verb	settle	0	We need to settle the bill before leaving.
+4	66234	verb	settle	0	The lawyer helped settle the dispute.
+5	66234	verb	settle	0	They hope to settle the question today.
+@ severe
+1	66216	adj	severe	1	The severe storm knocked down trees across the road.
+2	66216	adj	severe	0	Very intense or serious is severe.
+3	66216	adj	severe	0	He had severe pain in his knee.
+4	66216	adj	severe	0	The village faced a severe shortage of water.
+5	66216	adj	severe	0	The doctor treated her severe cough.
+@ shallow
+1	66329	adj	shallow	1	The child splashed safely in the shallow end of the pool.
+2	66329	adj	shallow	0	Not deep compared with its width is shallow.
+3	66329	adj	shallow	0	We crossed the shallow stream on foot.
+4	66329	adj	shallow	0	The bowl is wide but shallow.
+5	66329	adj	shallow	0	Fish swam near the shallow shore.
+@ shame
+1	66305	noun	shame	1	He felt shame after taking credit for his friend's work.
+2	66305	noun	shame	0	A painful feeling about doing something wrong is shame.
+3	66305	noun	shame	0	Her lie filled her with shame.
+4	66305	noun	shame	0	The child lowered his eyes in shame.
+5	66305	noun	shame	0	It is a shame to hurt someone's feelings.
+@ shelter
+1	66319	noun	shelter	1	We found shelter under the bridge while the rain poured down.
+2	66319	noun	shelter	0	A place that protects you from danger or weather is shelter.
+3	66319	noun	shelter	0	The hikers searched for shelter before dark.
+4	66319	noun	shelter	0	The bus stop offered little shelter from the wind.
+5	66319	noun	shelter	0	The dog found shelter in an empty shed.
+@ shock
+1	66342	noun	shock	1	The shock of the car hitting the curb made everyone jump.
+2	66342	noun	shock	0	A sudden hard impact is a shock.
+3	66342	noun	shock	0	The shock cracked the glass in the frame.
+4	66342	noun	shock	0	The bridge absorbed the shock of the heavy truck.
+5	66342	noun	shock	0	A strong shock shook the boxes from the shelf.
+@ shocked
+1	66219	adj	shocked	1	I was shocked when I saw the broken window in the classroom.
+2	66219	adj	shocked	0	Very surprised or startled is shocked.
+3	66219	adj	shocked	0	The shocked crowd stood silently after the news.
+4	66219	adj	shocked	0	She looked shocked by the rude comment.
+5	66219	adj	shocked	0	We were shocked to find the door open.
+@ shooting
+1	66296	adj	shooting	1	The shooting bamboo grew several inches after the warm rain.
+2	66296	adj	shooting	0	Moving or growing quickly is shooting.
+3	66296	adj	shooting	0	A shooting plant pushed through the soil in spring.
+4	66296	adj	shooting	0	The shooting vine covered the fence rapidly.
+5	66296	adj	shooting	0	We watched the shooting grass rise after the storm.
+@ shot
+1	66411	adj	shot	1	After working all night at the bakery, I was completely shot.
+2	66411	adj	shot	0	Very tired is shot.
+3	66411	adj	shot	0	He felt shot after the long drive.
+4	66411	adj	shot	0	By evening, the runners were shot.
+5	66411	adj	shot	0	She was too shot to cook dinner.
+@ significant
+1	66396	adj	significant	1	The red flag was significant because it warned swimmers about danger.
+2	66396	adj	significant	0	Carrying an important meaning is significant.
+3	66396	adj	significant	0	Her smile was significant to everyone who knew the story.
+4	66396	adj	significant	0	The symbol has significant meaning in this culture.
+5	66396	adj	significant	0	That small detail is significant to the mystery.
+@ significantly
+1	66395	adv	significantly	1	The new window significantly reduced the noise from the street.
+2	66395	adv	significantly	0	To a noticeable degree means significantly.
+3	66395	adv	significantly	0	Prices fell significantly after the sale began.
+4	66395	adv	significantly	0	The rain significantly improved the dry fields.
+5	66395	adv	significantly	0	Her score improved significantly this term.
+@ silence
+1	66403	noun	silence	1	A deep silence filled the room when the lights suddenly went out.
+2	66403	noun	silence	0	The absence of sound is silence.
+3	66403	noun	silence	0	We sat in silence and watched the sunset.
+4	66403	noun	silence	0	The teacher asked for silence before the test.
+5	66403	noun	silence	0	Morning silence covered the empty street.

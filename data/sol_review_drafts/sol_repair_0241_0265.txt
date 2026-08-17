@@ -1,0 +1,174 @@
+@ intelligent
+1	47628	adj	intelligent	1	It is intelligent.
+2	47628	adj	intelligent	0	The intelligent student solved the puzzle quickly.
+3	47628	adj	intelligent	0	Dolphins are highly intelligent animals.
+4	47628	adj	intelligent	0	She is intelligent and learns new skills easily.
+5	47628	adj	intelligent	0	An intelligent child may ask many questions.
+
+@ international
+1	47634	adj	international	1	It is international.
+2	47634	adj	international	0	The city hosts an international film festival.
+3	47634	adj	international	0	International trade connects many countries.
+4	47634	adj	international	0	She works for an international company.
+5	47634	adj	international	0	The agreement requires international cooperation.
+
+@ introduction
+1	47645	noun	introduction	1	The teacher's warm introduction helped the new student relax.
+2	47645	noun	introduction	0	The host began with an introduction of each guest.
+3	47645	noun	introductions	0	The introductions took several minutes.
+4	47645	noun	introduction	0	Her introduction of the new system was clear.
+5	47645	noun	introductions	0	Formal introductions are common at these events.
+
+@ invent
+1	47649	verb	invent	1	We invent every day.
+2	47649	verb	invent	0	Engineers hope to invent a safer battery.
+3	47649	verb	invent	0	Can you invent a machine that cleans windows?
+4	47649	verb	invent	0	They want to invent a faster process.
+5	47649	verb	invent	0	Students often invent simple tools in this class.
+
+@ invention
+1	47652	noun	invention	1	Her invention gave clean water to the whole village.
+2	47652	noun	invention	0	The telephone was a useful invention.
+3	47652	noun	inventions	0	Many inventions begin as simple ideas.
+4	47652	noun	invention	0	He showed his new invention at the fair.
+5	47652	noun	inventions	0	These inventions save people time.
+
+@ invitation
+1	47657	noun	invitation	1	The unexpected invitation brought the old friends together again.
+2	47657	noun	invitation	0	I accepted her invitation to dinner.
+3	47657	noun	invitations	0	We sent invitations to all our neighbors.
+4	47657	noun	invitation	0	Thank you for the invitation to your wedding.
+5	47657	noun	invitations	0	The club received several invitations to compete.
+
+@ invite
+1	47663	verb	invite	1	We invite every day.
+2	47663	verb	invite	0	We will invite our neighbors to dinner.
+3	47663	verb	invite	0	Please invite Maya to join the meeting.
+4	47663	verb	invite	0	They plan to invite fifty guests.
+5	47663	verb	invite	0	Schools may invite parents to the event.
+
+@ involve
+1	47668	verb	involve	1	We involve every day.
+2	47668	verb	involve	0	The job will involve some travel.
+3	47668	verb	involve	0	Most recipes involve several simple steps.
+4	47668	verb	involve	0	The repairs may involve replacing the roof.
+5	47668	verb	involve	0	Team sports involve cooperation.
+
+@ item
+1	47677	noun	item	1	The missing item was found under the child's bed.
+2	47677	noun	item	0	Each item has a price label.
+3	47677	noun	items	0	Place heavy items at the bottom of the box.
+4	47677	noun	item	0	This item belongs in the kitchen.
+5	47677	noun	items	0	She packed only a few personal items.
+
+@ itself
+1	47688	pron	itself	1	itself is here.
+2	47688	pron	itself	0	The machine turns itself off at night.
+3	47688	pron	itself	0	The cat cleaned itself after eating.
+4	47688	pron	itself	0	The door closed itself slowly.
+5	47688	pron	itself	0	The plant protects itself with sharp thorns.
+
+@ jam
+1	47691	noun	jam	1	Grandmother's strawberry jam won first prize at the fair.
+2	47691	noun	jam	0	She spread jam on her toast.
+3	47691	noun	jams	0	The shop sells several fruit jams.
+4	47691	noun	jam	0	We made jam from ripe berries.
+5	47691	noun	jam	0	Keep the open jar of jam in the fridge.
+
+@ jazz
+1	47724	noun	jazz	1	The first notes of jazz brought the quiet club to life.
+2	47724	noun	jazz	0	My father listens to jazz every evening.
+3	47724	noun	jazz	0	Jazz often includes improvisation.
+4	47724	noun	jazz	0	She studied jazz at music school.
+5	47724	noun	jazz	0	The band plays jazz on Friday nights.
+
+@ jewellery
+1	47740	noun	jewellery	1	The family found the lost jewellery hidden in an old box.
+2	47740	noun	jewellery	0	She keeps her jewellery in a drawer.
+3	47740	noun	jewellery	0	The shop sells handmade jewellery.
+4	47740	noun	jewellery	0	Gold and silver are often used in jewellery.
+5	47740	noun	jewellery	0	Remove your jewellery before swimming.
+
+@ joke
+1	47743	noun	joke	1	His silly joke made the nervous children laugh.
+2	47743	noun	joke	0	She told a joke about a talking dog.
+3	47743	noun	jokes	0	The book contains jokes for children.
+4	47743	noun	joke	0	I did not understand the joke.
+5	47743	noun	jokes	0	His short jokes made everyone smile.
+
+@ journalist
+1	47750	noun	journalist	1	The young journalist filled her diary with memories of her journey.
+2	47750	noun	journalist	0	A careful journalist writes in a personal journal regularly.
+3	47750	noun	journalists	0	The group of journalists shared passages from their private diaries.
+4	47750	noun	journalist	0	As a lifelong journalist, he recorded each day in a notebook.
+5	47750	noun	journalists	0	These journalists keep written records of their daily lives.
+
+@ jump
+1	47753	verb	jump	1	We jump every day.
+2	47753	verb	jump	0	The children jump over the puddle.
+3	47753	verb	jump	0	Watch the cat jump onto the wall.
+4	47753	verb	jump	0	Athletes jump across the narrow gap.
+5	47753	verb	jump	0	Frogs can jump surprisingly far.
+
+@ kid
+1	47804	noun	kid	1	The lost kid ran into his mother's arms.
+2	47804	noun	kid	0	That kid lives next door.
+3	47804	noun	kids	0	The kids are playing in the garden.
+4	47804	noun	kid	0	I was a quiet kid at school.
+5	47804	noun	kids	0	Most kids enjoy this game.
+
+@ kill
+1	47823	verb	kill	1	We kill every day.
+2	47823	verb	kill	0	This poison can kill insects.
+3	47823	verb	kill	0	Severe cold may kill young plants.
+4	47823	verb	kill	0	Some diseases kill thousands of animals.
+5	47823	verb	kill	0	The farmer will not kill the injured bird.
+
+@ king
+1	47849	noun	king	1	The young king opened the palace to families seeking safety.
+2	47849	noun	king	0	The king ruled the country for thirty years.
+3	47849	noun	kings	0	Several kings lived in this palace.
+4	47849	noun	king	0	The crown belonged to the former king.
+5	47849	noun	kings	0	Powerful kings once controlled the region.
+
+@ knee
+1	47876	noun	knee	1	She injured her knee just before the championship game.
+2	47876	noun	knee	0	Bend your knee slowly.
+3	47876	noun	knees	0	He fell onto his knees.
+4	47876	noun	knee	0	The knee connects the upper and lower parts of the leg.
+5	47876	noun	knees	0	My knees hurt after the long walk.
+
+@ knife
+1	47890	noun	knife	1	The sharp knife slipped, but the cook moved her hand in time.
+2	47890	noun	knife	0	Use a knife to cut the bread.
+3	47890	noun	knives	0	Keep sharp knives away from children.
+4	47890	noun	knife	0	This knife has a wooden handle.
+5	47890	noun	knives	0	The drawer contains several kitchen knives.
+
+@ knock
+1	47898	noun	knock	1	A sudden knock at midnight woke the whole family.
+2	47898	noun	knock	0	I heard a knock on the door.
+3	47898	noun	knocks	0	Three loud knocks came from upstairs.
+4	47898	noun	knock	0	The knock made the dog bark.
+5	47898	noun	knocks	0	Soft knocks sounded against the window.
+
+@ knowledge
+1	47916	noun	knowledge	1	Her knowledge of the mountain paths guided everyone home safely.
+2	47916	noun	knowledge	0	He has good knowledge of local history.
+3	47916	noun	knowledge	0	Reading increases your knowledge of the world.
+4	47916	noun	knowledge	0	The job requires knowledge of computers.
+5	47916	noun	knowledge	0	Our guide shared his knowledge of the area.
+
+@ lab
+1	47929	noun	lab	1	The lab discovered why the town's water was making people sick.
+2	47929	noun	lab	0	Scientists tested the sample in the lab.
+3	47929	noun	labs	0	The university has three modern labs.
+4	47929	noun	lab	0	Wear safety glasses in the lab.
+5	47929	noun	labs	0	These labs study different diseases.
+
+@ lady
+1	47934	noun	lady	1	The lady of the house welcomed every traveler during the storm.
+2	47934	noun	lady	0	The lady managed the household while her husband was away.
+3	47934	noun	ladies	0	The ladies of the two great houses exchanged formal visits.
+4	47934	noun	lady	0	Servants waited for instructions from the lady of the manor.
+5	47934	noun	ladies	0	In those days, wealthy ladies directed large households.

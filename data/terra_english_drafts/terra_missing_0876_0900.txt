@@ -1,0 +1,150 @@
+@ silk
+1	66444	noun	silk	1	The spider spun a thin thread of silk across the window.
+2	66444	noun	silk	0	A fine fiber made by silkworms or spiders is silk.
+3	66444	noun	silk	0	Her dress was made of soft silk.
+4	66444	noun	silk	0	The silkworm produces silk for its cocoon.
+5	66444	noun	silk	0	The scarf felt smooth like silk.
+@ sincere
+1	66441	adj	sincere	1	His sincere apology made his friend feel better.
+2	66441	adj	sincere	0	Genuine and honest without pretending is sincere.
+3	66441	adj	sincere	0	She gave a sincere thank-you to the volunteers.
+4	66441	adj	sincere	0	He was sincere when he said he wanted to help.
+5	66441	adj	sincere	0	A sincere smile can show real kindness.
+@ slave
+1	66557	noun	slave	1	The history lesson explained how a slave had no control over their own labor.
+2	66557	noun	slave	0	A person owned and controlled by another person is a slave.
+3	66557	noun	slave	0	The novel tells the story of a slave seeking freedom.
+4	66557	noun	slaves	0	Laws were changed to end the system that held people as slaves.
+5	66557	noun	slave	0	The museum showed letters written by a former slave.
+@ slide
+1	66567	verb	slide	1	The children watched the ice cube slide across the table.
+2	66567	verb	slide	0	To move smoothly along a surface is to slide.
+3	66567	verb	slide	0	Please slide the box closer to the wall.
+4	66567	verb	slid	0	The book slid off the desk.
+5	66567	verb	slide	0	The boat can slide into the water from the ramp.
+@ slight
+1	66456	adj	slight	1	There was only a slight crack in the glass.
+2	66456	adj	slight	0	Small in amount or degree is slight.
+3	66456	adj	slight	0	A slight breeze cooled the hot room.
+4	66456	adj	slight	0	She noticed a slight change in his voice.
+5	66456	adj	slight	0	The road has a slight curve near the bridge.
+@ slip
+1	66504	verb	slip	1	Be careful not to slip on the wet kitchen floor.
+2	66504	verb	slip	0	To lose your footing on a slippery surface is to slip.
+3	66504	verb	slip	0	The child might slip if he runs by the pool.
+4	66504	verb	slipped	0	She slipped on the ice but did not fall.
+5	66504	verb	slip	0	Wear shoes with good grips so you do not slip.
+@ slope
+1	66484	noun	slope	1	We rolled the ball down the grassy slope.
+2	66484	noun	slope	0	A surface that rises or falls at an angle is a slope.
+3	66484	noun	slope	0	The house stands on a gentle slope.
+4	66484	noun	slope	0	Skiers moved carefully down the snowy slope.
+5	66484	noun	slope	0	The steep slope made climbing difficult.
+@ solar
+1	66476	adj	solar	1	The solar panels on the roof make electricity from sunlight.
+2	66476	adj	solar	0	Related to the sun is solar.
+3	66476	adj	solar	0	The school installed a solar heating system.
+4	66476	adj	solar	0	A solar eclipse happens when the moon blocks the sun.
+5	66476	adj	solar	0	Scientists study solar energy from space.
+@ somewhat
+1	66499	adv	somewhat	1	The soup was somewhat too salty, but we still ate it.
+2	66499	adv	somewhat	0	To a limited degree means somewhat.
+3	66499	adv	somewhat	0	She felt somewhat better after resting.
+4	66499	adv	somewhat	0	The instructions were somewhat confusing.
+5	66499	adv	somewhat	0	This bag is somewhat heavier than mine.
+@ soul
+1	66612	noun	soul	1	In the story, the old woman believed her soul would live on after death.
+2	66612	noun	soul	0	The spiritual essence of a person is the soul.
+3	66612	noun	soul	0	The poem speaks about the journey of the soul.
+4	66612	noun	soul	0	Some people believe the soul continues after the body dies.
+5	66612	noun	soul	0	Music can seem to touch the soul.
+@ specialist
+1	66604	adj	specialist	1	The specialist equipment needs a trained worker to use it.
+2	66604	adj	specialist	0	Requiring detailed knowledge of one narrow subject is specialist.
+3	66604	adj	specialist	0	She bought a specialist book about ancient coins.
+4	66604	adj	specialist	0	The museum has specialist staff for restoring paintings.
+5	66604	adj	specialist	0	This is a specialist topic, so we asked an expert.
+@ species
+1	66625	noun	species	1	The zoo protects a rare species of turtle.
+2	66625	noun	species	0	A type or kind of living thing is a species.
+3	66625	noun	species	0	This species of bird returns every spring.
+4	66625	noun	species	0	Scientists discovered a new species in the forest.
+5	66625	noun	species	0	Every species needs a suitable place to live.
+@ spiritual
+1	66638	adj	spiritual	1	The quiet temple gave visitors a spiritual feeling.
+2	66638	adj	spiritual	0	Related to the spirit or soul is spiritual.
+3	66638	adj	spiritual	0	They discussed spiritual ideas after the ceremony.
+4	66638	adj	spiritual	0	The song has a deep spiritual meaning.
+5	66638	adj	spiritual	0	A spiritual belief can guide a person's life.
+@ split
+1	66663	verb	split	1	The strong wind made the old tree split down the middle.
+2	66663	verb	split	0	To divide along a line is to split.
+3	66663	verb	split	0	Use a knife to split the apple into two pieces.
+4	66663	verb	split	0	The class will split into small groups.
+5	66663	verb	split	0	The heavy log began to split in the heat.
+@ sponsor
+1	66652	noun	sponsor	1	The local shop became a sponsor for our school race.
+2	66652	noun	sponsor	0	A person or group with financial responsibility for an event is a sponsor.
+3	66652	noun	sponsor	0	Each sponsor donated money for the concert.
+4	66652	noun	sponsor	0	The team thanked its sponsor after the match.
+5	66652	noun	sponsor	0	A sponsor helped pay for new uniforms.
+@ stable
+1	66700	noun	stable	1	The horse returned to its stable before the rain began.
+2	66700	noun	stable	0	A building where horses are kept and fed is a stable.
+3	66700	noun	stable	0	We cleaned the stable every morning.
+4	66700	noun	stable	0	The stable had room for six horses.
+5	66700	noun	stable	0	A cat slept in the warm stable.
+@ stare
+1	66646	verb	stare	1	Please do not stare at the man on the bus.
+2	66646	verb	stare	0	To look fixedly at something is to stare.
+3	66646	verb	stare	0	The baby began to stare at the bright balloon.
+4	66646	verb	stared	0	She stared at the map for several minutes.
+5	66646	verb	stared	0	We stared in surprise at the huge rainbow.
+@ status
+1	66656	noun	status	1	Her status as team captain gave her extra responsibility.
+2	66656	noun	status	0	A person's position or standing compared with others is status.
+3	66656	noun	status	0	The job changed his status in the company.
+4	66656	noun	status	0	The website shows the delivery status of your order.
+5	66656	noun	status	0	Students discussed the social status of characters in the novel.
+@ steady
+1	66715	adj	steady	1	Keep a steady hand while you pour the juice.
+2	66715	adj	steady	0	Firm and not shaking is steady.
+3	66715	adj	steady	0	The ladder felt steady against the wall.
+4	66715	adj	steady	0	She held the camera steady for the photo.
+5	66715	adj	steady	0	His steady voice calmed the frightened child.
+@ steel
+1	66757	noun	steel	1	The bridge is made of steel, so it can hold heavy trucks.
+2	66757	noun	steel	0	A hard metal made from iron is steel.
+3	66757	noun	steel	0	The worker cut the steel with a special tool.
+4	66757	noun	steel	0	Steel is stronger than pure iron.
+5	66757	noun	steel	0	The factory makes steel beams for buildings.
+@ steep
+1	66729	adj	steep	1	The steep path made our legs ache on the way up.
+2	66729	adj	steep	0	Rising or falling at a nearly vertical angle is steep.
+3	66729	adj	steep	0	The hill is too steep for my bicycle.
+4	66729	adj	steep	0	We walked carefully down the steep road.
+5	66729	adj	steep	0	A steep staircase led to the tower.
+@ sticky
+1	66739	adj	sticky	1	My hands were sticky after eating the ripe mango.
+2	66739	adj	sticky	0	Able to stick to things is sticky.
+3	66739	adj	sticky	0	The tape has a sticky side.
+4	66739	adj	sticky	0	The floor felt sticky after the juice spilled.
+5	66739	adj	sticky	0	Bees can get trapped in sticky honey.
+@ stiff
+1	66790	adj	stiff	1	My legs felt stiff after sitting on the long bus ride.
+2	66790	adj	stiff	0	Hard to bend is stiff.
+3	66790	adj	stiff	0	The new boots are stiff but will soften soon.
+4	66790	adj	stiff	0	The paper became stiff after getting wet and drying.
+5	66790	adj	stiff	0	He could not bend the stiff wire.
+@ stock
+1	66884	noun	stock	1	The shop keeps a stock of umbrellas for rainy days.
+2	66884	noun	stock	0	A supply kept for future use is stock.
+3	66884	noun	stock	0	We need more stock of notebooks in the store.
+4	66884	noun	stock	0	The kitchen has a stock of canned beans.
+5	66884	noun	stock	0	The warehouse checked its stock before sending orders.
+@ stream
+1	66829	noun	stream	1	We followed the stream until it joined the river.
+2	66829	noun	stream	0	A small river flowing between banks is a stream.
+3	66829	noun	stream	0	The children threw stones into the stream.
+4	66829	noun	stream	0	A wooden bridge crossed the clear stream.
+5	66829	noun	stream	0	Fish swam in the shallow stream.

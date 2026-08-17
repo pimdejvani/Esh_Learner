@@ -1,0 +1,150 @@
+@ surely
+1	60503	adv	surely	1	The package will surely arrive before Friday.
+2	60503	adv	surely	0	If something will happen without fail, it will surely happen.
+3	60503	adv	surely	0	You will surely enjoy the view from the hill.
+4	60503	adv	surely	0	Surely, we can find a safer way home.
+5	60503	adv	surely	0	The baby will surely wake if we make that noise.
+@ surface
+1	60506	noun	surface	1	The surface of the lake reflected the pink sky.
+2	60506	noun	surface	0	The outside boundary of an object is its surface.
+3	60506	noun	surface	0	The table's surface was covered with flour.
+4	60506	noun	surface	0	Write your name on the flat surface of the box.
+5	60506	noun	surface	0	The ball bounced off the hard surface.
+@ survive
+1	60520	verb	survive	1	The lost hiker managed to survive three cold nights outdoors.
+2	60520	verb	survive	0	To continue living after danger is to survive.
+3	60520	verb	survive	0	Some plants survive even in very dry weather.
+4	60520	verb	survived	0	The bird survived the storm because it found shelter.
+5	60520	verb	survive	0	Fish cannot survive long without clean water.
+@ switch
+1	60529	noun	switch	1	I flipped the switch and the kitchen lights came on.
+2	60529	noun	switch	0	A device that turns electricity on or off is a switch.
+3	60529	noun	switch	0	The switch beside the door controls the fan.
+4	60529	noun	switch	0	Please turn off the switch before leaving.
+5	60529	noun	switch	0	The broken switch made the lamp useless.
+@ symptom
+1	60526	noun	symptom	1	A sore throat can be a symptom of a cold.
+2	60526	noun	symptom	0	A sign that someone may be ill is a symptom.
+3	60526	noun	symptom	0	The doctor asked when the first symptom appeared.
+4	60526	noun	symptom	0	Fever was the main symptom of the infection.
+5	60526	noun	symptom	0	Tell an adult if you notice a new symptom.
+@ tail
+1	60605	noun	tail	1	The puppy chased its tail in circles across the yard.
+2	60605	noun	tail	0	The long part at the back of an animal is its tail.
+3	60605	noun	tail	0	The cat lifted its tail when it saw us.
+4	60605	noun	tail	0	The fox disappeared into the trees, its tail still visible.
+5	60605	noun	tail	0	A squirrel uses its tail to help keep its balance.
+@ talent
+1	60560	noun	talent	1	Her talent for singing filled the room with music.
+2	60560	noun	talent	0	A natural ability to do something well is talent.
+3	60560	noun	talent	0	He showed talent for drawing at an early age.
+4	60560	noun	talent	0	The contest gave every student a chance to share a talent.
+5	60560	noun	talent	0	Practice can help a talent grow stronger.
+@ talented
+1	60528	adj	talented	1	The talented dancer learned the new routine in one afternoon.
+2	60528	adj	talented	0	Someone with a natural ability is talented.
+3	60528	adj	talented	0	Our talented friend paints beautiful landscapes.
+4	60528	adj	talented	0	The school band includes many talented musicians.
+5	60528	adj	talented	0	She is talented at solving difficult puzzles.
+@ tape
+1	60565	noun	tape	1	I used clear tape to repair the torn map.
+2	60565	noun	tape	0	A sticky strip used to join things is tape.
+3	60565	noun	tape	0	Please put tape around the gift box.
+4	60565	noun	tape	0	The label was held on with tape.
+5	60565	noun	tape	0	He pulled a long piece of tape from the roll.
+@ tax
+1	60597	noun	tax	1	The government uses tax money to build schools and roads.
+2	60597	noun	tax	0	Money collected by a government to pay for services is tax.
+3	60597	noun	tax	0	The price includes a small tax on each sale.
+4	60597	noun	tax	0	People pay tax from their income.
+5	60597	noun	tax	0	The city raised tax to repair the bridges.
+@ technical
+1	60579	adj	technical	1	The engineer explained the technical details of the new machine.
+2	60579	adj	technical	0	Something related to a particular specialized subject is technical.
+3	60579	adj	technical	0	The manual gives technical instructions for the camera.
+4	60579	adj	technical	0	She asked a technical question about the computer program.
+5	60579	adj	technical	0	The museum offers technical training for lab workers.
+@ technique
+1	60594	noun	technique	1	Her painting technique made the clouds look soft and real.
+2	60594	noun	technique	0	A practical method for doing an activity is a technique.
+3	60594	noun	technique	0	The coach taught us a new technique for serving the ball.
+4	60594	noun	technique	0	Good chopping technique keeps your fingers safe.
+5	60594	noun	technique	0	This technique helps students remember new words.
+@ tend
+1	60643	verb	tend	1	The seller will tend an offer for the old bicycle.
+2	60643	verb	tend	0	To formally offer something is to tend it.
+3	60643	verb	tend	0	The company will tend payment before the deadline.
+4	60643	verb	tended	0	He tended a written offer to the owner.
+5	60643	verb	tend	0	Please tend your answer to the clerk at the desk.
+@ tent
+1	60655	noun	tent	1	We slept in a tent beside the river during our camping trip.
+2	60655	noun	tent	0	A portable shelter made of cloth stretched over poles is a tent.
+3	60655	noun	tent	0	The wind shook our tent all night.
+4	60655	noun	tent	0	They put up a tent before it got dark.
+5	60655	noun	tent	0	A yellow tent stood in the middle of the field.
+@ theirs
+1	60653	pron	theirs	1	Those muddy boots are theirs, not ours.
+2	60653	pron	theirs	0	Something belonging to them is theirs.
+3	60653	pron	theirs	0	The blue house is theirs.
+4	60653	pron	theirs	0	Our seats are near theirs at the back.
+5	60653	pron	theirs	0	This umbrella is theirs because their name is on it.
+@ theme
+1	60671	noun	theme	1	The theme of the party was space, so everyone wore silver.
+2	60671	noun	theme	0	The main subject of a talk or event is its theme.
+3	60671	noun	theme	0	Friendship is the central theme of the book.
+4	60671	noun	theme	0	The teacher chose an ocean theme for the classroom.
+5	60671	noun	theme	0	Each poem in the collection shares a similar theme.
+@ theory
+1	60686	noun	theory	1	Her theory about the missing keys was correct.
+2	60686	noun	theory	0	An explanation believed to describe how something works is a theory.
+3	60686	noun	theory	0	The scientist tested her theory with an experiment.
+4	60686	noun	theory	0	My theory is that the cat hid under the bed.
+5	60686	noun	theory	0	The class discussed a theory about how rain forms.
+@ therefore
+1	60699	adv	therefore	1	The road was flooded; therefore, we took the train.
+2	60699	adv	therefore	0	If one fact causes another result, you can use therefore to connect them.
+3	60699	adv	therefore	0	He missed the bus and therefore arrived late.
+4	60699	adv	therefore	0	The store was closed; therefore, we went home.
+5	60699	adv	therefore	0	The test is tomorrow; therefore, I will study tonight.
+@ though
+1	60704	adv	though	1	The soup was too salty. I ate it, though.
+2	60704	adv	though	0	You can add though to show a contrast after a statement.
+3	60704	adv	though	0	The walk was long; the view was worth it, though.
+4	60704	adv	though	0	I liked the hotel. The room was small, though.
+5	60704	adv	though	0	He was tired. He finished the race, though.
+@ throat
+1	60709	noun	throat	1	My throat hurt when I tried to swallow.
+2	60709	noun	throat	0	The front part of your neck is your throat.
+3	60709	noun	throat	0	She drank warm tea to soothe her throat.
+4	60709	noun	throat	0	The doctor looked at his red throat.
+5	60709	noun	throat	0	A cough can make your throat feel dry.
+@ throughout
+1	60694	prep	throughout	1	It rained throughout the night, but the game continued.
+2	60694	prep	throughout	0	In every part of a place or period means throughout it.
+3	60694	prep	throughout	0	Music played throughout the whole festival.
+4	60694	prep	throughout	0	The smell of bread spread throughout the house.
+5	60694	prep	throughout	0	She stayed cheerful throughout the long journey.
+@ tight
+1	60722	adj	tight	1	The jar lid was so tight that Dad had to open it.
+2	60722	adj	tight	0	Something firmly closed and not loose is tight.
+3	60722	adj	tight	0	Tie the knot tight so the box stays closed.
+4	60722	adj	tight	0	These shoes feel too tight around my toes.
+5	60722	adj	tight	0	The rope was tight between the two trees.
+@ till
+1	60751	prep	till	1	We waited at the station till the last train arrived.
+2	60751	prep	till	0	Till means until a particular time.
+3	60751	prep	till	0	Stay here till I return from the shop.
+4	60751	prep	till	0	The café is open till nine o'clock.
+5	60751	prep	till	0	Do not start dinner till everyone is home.
+@ tin
+1	60769	noun	tin	1	The old roof was made of tin and rattled in the rain.
+2	60769	noun	tin	0	A soft metal with the symbol Sn is tin.
+3	60769	noun	tin	0	The worker coated the steel with tin to prevent rust.
+4	60769	noun	tin	0	Tin is used in some metal mixtures.
+5	60769	noun	tin	0	The science teacher showed us a piece of tin.
+@ tiny
+1	60701	adj	tiny	1	A tiny frog sat on the edge of my watering can.
+2	60701	adj	tiny	0	Something extremely small is tiny.
+3	60701	adj	tiny	0	She found a tiny shell on the beach.
+4	60701	adj	tiny	0	The baby held a tiny spoon in her hand.
+5	60701	adj	tiny	0	A tiny light appeared far across the field.

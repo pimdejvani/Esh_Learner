@@ -1,0 +1,600 @@
+@ communicate
+1	44875	verb	communicate	1	The nurse will communicate the urgent news to the family.
+2	44875	verb	communicate	0	People communicate by sharing ideas or information.
+3	44875	verb	communicate	0	We communicate clearly during the meeting.
+4	44875	verb	communicate	0	Signs communicate the rules without words.
+5	44875	verb	communicate	0	Children communicate their needs in different ways.
+@ community
+1	44886	noun	community	1	The whole community collected food for the flooded village.
+2	44886	noun	community	0	A community is a group of people who share a place or interest.
+3	44886	noun	community	0	Our community opened a new library.
+4	44886	noun	community	0	The festival brought the community together.
+5	44886	noun	community	0	She volunteers in her local community.
+@ compete
+1	44896	verb	compete	1	Two runners will compete for the gold medal.
+2	44896	verb	compete	0	Teams compete when each tries to win the same prize.
+3	44896	verb	compete	0	We compete in a quiz every Friday.
+4	44896	verb	compete	0	Athletes compete after months of practice.
+5	44896	verb	compete	0	The schools compete in the final match.
+@ competition
+1	44900	noun	competition	1	Mina won first place in the baking competition.
+2	44900	noun	competition	0	A competition is an event where people try to win.
+3	44900	noun	competition	0	The competition begins at noon.
+4	44900	noun	competition	0	He entered the singing competition.
+5	44900	noun	competition	0	The competition had twenty contestants.
+@ complain
+1	44903	verb	complain	1	Theo will complain if his soup arrives cold.
+2	44903	verb	complain	0	People complain when they are unhappy about something.
+3	44903	verb	complain	0	Do not complain before you ask for help.
+4	44903	verb	complain	0	Several customers may complain about the delay.
+5	44903	verb	complain	0	She called to complain about the broken lamp.
+@ completely
+1	44907	adv	completely	1	The rain completely soaked our picnic blankets.
+2	44907	adv	completely	0	Completely means fully, with nothing left unfinished.
+3	44907	adv	completely	0	I completely forgot the appointment.
+4	44907	adv	completely	0	The road was completely blocked by snow.
+5	44907	adv	completely	0	Please read the instructions completely.
+@ condition
+1	44909	noun	condition	1	The bike is in good condition after the repair.
+2	44909	noun	condition	0	The condition of something is the state it is in.
+3	44909	noun	condition	0	The doctor checked her condition.
+4	44909	noun	condition	0	The old house was in poor condition.
+5	44909	noun	condition	0	The road condition made driving difficult.
+@ conference
+1	44927	noun	conference	1	The parents met the teacher at a school conference.
+2	44927	noun	conference	0	A conference is a formal meeting for discussion.
+3	44927	noun	conference	0	The conference starts after lunch.
+4	44927	noun	conference	0	She spoke at the science conference.
+5	44927	noun	conference	0	They planned the conference for June.
+@ connect
+1	44938	verb	connect	1	Connect the blue cable to the back of the screen.
+2	44938	verb	connect	0	To connect things is to join them together.
+3	44938	verb	connect	0	The bridge can connect the two towns.
+4	44938	verb	connect	0	Please connect your phone to the charger.
+5	44938	verb	connect	0	A path can connect the house and the garden.
+@ connected
+1	44949	adj	connected	1	The connected businessman could arrange a meeting quickly.
+2	44949	adj	connected	0	Someone connected has useful relationships with powerful people.
+3	44949	adj	connected	0	Her family is well connected in the city.
+4	44949	adj	connected	0	He became connected through his work.
+5	44949	adj	connected	0	A connected person knew whom to call.
+@ consider
+1	44957	verb	consider	1	Before buying the puppy, we must consider the cost carefully.
+2	44957	verb	consider	0	To consider something is to think about it carefully.
+3	44957	verb	consider	0	Please consider both choices.
+4	44957	verb	consider	0	She will consider moving closer to work.
+5	44957	verb	consider	0	We should consider the weather forecast.
+@ contain
+1	44966	verb	contain	1	This small box can contain my grandmother's letters.
+2	44966	verb	contain	0	To contain something is to hold it inside.
+3	44966	verb	contain	0	The bottle can contain clean water.
+4	44966	verb	contain	0	The bag can contain ten books.
+5	44966	verb	contain	0	This sauce may contain nuts.
+@ context
+1	44971	noun	context	1	The joke made sense only in the context of the story.
+2	44971	noun	context	0	Context is the situation that helps explain meaning.
+3	44971	noun	context	0	Read the sentence in context.
+4	44971	noun	context	0	History gives the photo its context.
+5	44971	noun	context	0	The word has a different context here.
+@ continent
+1	44979	noun	continent	1	Asia is the largest continent on Earth.
+2	44979	noun	continent	0	A continent is one of Earth's large areas of land.
+3	44979	noun	continent	0	Australia is the smallest continent.
+4	44979	noun	continent	0	They traveled across the continent by train.
+5	44979	noun	continent	0	Each continent has different climates.
+@ continue
+1	44994	verb	continue	1	Despite the rain, the band will continue playing outside.
+2	44994	verb	continue	0	To continue is to keep doing something.
+3	44994	verb	continue	0	Please continue reading the chapter.
+4	44994	verb	continue	0	The movie will continue after the break.
+5	44994	verb	continue	0	We will continue walking along the river.
+@ control
+1	45002	verb	control	1	The driver must control the car on the icy road.
+2	45002	verb	control	0	To control something is to make it behave as you want.
+3	45002	verb	control	0	She can control the lights with her phone.
+4	45002	verb	control	0	Try to control your anger.
+5	45002	verb	control	0	The pilot must control the plane.
+@ cooker
+1	45019	noun	cooker	1	The soup bubbled gently on the cooker.
+2	45019	noun	cooker	0	A cooker is an appliance used for preparing food.
+3	45019	noun	cooker	0	Turn off the cooker after dinner.
+4	45019	noun	cooker	0	The new cooker has four rings.
+5	45019	noun	cooker	0	Keep towels away from the cooker.
+@ copy
+1	45027	noun	copy	1	I made a copy of my passport before the trip.
+2	45027	noun	copy	0	A copy is something made to be like an original.
+3	45027	noun	copy	0	Please keep a copy of the receipt.
+4	45027	noun	copy	0	The museum displays a copy of the painting.
+5	45027	noun	copy	0	She sent me a digital copy.
+@ corner
+1	45046	noun	corner	1	The cat hid in the dark corner of the room.
+2	45046	noun	corner	0	A corner is where two lines or walls meet.
+3	45046	noun	corner	0	Put the lamp in that corner.
+4	45046	noun	corner	0	We turned the corner near the bank.
+5	45046	noun	corner	0	There is dust in every corner.
+@ correctly
+1	45074	adv	correctly	1	Nora answered every question correctly on the test.
+2	45074	adv	correctly	0	Correctly means in the right or accurate way.
+3	45074	adv	correctly	0	Please spell my name correctly.
+4	45074	adv	correctly	0	He connected the wires correctly.
+5	45074	adv	correctly	0	The clock is working correctly.
+@ count
+1	45075	verb	count	1	The children will count to one hundred on the bus.
+2	45075	verb	count	0	To count is to say numbers in order.
+3	45075	verb	count	0	Can you count the chairs?
+4	45075	verb	count	0	We must count the votes twice.
+5	45075	verb	count	0	Count slowly so nobody is missed.
+@ couple
+1	45097	noun	couple	1	The couple danced together at their wedding.
+2	45097	noun	couple	0	A couple is two people or things considered together.
+3	45097	noun	couple	0	A couple sat beside the window.
+4	45097	noun	couple	0	I need a couple of minutes.
+5	45097	noun	couple	0	The couple adopted a dog.
+@ cover
+1	45111	noun	cover	1	Put the cover back on the pot before it boils.
+2	45111	noun	cover	0	A cover is a lid or layer placed over something.
+3	45111	noun	cover	0	The book has a blue cover.
+4	45111	noun	cover	0	The cover kept dust off the sofa.
+5	45111	noun	cover	0	Remove the cover carefully.
+@ crazy
+1	45162	adj	crazy	1	It was crazy to swim in the stormy sea.
+2	45162	adj	crazy	0	Crazy can describe someone who is not mentally sound.
+3	45162	adj	crazy	0	The plan sounds crazy to me.
+4	45162	adj	crazy	0	He went crazy with worry.
+5	45162	adj	crazy	0	That price is crazy.
+@ creative
+1	45172	adj	creative	1	Lena made a creative costume from old cardboard.
+2	45172	adj	creative	0	Creative describes someone good at making new ideas or things.
+3	45172	adj	creative	0	The class found a creative solution.
+4	45172	adj	creative	0	He is creative with leftover food.
+5	45172	adj	creative	0	Her creative drawing won a prize.
+@ credit
+1	45179	verb	credit	1	Few people will credit the rumor without proof.
+2	45179	verb	credit	0	To credit a claim is to believe it is true.
+3	45179	verb	credit	0	I cannot credit that story.
+4	45179	verb	credit	0	They may credit her explanation.
+5	45179	verb	credit	0	The judge may credit the witness's account.
+@ crime
+1	45197	noun	crime	1	Stealing the bicycle was a crime.
+2	45197	noun	crime	0	A crime is an act that breaks the law.
+3	45197	noun	crime	0	Police are investigating the crime.
+4	45197	noun	crime	0	The crime happened after midnight.
+5	45197	noun	crime	0	He reported the crime immediately.
+@ criminal
+1	45204	adj	criminal	1	The police investigated the criminal act.
+2	45204	adj	criminal	0	Criminal describes something forbidden by law.
+3	45204	adj	criminal	0	The court heard a criminal case.
+4	45204	adj	criminal	0	The theft was criminal behavior.
+5	45204	adj	criminal	0	They faced criminal charges.
+@ cross
+1	45209	noun	cross	1	She drew a red cross on the treasure map.
+2	45209	noun	cross	0	A cross is a shape made by two lines meeting.
+3	45209	noun	cross	0	Mark the correct box with a cross.
+4	45209	noun	cross	0	A wooden cross stood on the hill.
+5	45209	noun	cross	0	The sign has a white cross.
+@ crowd
+1	45264	verb	crowd	1	Fans may crowd toward the stage after the concert.
+2	45264	verb	crowd	0	To crowd is to push forward into a space.
+3	45264	verb	crowd	0	People can crowd around the window.
+4	45264	verb	crowd	0	Do not crowd near the door.
+5	45264	verb	crowd	0	The children may crowd onto the bus.
+@ crowded
+1	45279	adj	crowded	1	The train was so crowded that we had to stand.
+2	45279	adj	crowded	0	Crowded describes a place full of people or things.
+3	45279	adj	crowded	0	The market is crowded on Saturdays.
+4	45279	adj	crowded	0	We avoided the crowded beach.
+5	45279	adj	crowded	0	Her desk looked crowded with books.
+@ cry
+1	45281	verb	cry	1	The lost child began to cry for her mother.
+2	45281	verb	cry	0	To cry is to shed tears when upset.
+3	45281	verb	cry	0	Babies cry when they are hungry.
+4	45281	verb	cry	0	Try not to cry during the speech.
+5	45281	verb	cry	0	He may cry after hearing the news.
+@ cupboard
+1	45298	noun	cupboard	1	The cups are stored in the kitchen cupboard.
+2	45298	noun	cupboard	0	A cupboard is a piece of furniture for storing dishes or food.
+3	45298	noun	cupboard	0	Please close the cupboard door.
+4	45298	noun	cupboard	0	The cupboard is full of plates.
+5	45298	noun	cupboard	0	She found flour in the cupboard.
+@ curly
+1	45304	adj	curly	1	The baby has curly hair like her father.
+2	45304	adj	curly	0	Curly describes hair or shapes that form curls.
+3	45304	adj	curly	0	He drew a curly line.
+4	45304	adj	curly	0	Her curly hair was wet.
+5	45304	adj	curly	0	The ribbon became curly in the rain.
+@ cycle
+1	45308	noun	cycle	1	The washing machine finished its cycle before dinner.
+2	45308	noun	cycle	0	A cycle is a series of events that repeats.
+3	45308	noun	cycle	0	The moon has a monthly cycle.
+4	45308	noun	cycle	0	This cycle takes thirty minutes.
+5	45308	noun	cycle	0	The same cycle begins again each year.
+@ daily
+1	45331	adj	daily	1	A daily walk helps Granddad stay healthy.
+2	45331	adj	daily	0	Daily describes something that happens every day.
+3	45331	adj	daily	0	She reads the daily newspaper.
+4	45331	adj	daily	0	Daily practice improved his piano playing.
+5	45331	adj	daily	0	The bus makes a daily trip.
+@ danger
+1	45345	noun	danger	1	The firefighter carried the child away from danger.
+2	45345	noun	danger	0	Danger is the risk that someone may be harmed.
+3	45345	noun	danger	0	The sign warned us about danger.
+4	45345	noun	danger	0	Keep away from the danger.
+5	45345	noun	danger	0	The storm put boats in danger.
+@ data
+1	45356	noun	data	1	The scientist studied the data from the experiment.
+2	45356	noun	data	0	Data are pieces of recorded information.
+3	45356	noun	data	0	The data show a clear pattern.
+4	45356	noun	data	0	We saved the data on a drive.
+5	45356	noun	data	0	The data were checked twice.
+@ dead
+1	45360	adj	dead	1	The dead bird lay quietly beneath the tree.
+2	45360	adj	dead	0	Dead describes something that is no longer alive.
+3	45360	adj	dead	0	The plant is dead from lack of water.
+4	45360	adj	dead	0	We found a dead insect on the floor.
+5	45360	adj	dead	0	The battery is dead.
+@ deal
+1	45403	noun	deal	1	Each child received an equal deal of the cake.
+2	45403	noun	deal	0	A deal can mean a share or portion of something.
+3	45403	noun	deal	0	She got a fair deal.
+4	45403	noun	deal	0	They divided the work into a deal for each person.
+5	45403	noun	deal	0	His deal was smaller than mine.
+@ death
+1	45430	noun	death	1	The family gathered after the death of their grandfather.
+2	45430	noun	death	0	Death is the end of a living thing's life.
+3	45430	noun	death	0	The news of her death was sad.
+4	45430	noun	death	0	Doctors tried to prevent death.
+5	45430	noun	death	0	The book explores life and death.
+@ deep
+1	45442	adj	deep	1	The child dropped her coin into the deep well.
+2	45442	adj	deep	0	Deep describes something that goes far down.
+3	45442	adj	deep	0	The lake is deep near the middle.
+4	45442	adj	deep	0	He took a deep breath.
+5	45442	adj	deep	0	Snow lay deep on the road.
+@ definitely
+1	45480	adv	definitely	1	I will definitely bring your book tomorrow.
+2	45480	adv	definitely	0	Definitely means without any doubt.
+3	45480	adv	definitely	0	She is definitely coming tonight.
+4	45480	adv	definitely	0	That is definitely the right address.
+5	45480	adv	definitely	0	We definitely need more chairs.
+@ degree
+1	45482	noun	degree	1	After four years, Sam earned a degree in engineering.
+2	45482	noun	degree	0	A degree is a qualification from a university course.
+3	45482	noun	degree	0	Her degree helped her get a job.
+4	45482	noun	degree	0	He is studying for a degree.
+5	45482	noun	degree	0	The college offers many degree programs.
+@ dentist
+1	45498	noun	dentist	1	The dentist fixed my painful tooth this morning.
+2	45498	noun	dentist	0	A dentist is a doctor who cares for teeth.
+3	45498	noun	dentist	0	I have an appointment with the dentist.
+4	45498	noun	dentist	0	The dentist cleaned her teeth.
+5	45498	noun	dentist	0	Our dentist has a small clinic.
+@ department
+1	45500	noun	department	1	Ask for coats in the clothing department upstairs.
+2	45500	noun	department	0	A department is one part of a larger organization or store.
+3	45500	noun	department	0	She works in the sales department.
+4	45500	noun	department	0	The toy department is closed.
+5	45500	noun	department	0	Call the right department for help.
+@ depend
+1	45509	verb	depend	1	The picnic will depend on the weather tomorrow.
+2	45509	verb	depend	0	To depend means to need something as a condition.
+3	45509	verb	depend	0	Success can depend on practice.
+4	45509	verb	depend	0	The price can depend on the size.
+5	45509	verb	depend	0	Our trip may depend on Dad's work.
+@ desert
+1	45514	noun	desert	1	We carried extra water across the hot desert.
+2	45514	noun	desert	0	A desert is very dry land with little plant life.
+3	45514	noun	desert	0	Few trees grow in the desert.
+4	45514	noun	desert	0	Camels can travel through the desert.
+5	45514	noun	desert	0	The desert is cold at night.
+@ designer
+1	45522	noun	designer	1	The designer showed us a drawing for the new playground.
+2	45522	noun	designer	0	A designer is a person whose job is planning how things look.
+3	45522	noun	designer	0	The designer chose bright colors.
+4	45522	noun	designer	0	She hopes to become a designer.
+5	45522	noun	designer	0	The designer made a new logo.
+@ destroy
+1	45526	verb	destroy	1	The fire can destroy the old wooden shed.
+2	45526	verb	destroy	0	To destroy something is to damage it beyond use.
+3	45526	verb	destroy	0	Strong waves can destroy a pier.
+4	45526	verb	destroy	0	Do not destroy the nest.
+5	45526	verb	destroy	0	The storm can destroy several roofs.
+@ detective
+1	45536	noun	detective	1	The detective found a fingerprint on the window.
+2	45536	noun	detective	0	A detective collects evidence to solve crimes.
+3	45536	noun	detective	0	The detective asked careful questions.
+4	45536	noun	detective	0	A detective visited the scene.
+5	45536	noun	detective	0	The young detective solved the case.
+@ develop
+1	45539	verb	develop	1	The team will develop a plan to save water.
+2	45539	verb	develop	0	To develop can mean to discover or uncover something.
+3	45539	verb	develop	0	Scientists may develop new evidence.
+4	45539	verb	develop	0	We will develop the idea during class.
+5	45539	verb	develop	0	The report can develop an important fact.
+@ device
+1	45549	noun	device	1	This device measures the temperature of the oven.
+2	45549	noun	device	0	A device is a piece of equipment made for a purpose.
+3	45549	noun	device	0	Turn the device off at night.
+4	45549	noun	device	0	The device needs new batteries.
+5	45549	noun	device	0	He invented a useful device.
+@ diary
+1	45562	noun	diary	1	Luca wrote about the school trip in his diary.
+2	45562	noun	diary	0	A diary is a personal record of daily experiences.
+3	45562	noun	diary	0	She keeps her diary in a drawer.
+4	45562	noun	diary	0	My diary has a lock.
+5	45562	noun	diary	0	He reads his old diary sometimes.
+@ differently
+1	45566	adv	differently	1	The twins dressed differently for the party.
+2	45566	adv	differently	0	Differently means in a way that is not the same.
+3	45566	adv	differently	0	Try solving the problem differently.
+4	45566	adv	differently	0	People learn differently.
+5	45566	adv	differently	0	She sees the picture differently.
+@ digital
+1	45567	adj	digital	1	The doctor checked my pulse with a digital finger monitor.
+2	45567	adj	digital	0	Digital can describe something done with a finger.
+3	45567	adj	digital	0	The test needs a digital touch.
+4	45567	adj	digital	0	The surgeon used a digital examination.
+5	45567	adj	digital	0	A digital signal can come from a finger device.
+@ direct
+1	45576	adj	direct	1	We took a direct train to the airport.
+2	45576	adj	direct	0	Direct describes a route with no stops or changes.
+3	45576	adj	direct	0	She gave a direct answer.
+4	45576	adj	direct	0	This is the most direct path.
+5	45576	adj	direct	0	He made direct eye contact.
+@ direction
+1	45591	noun	direction	1	Follow the arrows in the direction of the exit.
+2	45591	noun	direction	0	A direction shows which way something moves or points.
+3	45591	noun	direction	0	The wind changed direction.
+4	45591	noun	direction	0	Which direction is north?
+5	45591	noun	direction	0	She walked in the wrong direction.
+@ director
+1	45597	noun	director	1	The director thanked the actors after the show.
+2	45597	noun	director	0	A director is the person in charge of a project or organization.
+3	45597	noun	director	0	The director planned the film.
+4	45597	noun	director	0	Our school director gave a speech.
+5	45597	noun	director	0	The director approved the budget.
+@ disagree
+1	45604	verb	disagree	1	Maya and her brother disagree about the best movie.
+2	45604	verb	disagree	0	To disagree is to have a different opinion.
+3	45604	verb	disagree	0	We disagree on this answer.
+4	45604	verb	disagree	0	Friends can disagree politely.
+5	45604	verb	disagree	0	They disagree about the plan.
+@ disappear
+1	45606	verb	disappear	1	The rabbit may disappear into the tall grass.
+2	45606	verb	disappear	0	To disappear is to vanish from sight.
+3	45606	verb	disappear	0	The sun can disappear behind a cloud.
+4	45606	verb	disappear	0	My keys seem to disappear often.
+5	45606	verb	disappear	0	The stain will disappear after washing.
+@ disaster
+1	45610	noun	disaster	1	The flood was a disaster for the small town.
+2	45610	noun	disaster	0	A disaster is an event that causes great damage or loss.
+3	45610	noun	disaster	0	The workers helped after the disaster.
+4	45610	noun	disaster	0	The storm became a disaster quickly.
+5	45610	noun	disaster	0	Families escaped the disaster safely.
+@ discover
+1	45613	verb	discover	1	We may discover a tiny frog under the rock.
+2	45613	verb	discover	0	To discover something is to find it for the first time.
+3	45613	verb	discover	0	She may discover a mistake in the bill.
+4	45613	verb	discover	0	Scientists discover new species.
+5	45613	verb	discover	0	I can discover the answer by reading.
+@ discovery
+1	45621	noun	discovery	1	Finding the old map was an exciting discovery.
+2	45621	noun	discovery	0	A discovery is something found for the first time.
+3	45621	noun	discovery	0	The discovery changed the experiment.
+4	45621	noun	discovery	0	Her discovery was in the newspaper.
+5	45621	noun	discovery	0	They celebrated the discovery.
+@ discussion
+1	45627	noun	discussion	1	Our discussion about recycling lasted all morning.
+2	45627	noun	discussion	0	A discussion is a conversation about a topic.
+3	45627	noun	discussion	0	Everyone joined the discussion.
+4	45627	noun	discussion	0	The discussion became lively.
+5	45627	noun	discussion	0	We ended the discussion at noon.
+@ disease
+1	45630	noun	disease	1	The doctor explained how the disease spreads.
+2	45630	noun	disease	0	A disease is an illness that affects a person, animal, or plant.
+3	45630	noun	disease	0	Vaccines can prevent some disease.
+4	45630	noun	disease	0	The disease made the leaves yellow.
+5	45630	noun	disease	0	Doctors study the disease carefully.
+@ distance
+1	45635	noun	distance	1	We could see the mountain in the distance.
+2	45635	noun	distance	0	Distance is the amount of space between two places.
+3	45635	noun	distance	0	The distance to school is two miles.
+4	45635	noun	distance	0	Keep a safe distance from the fire.
+5	45635	noun	distance	0	They walked a long distance.
+@ divorced
+1	45674	adj	divorced	1	Her divorced parents share care of the children.
+2	45674	adj	divorced	0	Divorced describes people whose marriage has ended.
+3	45674	adj	divorced	0	He is divorced and lives nearby.
+4	45674	adj	divorced	0	The divorced couple remained friendly.
+5	45674	adj	divorced	0	She became divorced last year.
+@ document
+1	45678	noun	document	1	Bring a document that proves your address.
+2	45678	noun	document	0	A document is an official paper that gives information or proof.
+3	45678	noun	document	0	Please sign the document.
+4	45678	noun	document	0	The document is in my folder.
+5	45678	noun	document	0	We copied the document.
+@ double
+1	45686	adj	double	1	The café gave us a double scoop of ice cream.
+2	45686	adj	double	0	Double describes something made of two matching parts.
+3	45686	adj	double	0	We booked a double room.
+4	45686	adj	double	0	He ordered a double portion.
+5	45686	adj	double	0	The door has double locks.
+@ download
+1	45753	noun	download	1	The movie download took ten minutes to finish.
+2	45753	noun	download	0	A download is a file transferred from the internet to a device.
+3	45753	noun	download	0	My download stopped halfway.
+4	45753	noun	download	0	The download used too much data.
+5	45753	noun	download	0	Check the download folder.
+@ drama
+1	45761	noun	drama	1	The class performed a drama about a lost dog.
+2	45761	noun	drama	0	A drama is a story written to be acted by performers.
+3	45761	noun	drama	0	We watched a drama at school.
+4	45761	noun	drama	0	The drama had five characters.
+5	45761	noun	drama	0	She wrote a short drama.
+@ drawing
+1	45766	verb	drawing	1	Mia is drawing a map for her lost friend.
+2	45766	verb	drawing	0	Drawing means making a picture with lines.
+3	45766	verb	drawing	0	He is drawing a horse.
+4	45766	verb	drawing	0	She kept drawing after class.
+5	45766	verb	drawing	0	They are drawing with pencils.
+@ dream
+1	45773	noun	dream	1	I had a strange dream about flying over the city.
+2	45773	noun	dream	0	A dream is a story or image seen while sleeping.
+3	45773	noun	dream	0	Her dream felt very real.
+4	45773	noun	dream	0	He told us about his dream.
+5	45773	noun	dream	0	The dream woke her up.
+@ driving
+1	45782	verb	driving	1	Dad is driving us to the station.
+2	45782	verb	driving	0	Driving means operating a vehicle.
+3	45782	verb	driving	0	She is driving carefully in the rain.
+4	45782	verb	driving	0	They are driving home tonight.
+5	45782	verb	driving	0	Driving requires attention.
+@ drop
+1	45788	noun	drop	1	A drop of rain landed on my hand.
+2	45788	noun	drop	0	A drop is a small round amount of liquid.
+3	45788	noun	drop	0	One drop of paint fell.
+4	45788	noun	drop	0	Add a drop of lemon juice.
+5	45788	noun	drop	0	The drop rolled down the glass.
+@ drug
+1	45885	noun	drug	1	The pharmacist gave Ana a drug for her cough.
+2	45885	noun	drug	0	A drug is a substance used to treat illness or change body processes.
+3	45885	noun	drug	0	Take the drug with water.
+4	45885	noun	drug	0	The doctor changed his drug.
+5	45885	noun	drug	0	Keep the drug away from children.
+@ dry
+1	45896	adj	dry	1	Hang your wet coat outside until it is dry.
+2	45896	adj	dry	0	Dry describes something without moisture.
+3	45896	adj	dry	0	The riverbed was dry.
+4	45896	adj	dry	0	Use a dry towel.
+5	45896	adj	dry	0	The paint is dry now.
+@ earn
+1	45929	verb	earn	1	Priya can earn money by helping at the shop.
+2	45929	verb	earn	0	To earn something is to gain it through work or effort.
+3	45929	verb	earn	0	He can earn a prize for his drawing.
+4	45929	verb	earn	0	Workers earn wages each week.
+5	45929	verb	earn	0	She can earn everyone's respect.
+@ earth
+1	45939	name	Earth	1	Earth looks blue when seen from space.
+2	45939	name	Earth	0	Earth is the planet where humans live.
+3	45939	name	Earth	0	Earth travels around the Sun.
+4	45939	name	Earth	0	We must protect Earth.
+5	45939	name	Earth	0	Earth has one moon.
+@ easily
+1	45957	adv	easily	1	The light suitcase easily fit under the seat.
+2	45957	adv	easily	0	Easily means without difficulty or worry.
+3	45957	adv	easily	0	I can easily hear you.
+4	45957	adv	easily	0	She easily solved the puzzle.
+5	45957	adv	easily	0	The door opens easily.
+@ education
+1	45961	noun	education	1	Her education helped her understand the new job.
+2	45961	noun	education	0	Education is the process of learning knowledge and skills.
+3	45961	noun	education	0	Every child deserves an education.
+4	45961	noun	education	0	Schools provide education.
+5	45961	noun	education	0	His education lasted many years.
+@ effect
+1	45964	noun	effect	1	The medicine had a quick effect on her pain.
+2	45964	noun	effect	0	An effect is the result caused by something else.
+3	45964	noun	effect	0	The rain had little effect on us.
+4	45964	noun	effect	0	Music can have a calming effect.
+5	45964	noun	effect	0	The change had an unexpected effect.
+@ either
+1	45978	det	either	1	You may choose either the red pen or the blue pen.
+2	45978	det	either	0	Either means one of two choices.
+3	45978	det	either	0	Either answer is acceptable.
+4	45978	det	either	0	We can meet on either day.
+5	45978	det	either	0	Either road leads to town.
+@ electric
+1	45985	adj	electric	1	The electric fan kept the room cool.
+2	45985	adj	electric	0	Electric describes something powered by electricity.
+3	45985	adj	electric	0	They bought an electric car.
+4	45985	adj	electric	0	The electric light went out.
+5	45985	adj	electric	0	This electric heater is warm.
+@ electrical
+1	45995	adj	electrical	1	An electrical fault caused the lights to flicker.
+2	45995	adj	electrical	0	Electrical describes things related to electricity.
+3	45995	adj	electrical	0	He repaired the electrical wiring.
+4	45995	adj	electrical	0	Keep water away from electrical equipment.
+5	45995	adj	electrical	0	The electrical system needs checking.
+@ electricity
+1	45997	noun	electricity	1	A storm cut off the electricity in our street.
+2	45997	noun	electricity	0	Electricity is energy that powers lights and machines.
+3	45997	noun	electricity	0	We use electricity every day.
+4	45997	noun	electricity	0	The house has no electricity.
+5	45997	noun	electricity	0	Electricity can be dangerous.
+@ electronic
+1	46003	adj	electronic	1	The shop sells electronic parts for radios.
+2	46003	adj	electronic	0	Electronic describes things that use electrons or electronic circuits.
+3	46003	adj	electronic	0	He fixed an electronic toy.
+4	46003	adj	electronic	0	The electronic screen is broken.
+5	46003	adj	electronic	0	She bought an electronic calculator.
+@ employ
+1	46010	verb	employ	1	The café will employ three students on weekends.
+2	46010	verb	employ	0	To employ someone is to pay them to work for you.
+3	46010	verb	employ	0	The company can employ fifty people.
+4	46010	verb	employ	0	They employ a cleaner.
+5	46010	verb	employ	0	The farm will employ local workers.
+@ employee
+1	46017	noun	employee	1	Every employee received a safety guide.
+2	46017	noun	employee	0	An employee is a person who works for an employer.
+3	46017	noun	employee	0	The employee opened the shop.
+4	46017	noun	employee	0	She is a new employee.
+5	46017	noun	employee	0	Each employee has a badge.
+@ employer
+1	46018	noun	employer	1	Her employer gave her a day off.
+2	46018	noun	employer	0	An employer is a person or company that hires workers.
+3	46018	noun	employer	0	The employer paid the workers.
+4	46018	noun	employer	0	Ask your employer about the schedule.
+5	46018	noun	employer	0	A good employer listens to staff.
+@ empty
+1	46019	adj	empty	1	The empty classroom echoed after the bell.
+2	46019	adj	empty	0	Empty describes a place or container with nothing in it.
+3	46019	adj	empty	0	The bottle is empty.
+4	46019	adj	empty	0	We found an empty seat.
+5	46019	adj	empty	0	Her empty plate was on the table.
+@ ending
+1	46034	noun	ending	1	The happy ending made everyone smile.
+2	46034	noun	ending	0	An ending is the final part or conclusion of something.
+3	46034	noun	ending	0	The book has a sad ending.
+4	46034	noun	ending	0	I did not expect that ending.
+5	46034	noun	ending	0	The ending came too quickly.
+@ energy
+1	46038	noun	energy	1	After lunch, the children had energy to play again.
+2	46038	noun	energy	0	Energy is the power needed for movement or activity.
+3	46038	noun	energy	0	Running uses a lot of energy.
+4	46038	noun	energy	0	The sun gives plants energy.
+5	46038	noun	energy	0	I have no energy today.
+@ engine
+1	46045	noun	engine	1	The castle used an engine to throw stones over the wall.
+2	46045	noun	engine	0	An engine can be a large machine used in war.
+3	46045	noun	engine	0	The army moved the engine closer.
+4	46045	noun	engine	0	The engine launched a heavy stone.
+5	46045	noun	engine	0	Soldiers built the engine from wood.
+@ engineer
+1	46060	noun	engineer	1	The engineer designed a bridge for the army.
+2	46060	noun	engineer	0	An engineer can be a soldier who builds military works.
+3	46060	noun	engineer	0	The engineer inspected the wall.
+4	46060	noun	engineer	0	A skilled engineer planned the fort.
+5	46060	noun	engineer	0	The engineer led the building team.
+@ enormous
+1	46076	adj	enormous	1	The enormous mistake surprised the whole team.
+2	46076	adj	enormous	0	Enormous can describe something unusually extreme or out of the ordinary.
+3	46076	adj	enormous	0	They faced an enormous problem.
+4	46076	adj	enormous	0	The cost was enormous.
+5	46076	adj	enormous	0	Her enormous effort impressed us.
+@ enter
+1	46079	verb	enter	1	Please enter the museum through the front door.
+2	46079	verb	enter	0	To enter is to go into a place.
+3	46079	verb	enter	0	We can enter the room quietly.
+4	46079	verb	enter	0	Do not enter without permission.
+5	46079	verb	enter	0	The cat can enter through the window.
+@ environment
+1	46099	noun	environment	1	Clean water protects a healthy environment.
+2	46099	noun	environment	0	The environment is the surroundings that affect something.
+3	46099	noun	environment	0	Plants need the right environment.
+4	46099	noun	environment	0	We should protect the environment.
+5	46099	noun	environment	0	The school created a calm environment.
+@ equipment
+1	46106	noun	equipment	1	The hikers checked their equipment before the climb.
+2	46106	noun	equipment	0	Equipment is the set of things needed for an activity.
+3	46106	noun	equipment	0	Safety equipment is required here.
+4	46106	noun	equipment	0	Pack your equipment carefully.
+5	46106	noun	equipment	0	The team bought new equipment.

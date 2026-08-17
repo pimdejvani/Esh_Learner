@@ -1,0 +1,174 @@
+@ huge
+1	47453	adj	huge	1	It is huge.
+2	47453	adj	huger	0	The new stadium is even huger than the old one.
+3	47453	adj	more huge	0	The mountain looked more huge as we approached it.
+4	47453	adj	hugest	0	That is the hugest pumpkin in the competition.
+5	47455	adj	huge	0	The young singer became a huge success online.
+
+@ human
+1	47456	adj	human	1	It is human.
+2	47456	adj	human	0	The human body needs clean water every day.
+3	47458	adj	more human	0	Her kind response felt more human than the official letter.
+4	47459	noun	humans	0	Humans have lived in this region for thousands of years.
+5	47457	adj	most human	0	Admitting his fear was the most human moment in the film.
+
+@ hurt
+1	47464	verb	hurt	1	We hurt every day.
+2	47464	verb	hurt	0	She hurt her ankle while running.
+3	47466	verb	hurts	0	My shoulder hurts when I lift this bag.
+4	47465	verb	hurting	0	His cruel comments are hurting his friends.
+5	47469	adj	hurt	0	He felt hurt when nobody invited him.
+
+@ ideal
+1	47476	adj	ideal	1	It is ideal.
+2	47478	adj	ideal	0	This quiet room is ideal for studying.
+3	47478	adj	more ideal	0	A morning appointment would be more ideal for me.
+4	47478	adj	most ideal	0	Of the three routes, this is the most ideal for beginners.
+5	47482	noun	ideals	0	Fairness and honesty are ideals worth defending.
+
+@ identify
+1	47488	verb	identify	1	We identify every day.
+2	47488	verb	identified	0	The witness identified the man in the photograph.
+3	47490	verb	identifies	0	The guide identifies each bird by its song.
+4	47488	verb	identifying	0	Police are identifying the owners of the lost bags.
+5	47492	verb	identify	0	Many readers identify with the story's main character.
+
+@ ill
+1	47495	adj	ill	1	It is ill.
+2	47499	adj	ill	0	My grandmother became ill during the trip.
+3	47499	adj	more ill	0	He looked more ill than he had the day before.
+4	47505	adv	ill	0	The poorly planned event was ill prepared for rain.
+5	47509	noun	ills	0	The new clinic treats many common ills.
+
+@ illness
+1	47512	noun	illness	1	After a long illness, she was delighted to walk in the garden again.
+2	47512	noun	illness	0	The doctor diagnosed his illness quickly.
+3	47512	noun	illnesses	0	Vaccines can prevent several serious illnesses.
+4	47513	noun	illness	0	Stress may contribute to mental illness.
+5	47512	noun	illnesses	0	Childhood illnesses kept the nurse busy that winter.
+
+@ image
+1	47514	noun	image	1	The first image from the rescue camera showed that the missing dog was safe.
+2	47515	noun	images	0	The website loads large images slowly.
+3	47516	noun	image	0	I still have a clear image of my childhood home.
+4	47519	noun	image	0	The company changed its public image with a new logo.
+5	47527	verb	imaged	0	The telescope imaged a distant galaxy.
+
+@ immediately
+1	47529	adv	immediately	1	We do it immediately.
+2	47529	adv	immediately	0	Call the doctor immediately if the pain gets worse.
+3	47530	adv	immediately	0	The pharmacy is immediately beside the clinic.
+4	47531	conj	immediately	0	Immediately the bell rang, the students left the room.
+5	47529	adv	immediately	0	She immediately recognized her missing cat.
+
+@ impossible
+1	47532	adj	impossible	1	It is impossible.
+2	47532	adj	impossible	0	It is impossible to finish this task in two minutes.
+3	47533	adj	impossible	0	The tired child was impossible to calm down.
+4	47532	adj	more impossible	0	The journey seemed more impossible after the bridge closed.
+5	47535	noun	impossibles	0	The magician made several impossibles appear easy.
+
+@ included
+1	47537	verb	included	1	We included every day.
+2	47537	verb	included	0	The price included breakfast and airport transport.
+3	47538	adj	included	0	Breakfast is included with every room.
+4	47537	verb	included	0	We have included your comments in the final report.
+5	47538	adj	included	0	Use the included cable to charge the device.
+
+@ including
+1	47540	prep	including	1	We walk including home.
+2	47540	prep	including	0	Everyone, including Sam, joined the meeting.
+3	47542	verb	including	0	The price is low because we are including only basic services.
+4	47540	prep	including	0	The zoo has many birds, including three young eagles.
+5	47542	verb	including	0	By including more examples, she made the lesson clearer.
+
+@ increase
+1	47543	verb	increase	1	We increase every day.
+2	47543	verb	increased	0	Food prices increased during the winter.
+3	47544	verb	increases	0	Regular practice increases your confidence.
+4	47543	verb	increasing	0	The number of visitors is increasing each month.
+5	47547	noun	increase	0	Workers received a small increase in pay.
+
+@ incredible
+1	47551	adj	incredible	1	It is incredible.
+2	47552	adj	incredible	0	The view from the mountain was incredible.
+3	47551	adj	incredible	0	His excuse sounded incredible to everyone in the room.
+4	47552	adj	more incredible	0	The story became more incredible with every new detail.
+5	47553	adj	most incredible	0	Winning the final was the most incredible moment of her career.
+
+@ independent
+1	47554	adj	independent	1	It is independent.
+2	47554	adj	independent	0	She became financially independent after finding a job.
+3	47557	adj	independent	0	An independent expert reviewed the evidence.
+4	47559	noun	independent	0	The independent won the local election.
+5	47561	noun	independents	0	The street is known for its small independents.
+
+@ individual
+1	47563	noun	individual	1	One brave individual entered the water and saved the child.
+2	47563	noun	individuals	0	The course is designed for individuals with no experience.
+3	47567	adj	individual	0	Each student completed an individual project.
+4	47568	adj	individual	0	The cakes come in individual boxes.
+5	47566	noun	individuals	0	Researchers observed twenty individuals from the same population.
+
+@ industry
+1	47571	noun	industry	1	The fishing industry worked together to rescue families after the storm.
+2	47571	noun	industry	0	She hopes to find a job in the film industry.
+3	47571	noun	industries	0	Tourism and farming are the region's main industries.
+4	47572	noun	industry	0	Heavy industry developed near the port.
+5	47570	noun	industry	0	His industry and patience helped him finish the difficult task.
+
+@ informal
+1	47576	adj	informal	1	It is informal.
+2	47576	adj	informal	0	The dinner is informal, so you can wear jeans.
+3	47579	adj	informal	0	Friends often use informal language with each other.
+4	47580	adj	more informal	0	The second meeting was more informal than the first.
+5	47578	adj	most informal	0	This is the most informal shirt I own.
+
+@ injury
+1	47581	noun	injury	1	Despite her injury, the runner smiled when her team crossed the finish line.
+2	47581	noun	injuries	0	The passengers escaped with only minor injuries.
+3	47581	noun	injury	0	He missed two games because of a knee injury.
+4	47582	noun	injury	0	Harsh criticism can cause emotional injury.
+5	47583	noun	injuries	0	The court awarded payment for injuries to their rights.
+
+@ insect
+1	47586	noun	insect	1	A tiny insect landed on her hand and opened its bright blue wings.
+2	47586	noun	insects	0	Most insects have six legs.
+3	47586	noun	insect	0	The scientist examined the insect under a microscope.
+4	47586	noun	insects	0	Bees and ants are social insects.
+5	47587	noun	insect	0	The old book called every small crawling creature an insect.
+
+@ inside
+1	47590	noun	inside	1	The outside of the box was plain, but the inside held a beautiful gift.
+2	47596	adj	inside	0	The inside wall needs another coat of paint.
+3	47602	adv	inside	0	Come inside before the storm begins.
+4	47607	prep	inside	0	The keys are inside the top drawer.
+5	47590	noun	insides	0	The mechanic checked the insides of both machines.
+
+@ instead
+1	47610	adv	instead	1	We do it instead.
+2	47610	adv	instead	0	We stayed home instead because it was raining.
+3	47610	adv	instead	0	Use a pencil instead of a pen.
+4	47610	adv	instead	0	She ordered tea, but the waiter brought coffee instead.
+5	47610	adv	instead	0	Instead, we decided to take the earlier train.
+
+@ instruction
+1	47614	noun	instructions	1	I followed the rescue instructions and helped the injured hiker stay calm.
+2	47611	noun	instruction	0	The students improved through careful instruction.
+3	47612	noun	instruction	0	The first instruction tells you to turn off the power.
+4	47613	noun	instructions	0	The crew followed the captain's instructions.
+5	47614	noun	instructions	0	Read the instructions before using the machine.
+
+@ instructor
+1	47617	noun	instructor	1	The swimming instructor reached the frightened child before she sank.
+2	47617	noun	instructor	0	Ask the instructor if you need help.
+3	47617	noun	instructors	0	All instructors must attend the safety meeting.
+4	47617	noun	instructor	0	Our driving instructor is patient and calm.
+5	47617	noun	instructors	0	The college hired two new art instructors.
+
+@ instrument
+1	47618	noun	instrument	1	She played the old instrument, and her grandfather recognized the song at once.
+2	47618	noun	instruments	0	The school bought several musical instruments.
+3	47620	noun	instrument	0	The pilot checked every instrument before takeoff.
+4	47621	noun	instruments	0	The surgeon placed the clean instruments on a tray.
+5	47625	verb	instrumented	0	Engineers instrumented the bridge to measure movement.

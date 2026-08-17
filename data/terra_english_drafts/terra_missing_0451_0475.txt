@@ -1,0 +1,150 @@
+@ cable
+1	62051	noun	cable	1	A thick cable connected the boat to the dock during the storm.
+2	62051	noun	cable	0	A long object used to connect two things is a cable.
+3	62051	noun	cable	0	The electrician ran a cable through the wall.
+4	62051	noun	cable	0	The computer will not work without its power cable.
+5	62051	noun	cable	0	We tied the gate shut with a steel cable.
+@ calculate
+1	62073	verb	calculated	1	I calculated the cost of the trip before booking the tickets.
+2	62073	verb	calculate	0	To find an answer using numbers is to calculate it.
+3	62073	verb	calculate	0	Please calculate the total price of these items.
+4	62073	verb	calculate	0	The program can calculate the distance quickly.
+5	62073	verb	calculate	0	She used a calculator to calculate the answer.
+@ cancel
+1	62079	verb	cancelled	1	The clerk cancelled the wrong number by drawing a line through it.
+2	62079	verb	cancel	0	To cross out a written item is to cancel it.
+3	62079	verb	cancel	0	Please cancel the extra name on the list.
+4	62079	verb	cancel	0	He used a pen to cancel the incorrect word.
+5	62079	verb	cancel	0	The teacher asked us to cancel the first answer.
+@ cancer
+1	62107	noun	cancer	1	Her doctor explained that cancer can make cells grow out of control.
+2	62107	noun	cancer	0	A disease caused by uncontrolled cell growth is cancer.
+3	62107	noun	cancer	0	Early tests can help doctors find cancer.
+4	62107	noun	cancer	0	The hospital raises money for cancer research.
+5	62107	noun	cancer	0	He received treatment for cancer last year.
+@ capable
+1	62071	adj	capable	1	After one lesson, Sam proved capable of repairing the loose bike chain.
+2	62071	adj	capable	0	Someone with the ability to do a task is capable.
+3	62071	adj	capable	0	She is capable of solving difficult problems.
+4	62071	adj	capable	0	This machine is capable of printing fifty pages a minute.
+5	62071	adj	capable	0	He is a capable manager who stays calm under pressure.
+@ capacity
+1	62095	noun	capacity	1	The stadium reached its capacity when every seat was filled.
+2	62095	noun	capacity	0	The greatest amount something can hold is its capacity.
+3	62095	noun	capacity	0	This bottle has a capacity of one liter.
+4	62095	noun	capacity	0	The elevator has a capacity of eight people.
+5	62095	noun	capacity	0	Do not fill the tank beyond its capacity.
+@ capture
+1	62110	noun	capture	1	The capture of the escaped goat ended after a chase through the orchard.
+2	62110	noun	capture	0	The act of taking someone or something by force is a capture.
+3	62110	noun	capture	0	The police reported the capture of the thief.
+4	62110	noun	capture	0	The capture of the flag ended the game.
+5	62110	noun	capture	0	News of the capture spread quickly through town.
+@ cast
+1	62126	verb	cast	1	She cast the fishing line far across the quiet lake.
+2	62126	verb	cast	0	To throw something away from you is to cast it.
+3	62126	verb	cast	0	The child cast a stone into the water.
+4	62126	verb	cast	0	He cast the net from the side of the boat.
+5	62126	verb	cast	0	The wizard cast the ball of light into the dark cave.
+@ cell
+1	62194	noun	cell	1	The hermit spent each quiet morning reading in his small stone cell.
+2	62194	noun	cell	0	A one-room home for a hermit is called a cell.
+3	62194	noun	cell	0	The monk returned to his cell after evening prayer.
+4	62194	noun	cell	0	His cell contained only a bed, a desk, and a lamp.
+5	62194	noun	cell	0	The visitor found the hermit's cell beside the chapel.
+@ chairman
+1	62184	noun	chairman	1	The chairman opened the meeting and asked everyone to take a seat.
+2	62184	noun	chairman	0	The person who leads a meeting is the chairman.
+3	62184	noun	chairman	0	The chairman called for a vote on the proposal.
+4	62184	noun	chairman	0	Our chairman kept the discussion on schedule.
+5	62184	noun	chairman	0	The chairman thanked the speakers at the end.
+@ characteristic
+1	62188	adj	characteristic	1	Her cheerful laugh is a characteristic sound in our busy office.
+2	62188	adj	characteristic	0	A feature typical of someone or something is characteristic.
+3	62188	adj	characteristic	0	The red roof is characteristic of houses in this village.
+4	62188	adj	characteristic	0	Patience is characteristic of a good teacher.
+5	62188	adj	characteristic	0	That bright color is characteristic of the artist's work.
+@ chief
+1	62221	noun	chief	1	The fire chief arrived first and directed the rescue team.
+2	62221	noun	chief	0	The leader of a group is its chief.
+3	62221	noun	chief	0	The chief spoke to the workers before the shift.
+4	62221	noun	chief	0	Our chief makes the final decisions for the team.
+5	62221	noun	chief	0	The village chief welcomed the visitors.
+@ circumstance
+1	62230	noun	circumstance	1	Because of the unusual circumstance, the school closed early that day.
+2	62230	noun	circumstance	0	A fact that affects an event is a circumstance.
+3	62230	noun	circumstance	0	The judge considered every circumstance of the case.
+4	62230	noun	circumstances	0	Under these circumstances, we should wait indoors.
+5	62230	noun	circumstance	0	Money was not the only circumstance behind her decision.
+@ cite
+1	62120	verb	cited	1	In her essay, Priya cited a line from the historian's book.
+2	62120	verb	cite	0	To repeat words from a book is to cite them.
+3	62120	verb	cite	0	Please cite the source of that quotation.
+4	62120	verb	cite	0	The reporter will cite the witness's exact words.
+5	62120	verb	cite	0	Students must cite books they use in research.
+@ citizen
+1	62253	noun	citizen	1	Every citizen in the town could vote in the local election.
+2	62253	noun	citizen	0	A legal resident of a town or country is a citizen.
+3	62253	noun	citizen	0	The mayor listened to each citizen at the meeting.
+4	62253	noun	citizen	0	A good citizen follows local laws.
+5	62253	noun	citizen	0	The new citizen received official documents today.
+@ civil
+1	62235	adj	civil	1	The civil office issued new identity cards for residents.
+2	62235	adj	civil	0	Matters involving people and government rather than the military are civil.
+3	62235	adj	civil	0	She works in the civil service for the city.
+4	62235	adj	civil	0	The court heard a civil case about a property dispute.
+5	62235	adj	civil	0	Civil officials manage many public services.
+@ classic
+1	62240	adj	classic	1	The museum displayed a classic painting admired for centuries.
+2	62240	adj	classic	0	A work of the highest rank in art or literature is classic.
+3	62240	adj	classic	0	They studied a classic novel in English class.
+4	62240	adj	classic	0	This is a classic example of early modern design.
+5	62240	adj	classic	0	The orchestra performed a classic piece of music.
+@ closely
+1	62219	adv	closely	1	The detective looked closely at the muddy footprints by the door.
+2	62219	adv	closely	0	If you look with great attention, you look closely.
+3	62219	adv	closely	0	Watch closely while I show you how to tie the knot.
+4	62219	adv	closely	0	The twins sat closely together on the bench.
+5	62219	adv	closely	0	We worked closely with the farmers on the project.
+@ collapse
+1	62261	verb	collapsed	1	The old roof collapsed under the weight of the heavy snow.
+2	62261	verb	collapse	0	To fall down suddenly is to collapse.
+3	62261	verb	collapse	0	The damaged bridge could collapse at any time.
+4	62261	verb	collapse	0	The tent may collapse if the poles break.
+5	62261	verb	collapse	0	The wall began to collapse during the earthquake.
+@ combination
+1	62272	noun	combination	1	The combination of warm bread and soup made everyone happy after the rain.
+2	62272	noun	combination	0	Two or more things joined together form a combination.
+3	62272	noun	combination	0	The combination of red and blue makes purple.
+4	62272	noun	combination	0	This combination of tools will help us fix the shelf.
+5	62272	noun	combination	0	Her success came from a combination of skill and patience.
+@ comfort
+1	62313	noun	comfort	1	The soft blanket gave the sick child comfort during the long night.
+2	62313	noun	comfort	0	A feeling of ease and contentment is comfort.
+3	62313	noun	comfort	0	The warm fire brought comfort on the cold evening.
+4	62313	noun	comfort	0	He found comfort in talking with his old friend.
+5	62313	noun	comfort	0	The chair was designed for comfort.
+@ command
+1	62295	noun	command	1	At the captain's command, the sailors pulled the ropes together.
+2	62295	noun	command	0	An order telling someone what to do is a command.
+3	62295	noun	command	0	The dog sat at her command.
+4	62295	noun	command	0	The officer gave a command to stop.
+5	62295	noun	command	0	Everyone followed the command immediately.
+@ commission
+1	62320	noun	commission	1	The scientist accepted a commission to study water quality in the river.
+2	62320	noun	commission	0	An official mission given to someone is a commission.
+3	62320	noun	commission	0	Her commission was to inspect the new bridge.
+4	62320	noun	commission	0	The artist received a commission to paint the town hall.
+5	62320	noun	commission	0	They completed their commission before winter.
+@ commitment
+1	62282	noun	commitment	1	The nurse accepted the commitment of caring for the patient through the night.
+2	62282	noun	commitment	0	The act of placing someone in another's care is a commitment.
+3	62282	noun	commitment	0	The commitment of the child to the hospital required a judge's order.
+4	62282	noun	commitment	0	The official signed papers for the commitment of the prisoner.
+5	62282	noun	commitment	0	The court reviewed the commitment before making its decision.
+@ committee
+1	62336	noun	committee	1	The committee met after school to plan the spring festival.
+2	62336	noun	committee	0	A group formed for a specific task is a committee.
+3	62336	noun	committee	0	The committee chose a winner from the entries.
+4	62336	noun	committee	0	Our committee will organize the library event.
+5	62336	noun	committee	0	The committee sent its report to the mayor.

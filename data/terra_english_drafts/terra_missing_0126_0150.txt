@@ -1,0 +1,150 @@
+@ photographer
+1	58119	noun	photographer	1	The photographer crouched in the grass to capture the fox at dawn.
+2	58119	noun	photographer	0	A person whose job is taking pictures is a photographer.
+3	58119	noun	photographer	0	The wedding photographer asked everyone to smile.
+4	58119	noun	photographer	0	Our photographer adjusted the lights before the portrait.
+5	58119	noun	photographer	0	The newspaper sent a photographer to the concert.
+@ photography
+1	58120	noun	photography	1	Her love of photography began when she borrowed her grandfather's old camera.
+2	58120	noun	photography	0	The art of making pictures with a camera is photography.
+3	58120	noun	photography	0	He studies photography at college.
+4	58120	noun	photography	0	Nature photography requires patience and good light.
+5	58120	noun	photography	0	The exhibition celebrates black-and-white photography.
+@ pin
+1	58122	noun	pin	1	A pin held the paper snowflake to the classroom wall.
+2	58122	noun	pin	0	Use a pin to fasten the note to the board.
+3	58122	noun	pin	0	She pricked her finger on a sharp pin.
+4	58122	noun	pins	0	The tailor kept a row of pins in a small cushion.
+5	58122	noun	pin	0	He used a pin to attach the badge to his jacket.
+@ pipe
+1	58195	noun	pipe	1	The musician played a pipe while children danced in the square.
+2	58195	noun	pipe	0	A simple wind instrument that you blow into is a pipe.
+3	58195	noun	pipe	0	The shepherd's pipe made a clear, high sound.
+4	58195	noun	pipe	0	She learned to play a wooden pipe at music camp.
+5	58195	noun	pipe	0	The old pipe echoed across the quiet field.
+@ planning
+1	58157	verb	planning	1	We are planning a surprise picnic for Dad's birthday.
+2	58157	verb	planning	0	They are planning the trip before buying any tickets.
+3	58157	verb	planning	0	Careful planning helped the event run smoothly.
+4	58157	verb	planning	0	She spent the evening planning next week's lessons.
+5	58157	verb	planning	0	Planning a meal is easier when you check the fridge first.
+@ pleasant
+1	58162	adj	pleasant	1	A pleasant breeze cooled us as we walked beside the lake.
+2	58162	adj	pleasant	0	Something enjoyable and comfortable is pleasant.
+3	58162	adj	pleasant	0	We had a pleasant conversation over lunch.
+4	58162	adj	pleasant	0	The hotel staff were pleasant and helpful.
+5	58162	adj	pleasant	0	It was a pleasant place to sit and read.
+@ pleasure
+1	58172	noun	pleasure	1	To my pleasure, the small garden was full of butterflies.
+2	58172	noun	pleasure	0	A feeling of happiness or enjoyment is pleasure.
+3	58172	noun	pleasure	0	She takes great pleasure in cooking for friends.
+4	58172	noun	pleasures	0	Reading by the window is one of his simple pleasures.
+5	58172	noun	pleasure	0	It was a pleasure to meet your family.
+@ plenty
+1	58165	noun	plenty	1	We packed plenty of water before hiking under the hot sun.
+2	58165	noun	plenty	0	More than enough of something is plenty.
+3	58165	noun	plenty	0	There is plenty of room for everyone at the table.
+4	58165	noun	plenty	0	The garden has plenty of tomatoes this year.
+5	58165	noun	plenty	0	Don't worry; we have plenty of time before the train leaves.
+@ plot
+1	58180	noun	plot	1	The plot became exciting when the missing key appeared in the attic.
+2	58180	noun	plot	0	The series of events in a story is its plot.
+3	58180	noun	plot	0	I liked the characters, but the plot was confusing.
+4	58180	noun	plot	0	The novel's plot follows two friends on a long journey.
+5	58180	noun	plot	0	She explained the plot of the movie without revealing the ending.
+@ plus
+1	58244	prep	plus	1	We bought apples plus a loaf of bread for the picnic.
+2	58244	prep	plus	0	Two plus three equals five.
+3	58244	prep	plus	0	The ticket includes breakfast plus free parking.
+4	58244	prep	plus	0	Bring your passport plus a second form of identification.
+5	58244	prep	plus	0	The meal costs ten dollars plus tax.
+@ poem
+1	58265	noun	poem	1	Her poem about the sea made the whole class quiet.
+2	58265	noun	poem	0	A piece of writing in verse is a poem.
+3	58265	noun	poem	0	He read a short poem at the school event.
+4	58265	noun	poem	0	The poem uses rhyme to create a musical sound.
+5	58265	noun	poem	0	She wrote a poem for her mother's birthday.
+@ poet
+1	58239	noun	poet	1	The poet stood onstage and read her newest work to the crowd.
+2	58239	noun	poet	0	A person who writes poems is a poet.
+3	58239	noun	poet	0	The famous poet visited our library.
+4	58239	noun	poet	0	Every poet has a different way of using words.
+5	58239	noun	poet	0	The young poet filled a notebook with verses.
+@ poetry
+1	58241	noun	poetry	1	We listened to poetry under the stars during the summer festival.
+2	58241	noun	poetry	0	Writing that uses verse and rhythm is poetry.
+3	58241	noun	poetry	0	She enjoys reading poetry before bed.
+4	58241	noun	poetry	0	The class discussed modern poetry today.
+5	58241	noun	poetry	0	His poetry often describes life in the city.
+@ poison
+1	58268	noun	poison	1	The warning label said the bright green liquid was poison.
+2	58268	noun	poison	0	A substance that can seriously harm or kill a living thing is poison.
+3	58268	noun	poison	0	Keep poison away from children and pets.
+4	58268	noun	poison	0	The detective suspected poison in the cup of tea.
+5	58268	noun	poison	0	Some farmers use poison to kill weeds.
+@ poisonous
+1	58278	adj	poisonous	1	The guide warned us not to touch the poisonous berries by the trail.
+2	58278	adj	poisonous	0	A plant that can harm you if eaten is poisonous.
+3	58278	adj	poisonous	0	That mushroom may be poisonous, so leave it alone.
+4	58278	adj	poisonous	0	The snake is poisonous and should not be handled.
+5	58278	adj	poisonous	0	Poisonous chemicals must be stored safely.
+@ policy
+1	58293	noun	policy	1	The school's policy requires visitors to sign in at the office.
+2	58293	noun	policy	0	An official rule followed by an organization is a policy.
+3	58293	noun	policy	0	Our company policy allows employees to work from home on Fridays.
+4	58293	noun	policy	0	The library changed its policy on late fees.
+5	58293	noun	policy	0	Please read the return policy before buying the jacket.
+@ political
+1	58281	adj	political	1	The debate became political when the candidates discussed taxes and schools.
+2	58281	adj	political	0	Something connected with government or elections is political.
+3	58281	adj	political	0	The newspaper printed a political cartoon on the front page.
+4	58281	adj	political	0	She avoids political arguments at family dinners.
+5	58281	adj	political	0	The group organized a political campaign before the election.
+@ politician
+1	58289	noun	politician	1	The politician shook hands with voters outside the town hall.
+2	58289	noun	politician	0	An elected government official is a politician.
+3	58289	noun	politician	0	The politician answered questions about the new law.
+4	58289	noun	politicians	0	Many politicians spoke at the public meeting.
+5	58289	noun	politician	0	A local politician visited the school to talk with students.
+@ politics
+1	58315	noun	politics	1	Politics filled the dinner conversation after the election results arrived.
+2	58315	noun	politics	0	The activities and ideas involved in governing a country are politics.
+3	58315	noun	politics	0	She studies politics because she wants to understand elections.
+4	58315	noun	politics	0	Local politics can affect bus routes and public parks.
+5	58315	noun	politics	0	They disagreed about politics but remained friends.
+@ port
+1	58333	noun	port	1	The ship entered the port with containers stacked high on its deck.
+2	58333	noun	port	0	A coastal place where ships load and unload is a port.
+3	58333	noun	port	0	Fishing boats returned to port before the storm.
+4	58333	noun	port	0	The port was busy with travelers and cargo.
+5	58333	noun	port	0	We watched the ferry leave the port at noon.
+@ portrait
+1	58308	noun	portrait	1	The portrait of her grandmother hung above the piano.
+2	58308	noun	portrait	0	A picture that shows a person is a portrait.
+3	58308	noun	portrait	0	The artist painted a portrait of the mayor.
+4	58308	noun	portrait	0	He posed quietly while she finished his portrait.
+5	58308	noun	portrait	0	The museum displayed a portrait of the famous writer.
+@ possibly
+1	58313	adv	possibly	1	Possibly, the missing keys are still in the pocket of your coat.
+2	58313	adv	possibly	0	When something may be true but is not certain, it is possibly true.
+3	58313	adv	possibly	0	We could possibly finish the project by Friday.
+4	58313	adv	possibly	0	Could you possibly help me carry this box?
+5	58313	adv	possibly	0	The train will possibly be delayed by the snow.
+@ pot
+1	58390	noun	pot	1	Soup bubbled in the large pot while the kitchen filled with steam.
+2	58390	noun	pot	0	A deep metal container used for cooking is a pot.
+3	58390	noun	pot	0	Put the potatoes in a pot of boiling water.
+4	58390	noun	pot	0	She stirred the sauce in the pot with a wooden spoon.
+5	58390	noun	pot	0	The pot was too hot to touch without gloves.
+@ poverty
+1	58367	noun	poverty	1	The charity opened a free food bank to help families living in poverty.
+2	58367	noun	poverty	0	A state of having very little money is poverty.
+3	58367	noun	poverty	0	Education can help people escape poverty.
+4	58367	noun	poverty	0	The report described poverty in rural communities.
+5	58367	noun	poverty	0	They raised money to fight child poverty.
+@ powder
+1	58378	noun	powder	1	A trail of cocoa powder led from the counter to the open cupboard.
+2	58378	noun	powder	0	A dry substance made of very fine particles is powder.
+3	58378	noun	powder	0	Add chili powder to make the soup spicier.
+4	58378	noun	powder	0	The workers wore masks to avoid breathing the powder.
+5	58378	noun	powder	0	She mixed the powder with water to make a paste.

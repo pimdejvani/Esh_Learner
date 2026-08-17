@@ -1,0 +1,150 @@
+@ writer
+1	42792	noun	writer	1	The young writer cried with joy when she held her first book.
+2	42792	noun	writer	0	The writer signed copies of her novel at the library.
+3	42792	noun	writers	0	Several writers shared their stories at the festival.
+4	42792	noun	writer	0	Each writer submitted one short article to the magazine.
+5	42792	noun	writer	0	The film writer changed the final scene.
+@ writing
+1	42802	noun	writing	1	Writing a letter helped Ben say goodbye to his best friend.
+2	42804	noun	writing	0	The teacher could not read my writing.
+3	42801	noun	writing	0	Her writing about village life appeared in the newspaper.
+4	42806	verb	writing	0	Nina is writing a report about sea animals.
+5	42803	noun	writings	0	The course studies the early writings of several authors.
+@ wrong
+1	42807	adj	wrong	1	It is wrong.
+2	42807	adj	wrong	0	Two of the answers on my test were wrong.
+3	42814	adv	wrong	0	I spelled the street name wrong on the form.
+4	42815	noun	wrong	0	She knew that taking the money was a serious wrong.
+5	42819	verb	wronged	0	The dishonest dealer wronged us by hiding the car's problems.
+@ yeah
+1	42822	noun	yeah	1	The actor's warm yeah made the old-fashioned story sound friendly and real.
+2	42822	noun	yeah	0	In the dialogue, yeah represents a casual pronunciation of year.
+3	42822	noun	yeahs	0	The editor changed both yeahs back to year in the formal text.
+4	42822	noun	yeah	0	The spelling yeah showed how the character pronounced year.
+5	42822	noun	yeah	0	The teacher explained that yeah can be a pronunciation spelling of year.
+@ year
+1	42823	noun	year	1	After a year apart, the sisters finally met again at the airport.
+2	42827	noun	year	0	A leap year has 366 days.
+3	42823	noun	years	0	We lived near the sea for five years.
+4	42831	noun	year	0	Our school year begins in August.
+5	42832	noun	year	0	My brother is in his final year of college.
+@ yellow
+1	42842	adj	yellow	1	A bright yellow ribbon helped us find our lost dog.
+2	42836	noun	yellow	0	Mix red and green light to produce yellow.
+3	42842	adj	yellow	0	She carried a yellow umbrella in the rain.
+4	42851	verb	yellowing	0	The old book's pages are yellowing with age.
+5	42852	verb	yellowed	0	Years of sunlight yellowed the white curtains.
+@ yes
+1	42854	noun	yes	1	Her joyful yes ended his nervous wait for an answer.
+2	42854	noun	yes	0	Was that a yes or a no?
+3	42855	noun	yeses	0	The proposal passed with thirty yeses and two noes.
+4	42854	noun	yes	0	We need a clear yes before we begin the project.
+5	42854	noun	yes	0	His final answer was yes.
+@ yesterday
+1	42862	noun	yesterday	1	Yesterday was the happiest day of my life because my son came home safely.
+2	42864	adv	yesterday	0	I returned the library books yesterday.
+3	42862	noun	yesterday	0	Yesterday was rainy, but today the sky is clear.
+4	42863	noun	yesterday	0	That slow computer belongs to the technology of yesterday.
+5	42864	adv	yesterday	0	The shop received a new delivery yesterday morning.
+@ you
+1	42866	pron	you	1	you are ready.
+2	42868	pron	you	0	I saved a seat for you beside the window.
+3	42870	pron	you	0	You can collect your package after lunch.
+4	42869	pron	you	0	You are all welcome to join the game.
+5	42872	pron	you	0	You never know when the weather will change.
+@ young
+1	42879	adj	young	1	It is young.
+2	42879	adj	young	0	The young puppy still sleeps beside its mother.
+3	42879	adj	younger	0	My younger sister starts school next week.
+4	42879	adj	youngest	0	Leo is the youngest child in the family.
+5	42887	noun	young	0	The mother bird feeds her young at sunrise.
+@ your
+1	42891	det	your	1	your book is here.
+2	42891	det	your	0	Please write your name at the top of the page.
+3	42891	det	your	0	Is this your blue jacket?
+4	42892	det	your	0	Your team must choose one person to speak for everyone.
+5	42891	det	your	0	Remember to bring your passport to the airport.
+@ yourself
+1	42895	pron	yourself	1	yourself are ready.
+2	42895	pron	yourself	0	Be careful not to cut yourself with that knife.
+3	42895	pron	yourself	0	You should give yourself time to rest.
+4	42896	pron	yourself	0	You yourself said that the door was locked.
+5	42895	pron	yourself	0	After a good sleep, you will feel like yourself again.
+@ ability
+1	42904	noun	ability	1	Maya's ability to stay calm helped her rescue the frightened child.
+2	42899	noun	ability	0	This phone has the ability to connect to the internet.
+3	42904	noun	ability	0	Her musical ability was clear from an early age.
+4	42904	noun	abilities	0	The activity suits students with different abilities.
+5	42899	noun	ability	0	After the injury, he slowly regained his ability to walk.
+@ able
+1	42905	adj	able	1	It is able.
+2	42905	adj	able	0	She is able to lift the box without help.
+3	42906	adj	able	0	We will be able to enter when the gate opens.
+4	42907	adj	able	0	Nina is an able leader who solves problems quickly.
+5	42905	adj	able	0	With this map, you should be able to find the village.
+@ abroad
+1	42922	adv	abroad	1	We do it abroad.
+2	42922	adv	abroad	0	My sister studies abroad in Japan.
+3	42922	adv	abroad	0	He traveled abroad for the first time last summer.
+4	42922	adv	abroad	0	The company sends many employees abroad for training.
+5	42922	adv	abroad	0	Living abroad taught her to speak another language.
+@ accept
+1	42931	verb	accept	1	We accept every day.
+2	42931	verb	accept	0	Please accept this gift as a sign of our thanks.
+3	42934	verb	accepts	0	The machine accepts coins but not paper money.
+4	42935	verb	accepted	0	Mina accepted our invitation to dinner.
+5	42937	verb	accepting	0	He is slowly accepting the fact that the shop has closed.
+@ accident
+1	42946	noun	accident	1	Everyone felt relieved when they learned that no one was hurt in the accident.
+2	42946	noun	accident	0	The police closed the road after the car accident.
+3	42948	noun	accident	0	I broke the glass by accident while washing it.
+4	42946	noun	accidents	0	Wearing a seat belt can reduce injuries in accidents.
+5	42944	noun	accident	0	The spill was an accident, so please do not blame the child.
+@ according
+1	42961	verb	according	1	We according every day.
+2	42961	verb	according	0	By according each guest equal respect, the host avoided conflict.
+3	42961	verb	according	0	The law protects citizens by according them equal rights.
+4	42961	verb	according	0	The school is according the event special attention this year.
+5	42961	verb	according	0	They solved the dispute by according both sides a fair hearing.
+@ achieve
+1	42964	verb	achieve	1	We achieve every day.
+2	42965	verb	achieve	0	You can achieve your goal through steady practice.
+3	42965	verb	achieved	0	Hannah achieved her dream of winning a medal.
+4	42964	verb	achieving	0	The team is achieving each task on schedule.
+5	42965	verb	achieves	0	He achieves good results by studying every evening.
+@ act
+1	42971	noun	act	1	Her brave act saved a child from the river.
+2	42986	verb	act	0	We must act now before the fire spreads.
+3	42978	noun	act	0	The second act of the play begins after a short break.
+4	42990	verb	acts	0	The dog acts aggressively around strangers.
+5	42988	verb	acting	0	She began acting in the local theater at age eleven.
+@ active
+1	43001	adj	active	1	It is active.
+2	43002	adj	active	0	The active child loves running and climbing.
+3	43003	adj	active	0	This volcano is still active and releases smoke.
+4	43005	adj	more active	0	My grandfather is more active now than he was last year.
+5	43005	adj	most active	0	The park is most active early in the morning.
+@ actually
+1	43019	adv	actually	1	We do it actually.
+2	43019	adv	actually	0	I thought the bag was empty, but it actually held my keys.
+3	43019	adv	actually	0	The task looked difficult but was actually quite simple.
+4	43019	adv	actually	0	She promised to help and actually arrived early.
+5	43019	adv	actually	0	Did you actually see the bird inside the house?
+@ advantage
+1	43022	noun	advantage	1	Our map gave us an advantage when the storm hid the trail markers.
+2	43024	noun	advantage	0	A major advantage of this bicycle is its light weight.
+3	43022	noun	advantages	0	The guide explained the advantages of traveling by train.
+4	43024	noun	advantage	0	Having a key offered little advantage because the lock was broken.
+5	43022	noun	advantage	0	Speaking two languages can be an advantage when applying for this job.
+@ adventure
+1	43032	noun	adventure	1	Our mountain adventure ended with a beautiful sunrise above the clouds.
+2	43032	noun	adventure	0	They packed food and water for their jungle adventure.
+3	43031	noun	adventures	0	Grandfather told us about his adventures at sea.
+4	43030	noun	adventure	0	Her sense of adventure led her to explore new places.
+5	43032	noun	adventure	0	The children imagined an adventure on a distant island.
+@ advertise
+1	43044	verb	advertise	1	We advertise every day.
+2	43046	verb	advertise	0	The bakery will advertise its new bread online.
+3	43046	verb	advertises	0	The shop advertises its summer sale on local radio.
+4	43046	verb	advertised	0	They advertised the concert with colorful posters.
+5	43045	verb	advertising	0	The family is advertising for a driver in the newspaper.

@@ -1,0 +1,150 @@
+@ discipline
+1	62970	noun	discipline	1	Learning the piano requires discipline and regular practice.
+2	62974	noun	discipline	0	The school has strict discipline rules for behavior.
+3	62973	noun	discipline	0	Good discipline keeps the classroom calm.
+4	62978	noun	discipline	0	Biology is a scientific discipline.
+5	62970	noun	discipline	0	His discipline helped him finish the marathon training.
+@ dishonest
+1	62936	adj	dishonest	1	It was dishonest to copy answers during the test.
+2	62936	adj	dishonest	0	The shopkeeper was dishonest about the price.
+3	62936	adj	dishonest	0	She felt bad after giving a dishonest excuse.
+4	62936	adj	dishonest	0	A dishonest worker may lose the trust of colleagues.
+5	62936	adj	dishonest	0	Do not be dishonest when filling out the form.
+@ dismiss
+1	62940	verb	dismissed	1	The company dismissed him after several serious mistakes.
+2	62941	verb	dismiss	0	The teacher will dismiss the class at three o'clock.
+3	62943	verb	dismissed	0	The judge dismissed the complaint because there was no proof.
+4	62944	verb	dismiss	0	Do not dismiss her idea before you hear it.
+5	62942	verb	dismiss	0	Try to dismiss worries that you cannot control.
+@ display
+1	62998	noun	display	1	The phone display was too bright in the dark room.
+2	62995	noun	display	0	The fireworks were a beautiful display over the river.
+3	62996	noun	display	0	The students made a display of their science projects.
+4	62998	noun	display	0	The screen display shows the train times.
+5	62995	noun	displays	0	The museum has displays about local history.
+@ distribute
+1	62986	verb	distribute	1	Volunteers distribute food to families every Friday.
+2	62984	verb	distribute	0	The teacher will distribute the worksheets after lunch.
+3	62985	verb	distributes	0	This company distributes books to small shops.
+4	62988	verb	distributed	0	The prize money was distributed equally among the winners.
+5	62987	verb	distributing	0	They are distributing blankets after the storm.
+@ distribution
+1	63011	noun	distribution	1	The company handles the distribution of fruit to local stores.
+2	63009	noun	distribution	0	The distribution of the leaflets took an hour.
+3	63012	noun	distribution	0	Each child received a distribution of pencils and paper.
+4	63016	noun	distribution	0	The chart shows the distribution of income in the city.
+5	63011	noun	distribution	0	Fast distribution helps fresh food reach customers.
+@ district
+1	63033	noun	district	1	Our school is in the northern district of the city.
+2	63034	noun	district	0	This district is known for its small cafés.
+3	63033	noun	district	0	The district office is open on weekdays.
+4	63034	noun	districts	0	Different districts have different local rules.
+5	63033	noun	district	0	She moved to a quiet district near the park.
+@ division
+1	63040	noun	division	1	The division of chores made cleaning the house easier.
+2	63041	noun	division	0	The teacher explained division using groups of apples.
+3	63047	noun	division	0	There was a division of opinion about the new rule.
+4	63044	noun	division	0	He works in the sales division of the company.
+5	63040	noun	divisions	0	The book has three main divisions.
+@ domestic
+1	63055	adj	domestic	1	They shared domestic tasks such as cooking and cleaning.
+2	63057	adj	domestic	0	A domestic cat lives comfortably with people.
+3	63058	adj	domestic	0	Domestic flights are cheaper than international ones.
+4	63055	adj	domestic	0	The store sells domestic furniture and kitchen goods.
+5	63059	adj	domestic	0	He is quite domestic and enjoys staying home.
+@ dominate
+1	63028	verb	dominates	1	The tall tower dominates the view from the town square.
+2	63026	verb	dominate	0	One team began to dominate the match after halftime.
+3	63027	verb	dominated	0	Fear dominated her thoughts before the exam.
+4	63028	verb	dominate	0	Large companies dominate this part of the market.
+5	63029	verb	dominates	0	The castle dominates the hill above the village.
+@ downwards
+1	63006	adv	downwards	1	The ball rolled downwards toward the river.
+2	63006	adv	downwards	0	Look downwards when you climb the ladder.
+3	63007	adv	downwards	0	Prices moved downwards after the sale began.
+4	63006	adv	downwards	0	The path slopes downwards after the bridge.
+5	63006	adv	downwards	0	She pointed downwards to show where the keys fell.
+@ dozen
+1	63062	noun	dozen	1	She bought a dozen eggs for breakfast.
+2	63062	noun	dozen	0	A dozen roses were waiting by the door.
+3	63063	noun	dozens	0	Dozens of people came to the opening.
+4	63062	noun	dozen	0	The baker sells cookies by the dozen.
+5	63062	noun	dozen	0	We need a dozen chairs for the meeting.
+@ draft
+1	63143	noun	draft	1	She sent me the first draft of her report to read.
+2	63145	noun	draft	0	The architect showed us a draft of the new house.
+3	63135	noun	draft	0	Close the window because there is a cold draft.
+4	63144	noun	draft	0	The email is saved as a draft until you send it.
+5	63143	noun	drafts	0	He wrote several drafts before choosing the final version.
+@ drag
+1	63088	noun	drag	1	Waiting in the long line was a real drag.
+2	63082	noun	drag	0	Air drag slows a bicycle when you ride fast.
+3	63108	verb	drag	0	Do not drag the heavy box across the wooden floor.
+4	63109	verb	dragged	0	He dragged himself home after the long hike.
+5	63088	noun	drag	0	The broken printer is a drag on our work.
+@ dramatic
+1	63068	adj	dramatic	1	The sunset made a dramatic orange sky over the sea.
+2	63067	adj	dramatic	0	She joined the school dramatic club this year.
+3	63068	adj	dramatic	0	There was a dramatic change in the weather.
+4	63070	adj	dramatic	0	He can be dramatic when he wants attention.
+5	63068	adj	dramatic	0	The film ended with a dramatic rescue.
+@ edit
+1	63176	noun	edit	1	The editor made one small edit to the final article.
+2	63177	noun	edit	0	Save each edit before closing the document.
+3	63178	noun	edit	0	She shared a short video edit from the concert.
+4	63176	noun	edits	0	The writer accepted all the editor's edits.
+5	63177	noun	edit	0	The latest edit fixed a spelling mistake on the website.
+@ edition
+1	63071	noun	edition	1	I found an old edition of the novel at a bookshop.
+2	63071	noun	edition	0	This edition includes notes from the author.
+3	63072	noun	edition	0	The first edition sold out quickly.
+4	63074	noun	edition	0	The summer edition of the festival begins in July.
+5	63071	noun	editions	0	Several editions of the dictionary are available.
+@ efficient
+1	63075	adj	efficient	1	Taking the train is an efficient way to travel downtown.
+2	63075	adj	efficient	0	She is efficient because she plans her tasks early.
+3	63075	adj	efficient	0	An efficient machine uses less electricity.
+4	63076	adj	efficient	0	This engine is more efficient than the old one.
+5	63075	adj	efficient	0	The new system makes the office more efficient.
+@ elderly
+1	63191	adj	elderly	1	An elderly woman asked me to carry her bag.
+2	63191	adj	elderly	0	The bus has seats reserved for elderly passengers.
+3	63193	noun	elderly	0	The center offers free lunches for the elderly.
+4	63191	adj	elderly	0	He visits his elderly neighbor every weekend.
+5	63192	adj	elderly	0	The elderly building needs several repairs.
+@ elect
+1	63195	noun	elect	1	The elect gathered for a special ceremony at the church.
+2	63195	noun	elect	0	Only the elect were invited to the private meeting.
+3	63196	noun	elect	0	In the story, the elect were chosen for salvation.
+4	63195	noun	elect	0	The elect received letters from the leader.
+5	63195	noun	elect	0	The group called itself the elect.
+@ elsewhere
+1	63080	adv	elsewhere	1	We could not find a table here, so we ate elsewhere.
+2	63080	adv	elsewhere	0	If the shop is closed, try elsewhere.
+3	63080	adv	elsewhere	0	She decided to look elsewhere for a cheaper hotel.
+4	63080	adv	elsewhere	0	The answer may be found elsewhere in the book.
+5	63080	adv	elsewhere	0	He works elsewhere during the summer.
+@ emerge
+1	63201	verb	emerged	1	The sun emerged from behind the clouds after the storm.
+2	63202	verb	emerge	0	A turtle may emerge from the water at night.
+3	63203	verb	emerged	0	New information emerged during the meeting.
+4	63201	verb	emerging	0	A path is emerging through the tall grass.
+5	63201	verb	emerges	0	The moon emerges above the trees at dusk.
+@ emotional
+1	63212	adj	emotional	1	Her speech was emotional and made several people cry.
+2	63211	adj	emotional	0	The film tells an emotional story about family.
+3	63213	adj	emotional	0	It was an emotional decision, not a logical one.
+4	63215	adj	emotional	0	He becomes emotional when he talks about his childhood.
+5	63214	adj	emotional	0	The music created an emotional moment in the film.
+@ emphasis
+1	63205	noun	emphasis	1	The teacher put emphasis on learning from mistakes.
+2	63206	noun	emphasis	0	The course has an emphasis on practical skills.
+3	63207	noun	emphasis	0	She said the word with emphasis.
+4	63205	noun	emphasis	0	For emphasis, he repeated the final sentence.
+5	63206	noun	emphasis	0	The report places emphasis on safety.
+@ emphasize
+1	63210	verb	emphasized	1	The coach emphasized the importance of working as a team.
+2	63210	verb	emphasize	0	Please emphasize the main point in your speech.
+3	63210	verb	emphasizes	0	The guide emphasizes safety before every climb.
+4	63210	verb	emphasizing	0	She is emphasizing the need for more time.
+5	63210	verb	emphasize	0	Teachers emphasize good habits from the first day.

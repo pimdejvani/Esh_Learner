@@ -1,0 +1,174 @@
+@ succeed
+1	52376	verb	succeed	1	We succeed every day.
+2	52381	verb	succeeded	0	She succeeded after months of careful practice.
+3	52381	verb	succeeds	0	Our team succeeds when everyone works together.
+4	52381	verb	succeeding	0	The new shop is succeeding despite a slow start.
+5	52377	verb	succeed	0	The deputy will succeed the director next year.
+
+@ successful
+1	52389	adj	successful	1	It is successful.
+2	52389	adj	successful	0	The rescue operation was successful.
+3	52389	adj	more successful	0	The second event was more successful than the first.
+4	52389	adj	most successful	0	This is our most successful product.
+5	52389	adj	successful	0	Regular practice made her successful in the competition.
+
+@ such
+1	52390	det	such	1	such book is here.
+2	52392	det	such	0	It was such a beautiful morning.
+3	52393	det	such	0	What a joy to hear such news!
+4	52395	pron	such	0	Such are the risks of traveling in winter.
+5	52396	noun	suches	0	The rule covers boxes, bags, and other suches.
+
+@ suddenly
+1	52397	adv	suddenly	1	We do it suddenly.
+2	52397	adv	suddenly	0	The lights suddenly went out.
+3	52397	adv	more suddenly	0	The storm arrived more suddenly than expected.
+4	52397	adv	most suddenly	0	The change happened most suddenly near midnight.
+5	52397	adv	suddenly	0	She suddenly remembered where she had left the key.
+
+@ suggest
+1	52398	verb	suggest	1	We suggest every day.
+2	52400	verb	suggested	0	The doctor suggested a short walk each morning.
+3	52398	verb	suggests	0	The evidence suggests that the door was already open.
+4	52399	verb	suggesting	0	That smell is suggesting fresh bread to me.
+5	52400	verb	suggest	0	I suggest taking the earlier train.
+
+@ suit
+1	52407	noun	suit	1	He wore a black suit.
+2	52407	noun	suit	0	The suit is clean.
+3	52422	verb	suits	0	This color suits you.
+4	52422	verb	suit	0	The job will suit her.
+5	52407	noun	suit	0	My suit is new.
+
+@ surprise
+1	52457	noun	surprise	1	The gift was a surprise.
+2	52460	verb	surprised	0	The news surprised me.
+3	52457	noun	surprise	0	What a nice surprise!
+4	52460	verb	surprise	0	You surprise us every day.
+5	52457	noun	surprise	0	The party was a surprise.
+
+@ sweet
+1	52485	adj	sweet	1	This mango is sweet.
+2	52485	adj	sweet	0	She has a sweet smile.
+3	52502	noun	sweet	0	I ate a sweet after lunch.
+4	52485	adj	sweet	0	That song sounds sweet.
+5	52508	verb	sweets	0	Sugar sweets the tea.
+
+@ symbol
+1	52509	noun	symbol	1	A heart is a symbol of love.
+2	52509	noun	symbol	0	This symbol means stop.
+3	52509	noun	symbol	0	Find the symbol on the map.
+4	52518	verb	symbols	0	The dove symbols peace.
+5	52509	noun	symbol	0	The symbol is easy to read.
+
+@ taste
+1	52574	noun	taste	1	This soup has a good taste.
+2	52582	verb	taste	0	Taste the sauce, please.
+3	52574	noun	taste	0	I like the taste of mango.
+4	52589	adj	taste	0	She has taste clothes.
+5	52582	verb	tastes	0	The tea tastes sweet.
+
+@ thought
+1	52681	noun	thought	1	The thought of seeing her family again gave her strength.
+2	52681	noun	thoughts	0	He wrote his thoughts in a notebook.
+3	52682	noun	thought	0	Careful thought is needed before making a decision.
+4	52685	noun	thought	0	She gave the proposal serious thought.
+5	52687	verb	thought	0	I thought the meeting started at nine.
+
+@ throw
+1	52688	verb	throw	1	We throw every day.
+2	52688	verb	threw	0	She threw the ball across the garden.
+3	52688	verb	throwing	0	The children are throwing stones into the pond.
+4	52688	verb	thrown	0	He had thrown the letter away by mistake.
+5	52717	noun	throw	0	It was a long throw from the edge of the field.
+
+@ tidy
+1	52731	adj	tidy	1	It is tidy.
+2	52731	adj	tidier	0	Your desk looks tidier today.
+3	52731	adj	tidiest	0	This is the tidiest room in the house.
+4	52739	verb	tidied	0	She tidied the kitchen after dinner.
+5	52739	verb	tidying	0	We are tidying the garden before the party.
+
+@ tie
+1	52749	noun	tie	1	Their friendship became a tie that distance could not break.
+2	52746	noun	tie	0	He wore a blue tie to the interview.
+3	52744	noun	ties	0	Use strong ties to fasten the bags.
+4	52762	verb	tied	0	She tied the ribbon around the gift.
+5	52766	verb	tying	0	The two teams are tying with one point each.
+
+@ tip
+1	52804	noun	tip	1	One simple tip from her teacher helped her pass the exam.
+2	52771	noun	tip	0	The tip of the pencil broke.
+3	52800	noun	tip	0	We left a tip for the waiter.
+4	52780	verb	tipped	0	The strong wind tipped the chair over.
+5	52797	verb	tipping	0	She is tipping the driver for his help.
+
+@ tool
+1	52812	noun	tool	1	The rescue worker used a simple tool to free the trapped dog.
+2	52812	noun	tools	0	Keep the garden tools in the shed.
+3	52814	noun	tool	0	Language is a powerful tool for communication.
+4	52815	noun	tools	0	The developer uses several testing tools.
+5	52821	verb	tooled	0	The craftworker tooled a pattern into the leather.
+
+@ top
+1	52829	noun	top	1	She reached the top of the hill and saw her family waiting below.
+2	52832	noun	top	0	Put the top back on the bottle.
+3	52833	noun	tops	0	The shop sells cotton tops in many colors.
+4	52880	adj	top	0	The documents are in the top drawer.
+5	52863	verb	topped	0	Her final score topped the previous record.
+
+@ touch
+1	52885	verb	touch	1	We touch every day.
+2	52886	verb	touched	0	She touched the wall to test if it was dry.
+3	52888	verb	touch	0	The two circles touch at one point.
+4	52886	verb	touching	0	Please avoid touching the wet paint.
+5	52923	noun	touch	0	The nurse checked his arm with a gentle touch.
+
+@ tour
+1	52949	noun	tour	1	The museum tour ended with a surprise meeting with the artist.
+2	52948	noun	tours	0	The company offers walking tours of the city.
+3	52950	noun	tour	0	The band begins its European tour next month.
+4	52959	verb	toured	0	They toured across Spain by train.
+5	52960	verb	touring	0	We are touring the old castle this afternoon.
+
+@ tourism
+1	52963	noun	tourism	1	Tourism brought new jobs and hope to the small coastal village.
+2	52963	noun	tourism	0	The island depends heavily on tourism.
+3	52964	noun	tourism	0	She works in the tourism industry.
+4	52965	noun	tourism	0	The town promotes medical tourism.
+5	52963	noun	tourisms	0	The report compares urban and rural tourisms.
+
+@ towards
+1	52966	prep	towards	1	We walk towards home.
+2	52966	prep	towards	0	The dog ran towards the gate.
+3	52966	prep	towards	0	She saved money towards a new laptop.
+4	52967	adv	towards	0	I saw him coming towards.
+5	52966	prep	towards	0	His attitude towards work has improved.
+
+@ towel
+1	52969	noun	towel	1	The rescue worker wrapped the cold child in a warm towel.
+2	52969	noun	towels	0	Clean towels are in the bathroom.
+3	52970	verb	toweled	0	She toweled her hair after swimming.
+4	52970	verb	toweling	0	He is toweling the wet dog dry.
+5	52971	verb	towelled	0	The boys towelled each other after practice.
+
+@ tower
+1	52974	noun	tower	1	The light from the old tower guided the lost boat home.
+2	52975	noun	towers	0	Communication towers stand along the highway.
+3	52977	noun	tower	0	The pilot contacted the control tower.
+4	52988	verb	towered	0	The new building towered above the houses.
+5	52989	verb	towering	0	Dark clouds were towering over the valley.
+
+@ toy
+1	52992	noun	toy	1	The child found her favorite toy under the hospital bed and smiled.
+2	52992	noun	toys	0	The children put their toys in a box.
+3	53008	verb	toyed	0	The cat toyed with a piece of string.
+4	53009	verb	toying	0	She is toying with the idea of moving abroad.
+5	53011	adj	toy	0	The tiny toy engine could not pull the heavy cart.
+
+@ track
+1	53012	noun	track	1	Rescuers followed a fresh track in the snow and found the missing hiker.
+2	53017	noun	track	0	The runners completed four laps of the track.
+3	53015	noun	tracks	0	Narrow tracks connect the farms to the main road.
+4	53036	verb	tracked	0	The team tracked the storm across the ocean.
+5	53035	verb	tracking	0	The app is tracking my daily steps.

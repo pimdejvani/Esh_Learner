@@ -1,0 +1,174 @@
+@ lake
+1	47952	noun	lake	1	At sunrise, the calm lake reflected the mountains like a mirror.
+2	47952	noun	lakes	0	This region has several deep lakes.
+3	47953	noun	lake	0	A lake of rainwater covered the road.
+4	47952	noun	lake	0	We walked around the lake after lunch.
+5	47960	verb	laked	0	The researchers laked the cells before examining them.
+
+@ lamp
+1	47967	noun	lamp	1	The old lamp came on, and the lost hikers saw the cabin at last.
+2	47965	noun	lamps	0	Energy-saving lamps use less electricity.
+3	47966	noun	lamp	0	She lit an oil lamp during the power cut.
+4	47967	noun	lamp	0	A reading lamp stood beside the bed.
+5	47970	verb	lamping	0	The researchers were lamping insects in the forest at night.
+
+@ laptop
+1	47973	noun	laptop	1	My laptop still held the last video I had made with my grandfather.
+2	47973	noun	laptops	0	Students may borrow laptops from the library.
+3	47974	adj	laptop	0	The designer created a lightweight laptop desk.
+4	47973	noun	laptop	0	She closed her laptop before the meeting began.
+5	47975	verb	laptoping	0	He spent the afternoon laptoping at a quiet café.
+
+@ laughter
+1	47976	noun	laughter	1	The baby's laughter filled the tired family with joy.
+2	47976	noun	laughter	0	We heard laughter from the next room.
+3	47976	noun	laughter	0	Her joke caused a burst of laughter.
+4	47977	noun	laughter	0	His shoulders shook with laughter.
+5	47976	noun	laughters	0	Their different laughters could be heard across the hall.
+
+@ law
+1	47982	noun	law	1	The new law finally gave the workers the protection they had requested.
+2	47979	noun	law	0	Everyone must obey the law.
+3	47980	noun	laws	0	The course covers laws related to online business.
+4	47983	noun	law	0	Gravity is described by a law of physics.
+5	48003	verb	lawing	0	Local officers were lawing throughout the crowded festival.
+
+@ lawyer
+1	48009	noun	lawyer	1	The lawyer called to say that the family could finally return home.
+2	48008	noun	lawyers	0	Many lawyers complete a graduate law degree.
+3	48009	noun	lawyer	0	Ask a lawyer for legal advice before signing.
+4	48017	verb	lawyered	0	She lawyered in the city for twenty years.
+5	48018	verb	lawyering	0	He is lawyering for a small community group.
+
+@ lazy
+1	48021	adj	lazy	1	It is lazy.
+2	48021	adj	lazier	0	I feel lazier on rainy afternoons.
+3	48021	adj	laziest	0	Sunday was the laziest day of our holiday.
+4	48022	adj	lazy	0	We enjoyed a lazy breakfast by the sea.
+5	48031	verb	lazied	0	They lazied around the house all morning.
+
+@ lead
+1	48045	verb	led	1	The firefighter led the frightened child out of the smoke.
+2	48047	verb	lead	0	This path will lead you to the village.
+3	48049	verb	leads	0	Mina leads a team of twelve designers.
+4	48034	noun	lead	0	Old pipes may contain lead.
+5	48099	adj	lead	0	The lead actor thanked the audience.
+
+@ leader
+1	48100	noun	leader	1	The team leader stayed behind until every child was safe.
+2	48100	noun	leaders	0	Good leaders listen before making decisions.
+3	48102	noun	leader	0	The group chose Ana as its new leader.
+4	48104	noun	leader	0	The company is a leader in clean energy.
+5	48105	noun	leaders	0	The band leaders met before the concert.
+
+@ learning
+1	48126	noun	learning	1	Learning to read opened a whole new world for the young student.
+2	48126	noun	learning	0	Language learning takes time and practice.
+3	48127	noun	learning	0	The scholar shared his learning with the class.
+4	48129	verb	learning	0	She is learning to play the piano.
+5	48128	noun	learnings	0	The team discussed its key learnings from the project.
+
+@ least
+1	48130	adj	least	1	It is least.
+2	48131	adj	least	0	This route requires the least effort.
+3	48136	det	least	0	Choose the option that uses the least water.
+4	48139	adv	least	0	That was the least surprising result.
+5	48143	pron	least	0	The least we can do is offer them a meal.
+
+@ lecture
+1	48144	noun	lecture	1	The lecture inspired her to become a doctor and help children.
+2	48145	noun	lectures	0	I have two lectures on Monday morning.
+3	48146	noun	lecture	0	Dad gave me a lecture about arriving home late.
+4	48148	verb	lectured	0	The professor lectured us on climate science.
+5	48149	verb	lecturing	0	Please stop lecturing me about my messy desk.
+
+@ lemon
+1	48150	noun	lemon	1	The first lemon from our tiny tree made enough juice for a family drink.
+2	48150	noun	lemons	0	She sliced two lemons for the tea.
+3	48152	noun	lemon	0	He painted the kitchen a bright lemon.
+4	48155	noun	lemon	0	The used car was a lemon and soon broke down.
+5	48162	verb	lemoned	0	The cook lemoned the sauce before serving it.
+
+@ lend
+1	48163	verb	lend	1	We lend every day.
+2	48163	verb	lent	0	I lent my umbrella to a friend.
+3	48164	verb	lends	0	The bank lends money to small businesses.
+4	48163	verb	lending	0	The library is lending tablets to students.
+5	48165	verb	lend	0	The quiet garden would lend itself to outdoor study.
+
+@ less
+1	48171	adv	less	1	We do it less.
+2	48173	adv	less	0	Drive less if you want to save fuel.
+3	48175	det	less	0	This recipe needs less sugar.
+4	48177	prep	less	0	The bill was fifty dollars, less the discount.
+5	48180	noun	less	0	She earns less than her brother.
+
+@ level
+1	48183	adj	level	1	It is level.
+2	48187	adj	level	0	She kept a level voice during the argument.
+3	48195	noun	level	0	Noise reached a dangerous level near the stage.
+4	48195	noun	levels	0	The nurse checked the patient's oxygen levels.
+5	48205	verb	leveled	0	The workers leveled the ground before building.
+
+@ lifestyle
+1	48215	noun	lifestyle	1	Changing to a healthier lifestyle gave him the energy to play with his children again.
+2	48215	noun	lifestyles	0	City and village lifestyles can be very different.
+3	48215	noun	lifestyle	0	Her active lifestyle includes swimming and cycling.
+4	48216	noun	lifestyle	0	The company studies lifestyle trends before designing products.
+5	48215	noun	lifestyles	0	The survey compares the lifestyles of young adults.
+
+@ lift
+1	48217	verb	lift	1	We lift every day.
+2	48218	verb	lifted	0	She lifted the child onto the chair.
+3	48217	verb	lifting	0	The crane is lifting a heavy beam.
+4	48236	noun	lift	0	Take the lift to the fifth floor.
+5	48235	noun	lift	0	My neighbor gave me a lift to work.
+
+@ likely
+1	48257	adj	likely	1	It is likely.
+2	48258	adj	likely	0	Rain is likely to fall this evening.
+3	48257	adj	likelier	0	A delay is likelier during rush hour.
+4	48265	adv	likely	0	She will likely arrive before noon.
+5	48257	adj	most likely	0	This is the most likely explanation.
+
+@ link
+1	48267	noun	link	1	A forgotten photo revealed the link between the two families.
+2	48269	noun	link	0	Click the link to open the website.
+3	48268	noun	links	0	Several links in the chain were damaged.
+4	48282	verb	linked	0	A narrow bridge linked the two islands.
+5	48286	verb	linking	0	Researchers are linking poor sleep with stress.
+
+@ listener
+1	48291	noun	listener	1	The patient listener stayed on the phone until her frightened friend felt calm.
+2	48291	noun	listeners	0	Radio listeners called to request songs.
+3	48291	noun	listener	0	A good listener asks thoughtful questions.
+4	48292	noun	listener	0	The program uses a listener to respond to each click.
+5	48291	noun	listeners	0	The speaker thanked her listeners at the end.
+
+@ lock
+1	48295	noun	lock	1	The strong lock kept the family safe while they slept.
+2	48295	noun	locks	0	Both doors have new locks.
+3	48297	noun	lock	0	The boat entered the canal lock slowly.
+4	48308	verb	locked	0	She locked the door before leaving.
+5	48307	verb	locking	0	The wheels are locking when the brakes get wet.
+
+@ lorry
+1	48323	noun	lorry	1	The lorry delivered clean water to the village after the flood.
+2	48323	noun	lorries	0	Heavy lorries use the road at night.
+3	48324	noun	lorry	0	The workers climbed onto the open lorry.
+4	48328	verb	lorried	0	The company lorried the equipment across the country.
+5	48328	verb	lorrying	0	They are lorrying fresh food to the city.
+
+@ lost
+1	48329	verb	lost	1	We lost every day.
+2	48329	verb	lost	0	I lost my keys on the bus.
+3	48330	adj	lost	0	The lost child asked a police officer for help.
+4	48331	adj	more lost	0	We felt more lost after the path disappeared.
+5	48330	adj	most lost	0	Of all the hikers, Ben looked the most lost.
+
+@ loud
+1	48338	adj	loud	1	It is loud.
+2	48339	adj	louder	0	The crowd grew louder as the team approached.
+3	48338	adj	loudest	0	Thunder was the loudest sound that night.
+4	48341	adj	loud	0	He wore a loud shirt with bright orange stripes.
+5	48345	adv	loud	0	Please speak loud so everyone can hear.

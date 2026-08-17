@@ -1,0 +1,104 @@
+@ metre
+1	36295	noun	metre	1	The table is one metre long.
+2	36295	noun	metres	0	Stand two metres away from the door.
+3	36295	noun	metres	0	The pool is twenty-five metres wide.
+4	36295	noun	metre	0	A metre has one hundred centimeters.
+5	36295	noun	metres	0	We walked three metres to the gate.
+
+@ minute
+1	36328	noun	minute	1	Wait a minute, please.
+2	36328	noun	minutes	0	The bus comes in five minutes.
+3	36328	noun	minute	0	I need one more minute.
+4	36340	verb	minuted	0	She minuted the committee's decision.
+5	36342	adj	minute	0	There was a minute crack in the cup.
+
+@ mother
+1	36459	noun	mother	1	My mother always listens when I feel sad.
+2	36459	noun	mother	0	Her mother works at the hospital.
+3	36459	noun	mothers	0	The mothers waited outside the school.
+4	36477	verb	mothered	0	The cat mothered her kittens carefully.
+5	36468	noun	mother	0	She became a mother to the children in her care.
+
+@ pound
+1	38540	noun	pounds	1	The baby weighs eight pounds.
+2	38551	noun	pound	0	The book cost one pound.
+3	38564	verb	pound	0	Rain will pound the roof tonight.
+4	38540	noun	pounds	0	The bag weighs ten pounds.
+5	38564	verb	pounded	0	He pounded on the door.
+
+@ practice
+1	38573	noun	practice	1	Practice makes you better.
+2	38574	noun	practice	0	The team has practice after class.
+3	38584	verb	practice	0	We practice English every day.
+4	38583	noun	practices	0	Good practices keep us safe.
+5	38584	verb	practiced	0	She practiced the piano.
+
+@ present
+1	38605	adj	present	1	All students are present today.
+2	38604	adj	present	0	The present situation requires patience.
+3	38615	noun	present	0	She gave me a present.
+4	38625	verb	present	0	He will present the report.
+5	38625	verb	presented	0	They presented a new idea.
+
+@ pretty
+1	38639	adj	pretty	1	The flower is pretty.
+2	38648	adv	pretty	0	It was a pretty good day.
+3	38648	adv	pretty	0	She sings pretty well.
+4	38639	adj	prettier	0	This picture is prettier.
+5	38639	adj	prettiest	0	That is the prettiest dress.
+
+@ reader
+1	38885	noun	reader	1	He is a fast reader.
+2	38885	noun	readers	0	This book is good for young readers.
+3	38885	noun	reader	0	Every reader has a favorite book.
+4	38885	noun	readers	0	The article has many readers.
+5	38885	noun	reader	0	Ask a reader what they think.
+
+@ run
+1	39255	verb	run	1	I run in the park.
+2	39264	verb	runs	0	The bus runs every hour.
+3	39323	noun	run	0	We went for a run.
+4	39255	verb	ran	0	He ran home.
+5	39255	verb	running	0	They are running fast.
+
+@ sentence
+1	39631	noun	sentence	1	The final sentence of her letter said, "I forgive you."
+2	39631	noun	sentence	0	A complete sentence needs a subject and a verb.
+3	39631	noun	sentences	0	The story has ten sentences.
+4	39629	noun	sentence	0	The judge gave a short sentence.
+5	39637	verb	sentenced	0	The court sentenced him to prison.
+
+@ south
+1	40189	noun	south	1	The beach is in the south.
+2	40193	adj	south	0	A south wind is warm.
+3	40197	adv	south	0	Birds fly south in winter.
+4	40192	adj	south	0	We followed the south road out of town.
+5	40188	noun	south	0	The arrow on the map points to the south.
+
+@ space
+1	40214	noun	space	1	We need more space here.
+2	40207	noun	space	0	The stars shine in space.
+3	40216	noun	space	0	Put a space between the words.
+4	40224	verb	space	0	Please space the chairs evenly.
+5	40218	noun	spaces	0	The room has two empty spaces.
+
+@ speak
+1	40229	verb	speak	1	Please speak slowly.
+2	40233	verb	speaks	0	She speaks English well.
+3	40229	verb	spoke	0	He spoke to the teacher.
+4	40229	verb	speaking	0	They are speaking quietly.
+5	40229	verb	speaks	0	My baby speaks a little.
+
+@ sport
+1	40311	noun	sport	1	Football is my favorite sport.
+2	40311	noun	sport	0	Sport keeps us healthy.
+3	40327	verb	sports	0	He sports a red hat.
+4	40311	noun	sports	0	She enjoys water sports.
+5	40327	verb	sported	0	They sported new shirts.
+
+@ spring
+1	40333	verb	spring	1	Cats spring onto the table.
+2	40373	noun	spring	0	Spring is my favorite season.
+3	40380	noun	spring	0	Water comes from the spring.
+4	40333	verb	sprang	0	The dog sprang into the room.
+5	40333	verb	springing	0	The child is springing around.

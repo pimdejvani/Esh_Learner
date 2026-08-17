@@ -1,0 +1,90 @@
+@ to
+1	41443	prep	to	1	We walk to home.
+2	41444	prep	to	0	The last bus goes to the airport at midnight.
+3	41445	prep	to	0	Please give the house key to your sister.
+4	41446	prep	to	0	He pinned the school notice to the wall.
+5	41456	prep	to	0	The clock showed ten minutes to six.
+@ today
+1	41464	adv	today	1	We do it today.
+2	41464	adv	today	0	The package must arrive today before the shop closes.
+3	41465	adv	today	0	People today can send messages around the world in seconds.
+4	41467	noun	today	0	Today is the final day of the school fair.
+5	41469	noun	today	0	The students of today use technology in every subject.
+@ together
+1	41471	adv	together	1	We do it together.
+2	41472	adv	together	0	Put the two pieces together to complete the picture.
+3	41473	adv	together	0	Nina and Paul have worked together for ten years.
+4	41471	adv	together	0	The children walked to school together.
+5	41472	adv	together	0	Mix the flour and water together in a large bowl.
+@ toilet
+1	41476	noun	toilet	1	The little boy sighed with relief when he finally found the toilet.
+2	41476	noun	toilet	0	The blue sign points to the nearest toilet.
+3	41478	noun	toilet	0	A plumber repaired the broken toilet this morning.
+4	41476	noun	toilets	0	The station has clean toilets beside the waiting room.
+5	41476	noun	toilet	0	Could you tell me where the toilet is?
+@ tomato
+1	41491	noun	tomato	1	Lina proudly picked the first ripe tomato from her garden.
+2	41491	noun	tomato	0	Please slice the tomato and add it to the salad.
+3	41491	noun	tomatoes	0	We need three tomatoes for the soup.
+4	41490	noun	tomato	0	The tomato grows best in a sunny part of the garden.
+5	41495	adj	tomato	0	She chose a tomato-red scarf for the party.
+@ tomorrow
+1	41498	adv	tomorrow	1	We do it tomorrow.
+2	41498	adv	tomorrow	0	Please return the library book tomorrow morning.
+3	41502	noun	tomorrow	0	Tomorrow is the first day of our holiday.
+4	41499	adv	tomorrow	0	A choice made today may affect us tomorrow.
+5	41503	noun	tomorrow	0	These young inventors are building a better tomorrow.
+@ tonight
+1	41504	adv	tonight	1	We do it tonight.
+2	41504	adv	tonight	0	The moon will be full tonight.
+3	41504	adv	tonight	0	I need to finish this report tonight.
+4	41506	noun	tonight	0	Tonight is our last evening by the sea.
+5	41506	noun	tonight	0	The weather forecast for tonight includes heavy rain.
+@ too
+1	41507	adv	too	1	We do it too.
+2	41509	adv	too	0	The soup is too hot to eat right now.
+3	41508	adv	too	0	Maya speaks French, and her brother does too.
+4	41509	adv	too	0	This suitcase is too heavy for one person to lift.
+5	41508	adv	too	0	Remember, too, that the museum closes at five.
+@ tooth
+1	41513	noun	tooth	1	Eva cheered when her loose tooth finally fell out.
+2	41513	noun	tooth	0	The dentist removed the damaged tooth.
+3	41513	noun	teeth	0	Brush your teeth before going to bed.
+4	41514	noun	tooth	0	One tooth on the saw blade is bent.
+5	41515	noun	tooth	0	The mechanic replaced a broken tooth in the gear.
+@ topic
+1	41526	noun	topic	1	The topic of lost pets inspired everyone to share a happy story.
+2	41526	noun	topic	0	Today's lesson topic is climate change.
+3	41526	noun	topics	0	The book covers five topics about healthy living.
+4	41526	noun	topic	0	Please stay on topic during the meeting.
+5	41526	noun	topic	0	She changed the topic when the question made him uncomfortable.
+@ tourist
+1	41532	noun	tourist	1	A kind tourist found my lost wallet and returned it to me.
+2	41532	noun	tourist	0	The tourist asked for a map of the old city.
+3	41532	noun	tourists	0	Many tourists visit the temple during the cool season.
+4	41532	noun	tourist	0	Each tourist must show a ticket at the museum entrance.
+5	41532	noun	tourists	0	Local guides help tourists learn about the island.
+@ town
+1	41538	noun	town	1	The whole town celebrated when the missing children came home safely.
+2	41538	noun	town	0	Our town has a library, a hospital, and two schools.
+3	41538	noun	towns	0	A new railway connects the two mountain towns.
+4	41542	noun	town	0	Lost dog posters appeared all over town.
+5	41542	noun	town	0	Call me when you get to town.
+@ traffic
+1	41549	noun	traffic	1	Heavy traffic delayed the ambulance, but it reached the hospital in time.
+2	41549	noun	traffic	0	Traffic moves slowly during the morning rush hour.
+3	41549	noun	traffic	0	We waited for the traffic to pass before crossing the road.
+4	41550	noun	traffic	0	Holiday traffic at the airport increases in December.
+5	41552	noun	traffic	0	The website receives most of its traffic in the evening.
+@ train
+1	41581	noun	train	1	We ran onto the train just before the doors closed.
+2	41581	noun	train	0	The train to Bangkok leaves from platform three.
+3	41587	verb	train	0	The runners train every morning before school.
+4	41588	verb	trained	0	An experienced chef trained the new kitchen staff.
+5	41590	verb	training	0	Maya is training at the gym for next month's race.
+@ travel
+1	41609	verb	travel	1	We travel every day.
+2	41610	verb	travels	0	Sound travels through water as well as air.
+3	41612	verb	travelled	0	She travelled the world with one small backpack.
+4	41609	verb	traveling	0	We are traveling by bus because the airport is closed.
+5	41615	noun	travel	0	Air travel becomes busy during major holidays.

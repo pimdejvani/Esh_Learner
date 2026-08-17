@@ -1,0 +1,150 @@
+@ else
+1	32357	adj	else	1	When everyone else left, Noor stayed to help clean the hall.
+2	32357	adj	else	0	Who else knows the answer?
+3	32357	adj	else	0	I need something else to wear.
+4	32357	adj	else	0	Ask someone else for help.
+5	32357	adj	else	0	What else can we do?
+@ email
+1	32360	noun	email	1	An email from her brother made Lila smile during a difficult week abroad.
+2	32360	noun	email	0	Send me an email with the details.
+3	32360	noun	email	0	I read your email this morning.
+4	32360	noun	email	0	The email arrived after lunch.
+5	32360	noun	email	0	She wrote an email to her teacher.
+@ end
+1	32368	noun	end	1	At the end of the race, the two friends crossed the line together.
+2	32368	noun	end	0	The end of the road is near the river.
+3	32368	noun	end	0	We reached the end of the book.
+4	32368	noun	end	0	Put your name at the end of the page.
+5	32368	noun	end	0	The film has a happy end.
+@ enjoy
+1	32385	verb	enjoy	1	On the quiet beach, we learned to enjoy the sound of the waves without speaking.
+2	32385	verb	enjoy	0	I enjoy reading before bed.
+3	32385	verb	enjoy	0	They enjoy playing football.
+4	32385	verb	enjoy	0	She enjoys her new job.
+5	32385	verb	enjoy	0	We enjoy meals together.
+@ enough
+1	32389	det	enough	1	Although the storm was long, there was enough food for every family in the shelter.
+2	32389	det	enough	0	We have enough chairs for everyone.
+3	32389	det	enough	0	Is there enough milk for tea?
+4	32389	det	enough	0	He saved enough money to buy a bike.
+5	32389	det	enough	0	This box is strong enough to hold books.
+@ euro
+1	32397	noun	euro	1	With one euro from each neighbor, the children bought seeds for the community garden.
+2	32397	noun	euro	0	A euro is used as money in many European countries.
+3	32397	noun	euro	0	The postcard costs one euro.
+4	32397	noun	euro	0	He paid with a euro coin.
+5	32397	noun	euro	0	She found a euro in her bag.
+@ even
+1	32401	adj	even	1	After the builder worked all afternoon, the garden path was smooth and even.
+2	32401	adj	even	0	The table is even on the floor.
+3	32401	adj	even	0	Cut the paper into even pieces.
+4	32401	adj	even	0	The two sides are even in length.
+5	32401	adj	even	0	Make the surface even before painting.
+@ evening
+1	32424	noun	evening	1	That evening, the whole family sat outside and watched the first stars appear.
+2	32424	noun	evening	0	We eat dinner in the evening.
+3	32424	noun	evening	0	The evening was warm and quiet.
+4	32424	noun	evening	0	I will call you this evening.
+5	32424	noun	evening	0	Rain began during the evening.
+@ event
+1	32430	noun	event	1	The school concert became a special event because every grandparent came to watch.
+2	32430	noun	event	0	The event starts at six o’clock.
+3	32430	noun	event	0	Many people attended the event.
+4	32430	noun	event	0	We planned an event for the park.
+5	32430	noun	event	0	The event was free for children.
+@ ever
+1	32443	adv	ever	1	If you ever feel lost, remember that you can call me at any hour.
+2	32443	adv	ever	0	Have you ever seen snow?
+3	32443	adv	ever	0	This is the best meal ever.
+4	32443	adv	ever	0	Nobody ever answered the phone.
+5	32443	adv	ever	0	Did he ever visit this town?
+@ every
+1	32450	det	every	1	Every morning, Dad left a small note in my lunchbox before work.
+2	32450	det	every	0	Every student needs a pencil.
+3	32450	det	every	0	We walk the dog every day.
+4	32450	det	every	0	Every room has a window.
+5	32450	det	every	0	She checks every answer twice.
+@ everybody
+1	32453	pron	everybody	1	When the lights came back on, everybody in the hall clapped with relief.
+2	32453	pron	everybody	0	Everybody is ready for lunch.
+3	32453	pron	everybody	0	I invited everybody to the party.
+4	32453	pron	everybody	0	Everybody needs a safe place to sleep.
+5	32453	pron	everybody	0	Can everybody hear the teacher?
+@ everyone
+1	32454	pron	everyone	1	Everyone on the bus grew quiet when the driver helped the lost child find her stop.
+2	32454	pron	everyone	0	Everyone has a name tag.
+3	32454	pron	everyone	0	I told everyone the good news.
+4	32454	pron	everyone	0	Everyone should bring a notebook.
+5	32454	pron	everyone	0	Did everyone finish the test?
+@ everything
+1	32455	pron	everything	1	After the fire drill, the teacher checked that everything was safe before class began.
+2	32455	pron	everything	0	Everything is on the table.
+3	32455	pron	everything	0	She packed everything for the trip.
+4	32455	pron	everything	0	Everything looks clean now.
+5	32455	pron	everything	0	Did you understand everything?
+@ exam
+1	32462	noun	exam	1	Before the exam, Arun took a deep breath and remembered how hard he had studied.
+2	32462	noun	exam	0	The exam begins at nine.
+3	32462	noun	exam	0	She passed her science exam.
+4	32462	noun	exam	0	Study these notes for the exam.
+5	32462	noun	exam	0	The teacher returned our exams today.
+@ example
+1	32464	noun	example	1	By sharing her own mistake as an example, the coach showed that everyone can learn.
+2	32464	noun	example	0	This sentence is an example of a question.
+3	32464	noun	example	0	Give me an example of a fruit.
+4	32464	noun	example	0	The teacher used an example on the board.
+5	32464	noun	example	0	Her work is a good example for others.
+@ excited
+1	32471	adj	excited	1	The children were excited when they saw their painting hanging in the library.
+2	32471	adj	excited	0	I am excited about the trip.
+3	32471	adj	excited	0	She felt excited before the game.
+4	32471	adj	excited	0	They are excited to meet the baby.
+5	32471	adj	excited	0	He sounded excited on the phone.
+@ exciting
+1	32476	verb	exciting	1	The guide kept exciting the children with stories about the hidden cave.
+2	32476	verb	exciting	0	The speaker is exciting the crowd with a surprise.
+3	32476	verb	exciting	0	The coach is exciting the team before the match.
+4	32476	verb	exciting	0	The story is exciting the young readers.
+5	32476	verb	exciting	0	The news is exciting everyone at school.
+@ exercise
+1	32480	noun	exercise	1	After months indoors, morning exercise in the park made Mira feel strong again.
+2	32480	noun	exercise	0	Exercise helps keep your body healthy.
+3	32480	noun	exercise	0	We do exercise before breakfast.
+4	32480	noun	exercise	0	Swimming is good exercise.
+5	32480	noun	exercise	0	The doctor recommended regular exercise.
+@ expensive
+1	32492	adj	expensive	1	The expensive violin was worth protecting because it had belonged to her grandmother.
+2	32492	adj	expensive	0	This watch is too expensive for me.
+3	32492	adj	expensive	0	Fresh flowers can be expensive in winter.
+4	32492	adj	expensive	0	They chose an expensive hotel.
+5	32492	adj	expensive	0	The repair was more expensive than expected.
+@ explain
+1	32496	verb	explain	1	The nurse took time to explain the medicine so the child would not be afraid.
+2	32496	verb	explain	0	Please explain this rule to me.
+3	32496	verb	explain	0	Can you explain the answer?
+4	32496	verb	explain	0	He will explain the plan tomorrow.
+5	32496	verb	explain	0	The guide explained the map clearly.
+@ extra
+1	32501	adj	extra	1	The baker packed an extra loaf for the family that had missed dinner.
+2	32501	adj	extra	0	Please bring an extra pencil.
+3	32501	adj	extra	0	We need extra chairs for guests.
+4	32501	adj	extra	0	She saved extra food for later.
+5	32501	adj	extra	0	The bag has extra pockets.
+@ eye
+1	32512	noun	eye	1	A tear filled her eye when she saw the puppy safe at last.
+2	32512	noun	eye	0	Your eye helps you see.
+3	32512	noun	eye	0	He has a blue eye.
+4	32512	noun	eye	0	Dust got into my eye.
+5	32512	noun	eye	0	She closed one eye to look through the lens.
+@ face
+1	32550	noun	face	1	When he heard his name announced, a bright smile spread across his face.
+2	32550	noun	face	0	Wash your face before bed.
+3	32550	noun	face	0	Her face was covered with paint.
+4	32550	noun	face	0	He turned his face toward the sun.
+5	32550	noun	face	0	The child has a round face.
+@ fact
+1	32594	noun	fact	1	The fact that the dog came home safely made the whole family cry with joy.
+2	32594	noun	fact	0	A fact can be checked and proven.
+3	32594	noun	fact	0	The fact is that we are late.
+4	32594	noun	fact	0	She wrote each fact in her notebook.
+5	32594	noun	fact	0	That fact changed our plan.

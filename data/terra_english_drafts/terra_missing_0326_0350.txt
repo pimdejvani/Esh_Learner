@@ -1,0 +1,150 @@
+@ toe
+1	60784	noun	toe	1	I stubbed my toe on the table leg while carrying a box.
+2	60784	noun	toe	0	One of the five small digits on your foot is a toe.
+3	60784	noun	toe	0	Sand was stuck between each toe after the beach walk.
+4	60784	noun	toe	0	She painted the nail on her big toe blue.
+5	60784	noun	toe	0	The heavy suitcase rolled over his toe.
+@ tongue
+1	60806	noun	tongue	1	The sour lemon made my tongue tingle.
+2	60806	noun	tongue	0	The muscle in your mouth used for tasting is your tongue.
+3	60806	noun	tongue	0	He burned his tongue on the hot soup.
+4	60806	noun	tongue	0	Move your tongue to make the sound correctly.
+5	60806	noun	tongue	0	The doctor asked her to stick out her tongue.
+@ total
+1	60840	noun	total	1	The cashier checked that the total on the receipt was correct.
+2	60840	noun	total	0	The amount you get by adding all the numbers is the total.
+3	60840	noun	total	0	The total came to twenty dollars.
+4	60840	noun	total	0	Write the total at the bottom of the bill.
+5	60840	noun	total	0	Our total for groceries was higher this week.
+@ totally
+1	60803	adv	totally	1	After the long hike, I was totally ready for a hot meal.
+2	60803	adv	totally	0	If you agree completely, you agree totally.
+3	60803	adv	totally	0	The room was totally dark after the lights went out.
+4	60803	adv	totally	0	She totally understood the instructions.
+5	60803	adv	totally	0	This jacket is totally different from the old one.
+@ trade
+1	60910	noun	trade	1	Trade between the two towns grew after the new road opened.
+2	60910	noun	trade	0	The buying and selling of goods is called trade.
+3	60910	noun	trade	0	International trade brings coffee from many countries.
+4	60910	noun	trade	0	Tea growers depended on trade to sell their harvest overseas.
+5	60910	noun	trade	0	Trade helped the city become wealthier.
+@ translate
+1	60858	verb	translated	1	Our guide translated the sign so everyone could understand it.
+2	60858	verb	translate	0	To change words from one language into another is to translate them.
+3	60858	verb	translate	0	Can you translate this message into English?
+4	60858	verb	translate	0	The app can translate short sentences quickly.
+5	60858	verb	translate	0	She learned to translate stories from Spanish.
+@ translation
+1	60895	noun	translation	1	The translation helped me read the poem written in Japanese.
+2	60895	noun	translation	0	Words changed from one language to another are a translation.
+3	60895	noun	translation	0	Please compare the translation with the original text.
+4	60895	noun	translation	0	Her translation of the letter was clear and accurate.
+5	60895	noun	translation	0	The book includes an English translation of the old tale.
+@ treat
+1	60879	verb	treat	1	The two companies met to treat over the price of the new contract.
+2	60879	verb	treat	0	To discuss terms before making an agreement is to treat.
+3	60879	verb	treat	0	The farmers will treat with the buyer about the price.
+4	60879	verb	treat	0	Both sides agreed to treat before ending the dispute.
+5	60879	verb	treat	0	They sent a lawyer to treat for better conditions.
+@ treatment
+1	60851	noun	treatment	1	The patient thanked the nurse for her kind treatment during the long visit.
+2	60851	noun	treatment	0	The way someone is dealt with is their treatment.
+3	60851	noun	treatment	0	The clinic promises respectful treatment for every patient.
+4	60851	noun	treatment	0	The dog received gentle treatment at the clinic.
+5	60851	noun	treatment	0	The teacher's treatment of the problem was calm and helpful.
+@ trend
+1	60937	noun	trend	1	The trend toward electric bikes is easy to see on city streets.
+2	60937	noun	trend	0	A general direction of change is a trend.
+3	60937	noun	trend	0	Sales show a trend toward online shopping.
+4	60937	noun	trend	0	The latest fashion trend includes bright colors.
+5	60937	noun	trend	0	We noticed a trend in warmer summer temperatures.
+@ trick
+1	60951	noun	trick	1	The fake email was a trick to get people to reveal their passwords.
+2	60951	noun	trick	0	Something meant to fool someone is a trick.
+3	60951	noun	trick	0	The salesman used a trick to make the offer seem cheaper.
+4	60951	noun	trick	0	Do not fall for that trick again.
+5	60951	noun	trick	0	The child played a harmless trick on his brother.
+@ truth
+1	60976	noun	truth	1	When the missing cake was found, Maya finally told the truth.
+2	60976	noun	truth	0	What really happened is the truth.
+3	60976	noun	truth	0	The truth was clear after the security camera was checked.
+4	60976	noun	truth	0	He promised to tell the truth in court.
+5	60976	noun	truth	0	Finding out the truth took several days.
+@ tube
+1	60989	noun	tube	1	The toothpaste came out of the tube in a long blue line.
+2	60989	noun	tube	0	A hollow object shaped like a long cylinder is a tube.
+3	60989	noun	tube	0	Water moved through the plastic tube to the garden.
+4	60989	noun	tube	0	He squeezed the last paint from the tube.
+5	60989	noun	tube	0	The scientist placed the sample in a glass tube.
+@ typically
+1	60974	adv	typically	1	Typically, the bakery sells out of warm bread before noon.
+2	60974	adv	typically	0	Something that usually happens happens typically.
+3	60974	adv	typically	0	The bus typically arrives at seven thirty.
+4	60974	adv	typically	0	Cats typically sleep for many hours each day.
+5	60974	adv	typically	0	This plant typically blooms in early spring.
+@ tyre
+1	61001	noun	tyre	1	The mechanic replaced the flat tyre before our long drive.
+2	61001	noun	tyre	0	The rubber covering around a car wheel is a tyre.
+3	61001	noun	tyre	0	The tyre had a nail stuck in it.
+4	61001	noun	tyre	0	Check the pressure in each tyre before traveling.
+5	61001	noun	tyre	0	The bicycle tyre was worn and needed replacing.
+@ ugly
+1	61017	adj	ugly	1	The ugly stain on the white sofa would not come out.
+2	61017	adj	ugly	0	Something unpleasant to look at is ugly.
+3	61017	adj	ugly	0	The building was ugly but very useful.
+4	61017	adj	ugly	0	An ugly mark appeared on the painted wall.
+5	61017	adj	ugly	0	They tried to hide the ugly wires behind a curtain.
+@ unable
+1	61007	adj	unable	1	Because the door was locked, we were unable to enter the building.
+2	61007	adj	unable	0	If you cannot do something, you are unable to do it.
+3	61007	adj	unable	0	She was unable to attend the meeting because she was ill.
+4	61007	adj	unable	0	I am unable to open this jar without help.
+5	61007	adj	unable	0	The team was unable to finish before the deadline.
+@ uncomfortable
+1	61009	adj	uncomfortable	1	The hard chair was so uncomfortable that I stood up after ten minutes.
+2	61009	adj	uncomfortable	0	Something that causes physical discomfort is uncomfortable.
+3	61009	adj	uncomfortable	0	These shoes feel uncomfortable when I walk.
+4	61009	adj	uncomfortable	0	The room became uncomfortable without fresh air.
+5	61009	adj	uncomfortable	0	Sleeping on the floor was uncomfortable for him.
+@ underwear
+1	61038	noun	underwear	1	She packed clean underwear at the top of her suitcase.
+2	61038	noun	underwear	0	Clothes worn under your outer clothes are underwear.
+3	61038	noun	underwear	0	The store sells socks and underwear near the entrance.
+4	61038	noun	underwear	0	He bought new underwear before the trip.
+5	61038	noun	underwear	0	Keep your underwear in the top drawer.
+@ unemployed
+1	61014	adj	unemployed	1	After the factory closed, many skilled workers were unemployed.
+2	61014	adj	unemployed	0	Someone able to work but without a job is unemployed.
+3	61014	adj	unemployed	0	He has been unemployed since the shop shut down.
+4	61014	adj	unemployed	0	The program helps unemployed people find work.
+5	61014	adj	unemployed	0	She felt worried while she was unemployed.
+@ unfair
+1	61032	adj	unfair	1	It seemed unfair that only one team had to play in the rain.
+2	61032	adj	unfair	0	A rule that is not just or equal is unfair.
+3	61032	adj	unfair	0	The teacher changed the unfair scoring system.
+4	61032	adj	unfair	0	It is unfair to blame one person for everyone's mistake.
+5	61032	adj	unfair	0	The children complained about the unfair game.
+@ union
+1	61043	noun	union	1	The union of the two paths created a wide road through the park.
+2	61043	noun	union	0	The joining of two or more things into one is a union.
+3	61043	noun	union	0	The union of flour and water makes a simple dough.
+4	61043	noun	union	0	Their union brought the two groups together.
+5	61043	noun	union	0	The union of the rivers formed a larger stream.
+@ unless
+1	61040	conj	unless	1	We will miss the train unless we leave the house now.
+2	61040	conj	unless	0	You cannot enter unless you have a ticket.
+3	61040	conj	unless	0	The picnic will happen unless it rains heavily.
+4	61040	conj	unless	0	Do not open the door unless you know who is outside.
+5	61040	conj	unless	0	I will call you unless I hear from you first.
+@ unlike
+1	61058	adj	unlike	1	Unlike the old bridge, the new bridge has a path for bicycles.
+2	61058	adj	unlike	0	Unlike her sister, Mina enjoys waking up early.
+3	61058	adj	unlike	0	The two paintings are unlike each other in color.
+4	61058	adj	unlike	0	This fabric feels unlike anything I have used before.
+5	61058	adj	unlike	0	Unlike winter, summer days here are long and bright.
+@ unlikely
+1	61069	adj	unlikely	1	It is unlikely that the snow will melt before tomorrow morning.
+2	61069	adj	unlikely	0	Something not expected to happen is unlikely.
+3	61069	adj	unlikely	0	Rain is unlikely because the sky is clear.
+4	61069	adj	unlikely	0	It seems unlikely that he forgot the meeting.
+5	61069	adj	unlikely	0	A delay is unlikely if the roads stay open.

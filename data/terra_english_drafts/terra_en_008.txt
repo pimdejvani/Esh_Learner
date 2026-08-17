@@ -1,0 +1,150 @@
+@ outside
+1	37518	noun	outside	1	Rain drummed on the outside of the tent all night.
+2	37518	noun	outside	0	The outside is the outer surface of something.
+3	37518	noun	outside	0	The outside of the cup felt hot.
+4	37518	noun	outside	0	Paint the outside of the fence.
+5	37518	noun	outside	0	The outside was covered with dust.
+@ over
+1	37545	adj	over	1	When the race was over, the children hugged their coach.
+2	37545	adj	over	0	Over means finished or ended.
+3	37545	adj	over	0	The film is over now.
+4	37545	adj	over	0	Lunch was over by one o'clock.
+5	37545	adj	over	0	The storm is finally over.
+@ own
+1	37607	adj	own	1	After years of saving, she bought her own little bakery.
+2	37607	adj	own	0	Own means belonging to the person mentioned.
+3	37607	adj	own	0	He has his own room.
+4	37607	adj	own	0	We packed our own lunch.
+5	37607	adj	own	0	The child tied her own shoes.
+@ page
+1	37626	noun	page	1	A pressed flower fell from the page of Grandma's old book.
+2	37626	noun	page	0	A page is one sheet in a book.
+3	37626	noun	page	0	Turn to page ten.
+4	37626	noun	page	0	The page has a picture of a whale.
+5	37626	noun	page	0	She wrote her name at the top of the page.
+@ paint
+1	37649	noun	paint	1	Blue paint covered the mural after the school festival.
+2	37649	noun	paint	0	Paint is a coloured liquid used to cover a surface.
+3	37649	noun	paint	0	The paint dried before lunch.
+4	37649	noun	paint	0	We mixed red and white paint.
+5	37649	noun	paint	0	The paint smelled strong.
+@ painting
+1	37670	noun	painting	1	The painting of the sea made the quiet room feel brighter.
+2	37670	noun	painting	0	A painting is a picture made with paint.
+3	37670	noun	painting	0	Her painting won first prize.
+4	37670	noun	painting	0	The painting hangs above the sofa.
+5	37670	noun	painting	0	We admired the painting at the gallery.
+@ pair
+1	37674	noun	pair	1	A pair of muddy boots stood by the front door.
+2	37674	noun	pair	0	A pair is two matching things together.
+3	37674	noun	pair	0	She bought a pair of gloves.
+4	37674	noun	pair	0	This pair of socks is warm.
+5	37674	noun	pair	0	The pair of birds built a nest.
+@ paper
+1	37698	noun	paper	1	The paper boat floated across the puddle after the rain.
+2	37698	noun	paper	0	Paper is a thin material used for writing or printing.
+3	37698	noun	paper	0	Write your answer on paper.
+4	37698	noun	paper	0	The paper tore easily.
+5	37698	noun	paper	0	He folded the paper in half.
+@ paragraph
+1	37727	noun	paragraph	1	The final paragraph made everyone understand why the hero left.
+2	37727	noun	paragraph	0	A paragraph is a group of sentences about one idea.
+3	37727	noun	paragraph	0	Start a new paragraph here.
+4	37727	noun	paragraph	0	Read the first paragraph aloud.
+5	37727	noun	paragraph	0	Her paragraph begins with a question.
+@ parent
+1	37733	noun	parent	1	Each parent waited outside the hall after the school show.
+2	37733	noun	parent	0	A parent is a person who raises a child.
+3	37733	noun	parent	0	Her parent signed the form.
+4	37733	noun	parent	0	Every parent received a letter.
+5	37733	noun	parent	0	The parent comforted the crying child.
+@ park
+1	37746	noun	park	1	Children chased bubbles through the park after the picnic.
+2	37746	noun	park	0	A park is land set aside for recreation.
+3	37746	noun	park	0	We walked through the park.
+4	37746	noun	park	0	The park has a playground.
+5	37746	noun	park	0	They met at the park.
+@ part
+1	37771	noun	part	1	The missing part stopped the old clock from working.
+2	37771	noun	part	0	A part is one piece of a larger whole.
+3	37771	noun	part	0	This part goes at the top.
+4	37771	noun	part	0	He repaired the broken part.
+5	37771	noun	part	0	Only one part was missing.
+@ partner
+1	37804	noun	partner	1	Her partner caught her hand before she slipped on the wet path.
+2	37804	noun	partner	0	A partner is one person in a pair working together.
+3	37804	noun	partner	0	Choose a partner for the game.
+4	37804	noun	partner	0	My partner reads the next line.
+5	37804	noun	partner	0	Each partner has a different job.
+@ party
+1	37814	noun	party	1	Each party signed the agreement after checking every detail.
+2	37814	noun	party	0	A party is a side in a legal agreement or case.
+3	37814	noun	party	0	The party accepted the new terms.
+4	37814	noun	party	0	Representatives of each party attended court.
+5	37814	noun	party	0	The contract named each party.
+@ passport
+1	37840	noun	passport	1	Her passport was safe in a pocket when the train left the station.
+2	37840	noun	passport	0	A passport proves a traveller's identity and nationality.
+3	37840	noun	passport	0	Show your passport at the border.
+4	37840	noun	passport	0	His passport expires next year.
+5	37840	noun	passport	0	Keep your passport in a safe place.
+@ past
+1	37847	noun	past	1	The old photograph gave us a glimpse of the village's past.
+2	37847	noun	past	0	The past is the time that has already happened.
+3	37847	noun	past	0	We cannot change the past.
+4	37847	noun	past	0	She spoke about her past.
+5	37847	noun	past	0	The past teaches useful lessons.
+@ pay
+1	37860	verb	pay	1	Mum stopped to pay for the medicine before the shop closed.
+2	37860	verb	pay	0	Pay means give money for something.
+3	37860	verb	pay	0	Please pay at the counter.
+4	37860	verb	pay	0	He will pay for lunch.
+5	37860	verb	pay	0	They pay by card.
+@ pen
+1	37874	noun	pen	1	The sheep hurried into their pen when the rain began.
+2	37874	noun	pen	0	A pen is an enclosed area for farm animals.
+3	37874	noun	pen	0	The farmer cleaned the pen.
+4	37874	noun	pen	0	Two goats slept in the pen.
+5	37874	noun	pen	0	The gate of the pen was open.
+@ pencil
+1	37893	noun	pencil	1	Her pencil snapped just before she finished the drawing.
+2	37893	noun	pencil	0	A pencil is a writing tool with a graphite point.
+3	37893	noun	pencil	0	Sharpen your pencil first.
+4	37893	noun	pencil	0	He drew a tree with a pencil.
+5	37893	noun	pencil	0	The pencil rolled under the desk.
+@ people
+1	37902	noun	people	1	People gathered quietly when the missing dog finally came home.
+2	37902	noun	people	0	People are a group of two or more persons.
+3	37902	noun	people	0	Many people use this bridge.
+4	37902	noun	people	0	The people cheered for the band.
+5	37902	noun	people	0	Kind people offered to help.
+@ pepper
+1	37913	noun	pepper	1	Pepper vines climbed the wooden poles behind the kitchen.
+2	37913	noun	pepper	0	Pepper is a climbing plant grown for its spicy seeds.
+3	37913	noun	pepper	0	The farmer checked the pepper plants.
+4	37913	noun	pepper	0	Pepper grew well in the warm field.
+5	37913	noun	pepper	0	They picked pepper after the rain.
+@ perfect
+1	37928	adj	perfect	1	The perfect circle on her cake made the baker smile.
+2	37928	adj	perfect	0	Perfect means exactly right with no faults.
+3	37928	adj	perfect	0	The answer was perfect.
+4	37928	adj	perfect	0	She found the perfect size.
+5	37928	adj	perfect	0	This is a perfect example.
+@ period
+1	37952	noun	period	1	During a quiet period, the nurse checked every sleeping patient.
+2	37952	noun	period	0	A period is a length of time.
+3	37952	noun	period	0	The shop closed for a short period.
+4	37952	noun	period	0	We rested for one period.
+5	37952	noun	period	0	The dry period lasted two months.
+@ person
+1	37978	noun	person	1	One kind person stayed behind to help the lost child.
+2	37978	noun	person	0	A person is one human individual.
+3	37978	noun	person	0	Each person needs a ticket.
+4	37978	noun	person	0	The person at the desk smiled.
+5	37978	noun	person	0	Only one person knew the code.
+@ personal
+1	37993	adj	personal	1	Her personal letter made the distant grandmother feel close again.
+2	37993	adj	personal	0	Personal means connected with a particular person.
+3	37993	adj	personal	0	That is a personal question.
+4	37993	adj	personal	0	He kept his personal notes private.
+5	37993	adj	personal	0	The teacher gave personal advice.

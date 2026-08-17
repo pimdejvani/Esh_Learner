@@ -1,0 +1,104 @@
+@ stand
+1	40402	verb	stood	1	When her name was called, Ava stood and smiled at her family.
+2	40403	verb	stand	0	Please stand when the teacher enters the room.
+3	40439	noun	stand	0	We bought warm bread from a small stand at the market.
+4	40402	verb	standing	0	He is standing beside the gate and waiting for us.
+5	40433	noun	stands	0	These wooden stands hold the paintings upright.
+
+@ star
+1	40455	noun	stars	1	We lay on the grass and watched the stars appear above us.
+2	40467	noun	star	0	The star of the film thanked the audience after the show.
+3	40472	verb	starred	0	She starred in a comedy about two best friends.
+4	40465	noun	stars	0	The hotel received five stars for its excellent service.
+5	40473	verb	stars	0	The new series stars a young actor from Bangkok.
+
+@ station
+1	40514	noun	station	1	I ran into the station just before the last train left.
+2	40519	noun	station	0	The police station is across from the bank.
+3	40539	verb	stationed	0	A guide was stationed at the door to welcome visitors.
+4	40522	noun	stations	0	Several radio stations reported the storm warning.
+5	40540	verb	stationed	0	The army stationed two guards near the bridge.
+
+@ stay
+1	40542	verb	stayed	1	We stayed beside our frightened dog until the storm passed.
+2	40543	verb	stays	0	This bottle keeps water cold, so it stays fresh all day.
+3	40564	noun	stay	0	Our stay at the beach lasted three peaceful days.
+4	40542	verb	staying	0	Mina is staying with her aunt this weekend.
+5	40542	verb	stay	0	Please stay here while I buy the tickets.
+
+@ still
+1	40587	adj	still	1	The child stood completely still as the butterfly landed on her hand.
+2	40595	adv	still	0	I still remember the song our teacher taught us.
+3	40602	noun	still	0	The newspaper printed a still from the new film.
+4	40609	verb	stilled	0	The soft music stilled the crying baby.
+5	40587	adj	stiller	0	After sunset, the lake became even stiller.
+
+@ stop
+1	40615	verb	stopped	1	The driver stopped the bus when a child ran into the road.
+2	40613	verb	stops	0	The train stops here for only two minutes.
+3	40629	noun	stop	0	Meet me at the bus stop after school.
+4	40616	verb	stopping	0	We are stopping work early today.
+5	40630	noun	stops	0	The driver made two stops during the long trip.
+
+@ story
+1	40651	noun	story	1	Grandpa told us a funny story that made everyone laugh.
+2	40651	noun	stories	0	The children wrote stories about life under the sea.
+3	40652	noun	story	0	He claimed the dog ate his homework, but that story was a lie.
+4	40655	noun	story	0	The full story of the rescue appeared in the morning news.
+5	40658	verb	storied	0	The old poem storied the hero's journey across the sea.
+
+@ style
+1	40738	noun	style	1	I recognized Mia in the crowd by her bright and playful style.
+2	40733	noun	style	0	The author's clear style makes the book easy to read.
+3	40743	verb	styled	0	The hairdresser styled her hair for the wedding.
+4	40736	noun	styles	0	The museum displays several styles of modern art.
+5	40741	verb	styling	0	They are styling the room with simple wooden furniture.
+
+@ subject
+1	40747	adj	subject	1	Our beach picnic is subject to the weather, so we keep watching the dark clouds.
+2	40753	noun	subject	0	Science is her favorite subject at school.
+3	40752	noun	subject	0	The main subject of the meeting was road safety.
+4	40761	verb	subjected	0	The workers were subjected to hours of loud noise.
+5	40753	noun	subjects	0	Students choose three subjects for the next term.
+
+@ tall
+1	41013	adj	tall	1	The tall tree shone with hundreds of lights at the festival.
+2	41012	adj	taller	0	Nina is taller than her older brother now.
+3	41011	adj	tallest	0	That tower is the tallest building in our town.
+4	41022	noun	tall	0	I ordered this jacket in a tall because the regular size was too short.
+5	41013	adj	tall	0	A tall fence surrounds the garden.
+
+@ them
+1	41214	pron	them	1	I hugged them when they finally arrived home safely.
+2	41216	pron	them	0	Please give the keys to them before you leave.
+3	41215	pron	them	0	She wrote them a short thank-you note.
+4	41219	pron	them	0	If a caller asks for me, tell them I will call back soon.
+5	41213	pron	them	0	I saw the blue shoes, but I chose them in red.
+
+@ ticket
+1	41370	noun	ticket	1	I found the last concert ticket in my pocket and cheered.
+2	41371	noun	ticket	0	Show your ticket before you board the train.
+3	41376	noun	tickets	0	Cars parked here may receive tickets.
+4	41384	verb	ticketed	0	The officer ticketed a driver for speeding.
+5	41384	verb	tickets	0	This officer tickets cars that block the gate.
+
+@ time
+1	41401	noun	time	1	It was time to open the letter we had waited all week to read.
+2	41400	noun	time	0	What time does the next bus leave?
+3	41403	noun	times	0	I called her three times before she answered.
+4	41415	verb	timed	0	The coach timed my run with a stopwatch.
+5	41415	verb	timing	0	They are timing each swimmer during the race.
+
+@ tired
+1	41422	adj	tired	1	After carrying his little sister home, Ben was tired but proud.
+2	41423	adj	tired	0	I am tired of hearing the same excuse every day.
+3	41422	adj	more tired	0	I felt more tired after the second game.
+4	41421	verb	tired	0	The long climb tired everyone in the group.
+5	41422	adj	most tired	0	Of all the players, Leo looked the most tired after practice.
+
+@ title
+1	41429	noun	title	1	The strange title on the old book made me open it at once.
+2	41428	noun	title	0	I know the song, but I cannot remember its title.
+3	41436	noun	titles	0	The film's titles rolled across the screen at the end.
+4	41441	verb	titled	0	She titled her painting Morning Rain.
+5	41441	verb	titles	0	The editor titles every article before publication.

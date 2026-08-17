@@ -1,0 +1,150 @@
+@ extent
+1	63378	noun	extent	1	We could see the extent of the flood from the hill.
+2	63378	noun	extent	0	The range or size of something is its extent.
+3	63378	noun	extent	0	The map shows the extent of the national park.
+4	63378	noun	extent	0	Nobody knew the full extent of the damage.
+5	63378	noun	extent	0	The extent of the problem became clear after the inspection.
+@ external
+1	63384	adj	external	1	The external wall of the house needs fresh paint.
+2	63384	adj	external	0	Something on the outside of an object is external.
+3	63384	adj	external	0	The external door leads to the garden.
+4	63384	adj	external	0	Check the external surface for cracks.
+5	63384	adj	external	0	The camera has an external microphone.
+@ extraordinary
+1	63400	adj	extraordinary	1	The tiny dog showed extraordinary bravery during the fire.
+2	63400	adj	extraordinary	0	Something very unusual or exceptional is extraordinary.
+3	63400	adj	extraordinary	0	She has an extraordinary talent for music.
+4	63400	adj	extraordinary	0	The view from the mountain was extraordinary.
+5	63400	adj	extraordinary	0	It was an extraordinary day we will never forget.
+@ facility
+1	63404	noun	facility	1	The sports facility has a pool, gym, and running track.
+2	63404	noun	facility	0	A building or equipment that makes a service possible is a facility.
+3	63404	noun	facility	0	The hospital is a modern medical facility.
+4	63404	noun	facility	0	The town opened a recycling facility near the station.
+5	63404	noun	facility	0	This school facility is available to local groups.
+@ failure
+1	63412	noun	failure	1	The team's failure to bring water caused a difficult hike.
+2	63412	noun	failure	0	Not achieving an intended goal is failure.
+3	63412	noun	failure	0	The project ended in failure because no one checked the plan.
+4	63412	noun	failure	0	A failure to follow the rules can be dangerous.
+5	63412	noun	failure	0	She learned from the failure and tried again.
+@ faith
+1	63439	noun	faith	1	I have faith that my friend will keep her promise.
+2	63439	noun	faith	0	Trust in someone's ability or intentions is faith.
+3	63439	noun	faith	0	The coach had faith in the young team.
+4	63439	noun	faith	0	His faith in the plan grew after the first success.
+5	63439	noun	faith	0	Parents put faith in the teacher's experience.
+@ fault
+1	63418	noun	fault	1	The broken glass was my fault because I knocked it over.
+2	63418	noun	fault	0	Responsibility for a bad event is fault.
+3	63418	noun	fault	0	It was not her fault that the bus was late.
+4	63418	noun	fault	0	The referee said the accident was nobody's fault.
+5	63418	noun	fault	0	He admitted fault and apologized.
+@ feather
+1	63469	noun	feather	1	A blue feather drifted down from the tree.
+2	63469	noun	feather	0	A light hair-like part that covers a bird is a feather.
+3	63469	noun	feather	0	The bird lost a feather while flying.
+4	63469	noun	feather	0	She found a feather on the beach.
+5	63469	noun	feather	0	The peacock displayed every bright feather.
+@ fee
+1	63445	noun	fee	1	We paid a small fee to enter the museum.
+2	63445	noun	fee	0	An amount charged for a service or privilege is a fee.
+3	63445	noun	fee	0	The club charges a monthly fee for membership.
+4	63445	noun	fee	0	There is no fee for borrowing library books.
+5	63445	noun	fee	0	The doctor explained the fee before the visit.
+@ feedback
+1	63463	noun	feedback	1	The teacher's feedback helped me improve my essay.
+2	63463	noun	feedback	0	Comments that assess work or a process are feedback.
+3	63463	noun	feedback	0	Please give us feedback about the new app.
+4	63463	noun	feedback	0	The coach gave helpful feedback after practice.
+5	63463	noun	feedback	0	Customer feedback showed that people liked the change.
+@ fellow
+1	63520	noun	fellow	1	My fellow hikers helped carry the heavy tent.
+2	63520	noun	fellow	0	A companion or person in the same group is a fellow.
+3	63520	noun	fellow	0	She greeted her fellow students at the door.
+4	63520	noun	fellow	0	Each fellow traveler received a map.
+5	63520	noun	fellow	0	He shared his lunch with a fellow worker.
+@ finance
+1	63495	noun	finance	1	She studies finance to learn how businesses manage money.
+2	63495	noun	finance	0	The management of money and assets is finance.
+3	63495	noun	finance	0	Good finance helps a family plan for the future.
+4	63495	noun	finance	0	The course covers personal finance and saving.
+5	63495	noun	finance	0	He works in finance at a large company.
+@ finding
+1	63456	noun	finding	1	The main finding of the study was that plants need more light.
+2	63456	noun	finding	0	A result from research or an investigation is a finding.
+3	63456	noun	finding	0	The scientist shared her finding with the class.
+4	63456	noun	finding	0	One finding from the survey surprised the team.
+5	63456	noun	finding	0	The police reported their finding after searching the house.
+@ firm
+1	63503	noun	firm	1	The law firm helped my aunt start her new business.
+2	63503	noun	firm	0	A business partnership is a firm.
+3	63503	noun	firm	0	The firm hired two new designers this month.
+4	63503	noun	firm	0	His firm sells computers to local schools.
+5	63503	noun	firm	0	The firm moved to a larger office downtown.
+@ flexible
+1	63559	adj	flexible	1	This flexible ruler bends without breaking.
+2	63559	adj	flexible	0	Able to bend without breaking means flexible.
+3	63559	adj	flexible	0	The flexible tube fits around the corner.
+4	63559	adj	flexible	0	Rubber is flexible enough to stretch.
+5	63559	adj	flexible	0	Use a flexible material for the handle.
+@ float
+1	63646	verb	float	1	The wooden boat can float on the calm lake.
+2	63646	verb	float	0	To stay on top of water is to float.
+3	63646	verb	float	0	Leaves float along the stream.
+4	63646	verb	floated	0	The ball floated in the swimming pool.
+5	63646	verb	float	0	Oil can float on the surface of water.
+@ folding
+1	63628	adj	folding	1	We brought a folding chair to the outdoor concert.
+2	63628	adj	folding	0	Designed so it can fold is folding.
+3	63628	adj	folding	0	A folding table is easy to store in a small room.
+4	63628	adj	folding	0	She packed a folding map in her bag.
+5	63628	adj	folding	0	The folding door saves space in the hallway.
+@ forgive
+1	63635	verb	forgive	1	Please forgive me for forgetting your birthday.
+2	63635	verb	forgive	0	To stop feeling angry at someone for a wrong is to forgive them.
+3	63635	verb	forgive	0	Can you forgive your brother for breaking the toy?
+4	63635	verb	forgave	0	She forgave him after he apologized.
+5	63635	verb	forgive	0	It can take time to forgive a friend.
+@ former
+1	63641	adj	former	1	Our former teacher visited the school last week.
+2	63641	adj	former	0	Something or someone from an earlier time is former.
+3	63641	adj	former	0	He met his former neighbor at the market.
+4	63641	adj	former	0	The former owner left a note in the house.
+5	63641	adj	former	0	She returned to her former job after a year away.
+@ fortune
+1	63709	noun	fortune	1	By good fortune, we found shelter just before the rain started.
+2	63709	noun	fortune	0	Good luck or favorable destiny is fortune.
+3	63709	noun	fortune	0	It was fortune that brought the old friends together.
+4	63709	noun	fortune	0	She thanked fortune for the unexpected opportunity.
+5	63709	noun	fortune	0	His good fortune changed after he found the lost wallet.
+@ found
+1	63700	verb	found	1	I found my missing glove under the bed.
+2	63700	verb	found	0	Found is the past form of find.
+3	63700	verb	found	0	She found a coin on the sidewalk.
+4	63700	verb	found	0	We found the right address after checking the map.
+5	63700	verb	found	0	He found his dog waiting by the gate.
+@ freedom
+1	63728	noun	freedom	1	The birds flew away into the freedom of the open sky.
+2	63728	noun	freedom	0	The state of being free is freedom.
+3	63728	noun	freedom	0	Everyone deserves freedom to express an opinion.
+4	63728	noun	freedom	0	The open gate gave the dog freedom to run outside.
+5	63728	noun	freedom	0	Traveling alone gave her a feeling of freedom.
+@ frequency
+1	63740	noun	frequency	1	The frequency of buses increases during the morning rush.
+2	63740	noun	frequency	0	How often something happens is its frequency.
+3	63740	noun	frequency	0	The doctor asked about the frequency of the headaches.
+4	63740	noun	frequency	0	The frequency of rain changes with the seasons.
+5	63740	noun	frequency	0	High frequency of practice helps people learn faster.
+@ fully
+1	63719	adv	fully	1	Please fully charge the phone before our trip.
+2	63719	adv	fully	0	Completely and without anything missing means fully.
+3	63719	adv	fully	0	She fully understood the instructions after the example.
+4	63719	adv	fully	0	The room was fully ready for the guests.
+5	63719	adv	fully	0	Make sure the lid is fully closed.
+@ fund
+1	63733	noun	fund	1	The school created a fund to buy books for children.
+2	63733	noun	fund	0	A sum of money set aside for a purpose is a fund.
+3	63733	noun	fund	0	The charity fund paid for the new playground.
+4	63733	noun	fund	0	They started a fund for emergency repairs.
+5	63733	noun	fund	0	Donations helped grow the community fund.

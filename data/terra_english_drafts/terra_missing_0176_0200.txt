@@ -1,0 +1,150 @@
+@ property
+1	58685	noun	property	1	The family bought a small property near the sea.
+2	58684	noun	property	0	Please do not leave your property on the bus.
+3	58685	noun	property	0	This property has a garden and two bedrooms.
+4	58688	noun	property	0	Hardness is an important property of this metal.
+5	58684	noun	properties	0	The company owns several properties in the city.
+@ protest
+1	58676	verb	protested	1	Thousands protested outside the city hall against the new law.
+2	58673	verb	protest	0	Workers plan to protest about unsafe conditions.
+3	58675	verb	protested	0	Parents protested the decision to close the library.
+4	58673	verb	protesting	0	Students are protesting peacefully in the square.
+5	58676	verb	protest	0	People protest when they believe a rule is unfair.
+@ proud
+1	58664	adj	proud	1	Her parents were proud when she graduated from college.
+2	58664	adj	proud	0	I am proud of the work our team completed.
+3	58665	adj	proud	0	Finishing the marathon was a proud moment for him.
+4	58664	adj	proud	0	She felt proud after helping her neighbor.
+5	58668	adj	proud	0	The school has a proud history of supporting music.
+@ prove
+1	58701	verb	prove	1	The experiment will prove whether the water is safe to drink.
+2	58701	verb	prove	0	Can you prove that this answer is correct?
+3	58703	verb	proved	0	The shortcut proved much faster than the main road.
+4	58701	verb	proves	0	The report proves that the problem is getting worse.
+5	58704	verb	proving	0	She is proving her new recipe before serving it.
+@ punish
+1	58697	verb	punish	1	The teacher did not punish the child for an honest mistake.
+2	58697	verb	punish	0	Schools may punish students who break serious rules.
+3	58697	verb	punished	0	He was punished for cheating on the test.
+4	58697	verb	punishing	0	The coach is punishing the team too harshly.
+5	58698	verb	punish	0	Do not punish yourself for things you cannot change.
+@ punishment
+1	58713	noun	punishment	1	Losing phone privileges was his punishment for breaking the rule.
+2	58712	noun	punishment	0	The punishment was decided by the school principal.
+3	58713	noun	punishment	0	A fine can be a punishment for parking illegally.
+4	58714	noun	punishment	0	The long hike felt like punishment in the hot sun.
+5	58712	noun	punishment	0	Fair punishment should help a child learn from a mistake.
+@ qualification
+1	58718	noun	qualification	1	A teaching qualification is required for this job.
+2	58717	noun	qualifications	0	Her qualifications made her a strong candidate.
+3	58718	noun	qualification	0	He earned a qualification in computer repair.
+4	58716	noun	qualification	0	Winning the race secured her qualification for the final.
+5	58717	noun	qualifications	0	List your qualifications on the application form.
+@ qualified
+1	58721	adj	qualified	1	Only qualified electricians may repair the wiring.
+2	58721	adj	qualified	0	She is qualified to teach English at this level.
+3	58721	adj	qualified	0	A qualified doctor examined the patient.
+4	58722	adj	qualified	0	His support was qualified by concerns about the cost.
+5	58721	adj	qualified	0	You are qualified for the course if you pass the test.
+@ qualify
+1	58725	verb	qualify	1	You must qualify for the final before you can win the race.
+2	58725	verb	qualify	0	Does this ticket qualify for a discount?
+3	58726	verb	qualify	0	The training will qualify you for the new role.
+4	58731	verb	qualified	0	Our team qualified for the championship game.
+5	58727	verb	qualifying	0	She is qualifying as a nurse this year.
+@ queue
+1	58740	noun	queue	1	We joined the queue outside the bakery before it opened.
+2	58740	noun	queue	0	The queue moved quickly once another cashier arrived.
+3	58741	noun	queue	0	Your request is next in the support queue.
+4	58740	noun	queues	0	Long queues formed at the airport security gates.
+5	58740	noun	queue	0	Please stand at the back of the queue.
+@ quit
+1	58755	verb	quit	1	She decided to quit her job and start her own business.
+2	58756	verb	quit	0	He is trying to quit smoking this year.
+3	58751	verb	quit	0	We had to quit the park before it got dark.
+4	58755	verb	quitted	0	He quitted the committee after two years.
+5	58757	verb	quit	0	Remember to quit the program before turning off the computer.
+@ quotation
+1	58737	noun	quotation	1	The builder gave us a quotation for repairing the roof.
+2	58735	noun	quotation	0	She began her speech with a quotation from a poet.
+3	58737	noun	quotation	0	Compare each quotation before choosing a plumber.
+4	58735	noun	quotations	0	The book contains quotations from famous scientists.
+5	58736	noun	quotation	0	Always check the source of a quotation online.
+@ quote
+1	58766	noun	quote	1	My favorite quote from the film is written on my wall.
+2	58768	noun	quote	0	Ask the mechanic for a quote before agreeing to the repair.
+3	58766	noun	quote	0	She shared a quote from her favorite author.
+4	58768	noun	quote	0	The painter's quote was lower than we expected.
+5	58766	noun	quotes	0	The article includes quotes from several experts.
+@ racing
+1	58764	noun	racing	1	He spends every weekend watching motor racing with his father.
+2	58764	noun	racing	0	Horse racing attracts large crowds on festival days.
+3	58764	noun	racing	0	She hopes to work in professional racing one day.
+4	58764	noun	racing	0	Safety is very important in motorcycle racing.
+5	58764	noun	racing	0	The town is famous for its annual boat racing event.
+@ range
+1	58810	noun	range	1	The store sells a wide range of fresh bread.
+2	58810	noun	range	0	This menu offers a range of vegetarian meals.
+3	58808	noun	range	0	Snow covered the mountain range in winter.
+4	58814	noun	range	0	The radio has a range of twenty kilometers.
+5	58811	noun	range	0	They practiced shooting at the army range.
+@ rare
+1	58783	adj	rare	1	It is rare to see snow in this warm city.
+2	58783	adj	rare	0	A blue lobster is a rare sight.
+3	58784	adj	rare	0	Rain is rare here during the dry season.
+4	58789	adj	rare	0	He ordered his steak rare.
+5	58783	adj	rare	0	That first edition is rare and valuable.
+@ rarely
+1	58775	adv	rarely	1	We rarely eat out because we enjoy cooking at home.
+2	58775	adv	rarely	0	She rarely misses the morning bus.
+3	58775	adv	rarely	0	It rarely rains in this area in January.
+4	58775	adv	rarely	0	He rarely talks about his childhood.
+5	58775	adv	rarely	0	The shop is rarely open after six o'clock.
+@ reaction
+1	58778	noun	reaction	1	Her surprised reaction made everyone laugh.
+2	58778	noun	reaction	0	What was his reaction to the good news?
+3	58779	noun	reaction	0	Mixing these liquids causes a chemical reaction.
+4	58782	noun	reaction	0	She added a heart reaction to the message.
+5	58778	noun	reaction	0	The audience's reaction was warm and enthusiastic.
+@ reality
+1	58798	noun	reality	1	The reality of moving abroad was harder than she expected.
+2	58799	noun	reality	0	In reality, the journey takes more than an hour.
+3	58798	noun	reality	0	Dreams are not always the same as reality.
+4	58800	noun	reality	0	The storm became a reality by midnight.
+5	58799	noun	reality	0	He had to face the reality of the situation.
+@ receipt
+1	58847	noun	receipt	1	Keep the receipt in case you need to return the shoes.
+2	58847	noun	receipt	0	The cashier gave me a receipt after I paid.
+3	58846	noun	receipts	0	The store's receipts increased during the holiday season.
+4	58847	noun	receipt	0	You need a receipt to claim the expense.
+5	58844	noun	receipt	0	We confirmed receipt of your application by email.
+@ recommendation
+1	58796	noun	recommendation	1	My doctor's recommendation was to get more sleep.
+2	58794	noun	recommendation	0	This book was a recommendation from my teacher.
+3	58796	noun	recommendation	0	Follow the recommendation to back up your files.
+4	58795	noun	recommendation	0	Her recommendation helped him get the job.
+5	58797	noun	recommendation	0	The app gave me a recommendation for a new podcast.
+@ reference
+1	58867	noun	reference	1	The employer asked for a reference from my previous manager.
+2	58872	noun	reference	0	Add a reference to every source you use in the report.
+3	58869	noun	reference	0	Keep a dictionary nearby as a reference.
+4	58865	noun	reference	0	She made no reference to the earlier argument.
+5	58867	noun	references	0	The application asks for two professional references.
+@ reflect
+1	58883	verb	reflects	1	The still lake reflects the mountains like a mirror.
+2	58881	verb	reflect	0	White walls reflect more light than dark walls.
+3	58887	verb	reflect	0	Take time to reflect on what you learned.
+4	58886	verb	reflects	0	His work reflects years of careful practice.
+5	58883	verb	reflected	0	Her face was reflected in the shop window.
+@ regularly
+1	58806	adv	regularly	1	She regularly calls her grandmother on Sunday evenings.
+2	58806	adv	regularly	0	The bus arrives regularly every fifteen minutes.
+3	58807	adv	regularly	0	I regularly drink tea with breakfast.
+4	58806	adv	regularly	0	Check the smoke alarm regularly for safety.
+5	58807	adv	regularly	0	He regularly walks to work when the weather is good.
+@ reject
+1	58858	verb	rejected	1	The bank rejected his loan application because it was incomplete.
+2	58858	verb	reject	0	You can reject the offer if the price is too low.
+3	58858	verb	rejected	0	She rejected the invitation politely.
+4	58858	verb	rejecting	0	The machine is rejecting coins that are too old.
+5	58860	verb	reject	0	It is okay to reject a date if you are not interested.

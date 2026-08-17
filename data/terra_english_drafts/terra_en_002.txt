@@ -1,0 +1,150 @@
+@ chat
+1	44532	verb	chatted	1	We chatted on the bus until my stop arrived.
+2	44532	verb	chat	0	Let's chat after class about the group project.
+3	44532	verb	chat	0	I chat with my cousin every Sunday evening.
+4	44532	verb	chatted	0	The neighbors chatted over the garden fence.
+5	44532	verb	chatted	0	They chatted while waiting for the rain to stop.
+@ chef
+1	44548	noun	chef	1	The chef planned a special dinner for the family in the large house.
+2	44548	noun	chef	0	The chef works in the kitchen of the old mansion.
+3	44548	noun	chef	0	A chef prepared lunch for the guests upstairs.
+4	44548	noun	chef	0	The house chef bought fresh vegetables at dawn.
+5	44548	noun	chef	0	The chef asked the kitchen helpers to set the table.
+@ chemistry
+1	44556	noun	chemistry	1	Chemistry helped Mia understand why vinegar and baking soda fizzed.
+2	44556	noun	chemistry	0	In chemistry, we learn how substances change.
+3	44556	noun	chemistry	0	Our chemistry teacher showed us a safe experiment.
+4	44556	noun	chemistry	0	He chose chemistry because he enjoys studying materials.
+5	44556	noun	chemistry	0	The chemistry lab has goggles for every student.
+@ chip
+1	44561	noun	chip	1	A chip of blue paint fell from the old door.
+2	44561	noun	chip	0	A chip broke off the edge of the cup.
+3	44561	noun	chip	0	She brushed a small chip of wood from her sleeve.
+4	44561	noun	chip	0	The stone left a chip on the garden wall.
+5	44561	noun	chip	0	Dad found a chip of glass near the broken window.
+@ choice
+1	44599	noun	choice	1	Lena had a hard choice between the art club and the football team.
+2	44599	noun	choice	0	You can make one choice from these two meals.
+3	44599	noun	choice	0	Taking the early train was a sensible choice.
+4	44599	noun	choice	0	The shop gives customers a choice of three colors.
+5	44599	noun	choice	0	His choice was to stay home and finish his homework.
+@ church
+1	44609	noun	church	1	The family met outside the church after the Sunday service.
+2	44609	noun	church	0	The church is the tall building beside the park.
+3	44609	noun	church	0	We heard bells from the church at noon.
+4	44609	noun	church	0	A wedding was taking place at the church.
+5	44609	noun	church	0	The church opened its doors before the service began.
+@ cigarette
+1	44619	noun	cigarette	1	He threw the cigarette away before entering the hospital.
+2	44619	noun	cigarette	0	A cigarette is a small roll of tobacco in paper.
+3	44619	noun	cigarette	0	The sign says not to smoke a cigarette here.
+4	44619	noun	cigarette	0	She smelled cigarette smoke near the bus stop.
+5	44619	noun	cigarette	0	One cigarette lay on the wet pavement.
+@ circle
+1	44621	noun	circle	1	The children stood in a circle around the birthday cake.
+2	44621	noun	circle	0	A circle is round and has no corners.
+3	44621	noun	circle	0	Draw a circle around the correct answer.
+4	44621	noun	circle	0	The teacher made a circle on the board with a compass.
+5	44621	noun	circle	0	The clock face is shaped like a circle.
+@ classical
+1	44646	adj	classical	1	The museum displayed a classical painting that visitors admired.
+2	44646	adj	classical	0	The book is a classical work of literature.
+3	44646	adj	classical	0	She studied the classical style of the famous artist.
+4	44646	adj	classical	0	This poem is known as a classical example of its kind.
+5	44646	adj	classical	0	The library keeps classical books in a special room.
+@ clear
+1	44657	adj	clear	1	The lake was so clear that we could see stones at the bottom.
+2	44657	adj	clear	0	The glass is clear, so light can pass through it.
+3	44657	adj	clear	0	Use clear water to wash the paintbrush.
+4	44657	adj	clear	0	Her clear bottle showed how much juice was left.
+5	44657	adj	clear	0	The window became clear after Sam cleaned it.
+@ clearly
+1	44705	adv	clearly	1	The guide spoke clearly, so nobody missed the meeting time.
+2	44705	adv	clearly	0	Please write your name clearly on the form.
+3	44705	adv	clearly	0	I could clearly hear the train arriving.
+4	44705	adv	clearly	0	The map clearly shows the path to the lake.
+5	44705	adv	clearly	0	She clearly explained the rules before the game.
+@ clever
+1	44708	adj	clever	1	The clever mechanic fixed the loose bike chain with a small tool.
+2	44708	adj	clever	0	He is clever with his hands and can repair toys.
+3	44708	adj	clever	0	A clever dancer moved quickly around the stage.
+4	44708	adj	clever	0	The clever baker made flowers from soft sugar.
+5	44708	adj	clever	0	My clever sister can sew a button in minutes.
+@ climate
+1	44720	noun	climate	1	The warm climate lets farmers grow fruit for much of the year.
+2	44720	noun	climate	0	A climate is the usual weather in a place over many years.
+3	44720	noun	climate	0	The island has a wet climate with heavy summer rain.
+4	44720	noun	climate	0	Plants in this climate need little water.
+5	44720	noun	climate	0	We packed light clothes for the tropical climate.
+@ closed
+1	44725	adj	closed	1	The closed gate kept the dog safely inside the yard.
+2	44725	adj	closed	0	The shop is closed on Monday mornings.
+3	44725	adj	closed	0	Keep the closed lid on the box during the trip.
+4	44725	adj	closed	0	The road was closed because of flooding.
+5	44725	adj	closed	0	She found the closed window beside her desk.
+@ clothing
+1	44754	verb	clothing	1	She was clothing the child in a warm coat before the snow began.
+2	44754	verb	clothing	0	The parent is clothing the baby for the cold weather.
+3	44754	verb	clothing	0	He is clothing the actor for the school play.
+4	44754	verb	clothing	0	They are clothing the hikers in waterproof jackets.
+5	44754	verb	clothing	0	The nurse is clothing the patient after the bath.
+@ cloud
+1	44759	noun	cloud	1	A dark cloud covered the sun just before the rain started.
+2	44759	noun	cloud	0	A cloud is a visible mass of tiny water drops in the sky.
+3	44759	noun	cloud	0	One white cloud moved slowly above the hill.
+4	44759	noun	cloud	0	The plane flew below a thick cloud.
+5	44759	noun	cloud	0	We watched a cloud change shape in the wind.
+@ coach
+1	44783	noun	coach	1	The horse pulled the coach along the muddy road to town.
+2	44783	noun	coach	0	A coach is a vehicle that can be pulled by horses.
+3	44783	noun	coach	0	The queen traveled in a gold coach.
+4	44783	noun	coach	0	Two horses stood in front of the wooden coach.
+5	44783	noun	coach	0	The old coach had curtains on its small windows.
+@ coast
+1	44796	noun	coast	1	We walked along the coast and collected shells at sunset.
+2	44796	noun	coast	0	The coast is where land meets the sea.
+3	44796	noun	coast	0	The boat stayed close to the rocky coast.
+4	44796	noun	coast	0	Many birds nest along this quiet coast.
+5	44796	noun	coast	0	They drove from the city to the coast for the weekend.
+@ code
+1	44807	noun	code	1	Enter the code from your ticket to open the locker.
+2	44807	noun	code	0	The code is a short label for this product.
+3	44807	noun	code	0	Each student has a code on their library card.
+4	44807	noun	code	0	Check the code before you order the part.
+5	44807	noun	code	0	The doctor wrote the test code on the form.
+@ colleague
+1	44827	noun	colleague	1	My colleague saved me a seat at the staff meeting.
+2	44827	noun	colleague	0	A colleague is someone you work with.
+3	44827	noun	colleague	0	I asked a colleague to check my report.
+4	44827	noun	colleague	0	Her colleague works in the office next door.
+5	44827	noun	colleagues	0	Two colleagues shared lunch in the break room.
+@ collect
+1	44829	verb	collected	1	After the picnic, we collected every bottle from the grass.
+2	44829	verb	collect	0	Please collect the books from the classroom floor.
+3	44829	verb	collects	0	He collects stamps from different countries.
+4	44829	verb	collect	0	Workers collect rubbish early each Tuesday.
+5	44829	verb	collected	0	The children collected leaves for their science project.
+@ column
+1	44841	noun	column	1	The stone column at the entrance held up the heavy roof.
+2	44841	noun	column	0	A column is a tall upright support for a roof.
+3	44841	noun	columns	0	The old temple has six white columns.
+4	44841	noun	column	0	Cracks appeared in the column after the earthquake.
+5	44841	noun	column	0	The painter carefully cleaned each column.
+@ comedy
+1	44850	noun	comedy	1	The students sang a comedy during their lesson on ancient Greek theatre.
+2	44850	noun	comedy	0	In ancient Greece, a comedy could be a song of celebration.
+3	44850	noun	comedy	0	The class listened to a comedy at the festival.
+4	44850	noun	comedy	0	Our teacher explained that this comedy came from an old Greek tradition.
+5	44850	noun	comedy	0	The actors performed a comedy to celebrate the harvest.
+@ comfortable
+1	44858	adj	comfortable	1	The comfortable chair made reading by the window easy.
+2	44858	adj	comfortable	0	This soft bed is comfortable to sleep in.
+3	44858	adj	comfortable	0	Wear comfortable shoes for the long walk.
+4	44858	adj	comfortable	0	The baby looked comfortable in her warm blanket.
+5	44858	adj	comfortable	0	We found a comfortable seat on the train.
+@ comment
+1	44866	noun	comment	1	Her kind comment made the new student smile.
+2	44866	noun	comment	0	A comment is something a person says or writes.
+3	44866	noun	comment	0	Please leave a comment under the photo.
+4	44866	noun	comment	0	His comment about the meal was helpful.
+5	44866	noun	comment	0	The teacher read every comment from the class.

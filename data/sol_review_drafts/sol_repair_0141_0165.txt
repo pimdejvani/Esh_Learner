@@ -1,0 +1,174 @@
+@ architect
+1	43229	noun	architect	1	The architect smiled as families entered the new library she had designed.
+2	43229	noun	architects	0	Two architects prepared plans for the new school.
+3	43230	noun	architect	0	She was the architect of the team's successful plan.
+4	43232	verb	architected	0	The engineers architected a system that can grow over time.
+5	43232	verb	architecting	0	He is architecting the company's new computer network.
+
+@ architecture
+1	43234	noun	architecture	1	The temple's beautiful architecture made us stop and stare.
+2	43233	noun	architecture	0	She studies architecture at university.
+3	43234	noun	architectures	0	The city contains several different architectures from past centuries.
+4	43239	noun	architecture	0	The team improved the architecture of the new software.
+5	43236	noun	architecture	0	The report explains the architecture of the organization.
+
+@ argue
+1	43240	verb	argue	1	We argue every day.
+2	43241	verb	argued	0	The two friends argued about where to eat.
+3	43243	verb	argues	0	The writer argues that public parks improve city life.
+4	43241	verb	arguing	0	They are arguing over the final score.
+5	43240	verb	argued	0	The dark clouds argued that a storm was near.
+
+@ argument
+1	43250	noun	argument	1	Our silly argument ended when we both started laughing.
+2	43246	noun	argument	0	Her strongest argument was supported by clear evidence.
+3	43250	noun	arguments	0	The brothers often have arguments about chores.
+4	43247	noun	argument	0	The final sentence completes the argument logically.
+5	43246	noun	arguments	0	The article presents arguments for and against the plan.
+
+@ army
+1	43263	noun	army	1	The army arrived with boats and rescued families from the flood.
+2	43263	noun	armies	0	Both armies agreed to stop fighting.
+3	43264	noun	army	0	She joined the army after finishing school.
+4	43267	noun	army	0	An army of volunteers cleaned the beach.
+5	43268	noun	armies	0	Armies of ants carried food toward their nests.
+
+@ bar
+1	43435	noun	bar	1	We met at the bar after work.
+2	43435	noun	bar	0	The chocolate bar is sweet.
+3	43435	noun	bar	0	There is a bar across the street.
+4	43477	verb	bar	0	They bar the door at night.
+5	43477	verb	bars	0	The rule bars children from entering.
+
+@ beef
+1	43616	noun	beef	1	Dad cooked beef for the family dinner after my graduation.
+2	43616	noun	beef	0	This soup contains beef and vegetables.
+3	43616	noun	beefs	0	The butcher sells several local beefs.
+4	43625	verb	beefing	0	He kept beefing about the slow service.
+5	43626	verb	beefed	0	The company beefed up security at the entrance.
+
+@ behave
+1	43636	verb	behave	1	We behave every day.
+2	43639	verb	behaved	0	The children behaved well during the ceremony.
+3	43637	verb	behaves	0	This material behaves differently when it gets hot.
+4	43636	verb	behaving	0	Please stop behaving like a child.
+5	43639	verb	behave	0	You must behave while the teacher is away.
+
+@ behaviour
+1	43640	noun	behaviour	1	The puppy's gentle behaviour helped the frightened child relax.
+2	43640	noun	behaviour	0	The teacher praised Mina's polite behaviour.
+3	43640	noun	behaviours	0	Scientists recorded the animals' feeding behaviours.
+4	43640	noun	behaviour	0	His strange behaviour worried his friends.
+5	43640	noun	behaviours	0	Young children learn acceptable behaviours from adults.
+
+@ belong
+1	43641	verb	belong	1	We belong every day.
+2	43645	verb	belongs	0	This blue backpack belongs to my sister.
+3	43642	verb	belonged	0	At her new school, she finally felt that she belonged.
+4	43643	verb	belonging	0	The books belonging to the library have red labels.
+5	43641	verb	belong	0	These cups belong on the top shelf.
+
+@ belt
+1	43652	noun	belt	1	My seat belt held me safely when the car stopped suddenly.
+2	43651	noun	belt	0	He wore a brown belt with his new trousers.
+3	43653	noun	belts	0	The mechanic checked the machine's belts for damage.
+4	43666	verb	belted	0	She belted the coat tightly around her waist.
+5	43672	verb	belting	0	The singer was belting the final song to the cheering crowd.
+
+@ benefit
+1	43675	noun	benefit	1	The greatest benefit of the new ramp was seeing every child enter easily.
+2	43675	noun	benefits	0	Regular exercise has many health benefits.
+3	43676	noun	benefit	0	She receives a monthly housing benefit.
+4	43680	verb	benefited	0	The new bus route benefited people across the village.
+5	43681	verb	benefiting	0	Local shops are benefiting from the festival.
+
+@ billion
+1	67740	num	billion	1	There is one billion.
+2	67741	num	billion	0	One billion is written as a one followed by nine zeros.
+3	67741	num	billions	0	The company serves billions of messages each day.
+4	67743	num	billion	0	I have told you a billion times to close the gate.
+5	67741	num	billions	0	Billions of people use mobile phones.
+
+@ bin
+1	43683	noun	bin	1	I found my lost ring just before the rubbish bin was emptied.
+2	43682	noun	bins	0	The shop stores rice in large wooden bins.
+3	43683	noun	bin	0	Put the empty bottle in the recycling bin.
+4	43689	verb	binned	0	She binned the broken toy.
+5	43692	verb	binning	0	The workers are binning the grain for winter storage.
+
+@ biology
+1	43696	noun	biology	1	Biology helped me understand how the tiny bird survived its injury.
+2	43696	noun	biology	0	We studied plant cells in biology today.
+3	43697	noun	biology	0	The island's biology includes many rare plants.
+4	43698	noun	biology	0	The course examines the biology of whales.
+5	43696	noun	biologies	0	The books compare the biologies of plants and animals.
+
+@ birth
+1	43701	noun	birth	1	The family cried with joy after the safe birth of their baby.
+2	43700	noun	birth	0	The nurse explained what happens during birth.
+3	43701	noun	births	0	The hospital recorded ten births yesterday.
+4	43702	noun	birth	0	The invention marked the birth of a new industry.
+5	43707	verb	birthed	0	The small project birthed several new ideas.
+
+@ biscuit
+1	43709	noun	biscuit	1	Grandma gave me a warm biscuit while I told her about my day.
+2	43709	noun	biscuits	0	The children shared a plate of chocolate biscuits.
+3	43710	noun	biscuit	0	He served a soft biscuit with the soup.
+4	43711	noun	biscuits	0	We ate cheese and salty biscuits for lunch.
+5	43722	verb	biscuited	0	The potter biscuited the bowls before adding glaze.
+
+@ bit
+1	43733	noun	bit	1	Just a bit of good news made everyone smile again.
+2	43734	noun	bit	0	Please wait a bit while I finish this call.
+3	43737	noun	bits	0	She cut the paper into small bits.
+4	43753	noun	bit	0	A bit can have a value of zero or one.
+5	43750	verb	bit	0	The frightened dog bit my shoe.
+
+@ blank
+1	43758	adj	blank	1	It is blank.
+2	43759	adj	blank	0	Write your name on the blank line.
+3	43762	adj	blank	0	He gave me a blank look because he did not understand.
+4	43772	noun	blanks	0	Fill in the blanks on the form.
+5	43798	verb	blanked	0	I blanked for a moment and forgot her name.
+
+@ blood
+1	43799	noun	blood	1	The donor's blood helped save a child's life.
+2	43799	noun	blood	0	The heart pumps blood around the body.
+3	43800	noun	blood	0	The sisters are related by blood.
+4	43804	noun	bloods	0	The laboratory tested the bloods that morning.
+5	43799	noun	blood	0	A small drop of blood appeared on his finger.
+
+@ blow
+1	43819	verb	blow	1	We blow every day.
+2	43820	verb	blew	0	She blew the dust off the old photograph.
+3	43821	verb	blown	0	The leaves had blown across the garden.
+4	43826	verb	blowing	0	He is blowing a whistle to start the race.
+5	43861	noun	blow	0	The falling branch gave the roof a heavy blow.
+
+@ board
+1	43886	verb	board	1	We ran to board the last train before its doors closed.
+2	43871	noun	board	0	He cut the wooden board into two pieces.
+3	43873	noun	board	0	Place all the game pieces on the board.
+4	43875	noun	boards	0	The two boards approved the agreement.
+5	43886	verb	boarded	0	The passengers boarded the plane quietly.
+
+@ boil
+1	43905	verb	boil	1	We cheered when the water finally began to boil over the small campfire.
+2	43903	verb	boiled	0	She boiled the water before drinking it.
+3	43904	verb	boiling	0	The cook is boiling two eggs for breakfast.
+4	43897	noun	boil	0	Bring the soup to a boil, then lower the heat.
+5	43896	noun	boils	0	The doctor treated the painful boils on his arm.
+
+@ bone
+1	43914	noun	bone	1	The doctor smiled and told me the broken bone would heal well.
+2	43914	noun	bones	0	The human hand contains many small bones.
+3	43915	noun	bone	0	Be careful not to swallow a fish bone.
+4	43928	adj	bone	0	She painted the wall a soft bone color.
+5	43929	verb	boned	0	The cook boned the fish before serving it.
+
+@ borrow
+1	43942	verb	borrow	1	We borrow every day.
+2	43942	verb	borrowed	0	I borrowed an umbrella from my neighbor.
+3	43943	verb	borrows	0	The company borrows money from the bank when needed.
+4	43944	verb	borrowing	0	The designer is borrowing ideas from traditional clothing.
+5	43945	verb	borrowed	0	English borrowed the word piano from Italian.

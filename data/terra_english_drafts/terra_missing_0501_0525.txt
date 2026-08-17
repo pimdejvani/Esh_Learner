@@ -1,0 +1,150 @@
+@ convinced
+1	62460	adj	convinced	1	After seeing the footprints, I was convinced that a fox had visited.
+2	62460	adj	convinced	0	If evidence makes you believe something, you are convinced.
+3	62460	adj	convinced	0	She was convinced that the map would lead us home.
+4	62460	adj	convinced	0	The clear video left everyone convinced of the truth.
+5	62460	adj	convinced	0	He is convinced that daily practice will help him improve.
+@ core
+1	62525	noun	core	1	The core of the problem was a missing key.
+2	62525	noun	core	0	The most essential part of something is its core.
+3	62525	noun	core	0	Trust is at the core of a good friendship.
+4	62525	noun	core	0	The core of the lesson is to stay safe.
+5	62525	noun	core	0	We need to understand the core of the issue first.
+@ corporate
+1	62473	adj	corporate	1	The corporate office sent new rules to every branch.
+2	62473	adj	corporate	0	Something related to an organization or institution is corporate.
+3	62473	adj	corporate	0	She works in corporate training for a large company.
+4	62473	adj	corporate	0	The corporate policy applies to all employees.
+5	62473	adj	corporate	0	Their corporate meeting took place at the main office.
+@ council
+1	62566	noun	council	1	The city council voted to build a new playground.
+2	62566	noun	council	0	A group that leads or governs a community is a council.
+3	62566	noun	council	0	The student council planned the school festival.
+4	62566	noun	council	0	Our council meets once a month to discuss local issues.
+5	62566	noun	council	0	The council listened to residents before making a decision.
+@ county
+1	62561	noun	county	1	The count ruled the county from a castle on the hill.
+2	62561	noun	county	0	Land ruled by a count or countess is a county.
+3	62561	noun	county	0	In the story, each county paid taxes to its count.
+4	62561	noun	county	0	The county belonged to the count's family for generations.
+5	62561	noun	county	0	A countess traveled across her county to meet farmers.
+@ courage
+1	62611	noun	courage	1	It took courage to speak in front of the whole school.
+2	62611	noun	courage	0	The ability to face fear without being careless is courage.
+3	62611	noun	courage	0	She showed courage by helping the injured dog.
+4	62611	noun	courage	0	His courage gave the others confidence during the storm.
+5	62611	noun	courage	0	You need courage to try something difficult for the first time.
+@ crash
+1	62576	noun	crash	1	We heard a loud crash when the plates fell from the shelf.
+2	62576	noun	crash	0	A sudden loud sound is a crash.
+3	62576	noun	crash	0	The crash of thunder woke the baby.
+4	62576	noun	crash	0	There was a crash in the kitchen, then everyone went quiet.
+5	62576	noun	crash	0	The cymbals ended the song with a sharp crash.
+@ creation
+1	62600	noun	creation	1	The robot was Maya's proudest creation for the science fair.
+2	62600	noun	creation	0	Something made or invented is a creation.
+3	62600	noun	creation	0	The artist displayed her clay creation in the hall.
+4	62600	noun	creation	0	This cake is Dad's newest kitchen creation.
+5	62600	noun	creation	0	The children's creation was built from boxes and tape.
+@ creature
+1	62571	noun	creature	1	A strange creature moved through the tall grass at dusk.
+2	62571	noun	creature	0	A living being such as an animal or monster is a creature.
+3	62571	noun	creature	0	The tiny sea creature hid under a rock.
+4	62571	noun	creature	0	The fantasy book described a creature with silver wings.
+5	62571	noun	creature	0	Every creature in the forest needs water.
+@ crew
+1	62615	noun	crew	1	The film crew set up cameras before sunrise.
+2	62615	noun	crew	0	A group of people working together is a crew.
+3	62615	noun	crew	0	The rescue crew arrived quickly after the call.
+4	62615	noun	crew	0	Our crew cleaned the park after the event.
+5	62615	noun	crew	0	The ship's crew prepared for the storm.
+@ crisis
+1	62639	noun	crisis	1	The broken dam created a crisis for the nearby town.
+2	62639	noun	crisis	0	A crucial situation that needs an important decision is a crisis.
+3	62639	noun	crisis	0	During the crisis, the mayor asked everyone to save water.
+4	62639	noun	crisis	0	The hospital prepared for a possible health crisis.
+5	62639	noun	crisis	0	A crisis can force people to make quick choices.
+@ criterion
+1	62610	noun	criterion	1	Cleanliness was an important criterion when we chose a restaurant.
+2	62610	noun	criterion	0	A standard used to judge something is a criterion.
+3	62610	noun	criterion	0	Price is one criterion for choosing a phone.
+4	62610	noun	criterion	0	The contest has a clear criterion for each prize.
+5	62610	noun	criterion	0	Safety should be the first criterion in this decision.
+@ critic
+1	62603	noun	critic	1	The theater critic praised the actors after opening night.
+2	62603	noun	critic	0	A person who judges works of art is a critic.
+3	62603	noun	critic	0	The book critic wrote about the new novel.
+4	62603	noun	critic	0	A critic reviewed the restaurant for the local newspaper.
+5	62603	noun	critic	0	The film critic liked the movie's music but not its ending.
+@ critical
+1	62645	adj	critical	1	My critical uncle always finds something wrong with every meal.
+2	62645	adj	critical	0	Someone who often finds fault is critical.
+3	62645	adj	critical	0	She was critical of the messy plan.
+4	62645	adj	critical	0	Try not to be too critical when your friend is learning.
+5	62645	adj	critical	0	The reviewer was critical of the slow movie.
+@ criticism
+1	62661	noun	criticism	1	The chef listened to the criticism and improved the soup.
+2	62661	noun	criticism	0	A judgment that points out faults is criticism.
+3	62661	noun	criticism	0	Her criticism of the plan was fair and helpful.
+4	62661	noun	criticism	0	Too much criticism can discourage a new player.
+5	62661	noun	criticism	0	The artist accepted criticism from her teacher.
+@ criticize
+1	62659	verb	criticize	1	It is easy to criticize a plan after it has failed.
+2	62659	verb	criticize	0	To point out faults in something is to criticize it.
+3	62659	verb	criticize	0	Do not criticize your friend for a small mistake.
+4	62659	verb	criticized	0	The coach criticized the team's careless passing.
+5	62659	verb	criticize	0	She did not criticize the child for spilling the juice.
+@ crop
+1	62663	noun	crop	1	The farmer's rice crop grew well after the spring rain.
+2	62663	noun	crop	0	Plants grown and harvested for food are a crop.
+3	62663	noun	crop	0	The dry weather damaged the potato crop.
+4	62663	noun	crop	0	Farmers harvest their crop in late summer.
+5	62663	noun	crop	0	Corn is an important crop in this area.
+@ crucial
+1	62687	adj	crucial	1	Wearing a life jacket is crucial when you are on a boat.
+2	62687	adj	crucial	0	Something extremely important to an outcome is crucial.
+3	62687	adj	crucial	0	It is crucial to arrive before the doors close.
+4	62687	adj	crucial	0	The next match is crucial for our team.
+5	62687	adj	crucial	0	Good communication is crucial during an emergency.
+@ cure
+1	62733	noun	cure	1	The new medicine gave the patient hope for a cure.
+2	62733	noun	cure	0	A treatment that restores health is a cure.
+3	62733	noun	cure	0	Doctors are searching for a cure for the disease.
+4	62733	noun	cure	0	Rest is not always a cure, but it can help you recover.
+5	62733	noun	cure	0	The scientist tested a possible cure in the laboratory.
+@ curve
+1	62718	adj	curve	1	The curve road bent gently around the lake.
+2	62718	adj	curve	0	Something bent without sharp angles is curve.
+3	62718	adj	curve	0	The artist drew a curve line across the page.
+4	62718	adj	curve	0	A curve path led us through the garden.
+5	62718	adj	curve	0	The curve shape of the bridge looked graceful.
+@ curved
+1	62690	adj	curved	1	The curved bridge crossed the narrow river.
+2	62690	adj	curved	0	Something that has a bend rather than a straight line is curved.
+3	62690	adj	curved	0	The curved road disappeared behind the trees.
+4	62690	adj	curved	0	She held a curved piece of glass to the light.
+5	62690	adj	curved	0	The chair had a curved wooden back.
+@ debate
+1	62709	verb	debate	1	Our class will debate whether homework should be shorter.
+2	62709	verb	debate	0	To argue about an issue in public is to debate it.
+3	62709	verb	debated	0	The candidates debated the new school policy.
+4	62709	verb	debated	0	We debated the best route to the campsite.
+5	62709	verb	debate	0	Two teams will debate the question tomorrow.
+@ debt
+1	62754	noun	debt	1	I felt a debt of thanks to my neighbor for helping us.
+2	62754	noun	debt	0	An obligation to give or do something for another person is a debt.
+3	62754	noun	debt	0	She owed a debt of gratitude to her teacher.
+4	62754	noun	debt	0	He paid his debt by returning the favor.
+5	62754	noun	debt	0	The promise created a debt to help when needed.
+@ decent
+1	62692	adj	decent	1	We found a decent hotel near the train station.
+2	62692	adj	decent	0	Something suitable for the situation is decent.
+3	62692	adj	decent	0	He gave a decent answer to the question.
+4	62692	adj	decent	0	This is a decent place to wait for the bus.
+5	62692	adj	decent	0	She earns a decent amount from her weekend job.
+@ declare
+1	62700	verb	declare	1	The guide will declare the rules before the race begins.
+2	62700	verb	declare	0	To make something clear by speaking is to declare it.
+3	62700	verb	declare	0	Please declare your choice before we start.
+4	62700	verb	declared	0	The teacher declared the winner after counting the votes.
+5	62700	verb	declare	0	He will declare his reasons at the meeting.

@@ -1,0 +1,150 @@
+@ remark
+1	65740	noun	remark	1	Her kind remark made the new student feel welcome.
+2	65740	noun	remark	0	He made a funny remark during dinner.
+3	65740	noun	remark	0	The teacher ignored the rude remark.
+4	65740	noun	remarks	0	The speaker ended with a few short remarks.
+5	65740	noun	remark	0	That remark explains why everyone laughed.
+@ representative
+1	65755	adj	representative	1	This small sample is representative of the whole group.
+2	65755	adj	representative	0	Her work is representative of the school's best art.
+3	65755	adj	representative	0	The picture is representative of life in the village.
+4	65755	adj	representative	0	Choose a representative example from each category.
+5	65755	adj	representative	0	The survey is representative of local opinions.
+@ reputation
+1	65754	noun	reputation	1	The restaurant has a reputation for excellent soup.
+2	65754	noun	reputation	0	She earned a reputation as a reliable worker.
+3	65754	noun	reputation	0	The town's reputation attracts many visitors.
+4	65754	noun	reputations	0	The two schools have very different reputations.
+5	65754	noun	reputation	0	His reputation improved after he kept his promise.
+@ requirement
+1	65751	noun	requirement	1	A passport is a requirement for international travel.
+2	65751	noun	requirement	0	Meeting the deadline is a basic requirement of the job.
+3	65751	noun	requirements	0	Read the course requirements before applying.
+4	65751	noun	requirement	0	The helmet meets every safety requirement.
+5	65751	noun	requirement	0	English is a requirement for this program.
+@ rescue
+1	65769	verb	rescued	1	Firefighters rescued the dog from the flooded house.
+2	65769	verb	rescue	0	The boat can rescue people in rough water.
+3	65769	verb	rescuing	0	They are rescuing birds caught in the net.
+4	65769	verb	rescues	0	This group rescues injured animals.
+5	65769	verb	rescue	0	Call for help to rescue anyone in danger.
+@ reserve
+1	65799	noun	reserve	1	Keep some money in reserve for unexpected repairs.
+2	65799	noun	reserve	0	The team has a reserve player ready to join.
+3	65799	noun	reserves	0	The country keeps food reserves for emergencies.
+4	65799	noun	reserve	0	This reserve of water will last two days.
+5	65799	noun	reserve	0	The coach called a reserve from the bench.
+@ resident
+1	65789	noun	resident	1	Every resident of the building received a new key.
+2	65789	noun	resident	0	A resident showed us the way to the station.
+3	65789	noun	residents	0	Local residents asked for a safer crossing.
+4	65789	noun	resident	0	She has been a resident here for ten years.
+5	65789	noun	resident	0	The resident reported a broken streetlight.
+@ resist
+1	65784	verb	resist	1	It is hard to resist warm cookies from the oven.
+2	65784	verb	resist	0	The material can resist water and heat.
+3	65784	verb	resisted	0	She resisted the urge to check her phone.
+4	65784	verb	resisting	0	The door is resisting because the lock is stuck.
+5	65784	verb	resists	0	This paint resists stains well.
+@ resolve
+1	65825	verb	resolve	1	We need to resolve this problem before the guests arrive.
+2	65825	verb	resolve	0	The manager helped resolve the disagreement.
+3	65825	verb	resolved	0	They resolved the issue with a short meeting.
+4	65825	verb	resolving	0	She is resolving to exercise every morning.
+5	65825	verb	resolves	0	The update resolves several computer errors.
+@ resort
+1	65846	noun	resort	1	They spent a week at a beach resort during the holiday.
+2	65846	noun	resort	0	The ski resort is busy in winter.
+3	65846	noun	resorts	0	Several resorts offer rooms near the lake.
+4	65846	noun	resort	0	This café is a popular resort for students.
+5	65846	noun	resort	0	The island resort has a swimming pool.
+@ retain
+1	65856	verb	retain	1	This bottle will retain heat for several hours.
+2	65856	verb	retain	0	Try to retain the new words by using them often.
+3	65856	verb	retained	0	The company retained its best workers.
+4	65856	verb	retaining	0	The wall is retaining water after the rain.
+5	65856	verb	retains	0	The soil retains water around the roots.
+@ reveal
+1	65821	noun	reveal	1	The final reveal in the film surprised everyone.
+2	65821	noun	reveal	0	The show ended with a dramatic reveal.
+3	65821	noun	reveals	0	The story has several unexpected reveals.
+4	65821	noun	reveal	0	The reveal of the winner came at the end.
+5	65821	noun	reveal	0	A slow reveal made the mystery more exciting.
+@ revolution
+1	65878	noun	revolution	1	The revolution changed the country's government overnight.
+2	65878	noun	revolution	0	People wrote books about the political revolution.
+3	65878	noun	revolution	0	The invention started a revolution in communication.
+4	65878	noun	revolutions	0	Several revolutions shaped the region's history.
+5	65878	noun	revolution	0	The museum explains the causes of the revolution.
+@ reward
+1	65895	noun	reward	1	The reward for finding the lost dog was fifty dollars.
+2	65895	noun	reward	0	Hard work can bring its own reward.
+3	65895	noun	rewards	0	The game gives rewards for completing tasks.
+4	65895	noun	reward	0	She received a reward for returning the wallet.
+5	65895	noun	reward	0	The promise of a reward encouraged the children.
+@ rhythm
+1	65886	noun	rhythm	1	The drummer kept a steady rhythm throughout the song.
+2	65886	noun	rhythm	0	Clap your hands to the rhythm of the music.
+3	65886	noun	rhythm	0	The waves created a gentle rhythm on the shore.
+4	65886	noun	rhythms	0	Different rhythms make each dance unique.
+5	65886	noun	rhythm	0	She found the rhythm of city life tiring.
+@ rid
+1	65902	verb	rid	1	This spray will rid the garden of harmful insects.
+2	65902	verb	rid	0	We need to rid the room of the bad smell.
+3	65902	verb	ridding	0	They are ridding the house of old furniture.
+4	65902	verb	rids	0	The medicine rids the body of the infection.
+5	65902	verb	rid	0	A good cleaning can rid your desk of dust.
+@ root
+1	65982	noun	root	1	The tree's root broke through the pavement.
+2	65982	noun	root	0	Water the plant near its root.
+3	65982	noun	roots	0	Strong roots hold the soil in place.
+4	65982	noun	root	0	The root of the problem is poor planning.
+5	65982	noun	root	0	The carrot is a root vegetable.
+@ rub
+1	65924	noun	rub	1	The only rub is that the shop closes early on Sundays.
+2	65924	noun	rub	0	The main rub is the high cost of parking.
+3	65924	noun	rub	0	There is a rub in the plan: we have no driver.
+4	65924	noun	rub	0	The rub is that the train does not stop here.
+5	65924	noun	rub	0	Every solution has a small rub.
+@ rubber
+1	65950	noun	rubber	1	The child wore rubber boots to walk through the mud.
+2	65950	noun	rubber	0	This ball is made of soft rubber.
+3	65950	noun	rubber	0	Use a rubber band to hold the papers together.
+4	65950	noun	rubbers	0	The shop sells different kinds of rubbers.
+5	65950	noun	rubber	0	The rubber grip keeps the tool from slipping.
+@ rural
+1	65938	adj	rural	1	They moved from the city to a quiet rural village.
+2	65938	adj	rural	0	Rural roads are often narrow and dark at night.
+3	65938	adj	rural	0	The school serves children from rural areas.
+4	65938	adj	rural	0	The rural bus arrives only twice a day.
+5	65938	adj	rural	0	The rural landscape is full of fields.
+@ rush
+1	66016	noun	rush	1	There was a rush for seats when the doors opened.
+2	66016	noun	rush	0	We left before the morning rush began.
+3	66016	noun	rush	0	The sudden rush of water flooded the path.
+4	66016	noun	rushes	0	Holiday rushes make the airport crowded.
+5	66016	noun	rush	0	Do not make a decision in a rush.
+@ satellite
+1	65972	noun	satellite	1	The small town is a satellite of the nearby city.
+2	65972	noun	satellite	0	Many people travel from the satellite town to work.
+3	65972	noun	satellites	0	Several satellites surround the larger city.
+4	65972	noun	satellite	0	The new housing area became a satellite community.
+5	65972	noun	satellite	0	This satellite town has its own schools and shops.
+@ satisfied
+1	65940	verb	satisfied	1	The meal satisfied everyone after the long hike.
+2	65940	verb	satisfied	0	Her answer satisfied the teacher's question.
+3	65940	verb	satisfied	0	The result satisfied all the requirements.
+4	65940	verb	satisfied	0	The apology satisfied the angry customer.
+5	65940	verb	satisfied	0	The evidence satisfied the judge.
+@ satisfy
+1	65943	verb	satisfy	1	The new job will satisfy her need for creative work.
+2	65943	verb	satisfy	0	This meal should satisfy your hunger.
+3	65943	verb	satisfied	0	The result satisfied the customer.
+4	65943	verb	satisfying	0	The game is satisfying to play after practice.
+5	65943	verb	satisfies	0	The answer satisfies the question.
+@ saving
+1	66047	noun	saving	1	Putting coins in a jar is a simple saving habit.
+2	66047	noun	saving	0	The new light bulbs offer a saving on electricity.
+3	66047	noun	savings	0	Her savings helped pay for the trip.
+4	66047	noun	saving	0	Buying in bulk can mean a saving.
+5	66047	noun	saving	0	The discount gave us a useful saving.

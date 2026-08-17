@@ -1,0 +1,15 @@
+stand	repaired	Corrected noun sense IDs, restored target occurrence, and improved context.
+star	repaired	Corrected fame and verb sense IDs and aligned all examples with source senses.
+station	repaired	Corrected verb sense IDs and replaced the farm mismatch with common station senses.
+stay	repaired	Corrected the noun sense ID and strengthened distinct natural contexts.
+still	repaired	Corrected the verb sense ID and covered source-supported adjective, adverb, noun, and verb uses.
+stop	repaired	Corrected the noun sense ID, restored target occurrence, and clarified stop senses.
+story	repaired	Restored the missing target and aligned noun and verb examples with exact senses.
+style	repaired	Corrected noun and verb sense IDs and replaced semantic mismatches with natural uses.
+subject	repaired	Corrected the verb sense ID and replaced the malformed adjective example.
+tall	repaired	Restored the comparative target and replaced the malformed noun example with a sourced size sense.
+them	repaired	Replaced the unsupported absent target and clarified direct, indirect, prepositional, and singular uses.
+ticket	repaired	Replaced five duplicated placeholders with distinct sourced noun and verb examples.
+time	repaired	Replaced five duplicated placeholders with distinct common noun and verb senses.
+tired	repaired	Replaced duplicated unnatural examples with distinct adjective and verb uses.
+title	repaired	Replaced five duplicated placeholders with distinct sourced noun and verb examples.

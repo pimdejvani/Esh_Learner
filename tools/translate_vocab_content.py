@@ -29,7 +29,9 @@ from typing import Iterable
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "terra_english_drafts"
 DEFAULT_OUTPUT = ROOT / "data" / "terra_translated_drafts"
-SOURCE_DB = ROOT / "data" / "vocabulary_source.db"
+# A machine without the 377 MB data lake (cloud session, CI runner) points this
+# at the portable slice from tools/export_evidence_db.py instead.
+SOURCE_DB = Path(os.environ.get("ESH_SOURCE_DB") or ROOT / "data" / "vocabulary_source.db")
 DEFAULT_CACHE = ROOT / "data" / "translation_cache.db"
 TEST_FILE_MARKERS = ("test", "hard30")
 PLACEHOLDER_PATTERNS = (

@@ -1,0 +1,104 @@
+@ tree
+1	41622	noun	tree	1	The old tree held our tire swing for twenty years.
+2	41622	noun	tree	0	Birds built a nest in the tree by my window.
+3	41622	noun	trees	0	Tall trees shade the playground in summer.
+4	41622	noun	tree	0	An apple tree grows behind our house.
+5	41622	noun	trees	0	The storm knocked down two trees.
+
+@ trip
+1	41641	noun	trip	1	Our school trip to the island was unforgettable.
+2	41657	verb	tripped	0	She tripped over a loose cable.
+3	41641	noun	trips	0	We take short trips during the holidays.
+4	41657	verb	trip	0	Be careful not to trip on the step.
+5	41657	verb	tripping	0	He keeps tripping over toys on the floor.
+
+@ trousers
+1	41675	noun	trousers	1	My trousers split just before the job interview.
+2	41675	noun	trousers	0	These black trousers fit me well.
+3	41675	noun	trousers	0	The trousers need to be shortened.
+4	41675	noun	trousers	0	Put on clean trousers for dinner.
+5	41675	noun	trouser	0	The trouser pocket has a small hole.
+
+@ true
+1	41676	adj	true	1	It is true.
+2	41676	adj	true	0	Is it true that the library closes at six?
+3	41676	adj	true	0	The story is true.
+4	41676	adj	true	0	Her answer was true.
+5	41676	adj	true	0	The news proved true.
+
+@ try
+1	41694	verb	try	1	We try every day.
+2	41694	verb	try	0	I will try to call you tonight.
+3	41694	verb	try	0	Please try to open the window.
+4	41694	verb	try	0	They try to arrive before eight.
+5	41694	verb	try	0	We can try to solve the puzzle together.
+
+@ tuesday
+1	67725	noun	Tuesday	1	On Tuesday, I finally start my new job.
+2	67725	noun	Tuesday	0	Our meeting is scheduled for Tuesday.
+3	67725	noun	Tuesdays	0	The museum is closed on Tuesdays.
+4	67725	noun	Tuesday	0	Tuesday comes after Monday.
+5	67725	noun	Tuesday	0	We play basketball every Tuesday.
+
+@ umbrella
+1	41829	noun	umbrella	1	Take an umbrella because it may rain.
+2	41829	noun	umbrella	0	My umbrella is by the door.
+3	41829	noun	umbrellas	0	The shop sells colorful umbrellas.
+4	41835	verb	umbrellas	0	The tree umbrellas the bench.
+5	41835	verb	umbrellaed	0	The roof umbrellaed the visitors.
+
+@ use
+1	41986	verb	use	1	I use this pen every day.
+2	41979	noun	uses	0	This tool has many uses.
+3	41986	verb	uses	0	She uses her phone for work.
+4	41986	verb	used	0	We used the map yesterday.
+5	41986	verb	using	0	He is using my laptop.
+
+@ visitor
+1	42044	noun	visitor	1	The visitor brought a kind gift for us.
+2	42045	noun	visitor	0	Every visitor must show a ticket.
+3	42044	noun	visitors	0	The museum had many visitors today.
+4	42046	noun	visitors	0	The visitors won the football match.
+5	42045	noun	visitor	0	A visitor asked where the library was.
+
+@ wear
+1	42333	verb	wear	1	Wear your helmet when you ride a bike.
+2	42336	verb	wears	0	She wears a happy smile every day.
+3	42333	verb	wore	0	He wore his new shoes to school.
+4	42333	verb	wearing	0	They are wearing matching shirts.
+5	42339	verb	worn	0	The old bag is worn but useful.
+
+@ which
+1	42467	det	which	1	which book is yours?
+2	42467	det	which	0	Tell me which bus goes to the airport.
+3	42467	det	which	0	I know which road we should take.
+4	42467	det	which	0	She asked which color I preferred.
+5	42467	det	which	0	Can you guess which box is empty?
+
+@ white
+1	42480	adj	white	1	It is white.
+2	42480	adj	white	0	The kitchen walls are white.
+3	42480	adj	white	0	She wore a white shirt.
+4	42480	adj	white	0	Snow looks white in the sunlight.
+5	42480	adj	white	0	Please use the white cup.
+
+@ who
+1	42521	pron	who	1	who is at the door?
+2	42521	pron	who	0	Do you know who called me?
+3	42521	pron	who	0	Tell me who left this bag here.
+4	42521	pron	who	0	I wonder who will lead the team.
+5	42521	pron	who	0	Can you guess who won the race?
+
+@ why
+1	42529	adv	why	1	We do it why.
+2	42529	adv	why	0	Tell me why the shop is closed.
+3	42529	adv	why	0	I understand why you are upset.
+4	42529	adv	why	0	She asked why the bus was late.
+5	42529	adv	why	0	Can you explain why the light is flashing?
+
+@ wife
+1	42540	noun	wife	1	His wife found the lost ring under the sofa.
+2	42540	noun	wife	0	My wife teaches science at the local school.
+3	42540	noun	wives	0	The two wives became close friends.
+4	42540	noun	wife	0	She became his wife in June.
+5	42540	noun	wife	0	A wife may keep her own name after marriage.

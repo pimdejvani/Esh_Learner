@@ -1,0 +1,150 @@
+@ phase
+1	65124	noun	phase	1	Moving to a new city was a difficult phase of her life.
+2	65124	noun	phase	0	A distinct part of a process is a phase.
+3	65124	noun	phase	0	The project is now in its final phase.
+4	65124	noun	phase	0	The moon changes phase during the month.
+5	65124	noun	phase	0	Each phase of the game has different rules.
+@ phenomenon
+1	65142	noun	phenomenon	1	The northern lights are a beautiful natural phenomenon.
+2	65142	noun	phenomenon	0	An event that can be noticed through the senses is a phenomenon.
+3	65142	noun	phenomenon	0	Rainbows are a common weather phenomenon.
+4	65142	noun	phenomenon	0	Scientists studied the strange phenomenon in the sky.
+5	65142	noun	phenomenon	0	The sudden fog was a surprising phenomenon.
+@ philosophy
+1	65149	noun	philosophy	1	In philosophy class, we discussed what makes an action right or wrong.
+2	65149	noun	philosophy	0	The study of big questions through reasoning is philosophy.
+3	65149	noun	philosophy	0	She chose philosophy because she enjoys thinking about truth.
+4	65149	noun	philosophy	0	Philosophy asks questions about knowledge and existence.
+5	65149	noun	philosophy	0	The university offers a course in ancient philosophy.
+@ pile
+1	65158	noun	pile	1	A pile of colorful leaves grew beneath the old maple tree.
+2	65158	noun	pile	0	A heap of things placed together is a pile.
+3	65158	noun	pile	0	Put the clean towels in a pile on the bed.
+4	65158	noun	pile	0	The dog slept on a pile of blankets.
+5	65158	noun	pile	0	We made a pile of books for the donation box.
+@ pitch
+1	65228	noun	pitch	1	Sticky pitch from the pine tree clung to the bottom of my shoe.
+2	65228	noun	pitch	0	The sticky sap from some trees is pitch.
+3	65228	noun	pitch	0	The workers used pitch to seal the wooden boat.
+4	65228	noun	pitch	0	Black pitch dripped from the cut tree branch.
+5	65228	noun	pitch	0	The smell of pitch filled the warm forest.
+@ plain
+1	65201	adj	plain	1	We spread our blanket on a plain patch of grass beside the lake.
+2	65201	adj	plain	0	A surface that is flat and level is plain.
+3	65201	adj	plain	0	The road becomes plain after the steep hill.
+4	65201	adj	plain	0	Find a plain surface before setting up the tent.
+5	65201	adj	plain	0	The carpenter checked that the board was plain and even.
+@ pointed
+1	65187	verb	pointed	1	The guide pointed toward the narrow trail leading into the forest.
+2	65187	verb	pointed	0	She pointed at the correct answer on the map.
+3	65187	verb	pointed	0	He pointed to the door without saying a word.
+4	65187	verb	pointed	0	The child pointed at the bright moon.
+5	65187	verb	pointed	0	My friend pointed out the bird in the tree.
+@ popularity
+1	65195	noun	popularity	1	The bakery's popularity grew after its cinnamon rolls appeared online.
+2	65195	noun	popularity	0	Being widely liked is popularity.
+3	65195	noun	popularity	0	The singer gained popularity with young listeners.
+4	65195	noun	popularity	0	The game's popularity surprised its creators.
+5	65195	noun	popularity	0	Her popularity at school made her easy to recognize.
+@ pose
+1	65299	noun	pose	1	After walking in the cold rain, he caught a pose and needed a day in bed.
+2	65299	noun	pose	0	A common cold can be called a pose.
+3	65299	noun	pose	0	The doctor said the pose should pass with rest and warm drinks.
+4	65299	noun	pose	0	She missed class because of a bad pose.
+5	65299	noun	pose	0	The pose left him sneezing and tired.
+@ possess
+1	65313	verb	possesses	1	She possesses an old camera that once belonged to her grandfather.
+2	65313	verb	possess	0	To own something is to possess it.
+3	65313	verb	possesses	0	The museum possesses several rare coins.
+4	65313	verb	possess	0	He does not possess a driver's license.
+5	65313	verb	possess	0	They possess all the tools needed for the repair.
+@ potential
+1	65290	noun	potential	1	The coach saw great potential in the shy new player.
+2	65290	noun	potential	0	An ability that has not yet been used is potential.
+3	65290	noun	potential	0	This seed has the potential to grow into a tall tree.
+4	65290	noun	potential	0	Her idea has potential to solve the problem.
+5	65290	noun	potential	0	The student showed potential in music.
+@ praise
+1	65329	noun	praise	1	The child glowed with pride after receiving praise for her painting.
+2	65329	noun	praise	0	Words that express approval are praise.
+3	65329	noun	praise	0	The coach gave praise to the team for working together.
+4	65329	noun	praise	0	He accepted the praise with a shy smile.
+5	65329	noun	praise	0	Her hard work earned praise from the teacher.
+@ pregnant
+1	65352	adj	pregnant	1	The pregnant cat found a quiet box where she could rest safely.
+2	65352	adj	pregnant	0	Carrying an unborn baby or young animal is pregnant.
+3	65352	adj	pregnant	0	Her pregnant sister is due in the spring.
+4	65352	adj	pregnant	0	The veterinarian examined the pregnant dog.
+5	65352	adj	pregnant	0	They prepared a room for the pregnant mother.
+@ preparation
+1	65332	noun	preparation	1	In preparation for the storm, we filled bottles and charged our phones.
+2	65332	noun	preparation	0	Getting ready for something is preparation.
+3	65332	noun	preparation	0	Careful preparation made the trip easier.
+4	65332	noun	preparation	0	The meal needs an hour of preparation.
+5	65332	noun	preparation	0	She finished her preparation before the exam.
+@ presence
+1	65341	noun	presence	1	The teacher's presence made the noisy room become quiet.
+2	65341	noun	presence	0	The fact of being somewhere is presence.
+3	65341	noun	presence	0	The presence of a guard kept visitors away from the closed room.
+4	65341	noun	presence	0	We felt safer in the presence of the guide.
+5	65341	noun	presence	0	The cat's presence scared the small birds away.
+@ preserve
+1	65361	noun	preserve	1	We spread strawberry preserve on warm toast for breakfast.
+2	65361	noun	preserve	0	A sweet fruit spread is a preserve.
+3	65361	noun	preserve	0	Grandma made preserve from the ripe peaches.
+4	65361	noun	preserve	0	This jar of preserve tastes like fresh raspberries.
+5	65361	noun	preserve	0	She bought apricot preserve at the market.
+@ prime
+1	65391	adj	prime	1	Safety is the prime concern when children use the science lab.
+2	65391	adj	prime	0	Most important in rank is prime.
+3	65391	adj	prime	0	The prime goal of the project is clean water.
+4	65391	adj	prime	0	This is a prime example of careful work.
+5	65391	adj	prime	0	The prime reason for the change was safety.
+@ principle
+1	65380	noun	principle	1	Honesty is the principle that guides her even when nobody is watching.
+2	65380	noun	principle	0	A guiding belief is a principle.
+3	65380	noun	principle	0	The school follows the principle of treating everyone fairly.
+4	65380	noun	principle	0	He refused to lie because of principle.
+5	65380	noun	principle	0	The principle behind the machine is simple.
+@ priority
+1	65374	noun	priority	1	Getting the injured hiker to safety was the team's first priority.
+2	65374	noun	priority	0	The thing considered most important is a priority.
+3	65374	noun	priority	0	Homework is my priority before television.
+4	65374	noun	priority	0	The hospital gives priority to the most urgent cases.
+5	65374	noun	priority	0	Making the road safe should be a priority.
+@ privacy
+1	65367	noun	privacy	1	She closed the bedroom door because she wanted privacy to make a phone call.
+2	65367	noun	privacy	0	Being away from the sight of others is privacy.
+3	65367	noun	privacy	0	The curtains give us privacy from the street.
+4	65367	noun	privacy	0	Everyone needs some privacy at home.
+5	65367	noun	privacy	0	The small garden offers privacy from neighbors.
+@ procedure
+1	65431	noun	procedure	1	The nurse explained the procedure before taking the blood sample.
+2	65431	noun	procedure	0	A set method for doing a task is a procedure.
+3	65431	noun	procedure	0	Follow the safety procedure before using the machine.
+4	65431	noun	procedure	0	The procedure for returning a book is simple.
+5	65431	noun	procedure	0	Each procedure must be checked by the supervisor.
+@ proof
+1	65438	noun	proof	1	The scientist repeated the test to find proof that the water was safe.
+2	65438	noun	proof	0	A test used to discover a fact is a proof.
+3	65438	noun	proof	0	The experiment provided proof of the new idea.
+4	65438	noun	proof	0	We need proof before believing the claim.
+5	65438	noun	proof	0	The detective searched for proof at the scene.
+@ proposal
+1	65457	noun	proposal	1	The class discussed her proposal to plant trees around the playground.
+2	65457	noun	proposal	0	An idea offered for consideration is a proposal.
+3	65457	noun	proposal	0	The council voted on the proposal last night.
+4	65457	noun	proposal	0	His proposal included a detailed budget.
+5	65457	noun	proposal	0	We sent the proposal to the manager for approval.
+@ propose
+1	65463	verb	proposed	1	Mia proposed a picnic after the team finished the project.
+2	65463	verb	propose	0	To suggest a plan is to propose it.
+3	65463	verb	propose	0	I propose that we meet at the library.
+4	65463	verb	propose	0	They will propose a new schedule tomorrow.
+5	65463	verb	propose	0	She plans to propose a solution at the meeting.
+@ prospect
+1	65470	noun	prospect	1	From the hilltop, we admired a wide prospect of fields and distant villages.
+2	65470	noun	prospect	0	A view over a wide area is a prospect.
+3	65470	noun	prospect	0	The tower offers a fine prospect of the harbor.
+4	65470	noun	prospect	0	They stopped to enjoy the prospect from the ridge.
+5	65470	noun	prospect	0	A beautiful prospect opened beyond the trees.

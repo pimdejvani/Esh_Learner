@@ -1,0 +1,150 @@
+@ transition
+1	67235	noun	transition	1	The transition from summer to autumn changed the color of the trees.
+2	67235	noun	transition	0	A change from one state or place to another is a transition.
+3	67235	noun	transition	0	Moving to a new school can be a difficult transition.
+4	67235	noun	transition	0	The song made a smooth transition to the next scene.
+5	67235	noun	transition	0	The transition from day to night happened quickly.
+@ trial
+1	67259	noun	trial	1	The new shoes went through a trial before the team wore them.
+2	67259	noun	trial	0	A test to see how well something works is a trial.
+3	67259	noun	trial	0	We gave the new game a trial during lunch.
+4	67259	noun	trial	0	The machine passed its first trial.
+5	67259	noun	trial	0	The coach held a trial to choose players for the team.
+@ tropical
+1	67297	adj	tropical	1	We saw tropical birds with bright feathers near the equator.
+2	67297	adj	tropical	0	Related to the hot region near the equator is tropical.
+3	67297	adj	tropical	0	The island has a tropical climate with heavy rain.
+4	67297	adj	tropical	0	Tropical fruit grows well in warm weather.
+5	67297	adj	tropical	0	They visited a tropical forest full of tall trees.
+@ truly
+1	67302	adv	truly	1	I truly believe that you can finish this project.
+2	67302	adv	truly	0	In a way that agrees with the facts means truly.
+3	67302	adv	truly	0	She truly described what happened.
+4	67302	adv	truly	0	The report is truly accurate.
+5	67302	adv	truly	0	He spoke truly about the accident.
+@ trust
+1	67340	noun	trust	1	Our trust grew after she kept every promise.
+2	67340	noun	trust	0	Confidence in a person or thing is trust.
+3	67340	noun	trust	0	The child placed her trust in the guide.
+4	67340	noun	trust	0	The children built trust by sharing their secrets carefully.
+5	67340	noun	trust	0	He earned our trust by being honest.
+@ tune
+1	67322	noun	tune	1	The band played a cheerful tune as we walked home.
+2	67322	noun	tune	0	A melody is a tune.
+3	67322	noun	tune	0	She hummed a tune while washing the dishes.
+4	67322	noun	tune	0	That tune is easy to remember.
+5	67322	noun	tune	0	The pianist started a familiar tune.
+@ ultimately
+1	67305	adv	ultimately	1	We ultimately chose the safer path through the woods.
+2	67305	adv	ultimately	0	To introduce the final item or result, use ultimately.
+3	67305	adv	ultimately	0	Ultimately, the decision belongs to the family.
+4	67305	adv	ultimately	0	The long search ultimately led us to the right house.
+5	67305	adv	ultimately	0	She ultimately finished the book after several weeks.
+@ unconscious
+1	67365	adj	unconscious	1	The cyclist was unconscious after hitting his head.
+2	67365	adj	unconscious	0	Not awake or aware is unconscious.
+3	67365	adj	unconscious	0	Call for help if someone is unconscious.
+4	67365	adj	unconscious	0	The doctor checked the unconscious patient.
+5	67365	adj	unconscious	0	He was unconscious for a few minutes after the fall.
+@ unexpected
+1	67369	adj	unexpected	1	An unexpected rainbow appeared after the heavy rain.
+2	67369	adj	unexpected	0	Not predicted or planned is unexpected.
+3	67369	adj	unexpected	0	We received an unexpected visit from our cousins.
+4	67369	adj	unexpected	0	The delay was unexpected but not serious.
+5	67369	adj	unexpected	0	Her unexpected answer made everyone laugh.
+@ unique
+1	67381	adj	unique	1	Each snowflake has a unique pattern.
+2	67381	adj	unique	0	The only one of its kind is unique.
+3	67381	adj	unique	0	This painting has a unique style.
+4	67381	adj	unique	0	The museum owns a unique piece of history.
+5	67381	adj	unique	0	Every person's voice is unique.
+@ universe
+1	67409	name	Universe	1	Scientists study the Universe to learn about stars and planets.
+2	67409	name	Universe	0	The Universe includes all space, stars, and planets.
+3	67409	name	Universe	0	The Universe is far larger than our solar system.
+4	67409	name	Universe	0	A telescope helps us look into the Universe.
+5	67409	name	Universe	0	People have wondered about the Universe for thousands of years.
+@ unknown
+1	67376	adj	unknown	1	A strange, unknown bird landed on our fence.
+2	67376	adj	unknown	0	Not known or identified is unknown.
+3	67376	adj	unknown	0	The cause of the sound remains unknown.
+4	67376	adj	unknown	0	We walked into an unknown part of the forest.
+5	67376	adj	unknown	0	An unknown caller left a message.
+@ upper
+1	67391	adj	upper	1	The upper shelf is too high for me to reach.
+2	67391	adj	upper	0	At a higher level or position is upper.
+3	67391	adj	upper	0	The upper floor has three bedrooms.
+4	67391	adj	upper	0	Write your name in the upper corner of the page.
+5	67391	adj	upper	0	The upper branches caught the morning sun.
+@ upwards
+1	67371	adv	upwards	1	The balloon floated upwards into the blue sky.
+2	67371	adv	upwards	0	Toward a higher position means upwards.
+3	67371	adv	upwards	0	Smoke rose upwards from the fire.
+4	67371	adv	upwards	0	Look upwards to see the birds in the tree.
+5	67371	adv	upwards	0	The elevator moved upwards to the tenth floor.
+@ urban
+1	67386	adj	urban	1	The urban streets were busy with buses and bicycles.
+2	67386	adj	urban	0	Related to life in a city or town is urban.
+3	67386	adj	urban	0	Urban parks give city residents a place to relax.
+4	67386	adj	urban	0	She prefers urban life to living in the countryside.
+5	67386	adj	urban	0	The project improves urban transport.
+@ urge
+1	67434	noun	urge	1	I felt an urge to laugh when the puppy sneezed.
+2	67434	noun	urge	0	A strong desire to do something is an urge.
+3	67434	noun	urge	0	He resisted the urge to eat the last cookie.
+4	67434	noun	urge	0	The urge to sleep grew after the long trip.
+5	67434	noun	urge	0	She had an urge to call her grandmother.
+@ vary
+1	67421	verb	vary	1	The bus times vary on weekends and holidays.
+2	67421	verb	vary	0	To change over time is to vary.
+3	67421	verb	vary	0	Prices vary from shop to shop.
+4	67421	verb	varied	0	The weather varied throughout the week.
+5	67421	verb	vary	0	The color of the leaves can vary in autumn.
+@ vast
+1	67430	adj	vast	1	A vast field of yellow flowers stretched to the horizon.
+2	67430	adj	vast	0	Very large or wide is vast.
+3	67430	adj	vast	0	The desert is a vast area of sand.
+4	67430	adj	vast	0	They explored the vast museum for hours.
+5	67430	adj	vast	0	The ship crossed a vast ocean.
+@ venue
+1	67443	noun	venue	1	The concert venue was full before the music began.
+2	67443	noun	venue	0	A place used for sports or entertainment events is a venue.
+3	67443	noun	venue	0	The school hall is our venue for the play.
+4	67443	noun	venue	0	They chose a large venue for the festival.
+5	67443	noun	venue	0	The venue has seats for five hundred people.
+@ via
+1	67449	noun	via	1	The guide described the Via Appia, an ancient Roman road.
+2	67449	noun	via	0	A main road in ancient Rome was called a via.
+3	67449	noun	via	0	Merchants traveled along the via to reach Rome.
+4	67449	noun	via	0	The old via connected several Roman towns.
+5	67449	noun	via	0	The map marks the route of the ancient via.
+@ victory
+1	67454	noun	victory	1	The team celebrated its victory with cheers and music.
+2	67454	noun	victory	0	The state of winning a contest or battle is victory.
+3	67454	noun	victory	0	Her victory in the race surprised her classmates.
+4	67454	noun	victory	0	The final goal gave us a victory.
+5	67454	noun	victory	0	Winning the argument felt like a small victory.
+@ violence
+1	67457	noun	violence	1	The storm's violence broke several windows.
+2	67457	noun	violence	0	Extreme force is violence.
+3	67457	noun	violence	0	The force of the waterfall showed the violence of the river.
+4	67457	noun	violence	0	The wind hit the tent with sudden violence.
+5	67457	noun	violence	0	The violence of the crash bent the metal.
+@ virtual
+1	67481	adj	virtual	1	We took a virtual tour of the museum from our classroom.
+2	67481	adj	virtual	0	Simulated rather than physically real is virtual.
+3	67481	adj	virtual	0	The game creates a virtual world for players.
+4	67481	adj	virtual	0	She joined a virtual meeting from home.
+5	67481	adj	virtual	0	Virtual books can be read on a screen.
+@ vision
+1	67499	noun	vision	1	My vision was blurry until I put on my glasses.
+2	67499	noun	vision	0	The ability to see is vision.
+3	67499	noun	vision	0	The doctor tested his vision with a chart.
+4	67499	noun	vision	0	Good lighting helps protect your vision while reading.
+5	67499	noun	vision	0	Her vision improved after the new glasses.
+@ visual
+1	67462	adj	visual	1	The teacher used visual clues to help us remember the words.
+2	67462	adj	visual	0	Related to seeing or sight is visual.
+3	67462	adj	visual	0	The poster has a strong visual design.
+4	67462	adj	visual	0	Visual information is easier for some students to remember.
+5	67462	adj	visual	0	The film uses visual effects to show space.

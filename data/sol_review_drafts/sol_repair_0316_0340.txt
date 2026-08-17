@@ -1,0 +1,174 @@
+@ might
+1	48711	noun	might	1	The villagers used all their might to lift the fallen tree.
+2	48711	noun	might	0	The empire displayed its military might.
+3	48711	noun	might	0	He pushed the door with all his might.
+4	48711	noun	might	0	The company used its financial might to enter new markets.
+5	48711	noun	might	0	Their combined might was enough to move the rock.
+
+@ mind
+1	48722	noun	mind	1	Her calm mind found a way out of the burning building.
+2	48722	noun	mind	0	The human mind can solve complex problems.
+3	48722	noun	minds	0	Young minds learn quickly.
+4	48722	noun	mind	0	His mind remained clear despite the pressure.
+5	48722	noun	minds	0	Great minds sometimes reach different conclusions.
+
+@ mine
+1	48746	pron	mine	1	mine is here.
+2	48746	pron	mine	0	The blue suitcase is mine.
+3	48746	pron	mine	0	That seat was mine.
+4	48746	pron	mine	0	Your room is larger than mine.
+5	48746	pron	mine	0	This coat looks like mine.
+
+@ mirror
+1	48773	noun	mirror	1	The mirror showed smoke behind us before we smelled it.
+2	48773	noun	mirror	0	She checked her hair in the mirror.
+3	48773	noun	mirrors	0	The room has mirrors on both walls.
+4	48773	noun	mirror	0	This mirror reflects the whole doorway.
+5	48773	noun	mirrors	0	Clean mirrors produce clearer images.
+
+@ missing
+1	48782	verb	missing	1	We missing every day.
+2	48782	verb	missing	0	I am missing my family tonight.
+3	48782	verb	missing	0	She is missing class because she is ill.
+4	48782	verb	missing	0	We are missing one page from the report.
+5	48782	verb	missing	0	They keep missing the early bus.
+
+@ mobile
+1	48787	adj	mobile	1	It is mobile.
+2	48787	adj	mobile	0	The mobile table can be moved between rooms.
+3	48787	adj	mobile	0	This mobile machine has four wheels.
+4	48787	adj	mobile	0	The library uses mobile shelves.
+5	48787	adj	mobile	0	A mobile stage is easy to move.
+
+@ moon
+1	48823	name	moon	1	The moon is bright tonight.
+2	48824	noun	moon	0	We watched the moon rise.
+3	48824	noun	moon	0	The moon looks round.
+4	48831	verb	moons	0	The dog moons around the yard.
+5	48823	name	moon	0	A full moon is beautiful.
+
+@ national
+1	48884	adj	national	1	This is a national park.
+2	48884	adj	national	0	The national team won.
+3	48884	adj	national	0	We celebrate a national day.
+4	48887	noun	national	0	The national spoke on TV.
+5	48884	adj	national	0	The national flag flies above the building.
+
+@ nature
+1	48891	noun	nature	1	We love nature.
+2	48891	noun	nature	0	Nature is beautiful here.
+3	48891	noun	nature	0	The park protects nature.
+4	48891	noun	nature	0	It is in her nature to help.
+5	48903	verb	natures	0	The place natures young trees.
+
+@ noise
+1	48959	noun	noise	1	The noise woke the baby.
+2	48959	noun	noise	0	Please stop that noise.
+3	48959	noun	noise	0	I heard a strange noise.
+4	48970	verb	noises	0	The machine noises at night.
+5	48959	noun	noise	0	The street has traffic noise.
+
+@ notice
+1	49025	verb	notice	1	I notice a new sign.
+2	49018	noun	notice	0	Read the notice on the wall.
+3	49025	verb	notices	0	She notices small changes.
+4	49018	noun	notice	0	The small error escaped my notice.
+5	49025	verb	notice	0	Did you notice the bird?
+
+@ organize
+1	49143	verb	organize	1	We organize every day.
+2	49143	verb	organize	0	Please organize the files by date.
+3	49143	verb	organize	0	We need to organize the kitchen shelves.
+4	49143	verb	organize	0	She will organize the tools in working order.
+5	49143	verb	organize	0	They organize the records each month.
+
+@ original
+1	49148	adj	original	1	It is original.
+2	49148	adj	original	0	We returned to the original plan.
+3	49148	adj	original	0	The original owner built this house.
+4	49148	adj	original	0	Only one wall of the original building remains.
+5	49148	adj	original	0	I prefer the original version of the song.
+
+@ ourselves
+1	49160	pron	ourselves	1	ourselves are here.
+2	49160	pron	ourselves	0	We taught ourselves to cook.
+3	49160	pron	ourselves	0	We prepared ourselves for the storm.
+4	49160	pron	ourselves	0	We saw ourselves in the mirror.
+5	49160	pron	ourselves	0	We promised ourselves a day of rest.
+
+@ oven
+1	49164	noun	oven	1	The oven kept the kitchen warm during the power cut.
+2	49164	noun	oven	0	Bake the bread in the oven.
+3	49164	noun	ovens	0	The bakery has three large ovens.
+4	49164	noun	oven	0	Turn off the oven after cooking.
+5	49164	noun	ovens	0	Modern ovens heat food evenly.
+
+@ owner
+1	49167	noun	owner	1	The dog's owner found him after three days of searching.
+2	49167	noun	owner	0	The owner closed the shop early.
+3	49167	noun	owners	0	Car owners must pay for parking.
+4	49167	noun	owner	0	Ask the owner before using the boat.
+5	49167	noun	owners	0	The new owners repaired the house.
+
+@ pack
+1	49169	noun	pack	1	The hiker's pack contained enough food to survive the storm.
+2	49169	noun	pack	0	He carried a heavy pack on his back.
+3	49169	noun	packs	0	The horses carried packs through the mountains.
+4	49169	noun	pack	0	Her sleeping bag was tied to her pack.
+5	49169	noun	packs	0	We left our packs beside the trail.
+
+@ pain
+1	49215	noun	pain	1	A sudden pain in his chest made him call for help.
+2	49215	noun	pain	0	She felt pain in her knee.
+3	49215	noun	pains	0	The medicine reduced his stomach pains.
+4	49215	noun	pain	0	The cut caused sharp pain.
+5	49215	noun	pains	0	Growing pains can wake children at night.
+
+@ painter
+1	49227	noun	painter	1	The painter finally completed the portrait of her missing sister.
+2	49227	noun	painter	0	The painter works with bright colors.
+3	49227	noun	painters	0	Several painters displayed pictures at the gallery.
+4	49227	noun	painter	0	She became a professional painter.
+5	49227	noun	painters	0	These painters specialize in landscapes.
+
+@ palace
+1	49232	noun	palace	1	The palace opened its gates to people escaping the flood.
+2	49232	noun	palace	0	The king lives in the palace.
+3	49232	noun	palaces	0	Ancient palaces attract many visitors.
+4	49232	noun	palace	0	Guards stood outside the palace.
+5	49232	noun	palaces	0	The tour includes two royal palaces.
+
+@ pants
+1	49236	noun	pants	1	My pants tore just before I walked onto the stage.
+2	49236	noun	pants	0	These pants are too long.
+3	49236	noun	pants	0	He wore black pants to work.
+4	49236	noun	pant	0	The pant leg has a small tear.
+5	49236	noun	pants	0	Put your wet pants near the heater.
+
+@ parking
+1	49243	verb	parking	1	We parking every day.
+2	49243	verb	parking	0	She is parking the car outside.
+3	49243	verb	parking	0	Parking near the station is difficult.
+4	49243	verb	parking	0	He was parking when the phone rang.
+5	49243	verb	parking	0	They avoid parking on narrow streets.
+
+@ particular
+1	49246	adj	particular	1	It is particular.
+2	49246	adj	particular	0	His knowledge was particular rather than complete.
+3	49246	adj	particular	0	The record is particular and covers only one part of the event.
+4	49246	adj	particular	0	This particular account presents only part of the evidence.
+5	49246	adj	particular	0	Her view was particular, not universal.
+
+@ pass
+1	49259	verb	pass	1	We pass every day.
+2	49259	verb	pass	0	Many people pass through this gate.
+3	49259	verb	pass	0	Clouds pass slowly overhead.
+4	49259	verb	pass	0	The hours pass quickly when we are busy.
+5	49259	verb	pass	0	Ships pass near the island at night.
+
+@ passenger
+1	49327	noun	passenger	1	A brave passenger helped everyone leave the burning bus.
+2	49327	noun	passenger	0	Each passenger must show a ticket.
+3	49327	noun	passengers	0	The train carried two hundred passengers.
+4	49327	noun	passenger	0	A passenger asked the driver to stop.
+5	49327	noun	passengers	0	Passengers waited beside the boarding gate.

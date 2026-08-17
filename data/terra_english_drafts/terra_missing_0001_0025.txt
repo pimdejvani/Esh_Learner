@@ -1,0 +1,150 @@
+@ cultural
+1	55361	adj	cultural	1	The festival gave visitors a cultural view of life in the village.
+2	55361	adj	cultural	0	A museum that displays local art and history is a cultural attraction.
+3	55361	adj	cultural	0	Our class discussed cultural differences in greeting people.
+4	55361	adj	cultural	0	The city protects several cultural traditions each year.
+5	55361	adj	cultural	0	Food can be an important part of a family's cultural identity.
+@ currency
+1	55363	noun	currency	1	I exchanged my currency before leaving for Japan.
+2	55363	noun	currency	0	Dollars, euros, and yen are all types of currency.
+3	55363	noun	currency	0	The shop accepts foreign currency from tourists.
+4	55363	noun	currency	0	She checked the value of the local currency online.
+5	55363	noun	currency	0	We needed cash in the country's currency to pay the driver.
+@ current
+1	55368	noun	current	1	The strong river current pulled the ball downstream.
+2	55368	noun	current	0	Swimmers should avoid the area because the water current is dangerous.
+3	55368	noun	current	0	The boat moved quickly with the ocean current.
+4	55368	noun	current	0	A cold current brought cooler water along the coast.
+5	55368	noun	current	0	The fish swam against the current to reach the rocks.
+@ currently
+1	55377	adv	currently	1	I am currently saving money for a new bicycle.
+2	55377	adv	currently	0	If a job is happening now, it is currently underway.
+3	55377	adv	currently	0	The library is currently closed for repairs.
+4	55377	adv	currently	0	She is currently studying for her final exams.
+5	55377	adv	currently	0	Currently, only members can use this entrance.
+@ curtain
+1	55378	noun	curtain	1	She opened the curtain and sunlight filled the room.
+2	55378	noun	curtain	0	A piece of cloth that covers a window is a curtain.
+3	55378	noun	curtain	0	Please close the curtain before the movie starts.
+4	55378	noun	curtain	0	The blue curtain kept the morning light out.
+5	55378	noun	curtain	0	He looked behind the curtain for the missing cat.
+@ custom
+1	55388	noun	custom	1	It is a family custom to eat together on Sunday.
+2	55388	noun	custom	0	A usual way of behaving in a community is a custom.
+3	55388	noun	custom	0	Removing your shoes at the door is a local custom.
+4	55388	noun	custom	0	The wedding followed an old custom from her hometown.
+5	55388	noun	custom	0	They learned the custom before visiting the temple.
+@ damage
+1	55404	noun	damage	1	The storm caused serious damage to our garden fence.
+2	55404	noun	damage	0	Harm to a building after a fire is called damage.
+3	55404	noun	damage	0	The mechanic checked the car for damage.
+4	55404	noun	damage	0	Heavy rain did little damage to the road.
+5	55404	noun	damage	0	The insurance company paid for the damage.
+@ decade
+1	55409	noun	decade	1	My grandparents have lived in this house for a decade.
+2	55409	noun	decade	0	A period of ten years is a decade.
+3	55409	noun	decade	0	The band was popular for more than a decade.
+4	55409	noun	decade	0	The town has changed a lot in the last decade.
+5	55409	noun	decade	0	She kept the same job for nearly a decade.
+@ decorate
+1	55419	verb	decorate	1	We decorate the tree with lights every December.
+2	55419	verb	decorate	0	To make a room look prettier with pictures and flowers is to decorate it.
+3	55419	verb	decorate	0	The children helped decorate the classroom for the party.
+4	55419	verb	decorate	0	She will decorate the cake with strawberries.
+5	55419	verb	decorate	0	They decorate the hall before each school concert.
+@ enemy
+1	55834	noun	enemy	1	In the game, the red robot was my enemy.
+2	55834	noun	enemy	0	A person who wants to harm you is an enemy.
+3	55834	noun	enemy	0	The two countries stopped fighting their enemy after the agreement.
+4	55834	noun	enemy	0	He refused to share the plan with his enemy.
+5	55834	noun	enemy	0	The hero faced an enemy at the castle gate.
+@ engaged
+1	55840	verb	engaged	1	She engaged the audience with a funny story.
+2	55840	verb	engaged	0	The teacher engaged the students by asking a mystery question.
+3	55840	verb	engaged	0	He engaged a lawyer to help with the case.
+4	55840	verb	engaged	0	The company engaged local workers for the project.
+5	55840	verb	engaged	0	The guide engaged everyone in a lively discussion.
+@ engineering
+1	55850	verb	engineering	1	Maya is engineering a small bridge for the science fair.
+2	55850	verb	engineering	0	Designing and building a machine is engineering it.
+3	55850	verb	engineering	0	The team is engineering a safer bicycle helmet.
+4	55850	verb	engineering	0	He spent the afternoon engineering a device to water the plants.
+5	55850	verb	engineering	0	They are engineering a solution to the traffic problem.
+@ entertain
+1	55855	verb	entertain	1	The magician can entertain a room full of children.
+2	55855	verb	entertain	0	To amuse guests at a party is to entertain them.
+3	55855	verb	entertain	0	The singer will entertain the crowd after dinner.
+4	55855	verb	entertain	0	Funny stories entertain my little brother.
+5	55855	verb	entertain	0	The host tried to entertain everyone during the delay.
+@ entertainment
+1	55864	noun	entertainment	1	The street performers provided entertainment while we waited.
+2	55864	noun	entertainment	0	Movies and games are forms of entertainment.
+3	55864	noun	entertainment	0	The hotel offers live entertainment on Saturday nights.
+4	55864	noun	entertainment	0	We chose a quiz show for our evening entertainment.
+5	55864	noun	entertainment	0	The children wanted entertainment during the long flight.
+@ entrance
+1	55870	noun	entrance	1	Her entrance into the room made everyone look up.
+2	55870	noun	entrance	0	The act of going into a building is an entrance.
+3	55870	noun	entrance	0	The actor's entrance was delayed by a broken door.
+4	55870	noun	entrance	0	We watched the dancers make their entrance on stage.
+5	55870	noun	entrance	0	His entrance into the competition surprised his friends.
+@ entry
+1	55882	noun	entry	1	Her entry into the baking contest won first prize.
+2	55882	noun	entry	0	The act of going into a race is an entry.
+3	55882	noun	entry	0	Late entry into the building was not allowed.
+4	55882	noun	entry	0	His entry into the school team excited his parents.
+5	55882	noun	entry	0	The online entry for the contest closed at midnight.
+@ environmental
+1	55896	adj	environmental	1	We planted trees as part of an environmental project.
+2	55896	adj	environmental	0	A problem involving air, water, or nature is environmental.
+3	55896	adj	environmental	0	The club organized an environmental cleanup at the beach.
+4	55896	adj	environmental	0	The report explains the environmental effects of plastic waste.
+5	55896	adj	environmental	0	They chose an environmental topic for their class presentation.
+@ episode
+1	55899	noun	episode	1	We watched one episode of the show before bed.
+2	55899	noun	episode	0	One part of a television series is an episode.
+3	55899	noun	episode	0	This episode explains why the main character left home.
+4	55899	noun	episode	0	The final episode made the audience cry.
+5	55899	noun	episode	0	I missed last week's episode, so I watched it online.
+@ equal
+1	55901	adj	equal	1	Each child received an equal share of the cake.
+2	55901	adj	equal	0	When two amounts are the same, they are equal.
+3	55901	adj	equal	0	Both teams had an equal number of points.
+4	55901	adj	equal	0	The two boxes are equal in size.
+5	55901	adj	equal	0	Everyone deserves equal access to education.
+@ equally
+1	55915	adv	equally	1	We divided the last pizza equally among four friends.
+2	55915	adv	equally	0	If everyone gets the same amount, it is shared equally.
+3	55915	adv	equally	0	The teacher treated all students equally.
+4	55915	adv	equally	0	Both players were equally tired after the match.
+5	55915	adv	equally	0	The prize money was equally divided between the winners.
+@ escape
+1	55918	verb	escape	1	The bird managed to escape from its open cage.
+2	55918	verb	escape	0	To get free from a locked room is to escape.
+3	55918	verb	escaped	0	The rabbit escaped through a hole in the fence.
+4	55918	verb	escape	0	We had to escape the rain by running indoors.
+5	55918	verb	escape	0	The thief tried to escape before the police arrived.
+@ essential
+1	55941	adj	essential	1	Clean water is essential for a healthy life.
+2	55941	adj	essential	0	Something you cannot do without is essential.
+3	55941	adj	essential	0	It is essential to bring your passport to the airport.
+4	55941	adj	essential	0	Sleep is essential for children as they grow.
+5	55941	adj	essential	0	A map is essential when hiking in an unfamiliar place.
+@ eventually
+1	55951	adv	eventually	1	After many lessons, he eventually learned to swim.
+2	55951	adv	eventually	0	After waiting for a long time, the bus eventually arrived.
+3	55951	adv	eventually	0	The rain eventually stopped, and we went outside.
+4	55951	adv	eventually	0	She eventually found her lost keys under the sofa.
+5	55951	adv	eventually	0	With practice, you will eventually play the song well.
+@ examine
+1	55954	verb	examine	1	The doctor will examine your knee after the fall.
+2	55954	verb	examine	0	To look at something carefully is to examine it.
+3	55954	verb	examine	0	Please examine the map before choosing a route.
+4	55954	verb	examined	0	The scientist examined the leaf under a microscope.
+5	55954	verb	examine	0	The mechanic will examine the engine for problems.
+@ exchange
+1	55959	noun	exchange	1	We made an exchange of books after finishing the summer club.
+2	55959	noun	exchange	0	Trading one thing for another is an exchange.
+3	55959	noun	exchange	0	The friends arranged an exchange of homemade cookies.
+4	55959	noun	exchange	0	The store allowed an exchange for a different size.
+5	55959	noun	exchange	0	Our class held an exchange of postcards with students abroad.

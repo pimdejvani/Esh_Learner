@@ -1,0 +1,150 @@
+@ phone
+1	38005	noun	phone	1	Her phone rang just as the storm knocked out the lights.
+2	38005	noun	phone	0	A phone lets people speak across long distances.
+3	38005	noun	phone	0	Please charge your phone tonight.
+4	38005	noun	phone	0	He answered the phone quickly.
+5	38005	noun	phone	0	My phone is in my bag.
+@ photo
+1	38010	noun	photo	1	The old photo showed Dad holding a tiny puppy.
+2	38010	noun	photo	0	A photo is a picture made with a camera.
+3	38010	noun	photo	0	She framed the photo.
+4	38010	noun	photo	0	Take a photo of us.
+5	38010	noun	photo	0	The photo was blurry.
+@ photograph
+1	38015	noun	photograph	1	A faded photograph of the mountain hung above the fireplace.
+2	38015	noun	photograph	0	A photograph is an image captured by a camera.
+3	38015	noun	photograph	0	He developed the photograph at home.
+4	38015	noun	photograph	0	The photograph shows a busy market.
+5	38015	noun	photograph	0	She found the photograph in a drawer.
+@ phrase
+1	38019	noun	phrase	1	The phrase on the postcard made Grandma laugh aloud.
+2	38019	noun	phrase	0	A phrase is a short group of spoken or written words.
+3	38019	noun	phrase	0	Write the phrase in your notebook.
+4	38019	noun	phrase	0	He repeated the phrase slowly.
+5	38019	noun	phrase	0	That phrase sounds friendly.
+@ piano
+1	38027	noun	piano	1	The piano filled the hall with music during the rainstorm.
+2	38027	noun	piano	0	A piano makes music when its keys are pressed.
+3	38027	noun	piano	0	She practises piano every day.
+4	38027	noun	piano	0	The piano needs tuning.
+5	38027	noun	piano	0	He sat down at the piano.
+@ picture
+1	38035	noun	picture	1	The picture of the missing cat helped neighbours search the streets.
+2	38035	noun	picture	0	A picture shows an image of a person, place, or thing.
+3	38035	noun	picture	0	Draw a picture of your house.
+4	38035	noun	picture	0	The picture hangs on the wall.
+5	38035	noun	picture	0	I recognised her in the picture.
+@ piece
+1	38051	noun	piece	1	One piece of the broken cup was still under the table.
+2	38051	noun	piece	0	A piece is a separate part of a larger thing.
+3	38051	noun	piece	0	Cut the cake into a piece.
+4	38051	noun	piece	0	He found a piece of glass.
+5	38051	noun	piece	0	This piece fits the puzzle.
+@ pig
+1	38076	noun	pig	1	The pig rolled happily in the mud after the morning rain.
+2	38076	noun	pig	0	A pig is a farm animal with a snout and hooves.
+3	38076	noun	pig	0	The pig ate the fallen apples.
+4	38076	noun	pig	0	We heard the pig squeal.
+5	38076	noun	pig	0	That pig is sleeping in straw.
+@ pink
+1	38104	noun	pink	1	A soft pink covered the sky just before the sun rose.
+2	38104	noun	pink	0	Pink is a pale red colour like some flowers.
+3	38104	noun	pink	0	She mixed white with red to make pink.
+4	38104	noun	pink	0	The room was painted pink.
+5	38104	noun	pink	0	Pink looked bright against the blue wall.
+@ place
+1	38138	noun	place	1	They found a quiet place beside the river for their picnic.
+2	38138	noun	place	0	A place is a particular area or location.
+3	38138	noun	place	0	This is a safe place to rest.
+4	38138	noun	place	0	Keep your bag in one place.
+5	38138	noun	place	0	We need a place to sleep.
+@ plan
+1	38175	noun	plan	1	The architect spread the plan across the table before the builders arrived.
+2	38175	noun	plan	0	A plan is a technical drawing of a building or machine.
+3	38175	noun	plan	0	The plan shows where the doors go.
+4	38175	noun	plan	0	Study the plan before building.
+5	38175	noun	plan	0	The engineer changed the plan.
+@ plane
+1	38184	adj	plane	1	The carpenter checked that the tabletop was plane before painting it.
+2	38184	adj	plane	0	A plane surface is flat and level.
+3	38184	adj	plane	0	The board must be plane.
+4	38184	adj	plane	0	Water lies still on a plane surface.
+5	38184	adj	plane	0	He sanded the wood until it was plane.
+@ plant
+1	38200	noun	plant	1	The tiny plant pushed through the soil after three days of rain.
+2	38200	noun	plant	0	A plant is a living thing that usually grows from the ground.
+3	38200	noun	plant	0	Water the plant every morning.
+4	38200	noun	plant	0	This plant needs sunlight.
+5	38200	noun	plant	0	The plant has yellow flowers.
+@ play
+1	38228	verb	play	1	The children play in the garden until the dinner bell rings.
+2	38228	verb	play	0	Play means do an activity for fun.
+3	38228	verb	play	0	We play outside after school.
+4	38228	verb	play	0	The puppies play with a ball.
+5	38228	verb	play	0	Let the children play.
+@ player
+1	38282	noun	player	1	The smallest player scored the winning goal in the final minute.
+2	38282	noun	player	0	A player is someone who takes part in a game.
+3	38282	noun	player	0	Each player gets a turn.
+4	38282	noun	player	0	The player kicked the ball.
+5	38282	noun	player	0	Our best player was ill.
+@ please
+1	38295	verb	please	1	The surprise picnic was meant to please Grandma on her birthday.
+2	38295	verb	please	0	Please means make someone happy or satisfied.
+3	38295	verb	please	0	The new song can please the crowd.
+4	38295	verb	please	0	He tried to please his teacher.
+5	38295	verb	please	0	Fresh flowers please her.
+@ point
+1	38298	noun	point	1	A tiny point of light appeared at the end of the dark tunnel.
+2	38298	noun	point	0	A point is a small dot or mark.
+3	38298	noun	point	0	Mark the point on the map.
+4	38298	noun	point	0	The pencil made a sharp point.
+5	38298	noun	point	0	Put a point after the sentence.
+@ police
+1	38382	noun	police	1	The police found the lost child before the rain became heavy.
+2	38382	noun	police	0	Police are officers who enforce the law and keep people safe.
+3	38382	noun	police	0	Call the police after an accident.
+4	38382	noun	police	0	The police closed the road.
+5	38382	noun	police	0	Police arrived within minutes.
+@ policeman
+1	38395	noun	policeman	1	A policeman helped the frightened child find her parents at the station.
+2	38395	noun	policeman	0	A policeman is a male police officer.
+3	38395	noun	policeman	0	The policeman directed traffic.
+4	38395	noun	policeman	0	We asked a policeman for help.
+5	38395	noun	policeman	0	The policeman checked the street.
+@ pool
+1	38399	noun	pool	1	A clear pool reflected the mountains at the end of the trail.
+2	38399	noun	pool	0	A pool is a small, deep body of water.
+3	38399	noun	pool	0	Fish swam in the pool.
+4	38399	noun	pool	0	The pool formed after the flood.
+5	38399	noun	pool	0	They rested beside the pool.
+@ poor
+1	38422	adj	poor	1	The poor family shared their last meal with the lost traveller.
+2	38422	adj	poor	0	Poor people have little money or few possessions.
+3	38422	adj	poor	0	The poor village needed clean water.
+4	38422	adj	poor	0	She grew up in a poor area.
+5	38422	adj	poor	0	The charity helps poor families.
+@ popular
+1	38435	adj	popular	1	The popular song played from every shop during the festival.
+2	38435	adj	popular	0	Popular things are liked by many people.
+3	38435	adj	popular	0	This game is popular at school.
+4	38435	adj	popular	0	The café became popular quickly.
+5	38435	adj	popular	0	She is a popular singer.
+@ positive
+1	38446	adj	positive	1	The doctor gave a positive answer when we asked if the treatment worked.
+2	38446	adj	positive	0	Positive means yes or showing agreement.
+3	38446	adj	positive	0	He gave a positive reply.
+4	38446	adj	positive	0	The vote was positive.
+5	38446	adj	positive	0	She received positive approval.
+@ possible
+1	38478	adj	possible	1	It was possible that the bridge would close if the river rose.
+2	38478	adj	possible	0	Possible means able to happen or be done.
+3	38478	adj	possible	0	Is it possible to leave early?
+4	38478	adj	possible	0	A win is still possible.
+5	38478	adj	possible	0	We chose the safest possible route.
+@ post
+1	38485	noun	post	1	The dog waited beside the post at the edge of the farm.
+2	38485	noun	post	0	A post is a long upright piece of wood or metal.
+3	38485	noun	post	0	Tie the rope to the post.
+4	38485	noun	post	0	The post held up the fence.
+5	38485	noun	post	0	A lamp hung from the post.

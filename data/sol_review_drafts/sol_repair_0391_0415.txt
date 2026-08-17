@@ -1,0 +1,174 @@
+@ recording
+1	50361	verb	recording	1	We recording every day.
+2	50361	verb	recording	0	She is recording the interview now.
+3	50361	verb	recording	0	Recording each result takes several minutes.
+4	50361	verb	recording	0	They are recording a new song.
+5	50361	verb	recording	0	He began recording the meeting at noon.
+
+@ recycle
+1	50365	verb	recycle	1	We recycle every day.
+2	50365	verb	recycle	0	The factory can recycle old glass.
+3	50365	verb	recycle	0	We recycle plastic bottles at school.
+4	50365	verb	recycle	0	These machines recycle metal parts.
+5	50365	verb	recycle	0	Please recycle the empty cans.
+
+@ reduce
+1	50373	verb	reduce	1	We reduce every day.
+2	50373	verb	reduce	0	Walking can reduce stress.
+3	50373	verb	reduce	0	We must reduce the amount of waste.
+4	50373	verb	reduce	0	Close the window to reduce the noise.
+5	50373	verb	reduce	0	The shop will reduce its prices tomorrow.
+
+@ refer
+1	50392	verb	refer	1	We refer every day.
+2	50392	verb	refer	0	I refer new students to the school website.
+3	50392	verb	refer	0	The guide will refer visitors to the map.
+4	50392	verb	refer	0	Please refer readers to the final chapter.
+5	50392	verb	refer	0	Doctors may refer patients to this information sheet.
+
+@ refuse
+1	50404	adj	refuse	1	It is refuse.
+2	50404	adj	refuse	0	The workers collected refuse material for disposal.
+3	50404	adj	refuse	0	Refuse wood was piled behind the factory.
+4	50404	adj	refuse	0	They removed refuse metal from the workshop.
+5	50404	adj	refuse	0	The truck carried refuse matter to the dump.
+
+@ region
+1	50413	noun	region	1	Rescue teams reached the region after the powerful storm.
+2	50413	noun	region	0	This region receives little rain.
+3	50413	noun	regions	0	The plant grows in warm regions.
+4	50413	noun	region	0	Our guide knows the mountain region well.
+5	50413	noun	regions	0	Several regions share the same language.
+
+@ regular
+1	50426	adj	regular	1	It is regular.
+2	50426	adj	regular	0	The regular clergy lived under a religious rule.
+3	50426	adj	regular	0	A regular priest belonged to the monastic order.
+4	50426	adj	regular	0	The abbey was home to regular canons.
+5	50426	adj	regular	0	Regular monks followed the rule of their order.
+
+@ relationship
+1	50458	noun	relationship	1	Their close relationship survived years of living far apart.
+2	50458	noun	relationship	0	The two countries have a strong relationship.
+3	50458	noun	relationships	0	Healthy relationships require trust.
+4	50458	noun	relationship	0	Scientists studied the relationship between sleep and memory.
+5	50458	noun	relationships	0	The diagram shows relationships among the parts.
+
+@ remove
+1	50464	verb	remove	1	We remove every day.
+2	50464	verb	remove	0	Please remove the extra word from the sentence.
+3	50464	verb	remove	0	The editor will remove that paragraph.
+4	50464	verb	remove	0	Use this key to remove the old file.
+5	50464	verb	remove	0	They may remove the record from the database.
+
+@ repair
+1	50482	verb	repair	1	We repair every day.
+2	50482	verb	repair	0	A mechanic will repair the engine.
+3	50482	verb	repair	0	They need to repair the damaged roof.
+4	50482	verb	repair	0	Can you repair my broken watch?
+5	50482	verb	repair	0	Workers repair the road after each storm.
+
+@ replace
+1	50492	verb	replace	1	We replace every day.
+2	50492	verb	replace	0	Please replace the book on the shelf.
+3	50492	verb	replace	0	Remember to replace the lid after use.
+4	50492	verb	replace	0	She will replace the keys in the drawer.
+5	50492	verb	replace	0	Workers carefully replace each stone in its former position.
+
+@ reply
+1	50500	verb	reply	1	We reply every day.
+2	50500	verb	reply	0	Please reply to my question.
+3	50500	verb	reply	0	I will reply by email tonight.
+4	50500	verb	reply	0	She did not reply to his request.
+5	50500	verb	reply	0	They always reply politely.
+
+@ reporter
+1	50508	noun	reporter	1	The reporter warned the town about the approaching fire.
+2	50508	noun	reporter	0	A reporter asked the mayor several questions.
+3	50508	noun	reporters	0	Reporters waited outside the courthouse.
+4	50508	noun	reporter	0	The newspaper sent a reporter to the scene.
+5	50508	noun	reporters	0	Two reporters covered the election.
+
+@ request
+1	50513	verb	request	1	We request every day.
+2	50513	verb	request	0	You may request a copy of the report.
+3	50513	verb	request	0	Guests can request extra towels.
+4	50513	verb	request	0	I will request more time to finish.
+5	50513	verb	request	0	Students may request help from the teacher.
+
+@ research
+1	50520	noun	research	1	Their research led to a treatment that saved many lives.
+2	50520	noun	research	0	The team conducts research on clean energy.
+3	50520	noun	research	0	Her research examines how children learn.
+4	50520	noun	research	0	More research is needed before a decision is made.
+5	50520	noun	research	0	The university funds medical research.
+
+@ researcher
+1	50526	noun	researcher	1	The researcher discovered a safer way to clean the water.
+2	50526	noun	researcher	0	Each researcher recorded the results carefully.
+3	50526	noun	researchers	0	Researchers studied the ancient tools.
+4	50526	noun	researcher	0	A researcher interviewed fifty families.
+5	50526	noun	researchers	0	The researchers published their findings.
+
+@ respond
+1	50527	verb	respond	1	We respond every day.
+2	50527	verb	respond	0	Please respond to my question.
+3	50527	verb	respond	0	She did not respond when I called.
+4	50527	verb	respond	0	The manager will respond by Friday.
+5	50527	verb	respond	0	Children often respond honestly.
+
+@ response
+1	50535	noun	response	1	Her quick response brought help to the injured driver.
+2	50535	noun	response	0	I am waiting for his response.
+3	50535	noun	responses	0	The survey received many positive responses.
+4	50535	noun	response	0	She gave a short response to the question.
+5	50535	noun	responses	0	Their responses were clear and polite.
+
+@ rest
+1	50543	noun	rest	1	After two nights without sleep, she finally got some rest.
+2	50543	noun	rest	0	The baby needs more rest.
+3	50543	noun	rest	0	A full night of rest improved his mood.
+4	50543	noun	rest	0	She woke feeling better after some rest.
+5	50543	noun	rest	0	Quiet helps me get enough rest.
+
+@ review
+1	50577	noun	review	1	A careful review of the letter revealed the hidden clue.
+2	50577	noun	review	0	The chapter became clearer after a second review.
+3	50577	noun	reviews	0	Several reviews of the notes helped her understand the topic.
+4	50577	noun	review	0	My review of the poem revealed a new meaning.
+5	50577	noun	reviews	0	Repeated reviews of the document exposed small errors.
+
+@ ring
+1	50592	noun	ring	1	The lost ring was found inside the old piano.
+2	50592	noun	ring	0	She wore a silver ring.
+3	50592	noun	rings	0	The curtain hangs from metal rings.
+4	50592	noun	ring	0	A wooden ring surrounded the pole.
+5	50592	noun	rings	0	The toy contains five colored rings.
+
+@ rise
+1	50646	verb	rise	1	We rise every day.
+2	50646	verb	rise	0	Hot air will rise.
+3	50646	verb	rise	0	The moon began to rise above the hill.
+4	50646	verb	rise	0	Smoke can rise through the open window.
+5	50646	verb	rise	0	Watch the bread rise in the oven.
+
+@ rock
+1	50684	noun	rock	1	The tunnel through solid rock gave the trapped miners a way out.
+2	50684	noun	rock	0	The cliff consists mainly of hard rock.
+3	50684	noun	rocks	0	These rocks contain several minerals.
+4	50684	noun	rock	0	A layer of volcanic rock covers the ground.
+5	50684	noun	rocks	0	Different rocks form under different conditions.
+
+@ role
+1	50728	noun	role	1	Her final role on stage fulfilled a lifelong dream.
+2	50728	noun	role	0	He played the role of a young king.
+3	50728	noun	roles	0	The actor performed two roles in the play.
+4	50728	noun	role	0	She accepted the leading role.
+5	50728	noun	roles	0	These roles require strong singing skills.
+
+@ roof
+1	50735	noun	roof	1	The roof protected the family when the storm broke every window.
+2	50735	noun	roof	0	Rain fell heavily on the roof.
+3	50735	noun	roofs	0	Snow covered the roofs of the houses.
+4	50735	noun	roof	0	Workers repaired the damaged roof.
+5	50735	noun	roofs	0	Metal roofs can last for many years.

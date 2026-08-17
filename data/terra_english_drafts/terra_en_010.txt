@@ -1,0 +1,150 @@
+@ error
+1	46109	noun	error	1	One small error in the address sent the parcel to the wrong house.
+2	46109	noun	error	0	An error is something that is wrong.
+3	46109	noun	error	0	Please correct the error before printing.
+4	46109	noun	error	0	The teacher circled the spelling error.
+5	46109	noun	error	0	A computer error stopped the game.
+@ especially
+1	46121	adv	especially	1	I packed a raincoat, especially because the forecast looked wet.
+2	46121	adv	especially	0	Especially means more than usual or more than others.
+3	46121	adv	especially	0	This soup is especially hot today.
+4	46121	adv	especially	0	She likes birds, especially parrots.
+5	46121	adv	especially	0	The road is especially busy at eight.
+@ essay
+1	46125	noun	essay	1	Nina wrote an essay about protecting the ocean.
+2	46125	noun	essay	0	An essay is a short piece of writing about a subject.
+3	46125	noun	essay	0	My essay needs a stronger ending.
+4	46125	noun	essay	0	The teacher returned my essay.
+5	46125	noun	essay	0	He spent an hour planning his essay.
+@ everyday
+1	46131	adj	everyday	1	She wore everyday shoes instead of her party shoes.
+2	46131	adj	everyday	0	Everyday describes something used in ordinary life.
+3	46131	adj	everyday	0	This is an everyday problem.
+4	46131	adj	everyday	0	The bag is good for everyday use.
+5	46131	adj	everyday	0	They talked in everyday language.
+@ everywhere
+1	46138	adv	everywhere	1	After the pillow fight, feathers were everywhere.
+2	46138	adv	everywhere	0	Everywhere means in all places.
+3	46138	adv	everywhere	0	I looked everywhere for my keys.
+4	46138	adv	everywhere	0	Wildflowers grew everywhere on the hill.
+5	46138	adv	everywhere	0	The smell of bread was everywhere.
+@ evidence
+1	46141	noun	evidence	1	The muddy footprints were evidence that someone entered the shed.
+2	46141	noun	evidence	0	Evidence is facts that support an idea or claim.
+3	46141	noun	evidence	0	Police collected evidence at the scene.
+4	46141	noun	evidence	0	There was no evidence of a break-in.
+5	46141	noun	evidence	0	The photo provided useful evidence.
+@ exact
+1	46146	adj	exact	1	Please give me the exact time of the train.
+2	46146	adj	exact	0	Exact means completely correct with no difference.
+3	46146	adj	exact	0	The exact number is fifty-two.
+4	46146	adj	exact	0	We need the exact address.
+5	46146	adj	exact	0	Her answer was exact.
+@ exactly
+1	46155	adv	exactly	1	The key fits exactly in the old lock.
+2	46155	adv	exactly	0	Exactly means with complete precision.
+3	46155	adv	exactly	0	That is exactly what I meant.
+4	46155	adv	exactly	0	The clock shows exactly noon.
+5	46155	adv	exactly	0	Stand exactly behind the line.
+@ excellent
+1	46157	adj	excellent	1	The chef made an excellent meal from simple vegetables.
+2	46157	adj	excellent	0	Excellent describes something that is extremely good.
+3	46157	adj	excellent	0	You did an excellent job.
+4	46157	adj	excellent	0	Her test score was excellent.
+5	46157	adj	excellent	0	The hotel gave excellent service.
+@ except
+1	46162	verb	except	1	The rule will except children under five from the fee.
+2	46162	verb	except	0	To except someone is to leave them out.
+3	46162	verb	except	0	The notice may except staff from the rule.
+4	46162	verb	except	0	The law can except a special case.
+5	46162	verb	except	0	Do not except anyone without a reason.
+@ exist
+1	46168	verb	exist	1	Dinosaurs no longer exist, but their bones remain.
+2	46168	verb	exist	0	To exist is to be real or to be present.
+3	46168	verb	exist	0	Unicorns do not exist in nature.
+4	46168	verb	exist	0	Many kinds of insects exist here.
+5	46168	verb	exist	0	The problem may still exist.
+@ expect
+1	46169	verb	expect	1	We expect the guests to arrive at six.
+2	46169	verb	expect	0	To expect is to believe something will happen.
+3	46169	verb	expect	0	I expect rain this afternoon.
+4	46169	verb	expect	0	They expect good results.
+5	46169	verb	expect	0	Do you expect him today?
+@ experience
+1	46175	noun	experience	1	Her first camping experience taught her to pack a torch.
+2	46175	noun	experience	0	Experience is knowledge or feeling gained by doing something.
+3	46175	noun	experience	0	Teaching gave him valuable experience.
+4	46175	noun	experience	0	It was a frightening experience.
+5	46175	noun	experience	0	She has experience with young children.
+@ experiment
+1	46183	noun	experiment	1	Our experiment showed that seeds need water to grow.
+2	46183	noun	experiment	0	An experiment is a careful test used to learn something.
+3	46183	noun	experiment	0	The class repeated the experiment.
+4	46183	noun	experiment	0	Wear goggles during the experiment.
+5	46183	noun	experiment	0	The experiment produced a surprise.
+@ expert
+1	46189	adj	expert	1	Her expert repair saved the old clock.
+2	46189	adj	expert	0	Expert describes someone highly skilled or knowledgeable.
+3	46189	adj	expert	0	We need expert advice.
+4	46189	adj	expert	0	His expert hands fixed the machine.
+5	46189	adj	expert	0	She gave an expert answer.
+@ explanation
+1	46195	noun	explanation	1	The teacher's explanation made the hard question simple.
+2	46195	noun	explanation	0	An explanation is words that make something easier to understand.
+3	46195	noun	explanation	0	Please give an explanation for your answer.
+4	46195	noun	explanation	0	Her explanation was clear.
+5	46195	noun	explanation	0	We listened to his explanation.
+@ express
+1	46198	adj	express	1	We took the express train because it skipped the small stations.
+2	46198	adj	express	0	Express describes a fast service with few stops.
+3	46198	adj	express	0	The express bus leaves at seven.
+4	46198	adj	express	0	An express delivery arrived today.
+5	46198	adj	express	0	She chose the express route.
+@ expression
+1	46217	noun	expression	1	His worried expression told us that something was wrong.
+2	46217	noun	expression	0	An expression is a way of showing a thought or feeling.
+3	46217	noun	expression	0	Her expression changed suddenly.
+4	46217	noun	expression	0	The phrase is a common expression.
+5	46217	noun	expression	0	He had a calm expression.
+@ extreme
+1	46228	adj	extreme	1	The hikers reached the extreme edge of the island.
+2	46228	adj	extreme	0	Extreme describes the farthest point or edge.
+3	46228	adj	extreme	0	They live in an extreme northern village.
+4	46228	adj	extreme	0	The extreme end of the shelf was dusty.
+5	46228	adj	extreme	0	A flag stood at the extreme point.
+@ extremely
+1	46241	adv	extremely	1	The metal was extremely hot in the sun.
+2	46241	adv	extremely	0	Extremely means to a very great degree.
+3	46241	adv	extremely	0	The puzzle was extremely difficult.
+4	46241	adv	extremely	0	She was extremely pleased.
+5	46241	adv	extremely	0	It is extremely quiet here.
+@ factor
+1	46242	noun	factor	1	The merchant acted as a factor for a farmer far away.
+2	46242	noun	factor	0	A factor is a person who does business for someone else.
+3	46242	noun	factor	0	The factor sold goods for the owner.
+4	46242	noun	factor	0	A factor handled the trade.
+5	46242	noun	factor	0	The farmer trusted the factor.
+@ factory
+1	46256	noun	factory	1	The factory makes thousands of bicycles each month.
+2	46256	noun	factory	0	A factory is a building where goods are made.
+3	46256	noun	factory	0	Her mother works at a factory.
+4	46256	noun	factory	0	Smoke rose from the factory.
+5	46256	noun	factory	0	The factory closed at five.
+@ fail
+1	46266	verb	fail	1	The bridge may fail if the bolts are not repaired.
+2	46266	verb	fail	0	To fail is to be unsuccessful.
+3	46266	verb	fail	0	Do not fail to lock the door.
+4	46266	verb	fail	0	The plan could fail without help.
+5	46266	verb	fail	0	He did not fail the test.
+@ fair
+1	46287	adj	fair	1	The fair child wore a pale yellow hat.
+2	46287	adj	fair	0	Fair can describe someone with a pleasing, fresh appearance.
+3	46287	adj	fair	0	She has fair hair and blue eyes.
+4	46287	adj	fair	0	The baby has fair skin.
+5	46287	adj	fair	0	A fair face appeared in the photo.
+@ fan
+1	46318	noun	fan	1	Grandma waved a paper fan to cool herself.
+2	46318	noun	fan	0	A fan is a hand-held object waved to move air.
+3	46318	noun	fan	0	The fan opened into a wide shape.
+4	46318	noun	fan	0	She carried a fan in her bag.
+5	46318	noun	fan	0	The fan made a small breeze.

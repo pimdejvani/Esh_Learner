@@ -1,0 +1,600 @@
+@ business
+1	30105	noun	business	1	After years at the market, Lena opened a small business beside the river.
+2	30105	noun	business	0	The bakery is a family business that sells bread every morning.
+3	30105	noun	business	0	His business hired two new designers this spring.
+4	30105	noun	business	0	The business closed early because of the storm.
+5	30105	noun	business	0	She hopes her online business will grow next year.
+@ busy
+1	30128	adj	busy	1	The station was busy as families hurried home before the rain.
+2	30128	adj	busy	0	The restaurant is busy at lunchtime.
+3	30128	adj	busy	0	I had a busy morning answering messages.
+4	30128	adj	busy	0	The busy street became quiet after midnight.
+5	30128	adj	busy	0	Our teacher is busy preparing the school play.
+@ but
+1	30135	prep	but	1	Everyone cheered but the goalkeeper stayed silent after the final whistle.
+2	30135	prep	but	0	Everyone was ready but Maya was absent.
+3	30135	prep	but	0	I wanted to walk, but the road was flooded.
+4	30135	prep	but	0	The box held nothing but old letters.
+5	30135	prep	but	0	He is young but very careful with money.
+@ butter
+1	30155	noun	butter	1	Grandma spread warm butter on the bread while the soup simmered.
+2	30155	noun	butter	0	Please put butter on the toast.
+3	30155	noun	butter	0	The recipe needs flour, eggs, and butter.
+4	30155	noun	butter	0	The butter melted on the hot pancake.
+5	30155	noun	butter	0	We keep the butter in the refrigerator.
+@ buy
+1	30167	verb	buy	1	With her first paycheck, Noor went to buy a bright blue bicycle.
+2	30167	verb	buy	0	I need to buy milk at the shop.
+3	30167	verb	buy	0	They buy fresh fruit every Saturday.
+4	30167	verb	buy	0	Can we buy tickets at the door?
+5	30167	verb	buy	0	He decided to buy the cheaper phone.
+@ by
+1	30176	prep	by	1	A lantern glowed by the door until Dad came home.
+2	30176	prep	by	0	The keys are by the window.
+3	30176	prep	by	0	We sat by the lake and watched ducks.
+4	30176	prep	by	0	Please finish the report by Friday.
+5	30176	prep	by	0	The novel was written by a local author.
+@ bye
+1	30207	noun	bye	1	The tired team received a bye and advanced to the next round.
+2	30207	noun	bye	0	Our team gets a bye in the first round.
+3	30207	noun	bye	0	A bye lets one player advance without competing.
+4	30207	noun	bye	0	The coach smiled when the schedule showed a bye.
+5	30207	noun	bye	0	Because of the bye, the team rested this weekend.
+@ cafe
+1	30218	noun	cafe	1	We found a quiet cafe where the owner knew every customer’s name.
+2	30218	noun	cafe	0	They met at a cafe after class.
+3	30218	noun	cafe	0	The cafe serves coffee and sandwiches.
+4	30218	noun	cafe	0	A small cafe opened near the library.
+5	30218	noun	cafe	0	I studied in the cafe for two hours.
+@ cake
+1	30220	noun	cake	1	For her birthday, the family carried in a cake covered with strawberries.
+2	30220	noun	cake	0	The cake has chocolate icing.
+3	30220	noun	cake	0	We baked a cake for the party.
+4	30220	noun	cake	0	Please cut the cake into eight pieces.
+5	30220	noun	cake	0	The cake cooled on the kitchen table.
+@ call
+1	30234	verb	call	1	When the lights went out, Eli used his phone to call his mother.
+2	30234	verb	call	0	Please call me when you arrive.
+3	30234	verb	call	0	She will call the doctor this afternoon.
+4	30234	verb	call	0	I heard someone call my name.
+5	30234	verb	call	0	They call their grandmother every Sunday.
+@ camera
+1	30296	noun	camera	1	Mina lifted her camera just as the baby took her first steps.
+2	30296	noun	camera	0	Use the camera to take a photo.
+3	30296	noun	camera	0	His camera needs a new battery.
+4	30296	noun	camera	0	The camera captured the sunset clearly.
+5	30296	noun	camera	0	She packed her camera for the trip.
+@ can
+1	30300	verb	can	1	After weeks of practice, Leo smiled because he can finally swim across the pool.
+2	30300	verb	can	0	I can ride a bicycle.
+3	30300	verb	can	0	Can you open this jar?
+4	30300	verb	can	0	We can meet after school.
+5	30300	verb	can	0	My sister can speak French.
+@ cannot
+1	30331	verb	cannot	1	Even with a map, we cannot find the hidden path in the fog.
+2	30331	verb	cannot	0	I cannot hear you over the music.
+3	30331	verb	cannot	0	The door cannot open without a key.
+4	30331	verb	cannot	0	We cannot stay after the library closes.
+5	30331	verb	cannot	0	She cannot reach the top shelf.
+@ capital
+1	30335	noun	capital	1	The young inventor searched for capital to build her first solar lamp.
+2	30335	noun	capital	0	The company needs capital to buy new machines.
+3	30335	noun	capital	0	Investors provided capital for the new project.
+4	30335	noun	capital	0	The bank offered capital to small businesses.
+5	30335	noun	capital	0	Without capital, the factory could not expand.
+@ car
+1	30351	noun	car	1	Their old car carried the family to the sea every summer.
+2	30351	noun	car	0	The car is parked outside the house.
+3	30351	noun	car	0	He washed his car on Saturday.
+4	30351	noun	car	0	We took a car to the airport.
+5	30351	noun	car	0	The red car stopped at the light.
+@ card
+1	30370	noun	card	1	On her birthday, Sam found a handmade card from her little brother.
+2	30370	noun	card	0	Choose one card from the deck.
+3	30370	noun	card	0	He wrote a message inside the card.
+4	30370	noun	card	0	The card shows a king and a crown.
+5	30370	noun	card	0	She kept the card in a drawer.
+@ career
+1	30412	noun	career	1	After helping at the animal shelter, June decided on a career as a veterinarian.
+2	30412	noun	career	0	Teaching is her chosen career.
+3	30412	noun	career	0	He changed career after ten years in banking.
+4	30412	noun	career	0	The school offers advice about career choices.
+5	30412	noun	career	0	Her music career began in a small club.
+@ carrot
+1	30423	noun	carrot	1	The rabbit waited patiently as Ben pulled a carrot from the garden.
+2	30423	noun	carrot	0	Add a chopped carrot to the soup.
+3	30423	noun	carrot	0	The carrot is orange and crunchy.
+4	30423	noun	carrot	0	She bought a bag with one carrot inside.
+5	30423	noun	carrot	0	A carrot grows under the ground.
+@ carry
+1	30430	verb	carry	1	When the storm began, Omar helped carry the injured dog to safety.
+2	30430	verb	carry	0	Please carry this box upstairs.
+3	30430	verb	carry	0	She can carry two bags at once.
+4	30430	verb	carry	0	The bridge can carry heavy trucks.
+5	30430	verb	carry	0	I carry my lunch in a small bag.
+@ cat
+1	30469	noun	cat	1	The rescued cat slept on Mia’s coat during its first night at home.
+2	30469	noun	cat	0	The cat chased a ball of yarn.
+3	30469	noun	cat	0	Our cat waits by the door.
+4	30469	noun	cat	0	The black cat climbed the fence.
+5	30469	noun	cat	0	A cat has whiskers and sharp claws.
+@ cd
+1	30509	verb	cd	1	In the old school note, cd was used as a short form for could.
+2	30509	verb	cd	0	The teacher explained that cd can mean could in an old text.
+3	30509	verb	cd	0	This handwritten list uses cd instead of could.
+4	30509	verb	cd	0	We read cd as an abbreviation in the archive.
+5	30509	verb	cd	0	The editor replaced cd with could for clarity.
+@ cent
+1	30510	noun	cent	1	Ava dropped a single cent into the wishing fountain and made a promise.
+2	30510	noun	cent	0	One dollar equals one hundred cent units.
+3	30510	noun	cent	0	The coin is worth one cent.
+4	30510	noun	cent	0	The price rose by one cent.
+5	30510	noun	cent	0	He found a cent under the sofa.
+@ centre
+1	30520	noun	centre	1	At the centre of the park, children danced around the fountain.
+2	30520	noun	centre	0	Place the vase in the centre of the table.
+3	30520	noun	centre	0	The library is in the town centre.
+4	30520	noun	centre	0	Draw a circle with a dot at its centre.
+5	30520	noun	centre	0	Meet me at the shopping centre.
+@ century
+1	30522	noun	century	1	The old clock has marked every hour in this house for more than a century.
+2	30522	noun	century	0	A century lasts one hundred years.
+3	30522	noun	century	0	The bridge was built in the last century.
+4	30522	noun	century	0	This painting is from the nineteenth century.
+5	30522	noun	century	0	The city changed greatly during the century.
+@ chair
+1	30530	noun	chair	1	Grandpa’s wooden chair stood empty beside the fireplace after dinner.
+2	30530	noun	chair	0	Please sit on the chair.
+3	30530	noun	chair	0	The chair has four legs.
+4	30530	noun	chair	0	She moved the chair closer to the desk.
+5	30530	noun	chair	0	A blue chair is by the window.
+@ change
+1	30544	verb	change	1	When spring arrived, the bare garden began to change into a field of color.
+2	30544	verb	change	0	The leaves change color in autumn.
+3	30544	verb	change	0	Plans can change after new information arrives.
+4	30544	verb	change	0	The weather may change tonight.
+5	30544	verb	change	0	People change as they grow older.
+@ chart
+1	30563	noun	chart	1	The sailor unfolded a chart and traced a safe route through the islands.
+2	30563	noun	chart	0	The chart shows the route to the harbor.
+3	30563	noun	chart	0	Use a chart to find the mountain trail.
+4	30563	noun	chart	0	The captain kept a chart in the cabin.
+5	30563	noun	chart	0	A chart can show rivers and roads.
+@ cheap
+1	30580	adj	cheap	1	The cheap umbrella broke in the wind, but it kept us dry long enough to get home.
+2	30580	adj	cheap	0	This shirt is cheap because it is on sale.
+3	30580	adj	cheap	0	We found a cheap hotel near the station.
+4	30580	adj	cheap	0	The cheap toy did not last long.
+5	30580	adj	cheap	0	I need a cheap way to travel.
+@ cheese
+1	30637	noun	cheese	1	The smell of melted cheese brought everyone into the kitchen.
+2	30637	noun	cheese	0	The sandwich contains cheese and tomato.
+3	30637	noun	cheese	0	She grated cheese over the pasta.
+4	30637	noun	cheese	0	We bought cheese at the market.
+5	30637	noun	cheese	0	This cheese tastes sharp and salty.
+@ chicken
+1	30662	noun	chicken	1	At sunrise, the chicken scratched in the yard beside the red barn.
+2	30662	noun	chicken	0	The chicken laid an egg this morning.
+3	30662	noun	chicken	0	A chicken has feathers and a beak.
+4	30662	noun	chicken	0	The farmer fed the chicken corn.
+5	30662	noun	chicken	0	The chicken ran across the grass.
+@ child
+1	30676	noun	child	1	Every child in the shelter received a warm blanket before the storm.
+2	30676	noun	child	0	A child needs care and protection.
+3	30676	noun	child	0	The child drew a picture of a tree.
+4	30676	noun	child	0	Each child brought a book to class.
+5	30676	noun	child	0	That child is learning to read.
+@ chocolate
+1	30689	noun	chocolate	1	Nina saved the last piece of chocolate for her brother after his exam.
+2	30689	noun	chocolate	0	The cookie contains chocolate chips.
+3	30689	noun	chocolate	0	I drank hot chocolate after the walk.
+4	30689	noun	chocolate	0	She bought a bar of chocolate.
+5	30689	noun	chocolate	0	Chocolate melts in warm hands.
+@ choose
+1	30701	verb	choose	1	At the shelter, Max chose to choose the oldest dog and give her a home.
+2	30701	verb	choose	0	Choose one answer from the list.
+3	30701	verb	choose	0	You can choose your favorite color.
+4	30701	verb	choose	0	She will choose a seat near the window.
+5	30701	verb	choose	0	We must choose a day for the meeting.
+@ cinema
+1	30708	noun	cinema	1	We left the cinema smiling after the final scene lit up the screen.
+2	30708	noun	cinema	0	The cinema shows films every evening.
+3	30708	noun	cinema	0	They bought tickets at the cinema.
+4	30708	noun	cinema	0	The cinema has a large screen.
+5	30708	noun	cinema	0	Our town has one small cinema.
+@ city
+1	30714	noun	city	1	From the hill, the city lights looked like stars scattered below us.
+2	30714	noun	city	0	Bangkok is a busy city.
+3	30714	noun	city	0	The city has many tall buildings.
+4	30714	noun	city	0	She moved to the city for work.
+5	30714	noun	city	0	A river runs through the city.
+@ class
+1	30718	noun	class	1	In art class, Maya discovered she could paint the sky exactly as she imagined it.
+2	30718	noun	class	0	Our class starts at nine o’clock.
+3	30718	noun	class	0	The class listened to the teacher.
+4	30718	noun	class	0	He is late for class today.
+5	30718	noun	class	0	The class has twenty students.
+@ classroom
+1	30739	noun	classroom	1	The classroom became quiet when the rain began tapping on the windows.
+2	30739	noun	classroom	0	Students are reading in the classroom.
+3	30739	noun	classroom	0	The classroom has desks and a board.
+4	30739	noun	classroom	0	Please leave the classroom after the lesson.
+5	30739	noun	classroom	0	Our classroom is on the second floor.
+@ clean
+1	30740	adj	clean	1	After the flood, volunteers worked all day to make the family’s kitchen clean again.
+2	30740	adj	clean	0	Wash your hands until they are clean.
+3	30740	adj	clean	0	The clean floor reflected the lights.
+4	30740	adj	clean	0	Please keep the bathroom clean.
+5	30740	adj	clean	0	She wore a clean white shirt.
+@ climb
+1	30780	verb	climb	1	Holding the rope tightly, Arin began to climb the steep wall.
+2	30780	verb	climb	0	We climb the hill every morning.
+3	30780	verb	climb	0	The child can climb the ladder.
+4	30780	verb	climb	0	They will climb to the top of the tower.
+5	30780	verb	climb	0	Vines climb the garden fence.
+@ clock
+1	30794	noun	clock	1	The old clock chimed midnight while everyone waited for the new year.
+2	30794	noun	clock	0	The clock says seven thirty.
+3	30794	noun	clock	0	A clock measures the time.
+4	30794	noun	clock	0	He looked at the clock on the wall.
+5	30794	noun	clock	0	The clock stopped during the power cut.
+@ clothes
+1	30891	noun	clothes	1	After the rain, we hung our wet clothes where the sun could reach them.
+2	30891	noun	clothes	0	Put your clean clothes in the drawer.
+3	30891	noun	clothes	0	Her clothes were covered in paint.
+4	30891	noun	clothes	0	We packed warm clothes for the trip.
+5	30891	noun	clothes	0	These clothes are too small for me.
+@ club
+1	30896	noun	club	1	The guard carried a wooden club as he walked through the dark gate.
+2	30896	noun	club	0	The museum displayed an ancient club.
+3	30896	noun	club	0	A club is a heavy stick used as a weapon.
+4	30896	noun	club	0	The warrior raised his club above his head.
+5	30896	noun	club	0	The club was carved from a thick branch.
+@ coat
+1	30921	noun	coat	1	When the temperature fell, Rosa wrapped her coat around the shivering child.
+2	30921	noun	coat	0	Wear a coat when it is cold.
+3	30921	noun	coat	0	His coat is hanging by the door.
+4	30921	noun	coat	0	She bought a new winter coat.
+5	30921	noun	coat	0	The coat has deep pockets.
+@ coffee
+1	30932	noun	coffee	1	The smell of coffee welcomed Dad home after his night shift.
+2	30932	noun	coffee	0	I drink coffee with breakfast.
+3	30932	noun	coffee	0	The coffee is too hot to drink.
+4	30932	noun	coffee	0	She ordered coffee without sugar.
+5	30932	noun	coffee	0	A cup of coffee sat on the desk.
+@ cold
+1	30943	adj	cold	1	The cold wind made us huddle together at the bus stop.
+2	30943	adj	cold	0	The water is cold this morning.
+3	30943	adj	cold	0	Put the milk in the cold refrigerator.
+4	30943	adj	cold	0	His hands felt cold after the snowball fight.
+5	30943	adj	cold	0	We drank cold juice after running.
+@ college
+1	30972	noun	college	1	Tara was the first person in her family to receive a letter from college.
+2	30972	noun	college	0	He plans to study at college next year.
+3	30972	noun	college	0	The college has a large science library.
+4	30972	noun	college	0	She visited the college on Saturday.
+5	30972	noun	college	0	College students attend lectures and classes.
+@ come
+1	30990	verb	come	1	When the train doors opened, Dad saw his daughter come running toward him.
+2	30990	verb	come	0	Please come to my house after school.
+3	30990	verb	come	0	Will you come with us?
+4	30990	verb	come	0	The bus will come in ten minutes.
+5	30990	verb	come	0	Come here and look at this photo.
+@ common
+1	31021	adj	common	1	Music became a common language when the visitors could not speak each other’s words.
+2	31021	adj	common	0	Rain is common in this season.
+3	31021	adj	common	0	It is common to see bicycles here.
+4	31021	adj	common	0	The two friends share a common goal.
+5	31021	adj	common	0	Colds are common in winter.
+@ company
+1	31043	noun	company	1	The rescue company worked together through the night to clear the road.
+2	31043	noun	company	0	The company makes computer games.
+3	31043	noun	company	0	She works for a large company.
+4	31043	noun	company	0	Our company hired a new manager.
+5	31043	noun	company	0	The company opened an office downtown.
+@ compare
+1	31061	verb	compare	1	Before choosing a laptop, Amir learned to compare prices and battery life.
+2	31061	verb	compare	0	Compare the two pictures carefully.
+3	31061	verb	compare	0	We compare these shoes by size and price.
+4	31061	verb	compare	0	The teacher asked us to compare the stories.
+5	31061	verb	compare	0	It is useful to compare several options.
+@ complete
+1	31069	verb	complete	1	With one final stitch, Hana could complete the blanket for her new baby cousin.
+2	31069	verb	complete	0	Complete the form before you leave.
+3	31069	verb	complete	0	He worked late to complete the project.
+4	31069	verb	complete	0	Please complete all five questions.
+5	31069	verb	complete	0	The team hopes to complete the bridge soon.
+@ computer
+1	31082	noun	computer	1	The old computer finally started, revealing the photos of their childhood.
+2	31082	noun	computer	0	Use the computer to write your report.
+3	31082	noun	computer	0	My computer needs an update.
+4	31082	noun	computer	0	The computer stores many files.
+5	31082	noun	computer	0	She turned off the computer at night.
+@ concert
+1	31088	verb	concert	1	The neighbors concert their plans to rebuild the playground after the storm.
+2	31088	verb	concert	0	The leaders concert their efforts to solve the problem.
+3	31088	verb	concert	0	The team will concert a plan before the event.
+4	31088	verb	concert	0	They concert their actions during the rescue.
+5	31088	verb	concert	0	The groups concert a response to the emergency.
+@ conversation
+1	31094	noun	conversation	1	Their conversation on the train turned two strangers into close friends.
+2	31094	noun	conversation	0	We had a short conversation after class.
+3	31094	noun	conversation	0	The conversation was about travel plans.
+4	31094	noun	conversation	0	Please do not interrupt their conversation.
+5	31094	noun	conversation	0	A quiet conversation continued in the corner.
+@ cook
+1	31104	noun	cook	1	The cook tasted the soup and added one last pinch of salt.
+2	31104	noun	cook	0	The cook prepares meals in the kitchen.
+3	31104	noun	cook	0	Our cook made fresh bread today.
+4	31104	noun	cook	0	The cook wears a white hat.
+5	31104	noun	cook	0	A skilled cook can feed many people.
+@ cooking
+1	31131	noun	cooking	1	The smell of cooking filled the house before the family arrived.
+2	31131	noun	cooking	0	Cooking uses heat to prepare food.
+3	31131	noun	cooking	0	She enjoys cooking with her father.
+4	31131	noun	cooking	0	The cooking lesson begins at noon.
+5	31131	noun	cooking	0	Good cooking requires careful timing.
+@ cool
+1	31141	adj	cool	1	A cool breeze crossed the field after the hot afternoon.
+2	31141	adj	cool	0	The room feels cool now.
+3	31141	adj	cool	0	Drink this cool water slowly.
+4	31141	adj	cool	0	We sat under a cool tree.
+5	31141	adj	cool	0	The evening became cool after sunset.
+@ correct
+1	31163	adj	correct	1	After checking every number twice, Imani gave the correct answer with confidence.
+2	31163	adj	correct	0	Your answer is correct.
+3	31163	adj	correct	0	Choose the correct door.
+4	31163	adj	correct	0	The teacher showed us the correct spelling.
+5	31163	adj	correct	0	Is this the correct address?
+@ cost
+1	31171	verb	cost	1	The broken phone cost Ravi a month of savings, but he learned to back up his work.
+2	31171	verb	cost	0	The ticket cost ten dollars.
+3	31171	verb	cost	0	How much does this bag cost?
+4	31171	verb	cost	0	The repair will cost more than we expected.
+5	31171	verb	cost	0	Fresh fruit can cost a lot in winter.
+@ could
+1	31182	verb	could	1	When the lights failed, only Ana could find the path home from memory.
+2	31182	verb	could	0	I could hear the rain on the roof.
+3	31182	verb	could	0	Could you help me carry this box?
+4	31182	verb	could	0	He could swim when he was five.
+5	31182	verb	could	0	We could see the mountains from the train.
+@ country
+1	31191	noun	country	1	After years abroad, he cried when the plane finally touched down in his country.
+2	31191	noun	country	0	Japan is an island country.
+3	31191	noun	country	0	Each country has its own laws.
+4	31191	noun	country	0	They traveled across the country by train.
+5	31191	noun	country	0	The country elected a new leader.
+@ course
+1	31203	noun	course	1	A sudden storm changed the course of their boat, but they reached shore safely.
+2	31203	noun	course	0	The river changed its course after the flood.
+3	31203	noun	course	0	The ship followed a safe course.
+4	31203	noun	course	0	Events took an unexpected course.
+5	31203	noun	course	0	The pilot corrected the course of the plane.
+@ cousin
+1	31234	noun	cousin	1	My cousin saved me a seat at the wedding when I arrived late.
+2	31234	noun	cousin	0	Her cousin lives in another city.
+3	31234	noun	cousin	0	I visited my cousin during the holiday.
+4	31234	noun	cousin	0	Their cousin is the same age as them.
+5	31234	noun	cousin	0	He called his cousin after dinner.
+@ cow
+1	31248	noun	cow	1	At dawn, the cow stood quietly beside her newborn calf.
+2	31248	noun	cow	0	The cow eats grass in the field.
+3	31248	noun	cow	0	A cow gives milk on the farm.
+4	31248	noun	cow	0	The farmer led the cow into the barn.
+5	31248	noun	cow	0	We saw a brown cow by the road.
+@ cream
+1	31260	noun	cream	1	Grandma stirred cream into the soup until it became smooth and rich.
+2	31260	noun	cream	0	Cream rises to the top of milk.
+3	31260	noun	cream	0	Add cream to the coffee.
+4	31260	noun	cream	0	The sauce contains cream and cheese.
+5	31260	noun	cream	0	She whipped the cream for dessert.
+@ create
+1	31283	verb	create	1	Using scraps of paper, the children create a map of their imaginary island.
+2	31283	verb	create	0	Create a new folder for your photos.
+3	31283	verb	create	0	Artists create pictures and music.
+4	31283	verb	create	0	We can create a plan together.
+5	31283	verb	create	0	The program can create a report.
+@ culture
+1	31292	noun	culture	1	At the festival, food, music, and stories shared the culture of the island.
+2	31292	noun	culture	0	Culture includes a people’s customs and art.
+3	31292	noun	culture	0	We learned about Japanese culture in class.
+4	31292	noun	culture	0	Food is an important part of culture.
+5	31292	noun	culture	0	The museum celebrates local culture.
+@ cup
+1	31305	noun	cup	1	After the long race, a cup of water felt like the best gift in the world.
+2	31305	noun	cup	0	Fill the cup with tea.
+3	31305	noun	cup	0	The cup has a handle.
+4	31305	noun	cup	0	She dropped the cup on the floor.
+5	31305	noun	cup	0	I drank a cup of milk.
+@ customer
+1	31334	noun	customer	1	The shop owner remembered every customer who had supported her during the hard year.
+2	31334	noun	customer	0	A customer bought three apples.
+3	31334	noun	customer	0	The customer asked for a receipt.
+4	31334	noun	customer	0	This store welcomes every customer.
+5	31334	noun	customer	0	The waiter served the customer quickly.
+@ cut
+1	31338	verb	cut	1	Carefully, Dad used a knife to cut the rope holding the trapped kite.
+2	31338	verb	cut	0	Use scissors to cut the paper.
+3	31338	verb	cut	0	She will cut the apple into slices.
+4	31338	verb	cut	0	Do not cut the blue wire.
+5	31338	verb	cut	0	The sharp blade can cut wood.
+@ dad
+1	31422	noun	dad	1	My dad waited at the finish line with a smile and a bottle of water.
+2	31422	noun	dad	0	My dad drives me to school.
+3	31422	noun	dad	0	Dad is cooking dinner tonight.
+4	31422	noun	dad	0	I called my dad after work.
+5	31422	noun	dad	0	Her dad fixed the broken lamp.
+@ dance
+1	31431	noun	dance	1	At the wedding, their first dance made the whole room fall quiet.
+2	31431	noun	dance	0	The dance begins after dinner.
+3	31431	noun	dance	0	We learned a new dance at school.
+4	31431	noun	dance	0	The dance has three simple steps.
+5	31431	noun	dance	0	She watched the dance from the doorway.
+@ dancer
+1	31447	noun	dancer	1	The dancer kept moving even after the music stopped, earning a roar of applause.
+2	31447	noun	dancer	0	The dancer practiced every morning.
+3	31447	noun	dancer	0	A dancer needs strong legs and balance.
+4	31447	noun	dancer	0	The dancer wore red shoes on stage.
+5	31447	noun	dancer	0	We watched a dancer perform at the festival.
+@ dancing
+1	31450	noun	dancing	1	Dancing in the rain, the children forgot that their shoes were wet.
+2	31450	noun	dancing	0	Dancing is fun exercise.
+3	31450	noun	dancing	0	She goes dancing on Friday nights.
+4	31450	noun	dancing	0	The hall is used for dancing.
+5	31450	noun	dancing	0	They learned dancing from a video.
+@ dangerous
+1	31453	adj	dangerous	1	The rescue guide warned us that the icy bridge was dangerous after sunset.
+2	31453	adj	dangerous	0	It is dangerous to touch a live wire.
+3	31453	adj	dangerous	0	The road becomes dangerous in heavy rain.
+4	31453	adj	dangerous	0	Keep away from dangerous animals.
+5	31453	adj	dangerous	0	Driving too fast is dangerous.
+@ dark
+1	31456	adj	dark	1	When the power went out, the dark hallway made every small sound seem louder.
+2	31456	adj	dark	0	The room is dark without a lamp.
+3	31456	adj	dark	0	We walked home before it got dark.
+4	31456	adj	dark	0	He wore a dark blue shirt.
+5	31456	adj	dark	0	The dark clouds brought rain.
+@ date
+1	31477	noun	date	1	For dessert, Grandma stuffed each sweet date with a crunchy almond.
+2	31477	noun	date	0	A date is a sweet fruit from a palm tree.
+3	31477	noun	date	0	He ate a date after lunch.
+4	31477	noun	date	0	The cake contains one chopped date.
+5	31477	noun	date	0	A date grows in warm, dry places.
+@ daughter
+1	31496	noun	daughter	1	Her daughter ran into the airport and hugged her after the long trip.
+2	31496	noun	daughter	0	Their daughter starts school today.
+3	31496	noun	daughter	0	My daughter likes to draw animals.
+4	31496	noun	daughter	0	He spoke proudly about his daughter.
+5	31496	noun	daughter	0	The daughter helped her mother cook.
+@ day
+1	31503	noun	day	1	After three days of rain, the first sunny day felt like a celebration.
+2	31503	noun	day	0	Day begins when the sun rises.
+3	31503	noun	day	0	We play outside during the day.
+4	31503	noun	day	0	It was a long day at work.
+5	31503	noun	day	0	Each day brings a new chance.
+@ dear
+1	31516	adj	dear	1	The dear old house cost more than the family could afford, so they said goodbye.
+2	31516	adj	dear	0	That restaurant is too dear for us.
+3	31516	adj	dear	0	Fresh berries are dear in winter.
+4	31516	adj	dear	0	The dear apartment is near the station.
+5	31516	adj	dear	0	This coat is dear, but it is well made.
+@ december
+1	67688	name	december	1	In December, the family hung lights and wrote wishes for the new year.
+2	67688	name	december	0	December is the last month of the year.
+3	67688	name	december	0	School closes for a holiday in December.
+4	67688	name	december	0	Her birthday is in December.
+5	67688	name	december	0	December follows November.
+@ decide
+1	31533	verb	decide	1	At the fork in the trail, the group had to decide before the sky turned dark.
+2	31533	verb	decide	0	Decide which book you want to read.
+3	31533	verb	decide	0	We must decide by tomorrow.
+4	31533	verb	decide	0	She could not decide between the two dresses.
+5	31533	verb	decide	0	The judge will decide the winner.
+@ delicious
+1	31538	adj	delicious	1	The delicious soup warmed everyone after the long walk in the snow.
+2	31538	adj	delicious	0	This mango is delicious.
+3	31538	adj	delicious	0	The restaurant serves delicious noodles.
+4	31538	adj	delicious	0	We ate a delicious meal together.
+5	31538	adj	delicious	0	That cake smells delicious.
+@ describe
+1	31541	verb	describe	1	Unable to draw the animal, Lio tried to describe its silver wings to the ranger.
+2	31541	verb	describe	0	Describe the picture in one sentence.
+3	31541	verb	describe	0	Can you describe the missing bag?
+4	31541	verb	describe	0	She will describe the room in detail.
+5	31541	verb	describe	0	Please describe what happened.
+@ description
+1	31546	noun	description	1	Her description of the lost puppy helped the neighbor recognize it at once.
+2	31546	noun	description	0	The description says the bag is blue.
+3	31546	noun	description	0	Write a short description of the photo.
+4	31546	noun	description	0	His description was clear and detailed.
+5	31546	noun	description	0	The police used her description to search.
+@ design
+1	31552	noun	design	1	The bridge design used curved beams that looked like waves in the river.
+2	31552	noun	design	0	The design shows how the chair will look.
+3	31552	noun	design	0	She chose a simple design for the poster.
+4	31552	noun	design	0	The engineer checked the design carefully.
+5	31552	noun	design	0	This design solves the space problem.
+@ desk
+1	31564	noun	desk	1	Inside the old desk, Ben found a letter that explained his grandfather’s journey.
+2	31564	noun	desk	0	Put the book on the desk.
+3	31564	noun	desk	0	Her desk has three drawers.
+4	31564	noun	desk	0	He sat at his desk to study.
+5	31564	noun	desk	0	The teacher’s desk is near the board.
+@ detail
+1	31572	noun	detail	1	The tiny detail in the painting revealed the artist’s hidden signature.
+2	31572	noun	detail	0	Notice every detail in the map.
+3	31572	noun	detail	0	She explained the plan in detail.
+4	31572	noun	detail	0	One detail was missing from the report.
+5	31572	noun	detail	0	The dress has a gold detail on the sleeve.
+@ dialogue
+1	31584	noun	dialogue	1	The dialogue between the two friends finally ended their long misunderstanding.
+2	31584	noun	dialogue	0	The dialogue begins on page ten.
+3	31584	noun	dialogue	0	Actors practiced the dialogue before the show.
+4	31584	noun	dialogue	0	Write a dialogue between two students.
+5	31584	noun	dialogue	0	The film has little dialogue.
+@ dictionary
+1	31592	noun	dictionary	1	When she found the unfamiliar word, Mei opened her dictionary instead of giving up.
+2	31592	noun	dictionary	0	Use a dictionary to find a word’s meaning.
+3	31592	noun	dictionary	0	The dictionary lists words in order.
+4	31592	noun	dictionary	0	He borrowed a dictionary from the library.
+5	31592	noun	dictionary	0	This dictionary explains English words.
+@ die
+1	31601	verb	die	1	The last flower will die without water during the hot week.
+2	31601	verb	die	0	Plants die when they get no water.
+3	31601	verb	die	0	The battery will die soon.
+4	31601	verb	die	0	Fish can die in polluted water.
+5	31601	verb	die	0	The fire will die without fuel.
+@ diet
+1	31637	noun	diet	1	After speaking with the doctor, Ken changed his diet to feel stronger each day.
+2	31637	noun	diet	0	A healthy diet includes vegetables and fruit.
+3	31637	noun	diet	0	Her diet avoids too much sugar.
+4	31637	noun	diet	0	The doctor discussed his diet.
+5	31637	noun	diet	0	Water is an important part of a diet.
+@ difference
+1	31650	noun	difference	1	One kind word made all the difference to the nervous new student.
+2	31650	noun	difference	0	What is the difference between these two bags?
+3	31650	noun	difference	0	I can see a difference in the colors.
+4	31650	noun	difference	0	The price difference is small.
+5	31650	noun	difference	0	A good map can make a difference.
+@ different
+1	31662	adj	different	1	Although the twins looked alike, their dreams for the future were different.
+2	31662	adj	different	0	These two answers are different.
+3	31662	adj	different	0	I took a different route home.
+4	31662	adj	different	0	Each room has a different color.
+5	31662	adj	different	0	Today feels different from yesterday.
+@ difficult
+1	31668	adj	difficult	1	Learning the new song was difficult, but the children sang it proudly at the concert.
+2	31668	adj	difficult	0	This puzzle is difficult to solve.
+3	31668	adj	difficult	0	The climb became difficult near the top.
+4	31668	adj	difficult	0	It is difficult to hear in this room.
+5	31668	adj	difficult	0	She asked for help with the difficult task.
+@ dinner
+1	31672	noun	dinner	1	At dinner, the whole family listened as Grandma told stories from her childhood.
+2	31672	noun	dinner	0	We eat dinner at seven.
+3	31672	noun	dinner	0	Dinner is ready on the table.
+4	31672	noun	dinner	0	He cooked dinner for his friends.
+5	31672	noun	dinner	0	They invited us to dinner.
+@ dirty
+1	31680	adj	dirty	1	The dirty puppy left tiny muddy prints across the clean kitchen floor.
+2	31680	adj	dirty	0	Your hands are dirty after gardening.
+3	31680	adj	dirty	0	The dirty window needs washing.
+4	31680	adj	dirty	0	Do not sit on the dirty ground.
+5	31680	adj	dirty	0	His shoes became dirty in the rain.
+@ discuss
+1	31704	verb	discuss	1	Before making a choice, the family sat down to discuss the move together.
+2	31704	verb	discuss	0	Let us discuss the plan after lunch.
+3	31704	verb	discuss	0	They will discuss the problem calmly.
+4	31704	verb	discuss	0	We need to discuss the budget.
+5	31704	verb	discuss	0	The class will discuss the story tomorrow.
+@ dish
+1	31710	noun	dish	1	The warm dish of noodles disappeared quickly on the cold evening.
+2	31710	noun	dish	0	Put the salad in a large dish.
+3	31710	noun	dish	0	This dish holds food for serving.
+4	31710	noun	dish	0	She washed every dish after dinner.
+5	31710	noun	dish	0	The dish has a blue pattern.
+@ do
+1	31728	verb	do	1	When the crowd asked who could help, I raised my hand and said, “I will do it.”
+2	31728	verb	do	0	Do your homework before dinner.
+3	31728	verb	do	0	What do you want to do today?
+4	31728	verb	do	0	They do their best in every game.
+5	31728	verb	do	0	Please do not touch the painting.

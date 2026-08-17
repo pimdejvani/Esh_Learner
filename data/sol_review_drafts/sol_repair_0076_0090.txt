@@ -1,0 +1,104 @@
+@ will
+1	42544	verb	will	1	We will every day.
+2	42544	verb	will	0	I will call you as soon as the train arrives.
+3	42548	verb	will	0	Will you help me carry these boxes?
+4	42556	noun	will	0	Her will left the house to her three children.
+5	42560	verb	willed	0	He willed his book collection to the town library.
+
+@ win
+1	42562	verb	win	1	We win every day.
+2	42564	verb	won	0	Our team won the final match by one goal.
+3	42565	verb	winning	0	She celebrated after winning the first prize.
+4	42567	verb	wins	0	The player who reaches ten points first wins.
+5	42574	noun	win	0	Yesterday's win moved the team into first place.
+
+@ window
+1	42581	noun	window	1	I opened the window and felt the cool rain on my face.
+2	42582	noun	window	0	A red coat was displayed in the shop window.
+3	42584	noun	window	0	We have a short window to submit the application.
+4	42587	noun	windows	0	Close the unused windows on your computer screen.
+5	42585	noun	window	0	The diary offers a window into village life a century ago.
+
+@ wine
+1	42596	noun	wine	1	They opened a bottle of wine to celebrate their anniversary.
+2	42597	noun	wine	0	This restaurant serves a sweet plum wine.
+3	42598	noun	wines	0	We ordered two wines and a glass of water.
+4	42599	noun	wine	0	She chose a scarf in a deep wine color.
+5	42600	verb	wined	0	The hosts wined their guests before dinner.
+
+@ winter
+1	42604	noun	winter	1	We woke on the first morning of winter to a garden covered in snow.
+2	42604	noun	winters	0	Winters in this region are cold and dry.
+3	42609	verb	wintered	0	The family wintered in a warmer town by the sea.
+4	42609	verb	wintering	0	Many birds are wintering near the lake.
+5	42610	verb	winter	0	Farmers winter the young animals inside a warm barn.
+
+@ with
+1	42611	prep	with	1	We walk with home.
+2	42612	prep	with	0	Lina went to the market with her sister.
+3	42618	prep	with	0	Cut the paper with these scissors.
+4	42620	prep	with	0	The child with the red hat is my cousin.
+5	42621	prep	with	0	He spoke with confidence during the interview.
+
+@ without
+1	42628	adv	without	1	We do it without.
+2	42632	prep	without	0	I left home without my umbrella.
+3	42633	prep	without	0	She finished the meal without saying a word.
+4	42629	adv	without	0	We had no map, but we learned to manage without.
+5	42632	prep	without	0	This soup tastes good without salt.
+
+@ woman
+1	42635	noun	woman	1	The woman pulled a child away from the busy road just in time.
+2	42635	noun	women	0	Three women lead the new research team.
+3	42635	noun	woman	0	A young woman answered the door.
+4	42635	noun	women	0	The clinic provides free health checks for women.
+5	42635	noun	woman	0	Every woman in the race received a medal.
+
+@ wonderful
+1	42645	adj	wonderful	1	It is wonderful.
+2	42646	adj	wonderful	0	We had a wonderful day at the beach.
+3	42646	adj	more wonderful	0	The view became even more wonderful at sunset.
+4	42646	adj	most wonderful	0	That was the most wonderful meal I have ever tasted.
+5	42645	adj	wonderful	0	The sudden change was wonderful to see.
+
+@ word
+1	42648	noun	word	1	The first word my baby brother said was my name.
+2	42648	noun	words	0	Write the new words in your notebook.
+3	42661	noun	word	0	One kind word made her difficult day feel easier.
+4	42666	noun	word	0	I give you my word that I will return the book tomorrow.
+5	42672	verb	worded	0	The teacher worded the question clearly.
+
+@ work
+1	42678	noun	work	1	After months of hard work, our little shop finally opened.
+2	42700	verb	working	0	She is working on a report in the library.
+3	42709	verb	works	0	This old radio still works perfectly.
+4	42683	noun	work	0	Moving the heavy table took a lot of work.
+5	42701	verb	worked	0	My father worked at the hospital for ten years.
+
+@ worker
+1	42734	noun	worker	1	A rescue worker carried the injured dog to safety.
+2	42734	noun	workers	0	Factory workers receive safety training each year.
+3	42735	noun	worker	0	A worker bee carried food back to the hive.
+4	42735	noun	workers	0	The workers gather food while the queen remains in the nest.
+5	42737	noun	worker	0	The program starts a separate worker for each file.
+
+@ world
+1	42742	noun	world	1	People around the world watched the two astronauts return safely.
+2	42741	noun	world	0	Scientists continue to study how the world began.
+3	42745	noun	worlds	0	The story follows travelers who visit strange new worlds.
+4	42749	noun	world	0	The author created a magical world beneath the sea.
+5	42755	noun	world	0	A quiet weekend did her a world of good.
+
+@ would
+1	42759	verb	would	1	We would every day.
+2	42761	verb	would	0	Every summer, we would swim in the river after school.
+3	42767	verb	would	0	I would buy that bicycle if it were cheaper.
+4	42773	verb	would	0	Would you close the door, please?
+5	42770	verb	would	0	I would speak to the manager if I were you.
+
+@ write
+1	42777	verb	write	1	We write every day.
+2	42777	verb	wrote	0	Maya wrote her name at the top of the page.
+3	42778	verb	writes	0	My uncle writes short stories for children.
+4	42779	verb	writing	0	I am writing to my friend in Japan.
+5	42780	verb	written	0	She has written me a letter about her new school.

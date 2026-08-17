@@ -1,0 +1,105 @@
+# Verifies vocabulary drafts and Sol review output on every push.
+#
+# This workflow runs the deterministic half of the content pipeline: parsing,
+# source-fidelity validation and immutable-manifest progress. It does NOT
+# generate or repair sentences -- that half needs a reasoning model and happens
+# in a Claude Code session (see CONTINUE_VOCAB_PROMPT.md). The point of running
+# the checks here is that a session working from a phone or a cloud sandbox can
+# push review output and have it verified without the 377 MB local data lake.
+#
+# Lexical evidence comes from the portable slice built by
+# tools/export_evidence_db.py and published as a Release asset, because the full
+# source DB is deliberately untracked (see .gitignore).
+name: vocab check
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/vocab-check.yml'
+      - 'tools/**.py'
+      - 'data/terra_english_drafts/**'
+      - 'data/sol_review_drafts/**'
+      - 'data/sol_review_reports/**'
+      - 'data/sol_review_manifest.txt'
+      - 'data/terra_missing_manifest.txt'
+  pull_request:
+    paths:
+      - 'tools/**.py'
+      - 'data/terra_english_drafts/**'
+      - 'data/sol_review_drafts/**'
+      - 'data/sol_review_reports/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  EVIDENCE_TAG: vocab-evidence-v1
+  EVIDENCE_ASSET: vocabulary_evidence.db.gz
+
+jobs:
+  vocab-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+        # The pipeline tools are stdlib-only on purpose, so there is nothing
+        # to install here.
+
+      - name: Restore evidence DB
+        id: evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if ! gh release download "$EVIDENCE_TAG" \
+              --repo "$GITHUB_REPOSITORY" \
+              --pattern "$EVIDENCE_ASSET" \
+              --dir data; then
+            echo "::error::Release $EVIDENCE_TAG has no $EVIDENCE_ASSET."
+            echo "Build and publish it with:"
+            echo "  python tools/export_evidence_db.py"
+            echo "  gzip -9 -k data/vocabulary_evidence.db"
+            echo "  gh release create $EVIDENCE_TAG data/$EVIDENCE_ASSET"
+            exit 1
+          fi
+          gunzip -f "data/$EVIDENCE_ASSET"
+          python tools/export_evidence_db.py --check
+
+      - name: Validate English drafts against source evidence
+        env:
+          ESH_SOURCE_DB: data/vocabulary_evidence.db
+        run: |
+          python tools/translate_vocab_content.py \
+            --input-dir data/terra_english_drafts \
+            --dry-run \
+            | tee draft-summary.txt
+
+      - name: Check Sol review progress and overlay integrity
+        env:
+          ESH_SOURCE_DB: data/vocabulary_evidence.db
+        run: |
+          # Non-zero exit here means a report contradicts the immutable
+          # manifest or a repair overlay fails validation -- a real defect in
+          # the review output, not a flaky check.
+          python tools/sol_review_progress.py | tee sol-summary.txt
+
+      - name: Publish summary
+        if: always()
+        run: |
+          {
+            echo '## Vocabulary pipeline'
+            echo
+            echo '### Draft validation'
+            echo '```'
+            cat draft-summary.txt 2>/dev/null || echo 'did not run'
+            echo '```'
+            echo '### Sol review progress'
+            echo '```'
+            cat sol-summary.txt 2>/dev/null || echo 'did not run'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

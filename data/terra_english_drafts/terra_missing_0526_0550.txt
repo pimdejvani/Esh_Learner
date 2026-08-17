@@ -1,0 +1,150 @@
+@ decline
+1	62774	noun	decline	1	The sharp decline in temperature turned the puddles to ice overnight.
+2	62774	noun	decline	0	A downward movement or fall is a decline.
+3	62774	noun	decline	0	The graph shows a decline in sales this month.
+4	62774	noun	decline	0	There was a gradual decline in the water level.
+5	62774	noun	decline	0	The decline of the path led us toward the river.
+@ decoration
+1	62769	noun	decoration	1	A bright paper decoration hung above the door for the festival.
+2	62769	noun	decoration	0	Something used to make a place look more attractive is a decoration.
+3	62769	noun	decoration	0	She made a star decoration for the tree.
+4	62769	noun	decoration	0	The cake had a flower decoration on top.
+5	62769	noun	decorations	0	We removed the winter decorations in January.
+@ decrease
+1	62765	verb	decreased	1	The noise decreased once the crowd left the stadium.
+2	62765	verb	decreases	0	When an amount becomes smaller, it decreases.
+3	62765	verb	decrease	0	The water level may decrease during the dry season.
+4	62765	verb	decrease	0	Prices usually decrease after the holiday rush.
+5	62765	verb	decrease	0	The pain should decrease after you rest.
+@ deeply
+1	62758	adv	deeply	1	The kind letter deeply touched her after a difficult week.
+2	62758	adv	deeply	0	If something affects you very strongly, it affects you deeply.
+3	62758	adv	deeply	0	He breathed deeply before giving his speech.
+4	62758	adv	deeply	0	She was deeply grateful for their help.
+5	62758	adv	deeply	0	The family was deeply worried about the storm.
+@ defeat
+1	62809	verb	defeated	1	Our team defeated the champions in the final minute of the match.
+2	62809	verb	defeat	0	To win against an opponent is to defeat them.
+3	62809	verb	defeat	0	The army hoped to defeat the enemy before winter.
+4	62809	verb	defeat	0	She trained hard to defeat her strongest rival.
+5	62809	verb	defeat	0	The players believe they can defeat any team.
+@ defence
+1	62789	noun	defence	1	The thick wall provided defence against the cold wind.
+2	62789	noun	defence	0	Protection from attack or danger is defence.
+3	62789	noun	defence	0	The castle's defence included a deep ditch.
+4	62789	noun	defence	0	He spoke in defence of his friend.
+5	62789	noun	defence	0	The soldiers prepared a defence of the bridge.
+@ defend
+1	62797	verb	defend	1	The mother bird tried to defend her nest from the curious cat.
+2	62797	verb	defend	0	To protect against attack is to defend.
+3	62797	verb	defend	0	The lawyer will defend her client in court.
+4	62797	verb	defend	0	The team worked together to defend the goal.
+5	62797	verb	defend	0	We must defend the garden from hungry rabbits.
+@ delay
+1	62826	noun	delay	1	A fallen tree caused a long delay on our way to the airport.
+2	62826	noun	delay	0	A period of waiting before something happens is a delay.
+3	62826	noun	delay	0	The train left after a ten-minute delay.
+4	62826	noun	delay	0	Rain created a delay in the game.
+5	62826	noun	delay	0	We apologized for the delay in answering your email.
+@ deliberate
+1	62836	adj	deliberate	1	Leaving the door unlocked was a deliberate choice, not an accident.
+2	62836	adj	deliberate	0	Something done on purpose is deliberate.
+3	62836	adj	deliberate	0	His deliberate lie hurt her feelings.
+4	62836	adj	deliberate	0	The damage was deliberate, according to the report.
+5	62836	adj	deliberate	0	She made a deliberate effort to speak slowly.
+@ deliberately
+1	62817	adv	deliberately	1	The child deliberately stepped around every puddle on the way home.
+2	62817	adv	deliberately	0	If you do something on purpose, you do it deliberately.
+3	62817	adv	deliberately	0	He deliberately ignored the warning sign.
+4	62817	adv	deliberately	0	She deliberately chose the quieter route.
+5	62817	adv	deliberately	0	They did not deliberately break the vase.
+@ delight
+1	62822	noun	delight	1	To our delight, a rainbow appeared after the heavy rain.
+2	62822	noun	delight	0	A feeling of great joy is delight.
+3	62822	noun	delight	0	The children shouted with delight when the cake arrived.
+4	62822	noun	delight	0	Her delight was clear when she opened the gift.
+5	62822	noun	delight	0	The puppy brought delight to the whole family.
+@ delighted
+1	62819	adj	delighted	1	Grandma was delighted when we surprised her with flowers.
+2	62819	adj	delighted	0	Someone who is very pleased is delighted.
+3	62819	adj	delighted	0	He was delighted to hear that he had passed.
+4	62819	adj	delighted	0	The children were delighted by the magician.
+5	62819	adj	delighted	0	We are delighted to welcome you to our home.
+@ delivery
+1	62842	noun	delivery	1	The delivery arrived just as we ran out of milk for breakfast.
+2	62842	noun	delivery	0	The act of bringing something to a place is a delivery.
+3	62842	noun	delivery	0	The store offers free delivery for large orders.
+4	62842	noun	delivery	0	Please wait for the delivery at the front desk.
+5	62842	noun	delivery	0	A late delivery delayed the repair work.
+@ demand
+1	62869	noun	demand	1	High demand for umbrellas emptied the shop during the rainy week.
+2	62869	noun	demand	0	The desire of customers to buy something is demand.
+3	62869	noun	demand	0	Demand for fresh fruit rises in summer.
+4	62869	noun	demand	0	The company increased production because of demand.
+5	62869	noun	demand	0	Low demand forced the store to lower prices.
+@ demonstrate
+1	62853	verb	demonstrated	1	The chef demonstrated how to fold the dough without tearing it.
+2	62853	verb	demonstrate	0	To show someone how to do something is to demonstrate it.
+3	62853	verb	demonstrate	0	Please demonstrate how this machine works.
+4	62853	verb	demonstrate	0	The teacher will demonstrate the science experiment.
+5	62853	verb	demonstrate	0	He used a model to demonstrate the process.
+@ deny
+1	62857	verb	denied	1	The guard denied us entry because the museum was closed.
+2	62857	verb	deny	0	To refuse to allow something is to deny it.
+3	62857	verb	deny	0	The school may deny permission for unsafe trips.
+4	62857	verb	deny	0	They cannot deny her access to her records.
+5	62857	verb	deny	0	The manager had to deny the request.
+@ depressed
+1	62864	verb	depressed	1	The gloomy news depressed everyone at the dinner table.
+2	62864	verb	depressed	0	The cruel comment depressed her for the rest of the day.
+3	62864	verb	depressed	0	The long rainy week depressed his mood.
+4	62864	verb	depressed	0	The poor results depressed the team's confidence.
+5	62864	verb	depressed	0	The sad ending depressed many viewers.
+@ depressing
+1	62881	adj	depressing	1	The empty playground in the rain was a depressing sight.
+2	62881	adj	depressing	0	Something that makes you feel sad is depressing.
+3	62881	adj	depressing	0	The news report was depressing to watch.
+4	62881	adj	depressing	0	It is depressing to see so much litter in the park.
+5	62881	adj	depressing	0	The grey weather made the day depressing.
+@ deserve
+1	62884	verb	deserve	1	After months of practice, you deserve a chance to perform onstage.
+2	62884	verb	deserve	0	If you have earned something through your actions, you deserve it.
+3	62884	verb	deserves	0	She deserves praise for helping the new student.
+4	62884	verb	deserves	0	The winner deserves the prize.
+5	62884	verb	deserve	0	We all deserve a safe place to live.
+@ desire
+1	62917	verb	desire	1	Many people desire a quiet home near their families.
+2	62917	verb	desire	0	To want something very much is to desire it.
+3	62917	verb	desires	0	She desires more time to finish the painting.
+4	62917	verb	desire	0	They desire peace after years of conflict.
+5	62917	verb	desire	0	He did not desire to speak in public.
+@ desperate
+1	62903	adj	desperate	1	After hours without water, the hikers were desperate for a drink.
+2	62903	adj	desperate	0	Someone in urgent need of something is desperate.
+3	62903	adj	desperate	0	The family was desperate to find their lost dog.
+4	62903	adj	desperate	0	She made a desperate call for help.
+5	62903	adj	desperate	0	They were desperate for shelter before the storm.
+@ detailed
+1	62911	adj	detailed	1	The guide gave us a detailed map with every trail clearly marked.
+2	62911	adj	detailed	0	Including many careful facts is detailed.
+3	62911	adj	detailed	0	She wrote a detailed description of the missing bag.
+4	62911	adj	detailed	0	The report gives detailed information about the project.
+5	62911	adj	detailed	0	Please provide detailed instructions for the new staff.
+@ detect
+1	62913	verb	detected	1	The alarm detected smoke before anyone saw the fire.
+2	62913	verb	detect	0	To discover something through careful checking is to detect it.
+3	62913	verb	detect	0	This test can detect the virus early.
+4	62913	verb	detect	0	The machine can detect a tiny crack in metal.
+5	62913	verb	detect	0	Dogs can detect certain smells from far away.
+@ dig
+1	62948	verb	dug	1	We dug a deep hole in the garden to plant the young tree.
+2	62948	verb	dig	0	To make a hole by moving earth is to dig.
+3	62948	verb	dig	0	Use a shovel to dig in the hard ground.
+4	62948	verb	dig	0	The children love to dig in the sand.
+5	62948	verb	dig	0	Workers will dig a channel for the pipe.
+@ disc
+1	62927	noun	disc	1	The shiny metal disc spun across the table before falling to the floor.
+2	62927	noun	disc	0	A thin, flat, round object is a disc.
+3	62927	noun	disc	0	The coach threw a disc across the field.
+4	62927	noun	disc	0	Place the plastic disc under the chair leg.
+5	62927	noun	disc	0	The machine cuts each disc from a sheet of metal.

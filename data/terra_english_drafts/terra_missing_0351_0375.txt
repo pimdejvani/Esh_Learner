@@ -1,0 +1,150 @@
+@ unnecessary
+1	61074	adj	unnecessary	1	Buying another charger would be unnecessary because we already have two.
+2	61074	adj	unnecessary	0	It is unnecessary to print the email when you can save it.
+3	61075	adj	unnecessary	0	The extra meeting was unnecessary for this small project.
+4	61074	adj	unnecessary	0	Please remove any unnecessary details from the form.
+5	61074	adj	unnecessary	0	Worrying about tomorrow is often unnecessary.
+@ unpleasant
+1	61073	adj	unpleasant	1	The smell from the rubbish bin was unpleasant.
+2	61073	adj	unpleasant	0	It was unpleasant to wait outside in the cold rain.
+3	61073	adj	unpleasant	0	She had an unpleasant conversation with her landlord.
+4	61073	adj	unpleasant	0	The medicine has an unpleasant taste.
+5	61073	adj	unpleasant	0	We avoided the unpleasant part of the journey.
+@ update
+1	61077	noun	update	1	The teacher gave us an update about the school trip.
+2	61076	noun	update	0	Send me an update when you arrive safely.
+3	61079	noun	update	0	The phone needs a software update tonight.
+4	61078	noun	update	0	This update corrects several mistakes in the report.
+5	61081	noun	updates	0	The app downloads updates automatically.
+@ upon
+1	61085	prep	upon	1	Upon arriving home, she called her mother.
+2	61085	prep	upon	0	The cat jumped upon the table.
+3	61085	prep	upon	0	Upon hearing the news, everyone smiled.
+4	61085	prep	upon	0	The decision depends upon the weather.
+5	61085	prep	upon	0	A heavy blanket lay upon the bed.
+@ upset
+1	61092	adj	upset	1	She was upset when she lost her favorite necklace.
+2	61092	adj	upset	0	He looked upset after the argument with his friend.
+3	61093	adj	upset	0	My stomach feels upset after that rich meal.
+4	61092	adj	upset	0	Try not to get upset about small mistakes.
+5	61092	adj	upset	0	The children were upset when the picnic was canceled.
+@ valuable
+1	61086	adj	valuable	1	Her grandmother gave her a valuable gold ring.
+2	61086	adj	valuable	0	This old painting may be valuable.
+3	61087	adj	valuable	0	Your advice was valuable during the difficult project.
+4	61086	adj	valuable	0	Keep valuable documents in a safe place.
+5	61086	adj	valuable	0	Time is a valuable resource for everyone.
+@ value
+1	61128	noun	value	1	The value of this old coin has increased over time.
+2	61131	noun	value	0	This laptop offers good value for its price.
+3	61129	noun	value	0	The value of teamwork is clear in this project.
+4	61130	noun	values	0	The school teaches values such as honesty and kindness.
+5	61134	noun	value	0	The value of x is five in this equation.
+@ various
+1	61089	det	various	1	The market sells various kinds of fresh fruit.
+2	61089	det	various	0	We discussed various ways to solve the problem.
+3	61090	adj	various	0	The museum displays various objects from history.
+4	61089	det	various	0	Various students volunteered to help after class.
+5	61091	adj	various	0	The menu has various options for lunch.
+@ version
+1	61110	noun	version	1	I watched the new version of my favorite film.
+2	61115	noun	version	0	Install the latest version of the program.
+3	61114	noun	version	0	Her version of the story was quite different.
+4	61110	noun	versions	0	The book is available in several versions.
+5	61115	noun	version	0	This version fixes the problem with the camera.
+@ victim
+1	61144	noun	victim	1	The victim of the scam reported it to the police.
+2	61145	noun	victim	0	The driver was the only victim of the accident.
+3	61142	noun	victim	0	The victim needed help after the attack.
+4	61147	noun	victims	0	The charity helped victims of the flood.
+5	61144	noun	victim	0	Police spoke to the victim after the theft.
+@ viewer
+1	61122	noun	viewer	1	Every viewer saw the goal replay on television.
+2	61121	noun	viewer	0	The viewer in the front row asked a question.
+3	61122	noun	viewers	0	Millions of viewers watched the final episode.
+4	61124	noun	viewer	0	Open the image in a photo viewer.
+5	61121	noun	viewer	0	Each viewer received a program at the entrance.
+@ violent
+1	61152	adj	violent	1	The violent fight caused the event to end early.
+2	61151	adj	violent	0	A violent storm damaged several roofs.
+3	61153	adj	violent	0	The police removed the violent man from the station.
+4	61156	adj	violent	0	She felt violent pain in her tooth.
+5	61152	adj	violent	0	The film contains some violent scenes.
+@ volunteer
+1	61167	noun	volunteer	1	A volunteer helped visitors find the right room.
+2	61167	noun	volunteer	0	Each volunteer worked without pay at the food bank.
+3	61174	verb	volunteered	0	She volunteered to clean the park on Saturday.
+4	61173	verb	volunteer	0	Many students volunteer at the animal shelter.
+5	61167	noun	volunteers	0	The festival needs more volunteers this year.
+@ vote
+1	61179	noun	vote	1	Her vote helped choose the new class representative.
+2	61178	noun	vote	0	The council held a vote on the new plan.
+3	61184	verb	vote	0	Adults can vote in the national election.
+4	61179	noun	votes	0	The winner received the most votes.
+5	61185	verb	voted	0	The group voted to meet again next week.
+@ warn
+1	61160	verb	warned	1	The sign warned us about the slippery floor.
+2	61159	verb	warn	0	Please warn me before you move the ladder.
+3	61164	verb	warned	0	The teacher warned him not to run in the hall.
+4	61161	verb	warning	0	She is warning her neighbor about the storm.
+5	61165	verb	warn	0	Police warn drivers to slow down in fog.
+@ warning
+1	61187	verb	warning	1	The guard is warning visitors to stay behind the line.
+2	61187	verb	warning	0	She is warning her brother about the loose step.
+3	61187	verb	warning	0	The app is warning users about a security problem.
+4	61187	verb	warning	0	He kept warning us that the road was icy.
+5	61187	verb	warning	0	They are warning people to prepare for heavy rain.
+@ waste
+1	61210	noun	waste	1	Put food waste in the green bin for composting.
+2	61210	noun	waste	0	The factory must reduce the amount of waste it produces.
+3	61218	noun	waste	0	Leaving the lights on is a waste of electricity.
+4	61233	verb	waste	0	Do not waste water when you brush your teeth.
+5	61210	noun	waste	0	Workers collected waste from the beach.
+@ weapon
+1	61190	noun	weapon	1	The guard found a weapon hidden under the seat.
+2	61190	noun	weapon	0	Carrying a weapon is forbidden at the airport.
+3	61191	noun	weapon	0	Words can become a weapon when used to hurt people.
+4	61190	noun	weapons	0	The police locked the weapons in a secure room.
+5	61192	noun	weapon	0	A hammer can be a useful tool but also a weapon.
+@ weigh
+1	61197	verb	weigh	1	Please weigh the apples before putting them in the bag.
+2	61202	verb	weighs	0	This suitcase weighs more than twenty kilograms.
+3	61199	verb	weigh	0	We need to weigh the benefits and risks carefully.
+4	61197	verb	weighed	0	The nurse weighed the baby at the clinic.
+5	61201	verb	weighing	0	She is weighing whether to accept the offer.
+@ western
+1	61246	adj	western	1	We drove through the western part of the country.
+2	61246	adj	western	0	The western entrance is near the parking lot.
+3	61247	adj	western	0	A western wind brought cooler weather.
+4	61248	adj	western	0	Western art often uses different styles from Eastern art.
+5	61246	adj	western	0	The western coast has beautiful beaches.
+@ whatever
+1	61250	noun	whatever	1	Put the missing cable in the drawer with the other whatever.
+2	61262	noun	whatever	0	The box contains a whatever from the old machine.
+3	61250	noun	whatever	0	He called the strange tool a whatever.
+4	61262	noun	whatevers	0	The workshop was full of whatevers and spare parts.
+5	61250	noun	whatever	0	She picked up a whatever from the table.
+@ whenever
+1	61239	conj	whenever	1	Call me whenever you arrive at the station.
+2	61241	conj	whenever	0	Whenever it rains, the road becomes muddy.
+3	61239	conj	whenever	0	You can visit whenever you have free time.
+4	61242	conj	whenever	0	Whenever you choose to leave, lock the door.
+5	61243	conj	whenever	0	Whenever she smiles, everyone feels better.
+@ whether
+1	61269	conj	whether	1	I cannot decide whether to walk or take the bus.
+2	61268	conj	whether	0	She asked whether the shop was still open.
+3	61269	conj	whether	0	Tell me whether you can come tomorrow.
+4	61270	conj	whether	0	We will go whether it rains or not.
+5	61271	conj	whether	0	Whether tea or coffee, choose what you prefer.
+@ wing
+1	61295	noun	wing	1	The bird lifted one wing after hurting it on a branch.
+2	61298	noun	wing	0	The plane's wing was covered with ice.
+3	61306	noun	wing	0	Our room is in the east wing of the hotel.
+4	61295	noun	wings	0	The butterfly opened its colorful wings.
+5	61314	noun	wing	0	She belongs to the younger wing of the party.
+@ within
+1	61265	prep	within	1	Please return the library book within two weeks.
+2	61263	prep	within	0	Keep your hands within the boat.
+3	61264	prep	within	0	The price is within our budget.
+4	61263	prep	within	0	The keys are somewhere within the house.
+5	61265	prep	within	0	The doctor will call you within an hour.

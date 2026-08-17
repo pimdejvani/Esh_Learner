@@ -1,0 +1,174 @@
+@ advertisement
+1	43049	noun	advertisement	1	The funny advertisement made everyone remember the new shop.
+2	43049	noun	advertisement	0	I saw an advertisement for a language course.
+3	43049	noun	advertisements	0	The magazine contains many advertisements.
+4	43049	noun	advertisement	0	That television advertisement sells sports shoes.
+5	43049	noun	advertisements	0	Companies use advertisements to attract customers.
+
+@ advertising
+1	43055	noun	advertising	1	Clever advertising turned the tiny cafe into a local favorite.
+2	43055	noun	advertising	0	The company spends a lot on advertising.
+3	43055	noun	advertising	0	Online advertising can reach customers quickly.
+4	43055	noun	advertising	0	Advertising influences what some people buy.
+5	43055	noun	advertising	0	The store reduced its advertising costs.
+
+@ affect
+1	43058	verb	affect	1	We affect every day.
+2	43058	verb	affect	0	Loud noise can affect your sleep.
+3	43058	verb	affect	0	The weather may affect our travel plans.
+4	43058	verb	affect	0	These changes affect every student.
+5	43058	verb	affect	0	Stress can affect your health.
+
+@ against
+1	43073	prep	against	1	We walk against home.
+2	43073	prep	against	0	The boat moved against the current.
+3	43073	prep	against	0	It is difficult to cycle against the wind.
+4	43073	prep	against	0	The fish swam against the river's flow.
+5	43073	prep	against	0	She pushed the cart against the slope.
+
+@ ah
+1	43091	noun	ah	1	An ah of relief escaped him when the child was found.
+2	43091	noun	ah	0	She gave a quiet ah when she understood.
+3	43091	noun	ahs	0	The crowd's ahs filled the theater.
+4	43091	noun	ah	0	His surprised ah made us turn around.
+5	43091	noun	ahs	0	We heard several ahs during the fireworks.
+
+@ airline
+1	43094	noun	airline	1	The airline found my lost bag before I left the airport.
+2	43094	noun	airline	0	Which airline flies directly to Rome?
+3	43094	noun	airlines	0	Several airlines canceled flights during the storm.
+4	43094	noun	airline	0	The airline transports both passengers and goods.
+5	43094	noun	airlines	0	Budget airlines often charge extra for bags.
+
+@ alive
+1	43095	adj	alive	1	It is alive.
+2	43095	adj	alive	0	The missing sailor was found alive.
+3	43095	adj	alive	0	This plant is still alive.
+4	43095	adj	alive	0	The fish remained alive out of water for several minutes.
+5	43095	adj	alive	0	Doctors confirmed that he was alive.
+
+@ allow
+1	43104	verb	allow	1	We allow every day.
+2	43104	verb	allow	0	The plan will allow each worker one day of rest.
+3	43104	verb	allow	0	His parents allow him ten dollars a week.
+4	43104	verb	allow	0	The school will allow students an hour for lunch.
+5	43104	verb	allow	0	The doctor may allow her two days of rest.
+
+@ almost
+1	43117	adv	almost	1	We do it almost.
+2	43117	adv	almost	0	We almost missed the last train.
+3	43117	adv	almost	0	The bottle is almost empty.
+4	43117	adv	almost	0	She has read almost every book here.
+5	43117	adv	almost	0	Dinner is almost ready.
+
+@ alone
+1	43121	adj	alone	1	It is alone.
+2	43121	adj	alone	0	The child was alone in the room.
+3	43121	adj	alone	0	I felt alone after everyone left.
+4	43121	adj	alone	0	She lives alone near the station.
+5	43121	adj	alone	0	He was alone on the empty beach.
+
+@ along
+1	43133	prep	along	1	We walk along home.
+2	43133	prep	along	0	Tall trees grow along the road.
+3	43133	prep	along	0	We cycled along the river.
+4	43133	prep	along	0	Small shops stand along the street.
+5	43133	prep	along	0	They placed lights along the path.
+
+@ already
+1	43137	adv	already	1	We do it already.
+2	43137	adv	already	0	She has already finished her homework.
+3	43137	adv	already	0	The bus had already left when we arrived.
+4	43137	adv	already	0	I already know the answer.
+5	43137	adv	already	0	They are already waiting outside.
+
+@ alternative
+1	43142	adj	alternative	1	It is alternative.
+2	43142	adj	alternative	0	We need an alternative plan.
+3	43142	adj	alternative	0	The doctor suggested an alternative treatment.
+4	43142	adj	alternative	0	They offered two alternative routes.
+5	43142	adj	alternative	0	Solar power is an alternative source of energy.
+
+@ although
+1	43152	conj	although	1	I go, although it rains.
+2	43152	conj	although	0	Although it was cold, we went swimming.
+3	43152	conj	although	0	She smiled although she felt nervous.
+4	43152	conj	although	0	The team played well although it lost.
+5	43152	conj	although	0	Although the shop was busy, service was quick.
+
+@ among
+1	43154	prep	among	1	We walk among home.
+2	43154	prep	among	0	She found the key among the papers.
+3	43154	prep	among	0	We sat among the other guests.
+4	43154	prep	among	0	A small cabin stood among the trees.
+5	43154	prep	among	0	He felt comfortable among friends.
+
+@ amount
+1	43168	noun	amount	1	The huge amount of smoke made everyone leave the building.
+2	43168	noun	amount	0	Add a small amount of sugar.
+3	43168	noun	amount	0	The amount of water in the tank is low.
+4	43168	noun	amount	0	We reduced the amount of waste we produce.
+5	43168	noun	amount	0	A large amount of rain fell overnight.
+
+@ ancient
+1	43174	adj	ancient	1	It is ancient.
+2	43174	adj	ancient	0	They discovered an ancient city under the sand.
+3	43174	adj	ancient	0	This ancient tree is over a thousand years old.
+4	43174	adj	ancient	0	The museum displays ancient tools.
+5	43174	adj	ancient	0	We walked through an ancient forest.
+
+@ ankle
+1	43185	noun	ankle	1	I twisted my ankle just before the final race.
+2	43185	noun	ankle	0	The shoe rubbed against my ankle.
+3	43185	noun	ankles	0	Cold water covered our ankles.
+4	43185	noun	ankle	0	Her ankle connects her foot to her leg.
+5	43185	noun	ankles	0	The socks reach above my ankles.
+
+@ anybody
+1	43188	pron	anybody	1	anybody is ready.
+2	43188	pron	anybody	0	Is anybody waiting outside?
+3	43188	pron	anybody	0	Anybody can join the class.
+4	43188	pron	anybody	0	I did not see anybody in the room.
+5	43188	pron	anybody	0	Does anybody know the answer?
+
+@ anyway
+1	43190	adv	anyway	1	We do it anyway.
+2	43190	adv	anyway	0	It was raining, but we went anyway.
+3	43190	adv	anyway	0	She felt tired and finished the work anyway.
+4	43190	adv	anyway	0	The route was longer, but we took it anyway.
+5	43190	adv	anyway	0	He disliked the film but watched it anyway.
+
+@ anywhere
+1	43195	adv	anywhere	1	We do it anywhere.
+2	43195	adv	anywhere	0	You can sit anywhere in this room.
+3	43195	adv	anywhere	0	I cannot find my keys anywhere.
+4	43195	adv	anywhere	0	Is there a bank anywhere nearby?
+5	43195	adv	anywhere	0	She would travel anywhere with her best friend.
+
+@ app
+1	43199	noun	app	1	The map app guided us home after we got lost.
+2	43199	noun	app	0	I use an app to learn new words.
+3	43199	noun	apps	0	These apps work on most phones.
+4	43199	noun	app	0	Download the app before your trip.
+5	43199	noun	apps	0	Some apps can work without the internet.
+
+@ appear
+1	43204	verb	appear	1	We appear every day.
+2	43204	verb	appear	0	Stars appear when the sky becomes dark.
+3	43204	verb	appear	0	A boat may appear beyond the rocks.
+4	43204	verb	appear	0	The mountains appear through the clouds.
+5	43204	verb	appear	0	New leaves appear in spring.
+
+@ appearance
+1	43210	noun	appearance	1	The singer's sudden appearance brought the crowd to its feet.
+2	43210	noun	appearance	0	His appearance in the doorway surprised us.
+3	43210	noun	appearance	0	The sun's appearance ended the long darkness.
+4	43210	noun	appearances	0	The actor made several appearances on stage.
+5	43210	noun	appearance	0	We waited for the moon's appearance above the hill.
+
+@ apply
+1	43218	verb	apply	1	We apply every day.
+2	43218	verb	apply	0	Apply cream to the dry skin.
+3	43218	verb	apply	0	Please apply pressure to the cut.
+4	43218	verb	apply	0	Nurses apply a clean bandage to the wound.
+5	43218	verb	apply	0	Use a brush to apply paint to the wall.
