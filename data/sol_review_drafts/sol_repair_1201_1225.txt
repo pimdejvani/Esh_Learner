@@ -1,0 +1,146 @@
+@ much
+1	36564	adv	much	1	Thank you so much for staying with me.
+2	36558	det	much	0	We do not have much time left.
+3	36564	adv	much	0	This bag is much heavier than mine.
+4	36570	pron	much	0	How much do you need?
+5	36566	adv	much	0	I do not travel much during school weeks.
+
+@ mum
+1	36571	noun	mum	1	My mum made soup when I was sick.
+2	36571	noun	mum	0	I called my mum after the exam.
+3	36575	adj	mum	0	Keep mum about the surprise party.
+4	36571	noun	mums	0	The mums chatted while the children played.
+5	36572	noun	mums	0	Grandma filled the porch with orange mums every October.
+
+@ museum
+1	36581	noun	museum	1	The museum taught us about our city's history.
+2	36581	noun	museum	0	We visited the art museum on Saturday.
+3	36581	noun	museums	0	Many museums are free for children.
+4	36581	noun	museums	0	We visited three museums during our summer trip.
+5	36581	noun	museum	0	The war museum was closed for renovation.
+
+@ music
+1	36584	noun	music	1	Soft music helped me relax after school.
+2	36586	noun	music	0	Music is an art that people can share.
+3	36587	noun	music	0	The singer put the music on the stand.
+4	36584	noun	musics	0	The festival brought together musics from many countries.
+5	36584	noun	music	0	The neighbours complained about the loud music from the party.
+
+@ my
+1	36603	det	my	1	My best friend knows how I feel.
+2	36604	det	my	0	I forgot my notebook at home.
+3	36605	det	my	0	My school has a new sports field.
+4	36606	det	my	0	My sister is coming with us.
+5	36607	det	my	0	My phone rang while I was in class.
+
+@ name
+1	36608	noun	name	1	Your name sounds beautiful to me.
+2	36617	verb	name	0	Please name your favorite animal.
+3	36608	noun	names	0	Write the names of your group members.
+4	36616	verb	named	0	They named the baby Nita.
+5	36617	verb	naming	0	He is naming the people in the photo.
+
+@ natural
+1	36624	adj	natural	1	A natural spring saved the hikers when their bottles were empty.
+2	36634	adj	natural	0	Natural food has no man-made colours or flavours.
+3	36628	adj	natural	0	She chose natural wood for the table.
+4	36648	noun	natural	0	She is a natural at chess and wins every game.
+5	36627	adj	natural	0	His smile looked natural in the photo.
+
+@ near
+1	36658	adj	near	1	The near exit was beside our seats during the fire alarm.
+2	36672	prep	near	0	The bakery stood near the old train station.
+3	36675	verb	neared	0	The ship neared the harbor as the sun set.
+4	36671	adv	near	0	He was near unconscious after the long run.
+5	36659	adj	near	0	The end of term is very near now.
+
+@ need
+1	36678	noun	need	1	Her greatest need was a safe place to sleep.
+2	36681	verb	need	0	Plants need sunlight and water to grow well.
+3	36681	verb	needed	0	She needed a warm coat during the cold winter.
+4	36682	verb	needs	0	Everybody needs a little rest sometimes.
+5	36680	noun	need	0	The charity helps people in need of food.
+
+@ negative
+1	36686	adj	negative	1	The negative review made the chef rethink the recipe.
+2	36689	adj	negative	0	The blood test came back negative for the virus.
+3	36687	adj	negative	0	Negative numbers are below zero.
+4	36701	noun	negatives	0	Every plan has some negatives to consider.
+5	36686	adj	negative	0	The teacher gave negative comments about my work.
+
+@ neighbour
+1	36713	noun	neighbour	1	Our neighbour brought soup when Mum was ill.
+2	36717	verb	neighbours	0	Their farm neighbours a small quiet lake.
+3	36713	noun	neighbour	0	The neighbour waved over the fence.
+4	36713	noun	neighbour	0	We asked our neighbour to collect the mail.
+5	36713	noun	neighbour	0	Every neighbour joined the street party.
+
+@ never
+1	36720	adv	never	1	I will never forget the dog that found us in the storm.
+2	36720	adv	never	0	He never eats breakfast before school.
+3	36720	adv	never	0	She never misses the early bus.
+4	36720	adv	never	0	We never leave food outside overnight.
+5	36720	adv	never	0	He had never seen snow before.
+
+@ new
+1	36724	adj	new	1	The new bicycle waited by the door on her birthday.
+2	36724	adj	new	0	A new book has not been used before.
+3	36724	adj	new	0	They painted the room a new colour.
+4	36738	noun	new	0	Out with the old, in with the new, she said.
+5	36724	adj	new	0	The shop sells new phones.
+
+@ news
+1	36743	noun	news	1	The news of the rescue made the whole town cheer.
+2	36744	noun	news	0	I read the news on my phone every morning.
+3	36744	noun	news	0	Dad watched the evening news.
+4	36743	noun	news	0	The news spread quickly at school.
+5	36743	noun	news	0	Good news arrived before dinner.
+
+@ next
+1	36756	adj	next	1	The next train carried us home after midnight.
+2	36756	adj	next	0	The next item comes immediately after this one.
+3	36754	adj	next	0	Please sit in the next chair.
+4	36764	noun	next	0	Who is next in line?
+5	36759	det	next	0	We will meet next week.
+
+@ nice
+1	36766	adj	nice	1	Her nice note made the new student smile.
+2	36767	adj	nice	0	The waiter was very nice to us during dinner.
+3	36779	adv	nice	0	Please try to play nice with your little brother.
+4	36766	adj	nice	0	He is nice to every customer.
+5	67847	intj	Nice	0	Nice! You passed your driving test on the first try.
+
+@ nine
+1	67851	num	nine	1	Nine candles glowed on the cake at her party.
+2	67850	num	nine	0	Nine is the number after eight.
+3	67851	num	nine	0	There are nine players on the field.
+4	67850	num	nine	0	He counted to nine.
+5	36792	noun	nine	0	Page nine has the answer.
+
+@ nineteen
+1	67734	num	nineteen	1	Nineteen students came to the science club.
+2	67734	num	nineteen	0	Nineteen is the number after eighteen.
+3	67734	num	nineteen	0	She turned nineteen in July.
+4	67734	num	nineteen	0	She counted nineteen shells along the beach.
+5	67734	num	nineteen	0	The bus carried nineteen passengers.
+
+@ no
+1	36797	det	no	1	There was no light in the cabin during the storm.
+2	36799	det	no	0	No smoking is allowed near the fuel tanks.
+3	36808	noun	no	0	She answered with a quiet no and left the room.
+4	36806	prep	no	0	He walked in with no shoes on his feet.
+5	36801	adv	no	0	This bag is no different from the one I had before.
+
+@ nobody
+1	36814	pron	nobody	1	Nobody left the lost child alone at the station.
+2	36814	pron	nobody	0	Nobody wanted to walk home in the heavy rain.
+3	36814	pron	nobody	0	Nobody knew the secret.
+4	36814	pron	nobody	0	I saw nobody on the path.
+5	36815	noun	nobody	0	After the accident, he felt like a nobody at work.
+
+@ north
+1	36828	adv	north	1	We drove north until we reached the snowy hills.
+2	36817	noun	north	0	Our cabin sits in the north of the country, near the mountains.
+3	36817	noun	north	0	The map shows north at the top.
+4	36828	adv	north	0	Birds flew north in spring.
+5	36822	adj	north	0	The north wall of the house stays cool in summer.

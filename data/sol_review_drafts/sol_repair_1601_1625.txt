@@ -1,0 +1,150 @@
+@ contain
+1	44966	verb	contain	1	This small box can contain my grandmother's old letters.
+2	44966	verb	contains	0	The bottle contains enough clean water for two days.
+3	44967	verb	contained	0	The report contained three pages of photographs.
+4	44968	verb	contain	0	She tried hard to contain her excitement before the results.
+5	44967	verb	containing	0	Avoid any snack containing nuts at the party.
+@ context
+1	44971	noun	context	1	The joke made sense only in the context of the story.
+2	44972	noun	context	0	Guess the new word's meaning from the context around it.
+3	44971	noun	contexts	0	The same gesture means different things in different contexts.
+4	44971	noun	context	0	History gives that famous photo its context.
+5	44972	noun	context	0	Read the whole paragraph to see the context of the quotation.
+@ continent
+1	44979	noun	continent	1	Standing on the ship, she finally saw a new continent ahead.
+2	44980	noun	continents	0	Africa and Asia are the two largest continents.
+3	44979	noun	continent	0	They crossed the whole continent by train in five days.
+4	44980	noun	continent	0	My cousin lives on another continent, so we video call.
+5	44982	noun	continent	0	Below the plane lay a continent of thick white cloud.
+@ continue
+1	44994	verb	continue	1	Despite the heavy rain, the band chose to continue playing outside.
+2	44994	verb	continued	0	She continued reading her book until midnight.
+3	44997	verb	continues	0	The path continues along the river to the old bridge.
+4	44998	verb	continue	0	We will continue the lesson after the break.
+5	44994	verb	continuing	0	The teacher thanked us for continuing the project at home.
+@ control
+1	45002	verb	control	1	The driver fought to control the car on the icy road.
+2	45002	verb	controls	0	A small remote controls the lights in the living room.
+3	45006	verb	control	0	Try to control your anger when the game goes badly.
+4	45007	noun	control	0	The new manager has full control over the schedule.
+5	45008	noun	controls	0	The pilot checked every one of the controls before takeoff.
+@ cooker
+1	45019	noun	cooker	1	The soup bubbled on the cooker while the family waited hungrily.
+2	45019	noun	cooker	0	Please turn off the cooker after dinner.
+3	45020	noun	cookers	0	The shop sells small gas cookers for camping.
+4	45019	noun	cooker	0	Our new cooker has four rings and a big oven.
+5	45020	noun	cooker	0	Keep tea towels away from the hot cooker.
+@ copy
+1	45027	noun	copy	1	I made a copy of my passport before the long trip.
+2	45036	noun	copy	0	She bought the latest copy of her favourite magazine.
+3	45029	noun	copies	0	The market sells cheap copies of famous handbags.
+4	45041	verb	copy	0	Please copy these pages for the whole class.
+5	45044	verb	copying	0	My little brother keeps copying everything I say.
+@ corner
+1	45047	noun	corner	1	The frightened cat hid in the dark corner of the room.
+2	45049	noun	corner	0	The bakery on the corner opens at six every morning.
+3	45053	noun	corner	0	Emily found a quiet corner of the library to read.
+4	45046	noun	corners	0	Cut the paper so the corners are perfectly square.
+5	45066	verb	cornered	0	The dog cornered a mouse behind the kitchen door.
+@ correctly
+1	45074	adv	correctly	1	Nora answered every single question correctly and won the school prize.
+2	45074	adv	correctly	0	Please spell my surname correctly on the certificate.
+3	45074	adv	correctly	0	He connected the wires correctly, so the lamp works again.
+4	45074	adv	correctly	0	The clock is finally working correctly after the repair.
+5	45074	adv	correctly	0	Few people pronounce her Irish name correctly.
+@ count
+1	45075	verb	count	1	The children tried to count every star above the tent.
+2	45076	verb	counted	0	The teacher counted the chairs before the meeting.
+3	45078	verb	counts	0	Your opinion counts just as much as mine.
+4	45085	noun	count	0	Breathe out slowly for a count of five.
+5	45081	verb	counting	0	We walked for three days, not counting the rest stops.
+@ couple
+1	45098	noun	couple	1	The couple danced barefoot on the beach at their wedding.
+2	45097	noun	couple	0	A couple of police officers appeared at the door.
+3	45099	noun	couple	0	I need a couple of minutes to finish the email.
+4	45097	noun	couples	0	Several couples were dancing slowly in the old hall.
+5	45106	verb	couple	0	The workers will couple the two train cars together.
+@ cover
+1	45111	noun	cover	1	Put the cover back on the pot before the soup boils over.
+2	45113	noun	cover	0	The book has a bright blue cover with gold letters.
+3	45112	noun	cover	0	The soldiers took cover behind a ruined wall.
+4	45136	verb	covered	0	He gently covered the sleeping baby with a blanket.
+5	45147	verb	cover	0	Ten dollars should cover lunch for both of us.
+@ crazy
+1	45162	adj	crazy	1	Everyone said it was crazy to swim in the stormy sea.
+2	45164	adj	crazy	0	He went crazy with joy when his team scored.
+3	45165	adj	crazy	0	My sister is crazy about that new singer.
+4	45166	adj	crazy	0	The film had a crazy ending that nobody expected.
+5	45162	adj	crazier	0	Each of his stories gets crazier than the last.
+@ creative
+1	45172	adj	creative	1	Lena made a creative costume from old cardboard boxes.
+2	45173	adj	creative	0	The class found a creative solution to the parking problem.
+3	45172	adj	creative	0	He is very creative with leftover food from the fridge.
+4	45177	noun	creative	0	The agency hired a young creative to design the posters.
+5	45177	noun	creatives	0	Several creatives shared their ideas at the meeting.
+@ credit
+1	45184	noun	credit	1	Nobody gave the young nurse credit for saving the child.
+2	45186	noun	credits	0	We stayed until the credits rolled at the end of the film.
+3	45187	noun	credit	0	She bought the sofa on credit and pays monthly.
+4	45181	verb	credits	0	The town credits her with restoring the old market.
+5	45180	verb	credited	0	The bank credited fifty pounds to my account yesterday.
+@ crime
+1	45197	noun	crime	1	Stealing his neighbour's bicycle was a serious crime.
+2	45200	noun	crime	0	The police are working hard to reduce crime in the city.
+3	45197	noun	crimes	0	The old man confessed to two crimes from long ago.
+4	45201	noun	crime	0	My grandmother always says that crime doesn't pay.
+5	45198	noun	crime	0	Wasting all that good food should be a crime.
+@ criminal
+1	45208	noun	criminal	1	The criminal escaped through the window before the police arrived.
+2	45206	adj	criminal	0	His long criminal record worried the judge.
+3	45204	adj	criminal	0	Selling those medicines without a licence is criminal.
+4	45208	noun	criminals	0	Two dangerous criminals were caught at the border.
+5	45204	adj	criminal	0	The court heard a criminal case about stolen cars.
+@ cross
+1	45251	verb	cross	1	Look both ways before you cross the busy road.
+2	45251	verb	crossed	0	The old woman crossed the bridge slowly in the rain.
+3	45209	noun	cross	0	Put a cross beside every wrong answer.
+4	45214	noun	cross	0	She wears a small silver cross on a necklace.
+5	45236	adj	cross	0	Dad was cross with me for coming home late.
+@ crowd
+1	45272	noun	crowd	1	A huge crowd cheered when the singer walked onto the stage.
+2	45275	noun	crowd	0	My brother has fallen in with a bad crowd at school.
+3	45272	noun	crowds	0	Big crowds fill the market every Sunday morning.
+4	45264	verb	crowd	0	Fans began to crowd toward the stage after the show.
+5	45266	verb	crowded	0	The farmer crowded too many sheep into one small truck.
+@ crowded
+1	45279	adj	crowded	1	The train was so crowded that we stood the whole way.
+2	45279	adj	crowded	0	The market gets crowded on Saturday mornings.
+3	45279	adj	crowded	0	We left the crowded beach and found a quiet one.
+4	45279	adj	crowded	0	Her desk looked crowded with books and empty cups.
+5	45280	verb	crowded	0	The children crowded around the puppy in the garden.
+@ cry
+1	45281	verb	cry	1	The lost child began to cry loudly for her mother.
+2	45281	verb	cried	0	She cried during the last scene of the film.
+3	45281	verb	crying	0	The baby is crying because he is hungry.
+4	45289	noun	cry	0	After the bad news I needed a good cry.
+5	45290	noun	cries	0	We heard cries for help from the river.
+@ cupboard
+1	45300	noun	cupboard	1	Grandma kept her best china in the tall kitchen cupboard.
+2	45300	noun	cupboard	0	Please close the cupboard door before the cat gets in.
+3	45300	noun	cupboards	0	All the cupboards in the new flat are empty.
+4	45300	noun	cupboard	0	I found a bag of flour at the back of the cupboard.
+5	45301	noun	cupboard	0	Hang your wet coat in the cupboard by the front door.
+@ curly
+1	45304	adj	curly	1	The baby has soft curly hair just like her father.
+2	45304	adj	curlier	0	My hair gets curlier when the weather is wet.
+3	45304	adj	curly	0	He drew a curly line around the whole page.
+4	45305	adj	curly	0	The printer changed my straight quotes into curly ones.
+5	45304	adj	curly	0	The ribbon became curly after she pulled the scissors along it.
+@ cycle
+1	45313	noun	cycle	1	The washing machine finished its long cycle just before dinner.
+2	45310	noun	cycle	0	The moon follows a monthly cycle in the sky.
+3	45308	noun	cycles	0	Farmers here plan their work around the cycles of the seasons.
+4	45330	verb	cycle	0	I cycle to school every morning when it is dry.
+5	45330	verb	cycled	0	They cycled twenty kilometres along the river path.
+@ daily
+1	45331	adj	daily	1	A daily walk in the park keeps Granddad healthy and happy.
+2	45331	adj	daily	0	She reads the daily newspaper with her morning coffee.
+3	45343	adv	daily	0	The nurse checks his temperature daily.
+4	45334	noun	daily	0	My uncle writes for a national daily in London.
+5	45334	noun	dailies	0	Several dailies printed the same photograph on their front pages.

@@ -1,0 +1,25 @@
+great	repaired	rank1 was 5 words (too short); rewrote it and swapped r5 to noun sense "greats" instead of a 4th repeated adj row
+green	repaired	repointed r5 sense 34026->34027 (intransitive "become green") to match the intransitive "is greening" sentence
+grey	repaired	fixed sentence-initial casing on r3 target (grey->Grey)
+group	pass	all 5 rows correct and natural
+grow	pass	all 5 rows correct; skipped noun POS (slang "illicit cannabis farm")
+guitar	repaired	verb POS (guitaring/guitared) is a fabricated verbing like "coffeeing"; replaced r4-r5 with two more noun sentences
+gym	repaired	verb POS (gymming/gymmed) is a fabricated verbing; replaced r4-r5 with noun sentences (PE class + gym facility)
+hair	repaired	repointed r3 sense 34078->34076 (matches "three hairs" strand sense); verb POS (haired/hairing) was fabricated and sense-mismatched, replaced r4-r5 with noun senses (idiom "by a hair", animal hair)
+half	repaired	rewrote r3 - target "half" occurred twice in "One half plus one half equals one" (ambiguous cloze)
+hand	repaired	rewrote r5 - sense 34144 (lead/guide by hand) did not match "handing the map" (giving sense); new sentence uses the lead/guide sense correctly
+happen	repaired	repointed r5 sense 34151 (archaic "befall")->34150 (ordinary "occur"); same sentence is standard modern usage
+happy	pass	all 5 rows correct; skipped noun (rare) and verb ("happy up", nonstandard)
+hard	pass	all 5 rows correct; skipped adv/noun/verb POS, block already solid without them
+hate	pass	all 5 rows correct and natural
+have	pass	all 5 rows correct; skipped noun POS (idiomatic "the haves", narrow)
+he	repaired	fixed sentence-initial casing on r1, r2, r4 targets (he->He); skipped det/noun POS (dialectal possessive, game/letter-name senses)
+head	pass	all 5 rows correct across noun/verb senses; skipped adj POS (not needed, block already diverse)
+health	repaired	rewrote r4 - target "health" occurred twice ("mental health and body health")
+healthy	pass	all 5 rows correct, no findings
+hear	pass	all 5 rows correct
+hello	repaired	verb POS (helloed/helloing) is fabricated; replaced r3-r4 with the core interjection greeting sense, which was missing entirely from the block
+help	pass	all 5 rows correct
+her	repaired	fixed sentence-initial casing on r1 target (her->Her); rewrote r5 - "a brave her who travels alone" is unnatural, replaced with the dictionary's own natural pattern ("a him or a her")
+here	repaired	fixed sentence-initial casing on r3 target (here->Here)
+hey	repaired	entire verb POS (hey/heyed/heying/heys used transitively) is fabricated, same pattern as banned "coffeeing"/"dinnering"; full rewrite using genuine interjection senses (attention, greeting, protest, surprise, confusion); skipped noun POS (dance-figure term, rare letter-name spelling)

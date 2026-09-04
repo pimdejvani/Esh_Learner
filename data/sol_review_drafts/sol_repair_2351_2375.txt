@@ -1,0 +1,150 @@
+@ volunteer
+1	61167	noun	volunteer	1	The local community center needs a volunteer to help organize the charity event.
+2	61167	noun	volunteer	0	She became a volunteer at the animal shelter after her dog passed away.
+3	61167	noun	volunteer	0	Every year, the school invites a volunteer to speak about environmental care.
+4	61167	noun	volunteer	0	The volunteer at the food bank sorted donations with great care.
+5	61167	noun	volunteer	0	He joined the volunteer team to support disaster relief efforts.
+@ vote
+1	61178	noun	vote	1	The committee's vote decided the new director's appointment.
+2	61178	noun	vote	0	The final vote on the new law passed by a narrow margin.
+3	61178	noun	vote	0	The court's vote upheld the ruling from the lower bench.
+4	61178	noun	vote	0	A majority vote is required to approve the contract.
+5	61178	noun	vote	0	The council's vote confirmed the new zoning plan.
+@ warn
+1	61159	verb	warned	1	The teacher warned the class about the surprise test.
+2	61159	verb	warned	0	She warned him to stay away from the broken glass.
+3	61159	verb	warned	0	The sign warned drivers of the sharp curve ahead.
+4	61159	verb	warned	0	He warned his friend about the storm coming in.
+5	61159	verb	warned	0	They warned the children to be careful near the lake.
+@ warning
+1	61188	noun	warning	1	The teacher gave a clear warning before the test began.
+2	61188	noun	warning	0	She ignored the warning and walked into the storm.
+3	61188	noun	warning	0	A sudden warning flashed on the screen during the flight.
+4	61188	noun	warning	0	He received a warning after breaking the classroom rules.
+5	61188	noun	warning	0	The dog's low growl was a warning to the stranger.
+@ waste
+1	61210	noun	waste	1	The factory produces too much waste every day.
+2	61210	noun	waste	0	We need to recycle this waste instead of throwing it away.
+3	61210	noun	waste	0	The landfill is full of food waste and plastic waste.
+4	61210	noun	waste	0	The kitchen waste goes into a separate bin for composting.
+5	61210	noun	waste	0	The company is reducing waste by using less packaging.
+@ weapon
+1	61190	noun	weapon	1	The soldier carried a small knife as a backup weapon.
+2	61190	noun	weapon	0	In the forest, the hunter used a bow and arrow as his main weapon.
+3	61190	noun	weapon	0	The police officer drew his firearm as a last-resort weapon.
+4	61190	noun	weapon	0	The knight wore armor and held a long sword as his weapon.
+5	61190	noun	weapon	0	She found an old dagger hidden in the attic, a forgotten weapon.
+@ weigh
+1	61197	verb	weigh	1	The chef used a scale to weigh the flour before baking.
+2	61197	verb	weighed	0	She carefully weighed the apples at the market.
+3	61197	verb	weighed	0	He weighed the package to check if it met the shipping limit.
+4	61197	verb	weighed	0	The student weighed the metal sample in science class.
+5	61197	verb	weigh	0	Weigh the ingredients before mixing them together.
+@ western
+1	61246	adj	western	1	The western window filled the room with warm evening light.
+2	61246	adj	western	0	We sat on the western side of the garden during the sunset.
+3	61246	adj	western	0	Strong winds reached the western coast late in the afternoon.
+4	61246	adj	western	0	She turned toward the western horizon to watch the stars appear.
+5	61246	adj	western	0	The western edge of the map shows the mountain range.
+@ whatever
+1	61251	det	whatever	1	Whatever choice you make, I will support you.
+2	61251	det	whatever	0	I'll keep going, whatever the challenge.
+3	61251	det	whatever	0	Whatever the outcome, we'll learn from it.
+4	61251	det	whatever	0	He stayed calm, whatever the situation.
+5	61251	det	whatever	0	Whatever the cost, we must finish this.
+@ whenever
+1	61239	conj	whenever	1	Call me whenever you need help with your homework.
+2	61239	conj	whenever	0	She always smiles whenever she sees her dog.
+3	61239	conj	whenever	0	We can go to the park whenever the rain stops.
+4	61239	conj	whenever	0	He listens to music whenever he walks to school.
+5	61239	conj	whenever	0	You can borrow my bike whenever you want to ride.
+@ whether
+1	61268	conj	whether	1	I wonder whether she will come to the party tonight.
+2	61268	conj	whether	0	He asked whether the meeting had been canceled.
+3	61268	conj	whether	0	We need to find out whether the train is delayed.
+4	61268	conj	whether	0	She couldn't tell whether the message was serious.
+5	61268	conj	whether	0	They debated whether to accept the offer.
+@ wing
+1	61295	noun	wings	1	The eagle spread its large wings to catch the rising wind.
+2	61295	noun	wings	0	Birds use their wings to fly long distances across the ocean.
+3	61295	noun	wings	0	The bat flapped its thin wings as it flew through the dark cave.
+4	61295	noun	wings	0	The insect's tiny wings buzzed as it darted past the flower.
+5	61295	noun	wings	0	The butterfly opened its colorful wings to bask in the sun.
+@ within
+1	61263	prep	within	1	The key was hidden within the old wooden box.
+2	61263	prep	within	0	She found her phone within the pile of blankets.
+3	61263	prep	within	0	The missing coin was hidden within a narrow gap in the sofa.
+4	61263	prep	within	0	The treasure was buried within the stone wall.
+5	61263	prep	within	0	He kept his notes within the red notebook.
+@ wonder
+1	61275	noun	wonder	1	The ancient pyramid remains a true wonder of the world.
+2	61275	noun	wonder	0	She was a wonder at fixing broken machines.
+3	61275	noun	wonder	0	The new bridge is a wonder of modern engineering.
+4	61275	noun	wonder	0	The northern lights were a natural wonder that left everyone speechless.
+5	61275	noun	wonder	0	The child's drawing was a wonder to everyone who saw it.
+@ wool
+1	61287	noun	wool	1	The lamb's soft wool felt warm against her cheek.
+2	61287	noun	wool	0	She bought a thick sweater made from natural wool.
+3	61287	noun	wool	0	The farmer collected fresh wool from the sheep in spring.
+4	61287	noun	wool	0	The blanket was woven from coarse wool and cotton.
+5	61287	noun	wool	0	He wrapped the baby in a soft wool shawl.
+@ worldwide
+1	61285	adj	worldwide	1	The company has a worldwide network of stores and offices.
+2	61285	adj	worldwide	0	The pandemic caused worldwide disruption to travel and trade.
+3	61285	adj	worldwide	0	She received worldwide recognition for her groundbreaking research.
+4	61285	adj	worldwide	0	The event attracted a worldwide audience through live streaming.
+5	61285	adj	worldwide	0	The new policy will have a worldwide impact on digital privacy.
+@ worth
+1	61342	adj	worth	1	That old bicycle is worth fifty dollars despite its rusty frame.
+2	61342	adj	worth	0	The antique lamp is worth more than the new one.
+3	61342	adj	worth	0	This handmade necklace is worth every penny.
+4	61342	adj	worth	0	The painting is worth a lot to collectors.
+5	61342	adj	worth	0	The antique book is worth several hundred dollars.
+@ written
+1	61338	adj	written	1	The written word carries more weight than spoken words.
+2	61338	adj	written	0	She read the written instructions carefully before starting.
+3	61338	adj	written	0	This book contains stories written hundreds of years ago.
+4	61338	adj	written	0	He prefers written notes over phone calls for clarity.
+5	61338	adj	written	0	The written record shows exactly what happened that day.
+@ yard
+1	61376	noun	yard	1	The dog chased a squirrel across the yard behind the house.
+2	61376	noun	yard	0	We planted flowers in the small yard behind the house.
+3	61376	noun	yard	0	The children played tag in the fenced yard after school.
+4	61376	noun	yard	0	A bird built its nest in the corner of the yard.
+5	61376	noun	yard	0	The old shed stood at the edge of the yard.
+@ youth
+1	61351	noun	youth	1	She radiated youth and energy during the morning jog.
+2	61351	noun	youth	0	The painting captured the quiet joy of youth in a summer field.
+3	61351	noun	youth	0	His confidence came from the strength of youth and fresh ideas.
+4	61351	noun	youth	0	The photographs reminded them of the energy of youth.
+5	61351	noun	youth	0	The old man smiled, remembering the carefree days of youth.
+@ abandon
+1	61367	verb	abandon	1	She decided to abandon herself to the music and dance all night.
+2	61367	verb	abandoned	0	He abandoned his worries and relaxed by the lake.
+3	61367	verb	abandoned	0	They abandoned their plans and stayed home instead.
+4	61367	verb	abandoned	0	The child abandoned the game when it became too frightening.
+5	61367	verb	abandoned	0	She abandoned her usual routine and tried something new.
+@ absolute
+1	61399	adj	absolute	1	She has absolute control over the project's budget.
+2	61399	adj	absolute	0	The rules are absolute and cannot be changed.
+3	61399	adj	absolute	0	The agreement gives both sides an absolute right to cancel within seven days.
+4	61399	adj	absolute	0	The judge demanded absolute honesty from every witness.
+5	61399	adj	absolute	0	The team has absolute freedom to choose their method.
+@ acceptable
+1	61356	adj	acceptable	1	She chose an acceptable gift for her friend's birthday.
+2	61356	adj	acceptable	0	The revised answer was acceptable to the teacher.
+3	61356	adj	acceptable	0	This solution is acceptable to everyone in the team.
+4	61356	adj	acceptable	0	The hotel room was acceptable, though not luxurious.
+5	61356	adj	acceptable	0	His behavior during the meeting was acceptable to the manager.
+@ accompany
+1	61359	verb	accompany	1	She will accompany her brother to the school play.
+2	61359	verb	accompanied	0	The guide accompanied the tourists through the ancient ruins.
+3	61359	verb	accompany	0	He decided to accompany his friend to the doctor's appointment.
+4	61359	verb	accompany	0	My sister will accompany me to the concert this weekend.
+5	61359	verb	accompanied	0	They accompanied each other on the long hike through the forest.
+@ accurate
+1	61429	adj	accurate	1	The scientist used an accurate scale to measure the chemicals.
+2	61429	adj	accurate	0	She gave an accurate description of the accident.
+3	61429	adj	accurate	0	The map gives accurate directions to the old castle.
+4	61429	adj	accurate	0	He made an accurate guess based on the data.
+5	61429	adj	accurate	0	The report contains accurate information about climate change.

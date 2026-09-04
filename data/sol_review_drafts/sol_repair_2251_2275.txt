@@ -1,0 +1,150 @@
+@ sink
+1	59939	verb	sink	1	The heavy box began to sink slowly into the mud.
+2	59939	verb	sank	0	The boat sank after hitting the underwater rock.
+3	59939	verb	sink	0	She watched the stone sink to the bottom of the lake.
+4	59939	verb	sank	0	The metal key sank into the wet sand at the beach.
+5	59939	verb	sank	0	The anchor sank quickly to the ocean floor.
+@ slice
+1	59913	noun	slice	1	She placed a thin slice of lemon on the edge of her glass.
+2	59913	noun	slice	0	The chef cut a perfect slice from the fresh loaf.
+3	59913	noun	slice	0	He added a slice of cucumber to his sandwich.
+4	59913	noun	slice	0	A slice of melon was all she wanted for dessert.
+5	59913	noun	slice	0	He placed a slice of tomato on top of the sandwich.
+@ slightly
+1	59912	adv	slightly	1	The door was slightly open when we arrived home.
+2	59912	adv	slightly	0	This shirt is slightly too large for me.
+3	59912	adv	slightly	0	Temperatures will be slightly lower tomorrow.
+4	59912	adv	slightly	0	She moved the chair slightly closer to the table.
+5	59912	adv	slightly	0	The second test was slightly easier than the first.
+@ smart
+1	59977	adj	smart	1	Her smart solution saved the team several hours of work.
+2	59978	adj	smart	0	The smart student understood the difficult equation quickly.
+3	59979	adj	smart	0	A smart thermostat can adjust the temperature automatically.
+4	59980	adj	smart	0	He wore a smart suit to the job interview.
+5	59977	adj	smart	0	Taking the earlier train was a smart decision.
+@ smooth
+1	60008	adj	smooth	1	The stone felt cool and smooth under her fingers.
+2	60008	adj	smooth	0	The wooden table has a smooth surface after sanding.
+3	60008	adj	smooth	0	She ran her hand over the smooth fabric of the dress.
+4	60008	adj	smooth	0	The river stones were worn smooth by years of water.
+5	60008	adj	smooth	0	The baby's skin was soft and smooth to the touch.
+@ software
+1	59998	noun	software	1	The new software failed to install on the old computer.
+2	59998	noun	software	0	This software runs smoothly on all modern devices.
+3	59998	noun	software	0	The company released updated software for better security.
+4	59998	noun	software	0	She wrote the software that controls the robot's movements.
+5	59998	noun	software	0	We need to update the software before the system crashes.
+@ soil
+1	60073	noun	soil	1	The garden needs fresh soil to grow healthy vegetables.
+2	60073	noun	soil	0	She mixed compost into the soil before planting the seeds.
+3	60073	noun	soil	0	The potted plant died because the soil was too dry.
+4	60073	noun	soil	0	We tested the soil to see if it had enough nutrients.
+5	60073	noun	soil	0	The farmer spread fertilizer over the soil to improve growth.
+@ solid
+1	60035	adj	solid	1	The rock is solid and heavy, perfect for a paperweight.
+2	60035	adj	solid	0	She placed the solid block on the table without it moving.
+3	60035	adj	solid	0	The wooden chair felt solid and well-built.
+4	60035	adj	solid	0	He dropped the solid metal ball on the floor.
+5	60035	adj	solid	0	The solid ice cube melted slowly in the glass.
+@ southern
+1	60002	adj	southern	1	The southern coast has warm beaches and clear water.
+2	60002	adj	southern	0	We visited a small town in the southern part of the country.
+3	60002	adj	southern	0	The southern region receives more sunlight than the north.
+4	60002	adj	southern	0	She moved to a southern city to start her new job.
+5	60002	adj	southern	0	The southern wind brought rain to the dry fields.
+@ specifically
+1	60006	adv	specifically	1	The rule applies specifically to students under eighteen years old.
+2	60006	adv	specifically	0	She specifically mentioned the issue during the meeting.
+3	60006	adv	specifically	0	This law was designed specifically for small businesses.
+4	60006	adv	specifically	0	The instructions were written specifically for beginners.
+5	60006	adv	specifically	0	He specifically pointed out the error in the third paragraph.
+@ spending
+1	59996	noun	spending	1	The company's annual spending on advertising is huge.
+2	59996	noun	spending	0	Her monthly spending on groceries has increased recently.
+3	59996	noun	spending	0	The city's spending on public transport is rising.
+4	59996	noun	spending	0	We need to reduce our household spending this year.
+5	59996	noun	spending	0	His spending habits are causing financial stress.
+@ spicy
+1	60062	adj	spicy	1	The spicy curry made his eyes water.
+2	60062	adj	spicy	0	She added a spicy sauce to the soup for extra heat.
+3	60062	adj	spicy	0	The dish was spicy and full of bold flavors.
+4	60062	adj	spicy	0	He enjoys spicy food but his children prefer mild dishes.
+5	60062	adj	spicy	0	The market sells fresh spicy peppers and seasonings.
+@ spirit
+1	60094	noun	spirit	1	Strong team spirit helped the players recover from an early defeat.
+2	60094	noun	spirit	0	The festival spirit spread through the crowded streets.
+3	60095	noun	spirit	0	His spirit remained strong despite the difficult times.
+4	60100	noun	spirit	0	The child's adventurous spirit impressed her teachers.
+5	60091	noun	spirit	0	They honored the spirit of the fallen soldier with a quiet prayer.
+@ spoken
+1	60069	adj	spoken	1	The spoken instructions were difficult to hear in the noisy room.
+2	60069	adj	spoken	0	The instructions were clearly spoken.
+3	60069	adj	spoken	0	This is a spoken language, not a written one.
+4	60069	adj	spoken	0	Customer service depends on clear spoken communication.
+5	60069	adj	spoken	0	The spoken version of the story was shorter than the written one.
+@ spot
+1	60114	noun	spot	1	The dog has a dark spot on its white fur.
+2	60114	noun	spot	0	She found a small spot on the kitchen counter.
+3	60114	noun	spots	0	The butterfly's wings have many tiny spots.
+4	60114	noun	spot	0	A brown spot appeared on the old book page.
+5	60114	noun	spot	0	The cat sat on the rug with a spot of sunlight.
+@ spread
+1	60177	verb	spread	1	She spread the blanket on the grass to sit down.
+2	60177	verb	spread	0	He spread the map out on the table for everyone to see.
+3	60177	verb	spread	0	They spread the fabric over the chair to cover it.
+4	60177	verb	spread	0	I spread the towel on the bench before sitting.
+5	60177	verb	spread	0	She spread the quilt across the bed to make it cozy.
+@ stadium
+1	60108	noun	stadium	1	The football team played their final match at the stadium.
+2	60108	noun	stadium	0	We arrived early to find our seats in the stadium.
+3	60108	noun	stadium	0	The concert was held in a large outdoor stadium.
+4	60108	noun	stadium	0	The stadium lights turned on just before the game started.
+5	60108	noun	stadium	0	Fans filled the stadium to watch the championship game.
+@ staff
+1	60165	noun	staff	1	Hospital staff worked through the night to care for the injured passengers.
+2	60165	noun	staff	0	The hotel staff carried our bags to the room.
+3	60165	noun	staff	0	All staff must attend the safety meeting on Monday.
+4	60165	noun	staff	0	The school hired additional staff for the new term.
+5	60165	noun	staff	0	Friendly staff made the small restaurant feel welcoming.
+@ standard
+1	60239	adj	standard	1	The room includes a standard double bed and a small desk.
+2	60239	adj	standard	0	This cable fits a standard electrical socket.
+3	60239	adj	standard	0	The standard ticket does not include a meal.
+4	60239	adj	standard	0	She followed the standard procedure without any changes.
+5	60239	adj	standard	0	The data falls within the standard range for healthy adults.
+@ statistic
+1	60157	noun	statistic	1	One surprising statistic showed that bicycle use had doubled in a year.
+2	60157	noun	statistic	0	The report highlights a statistic about household energy use.
+3	60158	noun	statistic	0	The average is a useful statistic for describing the sample.
+4	60157	noun	statistic	0	Each statistic in the article came from official data.
+5	60157	noun	statistic	0	The politician repeated the same statistic during the debate.
+@ statue
+1	60214	noun	statue	1	The artist carved a marble statue of a warrior.
+2	60214	noun	statue	0	They placed a bronze statue in the city square.
+3	60214	noun	statue	0	A stone statue stood at the entrance of the temple.
+4	60214	noun	statue	0	The museum displayed an ancient clay statue.
+5	60214	noun	statue	0	She admired the golden statue in the garden.
+@ stick
+1	60325	noun	stick	1	She used a long stick to reach the bird's nest.
+2	60325	noun	stick	0	The boy broke a stick and used it to draw in the dirt.
+3	60325	noun	stick	0	He carried a sturdy stick for walking through the forest.
+4	60325	noun	stick	0	The dog picked up a dry stick and dropped it at my feet.
+5	60325	noun	sticks	0	They gathered sticks to build a small fire at camp.
+@ stranger
+1	60218	noun	stranger	1	She smiled at the stranger on the bus.
+2	60218	noun	stranger	0	The child waved at the stranger near the gate.
+3	60218	noun	stranger	0	He did not recognize the stranger in the crowd.
+4	60218	noun	stranger	0	The stranger asked for directions to the station.
+5	60218	noun	stranger	0	A stranger knocked on the door at midnight.
+@ strength
+1	60231	noun	strength	1	She lifted the box with surprising strength.
+2	60231	noun	strength	0	The strength of the wind knocked over the tree.
+3	60231	noun	strength	0	His strength helped him finish the race.
+4	60231	noun	strength	0	The strength of the material prevented cracking.
+5	60231	noun	strength	0	The strength of the rope held the weight.
+@ string
+1	60272	noun	string	1	She tied the package with a strong string.
+2	60272	noun	string	0	She used string to tie the young plant to a wooden post.
+3	60272	noun	string	0	He pulled the string tight to secure the knot.
+4	60272	noun	string	0	The child pulled a toy horse along with a piece of string.
+5	60272	noun	string	0	A length of string held the two boxes together.

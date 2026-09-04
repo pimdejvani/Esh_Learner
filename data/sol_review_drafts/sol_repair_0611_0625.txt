@@ -1,0 +1,90 @@
+@ block
+1	54394	noun	block	1	Staring at the blank page, the writer felt a sudden block and couldn't think of a single word.
+2	54391	noun	block	0	The bakery is just one block from our school.
+3	54369	noun	block	0	He carved a small toy boat from a block of wood.
+4	54408	verb	blocked	0	A fallen tree blocked the road after the storm.
+5	54408	verb	blocking	0	The delivery van is blocking the entrance to the parking lot.
+@ bomb
+1	54424	noun	bomb	1	Soldiers rushed the children into the shelter seconds before the bomb exploded nearby.
+2	54424	noun	bomb	0	Police evacuated the airport after finding a suspicious bag that looked like a bomb.
+3	54424	noun	bombs	0	During the war, bombs fell on the city almost every night.
+4	54454	verb	bombed	0	Enemy planes bombed the bridge to stop the supply trucks.
+5	54454	verb	bombing	0	The country has been bombing rebel positions for weeks, according to the news.
+@ border
+1	54467	noun	border	1	Thousands of refugees waited for days at the border, hoping to cross to safety.
+2	54470	noun	border	0	She planted red tulips along the border of her garden.
+3	54469	noun	border	0	The tablecloth has a lace border sewn around its edge.
+4	54475	verb	borders	0	Canada borders the United States along a long, peaceful line.
+5	54475	verb	bordering	0	Their new house sits on a street bordering the city park.
+@ bother
+1	54478	verb	bothered	1	The loud construction noise next door bothered him so much that he couldn't sleep.
+2	54478	verb	bother	0	Please don't bother me while I'm working on this report.
+3	54481	verb	bother	0	He didn't even bother to reply to her message.
+4	54480	verb	bothers	0	She never bothers about small mistakes; she just fixes them and moves on.
+5	54484	noun	bother	0	It was no bother at all to give you a ride home.
+@ branch
+1	54485	noun	branch	1	The old branch cracked under his weight, and he fell into the river below.
+2	54489	noun	branch	0	She works at the downtown branch of the national bank.
+3	54492	noun	branch	0	Physics is a branch of science that studies matter and energy.
+4	54500	verb	branches	0	The trail branches into two paths near the old bridge.
+5	54500	verb	branched	0	After years in biology, she eventually branched out into medical research.
+@ brand
+1	54518	verb	branded	1	The cowboy carefully branded each calf with a hot iron before releasing it to the herd.
+2	54506	noun	brands	0	Nike is one of the most recognized brands in the world.
+3	54507	noun	brand	0	I always buy the same brand of coffee because I love its taste.
+4	54521	verb	brand	0	The company decided to brand its new phone as eco-friendly and modern.
+5	54518	verb	Branding	0	Branding cattle is a tradition on many ranches in Texas.
+@ brave
+1	54523	adj	brave	1	The brave little girl ran back into the smoke-filled house to save her puppy.
+2	54523	adj	brave	0	You have to be brave to speak in front of a large crowd.
+3	54523	adj	braver	0	He felt braver after his friends stood beside him during the meeting.
+4	54523	adj	bravest	0	The bravest soldiers in the unit received medals for their courage.
+5	54530	verb	braved	0	The old ship braved the fierce storm to reach the harbor safely.
+@ breath
+1	54533	noun	breath	1	She held her breath as the doctor read out the test results.
+2	54532	noun	breath	0	Running up the stairs left him completely out of breath.
+3	54534	noun	breath	0	His breath smelled of coffee after the long meeting.
+4	54536	noun	breath	0	Opening the window let in a breath of cool evening air.
+5	54533	noun	breaths	0	The yoga teacher asked us to take three slow, deep breaths.
+@ breathe
+1	54541	verb	breathed	1	After the long swim, she surfaced and breathed deeply, gasping for air.
+2	54541	verb	breathe	0	Take a moment to relax and breathe slowly.
+3	54546	verb	breathes	0	He breathes out slowly to calm his nerves before the interview.
+4	54544	verb	breathe	0	As long as I breathe, I will never give up on my dream.
+5	54541	verb	breathing	0	The nurse checked if the patient was breathing normally.
+@ breathing
+1	54558	noun	breathing	1	His breathing became fast and shallow after he ran from the barking dog.
+2	54558	noun	breathing	0	Deep breathing can help you relax before a big exam.
+3	54558	noun	breathing	0	The doctor listened carefully to the baby's breathing through her stethoscope.
+4	54564	verb	breathing	0	I could hear him breathing loudly in the next room.
+5	54564	verb	breathing	0	She sat quietly, breathing slowly to calm her racing heart.
+@ bride
+1	54565	noun	bride	1	The nervous bride burst into tears of joy as she saw her father waiting at the altar.
+2	54565	noun	bride	0	The bride wore a long white dress with delicate lace sleeves.
+3	54565	noun	bride	0	Every guest stood up and cheered when the bride entered the hall.
+4	54565	noun	bride	0	The wedding planner helped the bride choose flowers for the ceremony.
+5	54565	noun	brides	0	The magazine features photos of brides from around the world.
+@ bubble
+1	54569	noun	bubble	1	The little girl squealed with delight as she chased a giant soap bubble across the yard.
+2	54570	noun	bubble	0	There was a tiny bubble trapped inside the ice cube.
+3	54573	noun	bubble	0	Many economists warned that the housing bubble would eventually burst.
+4	54589	verb	bubble	0	The soup began to bubble gently on the stove.
+5	54569	noun	bubbles	0	Children love blowing bubbles in the park on sunny afternoons.
+@ bury
+1	54604	verb	bury	1	The whole village gathered at the cemetery to bury their beloved teacher.
+2	54607	verb	bury	0	Dogs often bury bones in the garden to save them for later.
+3	54608	verb	buried	0	She buried her face in her hands and began to cry.
+4	54610	verb	buried	0	He was completely buried under paperwork after returning from vacation.
+5	54607	verb	buries	0	Every autumn, the squirrel buries acorns all over the park.
+@ calm
+1	54617	adj	calm	1	Even as the fire alarm blared, the teacher stayed calm and led the students outside safely.
+2	54619	adj	calm	0	The sea was calm, so we decided to go sailing.
+3	54617	adj	calmer	0	After a cup of tea, she felt much calmer.
+4	54622	noun	calm	0	He took a deep breath, trying to find some calm before the interview.
+5	54626	verb	calmed	0	By evening, the wind had calmed and the sea grew still.
+@ campaign
+1	54627	noun	campaign	1	Millions of volunteers joined the campaign to end hunger in the region.
+2	54627	noun	campaign	0	The company launched a new advertising campaign for its summer sale.
+3	54627	noun	campaigns	0	She has worked on several political campaigns since college.
+4	54633	verb	campaign	0	The senator will campaign across the state before the election.
+5	54633	verb	campaigning	0	Volunteers spent the weekend campaigning door to door for clean water access.

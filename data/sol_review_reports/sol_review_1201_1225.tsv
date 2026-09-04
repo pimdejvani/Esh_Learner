@@ -1,0 +1,25 @@
+much	repaired	r1 was mislabeled det (sense 36558) for "so much"; that's an adverbial intensifier, re-pointed to adv sense 36564
+mum	repaired	r3 re-pointed from archaic-tagged sense 36574 to untagged synonym 36575; r5 dropped a fabricated obsolete/slang verb (mummed="to silence") and became a noun row using the chrysanthemum sense
+museum	repaired	verb POS (museuming/museumed) is a fabricated noun-to-verb backformation like "coffeeing"/"dinnering"; dropped it and gave r4/r5 real noun sentences
+music	repaired	verb POS (musicking, "to seduce with music") is the same fabricated-backformation pattern; dropped it, r5 rewritten as a noun sentence
+must	pass	all 5 rows use real, correctly-sensed usages (obligation, certainty, noun "a must"); the flagged 1-form finding is a false positive since modal "must" has no inflected forms
+my	repaired	r5 had target 'my' occurring twice in the sentence (ambiguous cloze); rewritten to a single occurrence
+name	repaired	r2 sense corrected from "to give a name to" (36616) to "to mention, specify" (36617) to match "name your favorite animal"
+natural	repaired	r2/r3/r5 re-pointed to the specific sense each sentence actually uses instead of the generic sense; r4 switched to the noun "a natural" (innate talent) sense for POS coverage; simplified B2 vocabulary in r2
+near	repaired	block was 5x the same adj sense; added prep, verb and adv rows since near is used at least as often as those POS in ordinary English
+need	repaired	verb POS (the core "I need X" usage) was missing entirely; added it, replacing weaker duplicate noun rows
+negative	repaired	r2/r3 re-pointed to specific senses (test result, number); added a noun POS row ("negatives" as drawbacks); simplified B2 vocabulary in r2/r5
+neighbour	repaired	added a verb row ("neighbours" = is adjacent to) for POS coverage
+never	repaired	r2 was a definitional "Never means..." sentence with B2 vocabulary; rewritten as an everyday sentence
+new	repaired	added a noun row ("in with the new") for POS coverage
+news	repaired	r2 was a definitional "News gives..." sentence; rewritten, and r2/r3 re-pointed to the media-usage sense
+newspaper	pass	all 5 rows are genuine noun usages; verb POS (to newspaper = cover with newspaper) is real but too obscure for a learner, correctly absent
+next	repaired	several rows mismatched adjacent-in-space vs. next-in-order senses; r4/r5 re-typed as noun and det to match their real grammar ("who is next", "next week")
+nice	repaired	r2 was a definitional "Nice means..." sentence; rewritten; added adv ("play nice") and intj ("Nice!") rows for POS coverage
+night	pass	all 5 rows are natural noun usages; verb POS ("to night" = to overnight) is archaic-sounding even though untagged, correctly skipped
+nine	repaired	most rows used the noun "digit/figure" sense for what are actually cardinal-quantity usages ("nine candles", "nine players"); re-pointed to num sense, kept noun only for the "page nine" label usage
+nineteen	repaired	r4 used the B2 word "found"; rewritten with simpler vocabulary
+ninety	pass	all 5 rows are natural, correctly-sensed num usages
+no	repaired	r2 was a definitional "No means..." sentence; diversified across det/noun/prep/adv senses instead of 4x the same det sense
+nobody	repaired	r2 was a definitional "Nobody means..." sentence; rewritten; added a noun row ("a nobody") for POS coverage
+north	repaired	r1/r4 mislabeled directional adverb usage ("drove north") as the noun sense; r2 had target 'north' occurring twice (ambiguous cloze), rewritten; added an adj row ("the north wall") for POS coverage

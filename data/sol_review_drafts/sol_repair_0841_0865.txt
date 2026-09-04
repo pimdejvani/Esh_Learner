@@ -1,0 +1,118 @@
+@ cake
+1	30220	noun	cake	1	For her birthday, the family carried in a cake covered with strawberries.
+2	30220	noun	cake	0	The cake has chocolate icing.
+3	30220	noun	cake	0	We baked a cake for the party.
+4	30220	noun	cake	0	Please cut the cake into eight pieces.
+5	30231	verb	caked	0	His boots were caked with mud after the long hike.
+
+@ call
+1	30238	verb	call	1	When the lights went out, Eli used his phone to call his mother.
+2	30274	noun	call	0	I missed an important call while I was in the shower.
+3	30238	verb	called	0	She called her best friend before dinner.
+4	30234	verb	calling	0	I heard my mother calling my name from the kitchen.
+5	30238	verb	calls	0	He calls his parents every weekend to share his news.
+
+@ can
+1	30300	verb	can	1	After weeks of practice, Leo smiled because he can finally swim across the pool.
+2	30310	noun	can	0	She opened a can of soup for lunch.
+3	30304	verb	can	0	Please, can you open this jar?
+4	30301	verb	can	0	We can meet after school.
+5	30309	noun	cans	0	There were old cans of paint stacked in the garage.
+
+@ capital
+1	30335	noun	capital	1	The young inventor searched for capital to build her first small robot.
+2	30338	noun	capital	0	Paris is the capital of France.
+3	30347	adj	capital	0	Start each sentence with a capital letter.
+4	30344	adj	capital	0	London and Paris are capital cities.
+5	30335	noun	capital	0	Investors provided capital for the new project.
+
+@ card
+1	30383	noun	card	1	On her birthday, Sam found a handmade card from her little brother.
+2	30370	noun	card	0	Choose one card from the deck.
+3	30383	noun	card	0	He wrote a message inside the card.
+4	30370	noun	card	0	The card shows a king and a crown.
+5	30370	noun	card	0	She kept the card in a drawer.
+
+@ career
+1	30412	noun	career	1	Watching her father fix cars every weekend, Mia chose a career as a mechanic.
+2	30412	noun	career	0	Teaching is her chosen career.
+3	30412	noun	career	0	He changed career after ten years in banking.
+4	30412	noun	career	0	The school offers advice about career choices.
+5	30412	noun	career	0	Her music career began in a small club.
+
+@ carry
+1	30430	verb	carry	1	When the storm began, Omar helped carry the injured dog to safety.
+2	30430	verb	carried	0	She carried the heavy bags all the way home.
+3	30430	verb	carries	0	The bridge carries thousands of cars every day.
+4	30430	verb	carrying	0	He was carrying a small suitcase through the airport.
+5	30430	verb	carry	0	I carry my lunch in a small bag.
+
+@ cat
+1	30471	noun	cat	1	The rescued cat slept on Mia's coat during its first night at home.
+2	30471	noun	cat	0	The cat chased a ball of yarn.
+3	30471	noun	cat	0	Our cat waits by the door.
+4	30471	noun	cat	0	The black cat climbed the fence.
+5	30471	noun	cat	0	A cat has whiskers and sharp claws.
+
+@ cd
+1	30509	verb	cd	1	In her rushed text message, Priya typed cd instead of could to save time.
+2	30509	verb	cd	0	The old exam notes used cd as a quick way to write could.
+3	30509	verb	cd	0	He always writes cd for could when texting his friends.
+4	30509	verb	cd	0	In fast messaging, people sometimes type cd rather than could.
+5	30509	verb	cd	0	The teacher explained why some students write cd for could in casual notes.
+
+@ cent
+1	30510	noun	cent	1	Ava dropped a single cent into the wishing fountain and made a promise.
+2	30510	noun	cents	0	One dollar is equal to one hundred cents.
+3	30510	noun	cent	0	The coin is worth one cent.
+4	30510	noun	cent	0	The price rose by one cent.
+5	30510	noun	cent	0	He found a cent under the sofa.
+
+@ chair
+1	30530	noun	chair	1	Grandpa's wooden chair stood empty beside the fireplace after dinner.
+2	30530	noun	chair	0	Please sit on the chair.
+3	30530	noun	chair	0	The chair has four legs.
+4	30541	verb	chaired	0	She chaired the school meeting last Tuesday.
+5	30530	noun	chair	0	A blue chair is by the window.
+
+@ change
+1	30544	verb	change	1	When spring arrived, the bare garden began to change into a field of color.
+2	30557	noun	change	0	The cashier gave me my change after I paid for the milk.
+3	30544	verb	changed	0	The weather changed suddenly during our picnic.
+4	30547	verb	changing	0	The kids were changing into their pajamas before bed.
+5	30549	verb	changes	0	She changes the bed sheets every week.
+
+@ chart
+1	30563	noun	chart	1	The sailor unfolded a chart and traced a safe route through the islands.
+2	30563	noun	chart	0	The chart shows the route to the harbor.
+3	30563	noun	chart	0	Use a chart to find the mountain trail.
+4	30576	verb	chart	0	Sailors chart their route before a long voyage.
+5	30575	verb	charted	0	The team charted a new hiking trail last summer.
+
+@ check
+1	30610	verb	check	1	Please check the door before you sleep; I worry at night.
+2	30610	verb	checked	0	She checked her answers twice.
+3	30597	noun	check	0	The nurse did a quick check of his eyes.
+4	30612	verb	checking	0	She was checking the boxes on her homework list.
+5	30600	noun	checks	0	Put checks next to the words you know.
+
+@ chicken
+1	30662	noun	chicken	1	At sunrise, the chicken scratched in the yard beside the red barn.
+2	30662	noun	chicken	0	The chicken laid an egg this morning.
+3	30673	adj	chicken	0	He refused to jump off the diving board because he felt too chicken.
+4	30674	verb	chickened	0	He chickened out of the roller coaster at the last second.
+5	30663	noun	chicken	0	We had chicken and rice for dinner.
+
+@ child
+1	30676	noun	child	1	During the storm, every child in the school waited quietly for a parent to arrive.
+2	30676	noun	child	0	A child needs love and care from their family.
+3	30676	noun	child	0	The child drew a picture of a tree.
+4	30676	noun	child	0	Each child brought a book to class.
+5	30676	noun	child	0	That child is learning to read.
+
+@ chocolate
+1	30689	noun	chocolate	1	Nina saved the last piece of chocolate for her brother after his exam.
+2	30689	noun	chocolate	0	The cookie contains chocolate chips.
+3	30696	adj	chocolate	0	We ordered a chocolate cake for the birthday party.
+4	30689	noun	chocolate	0	She bought a bar of chocolate.
+5	30697	adj	chocolate	0	The puppy has soft chocolate fur.

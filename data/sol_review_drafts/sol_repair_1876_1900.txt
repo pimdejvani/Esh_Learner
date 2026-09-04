@@ -1,0 +1,84 @@
+@ cruel
+1	55354	adj	cruel	1	The soldiers were cruel to the prisoners, showing them no mercy at all.
+2	55354	adj	cruel	0	The cruel man laughed as the puppy shivered in the rain.
+3	55354	adj	crueler	0	The bully grew crueler every time no one stopped him.
+4	55355	adj	cruel	0	This cruel winter brought weeks of snow and freezing wind.
+5	55355	adj	cruelest	0	January was the cruelest month, with ice covering every road.
+@ current
+1	55368	noun	current	1	The strong river current pulled the boy downstream before his father could reach him.
+2	55368	noun	current	0	Swimmers should avoid the area because the water current is dangerous.
+3	55369	noun	current	0	The boat drifted quickly with the ocean current.
+4	55373	adj	current	0	Please check the current weather before you leave for the trip.
+5	55374	adj	current	0	The magazine covers current affairs from around the world.
+@ custom
+1	55388	noun	custom	1	In my grandmother's village, greeting elders with a bow is a custom everyone follows.
+2	55396	adj	custom	0	My tailor made me a custom suit for the wedding.
+3	55388	noun	custom	0	Removing your shoes at the door is a local custom.
+4	55388	noun	custom	0	The wedding followed an old custom from her hometown.
+5	55397	adj	custom	0	She ordered a custom design for her wedding invitations.
+@ damage
+1	55404	noun	damage	1	The hurricane caused severe damage to homes along the coast.
+2	55404	noun	damage	0	The insurance company paid for the damage after the fire.
+3	55406	verb	damage	0	Please be careful not to damage the fragile vase while moving it.
+4	55406	verb	damaged	0	Strong winds damaged several trees in the park last night.
+5	55406	verb	Damaging	0	Damaging someone's property on purpose can lead to serious trouble.
+@ decade
+1	55411	noun	decade	1	My grandparents have lived in this house for a decade.
+2	55411	noun	decade	0	A period of ten years is a decade.
+3	55411	noun	decade	0	The band was popular for more than a decade.
+4	55411	noun	decade	0	The town has changed a lot in the last decade.
+5	55411	noun	decade	0	She kept the same job for nearly a decade.
+@ decorate
+1	55421	verb	decorated	1	The soldier was decorated for saving his comrades during the battle.
+2	55419	verb	decorate	0	We decorate the tree with lights every December.
+3	55420	verb	decorating	0	My parents spent the whole weekend decorating the living room for the party.
+4	55419	verb	decorates	0	She decorates the cake with fresh strawberries every birthday.
+5	55420	verb	decorate	0	It takes real skill to decorate a wedding hall beautifully.
+@ engaged
+1	55841	adj	engaged	1	My sister got engaged last weekend, and she cried with joy when he proposed.
+2	55841	adj	engaged	0	They have been engaged for six months and are planning their wedding.
+3	55842	adj	engaged	0	He was too engaged with work to join us for dinner.
+4	55840	verb	engaged	0	The teacher engaged the students by asking a mystery question.
+5	55840	verb	engaged	0	The company engaged local workers for the project.
+@ engineering
+1	55851	noun	engineering	1	After years of hard work, she finally graduated with a degree in engineering.
+2	55851	noun	engineering	0	He studies engineering at the university downtown.
+3	55851	noun	engineering	0	Bridges and roads are built using engineering.
+4	55850	verb	engineering	0	The team is engineering a safer bicycle helmet.
+5	55850	verb	engineering	0	Maya is engineering a small bridge for the science fair.
+@ entertain
+1	55855	verb	entertained	1	The clown entertained the children for hours, and they laughed nonstop.
+2	55855	verb	entertains	0	This funny movie entertains my little brother every time we watch it.
+3	55857	verb	entertain	0	The committee agreed to entertain the idea of a longer lunch break.
+4	55856	verb	entertaining	0	My parents love entertaining guests at our house on weekends.
+5	55855	verb	entertain	0	The singer will entertain the crowd after dinner.
+@ entrance
+1	55870	noun	entrance	1	Her dramatic entrance into the ballroom made every head turn.
+2	55872	noun	entrance	0	Please meet me at the main entrance of the museum.
+3	55872	noun	entrance	0	The entrance to the building was blocked by fallen branches.
+4	55870	noun	entrance	0	The actor's entrance was delayed by a broken door.
+5	55873	noun	entrance	0	You need a ticket to gain entrance to the concert.
+@ equal
+1	55901	adj	equal	1	Each child received an equal share of the cake, so nobody complained.
+2	55902	adj	equal	0	Everyone deserves equal access to education.
+3	55902	adj	equal	0	In this country, all citizens are equal under the law.
+4	55909	verb	equals	0	In math class we learned that two plus two equals four.
+5	55910	verb	equaled	0	She equaled the water levels in both bottles before starting the experiment.
+@ escape
+1	55918	verb	escaped	1	The bird escaped from its cage and flew through the open window before anyone noticed.
+2	55919	verb	escape	0	The prisoners tried to escape by digging a tunnel under the wall.
+3	55920	verb	escaping	0	We ran indoors, escaping the sudden rain just in time.
+4	55921	verb	escapes	0	Nobody escapes the final exam; everyone in the class has to take it.
+5	55929	noun	escape	0	The prisoners planned their escape for weeks before the storm hit.
+@ essential
+1	55941	adj	essential	1	Clean water is essential for a healthy life, especially for young children.
+2	55942	adj	essential	0	It is essential to bring your passport to the airport.
+3	55941	adj	essential	0	Sleep is essential for children as they grow.
+4	55949	noun	essentials	0	Before the trip, she packed only the essentials: water, a map, and snacks.
+5	55941	adj	essential	0	A map is essential when hiking in an unfamiliar place.
+@ examine
+1	55954	verb	examined	1	The scientist examined the strange leaf carefully under a microscope, amazed by what she found.
+2	55955	verb	examine	0	The doctor will examine your knee after the fall.
+3	55954	verb	examines	0	The teacher examines every essay for spelling mistakes.
+4	55957	verb	examining	0	The lawyer spent hours examining the witness in court.
+5	55954	verb	examine	0	Please examine the map before choosing a route.

@@ -1,0 +1,150 @@
+@ approach
+1	61634	verb	approach	1	The dog began to approach the stranger slowly.
+2	61634	verb	approach	0	She stopped when the car began to approach.
+3	61634	verb	approached	0	The boat approached the small island at dawn.
+4	61634	verb	approach	0	We watched the plane approach the airport.
+5	61634	verb	approached	0	The mountain path approached the summit.
+@ appropriate
+1	61618	verb	appropriated	1	She appropriated the last slice of cake without asking.
+2	61618	verb	appropriated	0	He appropriated the idea as his own during the meeting.
+3	61618	verb	appropriated	0	The company appropriated the design for their new product.
+4	61618	verb	appropriated	0	They appropriated the room for their private discussion.
+5	61618	verb	appropriated	0	The artist appropriated the style from a famous painter.
+@ approval
+1	61627	noun	approval	1	The manager gave her approval for the new project.
+2	61627	noun	approval	0	He waited for official approval before starting the work.
+3	61627	noun	approval	0	The committee's approval was necessary for the plan.
+4	61627	noun	approval	0	She received approval from the board yesterday.
+5	61627	noun	approval	0	The payment requires a manager's approval before processing.
+@ approve
+1	61668	verb	approve	1	The board will approve the new safety regulations next week.
+2	61668	verb	approve	0	The government must approve the construction permit before work begins.
+3	61668	verb	approve	0	We need your signature to approve the contract.
+4	61668	verb	approve	0	The committee will approve the budget proposal at the meeting.
+5	61668	verb	approved	0	The school principal approved the field trip request.
+@ arise
+1	61657	verb	arose	1	A problem arose during the morning meeting.
+2	61657	verb	arise	0	Please call me if any questions arise.
+3	61657	verb	arose	0	An opportunity arose to work overseas for six months.
+4	61657	verb	arose	0	A conflict arose between the two departments.
+5	61657	verb	arise	0	Unexpected costs may arise during the renovation.
+@ armed
+1	61659	adj	armed	1	The soldier was armed with a rifle for protection.
+2	61659	adj	armed	0	The police officer was armed and ready to respond.
+3	61659	adj	armed	0	The guard was armed with a baton at the gate.
+4	61659	adj	armed	0	The security team arrived armed and alert.
+5	61659	adj	armed	0	The agent was armed with a concealed weapon.
+@ arms
+1	61630	noun	arms	1	The soldiers carried their arms into the battlefield.
+2	61630	noun	arms	0	The museum displayed ancient arms from the medieval era.
+3	61630	noun	arms	0	The treaty requires both sides to surrender their arms.
+4	61630	noun	arms	0	The rebels seized the arms from the government warehouse.
+5	61630	noun	arms	0	The guards laid down their arms when the fighting ended.
+@ artificial
+1	61674	adj	artificial	1	She wore an artificial flower in her hair.
+2	61674	adj	artificial	0	The hotel lobby was lit by artificial light.
+3	61674	adj	artificial	0	He bought an artificial Christmas tree for the living room.
+4	61674	adj	artificial	0	The drink contains no artificial colors or flavors.
+5	61674	adj	artificial	0	Engineers created an artificial lake beside the new park.
+@ artistic
+1	61681	adj	artistic	1	Her handmade jewelry is truly artistic and unique.
+2	61681	adj	artistic	0	The painter's latest work shows an artistic touch in every brushstroke.
+3	61681	adj	artistic	0	He has an artistic eye for color and composition in design.
+4	61681	adj	artistic	0	The dance performance was full of artistic expression and emotion.
+5	61681	adj	artistic	0	She created an artistic mural that brightened the entire school hallway.
+@ ashamed
+1	61679	adj	ashamed	1	She felt ashamed after lying to her teacher.
+2	61679	adj	ashamed	0	He was ashamed when he realized he had forgotten his friend's birthday.
+3	61679	adj	ashamed	0	The boy looked ashamed after breaking the window.
+4	61679	adj	ashamed	0	I was ashamed to admit I didn't understand the question.
+5	61679	adj	ashamed	0	They were ashamed of how they treated the stray dog.
+@ aspect
+1	61689	noun	aspect	1	The curved roof is the most distinctive aspect of the new design.
+2	61689	noun	aspect	0	One important aspect of the project is its timeline.
+3	61689	noun	aspect	0	The teacher highlighted a key aspect of the lesson.
+4	61689	noun	aspect	0	We must consider every aspect of the plan.
+5	61689	noun	aspect	0	This aspect of the culture is often overlooked.
+@ assess
+1	61706	verb	assess	1	The teacher will assess the student's progress at the end of the term.
+2	61706	verb	assess	0	We need to assess the risks before starting the project.
+3	61706	verb	assess	0	The committee will assess the proposal during the meeting.
+4	61706	verb	assessed	0	She assessed the damage after the storm passed.
+5	61706	verb	assess	0	They must assess the new policy's impact on the community.
+@ assessment
+1	61709	noun	assessment	1	The tax assessment was higher than last year's due to new regulations.
+2	61710	noun	assessment	0	The school's final assessment determined each student's grade.
+3	61710	noun	assessment	0	After the inspection, the building received a safety assessment.
+4	61710	noun	assessment	0	The financial assessment revealed unexpected liabilities.
+5	61710	noun	assessment	0	The doctor's assessment of the patient's condition was positive.
+@ associate
+1	61719	adj	associate	1	She became an associate professor after five years at the university.
+2	61719	adj	associate	0	She is an associate member of the professional society.
+3	61719	adj	associate	0	The associate director supports the main director in daily operations.
+4	61719	adj	associate	0	He was promoted to associate partner at the law firm.
+5	61719	adj	associate	0	An associate editor checked the article before publication.
+@ associated
+1	61686	adj	associated	1	The new policy is closely associated with environmental protection.
+2	61686	adj	associated	0	The two companies are associated through a shared owner.
+3	61686	adj	associated	0	This symptom is commonly associated with the flu.
+4	61686	adj	associated	0	The team identified the risks associated with the project.
+5	61686	adj	associated	0	The charity is associated with several local schools.
+@ association
+1	61752	noun	association	1	Her association with the research team began at university.
+2	61752	noun	association	0	The association of colors with emotions is common in art.
+3	61752	noun	association	0	His association with the project began last month.
+4	61752	noun	association	0	The association between music and memory is well known.
+5	61754	noun	association	0	They formed an association to support local artists.
+@ assume
+1	61711	verb	assumed	1	She assumed the report was accurate without checking the facts.
+2	61711	verb	assumed	0	They assumed he had already left when he was still in the building.
+3	61711	verb	assume	0	I assume you'll be at the meeting tomorrow morning.
+4	61711	verb	assumed	0	He assumed the worst when he saw the empty mailbox.
+5	61711	verb	assume	0	We assume the package will arrive by Friday.
+@ attempt
+1	61757	verb	attempt	1	She will attempt the difficult puzzle before the deadline.
+2	61757	verb	attempted	0	He attempted the high jump but fell short.
+3	61757	verb	attempt	0	The team will attempt a new strategy in the next match.
+4	61757	verb	attempted	0	They attempted to fix the broken bicycle chain.
+5	61757	verb	attempted	0	I attempted to explain the concept, but it was too complex.
+@ bacteria
+1	61738	noun	bacteria	1	This culture contains harmful bacteria that cause stomach infections.
+2	61738	noun	bacteria	0	Some bacteria in the soil help plants absorb nutrients from the ground.
+3	61738	noun	bacteria	0	The doctor tested for pathogenic bacteria in the patient's blood.
+4	61738	noun	bacteria	0	Good hygiene prevents the spread of dangerous bacteria.
+5	61738	noun	bacteria	0	Scientists study different bacteria to understand disease development.
+@ barrier
+1	61743	noun	barrier	1	The gate at the park entrance is a barrier to unauthorized access.
+2	61743	noun	barrier	0	A metal barrier blocked the road after the accident.
+3	61743	noun	barrier	0	The fence around the construction site acts as a barrier.
+4	61743	noun	barrier	0	A concrete barrier separated the two lanes of traffic.
+5	61743	noun	barrier	0	The security barrier kept visitors from entering the restricted area.
+@ basically
+1	61716	adv	basically	1	The recipe is basically just flour, water, and salt.
+2	61716	adv	basically	0	He didn't know the answer, but he was basically right.
+3	61716	adv	basically	0	The two designs are basically identical.
+4	61716	adv	basically	0	She's basically a teacher, even if she doesn't have a degree.
+5	61716	adv	basically	0	The car is basically the same as the model from last year.
+@ beg
+1	61766	verb	begged	1	The homeless man begged for food at the grocery store entrance.
+2	61767	verb	begged	0	She begged the shopkeeper for a small discount on the bread.
+3	61767	verb	begged	0	He begged his friend to lend him five dollars for the bus.
+4	61767	verb	begged	0	The child begged his mother for a new toy at the mall.
+5	61767	verb	begged	0	They begged the teacher for extra time on the assignment.
+@ being
+1	61814	noun	being	1	The strange being in the forest watched me with calm eyes.
+2	61814	noun	being	0	She saw a small being crawling through the grass near the stream.
+3	61814	noun	being	0	The child believed the shadow was a friendly being from another world.
+4	61814	noun	being	0	He whispered to the being under the old oak tree, asking for help.
+5	61814	noun	being	0	The explorer found a being wrapped in moss deep in the jungle.
+@ bent
+1	61778	adj	bent	1	The metal rod was bent after the accident.
+2	61778	adj	bent	0	She found the paperclip bent when she opened the drawer.
+3	61778	adj	bent	0	The door hinge is bent and won't close properly.
+4	61778	adj	bent	0	The bicycle frame became bent during the fall.
+5	61778	adj	bent	0	The nail was bent after she struck it at an angle with the hammer.
+@ bet
+1	61820	noun	bet	1	They placed a bet on the horse race at the track.
+2	61820	noun	bet	0	The bet was made before the game started.
+3	61820	noun	bet	0	She won the bet after guessing the score correctly.
+4	61820	noun	bet	0	He lost his bet on the team winning the match.
+5	61820	noun	bet	0	The bet was settled with cash after the event.

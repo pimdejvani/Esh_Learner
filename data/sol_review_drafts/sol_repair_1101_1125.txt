@@ -1,0 +1,111 @@
+@ improve
+1	34792	verb	improve	1	Practice can improve your English if you study every day.
+2	34793	verb	improve	0	Her health will improve soon.
+3	34792	verb	improved	0	The new plan improved our work.
+4	34792	verb	improving	0	He is improving his drawing skills.
+5	34792	verb	improves	0	This light improves safety at night.
+
+@ in
+1	34797	prep	in	1	The keys are in the bag.
+2	34804	prep	in	0	We met in a crowd of people.
+3	34819	prep	in	0	Please write your name in Thai.
+4	34822	adv	in	0	Come in, please.
+5	34836	adj	in	0	Long skirts are in again this year.
+
+@ information
+1	34854	noun	information	1	This website has a lot of useful information about health.
+2	34855	noun	information	0	For your information, the meeting starts at nine tomorrow.
+3	34854	noun	information	0	A map gives information about places.
+4	34864	noun	information	0	The app turns data into information.
+5	34854	noun	information	0	Please check the information again.
+
+@ interest
+1	34868	noun	interest	1	Ever since childhood, science has been her greatest interest in life.
+2	34866	noun	interest	0	The bank pays interest each month.
+3	34869	noun	interest	0	The story caught her interest.
+4	34877	verb	interest	0	This book may interest you.
+5	34877	verb	interests	0	Football interests millions of people around the world.
+
+@ interested
+1	34880	adj	interested	1	I am interested in art, especially old paintings.
+2	34880	adj	interested	0	The students looked interested in the lesson.
+3	34883	verb	interested	0	The mystery box interested every child in the class.
+4	34880	adj	more interested	0	She is more interested in music now.
+5	34880	adj	most interested	0	Nina is the most interested student today.
+
+@ interesting
+1	34885	adj	interesting	1	That is such an interesting question, I need time to think.
+2	34885	adj	interesting	0	The result is interesting for our project.
+3	34885	adj	more interesting	0	The second book is more interesting.
+4	34885	adj	most interesting	0	This was the most interesting part.
+5	34887	verb	interesting	0	The teacher is interesting us in space.
+
+@ internet
+1	34890	noun	internet	1	Our internet was so slow that the video kept stopping.
+2	34888	name	internet	0	The internet connects people around the world.
+3	34889	name	internet	0	The whole internet was talking about the new movie.
+4	34891	noun	internet	0	The school has its own internet network.
+5	34890	noun	internet	0	The internet stopped during the storm.
+
+@ island
+1	34921	noun	island	1	They live on a small island.
+2	34925	noun	island	0	Use the island to cross the busy road.
+3	34927	noun	island	0	We eat breakfast at the kitchen island.
+4	34921	noun	islands	0	The map shows many islands.
+5	34921	noun	island	0	Every summer we sail to a small island near the coast.
+
+@ its
+1	34959	det	its	1	The cat is eating its food.
+2	34959	det	its	0	The tree lost its leaves.
+3	34959	det	its	0	The company changed its name last year.
+4	34959	det	its	0	The robot moved its arm.
+5	34959	det	its	0	The dog wagged its tail happily.
+
+@ january
+1	67686	name	January	1	School starts again in January after the winter holiday.
+2	67686	name	January	0	January comes after December.
+3	67686	name	Jan	0	My birthday is on Jan. 12.
+4	67686	name	Januarys	0	The Januarys here are often cool.
+5	67686	name	January	0	January is usually the coldest month of the year.
+
+@ jeans
+1	34977	noun	jeans	1	I wear jeans on the weekend.
+2	34977	noun	jeans	0	These jeans are too long for me.
+3	34978	noun	jeans	0	Her jeans are dark blue.
+4	34977	noun	jeans	0	He bought new jeans yesterday.
+5	34978	noun	jean	0	One jean leg was torn after he fell off his bicycle.
+
+@ juice
+1	35027	noun	juice	1	I drink orange juice at breakfast.
+2	35028	noun	juice	0	This juice is cold and sweet.
+3	35027	noun	juice	0	She squeezed the orange to get fresh juice.
+4	35048	verb	juice	0	We juice the lemons for the cake.
+5	35027	noun	juices	0	The shop sells fresh juices.
+
+@ july
+1	67707	name	July	1	We travel in July every year.
+2	67707	name	July	0	July comes after June.
+3	67707	name	Jul	0	The event is on Jul. 5.
+4	67707	name	Julys	0	The Julys in this town are hot.
+5	67707	name	July	0	My birthday falls in the middle of July.
+
+@ june
+1	35053	verb	june	1	When they heard the fire alarm, all the workers had to june outside quickly.
+2	35053	verb	juned	0	As soon as the bell rang, the children juned toward the playground.
+3	35053	verb	junes	0	Every morning, my brother junes down the stairs to catch the bus.
+4	35053	verb	juning	0	The players were juning across the field before the whistle blew.
+5	35053	verb	june	0	Please don't june through the hallway; someone could get hurt.
+
+@ just
+1	35058	adv	just	1	I just need one more minute to finish this drawing.
+2	35065	adv	just	0	She just arrived home.
+3	35067	adv	just	0	The answer is just right.
+4	35056	adj	just	0	The judge made a just decision.
+5	35064	adv	just	0	We just caught the last bus.
+
+@ key
+1	35106	noun	key	1	I found the key just before we had to leave.
+2	35119	noun	key	0	Practice is the key to better speaking.
+3	35106	noun	keys	0	My keys are on the kitchen table.
+4	35108	noun	key	0	Never share your key for this account.
+5	35157	verb	keyed	0	She keyed in the code to open the door.

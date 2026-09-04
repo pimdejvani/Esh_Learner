@@ -1,0 +1,104 @@
+@ age
+1	28589	noun	age	1	When my sister told me her age, I realised how fast time goes.
+2	28591	noun	age	0	At her age, children learn very quickly.
+3	28590	noun	age	0	His face showed the marks of age.
+4	28604	verb	ages	0	Everyone ages, but some people stay young inside.
+5	28606	verb	aged	0	Years of hard work aged the old fisherman before his time.
+
+@ ago
+1	28613	adj	ago	1	Long ago, my grandmother crossed the ocean alone to start a new life.
+2	28613	adj	ago	0	We visited that beach two years ago.
+3	28613	adj	ago	0	The train left five minutes ago.
+4	28613	adj	ago	0	She moved to this city a long time ago.
+5	28613	adj	ago	0	He finished his homework an hour ago.
+
+@ agree
+1	28615	verb	agree	1	Mia and I agree about the best route home.
+2	28615	verb	agree	0	Do you agree with me?
+3	28615	verb	agreed	0	The friends finally agreed on a plan for the school trip.
+4	28615	verb	agree	0	We all agree about the answer.
+5	28615	verb	agrees	0	She always agrees with her sister about music.
+
+@ air
+1	28623	noun	air	1	Fresh air filled the room when we opened the window.
+2	28623	noun	air	0	The air feels cool today.
+3	28623	noun	air	0	Plants need air to grow.
+4	28642	verb	air	0	Let's open the windows and air out the stuffy classroom.
+5	28643	verb	air	0	The neighbours used the meeting to air their complaints about parking.
+
+@ all
+1	28649	det	All	1	All the lights in the old theatre flickered on together after the storm.
+2	28650	det	all	0	We stayed inside and watched movies all day.
+3	28655	pron	all	0	We ate potatoes for dinner; that was all we needed.
+4	28654	pron	all	0	A good time was had by all at the wedding party.
+5	28657	adv	all	0	The toddler was so tired that she fell asleep all alone on the couch.
+
+@ amazing
+1	28674	adj	amazing	1	The northern lights over the mountains were so amazing that nobody could speak.
+2	28674	adj	amazing	0	That was an amazing goal in the last minute of the match.
+3	28675	adj	amazing	0	Her cooking is amazing; everyone always asks for the recipe.
+4	28675	adj	amazing	0	We had an amazing time at the beach this summer.
+5	28674	adj	amazing	0	It's amazing how quickly children learn new languages.
+
+@ animal
+1	28702	noun	animal	1	The animal drank water beside the forest path.
+2	28702	noun	animal	0	A cat is an animal.
+3	28702	noun	animal	0	Every animal needs food.
+4	28712	adj	animal	0	Some people believe humans still have animal instincts.
+5	28702	noun	animal	0	We saw a small animal outside.
+
+@ another
+1	28716	det	another	1	Could I have another piece of pizza?
+2	28716	det	another	0	Try another chair.
+3	28716	det	another	0	She needs another minute.
+4	28719	pron	another	0	This one is broken; can you bring me another?
+5	28720	pron	another	0	I didn't like that movie, so I watched another instead.
+
+@ answer
+1	28722	noun	answer	1	Lina raised her hand because she knew the answer.
+2	28722	noun	answer	0	Your answer is correct.
+3	28722	noun	answer	0	Write the answer here.
+4	28726	verb	answered	0	He quickly answered every question the teacher asked.
+5	28728	verb	answer	0	Could you answer the phone? It keeps ringing.
+
+@ any
+1	28740	adv	any	1	I cannot run any faster than this.
+2	28740	adv	any	0	Is it any warmer outside?
+3	28740	adv	any	0	She did not feel any better.
+4	28743	det	any	0	Do you have any biscuits left in the cupboard?
+5	28746	pron	any	0	If any of you know the answer, please raise your hand.
+
+@ anything
+1	28748	pron	anything	1	Did you find anything interesting at the market?
+2	28748	pron	anything	0	I cannot see anything.
+3	28748	pron	anything	0	Do you need anything else?
+4	28752	adv	anything	0	This cake isn't anything like as good as yours.
+5	28748	pron	anything	0	She did not say anything.
+
+@ april
+1	67696	name	April	1	Our school picnic is in April this year.
+2	67696	name	April	0	April comes after March.
+3	67696	name	April	0	It often rains in April.
+4	67696	name	April	0	My uncle visits in April.
+5	67696	name	April	0	April has thirty days.
+
+@ arm
+1	28790	noun	arm	1	She carried the sleepy child in her arm.
+2	28790	noun	arm	0	My arm hurts after tennis.
+3	28790	noun	arm	0	Raise your arm slowly.
+4	28810	verb	arm	0	Remember to arm the alarm system before you leave the house.
+5	28813	verb	arm	0	The soldiers were ordered to arm themselves before the mission.
+
+@ around
+1	28815	prep	around	1	We walked around the lake before breakfast.
+2	28823	adj	around	0	My grandfather is ninety now, but he's still around.
+3	28826	adv	around	0	The trip will cost around two hundred dollars.
+4	28815	prep	around	0	A wall stands around the garden.
+5	28825	adv	around	0	Everybody please gather around so I can show you the map.
+
+@ arrive
+1	28832	verb	arrive	1	We will arrive at the cabin before dark.
+2	28832	verb	arrive	0	What time does the train arrive?
+3	28832	verb	arrived	0	She arrived at the station five minutes after the train had left.
+4	28832	verb	arrives	0	The bus usually arrives at half past seven every morning.
+5	28832	verb	arriving	0	The guests are already arriving, so let's open the front door.

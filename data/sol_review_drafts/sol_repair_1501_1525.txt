@@ -1,0 +1,125 @@
+@ water
+1	42261	noun	water	1	Drink more water when the weather is hot.
+2	42263	noun	water	0	Can I have a water, please?
+3	42265	noun	waters	0	The boat moved across calm waters.
+4	42283	verb	watered	0	She watered the plants every morning before school.
+5	42285	verb	watering	0	He is watering the horses in the field.
+
+@ way
+1	42296	noun	way	1	I will find a way to help you.
+2	42296	noun	way	0	This is the best way to learn new words.
+3	42293	noun	ways	0	There are two ways to reach the park.
+4	42300	noun	way	0	There is no way I can finish today.
+5	42310	adv	way	0	This backpack is way too heavy for a child to carry.
+
+@ week
+1	42372	noun	week	1	After the funeral, the whole family stayed together for a difficult week.
+2	42374	noun	week	0	My school week starts on Monday.
+3	42372	noun	weeks	0	We waited two weeks for the result.
+4	42376	noun	week	0	I will see you a week from Friday.
+5	42373	noun	week	0	The new week begins on Monday here.
+
+@ well
+1	42390	adv	well	1	You did well even though you were nervous.
+2	42395	adj	well	0	I feel well again today.
+3	42396	adj	well	0	Is everything well with your grandmother after the surgery?
+4	42400	noun	well	0	The village gets water from a deep well.
+5	42390	adv	better	0	I feel better after a good sleep.
+
+@ west
+1	42418	noun	west	1	The sun goes down in the west.
+2	42421	adj	west	0	The west road leads to the beach.
+3	42426	adv	west	0	We traveled west for two hours.
+4	42419	noun	west	0	Many people moved to the west for work.
+5	42422	adj	west	0	A cold west wind blew across the field all afternoon.
+
+@ what
+1	42433	pron	what	1	Grandma could not explain what made her cry during the speech.
+2	42428	det	what	0	Tell me what book you are reading.
+3	42434	pron	what	0	I understand what you mean.
+4	42431	det	what	0	She said what a lovely day it was!
+5	67988	intj	What	0	What! You finished the whole marathon in three hours?
+
+@ when
+1	42442	adv	when	1	I keep wondering when we will see each other again.
+2	42448	conj	when	0	Call me when you get home.
+3	42449	conj	when	0	I loved this game when I was young.
+4	42446	adv	when	0	I remember when we first met.
+5	42454	noun	when	0	Nobody knows the when of the trip.
+
+@ where
+1	42455	adv	where	1	She still remembers exactly where she first met her husband.
+2	42457	adv	where	0	This is where we first met.
+3	42458	adv	where	0	Please sit where you like; we have plenty of space.
+4	42460	adv	where	0	I know where the keys are.
+5	42466	noun	where	0	A good report always explains the who, the what, and the where.
+
+@ arrange
+1	43271	verb	arrange	1	We stayed up late to arrange the wedding flowers perfectly.
+2	43271	verb	arrange	0	Please arrange the books by color.
+3	43272	verb	arranged	0	They arranged a meeting for Friday afternoon.
+4	43271	verb	arranging	0	I am arranging the chairs for the party tonight.
+5	43271	verb	arranges	0	She always arranges the room before guests arrive.
+
+@ arrangement
+1	43277	noun	arrangement	1	Everyone gasped at the beautiful flower arrangement on the altar.
+2	43280	noun	arrangement	0	We made an arrangement to meet.
+3	43278	noun	arrangement	0	The seating arrangement changed.
+4	43276	noun	arrangement	0	The new arrangement of desks made the classroom feel bigger.
+5	43279	noun	arrangements	0	Our travel arrangements are ready for the big trip.
+
+@ asleep
+1	43282	adj	asleep	1	The baby finally fell asleep after crying for an hour.
+2	43282	adj	asleep	0	I fell asleep on the bus.
+3	43282	adj	asleep	0	The dog was asleep by the door.
+4	43282	adj	asleep	0	She is still asleep.
+5	43282	adj	asleep	0	Do not wake him; he is asleep.
+
+@ assistant
+1	43289	noun	assistant	1	The teaching assistant calmed the crying child during the fire drill.
+2	43289	noun	assistant	0	Ask the assistant for help with your homework.
+3	43291	noun	assistant	0	My phone's digital assistant reminded me about the meeting.
+4	43290	noun	assistant	0	The shop assistant was kind.
+5	43286	adj	assistant	0	He has an assistant role.
+
+@ athlete
+1	43292	noun	athlete	1	The athlete pushed through the pain to finish the marathon.
+2	43293	noun	athlete	0	She is a strong athlete.
+3	43292	noun	athlete	0	The athlete won a medal.
+4	43292	noun	athlete	0	Our athlete trains hard.
+5	43292	noun	athlete	0	Every athlete needs rest.
+
+@ attack
+1	43295	noun	attack	1	The soldiers braced themselves as the surprise attack began at dawn.
+2	43310	verb	attack	0	The dog may attack if scared.
+3	43295	noun	attack	0	The attack was sudden.
+4	43313	verb	attacks	0	She always attacks difficult problems with confidence and creativity.
+5	43304	noun	attack	0	Grandpa had a bad asthma attack last winter and was scared.
+
+@ attend
+1	43321	verb	attend	1	I always attend Sunday service with my grandmother at church.
+2	43321	verb	attend	0	Please attend the meeting.
+3	43321	verb	attended	0	She attended her cousin's wedding last weekend.
+4	43321	verb	attends	0	He always attends class on time, no matter the weather.
+5	43321	verb	attending	0	We are attending the concert together tonight.
+
+@ attention
+1	43346	noun	attention	1	Please pay close attention when the teacher explains the fire safety rules.
+2	43346	noun	attention	0	The child wants attention.
+3	43346	noun	attention	0	This sign gets your attention.
+4	43346	noun	attention	0	Give attention to the details.
+5	43346	noun	attention	0	Her attention moved to the door.
+
+@ attractive
+1	43352	adj	attractive	1	Everyone at the party complimented her attractive new dress.
+2	43350	adj	attractive	0	The garden is attractive in spring.
+3	43352	adj	attractive	0	She has an attractive smile.
+4	43351	adj	attractive	0	This is an attractive offer.
+5	43350	adj	attractive	0	The city is attractive to tourists.
+
+@ audience
+1	43353	noun	audience	1	The audience clapped loudly as the young singer took her final bow.
+2	43353	noun	audience	0	The singer thanked the audience.
+3	43353	noun	audience	0	A large audience came tonight.
+4	43353	noun	audience	0	The audience was quiet.
+5	43355	noun	audience	0	The film found its audience.

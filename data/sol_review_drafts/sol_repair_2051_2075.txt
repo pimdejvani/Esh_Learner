@@ -1,0 +1,138 @@
+@ marriage
+1	57578	noun	marriage	1	Their marriage became stronger after they solved problems together.
+2	57578	noun	marriage	0	They worked hard to protect their marriage during a difficult year.
+3	57578	noun	marriage	0	They celebrated ten years of marriage.
+4	57578	noun	marriage	0	Her parents have a happy marriage.
+5	57578	noun	marriage	0	The couple talked about marriage before the wedding.
+@ meanwhile
+1	57575	adv	meanwhile	1	Meanwhile, Dad cooked dinner while we set the table.
+2	57575	adv	meanwhile	0	The children packed their bags; meanwhile, Dad checked the car.
+3	57575	adv	meanwhile	0	The bus was late; meanwhile, we waited in the rain.
+4	57575	adv	meanwhile	0	She studied; meanwhile, her brother played outside.
+5	57575	adv	meanwhile	0	Meanwhile, the cake cooled on the table.
+@ measure
+1	57657	verb	measured	1	She measured the window twice before ordering new curtains.
+2	57657	verb	measure	0	Use this ruler to measure the length of the box.
+3	57658	verb	measures	0	The table measures two metres from end to end.
+4	57657	verb	measuring	0	He is measuring the flour for the cake.
+5	57657	verb	measure	0	The nurse will measure your height and weight.
+@ medium
+1	57623	adj	medium	1	She exchanged the large jacket for a medium one.
+2	57623	adj	medium	0	Use a medium bowl to mix the eggs and flour.
+3	57623	adj	medium	0	He ordered a medium coffee with milk.
+4	57623	adj	medium	0	Cook the onions over medium heat for five minutes.
+5	57623	adj	medium	0	The dog grew to a medium size.
+@ mental
+1	57588	adj	mental	1	Taking breaks can support your mental health.
+2	57588	adj	mental	0	Solving the puzzle required a great deal of mental effort.
+3	57588	adj	mental	0	The game needs mental skill as well as luck.
+4	57588	adj	mental	0	The long examination caused severe mental fatigue.
+5	57588	adj	mental	0	Reading can be good mental exercise.
+@ mess
+1	57675	noun	mess	1	The puppy made a mess with its muddy paws.
+2	57675	noun	mess	0	Wet shoes left a muddy mess by the door.
+3	57675	noun	mess	0	Please clean up this mess before dinner.
+4	57675	noun	mess	0	The kitchen was a mess after the party.
+5	57675	noun	mess	0	He dropped the paint and made a mess.
+@ mild
+1	57671	adj	mild	1	The winter was so mild that flowers appeared in February.
+2	57673	adj	mild	0	This curry has a mild flavor and is not very spicy.
+3	57670	adj	mild	0	He returned to work after a mild illness.
+4	57667	adj	mild	0	The teacher gave her a mild warning for being late.
+5	57666	adj	mild	0	Her mild manner helped the nervous child relax.
+@ mix
+1	57697	verb	mix	1	Mix the eggs and milk in a large bowl.
+2	57697	verb	mix	0	Mix the paint until the colour is even.
+3	57698	verb	mix	0	Do not mix red socks with white clothes.
+4	57697	verb	mix	0	We mix flour and water to make dough.
+5	57697	verb	mix	0	Mix the salad before serving it.
+@ mixture
+1	57628	noun	mixture	1	The baker made a mixture of flour, eggs, and milk.
+2	57628	noun	mixture	0	The bowl contained a sweet mixture of fruit and cream.
+3	57628	noun	mixture	0	Stir the mixture until it is smooth.
+4	57628	noun	mixture	0	The mixture smelled strongly of garlic.
+5	57628	noun	mixture	0	Pour the mixture into the cake tin.
+@ mood
+1	57710	noun	mood	1	The music put everyone in a cheerful mood.
+2	57710	noun	mood	0	The good news immediately improved her mood.
+3	57710	noun	mood	0	She was in a quiet mood after work.
+4	57710	noun	mood	0	His mood changed when he heard the news.
+5	57710	noun	mood	0	A good walk can lift your mood.
+@ mud
+1	57717	noun	mud	1	The children came home covered in mud after the game.
+2	57717	noun	mud	0	Thick mud covered the road after the storm.
+3	57717	noun	mud	0	My boots were stuck in the mud.
+4	57717	noun	mud	0	The rain turned the path into mud.
+5	57717	noun	mud	0	The pig rolled happily in the mud.
+@ murder
+1	57738	noun	murder	1	The detective read every clue in the murder case.
+2	57738	noun	murder	0	A local detective was assigned to investigate the murder.
+3	57738	noun	murder	0	Police were called after the murder.
+4	57738	noun	murder	0	The book is about a murder in a small town.
+5	57738	noun	murder	0	The court heard evidence about the murder.
+@ muscle
+1	57752	noun	muscle	1	Swimming helps build muscle in your arms and legs.
+2	57752	noun	muscle	0	Regular exercise can strengthen each muscle in your back.
+3	57752	noun	muscle	0	He pulled a muscle while lifting the box.
+4	57752	noun	muscle	0	This exercise makes each muscle work.
+5	57752	noun	muscle	0	Her leg muscle was sore after the race.
+@ mystery
+1	57759	noun	mystery	1	Who left the flowers was still a mystery.
+2	57759	noun	mystery	0	The sudden disappearance of the boat remains a mystery.
+3	57759	noun	mystery	0	The missing key remains a mystery.
+4	57759	noun	mystery	0	We watched a film about a mystery at sea.
+5	57759	noun	mystery	0	Solving the mystery took the whole afternoon.
+@ nail
+1	57796	noun	nail	1	She painted each nail bright blue for the party.
+2	57800	noun	nail	0	He used a hammer to drive the nail into the wall.
+3	57800	noun	nail	0	A rusty nail was sticking out of the old board.
+4	57796	noun	nail	0	Dirt was under the child's nail.
+5	57800	noun	nail	0	She pulled the bent nail from the fence.
+@ narrative
+1	57775	noun	narrative	1	The film's narrative moves backward from the final scene.
+2	57772	noun	narrative	0	Her narrative of the journey kept the audience interested.
+3	57769	adj	narrative	0	She wrote a narrative essay about her holiday.
+4	57769	adj	narrative	0	The teacher explained the narrative structure.
+5	57769	adj	narrative	0	The book uses a simple narrative style.
+@ nation
+1	57814	noun	nation	1	The nation celebrated when its team won the final.
+2	57814	noun	nation	0	The victory brought people across the nation together.
+3	57814	noun	nation	0	The nation has its own language and traditions.
+4	57814	noun	nation	0	People across the nation watched the speech.
+5	57814	noun	nation	0	The new law affected the whole nation.
+@ native
+1	57781	adj	native	1	Thai is her native language because she learned it from birth.
+2	57781	adj	native	0	She returned to her native city after many years abroad.
+3	57781	adj	native	0	He returned to his native country.
+4	57784	adj	native	0	The bird is native to this island.
+5	57784	adj	native	0	They use native plants in the garden.
+@ naturally
+1	57777	adv	naturally	1	The bird naturally builds its nest in the spring.
+2	57777	adv	naturally	0	Cats naturally like to climb high places.
+3	57777	adv	naturally	0	The river naturally follows the lowest ground.
+4	57777	adv	naturally	0	Children naturally ask many questions.
+5	57777	adv	naturally	0	The leaves naturally fall in autumn.
+@ needle
+1	57835	noun	needle	1	Use a needle and thread to mend the torn shirt.
+2	57835	noun	needle	0	She threaded the needle before repairing the shirt.
+3	57835	noun	needle	0	Be careful because the needle is sharp.
+4	57835	noun	needle	0	She pushed the needle through the cloth.
+5	57835	noun	needle	0	The nurse used a clean needle for the injection.
+@ neighbourhood
+1	57780	noun	neighbourhood	1	Our neighbourhood has a park where children play.
+2	57780	noun	neighbourhood	0	Families in the neighbourhood organized a street party.
+3	57780	noun	neighbourhood	0	She knows every street in the neighbourhood.
+4	57780	noun	neighbourhood	0	The neighbourhood is quiet after ten o'clock.
+5	57780	noun	neighbourhood	0	They opened a cafe in the neighbourhood.
+@ nor
+1	57823	conj	nor	1	Neither the bus nor the train arrived on time.
+2	57823	conj	nor	0	The room had neither heating nor hot water.
+3	57823	conj	nor	0	She likes neither coffee nor tea.
+4	57823	conj	nor	0	He did not smile, nor did he speak.
+5	57823	conj	nor	0	Neither rain nor wind stopped the race.
+@ northern
+1	57829	adj	northern	1	They visited a northern village near the mountains.
+2	57829	adj	northern	0	Snow covered the northern hills throughout winter.
+3	57829	adj	northern	0	The northern road is closed in winter.
+4	57829	adj	northern	0	We saw northern lights in the sky.
+5	57829	adj	northern	0	The northern side of the house is cooler.

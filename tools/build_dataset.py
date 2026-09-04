@@ -7,7 +7,7 @@ collocations / related_words per SPEC.md section 5.
 Run: python tools/build_dataset.py
 Output: vocab_app/assets/seed/vocab.db (SQLite, schema = SPEC.md section 4)
 
-See NOTES.md for exactly what is real-sourced vs. approximated/generated.
+See docs/NOTES.md for exactly what is real-sourced vs. approximated/generated.
 """
 import re
 import sqlite3
@@ -29,7 +29,7 @@ except LookupError:
     print("WARNING: nltk 'wordnet' corpus not downloaded -- run "
           "python -m nltk.downloader wordnet . Falling back to is_giveaway=0 "
           "for all related_words rows and skipping hypernym/part_of rows "
-          "(same as before this pass). See NOTES.md section 3.")
+          "(same as before this pass). See docs/NOTES.md section 3.")
 except ImportError:
     HAVE_WORDNET = False
     print("WARNING: nltk not installed (pip install nltk) -- see above.")
@@ -252,7 +252,7 @@ def build_sentences(word, pos, meaning_th):
     # when present for this headword (tools/llm_sentences.py) -- falls back
     # to the SENT_TEMPLATES mechanism below only if the word is missing from
     # that dataset, or (as a safety net) if its cloze spans somehow fail to
-    # resolve. See NOTES.md section 1 for which ~9 words fall back and why.
+    # resolve. See docs/NOTES.md section 1 for which ~9 words fall back and why.
     llm = LLM_SENTENCES.get(word)
     if llm:
         out = []
@@ -369,7 +369,7 @@ RELATED_FALLBACK = {
 # a WordNet SENSE that is not the sense this app actually teaches for that
 # headword -- documented human/LLM sense-selection judgment call (SPEC.md
 # section 5's sanctioned "เลือก sense" role), not a silent auto-accept of
-# whatever WordNet returns. See NOTES.md section 3 for the reasoning per
+# whatever WordNet returns. See docs/NOTES.md section 3 for the reasoning per
 # pair.
 HYPERNYM_MERONYM_SENSE_MISMATCH_EXCLUDE = {
     # fish's ONLY WordNet member_holonym is "school.n.07" (a school OF FISH,
@@ -585,7 +585,7 @@ def main():
     pos_map = {w.lower(): pos for w, pos, cefr, fr in WORDS}
 
     # Words whose meaning_th could NOT be verified against a real Wiktionary
-    # Thai translation (tools/thai_data.py's docstring + NOTES.md section 2
+    # Thai translation (tools/thai_data.py's docstring + docs/NOTES.md section 2
     # explain why per word) -- translation_source stays flagged as
     # approximated for exactly these, instead of a blanket claim of "real"
     # sourcing that wouldn't be true for them. Everyone else got a real,

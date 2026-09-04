@@ -1,0 +1,150 @@
+@ typically
+1	60974	adv	typically	1	Students typically arrive a few minutes before class.
+2	60974	adv	typically	0	She typically finishes her work by five o'clock.
+3	60974	adv	typically	0	The weather in this region typically stays mild all year.
+4	60974	adv	typically	0	The machine typically slows down when its battery is low.
+5	60974	adv	typically	0	Birds in the forest typically nest in tall trees.
+@ tyre
+1	61001	noun	tyre	1	The car's new tyre has better grip on wet roads.
+2	61001	noun	tyre	0	She checked the tyre pressure before driving to work.
+3	61001	noun	tyre	0	The mechanic replaced the damaged tyre on the bicycle.
+4	61001	noun	tyre	0	A flat tyre stopped the delivery van from moving.
+5	61001	noun	tyre	0	He tightened the wheel nuts after changing the tyre.
+@ ugly
+1	61017	adj	ugly	1	The old house has an ugly facade that no one likes.
+2	61017	adj	ugly	0	She wore a dress with an ugly pattern that stood out.
+3	61017	adj	ugly	0	The painting looked ugly under the bright lights.
+4	61017	adj	ugly	0	That new building has an ugly design from every angle.
+5	61017	adj	ugly	0	The room felt ugly with the dark, mismatched furniture.
+@ unable
+1	61007	adj	unable	1	She was unable to finish the race due to a sudden injury.
+2	61007	adj	unable	0	The team was unable to solve the puzzle before time ran out.
+3	61007	adj	unable	0	He felt unable to speak after hearing the shocking news.
+4	61007	adj	unable	0	The child was unable to reach the top shelf by himself.
+5	61007	adj	unable	0	They were unable to attend the meeting because of the storm.
+@ uncomfortable
+1	61009	adj	uncomfortable	1	After sitting for an hour, she found the old wooden chair uncomfortable.
+2	61009	adj	uncomfortable	0	The tight shoes made her feel uncomfortable during the long walk.
+3	61009	adj	uncomfortable	0	He wore the stiff collar, which felt uncomfortable against his neck.
+4	61009	adj	uncomfortable	0	The room was too cold, and the blanket was uncomfortable.
+5	61009	adj	uncomfortable	0	The new uniform felt uncomfortable under the hot sun.
+@ underwear
+1	61038	noun	underwear	1	She put on clean underwear before putting on her dress.
+2	61038	noun	underwear	0	The laundry basket is full of dirty underwear after the weekend.
+3	61038	noun	underwear	0	He forgot to pack clean underwear for the overnight trip.
+4	61038	noun	underwear	0	The child's underwear was too tight and made him uncomfortable.
+5	61038	noun	underwear	0	Wash your underwear every day to stay clean and healthy.
+@ unemployed
+1	61014	adj	unemployed	1	She felt anxious after becoming unemployed last month.
+2	61014	adj	unemployed	0	Many people in the city are unemployed due to factory closures.
+3	61014	adj	unemployed	0	He applied for jobs every day but remained unemployed.
+4	61014	adj	unemployed	0	The community center offers support to the unemployed.
+5	61014	adj	unemployed	0	They visited the job fair to help the unemployed find work.
+@ unemployment
+1	61027	noun	unemployment	1	After the factory closed, unemployment rose sharply in the town.
+2	61027	noun	unemployment	0	She applied for benefits due to long-term unemployment.
+3	61027	noun	unemployment	0	The government introduced new programs to reduce unemployment.
+4	61027	noun	unemployment	0	Many families struggled during the period of high unemployment.
+5	61027	noun	unemployment	0	He felt lost and anxious because of his unemployment.
+@ unfair
+1	61032	adj	unfair	1	The teacher's decision to favor one student was unfair.
+2	61032	adj	unfair	0	It felt unfair when only two people got tickets to the concert.
+3	61032	adj	unfair	0	The game was unfair because the rules changed mid-play.
+4	61032	adj	unfair	0	She thought it unfair that her brother got more allowance.
+5	61032	adj	unfair	0	The judge ruled the trial was unfair due to bias.
+@ union
+1	61043	noun	union	1	The union of the two rivers created a wide, deep channel.
+2	61043	noun	union	0	The union of the teams brought new energy to the project.
+3	61045	noun	union	0	A union between the schools improved student exchange programs.
+4	61043	noun	union	0	The union of the metal pieces made the structure stronger.
+5	61043	noun	union	0	The union of the two railway companies created a larger network.
+@ unless
+1	61040	conj	unless	1	You can't stay unless you finish your homework.
+2	61040	conj	unless	0	I won't go to the party unless my friend comes too.
+3	61040	conj	unless	0	She won't leave unless the rain stops.
+4	61040	conj	unless	0	We can't start the meeting unless everyone arrives.
+5	61040	conj	unless	0	He won't eat the food unless it's cooked properly.
+@ unlike
+1	61058	adj	unlike	1	The two paintings are unlike in style and color.
+2	61058	adj	unlike	0	Her opinion is unlike his on most topics.
+3	61058	adj	unlike	0	The twins look unlike each other despite sharing parents.
+4	61058	adj	unlike	0	This fruit is unlike any I've eaten before.
+5	61058	adj	unlike	0	The weather in winter is unlike the weather we get here in summer.
+@ unlikely
+1	61069	adj	unlikely	1	The team's victory was unlikely after their poor performance.
+2	61069	adj	unlikely	0	It is unlikely that she will arrive on time due to the heavy rain.
+3	61069	adj	unlikely	0	A snowstorm in July is unlikely in this region.
+4	61069	adj	unlikely	0	He thought it unlikely that the package would reach him by Friday.
+5	61069	adj	unlikely	0	Winning the lottery is extremely unlikely.
+@ unnecessary
+1	61074	adj	unnecessary	1	The extra instructions were unnecessary for the simple task.
+2	61074	adj	unnecessary	0	She felt the loud music was unnecessary during the meeting.
+3	61074	adj	unnecessary	0	His apology was unnecessary after the misunderstanding.
+4	61074	adj	unnecessary	0	The long explanation was unnecessary for the experienced team.
+5	61074	adj	unnecessary	0	The designer removed the unnecessary buttons from the app.
+@ unpleasant
+1	61073	adj	unpleasant	1	The smell from the garbage was unpleasant and made everyone leave the room.
+2	61073	adj	unpleasant	0	She felt an unpleasant chill while walking through the dark hallway.
+3	61073	adj	unpleasant	0	The teacher gave an unpleasant reminder about the upcoming exam.
+4	61073	adj	unpleasant	0	He had an unpleasant experience at the dentist yesterday.
+5	61073	adj	unpleasant	0	The weather turned unpleasant after the storm hit the coast.
+@ update
+1	61076	noun	update	1	She sent an update about the meeting time.
+2	61079	noun	update	0	The app downloaded a new update this morning.
+3	61076	noun	update	0	I need an update on the project status.
+4	61076	noun	update	0	The news website publishes an update every hour.
+5	61076	noun	update	0	He shared an update from the team leader.
+@ upon
+1	61085	prep	upon	1	The book lay upon the shelf, untouched for years.
+2	61085	prep	upon	0	She leaned upon the railing while watching the sunset.
+3	61085	prep	upon	0	The weight of the decision rested upon his shoulders.
+4	61085	prep	upon	0	Upon hearing the news, she immediately called her family.
+5	61085	prep	upon	0	The final decision depends upon the results of the vote.
+@ upset
+1	61092	adj	upset	1	She felt upset after the argument with her friend.
+2	61092	adj	upset	0	The child became upset when the toy broke.
+3	61092	adj	upset	0	He looked upset during the meeting.
+4	61092	adj	upset	0	They were upset about the sudden change in plans.
+5	61092	adj	upset	0	The dog seemed upset when left alone.
+@ valuable
+1	61086	adj	valuable	1	This antique watch is valuable and rare.
+2	61086	adj	valuable	0	She found a valuable coin in the old box.
+3	61086	adj	valuable	0	The museum keeps valuable artifacts safe.
+4	61086	adj	valuable	0	He gave a valuable gift to his sister.
+5	61086	adj	valuable	0	The data is valuable for research purposes.
+@ value
+1	61128	noun	value	1	The value of kindness in tough times is hard to measure.
+2	61128	noun	value	0	A good teacher brings great value to any classroom.
+3	61128	noun	value	0	The value of clean water cannot be overstated.
+4	61128	noun	value	0	This old book has more value than its price suggests.
+5	61128	noun	value	0	Her honesty gives her life real value.
+@ various
+1	61089	det	various	1	Various students left their books behind.
+2	61089	det	various	0	Various tools were found in the toolbox.
+3	61089	det	various	0	Various animals live in the forest.
+4	61089	det	various	0	Various colors appeared in the sunset.
+5	61089	det	various	0	Various people attended the meeting.
+@ version
+1	61110	noun	version	1	This new version of the app has better security features.
+2	61110	noun	version	0	The museum displays an early version of the artist's famous painting.
+3	61110	noun	version	0	She offered a different version of the story.
+4	61110	noun	version	0	We need the latest version of the software.
+5	61110	noun	version	0	That version of the game is no longer available.
+@ victim
+1	61142	noun	victim	1	The young man became a victim of a cruel prank.
+2	61142	noun	victim	0	She was a victim of the storm's sudden violence.
+3	61142	noun	victim	0	The animal was a victim of careless handling.
+4	61142	noun	victim	0	He felt like a victim of unfair treatment.
+5	61142	noun	victim	0	The child was a victim of bullying at school.
+@ viewer
+1	61121	noun	viewers	1	Millions of viewers watched the final episode on television.
+2	61121	noun	viewer	0	She became a regular viewer of the cooking show.
+3	61121	noun	viewer	0	The viewer paused the program to answer the phone.
+4	61121	noun	viewer	0	Each viewer formed a different opinion of the documentary.
+5	61121	noun	viewer	0	The viewer changed the channel when the advertisements began.
+@ violent
+1	61151	adj	violent	1	The violent storm knocked down the old oak tree.
+2	61151	adj	violent	0	A violent gust of wind blew the door open.
+3	61151	adj	violent	0	The violent crash echoed through the canyon.
+4	61151	adj	violent	0	A violent wave struck the side of the fishing boat.
+5	61151	adj	violent	0	The violent motion of the boat made everyone sick.

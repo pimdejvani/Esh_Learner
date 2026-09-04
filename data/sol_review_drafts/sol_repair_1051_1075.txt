@@ -1,0 +1,104 @@
+@ great
+1	33975	adj	great	1	Everyone cheered when she scored a great goal in the final minute.
+2	33972	adj	great	0	They live in a great big house.
+3	33976	adj	great	0	It was a great decision for the team.
+4	33989	adv	great	0	The plan worked great for us.
+5	33985	noun	greats	0	Many people call him one of the greats of modern music.
+
+@ green
+1	34004	adj	green	1	The green leaves moved in the wind.
+2	33990	noun	Green	0	Green is my favorite color.
+3	34006	adj	green	0	The bananas are still green.
+4	34007	adj	green	0	I am green at this new job.
+5	34027	verb	greening	0	The trees are greening again as spring arrives.
+
+@ grey
+1	34031	adj	grey	1	The sky is grey before the rain.
+2	34031	adj	grey	0	He wore a grey jacket.
+3	34034	noun	Grey	0	Grey looks calm with blue.
+4	34031	adj	greyer	0	The wall looks greyer in the shade.
+5	34033	verb	greying	0	His hair is greying slowly.
+
+@ guitar
+1	34068	noun	guitar	1	Her guitar music made everyone smile.
+2	34068	noun	guitar	0	I keep my guitar near the window.
+3	34068	noun	guitars	0	The shop sells cheap guitars for students.
+4	34068	noun	guitar	0	My sister wants a guitar for her birthday.
+5	34068	noun	guitars	0	The band tuned their guitars before the show.
+
+@ gym
+1	34073	noun	gym	1	Going to the gym helps me feel strong.
+2	34074	noun	gym	0	We have gym on Tuesday morning.
+3	34073	noun	gyms	0	Two new gyms opened near the station.
+4	34074	noun	gym	0	My daughter forgot her shoes for gym today.
+5	34073	noun	gym	0	The new gym has yoga classes every morning.
+
+@ hair
+1	34078	noun	hair	1	I cut my hair before the school photo.
+2	34076	noun	hair	0	A hair was on my jacket.
+3	34076	noun	hairs	0	She found three hairs in the brush.
+4	34083	noun	hair	0	I won the race by a hair.
+5	34077	noun	hair	0	The cat's hair covered the whole sofa.
+
+@ half
+1	34089	noun	half	1	I ate half of the cake and saved the rest.
+2	34101	adj	half	0	We waited for half an hour.
+3	34095	noun	half	0	One half is the same as fifty percent.
+4	34105	adv	half	0	The door was half open.
+5	34109	verb	halved	0	The cook halved the sandwich for us.
+
+@ hand
+1	34112	noun	hand	1	She held my hand when I felt scared.
+2	34143	verb	hand	0	Please hand me the blue pen.
+3	34115	noun	hands	0	The clock hands show three o'clock.
+4	34143	verb	handed	0	He handed the teacher his homework.
+5	34144	verb	handed	0	He gently handed his grandmother across the busy street.
+
+@ happen
+1	34150	verb	happen	1	Good things can happen when you keep trying.
+2	34150	verb	happened	0	What happened after the lights went out?
+3	34152	verb	happening	0	A strange thing is happening outside.
+4	34150	verb	happens	0	This happens every time it rains.
+5	34150	verb	happen	0	What will happen to the old building?
+
+@ he
+1	34271	pron	He	1	He waited with me when I was worried.
+2	34271	pron	He	0	He plays football after school.
+3	34271	pron	he	0	I think he knows the answer.
+4	34271	pron	He	0	He and his sister walk home together.
+5	34271	pron	he	0	When he arrived, we started dinner.
+
+@ health
+1	34368	noun	health	1	Your health is more important than your homework.
+2	34370	noun	health	0	Walking every day can improve your health.
+3	34368	noun	health	0	The doctor asked about my health.
+4	34369	noun	health	0	Regular exercise supports both your mental and physical health.
+5	34372	noun	health	0	They raised a glass to her health.
+
+@ hello
+1	34388	noun	hello	1	Her hello made me feel welcome.
+2	34388	noun	hello	0	Say hello to your new classmate.
+3	67802	intj	Hello	0	Hello! I did not expect to see you here today.
+4	67803	intj	Hello	0	He answered the phone and said Hello in a cheerful voice.
+5	34388	noun	hellos	0	The room was full of warm hellos.
+
+@ her
+1	34403	det	Her	1	Her kind message made my day better.
+2	34405	pron	her	0	I gave the book to her yesterday.
+3	34403	det	her	0	We visited her family last weekend.
+4	34405	pron	her	0	Please tell her the meeting time.
+5	34406	noun	her	0	We are not sure if the puppy is a him or a her.
+
+@ here
+1	34407	adv	here	1	I am here for you when you need me.
+2	34407	adv	here	0	Please sit here next to me.
+3	34408	adv	Here	0	Here is where the story becomes exciting.
+4	34414	adv	here	0	Come here and look at this photo.
+5	34416	noun	here	0	From here, we can see the river.
+
+@ hey
+1	67814	intj	Hey	1	Hey! Watch out, that car is coming straight at you!
+2	67817	intj	Hey	0	Hey, how's it going? I haven't seen you in ages.
+3	67815	intj	Hey	0	Hey! Stop pulling your sister's hair right now.
+4	67816	intj	Hey	0	Hey! I didn't know you could play the guitar so well.
+5	67818	intj	Hey	0	Hey? Could you say that again? I didn't catch it.

@@ -9,7 +9,7 @@
 1	47456	adj	human	1	It is human.
 2	47456	adj	human	0	The human body needs clean water every day.
 3	47458	adj	more human	0	Her kind response felt more human than the official letter.
-4	47459	noun	humans	0	Humans have lived in this region for thousands of years.
+4	47459	noun	Humans	0	Humans have lived in this region for thousands of years.
 5	47457	adj	most human	0	Admitting his fear was the most human moment in the film.
 
 @ hurt
@@ -58,7 +58,7 @@
 1	47529	adv	immediately	1	We do it immediately.
 2	47529	adv	immediately	0	Call the doctor immediately if the pain gets worse.
 3	47530	adv	immediately	0	The pharmacy is immediately beside the clinic.
-4	47531	conj	immediately	0	Immediately the bell rang, the students left the room.
+4	47531	conj	Immediately	0	Immediately the bell rang, the students left the room.
 5	47529	adv	immediately	0	She immediately recognized her missing cat.
 
 @ impossible
@@ -150,7 +150,7 @@
 2	47610	adv	instead	0	We stayed home instead because it was raining.
 3	47610	adv	instead	0	Use a pencil instead of a pen.
 4	47610	adv	instead	0	She ordered tea, but the waiter brought coffee instead.
-5	47610	adv	instead	0	Instead, we decided to take the earlier train.
+5	47610	adv	Instead	0	Instead, we decided to take the earlier train.
 
 @ instruction
 1	47614	noun	instructions	1	I followed the rescue instructions and helped the injured hiker stay calm.

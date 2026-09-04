@@ -1,0 +1,60 @@
+@ extent
+1	63379	noun	extent	1	They mapped the full extent of the forest, which covered over fifty square miles.
+2	63379	noun	extent	0	She explored the extent of the underground cave system.
+3	63379	noun	extent	0	The extent of the damage was surprising after the storm.
+4	63379	noun	extent	0	The survey measured the extent of internet access across rural areas.
+5	63379	noun	extent	0	The extent of the project's success surprised everyone.
+@ external
+1	63384	adj	external	1	The external door was painted blue.
+2	63384	adj	external	0	We checked the external pipes for leaks.
+3	63384	adj	external	0	The external walls need new insulation.
+4	63384	adj	external	0	The external surface of the building felt cold in winter.
+5	63384	adj	external	0	A camera mounted on the external wall captured the whole yard.
+@ extraordinary
+1	63400	adj	extraordinary	1	The storm was extraordinary, with winds over 100 mph.
+2	63400	adj	extraordinary	0	She gave an extraordinary performance at the school play.
+3	63400	adj	extraordinary	0	The museum has an extraordinary collection of ancient tools.
+4	63400	adj	extraordinary	0	He made an extraordinary discovery while hiking in the mountains.
+5	63400	adj	extraordinary	0	The view from the cliff was extraordinary and breathtaking.
+@ facility
+1	63405	noun	facility	1	The new hospital facility has modern equipment and trained staff.
+2	63405	noun	facility	0	The central bus facility is under renovation.
+3	63405	noun	facility	0	The school facility includes a gym, science labs, and a library.
+4	63405	noun	facility	0	An emergency medical facility was set up near the disaster site.
+5	63405	noun	facility	0	The airport facility handles thousands of passengers daily.
+@ failure
+1	63412	noun	failure	1	The team's failure to score in the final minutes cost them the championship.
+2	63412	noun	failure	0	Her failure to complete the project on time led to a formal warning.
+3	63412	noun	failure	0	The experiment was a failure, but the data helped improve the next design.
+4	63412	noun	failure	0	The company's failure to adapt to digital trends caused its decline.
+5	63412	noun	failure	0	His failure to follow instructions resulted in the machine shutting down.
+@ faith
+1	63439	noun	faith	1	She has faith in her brother's ability to fix the car.
+2	63439	noun	faith	0	The team showed faith in their coach during the tough season.
+3	63439	noun	faith	0	He retained faith in the project even when others gave up.
+4	63439	noun	faith	0	We need faith in science to overcome global challenges.
+5	63439	noun	faith	0	Her faith in the system helped her stay calm under pressure.
+@ fault
+1	63418	noun	fault	1	It was entirely my fault that the vase broke.
+2	63418	noun	fault	0	She said it was her fault that the meeting started late.
+3	63418	noun	fault	0	He admitted fault after the accident.
+4	63418	noun	fault	0	The teacher said the student was at fault, but the mistake was not serious.
+5	63418	noun	fault	0	They argued over who was at fault for the delay.
+@ feather
+1	63469	noun	feather	1	The eagle's feather glistened in the morning sun.
+2	63469	noun	feather	0	She carefully placed the feather into her hat.
+3	63469	noun	feather	0	A small bird lost a feather during its flight.
+4	63469	noun	feather	0	The owl's feather felt soft against his skin.
+5	63469	noun	feather	0	He found a single feather near the nest.
+@ fee
+1	63445	noun	fee	1	The gym charges a monthly fee for membership.
+2	63447	noun	fee	0	She paid the late fee to renew her library book.
+3	63445	noun	fee	0	The university requires a registration fee each semester.
+4	63447	noun	fee	0	They added a service fee to the concert ticket price.
+5	63447	noun	fee	0	The airport charges a security fee for every flight.
+@ feedback
+1	63463	noun	feedback	1	The teacher gave detailed feedback on my project report.
+2	63463	noun	feedback	0	After the meeting, we received helpful feedback from the client.
+3	63463	noun	feedback	0	She asked for feedback before making the final decision.
+4	63463	noun	feedback	0	The team used feedback to improve their presentation skills.
+5	63463	noun	feedback	0	He shared his feedback with the group during the review.

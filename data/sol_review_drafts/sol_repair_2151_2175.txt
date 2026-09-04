@@ -1,0 +1,150 @@
+@ private
+1	58572	adj	private	1	She keeps her private thoughts in a locked diary.
+2	58572	adj	private	0	The company operates as a private business, not owned by the government.
+3	58572	adj	private	0	He prefers private conversations over public debates.
+4	58572	adj	private	0	The meeting was held in a private room away from the office.
+5	58572	adj	private	0	They shared a private joke only the two of them understood.
+@ producer
+1	58595	noun	producer	1	The local food producer supplies fresh vegetables to the market every morning.
+2	58595	noun	producer	0	A small company that makes handmade soap is a producer of eco-friendly products.
+3	58596	noun	producer	0	The film producer worked with actors and directors to complete the movie.
+4	58595	noun	producer	0	This factory is a major producer of plastic containers for supermarkets.
+5	58596	noun	producer	0	The artist's first album was released by a well-known music producer.
+@ production
+1	58608	noun	production	1	The factory's new machine began production this morning.
+2	58608	noun	production	0	She watched the entire production of the play from start to finish.
+3	58608	noun	production	0	The production of clean energy is growing fast in the region.
+4	58608	noun	production	0	They started production on the new car model last week.
+5	58608	noun	production	0	The film's production took six months to complete.
+@ profession
+1	58629	noun	profession	1	After years of training, she entered the medical profession.
+2	58629	noun	profession	0	Teaching is a profession that requires patience and skill.
+3	58629	noun	profession	0	He chose engineering as his profession.
+4	58629	noun	profession	0	Technology has changed the legal profession in many ways.
+5	58629	noun	profession	0	People in her profession must complete regular training.
+@ profit
+1	58631	noun	profit	1	The company's profit increased after the new product launch.
+2	58631	noun	profit	0	She calculated the profit from her online store each month.
+3	58631	noun	profit	0	The small business made a steady profit over the last quarter.
+4	58631	noun	profit	0	They reinvested the profit into expanding their factory.
+5	58631	noun	profit	0	The profit from the sale covered the cost of the materials.
+@ promote
+1	58600	verb	promoted	1	The company promoted her to senior project manager.
+2	58600	verb	promoted	0	They promoted him to department head after his successful campaign.
+3	58600	verb	promoted	0	She was promoted to lead the international expansion team.
+4	58600	verb	promoted	0	The school promoted the assistant teacher to principal.
+5	58600	verb	promoted	0	He promoted his colleague to head of research.
+@ proper
+1	58638	adj	proper	1	Wear proper protective clothing when using this machine.
+2	58638	adj	proper	0	The engine will not work without proper maintenance.
+3	58638	adj	proper	0	Please follow the proper procedure for reporting an accident.
+4	58638	adj	proper	0	This is the proper place to store cleaning chemicals.
+5	58638	adj	proper	0	They used the proper tool to remove the damaged screw.
+@ properly
+1	58621	adv	properly	1	The teacher checked the answers properly before grading.
+2	58621	adv	properly	0	She handled the situation properly during the meeting.
+3	58621	adv	properly	0	The equipment was installed properly by the technician.
+4	58621	adv	properly	0	He responded properly to the unexpected question.
+5	58621	adv	properly	0	The documents were filed properly in the cabinet.
+@ property
+1	58684	noun	property	1	Police returned the stolen property to its owners.
+2	58685	noun	property	0	They bought a small property near the coast.
+3	58684	noun	property	0	Do not leave personal property unattended at the station.
+4	58685	noun	property	0	He sold his only property to pay the medical bills.
+5	58685	noun	property	0	A wooden fence marks the edge of the property.
+@ protest
+1	58673	verb	protest	1	Residents will protest against the plan to close the hospital.
+2	58673	verb	protested	0	She protested loudly when the decision was announced.
+3	58673	verb	protest	0	The students will protest the new school policy.
+4	58673	verb	protested	0	He protested the charge at the hearing.
+5	58673	verb	protested	0	They protested the closure of the local library.
+@ proud
+1	58664	adj	proud	1	She felt proud after winning the school science fair.
+2	58664	adj	proud	0	They were proud of their daughter's graduation.
+3	58664	adj	proud	0	I'm proud to be part of this team.
+4	58664	adj	proud	0	He was proud of finishing the marathon.
+5	58664	adj	proud	0	We're proud of how far we've come.
+@ prove
+1	58701	verb	prove	1	She will prove her theory with careful experiments.
+2	58701	verb	prove	0	The evidence must prove the suspect's guilt beyond doubt.
+3	58701	verb	prove	0	He used data to prove his argument was correct.
+4	58701	verb	prove	0	We need more evidence to prove that the claim is valid.
+5	58701	verb	proved	0	The results proved the new method works better.
+@ punish
+1	58697	verb	punished	1	The school punished the student for repeatedly cheating.
+2	58697	verb	punishes	0	The law punishes dangerous driving with heavy fines.
+3	58697	verb	punish	0	Parents should not punish a child without first hearing what happened.
+4	58697	verb	punish	0	A judge may punish the offender with community service.
+5	58697	verb	punishing	0	The coach avoided punishing the entire team for one player's mistake.
+@ punishment
+1	58712	noun	punishment	1	The punishment for cheating on the exam was a week's detention.
+2	58712	noun	punishment	0	The court considered the fine an appropriate punishment.
+3	58712	noun	punishment	0	The school's punishment followed the rules in its discipline policy.
+4	58712	noun	punishment	0	He accepted his punishment after admitting that he had lied.
+5	58712	noun	punishment	0	Community service was part of her punishment for the offence.
+@ qualification
+1	58716	noun	qualification	1	Her qualification for the team was based on her performance in the trial.
+2	58718	noun	qualification	0	Her teaching qualification allowed her to apply for the job.
+3	58717	noun	qualification	0	Several years of experience are an important qualification for this role.
+4	58716	noun	qualification	0	The qualification process took three months and included several tests.
+5	58718	noun	qualification	0	A qualification in engineering is required for this position.
+@ qualified
+1	58721	adj	qualified	1	She is qualified to teach English in public schools.
+2	58721	adj	qualified	0	He passed the exam and is now qualified for the job.
+3	58721	adj	qualified	0	The nurse became qualified after completing her training.
+4	58721	adj	qualified	0	Only qualified candidates may apply for the position.
+5	58721	adj	qualified	0	They hired the qualified mechanic to fix the engine.
+@ qualify
+1	58731	verb	qualified	1	Her fastest time qualified her for the national final.
+2	58725	verb	qualify	0	You must earn enough points to qualify for the discount.
+3	58726	verb	qualify	0	This course will qualify you to teach young children.
+4	58731	verb	qualify	0	Only the top two runners qualify for the next round.
+5	58726	verb	qualifies	0	His experience qualifies him to manage the project.
+@ queue
+1	58741	noun	queue	1	She joined the queue for the bus after missing the last one.
+2	58741	noun	queue	0	The ticket counter had a long queue during the holiday rush.
+3	58741	noun	queue	0	He stood in the queue for nearly an hour to buy concert tickets.
+4	58741	noun	queue	0	The coffee shop was busy, so we waited in the queue outside.
+5	58741	noun	queue	0	We had to join the queue at the airport security check.
+@ quit
+1	58755	verb	quit	1	She quit her job after receiving an offer from another company.
+2	58756	verb	quit	0	He decided to quit smoking for the sake of his health.
+3	58756	verb	quit	0	Please quit making noise while the baby is asleep.
+4	58751	verb	quit	0	They quit the city before the storm reached the coast.
+5	58757	verb	quit	0	Save your work before you quit the application.
+@ quotation
+1	58735	noun	quotation	1	The teacher shared a powerful quotation from Martin Luther King Jr.
+2	58735	noun	quotation	0	She included a famous quotation in her speech about justice.
+3	58735	noun	quotation	0	A quotation from Shakespeare added depth to the essay.
+4	58735	noun	quotation	0	He wrote down the quotation from the poem in his notebook.
+5	58735	noun	quotation	0	The quotation about courage inspired the whole class.
+@ quote
+1	58766	noun	quote	1	The teacher shared a famous quote about kindness.
+2	58766	noun	quote	0	He wrote down the quote from the speech.
+3	58766	noun	quote	0	She recited a quote from her favorite book.
+4	58766	noun	quote	0	The quote on the poster inspired many students.
+5	58766	noun	quote	0	They discussed the quote during the class debate.
+@ racing
+1	58764	noun	racing	1	The big racing event drew thousands of fans to the track.
+2	58764	noun	racing	0	She loves watching racing on television every weekend.
+3	58764	noun	racing	0	Racing at the speedway is both thrilling and dangerous.
+4	58764	noun	racing	0	He trained hard for the upcoming racing season.
+5	58764	noun	racing	0	Safety rules are especially important in motor racing.
+@ range
+1	58808	noun	range	1	The mountain range stretched across the northern horizon.
+2	58810	noun	range	0	The store offers a wide range of winter coats.
+3	58817	noun	range	0	Temperatures stayed within a narrow range all week.
+4	58814	noun	range	0	The village lies outside the range of the radio signal.
+5	58821	noun	range	0	The singer has an impressive vocal range.
+@ rare
+1	58783	adj	rare	1	We found a rare butterfly in the forest near our home.
+2	58783	adj	rare	0	This type of bird is rare in this part of the country.
+3	58783	adj	rare	0	The museum has a rare painting from the 1500s.
+4	58783	adj	rare	0	She owns a rare book printed more than two hundred years ago.
+5	58783	adj	rare	0	The old coins are rare and hard to find today.
+@ rarely
+1	58775	adv	rarely	1	She rarely eats fast food on weekends.
+2	58775	adv	rarely	0	We rarely see snow in this part of the country.
+3	58775	adv	rarely	0	He rarely speaks during meetings at work.
+4	58775	adv	rarely	0	They rarely visit their grandparents in winter.
+5	58775	adv	rarely	0	The bus rarely arrives on time during rush hour.

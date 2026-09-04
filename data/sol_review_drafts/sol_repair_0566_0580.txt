@@ -1,0 +1,90 @@
+@ worse
+1	53710	adj	worse	1	The doctor's face fell when the scan showed something far worse than a broken bone.
+2	53712	adv	worse	0	Since spraining his wrist, he plays tennis much worse than last season.
+3	53713	adv	worse	0	The southern villages were worse affected by the flood than the capital.
+4	53716	noun	worse	0	For richer or poorer, for better or worse, they promised to stay together.
+5	53714	adv	worse	0	Still worse, the internet crashed right before her online exam began.
+@ worst
+1	53721	adj	worst	1	Firefighters said it was the worst blaze the city had seen in decades.
+2	53719	adj	worst	0	Eating candy for breakfast is probably the worst idea you've had all week.
+3	53723	adv	worst	0	Of all the singers, she performed worst at the school concert last night.
+4	53724	noun	worst	0	We hope for the best but prepare for the worst before the exam.
+5	53720	adj	worst	0	That was the worst news she had heard all week, and she sat down in shock.
+@ wow
+1	53728	verb	wowed	1	The magician's final trick wowed the entire crowd into stunned silence.
+2	53728	verb	wow	0	She hopes her science project will wow the judges at the fair.
+3	53728	verb	wows	0	His guitar solo always wows everyone at the school talent show.
+4	53729	noun	wow	0	Their beach house view is an absolute wow, especially at sunset.
+5	53730	noun	wow	0	I heard a loud wow from the crowd when the fireworks lit up the sky.
+@ yet
+1	53732	adv	yet	1	Even after searching all night, the rescue team still hadn't found the missing hiker yet.
+2	53740	conj	yet	0	The bridge looked ancient and fragile, yet thousands of cars crossed it safely every day.
+3	53738	adv	yet	0	After the printer jammed twice, we now faced yet another delay before the meeting.
+4	53739	adv	yet	0	The mountain trail grew yet steeper as they climbed past the tree line.
+5	53736	adv	yet	0	The coach still believes their tired team can win the championship yet this season.
+@ yours
+1	53745	pron	yours	1	After the fire destroyed his apartment, he was grateful to shelter in yours for the week.
+2	53745	pron	yours	0	Both jackets look identical, but the tag inside proves this one is yours.
+3	53746	pron	yours	0	We're leaving the office now, so should we head to yours or mine for dinner?
+4	53747	pron	yours	0	He signed the note simply 'yours, Tom' instead of writing a formal closing.
+5	53745	pron	yours	0	If this phone isn't mine, then it must be yours.
+@ zero
+1	53748	noun	zero	1	The thermometer read exactly zero the morning our pipes froze solid.
+2	53750	noun	zero	0	After spending everything on rent, he had zero money left for food.
+3	53760	det	zero	0	She showed zero interest in the boring lecture and fell asleep.
+4	53764	adj	zero	0	She switched from regular cola to cola zero after starting her new diet.
+5	53765	verb	zeroed	0	After firing test shots, the sniper zeroed his rifle scope before the match.
+@ absolutely
+1	53770	adv	absolutely	1	When she opened the envelope and saw her name, she was absolutely speechless with joy.
+2	53768	adv	absolutely	0	He was absolutely certain he had locked the front door before leaving.
+3	53770	adv	absolutely	0	The soup at that new restaurant was absolutely delicious, so we ordered seconds.
+4	53769	adv	absolutely	0	Speaking absolutely, ten dollars is a small amount, but for a child it feels huge.
+5	53768	adv	absolutely	0	I absolutely refuse to eat vegetables that have gone soft and mushy.
+@ academic
+1	53772	adj	academic	1	After years of struggle, she finally earned her place at a top academic institution.
+2	53774	adj	academic	0	Whether aliens exist is an interesting but purely academic question for most scientists.
+3	53775	adj	academic	0	He's always been more academic than athletic, preferring books to sports.
+4	53780	noun	academic	0	The university invited a respected academic to give the opening lecture.
+5	53773	adj	academic	0	The school offers both academic and vocational tracks for older students.
+@ access
+1	53787	noun	access	1	After losing his badge, the guard refused him access to the building for hours.
+2	53785	noun	access	0	The only access to the old lighthouse was a narrow path along the cliff.
+3	53795	noun	access	0	Many rural villages still lack reliable access to the internet.
+4	53797	verb	access	0	Employees must swipe a keycard to access the locked server room.
+5	53798	verb	accessed	0	Investigators discovered that someone had accessed her email account without permission.
+@ accommodation
+1	53799	noun	accommodation	1	After the hurricane destroyed their home, the family was relieved to find temporary accommodation at the shelter.
+2	53799	noun	accommodation	0	Our travel agency booked comfortable accommodation near the beach for the honeymoon.
+3	53806	noun	accommodation	0	After hours of arguing, the two neighbors finally reached an accommodation over the fence.
+4	53805	noun	accommodation	0	The teacher's accommodation toward students with disabilities made the classroom much fairer.
+5	53801	noun	accommodation	0	The eye's accommodation lets us focus clearly on objects both near and far.
+@ annoy
+1	53980	verb	annoy	1	The constant dripping of the leaky faucet began to annoy him at three in the morning.
+2	53980	verb	annoys	0	It really annoys me when people chew loudly during meetings.
+3	53980	verb	annoyed	0	She annoyed her little brother by copying everything he said.
+4	53980	verb	annoying	0	Please stop annoying your sister and go finish your homework.
+5	53980	verb	annoy	0	Loud phone calls in the quiet library annoy most of the other students.
+@ annoyed
+1	53985	adj	annoyed	1	She was absolutely annoyed when her flight got cancelled for the third time this month.
+2	53985	adj	annoyed	0	He gets annoyed whenever his little sister borrows his phone without asking.
+3	53985	adj	annoyed	0	The annoyed customer demanded a refund after waiting an hour in line.
+4	53984	verb	annoyed	0	The barking dog annoyed the neighbors all through the summer night.
+5	53985	adj	annoyed	0	Even after apologizing, he still looked a bit annoyed about the mistake.
+@ annoying
+1	53986	adj	annoying	1	It was incredibly annoying when the fire alarm kept going off all through the exam.
+2	53986	adj	annoying	0	The constant buzzing of mosquitoes at night is really annoying.
+3	53986	adj	annoying	0	My neighbor's annoying habit of parking across my driveway drives me crazy.
+4	53987	verb	annoying	0	Stop annoying your brother and go find something else to do.
+5	53986	adj	annoying	0	It's annoying when the wifi disconnects right in the middle of a video call.
+@ apart
+1	53991	adv	apart	1	The old wooden bridge finally came apart during the storm, stranding hikers on both sides.
+2	53989	adv	apart	0	The two chairs were placed apart so the patients wouldn't need to sit close together.
+3	53990	adv	apart	0	After the divorce, the siblings grew up living apart in different cities.
+4	53992	adv	apart	0	He stepped apart from the group to take an important phone call.
+5	53993	adj	apart	0	Great teachers are a breed apart, always inspiring students to try harder.
+@ apologize
+1	53996	verb	apologize	1	He drove three hours through the storm just to apologize to his estranged father in person.
+2	53996	verb	apologized	0	She apologized to her teacher for turning in the assignment late.
+3	53997	verb	apologizes	0	The airline apologizes for the delay and thanks passengers for their patience.
+4	53996	verb	apologizing	0	He spent the whole afternoon apologizing to everyone he had upset.
+5	53996	verb	apologize	0	If I hurt your feelings, I want to apologize to you right now, in person.

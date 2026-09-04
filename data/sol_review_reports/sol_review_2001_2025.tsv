@@ -1,0 +1,25 @@
+indoors	repaired	Repaired rank 5 because being too cold to eat indoors was logically incoherent; retained four canonical rows
+influence	repaired	Repaired the missing article in rank 2; retained the other re-reviewed overlay rows
+ingredient	repaired	Replaced a definitional rank 2 with a natural contextual example; retained four canonical rows
+injure	repaired	Simplified the distracting rank 3 scenario; retained the other re-reviewed overlay rows
+injured	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+innocent	pass	Canonical five-row block passed ChatGPT semantic, grammar, and naturalness review
+intelligence	repaired	Replaced a definition and an unsupported learning claim in ranks 2 and 5; retained three canonical rows
+intend	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+intention	repaired	Repaired the unnatural phrase in rank 5; retained four canonical rows
+invest	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+investigate	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+involved	repaired	Clarified participant meaning in rank 1; retained the other re-reviewed overlay rows
+iron	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+issue	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+journal	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+judge	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+keen	pass	Canonical five-row block passed ChatGPT semantic, grammar, and naturalness review
+keyboard	repaired	Removed the rare verb use 'keyboards documents' and restored a common learner-facing noun example
+kick	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+killing	repaired	Removed two unnatural adjective collocations and replaced them with common noun uses
+kiss	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+label	repaired	Replaced a definitional rank 2 with a contextual example; retained the other re-reviewed overlay rows
+laboratory	repaired	Replaced a definitional rank 2 with a contextual example; retained four canonical rows
+lack	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review
+latest	repaired	Existing complete overlay passed ChatGPT semantic, grammar, and naturalness re-review

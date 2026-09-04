@@ -1,0 +1,69 @@
+@ choose
+1	30701	verb	chose	1	At the animal shelter, Liam knelt down and chose the shy puppy hiding at the back of the cage.
+2	30701	verb	Choose	0	Choose one answer from the list.
+3	30701	verb	choose	0	You can choose your favorite color.
+4	30701	verb	chooses	0	He always chooses the healthiest meal on the menu.
+5	30701	verb	chosen	0	The winner has already been chosen.
+
+@ class
+1	30722	noun	class	1	In art class, Maya discovered she could paint the sky exactly as she imagined it.
+2	30722	noun	class	0	Our class starts at nine o'clock.
+3	30722	noun	class	0	The class listened to the teacher.
+4	30722	noun	class	0	He is late for class today.
+5	30722	noun	class	0	The class has twenty students.
+
+@ clean
+1	30740	adj	clean	1	After the flood, volunteers worked all day to make the family's kitchen clean again.
+2	30740	adj	clean	0	Wash your hands until they are clean.
+3	30768	verb	cleaned	0	She cleaned the windows before the guests arrived.
+4	30740	adj	clean	0	Please keep the bathroom clean.
+5	30769	verb	cleaning	0	He spent Saturday morning cleaning his messy garage.
+
+@ climb
+1	30780	verb	climb	1	Holding the rope tightly, Arin began to climb the steep wall.
+2	30791	noun	climb	0	The climb up the mountain took nearly three hours.
+3	30780	verb	climbed	0	The children climbed the tree behind the school.
+4	30780	verb	climbing	0	She is climbing the ladder to fix the roof.
+5	30780	verb	climb	0	Vines climb the garden fence.
+
+@ club
+1	30899	noun	club	1	After moving to a new school, Noah finally made friends by joining the football club.
+2	30899	noun	club	0	She joined the school chess club last year.
+3	30899	noun	club	0	Our book club meets every Tuesday evening.
+4	30899	noun	club	0	He is a member of the local tennis club.
+5	30899	noun	clubs	0	Many clubs at school welcome new members every autumn.
+
+@ cold
+1	30943	adj	cold	1	The cold wind made us huddle together at the bus stop.
+2	30943	adj	cold	0	The water is cold this morning.
+3	30967	noun	cold	0	I caught a bad cold and stayed home from school all week.
+4	30943	adj	cold	0	His hands felt cold after the snowball fight.
+5	30943	adj	cold	0	We drank cold juice after running.
+
+@ common
+1	31021	adj	common	1	Music became a common language when the visitors could not speak each other's words.
+2	31023	adj	common	0	Rain is common in this season.
+3	31023	adj	common	0	It is common to see bicycles here.
+4	31021	adj	common	0	The two friends share a common goal.
+5	31023	adj	common	0	Colds are common in winter.
+
+@ company
+1	31043	noun	company	1	When the small company won its very first big contract, everyone in the office cheered.
+2	31043	noun	company	0	The company makes computer games.
+3	31043	noun	company	0	She works for a large company.
+4	31043	noun	company	0	Our company hired a new manager.
+5	31043	noun	company	0	The company opened an office downtown.
+
+@ concert
+1	31093	noun	concert	1	The whole family sang along under the stars at grandpa's favorite outdoor concert.
+2	31093	noun	concert	0	We bought tickets for the concert next Friday.
+3	31093	noun	concert	0	The concert starts at eight o'clock.
+4	31093	noun	concert	0	She was excited about her first live concert.
+5	31093	noun	concerts	0	Thousands of fans attend outdoor concerts every summer.
+
+@ cook
+1	31104	noun	cook	1	The cook tasted the soup and added one last pinch of salt.
+2	31104	noun	cook	0	The cook prepares meals in the kitchen.
+3	31112	verb	cooks	0	My father cooks dinner for us every Sunday.
+4	31112	verb	cooked	0	She cooked a delicious curry last night.
+5	31104	noun	cook	0	A skilled cook can feed many people.

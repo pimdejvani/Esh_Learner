@@ -1,0 +1,25 @@
+finger	repaired	added verb sense (poke/probe) since original was noun-only; kept 4 good noun rows
+firstly	pass	single sense/POS, all 5 rows are real distinct usages
+fishing	pass	noun rows solid; skipped gerund verb POS as it duplicates the noun "go fishing" usage already shown
+fit	repaired	all 5 rows repeated one adj sense/form; diversified into adj/noun/verb with real senses and 3 target forms
+fix	repaired	all 5 rows used obsolete sense 46595 (to pierce); full rewrite to common mend/repair/prepare senses plus noun
+flu	pass	only usable sense, all 5 rows natural and distinct
+flying	repaired	added verb (progressive) and noun (fear of flying) rows for real POS coverage; kept 2 good adj rows
+focus	repaired	all 5 rows used narrow optics sense; rewrote to cover core "attention/concentration" sense plus verb forms
+following	repaired	added prep and verb rows (both common); kept 2 adj rows and added noun row
+foreign	pass	adj rows solid; skipped noun POS ("a foreign" for foreigner) as dated/unnatural in modern English
+forest	pass	noun rows solid; skipped verb POS ("to forest") as overly technical/ecological register for A2
+fork	repaired	repointed noun sense to the specific eating-utensil sense; added forks(noun) and forked(verb) for coverage/variety
+formal	repaired	added noun row (school formal/dance); diversified adj sense on rank2
+fortunately	pass	only usable sense, all 5 rows natural and distinct
+monkey	repaired	rank1 was 5 words (thin); rewrote to vivid rank1, added plural form and mischievous-person sense
+mostly	repaired	rank1 was 5 words (thin); rewrote to 11-word situational sentence, rest kept
+motorcycle	repaired	rank1 rewritten to a vivid situation; added plural form "motorcycles" for variety
+movement	pass	rank1 meets 6-word minimum and states a real situation; all rows distinct and natural
+musical	repaired	rank1 was 5 words (thin); repointed r3 to correct "musical talent" sense and diversified adj senses
+musician	repaired	rank1 was 4 words and r2 was a bare template ("She is a musician."); rewrote both
+myself	repaired	rank1 was 4 words (thin); rewrote to 11-word situation, rest kept
+narrow	repaired	rank1 was 4 words; fixed sense_id mismatches on verb/noun rows (intransitive "narrow", plural "narrows") and diversified forms
+nearly	repaired	rank1 was 4 words (thin); rewrote, rest kept
+necessary	repaired	rank1 was 5 words; dropped noun POS (both senses archaic/obsolete per pack note) and replaced with second adj sense
+neck	repaired	rank1 was 4 words; dropped rare/mismatched slang verb sense, replaced with land-neck noun sense and fixed clothing-neck sense_id

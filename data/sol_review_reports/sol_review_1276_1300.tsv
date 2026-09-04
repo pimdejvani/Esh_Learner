@@ -1,0 +1,25 @@
+pencil	repaired	all rows used one noun sense/form; added verb (pencil in/mark) rows for POS coverage and form variety
+people	pass	verb sense (to people/populate) is literary and not core; noun rows already correct and varied
+pepper	repaired	block used only the rare "vine plant" sense; shifted to core spice/capsicum senses and added verb
+perfect	repaired	r3 was a bare 4-word template with no situation; added verb coverage (to perfect)
+period	repaired	only the "duration" sense was covered; added the very common punctuation, intj ("period!"), and period-piece adj senses
+person	pass	only verb senses are obsolete/niche ("to man"); noun rows already correct
+personal	repaired	r3 sentence matched the dictionary's own "privacy" sense example but was tagged with the generic sense; repointed sense_id
+phone	repaired	added core verb sense (to phone someone), missing entirely
+photo	repaired	r5 was a bare 4-word template ("The photo was blurry."); added verb sense and plural form
+photograph	repaired	added core verb sense (to photograph), missing entirely
+phrase	repaired	added core verb sense (to phrase something), missing entirely
+piano	pass	adj/adv senses are music-dynamics jargon (piano/forte), verb forms are unnatural; noun rows already correct
+picture	repaired	added core verb sense (to picture/imagine), missing entirely
+piece	repaired	r3 was ungrammatical ("Cut the cake into a piece"); fixed to plural and added verb sense
+pig	repaired	added plural noun form and informal-but-common verb sense (pigged out)
+pink	repaired	block used only the noun-color sense; added the more common color-adjective sense and a verb row
+place	repaired	added core verb sense (to place something), missing entirely
+plan	repaired	block used only the technical blueprint sense; added the more common "intended actions" sense and verb
+plane	repaired	block used only the rare technical adjective sense ("flat"); replaced with the core airplane noun sense and verb
+plant	repaired	added core verb sense (to plant a seed), missing entirely
+play	repaired	fixed awkward grammar in r2, added tense variety and the noun sense (a play/plays)
+player	pass	correct core sense throughout; no verb POS exists for this word
+please	repaired	block used only the formal verb sense ("to please someone"); added the far more common adverbial politeness use
+point	repaired	added core verb sense (to point at something), missing entirely
+police	repaired	added verb sense (to police/enforce), missing entirely

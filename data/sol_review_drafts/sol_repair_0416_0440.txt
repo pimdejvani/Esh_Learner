@@ -37,13 +37,13 @@
 1	50883	verb	running	1	We running every day.
 2	50883	verb	running	0	She is running to catch the bus.
 3	50884	adj	running	0	The running child nearly dropped his bag.
-4	50896	noun	running	0	Running is good exercise for many people.
+4	50896	noun	Running	0	Running is good exercise for many people.
 5	50888	adj	running	0	Keep a running record of every payment.
 
 @ sadly
 1	50902	adv	sadly	1	We do it sadly.
 2	50902	adv	sadly	0	She smiled sadly as the train left.
-3	50903	adv	sadly	0	Sadly, the old theater closed last year.
+3	50903	adv	Sadly	0	Sadly, the old theater closed last year.
 4	50904	adv	more sadly	0	The plan ended more sadly than anyone expected.
 5	50902	adv	most sadly	0	He spoke most sadly about losing his friend.
 
@@ -143,7 +143,7 @@
 2	51105	noun	searches	0	Police carried out several searches of the building.
 3	51107	verb	searched	0	We searched the room for the missing key.
 4	51108	verb	searching	0	They are searching for a cheaper apartment.
-5	51110	verb	search	0	Search the phrase online for more examples.
+5	51110	verb	Search	0	Search the phrase online for more examples.
 
 @ season
 1	51113	noun	season	1	The first rain of the season brought new life to the dry fields.
@@ -161,9 +161,9 @@
 
 @ secondly
 1	51158	adv	secondly	1	We do it secondly.
-2	51158	adv	secondly	0	Secondly, we need to discuss the budget.
+2	51158	adv	Secondly	0	Secondly, we need to discuss the budget.
 3	51158	adv	secondly	0	First check the address; secondly, confirm the date.
-4	51158	adv	secondly	0	Secondly, the plan would take too much time.
+4	51158	adv	Secondly	0	Secondly, the plan would take too much time.
 5	51158	adv	secondly	0	The route is shorter and, secondly, much safer.
 
 @ secret

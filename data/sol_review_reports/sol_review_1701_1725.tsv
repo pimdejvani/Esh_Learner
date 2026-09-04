@@ -1,0 +1,25 @@
+expect	pass	verb sense correct, sentences accurate, only advisory form-variety gap
+experience	pass	noun sense 46175 fits all rows, no defects
+experiment	pass	noun sense correct, sentences accurate
+expert	pass	adj sense correct, sentences accurate
+explanation	pass	noun sense correct, sentences accurate
+express	pass	adj sense (fast service) correct and consistent across rows
+expression	repaired	r1/r3/r5 meant facial expression (46220) and r4 meant idiom (46219) but all were mis-pointed at 46217; repointed sense_id per row
+extreme	repaired	block used only the rare "farthest point" sense; replaced with the common intense/drastic/sports/excessive senses learners actually meet, kept one row for edge sense
+extremely	pass	only non-rare sense, sentences accurate
+factor	repaired	all 5 rows used the obsolete "agent/doer" sense 46242; rewritten with common "contributing element" and "mathematical factor" senses
+factory	pass	noun sense correct, sentences accurate
+fail	repaired	r3 and r5 used sense 46266 but actually meant "fail to do X" (46267) and "fail an exam" (46271); repointed and diversified verb forms
+fair	repaired	all 5 rows used the archaic "beautiful" sense 46287; rewritten with just/favorable-weather/light-color/adequate senses
+fan	repaired	very common "admirer" sense (46337) was missing entirely; added it plus an electrical-fan and verb row for coverage
+farming	pass	noun sense correct, sentences accurate
+fashion	pass	noun sense correct, sentences accurate
+fear	pass	noun sense correct, sentences accurate
+feature	repaired	all 5 rows used the obsolete "bodily proportions" sense 46367; rewritten with important-item/facial-feature senses learners meet
+feed	repaired	sense and content correct but all 5 rows used the identical form "feed"; diversified to feed/feeds/fed/feeding across rows
+female	pass	adj sense correct, sentences accurate
+fiction	pass	noun sense correct, sentences accurate
+field	pass	noun sense correct, sentences accurate
+fight	repaired	content fine but all rows used identical form "fight"; diversified verb forms and added a noun row
+figure	repaired	block used only the narrow "diagram" sense; added the far more common "number/amount" and "figure out" verb senses
+finally	pass	adv sense correct, sentences accurate

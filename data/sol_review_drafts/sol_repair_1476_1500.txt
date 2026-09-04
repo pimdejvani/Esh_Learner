@@ -1,0 +1,118 @@
+@ type
+1	41806	noun	type	1	What type of music do you like?
+2	41806	noun	type	0	This is a new type of phone.
+3	41806	noun	types	0	The shop has many types of bread.
+4	41823	verb	type	0	Please type your name here.
+5	41823	verb	typed	0	He typed a short message.
+
+@ uncle
+1	41838	noun	uncle	1	My uncle lives near the sea.
+2	41838	noun	Uncle	0	We visited Uncle Tom on Sunday.
+3	41838	noun	uncles	0	Her uncles came to the party.
+4	41838	noun	uncle	0	Every summer, my uncle teaches me how to fish.
+5	41838	noun	uncles	0	Both of my uncles work as teachers.
+
+@ under
+1	41849	prep	under	1	The cat is under the bed.
+2	41849	prep	under	0	Put the bag under the table.
+3	41858	adv	under	0	The boat went under.
+4	41863	adj	under	0	The mechanic checked the under section of the car for rust.
+5	41849	prep	under	0	He is under the umbrella.
+
+@ understand
+1	41870	verb	understand	1	I finally understand this lesson after asking my teacher twice.
+2	41870	verb	understand	0	Do you understand the question?
+3	41870	verb	understands	0	She understands English well.
+4	41870	verb	understood	0	We understood the story.
+5	41870	verb	understanding	0	He is understanding the rules better.
+
+@ until
+1	41880	prep	until	1	The children waited anxiously until dinner was finally ready.
+2	41885	conj	until	0	Stay here until I come back.
+3	41880	prep	until	0	The shop is open until six.
+4	41885	conj	until	0	Do not leave until the rain stops.
+5	41880	prep	until	0	We talked until midnight.
+
+@ up
+1	41887	adv	up	1	Everyone cheered and jumped up when the team scored the winning goal.
+2	41908	prep	up	0	We walked up the hill.
+3	41915	adj	up	0	Make sure the picture's bright side is up before you hang it.
+4	41887	adv	up	0	Look up at the sky.
+5	41950	verb	upped	0	She upped the music volume.
+
+@ upstairs
+1	41957	adv	upstairs	1	After a long day at school, I go straight upstairs to rest.
+2	41957	adv	upstairs	0	Please go upstairs now.
+3	41955	adj	upstairs	0	The upstairs bathroom is clean.
+4	41960	noun	upstairs	0	The upstairs needs new paint.
+5	41957	adv	upstairs	0	They waited upstairs for us.
+
+@ us
+1	41962	pron	us	1	Our neighbors kindly invited us to join their family dinner.
+2	41962	pron	us	0	The teacher helped us.
+3	41962	pron	us	0	She gave us some water.
+4	41962	pron	us	0	They waited for us outside.
+5	41971	det	Us	0	Us students always eat lunch together on Fridays.
+
+@ usually
+1	42000	adv	usually	1	I usually wake up at seven.
+2	42000	adv	usually	0	She usually walks to school.
+3	42000	adv	usually	0	We usually eat at home.
+4	42000	adv	usually	0	My father usually reads the newspaper before breakfast.
+5	42000	adv	usually	0	On weekends, we usually stay in bed a bit longer.
+
+@ vegetable
+1	42011	noun	vegetable	1	My little sister refuses to eat any vegetable at dinner.
+2	42011	noun	vegetable	0	Carrots are a healthy vegetable.
+3	42011	noun	vegetables	0	The soup has many vegetables.
+4	42016	adj	vegetable	0	The garden has vegetable plants.
+5	42011	noun	vegetable	0	This vegetable is fresh.
+
+@ very
+1	42017	adv	very	1	I burned my tongue because the soup was very hot.
+2	42017	adv	very	0	She is very happy today.
+3	42017	adv	very	0	I am very tired.
+4	42021	adj	very	0	This is the very book I wanted.
+5	42017	adv	very	0	The test was very easy.
+
+@ video
+1	42023	noun	video	1	We laughed so hard watching that funny video of the cat.
+2	42023	noun	video	0	Send me the video, please.
+3	42023	noun	videos	0	She makes short videos.
+4	42027	verb	video	0	They video the school show.
+5	42027	verb	videoed	0	He videoed the concert.
+
+@ visit
+1	42042	noun	visit	1	We had a nice visit with Grandma.
+2	42035	verb	visit	0	We visit our friends on Sunday.
+3	42035	verb	visits	0	She visits her aunt every month.
+4	42041	verb	visited	0	They visited the museum yesterday.
+5	42035	verb	visiting	0	He is visiting his cousin.
+
+@ wait
+1	42052	verb	wait	1	Please wait with me until the bus comes.
+2	42052	verb	wait	0	We wait for the teacher outside.
+3	42060	noun	wait	0	The long wait made us tired.
+4	42052	verb	waited	0	She waited for her friend after class.
+5	42052	verb	waiting	0	They are waiting near the gate.
+
+@ wake
+1	42073	verb	wake	1	I wake early when I feel excited.
+2	42074	verb	wake	0	Please wake me at seven tomorrow.
+3	42073	verb	woke	0	I woke before my alarm rang.
+4	42073	verb	waking	0	The baby is waking up now.
+5	42081	noun	wake	0	After the wake, everyone went home quietly.
+
+@ want
+1	42160	verb	want	1	I want you to feel safe and happy.
+2	42165	verb	want	0	The plants want more water today.
+3	42160	verb	wanted	0	She wanted a new pencil.
+4	42160	verb	wanting	0	Not wanting to be late for school, she ran the whole way.
+5	42160	verb	wants	0	My brother wants to play outside.
+
+@ warm
+1	42179	adj	warm	1	Your warm smile made me feel welcome.
+2	42179	adj	warm	0	She gave me a warm hug.
+3	42178	adj	warmer	0	Today is warmer than yesterday.
+4	42187	verb	warmed	0	The soup warmed my hands.
+5	42188	verb	warming	0	The room is warming as the sun rises higher.

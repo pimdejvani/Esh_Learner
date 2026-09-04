@@ -1,0 +1,90 @@
+@ elsewhere
+1	63080	adv	elsewhere	1	We can't find the keys here; maybe they're elsewhere.
+2	63080	adv	elsewhere	0	This cafe is full, so we will have to eat elsewhere.
+3	63080	adv	elsewhere	0	She left the city and moved elsewhere to start fresh.
+4	63080	adv	elsewhere	0	The species disappeared from this island but still survives elsewhere.
+5	63080	adv	elsewhere	0	He did not want to stay in this town; he wanted to go elsewhere.
+@ emerge
+1	63201	verb	emerged	1	A small bird emerged from the thick bushes near the pond.
+2	63201	verb	emerged	0	An old photograph emerged as she emptied the dusty drawer.
+3	63201	verb	emerged	0	The sun emerged from behind the clouds after the heavy rain.
+4	63201	verb	emerged	0	A deer emerged slowly from the misty forest at dawn.
+5	63201	verb	emerged	0	The outline of a hidden door emerged when the wall panel slid aside.
+@ emotional
+1	63211	adj	emotional	1	The emotional moment brought tears to her eyes.
+2	63211	adj	emotional	0	He made an emotional appeal to the jury.
+3	63211	adj	emotional	0	The emotional toll of the war was great.
+4	63211	adj	emotional	0	She gave an emotional performance at the concert.
+5	63211	adj	emotional	0	The emotional response surprised everyone in the room.
+@ emphasis
+1	63205	noun	emphasis	1	She placed emphasis on the final point to make it clear.
+2	63206	noun	emphasis	0	The teacher placed special emphasis on the key terms in the lesson.
+3	63205	noun	emphasis	0	He spoke with emphasis when discussing the urgent issue.
+4	63206	noun	emphasis	0	The report places particular emphasis on customer satisfaction.
+5	63206	noun	emphasis	0	They placed greater emphasis on the main argument in the debate.
+@ emphasize
+1	63210	verb	emphasize	1	She used a loud voice to emphasize her point during the meeting.
+2	63210	verb	emphasize	0	The teacher wrote the key terms in red to emphasize their importance.
+3	63210	verb	emphasize	0	He tapped the table to emphasize his frustration with the delay.
+4	63210	verb	emphasizes	0	The report clearly emphasizes the need for immediate action.
+5	63210	verb	emphasize	0	They used bold text to emphasize the most critical data.
+@ enable
+1	63220	verb	enable	1	The new software will enable her to finish the project on time.
+2	63220	verb	enable	0	Strong leadership can enable team members to perform at their best.
+3	63220	verb	enable	0	This training session will enable you to use the tool correctly.
+4	63220	verb	enables	0	The app enables users to track their daily steps easily.
+5	63220	verb	enables	0	Good sleep enables the brain to recover and function well.
+@ encounter
+1	63254	verb	encountered	1	We encountered a lost dog near the park entrance.
+2	63254	verb	encountered	0	She encountered an old friend at the grocery store.
+3	63254	verb	encountered	0	The hikers encountered a sudden storm in the mountains.
+4	63254	verb	encountered	0	He encountered difficulty while solving the puzzle.
+5	63254	verb	encountered	0	They encountered a closed road during their drive.
+@ engage
+1	63229	verb	engage	1	She always knows how to engage her friends in lively conversation.
+2	63228	verb	engage	0	The speaker managed to engage the audience with a personal story.
+3	63229	verb	engage	0	He tried to engage the new student in a friendly chat during lunch.
+4	63227	verb	engage	0	They sat together and began to engage in small talk about the weather.
+5	63228	verb	engage	0	The teacher used fun questions to engage her students in class.
+@ enhance
+1	63245	verb	enhance	1	The new software helps to enhance the user experience with faster responses.
+2	63245	verb	enhance	0	Regular exercise can enhance physical strength and overall health.
+3	63245	verb	enhance	0	The designer used gold accents to enhance the elegance of the dress.
+4	63245	verb	enhance	0	Good lighting can enhance the appearance of a small room.
+5	63245	verb	enhance	0	The team worked hard to enhance their performance in the final match.
+@ enquiry
+1	63219	noun	enquiry	1	The scientist began a new enquiry into climate change patterns.
+2	63219	noun	enquiry	0	She submitted an enquiry about the course schedule.
+3	63219	noun	enquiry	0	The police launched an enquiry into the missing documents.
+4	63219	noun	enquiry	0	His enquiry about the job opening was answered promptly.
+5	63219	noun	enquiry	0	An official enquiry was held after the accident.
+@ ensure
+1	63249	verb	ensures	1	She ensures her homework is finished before dinner.
+2	63249	verb	ensures	0	He ensures the door is locked before leaving the house.
+3	63249	verb	ensure	0	They ensure the meeting starts on time every day.
+4	63249	verb	ensures	0	The teacher ensures all students understand the lesson.
+5	63249	verb	ensure	0	We ensure the lights are off when we go to bed.
+@ enthusiasm
+1	63251	noun	enthusiasm	1	She showed great enthusiasm for the new project.
+2	63251	noun	enthusiasm	0	His enthusiasm for learning English grew every week.
+3	63251	noun	enthusiasm	0	The children's enthusiasm during the science fair was inspiring.
+4	63251	noun	enthusiasm	0	Her enthusiasm encouraged the rest of us to finish the task.
+5	63251	noun	enthusiasm	0	The teacher praised the student's enthusiasm in class.
+@ enthusiastic
+1	63265	adj	enthusiastic	1	She was enthusiastic about joining the school play.
+2	63265	adj	enthusiastic	0	The team gave an enthusiastic response to the challenge.
+3	63265	adj	enthusiastic	0	He was enthusiastic about finishing the project ahead of schedule.
+4	63265	adj	enthusiastic	0	They were enthusiastic about the new teacher's ideas.
+5	63265	adj	enthusiastic	0	The audience showed an enthusiastic reaction to the performance.
+@ entire
+1	63267	adj	entire	1	The entire class passed the test with flying colors.
+2	63267	adj	entire	0	She kept the entire cake for herself after the party.
+3	63267	adj	entire	0	He read the entire book in one sitting.
+4	63267	adj	entire	0	The entire team arrived on time for the match.
+5	63267	adj	entire	0	We watched the entire movie without a single break.
+@ entirely
+1	63278	adv	entirely	1	The decision was entirely hers; no one else had a say.
+2	63278	adv	entirely	0	He was entirely focused on finishing the project on time.
+3	63278	adv	entirely	0	The room was entirely empty after the movers left.
+4	63278	adv	entirely	0	She felt entirely confident after the rehearsal.
+5	63278	adv	entirely	0	The story was entirely made up, with no real facts.

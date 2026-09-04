@@ -1,0 +1,90 @@
+@ fellow
+1	63520	noun	fellow	1	My fellow hiker shared his water with me on the trail.
+2	63520	noun	fellow	0	A fellow volunteer helped me carry the boxes.
+3	63520	noun	fellow	0	She introduced her fellow student to the class.
+4	63520	noun	fellow	0	We waited together, my fellow passenger and I.
+5	63520	noun	fellow	0	My fellow traveler waved when he recognized me at the station.
+@ finance
+1	63495	noun	finance	1	The company's finance team manages all its investments and expenses.
+2	63495	noun	finance	0	Careful finance helps households avoid unexpected debt.
+3	63495	noun	finance	0	She studied finance at university to prepare for a career in banking.
+4	63495	noun	finance	0	The minister of finance announced new tax reforms and spending cuts.
+5	63495	noun	finance	0	Many startups fail because their founders have little experience in finance.
+@ finding
+1	63456	noun	finding	1	The scientific finding surprised everyone in the lab.
+2	63456	noun	finding	0	Her latest finding in the study was published last week.
+3	63456	noun	finding	0	The team's key finding helped solve the mystery.
+4	63456	noun	finding	0	Each finding in the report supports the main theory.
+5	63456	noun	finding	0	The unexpected finding changed the course of the experiment.
+@ firm
+1	63503	noun	firm	1	The law firm specializes in corporate contracts.
+2	63503	noun	firm	0	She joined a small accounting firm after graduation.
+3	63503	noun	firm	0	The firm has offices in London and Manchester.
+4	63503	noun	firm	0	They opened a new firm to handle international clients.
+5	63503	noun	firm	0	The firm was founded by two former bankers.
+@ flame
+1	63564	noun	flame	1	The candle's flame flickered in the drafty room.
+2	63564	noun	flame	0	She watched the flame rise steadily from the match.
+3	63564	noun	flame	0	A small flame danced above the gas stove.
+4	63564	noun	flames	0	The campfire's flames lit up the dark forest.
+5	63564	noun	flame	0	He held the torch, its flame casting shadows.
+@ flash
+1	63577	verb	flashed	1	She flashed the flashlight beam along the dark path.
+2	63577	verb	flashed	0	The photographer flashed a light before taking the portrait.
+3	63577	verb	flashed	0	He flashed the signal to the pilot using his flashlight.
+4	63577	verb	flashed	0	The lighthouse flashed its beam across the dark water.
+5	63580	verb	flashed	0	The security guard flashed his badge at the gate.
+@ flexible
+1	63559	adj	flexible	1	The rubber band is flexible and stretches easily.
+2	63559	adj	flexible	0	She wore flexible shoes that moved with her feet.
+3	63559	adj	flexible	0	The flexible wire bent without breaking in the storm.
+4	63559	adj	flexible	0	This flexible tube can twist without cracking.
+5	63559	adj	flexible	0	The flexible hinge allows smooth door movement.
+@ float
+1	63646	verb	floats	1	The cork floats in the bathtub water.
+2	63646	verb	floats	0	The toy boat floats on the surface of the pool.
+3	63646	verb	floats	0	The rubber duck floats in the sink when it is filled with water.
+4	63646	verb	floats	0	The leaf floats on the quiet lake after the rain.
+5	63646	verb	floats	0	The balloon floats upward when released into the air.
+@ folding
+1	63628	adj	folding	1	She bought a folding table for her small apartment.
+2	63628	adj	folding	0	The camping gear included a compact folding chair.
+3	63628	adj	folding	0	He stored the folding ladder in the garage.
+4	63628	adj	folding	0	The office has a folding desk for temporary use.
+5	63628	adj	folding	0	They placed a folding screen between the two beds.
+@ forgive
+1	63635	verb	forgive	1	I can't forgive you for lying about the meeting time.
+2	63635	verb	forgive	0	She said she would forgive him if he apologized sincerely.
+3	63635	verb	forgive	0	He asked his friend to forgive him for missing the birthday party.
+4	63635	verb	forgive	0	You need to forgive your brother for the accident.
+5	63635	verb	forgive	0	The teacher said she would forgive the student for submitting the homework late.
+@ former
+1	63641	adj	former	1	She is a former teacher who now works in a library.
+2	63641	adj	former	0	The former capital of the country is now a quiet town.
+3	63641	adj	former	0	He met his former classmate at the reunion.
+4	63641	adj	former	0	The former owner sold the house last year.
+5	63641	adj	former	0	They discussed the former team captain's legacy.
+@ fortune
+1	63709	noun	fortune	1	She read the cards and predicted that my fortune would improve this year.
+2	63709	noun	fortune	0	He believed his fortune was written in the stars long before he was born.
+3	63709	noun	fortune	0	The old woman claimed she could read a person's fortune from the lines on their palm.
+4	63709	noun	fortune	0	They asked the oracle to reveal their fortune for the coming season.
+5	63709	noun	fortune	0	She believed the journey would change her fortune for the better.
+@ found
+1	63702	verb	founded	1	They founded the school more than a hundred years ago.
+2	63702	verb	founded	0	She founded a small company after leaving her old job.
+3	63702	verb	founded	0	The city was founded by settlers beside a wide river.
+4	63702	verb	found	0	He hopes to found a charity that helps homeless children.
+5	63702	verb	founded	0	Two brothers founded the business together back in 1990.
+@ freedom
+1	63728	noun	freedom	1	She felt true freedom when she walked alone in the forest.
+2	63728	noun	freedom	0	After the war, the people celebrated their new freedom.
+3	63728	noun	freedom	0	He gave up his job to pursue personal freedom.
+4	63728	noun	freedom	0	The prisoners finally gained freedom after ten years.
+5	63728	noun	freedom	0	They fought for freedom during the revolution.
+@ frequency
+1	63740	noun	frequency	1	The frequency of rain in the desert is very low.
+2	63740	noun	frequency	0	The frequency of the bus service has increased recently.
+3	63740	noun	frequency	0	He noticed a high frequency of errors in the report.
+4	63740	noun	frequency	0	The frequency of the fire drills increased this month.
+5	63740	noun	frequency	0	The frequency of software updates increased after users reported several bugs.

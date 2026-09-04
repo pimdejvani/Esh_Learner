@@ -1,0 +1,90 @@
+@ truly
+1	67303	adv	truly	1	She was truly sorry for missing the appointment.
+2	67303	adv	truly	0	The volunteers were truly committed to helping the village.
+3	67303	adv	truly	0	The results were truly remarkable.
+4	67303	adv	truly	0	He truly believed that the plan could succeed.
+5	67303	adv	truly	0	The experience truly changed how she viewed the world.
+@ trust
+1	67340	noun	trust	1	She has complete trust in her best friend's advice.
+2	67340	noun	trust	0	The team's success depends on mutual trust.
+3	67340	noun	trust	0	He broke the promise and lost their trust.
+4	67340	noun	trust	0	They built trust through honest communication.
+5	67340	noun	trust	0	Trust is essential in any long-term relationship.
+@ tune
+1	67322	noun	tune	1	She hummed a cheerful tune while baking cookies.
+2	67322	noun	tune	0	The radio played a familiar tune from the 1980s.
+3	67322	noun	tune	0	He whistled a simple tune as he walked home.
+4	67322	noun	tune	0	The children sang a happy tune during the school play.
+5	67322	noun	tune	0	A soft tune drifted through the open window.
+@ tunnel
+1	67309	noun	tunnel	1	The train disappeared into the dark tunnel beneath the mountain.
+2	67309	noun	tunnel	0	A long tunnel carries traffic beneath the river.
+3	67309	noun	tunnel	0	The construction crew finished the underwater tunnel last month.
+4	67309	noun	tunnel	0	We drove through the narrow tunnel after the storm closed the road.
+5	67309	noun	tunnel	0	The old tunnel was sealed after the new one opened.
+@ ultimately
+1	67307	adv	ultimately	1	Several designs were considered, but the simplest one was ultimately chosen.
+2	67307	adv	ultimately	0	After months of delays, the project was ultimately completed.
+3	67307	adv	ultimately	0	The team struggled at first but ultimately won the match.
+4	67307	adv	ultimately	0	She tried three times, and ultimately, she succeeded.
+5	67307	adv	ultimately	0	The plan failed, but ultimately, it taught them a lesson.
+@ unconscious
+1	67365	adj	unconscious	1	The man lay on the ground, unconscious after the fall.
+2	67365	adj	unconscious	0	She was unconscious when the ambulance arrived.
+3	67365	adj	unconscious	0	The child remained unconscious for hours after the accident.
+4	67365	adj	unconscious	0	The doctor checked the pulse of the unconscious patient.
+5	67365	adj	unconscious	0	The blow to his head left him unconscious on the floor.
+@ unexpected
+1	67369	adj	unexpected	1	The storm came with an unexpected force, knocking down trees.
+2	67369	adj	unexpected	0	She received an unexpected gift during her birthday party.
+3	67369	adj	unexpected	0	The test had an unexpected question about ancient history.
+4	67369	adj	unexpected	0	He made an unexpected visit after months of silence.
+5	67369	adj	unexpected	0	The team won the match with an unexpected comeback.
+@ unique
+1	67381	adj	unique	1	This painting is unique because the artist used pigments made from local stone.
+2	67381	adj	unique	0	She has a unique talent for remembering every face she meets.
+3	67381	adj	unique	0	The museum displays a unique fossil from the ancient sea floor.
+4	67381	adj	unique	0	Each snowflake has a unique pattern formed by temperature and humidity.
+5	67381	adj	unique	0	The architect designed a unique building shaped like a spiral.
+@ universe
+1	67409	name	universe	1	Scientists study the universe to understand how it began.
+2	67409	name	universe	0	The universe contains billions of galaxies and stars.
+3	67409	name	universe	0	In the universe, nothing travels faster than light.
+4	67409	name	universe	0	Our universe began with the Big Bang billions of years ago.
+5	67409	name	universe	0	The universe is vast and still full of mysteries.
+@ unknown
+1	67376	adj	unknown	1	The thief remained unknown to the police for weeks.
+2	67376	adj	unknown	0	She found an unknown flower growing in the garden.
+3	67376	adj	unknown	0	The origin of the ancient artifact is still unknown.
+4	67376	adj	unknown	0	He received a package from an unknown sender.
+5	67376	adj	unknown	0	The cause of the accident remains unknown.
+@ upper
+1	67391	adj	upper	1	The upper shelf holds the tallest books.
+2	67391	adj	upper	0	She reached for the upper drawer in the cabinet.
+3	67391	adj	upper	0	The upper part of the mountain was covered in snow.
+4	67391	adj	upper	0	He sat in the upper section of the theater.
+5	67391	adj	upper	0	The upper floor has a view of the garden.
+@ upwards
+1	67371	adv	upwards	1	She looked upwards to see the bird flying high.
+2	67371	adv	upwards	0	The rocket shot upwards into the clear blue sky.
+3	67371	adv	upwards	0	Smoke curled upwards from the chimney.
+4	67371	adv	upwards	0	The hot air balloon drifted upwards slowly.
+5	67371	adv	upwards	0	The elevator carried us upwards to the observation deck.
+@ urban
+1	67386	adj	urban	1	The urban park has many trees and benches for visitors.
+2	67386	adj	urban	0	She enjoys the fast pace of urban life in the big city.
+3	67386	adj	urban	0	The new apartment is in a quiet urban neighborhood.
+4	67386	adj	urban	0	Many people commute daily from the suburbs to urban workplaces.
+5	67386	adj	urban	0	Urban planning in the city now includes more bike lanes and parks.
+@ urge
+1	67434	noun	urge	1	I felt a sudden urge to eat chocolate after the movie.
+2	67434	noun	urge	0	She gave in to the urge to call her friend late at night.
+3	67434	noun	urge	0	The child couldn't resist the urge to open the gift early.
+4	67434	noun	urge	0	He acted on the urge to walk along the quiet beach.
+5	67434	noun	urge	0	She felt an urge to check the locked door once more.
+@ vary
+1	67421	verb	varies	1	The temperature varies throughout the day.
+2	67421	verb	varies	0	Her mood varies depending on the weather.
+3	67421	verb	vary	0	The colors in the painting vary from red to blue.
+4	67421	verb	varies	0	The sound of the waves varies with the tide.
+5	67421	verb	varies	0	The rhythm of the music varies slowly over time.

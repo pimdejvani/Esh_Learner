@@ -1,0 +1,153 @@
+@ early
+1	32260	adj	early	1	We arrived early enough to watch the sun rise over the silent lake.
+2	32260	adj	early	0	The train leaves early in the morning.
+3	32260	adj	early	0	She was early for the meeting.
+4	32267	adv	early	0	We finished the work early, so we went home for dinner.
+5	32260	adj	earlier	0	Can we start the meeting earlier tomorrow morning?
+
+@ east
+1	32269	noun	east	1	At sunrise, the clouds in the east turned gold above the hills.
+2	32269	noun	east	0	The sun rises in the east.
+3	32277	adv	east	0	Our town lies east of the river.
+4	32277	adv	east	0	Travel east to reach the coast.
+5	32274	adj	east	0	The east wing of the school was built last year.
+
+@ easy
+1	32279	adj	easy	1	After weeks of practice, the exam finally felt easy to Maria.
+2	32279	adj	easy	0	This question is easy to answer.
+3	32279	adj	easy	0	The path is easy to follow.
+4	32279	adj	easy	0	She made the job look easy.
+5	32285	adv	easy	0	After his illness, John decided to take it easy.
+
+@ eat
+1	32290	verb	eat	1	After planting the seeds, the children hoped to eat their own tomatoes in summer.
+2	32291	verb	eating	0	She is eating an apple while waiting for the bus.
+3	32291	verb	ate	0	He ate his lunch quickly before the meeting started.
+4	32291	verb	eaten	0	Have you ever eaten sushi before?
+5	32291	verb	eats	0	My brother eats breakfast every morning before school.
+
+@ egg
+1	32310	noun	egg	1	In the nest, one small egg cracked open just as the children looked closer.
+2	32310	noun	egg	0	An egg has a shell around it.
+3	32310	noun	egg	0	She boiled an egg for breakfast.
+4	32310	noun	egg	0	The bird sat on its egg.
+5	32336	verb	egged	0	The other kids egged him on to jump into the cold lake.
+
+@ eight
+1	32337	noun	eight	1	At eight, the birthday candles glowed while everyone sang around the table.
+2	32337	noun	Eight	0	Eight comes right after the number seven in counting.
+3	32337	noun	eight	0	The old clock in the hallway shows eight o'clock now.
+4	32337	noun	eight	0	There are eight chairs in the room.
+5	32337	noun	eight	0	She has eight apples left in the basket for tomorrow.
+
+@ eighteen
+1	67730	num	eighteen	1	At eighteen, Kai opened a letter his mother had saved for years.
+2	67730	num	Eighteen	0	Eighteen comes right after seventeen in the counting order.
+3	67730	num	eighteen	0	There are eighteen students in the class.
+4	67730	num	eighteen	0	She turned eighteen last month and started university this fall.
+5	67730	num	eighteen	0	The bus arrives at eighteen minutes past nine.
+
+@ eighty
+1	67731	num	eighty	1	At the school reunion, eighty former students returned to share old memories together.
+2	67731	num	Eighty	0	Eighty comes right after seventy-nine in the counting order.
+3	67731	num	eighty	0	The room has space for eighty people.
+4	67731	num	eighty	0	He drove eighty kilometers today to visit his parents.
+5	67731	num	eighty	0	The old book costs eighty dollars at that small shop.
+
+@ eleven
+1	32351	noun	eleven	1	The school eleven celebrated when their captain scored the winning run.
+2	32351	noun	eleven	0	In cricket, an eleven means a full team of players.
+3	32351	noun	eleven	0	Our school eleven practiced after class.
+4	32351	noun	eleven	0	The eleven selected its best bowlers.
+5	32351	noun	eleven	0	He hopes to join the first eleven next year.
+
+@ else
+1	32357	adj	else	1	When everyone else left, Noor stayed to help clean the hall.
+2	32357	adj	else	0	Who else in the class might know the correct answer?
+3	32357	adj	else	0	I need something else to wear.
+4	32357	adj	else	0	Ask someone else in the office for help today.
+5	32358	adv	else	0	How else can we get to the airport without a car?
+
+@ email
+1	32360	noun	email	1	An email from her brother made Lila smile during a difficult week abroad.
+2	32360	noun	email	0	Send me an email with the details.
+3	32360	noun	email	0	I read your email this morning.
+4	32360	noun	email	0	The email arrived after lunch and surprised the whole office.
+5	32364	verb	emailed	0	She emailed her teacher about the missing homework.
+
+@ end
+1	32368	noun	end	1	At the end of the race, the two friends crossed the line together.
+2	32368	noun	end	0	The end of the road is near the river.
+3	32368	noun	end	0	We reached the end of the book.
+4	32368	noun	end	0	Put your name at the end of the page.
+5	32382	verb	end	0	The movie will end in ten minutes.
+
+@ enough
+1	32389	det	enough	1	Although the storm lasted for days, there was enough food for every family in the village.
+2	32389	det	enough	0	We have enough chairs for everyone.
+3	32389	det	enough	0	Is there enough milk for tea?
+4	32389	det	enough	0	He saved enough money to buy a bike.
+5	32392	adv	enough	0	This box is strong enough to hold books.
+
+@ even
+1	32401	adj	even	1	After the builder worked all afternoon, the garden path was smooth and even.
+2	32401	adj	even	0	The table is even on the floor.
+3	32403	adj	even	0	Cut the paper into even pieces.
+4	32403	adj	even	0	The two sides are even in length.
+5	32419	adv	even	0	I was strong before, but now I am even stronger.
+
+@ event
+1	32431	noun	event	1	The school concert became a special event because every grandparent came to watch.
+2	32431	noun	event	0	The event starts at six o'clock.
+3	32431	noun	event	0	Many people from the town attended the charity event.
+4	32431	noun	event	0	We planned an event for the park.
+5	32430	noun	event	0	In the event of heavy rain, the picnic will move indoors.
+
+@ ever
+1	32445	adv	ever	1	If you ever feel lost, remember that you can call me at any hour.
+2	32445	adv	ever	0	Have you ever seen snow fall in the city?
+3	32445	adv	ever	0	This is the best meal ever.
+4	32445	adv	ever	0	Nobody ever answered the phone during the whole storm.
+5	32445	adv	ever	0	Did he ever visit this town?
+
+@ every
+1	32450	det	Every	1	Every morning, Dad left a small note in my lunchbox before work.
+2	32450	det	Every	0	Every student needs a pencil for the exam tomorrow.
+3	32450	det	every	0	We walk the dog every day.
+4	32450	det	Every	0	Every room in the new building has a large window.
+5	32450	det	every	0	She checks every answer twice before turning in her homework.
+
+@ everybody
+1	32453	pron	everybody	1	When the lights came back on, everybody in the hall clapped with relief.
+2	32453	pron	Everybody	0	Everybody is ready for lunch after the long morning hike.
+3	32453	pron	everybody	0	I invited everybody to the party.
+4	32453	pron	Everybody	0	Everybody needs a safe place to sleep.
+5	32453	pron	everybody	0	Can everybody in the room hear the teacher clearly?
+
+@ everyone
+1	32454	pron	Everyone	1	Everyone on the bus grew quiet when the driver helped the lost child find her stop.
+2	32454	pron	Everyone	0	Everyone has a name tag pinned to their shirt.
+3	32454	pron	everyone	0	I told everyone the good news.
+4	32454	pron	Everyone	0	Everyone should bring a notebook to the first class.
+5	32454	pron	everyone	0	Did everyone finish the test before the bell rang?
+
+@ everything
+1	32455	pron	everything	1	After the fire drill, the teacher checked that everything was safe before class began.
+2	32455	pron	Everything	0	Everything is on the table, ready for the picnic.
+3	32455	pron	everything	0	She packed everything for the trip.
+4	32455	pron	Everything	0	Everything looks clean now that the guests have left.
+5	32455	pron	everything	0	Did you understand everything the teacher explained today?
+
+@ excited
+1	32471	adj	excited	1	The children were excited when they saw their painting hanging in the library.
+2	32471	adj	excited	0	I am excited about the trip.
+3	32471	adj	excited	0	She felt excited before the game.
+4	32471	adj	excited	0	They are excited to meet the baby.
+5	32475	verb	excited	0	The surprise party excited all the guests when they arrived.
+
+@ exciting
+1	32477	adj	exciting	1	The whole stadium roared as the final minute became the most exciting moment of the season.
+2	32477	adj	exciting	0	The movie was exciting from start to finish.
+3	32477	adj	exciting	0	We had an exciting trip to the mountains last summer.
+4	32477	adj	exciting	0	This is such an exciting game!
+5	32476	verb	exciting	0	The coach kept exciting the team with stories of past victories.

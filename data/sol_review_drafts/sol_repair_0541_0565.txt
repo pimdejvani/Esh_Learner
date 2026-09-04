@@ -18,7 +18,7 @@
 5	53344	verb	voicing	0	The actor is voicing a character in the new film.
 @ war
 1	53346	noun	war	1	After years of war, the families finally returned to their homes.
-2	53345	noun	war	0	War can force people to leave their country.
+2	53345	noun	War	0	War can force people to leave their country.
 3	53346	noun	wars	0	The museum explains how two wars changed the region.
 4	53349	noun	war	0	The city began a war against illegal dumping.
 5	53355	noun	war	0	The children played war with a deck of cards.
@@ -30,7 +30,7 @@
 5	53358	noun	washings	0	Two washings removed the paint from the shirt.
 @ wave
 1	53367	verb	wave	1	We wave every day.
-2	53368	verb	wave	0	Wave goodbye before the train leaves.
+2	53368	verb	Wave	0	Wave goodbye before the train leaves.
 3	53368	verb	waves	0	The child waves to her father from the window.
 4	53368	verb	waved	0	We waved when the rescue boat reached the shore.
 5	53378	noun	waves	0	Large waves struck the rocks during the storm.
@@ -63,7 +63,7 @@
 2	53485	adj	wet	0	My shoes are wet from the rain.
 3	53485	adj	wetter	0	The grass is wetter near the river.
 4	53489	adj	wettest	0	August is usually the wettest month here.
-5	53511	verb	wet	0	Wet the cloth before cleaning the table.
+5	53511	verb	Wet	0	Wet the cloth before cleaning the table.
 @ wheel
 1	53518	noun	wheel	1	A mechanic repaired the broken wheel so the family could continue home.
 2	53518	noun	wheel	0	The bicycle needs a new front wheel.
@@ -71,10 +71,10 @@
 4	53542	verb	wheeled	0	A nurse wheeled the patient into the garden.
 5	53548	verb	wheeling	0	Birds were wheeling above the field.
 @ while
-1	53555	conj	while	1	While the storm raged outside, the family waited together in safety.
+1	53555	conj	While	1	While the storm raged outside, the family waited together in safety.
 2	53552	noun	while	0	Please wait here for a while.
 3	53555	conj	while	0	She listened to music while she cooked dinner.
-4	53556	conj	while	0	While the task is difficult, it is not impossible.
+4	53556	conj	While	0	While the task is difficult, it is not impossible.
 5	53560	verb	whiled	0	We whiled away the afternoon by playing cards.
 @ whole
 1	53564	adj	whole	1	It is whole.
@@ -84,7 +84,7 @@
 5	53571	noun	wholes	0	The lesson compares two wholes divided into equal parts.
 @ whose
 1	53572	det	whose	1	whose book is here.
-2	53572	det	whose	0	Whose coat is hanging by the door?
+2	53572	det	Whose	0	Whose coat is hanging by the door?
 3	53573	det	whose	0	I met the writer whose book won the prize.
 4	53574	det	whose	0	We visited a house whose roof was covered in flowers.
 5	53575	pron	whose	0	These keys are mine, but whose are those?
@@ -104,7 +104,7 @@
 1	53619	noun	wind	1	The strong wind carried the rescue boat safely toward the shore.
 2	53619	noun	wind	0	The wind shook the windows all night.
 3	53619	noun	winds	0	Cold winds blow across the hills in winter.
-4	53646	verb	wind	0	Wind the rope around the wooden post.
+4	53646	verb	Wind	0	Wind the rope around the wooden post.
 5	53647	verb	wound	0	He wound the old clock before going to bed.
 @ winner
 1	53656	noun	winner	1	The young winner gave her prize money to families who lost their homes.

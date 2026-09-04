@@ -1,0 +1,90 @@
+@ pointed
+1	65188	adj	pointed	1	The knife has a pointed tip for piercing tough material.
+2	65188	adj	pointed	0	She wore a pointed shoe with a narrow toe.
+3	65188	adj	pointed	0	The pointed end of the metal rod could cause an injury.
+4	65188	adj	pointed	0	He used a pointed stick to draw in the sand.
+5	65188	adj	pointed	0	The arrow had a pointed metal head.
+@ popularity
+1	65195	noun	popularity	1	The popularity of the new cafe grew after a customer review went viral.
+2	65195	noun	popularity	0	She was surprised by the sudden popularity of her handmade jewelry.
+3	65195	noun	popularity	0	The movie's popularity soared after the lead actor won an award.
+4	65195	noun	popularity	0	His popularity increased after he helped the local community.
+5	65195	noun	popularity	0	The app's popularity caused downloads to increase rapidly.
+@ pose
+1	65300	verb	pose	1	She decided to pose for the camera with her favorite hat.
+2	65300	verb	pose	0	The model began to pose for the artist in a dramatic stance.
+3	65300	verb	posed	0	He posed carefully beside the ancient statue for the photo.
+4	65300	verb	posed	0	The dancer posed gracefully in front of the mirror.
+5	65300	verb	pose	0	They asked the child to pose for the family portrait.
+@ possess
+1	65313	verb	possesses	1	She still possesses her grandmother's old watch.
+2	65313	verb	possesses	0	The museum possesses several rare artifacts from ancient Egypt.
+3	65313	verb	possess	0	He doesn't possess a car, but he rents one when needed.
+4	65313	verb	possess	0	They possess the keys to the storage room.
+5	65313	verb	possesses	0	The library possesses a complete collection of classic novels.
+@ potential
+1	65290	noun	potential	1	The young athlete showed great potential to win the championship.
+2	65290	noun	potential	0	She has the potential to lead the team to victory next season.
+3	65290	noun	potential	0	His potential as a writer became obvious after the first draft.
+4	65290	noun	potential	0	The project revealed the team's hidden potential for creative problem-solving.
+5	65290	noun	potential	0	With more practice, her potential to excel will become clear.
+@ praise
+1	65329	noun	praise	1	The teacher gave the student high praise for the excellent essay.
+2	65329	noun	praise	0	He received praise from the team after fixing the critical error.
+3	65329	noun	praise	0	The actor's performance earned widespread praise from critics.
+4	65329	noun	praise	0	Her dedication did not go unnoticed; she received praise from the manager.
+5	65329	noun	praise	0	The new policy has drawn praise from many experts in the field.
+@ pregnant
+1	65352	adj	pregnant	1	She is pregnant with her first child and excited for the baby shower.
+2	65352	adj	pregnant	0	My sister became pregnant after trying for a year.
+3	65352	adj	pregnant	0	The doctor confirmed that the woman is pregnant at eight weeks.
+4	65352	adj	pregnant	0	He was surprised when his wife told him she was pregnant.
+5	65352	adj	pregnant	0	The nurse asked if she had been pregnant before.
+@ preparation
+1	65332	noun	preparation	1	She started her preparation early for the big presentation.
+2	65332	noun	preparation	0	The preparation for the trip took three days of careful planning.
+3	65332	noun	preparation	0	His preparation for the interview included practicing common questions.
+4	65332	noun	preparation	0	The preparation of the meal required precise timing and attention.
+5	65332	noun	preparation	0	We need more preparation before we can launch the new product.
+@ presence
+1	65341	noun	presence	1	The teacher's presence made the students focus on their work.
+2	65341	noun	presence	0	I felt calm in her presence during the difficult meeting.
+3	65341	noun	presence	0	The presence of the audience encouraged the speaker to continue.
+4	65341	noun	presence	0	His presence at the event surprised everyone who knew him.
+5	65341	noun	presence	0	We noticed the presence of a stranger near the locked door.
+@ preserve
+1	65361	noun	preserve	1	She spread strawberry preserve on her toast for breakfast.
+2	65361	noun	preserve	0	The jar of raspberry preserve was almost empty.
+3	65361	noun	preserve	0	He bought a small jar of peach preserve at the market.
+4	65361	noun	preserve	0	The grandmother shared her homemade blackberry preserve.
+5	65361	noun	preserve	0	They served apple preserve with their cheese platter.
+@ prime
+1	65391	adj	prime	1	The prime reason for the delay was bad weather.
+2	65391	adj	prime	0	She is the prime candidate for the job.
+3	65391	adj	prime	0	This is a prime opportunity to improve the service.
+4	65391	adj	prime	0	The prime minister spoke at the conference.
+5	65391	adj	prime	0	He provided a prime example of effective teamwork.
+@ principle
+1	65380	noun	principle	1	Honesty is a core principle in our family.
+2	65380	noun	principle	0	The company's guiding principle is customer satisfaction.
+3	65380	noun	principle	0	She followed the principle of fairness in every decision.
+4	65380	noun	principle	0	Respect for others is a basic principle of ethics.
+5	65380	noun	principle	0	The teacher explained the principle behind the experiment.
+@ priority
+1	65374	noun	priority	1	The team made safety a top priority during the project.
+2	65374	noun	priority	0	She made her family's needs her highest priority.
+3	65374	noun	priority	0	The doctor gave emergency care top priority in the clinic.
+4	65374	noun	priority	0	We must address the highest priority first.
+5	65374	noun	priority	0	The new policy makes environmental protection a national priority.
+@ privacy
+1	65367	noun	privacy	1	She closed the door to protect her privacy.
+2	65367	noun	privacy	0	He values his privacy and avoids social media.
+3	65367	noun	privacy	0	The remote cabin offered complete privacy during their vacation.
+4	65367	noun	privacy	0	They built a fence to ensure their privacy.
+5	65367	noun	privacy	0	The quiet forest gave her a sense of privacy.
+@ procedure
+1	65431	noun	procedure	1	The doctor explained each step of the medical procedure clearly.
+2	65431	noun	procedure	0	Following the correct procedure ensures safety during the experiment.
+3	65431	noun	procedure	0	The new procedure reduced the time needed for data processing.
+4	65431	noun	procedure	0	She recorded every detail of the laboratory procedure carefully.
+5	65431	noun	procedure	0	The company updated its standard procedure for handling customer complaints.

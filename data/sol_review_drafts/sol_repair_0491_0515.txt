@@ -16,7 +16,7 @@
 1	52390	det	such	1	such book is here.
 2	52392	det	such	0	It was such a beautiful morning.
 3	52393	det	such	0	What a joy to hear such news!
-4	52395	pron	such	0	Such are the risks of traveling in winter.
+4	52395	pron	Such	0	Such are the risks of traveling in winter.
 5	52396	noun	suches	0	The rule covers boxes, bags, and other suches.
 
 @ suddenly
@@ -63,7 +63,7 @@
 
 @ taste
 1	52574	noun	taste	1	This soup has a good taste.
-2	52582	verb	taste	0	Taste the sauce, please.
+2	52582	verb	Taste	0	Taste the sauce, please.
 3	52574	noun	taste	0	I like the taste of mango.
 4	52589	adj	taste	0	She has taste clothes.
 5	52582	verb	tastes	0	The tea tastes sweet.
@@ -132,7 +132,7 @@
 5	52960	verb	touring	0	We are touring the old castle this afternoon.
 
 @ tourism
-1	52963	noun	tourism	1	Tourism brought new jobs and hope to the small coastal village.
+1	52963	noun	Tourism	1	Tourism brought new jobs and hope to the small coastal village.
 2	52963	noun	tourism	0	The island depends heavily on tourism.
 3	52964	noun	tourism	0	She works in the tourism industry.
 4	52965	noun	tourism	0	The town promotes medical tourism.

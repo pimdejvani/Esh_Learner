@@ -1,0 +1,90 @@
+@ confuse
+1	55168	verb	confuse	1	The twins loved to confuse their own mother by swapping clothes and pretending to be each other.
+2	55168	verb	confuses	0	The teacher's fast talking always confuses the new students.
+3	55168	verb	confusing	0	This map is confusing because none of the streets have names.
+4	55169	verb	confuse	0	People often confuse the two brothers because they look so alike.
+5	55169	verb	confused	0	I confused her birthday with her sister's and sent the card to the wrong house.
+@ confused
+1	55176	adj	confused	1	She stood in the middle of the busy train station, completely confused about which platform to use.
+2	55177	adj	confused	0	After stepping off the roller coaster, he felt confused and dizzy for a minute.
+3	55178	adj	confused	0	His notes were so confused that no one could follow his argument.
+4	55179	adj	most confused	0	Of all the students, she was the most confused by the tricky question.
+5	55176	adj	more confused	0	The longer he explained, the more confused I became.
+@ connection
+1	55185	noun	connection	1	She sprinted through the airport in tears, terrified she would miss her connection to Rome.
+2	55187	noun	connection	0	Our internet connection keeps dropping every time it rains.
+3	55190	noun	connection	0	The two old friends still feel a strong connection after thirty years apart.
+4	55184	noun	connection	0	Check that the connection between the cable and the TV is tight.
+5	55193	noun	connections	0	Her uncle has good connections in the music business.
+@ consequence
+1	55199	noun	consequences	1	He ignored the doctor's warning and now faces the serious consequences of his choice.
+2	55198	noun	consequence	0	Every action has a consequence, whether we notice it or not.
+3	55199	noun	consequences	0	Skipping practice will have serious consequences before the big game.
+4	55202	noun	consequence	0	To him, money was a matter of little consequence.
+5	55198	noun	consequence	0	The consequence of the drought was a shortage of fresh vegetables.
+@ consist
+1	55205	verb	consisted	1	As the soldiers lay wounded in the mud, their courage consisted not in fighting, but in comforting each other through the night.
+2	55205	verb	consists	0	For many people, happiness consists in small daily pleasures rather than wealth.
+3	55205	verb	consist	0	True wisdom does not consist in knowing many facts, but in knowing when to stay silent.
+4	55205	verb	consisting	0	Her quiet leadership, consisting mainly in patience and steady example, earned her the team's trust over time.
+5	55205	verb	consists	0	Real friendship often consists in simply being present during hard times.
+@ define
+1	55427	verb	define	1	The little girl asked her grandfather to define love, and he simply hugged her tight.
+2	55427	verb	defines	0	The dictionary defines 'happy' as feeling pleasure or contentment.
+3	55426	verb	defined	0	Kindness and patience defined her entire career as a nurse.
+4	55428	verb	define	0	Can you define exactly what you mean by 'soon'?
+5	55429	verb	defining	0	A tall stone wall was defining the border between the two farms.
+@ definite
+1	55433	adj	definite	1	After months of uncertainty, the doctor finally gave her a definite answer: she was going to be fine.
+2	55434	adj	definite	0	We don't have a definite date for the wedding yet.
+3	55432	adj	definite	0	The old fence marks a definite line between the two neighbors' yards.
+4	55435	adj	definite	0	In English grammar, 'the' is called a definite article because it points to one specific thing.
+5	55433	adj	more definite	0	I need something more definite before I can book the flight.
+@ definition
+1	55438	noun	definition	1	The student stayed up all night trying to memorize every definition in the huge vocabulary list before the test.
+2	55438	noun	definition	0	Look up the definition of any new word you don't understand.
+3	55439	noun	definition	0	By definition, a square has four equal sides.
+4	55445	noun	definition	0	The new TV has amazing picture definition, so every detail looks sharp.
+5	55438	noun	definitions	0	The teacher asked us to write clear definitions for ten difficult words.
+@ deliver
+1	55456	verb	delivered	1	The young mother cried tears of joy the moment she finally delivered her baby girl.
+2	55458	verb	deliver	0	The company promised to deliver the package by Friday morning.
+3	55459	verb	delivered	0	The soldiers delivered the prisoner to the local police station.
+4	55460	verb	delivers	0	Everyone was nervous, but the young pianist delivers under pressure every single time.
+5	55461	verb	deliver	0	The president will deliver his speech to the nation tonight.
+@ departure
+1	55466	noun	departure	1	Passengers wept and waved as the ship's departure horn echoed across the harbor.
+2	55466	noun	departure	0	Check the departure time on your ticket before you leave for the airport.
+3	55466	noun	departures	0	The departures board showed that our flight was delayed by two hours.
+4	55467	noun	departure	0	Working from home was a big departure from her usual office routine.
+5	55467	noun	departure	0	Building the treehouse in one weekend was quite a departure from his usual slow planning.
+@ despite
+1	55473	prep	Despite	1	Despite losing both parents as a child, she grew up to become a kind and hopeful teacher.
+2	55473	prep	Despite	0	Despite the heavy rain, thousands of fans stayed to watch the match.
+3	55473	prep	despite	0	He passed the exam despite studying for only one night.
+4	55473	prep	Despite	0	Despite her fear of heights, she climbed to the top of the tower.
+5	55473	prep	despite	0	The old car still runs well despite its age.
+@ destination
+1	55478	noun	destination	1	After eighteen hours of travel, she finally reached her destination and burst into tears of relief.
+2	55478	noun	destination	0	Paris has always been my dream travel destination.
+3	55478	noun	destinations	0	The travel agency listed five popular destinations for summer holidays.
+4	55481	noun	destination	0	For him, becoming a doctor was never a destination, just one step on a longer path.
+5	55478	noun	destination	0	Type your destination into the map app to get directions.
+@ determine
+1	55483	verb	determined	1	Doctors ran test after test until they finally determined what was making her so sick.
+2	55486	verb	determine	0	The judge will determine who is responsible for the accident.
+3	55487	verb	determined	0	He determined to finish the marathon no matter how much his legs hurt.
+4	55482	verb	determine	0	Surveyors used old maps to determine the exact boundary between the two farms.
+5	55483	verb	determines	0	A simple blood test now determines whether the treatment is working.
+@ determined
+1	55490	adj	determined	1	Even after failing the exam three times, she stayed determined and finally passed on her fourth try.
+2	55490	adj	determined	0	He was determined to learn guitar, so he practiced every single night.
+3	55490	adj	more determined	0	Losing the first game only made the team more determined to win the next one.
+4	55490	adj	most determined	0	Out of all the runners, she was the most determined to finish despite her injury.
+5	55490	adj	determined	0	The determined little boy kept trying until he tied his shoes by himself.
+@ development
+1	55494	noun	development	1	The whole town gathered anxiously at city hall to hear the latest development in the missing child's case.
+2	55492	noun	development	0	Doctors track a young child's development at every checkup.
+3	55495	noun	development	0	They built a new housing development on the edge of town.
+4	55497	noun	development	0	The company spends millions each year on research and development.
+5	55494	noun	developments	0	Scientists announced several exciting developments in cancer treatment this year.

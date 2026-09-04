@@ -1,0 +1,90 @@
+@ campus
+1	54635	noun	campus	1	Students cheered as fireworks lit up the campus after their team won the championship.
+2	54635	noun	campus	0	New students get a map to help them find their way around campus.
+3	54635	noun	campuses	0	The university built two new campuses in nearby cities last year.
+4	54636	noun	campus	0	She missed the noise and energy of campus during summer break.
+5	54635	noun	campus	0	Security guards patrol the campus at night to keep students safe.
+@ candidate
+1	54639	noun	candidate	1	The candidate hugged her family on stage after she won the election.
+2	54639	noun	candidates	0	Three candidates are running for mayor this year.
+3	54641	noun	candidate	0	Each candidate has two hours to complete the exam.
+4	54643	noun	candidate	0	After passing her exams, she became a PhD candidate.
+5	54640	noun	candidate	0	This old barn is a perfect candidate for renovation.
+@ cap
+1	54649	noun	cap	1	He pulled his baseball cap low to hide his tears at the funeral.
+2	54649	noun	cap	0	She wore a red cap to keep the sun out of her eyes.
+3	54652	noun	cap	0	Screw the cap back onto the bottle so it doesn't spill.
+4	54675	verb	capped	0	The government capped rent increases at five percent this year.
+5	54649	noun	caps	0	The store sells caps in every color you can imagine.
+@ captain
+1	54698	noun	captain	1	The captain shouted orders as huge waves crashed over the sinking ship.
+2	54703	noun	captain	0	Our team elected a new captain before the season started.
+3	54699	noun	captain	0	He was promoted to captain after ten years in the army.
+4	54709	verb	captained	0	She captained the debate team for two years in high school.
+5	54703	noun	captains	0	The two captains shook hands before the match began.
+@ careless
+1	54711	adj	careless	1	The careless driver ran the red light and nearly hit a child on a bike.
+2	54711	adj	careless	0	It was careless of him to leave the front door unlocked overnight.
+3	54710	adj	careless	0	She seemed careless about the exam results, as if they didn't matter to her.
+4	54711	adj	more careless	0	He grew more careless with his homework as the school year went on.
+5	54711	adj	most careless	0	Of all the workers, he was the most careless with the machinery.
+@ category
+1	54713	noun	category	1	The judges argued for an hour over which category her painting belonged in.
+2	54713	noun	category	0	This movie fits into the category of romantic comedy.
+3	54713	noun	categories	0	The store organizes its products into clear categories for shoppers.
+4	54713	noun	category	0	He entered the marathon in the under-18 category.
+5	54713	noun	categories	0	Teachers sorted the books into different categories by reading level.
+@ ceiling
+1	54715	noun	ceiling	1	Water dripped from a crack in the ceiling during the storm, ruining her books.
+2	54715	noun	ceiling	0	He painted the ceiling white to make the room feel brighter.
+3	54716	noun	ceiling	0	The company set a ceiling on how much each employee could spend.
+4	54715	noun	ceilings	0	Old houses in this town often have very high ceilings.
+5	54716	noun	ceiling	0	Many women say they hit a glass ceiling in their careers.
+@ celebration
+1	54727	noun	celebration	1	Confetti filled the air at the celebration when the team won the championship.
+2	54727	noun	celebration	0	We're planning a small celebration for my grandmother's ninetieth birthday.
+3	54725	noun	celebration	0	The village holds a celebration every year to mark the harvest.
+4	54727	noun	celebrations	0	Fireworks lit up the sky during the New Year celebrations.
+5	54726	noun	celebration	0	Her promotion was cause for celebration among the whole team.
+@ central
+1	54728	adj	central	1	Firefighters rushed to the central square where the fire had started spreading fast.
+2	54728	adj	central	0	The hotel is central, so we can walk to most tourist sites.
+3	54730	adj	central	0	Trust is central to any good friendship.
+4	54728	adj	more central	0	We moved to a more central apartment to cut our commute time.
+5	54730	adj	central	0	Music has always been central to her life.
+@ ceremony
+1	54737	noun	ceremony	1	She cried with pride as her son walked across the stage at the graduation ceremony.
+2	54738	noun	ceremony	0	They kept their wedding ceremony small, with just close family attending.
+3	54736	noun	ceremony	0	The monks performed a quiet ceremony at sunrise every morning.
+4	54737	noun	ceremonies	0	The Olympic opening ceremonies are watched by millions of people.
+5	54739	noun	ceremony	0	Just come in and sit down, there's no need to stand on ceremony here.
+@ chain
+1	54743	noun	chain	1	The dog snapped its chain and ran barking into the busy street.
+2	54748	noun	chain	0	My bike chain fell off halfway up the hill.
+3	54761	noun	chain	0	That coffee chain has shops in almost every city now.
+4	54772	verb	chained	0	He chained his bicycle to the fence outside the library.
+5	54759	noun	chain	0	A strange chain of events led to them meeting again.
+@ challenge
+1	54789	noun	challenge	1	Climbing the mountain in winter was the biggest challenge of her life.
+2	54782	noun	challenge	0	He issued a challenge to anyone who thought they could beat him at chess.
+3	54796	verb	challenged	0	My little brother challenged me to a race across the park.
+4	54798	verb	challenged	0	The lawyer challenged the evidence presented in court.
+5	54801	verb	challenges	0	This new job challenges me every single day.
+@ champion
+1	54807	noun	champion	1	Tears filled his eyes as he was crowned world champion after years of training.
+2	54812	adj	champion	0	The champion boxer defended his title for the fifth time.
+3	54809	noun	champion	0	She has always been a champion of children's rights.
+4	54815	verb	championed	0	The senator championed a new law to protect wildlife.
+5	54807	noun	champions	0	Only two teams have ever become champions three years in a row.
+@ channel
+1	54820	noun	channel	1	Fishing boats fought rough waves as they crossed the narrow channel between the islands.
+2	54832	noun	channel	0	She changed the channel because she didn't like the news.
+3	54821	noun	channel	0	Email became the main channel for communication between teams.
+4	54840	verb	channeled	0	He channeled his anger into painting instead of shouting.
+5	54832	noun	channels	0	Our new TV gets more than a hundred channels.
+@ chapter
+1	54844	noun	chapter	1	She stayed up all night crying through the final chapter of the novel.
+2	54844	noun	chapter	0	Please read the next chapter before class tomorrow.
+3	54855	noun	chapter	0	Moving to a new city felt like starting a new chapter in her life.
+4	54844	noun	chapters	0	The book has twelve chapters, each about a different country.
+5	54851	noun	chapter	0	He joined the local chapter of the charity to help organize events.

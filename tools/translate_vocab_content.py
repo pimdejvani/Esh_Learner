@@ -2,7 +2,7 @@
 """Validate English cloze drafts and translate them to Thai without an LLM API.
 
 The input may use the six-field English-only format in
-``terra_english_format.md`` or the existing eight-field compact format.  For
+``docs/formats/terra_english_format.md`` or the existing eight-field compact format.  For
 eight-field input, existing Thai text is deliberately ignored so translations
 can be regenerated.  Output always uses compact format v2 and is written to a
 separate directory; source drafts and content databases are never modified.
@@ -356,13 +356,6 @@ def translate_with_fallback(
     return [str(value) for value in results], usage
 
 
-def explanation_en(headword: str, row: DraftSentence, gloss: str) -> str:
-    return (
-        f'In this sentence, "{row.target}" is used as {row.pos} for the headword '
-        f'"{headword}" and expresses this dictionary sense: {gloss}'
-    )
-
-
 def translation_items(
     headword: str, rows: list[DraftSentence], glosses: dict[int, str]
 ) -> list[TranslationItem]:
@@ -371,7 +364,6 @@ def translation_items(
         gloss = glosses[row.sense_id]
         context = f"Headword: {headword}. Part of speech: {row.pos}. Dictionary sense: {gloss}"
         items.append(TranslationItem(row.en_text, context))
-        items.append(TranslationItem(explanation_en(headword, row, gloss), context))
     return items
 
 
@@ -381,8 +373,14 @@ def render_entry(
     lines = [f"@ {headword}"]
     ordered = sorted(rows, key=lambda value: value.rank)
     for index, row in enumerate(ordered):
-        thai_sentence = translations[index * 2]
-        thai_explanation = translations[index * 2 + 1]
+        thai_sentence = translations[index]
+        # The Thai explanation is intentionally left blank here: per-sentence
+        # explanations must be authored later by an LLM that actually reads
+        # each sentence's context (SPEC.md:423 forbids one template/note
+        # copied across all 5 sentences of a word).  The 8-field compact
+        # format v2 shape is kept intact so downstream tools still see 8
+        # fields; the field is just empty until that authoring pass runs.
+        thai_explanation = ""
         fields = (
             str(row.rank),
             str(row.sense_id),
@@ -462,7 +460,7 @@ def main() -> int:
     if len(parse_errors) + len(validation_errors) > 50:
         print(f"... {len(parse_errors) + len(validation_errors) - 50} more errors", file=sys.stderr)
     if args.dry_run:
-        return 1 if parse_errors else 0
+        return 1 if parse_errors or validation_errors else 0
 
     cache = TranslationCache(args.cache)
     rendered_by_file: dict[Path, list[str]] = {}

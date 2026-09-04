@@ -1,0 +1,25 @@
+supermarket	pass	all five rows sense 40813 noun; rank 1 concrete and 6+ words; no fabricated POS
+sure	repaired	r1/r2 used 40816 (physically secure) for belief sentences -> re-pointed to 40817; r3 kept as true adverb 40822; intj 67927-67929 skipped
+sweater	repaired	r4/r5 used verb 40832 'to dress in a sweater' (fabrication) -> verb POS skipped, replaced with real noun uses
+swim	repaired	r5 was template 'They are swimming now.'; rank 1 thin -> both rewritten with a situation
+swimming	repaired	rank 1 only 4 words; r5 used unnatural plural 'swimmings' -> rewritten on 40852
+t-shirt	repaired	rank 1 was a bare 4-word copula row -> rewritten; only sense 40855 exists
+table	repaired	r4/r5 used verb 40878 (tabulate / table a motion), not A1 -> verb POS skipped; rank 1 thickened
+take	repaired	rank 1 5 words, r4/r5 under 6 words -> rewritten; noun senses 40981+ skipped as non-A1
+talk	pass	verb 40993 core plus noun 41002; rank 1 has context; nothing fabricated
+taxi	repaired	r4/r5 used verb 41028 (aviation: move an aircraft on the ground) -> verb POS skipped
+tea	repaired	r4 used verb 41045 'to drink tea' (fabrication) -> re-pointed to noun 41031; adj 41048 skipped (slang 'sexy'); thin rows thickened
+teach	pass	all rows verb 41050 with correct forms; noun 41055 skipped (bare gloss 'teacher')
+teacher	repaired	rank 1 5 words with no situation; r2/r5 thin -> rewritten on 41056
+team	repaired	rank 1 and r3 thin; r5 used hard word 'contest' -> rewritten; intj 67930 skipped
+teenager	pass	all rows sense 41071, natural forms, no defects found
+telephone	repaired	rank 1 5 words; r2/r5 under 6 words -> rewritten; noun 41072 and verb 41080 both kept
+television	repaired	r4/r5 used verb 41089 'to watch television' (fabrication) -> verb POS skipped; r3 re-pointed to device sense 41086; 41087 added
+tell	repaired	rank 1 5 words; r3/r4/r5 under 6 words -> rewritten; noun senses 41107-41111 (poker tell, mound) skipped
+ten	repaired	all five rows labelled noun 41112 but r1/r2/r5 are numerals -> re-pointed to num 67931; banknote row re-pointed to noun 41115
+tennis	repaired	r4/r5 used verb 41122 tagged dated -> verb POS skipped; only noun 41119 usable, so single form 'tennis' is unavoidable
+terrible	repaired	r5 used adv 41130 tagged dialectal -> adv POS skipped, replaced with adj 41124; r2 thin
+test	repaired	r4 'The teacher tested our reading skills.' is sense 41143 (administer an examination), not 41142 -> re-pointed, sentences kept verbatim
+text	pass	41155 is tagged abbreviation but is learner-core 'text message'; verb 41159 rows are natural
+than	pass	conj 41162 and prep 41164 both correct; adv 41165 skipped as archaic 'at that time'
+thank	repaired	r2 used verb 41169 tagged rare and r3 used noun 41166 tagged obsolete -> noun POS skipped, both re-pointed to 41167; form 'thanks' added

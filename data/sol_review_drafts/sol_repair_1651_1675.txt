@@ -1,0 +1,102 @@
+@ discover
+1	45613	verb	discovered	1	Maria's heart raced when she discovered an old letter hidden in the attic wall.
+2	45613	verb	discover	0	To discover something is to find it for the first time.
+3	45613	verb	discover	0	She may discover a mistake in the bill.
+4	45613	verb	discovers	0	Every scientist discovers something new during a long career.
+5	45613	verb	discover	0	I can discover the answer by reading.
+@ disease
+1	45630	noun	disease	1	The doctor explained how the disease spreads.
+2	45630	noun	disease	0	A disease is an illness that affects a person, animal, or plant.
+3	45630	noun	disease	0	Vaccines can prevent some disease.
+4	45630	noun	disease	0	The disease made the leaves yellow.
+5	45633	verb	diseased	0	The farmer removed the diseased plants before they infected the others.
+@ distance
+1	45635	noun	distance	1	We could see the mountain in the distance.
+2	45635	noun	Distance	0	Distance is the amount of space between two places.
+3	45635	noun	distance	0	The distance to school is two miles.
+4	45635	noun	distance	0	Keep a safe distance from the fire.
+5	45665	verb	distanced	0	After the argument, she distanced herself from her old friends.
+@ divorced
+1	45676	adj	divorced	1	Her divorced parents share care of the children.
+2	45676	adj	Divorced	0	Divorced describes people whose marriage has legally ended.
+3	45676	adj	divorced	0	He is divorced and lives nearby.
+4	45676	adj	divorced	0	The divorced couple remained friendly.
+5	45677	verb	divorced	0	She divorced her husband after ten difficult years.
+@ document
+1	45678	noun	document	1	Bring a document that proves your address.
+2	45678	noun	document	0	A document is an official paper that gives information or proof.
+3	45678	noun	document	0	Please sign the document.
+4	45678	noun	document	0	The document is in my folder.
+5	45684	verb	documented	0	The nurse carefully documented every symptom during the visit.
+@ double
+1	45686	adj	double	1	The café gave us a double scoop of ice cream.
+2	45686	adj	Double	0	Double describes something made up of two matching parts.
+3	45689	adj	double	0	We booked a double room for our anniversary trip.
+4	45700	noun	double	0	Her salary this year is almost double what it was before.
+5	45730	verb	doubled	0	The company doubled its profits within two years.
+@ download
+1	45753	noun	download	1	The movie download took ten minutes to finish.
+2	45753	noun	download	0	A download is a file transferred from the internet to a device.
+3	45755	verb	download	0	Can you download the app before we leave the house?
+4	45753	noun	download	0	The download used too much data.
+5	45755	verb	downloaded	0	She downloaded the songs onto her phone last night.
+@ drawing
+1	45767	noun	drawing	1	Lucy proudly showed her teacher a drawing of her family.
+2	45766	verb	Drawing	0	Drawing means making a picture with lines.
+3	45766	verb	drawing	0	He is drawing a horse.
+4	45766	verb	drawing	0	She kept drawing after class.
+5	45767	noun	drawings	0	They hung her drawings all over the classroom wall.
+@ dream
+1	45773	noun	dream	1	I had a strange dream about flying over the city.
+2	45773	noun	dream	0	A dream is a story or image seen while sleeping.
+3	45781	adj	dream	0	She finally bought her dream house by the beach.
+4	45777	verb	dreams	0	Lucy dreams of becoming a doctor one day.
+5	45776	verb	dreamed	0	I dreamed about my grandmother again last night.
+@ driving
+1	45782	verb	driving	1	Dad is driving us to the station.
+2	45782	verb	Driving	0	Driving means operating a vehicle.
+3	45782	verb	driving	0	She is driving carefully in the rain.
+4	45782	verb	driving	0	They are driving home tonight.
+5	45786	noun	driving	0	She passed her driving test on the very first try.
+@ drop
+1	45788	noun	drop	1	A drop of rain landed on my hand.
+2	45788	noun	drop	0	A drop is a small round amount of liquid.
+3	45788	noun	drop	0	One drop of paint fell.
+4	45836	verb	dropped	0	My phone dropped from my hand and broke on the floor.
+5	45846	verb	drop	0	Feel free to drop by anytime this weekend.
+@ drug
+1	45885	noun	drug	1	The pharmacist gave Ana a drug for her cough.
+2	45885	noun	drug	0	A drug is a substance used to treat illness or change body processes.
+3	45885	noun	drug	0	Take the drug with water.
+4	45886	noun	drugs	0	Selling illegal drugs is a serious crime in this country.
+5	45892	verb	drugged	0	The vet gently drugged the injured cat before treating its wound.
+@ dry
+1	45896	adj	dry	1	Hang your wet coat outside until it is dry.
+2	45896	adj	Dry	0	Dry describes something without moisture.
+3	45896	adj	dry	0	The riverbed was dry.
+4	45925	verb	dried	0	The clothes dried quickly in the warm afternoon sun.
+5	45926	verb	Dry	0	Dry your hands before you touch the paper.
+@ earn
+1	45929	verb	earn	1	Priya can earn money by helping at the shop.
+2	45929	verb	earn	0	To earn something is to gain it through work or effort.
+3	45929	verb	earned	0	He earned a prize for his drawing at school.
+4	45929	verb	earn	0	Workers earn wages each week.
+5	45930	verb	earning	0	She is earning a good salary at her new job.
+@ earth
+1	45939	name	Earth	1	Earth looks blue when seen from space.
+2	45939	name	Earth	0	Earth is the planet where humans live.
+3	45939	name	Earth	0	Earth travels around the Sun.
+4	45940	noun	earth	0	The farmer turned over the dark earth before planting seeds.
+5	45939	name	Earth	0	We must protect Earth for future generations.
+@ easily
+1	45958	adv	easily	1	The light suitcase easily fit under the seat.
+2	45958	adv	Easily	0	Easily means without difficulty or worry.
+3	45958	adv	easily	0	I can easily hear you.
+4	45958	adv	easily	0	She easily solved the puzzle.
+5	45960	adv	easily	0	I get distracted easily when I am tired.
+@ either
+1	45978	det	either	1	You may choose either the red pen or the blue pen.
+2	45981	pron	either	0	He made two offers, but I did not accept either.
+3	45984	conj	Either	0	Either you finish your homework or you cannot watch TV.
+4	45983	adv	either	0	I don't like broccoli, and my sister doesn't either.
+5	45979	det	either	0	There are trees on either side of the road.

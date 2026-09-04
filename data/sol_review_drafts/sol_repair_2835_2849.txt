@@ -1,0 +1,90 @@
+@ rid
+1	65902	verb	rid	1	She was happy to rid her room of the old furniture.
+2	65902	verb	rid	0	They want to rid the city of pollution by banning cars.
+3	65902	verb	rid	0	I need to rid myself of this bad habit before it harms me.
+4	65902	verb	rid	0	The company hopes to rid its system of security flaws.
+5	65902	verb	rid	0	We must rid the school of bullying to keep students safe.
+@ root
+1	65982	noun	root	1	A carrot is a thick orange root that grows beneath the soil.
+2	65982	noun	root	0	After the storm, the tree's root was exposed and damaged.
+3	65982	noun	root	0	The farmer pulled the turnip by its long, white root.
+4	65982	noun	root	0	A vine's root spreads widely to absorb water from the ground.
+5	65982	noun	root	0	The root of the rose bush was carefully wrapped before transplanting.
+@ rub
+1	65924	noun	rub	1	She gave the silver spoon a quick rub with her cloth.
+2	65924	noun	rub	0	The old clock needed a good rub to shine again.
+3	65924	noun	rub	0	He gave the guitar a final rub with a soft polishing cloth.
+4	65924	noun	rub	0	A gentle rub with the polish brought out the wood's glow.
+5	65924	noun	rub	0	A quick rub with a dry cloth removed the mark from the table.
+@ rubber
+1	65950	noun	rubber	1	The tire is made from natural rubber harvested from trees.
+2	65950	noun	rubber	0	Rubber is used to make waterproof boots and elastic bands.
+3	65950	noun	rubber	0	She bought a new rubber band to hold her hair.
+4	65950	noun	rubber	0	The rubber in the ball gives it bounce and flexibility.
+5	65950	noun	rubber	0	Rubber trees grow in tropical climates and produce latex.
+@ rural
+1	65938	adj	rural	1	The rural village has no traffic lights or busy streets.
+2	65938	adj	rural	0	She moved from the city to a rural area for peace and quiet.
+3	65938	adj	rural	0	The rural school serves children from nearby farms.
+4	65938	adj	rural	0	We saw wild deer near the rural road during our hike.
+5	65938	adj	rural	0	The rural landscape is full of green fields and old stone walls.
+@ rush
+1	66016	noun	rush	1	The child's sudden rush across the yard startled the dog.
+2	66016	noun	rush	0	He made a quick rush toward the door when the alarm sounded.
+3	66016	noun	rush	0	The crowd's rush toward the exit was chaotic and loud.
+4	66016	noun	rush	0	The deer's sudden rush through the bushes startled the hikers.
+5	66016	noun	rush	0	The defender stopped the attacker's rush toward the goal.
+@ satellite
+1	65972	noun	satellite	1	The Moon is a natural satellite of Earth.
+2	65972	noun	satellites	0	Jupiter has many satellites orbiting it.
+3	65973	noun	satellite	0	Scientists tracked the satellite as it passed Mars.
+4	65973	noun	satellite	0	A small satellite circles the planet every 90 minutes.
+5	65973	noun	satellite	0	The satellite moved slowly across the night sky.
+@ satisfied
+1	65941	adj	satisfied	1	She felt satisfied after finishing her science project.
+2	65941	adj	satisfied	0	The customer was satisfied with the new phone's performance.
+3	65941	adj	satisfied	0	He looked satisfied after eating the delicious meal.
+4	65941	adj	satisfied	0	They were satisfied with the results of the team meeting.
+5	65941	adj	satisfied	0	The teacher was satisfied with the student's honest answer.
+@ satisfy
+1	65943	verb	satisfy	1	The small snack didn't satisfy my hunger.
+2	65943	verb	satisfy	0	This brief explanation will not satisfy the exam's requirements.
+3	65943	verb	satisfy	0	The new policy failed to satisfy the workers.
+4	65943	verb	satisfy	0	A single cup of coffee won't satisfy her need for caffeine.
+5	65943	verb	satisfy	0	The quiet evening did not satisfy his desire for excitement.
+@ saving
+1	66047	noun	saving	1	The new software brought a saving of $2,000 in monthly expenses.
+2	66047	noun	saving	0	We achieved a saving by switching to energy-efficient lighting.
+3	66047	noun	saving	0	The company reported a substantial saving after cutting unnecessary travel costs.
+4	66047	noun	saving	0	A saving of 15 percent was realized through better inventory management.
+5	66047	noun	saving	0	The factory's upgrade led to a significant saving in fuel costs.
+@ scale
+1	66114	noun	scale	1	The teacher asked us to rate the project on a scale from one to five.
+2	66114	noun	scale	0	Sound intensity is measured on a decibel scale.
+3	66114	noun	scale	0	The survey included a scale to assess customer satisfaction.
+4	66114	noun	scale	0	Scientists use a scale to compare the strength of different earthquakes.
+5	66114	noun	scale	0	The color scale on the map shows changes in temperature.
+@ scheme
+1	66062	noun	scheme	1	The council introduced a scheme to provide affordable housing.
+2	66062	noun	scheme	0	She joined a training scheme for new teachers.
+3	66062	noun	scheme	0	The recycling scheme reduced waste across the city.
+4	66062	noun	scheme	0	The bank offers a payment scheme for small businesses.
+5	66062	noun	scheme	0	A pilot scheme will test the new service in three towns.
+@ scream
+1	66087	noun	scream	1	She let out a sudden scream when the spider crawled on her arm.
+2	66087	noun	scream	0	The child's scream echoed through the empty hallway.
+3	66087	noun	scream	0	A loud scream broke the silence of the dark forest.
+4	66087	noun	scream	0	He gave a sharp scream after stepping on the nail.
+5	66087	noun	scream	0	A scream from one of the roller-coaster riders startled everyone nearby.
+@ sector
+1	66072	noun	sector	1	The new school building is in the eastern sector of the campus.
+2	66072	noun	sectors	0	The city divided the area into five traffic sectors for better management.
+3	66072	noun	sector	0	She works in the education sector, helping students with learning difficulties.
+4	66072	noun	sector	0	The power outage affected only one sector of the downtown area.
+5	66072	noun	sector	0	The government plans to expand the healthcare sector next year.
+@ secure
+1	66099	adj	secure	1	The castle walls kept the villagers secure from invaders.
+2	66099	adj	secure	0	The cabin remained secure from intruders while the owners were away.
+3	66099	adj	secure	0	The safe was secure behind the locked door.
+4	66099	adj	secure	0	The child felt secure beside her parents during the storm.
+5	66099	adj	secure	0	The mountain path was secure with sturdy railings.

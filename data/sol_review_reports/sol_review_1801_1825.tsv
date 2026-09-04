@@ -1,0 +1,25 @@
+sheet	repaired	repaired: rewrote all rows (rank1 too short, added verb POS coverage: sheet/sheeting)
+ship	repaired	repaired: rewrote all rows (rank1 too short, added verb POS coverage: ship/shipped)
+shoulder	repaired	repaired: sense_id mismatch (canonical used animal-body sense 51376 for human shoulder sentences); repointed to human sense 51377, added road-shoulder noun and verb POS
+shout	repaired	repaired: rewrote all rows (rank1 too short, added verb POS coverage)
+shut	repaired	repaired: rewrote all rows (rank1 too short, only 1 form used, no adj coverage; r5 'the window is shut' was verb-labelled but is really the adjective sense) added adj sense 51433 and verb form variety
+side	repaired	repaired: sense_id mismatch on r1 (idiomatic 'by my side' used geometric-edge sense 51445); rewrote all rows, added adj and verb POS coverage, skipped adv POS (only rare/dialectal sense 51477)
+sign	repaired	repaired: sense_id mismatch (r1 'the sign showed the way' used abstract sense 51479 instead of the physical sign-board sense 51484); rewrote all rows, added verb POS coverage
+silver	repaired	repaired: rewrote all rows (rank1 too short), added adj and verb POS coverage
+simple	repaired	repaired: rewrote all rows (rank1 too short); skipped noun POS (only dated/technical senses: herbal remedy, atomic proposition) and verb POS (only archaic 'gather medicinal herbs')
+since	repaired	repaired: added conj and prep POS coverage (both are core learner senses, not rare)
+singing	repaired	repaired: rewrote all rows (rank1 too short); added verb (gerund/progressive) and adj POS coverage
+single	repaired	repaired: rewrote all rows (rank1 too short); added noun POS coverage (unmarried person / one-way ticket / dollar bill); skipped verb POS (only baseball/railway technical senses)
+sir	repaired	repaired: rewrote all rows (rank1 too short, sense mismatch on r3 'the sir helped us' used sir as an ordinary countable noun which is unnatural); skipped verb POS (niche/jokey 'to sir someone')
+site	repaired	repaired: rewrote all rows (rank1 too short); added verb POS coverage and a website-sense noun row
+size	repaired	repaired: rewrote all rows (rank1 too short); added verb POS coverage (size up / size a garment)
+suggestion	repaired	repaired: rewrote rank1 (too short) and diversified senses across rows; r2/r4/r5 content kept close to canonical meaning
+support	repaired	repaired: rewrote all rows (rank1 too short, only 1 form used); added form variety (supported/supporting) across verb and noun senses
+suppose	repaired	repaired: rank1 only (too short); r2-r5 kept verbatim from canonical, already good real sentences
+surprised	repaired	repaired: rank1 only (too plain/weak for the memorable slot); r2-r5 kept verbatim from canonical, already good and correctly sensed
+surprising	repaired	repaired: dropped noun POS (r4 'the surprising was unexpected' is unnatural -- 'surprising' is not normally used as a bare countable noun); replaced with adj/verb rows, rewrote rank1
+survey	repaired	repaired: sense_id mismatch (canonical noun rows used the abstract 'act of surveying' sense 52471 while meaning a questionnaire); repointed to 52476, added verb form variety
+system	repaired	repaired: rank1 only (too short); r2-r5 kept verbatim from canonical, already good real sentences
+tablet	repaired	repaired: sense_id mismatch (canonical noun rows all pointed at the stone-slab sense 52531 while meaning a tablet computer); repointed to correct senses and diversified (computer/pill/stone slab/paper pad); skipped verb POS (narrow pharma-manufacturing jargon 'to tablet a drug')
+target	repaired	repaired: sense_id mismatch (canonical verb row 'they target young readers' used the weapon-aiming sense 52560 instead of the audience/demographic sense 52561); repointed, diversified noun senses
+task	repaired	repaired: rank1 only (too short); r2-r5 kept verbatim from canonical, already good real sentences and correctly sensed

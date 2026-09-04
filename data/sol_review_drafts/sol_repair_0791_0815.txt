@@ -1,0 +1,125 @@
+@ before
+1	29374	prep	before	1	The soldiers reached the bridge just before the enemy could destroy it.
+2	29374	prep	before	0	Call me before the meeting starts.
+3	29381	adv	before	0	I have never seen snow before.
+4	29384	conj	before	0	Wash your hands before you eat dinner.
+5	29375	prep	before	0	We sat before the fire to keep warm.
+
+@ begin
+1	29389	verb	began	1	The whole crowd cheered when the fireworks show finally began.
+2	29389	verb	Begin	0	Begin with the first question on the test.
+3	29389	verb	begins	0	She begins her homework right after dinner every night.
+4	29389	verb	beginning	0	We were beginning to worry when the bus was late.
+5	29389	verb	begin	0	Class will begin at eight tomorrow morning.
+
+@ beginning
+1	29395	noun	beginning	1	At the beginning of the story, a lonely cat finally finds its way home.
+2	29395	noun	beginning	0	That house is at the beginning of the street.
+3	29394	noun	beginning	0	What was the beginning of the disagreement between them?
+4	29397	adj	beginning	0	The beginning students practiced simple sentences in class.
+5	29396	verb	beginning	0	She was beginning to read a new mystery novel.
+
+@ behind
+1	29398	prep	behind	1	The kitten hid behind the blue curtain during the loud thunderstorm.
+2	29398	prep	behind	0	Park behind the shop.
+3	29398	prep	behind	0	He stood behind me.
+4	29416	adj	behind	0	I'm very behind in my schoolwork this week.
+5	29410	adv	behind	0	We ran fast without once looking behind.
+
+@ believe
+1	29424	verb	believe	1	I believe the lost key is under the sofa.
+2	29425	verb	believed	0	Nobody believed his strange story about the accident.
+3	29424	verb	believes	0	He never believes anything without solid proof.
+4	29424	verb	believe	0	We believe that he is completely honest.
+5	29424	verb	believing	0	I keep believing that things will get better.
+
+@ below
+1	29435	prep	below	1	The divers swam far below the surface of the lake.
+2	29435	prep	below	0	Write your name below the line.
+3	29435	prep	below	0	The town lies below the hill.
+4	29444	adv	below	0	For more details, see the notes below.
+5	29436	prep	below	0	The temperature fell below zero last night.
+
+@ best
+1	29446	adj	best	1	She burst into happy tears — it was the best surprise party of her life.
+2	29446	adj	best	0	He is my best friend.
+3	29451	noun	best	0	I did my best on the difficult exam.
+4	29449	adv	best	0	Of all the singers, she performed best.
+5	29454	verb	bested	0	He bested his rival in the final race.
+
+@ better
+1	29457	adj	better	1	After weeks of rest, her broken leg finally felt much better.
+2	29457	adj	better	0	This road is better than the old one.
+3	29461	adv	better	0	The engine runs better now that I've given it some oil.
+4	29464	verb	better	0	They tried to better themselves through education.
+5	29463	verb	better	0	You had better hurry or you'll miss the bus.
+
+@ bicycle
+1	29477	noun	bicycle	1	He grinned with pride as he rode his brand-new bicycle for the very first time.
+2	29477	noun	bicycle	0	She rides her bicycle to school.
+3	29477	noun	bicycle	0	The bicycle is by the gate.
+4	29477	noun	bicycle	0	He fixed his bicycle chain.
+5	29487	verb	bicycled	0	They bicycled through the countryside every summer.
+
+@ big
+1	29489	adj	big	1	A big yellow bus pulled up right in front of the excited children.
+2	29489	adj	big	0	That box is too big.
+3	29489	adj	big	0	They live in a big house.
+4	29489	adj	big	0	The dog has big ears.
+5	29507	adv	big	0	He worked hard and hoped to win big someday.
+
+@ bike
+1	29523	noun	bike	1	I rode my bike through the quiet park.
+2	29523	noun	bike	0	His bike is blue.
+3	29523	noun	bike	0	Lock your bike here.
+4	29523	noun	bike	0	She fell off her bike.
+5	29525	verb	bikes	0	He bikes to work every single day.
+
+@ bill
+1	29537	noun	bill	1	The tourists gasped when the waiter brought a bill for two hundred dollars.
+2	29537	noun	bill	0	Check the bill before you pay.
+3	29537	noun	bill	0	The bill has three items.
+4	29537	noun	bill	0	He read the bill carefully.
+5	29544	verb	billed	0	The mechanic billed us for the extra repairs.
+
+@ blog
+1	29625	noun	blog	1	Her popular blog shared photos from their exciting train trip across Europe.
+2	29625	noun	blog	0	I read a cooking blog.
+3	29625	noun	blog	0	The blog has a new post.
+4	29627	verb	blogs	0	She blogs about food and travel every week.
+5	29625	noun	blog	0	Leave a comment on the blog.
+
+@ blonde
+1	29631	noun	blonde	1	The blonde burst into laughter when she saw the surprise waiting on her desk.
+2	29631	noun	blonde	0	A blonde sat by the window.
+3	29631	noun	blonde	0	The blonde wore a green coat.
+4	29631	noun	blonde	0	We spoke to the blonde outside.
+5	29631	noun	blondes	0	Those blondes are my cousins.
+
+@ blue
+1	29638	adj	blue	1	A cheerful blue umbrella kept the children dry during the sudden rainstorm.
+2	29638	adj	blue	0	Her shoes are blue.
+3	29638	adj	blue	0	The sky looks blue today.
+4	29638	adj	blue	0	Choose the blue cup.
+5	29654	noun	blue	0	The sky was a beautiful deep blue at sunset.
+
+@ boat
+1	29685	noun	boat	1	The old fishing boat quietly crossed the lake just before sunset.
+2	29685	noun	boat	0	The boat is tied to the dock.
+3	29685	noun	boat	0	We rode in a small boat.
+4	29698	verb	boated	0	They boated across the calm lake all afternoon.
+5	29685	noun	boat	0	A boat sailed past us.
+
+@ book
+1	29734	noun	book	1	I found a wonderful mystery book at the old library sale.
+2	29734	noun	book	0	Put the book on the shelf.
+3	29734	noun	book	0	This book is very funny.
+4	29755	verb	booked	0	She booked a hotel room for the weekend trip.
+5	29734	noun	book	0	The book has pictures.
+
+@ boot
+1	29765	noun	boot	1	One muddy boot was mysteriously left by the back door.
+2	29765	noun	boot	0	My boot is wet.
+3	29765	noun	boot	0	Tie your boot tightly.
+4	29765	noun	boot	0	He wore a black boot.
+5	29787	verb	booted	0	He booted the ball toward his teammate.

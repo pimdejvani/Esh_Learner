@@ -1,0 +1,111 @@
+@ clever
+1	44709	adj	clever	1	The clever girl solved the tricky riddle before anyone else finished reading it.
+2	44708	adj	clever	0	He is clever with his hands and can repair toys.
+3	44708	adj	clever	0	A clever dancer moved quickly around the stage.
+4	44709	adj	clever	0	The clever student figured out the math problem in seconds.
+5	44708	adj	clever	0	My clever sister can sew a button in minutes.
+
+@ closed
+1	44725	adj	closed	1	The closed gate kept the dog safely inside the yard.
+2	44725	adj	closed	0	The shop is closed on Monday mornings.
+3	44725	adj	closed	0	Keep the closed lid on the box during the trip.
+4	44725	adj	closed	0	The road was closed because of flooding.
+5	44753	verb	closed	0	She closed the shop early because of the storm.
+
+@ clothing
+1	44755	noun	clothing	1	After the flood, volunteers donated warm clothing to every family in the shelter.
+2	44755	noun	clothing	0	She hung the wet clothing on the line to dry.
+3	44755	noun	clothing	0	Winter clothing is expensive, so we shop early.
+4	44754	verb	clothing	0	The costume designer is clothing the actors for tonight's play.
+5	44755	noun	clothing	0	He packed light clothing for the summer trip.
+
+@ cloud
+1	44759	noun	cloud	1	A dark cloud covered the sun just before the rain started.
+2	44759	noun	cloud	0	A cloud is a visible mass of tiny water drops in the sky.
+3	44759	noun	cloud	0	One white cloud moved slowly above the hill.
+4	44759	noun	cloud	0	The plane flew below a thick cloud.
+5	44778	verb	cloud	0	Tears began to cloud her vision during the sad film.
+
+@ coach
+1	44785	noun	coach	1	The coach shouted encouragement as the young swimmer touched the wall first.
+2	44785	noun	coach	0	Our football coach taught us to pass the ball quickly.
+3	44786	noun	coach	0	We took a coach from London to Edinburgh.
+4	44791	verb	coached	0	She coached the young players every weekend.
+5	44783	noun	coach	0	The queen traveled in a gold coach.
+
+@ coast
+1	44796	noun	coast	1	We walked along the coast and collected shells at sunset.
+2	44796	noun	coast	0	The coast is where land meets the sea.
+3	44796	noun	coast	0	The boat stayed close to the rocky coast.
+4	44796	noun	coast	0	Many birds nest along this quiet coast.
+5	44800	verb	coast	0	The cyclist let the bike coast down the steep hill.
+
+@ code
+1	44807	noun	code	1	Enter the code from your ticket to open the locker.
+2	44807	noun	code	0	The code is a short label for this product.
+3	44807	noun	code	0	Each student has a code on their library card.
+4	44807	noun	code	0	Check the code before you order the part.
+5	44819	verb	code	0	She learned to code during her summer break.
+
+@ comedy
+1	44855	noun	comedy	1	The whole family burst out laughing during the silly comedy on television.
+2	44851	noun	comedy	0	Shakespeare wrote this comedy with a happy ending.
+3	44855	noun	comedy	0	We watched a comedy to cheer ourselves up after the exam.
+4	44853	noun	comedy	0	The play was a comedy full of funny mistakes and jokes.
+5	44857	noun	comedy	0	Losing his shoe in the mud was a real comedy for everyone watching.
+
+@ comment
+1	44866	noun	comment	1	Her kind comment made the new student smile.
+2	44866	noun	comment	0	A comment is something a person says or writes.
+3	44866	noun	comment	0	Please leave a comment under the photo.
+4	44866	noun	comment	0	His comment about the meal was helpful.
+5	44871	verb	commented	0	My friend commented on my post within minutes.
+
+@ communicate
+1	44875	verb	communicate	1	The nurse will communicate the urgent news to the family.
+2	44876	verb	communicated	0	Doctors communicated the test results directly to the patient.
+3	44883	verb	communicating	0	The team is communicating updates through a group chat.
+4	44876	verb	communicates	0	This sign communicates the parking rules clearly to drivers.
+5	44883	verb	communicate	0	Children communicate their needs in different ways.
+
+@ compete
+1	44896	verb	compete	1	Two runners will compete for the gold medal.
+2	44898	verb	competing	0	Teams are competing to win the same prize this year.
+3	44896	verb	competed	0	We competed in a quiz last Friday and won.
+4	44899	verb	competes	0	Each athlete competes after months of hard practice.
+5	44896	verb	compete	0	The schools compete in the final match.
+
+@ complain
+1	44903	verb	complain	1	Theo will complain if his soup arrives cold.
+2	44903	verb	complained	0	My neighbor complained loudly about the noise last night.
+3	44903	verb	complaining	0	Stop complaining and ask for help instead.
+4	44903	verb	complains	0	He always complains if the bus is late.
+5	44903	verb	complain	0	She called to complain about the broken lamp.
+
+@ condition
+1	44909	noun	condition	1	The bike is in good condition after the repair.
+2	44909	noun	condition	0	The condition of something is the state it is in.
+3	44912	noun	condition	0	The doctor checked her condition.
+4	44909	noun	condition	0	The old house was in poor condition.
+5	44922	verb	condition	0	Use this cream to condition your hair after washing.
+
+@ connect
+1	44944	verb	connected	1	She finally connected the strange dream to a memory from her childhood.
+2	44939	verb	connect	0	To connect things is to join them together.
+3	44941	verb	connect	0	The bridge can connect the two towns.
+4	44938	verb	connecting	0	He is connecting his phone to the charger now.
+5	44941	verb	connects	0	A narrow path connects the house and the garden.
+
+@ connected
+1	44955	adj	connected	1	Even during the blackout, her phone stayed connected to the internet through a backup battery.
+2	44952	adj	connected	0	The sisters felt deeply connected even after years apart.
+3	44955	adj	connected	0	Make sure your laptop is connected to the wifi before the meeting.
+4	44949	adj	connected	0	He became connected through his work.
+5	44956	verb	connected	0	The electrician connected the wires before turning on the power.
+
+@ consider
+1	44957	verb	consider	1	Before buying the puppy, we must consider the cost carefully.
+2	44958	verb	consider	0	To consider something is to think about it carefully.
+3	44959	verb	considering	0	She is considering both job offers carefully.
+4	44957	verb	considered	0	He considered moving closer to work last year.
+5	44964	verb	considers	0	The pilot always considers the weather forecast before takeoff.

@@ -1,0 +1,90 @@
+@ seek
+1	66159	verb	seek	1	She decided to seek help from a counselor.
+2	66159	verb	seek	0	He began to seek the truth behind the mystery.
+3	66159	verb	seek	0	They will seek a solution before the deadline.
+4	66159	verb	seek	0	The lost dog continued to seek its owner.
+5	66159	verb	seek	0	We must seek better ways to protect the environment.
+@ select
+1	66095	adj	select	1	She was one of the select group chosen for the special mission.
+2	66095	adj	select	0	Only a select few received invitations to the exclusive event.
+3	66095	adj	select	0	The select committee met in secret to discuss the new policy.
+4	66095	adj	select	0	A select group of students received access to the advanced laboratory.
+5	66095	adj	select	0	The speaker presented the findings to a select audience of invited experts.
+@ selection
+1	66147	noun	selection	1	The selection of the new team leader took three weeks.
+2	66147	noun	selection	0	After careful review, the selection process was completed.
+3	66147	noun	selection	0	The selection process included interviews and tests.
+4	66147	noun	selection	0	A fair selection ensures everyone has a chance.
+5	66147	noun	selection	0	The selection of candidates was based on merit.
+@ self
+1	66189	pron	selves	1	The runners pushed their tired selves across the finish line.
+2	66189	pron	selves	0	The children were their usual cheerful selves after lunch.
+3	66189	pron	selves	0	After the game, the players felt like their old selves again.
+4	66189	pron	selves	0	The twins drew pictures of their future selves.
+5	66189	pron	selves	0	They barely recognized their younger selves in the old photograph.
+@ senior
+1	66168	adj	senior	1	A senior citizen helped the younger student with her homework.
+2	66169	adj	senior	0	He is a senior member of the community group.
+3	66171	adj	senior	0	The senior player scored the winning goal in the match.
+4	66168	adj	senior	0	Our senior dog is much calmer than the lively young puppy.
+5	66169	adj	senior	0	The senior doctor gave advice to the new interns.
+@ sensitive
+1	66179	adj	sensitive	1	The sensitive skin on her arm reacted to the cold air.
+2	66179	adj	sensitive	0	The sensitive nerve endings in the fingertip detect tiny vibrations.
+3	66186	adj	sensitive	0	A sensitive instrument measured the faint heartbeat.
+4	66186	adj	sensitive	0	The sensitive equipment picked up the smallest sound.
+5	66186	adj	sensitive	0	The sensitive detector responded to the faint light.
+@ sequence
+1	66204	noun	sequence	1	The numbers form a clear sequence.
+2	66204	noun	sequence	0	She followed the sequence of steps carefully.
+3	66204	noun	sequence	0	The sequence of events surprised everyone.
+4	66204	noun	sequence	0	Each player must complete the sequence.
+5	66204	noun	sequence	0	The sequence of colors was random.
+@ session
+1	66224	noun	session	1	The yoga session started at nine sharp.
+2	66224	noun	session	0	We need to schedule a planning session this week.
+3	66224	noun	session	0	The writing session lasted two hours without a break.
+4	66224	noun	session	0	She attended a therapy session every Tuesday.
+5	66224	noun	session	0	The team had a brainstorming session after lunch.
+@ settle
+1	66234	verb	settle	1	The team worked hard to settle the dispute before the deadline.
+2	66234	verb	settle	0	She managed to settle the argument with calm words and patience.
+3	66234	verb	settle	0	We need to settle the details of the contract by Friday.
+4	66234	verb	settle	0	The mediator helped them settle the misunderstanding peacefully.
+5	66234	verb	settle	0	They agreed to settle the matter without going to court.
+@ severe
+1	66216	adj	severe	1	The storm brought severe damage to the coastal town.
+2	66216	adj	severe	0	She suffered from a severe headache after the long flight.
+3	66216	adj	severe	0	The government imposed severe restrictions during the crisis.
+4	66216	adj	severe	0	He faced severe consequences for breaking the rules.
+5	66216	adj	severe	0	The severe injury required immediate medical treatment.
+@ shade
+1	66274	noun	shade	1	The picnic was moved under the tree's shade to avoid the hot sun.
+2	66274	noun	shade	0	We sat in the shade after walking in the bright sunlight.
+3	66274	noun	shade	0	The garden bench offered cool shade during the afternoon.
+4	66274	noun	shade	0	The dog curled up in the shade beneath the porch.
+5	66274	noun	shade	0	After the hike, we rested in the shade of a large rock.
+@ shadow
+1	66368	noun	shadow	1	The tree cast a long shadow across the lawn.
+2	66368	noun	shadow	0	She stood in the sun and watched her shadow grow.
+3	66368	noun	shadow	0	The building blocked the light and created a dark shadow.
+4	66368	noun	shadow	0	The running dog cast a moving shadow across the garden path.
+5	66368	noun	shadow	0	As the sun set, the hillside fell into deep shadow.
+@ shallow
+1	66329	adj	shallow	1	The river is shallow near the rocks.
+2	66329	adj	shallow	0	She chose a shallow bowl for her salad.
+3	66329	adj	shallow	0	The pool has a shallow end for children.
+4	66329	adj	shallow	0	He placed the book on the shallow shelf.
+5	66329	adj	shallow	0	The boat floated in the shallow water.
+@ shame
+1	66305	noun	shame	1	After lying to her parents, she felt deep shame.
+2	66305	noun	shame	0	He avoided eye contact, overwhelmed by the shame of his mistake.
+3	66305	noun	shame	0	The public apology was her way of facing the shame.
+4	66305	noun	shame	0	She couldn't speak because she felt such shame after the incident.
+5	66305	noun	shame	0	The truth came out, and with it came unbearable shame.
+@ shelter
+1	66319	noun	shelter	1	The hikers took refuge in a small shelter during the sudden storm.
+2	66319	noun	shelter	0	After the earthquake, the community center became a temporary shelter.
+3	66319	noun	shelter	0	The stray dog found safety in the animal shelter.
+4	66319	noun	shelter	0	We waited under the bus shelter until the rain stopped.
+5	66319	noun	shelter	0	The mountain climbers built a shelter from branches and tarps.

@@ -62,7 +62,7 @@
 5	42045	noun	visitor	0	A visitor asked where the library was.
 
 @ wear
-1	42333	verb	wear	1	Wear your helmet when you ride a bike.
+1	42333	verb	Wear	1	Wear your helmet when you ride a bike.
 2	42336	verb	wears	0	She wears a happy smile every day.
 3	42333	verb	wore	0	He wore his new shoes to school.
 4	42333	verb	wearing	0	They are wearing matching shirts.

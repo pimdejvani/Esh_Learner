@@ -1,0 +1,25 @@
+disaster	pass	single usable noun sense already correct; other 2 senses (general "unforeseen event" overlaps, skateboard trick is jargon) not needed
+discover	repaired	form-variety flagged high (only base form used 5x); diversified to discovered/discover/discovers on the one usable sense 45613; other 7 senses are archaic/obsolete/legal/chess jargon, all skipped
+discovery	pass	correct sense throughout; no other POS in source
+discussion	pass	correct sense throughout; no other POS in source
+disease	repaired	added verb POS (sense 45633, "diseased" as adjectival past participle) which is a genuine common usage; kept 4 noun rows
+distance	repaired	added verb sense 45665 "distance oneself from" (common idiom); kept 4 noun rows; skipped 20+ other racing/boxing/obsolete jargon senses
+divorced	repaired	fixed sense_id mismatch: all rows described people's marriages but pointed at sense 45674 ("cut off, separated") instead of 45676 ("having had one's marriage legally dissolved"); also added a verb POS row
+document	repaired	added verb POS (sense 45684, "to document/record") which was missing and is common
+double	repaired	fixed 2 sense_id mismatches ("double room" and "double portion" pointed at the wrong adj sense) and added noun+verb POS rows for a word with 4 real POS
+download	repaired	added verb POS (sense 45755) which is arguably the primary modern meaning; skipped the 3 nonstandard "upload/copy/install" synonym senses
+drama	pass	correct sense throughout; no other POS in source
+drawing	repaired	added noun POS (sense 45767, "a drawing" = the picture) since the noun sense is core A2 vocabulary
+dream	repaired	added adj sense 45781 ("dream house") and verb senses 45776/45777 (sleep-dream, hope/wish); kept 2 noun rows
+driving	repaired	added noun POS (sense 45786, "driving test") which is common A2 vocabulary; skipped adj senses ("driving rain/force") as too literary for A2
+drop	repaired	added verb POS (senses 45836 "dropped", 45846 "drop by") since the verb is arguably more common than the noun; kept 3 noun rows
+drug	repaired	added second noun sense (45886, illegal drugs) and verb sense (45892, "to administer drugs", medical/vet context) which were missing
+dry	repaired	added verb POS (senses 45925/45926, "dried"/"dry") which is core A1/A2 vocabulary; skipped noun POS (prohibitionist/dry-season senses less essential, ranks spent on verb instead)
+earn	repaired	form-variety flagged high (only base form used 5x); diversified to earn/earned/earning; skipped the noun POS entirely (only sense is a RARE alternative form of "erne")
+earth	repaired	added noun POS (sense 45940, "soil") which is core vocabulary; skipped verb POS (electrical earthing / burying are technical or uncommon for A2)
+easily	repaired	fixed sense_id mismatch: all rows meant "without difficulty" (sense 45958) but pointed at sense 45957 ("comfortably, without anxiety"); also diversified r5 to sense 45960 ("more easily than usual")
+education	pass	correct sense throughout; no other POS in source
+effect	pass	correct sense throughout; skipped verb POS (sense 45976 "to effect change" is formal/academic register, risks confusion with "affect")
+either	repaired	word has 4 real POS (det/pron/conj/adv) all in common use; original block used only one det sense across all 5 rows, so rewrote to cover det/pron/conj/adv
+electric	pass	correct sense throughout; skipped noun POS (senses are British informal ellipsis for "electricity supply" or shorthand for toothbrush/typewriter, not standard for A2)
+electrical	pass	correct sense throughout; skipped noun POS (sense is informal ellipsis for "electrical engineer", not standard for A2)

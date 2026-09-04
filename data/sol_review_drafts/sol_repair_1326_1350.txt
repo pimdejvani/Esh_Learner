@@ -1,0 +1,144 @@
+@ radio
+1	38847	noun	radio	1	The old radio crackled to life and my grandmother started to sing.
+2	38847	noun	radios	0	The shop on the corner still repairs old radios.
+3	38846	noun	radio	0	She wants to work in radio after she finishes school.
+4	38851	verb	radio	0	Please radio the team and tell them we are safe.
+5	38851	verb	radioed	0	The driver radioed the office about the accident.
+@ rain
+1	38853	noun	rain	1	The first rain after months of heat made everyone run outside laughing.
+2	38856	verb	rain	0	It may rain this afternoon, so take an umbrella.
+3	38856	verb	raining	0	It is raining hard, so the children stayed inside.
+4	38856	verb	rained	0	It rained all night and the streets were full of water.
+5	38853	noun	rains	0	The heavy rains filled the river.
+@ read
+1	38860	verb	read	1	I read the last page of the story and cried a little.
+2	38860	verb	reads	0	My sister reads a book every day after school.
+3	38860	verb	reading	0	He is reading a new book.
+4	38860	verb	read	0	We read that book last week.
+5	38881	noun	read	0	Her read of the poem was clear and thoughtful.
+@ reading
+1	38903	noun	reading	1	Her love of reading started with one old book from her grandmother.
+2	38903	noun	reading	0	She enjoys reading before bed.
+3	38903	noun	reading	0	Careful reading takes practice, so do not rush.
+4	38902	verb	reading	0	They are reading the signs at the train station.
+5	38903	noun	readings	0	The teacher gave us two readings.
+@ ready
+1	38916	adj	ready	1	She stood at the door, ready to leave home for the first time.
+2	38916	adj	ready	0	Dinner is ready, so please wash your hands.
+3	38916	adj	ready	0	I am ready for the test.
+4	38922	verb	readied	0	They readied the room for the guests.
+5	38922	verb	readies	0	Every morning she readies the shop before it opens.
+@ real
+1	38924	adj	real	1	She touched the snow and could not believe it was real.
+2	38925	adj	real	0	This flower is real, not plastic.
+3	38924	adj	real	0	The story is based on real events.
+4	38926	adj	real	0	He showed real kindness when my father was ill.
+5	38933	adj	real	0	That test was a real disaster for the whole class.
+@ really
+1	38947	adv	really	1	I was really scared when the lights went out at night.
+2	38946	adv	really	0	Is it really true that you are moving away?
+3	38946	adv	really	0	She is really the one who did all the work.
+4	38947	adv	really	0	This soup is really hot, so eat it slowly.
+5	38945	adv	really	0	Only one of the actors was really crying on stage.
+@ reason
+1	38949	noun	reason	1	Nobody could give her a reason for the sudden silence at dinner.
+2	38951	noun	reason	0	There is a good reason to smile today.
+3	38949	noun	reasons	0	She gave two reasons for leaving the company.
+4	38957	verb	reasoned	0	They reasoned that the road was safe.
+5	38962	verb	reason	0	I tried to reason with my angry brother.
+@ red
+1	38983	adj	red	1	Her face went red when the whole class started clapping.
+2	38981	adj	red	0	The red bus stopped near us.
+3	38981	adj	redder	0	This apple is redder than that one.
+4	38966	noun	red	0	The colour red is easy to see at night.
+5	38966	noun	reds	0	The artist mixed several reds for the evening sky.
+@ relax
+1	38998	verb	relax	1	After the exams she finally let herself relax on the old sofa.
+2	38998	verb	relax	0	I relax by listening to music.
+3	38998	verb	relaxed	0	We relaxed at home after work.
+4	38998	verb	relaxing	0	She is relaxing in the garden.
+5	38997	verb	relaxes	0	A warm bath relaxes me after a long day.
+@ remember
+1	39003	verb	remember	1	I still remember the smell of my grandmothers kitchen at breakfast.
+2	39003	verb	remember	0	Do you remember the name of that little hotel?
+3	39006	verb	remembered	0	She remembered to lock the door before leaving.
+4	39003	verb	remembering	0	He is remembering the old song.
+5	39003	verb	remembers	0	My grandfather remembers every name in the village.
+@ repeat
+1	39013	verb	repeat	1	The little boy asked her to repeat the story every single night.
+2	39013	verb	repeat	0	I will repeat the question slowly for everyone.
+3	39013	verb	repeated	0	The teacher repeated the answer twice for the class.
+4	39015	verb	repeats	0	History repeats itself in strange ways.
+5	39022	noun	repeat	0	We watched a repeat of the show last night.
+@ report
+1	39030	verb	report	1	She was too frightened to report the theft to the police.
+2	39040	noun	report	0	I read the weather report before the trip.
+3	39033	verb	reported	0	Every newspaper reported the fire at the station.
+4	39027	verb	reporting	0	He is reporting the news from the flooded town.
+5	39040	noun	reports	0	The teacher reads the reports every Friday.
+@ result
+1	39049	noun	result	1	The result of that one test changed her whole future.
+2	39050	noun	results	0	We waited all week for the exam results.
+3	39045	verb	result	0	Hard work can result in success.
+4	39053	noun	result	0	The final result of the match was two to one.
+5	39046	verb	resulted	0	The storm resulted in a long wait at the airport.
+@ return
+1	39061	verb	return	1	She promised to return the ring before her mother noticed.
+2	39055	verb	return	0	We return home at six every evening.
+3	39075	noun	return	0	The return trip was short and quiet.
+4	39064	verb	returned	0	He returned the broken radio to the shop.
+5	39055	verb	returning	0	She is returning from school right now.
+@ rice
+1	39093	noun	rice	1	My mother cooks rice every morning before the sun rises.
+2	39093	noun	rice	0	The rice is hot, so wait a minute.
+3	39093	noun	rice	0	Add some rice to the bowl and mix it well.
+4	39091	noun	rice	0	Farmers grow rice in the wet fields near the river.
+5	39092	noun	rice	0	Thai jasmine rice has a lovely smell when it cooks.
+@ rich
+1	39103	adj	rich	1	He grew up poor and never forgot it, even after he became rich.
+2	39104	adj	rich	0	This cake is rich and sweet.
+3	39107	adj	rich	0	The soil is rich here, so everything grows fast.
+4	39103	adj	richer	0	This country is richer now than ten years ago.
+5	39117	noun	rich	0	The new tax will only affect the rich.
+@ ride
+1	39121	verb	ride	1	I ride my bike to school through the cold morning air.
+2	39122	verb	ride	0	We ride the bus downtown every Saturday.
+3	39143	noun	ride	0	The ride at the fair made us scream.
+4	39121	verb	rode	0	She rode a horse along the beach at sunset.
+5	39121	verb	riding	0	He is riding a scooter to the market.
+@ right
+1	39156	adj	right	1	She knew her answer was right, but she was too shy to speak.
+2	39170	adv	right	0	Turn right at the corner near the bank.
+3	39178	noun	right	0	Everyone has the right to learn and to ask questions.
+4	39154	adj	right	0	He broke his right leg in the accident.
+5	39178	noun	rights	0	Workers marched to protect their rights at the factory.
+@ river
+1	39189	noun	river	1	The children jumped into the river and shouted with joy.
+2	39189	noun	river	0	We walked by the river after dinner.
+3	39190	noun	river	0	A river of hot mud came down the mountain.
+4	39189	noun	rivers	0	Thailand has many rivers and long canals.
+5	39189	noun	river	0	A narrow bridge crosses the river near our house.
+@ road
+1	39195	noun	road	1	The road was so quiet that we could hear the birds singing.
+2	39196	noun	road	0	We travelled to the seaside by road.
+3	39195	noun	road	0	This road goes through the forest and up the hill.
+4	39195	noun	roads	0	The map shows two roads to the village.
+5	39198	noun	road	0	Learning a language is a long road, but worth it.
+@ room
+1	39215	noun	room	1	She opened the door and found every room full of white flowers.
+2	39212	noun	room	0	There is room for one more person in the car.
+3	39216	noun	room	0	Go to your room and finish your homework.
+4	39215	noun	rooms	0	The old house has five rooms and a small garden.
+5	39224	verb	roomed	0	He roomed with two friends while he studied in the city.
+@ routine
+1	39230	noun	routine	1	After the baby was born, her whole morning routine fell apart.
+2	39231	noun	routine	0	Exercise is part of her daily routine.
+3	39235	adj	routine	0	The doctor did a routine check.
+4	39230	noun	routines	0	Small children need routines to feel safe.
+5	39232	noun	routine	0	His comedy routine made the whole room laugh.
+@ rule
+1	39238	noun	rule	1	He broke one small rule and lost his place on the team.
+2	39239	noun	rule	0	The rule keeps us safe on the road.
+3	39248	verb	ruled	0	The king ruled the land for forty years.
+4	39238	noun	rules	0	These rules are easy to remember.
+5	39250	verb	ruling	0	The judge is ruling on the case this week.

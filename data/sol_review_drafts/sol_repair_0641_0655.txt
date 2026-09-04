@@ -1,0 +1,90 @@
+@ charge
+1	54901	verb	charged	1	The soldiers lowered their spears and charged across the open field.
+2	54862	noun	charge	0	The hotel added a service charge to our final bill.
+3	54866	noun	charges	0	Police dropped both charges after new evidence appeared.
+4	54886	verb	charge	0	The mechanic will charge you fifty dollars for the repair.
+5	54899	verb	charge	0	Please charge your phone before we leave the house.
+@ cheat
+1	54906	verb	cheated	1	She felt sick with guilt after she cheated on the final exam.
+2	54907	verb	cheating	0	He was cheating on his girlfriend for months before she finally found out.
+3	54912	noun	cheat	0	Everyone at school called him a cheat after the scandal.
+4	54906	verb	cheat	0	The teacher warned that anyone who tries to cheat will fail the test.
+5	54906	verb	cheats	0	A person who marks the dice before rolling clearly cheats at the game.
+@ cheerful
+1	54917	adj	cheerful	1	Even after losing the game, the children stayed cheerful and started planning a rematch.
+2	54917	adj	cheerful	0	Our new neighbor always greets us with a cheerful smile in the morning.
+3	54918	adj	cheerful	0	The kitchen felt cheerful with its yellow walls and bright curtains.
+4	54917	adj	more cheerful	0	She sounded more cheerful on the phone after hearing the good news.
+5	54918	adj	most cheerful	0	Of all the rooms in the house, the sunroom is the most cheerful.
+@ chemical
+1	54920	adj	chemical	1	After the explosion, scientists rushed in special suits to check for a dangerous chemical leak.
+2	54919	adj	chemical	0	The cleaning spray has such a strong chemical smell that we open the windows first.
+3	54922	noun	chemical	0	The factory keeps every chemical locked away in a ventilated room.
+4	54922	noun	chemicals	0	Farmers are using fewer chemicals to protect the soil and rivers.
+5	54919	adj	chemical	0	The teacher explained the chemical reaction that produced a bright blue flame.
+@ chest
+1	54929	noun	chest	1	He pressed his hand against his chest as his heart pounded with fear before the interview.
+2	54925	noun	chest	0	Grandpa kept his old letters locked inside a wooden chest in the attic.
+3	54928	noun	chest	0	We bought a new chest for the bedroom to store our sweaters.
+4	54930	noun	chest	0	The doctor listened carefully to my chest with a stethoscope.
+5	54925	noun	chests	0	The pirates buried three chests full of gold coins on the island.
+@ childhood
+1	54939	noun	childhood	1	She spent her childhood moving between five different countries with her military family.
+2	54939	noun	childhood	0	He often talks about the happy summers of his childhood on the farm.
+3	54938	noun	childhood	0	Losing her father so young marked the end of her childhood in many ways.
+4	54940	noun	childhood	0	The company is still in its childhood, with only three employees so far.
+5	54939	noun	childhoods	0	The two sisters had very different childhoods despite growing up in the same house.
+@ claim
+1	54946	noun	claim	1	After the flood destroyed their home, the family filed an insurance claim for the damage.
+2	54944	noun	claim	0	The article's claim that coffee cures cancer turned out to be false.
+3	54947	verb	claimed	0	She claimed the lost wallet was hers and described exactly what was inside.
+4	54948	verb	claims	0	The company claims its product is completely safe, though critics disagree.
+5	54950	verb	claim	0	He plans to claim damages after the accident, insisting it wasn't his fault.
+@ clause
+1	54959	noun	clause	1	The lawyer pointed out a hidden clause in the contract that voided the warranty after six months.
+2	54958	noun	clause	0	In English class, we learned that "because it rained" is a dependent clause.
+3	54956	noun	clause	0	Every sentence needs at least one main clause with a subject and a verb.
+4	54959	noun	clause	0	The rental agreement has a clause about returning the keys within three days.
+5	54956	noun	clauses	0	The teacher asked us to underline all the clauses in the paragraph.
+@ click
+1	54962	noun	click	1	The door lock gave a sharp click just as the burglar tried to force it open.
+2	54976	verb	click	0	Just click the blue button to submit your application online.
+3	54980	verb	clicked	0	After the teacher explained it a third time, the lesson finally clicked for me.
+4	54968	noun	click	0	The advertisement earns money with every click it receives.
+5	54968	noun	clicks	0	The video received a million clicks in a single day.
+@ client
+1	54995	noun	client	1	The lawyer stayed up all night preparing evidence to save her client from prison.
+2	54993	noun	client	0	Our shop's biggest client just placed an order for five hundred chairs.
+3	54996	noun	client	0	The client had signed a contract giving the lawyer permission to negotiate on his behalf.
+4	54994	noun	client	0	The client sends a request, and the server sends back the data.
+5	54993	noun	clients	0	The gym has over two hundred clients who come every week.
+@ cloth
+1	55000	noun	cloth	1	The waiter spread a crisp white cloth over the table before the guests arrived.
+2	55001	noun	cloth	0	She wiped the spilled juice with a damp cloth.
+3	54999	noun	cloth	0	This shirt is made from a soft cotton cloth.
+4	54999	noun	cloth	0	He wrapped the vase in cloth to protect it during the move.
+5	55001	noun	cloths	0	The cleaner keeps several cloths in her bag for different surfaces.
+@ clue
+1	55008	noun	clue	1	The detective found a muddy footprint that turned out to be the key clue in solving the case.
+2	55009	noun	clue	0	I don't have a clue where I left my keys this morning.
+3	55010	noun	clue	0	The first clue in the crossword was a five-letter word for "happy".
+4	55007	noun	clues	0	Her nervous laugh was one of several clues that she was hiding something.
+5	55012	verb	clue	0	Can you clue me in on what happened at the meeting?
+@ coal
+1	55014	noun	coal	1	The miners worked underground all day just to bring up baskets of coal for the town.
+2	55016	noun	coal	0	She added another coal to the fire to keep the room warm.
+3	55017	noun	coal	0	A single red coal still glowed in the fireplace the next morning.
+4	55016	noun	coals	0	The blacksmith piled fresh coals into the forge before starting his work.
+5	55015	noun	coal	0	This mine produces a high-quality coal used mostly for making steel.
+@ coin
+1	55028	noun	coin	1	The old fisherman found a gold coin buried in the sand while walking on the beach.
+2	55028	noun	coin	0	She dropped a coin into the vending machine and pressed the button.
+3	55028	noun	coins	0	He collects rare coins from countries he has never even visited.
+4	55037	verb	coin	0	The mint will coin a new fifty-pence piece next year.
+5	55038	verb	coined	0	The scientist is credited with having coined the term "black hole" in 1967.
+@ collection
+1	55040	noun	collection	1	After her grandmother died, she inherited a huge collection of antique dolls from around the world.
+2	55040	noun	collections	0	This museum houses several important collections of ancient pottery.
+3	55042	noun	collection	0	Trash collection happens every Tuesday morning in our neighborhood.
+4	55044	noun	collection	0	The church organized a collection to help families affected by the fire.
+5	55045	noun	collection	0	The company hired an agency to handle the collection of unpaid debts.

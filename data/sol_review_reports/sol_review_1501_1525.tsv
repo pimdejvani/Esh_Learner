@@ -1,0 +1,25 @@
+watch	pass	all 5 rows genuine, correct senses/POS, rank1 vivid (6 words); no changes needed
+water	repaired	r5 mismatched sense fixed by switching to verb POS (watered/watering) instead of the "amniotic fluid" combination sense; adds POS coverage
+way	repaired	r1 resensed to the "method" meaning it actually expresses; r5's obsolete-feeling nautical "speed" sense replaced with common adv usage ("way too heavy")
+we	pass	all 5 rows genuine, distinct legitimate pronoun senses, rank1 meets 6-word minimum
+weather	pass	all 5 rows genuine and correctly sensed; adj POS correctly skipped (only sense is nautical "windward")
+website	pass	only sense available; all 5 rows natural and distinct
+wednesday	pass	all rows correct sense/POS with matching capitalization; name POS correctly skipped (Sheffield Wednesday nickname, irrelevant trivia)
+week	repaired	rank1 rewritten to fix "week" appearing twice in one sentence (ambiguous cloze) and add vividness
+weekend	pass	all 5 rows genuine, correctly sensed across noun/verb/adj
+welcome	pass	all 5 rows genuine, correct senses across adj/noun/verb
+well	repaired	r3 rewritten - "a well answer" was ungrammatical (that sense of well is predicative-only, e.g. "everything well with you?")
+west	repaired	r5's archaic/poetic verb "westing" replaced with common adjective use ("a cold west wind")
+what	repaired	rank1 lengthened (was 5 words); r5's obsolete noun sense ("many whats") replaced with a natural interjection use
+when	repaired	r3 and r5 had adv POS mislabeled for what are really conjunction/noun functions; repointed sense_id and pos to match
+where	repaired	rank1 and r3 rewritten for length/naturalness; r5's awkward plural "wheres" replaced with the singular noun idiom ("the who, the what... the where")
+arrange	repaired	rank1 lengthened; target forms diversified (arrange/arranged/arranging/arranges); r3 resensed to the "plan in advance" meaning
+arrangement	repaired	systematic sense mismatch - all 5 rows pointed at the abstract "act of arranging" sense while sentences meant object/agreement/configuration/preparations; repointed each row to its actual sense
+asleep	repaired	rank1 lengthened and made vivid; other rows already correct, unchanged
+assistant	repaired	r1-r3 corrected from an obsolete "bystander/witness" sense to modern helper/digital-assistant senses; r4 resensed to the sales-assistant sense; rank1 lengthened
+athlete	repaired	rank1 lengthened; r2 resensed to the broader "sportsperson" meaning for sense variety
+attack	repaired	rank1 lengthened; r4 resensed from "apply violent force" to "tackle a problem" (its actual meaning); r5 rewritten using the illness sense ("asthma attack") for variety
+attend	repaired	rank1 rewritten (too close to the banned "X every day" template shape); target forms diversified across all 4 available forms
+attention	repaired	rank1 lengthened and given real context (fire safety class)
+attractive	repaired	rank1 lengthened; r3/r4 resensed from the generic "causing attraction" sense to "pleasing to the senses"/"enticing" to match their actual sentences
+audience	repaired	rank1 lengthened; r5 resensed from "live gathering" to "viewing public" (a film finding its audience over time)

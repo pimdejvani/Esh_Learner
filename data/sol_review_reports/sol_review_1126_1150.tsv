@@ -1,0 +1,25 @@
+kitchen	repaired	verb POS was unusable ("kitchening/kitchened" - unnatural denominal verb, skipped); replaced with 2 more noun sentences
+know	repaired	r2 sense_id pointed to obsolete "be acquainted" sense while sentence meant ordinary acquaintance; repointed to sense 35204
+land	pass	all rows match their senses correctly, good form variety
+language	repaired	r4 sense mismatch (jargon/sublanguage sense used for "simple language"); skipped verb POS (only nonstandard/rare sense); replaced r5 with animal-communication noun sense for coverage
+large	repaired	r5 sense mismatch (obsolete "abundant" sense used for ordinary "large amount"); repointed to core sense; skipped adv POS (nautical "before the wind")
+last	repaired	fixed r2 POS/sense (labelled adj but "last Friday" is determiner use); replaced r5 verb row with adv sense for POS coverage
+late	pass	all rows match their senses correctly
+later	pass	all rows match their senses correctly
+laugh	pass	all rows match their senses correctly
+learn	pass	skipped noun POS (thin "act of learning" sense, not core usage)
+leave	repaired	replaced r2 with noun sense 35348 ("leave" = time off work) for POS coverage
+left	repaired	fixed r1 and r3 POS/sense (labelled adj/static-adv but "turn left"/"look left" are directional adverb use)
+leg	repaired	fixed r5 sense mismatch (animal-limb sense used for human football injury; repointed to human-leg sense)
+lesson	repaired	verb POS was unusable ("lessoning" - unnatural denominal verb, skipped); replaced r5 with noun sense for more coverage
+let	pass	skipped noun POS (real-estate/tennis "let" senses are narrow jargon, not A1-appropriate)
+letter	pass	all rows match their senses correctly
+library	pass	all rows match their senses correctly
+lie	repaired	rewrote r2 to match "be situated" sense correctly; added noun sense ("a lie" = falsehood) replacing one verb row for POS coverage
+life	repaired	fixed r4 sense mismatch (rewrote to genuinely reflect "period one is alive" sense)
+light	repaired	replaced r3 with adjective sentence for POS coverage; skipped adv POS (idiomatic "travel light" too narrow)
+like	repaired	replaced r2 with preposition sense and r4 with noun sense for POS coverage; skipped adj/conj/particle as lower priority within 5-row budget
+line	pass	all rows match their senses correctly
+lion	repaired	replaced r4 (obsolete-feeling "celebrity" sense) with common "mountain lion" sense
+list	pass	all rows match their senses correctly
+listen	repaired	rank1 was only 5 words (thin-rank1 flag); rewrote to a fuller, non-template sentence

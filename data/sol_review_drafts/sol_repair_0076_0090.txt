@@ -1,7 +1,7 @@
 @ will
 1	42544	verb	will	1	We will every day.
 2	42544	verb	will	0	I will call you as soon as the train arrives.
-3	42548	verb	will	0	Will you help me carry these boxes?
+3	42548	verb	Will	0	Will you help me carry these boxes?
 4	42556	noun	will	0	Her will left the house to her three children.
 5	42560	verb	willed	0	He willed his book collection to the town library.
 
@@ -28,7 +28,7 @@
 
 @ winter
 1	42604	noun	winter	1	We woke on the first morning of winter to a garden covered in snow.
-2	42604	noun	winters	0	Winters in this region are cold and dry.
+2	42604	noun	Winters	0	Winters in this region are cold and dry.
 3	42609	verb	wintered	0	The family wintered in a warmer town by the sea.
 4	42609	verb	wintering	0	Many birds are wintering near the lake.
 5	42610	verb	winter	0	Farmers winter the young animals inside a warm barn.
@@ -93,7 +93,7 @@
 1	42759	verb	would	1	We would every day.
 2	42761	verb	would	0	Every summer, we would swim in the river after school.
 3	42767	verb	would	0	I would buy that bicycle if it were cheaper.
-4	42773	verb	would	0	Would you close the door, please?
+4	42773	verb	Would	0	Would you close the door, please?
 5	42770	verb	would	0	I would speak to the manager if I were you.
 
 @ write

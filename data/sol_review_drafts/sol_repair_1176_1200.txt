@@ -1,0 +1,125 @@
+@ meeting
+1	36262	noun	meeting	1	Everyone cheered when the meeting finally announced an extra day off work.
+2	36262	noun	meeting	0	We had a short meeting after lunch.
+3	36262	noun	meeting	0	She joined the meeting online.
+4	36262	noun	meetings	0	The manager has many meetings today.
+5	36268	verb	meeting	0	They are meeting at the station.
+
+@ menu
+1	36282	noun	menu	1	The waiter smiled and handed us the menu the moment we sat down.
+2	36282	noun	menu	0	The menu has many noodle dishes.
+3	36282	noun	menu	0	I chose fish from the menu.
+4	36282	noun	menus	0	The cafe printed new menus.
+5	36284	noun	menu	0	Choose the print option from the menu on the screen.
+
+@ message
+1	36287	noun	message	1	Your message made me smile the whole afternoon.
+2	36287	noun	message	0	I sent a message to my mom.
+3	36287	noun	messages	0	He read all his messages.
+4	36291	verb	message	0	Please message me when you arrive.
+5	36291	verb	messaged	0	She messaged her friend last night.
+
+@ midnight
+1	36301	noun	midnight	1	The baby woke up crying at midnight.
+2	36301	noun	midnight	0	We arrived home after midnight.
+3	36301	noun	midnight	0	The train leaves at midnight.
+4	36301	noun	midnight	0	The city was completely silent by midnight.
+5	36301	noun	midnight	0	She always finishes her homework right before midnight.
+
+@ milk
+1	36314	noun	milk	1	I always drink a glass of warm milk before bed.
+2	36314	noun	milk	0	Please add milk to my coffee.
+3	36314	noun	milk	0	The baby needs warm milk.
+4	36320	verb	milk	0	They milk the cows at dawn.
+5	36320	verb	milking	0	He is milking a cow now.
+
+@ miss
+1	36344	verb	miss	1	I still miss my old friend from primary school.
+2	36344	verb	miss	0	Do not miss the bus.
+3	36344	verb	missed	0	She missed the last train.
+4	36353	verb	missing	0	I am missing one page from the book.
+5	36359	noun	miss	0	The two cars had a near miss on the icy road.
+
+@ mistake
+1	36376	noun	mistake	1	Everyone makes a mistake sometimes, and that is completely okay.
+2	36376	noun	mistake	0	It was a small mistake.
+3	36376	noun	mistakes	0	Please learn from your mistakes.
+4	36372	verb	mistake	0	Do not mistake kindness for weakness.
+5	36372	verb	mistook	0	I mistook her for her sister.
+
+@ model
+1	36378	noun	model	1	She dreamed of becoming a famous fashion model one day.
+2	36380	noun	model	0	We built a model of the bridge.
+3	36382	noun	models	0	The store has new phone models.
+4	36390	adj	model	0	My colleague is a model employee who always finishes work early.
+5	36391	verb	model	0	She will model the new dress.
+
+@ modern
+1	36397	adj	modern	1	This kitchen has a modern design.
+2	36397	adj	modern	0	They live in a modern house.
+3	36397	adj	more modern	0	This phone is more modern than mine.
+4	36397	adj	most modern	0	It is the most modern school here.
+5	36397	adj	modern	0	My grandmother doesn't understand modern technology.
+
+@ moment
+1	36403	noun	moment	1	She paused for a long moment before answering the difficult question.
+2	36403	noun	moment	0	That was a happy moment.
+3	36403	noun	moment	0	I will be back in a moment.
+4	36403	noun	moments	0	We shared many good moments.
+5	36403	noun	moment	0	For one moment, nobody spoke.
+
+@ monday
+1	67702	noun	Monday	1	Everyone felt excited because the school trip starts on Monday morning.
+2	67702	noun	Monday	0	I have a test on Monday.
+3	67702	noun	Mondays	0	We have music class on Mondays.
+4	67703	adv	Monday	0	The shop opens Monday.
+5	67702	noun	Monday	0	Next Monday is a holiday.
+
+@ money
+1	36413	noun	money	1	I saved money for a new bike.
+2	36413	noun	money	0	Do you have enough money for lunch?
+3	36413	noun	money	0	He gave the money to the cashier.
+4	36413	noun	monies	0	The group collected public monies.
+5	36413	noun	money	0	They didn't have enough money to fix the car.
+
+@ month
+1	36422	noun	month	1	My birthday is next month, and I can't wait to celebrate.
+2	36422	noun	month	0	We will travel for a month.
+3	36422	noun	months	0	The baby is six months old.
+4	36422	noun	month	0	This month is very busy.
+5	36422	noun	months	0	The flowers bloom for three months.
+
+@ more
+1	36429	adv	more	1	The teacher asked him to speak more slowly so everyone could understand.
+2	36425	det	more	0	We need more time.
+3	36433	pron	more	0	Would you like more?
+4	36435	adj	More	0	More students came today.
+5	36429	adv	more	0	I want to learn more about animals.
+
+@ morning
+1	36442	noun	morning	1	The quiet morning made me feel hopeful.
+2	36442	noun	morning	0	I drink water every morning before school.
+3	36442	noun	mornings	0	Our mornings are busy but happy.
+4	36442	noun	morning	0	The hikers began their long climb early in the morning.
+5	36442	noun	morning	0	Good morning, everyone.
+
+@ mouse
+1	36489	noun	mouse	1	The little mouse found food near the wall.
+2	36493	noun	mouse	0	Move the mouse to open the game.
+3	36489	noun	mice	0	The cat watched two mice in the garden.
+4	36491	noun	mouse	0	She's such a mouse that she never speaks up in meetings.
+5	36504	verb	mousing	0	She is mousing through the pictures on the screen.
+
+@ mouth
+1	36506	noun	mouth	1	Cover your mouth when you cough.
+2	36507	noun	mouth	0	Birds gather at the mouth of the river to feed every morning.
+3	36506	noun	mouths	0	The dentist checked the children's mouths.
+4	36516	verb	mouthed	0	He mouthed the answer without making a sound.
+5	36517	verb	mouthing	0	She is mouthing the song while it plays.
+
+@ movie
+1	36553	noun	movie	1	That movie made us laugh and cry.
+2	36554	noun	movie	0	We watched a movie after dinner.
+3	36553	noun	movies	0	My friends enjoy action movies.
+4	36555	noun	movies	0	Let's meet at the movies at seven.
+5	36554	noun	movie	0	We are going to watch a new movie this weekend.

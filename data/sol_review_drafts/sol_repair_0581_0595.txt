@@ -1,0 +1,104 @@
+@ application
+1	54004	noun	application	1	Her hands shook as she sealed the university application just before the midnight deadline.
+2	54003	noun	application	0	I downloaded a new application to track my daily runs.
+3	54001	noun	application	0	Careful application of the new method cut our costs in half.
+4	54004	noun	application	0	He mailed his application for the summer job on Monday.
+5	54003	noun	applications	0	The tablet came loaded with useful applications for school work.
+
+@ appointment
+1	54014	noun	appointment	1	She burst into tears of relief when the doctor confirmed her appointment for the surgery.
+2	54014	noun	appointment	0	I have a dentist appointment at three o'clock tomorrow.
+3	54011	noun	appointment	0	The appointment of the new manager surprised everyone in the office.
+4	54017	noun	appointment	0	The judge's appointment to the court took months to finalize.
+5	54014	noun	appointments	0	My calendar is full of appointments this week.
+
+@ appreciate
+1	54021	verb	appreciated	1	Tears filled his eyes as he told his mother how much he appreciated her sacrifice.
+2	54021	verb	appreciate	0	I really appreciate your help with the heavy boxes.
+3	54022	verb	appreciates	0	She appreciates good coffee more than expensive tea.
+4	54023	verb	appreciate	0	Only after visiting the museum did I truly appreciate the artist's skill.
+5	54024	verb	appreciates	0	Real estate in this city appreciates quickly every year.
+
+@ approximately
+1	54025	adv	approximately	1	The nurse's voice cracked as she said the tumor was approximately five centimeters wide.
+2	54025	adv	approximately	0	The trip takes approximately two hours by car.
+3	54025	adv	approximately	0	There were approximately fifty guests at the wedding.
+4	54025	adv	approximately	0	The recipe calls for approximately one cup of sugar.
+5	54025	adv	approx.	0	The meeting room fits approx. 30 people.
+
+@ arrest
+1	54037	verb	arrest	1	The crowd gasped as officers moved in to arrest the fleeing suspect on live television.
+2	54028	noun	arrest	0	News of the arrest spread quickly through the small town.
+3	54029	noun	arrest	0	He remained under arrest until his lawyer arrived at the police station.
+4	54038	verb	arresting	0	The gallery displayed an arresting photo of a soldier crying.
+5	54028	noun	arrests	0	Police reported a rise in arrests during the holiday weekend.
+
+@ arrival
+1	54044	noun	arrival	1	The whole family cheered when they heard about the new arrival, a baby girl born at dawn.
+2	54040	noun	arrival	0	We waited at the gate for the arrival of the delayed flight.
+3	54042	noun	arrival	0	The arrival of spring brought warmer days and blooming flowers.
+4	54041	noun	arrival	0	Please confirm your arrival time so we can prepare the room.
+5	54044	noun	arrivals	0	The airport screen listed all international arrivals for the morning.
+
+@ assignment
+1	54050	noun	assignment	1	She stayed up all night crying over the impossible essay assignment due the next morning.
+2	54050	noun	assignment	0	Our teacher gave us a new reading assignment for the weekend.
+3	54049	noun	assignment	0	After training, he received his assignment to the night shift.
+4	54045	noun	assignment	0	The assignment of tasks was handled fairly by the team leader.
+5	54048	noun	Assignments	0	Assignments piled up on her desk as the semester continued.
+
+@ assist
+1	54054	verb	assist	1	Strangers rushed to assist the injured cyclist lying in the middle of the road.
+2	54054	verb	assisted	0	The nurse assisted the elderly man as he stood up.
+3	54054	verb	assisting	0	Volunteers spent the morning assisting families after the flood.
+4	54059	noun	assist	0	A small assist from her neighbor made moving day much easier.
+5	54060	noun	assists	0	The winger recorded two assists in last night's football match.
+
+@ atmosphere
+1	54066	noun	atmosphere	1	The room fell silent, and a tense atmosphere settled over the family dinner.
+2	54065	noun	atmosphere	0	Candles and soft music created a romantic atmosphere in the restaurant.
+3	54063	noun	atmosphere	0	Scientists study how the atmosphere protects Earth from harmful radiation.
+4	54064	noun	atmosphere	0	The atmosphere inside the crowded bus felt thick and hot.
+5	54066	noun	atmospheres	0	The two cafes have completely different atmospheres, one calm and one lively.
+
+@ attach
+1	54073	verb	attached	1	Over the lonely winter, the old dog grew deeply attached to the quiet widow next door.
+2	54069	verb	attach	0	Please attach the shelf firmly to the wall with these screws.
+3	54071	verb	attaching	0	I am attaching the invoice to this email before I send it.
+4	54070	verb	attaches	0	A small tag attaches to each suitcase before it is loaded onto the plane.
+5	54074	verb	attach	0	People often attach great importance to first impressions.
+
+@ attitude
+1	54079	noun	attitude	1	The teenager slammed the door and gave her mother nothing but attitude all evening.
+2	54078	noun	attitude	0	A positive attitude can make a difficult day feel much easier.
+3	54078	noun	attitudes	0	Different cultures often have very different attitudes toward time and punctuality.
+4	54077	noun	attitude	0	She walked into the interview with a confident attitude, back straight and chin held high.
+5	54079	noun	attitude	0	Stop giving me attitude and just answer the question calmly.
+
+@ attract
+1	54085	verb	attract	1	He blushed instantly, unable to hide how much she seemed to attract him.
+2	54084	verb	attract	0	Magnets attract certain metals like iron and nickel.
+3	54086	verb	attract	0	This new policy is likely to attract criticism from small business owners.
+4	54085	verb	attracted	0	Bright flowers attracted dozens of bees to the garden.
+5	54085	verb	attracting	0	The street performer was attracting a large crowd within minutes.
+
+@ attraction
+1	54092	noun	attraction	1	She felt a sudden, undeniable attraction to the stranger who caught her falling suitcase.
+2	54089	noun	attraction	0	The theme park's newest attraction had a two-hour line all day.
+3	54087	noun	attraction	0	Gravity is the force of attraction between two massive objects.
+4	54091	noun	attraction	0	His quiet confidence created an attraction that she could not ignore.
+5	54089	noun	attractions	0	The city guide listed the top ten attractions for tourists.
+
+@ authority
+1	54095	noun	authorities	1	Panic spread through the village as the authorities ordered an immediate evacuation before the flood.
+2	54094	noun	authority	0	The manager does not have the authority to fire employees without approval.
+3	54096	noun	authority	0	This textbook is considered the leading authority on ancient Roman history.
+4	54097	noun	authority	0	After years of research, she became a respected authority on climate change.
+5	54098	noun	authority	0	The soldiers were given authority to cross the border for the rescue mission.
+
+@ aware
+1	54101	adj	aware	1	Her breath caught as she suddenly became aware that someone was watching her from the shadows.
+2	54101	adj	aware	0	I wasn't aware that the store closed early on Sundays.
+3	54100	adj	aware	0	Hikers should stay aware of wild animals near the trail.
+4	54101	adj	more aware	0	Meditation has made me more aware of my own thoughts.
+5	54101	adj	most aware	0	Of all the students, she was the most aware of what was happening in the news.

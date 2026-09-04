@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "policy_version": "2026-08-30-v4",
+  "validator_rules": {
+    "banned_literals": [
+      "คำบุคคล",
+      "คำคุณศัพท์กำหนดคำนาม"
+    ],
+    "banned_regexes": [
+      "[\\u3040-\\u30ff\\u3400-\\u9fff]",
+      "กริยาช่วย\\s*(?:ในรูป|ที่เป็น)\\s*(?:gerund|participle)",
+      "กริยา(?:ที่)?ไม่มี\\s*['\\\"]?to\\b",
+      "คำกริยาวิเศษ(?!ณ์)",
+      "(?:(?:คำบุพบท|บุพบท)\\s*(?:a|an|the)\\b|(?:a|an|the)\\s*เป็น(?:คำ)?บุพบท)",
+      "กำหนดคำนาม(?:ทั้งวลี)?ด้วยคำคุณศัพท์",
+      "คำนามนับไม่ได้พหูพจน์"
+    ],
+    "max_common_prefix_chars": 90,
+    "grounding_checks": [
+      "copula_is_must_be_present",
+      "num_must_not_be_noun",
+      "mentioned_one_must_be_present",
+      "adj_after_be_must_be_complement"
+    ]
+  },
+  "production_gates": {
+    "semantic_pass_rate_min": 0.8,
+    "severe_error_rate_max": 0.01,
+    "deterministic_acceptance_rate_min": 0.98,
+    "repeated_error_pattern_max_rows": 2,
+    "accepted_words_per_minute_min": 2.9,
+    "average_minutes_per_word_max": 3.0,
+    "post_review_sample_pass_rate_min": 0.975
+  },
+  "time_budget_hours": {
+    "production_generation_and_critic_max": 9,
+    "publish_checksum_audit_reserved": 1
+  }
+}

@@ -1,0 +1,150 @@
+@ reservation
+1	59038	noun	reservation	1	The restaurant held our reservation even though we arrived late.
+2	59038	noun	reservation	0	She made a reservation at the restaurant for six.
+3	59038	noun	reservation	0	The company made a reservation for the conference room.
+4	59038	noun	reservation	0	He requested a reservation for the last available seat.
+5	59038	noun	reservation	0	The hotel confirmed the reservation for next Friday.
+@ resource
+1	59042	noun	resources	1	The team relied on local resources to complete the project on time.
+2	59042	noun	resource	0	Water is a vital resource for all living organisms.
+3	59042	noun	resources	0	The school has limited resources for science experiments.
+4	59042	noun	resources	0	She used her personal resources to help the struggling family.
+5	59042	noun	resources	0	The government invested in renewable energy resources.
+@ respect
+1	59088	noun	respect	1	She earned everyone's respect with her honest work.
+2	59088	noun	respect	0	He showed respect to his elders during the family gathering.
+3	59088	noun	respect	0	The teacher gained respect from her students through kindness.
+4	59088	noun	respect	0	We should show respect for those who serve the community.
+5	59088	noun	respect	0	Her calm demeanor earned deep respect from the team.
+@ responsibility
+1	59048	noun	responsibility	1	She felt the weight of responsibility after the accident.
+2	59048	noun	responsibility	0	He took responsibility for fixing the broken window.
+3	59048	noun	responsibility	0	The teacher explained the responsibility of each student in class.
+4	59048	noun	responsibility	0	It is your responsibility to lock the door before leaving.
+5	59048	noun	responsibility	0	They shared responsibility for organizing the event.
+@ responsible
+1	59079	adj	responsible	1	The teacher is responsible for the classroom rules.
+2	59079	adj	responsible	0	She was responsible for the accident due to her mistake.
+3	59079	adj	responsible	0	He was responsible for keeping the documents safe.
+4	59079	adj	responsible	0	The manager is responsible for the team's performance.
+5	59079	adj	responsible	0	They were responsible for the project's failure.
+@ retire
+1	59063	verb	retire	1	After 40 years, my uncle decided to retire and enjoy his garden.
+2	59063	verb	retire	0	She will retire next year when she turns 65.
+3	59063	verb	retire	0	He plans to retire early and travel the world.
+4	59063	verb	retired	0	My father retired from teaching last month.
+5	59063	verb	retire	0	They will retire to the countryside after selling their house.
+@ retired
+1	59055	adj	retired	1	The retired firefighter still visits the station every December.
+2	59055	adj	retired	0	She is a retired teacher who now volunteers at the library.
+3	59055	adj	retired	0	A group of retired workers meets at the cafe each morning.
+4	59055	adj	retired	0	His retired parents moved closer to their grandchildren.
+5	59055	adj	retired	0	The company invited its retired employees to the anniversary dinner.
+@ revise
+1	59058	verb	revise	1	The teacher asked me to revise my essay before submitting it.
+2	59058	verb	revise	0	She will revise the report to correct the errors in data.
+3	59058	verb	revise	0	We need to revise the contract before signing it.
+4	59058	verb	revised	0	He revised his notes to make them clearer for the test.
+5	59058	verb	revised	0	They revised the manuscript after receiving feedback.
+@ risk
+1	59100	noun	risk	1	Investing in stocks carries a high risk of losing money.
+2	59100	noun	risk	0	The project has a high risk of failure due to poor planning.
+3	59100	noun	risk	0	She took a risk by quitting her job without another one lined up.
+4	59100	noun	risk	0	There is a risk of infection if you do not wash your hands.
+5	59100	noun	risk	0	The new policy reduces the risk of accidents at work.
+@ robot
+1	59113	noun	robot	1	The factory uses a robot to assemble car parts quickly and accurately.
+2	59113	noun	robot	0	She watched the robot clean the floor without needing any help.
+3	59113	noun	robot	0	The robot in the museum moves like a real person and answers questions.
+4	59113	noun	robot	0	Children were amazed by the robot that could sing and dance.
+5	59113	noun	robot	0	A robot helped the scientist carry heavy tools through the lab.
+@ roll
+1	59188	verb	rolled	1	The ball rolled down the hill and stopped beside a tree.
+2	59188	verb	rolls	0	The wheel rolls smoothly across the flat ground.
+3	59188	verb	rolled	0	The barrel rolled across the wooden floor.
+4	59188	verb	rolls	0	The toy car rolls forward after a gentle push.
+5	59188	verb	rolling	0	The stone kept rolling down the rocky path.
+@ romantic
+1	59149	adj	romantic	1	He planned a romantic dinner beside the lake for their anniversary.
+2	59149	adj	romantic	0	They spent a romantic weekend in a quiet mountain village.
+3	59149	adj	romantic	0	She received a romantic letter from her partner.
+4	59149	adj	romantic	0	Soft music created a romantic atmosphere in the restaurant.
+5	59149	adj	romantic	0	The film tells a romantic story about two childhood friends.
+@ rope
+1	59121	noun	rope	1	The climbers tied a strong rope to the anchor point.
+2	59121	noun	rope	0	She used a thick rope to secure the heavy box.
+3	59121	noun	rope	0	The boat was moored with a thick rope.
+4	59121	noun	rope	0	They pulled the cart using a sturdy rope.
+5	59121	noun	rope	0	A rope was stretched across the path to block access.
+@ rough
+1	59155	adj	rough	1	She gave a rough sketch of the new office layout.
+2	59155	adj	rough	0	The architect's rough plan was missing key measurements.
+3	59155	adj	rough	0	He made a rough estimate of the repair cost.
+4	59155	adj	rough	0	The report was still in rough form when submitted.
+5	59155	adj	rough	0	We need a rough draft before finalizing the proposal.
+@ row
+1	59275	noun	rows	1	The seats in the theatre were arranged in neat rows.
+2	59275	noun	row	0	We planted tomatoes in a straight row along the fence.
+3	59275	noun	rows	0	The garden had three rows of carrots and two rows of beans.
+4	59275	noun	row	0	She sat in the third row from the front.
+5	59275	noun	rows	0	The classroom had five rows of desks facing the board.
+@ royal
+1	59256	adj	royal	1	The royal family attended the state banquet in grand style.
+2	59256	adj	royal	0	A royal guard stood outside the palace gate.
+3	59256	adj	royal	0	The royal palace has been open to tourists for decades.
+4	59256	adj	royal	0	He was granted a royal pardon after years in prison.
+5	59256	adj	royal	0	The royal garden was filled with rare flowers and fountains.
+@ rugby
+1	59183	noun	rugby	1	The team practiced rugby after school every Tuesday.
+2	59183	noun	rugby	0	Rugby is played with an oval ball and requires strong teamwork.
+3	59183	noun	rugby	0	We watched a live rugby match on Saturday evening.
+4	59183	noun	rugby	0	Rugby is popular in countries like New Zealand and England.
+5	59183	noun	rugby	0	He joined the rugby club to stay fit and make friends.
+@ safety
+1	59287	noun	safety	1	The hikers reached safety after finding a shelter during the storm.
+2	59287	noun	safety	0	She smiled with relief when she reached safety at the hospital.
+3	59287	noun	safety	0	The child clung to her mother, seeking safety in the crowd.
+4	59287	noun	safety	0	The inspection improved the safety of the damaged vehicle.
+5	59287	noun	safety	0	The team prioritized safety during the risky climb.
+@ sailor
+1	59297	noun	sailor	1	The young sailor learned to navigate by the stars.
+2	59297	noun	sailor	0	Every sailor on the ship must follow the captain's orders.
+3	59297	noun	sailor	0	She became a sailor after training in maritime school.
+4	59297	noun	sailor	0	The sailor fixed the broken rope on the mast.
+5	59297	noun	sailor	0	A tired sailor rested after a long voyage.
+@ sample
+1	59303	noun	sample	1	The doctor took a blood sample from the patient.
+2	59303	noun	sample	0	She collected a soil sample for the lab test.
+3	59303	noun	sample	0	The scientist analyzed the water sample carefully.
+4	59303	noun	sample	0	They tested a food sample for contamination.
+5	59303	noun	sample	0	A rock sample was sent to the geology department.
+@ sand
+1	59369	noun	sand	1	The beach was covered in fine sand after the high tide.
+2	59369	noun	sand	0	Workers mixed sand with cement to build the foundation.
+3	59369	noun	sand	0	The desert stretched endlessly under the hot sun, full of sand.
+4	59369	noun	sand	0	She poured sand into the sandbox for the children to play.
+5	59369	noun	sand	0	The construction site stored sand in large piles near the trucks.
+@ scan
+1	59317	verb	scanned	1	She scanned the document for errors before submitting it.
+2	59317	verb	scanned	0	He scanned the crowd to find his friend.
+3	59317	verb	scanned	0	The detective scanned the room for clues.
+4	59317	verb	scanned	0	They scanned the map to locate the nearest exit.
+5	59317	verb	scanned	0	I scanned the page quickly but missed the important detail.
+@ scientific
+1	59313	adj	scientific	1	The lab uses scientific methods to test new medicines.
+2	59313	adj	scientific	0	She gave a scientific explanation for the experiment's results.
+3	59313	adj	scientific	0	Scientists rely on scientific evidence in their research.
+4	59313	adj	scientific	0	The report presents a scientific analysis of climate change.
+5	59313	adj	scientific	0	He made a scientific discovery that changed the field.
+@ script
+1	59360	noun	script	1	The actor dropped his script during the final rehearsal.
+2	59360	noun	script	0	The screenwriter revised the script after meeting the director.
+3	59360	noun	script	0	Each performer received a copy of the script.
+4	59360	noun	script	0	The script includes detailed directions for every scene.
+5	59360	noun	script	0	She memorized every line in the script before filming began.
+@ sculpture
+1	59385	noun	sculpture	1	The museum displayed a bronze sculpture of a dancing woman.
+2	59385	noun	sculpture	0	She admired the ancient marble sculpture in the courtyard.
+3	59385	noun	sculpture	0	The artist carved a new sculpture from a block of limestone.
+4	59385	noun	sculpture	0	A large sculpture stood in front of the modern art gallery.
+5	59385	noun	sculptures	0	Children made clay sculptures during their art class.

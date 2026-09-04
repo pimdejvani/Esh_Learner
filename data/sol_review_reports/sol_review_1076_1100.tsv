@@ -1,0 +1,25 @@
+hi	pass	all 5 rows use correct noun greeting sense (34422), distinct, no rare senses; intj/adj POS skipped as junk
+high	repaired	r1 mislabeled adj for adverbial "flew high" use, rewrote as genuine adj sentence; verb POS skipped (both senses obsolete)
+him	repaired	r5 sense_id mismatch: noun "male being" sense pointed at a plain pronoun sentence, rewrote to genuine noun usage
+his	repaired	r1 rewritten (too short + case mismatch); r3 target case fixed to "His"; noun POS skipped (obscure "plural of hi" sense)
+history	repaired	r4 used obsolete verb sense "to narrate" (fabrication "will history the story"), replaced with browser-history noun sense; verb POS skipped
+hobby	repaired	r1 too short (5 words), rewrote for length and vividness
+holiday	pass	all senses genuine (public holiday, holiday period, holidaying); no rare senses used
+home	repaired	r1 too short; r2 was noun sense pointed at adverbial "walked home" usage, rewrote as genuine noun sentence; r4 forced into unnatural "home meal" collocation, rewrote to idiomatic "home team"; verb POS skipped (narrow "return to owner" sense)
+homework	pass	all 5 rows use core sense, distinct, no rare senses
+hope	pass	all 5 rows genuine, verb and noun senses distinct, no rare senses
+horse	pass	all 5 rows genuine (animal, idiom "horsing around"), no rare senses
+hospital	repaired	r5 used obsolete/archaic adj sense "hospitable" (fabrication), replaced with a second noun sentence; adj POS skipped
+hot	repaired	r5 used unnatural verb "hotting" (dubious collocation), replaced with adv sense "serve it hot"; verb and noun POS skipped
+hotel	pass	all 5 rows genuine, distinct, no rare senses
+hour	repaired	r1 too short (5 words), rewrote
+house	pass	all 5 rows genuine (noun dwelling, verb "to house/accommodate"), no rare senses
+how	repaired	r1 was a 4-word template ("How are you today?"), rewrote; r1-r3 target case fixed to "How"; r4 rewritten so the conjunction sense is unambiguous
+however	repaired	target case fixed to "However" on r2, r3, r5 (sentence-initial occurrences were stored lowercase)
+hundred	repaired	all 5 rows used only the rare "hundred-dollar bill" noun sense; the core numeral meaning was missing entirely, rewrote 4 rows to the numeral sense and kept 1 noun row
+hungry	pass	all 5 rows genuine adjective forms, no rare senses
+husband	repaired	r1 too short; r4/r5 used formal/literary verb sense ("husband your resources"), skipped as not ordinary modern usage, replaced with noun sentences
+ice	repaired	r5 used the intransitive verb sense with an unnatural transitive pattern ("wind is icing the road"), corrected to match the sense's own intransitive pattern
+idea	repaired	all 5 rows pointed at the abstract philosophical "Platonic Idea" sense while every sentence meant the everyday "thought/plan" sense; re-pointed sense_ids; r1 also too short, rewrote
+if	repaired	target case fixed to "If" on r1, r5 (sentence-initial occurrences were stored lowercase)
+imagine	repaired	target case fixed to "Imagine" on r1 (sentence-initial occurrence was stored lowercase)

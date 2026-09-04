@@ -1,0 +1,90 @@
+@ exercise
+1	32480	noun	exercise	1	After months indoors, morning exercise in the park made Mira feel strong again.
+2	32480	noun	Exercise	0	Exercise helps keep your body healthy.
+3	32482	noun	exercises	0	She does stomach exercises every morning.
+4	32480	noun	exercise	0	Swimming is good exercise.
+5	32488	verb	exercise	0	Many people exercise for thirty minutes a day.
+
+@ extra
+1	32501	adj	extra	1	The baker packed an extra loaf for the family that had missed dinner.
+2	32501	adj	extra	0	Please bring an extra pencil.
+3	32504	adv	extra	0	She ran extra fast to catch the bus.
+4	32501	adj	extra	0	She saved extra food for later.
+5	32505	noun	extra	0	Breakfast was listed as an extra on the bill.
+
+@ eye
+1	32512	noun	eye	1	A tear filled her eye when she saw the puppy safe at last.
+2	32512	noun	eye	0	Your eye helps you see.
+3	32512	noun	eye	0	He has a blue eye.
+4	32512	noun	eye	0	Dust got into my eye.
+5	32543	verb	eyed	0	The dog eyed the sandwich on the table.
+
+@ face
+1	32550	noun	face	1	When he heard his name announced, a bright smile spread across his face.
+2	32550	noun	face	0	Wash your face before bed.
+3	32550	noun	face	0	Her face was covered with paint.
+4	32550	noun	face	0	He turned his face toward the sun.
+5	32583	verb	face	0	We must face the truth about our mistake.
+
+@ false
+1	32650	adj	false	1	The false alarm made everyone leave the building.
+2	32651	adj	false	0	The answer is false because the number is wrong.
+3	32652	adj	false	0	She wore false eyelashes for the party.
+4	32666	noun	false	0	In the quiz, she circled false for the incorrect statement.
+5	32654	adj	falser	0	That promise sounds falser every time he repeats it.
+
+@ family
+1	32667	noun	family	1	My family waited for me at the airport.
+2	32668	noun	family	0	A family of ducks swam across the pond.
+3	32669	noun	families	0	Several families joined the neighborhood picnic.
+4	32676	noun	family	0	Roses belong to the same plant family.
+5	32680	adj	family	0	We chose a family restaurant with simple meals.
+
+@ fantastic
+1	32686	adj	fantastic	1	You did a fantastic job on the presentation.
+2	32686	adj	fantastic	0	We had a fantastic time at the beach.
+3	32687	adj	fantastic	0	The novel describes a fantastic world of dragons.
+4	32687	adj	fantastic	0	His story of meeting aliens sounded fantastic.
+5	32686	adj	more fantastic	0	The view from the hill was even more fantastic at sunrise.
+
+@ farmer
+1	32727	noun	farmer	1	The farmer smiled when the rain finally came.
+2	32727	noun	farmer	0	A farmer feeds the chickens before sunrise.
+3	32727	noun	Farmers	0	Farmers sell fresh fruit at the market.
+4	32728	noun	farmer	0	The farmer owns the land but hires two workers.
+5	32727	noun	farmer	0	We thanked the farmer for showing us the cows.
+
+@ feel
+1	32822	verb	feel	1	I feel proud when my sister reaches her goals.
+2	32816	verb	Feel	0	Feel the fabric before you buy it.
+3	32832	noun	feel	0	You should get a feel for the neighborhood before renting an apartment.
+4	32828	verb	feels	0	This blanket feels soft and warm.
+5	32823	verb	felt	0	I felt that the plan was too risky.
+
+@ feeling
+1	32843	noun	feeling	1	I had a warm feeling when everyone welcomed me home.
+2	32842	noun	feeling	0	There is little feeling in my cold fingers.
+3	32844	noun	feelings	0	Please respect other people's feelings.
+4	32846	noun	feeling	0	I have a feeling that it will rain soon.
+5	32847	noun	feeling	0	What is your feeling about the new rule?
+
+@ few
+1	32854	det	few	1	Only a few friends stayed to help me clean up after the storm.
+2	32855	det	Few	0	Few students chose the early train.
+3	32858	pron	few	0	Many applied for the job, but few were qualified.
+4	32854	det	Fewer	0	Fewer cars use this road on Sundays.
+5	32854	det	fewest	0	This route has the fewest stops.
+
+@ fast
+1	32752	adv	fast	1	He ran fast to catch his daughter before she fell.
+2	32736	adj	faster	0	This train is faster than the old one.
+3	32752	adv	fast	0	Please drive fast only when it is safe.
+4	32754	verb	fasting	0	She is fasting until sunset for her religion.
+5	32757	noun	fast	0	They broke their fast with soup and bread.
+
+@ fifth
+1	32860	adj	fifth	1	Finishing fifth still made Maya proud after months of training.
+2	32861	noun	fifth	0	The fifth in line opened the door.
+3	32863	noun	fifth	0	A fifth of the class was absent today.
+4	32865	noun	fifth	0	The guitarist played a fifth above the melody.
+5	32863	noun	fifths	0	Two fifths of the cake were eaten before the party started.

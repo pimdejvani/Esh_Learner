@@ -1,0 +1,150 @@
+@ beyond
+1	61800	prep	beyond	1	The fence marks the point beyond which no one may go.
+2	61800	prep	beyond	0	The path ends beyond the old oak tree.
+3	61800	prep	beyond	0	The lake stretches beyond the distant hills.
+4	61800	prep	beyond	0	We walked beyond the village into the forest.
+5	61800	prep	beyond	0	The road disappears beyond the next bend.
+@ bitter
+1	61906	adj	bitter	1	The dark chocolate tasted too bitter for the child.
+2	61906	adj	bitter	0	She stirred the tea and found it bitter.
+3	61906	adj	bitter	0	The medicine had a bitter aftertaste.
+4	61906	adj	bitter	0	He took a sip and made a face because the juice was bitter.
+5	61906	adj	bitter	0	The beer was too bitter for her liking.
+@ blame
+1	61828	noun	blame	1	The manager accepted the blame for the mistake.
+2	61828	noun	blame	0	She took the blame for the broken vase.
+3	61828	noun	blame	0	No one wanted to accept the blame.
+4	61828	noun	blame	0	The blame rested on the careless driver.
+5	61828	noun	blame	0	He received much of the blame after the project failed.
+@ blind
+1	61916	adj	blind	1	The old man walks with a stick because he is blind.
+2	61916	adj	blind	0	She was born blind, so she has never seen the color red.
+3	61916	adj	blind	0	The blind child read the story in braille.
+4	61916	adj	blind	0	He wears dark glasses because he is blind in one eye.
+5	61916	adj	blind	0	The kitten was born blind but began to see after several days.
+@ bond
+1	61837	noun	bond	1	The company issued a new bond to raise money for expansion.
+2	61837	noun	bond	0	She bought a government bond that pays interest annually.
+3	61837	noun	bond	0	The bond matures in ten years and returns the principal then.
+4	61837	noun	bonds	0	Investors often buy corporate bonds for steady income.
+5	61837	noun	bond	0	A registered bond is recorded in the owner's name.
+@ breast
+1	61948	noun	breast	1	The doctor examined her breast for signs of illness.
+2	61948	noun	breast	0	After the surgery, she wore a special bra to support her breast.
+3	61948	noun	breast	0	New mothers often experience soreness in the breast during feeding.
+4	61948	noun	breast	0	She noticed a lump in her breast and scheduled a doctor's visit.
+5	61948	noun	breast	0	The nurse checked the breast for swelling after the procedure.
+@ brief
+1	61865	adj	brief	1	The storm was brief but intense, lasting only ten minutes.
+2	61865	adj	brief	0	Her visit to the city was brief, just long enough to grab lunch.
+3	61865	adj	brief	0	The meeting was brief, yet it covered all the key points.
+4	61865	adj	brief	0	He gave a brief explanation before leaving the room.
+5	61865	adj	brief	0	A brief power cut interrupted the evening news.
+@ broad
+1	61888	adj	broad	1	The river has a broad channel where boats can pass easily.
+2	61888	adj	broad	0	She stood on the broad path leading to the old gate.
+3	61888	adj	broad	0	A broad field stretched from the farmhouse to the river.
+4	61888	adj	broad	0	The road widened into a broad stretch near the village.
+5	61888	adj	broad	0	The broad river flooded its banks after days of rain.
+@ broadcast
+1	61999	adj	broadcast	1	The seeds were broadcast across the field by hand.
+2	61999	adj	broadcast	0	The fertilizer was broadcast evenly over the dry soil.
+3	61999	adj	broadcast	0	Wildflowers grew after the seeds were broadcast in spring.
+4	62011	verb	broadcast	0	The gardener broadcast the grass seed before rain.
+5	62011	verb	broadcast	0	She broadcast the seeds in a wide arc across the garden.
+@ budget
+1	61963	noun	budget	1	We need to stick to our budget for the new office supplies.
+2	61963	noun	budget	0	The school's annual budget covers teacher salaries and classroom materials.
+3	61963	noun	budget	0	Our travel budget was cut this year, so we can't go abroad.
+4	61963	noun	budget	0	The project stayed within the original budget despite delays.
+5	61963	noun	budget	0	The city council approved the new budget for public transportation.
+@ bullet
+1	61973	noun	bullet	1	The detective found a bullet near the hunter's abandoned rifle.
+2	61973	noun	bullet	0	The bullet struck the metal plate with a sharp metallic ring.
+3	61973	noun	bullet	0	She felt a sudden sting as the bullet grazed her arm.
+4	61973	noun	bullet	0	The bullet fired from the pistol hit the wall with a loud bang.
+5	61973	noun	bullet	0	He examined the bullet recovered from the crime scene.
+@ bunch
+1	62012	noun	bunch	1	She picked a bunch of strawberries from the garden.
+2	62012	noun	bunch	0	The keys hung in a bunch from his belt.
+3	62012	noun	bunch	0	He found a bunch of flowers on the forest floor.
+4	62012	noun	bunch	0	A bunch of grapes sat on the kitchen counter.
+5	62012	noun	bunch	0	The children held a bunch of balloons at the party.
+@ bush
+1	62028	noun	bush	1	The gardener pruned the old bush near the fence.
+2	62028	noun	bush	0	We found a small bush growing in the rocky soil.
+3	62028	noun	bush	0	She planted a new bush in the backyard this spring.
+4	62028	noun	bush	0	The bush had bright red berries in the fall.
+5	62028	noun	bush	0	A bird built its nest in the dense bush.
+@ cable
+1	62051	noun	cable	1	The boat stayed in place with a thick cable tied to the dock.
+2	62051	noun	cable	0	She secured the trailer using a heavy-duty cable.
+3	62051	noun	cable	0	The crane lifted the steel beam with a strong cable.
+4	62051	noun	cable	0	He used a cable to pull the stuck car out of the mud.
+5	62051	noun	cable	0	The cable snapped under the weight of the fallen tree.
+@ calculate
+1	62073	verb	calculate	1	She will calculate the total cost before making the purchase.
+2	62073	verb	calculate	0	We need to calculate the area of the rectangle using the formula.
+3	62073	verb	calculate	0	The computer can calculate the results of complex equations in seconds.
+4	62073	verb	calculate	0	He tried to calculate how much money he had saved.
+5	62073	verb	calculate	0	They will calculate the average score for the class.
+@ cancel
+1	62080	verb	canceled	1	The airline canceled the flight because of the storm.
+2	62080	verb	canceled	0	The bank canceled her stolen credit card immediately.
+3	62080	verb	canceled	0	The school canceled the trip after the weather warning.
+4	62080	verb	canceled	0	He canceled his hotel reservation two days before arrival.
+5	62080	verb	canceled	0	I canceled the order before it was shipped.
+@ cancer
+1	62107	noun	cancer	1	The doctor said her cancer was caught early and could be treated.
+2	62107	noun	cancer	0	He lost his father to cancer after a long battle with the disease.
+3	62107	noun	cancer	0	Regular checkups help detect cancer before it spreads to other organs.
+4	62107	noun	cancer	0	Smoking increases the risk of developing cancer in the lungs.
+5	62107	noun	cancer	0	She survived breast cancer after months of chemotherapy and surgery.
+@ capable
+1	62071	adj	capable	1	She is capable of finishing the project by Friday.
+2	62071	adj	capable	0	He is capable of solving complex math problems quickly.
+3	62071	adj	capable	0	The new employee is capable and reliable in emergencies.
+4	62071	adj	capable	0	They were capable of adapting to the sudden change in plans.
+5	62071	adj	capable	0	The team is capable of winning the competition this year.
+@ capacity
+1	62097	noun	capacity	1	The stadium has a capacity of twenty thousand people.
+2	62097	noun	capacity	0	The elevator has a maximum capacity of eight people.
+3	62097	noun	capacity	0	Heavy rain filled the reservoir to capacity.
+4	62097	noun	capacity	0	The meeting room has a capacity of fifty guests.
+5	62097	noun	capacity	0	This bottle has a capacity of one liter.
+@ capture
+1	62110	noun	capture	1	The soldier's capture of the enemy base was praised by the commander.
+2	62110	noun	capture	0	The capture of the criminal ended a long investigation.
+3	62110	noun	capture	0	The rapid capture of the fort changed the course of the battle.
+4	62110	noun	capture	0	The capture of the key city weakened the enemy's defenses.
+5	62110	noun	capture	0	The capture of the spy revealed a major conspiracy.
+@ cast
+1	62150	verb	cast	1	The lamp cast a warm light across the desk.
+2	62150	verb	cast	0	The tall tree cast a shadow over the garden.
+3	62150	verb	cast	0	The fire cast an orange glow on the cabin walls.
+4	62150	verb	cast	0	The setting sun cast long shadows across the road.
+5	62150	verb	cast	0	The moon cast a silver light across the lake.
+@ cell
+1	62194	noun	cell	1	The monk lived in a quiet cell near the forest.
+2	62194	noun	cell	0	She found the hermit in his small cell at dawn.
+3	62194	noun	cells	0	The old abbey had many cells for the monks.
+4	62194	noun	cell	0	He spent years in a remote cell, praying daily.
+5	62194	noun	cell	0	The hermit's cell had only a bed and a window.
+@ chairman
+1	62184	noun	chairman	1	The chairman opened the meeting with a brief welcome to all attendees.
+2	62184	noun	chairman	0	She stood up when the chairman entered the room.
+3	62184	noun	chairman	0	The chairman asked each member to share their opinion.
+4	62184	noun	chairman	0	He was chosen as chairman after a unanimous vote.
+5	62184	noun	chairman	0	The chairman reminded everyone to stay on topic.
+@ characteristic
+1	62188	adj	characteristic	1	Bold colors are characteristic of the artist's work.
+2	62188	adj	characteristic	0	A quick temper is characteristic of several people in his family.
+3	62188	adj	characteristic	0	The smell of pine is a characteristic scent in the mountain forest.
+4	62188	adj	characteristic	0	Her characteristic red scarf made her easy to recognize.
+5	62188	adj	characteristic	0	The old house has a characteristic stone facade and tall windows.
+@ chief
+1	62221	noun	chief	1	The chief made the final decision at the meeting.
+2	62221	noun	chief	0	She was appointed chief of the engineering division.
+3	62221	noun	chief	0	The chief of police arrived at the scene.
+4	62221	noun	chief	0	The chief of accounting reviewed the budget.
+5	62221	noun	chief	0	The chief of staff handles daily operations.

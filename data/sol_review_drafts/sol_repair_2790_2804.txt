@@ -1,0 +1,90 @@
+@ proof
+1	65438	noun	proof	1	The scientist conducted a proof to verify the hypothesis.
+2	65438	noun	proof	0	We need a proof that the machine works correctly.
+3	65438	noun	proof	0	She asked for proof before agreeing to the deal.
+4	65438	noun	proof	0	The lab ran a proof to test the new chemical reaction.
+5	65438	noun	proof	0	They presented proof of the company's financial fraud.
+@ proposal
+1	65457	noun	proposal	1	The company submitted a proposal for the new office space.
+2	65457	noun	proposal	0	She accepted his marriage proposal with a smile.
+3	65457	noun	proposal	0	The committee reviewed the proposal carefully.
+4	65457	noun	proposal	0	They discussed the proposal during the meeting.
+5	65457	noun	proposal	0	His proposal for a new project was rejected.
+@ propose
+1	65463	verb	propose	1	She will propose a new project at the meeting tomorrow.
+2	65463	verb	propose	0	The team decided to propose a change in the schedule.
+3	65463	verb	proposed	0	They proposed a solution that everyone could support.
+4	65463	verb	proposed	0	He proposed a way to reduce costs without cutting staff.
+5	65463	verb	propose	0	The committee will propose a new policy next month.
+@ prospect
+1	65470	noun	prospect	1	From the hilltop, the prospect of the valley below was breathtaking.
+2	65470	noun	prospect	0	The prospect from the window showed rolling fields and distant trees.
+3	65470	noun	prospect	0	We paused to enjoy the prospect of the lake at sunset.
+4	65470	noun	prospect	0	The prospect of the old town was framed by the forest.
+5	65470	noun	prospect	0	From the cliff, the prospect stretched to the horizon.
+@ protection
+1	65484	noun	protection	1	The helmet provides protection for the head during the crash.
+2	65484	noun	protection	0	Wearing gloves gives protection against cold weather.
+3	65484	noun	protection	0	The fence offers protection from wild animals at night.
+4	65484	noun	protection	0	Sunscreen is essential for protection from harmful rays.
+5	65484	noun	protection	0	The security system ensures protection for the building.
+@ psychologist
+1	65469	noun	psychologist	1	The psychologist helped the patient understand their anxiety triggers.
+2	65469	noun	psychologist	0	She consulted a psychologist after experiencing long-term stress.
+3	65469	noun	psychologist	0	The university hired a new psychologist for the counseling center.
+4	65469	noun	psychologist	0	He studied psychology to become a licensed psychologist.
+5	65469	noun	psychologist	0	The psychologist used cognitive techniques to treat the disorder.
+@ psychology
+1	65494	noun	psychology	1	She chose psychology as her major because she loves understanding the human mind.
+2	65494	noun	psychology	0	The professor's lecture on psychology explained how the brain processes emotions.
+3	65494	noun	psychology	0	Psychology helps us understand why people behave the way they do.
+4	65494	noun	psychology	0	He read a book about psychology to learn more about mental health.
+5	65494	noun	psychology	0	In school, psychology is taught as a science of the mind and behavior.
+@ publication
+1	65498	noun	publication	1	The publication of the new book was delayed by two weeks.
+2	65498	noun	publication	0	She was proud of her first academic publication.
+3	65498	noun	publication	0	The publication of the report was announced yesterday.
+4	65498	noun	publication	0	The publication of the article sparked a public debate.
+5	65498	noun	publication	0	A major publication in the field appeared last month.
+@ pupil
+1	65501	noun	pupil	1	The new pupil joined the class on Monday morning.
+2	65501	noun	pupil	0	Each pupil must bring their own notebook to class.
+3	65501	noun	pupil	0	The teacher praised the quiet pupil for good behavior.
+4	65501	noun	pupil	0	The school has a strict rule about pupil attendance.
+5	65501	noun	pupil	0	A kind pupil helped the lost child find the office.
+@ purchase
+1	65506	noun	purchase	1	She made a large purchase at the electronics store yesterday.
+2	65506	noun	purchase	0	The purchase of a new car required a long-term loan.
+3	65506	noun	purchase	0	He returned the purchase after finding a defect.
+4	65506	noun	purchase	0	The purchase was completed with a credit card.
+5	65506	noun	purchase	0	A small purchase can make a big difference in your day.
+@ pure
+1	65558	adj	pure	1	The diamond was pure, with no visible flaws.
+2	65558	adj	pure	0	Her motives were pure, and she expected nothing in return.
+3	65558	adj	pure	0	His intentions were pure, untouched by greed.
+4	65558	adj	pure	0	The snow on the mountain was pure white.
+5	65558	adj	pure	0	The lake's water remained pure after the storm.
+@ pursue
+1	65522	verb	pursue	1	The police will pursue the thief through the city streets.
+2	65522	verb	pursue	0	She tried to escape, but the guard continued to pursue her.
+3	65522	verb	pursue	0	The hunter will pursue the deer across the forest.
+4	65522	verb	pursue	0	The dog began to pursue the squirrel across the yard.
+5	65522	verb	pursue	0	They decided to pursue the criminal into the dark alley.
+@ rank
+1	65537	adj	rank	1	The old cheese in the fridge smells rank and unbearable.
+2	65537	adj	rank	0	After the hike, my socks were rank from sweat and dirt.
+3	65537	adj	rank	0	The fish in the back of the freezer has gone rank.
+4	65537	adj	rank	0	His gym bag gives off a rank smell after training.
+5	65537	adj	rank	0	The leftovers in the container tasted rank and spoiled.
+@ rapid
+1	65572	adj	rapid	1	A rapid current carried the boat through the canyon.
+2	65572	adj	rapid	0	She made a rapid decision after the accident.
+3	65572	adj	rapid	0	The rapid change in weather surprised everyone.
+4	65572	adj	rapid	0	They noticed the rapid progress of the project.
+5	65572	adj	rapid	0	A rapid heartbeat can be a sign of stress.
+@ rapidly
+1	65529	adv	rapidly	1	The train moved rapidly through the dark tunnel.
+2	65529	adv	rapidly	0	He finished his homework rapidly before dinner.
+3	65529	adv	rapidly	0	The river rose rapidly after the heavy rain.
+4	65529	adv	rapidly	0	The team responded rapidly to the emergency.
+5	65529	adv	rapidly	0	The fire spread rapidly through the old building.

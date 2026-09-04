@@ -1,0 +1,139 @@
+@ available
+1	43367	adj	available	1	The doctor was finally available after a very long wait.
+2	43367	adj	available	0	This book is available online.
+3	43367	adj	available	0	Are you available tomorrow?
+4	43367	adj	available	0	Tickets are available at the door.
+5	43367	adj	available	0	The room is available tonight.
+
+@ average
+1	43372	noun	average	1	Her test score was close to the average for the whole class.
+2	43378	adj	average	0	He got an average score.
+3	43372	noun	average	0	Find the average of these numbers.
+4	43378	adj	average	0	The weather is average today.
+5	43382	verb	average	0	The numbers average twelve.
+
+@ avoid
+1	43387	verb	avoid	1	She crossed the street to avoid her angry neighbor.
+2	43390	verb	avoid	0	I avoid eating too much sugar every day.
+3	43389	verb	avoids	0	She avoids the busy traffic on Main Street.
+4	43389	verb	avoided	0	We avoided that shop after the bad service.
+5	43390	verb	avoiding	0	They keep avoiding talking about the accident.
+
+@ award
+1	43402	noun	award	1	She won an award for singing.
+2	43402	noun	award	0	The award made him proud.
+3	43402	noun	award	0	The school gives an award each year.
+4	43405	verb	award	0	They award prizes to winners.
+5	43405	verb	award	0	The judge will award the medal.
+
+@ awful
+1	43409	adj	awful	1	The weather turned awful just before our picnic started.
+2	43409	adj	awful	0	I had an awful day.
+3	43409	adj	awful	0	That food tastes awful.
+4	43416	adv	awful	0	She sings awful loud.
+5	43409	adj	awful	0	The movie was awful.
+
+@ background
+1	43420	noun	background	1	The mountains are in the background.
+2	43419	noun	background	0	Her background is in music.
+3	43423	noun	background	0	Use a blue background for the photo.
+4	43418	adj	background	0	I like to play background music while I study.
+5	43425	noun	background	0	My computer updates run in the background while I work.
+
+@ badly
+1	43432	adv	badly	1	I slept so badly last night that I felt exhausted all day.
+2	43432	adv	badly	0	The team played badly.
+3	43433	adv	badly	0	He badly needs a rest.
+4	43433	adv	badly	0	The car was badly damaged.
+5	43432	adv	badly	0	She felt badly about the mistake.
+
+@ baseball
+1	43485	noun	baseball	1	We play baseball with our friends every Saturday afternoon.
+2	43485	noun	baseball	0	The baseball game starts soon.
+3	43485	noun	baseball	0	He threw the baseball far.
+4	43485	noun	baseball	0	My brother says baseball is his favorite sport to watch.
+5	43485	noun	baseball	0	She watched baseball with Dad.
+
+@ basketball
+1	43496	noun	basketball	1	They play basketball together in the park after school.
+2	43496	noun	basketball	0	The basketball court is busy.
+3	43496	noun	basketball	0	He has a new basketball.
+4	43496	noun	basketball	0	My brother dreams of playing basketball for a living.
+5	43497	noun	basketballs	0	The gym closet was full of old, deflated basketballs.
+
+@ bean
+1	43500	noun	bean	1	Add a bean to the soup.
+2	43500	noun	bean	0	The bean is small and green.
+3	43500	noun	bean	0	She likes bean salad.
+4	43500	noun	bean	0	We cooked the bean slowly.
+5	43503	noun	beans	0	She ground fresh coffee beans every morning before work.
+
+@ bear
+1	43514	noun	bear	1	The bear lives in the forest.
+2	43514	noun	bear	0	We saw a bear near the river.
+3	43550	verb	bear	0	I cannot bear this awful noise any longer.
+4	43527	verb	bears	0	She bears the heavy bag without any complaint.
+5	43514	noun	bear	0	The little bear climbed a tree.
+
+@ beat
+1	43592	verb	beat	1	Our team worked hard all season and finally beat their biggest rivals.
+2	43595	verb	beat	0	Please beat the eggs well before you add the flour.
+3	43570	noun	beat	0	I can hear the steady beat of the drum from here.
+4	43591	verb	beats	0	His heart beats fast whenever he feels nervous before a race.
+5	43592	verb	beaten	0	They had never beaten that team until this year.
+
+@ broken
+1	44155	adj	broken	1	My broken toy can still be fixed.
+2	44163	adj	broken	0	The broken computer will not start.
+3	44154	verb	broken	0	He has broken his phone screen twice this year.
+4	44162	adj	broken	0	He apologized for the broken promise.
+5	44156	adj	broken	0	The doctor treated her broken arm.
+
+@ brush
+1	44172	noun	brush	1	I use a brush to fix my hair every morning.
+2	44172	noun	brush	0	Please bring a brush for the paint.
+3	44173	noun	brush	0	Give the shoes a quick brush.
+4	44172	noun	brushes	0	The artist has many small brushes.
+5	44187	verb	brushing	0	She is brushing her teeth now.
+
+@ burn
+1	44193	noun	burn	1	The burn on my hand hurts a little.
+2	44204	verb	burn	0	Do not burn the paper near the curtain.
+3	44193	noun	burns	0	The nurse cleaned the small burns.
+4	44204	verb	burned	0	The fire burned the old wood.
+5	44205	verb	burning	0	The candle is burning on the table.
+
+@ camp
+1	44270	noun	camp	1	We slept in a camp near the lake.
+2	44271	noun	camp	0	The children joined a summer camp.
+3	44270	noun	camps	0	Many camps offer outdoor games.
+4	44286	verb	camped	0	We camped by the river last weekend.
+5	44286	verb	camping	0	They are camping in the forest.
+
+@ camping
+1	44304	noun	camping	1	My family always feels happiest while camping together every summer.
+2	44304	noun	camping	0	We are going camping this weekend.
+3	44305	noun	camping	0	Getting ready for camping takes time and careful planning.
+4	44304	noun	camping	0	The school offers camping in summer.
+5	44303	verb	camping	0	They are camping beside a beautiful lake this week.
+
+@ care
+1	44306	noun	care	1	Thank you for your care when I was sick.
+2	44313	verb	care	0	I really care about my friends and family.
+3	44309	noun	care	0	The nurse gives care to old people.
+4	44316	verb	cared	0	She cared for the injured bird.
+5	44313	verb	cares	0	He really cares about finding a solution to the problem.
+
+@ careful
+1	44318	adj	careful	1	Be careful when you cross the road.
+2	44319	adj	careful	0	She is careful with her homework.
+3	44318	adj	more careful	0	Please be more careful next time.
+4	44318	adj	most careful	0	He is the most careful driver I know.
+5	44319	adj	careful	0	The careful student checked her essay for mistakes.
+
+@ carefully
+1	44323	adv	carefully	1	Please listen carefully to the instructions.
+2	44324	adv	carefully	0	She carefully checked every answer.
+3	44323	adv	more carefully	0	Read the question more carefully.
+4	44324	adv	most carefully	0	He listened most carefully to the teacher.
+5	44323	adv	carefully	0	He carefully carried the box down the stairs.

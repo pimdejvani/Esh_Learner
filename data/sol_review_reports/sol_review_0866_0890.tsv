@@ -1,0 +1,25 @@
+choose	repaired	Rank1 was an awkward "chose to choose" sentence and all 5 rows reused the bare form "choose"; rewrote rank1 and added chose/chooses/chosen for verb form variety.
+cinema	pass	All 5 rows correctly use the "movie theatre" sense with a vivid rank1; no other POS supplies a learner-facing sense.
+city	pass	All 5 rows correctly use the "large settlement" sense with a vivid rank1.
+class	repaired	All 5 rows depicted a school lesson but were pointed at sense 30718 (generic category); re-pointed sense_id to 30722 (group of students in a scheduled lesson).
+classroom	pass	Single available noun sense used correctly and consistently; vivid rank1.
+clean	repaired	All 5 rows were adjective-only despite a common, learner-relevant verb sense ("to remove dirt"); replaced 2 rows with cleaned/cleaning to add verb coverage.
+climb	repaired	All 5 rows used only the bare verb form "climb" with no tense variety; added the noun sense (an act of climbing) and climbed/climbing forms.
+clock	pass	All 5 rows correctly use the "chronometer" sense; verb senses (measure speed, notice) are less essential for A1 and were skipped.
+close	pass	Block already spans adj/verb/noun/adv with correct, distinct senses matching each sentence; no defects found.
+clothes	pass	Correct core noun sense used consistently; the only other POS is an inflected form of "clothe" and is not useful to add.
+club	repaired	All 5 rows used the obscure "weapon/bludgeon" sense while the common "group/association" sense (chess club, book club) was entirely missing; rewrote all 5 rows on the association sense.
+coat	pass	Correct core noun sense used consistently with a vivid rank1.
+coffee	pass	Correct core noun sense (the beverage) used consistently.
+cold	repaired	All 5 rows were the temperature-adjective sense only; the very common "illness" noun sense ("catch a cold") was missing, so rank3 was replaced to add it.
+college	pass	Correct core noun sense used consistently.
+colour	pass	Block already spans noun/verb/adj with correct senses matching each sentence.
+come	pass	Vivid rank1 and correct core "move toward" verb senses throughout; noun/prep POS are rare/archaic and correctly skipped.
+common	repaired	Rows 2, 3 and 5 actually mean "frequent/usual" but were pointed at sense 31021 ("mutual, shared"); re-pointed those 3 rows to sense 31023.
+company	repaired	Rank1 used an odd "rescue company" scenario that doesn't clearly convey the core business sense; replaced rank1 only with a clearer workplace scenario, kept rows 2-5.
+compare	pass	Correct core verb sense used consistently, good rank1.
+complete	pass	Correct core verb sense used consistently, good rank1.
+computer	pass	Correct core noun sense used consistently; verb senses are all nonstandard/rare and correctly skipped.
+concert	repaired	All 5 rows used an obscure archaic verb sense ("to plan together") while the overwhelmingly common noun sense (a musical performance) was entirely absent; rewrote all 5 rows on the noun sense.
+conversation	pass	Correct core noun sense used consistently, good rank1.
+cook	repaired	All 5 rows were noun-only ("a person who cooks") despite the very common verb sense ("to prepare food"); replaced 2 rows with cooks/cooked to add verb coverage.

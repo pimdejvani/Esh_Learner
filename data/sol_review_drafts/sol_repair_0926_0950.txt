@@ -1,0 +1,84 @@
+@ die
+1	31601	verb	died	1	Grandpa's old dog died peacefully in its sleep after many happy years.
+2	31601	verb	dies	0	A plant dies quickly without enough sunlight and water.
+3	31601	verb	die	0	The battery will die soon if you leave the lights on.
+4	31601	verb	dying	0	The flowers are dying because nobody watered them this week.
+5	31601	verb	die	0	Fish can die in polluted water.
+@ diet
+1	31637	noun	diet	1	After speaking with the doctor, Ken changed his diet to feel stronger each day.
+2	31637	noun	diet	0	A healthy diet includes vegetables and fruit.
+3	31637	noun	diet	0	Her diet avoids too much sugar.
+4	31640	adj	diet	0	She always orders a diet soda with her lunch.
+5	31642	verb	dieting	0	My aunt has been dieting to fit into her old jeans.
+@ dirty
+1	31680	adj	dirty	1	The dirty puppy left tiny muddy prints across the clean kitchen floor.
+2	31680	adj	dirty	0	Your hands are dirty after gardening.
+3	31680	adj	dirty	0	The dirty window needs washing.
+4	31680	adj	dirty	0	Do not sit on the dirty ground.
+5	31699	verb	dirtied	0	The children dirtied the carpet after playing outside in the mud.
+@ discuss
+1	31704	verb	discuss	1	Before making a choice, the family sat down to discuss the move together.
+2	31704	verb	discussed	0	They discussed the trip over dinner last night.
+3	31704	verb	discussing	0	We are discussing the schedule for tomorrow's trip.
+4	31704	verb	discusses	0	The teacher discusses different topics with her class.
+5	31704	verb	discuss	0	Let us discuss the plan after lunch.
+@ dish
+1	31710	noun	dish	1	The warm dish of noodles disappeared quickly on the cold evening.
+2	31710	noun	dish	0	Put the salad in a large dish.
+3	31710	noun	dish	0	This dish holds food for serving.
+4	31710	noun	dish	0	She washed every dish after dinner.
+5	31723	verb	dished	0	Mom dished the rice onto everyone's plate at dinner.
+@ do
+1	31735	verb	do	1	When the crowd asked who could help, I raised my hand and said, "I will do it."
+2	31735	verb	did	0	She did her homework quickly before dinner.
+3	31729	verb	Do	0	Do you want to visit the museum this weekend?
+4	31735	verb	does	0	He always does his best in every game.
+5	31730	verb	do	0	Please do not touch the painting.
+@ down
+1	31845	adv	down	1	The kite came down slowly after the wind finally became calm.
+2	31845	adv	down	0	The ball rolled down the hill.
+3	31876	adj	down	0	He felt a little down after losing the game.
+4	31868	prep	down	0	Walk carefully down the stairs to the kitchen.
+5	31845	adv	down	0	She looked down from the bridge.
+@ downstairs
+1	31921	adj	downstairs	1	The downstairs room filled with laughter while rain tapped the upstairs windows.
+2	31922	adv	downstairs	0	The kitchen is downstairs.
+3	31922	adv	downstairs	0	Please take this box downstairs.
+4	31921	adj	downstairs	0	We heard music from the downstairs room.
+5	31922	adv	downstairs	0	Her bedroom is not downstairs.
+@ draw
+1	32064	verb	draw	1	Niko used one black pencil to draw the face of his missing grandfather.
+2	32064	verb	drew	0	She drew a circle on the paper with a red pen.
+3	32064	verb	draws	0	She draws animals in her notebook after school.
+4	32064	verb	drawing	0	He is drawing a straight line with his new ruler.
+5	32064	verb	draw	0	I will draw a map for you.
+@ dress
+1	32093	verb	dress	1	Before the school play, Maya helped dress her little brother as a brave king.
+2	32124	noun	dress	0	She wore a beautiful blue dress to her cousin's wedding.
+3	32093	verb	dressed	0	The children dressed quickly before school this morning.
+4	32093	verb	dressing	0	She is dressing for the party upstairs.
+5	32093	verb	dresses	0	He always dresses warmly in the winter.
+@ drink
+1	32135	verb	drink	1	After the long race, the team stopped to drink cold water together.
+2	32146	noun	drink	0	Would you like a cold drink with your lunch?
+3	32135	verb	drank	0	We drank tea together yesterday morning.
+4	32135	verb	drinking	0	Please stop drinking water from that dirty river.
+5	32135	verb	drinks	0	She drinks milk with her breakfast every day.
+@ drive
+1	32156	verb	drive	1	On the first clear morning, Dad taught Ana to drive along the empty road.
+2	32197	noun	drive	0	It was a long drive to visit our grandparents.
+3	32156	verb	drove	0	They drove to work together every day last month.
+4	32156	verb	driving	0	Please be careful driving slowly in the rain.
+5	32156	verb	drives	0	She always drives us to the station on Fridays.
+@ dvd
+1	67721	noun	DVD	1	On the rainy afternoon, the family found an old DVD and watched it together.
+2	67721	noun	DVD	0	A DVD can hold a movie in digital form.
+3	67721	noun	DVD	0	He borrowed a DVD from the library.
+4	67721	noun	DVD	0	The DVD case is on the shelf.
+5	67721	noun	DVD	0	We put the DVD into the player.
+@ each
+1	32238	det	Each	1	Each child added one painted stone to the path leading to the new garden.
+2	32238	det	Each	0	Each student has one desk.
+3	32241	pron	Each	0	Each of us brought a small gift for the party.
+4	32238	det	Each	0	Each book has a number.
+5	32239	adv	each	0	The tickets cost ten dollars each.

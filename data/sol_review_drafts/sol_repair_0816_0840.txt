@@ -1,0 +1,118 @@
+@ bored
+1	29807	adj	bored	1	After three hours in the waiting room, Sam was so bored he started counting the tiles.
+2	29806	verb	bored	0	The long wait bored the children at the station.
+3	29807	adj	bored	0	I am bored on rainy afternoons with nothing to do.
+4	29806	verb	bored	0	The film bored my brother.
+5	29807	adj	bored	0	She looked bored during the long meeting.
+
+@ boring
+1	29816	adj	boring	1	The lecture was so boring that half the class fell asleep before it ended.
+2	29816	adj	boring	0	This movie is boring.
+3	29816	adj	boring	0	My little brother thinks maths homework is boring.
+4	29816	adj	boring	0	The meeting felt long and boring today.
+5	29816	adj	boring	0	He found the museum tour boring and kept checking his phone.
+
+@ born
+1	29820	verb	born	1	My cousin was born during a summer storm.
+2	29820	verb	born	0	She was born in May.
+3	29820	verb	born	0	The baby was born last night.
+4	29820	verb	born	0	He was born near the sea.
+5	29822	adj	born	0	She is a born leader who inspires her whole team.
+
+@ both
+1	29825	det	Both	1	Both dogs ran to the open gate.
+2	29825	det	Both	0	Both answers are right.
+3	29827	conj	Both	0	Both my parents and my grandparents came to the wedding.
+4	29826	pron	both	0	Did you want tea or coffee? I'll have both.
+5	29825	det	both	0	We need both books.
+
+@ bottle
+1	29829	noun	bottle	1	After the long hike, David gulped the last drops from his water bottle.
+2	29829	noun	bottle	0	Fill the bottle with juice.
+3	29835	verb	bottles	0	My mother bottles homemade jam every autumn.
+4	29829	noun	bottle	0	She dropped the bottle.
+5	29836	verb	bottled	0	The nurse bottled formula for the newborn baby.
+
+@ box
+1	29846	noun	box	1	The kitten slept inside a cardboard box.
+2	29846	noun	box	0	Put the toy in the box.
+3	29846	noun	box	0	The box is under the table.
+4	29846	noun	box	0	He opened the box carefully.
+5	29900	verb	box	0	My uncle used to box professionally before he retired.
+
+@ bread
+1	29927	noun	bread	1	The smell of fresh bread filled the kitchen.
+2	29927	noun	bread	0	We bought bread this morning.
+3	29927	noun	bread	0	Toast the bread, please.
+4	29927	noun	bread	0	The bread is still warm.
+5	29932	verb	breaded	0	The chef breaded the chicken before frying it.
+
+@ bring
+1	30034	verb	bring	1	Halfway up the mountain, Anna realized she forgot to bring her water bottle.
+2	30034	verb	brought	0	He brought his guitar to the party last night.
+3	30034	verb	brings	0	She always brings snacks for the whole team.
+4	30034	verb	bringing	0	They are bringing gifts for the new baby.
+5	30034	verb	bring	0	Can you bring your keys?
+
+@ brown
+1	30060	adj	brown	1	Maya has warm brown eyes just like her grandmother.
+2	30060	adj	brown	0	He wore a brown jacket to the interview.
+3	30051	noun	brown	0	The artist mixed red and yellow to make brown.
+4	30068	verb	brown	0	Fry the onions until they brown.
+5	30051	noun	brown	0	She chose brown for the fence.
+
+@ build
+1	30075	verb	building	1	After months of hard work, the family finally finished building their own house.
+2	30075	verb	built	0	They built a treehouse in the backyard last summer.
+3	30075	verb	builds	0	She builds furniture from reclaimed wood.
+4	30075	verb	build	0	Can you build a shelf?
+5	30083	noun	build	0	He has a strong, athletic build.
+
+@ building
+1	30089	noun	building	1	The old building shook when the earthquake hit the city.
+2	30089	noun	building	0	My sister lives in that apartment building.
+3	30089	noun	building	0	The tall building has twenty floors.
+4	30089	noun	building	0	Firefighters rescued everyone from the burning building.
+5	30088	noun	building	0	The building of the new bridge took two years.
+
+@ bus
+1	30092	noun	bus	1	The yellow bus waited outside the museum.
+2	30092	noun	bus	0	I take the bus to school.
+3	30092	noun	bus	0	The bus is late today.
+4	30092	noun	bus	0	We got off the bus here.
+5	30102	verb	bused	0	We bused to the museum on our school trip.
+
+@ business
+1	30105	noun	business	1	After years at the market, Lena opened a small business beside the river.
+2	30105	noun	business	0	The bakery is a family business that sells bread every morning.
+3	30125	adj	business	0	This is a business phone, so please don't use it for personal calls.
+4	30105	noun	business	0	The business closed early because of the storm.
+5	30105	noun	business	0	She hopes her online business will grow next year.
+
+@ but
+1	30140	conj	but	1	I wanted to walk to school, but the road was flooded after the storm.
+2	30140	conj	but	0	He is young but very careful with money.
+3	30140	conj	but	0	The movie was long but never boring.
+4	30135	prep	but	0	The box held nothing but old letters.
+5	30135	prep	but	0	Everyone but Maya finished the race on time.
+
+@ butter
+1	30155	noun	butter	1	Grandma spread warm butter on the bread while the soup simmered.
+2	30161	verb	Butter	0	Butter the toast before you add the jam.
+3	30155	noun	butter	0	The recipe needs flour, eggs, and butter.
+4	30155	noun	butter	0	The butter melted on the hot pancake.
+5	30155	noun	butter	0	We keep the butter in the refrigerator.
+
+@ buy
+1	30167	verb	buy	1	With her first paycheck, Noor went to buy a bright blue bicycle.
+2	30167	verb	bought	0	She bought a new dress for the wedding.
+3	30167	verb	buys	0	He buys fresh bread from the bakery every day.
+4	30167	verb	buying	0	They are buying a house near the school.
+5	30175	noun	buy	0	At only twenty dollars, this jacket was a great buy.
+
+@ by
+1	30176	prep	by	1	A lantern glowed by the door until Dad came home.
+2	30176	prep	by	0	The keys are by the window.
+3	30201	adv	by	0	I'll stop by on my way home from work.
+4	30178	prep	by	0	Please finish the report by Friday.
+5	30180	prep	by	0	The novel was written by a local author.

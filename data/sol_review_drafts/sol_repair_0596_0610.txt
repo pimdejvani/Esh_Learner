@@ -1,0 +1,104 @@
+@ backwards
+1	54103	adj	backwards	1	Her whole day felt backwards after she overslept and missed the bus.
+2	54104	adv	backwards	0	She glanced backwards to check if anyone was following her.
+3	54103	adj	more backwards	0	This old machine feels more backwards than a typewriter.
+4	54104	adv	most backwards	0	Of the three plans, the coach's approach seemed the most backwards.
+5	54103	adj	most backwards	0	Everyone agreed his methods were the most backwards in the whole department.
+
+@ bake
+1	54106	verb	bake	1	Sarah cried tears of joy when she finally learned to bake her mother's recipe.
+2	54106	verb	baked	0	My grandmother baked a chocolate cake for my birthday last year.
+3	54109	verb	bakes	0	She bakes fresh bread every Sunday morning.
+4	54106	verb	baking	0	The kitchen smells wonderful when bread is baking in the oven.
+5	54122	noun	bake	0	Our neighbors invited everyone to a fish bake by the lake.
+
+@ balance
+1	54137	verb	balanced	1	The circus performer balanced perfectly on a thin wire high above the crowd.
+2	54124	noun	balance	0	You need good balance to ride a bicycle.
+3	54132	noun	balance	0	She checked her bank balance before buying the shoes.
+4	54144	verb	balances	0	The seesaw balances evenly when both children weigh the same.
+5	54125	noun	balance	0	Yoga helps her find balance after a stressful day at work.
+
+@ ban
+1	54148	verb	ban	1	Protesters chanted for hours, begging the council to ban the dangerous chemical for good.
+2	54148	verb	banned	0	The school banned phones during exams to reduce cheating.
+3	54148	verb	banning	0	The city is banning plastic bags starting next year.
+4	54153	noun	ban	0	The government announced a ban on smoking in public parks.
+5	54153	noun	bans	0	New bans on single-use plastic took effect this month.
+
+@ base
+1	54165	noun	base	1	Soldiers stationed at the remote desert base missed their families every single day.
+2	54162	noun	base	0	The statue stands on a stone base in the park.
+3	54171	noun	bases	0	The players ran quickly between the bases during the game.
+4	54200	verb	based	0	The movie is based on a true story from 1990.
+5	54201	verb	basing	0	The company is basing its new office in Chicago.
+
+@ basic
+1	54218	adj	basic	1	After the earthquake, survivors were grateful for basic food and clean water.
+2	54218	adj	basic	0	Clean water is a basic need for every living person.
+3	54223	noun	basics	0	She learned the basics of swimming before her first lesson.
+4	54219	adj	more basic	0	This math problem is more basic than the one before it.
+5	54219	adj	most basic	0	Of all the courses, this one covers the most basic ideas.
+
+@ basis
+1	54226	noun	basis	1	Years of careful research formed the basis for her groundbreaking discovery.
+2	54228	noun	basis	0	He visits his grandmother on a weekly basis.
+3	54227	noun	basis	0	Trust is the basis of every good friendship.
+4	54226	noun	bases	0	Fairness and honesty are the bases of a just legal system.
+5	54228	noun	basis	0	Scientists need solid evidence as a basis for their theories.
+
+@ battery
+1	54233	noun	battery	1	The soldier's phone battery died just as he tried to call home during the storm.
+2	54233	noun	battery	0	Please put a new battery in the smoke detector.
+3	54236	noun	battery	0	He was charged with assault and battery after the fight.
+4	54240	noun	battery	0	The doctor ordered a battery of tests before the surgery.
+5	54233	noun	batteries	0	The toy needs four batteries to work properly.
+
+@ battle
+1	54250	noun	battle	1	Thousands of soldiers died in the bloody battle that decided the war.
+2	54248	noun	battle	0	Losing weight can feel like a daily battle for many people.
+3	54254	verb	battled	0	The two knights battled fiercely in front of the castle.
+4	54255	verb	battling	0	Doctors are still battling the disease that spread through the village.
+5	54248	noun	battles	0	She has fought many battles to keep her small business open.
+
+@ beauty
+1	54260	noun	beauty	1	Tourists gasped at the breathtaking beauty of the sunset over the mountains.
+2	54261	noun	beauty	0	Everyone said the bride was a real beauty on her wedding day.
+3	54263	noun	beauty	0	The new car runs so smoothly, what a beauty.
+4	54262	noun	beauties	0	The guide pointed out the natural beauties of the old forest.
+5	54264	noun	beauty	0	That last goal he scored was an absolute beauty to watch.
+
+@ bee
+1	54273	noun	bee	1	A single bee stung him three times before he could run away.
+2	54273	noun	Bees	0	Bees fly from flower to flower collecting pollen all day.
+3	54275	noun	bee	0	She won the school spelling bee by spelling the word correctly.
+4	54276	noun	bee	0	The neighbors held a quilting bee to finish the blanket together.
+5	54273	noun	bees	0	Farmers keep bees to help pollinate their apple orchards.
+
+@ belief
+1	54283	noun	belief	1	Her unwavering belief that she would survive kept her alive during the storm.
+2	54282	noun	belief	0	It is his belief that hard work always pays off.
+3	54286	noun	Belief	0	Belief in God is central to many religions around the world.
+4	54287	noun	beliefs	0	Different beliefs about right and wrong can cause family arguments.
+5	54284	noun	belief	0	The old belief that the earth was flat proved completely wrong.
+
+@ bell
+1	54288	noun	bell	1	The old church bell rang loudly through the village at midnight.
+2	54292	noun	bell	0	Students rushed outside when the school bell rang for recess.
+3	54289	noun	bell	0	She rang her bicycle bell to warn the pedestrians ahead.
+4	54302	verb	belled	0	The farmer belled each goat so he could find them easily.
+5	54291	noun	bell	0	She promised to give her mum a bell once the plane landed.
+
+@ bend
+1	54310	verb	bend	1	The rescue worker had to bend the metal bars apart to free the trapped child.
+2	54311	verb	bending	0	The road keeps bending sharply near the old bridge.
+3	54310	verb	bent	0	He bent the wire into the shape of a heart.
+4	54313	verb	bends	0	The river bends sharply just before it reaches the village.
+5	54325	noun	bend	0	Drive carefully because there is a sharp bend in the road ahead.
+
+@ bite
+1	54335	verb	bite	1	The child screamed in pain when the stray dog suddenly tried to bite her leg.
+2	54335	verb	bit	0	The puppy accidentally bit my finger while playing.
+3	54356	noun	bite	0	He took a small bite of the sandwich before the meeting.
+4	54344	verb	biting	0	The cold wind was biting at our faces during our walk.
+5	54359	noun	bites	0	We ordered some small bites to share before dinner.

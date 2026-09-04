@@ -1,0 +1,25 @@
+exercise	repaired	added verb sense (32488), swapped r3 to plural form for variety; skipped verb senses 32489/32490 (rights/vex, less core than the training/health senses used)
+expensive	pass	single clean adj sense, no rare/jargon senses worth adding
+extra	repaired	added adv (32504) and noun (32505) rows for real POS coverage; reworded r5 ("Breakfast was listed as an extra on the bill") so the sentence unambiguously uses the noun sense rather than reading as an intensifier adverb; skipped dated/slang senses (32502, 32503, 32509) and jargon noun senses (newspaper extra, cricket extra, film extra)
+eye	repaired	added verb row (32543, "to observe") for coverage
+face	repaired	added verb row (32583, "to deal with"); skipped adv POS (only sense is slang "intensely")
+fact	pass	single clean noun sense, all rows sound
+fall	pass	kept sense 32633 (autumn) despite its "archaic" tag -- it is the only autumn sense in the DB and is extremely common in US/Canada English; judged the tag unreliable for this meaning
+false	repaired	added noun row (32666, true/false quiz option); skipped adv (32665, stilted/archaic-flavor "played her false") and verb (all obsolete or narrow signal-processing jargon)
+family	repaired	re-pointed r4 sense_id from 32675 (generic grouping) to 32676 (biological taxonomy) -- sentence "Roses belong to the same plant family" is the taxonomy sense, not the abstract one
+famous	pass	adj senses all sound; verb POS correctly skipped (only sense is obsolete)
+fantastic	repaired	re-pointed r4 sense_id from 32689 (archaic "not believable") to 32687 (fanciful/fantasy) -- better fit for "his story sounded fantastic" and not rare-tagged
+far	pass	adj/adv senses sound; noun (emmer wheat, dialectal piglet litter) and verb (rare "send far away") correctly skipped
+farm	pass	all senses correctly matched, including industrial "solar farm" sense for r5
+farmer	repaired	fixed target casing on r3 (farmers -> Farmers) to match sentence-initial capital; no other change
+fast	repaired	r1 "He ran fast..." was tagged adj (32736) but "fast" there is adverbial, modifying "ran" -- re-pointed to adv sense 32752, matching r3's usage
+fat	pass	adj/noun senses correctly matched; verb POS correctly skipped (archaic fatten / golf jargon)
+father	pass	noun/verb senses correctly matched, no rare tags used
+favourite	pass	adj/noun senses correctly matched with 4 distinct senses; verb POS (bookmark) not added, existing rows already solid
+february	pass	only usable sense used correctly across all forms (February/Feb/Feb.)
+feel	repaired	fixed target casing on r2 (feel -> Feel); replaced duplicate-sense r3 with a noun row (32832, "get a feel for"); skipped adj/adv/pron POS (all are "alternative form of fele", not real usages)
+feeling	repaired	re-pointed r3 sense_id from 32843 (generic emotion) to 32844 (emotional state/well-being) -- "respect other people's feelings" matches the well-being sense; skipped adj POS (literary register, not core A1) and verb (mere gerund of feel, no distinct usage)
+festival	pass	adj/noun senses correctly matched
+few	repaired	fixed target casing on r2 (few -> Few) and r4 (fewer -> Fewer) to match sentence-initial capitals
+fifteen	pass	DB has only one sense for this headword (Irish traybake dessert) -- the cardinal-number sense was not imported; all 5 rows correctly and naturally use the only available sense
+fifth	repaired	replaced r5 (awkward "two fifths of the relay") with a natural fraction sentence using the same sense (32863) for better fit; skipped verb POS (nonstandard/archaic-flavor senses)

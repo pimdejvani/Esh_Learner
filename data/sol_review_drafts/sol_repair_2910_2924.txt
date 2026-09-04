@@ -1,0 +1,90 @@
+@ tale
+1	67125	noun	tale	1	She told a tale about her journey through the desert.
+2	67125	noun	tale	0	The old man shared a tale of courage and loss.
+3	67125	noun	tale	0	He wrote a tale that everyone still remembers.
+4	67125	noun	tale	0	The tale of adventure began with a journey into the forest.
+5	67125	noun	tale	0	The children listened to a tale about a brave knight.
+@ tank
+1	67158	noun	tank	1	The water tank is located behind the shed.
+2	67158	noun	tank	0	We filled the propane tank before the barbecue.
+3	67158	noun	tank	0	The gas tank needs replacing after the accident.
+4	67158	noun	tank	0	She checked the heating oil tank before winter began.
+5	67158	noun	tank	0	The storage tank holds the chemicals safely.
+@ tear
+1	67184	verb	tear	1	She tried to tear the paper but it wouldn't break.
+2	67184	verb	tear	0	The dog managed to tear the rope with its teeth.
+3	67184	verb	tore	0	He accidentally tore the sleeve while pulling the door open.
+4	67184	verb	tear	0	The fabric began to tear under the heavy strain.
+5	67184	verb	tear	0	They had to tear the damaged curtain away from the broken rod.
+@ temporary
+1	67121	adj	temporary	1	The office has a temporary worker during the holiday season.
+2	67121	adj	temporary	0	She was given a temporary role after the manager left.
+3	67121	adj	temporary	0	They used a temporary fence around the construction site.
+4	67121	adj	temporary	0	He signed a temporary contract with the company.
+5	67121	adj	temporary	0	The school installed a temporary roof after the storm.
+@ therapy
+1	67144	noun	therapy	1	The doctor recommended physical therapy for her injured knee.
+2	67144	noun	therapy	0	After the accident, he began regular therapy to regain strength.
+3	67144	noun	therapy	0	She found therapy helpful after the loss of her mother.
+4	67144	noun	therapy	0	The clinic offers speech therapy for children with delays.
+5	67144	noun	therapy	0	He completed a full course of therapy for his anxiety disorder.
+@ threat
+1	67152	noun	threat	1	The angry neighbor made a clear threat to call the police.
+2	67152	noun	threat	0	She ignored the threat and walked away calmly.
+3	67152	noun	threat	0	The security guard took the threat seriously and called for backup.
+4	67152	noun	threat	0	He received a written threat after the argument.
+5	67152	noun	threat	0	The boss made a serious threat to fire the employee.
+@ threaten
+1	67139	verb	threatened	1	The robber threatened the cashier with a gun.
+2	67139	verb	threatened	0	She threatened to report him if he didn't stop.
+3	67139	verb	threatened	0	He threatened to leave if they didn't listen.
+4	67139	verb	threatened	0	The dog threatened the stranger with a growl.
+5	67139	verb	threatened	0	The organizers threatened to cancel the event if the crowd ignored the safety rules.
+@ thus
+1	67150	adv	thus	1	Heavy rain flooded the road; thus, the bus arrived late.
+2	67150	adv	thus	0	The key was missing; thus, we could not open the cabinet.
+3	67150	adv	thus	0	The data was incomplete; thus, the conclusions remained uncertain.
+4	67150	adv	thus	0	The shop was closed; thus, we returned home without the supplies.
+5	67150	adv	thus	0	The new training reduced errors and thus improved productivity.
+@ tone
+1	67201	noun	tone	1	The singer sustained a high tone for several seconds.
+2	67201	noun	tone	0	The tuning fork produced a pure tone.
+3	67201	noun	tone	0	The musician matched the tone played on the piano.
+4	67201	noun	tone	0	The alarm emitted a low warning tone.
+5	67201	noun	tone	0	The hearing test played a different tone through each earphone.
+@ tough
+1	67222	adj	tough	1	The new backpack is made of tough nylon that resists tears.
+2	67222	adj	tough	0	This rope feels tough and won't snap under heavy weight.
+3	67222	adj	tough	0	The boots have a tough leather sole for outdoor use.
+4	67222	adj	tough	0	The workers wore gloves made from tough fabric.
+5	67222	adj	tough	0	The case is made of tough plastic that can survive a fall.
+@ transfer
+1	67277	verb	transfer	1	She will transfer the package to the next office by noon.
+2	67277	verb	transfer	0	The manager decided to transfer the files to a new server.
+3	67277	verb	transferred	0	They transferred the baby from the stroller to the car seat.
+4	67277	verb	transfer	0	Please transfer the documents to the secure folder.
+5	67277	verb	transferred	0	He transferred the money to his sister's account.
+@ transform
+1	67250	verb	transform	1	The artist will transform the old wall into a vibrant mural.
+2	67250	verb	transformed	0	They transformed the small attic into a cozy reading nook.
+3	67250	verb	transform	0	The new software can transform raw data into clear charts.
+4	67250	verb	transform	0	She used magic to transform the pumpkin into a carriage.
+5	67250	verb	transformed	0	The company transformed its office with modern furniture.
+@ transition
+1	67235	noun	transition	1	The transition from winter to spring brought new flowers to the garden.
+2	67235	noun	transition	0	After the meeting, there was a smooth transition to the next agenda item.
+3	67235	noun	transition	0	The company's transition to remote work took three months.
+4	67235	noun	transition	0	She felt nervous during the transition between classes.
+5	67235	noun	transition	0	The transition from school to university was challenging for him.
+@ trial
+1	67259	noun	trial	1	The new employee completed a one-week trial before being hired permanently.
+2	67260	noun	trial	0	The company held a trial to see if the software worked well.
+3	67262	noun	trial	0	She passed the trial and earned a spot on the team.
+4	67262	noun	trial	0	The athlete's performance in the trial impressed the coach.
+5	67260	noun	trial	0	They ran a trial to check the new machine's reliability.
+@ tropical
+1	67297	adj	tropical	1	The tropical storm brought heavy rain to the island.
+2	67297	adj	tropical	0	We visited a tropical beach with white sand and clear water.
+3	67297	adj	tropical	0	The tropical climate makes it hard to sleep at night.
+4	67297	adj	tropical	0	She packed light clothes for her trip to a tropical island.
+5	67297	adj	tropical	0	The tropical forest is full of strange animals.

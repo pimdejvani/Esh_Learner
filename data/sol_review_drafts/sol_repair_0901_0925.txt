@@ -1,0 +1,118 @@
+@ create
+1	31283	verb	create	1	Using scraps of paper, the children create a map of their imaginary island.
+2	31283	verb	Create	0	Create a new folder for your photos.
+3	31283	verb	created	0	The kids created a fort out of old blankets.
+4	31283	verb	creates	0	This app creates a backup every night.
+5	31283	verb	creating	0	She is creating a poster for the school fair.
+
+@ culture
+1	31292	noun	culture	1	At the festival, food, music, and stories shared the culture of the island.
+2	31292	noun	Culture	0	Culture includes a people's customs and art.
+3	31292	noun	culture	0	We learned about Japanese culture in class.
+4	31292	noun	culture	0	Food is an important part of culture.
+5	31292	noun	culture	0	The museum celebrates local culture.
+
+@ cup
+1	31305	noun	cup	1	After the long race, a cup of water felt like the best gift in the world.
+2	31305	noun	cup	0	Fill the cup with tea.
+3	31328	verb	cupped	0	She cupped her hands to catch the falling rain.
+4	31305	noun	cup	0	She dropped the cup on the floor.
+5	31305	noun	cup	0	I drank a cup of milk.
+
+@ customer
+1	31335	noun	customer	1	The shop owner remembered every customer who had supported her during the hard year.
+2	31335	noun	customer	0	A customer bought three apples.
+3	31335	noun	customer	0	The customer asked for a receipt.
+4	31335	noun	customer	0	This store welcomes every customer.
+5	31335	noun	customer	0	The waiter served the customer quickly.
+
+@ cut
+1	31338	verb	cut	1	Carefully, Dad used a knife to cut the rope holding the trapped kite.
+2	31340	verb	cuts	0	She always cuts the pizza into eight slices.
+3	31341	verb	cutting	0	He hurt his hand while cutting wood for the fire.
+4	31386	noun	cut	0	Look at this cut on my finger!
+5	31392	noun	cut	0	The boss gave everyone a pay cut this year.
+
+@ dad
+1	31422	noun	dad	1	My dad waited at the finish line with a smile and a bottle of water.
+2	31422	noun	dad	0	My dad drives me to school.
+3	31422	noun	Dad	0	Dad is cooking dinner tonight.
+4	31422	noun	dad	0	I called my dad after work.
+5	31422	noun	dad	0	Her dad fixed the broken lamp.
+
+@ dance
+1	31431	noun	dance	1	At the wedding, their first dance made the whole room fall quiet.
+2	31431	noun	dance	0	The dance begins after dinner.
+3	31439	verb	danced	0	They danced together at the school party last Friday.
+4	31439	verb	dancing	0	The children were dancing happily in the garden.
+5	31439	verb	dances	0	My grandmother still dances every Sunday morning.
+
+@ dancing
+1	31450	noun	Dancing	1	Dancing in the rain, the children forgot that their shoes were wet.
+2	31450	noun	Dancing	0	Dancing is fun exercise.
+3	31450	noun	dancing	0	She goes dancing on Friday nights.
+4	31450	noun	dancing	0	The hall is used for dancing.
+5	31450	noun	dancing	0	They learned dancing from a video.
+
+@ dark
+1	31456	adj	dark	1	When the power went out, the dark hallway made every small sound seem louder.
+2	31456	adj	dark	0	The room is dark without a lamp.
+3	31456	adj	dark	0	He wore a dark blue shirt.
+4	31472	noun	dark	0	The streetlights turn on after dark.
+5	31456	adj	dark	0	The dark clouds brought rain.
+
+@ date
+1	31481	noun	date	1	She circled the date of her graduation on every calendar in the house.
+2	31481	noun	date	0	What is today's date?
+3	31480	noun	date	0	Please write the date at the top of the letter.
+4	31477	noun	date	0	He ate a date after lunch.
+5	31487	noun	date	0	They went on their first date at the cinema.
+
+@ day
+1	31503	noun	day	1	After three days of rain, the first sunny day felt like a celebration.
+2	31503	noun	Day	0	Day begins when the sun rises.
+3	31503	noun	day	0	We play outside during the day.
+4	31503	noun	day	0	It was a long day at work.
+5	31503	noun	day	0	Each day brings a new chance.
+
+@ dear
+1	31516	adj	dear	1	After the drought, fresh vegetables became so dear that families cut meals just to afford them.
+2	31516	adj	dear	0	That restaurant is too dear for us.
+3	31516	adj	dear	0	Fresh berries are dear in winter.
+4	31527	noun	dear	0	Come here, my dear, and let me fix your collar.
+5	31516	adj	dear	0	This coat is dear, but it is well made.
+
+@ december
+1	67688	name	December	1	In December, the family hung lights and wrote wishes for the new year.
+2	67688	name	December	0	December is the last month of the year.
+3	67688	name	December	0	School closes for a holiday in December.
+4	67688	name	December	0	Her birthday is in December.
+5	67688	name	December	0	December follows November.
+
+@ decide
+1	31533	verb	decide	1	At the fork in the trail, the group had to decide before the sky turned dark.
+2	31533	verb	Decide	0	Decide which book you want to read.
+3	31534	verb	decided	0	She finally decided to study abroad next year.
+4	31533	verb	decides	0	The coach decides who starts the game.
+5	31533	verb	deciding	0	We are still deciding where to go for vacation.
+
+@ describe
+1	31541	verb	describe	1	Unable to draw the animal, Lio tried to describe its silver wings to the ranger.
+2	31541	verb	Describe	0	Describe the picture in one sentence.
+3	31541	verb	described	0	The witness described the car in detail to the police.
+4	31541	verb	describes	0	He always describes his dreams like a movie.
+5	31541	verb	describe	0	Please describe what happened.
+
+@ design
+1	31552	noun	design	1	The bridge design used curved beams that looked like waves in the river.
+2	31552	noun	design	0	The design shows how the chair will look.
+3	31559	verb	designs	0	She designs greeting cards for a small company.
+4	31552	noun	design	0	The engineer checked the design carefully.
+5	31559	verb	designed	0	He designed this treehouse for his children last summer.
+
+@ detail
+1	31572	noun	detail	1	The tiny detail in the painting revealed the artist's hidden signature.
+2	31572	noun	detail	0	Notice every detail in the map.
+3	31581	verb	detail	0	The manager will detail the new rules at the meeting.
+4	31572	noun	detail	0	One detail was missing from the report.
+5	31572	noun	detail	0	The dress has a gold detail on the sleeve.

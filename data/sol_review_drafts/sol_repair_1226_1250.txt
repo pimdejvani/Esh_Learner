@@ -1,0 +1,146 @@
+@ nose
+1	36830	noun	nose	1	Her nose turned red in the cold wind.
+2	36830	noun	nose	0	A nose is the part of the face used for smelling.
+3	36830	noun	nose	0	The puppy pressed its nose to the glass.
+4	36830	noun	nose	0	He touched his nose.
+5	36846	verb	nosed	0	The dog nosed the door open to get outside.
+
+@ not
+1	36853	adv	not	1	The door was not locked, so we entered quietly.
+2	36853	adv	Not	0	Not makes a statement negative.
+3	36853	adv	not	0	She is not ready yet.
+4	36853	adv	not	0	Do not touch the paint.
+5	36858	conj	not	0	He painted the fence white, not grey.
+
+@ note
+1	36866	noun	note	1	She left a note on the fridge for her brother.
+2	36866	noun	note	0	A note is a short written message.
+3	36866	noun	note	0	Please write a note to the teacher.
+4	36866	noun	notes	0	She wrote three notes for her study group.
+5	36886	verb	noted	0	She noted that the sky looked stormy before the picnic.
+
+@ nothing
+1	36895	pron	Nothing	1	Nothing could stop the little boat from reaching shore.
+2	36895	pron	Nothing	0	Nothing means not any thing.
+3	36895	pron	nothing	0	There was nothing in the box.
+4	36895	pron	nothing	0	I heard nothing outside.
+5	67858	intj	Nothing	0	She asked what was wrong, and I said, 'Nothing, just tired.'
+
+@ now
+1	36905	adj	now	1	Everyone said the neon jacket looked very now this season.
+2	36906	adv	now	0	We need an answer now, before the storm arrives.
+3	36916	noun	now	0	Focus on now, not yesterday.
+4	36915	conj	Now	0	Now that the kids are asleep, we can talk quietly.
+5	36907	adv	Now	0	Now, let's get started with today's lesson.
+
+@ number
+1	36940	verb	numbered	1	The photographer carefully numbered every negative before the flood destroyed the darkroom.
+2	36920	noun	number	0	A number tells how many things there are.
+3	36926	noun	number	0	Write your phone number here.
+4	36920	noun	number	0	The number of seats is limited.
+5	36922	noun	number	0	She chose a number between one and ten.
+
+@ nurse
+1	36947	noun	nurse	1	The nurse stayed calm while the child cried after the fall.
+2	36947	noun	nurse	0	A nurse cares for sick or injured people.
+3	36947	noun	nurses	0	The nurses checked on patients every hour.
+4	36947	noun	nurse	0	We thanked the nurse before leaving the clinic.
+5	36959	verb	nursed	0	She nursed her grandmother back to health after the long illness.
+
+@ object
+1	36967	noun	object	1	The metal object at the bottom of the lake was a lost key.
+2	36967	noun	object	0	An object is a physical thing that is not alive.
+3	36967	noun	object	0	Please put the object on the shelf.
+4	36967	noun	objects	0	The museum displayed several strange objects.
+5	36975	verb	object	0	Many parents object to violent video games.
+
+@ of
+1	36981	prep	of	1	The cabin stood north of the river, hidden by pine trees.
+2	36981	prep	of	0	The bakery is one block north of the station.
+3	36981	prep	of	0	A path runs east of the lake.
+4	36981	prep	of	0	The shop is two miles west of town.
+5	36981	prep	of	0	Their house lies south of the school.
+
+@ off
+1	37029	adv	off	1	The puppy ran off with the birthday ribbon before anyone noticed.
+2	37035	adj	off	0	The lights were all off when we came home late.
+3	37054	prep	off	0	Please move off the wet floor.
+4	37059	prep	off	0	The boat drifted off the coast overnight.
+5	37054	prep	off	0	He stepped off the bus carefully.
+
+@ office
+1	37085	noun	office	1	She stayed late at the office, finishing the report before the storm hit.
+2	37085	noun	office	0	Our office is on the third floor of that glass building.
+3	37085	noun	office	0	He left his phone at the office by mistake.
+4	37085	noun	office	0	The team decorated the office for the holiday party.
+5	37080	noun	office	0	The mayor has held office for ten years.
+
+@ often
+1	37107	adv	often	1	We often watched lightning from the porch during the rainy season.
+2	37107	adv	Often	0	Often means many times or frequently.
+3	37107	adv	often	0	She often walks to school.
+4	37107	adv	often	0	I often call my grandmother.
+5	37107	adv	often	0	They often eat dinner outside.
+
+@ oh
+1	67860	intj	Oh	1	"Oh!" shouted Mina when the kitten climbed onto the table.
+2	67860	intj	Oh	0	Oh is an expression of surprise or understanding.
+3	67862	intj	oh	0	He said "oh" when he understood the joke.
+4	37109	noun	oh	0	An excited oh came from the crowd.
+5	67861	intj	oh	0	She whispered "oh" at the beautiful view.
+
+@ ok
+1	37113	adj	ok	1	After the storm passed, the children were ok and laughing again.
+2	37113	adj	Ok	0	Ok means acceptable or all right.
+3	37113	adj	ok	0	Is it ok to open the window?
+4	37113	adj	ok	0	The soup tastes ok now.
+5	37113	adj	ok	0	He said he was ok.
+
+@ old
+1	37114	adj	old	1	An old photograph showed the village before the bridge was built.
+2	37114	adj	Old	0	Old things have existed for a long time.
+3	37114	adj	old	0	Her old coat still kept her warm.
+4	37114	adj	old	0	We visited an old castle.
+5	37132	noun	old	0	In many cultures, people care deeply for the old and the young.
+
+@ on
+1	37136	adj	on	1	The lights stayed on while the family waited for the doctor.
+2	37136	adj	On	0	On means active or working.
+3	37158	prep	on	0	A vase of flowers stood on the table by the window.
+4	37150	adv	on	0	Please turn the television on before the show starts.
+5	37136	adj	on	0	The oven is still on.
+
+@ once
+1	37209	adv	once	1	She rang the bell once, then waited quietly outside.
+2	37209	adv	Once	0	Once means one time only.
+3	37209	adv	once	0	I have visited Japan once.
+4	37209	adv	once	0	Tap the screen once.
+5	37214	conj	Once	0	Once you finish your homework, you can watch TV.
+
+@ one
+1	37242	det	one	1	Only one lantern stayed lit through the windy night.
+2	37220	noun	one	0	The number one comes before two.
+3	37216	pron	one	0	This is the one I want.
+4	37216	pron	one	0	Choose one from the box.
+5	37237	adj	One	0	One day, I hope to visit every country in the world.
+
+@ online
+1	37256	adj	online	1	The class went online when heavy rain flooded the roads.
+2	37256	adj	Online	0	Online means connected to the internet.
+3	37264	adv	online	0	I paid the bill online.
+4	37256	adj	online	0	The online meeting starts at ten.
+5	37264	adv	online	0	She found the timetable online.
+
+@ only
+1	37266	adj	only	1	The only dry match saved the campers from a cold night.
+2	37266	adj	Only	0	Only means there is no other one.
+3	37266	adj	only	0	He was the only child awake.
+4	37266	adj	only	0	This is our only chance.
+5	37271	adv	only	0	I only have five dollars left this week.
+
+@ open
+1	37282	adj	open	1	The open window let rain blow across the kitchen floor.
+2	37282	adj	Open	0	Open means not closed or covered.
+3	37282	adj	open	0	Leave the door open for the cat.
+4	37282	adj	open	0	The open box held old letters.
+5	37326	verb	opened	0	She opened the door slowly to surprise her friend.

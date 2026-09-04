@@ -1,0 +1,150 @@
+@ sheet
+1	51334	noun	sheet	1	Sara wrapped herself in a soft cotton sheet after her shower.
+2	51334	noun	sheet	0	Please put a clean sheet on the bed before the guests arrive.
+3	51334	noun	sheets	0	We keep extra sheets in the closet for winter nights.
+4	51348	verb	sheet	0	Remember to sheet the floor before you start painting.
+5	51350	verb	sheeting	0	The rain was sheeting down all afternoon during the storm.
+@ ship
+1	51353	noun	ship	1	The old ship sank slowly into the dark ocean during the storm.
+2	51353	noun	ship	0	We watched a large ship sail across the harbor.
+3	51353	noun	ships	0	Many ships carry goods across the ocean every day.
+4	51362	verb	ship	0	The company will ship your order tomorrow morning.
+5	51362	verb	shipped	0	They shipped the packages by truck instead of by plane.
+@ shoulder
+1	51377	noun	shoulder	1	Her heavy backpack pressed painfully into her shoulder throughout the long hike.
+2	51377	noun	shoulder	0	The doctor examined his shoulder carefully after the fall.
+3	51377	noun	shoulders	0	His shoulders were strong from years of swimming.
+4	51383	noun	shoulder	0	He stopped the car on the shoulder of the highway to change the flat tire.
+5	51402	verb	shouldered	0	He shouldered the blame for the whole team's mistake.
+@ shout
+1	51408	noun	shout	1	A sudden shout from the crowd made everyone turn around in fear.
+2	51408	noun	shout	0	I heard a loud shout coming from the street below.
+3	51408	noun	shouts	0	The shouts died down as the game ended.
+4	51413	verb	shouted	0	The coach shouted instructions to the players during the match.
+5	51413	verb	shout	0	Please don't shout when the baby is sleeping.
+@ shut
+1	51421	verb	shut	1	David rushed to shut the door before the storm blew papers everywhere.
+2	51424	verb	shuts	0	She shuts her laptop every night before going to bed.
+3	51423	verb	shutting	0	The shops in town were shutting early because of the holiday.
+4	51433	adj	shut	0	Please make sure the window is shut before you leave.
+5	51428	verb	shut	0	I shut the cat in the kitchen before going out.
+@ side
+1	51449	noun	side	1	When I felt scared during the storm, my sister stayed right by my side.
+2	51445	noun	sides	0	A square has four equal straight sides.
+3	51452	noun	side	0	Which side scored the winning goal in the final minute?
+4	51466	adj	side	0	We parked in the side street near the market.
+5	51468	verb	sided	0	In the debate, most of the class sided with the teacher's opinion.
+@ sign
+1	51484	noun	sign	1	Tom sighed with relief when he finally spotted the exit sign glowing in the dark tunnel.
+2	51484	noun	sign	0	I missed the sign at the corner and took the wrong turn.
+3	51484	noun	signs	0	The signs on the highway were hard to read in the fog.
+4	51486	noun	sign	0	Her zodiac sign is Taurus, so she loves comfort and routine.
+5	51495	verb	signed	0	She signed the contract without reading it carefully.
+@ silver
+1	51512	noun	silver	1	Grandma's silver necklace sparkled brightly as she danced under the lights.
+2	51514	noun	silver	0	She polished the old silver until it shone like new.
+3	51519	adj	silver	0	He gave her a beautiful silver ring for her birthday.
+4	51517	noun	silver	0	Our team won the silver medal at the swimming championship.
+5	51527	verb	silvered	0	The old mirror was silvered many years ago to make it reflective.
+@ simple
+1	51530	adj	simple	1	After years of struggling, she finally found joy in living a simple life by the sea.
+2	51531	adj	simple	0	The instructions were simple enough for a child to follow.
+3	51532	adj	simple	0	He wore a simple white shirt with no decoration at all.
+4	51533	adj	simple	0	She has a simple, honest way of talking to everyone.
+5	51530	adj	simpler	0	This recipe is simpler than the one we tried last week.
+@ since
+1	51560	adv	since	1	We used to meet every week, but I haven't seen him since.
+2	51561	prep	since	0	I have lived in this city since 2015.
+3	51562	prep	since	0	She has been studying since six o'clock this morning.
+4	51564	conj	since	0	I have loved reading since I was a little child.
+5	51565	conj	Since	0	Since you didn't call, we left without you.
+@ singing
+1	51567	noun	singing	1	The singing of birds outside her window woke her gently every morning.
+2	51573	verb	singing	0	The children were singing happily in the school choir.
+3	51567	noun	singing	0	Her singing was so beautiful that everyone stopped to listen.
+4	51573	verb	singing	0	He was singing loudly in the shower this morning.
+5	51572	adj	singing	0	The singing kettle whistled loudly on the stove.
+@ single
+1	51578	adj	single	1	Even after the accident, she found the strength to raise her children as a single mother.
+2	51574	adj	single	0	Can you give me a single reason to trust him?
+3	51576	adj	single	0	She booked a single room at the hotel for one night.
+4	51590	noun	single	0	He bought a single to London instead of a return ticket.
+5	51589	noun	singles	0	He didn't have any singles, so he paid with a card instead.
+@ sir
+1	51611	noun	sir	1	Lost and worried, I finally asked, excuse me sir, for directions to the station.
+2	51607	noun	sir	0	Thank you, sir, for waiting so patiently.
+3	51609	noun	sir	0	Yes, sir, the soldier replied, standing straight at attention.
+4	51611	noun	sir	0	Good morning, sir, how can I help you today?
+5	51610	noun	sir	0	The young boy always called his teacher sir with great respect.
+@ site
+1	51613	noun	site	1	Archaeologists were thrilled when they discovered an ancient burial site beneath the old field.
+2	51617	noun	site	0	I found the recipe on a cooking site online.
+3	51613	noun	sites	0	The map showed several ancient sites near the river.
+4	51613	noun	site	0	Workers wore hard hats at the busy construction site.
+5	51621	verb	site	0	The government plans to site the new hospital near the highway.
+@ size
+1	51622	noun	size	1	The tiny kitten looked lost next to the huge dog because of the size difference.
+2	51623	noun	size	0	What size do you need for these shoes?
+3	51623	noun	sizes	0	The store had many different sizes of the same shirt.
+4	51637	verb	sized	0	He sized up the challenge before deciding what to do.
+5	51632	verb	size	0	The tailor will size the jacket to fit you perfectly.
+@ suggestion
+1	52402	noun	suggestion	1	After weeks of worrying about money, my friend's suggestion to get a second job finally gave me hope.
+2	52402	noun	suggestion	0	Her suggestion was helpful, and the team adopted it immediately.
+3	52403	noun	Suggestion	0	Suggestion often works better than a direct demand.
+4	52404	noun	suggestion	0	He somehow got the suggestion that we didn't like his cooking.
+5	52402	noun	suggestions	0	The teacher accepted all of the suggestions from her students.
+@ support
+1	52428	verb	supported	1	When she broke her leg, her family supported her through every step of recovery.
+2	52440	noun	support	0	Thank you for your support during such a difficult time.
+3	52429	verb	support	0	We support the new recycling program in our neighborhood.
+4	52439	noun	support	0	The old wooden beam still gives support to the roof.
+5	52434	verb	supporting	0	They are supporting the team by cheering from the stands.
+@ suppose
+1	52451	verb	suppose	1	I suppose you already heard the surprising news about her promotion.
+2	52452	verb	Suppose	0	Suppose it rains tomorrow.
+3	52451	verb	suppose	0	Do you suppose she knows?
+4	52451	verb	suppose	0	We suppose the answer is yes.
+5	52451	verb	suppose	0	I suppose we should go.
+@ surprised
+1	52466	adj	surprised	1	Everyone gasped, surprised by the sudden fireworks lighting up the night sky.
+2	52466	adj	surprised	0	She looked surprised.
+3	52466	adj	surprised	0	We were surprised to win.
+4	52467	verb	surprised	0	The answer surprised him.
+5	52466	adj	surprised	0	He seemed surprised today.
+@ surprising
+1	52469	adj	surprising	1	Everyone was amazed by the surprising twist at the end of the movie.
+2	52469	adj	surprising	0	It was surprising news that she got the job.
+3	52469	adj	surprising	0	Her calm answer was surprising given how angry she had been.
+4	52468	verb	surprising	0	The results kept surprising the scientists throughout the experiment.
+5	52469	adj	surprising	0	That was a surprising change in the weather forecast.
+@ survey
+1	52476	noun	survey	1	After finishing the long customer survey, I finally understood why so many people complained about the service.
+2	52484	verb	surveying	0	Researchers are surveying local families about their internet use this month.
+3	52476	noun	survey	0	The survey included ten questions about our shopping habits.
+4	52481	verb	surveyed	0	The inspector surveyed the old building to check its safety.
+5	52476	noun	survey	0	Please read the survey questions carefully before answering.
+@ system
+1	52519	noun	system	1	After the power outage, the entire computer system crashed and lost all our files.
+2	52519	noun	system	0	Our school uses a new system.
+3	52519	noun	system	0	The phone system is slow.
+4	52519	noun	system	0	Check the system first.
+5	52519	noun	system	0	This system is simple.
+@ tablet
+1	52536	noun	tablet	1	My little brother cried when he dropped his tablet and cracked the screen.
+2	52533	noun	tablet	0	The doctor told her to take one tablet after every meal.
+3	52531	noun	tablet	0	Archaeologists found an ancient stone tablet covered in strange symbols.
+4	52534	noun	tablet	0	He wrote his notes on a small tablet of paper.
+5	52536	noun	tablets	0	The students used tablets to read their books in class.
+@ target
+1	52541	noun	target	1	After months of training, she finally hit her target of running a full marathon.
+2	52540	noun	target	0	He aimed carefully and hit the target in the center.
+3	52541	noun	target	0	Our target is to finish the project by next November.
+4	52561	verb	targeted	0	The advertising campaign targeted older women with special offers.
+5	52541	noun	targets	0	The company set clear targets for the new sales team.
+@ task
+1	52563	noun	task	1	On her first day at the new job, she was given a difficult task to finish alone.
+2	52563	noun	task	0	Finish this task first.
+3	52563	noun	task	0	The teacher gave us a task.
+4	52570	verb	task	0	They task me with cleaning.
+5	52563	noun	task	0	The task took an hour.

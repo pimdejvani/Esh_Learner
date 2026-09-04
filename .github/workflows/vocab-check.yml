@@ -3,7 +3,7 @@
 # This workflow runs the deterministic half of the content pipeline: parsing,
 # source-fidelity validation and immutable-manifest progress. It does NOT
 # generate or repair sentences -- that half needs a reasoning model and happens
-# in a Claude Code session (see CONTINUE_VOCAB_PROMPT.md). The point of running
+# in a Claude Code session (see docs/legacy/REVOCAB_PILOT_2026-08.md §8). The point of running
 # the checks here is that a session working from a phone or a cloud sandbox can
 # push review output and have it verified without the 377 MB local data lake.
 #
@@ -88,6 +88,16 @@ jobs:
           # the review output, not a flaky check.
           python tools/sol_review_progress.py | tee sol-summary.txt
 
+      - name: Coverage advisory (non-blocking)
+        continue-on-error: true
+        env:
+          ESH_SOURCE_DB: data/vocabulary_evidence.db
+        run: |
+          # Advisory only: coverage rules (POS coverage, form variety, rare
+          # senses) are known to be violated by words that have not reached the
+          # Sol review queue yet, so findings here must never fail a push.
+          python tools/check_cloze_coverage.py | tee coverage-summary.txt
+
       - name: Publish summary
         if: always()
         run: |
@@ -101,5 +111,9 @@ jobs:
             echo '### Sol review progress'
             echo '```'
             cat sol-summary.txt 2>/dev/null || echo 'did not run'
+            echo '```'
+            echo '### Cloze coverage (advisory)'
+            echo '```'
+            cat coverage-summary.txt 2>/dev/null || echo 'did not run'
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"

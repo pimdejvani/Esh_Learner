@@ -1,0 +1,104 @@
+@ thanks
+1	41173	noun	Thanks	1	Thanks for staying with me today.
+2	41174	noun	thanks	0	She smiled and gave us her thanks.
+3	41173	noun	thanks	0	Many thanks for your kind message.
+4	67932	intj	Thanks	0	Thanks a million for helping me move those boxes.
+5	41176	verb	thanks	0	She thanks her parents every day.
+
+@ that
+1	41191	det	That	1	That old house down the street still gives me chills.
+2	41192	pron	that	0	I lost my keys, and that ruined my whole morning.
+3	41177	conj	that	0	I know that you will do well.
+4	41182	conj	that	0	I am happy that you are here.
+5	41186	conj	that	0	The noise was so loud that everyone woke up.
+
+@ the
+1	41205	adv	the	1	After years of practice, she became the fastest runner in school.
+2	41204	adv	the	0	Waiting a bit longer made me none the wiser.
+3	41205	adv	the	0	He was treated as the finest guest all evening.
+4	41206	prep	the	0	Workers are paid twenty dollars the hour.
+5	41206	prep	the	0	Farmers charge five dollars the bushel at market.
+
+@ they
+1	41255	pron	They	1	They stayed with me when I felt worried.
+2	41256	pron	they	0	My friend said they will arrive soon.
+3	41257	pron	They	0	They say this shop has good bread.
+4	41258	pron	They	0	They changed the school rules again.
+5	41257	pron	They	0	They built this old bridge more than a hundred years ago.
+
+@ thing
+1	41265	noun	thing	1	The small thing you did meant a lot to me.
+2	41267	noun	thing	0	That thing on the table is mine.
+3	41270	noun	things	0	Please pack your things before we leave.
+4	41272	noun	thing	0	Removing your shoes before entering is just a thing here.
+5	41275	noun	thing	0	The broken lift is a difficult thing today.
+
+@ third
+1	41299	adj	third	1	She finished third in the race and felt proud.
+2	41301	noun	third	0	One third of the cake is left.
+3	41300	noun	third	0	The third in line can enter now.
+4	41301	noun	thirds	0	We cut the sandwich into thirds.
+5	41299	adj	third	0	My office is located on the third floor of the building.
+
+@ thirsty
+1	41310	adj	thirsty	1	I am thirsty after playing outside.
+2	41312	adj	thirsty	0	The hot weather made us thirsty.
+3	41310	adj	thirstier	0	I feel thirstier after salty food.
+4	41310	adj	thirstiest	0	After the race, I was the thirstiest person there.
+5	41313	adj	thirsty	0	After losing the match, the team was thirsty for revenge.
+
+@ thirteen
+1	67955	num	thirteen	1	She counted thirteen candles glowing brightly on her birthday cake.
+2	67955	num	thirteen	0	My cousin turns thirteen today.
+3	67955	num	thirteen	0	The bus leaves at thirteen fifteen.
+4	67955	num	thirteen	0	Page thirteen has a new story.
+5	67955	num	thirteen	0	The winning ticket number ended in thirteen.
+
+@ thirty
+1	67956	num	thirty	1	My uncle finally turned thirty during our family trip to Rome.
+2	67956	num	thirty	0	There are thirty students in our class.
+3	67956	num	thirty	0	The store gave me a discount of thirty percent.
+4	67956	num	thirty	0	She ran thirty kilometers before breakfast.
+5	67956	num	thirty	0	The recipe needs thirty minutes to bake completely.
+
+@ this
+1	41320	det	This	1	This kind message made my day better.
+2	41327	pron	This	0	This is the book I told you about.
+3	41325	det	this	0	We will meet this Friday.
+4	41326	adv	this	0	I did not know it was this far.
+5	41324	det	this	0	I met this strange man at the bus stop yesterday.
+
+@ three
+1	67958	num	three	1	I have three close friends at school.
+2	41333	noun	three	0	The class ends at three.
+3	41329	noun	threes	0	The child wrote threes on the paper.
+4	41331	noun	three	0	My nephew is a cheerful three today.
+5	41330	noun	three	0	The rope is three meters long.
+
+@ tv
+1	41788	noun	tv	1	Every Friday night, our whole family watches tv together.
+2	41788	noun	tv	0	The tv is in the living room.
+3	41788	noun	tvs	0	The store sells new tvs.
+4	41788	noun	tv	0	Turn off the tv, please.
+5	41788	noun	tv	0	There is a football game on tv.
+
+@ twelve
+1	67969	num	twelve	1	The clock struck twelve as the fireworks lit up the sky.
+2	67969	num	twelve	0	There are twelve eggs in a box.
+3	67969	num	twelve	0	She is twelve years old.
+4	67969	num	twelve	0	Our team scored exactly twelve points in the first half.
+5	67969	num	twelve	0	We need twelve chairs.
+
+@ twenty
+1	67970	num	twenty	1	Exactly twenty runners lined up at the starting line this morning.
+2	67970	num	twenty	0	There are twenty students here.
+3	67970	num	twenty	0	She got twenty points.
+4	67970	num	twenty	0	He plans to save twenty dollars every single week.
+5	67970	num	twenty	0	I need twenty minutes.
+
+@ two
+1	67971	num	two	1	I found two shiny coins hidden beneath the old couch.
+2	41804	noun	two	0	The class starts at two.
+3	67972	num	two	0	We need two more plates.
+4	41803	noun	two	0	The player rolled two twos.
+5	67972	num	two	0	The book has two pictures.

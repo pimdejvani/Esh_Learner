@@ -1,0 +1,25 @@
+thanks	repaired	replaced rank4 obsolete "plural of thank" sense with intj sense 67932; rest kept
+that	repaired	full redesign: added det/pron demonstrative senses (core A1 use missing from block); replaced dated "so that" purpose sense with common conj sense
+the	repaired	fixed ambiguous-cloze defect (target "the" occurred twice per sentence) across 4 rows; skipped correlative "the...the" sense since it structurally requires two occurrences of the target
+theatre	pass	senses tagged alternative/rare reflect spelling-variant dictionary classification, not real rarity; all 5 sentences are natural everyday usage
+their	pass	block already covers both plural and singular "their" naturally; misspelling senses correctly excluded
+then	pass	natural coverage of adv+noun senses; skipped adj (formal register "the then president") and conj (all rare/misspelling of than) as unusable/low priority
+there	pass	adv sense 41237 already covers core "there is/are" existential use; skipped pron/intj as redundant technical subdivisions or minor colloquial forms
+they	repaired	replaced rank5 fabricated neopronoun-verb sentence ("theying a classmate respectfully") with ordinary pron usage
+thing	repaired	replaced dated "latest fad" sense (rank4) with common "custom/practice" sense
+think	pass	all 5 rows natural verb usage; skipped noun "have a think" idiom as niche/low priority
+third	repaired	replaced rank5 near-nonexistent verb "thirding" with adj sense; skipped verb POS entirely as unattested jargon in ordinary English
+thirsty	repaired	replaced rank5 slang/awkward noun "thirsties" with figurative adj sense ("thirsty for revenge")
+thirteen	repaired	fixed sense_id/pos mismatch: ranks 1-4 were ordinary cardinal-number usage mislabeled as noun "group of items"; reassigned to num POS; rewrote rank1 for vividness
+thirty	repaired	full rewrite: canonical block used niche broadcast-industry jargon ("a 30-second commercial") for all 5 rows instead of the basic cardinal number; replaced entirely with num POS
+this	repaired	replaced rank5 fabricated noun "thises" with common informal narrative determiner use
+thousand	pass	single num sense, all 5 rows natural and distinct
+three	repaired	fixed sense_id mismatch (ranks 1 used "digit" noun sense for ordinary cardinal counting); rank5 grammar fix (added missing unit "meters")
+through	pass	all 5 prep rows natural and distinct; adj coverage gap reviewed but skipped since block already solid
+thursday	pass	natural noun+adv coverage, no defects
+turn	pass	strong verb+noun coverage with 4 distinct verb forms; no defects
+tv	repaired	rewrote generic 5-word rank1 for vividness; rest kept; "alternative" tag reflects spelling variant, not rarity
+twelve	repaired	fixed sense_id mismatch (cardinal usage mislabeled as "group of items" noun); rewrote 4-word rank1 for vividness
+twenty	repaired	fixed sense_id mismatch (cardinal/time usage mislabeled as "the twenties" decade-range noun); rewrote rank1 for vividness
+twice	pass	all 5 adv rows natural and distinct
+two	repaired	fixed sense_id mismatches (digit noun sense misapplied to plain counting and to telling time); rewrote 4-word rank1

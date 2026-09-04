@@ -1,0 +1,90 @@
+@ decoration
+1	62770	noun	decoration	1	The decoration on the wall made the room feel warm and welcoming.
+2	62770	noun	decoration	0	She added a small decoration to the gift box before wrapping it.
+3	62770	noun	decoration	0	The decoration in the garden was bright and colorful.
+4	62770	noun	decoration	0	He admired the decoration on the old vase.
+5	62769	noun	decoration	0	The decoration of the church was simple but elegant.
+@ decrease
+1	62765	verb	decrease	1	The temperature began to decrease after the heater turned off.
+2	62765	verb	decrease	0	After the storm, the water level started to decrease gradually.
+3	62765	verb	decreased	0	The number of visitors decreased during the winter months.
+4	62765	verb	decreased	0	Her energy levels decreased after the long hike.
+5	62765	verb	decreased	0	The noise in the room decreased when the door closed.
+@ deeply
+1	62758	adv	deeply	1	She was deeply moved by the heartfelt speech.
+2	62758	adv	deeply	0	He felt deeply connected to his roots.
+3	62758	adv	deeply	0	The team was deeply committed to the project.
+4	62758	adv	deeply	0	They were deeply grateful for the help.
+5	62758	adv	deeply	0	The issue matters deeply to everyone involved.
+@ defeat
+1	62809	verb	defeat	1	The underdog team managed to defeat the champions in the final match.
+2	62809	verb	defeat	0	She will defeat her opponent in the next round of the tournament.
+3	62809	verb	defeated	0	The defending champion was defeated by a surprise challenger.
+4	62809	verb	defeat	0	Our school team hopes to defeat the rival school in the championship game.
+5	62809	verb	defeated	0	The army defeated the enemy forces at dawn after a long battle.
+@ defence
+1	62790	noun	defence	1	The sea wall provided a strong defence against the storm.
+2	62791	noun	defence	0	She gave a clear defence of her actions in court.
+3	62793	noun	defence	0	The team’s defence was solid throughout the match.
+4	62790	noun	defence	0	Sunscreen provides a defence against harmful ultraviolet rays.
+5	62790	noun	defence	0	The new policy offers defence against financial loss.
+@ defend
+1	62797	verb	defend	1	The soldier stood ready to defend the village from the enemy.
+2	62797	verb	defend	0	She used a shield to defend herself during the training drill.
+3	62797	verb	defend	0	The dog barked loudly to defend its owner from strangers.
+4	62797	verb	defend	0	The team worked hard to defend their lead in the final minutes.
+5	62797	verb	defend	0	He raised his arms to defend against the sudden blow.
+@ delay
+1	62826	noun	delay	1	The delay in the train schedule caused frustration among passengers.
+2	62826	noun	delay	0	There was a short delay before the meeting started.
+3	62826	noun	delay	0	The delay in the delivery was due to bad weather.
+4	62826	noun	delay	0	A five-minute delay occurred at the airport gate.
+5	62826	noun	delay	0	The delay in the response made the situation worse.
+@ deliberate
+1	62836	adj	deliberate	1	She made a deliberate choice to stay home instead of going out.
+2	62837	adj	deliberate	0	The team's deliberate strategy helped them win the game.
+3	62839	adj	deliberate	0	He gave a deliberate answer, not rushing to respond.
+4	62839	adj	deliberate	0	The artist painted with a deliberate hand, careful of every stroke.
+5	62836	adj	deliberate	0	There was a deliberate pause before she spoke again.
+@ deliberately
+1	62817	adv	deliberately	1	She deliberately ignored the warning sign.
+2	62817	adv	deliberately	0	He deliberately left the door open.
+3	62817	adv	deliberately	0	They deliberately chose the longest route.
+4	62817	adv	deliberately	0	The dog deliberately knocked over the vase.
+5	62817	adv	deliberately	0	She deliberately walked past him without speaking.
+@ delight
+1	62822	noun	delight	1	The child laughed with pure delight when she opened the gift.
+2	62822	noun	delight	0	She found great delight in the quiet garden.
+3	62822	noun	delight	0	The surprise party was a delight for everyone.
+4	62822	noun	delight	0	A warm cup of tea brought him delight.
+5	62822	noun	delight	0	The children watched the puppet show with great delight.
+@ delighted
+1	62819	adj	delighted	1	She was delighted with the surprise party her friends planned.
+2	62819	adj	delighted	0	He was delighted after winning the regional art contest.
+3	62819	adj	delighted	0	The children were delighted by the magician's final trick.
+4	62819	adj	delighted	0	I'm delighted to see you again after all this time.
+5	62819	adj	delighted	0	They were delighted with the new classroom setup.
+@ delivery
+1	62842	noun	delivery	1	The delivery of the package was on time.
+2	62843	noun	delivery	0	She waited for the delivery at the front door.
+3	62843	noun	delivery	0	The delivery from the store arrived this morning.
+4	62842	noun	delivery	0	The delivery of medicine was urgent.
+5	62843	noun	delivery	0	A delivery of books was scheduled for Friday.
+@ demand
+1	62869	noun	demand	1	The demand for fresh fruit has increased this season.
+2	62869	noun	demand	0	When demand rises, prices often follow.
+3	62869	noun	demand	0	There is strong demand for eco-friendly products.
+4	62869	noun	demand	0	The demand for online courses grew during the pandemic.
+5	62869	noun	demand	0	Local stores face high demand during holiday weeks.
+@ demonstrate
+1	62854	verb	demonstrate	1	The teacher will demonstrate how to solve the math problem step by step.
+2	62853	verb	demonstrate	0	She asked the student to demonstrate the new software during the meeting.
+3	62856	verb	demonstrate	0	He will demonstrate the correct way to tie a shoelace.
+4	62853	verb	demonstrate	0	Can you demonstrate the safety features of this kitchen gadget?
+5	62856	verb	demonstrated	0	The mechanic demonstrated how to change a flat tire in under ten minutes.
+@ deny
+1	62857	verb	deny	1	The guard will deny entry to anyone without a ticket.
+2	62857	verb	denied	0	She was denied access to the restricted area because she had no clearance.
+3	62857	verb	denied	0	The committee denied the application due to incomplete documentation.
+4	62858	verb	denied	0	He denied the claim that he had stolen the documents.
+5	62862	verb	denied	0	The government denied any involvement in the unauthorized operation.

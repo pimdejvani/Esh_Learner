@@ -1,0 +1,90 @@
+@ somewhat
+1	66499	adv	somewhat	1	The room felt somewhat warmer after we turned on the heater.
+2	66499	adv	somewhat	0	She was somewhat tired after walking the long distance.
+3	66499	adv	somewhat	0	The movie was somewhat confusing, but still interesting.
+4	66499	adv	somewhat	0	His explanation was somewhat unclear, so I asked again.
+5	66499	adv	somewhat	0	The coffee tasted somewhat bitter this morning.
+@ soul
+1	66612	noun	soul	1	Her soul felt light after the long, painful journey.
+2	66613	noun	soul	0	The old piano played with a soul that moved everyone in the room.
+3	66612	noun	soul	0	He believed his soul would live on in the music he created.
+4	66613	noun	soul	0	The painting captured the soul of the village in its quiet beauty.
+5	66612	noun	soul	0	She spoke with kindness that seemed to come from her soul.
+@ specialist
+1	66604	adj	specialist	1	She provides specialist guidance on rare plant diseases.
+2	66604	adj	specialist	0	The repair required a specialist technician with years of experience.
+3	66604	adj	specialist	0	He completed specialist training in ancient manuscript restoration.
+4	66604	adj	specialist	0	This is a specialist tool designed for delicate electronics work.
+5	66604	adj	specialist	0	The hospital has a specialist team for treating rare conditions.
+@ species
+1	66625	noun	species	1	This species of bird is found only in tropical forests.
+2	66625	noun	species	0	The new species of insect surprised the scientists.
+3	66625	noun	species	0	She studied a rare species of butterfly in the lab.
+4	66625	noun	species	0	The museum displayed a fossil of an ancient species.
+5	66625	noun	species	0	They discovered a new species of fish in the river.
+@ spiritual
+1	66638	adj	spiritual	1	The spiritual connection between mother and child feels deep and real.
+2	66638	adj	spiritual	0	She felt a spiritual calm after walking through the quiet forest.
+3	66638	adj	spiritual	0	His spiritual journey began when he started meditating every morning.
+4	66638	adj	spiritual	0	The spiritual meaning of the ritual was clear to everyone present.
+5	66638	adj	spiritual	0	They shared a spiritual bond built on years of trust and kindness.
+@ split
+1	66663	verb	split	1	The knife split the apple cleanly down the middle.
+2	66663	verb	split	0	The old wooden board split along the grain under the heavy weight.
+3	66663	verb	split	0	She tried to split the wood with a single blow.
+4	66663	verb	split	0	The dry log split when the axe struck its center.
+5	66663	verb	split	0	The seam split open when he pulled the fabric too hard.
+@ sponsor
+1	66652	noun	sponsor	1	My sponsor helped me through my recovery journey.
+2	66652	noun	sponsor	0	She found a sponsor who guided her through the program.
+3	66652	noun	sponsor	0	The church assigned a sponsor to the new member.
+4	66652	noun	sponsor	0	He was my sponsor during the legal process.
+5	66652	noun	sponsor	0	The sponsor signed the form to confirm responsibility.
+@ stable
+1	66700	noun	stable	1	The farmer brought the mare into the stable after her long ride.
+2	66700	noun	stable	0	The stable has fresh straw and clean water for the horses.
+3	66700	noun	stable	0	We walked the horses to the stable before the storm hit.
+4	66700	noun	stable	0	The stable door was left open, letting in the cool evening air.
+5	66700	noun	stable	0	Each horse has its own stall in the stable.
+@ stare
+1	66646	verb	stared	1	The child stared at the butterfly on the window.
+2	66646	verb	stared	0	He stared at the painting for a long time.
+3	66646	verb	stared	0	She stared at the stranger in disbelief.
+4	66646	verb	stared	0	They stared at the lightning flickering beyond the hills.
+5	66646	verb	stared	0	The dog stared at the treat in his hand.
+@ status
+1	66656	noun	status	1	Her job title reflects her high status in the company.
+2	66656	noun	status	0	He felt insecure about his social status among the new coworkers.
+3	66656	noun	status	0	The new student struggled to fit in due to his low status.
+4	66656	noun	status	0	Their status as leaders was earned through years of service.
+5	66656	noun	status	0	She was surprised by the sudden change in her status at work.
+@ steady
+1	66715	adj	steady	1	The ladder stayed steady while she climbed to the top.
+2	66715	adj	steady	0	He held the camera steady during the long shot.
+3	66715	adj	steady	0	The shelf remained steady after we tightened its brackets.
+4	66715	adj	steady	0	The boy stood steady on the narrow beam.
+5	66715	adj	steady	0	The table became perfectly steady after one leg was adjusted.
+@ steel
+1	66757	noun	steel	1	The bridge is made of strong steel that resists bending under heavy loads.
+2	66757	noun	steel	0	She wore a steel ring that felt cold against her skin.
+3	66757	noun	steel	0	The sword's blade was forged from high-quality steel.
+4	66757	noun	steel	0	Steel is often used in construction because of its durability.
+5	66757	noun	steel	0	The factory produces steel for use in car manufacturing.
+@ steep
+1	66729	adj	steep	1	The hikers struggled up the steep path to the summit.
+2	66729	adj	steep	0	The roof has a steep angle that sheds rain quickly.
+3	66729	adj	steep	0	She slipped on the steep icy path below the cabin.
+4	66729	adj	steep	0	The road had a steep drop before the bridge.
+5	66729	adj	steep	0	The mountain trail features a steep climb in the final mile.
+@ sticky
+1	66739	adj	sticky	1	The glue on the envelope is sticky and holds the paper together.
+2	66739	adj	sticky	0	Fresh tar left the pavement sticky under our shoes.
+3	66739	adj	sticky	0	The child left sticky fingerprints on the glass.
+4	66739	adj	sticky	0	The candy wrapper was sticky after I had eaten the chocolate.
+5	66739	adj	sticky	0	The label on the jar was sticky and hard to peel off.
+@ stiff
+1	66790	adj	stiff	1	The thick wooden panel was too stiff to bend.
+2	66794	adj	stiff	0	After standing too long, my back became stiff.
+3	66790	adj	stiff	0	The old chair had a stiff back that didn't bend.
+4	66790	adj	stiff	0	The metal rod was too stiff to twist easily.
+5	66790	adj	stiff	0	The new jacket felt stiff at first, but softened over time.

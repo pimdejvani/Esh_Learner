@@ -56,7 +56,7 @@
 
 @ nature
 1	48891	noun	nature	1	We love nature.
-2	48891	noun	nature	0	Nature is beautiful here.
+2	48891	noun	Nature	0	Nature is beautiful here.
 3	48891	noun	nature	0	The park protects nature.
 4	48891	noun	nature	0	It is in her nature to help.
 5	48903	verb	natures	0	The place natures young trees.
@@ -148,7 +148,7 @@
 @ parking
 1	49243	verb	parking	1	We parking every day.
 2	49243	verb	parking	0	She is parking the car outside.
-3	49243	verb	parking	0	Parking near the station is difficult.
+3	49243	verb	Parking	0	Parking near the station is difficult.
 4	49243	verb	parking	0	He was parking when the phone rang.
 5	49243	verb	parking	0	They avoid parking on narrow streets.
 
@@ -171,4 +171,4 @@
 2	49327	noun	passenger	0	Each passenger must show a ticket.
 3	49327	noun	passengers	0	The train carried two hundred passengers.
 4	49327	noun	passenger	0	A passenger asked the driver to stop.
-5	49327	noun	passengers	0	Passengers waited beside the boarding gate.
+5	49327	noun	Passengers	0	Passengers waited beside the boarding gate.

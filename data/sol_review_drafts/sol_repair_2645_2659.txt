@@ -1,0 +1,90 @@
+@ hunting
+1	64022	noun	hunting	1	The man went on a hunting trip to shoot deer in the forest.
+2	64022	noun	hunting	0	Hunting requires patience and knowledge of animal behavior.
+3	64022	noun	hunting	0	She joined a hunting group to learn traditional skills.
+4	64022	noun	hunting	0	Hunting is a cultural practice in many rural communities.
+5	64022	noun	hunting	0	They discussed hunting regulations at the outdoor meeting.
+@ illustrate
+1	64033	verb	illustrate	1	The teacher used a cartoon to illustrate the point clearly.
+2	64033	verb	illustrated	0	She illustrated the rule with a real-life example.
+3	64033	verb	illustrate	0	He drew a diagram to illustrate how the machine works.
+4	64033	verb	illustrate	0	The book uses stories to illustrate complex ideas.
+5	64033	verb	illustrate	0	They used a video to illustrate the process step by step.
+@ illustration
+1	64039	noun	illustration	1	The teacher used a simple illustration to clarify the complex concept.
+2	64039	noun	illustration	0	Her explanation included an illustration that made the idea much clearer.
+3	64040	noun	illustration	0	The illustration in the textbook helped us understand the process.
+4	64040	noun	illustration	0	An illustration of the experiment was shown during the lecture.
+5	64040	noun	illustration	0	The illustration demonstrated how the machine works step by step.
+@ imagination
+1	64042	noun	imagination	1	The artist's imagination brought the dream world to life.
+2	64042	noun	imagination	0	She used her imagination to design a new kind of robot.
+3	64042	noun	imagination	0	A child's imagination helps turn an ordinary game into an adventure.
+4	64042	noun	imagination	0	His imagination created a story no one had ever heard.
+5	64042	noun	imagination	0	The writer's imagination filled the pages with wonder.
+@ impatient
+1	64046	adj	impatient	1	The impatient child tapped his foot during the long wait.
+2	64046	adj	impatient	0	She became impatient when the bus did not arrive on time.
+3	64046	adj	impatient	0	He gave an impatient sigh while waiting for the printer.
+4	64046	adj	impatient	0	The impatient driver honked loudly at the slow-moving car.
+5	64046	adj	impatient	0	They were impatient to start the game after the delay.
+@ imply
+1	64056	verb	imply	1	The data imply that high sugar intake raises the risk of health problems.
+2	64057	verb	implied	0	By refusing to answer, he implied that he disagreed with the plan.
+3	64055	verb	implies	0	The new law implies stricter penalties for traffic violations.
+4	64056	verb	imply	0	The results imply that the treatment is effective.
+5	64055	verb	implies	0	The contract implies certain obligations for both parties.
+@ impose
+1	64077	verb	impose	1	The government will impose new rules on businesses.
+2	64077	verb	impose	0	The school will impose a strict dress code.
+3	64077	verb	imposed	0	The court imposed a fine for breaking the law.
+4	64077	verb	imposed	0	They imposed a ban on plastic bags.
+5	64077	verb	imposed	0	The city imposed a curfew during the protest.
+@ impress
+1	64059	verb	impressed	1	Her speech deeply impressed everyone in the room.
+2	64059	verb	impressed	0	The new teacher quickly impressed the students with her energy.
+3	64059	verb	impress	0	He tried hard to impress his boss during the meeting.
+4	64059	verb	impress	0	The view from the mountaintop never fails to impress me.
+5	64059	verb	impressed	0	She was impressed by his calm response under pressure.
+@ impressed
+1	64050	adj	impressed	1	She was impressed by the student's dedication.
+2	64050	adj	impressed	0	The audience was impressed with the performance.
+3	64050	adj	impressed	0	He was impressed by the quality of the work.
+4	64050	adj	impressed	0	They were impressed by the new design.
+5	64050	adj	impressed	0	I was impressed with the team's effort.
+@ inch
+1	64091	noun	inch	1	The pencil fits perfectly in the one-inch hole.
+2	64091	noun	inch	0	The gap was less than an inch wide.
+3	64091	noun	inch	0	The nail is just one inch long.
+4	64091	noun	inches	0	The photo measures five inches by seven inches.
+5	64091	noun	inch	0	He applied a quarter-inch layer of glue to the joint.
+@ incident
+1	64103	noun	incident	1	The police arrived quickly after the traffic incident.
+2	64103	noun	incident	0	There was an incident at the school gate this morning.
+3	64103	noun	incident	0	He reported the incident to the manager immediately.
+4	64103	noun	incident	0	The incident happened just before the meeting started.
+5	64103	noun	incident	0	No one was hurt in the minor incident on the bridge.
+@ income
+1	64113	noun	income	1	Her income from the freelance job covers her monthly rent and groceries.
+2	64113	noun	income	0	The family's income dropped after the father lost his job.
+3	64113	noun	income	0	He saved a portion of his income for future travel.
+4	64113	noun	income	0	The new tax law affects how much income people keep.
+5	64113	noun	income	0	They reviewed their income and expenses to plan better.
+@ increasingly
+1	64090	adv	increasingly	1	Renewable energy is increasingly important worldwide.
+2	64090	adv	increasingly	0	People are increasingly choosing to work from home instead of commuting.
+3	64090	adv	increasingly	0	The rising cost of living is increasingly difficult for young families to manage.
+4	64090	adv	increasingly	0	Climate change impacts are increasingly visible in coastal regions.
+5	64090	adv	increasingly	0	The team's performance became increasingly strong over the season.
+@ industrial
+1	64122	adj	industrial	1	The factory produces industrial parts for cars.
+2	64122	adj	industrial	0	She works in an industrial zone near the river.
+3	64122	adj	industrial	0	The city has many industrial buildings and smokestacks.
+4	64122	adj	industrial	0	This machine is designed for industrial use only.
+5	64122	adj	industrial	0	The area has a mix of residential and industrial zones.
+@ infection
+1	64138	noun	infection	1	The infection spread quickly through the unsterilized medical tools.
+2	64138	noun	infection	0	Doctors warned that the wound could lead to a serious infection.
+3	64138	noun	infection	0	She developed an infection after the surgery.
+4	64138	noun	infection	0	The infection was caused by bacteria entering the bloodstream.
+5	64138	noun	infection	0	Antibiotics were needed to stop the infection from worsening.

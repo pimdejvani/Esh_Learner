@@ -62,7 +62,7 @@
 5	48105	noun	leaders	0	The band leaders met before the concert.
 
 @ learning
-1	48126	noun	learning	1	Learning to read opened a whole new world for the young student.
+1	48126	noun	Learning	1	Learning to read opened a whole new world for the young student.
 2	48126	noun	learning	0	Language learning takes time and practice.
 3	48127	noun	learning	0	The scholar shared his learning with the class.
 4	48129	verb	learning	0	She is learning to play the piano.

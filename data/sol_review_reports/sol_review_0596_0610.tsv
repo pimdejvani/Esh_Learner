@@ -1,0 +1,15 @@
+backwards	repaired	full rewrite; manifest only flagged uniqueness but all 5 canonical rows were the undetected placeholder "It is backwards." (OVERRIDE 2)
+bake	repaired	full rewrite; manifest only flagged uniqueness but all 5 canonical rows were the undetected placeholder "We bake every day." (OVERRIDE 2)
+balance	repaired	full rewrite; all 5 ranks were placeholder "The balance is important." sentences
+ban	repaired	full rewrite; manifest only flagged uniqueness but all 5 canonical rows were the undetected placeholder "We ban every day." (OVERRIDE 2)
+base	repaired	full rewrite; all 5 ranks were placeholder "The base is important." sentences
+basic	repaired	full rewrite; manifest only flagged uniqueness but all 5 canonical rows were the undetected placeholder "It is basic." (OVERRIDE 2)
+basis	repaired	full rewrite; all 5 ranks were placeholder "The basis is important." sentences
+battery	repaired	full rewrite; all 5 ranks were placeholder "The battery is important." sentences
+battle	repaired	full rewrite; all 5 ranks were placeholder "The battle is important." sentences
+beauty	repaired	full rewrite; all 5 ranks were placeholder "The beauty is important." sentences
+bee	repaired	full rewrite; all 5 ranks were placeholder "The bee is important." sentences
+belief	repaired	full rewrite; all 5 ranks were placeholder "The belief is important." sentences
+bell	repaired	full rewrite; all 5 ranks were placeholder "The bell is important."; rank 5 also swapped off the archaic verb sense "to ring a bell" per POS-fake-usage override, replaced with the UK informal "give someone a bell" noun idiom (sense 54291)
+bend	repaired	full rewrite; manifest only flagged uniqueness but all 5 canonical rows were the undetected placeholder "We bend every day." (OVERRIDE 2)
+bite	repaired	full rewrite; manifest only flagged uniqueness but all 5 canonical rows were the undetected placeholder "We bite every day." (OVERRIDE 2)

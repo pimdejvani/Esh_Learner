@@ -1,0 +1,90 @@
+@ exchange
+1	55959	noun	exchange	1	We made an exchange of books after finishing the summer club.
+2	55959	noun	exchange	0	The store allowed an exchange for a different size.
+3	55964	noun	exchange	0	After a long exchange of emails, the two neighbours finally agreed on a fence.
+4	55971	verb	exchange	0	I gladly exchange my old textbooks for new ones every September.
+5	55973	verb	exchanged	0	Since his arrest, the man exchanged his fancy office for a small cell.
+
+@ expected
+1	55996	adj	expected	1	The expected delivery date is Friday morning.
+2	55996	adj	expected	0	The expected number of guests is twenty.
+3	55996	adj	expected	0	Rain is expected later this afternoon.
+4	55996	adj	expected	0	The train arrived at its expected time.
+5	55997	verb	expected	0	They had not expected the news to spread so quickly.
+
+@ experienced
+1	56006	adj	experienced	1	An experienced nurse showed the new staff how to use the equipment.
+2	56006	adj	experienced	0	The company hired an experienced driver for the long trip.
+3	56006	adj	experienced	0	Ask an experienced gardener which plants need shade.
+4	56006	adj	experienced	0	She is experienced in planning large events.
+5	56008	verb	experienced	0	He experienced a sharp pain in his knee during the race.
+
+@ export
+1	56035	adj	Export	1	Export goods are packed carefully before leaving the country.
+2	56036	noun	export	0	Oil remains the country's most valuable export.
+3	56037	noun	export	0	The export of fresh fruit brings in valuable income each year.
+4	56039	verb	exports	0	This factory exports furniture to countries across Europe.
+5	56039	verb	exported	0	Last year the company exported over a million tonnes of rice.
+
+@ fairly
+1	56043	adv	fairly	1	The teacher graded every student's work fairly.
+2	56047	adv	fairly	0	The test was fairly easy for most of the class.
+3	56043	adv	fairly	0	Both sides were treated fairly during the discussion.
+4	56047	adv	fairly	0	The hotel was fairly close to the train station.
+5	56045	adv	fairly	0	The manager promised that all workers would be fairly paid this year.
+
+@ fancy
+1	56074	adj	fancy	1	She wore a fancy dress covered in sequins to the New Year's party.
+2	56081	verb	fancy	0	Do you fancy going to the cinema this weekend?
+3	56082	verb	fancied	0	He admitted that he had fancied his best friend's sister for years.
+4	56061	noun	fancy	0	It was just a passing fancy; he never really wanted to be a pilot.
+5	56077	adj	fancy	0	He always uses fancy words when a simple one would do.
+
+@ fascinating
+1	56087	adj	fascinating	1	The guide told us a fascinating story about the castle.
+2	56087	adj	fascinating	0	The documentary made space travel seem fascinating.
+3	56087	adj	fascinating	0	She found the ancient coins fascinating to study.
+4	56087	adj	fascinating	0	It is fascinating to watch a seed grow into a plant.
+5	56088	verb	fascinating	0	The old photographs kept fascinating the visitors long after the tour ended.
+
+@ favour
+1	56095	noun	favour	1	Could you do me a favour and hold this door open?
+2	56095	noun	favour	0	She asked her neighbor for a favour.
+3	56095	noun	favour	0	The coach chose Mia in favour of the older player.
+4	56095	noun	favours	0	He often returns favours when friends help him.
+5	56096	verb	favour	0	The teacher seemed to favour the students who asked questions.
+
+@ fence
+1	56097	noun	fence	1	The dog jumped over the fence and ran into the garden.
+2	56097	noun	fence	0	They built a wooden fence around the vegetable patch.
+3	56097	noun	fence	0	A tall fence keeps the children away from the road.
+4	56097	noun	fence	0	Paint the fence before the rainy season begins.
+5	56107	verb	fenced	0	They fenced off the construction site to keep pedestrians safe.
+
+@ fighting
+1	56116	noun	fighting	1	Families fled their homes when the fighting reached the edge of the city.
+2	56117	noun	fighting	0	There was fighting in the streets after the football match ended.
+3	56115	verb	fighting	0	The boys were fighting over the last piece of cake.
+4	56113	adj	fighting	0	The fighting forces agreed to stop shooting for one day.
+5	56114	adj	fighting	0	He has a fighting attitude when someone insults his friends.
+
+@ file
+1	56118	noun	file	1	I found the missing contract in a file on my desk.
+2	56121	noun	file	0	Save the report as a file on your computer.
+3	56125	verb	file	0	She decided to file for divorce after months of arguing.
+4	56134	noun	file	0	He used a metal file to smooth the sharp edge.
+5	56130	noun	file	0	The children walked in single file to the bus.
+
+@ fixed
+1	56157	adj	fixed	1	The mechanic returned my fixed bicycle the next day.
+2	56149	adj	fixed	0	The rent is fixed and will not increase this year.
+3	56146	verb	fixed	0	My dad fixed the broken chair in less than an hour.
+4	56150	adj	fixed	0	We meet at a fixed time every Monday.
+5	56155	adj	fixed	0	The referee suspected that the match was fixed.
+
+@ flag
+1	56159	noun	flag	1	The children raised the flag at the start of the school day.
+2	56159	noun	flag	0	Each country carried its flag in the parade.
+3	56160	noun	flag	0	The red cross is part of the flag design.
+4	56162	noun	flag	0	The sailor used a flag to signal that the boat needed help.
+5	56176	verb	flagged	0	She flagged down a taxi outside the busy train station.

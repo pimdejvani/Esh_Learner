@@ -30,7 +30,7 @@
 1	49394	prep	per	1	We walk per home.
 2	49394	prep	per	0	The hotel charges eighty dollars per night.
 3	49395	prep	per	0	The speed limit is sixty kilometers per hour.
-4	49397	prep	per	0	Per the agreement, payment is due on Friday.
+4	49397	prep	Per	0	Per the agreement, payment is due on Friday.
 5	49398	prep	per	0	The meeting starts at nine, per the manager.
 
 @ perform
@@ -42,7 +42,7 @@
 
 @ perhaps
 1	49413	adv	perhaps	1	We do it perhaps.
-2	49413	adv	perhaps	0	Perhaps we should take an umbrella.
+2	49413	adv	Perhaps	0	Perhaps we should take an umbrella.
 3	49413	adv	perhaps	0	She is perhaps the best singer in the group.
 4	49413	adv	perhaps	0	The train will arrive late, perhaps after midnight.
 5	49415	noun	perhapses	0	The plan contains too many perhapses and no firm decisions.
@@ -83,7 +83,7 @@
 5	49461	noun	physical	0	The doctor gave me a physical yesterday.
 
 @ physics
-1	49463	noun	physics	1	Physics helped the students understand how their small rocket reached the sky.
+1	49463	noun	Physics	1	Physics helped the students understand how their small rocket reached the sky.
 2	49463	noun	physics	0	She studies physics at university.
 3	49464	noun	physics	0	The course explains the physics of ocean waves.
 4	49463	noun	physics	0	Modern physics examines matter and energy.

@@ -1,0 +1,150 @@
+@ port
+1	58333	noun	port	1	The ship entered the port with containers stacked high on its deck.
+2	58333	noun	port	0	The cargo ship reached the port early in the morning.
+3	58333	noun	port	0	Fishing boats returned to port before the storm.
+4	58333	noun	port	0	The port was busy with travelers and cargo.
+5	58333	noun	port	0	We watched the ferry leave the port at noon.
+@ portrait
+1	58308	noun	portrait	1	The portrait of her grandmother hung above the piano.
+2	58308	noun	portrait	0	She commissioned an artist to paint a portrait of her father.
+3	58308	noun	portrait	0	The artist painted a portrait of the mayor.
+4	58308	noun	portrait	0	He posed quietly while she finished his portrait.
+5	58308	noun	portrait	0	The museum displayed a portrait of the famous writer.
+@ possibly
+1	58313	adv	possibly	1	Possibly, the missing keys are still in the pocket of your coat.
+2	58313	adv	possibly	0	The missing file could possibly be on your desk.
+3	58313	adv	possibly	0	We could possibly finish the project by Friday.
+4	58313	adv	possibly	0	Could you possibly help me carry this box?
+5	58313	adv	possibly	0	The train will possibly be delayed by the snow.
+@ pot
+1	58390	noun	pot	1	Soup bubbled in the large pot while the kitchen filled with steam.
+2	58390	noun	pot	0	He lifted the lid and stirred the soup in the pot.
+3	58390	noun	pot	0	Put the potatoes in a pot of boiling water.
+4	58390	noun	pot	0	She stirred the sauce in the pot with a wooden spoon.
+5	58390	noun	pot	0	The pot was too hot to touch without gloves.
+@ pour
+1	58321	verb	poured	1	She poured the last of the milk and quietly closed the fridge.
+2	58321	verb	pour	0	Pour the water into the glass slowly.
+3	58325	verb	pouring	0	It was pouring when we left the house.
+4	58324	verb	poured	0	People poured out of the station.
+5	58321	verb	pour	0	Please pour the soup carefully into each bowl.
+@ poverty
+1	58367	noun	poverty	1	The charity opened a free food bank to help families living in poverty.
+2	58367	noun	poverty	0	Many families were pushed into poverty after losing their jobs.
+3	58367	noun	poverty	0	Education can help people escape poverty.
+4	58367	noun	poverty	0	The report described poverty in rural communities.
+5	58367	noun	poverty	0	They raised money to fight child poverty.
+@ powder
+1	58378	noun	powder	1	A trail of cocoa powder led from the counter to the open cupboard.
+2	58378	noun	powder	0	A fine white powder covered the kitchen counter.
+3	58378	noun	powder	0	Add chili powder to make the soup spicier.
+4	58378	noun	powder	0	The workers wore masks to avoid breathing the powder.
+5	58386	verb	powdered	0	She powdered her nose before stepping onto the stage.
+@ powerful
+1	58362	adj	powerful	1	The powerful wind pushed the boat toward the shore.
+2	58362	adj	powerful	0	The powerful motor lifted the heavy door easily.
+3	58362	adj	powerful	0	The engine is powerful enough to pull the heavy truck.
+4	58362	adj	powerful	0	Her speech had a powerful effect on the audience.
+5	58362	adj	powerful	0	A powerful computer can process large files quickly.
+@ practical
+1	58369	adj	practical	1	Buying a waterproof jacket was a practical choice for the rainy season.
+2	58369	adj	practical	0	A small folding table is practical in this narrow room.
+3	58369	adj	practical	0	She gave me practical advice about saving money.
+4	58369	adj	practical	0	This bag is practical because it has many pockets.
+5	58377	noun	practical	0	We have a chemistry practical on Friday afternoon.
+@ pray
+1	58442	verb	pray	1	Before the meal, the family gathered to pray together.
+2	58442	verb	pray	0	They stopped at the temple to pray for good health.
+3	58442	verb	pray	0	She went to the temple to pray for her friend.
+4	58442	verb	praying	0	She was praying quietly when the phone interrupted her.
+5	58442	verb	prayed	0	We prayed for safe travel during the storm.
+@ prayer
+1	58435	noun	prayer	1	His quiet prayer helped him feel calm before the exam.
+2	58435	noun	prayer	0	The family offered a prayer before the meal.
+3	58435	noun	prayer	0	The service ended with a short prayer.
+4	58435	noun	prayer	0	She said a prayer for her sick grandmother.
+5	58435	noun	prayer	0	The children listened respectfully during the prayer.
+@ prediction
+1	58451	noun	prediction	1	My prediction that it would rain was correct.
+2	58451	noun	prediction	0	Her prediction of heavy snow proved accurate.
+3	58451	noun	prediction	0	The weather prediction says it will be sunny tomorrow.
+4	58451	noun	prediction	0	His prediction about the game's winner surprised us.
+5	58451	noun	prediction	0	Nobody knew whether her prediction would come true.
+@ prepared
+1	58449	adj	prepared	1	I felt prepared because I had packed my bag the night before.
+2	58449	adj	prepared	0	We were prepared for the storm with food, water, and lamps.
+3	58449	adj	prepared	0	The students were prepared for the final test.
+4	58449	adj	prepared	0	She arrived prepared with a map and extra water.
+5	58450	verb	prepared	0	She prepared a big breakfast before everyone woke up.
+@ presentation
+1	58458	noun	presentation	1	Nina gave a presentation about sea turtles to her class.
+2	58458	noun	presentation	0	She delivered a short presentation at the weekly meeting.
+3	58458	noun	presentation	0	Our presentation included photos and a short video.
+4	58458	noun	presentation	0	He practiced his presentation before the meeting.
+5	58458	noun	presentation	0	The teacher praised her clear presentation.
+@ press
+1	58475	noun	press	1	A firm press on the button opened the elevator door.
+2	58479	noun	press	0	The press gathered outside the courthouse to hear the verdict.
+3	58475	noun	press	0	With one press of the switch, the room became bright.
+4	58488	verb	pressed	0	He pressed the doorbell twice but nobody answered.
+5	58475	noun	press	0	A quick press of his finger answered the call.
+@ pressure
+1	58505	noun	pressure	1	The pressure of the water made the pipe burst.
+2	58512	verb	pressured	0	Her manager pressured her to finish the report by midnight.
+3	58505	noun	pressure	0	Too much pressure can crack the thin glass.
+4	58510	noun	pressure	0	The nurse checked his blood pressure.
+5	58505	noun	pressure	0	The tire lost pressure after hitting a sharp stone.
+@ pretend
+1	58513	verb	pretended	1	The children pretended that the sofa was a pirate ship.
+2	58520	adj	pretend	0	It wasn't a real snake, just a pretend one made of rubber.
+3	58513	verb	pretending	0	He likes pretending to be a famous astronaut.
+4	58513	verb	pretended	0	She pretended not to notice the surprise.
+5	58513	verb	pretend	0	Let's pretend this blanket is a magic cape.
+@ previous
+1	58467	adj	previous	1	I kept my previous phone after buying a newer one.
+2	58467	adj	previous	0	Her previous job required frequent travel.
+3	58467	adj	previous	0	Please read the previous chapter before class.
+4	58467	adj	previous	0	The previous owner painted the kitchen yellow.
+5	58467	adj	previous	0	Our previous meeting ended earlier than expected.
+@ previously
+1	58473	adv	previously	1	I had previously met the author at a book fair.
+2	58473	adv	previously	0	The road had previously been closed because of flooding.
+3	58473	adv	previously	0	The room was previously used as a storage area.
+4	58473	adv	previously	0	She had previously worked at a small cafe.
+5	58473	adv	Previously	0	Previously, the park closed at six o'clock.
+@ priest
+1	58522	noun	priest	1	The priest welcomed visitors to the old church.
+2	58522	noun	priest	0	The priest led the ceremony inside the old church.
+3	58522	noun	priest	0	The priest spoke to the family after the ceremony.
+4	58522	noun	priest	0	People asked the priest to bless the new building.
+5	58522	noun	priest	0	The priest wore special clothes during the service.
+@ primary
+1	58527	adj	primary	1	Safety is our primary concern during the school trip.
+2	58532	noun	primary	0	Voters lined up early to cast their ballots in the primary.
+3	58527	adj	primary	0	Her primary goal is to finish the project on time.
+4	58527	adj	primary	0	The primary reason for the delay was heavy rain.
+5	58527	adj	primary	0	Clear communication is a primary goal of the course.
+@ prince
+1	58565	noun	prince	1	The prince rode through the town in a golden carriage.
+2	58565	noun	prince	0	The prince attended the opening of the new hospital.
+3	58565	noun	prince	0	In the story, the prince searched for the lost crown.
+4	58565	noun	prince	0	The young prince greeted the crowd from the balcony.
+5	58565	noun	prince	0	A prince visited the school during the festival.
+@ princess
+1	58550	noun	princess	1	The princess waved to the children from the palace garden.
+2	58550	noun	princess	0	The young princess learned to ride a horse.
+3	58550	noun	princess	0	The princess wore a silver crown in the parade.
+4	58550	noun	princess	0	In the tale, the princess rescued the trapped bird.
+5	58550	noun	princess	0	Everyone cheered when the princess arrived.
+@ printing
+1	58545	noun	printing	1	The smell of fresh printing filled the school newspaper room.
+2	58545	noun	printing	0	Printing the posters took longer than expected.
+3	58545	noun	printing	0	The shop offers printing for posters and invitations.
+4	58545	noun	printing	0	We waited while the printing of the tickets finished.
+5	58545	noun	printing	0	Modern printing can produce thousands of books quickly.
+@ prisoner
+1	58592	noun	prisoner	1	The prisoner wrote a letter to his family from the prison.
+2	58592	noun	prisoner	0	The prisoner spoke privately with his lawyer.
+3	58592	noun	prisoner	0	The guard brought the prisoner to the courtroom.
+4	58592	noun	prisoner	0	The prisoner waited for news about the trial.
+5	58592	noun	prisoner	0	A prisoner may be serving a sentence for a crime.

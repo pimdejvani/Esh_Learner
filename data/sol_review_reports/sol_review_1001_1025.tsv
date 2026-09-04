@@ -1,0 +1,25 @@
+fifty	pass	all 5 rows already correct, senses match, no defects
+fill	pass	senses match sentences well, forms reasonably varied
+film	pass	senses match sentences well, 3 forms used
+final	pass	verb POS skipped (finalled = narrow sports jargon, awkward form) matching canonical
+find	repaired	r1 sense mismatch: sense 32917 'to locate a physical object' does not fit 'find the courage'; repointed to 32922 'to gain, as the object of desire or effort'
+fine	repaired	r4 replaced: swapped a redundant comparative-adjective row for the common learner noun sense 32964 (a fine = penalty) to add real POS coverage
+finish	pass	all forms and senses correct, good variety (finish/finished/finishing/finishes/noun finish)
+fire	repaired	r1 re-sensed: 32991 (a particular campfire, already used in r2) did not fit the abstract sense 32990 the row was labelled with, so rewrote to the general-concept sentence; r4 re-sensed from 33008 'set on fire' to 33009 'heat without burning, as ceramic' which actually matches 'fired bricks in a kiln'
+first	pass	verb POS correctly skipped (only sense is rare meeting jargon); all rows match well
+fish	pass	all rows correct, noun/verb both covered with good variety
+five	repaired	r1 re-sensed: was labelled noun sense 33078 'the digit/figure 5' (writing the numeral) but the sentence used five as a quantifier before a countable noun, so repointed to num sense 67786 'describing a set with five elements'
+flat	pass	adj coverage solid with 5 distinct senses; verb POS correctly skipped (all senses rare/dated/obsolete); adv/noun skipped in favour of keeping 5 strong adj rows
+flight	pass	adj/verb POS correctly skipped (obsolete and narrow sports jargon); noun senses all distinct and match
+floor	pass	all noun/verb senses match well including idiomatic 'floor the audience'
+flower	repaired	r1 was only 4 words (below the 6-word minimum) and lacked vividness; rewrote keeping sense 33226
+fly	repaired	r1 was only 5 words, rewrote for length/vividness; r5 used sense 33259 tagged archaic/poetic 'to flee' which a learner would never meet, repointed to common sense 33261 'to proceed very fast' with idiomatic 'time flies'
+follow	pass	noun POS skipped (billiards jargon / niche social-media slang); all verb senses match well
+food	repaired	r1 was only 5 words, below minimum and lacked vividness; rewrote keeping sense 33310
+foot	repaired	r5 used verb sense 33340 'to kick a ball' which sounds unnatural/foreign to a fluent speaker despite lacking a rarity tag; repointed to the well-known idiom sense 33341 'foot the bill' (to pay)
+football	repaired	r1 was only 5 words, rewrote for length/vividness; r4 used verb sense 33362 tagged rare 'to play football' -- an awkward, essentially unused verb form, so replaced with noun sense 33352 (American football) for a genuinely distinct, common usage; also fixed a pre-existing case mismatch on r3 (target 'football' vs sentence-initial 'Football')
+for	pass	prep and conj senses both correct and distinct
+forget	repaired	r1 was only 5 words, rewrote for length/vividness; kept sense 33398, now yielding 5 distinct forms across the block (forget/forgot/forgotten/forgets/forgetting)
+form	repaired	r1 was only 5 words, rewrote for length/vividness; kept sense 33423 (the document sense)
+forty	repaired	FULL REWRITE: canonical block never used the actual cardinal-number meaning at all -- r1/r2/r5 repeated a rare slang noun sense (a 40oz bottle of beer) and r3/r4 used an unrelated obsolete adjective sense ('resembling a fort'). The learner-core meaning (the number 40, num sense 67788) was entirely missing. Rebuilt all 5 rows on that sense with varied everyday contexts.
+four	repaired	r1 and r5 both used noun senses (digit-figure / unit-length-object) that don't fit plain quantifying use before a countable noun ('four chairs', 'four feet'); repointed both to num sense 67790 'describing a group with four elements'

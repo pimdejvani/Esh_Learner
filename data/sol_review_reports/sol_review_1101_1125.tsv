@@ -1,0 +1,25 @@
+improve	repaired	rank1 was 5 words (template-thin); rewrote rank1, kept ranks 2-5 (all sense 34792/34793, good already)
+in	repaired	replaced adj row (r5) with cleaner "in fashion" sense 34836; skipped noun POS (only usable sense is idiomatic "an in", too advanced) and verb POS (both senses obsolete "to enclose/harvest")
+information	repaired	rank1 was 5 words, rewrote; fixed sense_id mismatches on r2 (repointed to 34855 "for your information" idiom, matches sentence better) and r3 (repointed 34860->34854, technical semiotics sense didn't match the plain sentence)
+interest	repaired	rank1 was 5 words, rewrote; replaced r5 with verb form "interests" for form variety (was reusing "interesting" only)
+interested	repaired	rank1 was 5 words, rewrote; replaced r3 (idiomatic "interested buyer" stakeholder sense) with verb sense 34883 ("interested" as past tense of interest) for real POS coverage
+interesting	repaired	rank1 was 5 words, rewrote; fixed r2 sense mismatch (was pointed at obsolete sense 34884 "of concern", repointed to 34885, the sentence always meant ordinary "interesting")
+internet	repaired	rank1 was 5 words, rewrote; replaced r3 which used verb sense 34894 ("I internet to find...") -- judged unnatural/dated even though untagged, skipped verb POS entirely, used name sense 34889 instead
+interview	pass	all 5 rows already correct: distinct senses, natural sentences, no defects found
+into	pass	all 5 rows correct and natural, no coverage findings, no defects found
+island	repaired	replaced r5 (verb sense 34933 "to isolate" -- judged too literary/rare for everyday use though untagged); skipped verb POS, added second noun sentence instead
+it	pass	kept all 5 rows; skipped det POS (only sense obsolete) and adj POS (slang "it-girl/it-bag" usage, not natural as standalone adjective)
+its	repaired	replaced r3 and r5 (pron sense 34960, "The red ball is its" -- judged unnatural: standalone possessive pronoun "its" is essentially never used predicatively in real English even though dictionary-attested); skipped pron and noun POS, used two more det sentences instead
+jacket	pass	all 5 rows correct, verb sense (pipe jacketing) is a real if slightly technical usage, kept as-is
+january	repaired	rank1 was 5 words, rewrote; replaced r5 (rare-tagged given-name sense 67687) with another month-sense sentence
+jeans	repaired	replaced r5, which was a metalinguistic "Jean is the singular form of jeans" sentence (no real usage context); rewrote as natural use of singular "jean" (one jean leg)
+join	pass	all 5 rows correct and natural, no defects found
+journey	pass	all 5 rows correct and natural, no defects found
+juice	repaired	replaced r3, which used rare/slang sense 35035 ("any source of positive effects", tagged slang); rewrote with core sense 35027
+july	repaired	replaced r5 (untagged but judged rare given-name usage, parallel to january's rare-tagged 67687); rewrote as another month-sense sentence for consistency
+june	repaired	DATA GAP, not a normal repair: DB confirmed (direct query, word_id=408) to have ONLY ONE sense for "june" -- verb 35053, tagged dated/Southern-US/slang, meaning "to rush". No month-name sense exists in the DB at all for this headword. Rewrote all 5 sentences to be as natural as possible using this sole available sense (could not invent a month sense); flagging this word for review since no usable content exists for the intended CEFR meaning
+just	repaired	rank1 was 5 words, rewrote; kept r2-r5 (all correct); skipped noun/verb POS (both are archaic "joust" spelling) and intj POS (rare slang)
+keep	pass	all 5 rows correct, good sense variety already; skipped noun POS (only decent sense is "earn one's keep" idiom, too advanced for A1)
+key	repaired	replaced r5, which used sense 35152 ("keyed the door open with her card" -- unnatural, keycards don't "key" a lock) with sense 35157 "to key in" (type a code), a much more natural modern usage
+kilometre	pass	all 5 rows correct and natural, no defects found
+kind	pass	all 5 rows correct, good adj/noun coverage, no defects found

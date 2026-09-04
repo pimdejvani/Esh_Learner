@@ -31,7 +31,7 @@
 2	43263	noun	armies	0	Both armies agreed to stop fighting.
 3	43264	noun	army	0	She joined the army after finishing school.
 4	43267	noun	army	0	An army of volunteers cleaned the beach.
-5	43268	noun	armies	0	Armies of ants carried food toward their nests.
+5	43268	noun	Armies	0	Armies of ants carried food toward their nests.
 
 @ bar
 1	43435	noun	bar	1	We met at the bar after work.
@@ -87,7 +87,7 @@
 2	67741	num	billion	0	One billion is written as a one followed by nine zeros.
 3	67741	num	billions	0	The company serves billions of messages each day.
 4	67743	num	billion	0	I have told you a billion times to close the gate.
-5	67741	num	billions	0	Billions of people use mobile phones.
+5	67741	num	Billions	0	Billions of people use mobile phones.
 
 @ bin
 1	43683	noun	bin	1	I found my lost ring just before the rubbish bin was emptied.
@@ -97,7 +97,7 @@
 5	43692	verb	binning	0	The workers are binning the grain for winter storage.
 
 @ biology
-1	43696	noun	biology	1	Biology helped me understand how the tiny bird survived its injury.
+1	43696	noun	Biology	1	Biology helped me understand how the tiny bird survived its injury.
 2	43696	noun	biology	0	We studied plant cells in biology today.
 3	43697	noun	biology	0	The island's biology includes many rare plants.
 4	43698	noun	biology	0	The course examines the biology of whales.

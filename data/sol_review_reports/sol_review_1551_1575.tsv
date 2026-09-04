@@ -1,0 +1,25 @@
+carpet	pass	noun/verb senses (rug vs. lay-carpet vs. blanket-like coverage) correctly distinct across all 5 rows
+cartoon	pass	noun (animated film vs. humorous drawing) and verb senses correctly distinct
+case	pass	situation/legal/medical/box senses correctly distinct and natural
+cash	repaired	fixed r2 sense_id mismatch (44373->44372); replaced r5 RARE slang adj row with verb sense 44378 "cashes"
+castle	pass	residence/chess-rook/castling-move senses correctly distinct
+catch	repaired	fixed r3 sense_id mismatch (44398->44402, concrete "something captured" sense); rest verified against DB
+cause	pass	noun (general cause vs. charitable goal) and verb senses correctly distinct
+celebrate	pass	general-celebration vs. honour-by-rites senses correctly distinct
+celebrity	pass	person vs. abstract-fame senses correctly distinct
+certain	repaired	replaced r5 weak superlative row with det sense 44492 "Certain" for missing POS coverage; pron sense judged too abstract, skipped
+certainly	pass	three adv senses (surely / degree / emphatic-affirmative) correctly distinct
+chance	repaired	replaced r4 RARE/archaic verb sense (44504) with 44507 "chanced"; reworded r5 to drop hard-vocab "contest"
+character	pass	noun senses (persona/trait/type/strength/symbol) correctly distinct; verb POS is sole-RARE-obsolete, skipped
+charity	pass	organization/goods/kindness senses correctly distinct
+chat	repaired	replaced r2 (4th verb row) with noun sense 44537 "chat"; reworded r5 to target "chatting" for 3rd verb form; intj sense is non-learner-core, skipped
+chef	repaired	added missing learner-core restaurant head-cook sense (44549) to r2 and r4; verb POS senses are narrow/slang, skipped
+chemistry	pass	single core science sense used naturally across 5 varied contexts; rapport/blood-test senses judged secondary, skipped
+chip	repaired	fixed severe sense-monotony (fragment sense used 5x of 23 noun+15 verb senses); added microchip (r2), food-chip (r3), verb (r5)
+choice	pass	single noun sense used naturally across 5 varied contexts; adj "choice location" sense judged secondary, skipped
+church	pass	building sense used naturally across 5 contexts; intj/verb senses are RARE/narrow, skipped
+cigarette	pass	only noun sense exists, used correctly and naturally 5x; verb sense is RARE/slang, skipped
+circle	repaired	fixed r1 sense_id mismatch (44621->44623, group-arrangement sense); added missing verb POS as new r5 (44640 "circled")
+classical	repaired	added missing learner-core music-genre sense (44649) to r4 and ancient-Greek/Roman sense (44650) to r5, replacing two weak/vague rows
+clear	repaired	fixed severe sense-monotony (transparency adj sense used 5x); added ambiguity-free adj sense (r3) and two verb senses (r4, r5)
+clearly	pass	single core adv sense used naturally across 5 varied contexts; near-duplicate discourse-marker senses judged not essential, skipped

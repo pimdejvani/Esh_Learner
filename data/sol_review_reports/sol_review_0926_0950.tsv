@@ -1,0 +1,25 @@
+die	repaired	verb sense kept correct; added form variety (died/dies/die/dying) across ranks
+diet	repaired	added real adj sense (diet soda) and verb sense (dieting) beyond noun-only coverage
+difference	pass	noun-only coverage is correct; verb sense is obsolete/heraldry jargon, skipped
+different	pass	adj-only coverage is correct; adv/noun senses are archaic or vague philosophical terms, skipped
+difficult	pass	adj-only coverage is correct; verb sense is obsolete, skipped
+dinner	pass	noun-only coverage is correct; verb sense produces "We are dinnering", explicitly banned fabrication, skipped
+dirty	repaired	added real verb sense (dirtied) for r5 to cover verb POS
+discuss	repaired	added form variety (discussed/discussing/discusses), replaced B2-vocab sentence
+dish	repaired	added real verb sense (dished) for r5 to cover verb POS
+do	repaired	fixed sense_id mismatch: r1/r2/r4 were lexical "perform" (sense 31735) mislabeled with the syntactic-marker sense 31728; r3 rewritten as single-occurrence auxiliary question (sense 31729); r5 kept as negation auxiliary (31730); added form variety (did/does)
+doctor	pass	noun-only coverage is correct; verb sense is idiomatic/uncommon ("doctored back to health"), not core A1 usage, skipped
+dog	pass	noun-only coverage is correct; adj sense is slang, verb senses are informal/journalistic ("dogged by reporters"), not A1-appropriate, skipped
+dollar	pass	noun-only coverage is correct; other senses are regional currency variants or physics jargon
+door	pass	noun-only coverage is correct; verb sense "dooring" (cyclist collision) is niche jargon, skipped
+down	repaired	fixed POS mismatch: r5 "walk down the stairs" labeled adverb but functions as preposition (sense 31868); added real adj sense (feeling down/sad, sense 31876) for r3
+downstairs	repaired	fixed POS mismatch: r2/r3/r5 were labeled adjective but are predicative/directional adverb uses (sense 31922); kept r1/r4 as true premodifying adjective (31921)
+draw	repaired	fixed sense_id mismatch: all 5 rows pointed at sense 31928 ("pulling by force") though every sentence means "sketch a picture"; repointed to sense 32064; added form variety (drew/draws/drawing)
+dress	repaired	added real noun sense (the garment, sense 32124) and form variety (dressed/dressing/dresses)
+drink	repaired	added real noun sense (a beverage, sense 32146) and form variety (drank/drinking/drinks)
+drive	repaired	added real noun sense (a trip/journey, sense 32197) and form variety (drove/driving/drives)
+driver	pass	noun-only coverage is correct; no other usable POS in source
+during	pass	prep-only coverage is correct; verb sense is archaic participle of "dure", skipped
+dvd	repaired	fixed target casing: target field was lowercase "dvd" but all sentences use "DVD"
+each	repaired	added real pronoun sense ("each of us", sense 32241) and adverb sense ("ten dollars each", sense 32239); noun sense (wholesale unit) skipped as jargon
+ear	pass	noun-only coverage is correct; verb senses are archaic ("to plough") or narrow agricultural jargon ("to put forth ears"), skipped

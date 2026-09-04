@@ -1,0 +1,90 @@
+@ minimum
+1	64618	noun	minimum	1	The minimum requirement for the job is a high school diploma.
+2	64618	noun	minimum	0	We must maintain a minimum distance of two meters between tables.
+3	64618	noun	minimum	0	The minimum temperature recorded this winter was -10 degrees Celsius.
+4	64618	noun	minimum	0	She met the minimum criteria for the scholarship application.
+5	64618	noun	minimum	0	The minimum wage in the city is set at $15 per hour.
+@ minister
+1	64652	noun	minister	1	The minister led the morning service with calm and grace.
+2	64652	noun	minister	0	After the wedding, the minister blessed the couple and their families.
+3	64652	noun	minister	0	The minister visited the sick parishioner in the hospital.
+4	64652	noun	minister	0	She became a minister after years of theological study.
+5	64652	noun	minister	0	The minister delivered a heartfelt sermon on forgiveness.
+@ minor
+1	64661	adj	minor	1	The injury was minor, just a small cut on her hand.
+2	64661	adj	minor	0	He has a minor role in the new film, but he stands out.
+3	64661	adj	minor	0	The schedule change had only a minor impact on the meeting.
+4	64661	adj	minor	0	She has a minor interest in painting, mostly for relaxation.
+5	64661	adj	minor	0	The damage to the car was minor after the small crash.
+@ minority
+1	64641	noun	minority	1	The minority felt overlooked during the large meeting.
+2	64641	noun	minority	0	She acted as a minority voice in the debate.
+3	64641	noun	minority	0	The minority party won only a few seats in parliament.
+4	64641	noun	minority	0	His opinion represented a minority view among the team.
+5	64641	noun	minority	0	The minority report was ignored by the majority.
+@ mission
+1	64706	noun	mission	1	Her new mission was to help the local community every weekend.
+2	64706	noun	mission	0	The team's mission included repairing the damaged bridge by Friday.
+3	64706	noun	mission	0	He accepted the mission to lead the project despite the risks.
+4	64706	noun	mission	0	Their mission was to deliver supplies to the remote village.
+5	64706	noun	mission	0	She took on the mission of teaching English to children in the town.
+@ mixed
+1	64697	adj	mixed	1	The project received mixed reviews from teachers and students.
+2	64697	adj	mixed	0	Her reaction to the news was mixed, showing both relief and worry.
+3	64697	adj	mixed	0	The announcement produced a mixed response of hope and concern.
+4	64697	adj	mixed	0	The team had mixed results, winning two matches and losing two.
+5	64697	adj	mixed	0	The story has a mixed tone, blending humor and sadness.
+@ modify
+1	64702	verb	modify	1	She decided to modify the recipe to suit her taste.
+2	64702	verb	modify	0	The teacher asked the student to modify the paragraph for clarity.
+3	64702	verb	modify	0	They will modify the design before the final presentation.
+4	64702	verb	modify	0	He needs to modify his approach to solve the problem.
+5	64702	verb	modify	0	We must modify the schedule due to the unexpected delay.
+@ monitor
+1	64722	noun	monitor	1	The designer uses a large monitor to edit photographs.
+2	64722	noun	monitor	0	A second monitor gives her more space for documents.
+3	64722	noun	monitor	0	The new monitor displays colors more accurately.
+4	64722	noun	monitor	0	He connected the monitor to his laptop with a cable.
+5	64722	noun	monitor	0	The office replaced every old monitor with a newer model.
+@ moral
+1	64746	adj	moral	1	The teacher gave a moral lesson about honesty and fairness.
+2	64746	adj	moral	0	She made a moral choice to help the struggling family.
+3	64746	adj	moral	0	His actions were not just legal but also moral.
+4	64746	adj	moral	0	They faced a difficult moral question about telling the truth.
+5	64746	adj	moral	0	We need moral leadership to guide the nation.
+@ motor
+1	64763	noun	motor	1	The washing machine has a small motor inside it.
+2	64763	noun	motor	0	The fan stopped working because the motor failed.
+3	64763	noun	motor	0	A motor powers the electric train through the tunnel.
+4	64763	noun	motor	0	The drone uses a tiny motor to lift into the air.
+5	64763	noun	motor	0	The robot's motor made a loud buzzing sound.
+@ mount
+1	64782	noun	mount	1	The camera mount kept the lens steady during the long exposure.
+2	64782	noun	mount	0	She attached the television to a wall mount.
+3	64782	noun	mount	0	The telescope's mount allowed it to turn smoothly.
+4	64782	noun	mount	0	A damaged engine mount caused the car to vibrate.
+5	64782	noun	mount	0	He secured his phone in a dashboard mount.
+@ multiple
+1	64735	det	multiple	1	The box contains multiple small toys.
+2	64735	det	multiple	0	She received multiple invitations to the event.
+3	64735	det	multiple	0	The car has multiple safety features.
+4	64735	det	multiple	0	We need multiple copies of the document.
+5	64735	det	multiple	0	He used multiple tools to fix the machine.
+@ multiply
+1	64805	verb	multiply	1	Multiply six by seven to get forty-two.
+2	64805	verb	multiply	0	To find the area, multiply the room's length by its width.
+3	64805	verb	multiply	0	Multiply each decimal by one hundred to convert it to a percentage.
+4	64805	verb	multiply	0	The students learned how to multiply two fractions.
+5	64805	verb	multiply	0	This calculator can multiply very large numbers.
+@ mysterious
+1	64759	adj	mysterious	1	The old book had a mysterious cover with no title.
+2	64759	adj	mysterious	0	She found a mysterious note left on her desk.
+3	64760	adj	mysterious	0	The forest at night felt mysterious and quiet.
+4	64762	adj	mysterious	0	He gave a mysterious smile before walking away.
+5	64759	adj	mysterious	0	The origin of the signal was still mysterious.
+@ neat
+1	64813	adj	neat	1	Her desk was neat with all papers in order.
+2	64813	adj	neat	0	The kitchen was neat after the cleaning session.
+3	64813	adj	neat	0	He arranged his tools in neat rows on the shelf.
+4	64813	adj	neat	0	The classroom looked neat before the students arrived.
+5	64813	adj	neat	0	Her backpack was neat with everything in its place.

@@ -1,0 +1,144 @@
+@ lay
+1	57326	verb	laid	1	She gently laid the sleeping baby on the soft blanket.
+2	57326	verb	lay	0	Please lay the book flat on the table.
+3	57326	verb	laying	0	He was laying the picnic blanket when it began to rain.
+4	57326	verb	Lay	0	Lay the plates beside the sink before dinner.
+5	57326	verb	lays	0	She always lays her clothes out the night before.
+@ layer
+1	57313	noun	layer	1	A thick layer of snow covered the playground.
+2	57313	noun	layer	0	Spread a layer of butter on the bread.
+3	57313	noun	layer	0	Dust formed a grey layer on the shelf.
+4	57313	noun	layers	0	Add several layers of paint for a smooth finish.
+5	57321	verb	layered	0	She layered the salad with lettuce, cheese, and tomatoes.
+@ leading
+1	57306	verb	leading	1	Our guide is leading a large group through the busy museum.
+2	57306	verb	leading	0	She is leading the children carefully across the road.
+3	57307	adj	leading	0	She took a leading role in organizing the rescue.
+4	57308	adj	leading	0	He is a leading expert in modern medicine.
+5	57306	verb	leading	0	The dog is leading us straight home.
+@ leaf
+1	57388	noun	leaf	1	She kept a red leaf from the day they first met.
+2	57388	noun	leaves	0	The leaves fall from the trees in autumn.
+3	57391	noun	leaf	0	A leaf had been torn from the old book.
+4	57392	noun	leaf	0	The cake was covered with gold leaf.
+5	57388	noun	leaf	0	A green leaf floated on the surface of the pond.
+@ leather
+1	57370	noun	leather	1	His grandfather gave him a brown leather belt.
+2	57370	noun	Leather	0	Rain left dark marks on the leather of his shoes.
+3	57370	noun	leather	0	The bag is covered in soft leather.
+4	57378	adj	leather	0	She bought a pair of leather boots for winter.
+5	57370	noun	leather	0	The chair has a leather seat.
+@ legal
+1	57418	adj	legal	1	The family asked for legal advice before signing.
+2	57418	adj	legal	0	The company sought legal advice before signing the contract.
+3	57418	adj	legal	0	She works in a legal office.
+4	57418	adj	legal	0	They needed legal help after the accident.
+5	57418	adj	legal	0	The document uses legal language.
+@ leisure
+1	57385	noun	leisure	1	On weekends, she enjoys reading for leisure.
+2	57385	noun	leisure	0	She spends much of her leisure time painting.
+3	57385	noun	leisure	0	He has little leisure during exam week.
+4	57385	noun	leisure	0	Walking is a good leisure activity.
+5	57385	noun	leisure	0	The park gives people space for leisure.
+@ length
+1	57406	noun	length	1	Measure the length of the table before buying a cloth.
+2	57406	noun	length	0	The tailor checked the length of each sleeve.
+3	57406	noun	length	0	The rope has a length of three metres.
+4	57406	noun	length	0	The length of the room is six metres.
+5	57406	noun	length	0	We cut the wood to the right length.
+@ limit
+1	57429	noun	limit	1	The school set a limit of two cookies per child.
+2	57429	noun	limit	0	The airline has a strict weight limit for each bag.
+3	57429	noun	limit	0	There is a speed limit on this road.
+4	57443	verb	limit	0	Doctors advise people to limit their sugar intake.
+5	57429	noun	limit	0	We reached the limit of our budget.
+@ lip
+1	57446	noun	lip	1	She had a little chocolate on her lower lip.
+2	57446	noun	lip	0	A small cut appeared on his upper lip.
+3	57446	noun	lip	0	He bit his lip while thinking.
+4	57446	noun	lip	0	The cold wind made my lip dry.
+5	57446	noun	lip	0	The child touched her lip with one finger.
+@ liquid
+1	57471	noun	liquid	1	After the fever, the only thing she could drink was a warm liquid.
+2	57471	noun	liquids	0	Do not put liquids near the computer.
+3	57473	adj	liquid	0	Butter becomes liquid when it is hot.
+4	57474	adj	liquid	0	The company keeps some liquid assets in the bank.
+5	57471	noun	liquid	0	The medicine is a thick green liquid.
+@ literature
+1	57466	noun	literature	1	We studied children's literature in English class.
+2	57466	noun	literature	0	She developed a love of literature at school.
+3	57466	noun	literature	0	The library has a section for world literature.
+4	57466	noun	literature	0	She enjoys literature from the nineteenth century.
+5	57466	noun	literature	0	This course introduces modern literature.
+@ living
+1	57484	verb	living	1	My aunt is living with us while her house is repaired.
+2	57484	verb	living	0	They are living happily by the sea.
+3	57485	adj	living	0	A living creature needs food, water, and rest.
+4	57492	noun	living	0	What do you do for a living?
+5	57484	verb	living	0	A family is living in the apartment above the bakery.
+@ locate
+1	57481	verb	locate	1	Use the map to locate the nearest bus stop.
+2	57481	verb	locates	0	This app quickly locates your phone if it's lost.
+3	57481	verb	locating	0	The team spent all morning locating the lost dog.
+4	57482	verb	locate	0	The council must locate the new hospital near the school.
+5	57481	verb	locate	0	She managed to locate her missing keys under the sofa.
+@ location
+1	57496	noun	location	1	The map shows the location of the new library.
+2	57496	noun	location	0	The director chose a seaside location for the film.
+3	57496	noun	location	0	Please send me your current location.
+4	57496	noun	location	0	The shop's location is near the station.
+5	57496	noun	location	0	We chose a quiet location for the picnic.
+@ lonely
+1	57503	adj	lonely	1	He felt lonely after moving to a new town.
+2	57503	adj	lonely	0	She became lonely when all her friends moved away.
+3	57503	adj	lonely	0	The old man was lonely without his friends.
+4	57503	adj	lonely	0	She gets lonely when her family travels.
+5	57503	adj	lonely	0	Calling his family helped him feel less lonely.
+@ loss
+1	57518	noun	loss	1	The loss of her wallet spoiled the day.
+2	57518	noun	Loss	0	The loss of his passport delayed the journey.
+3	57524	noun	loss	0	The company reported a large loss this year.
+4	57522	noun	loss	0	The family mourned the loss of their dog.
+5	57518	noun	loss	0	There was a loss of power during the storm.
+@ luxury
+1	57506	noun	luxury	1	A warm bath felt like a luxury after camping.
+2	57507	noun	luxury	0	Eating at that expensive restaurant is a rare luxury for us.
+3	57507	noun	luxury	0	A private pool is a luxury for most families.
+4	57511	adj	luxury	0	They stayed in a luxury hotel by the beach.
+5	57508	noun	luxury	0	Fresh flowers are a small luxury in winter.
+@ mad
+1	57527	adj	mad	1	The old story says the king went mad with fear.
+2	57528	adj	mad	0	Are you mad at me for missing your call?
+3	57527	adj	mad	0	People once called someone mad when they were mentally ill.
+4	57528	adj	mad	0	She gets mad when her brother borrows her clothes without asking.
+5	57533	adj	mad	0	My sister is mad about horses and rides every weekend.
+@ magic
+1	57559	noun	magic	1	In the story, magic opened the locked castle door.
+2	57559	noun	magic	0	The old woman used magic to protect the village.
+3	57559	noun	magic	0	The wizard used magic to change the weather.
+4	57569	adj	magic	0	The children watched an amazing magic show.
+5	57559	noun	magic	0	She wore a ring that was said to have magic.
+@ mainly
+1	57514	adv	mainly	1	We chose the cafe mainly because it was nearby.
+2	57514	adv	mainly	0	The class is mainly for new students.
+3	57514	adv	mainly	0	The restaurant mainly serves rice dishes at lunchtime.
+4	57514	adv	mainly	0	The book is mainly about animals.
+5	57514	adv	mainly	0	Our work is mainly done online.
+@ mall
+1	57541	noun	mall	1	We met at the mall to buy a birthday gift.
+2	57541	noun	mall	0	The new mall contains more than fifty shops.
+3	57541	noun	mall	0	The mall is busy on Saturday afternoons.
+4	57541	noun	mall	0	There is a bakery at the end of the mall.
+5	57541	noun	mall	0	They walked through the mall after lunch.
+@ management
+1	57555	noun	management	1	Good management helped the small shop save money.
+2	57555	noun	management	0	The new management improved working conditions at the factory.
+3	57555	noun	management	0	The hotel needs better management.
+4	57555	noun	management	0	She studied management at college.
+5	57555	noun	management	0	Time management helps students finish work.
+@ marketing
+1	57550	verb	marketing	1	The company is marketing its new drink to teenagers.
+2	57554	noun	marketing	0	She is studying marketing at university this year.
+3	57550	verb	marketing	0	They are marketing the summer show to local families.
+4	57550	verb	marketing	0	He is marketing his art through social media.
+5	57554	noun	marketing	0	Good marketing can help a small business grow quickly.

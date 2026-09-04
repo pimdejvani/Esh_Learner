@@ -1,0 +1,114 @@
+@ somebody
+1	40089	pron	somebody	1	I heard somebody crying quietly in the room next door.
+2	40089	pron	Somebody	0	Somebody left an umbrella on the bus this morning.
+3	40090	pron	somebody	0	We need somebody strong to carry these heavy boxes.
+4	40092	noun	somebody	0	He worked for years to become a somebody in music.
+5	40089	pron	Somebody	0	Somebody has to tell her the bad news today.
+@ someone
+1	40093	pron	someone	1	I was lost until someone kindly showed me the way home.
+2	40093	pron	Someone	0	Someone is waiting for you at the front door.
+3	40094	noun	someone	0	Do you need a gift for that special someone?
+4	40095	noun	someone	0	He always wanted to be someone in this small town.
+5	40093	pron	someone	0	Please ask someone at the station for help.
+@ something
+1	40096	pron	Something	1	Something moved in the dark garden and my heart stopped.
+2	40096	pron	something	0	I would like something warm to drink.
+3	40098	pron	something	0	Would you like something to eat before we leave?
+4	40099	pron	something	0	Her singing on that stage was really something.
+5	40101	adv	something	0	He looks something like his older brother.
+@ sometimes
+1	40106	adv	Sometimes	1	Sometimes I miss my old home so much that I cry.
+2	40106	adv	sometimes	0	We sometimes walk to school together.
+3	40106	adv	sometimes	0	The bus is sometimes late in the morning.
+4	40106	adv	sometimes	0	She sometimes forgets her keys at work.
+5	40106	adv	Sometimes	0	Sometimes the weather changes very quickly here.
+@ son
+1	40109	noun	son	1	Her son ran into her arms after a year away.
+2	40109	noun	son	0	My son starts school again next Monday.
+3	40109	noun	sons	0	Their two sons play football every weekend.
+4	40114	noun	son	0	Good job, son, the coach said with a smile.
+5	40109	noun	sons	0	Both sons wrote long letters to their mother.
+@ soon
+1	40132	adv	soon	1	I will see my family soon and I cannot stop smiling.
+2	40132	adv	soon	0	The train will arrive soon, so please wait here.
+3	40132	adv	sooner	0	We should have left sooner to avoid the traffic.
+4	40128	adj	soonest	0	I need the soonest date you have available.
+5	40130	adj	soon	0	A new shop is soon to open in this street.
+@ soup
+1	40169	noun	soup	1	Warm soup made me feel better after school.
+2	40170	noun	soup	0	She ordered a soup for lunch.
+3	40169	noun	soups	0	The cafe serves three soups every day.
+4	40169	noun	soup	0	My mother makes chicken soup when I am ill.
+5	40170	noun	soup	0	He finished his soup and asked for bread.
+@ special
+1	40246	adj	special	1	This old ring is special to me because it was my grandmother's.
+2	40245	adj	special	0	She made a special cake for his birthday.
+3	40255	noun	special	0	Today's lunch special is fish with rice.
+4	40256	noun	specials	0	The channel shows Christmas specials every December.
+5	40247	adj	special	0	The special forces arrived by helicopter at dawn.
+@ spell
+1	40272	verb	spell	1	I was so nervous I could not spell my own name.
+2	40267	noun	spell	0	The witch put a magic spell on the prince.
+3	40272	verb	spelled	0	She spelled the word correctly on her first try.
+4	40272	verb	spelling	0	He is spelling a hard word out loud.
+5	40267	noun	spells	0	The old book is full of strange spells.
+@ spelling
+1	40293	noun	spelling	1	My spelling was so bad that the teacher smiled kindly.
+2	40292	verb	spelling	0	She is spelling the word slowly for the class.
+3	40294	noun	spelling	0	Check the spelling before you send the email.
+4	40293	noun	spellings	0	British and American spellings are often different.
+5	40293	noun	spelling	0	Good spelling helps readers understand your writing.
+@ spend
+1	40302	verb	spend	1	I want to spend more time with my family before they leave.
+2	40298	verb	spend	0	Do not spend all your money in one shop.
+3	40302	verb	spent	0	We spent the whole day at home together.
+4	40298	verb	spending	0	She is spending less money this month.
+5	40298	verb	spends	0	He spends too much on computer games.
+@ start
+1	40477	noun	start	1	After a terrible start, our team finally won the match.
+2	40485	verb	start	0	We start school again tomorrow morning.
+3	40487	verb	started	0	The rain started at noon and did not stop.
+4	40485	verb	starting	0	She is starting a new job next week.
+5	40478	noun	start	0	He woke with a start when the door slammed.
+@ statement
+1	40506	noun	statement	1	Her statement to the police helped find the missing child.
+2	40508	noun	statement	0	The bank sent a statement at the end of the month.
+3	40507	noun	statement	0	The minister made a short statement about the new law.
+4	40506	noun	statements	0	The police checked the statements from both drivers.
+5	40506	noun	statement	0	Please sign your statement at the bottom of the page.
+@ strong
+1	40681	adj	strong	1	He is strong enough to lift it.
+2	40687	adj	strong	0	This coffee is too strong for me.
+3	40683	adj	strong	0	The wind is strong today, so close the window.
+4	40681	adj	stronger	0	After months of training she is stronger than before.
+5	40681	adj	strongest	0	This is the strongest team in the school.
+@ student
+1	40704	noun	student	1	The new student cried on her first day at school.
+2	40704	noun	student	0	Every student needs a book for this class.
+3	40703	noun	students	0	The students are ready for the test.
+4	40705	noun	student	0	She is a science student at the university.
+5	40706	adj	student	0	A student driver was practising in the car park.
+@ study
+1	40707	verb	study	1	I study English every night because I dream of living abroad.
+2	40716	noun	study	0	Father spends all his time in the study reading.
+3	40708	verb	study	0	I study medicine at the university.
+4	40707	verb	studied	0	He studied all night before the big exam.
+5	40710	verb	studying	0	She is studying the map before the hike.
+@ success
+1	40763	noun	success	1	After many failures, her success made the whole family cry.
+2	40764	noun	success	0	The shop was a financial success in its first year.
+3	40765	noun	success	0	Her brother is a success in everything he tries.
+4	40763	noun	successes	0	The team celebrated its successes at the end of the year.
+5	40763	noun	success	0	Practice is the key to success in music.
+@ sun
+1	40798	name	sun	1	The sun came out after three days of heavy rain.
+2	40800	noun	sun	0	The flowers need plenty of sun to grow well.
+3	40798	name	sun	0	We watched the sun go down behind the hills.
+4	40807	verb	sunned	0	The cat sunned itself on the warm doorstep.
+5	40807	verb	sunning	0	She is sunning herself by the pool.
+@ sunday
+1	67714	noun	Sunday	1	Every Sunday we visit Grandma and eat her sweet cakes.
+2	67714	noun	Sunday	0	Sunday is a quiet day for our family.
+3	67714	noun	Sundays	0	They play football on Sundays in the park.
+4	67720	adv	Sunday	0	The shop opens Sunday at ten in the morning.
+5	67714	noun	Sunday	0	I finished all my homework last Sunday evening.

@@ -8,7 +8,7 @@
 1	41464	adv	today	1	We do it today.
 2	41464	adv	today	0	The package must arrive today before the shop closes.
 3	41465	adv	today	0	People today can send messages around the world in seconds.
-4	41467	noun	today	0	Today is the final day of the school fair.
+4	41467	noun	Today	0	Today is the final day of the school fair.
 5	41469	noun	today	0	The students of today use technology in every subject.
 @ together
 1	41471	adv	together	1	We do it together.
@@ -31,14 +31,14 @@
 @ tomorrow
 1	41498	adv	tomorrow	1	We do it tomorrow.
 2	41498	adv	tomorrow	0	Please return the library book tomorrow morning.
-3	41502	noun	tomorrow	0	Tomorrow is the first day of our holiday.
+3	41502	noun	Tomorrow	0	Tomorrow is the first day of our holiday.
 4	41499	adv	tomorrow	0	A choice made today may affect us tomorrow.
 5	41503	noun	tomorrow	0	These young inventors are building a better tomorrow.
 @ tonight
 1	41504	adv	tonight	1	We do it tonight.
 2	41504	adv	tonight	0	The moon will be full tonight.
 3	41504	adv	tonight	0	I need to finish this report tonight.
-4	41506	noun	tonight	0	Tonight is our last evening by the sea.
+4	41506	noun	Tonight	0	Tonight is our last evening by the sea.
 5	41506	noun	tonight	0	The weather forecast for tonight includes heavy rain.
 @ too
 1	41507	adv	too	1	We do it too.
@@ -72,7 +72,7 @@
 5	41542	noun	town	0	Call me when you get to town.
 @ traffic
 1	41549	noun	traffic	1	Heavy traffic delayed the ambulance, but it reached the hospital in time.
-2	41549	noun	traffic	0	Traffic moves slowly during the morning rush hour.
+2	41549	noun	Traffic	0	Traffic moves slowly during the morning rush hour.
 3	41549	noun	traffic	0	We waited for the traffic to pass before crossing the road.
 4	41550	noun	traffic	0	Holiday traffic at the airport increases in December.
 5	41552	noun	traffic	0	The website receives most of its traffic in the evening.

@@ -1,0 +1,90 @@
+@ criterion
+1	62610	noun	criterion	1	The teacher used fairness as a criterion for grading essays.
+2	62610	noun	criterion	0	Honesty is a key criterion in choosing new team members.
+3	62610	noun	criteria	0	Speed and accuracy are the main criteria for the competition.
+4	62610	noun	criterion	0	The company set safety as the primary criterion for equipment design.
+5	62610	noun	criterion	0	A good idea must meet the criterion of practicality before implementation.
+@ critic
+1	62603	noun	critic	1	The film critic gave a detailed review of the new movie.
+2	62603	noun	critic	0	She is a respected critic in the art world.
+3	62603	noun	critic	0	The music critic praised the orchestra's performance.
+4	62603	noun	critic	0	A film critic watched the premiere and wrote a report.
+5	62603	noun	critic	0	The theater critic enjoyed the play's original script.
+@ critical
+1	62645	adj	critical	1	She was critical of the new policy from the start.
+2	62645	adj	critical	0	He was always critical of his coworkers' mistakes.
+3	62645	adj	critical	0	The reviewer was critical of the film's weak plot.
+4	62645	adj	critical	0	My teacher is critical when grading our essays.
+5	62645	adj	critical	0	They were critical of the team's poor performance.
+@ criticism
+1	62661	noun	criticism	1	The artist faced harsh criticism after the gallery rejected her latest work.
+2	62661	noun	criticism	0	His speech drew widespread criticism from the audience.
+3	62661	noun	criticism	0	The film received strong criticism for its lack of character development.
+4	62661	noun	criticism	0	She handled the criticism with grace and professionalism.
+5	62661	noun	criticism	0	The report included serious criticism of the government's policies.
+@ criticize
+1	62659	verb	criticized	1	The teacher criticized the student's careless handwriting.
+2	62659	verb	criticized	0	She criticized the new policy for ignoring community needs.
+3	62659	verb	criticized	0	He criticized the manager's decision during the meeting.
+4	62659	verb	criticized	0	The reviewer criticized the film for its weak plot.
+5	62659	verb	criticized	0	They criticized the government's handling of the crisis.
+@ crop
+1	62663	noun	crop	1	The farmer planted a new crop of wheat this spring.
+2	62663	noun	crop	0	This year's crop of corn was unusually large.
+3	62663	noun	crop	0	They sold their crop at the local market.
+4	62663	noun	crop	0	The drought damaged the entire crop of soybeans.
+5	62663	noun	crop	0	A good crop of barley means a profitable harvest.
+@ crucial
+1	62687	adj	crucial	1	The missing key was crucial to opening the ancient door.
+2	62687	adj	crucial	0	Good communication is crucial for team success.
+3	62687	adj	crucial	0	Her decision was crucial in saving the project.
+4	62687	adj	crucial	0	The test results were crucial for the medical diagnosis.
+5	62687	adj	crucial	0	A stable internet connection is crucial for online learning.
+@ cure
+1	62733	noun	cure	1	The doctor found a new cure for the rare illness.
+2	62733	noun	cure	0	After months of treatment, the cure finally worked.
+3	62733	noun	cure	0	This herbal remedy is a natural cure for headaches.
+4	62733	noun	cure	0	The scientist tested the cure on lab mice.
+5	62733	noun	cure	0	The old medicine was a cure for fever.
+@ curve
+1	62719	noun	curve	1	The car took the curve smoothly without slowing down.
+2	62719	noun	curve	0	Be careful on this sharp curve near the top of the hill.
+3	62719	noun	curve	0	The highway has a long curve that stretches for nearly a mile.
+4	62719	noun	curve	0	A sudden curve caught the driver off guard and caused a near accident.
+5	62719	noun	curves	0	The race track features several tight curves that test the driver's skill.
+@ curved
+1	62690	adj	curved	1	The sharply curved road made driving difficult.
+2	62690	adj	curved	0	She checked her makeup in the curved mirror on the wall.
+3	62690	adj	curved	0	The edge of the plate was gently curved, not sharp.
+4	62690	adj	curved	0	The artist painted a curved line across the canvas.
+5	62690	adj	curved	0	The handle of the cup was perfectly curved for comfort.
+@ debate
+1	62709	verb	debate	1	The candidates will debate the new tax plan tomorrow night.
+2	62709	verb	debate	0	Students must debate the topic in small groups during class.
+3	62709	verb	debate	0	The mayor agreed to debate the city's budget with council members.
+4	62709	verb	debated	0	They debated the issue for over an hour before reaching a decision.
+5	62709	verb	debate	0	The two leaders will debate the climate policy in front of millions.
+@ debt
+1	62754	noun	debt	1	She felt a debt of gratitude to her mentor for years of guidance.
+2	62754	noun	debt	0	He believed he had a debt of honour to repay.
+3	62754	noun	debt	0	The soldier felt a debt to the comrades who had saved his life.
+4	62754	noun	debt	0	He repaid his debt to the community by volunteering every weekend.
+5	62754	noun	debt	0	She felt a moral debt to support the friend who had once helped her.
+@ decent
+1	62692	adj	decent	1	She wore a decent dress to the formal dinner.
+2	62695	adj	decent	0	The meeting room had a decent view of the city skyline.
+3	62695	adj	decent	0	He gave a decent answer that satisfied the teacher.
+4	62695	adj	decent	0	We found a decent spot to sit near the garden gate.
+5	62695	adj	decent	0	The weather was decent for a walk in the park.
+@ declare
+1	62701	verb	declare	1	The mayor will declare a state of emergency at noon.
+2	62701	verb	declared	0	She declared her support for the project in the meeting.
+3	62701	verb	declared	0	He declared the room safe after the inspection.
+4	62701	verb	declared	0	They declared the game over due to rain.
+5	62701	verb	declare	0	The court will declare whether the contract is valid at 3 p.m.
+@ decline
+1	62777	noun	decline	1	The company saw a sharp decline in sales last year.
+2	62775	noun	decline	0	The car slowed as it approached a steep decline in the mountain road.
+3	62775	noun	decline	0	The path dropped down a steep decline into the valley.
+4	62775	noun	decline	0	The skier sped down the icy decline with perfect control.
+5	62775	noun	decline	0	A gentle decline led from the garden to the stream below.

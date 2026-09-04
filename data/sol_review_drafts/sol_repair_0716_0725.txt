@@ -1,0 +1,60 @@
+@ effectively
+1	55773	adv	effectively	1	The firefighters worked effectively together and pulled the trapped family out just in time.
+2	55773	adv	effectively	0	She communicates effectively with her team during busy shifts.
+3	55773	adv	more effectively	0	He studies more effectively when he turns off his phone.
+4	55773	adv	most effectively	0	Of all the coaches, she taught skating most effectively.
+5	55774	adv	effectively	0	The company was effectively bankrupt, even though it stayed open for another year.
+@ effort
+1	55775	noun	effort	1	After months of exhausting effort, she finally crossed the marathon finish line in tears.
+2	55775	noun	effort	0	It takes effort to learn a new language well.
+3	55776	noun	effort	0	The charity's effort to build clean water wells reached ten villages this year.
+4	55775	noun	efforts	0	Her efforts to fix the old bicycle finally paid off.
+5	55776	noun	efforts	0	Local efforts to clean the beach attracted dozens of volunteers.
+@ election
+1	55780	noun	election	1	The whole village celebrated in the street when the results of the election were announced at midnight.
+2	55780	noun	election	0	Citizens over eighteen can vote in the national election.
+3	55780	noun	election	0	The class held an election to choose a new representative.
+4	55781	noun	election	0	Her election as class president surprised nobody who knew her.
+5	55780	noun	elections	0	Local elections take place every four years in many countries.
+@ element
+1	55786	noun	element	1	Trust is the key element of any long friendship, especially after a hard year.
+2	55787	noun	element	0	Oxygen is an element that every living thing needs to survive.
+3	55796	noun	element	0	The party had an element of surprise, since nobody expected the fireworks.
+4	55801	noun	element	0	She felt completely in her element while teaching the dance class.
+5	55805	noun	elements	0	The kettle stopped heating because one of its elements had burned out.
+@ embarrassed
+1	55811	adj	embarrassed	1	She turned bright red and felt embarrassed when she tripped in front of the whole class.
+2	55811	adj	embarrassed	0	He felt embarrassed about forgetting his best friend's birthday.
+3	55811	adj	more embarrassed	0	I was more embarrassed after everyone started laughing.
+4	55811	adj	most embarrassed	0	Of all the players, the goalkeeper looked most embarrassed after missing the easy save.
+5	55813	verb	embarrassed	0	His clumsy joke embarrassed her at the dinner table.
+@ embarrassing
+1	55816	adj	embarrassing	1	It was so embarrassing when my phone rang loudly during the silent exam.
+2	55816	adj	embarrassing	0	Spilling juice on my shirt before the interview was embarrassing.
+3	55816	adj	more embarrassing	0	Losing the game was more embarrassing than losing the practice match.
+4	55816	adj	most embarrassing	0	That was the most embarrassing moment of my whole vacation.
+5	55814	verb	embarrassing	0	He felt guilty later for embarrassing his little brother in front of friends.
+@ emergency
+1	55817	noun	emergency	1	We called an ambulance the moment we realized it was a real emergency.
+2	55817	noun	emergency	0	Keep a flashlight in the car in case of an emergency.
+3	55817	noun	emergencies	0	Hospitals need extra staff ready for emergencies at night.
+4	55818	noun	emergency	0	They rushed her to the emergency department after the accident.
+5	55817	noun	emergency	0	Every classroom should have a plan for what to do in an emergency.
+@ emotion
+1	55823	noun	emotion	1	Tears of joy streamed down her face, an emotion she couldn't hide at her sister's wedding.
+2	55823	noun	emotion	0	It's normal to feel some emotion before a big exam.
+3	55823	noun	emotions	0	He tries to control his emotions when he loses a game.
+4	55823	noun	emotion	0	Music can bring out strong emotion in people.
+5	55824	noun	emotion	0	Scientists also study emotion in animals like dogs and dolphins.
+@ employment
+1	55825	noun	employment	1	After two years of searching, she finally found employment at the hospital where her mother once worked.
+2	55825	noun	Employment	0	Employment in this town depends heavily on the fishing industry.
+3	55827	noun	employment	0	He has been in full employment since he graduated last year.
+4	55830	noun	employment	0	The employment rate rose slightly after the new factory opened.
+5	55826	noun	employment	0	The employment of new safety equipment reduced accidents at the plant.
+@ encourage
+1	55831	verb	encouraged	1	Her coach's words encouraged her to keep running even after she fell during the race.
+2	55831	verb	encourage	0	Teachers should encourage students to ask questions in class.
+3	55832	verb	encourages	0	The good weather encourages more people to visit the park every weekend.
+4	55833	verb	encouraging	0	The city is encouraging small businesses by lowering their taxes.
+5	55833	verb	encouraged	0	The new scholarship encouraged talented students to apply from remote villages.

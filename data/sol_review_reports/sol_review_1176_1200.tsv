@@ -1,0 +1,25 @@
+meet	pass	solid verb+noun rows; skipped adj (rare archaic/obsolete)
+meeting	repaired	r1-r4 sense mismatch (36261 "act of meeting" vs actual gathering sense 36262); repointed all four; rewrote thin rank1
+member	pass	solid noun rows; skipped verb (rare dialectal/obsolete pronunciation spelling of remember)
+menu	repaired	r1-r4 sense mismatch (36281 banquet bill-of-fare vs actual restaurant-menu sense 36282); repointed; rewrote thin rank1; replaced rare verb r5 with computer-menu noun sense
+message	repaired	rewrote thin rank1 only, rest kept
+midnight	repaired	skipped adj (rare poetic "utterly dark", mismatched with "midnight blue"); replaced r4/r5 with natural noun sentences
+mile	pass	solid, single POS, no changes needed
+milk	repaired	rewrote thin rank1 only, rest kept
+million	pass	solid num rows, no changes needed
+miss	repaired	rewrote thin rank1; repointed r4 sense mismatch (36344 "fail to hit" vs actual "lacking" sense 36353); replaced unnatural "close miss" r5 with idiomatic "near miss"
+mistake	repaired	rewrote thin rank1 only, rest kept
+model	repaired	added genuine untagged adj sense (36390, model employee); fixed r2/r3 sense mismatches (representation vs style/design)
+modern	repaired	skipped noun (rare/literary "the moderns" sense, no learner value); replaced r5 with common adj sentence
+moment	repaired	all rows mismatched sense (36400 "point in space" vs actual "brief time" sense 36403); repointed all five; rewrote thin rank1
+monday	repaired	rewrote thin rank1 only, rest kept
+money	repaired	skipped adj (rare slang "money"=cool); replaced r5 with plain noun sentence
+month	repaired	rewrote thin rank1 only, rest kept
+more	repaired	rewrote thin rank1; skipped noun (all senses rare: carrot/parsnip/root/nonstandard) and verb (rare "to root up")
+morning	repaired	skipped intj (no intj POS in DB at all) and secondary noun sense 36443 (unnatural "morning stage" collocation); replaced r4
+most	pass	solid rows across adv/det/noun/pron; skipped adj (rare dated,slang "the most"=best)
+mountain	pass	solid noun rows across distinct senses, no changes needed
+mouse	repaired	replaced dated/literary verb sense r4 (cat "moused") with common noun metaphor sense (shy person)
+mouth	repaired	replaced obsolete sense r2 (36513 "testimony") with common "mouth of the river" sense (36507)
+move	pass	solid verb+noun rows, no changes needed
+movie	repaired	fixed r4 idiom mismatch (singular "movie" vs the idiom "the movies"); replaced rare slang sense r5 with common sense

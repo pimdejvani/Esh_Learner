@@ -1,0 +1,150 @@
+@ reaction
+1	58778	noun	reaction	1	Her sudden reaction to the loud noise made everyone jump.
+2	58778	noun	reaction	0	The crowd's reaction to the surprise ending was loud and immediate.
+3	58778	noun	reaction	0	His quick reaction saved the ball from going out of bounds.
+4	58778	noun	reaction	0	The teacher noticed a negative reaction to the new homework policy.
+5	58778	noun	reaction	0	A strong reaction to the news spread through the office quickly.
+@ reality
+1	58798	noun	reality	1	The reality of the situation became clear when she saw the broken window.
+2	58798	noun	reality	0	He finally accepted the reality that he had made a serious mistake.
+3	58798	noun	reality	0	The reality of war is far different from what the movies show.
+4	58798	noun	reality	0	She struggled to face the reality of losing her job.
+5	58798	noun	reality	0	The reality of climate change is now undeniable to most scientists.
+@ receipt
+1	58847	noun	receipt	1	She checked the receipt and noticed that the shop had charged her twice.
+2	58847	noun	receipt	0	Keep the receipt in case you need to return the jacket.
+3	58847	noun	receipt	0	The cashier placed the receipt inside the bag.
+4	58847	noun	receipt	0	He asked for a receipt after paying for the repair.
+5	58847	noun	receipt	0	The receipt shows the date and total price of the purchase.
+@ recommendation
+1	58793	noun	recommendation	1	The teacher's recommendation helped the student get into college.
+2	58793	noun	recommendation	0	She gave me a useful recommendation for a local restaurant.
+3	58793	noun	recommendation	0	The doctor's recommendation was to rest for two days.
+4	58793	noun	recommendation	0	His recommendation to use a different software was very helpful.
+5	58793	noun	recommendation	0	The committee's recommendation was accepted by the board.
+@ reference
+1	58872	noun	reference	1	The report includes a reference to a recent scientific study.
+2	58872	noun	reference	0	Check the reference at the bottom of the page for the source.
+3	58869	noun	reference	0	This dictionary is a useful reference for language learners.
+4	58867	noun	reference	0	She asked her former manager to provide a job reference.
+5	58873	noun	reference	0	The textbook is the main reference for this course.
+@ reflect
+1	58881	verb	reflects	1	The glass surface reflects the sunlight brightly.
+2	58881	verb	reflects	0	The shiny floor reflects the ceiling lights.
+3	58881	verb	reflects	0	The mirror reflects the image of the window.
+4	58881	verb	reflects	0	The metal sheet reflects the afternoon sun.
+5	58881	verb	reflects	0	The water reflects the clouds above.
+@ regularly
+1	58806	adv	regularly	1	She regularly visits her grandmother on Sunday mornings.
+2	58806	adv	regularly	0	The equipment is regularly inspected for safety problems.
+3	58806	adv	regularly	0	They exercise regularly at the gym after work.
+4	58806	adv	regularly	0	The website is regularly updated with new information.
+5	58806	adv	regularly	0	He regularly checks his email throughout the afternoon.
+@ reject
+1	58858	verb	rejected	1	The manager rejected my application without explanation.
+2	58858	verb	rejected	0	She rejected the proposal because it was too risky.
+3	58858	verb	rejected	0	They rejected the new policy during the meeting.
+4	58858	verb	rejected	0	He rejected the gift with a polite smile.
+5	58858	verb	rejected	0	The committee rejected the suggestion outright.
+@ relate
+1	58888	verb	relate	1	She will relate the story to the class tomorrow.
+2	58888	verb	relate	0	He tried to relate the events as they happened.
+3	58888	verb	relate	0	The witness was asked to relate what she saw.
+4	58888	verb	relate	0	I need to relate my experience clearly.
+5	58888	verb	relate	0	Can you relate the details of the meeting?
+@ related
+1	58896	adj	related	1	The two ideas are closely related in meaning and purpose.
+2	58896	adj	related	0	The project is related to environmental protection efforts.
+3	58896	adj	related	0	This document is related to the recent government report.
+4	58896	adj	related	0	The symptoms are related to a common virus.
+5	58896	adj	related	0	The findings are related to long-term health outcomes.
+@ relation
+1	58906	noun	relation	1	The relation between temperature and pressure is well known.
+2	58906	noun	relation	0	There is a strong relation between sleep and memory.
+3	58906	noun	relation	0	The relation of time and motion is fundamental in physics.
+4	58906	noun	relation	0	Scientists examine the relation between diet and disease.
+5	58906	noun	relation	0	The relation between the two ideas is not obvious.
+@ relative
+1	58922	adj	relative	1	The relative size of the two boxes made the smaller one seem even smaller.
+2	58922	adj	relative	0	Her score was high relative to the rest of the class.
+3	58922	adj	relative	0	The relative cost of renting is lower outside the city.
+4	58922	adj	relative	0	The relative position of the stars changed during the night.
+5	58922	adj	relative	0	We compared the relative value of the two old coins.
+@ relaxed
+1	58918	adj	relaxed	1	She felt relaxed after spending the afternoon beside the lake.
+2	58918	adj	relaxed	0	The hotel has a relaxed atmosphere and friendly staff.
+3	58918	adj	relaxed	0	He looked calm and relaxed before the interview.
+4	58918	adj	relaxed	0	Everyone became more relaxed once the difficult meeting ended.
+5	58918	adj	relaxed	0	Wear comfortable clothes to keep the evening relaxed and informal.
+@ relaxing
+1	58903	adj	relaxing	1	The music was so relaxing that she fell asleep.
+2	58903	adj	relaxing	0	After work, a warm bath is a relaxing way to unwind.
+3	58903	adj	relaxing	0	The beach has a relaxing atmosphere with gentle waves.
+4	58903	adj	relaxing	0	She spent a relaxing hour reading beside the window.
+5	58903	adj	relaxing	0	A slow walk through the quiet garden was relaxing.
+@ release
+1	58940	noun	release	1	The prisoner's release was celebrated by the town.
+2	58940	noun	release	0	The government announced the release of the hostages.
+3	58940	noun	release	0	The animal sanctuary planned the release of the injured owl.
+4	58940	noun	release	0	The sudden release of the rope caused the balloon to rise.
+5	58940	noun	release	0	The release of the trapped cat was captured on video.
+@ reliable
+1	58932	adj	reliable	1	Our reliable old bus arrived even though heavy rain flooded the streets.
+2	58932	adj	reliable	0	We need a reliable internet connection for the video meeting.
+3	58932	adj	reliable	0	She is reliable and always keeps her promises.
+4	58932	adj	reliable	0	Use a reliable source when researching online.
+5	58932	adj	reliable	0	This car is reliable enough for long trips.
+@ religion
+1	58976	noun	religion	1	She found peace through her religion and daily prayers.
+2	58976	noun	religion	0	The temple was built as a place of worship for their religion.
+3	58976	noun	religion	0	He studied religion at university and learned about many traditions.
+4	58976	noun	religion	0	Religion plays a strong role in many people's lives.
+5	58976	noun	religion	0	The course explores the role of religion in different societies.
+@ religious
+1	58935	adj	religious	1	The church is a religious building where people pray.
+2	58935	adj	religious	0	She made a religious offering at the temple.
+3	58935	adj	religious	0	The festival celebrates religious traditions from many cultures.
+4	58935	adj	religious	0	He wore a religious symbol around his neck.
+5	58935	adj	religious	0	The book discusses religious beliefs in ancient Rome.
+@ remain
+1	58993	verb	remain	1	Only two slices of cake remain after the party.
+2	58997	verb	remain	0	Please remain seated until the train stops.
+3	58995	verb	remained	0	The weather remained cold throughout the week.
+4	58997	verb	remain	0	Several important questions remain unanswered.
+5	58997	verb	remained	0	She remained calm while everyone else was shouting.
+@ remind
+1	58985	verb	reminded	1	The old photo reminded me of my grandmother's smile.
+2	58985	verb	reminded	0	The silver necklace reminded me of the one my sister used to wear.
+3	58985	verb	reminded	0	The song reminded me of our first summer together.
+4	58985	verb	reminded	0	His voice reminded me of my father's calm tone.
+5	58985	verb	reminded	0	The smell of rain reminded me of childhood afternoons.
+@ remote
+1	58967	adj	remote	1	The cabin was remote, far from any roads or neighbors.
+2	58967	adj	remote	0	The research station is remote from the nearest town.
+3	58967	adj	remote	0	The village was remote, accessible only by boat in summer.
+4	58967	adj	remote	0	The signal was weak because the device was remote from the tower.
+5	58967	adj	remote	0	He lived in a remote area with no internet or phone service.
+@ rent
+1	58998	noun	rent	1	She pays her monthly rent on the first of every month.
+2	58998	noun	rent	0	The landlord increased the rent after the lease expired.
+3	58998	noun	rent	0	We can't afford the new rent for the apartment downtown.
+4	58998	noun	rent	0	He forgot to pay the rent and got a warning letter.
+5	58998	noun	rent	0	The rent includes utilities like water and electricity.
+@ repeated
+1	58988	adj	repeated	1	Repeated requests for help received no answer.
+2	58988	adj	repeated	0	The repeated pattern on the wallpaper looked familiar.
+3	58988	adj	repeated	0	Repeated mistakes caused the project to fall behind schedule.
+4	58988	adj	repeated	0	The repeated noise from the neighbor kept me awake.
+5	58988	adj	repeated	0	The repeated warning finally persuaded them to leave.
+@ represent
+1	59012	verb	represent	1	The artist used paint to represent the old city in her new work.
+2	59012	verb	represent	0	A flag can represent a nation's values and history.
+3	59012	verb	represents	0	The statue represents a moment of peace in the town square.
+4	59012	verb	represent	0	She was chosen to represent her team at the national event.
+5	59012	verb	represents	0	The painting represents the struggle of everyday people.
+@ require
+1	59030	verb	required	1	The teacher required all students to submit their essays by Friday.
+2	59029	verb	required	0	A good night's sleep is required for proper concentration during exams.
+3	59030	verb	requires	0	The new policy requires every employee to wear a badge at work.
+4	59029	verb	requires	0	This project requires careful planning and teamwork to succeed.
+5	59029	verb	requires	0	The recipe requires two eggs and a cup of milk to work properly.

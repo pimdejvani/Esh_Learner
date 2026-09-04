@@ -1,0 +1,69 @@
+@ deal
+1	45422	noun	deal	1	The two friends made a deal to split the prize money evenly.
+2	45404	noun	deal	0	She spent a great deal of time preparing for the exam.
+3	45423	noun	deal	0	Losing the game was a big deal for the whole team.
+4	45420	noun	deal	0	The company signed a new deal with a software firm.
+5	45414	verb	deals	0	This shop deals in antique furniture and old books.
+
+@ depend
+1	45509	verb	depended	1	Everything about our future depended on the results of that exam.
+2	45510	verb	depend	0	You can always depend on your best friend for good advice.
+3	45509	verb	depends	0	Success in this job depends a lot on your attitude.
+4	45509	verb	Depending	0	Depending on the traffic, the drive can take an hour or two.
+5	45509	verb	depends	0	The bus schedule depends on the day of the week.
+
+@ desert
+1	45514	noun	desert	1	We carried extra water across the hot desert.
+2	45517	adj	desert	0	The sailors were shipwrecked on a small desert island.
+3	45514	noun	desert	0	Few trees grow in the desert.
+4	45514	noun	desert	0	Camels can travel through the desert.
+5	45518	verb	deserted	0	He felt betrayed when his best friend deserted him during the crisis.
+
+@ designer
+1	45522	noun	designer	1	The designer showed us a drawing for the new playground.
+2	45522	noun	designer	0	A designer is a person whose job is planning how things look.
+3	45522	noun	designer	0	The designer chose bright colors.
+4	45522	noun	designer	0	She hopes to become a designer.
+5	45525	adj	designer	0	My sister loves buying designer handbags whenever she visits Paris.
+
+@ destroy
+1	45526	verb	destroyed	1	The earthquake destroyed dozens of homes in just a few seconds.
+2	45526	verb	destroy	0	Fire can destroy a house very quickly if no one notices.
+3	45526	verb	destroying	0	Strong waves were destroying the sandcastle before the children could stop them.
+4	45526	verb	destroy	0	Please don't destroy the bird's nest in the garden.
+5	45526	verb	destroys	0	The storm destroys several roofs every year in this town.
+
+@ develop
+1	45543	verb	developed	1	After years of hard work, the scientist finally developed a cure for the disease.
+2	45541	verb	develop	0	Children develop many new skills during their first five years.
+3	45545	verb	developed	0	She developed a strong interest in music after joining the choir.
+4	45540	verb	developing	0	The storm is developing quickly over the ocean tonight.
+5	45543	verb	develops	0	This company develops new software for hospitals every year.
+
+@ digital
+1	45569	adj	digital	1	After years of using cash, she finally set up a digital payment account.
+2	45568	adj	digital	0	The digital clock on the wall shows the exact time in red numbers.
+3	45569	adj	digital	0	Most schools now use digital textbooks instead of paper ones.
+4	45569	adj	digital	0	The museum offers a digital map you can follow on your phone.
+5	45571	noun	digital	0	Many photographers switched to digital when film became expensive.
+
+@ direct
+1	45576	adj	direct	1	We took a direct train to the airport.
+2	45576	adj	Direct	0	Direct describes a route with no stops or changes.
+3	45576	adj	direct	0	She gave a direct answer.
+4	45586	verb	directs	0	The manager directs the whole marketing team from this office.
+5	45588	verb	directed	0	A kind stranger directed us to the nearest train station.
+
+@ disagree
+1	45604	verb	disagree	1	Maya and her brother disagree about the best movie.
+2	45604	verb	disagree	0	We disagree on this answer.
+3	45604	verb	disagreed	0	The two managers strongly disagreed during yesterday's meeting.
+4	45604	verb	disagreeing	0	The neighbours kept disagreeing about where to build the fence.
+5	45604	verb	disagrees	0	She often disagrees with her sister about small things.
+
+@ disappear
+1	45606	verb	disappeared	1	The little boy suddenly disappeared into the crowded market and his mother panicked.
+2	45606	verb	disappear	0	Magicians can make objects disappear with clever tricks.
+3	45606	verb	disappearing	0	The sun was slowly disappearing behind the mountains.
+4	45606	verb	disappears	0	My phone battery disappears fast whenever I play games.
+5	45606	verb	disappeared	0	Within seconds, the magician's assistant had disappeared from the stage.

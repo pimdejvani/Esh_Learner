@@ -1,0 +1,150 @@
+@ historical
+1	56764	adj	historical	1	The museum displays a historical document from the 1800s.
+2	56764	adj	historical	0	She studied a historical event in her world history class.
+3	56764	adj	historical	0	The historical records were carefully preserved in the archive.
+4	56764	adj	historical	0	He wrote a historical novel based on real events.
+5	56764	adj	historical	0	The historical significance of the treaty was widely discussed.
+@ honest
+1	56864	adj	honest	1	She gave an honest answer about the missing keys.
+2	56864	adj	honest	0	He admitted his mistake with an honest apology.
+3	56864	adj	honest	0	The witness provided an honest description of the scene.
+4	56864	adj	honest	0	They trusted him because he was always honest.
+5	56864	adj	honest	0	The teacher praised the student for honest work.
+@ horrible
+1	56855	adj	horrible	1	The hotel room was horrible, with broken windows and water on the floor.
+2	56855	adj	horrible	0	We had horrible weather throughout the camping trip.
+3	56855	adj	horrible	0	A horrible smell came from the kitchen bin.
+4	56855	adj	horrible	0	He made a horrible mistake on the final page of the report.
+5	56855	adj	horrible	0	The food tasted horrible after being left out overnight.
+@ horror
+1	56856	noun	horror	1	The dark basement filled me with horror as I heard footsteps above.
+2	56856	noun	horror	0	She screamed in horror when the door slammed shut behind her.
+3	56856	noun	horror	0	Everyone who saw the accident scene felt deep horror.
+4	56856	noun	horror	0	He froze in horror when he saw the broken glass.
+5	56856	noun	horror	0	The sight of the abandoned house filled the visitors with horror.
+@ host
+1	56926	noun	host	1	She was the perfect host at her sister's wedding.
+2	56926	noun	host	0	The host greeted each guest with a warm smile at the dinner party.
+3	56926	noun	host	0	He acted as host during the business meeting at the hotel.
+4	56926	noun	host	0	The host served tea and cookies to the visiting family.
+5	56926	noun	host	0	At the charity gala, the host introduced all the speakers.
+@ hunt
+1	56875	verb	hunt	1	The man went out to hunt deer in the forest at dawn.
+2	56875	verb	hunt	0	She plans to hunt for wild boar during the autumn season.
+3	56875	verb	hunt	0	They took their rifles to hunt elk in the mountains.
+4	56875	verb	hunting	0	He spent the morning hunting in the dense woodland.
+5	56875	verb	hunt	0	The guide taught the group how to hunt safely in the wild.
+@ hurricane
+1	56897	noun	hurricane	1	The hurricane destroyed the coastal town in just hours.
+2	56897	noun	hurricane	0	A strong hurricane passed near the island last week.
+3	56897	noun	hurricane	0	The weather report warned of a hurricane approaching.
+4	56897	noun	hurricane	0	We stayed indoors during the hurricane to stay safe.
+5	56897	noun	hurricane	0	The hurricane brought heavy rain and strong winds.
+@ hurry
+1	56887	noun	hurry	1	She left the house in a hurry to catch the bus.
+2	56887	noun	hurry	0	The children were in a hurry to finish their homework.
+3	56887	noun	hurry	0	He left in a hurry after the meeting ended.
+4	56887	noun	hurry	0	There was no hurry; we had plenty of time to wait.
+5	56887	noun	hurry	0	The dog ran to the door in a hurry when it heard the bell.
+@ identity
+1	56942	noun	identity	1	Moving abroad made her question her identity for the first time.
+2	56942	noun	identity	0	The festival helped the community celebrate its cultural identity.
+3	56942	noun	identity	0	The teenager gradually developed a stronger sense of identity.
+4	56942	noun	identity	0	The blue uniform became part of the team's identity.
+5	56942	noun	identity	0	Protecting the language is central to the group's identity.
+@ ignore
+1	56916	verb	ignore	1	She decided to ignore the loud noise outside.
+2	56916	verb	ignore	0	He tried to ignore the teacher's warning.
+3	56916	verb	ignore	0	The dog learned to ignore the doorbell.
+4	56916	verb	ignore	0	They agreed to ignore the small mistake.
+5	56916	verb	ignore	0	I need to ignore the distraction and focus.
+@ illegal
+1	56948	adj	illegal	1	Driving over the speed limit is illegal in most countries.
+2	56948	adj	illegal	0	The company was fined for running an illegal business.
+3	56948	adj	illegal	0	She was caught with an illegal weapon at the airport.
+4	56948	adj	illegal	0	The government shut down the illegal gambling site.
+5	56948	adj	illegal	0	He admitted to making an illegal copy of the software.
+@ imaginary
+1	56910	adj	imaginary	1	My little brother talks to his imaginary friend every night.
+2	56910	adj	imaginary	0	The dragon in the story is imaginary, not real.
+3	56910	adj	imaginary	0	She drew a picture of an imaginary creature with wings.
+4	56910	adj	imaginary	0	They built an imaginary world in their game.
+5	56910	adj	imaginary	0	The treasure map led to an imaginary island.
+@ immediate
+1	56920	adj	immediate	1	The app provided immediate feedback when I submitted the form.
+2	56920	adj	immediate	0	She gave an immediate answer to the teacher's question.
+3	56920	adj	immediate	0	The doctor gave the injured patient immediate attention.
+4	56920	adj	immediate	0	He felt immediate pain after the fall.
+5	56920	adj	immediate	0	The server returned immediate results for the query.
+@ immigrant
+1	56957	noun	immigrant	1	The new immigrant brought stories from a distant land to share with neighbors.
+2	56957	noun	immigrant	0	She became an immigrant after moving to Canada for better job opportunities.
+3	56957	noun	immigrant	0	The immigrant learned English by listening to radio broadcasts every evening.
+4	56957	noun	immigrant	0	Many immigrant families celebrate their heritage during cultural festivals.
+5	56957	noun	immigrant	0	The immigrant opened a small shop to support his growing family.
+@ impact
+1	56960	noun	impact	1	The car's impact with the wall was loud and sudden.
+2	56960	noun	impact	0	The impact of the ball on the ground sent dust flying.
+3	56960	noun	impact	0	The small rock struck the windshield with a sharp impact.
+4	56960	noun	impact	0	The impact of the hammer on the nail was sharp.
+5	56960	noun	impact	0	The impact between the two vehicles caused damage.
+@ import
+1	56985	noun	import	1	The store received a fresh import of tropical fruits from Costa Rica.
+2	56985	noun	import	0	Customs officers inspected the new import of electronic devices.
+3	56985	noun	import	0	The company's latest import arrived at the port yesterday.
+4	56985	noun	import	0	This import of handmade ceramics is very popular in Europe.
+5	56985	noun	import	0	The import of rare spices is strictly regulated by the government.
+@ importance
+1	56974	noun	importance	1	The importance of clean water cannot be overstated in developing regions.
+2	56974	noun	importance	0	She emphasized the importance of regular exercise for long-term health.
+3	56974	noun	importance	0	The importance of teamwork was evident during the emergency drill.
+4	56974	noun	importance	0	He recognized the importance of early education in shaping futures.
+5	56974	noun	importance	0	The importance of accurate data was clear in the scientific study.
+@ impression
+1	57017	noun	impression	1	The heavy book left a deep impression on the soft mattress.
+2	57017	noun	impression	0	Her head made an impression in the fluffy pillow.
+3	57017	noun	impression	0	His elbow left an impression in the soft armrest.
+4	57017	noun	impression	0	The coin pressed into the wax created a clear impression.
+5	57017	noun	impression	0	The shoe left an impression in the wet sand.
+@ impressive
+1	56971	adj	impressive	1	The athlete's performance was truly impressive.
+2	56971	adj	impressive	0	She gave an impressive presentation at the conference.
+3	56971	adj	impressive	0	The view from the mountain top was an impressive sight.
+4	56971	adj	impressive	0	His new car has an impressive engine.
+5	56971	adj	impressive	0	The team's comeback was an impressive achievement.
+@ improvement
+1	56978	noun	improvement	1	The new software shows real improvement in speed and efficiency.
+2	56978	noun	improvement	0	Regular practice leads to steady improvement in language skills.
+3	56978	noun	improvement	0	The team's improvement was clear after the training session.
+4	56978	noun	improvement	0	Her improvement in math surprised everyone in class.
+5	56978	noun	improvement	0	The garden showed significant improvement after we added compost.
+@ incredibly
+1	56969	adv	incredibly	1	The final puzzle was incredibly difficult to solve.
+2	56969	adv	incredibly	0	She ran incredibly fast in the race.
+3	56969	adv	incredibly	0	The building collapsed incredibly quickly after the explosion.
+4	56969	adv	incredibly	0	He recovered incredibly well after the accident.
+5	56969	adv	incredibly	0	The noise was incredibly loud in the room.
+@ indeed
+1	56999	adv	indeed	1	She was indeed late and missed the train.
+2	56999	adv	indeed	0	He claimed he had never been there, but he was indeed lying.
+3	56999	adv	indeed	0	The weather was indeed cold, with snow falling all day.
+4	56999	adv	indeed	0	She said she didn’t care, but she was indeed upset.
+5	56999	adv	indeed	0	The book was indeed hard to read because it had no clear plot.
+@ indicate
+1	57001	verb	indicates	1	The map clearly indicates the nearest hospital entrance.
+2	57001	verb	indicated	0	Her smile indicated she was happy with the result.
+3	57001	verb	indicates	0	The red light on the panel indicates a system error.
+4	57001	verb	indicated	0	His silence indicated he did not agree with the plan.
+5	57001	verb	indicate	0	The doctor said the test results indicate a serious condition.
+@ indirect
+1	57006	adj	indirect	1	She gave an indirect answer to avoid offending anyone.
+2	57006	adj	indirect	0	He took an indirect path to reach the park without traffic.
+3	57006	adj	indirect	0	The teacher used indirect feedback to help the student improve.
+4	57006	adj	indirect	0	They made indirect contact through a mutual friend.
+5	57006	adj	indirect	0	The report listed indirect costs like lost productivity and delays.
+@ indoor
+1	56998	adj	indoor	1	The indoor pool is warm and quiet.
+2	56998	adj	indoor	0	We played indoor soccer in the gym.
+3	56998	adj	indoor	0	The indoor garden has bright lights.
+4	56998	adj	indoor	0	She bought an indoor plant for her desk.
+5	56998	adj	indoor	0	The indoor basketball court is open after school.

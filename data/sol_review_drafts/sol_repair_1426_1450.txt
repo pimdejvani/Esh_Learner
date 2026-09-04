@@ -1,0 +1,114 @@
+@ sure
+1	40817	adj	sure	1	I am sure that we locked the front door.
+2	40817	adj	sure	0	She was sure about the answer.
+3	40822	adv	sure	0	It sure is cold this morning.
+4	40817	adj	surer	0	She is surer of her answer now.
+5	40816	adj	surest	0	This is the surest way home.
+@ sweater
+1	40824	noun	sweater	1	Wear a sweater because it is cold outside.
+2	40824	noun	sweater	0	My red sweater is soft and warm.
+3	40824	noun	sweaters	0	The shop near the station sells warm wool sweaters.
+4	40824	noun	sweater	0	I lost my favourite sweater on the bus.
+5	40824	noun	sweaters	0	Grandma knits sweaters for us every winter.
+@ swim
+1	40833	verb	swim	1	I can swim across the pool without stopping.
+2	40844	noun	swim	0	We went for a swim after lunch.
+3	40833	verb	swims	0	My brother swims every day before breakfast.
+4	40833	verb	swam	0	She swam in the sea yesterday.
+5	40833	verb	swimming	0	They are swimming in the cold lake today.
+@ swimming
+1	40852	noun	swimming	1	Swimming makes me feel strong and happy.
+2	40852	noun	swimming	0	She loves swimming in the pool.
+3	40854	verb	swimming	0	He is swimming with his friends.
+4	40852	noun	swimming	0	We have swimming class on Friday.
+5	40852	noun	swimming	0	My father teaches swimming at the pool.
+@ t-shirt
+1	40855	noun	t-shirt	1	I wear my lucky t-shirt to every game.
+2	40855	noun	t-shirt	0	He bought a new t-shirt at the market yesterday.
+3	40855	noun	t-shirts	0	The football team wears blue t-shirts during practice.
+4	40855	noun	t-shirt	0	This cotton t-shirt feels very soft on my skin.
+5	40855	noun	t-shirts	0	Clean t-shirts are in the drawer.
+@ table
+1	40856	noun	table	1	Put the books on the table by the window.
+2	40856	noun	table	0	We ate dinner at the table.
+3	40856	noun	tables	0	The small cafe has ten round tables inside.
+4	40856	noun	table	0	We built a wooden table for the garden.
+5	40856	noun	tables	0	The waiter cleaned all the tables after lunch.
+@ take
+1	40888	verb	take	1	Please take this heavy bag home for me.
+2	40888	verb	take	0	I take the bus to school.
+3	40888	verb	takes	0	She takes a photo every day.
+4	40888	verb	took	0	He took my hand and crossed the street.
+5	40888	verb	taking	0	They are taking a break under the tree.
+@ taxi
+1	41024	noun	taxi	1	We took a taxi to the airport.
+2	41024	noun	taxi	0	The taxi stopped outside the hotel.
+3	41024	noun	taxis	0	Many taxis wait at the station.
+4	41024	noun	taxi	0	The taxi driver helped us with our bags.
+5	41024	noun	taxis	0	Yellow taxis fill the busy city streets.
+@ tea
+1	41032	noun	tea	1	I drink hot tea every cold winter morning.
+2	41032	noun	tea	0	Would you like some tea with your cake?
+3	41038	noun	tea	0	She brought me a tea with milk.
+4	41031	noun	tea	0	We bought green tea leaves at the market.
+5	41032	noun	teas	0	The cafe serves many teas from around the world.
+@ teacher
+1	41056	noun	teacher	1	Our teacher smiled when we sang for her.
+2	41056	noun	teacher	0	Ask the teacher for help with your homework.
+3	41056	noun	teachers	0	The teachers met in the library after school.
+4	41056	noun	teacher	0	She wants to become a teacher.
+5	41056	noun	teachers	0	Good teachers listen to students with patience.
+@ team
+1	41061	noun	team	1	Our team won the game after a hard fight.
+2	41061	noun	team	0	She joined the school football team last month.
+3	41061	noun	teams	0	Two teams played football in the rain.
+4	41065	verb	team	0	The students team up to clean the park.
+5	41065	verb	teamed	0	They teamed up to finish the school project.
+@ telephone
+1	41072	noun	telephone	1	The telephone rang loudly during our quiet dinner.
+2	41072	noun	telephone	0	Please answer the telephone before it stops ringing.
+3	41072	noun	telephones	0	The small office has two telephones on the desk.
+4	41080	verb	telephone	0	I will telephone my aunt tonight.
+5	41080	verb	telephoned	0	He telephoned the hotel to book a room.
+@ television
+1	41085	noun	television	1	We watch television together after dinner every night.
+2	41085	noun	television	0	The news is on television at seven.
+3	41086	noun	televisions	0	The store on the corner sells large televisions cheaply.
+4	41086	noun	television	0	My old television has a very small screen.
+5	41087	noun	television	0	There is nothing good on television tonight.
+@ tell
+1	41096	verb	tell	1	Please tell me the truth about last night.
+2	41097	verb	told	0	The teacher told us the answer.
+3	41096	verb	tells	0	My dad tells funny stories at bedtime.
+4	41095	verb	told	0	She told me about her day at school.
+5	41096	verb	telling	0	He is telling a joke to his friends.
+@ ten
+1	67931	num	ten	1	There are ten apples in the paper bag.
+2	67931	num	ten	0	The class starts at ten in the morning.
+3	41112	noun	tens	0	Count by tens to one hundred.
+4	41115	noun	ten	0	She gave me a ten for lunch.
+5	67931	num	ten	0	I need ten more minutes to finish.
+@ tennis
+1	41119	noun	tennis	1	We play tennis on Saturday mornings with friends.
+2	41119	noun	tennis	0	She has a tennis lesson today.
+3	41119	noun	tennis	0	The yellow tennis ball rolled under the bench.
+4	41119	noun	tennis	0	He watches tennis on television every summer.
+5	41119	noun	tennis	0	Tennis is my favourite sport at school.
+@ terrible
+1	41127	adj	terrible	1	I felt terrible when I lost my sister's gift.
+2	41128	adj	terrible	0	The weather was terrible during our whole holiday.
+3	41126	adj	terrible	0	We heard a terrible noise outside.
+4	41127	adj	terrible	0	It is terrible to be unkind to others.
+5	41124	adj	terrible	0	The storm made a terrible mess in our garden.
+@ test
+1	41132	noun	test	1	I studied hard for the math test.
+2	41142	verb	test	0	We test the water before we drink it.
+3	41132	noun	tests	0	She has two tests this week.
+4	41143	verb	tested	0	The teacher tested our reading skills.
+5	41144	verb	testing	0	They are testing the new computer today.
+@ thank
+1	41167	verb	thank	1	I want to thank you for your help.
+2	41167	verb	thank	0	We thank our teacher for the lesson.
+3	41167	verb	thanks	0	She always thanks the driver when she leaves.
+4	41167	verb	thanked	0	She thanked me for the book I borrowed.
+5	41167	verb	thanking	0	He is thanking everyone after the show.

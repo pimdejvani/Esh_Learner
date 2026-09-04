@@ -3,7 +3,7 @@
 
 Authoring drafts with ``|`` avoids tabs being mangled by editors and shells;
 this converter is the only step that writes real tabs.  Sentence rows must have
-the eight fields of ``terra_compact_format.md``; a trailing ``|`` is allowed.
+the eight fields of ``docs/formats/terra_compact_format.md``; a trailing ``|`` is allowed.
 
     python tools/pipe_to_compact.py in.txt data/terra_translated_drafts/batch_x.txt
 """

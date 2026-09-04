@@ -1,0 +1,150 @@
+@ accuse
+1	61439	verb	accused	1	The teacher accused the student of cheating on the test.
+2	61439	verb	accused	0	She accused him of lying during the meeting.
+3	61439	verb	accused	0	They accused the manager of ignoring safety rules.
+4	61439	verb	accused	0	He accused his brother of stealing the last cookie.
+5	61439	verb	accused	0	The witness accused the suspect of starting the fire.
+@ acknowledge
+1	61434	verb	acknowledge	1	She will acknowledge the truth of your argument.
+2	61434	verb	acknowledge	0	He refused to acknowledge the evidence presented.
+3	61434	verb	acknowledged	0	The scientist acknowledged the limitations of the study.
+4	61434	verb	acknowledge	0	We must acknowledge that change is necessary.
+5	61434	verb	acknowledged	0	The team acknowledged their mistake publicly.
+@ acquire
+1	61444	verb	acquire	1	She worked hard to acquire new skills for her job.
+2	61444	verb	acquire	0	He managed to acquire a rare book at the old bookstore.
+3	61444	verb	acquire	0	The company hopes to acquire more clients this quarter.
+4	61444	verb	acquire	0	Children acquire language naturally as they grow.
+5	61444	verb	acquire	0	They worked hard to acquire the necessary qualifications.
+@ actual
+1	61449	adj	actual	1	The actual cost of the repairs was much higher than the estimate.
+2	61449	adj	actual	0	The movie is based on actual events.
+3	61449	adj	actual	0	Her actual age surprised everyone.
+4	61449	adj	actual	0	The actual cause of the fire remains unknown.
+5	61449	adj	actual	0	The actual results differed from our predictions.
+@ adapt
+1	61458	verb	adapt	1	She had to adapt the recipe for her dietary needs.
+2	61458	verb	adapted	0	The company adapted its strategy to meet market changes.
+3	61458	verb	adapted	0	We adapted the software to work with the new system.
+4	61458	verb	adapted	0	He adapted his schedule to fit the team's meeting time.
+5	61458	verb	adapted	0	They adapted the story to suit younger readers.
+@ additional
+1	61456	adj	additional	1	The restaurant charged an additional fee for the birthday cake.
+2	61456	adj	additional	0	She asked for additional help with her homework.
+3	61456	adj	additional	0	We need additional time to finish the project.
+4	61456	adj	additional	0	The package included additional instructions for setup.
+5	61456	adj	additional	0	He requested additional data for his research report.
+@ administration
+1	61482	noun	administration	1	The new administration took control after the election.
+2	61482	noun	administration	0	The administration of justice must be fair and timely.
+3	61482	noun	administration	0	She works in the administration department of the local hospital.
+4	61482	noun	administration	0	The administration of the school improved student services.
+5	61482	noun	administration	0	Poor administration caused delays in the project.
+@ adopt
+1	61465	verb	adopt	1	She decided to adopt a kitten from the animal shelter.
+2	61463	verb	adopt	0	They will adopt a child next year after completing their home study.
+3	61464	verb	adopted	0	The couple adopted a baby boy from foster care.
+4	61465	verb	adopt	0	He plans to adopt a dog when he moves into his new apartment.
+5	61465	verb	adopted	0	We adopted a stray cat that appeared at our doorstep last week.
+@ advance
+1	61509	verb	advance	1	The new training will help advance her career.
+2	61509	verb	advance	0	He worked hard to advance his career in the tech industry.
+3	61509	verb	advance	0	The government plans to advance its public health program.
+4	61509	verb	advance	0	She hopes to advance her research through international collaboration.
+5	61509	verb	advance	0	The team will advance their project with more funding and support.
+@ affair
+1	61472	noun	affair	1	The company's new project is a complex affair to handle.
+2	61472	noun	affair	0	Organizing the school event became a complicated affair.
+3	61472	noun	affair	0	The negotiation was a delicate affair requiring patience.
+4	61472	noun	affair	0	He treated the meeting as a private affair between partners.
+5	61472	noun	affair	0	Handling the inheritance was a complicated family affair.
+@ afterwards
+1	61481	adv	afterwards	1	She left the room, and afterwards, she called her friend.
+2	61481	adv	afterwards	0	The game ended, and afterwards, the players shook hands.
+3	61481	adv	afterwards	0	He finished his homework, and afterwards, he watched TV.
+4	61481	adv	afterwards	0	They ate dinner, and afterwards, they went for a walk.
+5	61481	adv	afterwards	0	The meeting ended, and afterwards, everyone left the building.
+@ agency
+1	61500	noun	agency	1	The travel agency booked our flights and hotel.
+2	61500	noun	agency	0	She works for an advertising agency in the city.
+3	61501	noun	agency	0	The government agency monitors the safety of drinking water.
+4	61500	noun	agency	0	An employment agency helped him find a temporary job.
+5	61500	noun	agency	0	The news agency sent a reporter to cover the election.
+@ agenda
+1	61502	noun	agenda	1	She wrote her daily tasks in her agenda to stay organized.
+2	61502	noun	agenda	0	The team reviewed the agenda before starting the meeting.
+3	61502	noun	agenda	0	He checked his agenda to remember the next appointment.
+4	61502	noun	agenda	0	The teacher added two new topics to the agenda.
+5	61502	noun	agenda	0	Every morning, she updates her agenda with new goals.
+@ aggressive
+1	61489	adj	aggressive	1	The aggressive dog barked loudly at the mail carrier.
+2	61489	adj	aggressive	0	She gave an aggressive reply during the heated debate.
+3	61489	adj	aggressive	0	The aggressive player pushed past his opponent to score.
+4	61489	adj	aggressive	0	An aggressive move in the game surprised everyone.
+5	61489	adj	aggressive	0	The aggressive driver cut in front of us without warning.
+@ aid
+1	61534	noun	aid	1	The lifeguard gave quick aid to the struggling swimmer.
+2	61534	noun	aid	0	She called for medical aid after the accident.
+3	61534	noun	aid	0	The community provided aid to families affected by the flood.
+4	61534	noun	aid	0	Emergency aid arrived within hours of the earthquake.
+5	61534	noun	aid	0	Volunteers offered aid to families displaced by the fighting.
+@ aircraft
+1	61532	noun	aircraft	1	The small aircraft flew over the mountains at dawn.
+2	61532	noun	aircraft	0	Pilots must pass a test before flying any aircraft.
+3	61532	noun	aircraft	0	The airport handles both passenger and cargo aircraft.
+4	61532	noun	aircraft	0	Military aircraft are equipped with advanced radar systems.
+5	61532	noun	aircraft	0	The new aircraft design reduces fuel consumption significantly.
+@ alter
+1	61544	verb	alter	1	The artist will alter the painting to match the new theme.
+2	61544	verb	alter	0	We must alter the schedule due to the unexpected delay.
+3	61544	verb	alter	0	She decided to alter her plans after hearing the news.
+4	61544	verb	alter	0	The mechanic will alter the engine settings to improve performance.
+5	61544	verb	alter	0	They need to alter the design before the final approval.
+@ anger
+1	61562	noun	anger	1	She slammed the door in anger after the argument.
+2	61562	noun	anger	0	His outburst was a clear sign of anger.
+3	61562	noun	anger	0	The crowd's anger grew louder with each delay.
+4	61562	noun	anger	0	He tried to calm his anger before speaking.
+5	61562	noun	anger	0	The teacher noticed anger in the student's tone.
+@ angle
+1	61570	noun	angle	1	The angle between the two lines measures 90 degrees.
+2	61570	noun	angle	0	Use a protractor to measure each angle in the diagram.
+3	61570	noun	angle	0	The angle where the walls meet is sharp and precise.
+4	61570	noun	angle	0	She drew a perfect angle using her protractor.
+5	61570	noun	angle	0	The angle of the roof makes it easy for snow to slide off.
+@ anniversary
+1	61551	noun	anniversary	1	We celebrated our golden anniversary with a family dinner.
+2	61551	noun	anniversary	0	The school held a special assembly on the 50th anniversary of its founding.
+3	61551	noun	anniversary	0	She received a gift on the 25th anniversary of their wedding.
+4	61551	noun	anniversary	0	The museum opened to the public on the 10th anniversary of the donation.
+5	61551	noun	anniversary	0	He wrote a letter to his parents on the 40th anniversary of their first date.
+@ annual
+1	61554	adj	annual	1	The annual festival brings thousands to the city each December.
+2	61554	adj	annual	0	She receives an annual bonus based on company performance.
+3	61554	adj	annual	0	The annual report was released at the end of the fiscal year.
+4	61554	adj	annual	0	We attend the annual conference to stay updated in our field.
+5	61554	adj	annual	0	The annual rainfall in this region is unusually high.
+@ anxious
+1	61566	adj	anxious	1	She felt anxious before her job interview.
+2	61566	adj	anxious	0	The child felt anxious before opening his birthday present in front of the class.
+3	61566	adj	anxious	0	They were anxious about the weather for their picnic.
+4	61566	adj	anxious	0	He looked anxious when he saw the doctor's name on the door.
+5	61566	adj	anxious	0	The dog became anxious after being left alone all day.
+@ apparent
+1	61589	adj	apparent	1	The cause of the leak became apparent after we moved the cabinet.
+2	61589	adj	apparent	0	It was apparent from her expression that she was worried.
+3	61589	adj	apparent	0	The difference became apparent when we compared the two photographs.
+4	61589	adj	apparent	0	His lack of experience was apparent during the interview.
+5	61589	adj	apparent	0	The damage was immediately apparent after the storm.
+@ apparently
+1	61592	adv	apparently	1	The door was locked, apparently by accident.
+2	61592	adv	apparently	0	She looked tired, apparently from lack of sleep.
+3	61592	adv	apparently	0	He acted calmly, apparently unaware of the danger.
+4	61592	adv	apparently	0	The report was incomplete, apparently due to missing data.
+5	61592	adv	apparently	0	They were late, apparently because of traffic.
+@ appeal
+1	61595	noun	appeal	1	The defendant filed an appeal to challenge the verdict.
+2	61595	noun	appeal	0	The court granted the appeal and ordered a new trial.
+3	61595	noun	appeal	0	She submitted her appeal after the initial ruling.
+4	61595	noun	appeal	0	The appeal was heard by the appellate court.
+5	61595	noun	appeal	0	He lost the appeal and must accept the decision.

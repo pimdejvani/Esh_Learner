@@ -12,7 +12,7 @@
 5	49925	verb	pronounces	0	She pronounces English clearly.
 @ pull
 1	49983	verb	pull	1	We pull every day.
-2	49983	verb	pull	0	Pull the rope when I give the signal.
+2	49983	verb	Pull	0	Pull the rope when I give the signal.
 3	49983	verb	pulls	0	This engine pulls a heavy trailer.
 4	49983	verb	pulled	0	She pulled the chair closer to the table.
 5	49984	verb	pulling	0	The children are pulling apples from the tree.
@@ -24,7 +24,7 @@
 5	50035	noun	purpose	0	He found a new sense of purpose by helping his community.
 @ push
 1	50041	verb	push	1	We push every day.
-2	50041	verb	push	0	Push the door firmly to open it.
+2	50041	verb	Push	0	Push the door firmly to open it.
 3	50041	verb	pushes	0	The nurse pushes the wheelchair down the hall.
 4	50041	verb	pushed	0	They pushed the broken car off the road.
 5	50041	verb	pushing	0	Mina is pushing the cart toward the checkout.
@@ -108,7 +108,7 @@
 5	50297	verb	receiving	0	The hospital is receiving supplies this afternoon.
 @ recent
 1	50309	adj	recent	1	It is recent.
-2	50309	adj	recent	0	Recent rain has filled the village pond.
+2	50309	adj	Recent	0	Recent rain has filled the village pond.
 3	50309	adj	more recent	0	This photograph is more recent than the others.
 4	50309	adj	most recent	0	Please read the most recent version of the report.
 5	50311	adj	recent	0	A recent graduate joined our office this week.

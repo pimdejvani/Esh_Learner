@@ -1,0 +1,90 @@
+@ handle
+1	63870	noun	handle	1	She gripped the handle of the suitcase tightly.
+2	63870	noun	handle	0	The pot had a wooden handle for easy lifting.
+3	63870	noun	handle	0	He turned the handle to open the locked door.
+4	63870	noun	handle	0	The knife's handle was worn from years of use.
+5	63870	noun	handle	0	The garden tool's handle was too short for her reach.
+@ harm
+1	63864	noun	harm	1	The fall caused serious harm to her leg.
+2	63864	noun	harm	0	He avoided any harm by wearing a helmet.
+3	63864	noun	harm	0	The dog's bite caused no visible harm.
+4	63864	noun	harm	0	The small cut did no lasting harm to her hand.
+5	63864	noun	harm	0	The storm caused no harm to the buildings.
+@ harmful
+1	63869	adj	harmful	1	The chemicals in the cleaner are harmful to pets.
+2	63869	adj	harmful	0	Exposure to loud noise can be harmful to hearing.
+3	63869	adj	harmful	0	Eating too much sugar is harmful to your teeth.
+4	63869	adj	harmful	0	The old machine produces harmful fumes.
+5	63869	adj	harmful	0	Some plants contain harmful toxins in their leaves.
+@ hearing
+1	63897	adj	hearing	1	The course helps hearing people communicate more effectively with deaf colleagues.
+2	63897	adj	hearing	0	Hearing children and deaf children attended the same class.
+3	63897	adj	hearing	0	The hearing members of the family learned sign language for their deaf son.
+4	63897	adj	hearing	0	A hearing interpreter relayed the spoken questions in sign language.
+5	63897	adj	hearing	0	The club welcomes both deaf and hearing members.
+@ heaven
+1	63915	noun	heaven	1	She believed that her soul would reach heaven after death.
+2	63915	noun	heaven	0	He believed that good people would go to heaven after death.
+3	63915	noun	heaven	0	The priest taught that angels dwell in heaven.
+4	63915	noun	heaven	0	They looked up at the stars, imagining heaven beyond.
+5	63915	noun	heaven	0	Heaven opened its gates when she said her final prayer.
+@ heel
+1	63930	noun	heel	1	She pressed her heel into the soft ground to steady herself.
+2	63930	noun	heel	0	The runner injured his heel during the final sprint.
+3	63930	noun	heel	0	He adjusted his shoe so the heel fit snugly in the back.
+4	63930	noun	heel	0	The child bruised his heel when he jumped from the step.
+5	63930	noun	heel	0	The dancer balanced briefly on one heel.
+@ hell
+1	63993	name	hell	1	The wicked soul was cast into hell by the angels.
+2	63993	name	hell	0	She swore he'd end up in hell for his cruel deeds.
+3	63993	name	hell	0	The old man warned that sinners would burn in hell.
+4	63993	name	hell	0	No one wants to face the fire of hell after death.
+5	63993	name	hell	0	The demon laughed, knowing the prisoner would suffer in hell.
+@ hesitate
+1	63908	verb	hesitated	1	She hesitated before answering the difficult question.
+2	63908	verb	hesitated	0	He hesitated when asked to speak in front of the group.
+3	63908	verb	hesitated	0	They hesitated at the crossroads, unsure which path to take.
+4	63908	verb	hesitated	0	I hesitated before telling her the bad news.
+5	63908	verb	hesitated	0	The student hesitated before raising their hand.
+@ hollow
+1	63965	noun	hollow	1	We camped in a quiet hollow near the forest edge.
+2	63965	noun	hollow	0	The stream flows through a narrow hollow between two hills.
+3	63965	noun	hollow	0	They followed the trail down into the rocky hollow.
+4	63965	noun	hollow	0	A deer stepped out from the thick trees into the hollow.
+5	63965	noun	hollow	0	The old map marked a hollow just past the stone bridge.
+@ holy
+1	63979	adj	holy	1	The holy temple stands on the ancient hill.
+2	63979	adj	holy	0	She placed the holy book on the wooden altar.
+3	63979	adj	holy	0	They lit candles in the holy chapel.
+4	63979	adj	holy	0	The holy relic was kept in a glass case.
+5	63979	adj	holy	0	He knelt in the monastery's holy garden at dawn.
+@ honour
+1	63906	noun	honour	1	She received a special honour for her community service.
+2	63906	noun	honour	0	The award was given in honour of the late professor's contributions.
+3	63906	noun	honour	0	He acted with honour, even when no one was watching.
+4	63906	noun	honour	0	The school held a ceremony in honour of its retiring principal.
+5	63906	noun	honour	0	He considered it an honour to represent his country.
+@ household
+1	63986	noun	household	1	The household gathered around the table for dinner.
+2	63986	noun	household	0	Each household must pay its own electricity bill.
+3	63986	noun	household	0	The household includes three children and two parents.
+4	63986	noun	household	0	She manages the household with care and efficiency.
+5	63986	noun	household	0	The household moved to a new apartment last month.
+@ housing
+1	64009	noun	housing	1	The city expanded housing for displaced families.
+2	64009	noun	housing	0	They secured housing after the flood destroyed their home.
+3	64009	noun	housing	0	Nonprofits focus on housing for vulnerable populations.
+4	64009	noun	housing	0	The new project includes affordable housing units.
+5	64009	noun	housing	0	Government programs support emergency housing needs.
+@ humorous
+1	64018	adj	humorous	1	The comedian told a humorous joke that made everyone laugh.
+2	64018	adj	humorous	0	She gave a humorous speech that made everyone at the party smile.
+3	64018	adj	humorous	0	His humorous comment broke the tension in the room.
+4	64018	adj	humorous	0	The children enjoyed the humorous story about the silly cat.
+5	64018	adj	humorous	0	A humorous cartoon appeared in the morning newspaper.
+@ humour
+1	64027	noun	humour	1	Her jokes always show a sharp sense of humour.
+2	64027	noun	humour	0	He told a silly story with so much humour that everyone laughed.
+3	64027	noun	humour	0	The film had clever dialogue and a lot of dry humour.
+4	64027	noun	humour	0	I appreciate people with a good sense of humour.
+5	64027	noun	humour	0	Their conversation was full of unexpected humour.

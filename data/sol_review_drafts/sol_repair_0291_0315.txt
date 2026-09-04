@@ -84,7 +84,7 @@
 5	48590	adj	material	0	The new evidence made a material difference to the case.
 @ mathematics
 1	48606	noun	mathematics	1	Understanding the mathematics helped the students land their model rocket safely.
-2	48606	noun	mathematics	0	Mathematics studies numbers, shapes, and patterns.
+2	48606	noun	Mathematics	0	Mathematics studies numbers, shapes, and patterns.
 3	48606	noun	mathematics	0	She teaches mathematics at the local high school.
 4	48607	noun	mathematics	0	His mathematics improved after months of practice.
 5	48606	noun	mathematics	0	The bridge design depends on careful mathematics.

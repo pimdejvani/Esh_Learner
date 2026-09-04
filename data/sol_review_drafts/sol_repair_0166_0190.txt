@@ -38,7 +38,7 @@
 2	44106	adj	bright	0	The sun is bright today.
 3	44106	adj	bright	0	A bright lamp lit the room.
 4	44106	adj	bright	0	The phone screen is too bright at night.
-5	44106	adj	bright	0	Bright stars filled the clear sky.
+5	44106	adj	Bright	0	Bright stars filled the clear sky.
 
 @ decision
 1	45436	noun	decision	1	Her decision to call for help saved the lost hikers.
@@ -107,7 +107,7 @@
 1	46901	noun	gas	1	We left the building quickly when we smelled gas.
 2	46901	noun	gas	0	The balloon contains a light gas.
 3	46901	noun	gases	0	Some gases become liquid when cooled.
-4	46901	noun	gas	0	Gas escaped from the damaged cylinder.
+4	46901	noun	Gas	0	Gas escaped from the damaged cylinder.
 5	46901	noun	gases	0	Scientists measured the gases in the air.
 
 @ gate
@@ -147,7 +147,7 @@
 
 @ gold
 1	47002	noun	gold	1	The ring proved to be real gold, not painted metal.
-2	47002	noun	gold	0	Gold is a heavy yellow metal.
+2	47002	noun	Gold	0	Gold is a heavy yellow metal.
 3	47002	noun	gold	0	The bracelet is made of gold.
 4	47002	noun	gold	0	Miners discovered gold near the river.
 5	47002	noun	gold	0	The museum keeps the gold in a secure room.
@@ -155,7 +155,7 @@
 @ golf
 1	47017	noun	golf	1	She won her first golf competition with one final shot.
 2	47017	noun	golf	0	My uncle plays golf every weekend.
-3	47017	noun	golf	0	Golf is usually played on a large outdoor course.
+3	47017	noun	Golf	0	Golf is usually played on a large outdoor course.
 4	47017	noun	golf	0	They watched golf on television.
 5	47017	noun	golf	0	He learned golf from his father.
 

@@ -1,0 +1,25 @@
+early	repaired	added adv/adj forms for POS coverage; skipped noun (shift sense, narrow British informal)
+east	repaired	fixed sense/POS mismatch (r3,r4 were noun but function adverbially); added adj sense
+easy	repaired	fixed sense_id mismatch (rows used 'at ease' 32278 but meant 'requiring little skill' 32279); added adv; skipped noun/verb (RARE)
+eat	repaired	added form variety (ate/eating/eaten/eats); skipped noun POS (informal slang 'eats')
+egg	repaired	added verb sense 'egged on' for POS coverage
+eight	repaired	fixed target case r2 'Eight' (sentence-initial); lengthened short rows; skipped adj (obsolete spelling of eighth)
+eighteen	repaired	fixed target case r2 'Eighteen' (sentence-initial); lengthened short rows
+eighty	repaired	fixed ambiguous double-occurrence in r1; fixed target case r2 'Eighty'; lengthened short rows
+elephant	pass	all 5 rows correct, distinct, no case or coverage issues
+eleven	repaired	fixed ambiguous double-occurrence in r2
+else	repaired	added adv sense 'how else'; lengthened short rows; skipped conj (narrow/formal 'or else')
+email	repaired	added verb sense 'emailed'; lengthened r4
+end	repaired	added verb sense; replaced unnatural 'happy end' collocation with verb row
+enough	repaired	fixed sense/POS mismatch r5 (det->adv for 'strong enough'); avoided B2 word in r1
+euro	pass	all 5 rows correct, distinct, no case or coverage issues
+even	repaired	fixed sense_id mismatch r3/r4 (flat/level sense used for 'equal size' meaning); added adv
+evening	pass	all 5 rows correct, distinct, no case or coverage issues
+event	repaired	repointed sense_id to precise 'scheduled function' sense 32431; lengthened r3; added 'in the event of' row
+ever	repaired	fixed sense_id (all rows used archaic sense 32443, repointed to common 'at any time' 32445); lengthened short rows
+every	repaired	fixed target case r1/r2/r4 (sentence-initial 'Every'); lengthened short rows
+everybody	repaired	fixed target case r2/r4 (sentence-initial 'Everybody'); lengthened short rows
+everyone	repaired	fixed target case r1/r2/r4 (sentence-initial 'Everyone'); lengthened short rows
+everything	repaired	fixed target case r2/r4 (sentence-initial 'Everything'); lengthened short rows
+excited	repaired	added verb sense (past tense of excite)
+exciting	repaired	full rewrite: original block was 100% verb progressive, missing primary adjective sense entirely; rank1 rewritten

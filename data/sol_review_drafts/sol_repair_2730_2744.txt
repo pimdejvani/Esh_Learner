@@ -1,0 +1,90 @@
+@ nerve
+1	64825	noun	nerve	1	The doctor examined the nerve in the patient's arm.
+2	64825	noun	nerve	0	A nerve runs from the spine to the hand.
+3	64825	noun	nerve	0	The nerve was damaged during the surgery.
+4	64825	noun	nerve	0	The surgeon carefully exposed the damaged nerve.
+5	64825	noun	nerve	0	A nerve carries signals between the spinal cord and the leg.
+@ nevertheless
+1	64847	adv	nevertheless	1	She was tired; nevertheless, she finished the project on time.
+2	64847	adv	nevertheless	0	The weather was bad; nevertheless, we went hiking as planned.
+3	64847	adv	nevertheless	0	He didn't study much; nevertheless, he passed the test.
+4	64847	adv	nevertheless	0	The car was old; nevertheless, it ran perfectly well.
+5	64847	adv	nevertheless	0	They left late; nevertheless, they arrived before the meeting started.
+@ nightmare
+1	64848	noun	nightmare	1	I woke up screaming after a nightmare about falling from a cliff.
+2	64848	noun	nightmare	0	She had a nightmare about being trapped in an empty building.
+3	64848	noun	nightmare	0	She had a nightmare about losing her keys at the airport.
+4	64848	noun	nightmare	0	His nightmare was filled with dark rooms and locked doors.
+5	64848	noun	nightmare	0	In the nightmare, he couldn't find his way home.
+@ notion
+1	64840	noun	notion	1	She had a clear notion of how the machine worked.
+2	64840	noun	notion	0	His notion of justice came from years of reading philosophy.
+3	64840	noun	notion	0	She rejected the notion that success depends only on luck.
+4	64840	noun	notion	0	They shared a common notion of fairness in the classroom.
+5	64840	noun	notion	0	A new notion emerged after the team reviewed the data.
+@ numerous
+1	64855	det	numerous	1	The museum has numerous ancient artifacts on display.
+2	64855	det	numerous	0	She received numerous messages after posting the update.
+3	64855	det	numerous	0	The forest contains numerous trees of different species.
+4	64855	det	numerous	0	They faced numerous challenges during the expedition.
+5	64855	det	numerous	0	There are numerous reasons to support the new policy.
+@ obey
+1	64859	verb	obey	1	The child must obey his parents' instructions.
+2	64859	verb	obey	0	Everyone in the class must obey the teacher's rules.
+3	64859	verb	obey	0	You need to obey the safety guidelines at work.
+4	64859	verb	obey	0	The new employee learned quickly to obey company policy.
+5	64859	verb	obey	0	Students must obey the school's code of conduct.
+@ objective
+1	64875	adj	objective	1	The objective world exists independently of our thoughts.
+2	64877	adj	objective	0	She focused on the objective facts, not personal opinions.
+3	64877	adj	objective	0	The objective evidence was clear and undeniable.
+4	64877	adj	objective	0	He described the objective conditions of the experiment.
+5	64878	adj	objective	0	The objective reality of the situation surprised everyone.
+@ obligation
+1	64863	noun	obligation	1	She felt a strong obligation to help her neighbor after the storm.
+2	64863	noun	obligation	0	The obligation to tell the truth is a key part of being honest.
+3	64863	noun	obligation	0	He accepted the obligation to lead the team despite the risks.
+4	64863	noun	obligation	0	Their obligation to repay the loan began immediately.
+5	64863	noun	obligation	0	The obligation to protect the environment affects everyone.
+@ observation
+1	64867	noun	observation	1	The scientist made a careful observation of the bird's behavior.
+2	64868	noun	observation	0	Her observation during the experiment was precise and detailed.
+3	64867	noun	observation	0	Observation from the hilltop revealed how the river crossed the valley.
+4	64868	noun	observation	0	We recorded our observation after watching the stars all night.
+5	64871	noun	observation	0	The observation of the classroom helped the teacher understand the students.
+@ observe
+1	64886	verb	observe	1	The scientist will observe the experiment closely for any changes.
+2	64886	verb	observe	0	We can observe the stars through the telescope at night.
+3	64886	verb	observe	0	She paused to observe the quiet garden before speaking.
+4	64886	verb	observe	0	The teacher asked the students to observe the pattern carefully.
+5	64886	verb	observe	0	He tried to observe the bird without making a sound.
+@ obtain
+1	64895	verb	obtain	1	She managed to obtain a rare book from the library.
+2	64895	verb	obtain	0	He needs to obtain a visa before traveling abroad.
+3	64895	verb	obtain	0	The team worked hard to obtain funding for the project.
+4	64895	verb	obtain	0	You must obtain permission before entering the restricted area.
+5	64895	verb	obtain	0	They were able to obtain clear results from the experiment.
+@ occasionally
+1	64891	adv	occasionally	1	She visits her grandmother occasionally, usually in spring.
+2	64891	adv	occasionally	0	The old clock occasionally stops during cold weather.
+3	64891	adv	occasionally	0	He checks the mail occasionally, never every day.
+4	64891	adv	occasionally	0	We eat out occasionally, mostly on weekends.
+5	64891	adv	occasionally	0	The dog barks occasionally when strangers pass by.
+@ offence
+1	64894	noun	offence	1	The referee called a serious offence during the match.
+2	64894	noun	offence	0	She was charged with a criminal offence last week.
+3	64894	noun	offence	0	Deliberate damage to property is a serious offence.
+4	64894	noun	offence	0	He apologized for causing offence with his careless remark.
+5	64894	noun	offences	0	The law lists several public-order offences.
+@ offend
+1	64900	verb	offend	1	A rude joke can easily offend someone in the group.
+2	64900	verb	offend	0	I didn't mean to offend you with my careless remark.
+3	64900	verb	offend	0	His rude reply may offend anyone who hears it.
+4	64900	verb	offend	0	The insulting sign could offend people in the neighborhood.
+5	64900	verb	offended	0	She said nothing, but her silence clearly offended him.
+@ offensive
+1	64911	adj	offensive	1	The offensive joke made everyone in the room uncomfortable.
+2	64911	adj	offensive	0	The offensive comment about her culture upset her deeply.
+3	64911	adj	offensive	0	That offensive image was removed from the school website.
+4	64911	adj	offensive	0	The offensive language in the movie upset many viewers.
+5	64911	adj	offensive	0	He apologized for the offensive remark he made during the meeting.

@@ -1,0 +1,90 @@
+@ establish
+1	63287	verb	establish	1	The new bridge will establish a safer route across the river.
+2	63286	verb	establish	0	She worked hard to establish her reputation in the company.
+3	63287	verb	establish	0	The team needed to establish trust before moving forward.
+4	63289	verb	establish	0	They used data to establish the truth of the claim.
+5	63288	verb	established	0	The rule was established after months of discussion.
+@ estate
+1	63290	noun	estate	1	After the funeral, the family gathered to discuss the estate and its future.
+2	63290	noun	estate	0	The lawyer explained how the estate would be divided among the heirs.
+3	63290	noun	estate	0	She inherited the estate after her uncle passed away.
+4	63290	noun	estate	0	The estate included the house, farmland, and several debts.
+5	63290	noun	estate	0	The executor managed the estate until all debts were settled.
+@ estimate
+1	63280	noun	estimate	1	The contractor gave an estimate for the roof repair.
+2	63280	noun	estimate	0	We need an estimate before we can approve the project.
+3	63280	noun	estimate	0	The estimate for the new office space was too high.
+4	63280	noun	estimate	0	She asked for an estimate on the painting job.
+5	63280	noun	estimate	0	The estimate came in lower than expected.
+@ ethical
+1	63306	adj	ethical	1	The course focused on ethical theories in ancient philosophy.
+2	63306	adj	ethical	0	She studied ethical principles in her university seminar.
+3	63306	adj	ethical	0	His research explored ethical questions in artificial intelligence.
+4	63306	adj	ethical	0	The debate centered on ethical standards in medical research.
+5	63306	adj	ethical	0	They discussed ethical foundations in modern legal systems.
+@ evaluate
+1	63311	verb	evaluate	1	The teacher will evaluate the students' projects at the end of the term.
+2	63311	verb	evaluate	0	We need to evaluate the risks before making a final decision.
+3	63311	verb	evaluate	0	The committee will evaluate the proposal based on its impact.
+4	63311	verb	evaluate	0	She had to evaluate the evidence carefully before testifying.
+5	63311	verb	evaluate	0	They will evaluate the new policy after one month of implementation.
+@ evil
+1	63323	adj	evil	1	The villain's evil plan involved stealing children's dreams.
+2	63323	adj	evil	0	She gave him an evil look before walking away.
+3	63323	adj	evil	0	The evil man laughed as he locked the door.
+4	63323	adj	evil	0	An evil ruler ordered the soldiers to burn the village.
+5	63323	adj	evil	0	He felt a sudden chill from the evil presence in the room.
+@ examination
+1	63343	noun	examination	1	The doctor's examination revealed no signs of illness.
+2	63343	noun	examination	0	A thorough examination of the documents found several errors.
+3	63343	noun	examination	0	The police conducted an examination of the crime scene.
+4	63343	noun	examination	0	Her examination of the data took several hours.
+5	63343	noun	examination	0	The teacher's careful examination of the test papers revealed two grading errors.
+@ excuse
+1	63351	noun	excuse	1	She gave a weak excuse for missing the deadline.
+2	63351	noun	excuse	0	He offered an excuse to avoid punishment.
+3	63351	noun	excuse	0	The teacher didn't accept his excuse for being late.
+4	63351	noun	excuse	0	A good excuse can help reduce blame.
+5	63351	noun	excuse	0	He made an excuse for breaking the window.
+@ executive
+1	63315	adj	executive	1	The executive order was ready to be carried out.
+2	63315	adj	executive	0	The executive branch issued the document after the cabinet meeting.
+3	63315	adj	executive	0	The executive team met to discuss the plan.
+4	63316	adj	executive	0	The hotel has an executive lounge for business guests.
+5	63319	noun	executive	0	The executive approved the proposal at its monthly meeting.
+@ existence
+1	63321	noun	existence	1	The universe's existence began with a single event.
+2	63321	noun	existence	0	She questioned the existence of life beyond Earth.
+3	63321	noun	existence	0	His existence was unknown to everyone except his sister.
+4	63321	noun	existence	0	The existence of water on Mars surprised many scientists.
+5	63321	noun	existence	0	We must accept the existence of natural limits.
+@ expectation
+1	63335	noun	expectation	1	She had every expectation of seeing her friend at the party.
+2	63335	noun	expectation	0	His expectation of a promotion was based on his recent performance.
+3	63335	noun	expectation	0	The expectation of rain made us carry umbrellas.
+4	63335	noun	expectation	0	There was an expectation of an important announcement at the meeting.
+5	63335	noun	expectation	0	The expectation of a quiet evening was ruined by the noise.
+@ expense
+1	63354	noun	expense	1	The new software was a major expense for the small business.
+2	63354	noun	expense	0	Traveling to the conference was an unexpected expense.
+3	63354	noun	expense	0	The repair cost became a significant expense.
+4	63354	noun	expense	0	They covered the expense of the team dinner.
+5	63354	noun	expense	0	The upgrade was a necessary expense.
+@ exploration
+1	63358	noun	exploration	1	The team's exploration of the cave revealed ancient drawings.
+2	63358	noun	exploration	0	Her exploration of the forest led to the discovery of a hidden stream.
+3	63358	noun	exploration	0	The exploration of space continues to inspire new generations.
+4	63358	noun	exploration	0	His exploration of the island took three weeks to complete.
+5	63358	noun	exploration	0	The exploration of new technologies is essential for progress.
+@ expose
+1	63362	verb	exposed	1	The journalist exposed the truth behind the secret deal.
+2	63362	verb	expose	0	She was able to expose the fraud during the investigation.
+3	63362	verb	exposed	0	The documentary exposed the hidden problems in the school system.
+4	63362	verb	expose	0	They managed to expose the corruption in the city council.
+5	63362	verb	exposed	0	The report exposed the company's misleading advertising.
+@ extend
+1	63368	verb	extends	1	The forest extends for miles beyond the old road.
+2	63368	verb	extends	0	The city extends into the valley and up the hills.
+3	63368	verb	extends	0	The river extends through the canyon and into the plain.
+4	63368	verb	extends	0	The desert extends far beyond the distant mountains.
+5	63368	verb	extends	0	The field extends into the foggy morning light.

@@ -1,0 +1,25 @@
+article	pass	solid rows, real distinct sentences; verb POS skipped (only "bind by articles of apprenticeship" / obsolete "accuse by articles", not learner-facing)
+artist	pass	solid rows; adj POS skipped (only archaic sense "artistic")
+as	repaired	all 5 rows had target 'as' occurring twice each (as...as comparatives, ambiguous cloze); rewrote using conj/prep senses with single occurrence; adv POS skipped (structurally forces the double 'as'), noun POS skipped (Roman coin, rare)
+ask	repaired	form-variety violation: all 5 rows used base form 'ask' only; diversified to ask/asked/asking/asks across request and put-forward-a-question senses; noun POS skipped (asking-price/newt/lizard/Tumblr senses, not core A1)
+at	pass	solid rows; noun/pron/verb POS all rare-tagged (@ sign, obsolete pronoun, "to @ someone" slang), correctly skipped
+august	pass	solid rows (adj "dignified/noble" sense); noun/verb POS both rare (clown alt-form, obsolete "to ripen"), correctly skipped
+aunt	repaired	r3 target 'aunt' did not match the sentence's own casing ('Aunt May'); reworded to keep lowercase 'aunt' throughout
+autumn	repaired	r2 and r5 target 'autumn' did not match sentence-initial capitalization ('Autumn comes...' / 'Autumn is...'); fixed target casing to 'Autumn'; other rows unchanged
+away	pass	solid rows, no defects; adj POS skipped as redundant with adv coverage at this level, verb POS skipped (rare poetic "awayed")
+baby	pass	solid rows on core human-infant sense; adj/verb POS skipped as non-essential once the core meaning is covered
+back	pass	strong multi-POS block (adj/adv/noun/verb), each sense correctly matches its sentence despite high ordinal position; forms diverse enough (back/backed/backing)
+bad	pass	solid rows; adv/noun/verb POS all slang-tagged, correctly skipped
+bag	pass	solid rows; verb POS skipped (put-in-a-bag sense usable but not essential given solid noun coverage)
+ball	pass	solid rows; verb POS skipped (mostly slang/niche senses: basketball slang, sexual sense, blackball)
+banana	pass	solid rows; adj POS skipped (narrow "curved like a banana" usage)
+band	pass	solid rows; verb POS skipped (fasten-with-a-band / group-together, not essential for A1)
+bank	repaired	r4 'Which bank do you bank with?' had target 'bank' occurring twice (ambiguous cloze); block also used only 2 distinct forms (bank/banked); rewrote r4 with target 'banks', single occurrence, restoring form variety to 3
+bath	pass	solid rows; verb POS skipped (redundant with the noun, not essential)
+bathroom	pass	solid rows; verb POS skipped (rare clinical "assist a patient with the toilet" sense)
+be	repaired	form-variety violation: all 5 rows used base form 'be' only; rewrote using was/is/are/were/been across distinct copula and passive-voice senses
+beach	pass	solid rows; verb POS skipped (run aground, nautical/narrow)
+beautiful	repaired	r5 'It was a beautiful day.' is a template stating no situation beyond the target itself; rewrote; noun POS skipped (informal address term "Hey beautiful!", not core)
+because	repaired	r5 target 'because' did not match sentence-initial capitalization ('Because it was cold...'); fixed to 'Because'. Also r3 'He was late because of traffic.' was tagged with sense 29307, the conjunction sense that requires a full clause, but 'because of + noun' is the preposition usage; re-pointed to sense 29312 (prep); adv POS skipped (would just restate 'because of')
+become	repaired	form-variety violation: all 5 rows used base form 'become' only; diversified to become/became/becoming/becomes
+bed	pass	solid rows; verb POS skipped (sleep/sexual/embed senses, not essential for this noun-focused word)

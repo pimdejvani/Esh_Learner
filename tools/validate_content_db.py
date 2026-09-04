@@ -97,6 +97,21 @@ def validate(db: sqlite3.Connection, source: sqlite3.Connection) -> Report:
         ).fetchall(),
         lambda row: f"{row['headword']} rank {row['rank']}: explanation missing, too short, or unsourced",
     )
+    # Same style as the case-insensitive sentence-uniqueness check in
+    # translate_vocab_content.py:132 (len({...casefold()}) != len(rows)), but
+    # for the Thai explanation column instead of the English sentence.  A
+    # word's 5 sentences must each get their own explanation grounded in that
+    # sentence's context (SPEC.md:423 forbids copying one note across all 5).
+    # Empty explanations -- the state translate_vocab_content.py leaves them
+    # in until an LLM authors real per-sentence text -- must not trip this.
+    report.check(
+        "duplicate-explanation",
+        db.execute(
+            "SELECT w.headword, count(*) AS n FROM example_sentences e JOIN words w ON w.id=e.word_id"
+            " WHERE trim(e.explanation_th) != '' GROUP BY e.word_id, lower(e.explanation_th) HAVING n > 1"
+        ).fetchall(),
+        lambda row: f"{row['headword']}: the same explanation is repeated across {row['n']} sentences",
+    )
     report.check(
         "cloze-span-wrong",
         [row for row in db.execute(

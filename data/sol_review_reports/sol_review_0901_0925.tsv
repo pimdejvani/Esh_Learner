@@ -1,0 +1,25 @@
+create	repaired	fixed r2 casing bug (Create); added verb form variety created/creates/creating; skipped adj POS (only RARE obsolete sense)
+culture	repaired	fixed r2 casing bug (Culture); skipped verb POS (only narrow bacteria-culture senses)
+cup	repaired	replaced hard-vocab noun row with common verb sense (cupped hands) for real POS coverage
+customer	repaired	re-pointed sense_id from obsolete "habitual patron" (31334) to modern purchaser sense (31335) on all 5 rows
+cut	repaired	added verb form variety (cuts/cutting) and two common noun senses (wound, pay cut); skipped adj POS (all senses technical/slang)
+dad	repaired	fixed r3 casing bug (Dad used as address); skipped verb POS (informal/nonstandard senses)
+dance	repaired	added verb POS coverage (danced/dancing/dances) alongside noun rows
+dancer	pass	all 5 rows solid, correct sense, casing fine, no coverage gap worth chasing
+dancing	repaired	fixed r1/r2 casing bugs (Dancing capitalized at sentence start)
+dangerous	pass	all 5 rows solid, only adj POS with usable senses
+dark	repaired	added noun POS ("after dark" idiom); skipped verb POS (archaic "to dark", modern English says darken)
+date	repaired	MAJOR: original block used only the palm-fruit sense for all 5 rows; added calendar-date, document-date, and romantic-date senses, kept one fruit row
+daughter	pass	all 5 rows solid, correct sense, no coverage gap worth chasing
+day	repaired	fixed r2 casing bug (Day); verb POS correctly already skipped (only rare sense)
+dear	repaired	MAJOR: rewrote r1 (was a sense/content mismatch, "dear old house" read as affectionate but tagged price-sense); added noun POS (term of endearment) at r4
+december	repaired	fixed casing bug on ALL 5 rows: month name is always capitalized, target field was lowercase throughout
+decide	repaired	fixed r2 casing bug (Decide); added verb form variety (decided/decides/deciding)
+delicious	pass	all 5 rows solid, correct sense, only usable adj POS
+describe	repaired	fixed r2 casing bug (Describe); added verb form variety (described/describes)
+description	pass	all 5 rows solid, correct sense, no coverage gap worth chasing
+design	repaired	added verb POS coverage (designs/designed)
+desk	pass	all 5 rows solid; verb POS skipped, all senses archaic or newsroom jargon
+detail	repaired	added verb POS coverage (detail as in "detail the rules")
+dialogue	pass	all 5 rows solid; verb POS skipped, "to dialogue" restricted to formal/diplomatic register
+dictionary	pass	all 5 rows solid; verb POS skipped, "to dictionary" is not standard English usage

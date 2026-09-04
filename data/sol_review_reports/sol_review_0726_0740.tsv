@@ -1,0 +1,15 @@
+about	repaired	only one repetitive prep sense used; added adv (nearly/around) and adj (up and about); skipped verb (nautical "turn about")
+above	repaired	all prep only; added adv senses (above zero/upstairs); skipped adj+noun (heaven/legal-doc jargon, archaic)
+across	repaired	added adv sense (from side to side, "half a mile across"); skipped noun (crossword-clue jargon)
+action	repaired	one weak generic row and missing POS; added noun sense (fast-paced activity) and verb (to action a request); skipped adj (only sense is slang "arrogant")
+activity	repaired	sense_id mismatch: rows described concrete pastimes but were tagged with the abstract "activeness" sense; fixed sense_ids and added state-of-activity sense for variety
+actor	repaired	ALL 5 rows used an obsolete legal sense (28476, plaintiff) dressed up as ordinary "actor"; full rewrite using sense 28479 (stage/film performer)
+actress	pass	correct sense throughout, real distinct sentences, no coverage defects
+add	repaired	all rows reused the bare form "add" and noun POS was missing; diversified to add/added/adds/adding; skipped noun (all 3 senses are jargon: playlist add, gaming add, abstract "an add")
+address	repaired	ALL 5 rows used an obsolete sense (28497, "Direction") while reading like the modern address sense; fixed to sense 28504 and added verb coverage (addressed a letter / address a crowd); skipped remaining verb senses (mostly obsolete/archaic)
+adult	repaired	all rows used only the animal sense; the core human-adult sense was entirely absent; added human noun sense and adj (adult ticket); skipped verb (both senses slang/nonstandard "to adult")
+advice	pass	correct sense throughout, real distinct sentences; verb POS correctly left uncovered (its only sense is a misspelling tag for "advise")
+afraid	pass	correct sense throughout, real distinct sentences, no coverage defects
+after	repaired	r1 was tagged as the adverb sense but "after the party" is prepositional usage; rebuilt with prep + conj + adv coverage; skipped adj (nautical/dated) and noun (before/after photo-editing jargon)
+afternoon	repaired	r3 used the "social event" sense but read unnaturally; reworded only that row, kept the other four; skipped adv (its only sense is archaic)
+again	pass	correct sense throughout, real distinct sentences; prep POS correctly left uncovered (its only sense is dialectal "against")

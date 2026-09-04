@@ -1,0 +1,25 @@
+bored	repaired	adjective sense (feeling bored) was entirely missing; kept 2 good verb rows, added 3 adjective rows
+boring	repaired	all 5 rows used the technical "drilling a hole" noun sense; the learner-core adjective sense (tedious) was absent -- full rewrite
+born	repaired	added common adjective sense ("a born leader") for legitimate POS coverage; kept 4 original verb rows
+both	repaired	source has legitimate conj (both...and) and pron senses that were missing; replaced 2 of 5 det rows with those
+bottle	repaired	added verb coverage (to bottle liquid / to bottle-feed), 3 distinct target forms now used
+box	repaired	sense_id mismatch: original rows pointed at umbrella/figurative sense 29845 ("a UNIX box") not the concrete container sense 29846; fixed sense_id and added verb (boxing) row
+boy	pass	5 solid distinct sentences on the core noun sense; verb sense is archaic theatrical usage, correctly skipped
+boyfriend	pass	5 solid distinct sentences; verb senses tagged rare, correctly skipped
+bread	repaired	added verb coverage (to bread = coat with breadcrumbs), a common cooking term
+break	pass	5 rows already correctly sense-matched (fracture, rest, physical gap) with 4 distinct forms; well-built block
+breakfast	pass	4 distinct senses already covered correctly (meal, food type, wedding breakfast, verb); solid block
+bring	repaired	only one verb form (bring) was used across all 5 rows; diversified to bring/brought/brings/bringing and rewrote rank1 to be more vivid
+brother	pass	5 solid distinct sentences; verb sense ("to treat as a brother") judged too unnatural/archaic-sounding for a learner despite no tag, correctly skipped
+brown	repaired	all 5 rows used only the noun (paint colour) sense; the learner-core adjective sense (brown eyes/hair/objects) was entirely missing -- added adj and verb (cooking) coverage
+build	repaired	only one verb form (build) was used; diversified to building/built/builds/build and added noun (physique) sense
+building	repaired	all 5 rows used the abstract "process of construction" sense; the learner-core "structure with walls and roof" sense was entirely missing (one row also had a sense/content mismatch) -- rewritten
+bus	repaired	added verb coverage (to travel by bus)
+business	repaired	added adjective coverage (business phone); kept 4 of 5 original noun rows which were already strong
+busy	pass	5 solid distinct sentences on the core adjective sense; noun sense (police officer) is rare-tagged and verb sense judged too literary for a learner, both correctly skipped
+but	repaired	sense_id/content mismatch: 4 of 5 rows were labelled prep(except) but the sentences actually used the conjunction (however/contrast) meaning; rewrote to correctly split 3 conj + 2 prep rows
+butter	repaired	added verb coverage (to butter bread/toast)
+buy	repaired	only one verb form (buy) was used; diversified to buy/bought/buys/buying and added noun (a great buy) sense
+by	repaired	sense_id/content mismatch on 3 of 5 rows: "by Friday" (deadline) and "written by" (passive agent) were mislabeled as the "near/next to" sense, and "stop by" is adverbial not prepositional; corrected sense_ids and added the adverb row
+bye	pass	DB has no interjection POS at all (project-wide gap, see hazard #4); the tournament "pass" noun sense is the best available non-rare sense and is already used correctly in all 5 rows
+cafe	pass	the "rare-sense" flags are false positives -- sense 30218 is tagged "alternative" only because it is an alternate spelling of "café", not because the meaning is obscure; this is exactly what a learner means by "cafe"

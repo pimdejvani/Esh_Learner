@@ -1,0 +1,54 @@
+@ as
+1	28877	conj	As	1	As the fireworks exploded overhead, the whole crowd gasped in delight.
+2	28881	conj	As	0	As it was raining, we stayed indoors.
+3	28887	prep	as	0	She works as a nurse at the hospital.
+4	28888	prep	as	0	He gave her flowers as a surprise gift.
+5	28884	conj	as	0	She faced the same challenges as her brother did.
+@ ask
+1	28893	verb	asked	1	Nervous and shaking, she finally asked her boss for a raise.
+2	28893	verb	ask	0	Please ask your teacher for help with the homework.
+3	28899	verb	asking	0	He kept asking the same question over and over.
+4	28893	verb	asks	0	She always asks before borrowing my laptop.
+5	28898	verb	ask	0	Did you ask to leave early today?
+@ aunt
+1	28941	noun	aunt	1	My aunt taught me how to bake bread.
+2	28941	noun	aunt	0	My aunt lives near us.
+3	28941	noun	aunt	0	We visited our favorite aunt on Sunday.
+4	28941	noun	aunt	0	Her aunt brought a cake.
+5	28941	noun	aunt	0	I called my aunt last night.
+@ autumn
+1	28946	noun	autumn	1	In autumn, orange leaves covered the playground.
+2	28946	noun	Autumn	0	Autumn comes after summer.
+3	28946	noun	autumn	0	We picked apples in autumn.
+4	28946	noun	autumn	0	The days get cooler in autumn.
+5	28946	noun	Autumn	0	Autumn is a windy season.
+@ bank
+1	29207	noun	bank	1	He walked into the bank with his first pay slip and felt proud.
+2	29218	verb	banked	0	She banked the money the same day.
+3	29208	noun	bank	0	There is a bank near the station.
+4	29217	verb	banks	0	My father banks online every week.
+5	29210	noun	bank	0	Each player takes a card from the bank.
+@ be
+1	29264	verb	was	1	The whole stadium went silent when the final goal was scored.
+2	29273	verb	is	0	My favorite color is blue.
+3	29272	verb	are	0	Cats and dogs are popular pets.
+4	29264	verb	were	0	The windows were cleaned before the guests arrived.
+5	29263	verb	been	0	I have been to Paris twice.
+@ beautiful
+1	29301	adj	beautiful	1	The sunset made the lake look beautiful.
+2	29301	adj	beautiful	0	She has a beautiful smile.
+3	29301	adj	beautiful	0	This garden is beautiful.
+4	29301	adj	beautiful	0	We saw beautiful flowers.
+5	29301	adj	beautiful	0	The mountains looked beautiful covered in fresh snow.
+@ because
+1	29307	conj	because	1	We stayed inside because the rain was heavy.
+2	29307	conj	because	0	I smiled because I was happy.
+3	29312	prep	because	0	He was late because of traffic.
+4	29307	conj	because	0	She ran because she was late.
+5	29307	conj	Because	0	Because it was cold, we wore coats.
+@ become
+1	29313	verb	become	1	The sky will become orange at sunset.
+2	29313	verb	became	0	She became a doctor after years of hard study.
+3	29313	verb	becoming	0	The weather is becoming colder every day.
+4	29313	verb	becomes	0	Ice becomes water when it warms up.
+5	29313	verb	become	0	Leaves become brown in autumn.

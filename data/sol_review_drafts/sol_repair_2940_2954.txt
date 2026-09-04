@@ -1,0 +1,90 @@
+@ vast
+1	67430	adj	vast	1	The vast ocean stretched endlessly under the clear sky.
+2	67430	adj	vast	0	The desert covers a vast area of the country.
+3	67430	adj	vast	0	The company has a vast network of offices worldwide.
+4	67430	adj	vast	0	He stared at the vast mountain range in silence.
+5	67430	adj	vast	0	The library holds a vast collection of old books.
+@ venue
+1	67443	noun	venue	1	The concert will be held at a large venue with excellent sound quality.
+2	67443	noun	venue	0	After the fire, the community center became the temporary venue for the festival.
+3	67443	noun	venue	0	The sports team practiced at a new venue with artificial turf.
+4	67443	noun	venue	0	We booked a small venue for the wedding reception last month.
+5	67443	noun	venue	0	The film premiere took place at a historic venue downtown.
+@ via
+1	67452	prep	via	1	We flew to Tokyo via Seoul.
+2	67452	prep	via	0	The train travels to the coast via several mountain towns.
+3	67452	prep	via	0	They returned home via the old bridge.
+4	67453	prep	via	0	Please send the documents via email.
+5	67453	prep	via	0	Millions watched the ceremony via a live online stream.
+@ victory
+1	67454	noun	victory	1	The team celebrated their hard-earned victory after the final whistle.
+2	67454	noun	victory	0	Passing the difficult exam felt like a personal victory.
+3	67454	noun	victory	0	The army claimed victory after driving the enemy from the region.
+4	67454	noun	victory	0	Solving the final puzzle gave him a quiet sense of victory.
+5	67454	noun	victory	0	The underdog team's victory surprised everyone in the stadium.
+@ violence
+1	67457	noun	violence	1	The violence of the explosion shattered nearby windows.
+2	67458	noun	violence	0	Police intervened before the argument turned to violence.
+3	67457	noun	violence	0	The violence of the waves knocked the boat off course.
+4	67458	noun	violence	0	He used violence to break the lock open.
+5	67458	noun	violence	0	The violence in the film shocked many viewers.
+@ virtual
+1	67481	adj	virtual	1	The new software created a virtual environment for training pilots.
+2	67481	adj	virtual	0	The students met in a virtual classroom from their homes.
+3	67481	adj	virtual	0	The museum offers a virtual tour of its ancient artifacts.
+4	67481	adj	virtual	0	He used a virtual keyboard on his tablet to type messages.
+5	67481	adj	virtual	0	The headset creates a virtual world that players can explore.
+@ vision
+1	67499	noun	vision	1	The doctor checked her vision with a simple eye chart.
+2	67499	noun	vision	0	He lost his vision after the accident and now uses a guide dog.
+3	67499	noun	vision	0	The eagle has sharp vision and can spot prey from far away.
+4	67499	noun	vision	0	Her vision became blurry when she was tired.
+5	67499	noun	vision	0	She wears glasses to correct her vision and see clearly.
+@ visual
+1	67462	adj	visual	1	The screen provides a visual warning when the battery is low.
+2	67462	adj	visual	0	She relied on her visual memory to recall the layout of the room.
+3	67462	adj	visual	0	The artist focused on the visual details of the landscape.
+4	67462	adj	visual	0	The teacher used visual aids to explain the difficult lesson.
+5	67462	adj	visual	0	The bright colors create a strong visual contrast.
+@ vital
+1	67472	adj	vital	1	The vital signs showed the patient was stable.
+2	67473	adj	vital	0	Clean water is vital to human survival.
+3	67477	adj	vital	0	The vital role of bees in pollination is well known.
+4	67477	adj	vital	0	It is vital to check the figures before publishing the report.
+5	67477	adj	vital	0	Accurate records are vital for effective planning.
+@ vitamin
+1	67469	noun	vitamin	1	This orange is rich in vitamin C.
+2	67469	noun	vitamin	0	She takes a daily vitamin to stay healthy.
+3	67469	noun	vitamin	0	The doctor recommended a vitamin supplement after the test.
+4	67469	noun	vitamin	0	Children need a balanced diet that provides every essential vitamin.
+5	67469	noun	vitamin	0	Fresh vegetables provide the body with vitamin C and other nutrients.
+@ volume
+1	67522	noun	volume	1	The box has a volume of 120 cubic inches.
+2	67522	noun	volume	0	The volume of the swimming pool is 5000 gallons.
+3	67522	noun	volume	0	A cube with sides of 3 cm has a volume of 27 cubic centimeters.
+4	67522	noun	volume	0	The volume of the room was calculated using length, width, and height.
+5	67522	noun	volume	0	The volume of the container is 2 liters.
+@ wage
+1	67515	noun	wage	1	Her hourly wage is twenty dollars.
+2	67515	noun	wage	0	The factory worker's wage increased after the union negotiations.
+3	67515	noun	wage	0	They negotiated a higher hourly wage for overtime work.
+4	67515	noun	wage	0	The new job offers a competitive wage.
+5	67515	noun	wage	0	He earns a fair wage for his skilled labor.
+@ weakness
+1	67512	noun	weakness	1	The illness left him with a lasting weakness in his legs.
+2	67512	noun	weakness	0	After the storm, the wall showed a clear weakness at the base.
+3	67512	noun	weakness	0	The old bridge has a weakness in its central support beam.
+4	67512	noun	weakness	0	Weakness in his legs forced him to stop during the climb.
+5	67512	noun	weakness	0	The weakness in the metal caused the structure to collapse.
+@ wealth
+1	67541	noun	wealth	1	The old castle held great wealth in its hidden vaults.
+2	67541	noun	wealth	0	Her family's wealth came from generations of careful farming.
+3	67542	noun	wealth	0	The island has a wealth of rare plant species.
+4	67541	noun	wealth	0	He inherited wealth from his uncle's successful business.
+5	67541	noun	wealth	0	The museum displayed gold and jewels that reflected the wealth of the ancient kingdom.
+@ wealthy
+1	67544	adj	wealthy	1	The wealthy family owns a private island in the Caribbean.
+2	67544	adj	wealthy	0	She married a wealthy businessman from New York.
+3	67544	adj	wealthy	0	The wealthy neighbor donated money to the local school.
+4	67544	adj	wealthy	0	He became wealthy after building a successful software company.
+5	67544	adj	wealthy	0	The wealthy investor gave a speech at the university.

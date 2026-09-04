@@ -1,0 +1,60 @@
+@ league
+1	64356	noun	league	1	The environmental group joined a league of conservationists worldwide.
+2	64356	noun	league	0	Our school started a league to improve recycling in the community.
+3	64356	noun	league	0	She helped form a league of local artists to share resources.
+4	64356	noun	league	0	The city council created a league to support small businesses.
+5	64356	noun	league	0	They launched a league to promote clean energy in rural areas.
+@ lean
+1	64366	verb	lean	1	The old fence began to lean to one side after the storm.
+2	64366	verb	leaning	0	The tower in Pisa has been leaning for centuries.
+3	64366	verb	leaned	0	The ladder leaned against the garage wall.
+4	64366	verb	leaned	0	The tree leaned slightly toward the river.
+5	64366	verb	leaned	0	The chair leaned slightly to the left because one leg was shorter.
+@ licence
+1	64326	noun	licence	1	She applied for a driving licence at the local office.
+2	64326	noun	licence	0	The shop needs a food licence to operate legally.
+3	64326	noun	licence	0	He lost his fishing licence after breaking the rules.
+4	64326	noun	licence	0	The contractor had to show his professional licence before starting work.
+5	64326	noun	licence	0	They renewed their business licence before the deadline.
+@ limited
+1	64383	adj	limited	1	The library has limited access to rare books.
+2	64383	adj	limited	0	She gave a limited response to the difficult question.
+3	64383	adj	limited	0	The budget allows for limited travel this year.
+4	64383	adj	limited	0	He has limited experience in software development.
+5	64383	adj	limited	0	The team has limited time to complete the project.
+@ lively
+1	64386	adj	lively	1	The children were lively during the morning playtime.
+2	64386	adj	lively	0	She danced to a lively rhythm that everyone followed.
+3	64386	adj	lively	0	The park had a lively atmosphere on weekends.
+4	64386	adj	lively	0	His lively voice made the story more engaging.
+5	64386	adj	lively	0	The crowd was lively and full of cheers.
+@ load
+1	64409	noun	load	1	The backpack felt heavy with the load of books.
+2	64409	noun	load	0	He carried the load up the steep path without stopping.
+3	64409	noun	load	0	The mule struggled under the load of firewood.
+4	64409	noun	load	0	She lifted the load onto the shelf with care.
+5	64409	noun	load	0	The load on the truck made the wheels squeak.
+@ loan
+1	64403	noun	loan	1	She gave me a loan of her bicycle for the weekend.
+2	64403	noun	loan	0	The loan of the tools allowed us to finish the project on time.
+3	64403	noun	loan	0	He made a loan to his friend to help with the car repair.
+4	64403	noun	loan	0	The loan of the camera was very helpful during the event.
+5	64403	noun	loan	0	I asked for a loan of the ladder to fix the roof.
+@ logical
+1	64396	adj	logical	1	Her answer was logical and easy to follow.
+2	64396	adj	logical	0	The argument was not logical, so it failed.
+3	64396	adj	logical	0	A logical explanation helps everyone understand the problem.
+4	64396	adj	logical	0	He gave a logical response to the difficult question.
+5	64396	adj	logical	0	The plan was logical and well thought out.
+@ long-term
+1	64400	adj	long-term	1	The long-term effects of climate change are becoming harder to ignore.
+2	64400	adj	long-term	0	Scientists study the long-term health risks of air pollution.
+3	64401	adj	long-term	0	This policy aims for long-term economic growth.
+4	64401	adj	long-term	0	The long-term plan includes building new schools.
+5	64401	adj	long-term	0	She invested in a long-term savings account.
+@ loose
+1	64451	verb	loose	1	The child managed to loose the dog from its leash.
+2	64452	verb	loosed	0	She loosed the rope that held the boat to the dock.
+3	64451	verb	loosed	0	He quickly loosed the bird from the cage.
+4	64451	verb	loosed	0	The prisoner was loosed from his chains after hours of effort.
+5	64451	verb	loose	0	They loose the horses into the open field at dawn.

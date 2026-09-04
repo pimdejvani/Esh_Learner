@@ -1,0 +1,150 @@
+@ electricity
+1	46002	noun	electricity	1	The storm cut off our electricity for three cold nights.
+2	46000	noun	electricity	0	This old heater uses a lot of electricity.
+3	46002	noun	electricity	0	We pay for our electricity at the end of each month.
+4	45997	noun	electricity	0	Rubbing a balloon on your hair makes static electricity.
+5	45999	noun	electricity	0	You could feel the electricity in the crowd before the concert.
+@ electronic
+1	46007	adj	electronic	1	I lost the electronic ticket for my flight and panicked at the gate.
+2	46004	adj	electronic	0	This clock has a simple electronic timer inside.
+3	46006	adj	electronic	0	Our school keeps electronic records of every student.
+4	46005	adj	electronic	0	He fell asleep to soft electronic music.
+5	46009	noun	electronics	0	She charges all her electronics before a long trip.
+@ employ
+1	46010	verb	employed	1	After months of searching, the hospital finally employed her as a nurse.
+2	46010	verb	employs	0	The small bakery employs six people from the village.
+3	46012	verb	employ	0	Teachers employ games to help children learn new words.
+4	46012	verb	employing	0	She solved the problem by employing a very simple trick.
+5	46014	noun	employ	0	The company keeps two hundred workers in its employ.
+@ employee
+1	46017	noun	employee	1	The new employee dropped a whole tray of coffee on her first day.
+2	46017	noun	employee	0	Every employee must wear a name badge in the shop.
+3	46017	noun	employees	0	The manager thanked the employees for working late.
+4	46017	noun	employee	0	She has been an employee at the hotel for ten years.
+5	46017	noun	employees	0	Most employees eat lunch in the small kitchen upstairs.
+@ employer
+1	46018	noun	employer	1	Her employer gave her a week off when her father got sick.
+2	46018	noun	employer	0	A good employer listens when workers have a problem.
+3	46018	noun	employers	0	Many employers ask for two references before hiring.
+4	46018	noun	employer	0	Ask your employer to sign the holiday form.
+5	46018	noun	employers	0	Some employers let their staff work from home on Fridays.
+@ empty
+1	46019	adj	empty	1	She opened the fridge and found it completely empty again.
+2	46019	adj	emptier	0	The train is much emptier after nine o'clock.
+3	46023	adj	empty	0	His empty promises made the whole team angry.
+4	46031	verb	emptied	0	He emptied his pockets to look for the missing key.
+5	46033	noun	empties	0	Put the empties by the door for the recycling truck.
+@ ending
+1	46035	noun	ending	1	The sad ending of the film made my sister cry.
+2	46035	noun	endings	0	I always prefer stories with happy endings.
+3	46034	noun	ending	0	The ending of the school year always feels strange.
+4	46036	noun	endings	0	Spanish verbs have different endings for each person.
+5	46037	verb	ending	0	The concert is ending later than we expected.
+@ energy
+1	46038	noun	energy	1	After a long swim, the children had no energy left for dinner.
+2	46044	noun	energy	0	The room had a calm energy after the storm passed.
+3	46039	noun	energy	0	Solar panels turn sunlight into energy for the house.
+4	46040	noun	energy	0	Scientists measure energy in units called joules.
+5	46038	noun	energies	0	She put all her energies into finishing the painting.
+@ engine
+1	46049	noun	engine	1	The car engine died in the middle of the busy bridge.
+2	46049	noun	engine	0	My father cleans the engine of his old motorbike.
+3	46051	noun	engine	0	A steam engine pulls the train through the mountains.
+4	46052	noun	engines	0	Search engines find millions of pages in one second.
+5	46048	noun	engine	0	Tourism is the engine of this small island's economy.
+@ engineer
+1	46062	noun	engineer	1	The engineer checked the bridge after the earthquake shook the city.
+2	46063	noun	engineer	0	My sister wants to be a software engineer.
+3	46062	noun	engineers	0	The city hired engineers to design a new water system.
+4	46067	noun	engineer	0	The train engineer waved at the children on the platform.
+5	46071	verb	engineered	0	They engineered a new machine to clean the beach.
+@ enormous
+1	46078	adj	enormous	1	An enormous wave swallowed the little boat in seconds.
+2	46078	adj	enormous	0	The elephant left enormous footprints in the wet mud.
+3	46078	adj	enormous	0	We shared an enormous pizza after the football match.
+4	46078	adj	enormous	0	There is an enormous tree in front of the library.
+5	46078	adj	enormous	0	The cost of the repair was enormous for a small shop.
+@ enter
+1	46079	verb	entered	1	The dog entered the kitchen and ate the whole birthday cake.
+2	46079	verb	enter	0	Please knock before you enter my room.
+3	46082	verb	enters	0	He enters his password every morning at work.
+4	46081	verb	entering	0	My son is entering his teens next year.
+5	46079	verb	enter	0	Visitors enter the museum through the side door.
+@ environment
+1	46100	noun	environment	1	Plastic in the sea harms the environment for hundreds of years.
+2	46102	noun	environment	0	The new teacher created a friendly environment in her classroom.
+3	46099	noun	environments	0	Some plants can survive in very dry environments.
+4	46100	noun	environment	0	Riding a bike to school helps protect the environment.
+5	46103	noun	environment	0	The old game only runs in a Windows environment.
+@ equipment
+1	46107	noun	equipment	1	The climbers checked their equipment carefully before the storm arrived.
+2	46107	noun	equipment	0	Our school bought new sports equipment for the gym.
+3	46107	noun	equipment	0	Firefighters carry heavy equipment up the stairs.
+4	46107	noun	equipment	0	You need special equipment to dive under the sea.
+5	46107	noun	equipment	0	The kitchen equipment is too old to use safely.
+@ error
+1	46110	noun	error	1	One small error in the address sent the parcel to another country.
+2	46110	noun	errors	0	The teacher found three spelling errors in my essay.
+3	46113	noun	error	0	The measurement had an error of two centimetres.
+4	46112	noun	error	0	An error stopped the computer before I could save my work.
+5	46111	noun	error	0	He finally saw the error of his ways and said sorry.
+@ especially
+1	46124	adv	especially	1	Everyone loved the cake, especially the children at the back table.
+2	46122	adv	especially	0	The beach is especially crowded in August.
+3	46123	adv	especially	0	The test was not especially difficult for her.
+4	46124	adv	especially	0	She likes birds, especially the small green parrots.
+5	46121	adv	especially	0	He came in early especially to help me move the boxes.
+@ essay
+1	46125	noun	essay	1	Nina stayed up all night writing an essay about the ocean.
+2	46125	noun	essays	0	The teacher marked thirty essays over the weekend.
+3	46125	noun	essay	0	My essay needs a stronger ending and a better title.
+4	46125	noun	essay	0	He wrote his essay about his grandmother's village.
+5	46125	noun	essays	0	Good essays always start with a clear plan.
+@ everyday
+1	46131	adj	everyday	1	She wore her everyday shoes to the wedding by mistake.
+2	46132	adj	everyday	0	Traffic jams are an everyday problem in this city.
+3	46131	adj	everyday	0	This bag is strong enough for everyday use.
+4	46132	adj	everyday	0	The book is written in simple, everyday language.
+5	46133	adj	everyday	0	Feeding the chickens is part of her everyday routine.
+@ everywhere
+1	46138	adv	everywhere	1	After the pillow fight, white feathers floated everywhere in the bedroom.
+2	46139	adv	everywhere	0	I looked everywhere for my keys and finally found them.
+3	46138	adv	everywhere	0	Wildflowers grew everywhere on the hill behind the farm.
+4	46138	adv	everywhere	0	The smell of fresh bread followed us everywhere.
+5	46140	noun	everywhere	0	By ten o'clock everywhere was closed in the small town.
+@ evidence
+1	46141	noun	evidence	1	The muddy footprints were the only evidence that someone had entered the shed.
+2	46141	noun	evidence	0	The teacher asked for evidence before believing the story.
+3	46142	noun	evidence	0	The police showed the knife as evidence in court.
+4	46141	noun	evidence	0	There is no evidence that the medicine works.
+5	46145	verb	evidenced	0	His skill is evidenced by the trophies on the shelf.
+@ exact
+1	46146	adj	exact	1	The police asked her for the exact time of the accident.
+2	46146	adj	exact	0	Write the exact number of guests on the card.
+3	46147	adj	exact	0	She is very exact about arriving on time.
+4	46146	adj	exact	0	We need the exact address before the taxi comes.
+5	46154	adv	exact	0	He is wearing the exact same jacket as me.
+@ exactly
+1	46155	adv	exactly	1	The key fits exactly, so the old door finally opened.
+2	46155	adv	exactly	0	The clock showed exactly twelve when the bell rang.
+3	46156	adv	exactly	0	That is exactly what I wanted to say.
+4	46155	adv	exactly	0	Measure the flour exactly or the cake will fail.
+5	68036	intj	exactly	0	Yes, exactly, that is what I meant about the noise.
+@ excellent
+1	46159	adj	excellent	1	The chef made an excellent meal from three simple vegetables.
+2	46158	adj	excellent	0	The hotel gave us excellent service all week.
+3	46159	adj	excellent	0	Her science project was excellent and won first prize.
+4	46158	adj	excellent	0	This shop sells excellent bread on Saturday mornings.
+5	46160	adj	excellent	0	He has an excellent memory for names and faces.
+@ except
+1	46164	prep	except	1	Everyone laughed at the joke except the poor new teacher.
+2	46164	prep	except	0	The cupboard was empty except for a tin of beans.
+3	46165	conj	except	0	You can call me any time except when I am sleeping.
+4	46166	conj	except	0	I almost missed the bus, except a neighbour drove me.
+5	46162	verb	excepted	0	Everyone in the class was punished, Maria excepted.
+@ exist
+1	46168	verb	exist	1	Dinosaurs no longer exist, but their huge bones remain in museums.
+2	46168	verb	exists	0	A small village still exists on the other side of the mountain.
+3	46168	verb	existed	0	That shop existed for fifty years before it closed.
+4	46168	verb	existing	0	We must repair the existing bridge before winter.
+5	46168	verb	exist	0	Some insects exist only in one small forest.

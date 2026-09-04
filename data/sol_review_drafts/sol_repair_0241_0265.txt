@@ -8,7 +8,7 @@
 @ international
 1	47634	adj	international	1	It is international.
 2	47634	adj	international	0	The city hosts an international film festival.
-3	47634	adj	international	0	International trade connects many countries.
+3	47634	adj	International	0	International trade connects many countries.
 4	47634	adj	international	0	She works for an international company.
 5	47634	adj	international	0	The agreement requires international cooperation.
 
@@ -78,7 +78,7 @@
 @ jazz
 1	47724	noun	jazz	1	The first notes of jazz brought the quiet club to life.
 2	47724	noun	jazz	0	My father listens to jazz every evening.
-3	47724	noun	jazz	0	Jazz often includes improvisation.
+3	47724	noun	Jazz	0	Jazz often includes improvisation.
 4	47724	noun	jazz	0	She studied jazz at music school.
 5	47724	noun	jazz	0	The band plays jazz on Friday nights.
 

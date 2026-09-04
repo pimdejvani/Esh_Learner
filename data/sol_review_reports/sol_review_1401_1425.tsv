@@ -1,0 +1,25 @@
+somebody	repaired	r5 used fabricated plural 'somebodies'; rank1 flat; noun row re-pointed to sense 40092
+someone	repaired	r5 used fabricated plural 'someones'; rank1 rewritten to give a situation
+something	repaired	r5 used fabricated plural 'somethings'; adverb sense 40101 added for form variety
+sometimes	repaired	r3 sense 40107 obsolete and r5 adj 40108 obsolete; adj POS skipped because every adj sense is obsolete
+son	repaired	r4/r5 used verb senses 40117/40118 in fabricated usage; verb POS skipped
+song	pass	all five rows use core noun senses with natural sentences; rank1 is vivid at nine words
+soon	repaired	r2 sense 40131 obsolete, r4 'as soonest as' ungrammatical, r5 sense 40129 dialectal; re-pointed to adj 40128 and 40130
+sorry	pass	adj and noun rows are natural and correctly sensed; verb sense 40140 tagged rare so verb POS skipped
+sound	pass	noun, adj and verb rows all use core senses; intj sense 67923 is slang so intj POS skipped
+soup	repaired	r4/r5 used verb sense 40181 'to feed with soup' which reads unnaturally; verb POS skipped
+special	repaired	rank1 was a five-word template; r3/r4 used multi-word targets 'more special'/'most special' outside the source form list; noun senses added and verb 40266 skipped as medical jargon
+spell	repaired	r1/r3/r4 sat on sense 40270 'to bewitch' while the sentences meant writing letters; re-pointed to 40272
+spelling	repaired	rank1 was four words and stated no situation; other rows thin
+spend	repaired	r1/r3 were about time but sat on sense 40298 'pay out money'; re-pointed to 40302; noun POS skipped (business register and vulgar senses)
+start	repaired	r2/r3/r4 sat on sense 40489 'raise a question'; re-pointed to 40485/40487; r5 'The race starts are exciting' unnatural; adv 40505 archaic so adv POS skipped
+statement	repaired	rank1 was four words with no situation and rows were thin; verb 40511 (UK jargon) and adj 40510 skipped
+street	pass	all rows use core noun senses and read naturally; adj 40675 slang and verb 40676-40680 jargon so both POS skipped
+strong	repaired	r2 'This coffee is strong' sat on sense 40682 (withstanding force); re-pointed to 40687; r4 was a template; noun 40701 and adv 40702 skipped as marginal
+student	repaired	rank1 was five words with no situation; adjective sense 40706 added for POS coverage
+study	repaired	rank1 thin; r2 'My study is on the desk' sat on sense 40713 (mental effort) but meant a room; re-pointed to 40716; r5 was a template
+success	repaired	rank1 was four words with no situation; senses spread across 40763-40765
+sugar	pass	noun and verb rows both use natural core senses; intj 67926 minced oath skipped
+summer	pass	noun and verb senses are both natural; rank1 states a situation at seven words
+sun	repaired	r2 target was the multi-word 'the sun' which is not a source form; rank1 thin; noun sense 40800 added and verb forms varied
+sunday	repaired	r5 'We Sundayed at my aunt's house' used verb sense 67719 unnaturally so verb POS skipped; rank1 thin

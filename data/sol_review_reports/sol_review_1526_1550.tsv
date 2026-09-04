@@ -1,0 +1,25 @@
+author	pass	all 5 rows already correct, natural noun/verb usage
+available	repaired	rank1 too short (5 words), rewritten; rest already correct
+average	repaired	rank1 too short (5 words), rewritten; rest already correct
+avoid	repaired	all 5 rows used sense 43387 (shun a person) but sentences were about roads/sugar/traffic/shops/talking; repointed to correct senses and diversified forms
+award	repaired	noun rows used arbitration-judgment sense and verb rows used formal-grant sense, mismatched with prize/medal sentences; repointed to trophy sense 43402 and give-award sense 43405
+awful	repaired	rank1 too short (5 words), rewritten; rest already correct
+background	repaired	r1/r3 used social-heritage sense for scenery sentences, repointed; r4 had sentence-initial capitalized target (case mismatch), rewritten mid-sentence; r5 verb sense was awkward, replaced with computer-background noun sense
+badly	repaired	rank1 too short (5 words), rewritten; r3/r4 repointed to degree sense 43433; r5 repointed from rare adj sense 43434 (ill/unwell) to adv manner sense 43432
+baseball	repaired	rank1 too short (5 words), rewritten; r4 had sentence-initial capitalized target (case mismatch), rewritten mid-sentence
+based	pass	all 5 rows already correct (adj "based on" + verb past participle)
+basketball	repaired	rank1 too short (5 words), rewritten; r4/r5 used odd verbed-noun sense ("to basketball"), skipped verb POS and replaced with noun sentences
+bean	repaired	r5 used narrow baseball-slang verb sense ("to bean someone"), skipped and replaced with common coffee-bean noun sense
+bear	repaired	r3/r4 used finance-jargon verb sense ("depress the price of") for sentences about tolerating noise/carrying a bag; repointed to endure sense and carry sense; skipped adj POS (bear market, finance jargon)
+beat	repaired	multiple sense/content mismatches (defeat, mix food, musical beat, heartbeat all pointed at generic "hit/strike" sense); repointed each row and rewrote rank1 (was 5 words); skipped adj POS (all senses slang/rare)
+brilliant	pass	all 5 rows already correct; skipped noun/verb POS (gemstone-cutting jargon)
+broken	repaired	r3 used a less-central "interrupted" sense for a vague sentence; swapped to verb POS (past participle of break) for real coverage
+brush	repaired	r1 contained B2 word "neat", rewritten; r5 used late-ordinal narrow sense, repointed to core "clean with a brush" sense
+burn	repaired	r5 used transitive/causative sense for an intransitive sentence ("the candle is burning"), repointed to intransitive sense
+businessman	pass	all 5 rows already correct
+button	pass	all 5 rows already correct
+camp	repaired	r4/r5 used narrow livestock sense ("of stock animals to assemble"), repointed to core "live in a tent" sense; skipped adj POS (camp = flamboyant, niche)
+camping	repaired	r1/r3 had sentence-initial capitalized target (case mismatch), rewritten mid-sentence; r5 used awkward plural "campings" of an uncountable noun, swapped to verb POS
+care	repaired	r2 contained B2 word "deeply", rewritten; r4 used generic "be concerned" sense for a look-after sentence, repointed; r5 used unnatural progressive tense of a stative verb, rewritten
+careful	repaired	r5 used a rare/obsolete sense ("full of cares, worried") tagged obsolete, repointed to core "conscientious/meticulous" sense with new sentence
+carefully	repaired	r5 used a rare/obsolete sense ("sorrowfully") tagged obsolete, repointed to core "with care" sense with new sentence

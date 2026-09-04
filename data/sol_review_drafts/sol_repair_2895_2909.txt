@@ -1,0 +1,90 @@
+@ stock
+1	66884	noun	stock	1	The supermarket always keeps a fresh stock of vegetables.
+2	66884	noun	stock	0	We must replenish the stock before the delivery arrives.
+3	66884	noun	stock	0	The school has a small stock of extra textbooks for students.
+4	66884	noun	stock	0	The factory maintains a steady stock of spare parts.
+5	66884	noun	stock	0	The clinic keeps a reliable stock of medical supplies.
+@ stream
+1	66829	noun	stream	1	The children waded through the clear stream near the forest trail.
+2	66829	noun	stream	0	We followed the narrow stream that cut through the rocky valley.
+3	66829	noun	stream	0	The stream ran fast over smooth stones in the afternoon sun.
+4	66829	noun	stream	0	Birds drank from the cool stream beside the old stone bridge.
+5	66829	noun	stream	0	A deer paused at the edge of the quiet stream to drink.
+@ stretch
+1	66853	verb	stretch	1	She used her hands to stretch the elastic band.
+2	66853	verb	stretch	0	The child tried to stretch the rubber band to the edge of the table.
+3	66853	verb	stretch	0	He pulled both ends to stretch the cord before tying the box.
+4	66853	verb	stretch	0	The teacher asked the students to stretch the string between two desks.
+5	66853	verb	stretched	0	They stretched the fabric over the wooden frame.
+@ strict
+1	66824	adj	strict	1	The school has strict rules against bullying.
+2	66824	adj	strict	0	The inspector applied strict safety standards at the factory.
+3	66827	adj	strict	0	Her parents are strict about completing homework before dinner.
+4	66824	adj	strict	0	Every application must meet strict requirements.
+5	66824	adj	strict	0	The laboratory follows a strict procedure for handling chemicals.
+@ strike
+1	66950	verb	struck	1	The hammer struck the metal with a loud clang.
+2	66950	verb	struck	0	A stone struck the window and shattered the glass.
+3	66950	verb	struck	0	The lightning struck the tree during the storm.
+4	66950	verb	struck	0	The ball struck the wall and bounced back.
+5	66950	verb	struck	0	His fist struck the door with sudden force.
+@ struggle
+1	66944	noun	struggle	1	The trapped animal made a desperate struggle to escape the net.
+2	66944	noun	struggle	0	After a brief struggle, she pulled herself over the wall.
+3	66944	noun	struggle	0	The dog's struggle against the leash ended when its owner loosened it.
+4	66944	noun	struggle	0	His struggle to stand after the fall was painful to see.
+5	66944	noun	struggle	0	The baby's struggle to sit up ended in a happy laugh.
+@ submit
+1	66846	verb	submit	1	She refused to submit to unfair rules.
+2	66846	verb	submit	0	The team will not submit to pressure from the crowd.
+3	66846	verb	submit	0	He chose to submit to the authority of the court.
+4	66846	verb	submitted	0	The prisoner submitted to the officer's orders.
+5	66846	verb	submit	0	They agreed to submit to the judge's decision.
+@ sum
+1	67021	noun	sum	1	The sum of 5 and 6 is 11.
+2	67021	noun	sum	0	We calculated the sum of the numbers on the board.
+3	67021	noun	sum	0	The sum of the two angles equals 180 degrees.
+4	67021	noun	sum	0	She added the values and found the sum quickly.
+5	67021	noun	sum	0	The sum of the three payments was two hundred dollars.
+@ surgery
+1	67035	noun	surgery	1	The patient needed surgery to fix the broken bone.
+2	67035	noun	surgery	0	After the accident, he was rushed to the hospital for emergency surgery.
+3	67035	noun	surgery	0	The surgeon explained the risks of the surgery clearly.
+4	67035	noun	surgery	0	She recovered well after heart surgery.
+5	67035	noun	surgery	0	The hospital performs complex surgery on a weekly basis.
+@ surround
+1	67044	verb	surrounds	1	The old stone wall surrounds the garden on all sides.
+2	67044	verb	surround	0	The trees surround the small clearing where we camped.
+3	67044	verb	surround	0	The mountains surround the valley like a natural wall.
+4	67044	verb	surround	0	The children surround their teacher during story time.
+5	67044	verb	surrounds	0	The fence surrounds the backyard to keep the dog inside.
+@ surrounding
+1	66942	noun	surroundings	1	The peaceful surroundings of the cabin were full of birdsong.
+2	66942	noun	surroundings	0	She felt safe and calm in her familiar surroundings.
+3	66942	noun	surroundings	0	Tall hills made up the rugged surroundings of the village.
+4	66942	noun	surroundings	0	The remote surroundings had no shops or restaurants for miles.
+5	66942	noun	surroundings	0	He carefully studied his new surroundings before setting up camp.
+@ suspect
+1	67061	verb	suspected	1	She suspected the package contained something dangerous.
+2	67061	verb	suspected	0	He suspected the door had been left open.
+3	67061	verb	suspected	0	They suspected the water was contaminated.
+4	67061	verb	suspect	0	I suspect the report is incomplete.
+5	67061	verb	suspected	0	We suspected the system had failed.
+@ swear
+1	67048	verb	swore	1	The soldier swore to protect the kingdom with his life.
+2	67048	verb	swore	0	She swore on her mother's grave that she would never lie again.
+3	67048	verb	swore	0	He swore to return the lost ring to its rightful owner.
+4	67048	verb	swear	0	The judge asked the witness to swear on the Bible.
+5	67048	verb	swore	0	They swore allegiance to the new king during the ceremony.
+@ sweep
+1	67069	verb	sweep	1	She used a broom to sweep the kitchen floor after dinner.
+2	67069	verb	sweep	0	The janitor will sweep the classroom before the students arrive.
+3	67069	verb	swept	0	He swept the leaves from the porch with a large brush.
+4	67069	verb	swept	0	They swept the garage floor every Saturday morning.
+5	67069	verb	sweep	0	I need to sweep the dust from the floor before setting the table.
+@ sympathy
+1	67112	noun	sympathy	1	She showed sympathy when I told her about my grandmother's illness.
+2	67112	noun	sympathy	0	He offered me sympathy after I lost my job.
+3	67112	noun	sympathy	0	The teacher offered sympathy to the student who failed the test.
+4	67112	noun	sympathy	0	I felt sympathy for the dog left in the rain.
+5	67112	noun	sympathy	0	They expressed sympathy after hearing about her accident.

@@ -1,0 +1,90 @@
+@ drum
+1	55614	noun	drum	1	The boy grinned proudly as he beat his new drum for the very first time.
+2	55614	noun	drums	0	She plays the drums in a rock band every weekend.
+3	55623	verb	drummed	0	He drummed loudly on the table while waiting for his coffee.
+4	55627	verb	drum	0	The shop owner tried to drum up new customers with a big sale.
+5	55616	noun	drums	0	Workers rolled heavy oil drums across the factory floor.
+@ drunk
+1	55633	adj	drunk	1	The driver was arrested because he was drunk behind the wheel.
+2	55633	adj	drunker	0	He got drunker with every glass of wine he drank.
+3	55638	noun	drunks	0	The bar was full of noisy drunks by midnight.
+4	55643	verb	drunk	0	I have never drunk so much coffee in one morning.
+5	55637	adv	drunk	0	Please don't drive drunk, call a taxi instead.
+@ due
+1	55647	adj	due	1	She felt her heart race because the baby was due any day now.
+2	55645	adj	due	0	The rent is due on the first of every month.
+3	55649	adj	due	0	The flight was delayed due to heavy snow.
+4	55650	adj	due	0	The ship sailed due north toward the harbor.
+5	55653	noun	dues	0	Every member must pay their club dues each year.
+@ dust
+1	55657	noun	dust	1	The children coughed and covered their mouths as thick dust filled the abandoned house.
+2	55658	noun	dust	0	She wiped the dust off the old photograph with her sleeve.
+3	55678	verb	dusted	0	He dusted the shelves before the guests arrived.
+4	55682	verb	dust	0	Lightly dust the cake with powdered sugar before serving.
+5	55679	verb	dusting	0	She spent Saturday morning dusting and vacuuming the living room.
+@ duty
+1	55692	noun	duty	1	The soldier felt a deep sense of duty as he said goodbye to his family.
+2	55693	noun	duty	0	The nurse is on duty tonight until six in the morning.
+3	55694	noun	duty	0	Travelers must pay duty on goods over the limit.
+4	55692	noun	duties	0	Her daily duties include answering emails and scheduling meetings.
+5	55693	noun	duty	0	She was called for jury duty next Monday.
+@ earthquake
+1	55699	noun	earthquake	1	The whole building shook violently when the earthquake struck at dawn.
+2	55699	noun	Earthquakes	0	Earthquakes happen often along the coast of Japan.
+3	55699	noun	earthquake	0	Scientists measured the earthquake's strength using a seismograph.
+4	55701	noun	earthquake	0	The scandal caused an earthquake in the company's leadership.
+5	55699	noun	earthquake	0	After the earthquake, families lined up for food and clean water.
+@ eastern
+1	55703	adj	eastern	1	The little girl watched the sun rise over the eastern hills and gasped in wonder.
+2	55703	adj	eastern	0	The eastern side of the building gets the most morning light.
+3	55705	adj	eastern	0	She became fascinated with eastern philosophy during her travels in India.
+4	55704	adj	eastern	0	A cold eastern wind blew across the plains all winter.
+5	55703	adj	easternmost	0	Maine is the easternmost state in the United States.
+@ economic
+1	55706	adj	economic	1	Millions of workers lost their jobs during the terrible economic crisis of 2008.
+2	55706	adj	economic	0	The government announced new economic policies to fight inflation.
+3	55708	adj	economic	0	She is studying economic theory at university this semester.
+4	55706	adj	Economic	0	Economic growth slowed sharply after the pandemic began.
+5	55706	adj	economic	0	Poorer countries often face difficult economic conditions.
+@ economy
+1	55720	noun	economy	1	The national economy collapsed after the war, leaving millions without work.
+2	55720	noun	economies	0	Small economies struggle to compete with large global markets.
+3	55719	noun	economy	0	Buying in bulk is a good way to practice economy at home.
+4	55724	adj	economy	0	We booked an economy car to save money on the trip.
+5	55722	noun	economy	0	They sat in economy for the long flight to Tokyo.
+@ edge
+1	55726	noun	edge	1	The climber froze at the edge of the cliff, terrified to look down.
+2	55728	noun	edge	0	Years of practice gave her the edge over other swimmers in the race.
+3	55737	verb	edged	0	He edged slowly toward the door, trying not to wake the baby.
+4	55739	verb	edges	0	Our team always edges past the rivals in the final minutes.
+5	55729	noun	edge	0	The chef sharpened the edge of the kitchen knife before cutting the meat.
+@ editor
+1	55751	noun	editor	1	The editor rejected her article just hours before the newspaper's deadline.
+2	55748	noun	editor	0	He asked the editor to fix several spelling mistakes in his essay.
+3	55753	noun	editor	0	I opened a text editor to write the computer program.
+4	55754	noun	editor	0	She works as a video editor for a popular YouTube channel.
+5	55751	noun	editors	0	The magazine's editors meet every Monday to plan new stories.
+@ educate
+1	55755	verb	educate	1	Parents work hard every day to educate their children about safety.
+2	55755	verb	educate	0	This program aims to educate teenagers about online privacy.
+3	55755	verb	educates	0	The museum educates visitors about ancient Egyptian history.
+4	55755	verb	educating	0	She spends her weekends educating young volunteers at the shelter.
+5	55755	verb	educated	0	He educated himself about investing by reading books online.
+@ educated
+1	55757	adj	educated	1	She proudly became the first educated woman in her entire family.
+2	55757	adj	educated	0	Studies show more educated workers tend to earn higher salaries.
+3	55758	adj	educated	0	Based on the clues, he made an educated guess about the answer.
+4	55760	verb	educated	0	The company educated all new employees about fire safety rules.
+5	55759	adj	educated	0	He is a well-educated man who reads about many different topics.
+@ educational
+1	55761	adj	educational	1	The children loved the museum's new educational exhibit about dinosaurs.
+2	55761	adj	educational	0	This app has an educational focus on teaching children math.
+3	55762	adj	educational	0	The documentary was both entertaining and highly educational.
+4	55762	adj	educational	0	Her trip to the science center turned out to be very educational.
+5	55761	adj	educational	0	Board games are often more educational than video games for young kids.
+@ effective
+1	55765	adj	effective	1	The new medicine proved effective, and she finally felt better after months of pain.
+2	55765	adj	effective	0	Regular exercise is an effective way to reduce stress.
+3	55768	adj	effective	0	The new tax law becomes effective on January first.
+4	55765	adj	effective	0	Her simple study method was surprisingly effective before the exam.
+5	55768	adj	effective	0	Doctors say this treatment is more effective than the old one.

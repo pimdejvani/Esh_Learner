@@ -1,0 +1,90 @@
+@ panel
+1	65015	noun	panel	1	The panel on the door was painted white.
+2	65015	noun	panel	0	She fixed the loose panel in the kitchen wall.
+3	65015	noun	panel	0	The wooden panel in the hallway had a crack.
+4	65015	noun	panel	0	He replaced the damaged panel on the fence.
+5	65015	noun	panel	0	The panel of the shed door was warped.
+@ parliament
+1	65059	noun	parliament	1	The new prime minister addressed the nation from the parliament building.
+2	65059	noun	parliament	0	After the election, the winning party formed a new government in parliament.
+3	65059	noun	parliament	0	The parliament debated the new climate bill for three days straight.
+4	65059	noun	parliament	0	Members of parliament voted to approve the emergency funding.
+5	65059	noun	parliament	0	The country's parliament passed a law banning plastic bags.
+@ participant
+1	65064	noun	participant	1	The student was the youngest participant in the science fair.
+2	65064	noun	participant	0	Each participant received a certificate after the event.
+3	65064	noun	participant	0	The doctor interviewed every participant in the trial.
+4	65064	noun	participant	0	She volunteered as a participant in the psychology experiment.
+5	65064	noun	participants	0	All participants must sign the consent form before starting.
+@ partly
+1	65067	adv	partly	1	The project was partly complete, so we could use it for testing.
+2	65067	adv	partly	0	She was partly responsible for the delay in the delivery.
+3	65067	adv	partly	0	The painting was partly damaged by the flood water.
+4	65067	adv	partly	0	The team was partly prepared for the final match but needed more practice.
+5	65067	adv	partly	0	The story was partly true, but some details were made up.
+@ passage
+1	65068	noun	passage	1	The teacher highlighted a key passage in the poem for discussion.
+2	65068	noun	passage	0	She read the difficult passage aloud during the class.
+3	65068	noun	passage	0	The passage in the novel describes a moment of deep reflection.
+4	65068	noun	passage	0	He found a short passage in the book that matched his thoughts.
+5	65068	noun	passage	0	The passage from the religious text moved the entire congregation.
+@ pension
+1	65088	noun	pension	1	She receives a monthly pension after retiring from the government.
+2	65088	noun	pension	0	His pension started when he turned sixty-five and stopped working.
+3	65088	noun	pension	0	The pension was calculated based on his years of service.
+4	65088	noun	pension	0	They rely on their pension to cover basic living expenses.
+5	65088	noun	pension	0	A pension is a key part of financial planning for retirement.
+@ permanent
+1	65098	adj	permanent	1	The temporary bridge was replaced by a permanent structure.
+2	65098	adj	permanent	0	The hot pan left a permanent mark on the table.
+3	65098	adj	permanent	0	The treaty established a permanent border between the two countries.
+4	65098	adj	permanent	0	The flood caused permanent damage to the wooden floor.
+5	65098	adj	permanent	0	The scar on her hand was a permanent reminder.
+@ permit
+1	65113	verb	permit	1	The teacher will permit extra time for the test.
+2	65113	verb	permit	0	The rules do not permit eating in the library.
+3	65113	verb	permit	0	The manager will permit only two guests per room.
+4	65113	verb	permit	0	The school does not permit students to use phones during class.
+5	65113	verb	permits	0	The policy permits employees to work from home twice a week.
+@ perspective
+1	65103	noun	perspective	1	From her perspective, the mountain looked smaller than expected.
+2	65103	noun	perspective	0	The artist painted the city from a unique perspective.
+3	65107	noun	perspective	0	His perspective on the problem changed after the meeting.
+4	65103	noun	perspective	0	The photograph captured the building from a surprising perspective.
+5	65107	noun	perspective	0	We need to consider the issue from a global perspective.
+@ phase
+1	65124	noun	phases	1	The project has several phases, each with its own goals and deadlines.
+2	65124	noun	phase	0	During the final phase of the experiment, results became more consistent.
+3	65124	noun	phase	0	She completed the first phase of her training with confidence.
+4	65124	noun	phase	0	The teacher explained each phase of the research project clearly.
+5	65124	noun	phase	0	We are now entering a new phase of development.
+@ phenomenon
+1	65142	noun	phenomenon	1	The aurora borealis is a natural phenomenon visible in polar regions.
+2	65142	noun	phenomenon	0	The sudden appearance of glowing clouds was a strange phenomenon.
+3	65142	noun	phenomenon	0	A solar flare is a powerful phenomenon in space.
+4	65142	noun	phenomenon	0	The migration of birds is a seasonal phenomenon.
+5	65142	noun	phenomenon	0	The glowing jellyfish in the deep sea is a rare phenomenon.
+@ philosophy
+1	65149	noun	philosophy	1	She studied philosophy to understand the nature of existence and knowledge.
+2	65149	noun	philosophy	0	The course in philosophy explored deep questions about reality and thought.
+3	65149	noun	philosophy	0	He found philosophy fascinating because it challenges assumptions about life.
+4	65152	noun	philosophy	0	Many ancient thinkers developed a philosophy based on reason and logic.
+5	65149	noun	philosophy	0	In university, she focused on philosophy to analyze ethical dilemmas.
+@ pile
+1	65158	noun	pile	1	She dropped the books and created a pile on the floor.
+2	65158	noun	pile	0	The children built a pile of leaves in the backyard.
+3	65158	noun	pile	0	He found a pile of old magazines under the bed.
+4	65158	noun	pile	0	A pile of dirty dishes sat on the kitchen counter.
+5	65158	noun	pile	0	They left a pile of tools by the garage door.
+@ pitch
+1	65228	noun	pitch	1	The tree oozed sticky pitch after the storm.
+2	65228	noun	pitch	0	She collected pitch from the pine trunk for the sealant.
+3	65228	noun	pitch	0	The old cabin had pitch on the wooden beams.
+4	65228	noun	pitch	0	He used pitch to fix the leak in the boat.
+5	65228	noun	pitch	0	Fresh pitch oozed from a cut in the pine tree's bark.
+@ plain
+1	65202	adj	plain	1	She wore a plain white dress to the party.
+2	65202	adj	plain	0	The recipe calls for plain flour and sugar.
+3	65202	adj	plain	0	He gave a plain answer without any extra words.
+4	65202	adj	plain	0	The room had only a plain wooden table.
+5	65202	adj	plain	0	They ordered plain rice with their meal.

@@ -1,0 +1,25 @@
+cake	repaired	added verb sense (caked with mud) for real POS coverage; kept 4 genuine noun rows
+call	repaired	added noun (phone call) sense + diversified verb forms called/calling/calls for coverage
+camera	pass	all 5 rows genuine, only one usable POS in source
+can	repaired	added noun (can of soup/paint) rows for coverage; fixed rank3 sentence-initial capitalization bug
+cannot	pass	all 5 rows genuine, distinct real scenarios of inability
+capital	repaired	added learner-core senses (capital city, capital letter) entirely missing from original money-only block
+car	pass	single usable POS (noun), all rows genuine, no coverage findings
+card	repaired	rank1/rank3 sense_id pointed at "playing card" (30370) while sentences meant "greeting card" (30383); repointed
+career	repaired	rewrote rank1 to drop B2 word "shelter"; skipped adj (crime-themed examples) and verb (rare/literary register)
+carrot	pass	only other POS (verb) is narrow felt-manufacturing jargon, correctly skipped
+carry	repaired	diversified verb forms carried/carries/carrying for coverage; noun senses too technical/niche to add
+cat	repaired	sense_id 30469 was a category-header gloss ("Terms relating to animals"), not the housecat sense; repointed to 30471 for all 5 rows
+cd	repaired	only available sense is [RARE:abbreviation] cd=could; rewrote all 5 as natural informal-texting sentences, best available evidence
+cent	repaired	rank2 rewritten with plural "cents" ("one hundred cents") to fix awkward phrasing and add form variety
+centre	pass	only usable sense is the British spelling of center; verb sense tagged RARE, correctly skipped
+century	pass	all 5 rows genuine, single usable POS
+chair	repaired	added verb sense (chaired a meeting) for real POS coverage
+change	repaired	added noun (money/change back) sense with correct sense_id + diversified verb forms changed/changing/changes
+chart	repaired	added verb sense (chart a route, charted a trail) for real POS coverage
+cheap	pass	adv/noun/verb POS are entirely obsolete-tagged, correctly skipped
+check	repaired	rank4 used a literary/archaic-register sense (30613, "a coat will check the cold"); replaced with common checkbox sense (30612)
+cheese	pass	verb senses are narrow cheese-making/circuitry jargon, correctly skipped
+chicken	repaired	added adj (too chicken) and verb (chickened out) senses plus the meat sense; fixed rank3 grammar (adjective, not noun, usage)
+child	repaired	rewrote rank1/rank2 to drop B2 words "shelter"/"protection"; verb sense archaic, correctly skipped
+chocolate	repaired	added adj senses (chocolate cake, chocolate fur) for real POS coverage; verb senses tagged RARE, correctly skipped

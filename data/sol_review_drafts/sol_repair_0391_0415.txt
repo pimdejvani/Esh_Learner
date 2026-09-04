@@ -1,7 +1,7 @@
 @ recording
 1	50361	verb	recording	1	We recording every day.
 2	50361	verb	recording	0	She is recording the interview now.
-3	50361	verb	recording	0	Recording each result takes several minutes.
+3	50361	verb	Recording	0	Recording each result takes several minutes.
 4	50361	verb	recording	0	They are recording a new song.
 5	50361	verb	recording	0	He began recording the meeting at noon.
 
@@ -29,7 +29,7 @@
 @ refuse
 1	50404	adj	refuse	1	It is refuse.
 2	50404	adj	refuse	0	The workers collected refuse material for disposal.
-3	50404	adj	refuse	0	Refuse wood was piled behind the factory.
+3	50404	adj	Refuse	0	Refuse wood was piled behind the factory.
 4	50404	adj	refuse	0	They removed refuse metal from the workshop.
 5	50404	adj	refuse	0	The truck carried refuse matter to the dump.
 
@@ -45,7 +45,7 @@
 2	50426	adj	regular	0	The regular clergy lived under a religious rule.
 3	50426	adj	regular	0	A regular priest belonged to the monastic order.
 4	50426	adj	regular	0	The abbey was home to regular canons.
-5	50426	adj	regular	0	Regular monks followed the rule of their order.
+5	50426	adj	Regular	0	Regular monks followed the rule of their order.
 
 @ relationship
 1	50458	noun	relationship	1	Their close relationship survived years of living far apart.
@@ -85,7 +85,7 @@
 @ reporter
 1	50508	noun	reporter	1	The reporter warned the town about the approaching fire.
 2	50508	noun	reporter	0	A reporter asked the mayor several questions.
-3	50508	noun	reporters	0	Reporters waited outside the courthouse.
+3	50508	noun	Reporters	0	Reporters waited outside the courthouse.
 4	50508	noun	reporter	0	The newspaper sent a reporter to the scene.
 5	50508	noun	reporters	0	Two reporters covered the election.
 
@@ -106,7 +106,7 @@
 @ researcher
 1	50526	noun	researcher	1	The researcher discovered a safer way to clean the water.
 2	50526	noun	researcher	0	Each researcher recorded the results carefully.
-3	50526	noun	researchers	0	Researchers studied the ancient tools.
+3	50526	noun	Researchers	0	Researchers studied the ancient tools.
 4	50526	noun	researcher	0	A researcher interviewed fifty families.
 5	50526	noun	researchers	0	The researchers published their findings.
 

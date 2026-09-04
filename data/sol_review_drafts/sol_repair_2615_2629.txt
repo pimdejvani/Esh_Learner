@@ -1,0 +1,90 @@
+@ fully
+1	63719	adv	fully	1	She was fully prepared for the exam after weeks of studying.
+2	63719	adv	fully	0	The room was fully lit by the morning sun.
+3	63719	adv	fully	0	He felt fully confident after the final rehearsal.
+4	63719	adv	fully	0	The project was fully ready for launch by Friday afternoon.
+5	63719	adv	fully	0	They were fully committed to making the change work.
+@ fund
+1	63733	noun	fund	1	The charity launched a new fund for medical supplies.
+2	63733	noun	fund	0	She contributed to the community fund for school repairs.
+3	63733	noun	fund	0	The government established a fund for renewable energy projects.
+4	63733	noun	fund	0	They saved money in a fund for their daughter's education.
+5	63733	noun	fund	0	A local fund supports families in need during winter.
+@ fundamental
+1	63746	noun	fundamentals	1	Honesty is one of the fundamentals of a good relationship.
+2	63746	noun	fundamentals	0	The course covers the fundamentals of scientific research.
+3	63746	noun	fundamentals	0	New employees learn the fundamentals of effective teamwork.
+4	63746	noun	fundamentals	0	The book explains the fundamentals of good leadership.
+5	63746	noun	fundamentals	0	Consistency is one of the fundamentals of building trust.
+@ funding
+1	63726	noun	funding	1	The new school project depends on government funding for its success.
+2	63726	noun	funding	0	The research team secured funding after submitting a detailed proposal.
+3	63726	noun	funding	0	Lack of funding delayed the construction of the community center.
+4	63726	noun	funding	0	The nonprofit organization relies on private funding to continue its work.
+5	63726	noun	funding	0	The startup received early funding from a venture capital firm.
+@ furthermore
+1	63752	adv	furthermore	1	She finished her homework early; furthermore, she helped her brother with his.
+2	63752	adv	furthermore	0	The team won the match; furthermore, it finished the season with the most goals.
+3	63752	adv	furthermore	0	He arrived late; furthermore, he forgot his presentation.
+4	63752	adv	furthermore	0	The car was expensive; furthermore, its maintenance costs were high.
+5	63752	adv	furthermore	0	They canceled the meeting; furthermore, they sent no notice.
+@ gain
+1	63760	verb	gain	1	She managed to gain possession of the keys from her brother.
+2	63760	verb	gain	0	He was able to gain access to the restricted area.
+3	63760	verb	gain	0	They hope to gain more support from the community.
+4	63760	verb	gain	0	The team worked hard to gain an advantage.
+5	63760	verb	gain	0	You can gain entry with a valid ticket.
+@ gang
+1	63784	noun	gang	1	A gang of workers cleared the fallen trees from the road.
+2	63784	noun	gang	0	The whole gang met at the cafe after school on Friday.
+3	63784	noun	gang	0	A gang of friends helped her move into the new flat.
+4	63784	noun	gang	0	The railway gang worked all night to repair the broken track.
+5	63784	noun	gang	0	A gang of volunteers painted the community hall on Saturday.
+@ generate
+1	63754	verb	generated	1	The new policy generated immediate changes in the workplace.
+2	63754	verb	generated	0	The storm generated strong winds that damaged several roofs.
+3	63754	verb	generated	0	Her speech generated a lot of discussion among the students.
+4	63754	verb	generate	0	The experiment was designed to generate reliable data.
+5	63754	verb	generated	0	The company's success generated new investment opportunities.
+@ genre
+1	63781	noun	genre	1	The mystery genre often features suspenseful plots and unexpected twists.
+2	63781	noun	genre	0	She enjoys reading books in the romance genre.
+3	63781	noun	genre	0	This film belongs to the documentary genre.
+4	63781	noun	genres	0	The film blends two genres, horror and comedy.
+5	63781	noun	genres	0	Many artists experiment with blending different music genres.
+@ govern
+1	63805	verb	govern	1	The president will govern the country with fairness and honesty.
+2	63805	verb	govern	0	She was chosen to govern the nation after the election.
+3	63805	verb	govern	0	A new leader will govern the region starting next month.
+4	63805	verb	govern	0	The prime minister must govern with the people's interests in mind.
+5	63805	verb	govern	0	He plans to govern with transparency and strong leadership.
+@ grab
+1	63840	verb	grabbed	1	She grabbed the rope to stop herself from falling.
+2	63840	verb	grabbed	0	He grabbed the doorframe when the bus turned sharply.
+3	63840	verb	grabbed	0	The child grabbed the toy before anyone else could.
+4	63840	verb	grabbed	0	The dog grabbed the stick and ran off with it.
+5	63840	verb	grabbed	0	I grabbed the book from the shelf without looking.
+@ gradually
+1	63817	adv	gradually	1	The temperature dropped gradually as the sun set behind the hills.
+2	63817	adv	gradually	0	She improved her skills gradually over the course of the year.
+3	63817	adv	gradually	0	The paint dried gradually in the warm, dry air.
+4	63817	adv	gradually	0	The crowd quieted gradually after the speaker left the stage.
+5	63817	adv	gradually	0	The river widened gradually as it approached the sea.
+@ grand
+1	63819	adj	grand	1	The grand cathedral stood at the heart of the city.
+2	63819	adj	grand	0	She wore a grand dress to the royal ball.
+3	63819	adj	grand	0	They planned a grand celebration for the anniversary.
+4	63819	adj	grand	0	The grand view of the mountains took our breath away.
+5	63819	adj	grand	0	He made a grand gesture to win her back.
+@ grant
+1	63830	verb	grant	1	The teacher will grant the student extra time to finish the test.
+2	63830	verb	granted	0	She was granted a visa to study abroad next year.
+3	63830	verb	grant	0	The committee will grant approval for the new project.
+4	63830	verb	granted	0	He was granted permission to leave early.
+5	63830	verb	granted	0	The school granted the student permission to retake the exam.
+@ guarantee
+1	63856	noun	guarantee	1	The company's guarantee ensures timely delivery of all orders.
+2	63856	noun	guarantee	0	She asked for a guarantee before signing the contract.
+3	63856	noun	guarantee	0	The loan came with a guarantee from his employer.
+4	63856	noun	guarantee	0	The contractor offered a guarantee that the repairs would meet safety standards.
+5	63856	noun	guarantee	0	The government issued a guarantee that bank deposits would be protected.

@@ -1,0 +1,90 @@
+@ raw
+1	65589	adj	raw	1	She served raw salmon on a bed of ice.
+2	65589	adj	raw	0	The chef prepared raw oysters for the appetizer.
+3	65589	adj	raw	0	He ordered a steak cooked rare with raw vegetables.
+4	65589	adj	raw	0	The sushi bar specializes in fresh raw fish.
+5	65589	adj	raw	0	We ate raw clams at the seaside restaurant.
+@ realistic
+1	65581	adj	realistic	1	The painting shows a realistic view of city life.
+2	65581	adj	realistic	0	She gave a realistic assessment of the project's risks.
+3	65581	adj	realistic	0	His plan for the garden was realistic given the limited budget.
+4	65581	adj	realistic	0	The movie presents a realistic portrayal of war.
+5	65581	adj	realistic	0	They set a realistic deadline for the report.
+@ reasonable
+1	65585	adj	reasonable	1	The judge made a reasonable decision based on the facts presented.
+2	65585	adj	reasonable	0	She gave a reasonable explanation for being late to the meeting.
+3	65585	adj	reasonable	0	His request was reasonable and easy to accept.
+4	65585	adj	reasonable	0	We need a reasonable compromise to resolve the conflict.
+5	65585	adj	reasonable	0	The teacher said the student's answer was reasonable and accurate.
+@ recall
+1	65610	verb	recall	1	She had to recall her statement after realizing it was false.
+2	65610	verb	recall	0	The manager decided to recall the order before it was sent out.
+3	65610	verb	recalled	0	They recalled the invitation after the venue was closed for repairs.
+4	65610	verb	recalled	0	He recalled the order when he saw its likely consequences.
+5	65617	verb	recalled	0	The company recalled the product due to safety concerns.
+@ recover
+1	65624	verb	recover	1	The hikers worked hard to recover the dropped camera from the riverbank.
+2	65624	verb	recover	0	After the storm, the team managed to recover the lost satellite signal.
+3	65624	verb	recover	0	She used the telescope to recover sight of the faint star after the clouds cleared.
+4	65632	verb	recover	0	The pilot struggled to recover control of the aircraft after the sudden drop.
+5	65624	verb	recover	0	They used radar to recover the missing drone during the test flight.
+@ reduction
+1	65640	noun	reduction	1	The reduction in noise made the room much more peaceful.
+2	65640	noun	reduction	0	A reduction in speed is required at the construction site.
+3	65640	noun	reduction	0	The reduction of waste helps protect the environment.
+4	65640	noun	reduction	0	The reduction in fuel consumption was unexpected.
+5	65640	noun	reduction	0	A reduction in temperature occurred overnight.
+@ regard
+1	65655	noun	regard	1	She has high regard for her former teacher.
+2	65655	noun	regard	0	The scientist is held in high regard by her colleagues.
+3	65653	noun	regard	0	He showed little regard for the safety of other drivers.
+4	65653	noun	regard	0	The policy was written with regard for the needs of disabled students.
+5	65654	noun	regard	0	In this regard, the revised plan is much stronger.
+@ regional
+1	65663	adj	regional	1	The regional council oversees local development projects.
+2	65663	adj	regional	0	She works for a regional transportation agency.
+3	65663	adj	regional	0	The regional weather report predicts heavy rain.
+4	65663	adj	regional	0	A regional festival celebrates local traditions.
+5	65663	adj	regional	0	The regional office handles customer inquiries.
+@ register
+1	65682	noun	register	1	The teacher checked the register to see who was absent today.
+2	65682	noun	register	0	Each student's name was written in the class register.
+3	65682	noun	register	0	The school keeps a daily register of student attendance.
+4	65682	noun	register	0	She filled out the visitor register at the front desk.
+5	65682	noun	register	0	The company maintains a financial register of all transactions.
+@ regret
+1	65713	verb	regretted	1	She regretted not studying harder for the test.
+2	65713	verb	regretted	0	He regretted missing the last bus home.
+3	65713	verb	regretted	0	They regretted not taking the job offer.
+4	65713	verb	regret	0	I regret telling her the truth.
+5	65713	verb	regret	0	We regret the delay to your delivery.
+@ regulation
+1	65671	noun	regulation	1	The new regulation aims to reduce pollution in the city.
+2	65671	noun	regulation	0	She followed the regulation carefully during the safety drill.
+3	65670	noun	regulation	0	The regulation of traffic speeds helps prevent accidents.
+4	65671	noun	regulation	0	A strict regulation was introduced to control factory emissions.
+5	65670	noun	regulation	0	The regulation of water usage is essential during droughts.
+@ relatively
+1	65668	adv	relatively	1	The new building is relatively tall compared to the older houses nearby.
+2	65668	adv	relatively	0	She felt relatively calm after the long and stressful day.
+3	65668	adv	relatively	0	The test was relatively easy for students who studied hard.
+4	65668	adv	relatively	0	This car is relatively fast for its price range.
+5	65668	adv	relatively	0	The team performed relatively well in the tournament.
+@ relevant
+1	65678	adj	relevant	1	The teacher asked for relevant details about the historical event.
+2	65678	adj	relevant	0	She gave a relevant answer during the job interview.
+3	65678	adj	relevant	0	This article contains relevant facts about climate change.
+4	65678	adj	relevant	0	The evidence presented was not relevant to the case.
+5	65678	adj	relevant	0	He shared travel experiences relevant to the discussion.
+@ relief
+1	65721	noun	relief	1	After the long wait, she felt relief when the train finally arrived.
+2	65721	noun	relief	0	He exhaled deeply, a look of relief crossing his face.
+3	65721	noun	relief	0	The doctor's words brought instant relief to the anxious patient.
+4	65721	noun	relief	0	She smiled with relief when she saw her keys on the table.
+5	65721	noun	relief	0	She felt relief when she heard the news was a false alarm.
+@ rely
+1	65720	verb	rely	1	I rely on my friend to help me with homework.
+2	65720	verb	rely	0	We rely on the weather forecast to plan our trip.
+3	65720	verb	rely	0	You can rely on her to finish the project on time.
+4	65720	verb	relies	0	The team relies on the coach for guidance during games.
+5	65720	verb	relies	0	She relies on her notes to remember the details.

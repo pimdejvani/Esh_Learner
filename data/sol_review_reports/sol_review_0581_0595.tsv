@@ -1,0 +1,15 @@
+application	repaired	all 5 sentences were the identical placeholder "The application is important."; rewrote all 5 with distinct senses
+appointment	repaired	all 5 sentences were the identical placeholder "The appointment is important."; rewrote all 5 with distinct senses
+appreciate	repaired	all 5 sentences were the identical placeholder "We appreciate every day."; rewrote all 5 with distinct senses and forms
+approximately	repaired	all 5 sentences were the identical placeholder "We do it approximately."; rewrote all 5 as distinct quantity contexts
+arrest	repaired	all 5 sentences were the identical placeholder "The arrest is important."; rewrote all 5 covering noun and verb senses; swapped cardiac-arrest sense for the common "under arrest" detention sense
+arrival	repaired	all 5 sentences were the identical placeholder "The arrival is important."; rewrote all 5 with distinct senses
+assignment	repaired	all 5 sentences were the identical placeholder "The assignment is important."; rewrote all 5 with distinct senses; swapped legal-transfer sense for the everyday "assigned task" sense
+assist	repaired	all 5 sentences were the identical placeholder "We assist every day."; rewrote all 5 covering verb and noun senses
+atmosphere	repaired	all 5 sentences were the identical placeholder "The atmosphere is important."; rewrote all 5 with distinct senses; swapped diving/physics pressure-unit sense for the everyday "mood" sense
+attach	repaired	all 5 sentences were the identical placeholder "We attach every day."; rewrote all 5 with distinct senses and forms; swapped narrow legal "vest" sense for the common "attach importance to" sense
+attitude	repaired	all 5 sentences were the identical placeholder "The attitude is important."; rewrote all 5 using only the everyday noun senses (disposition, rudeness/"giving attitude", carriage/manner); skipped verb POS -- only senses are the rare "to attitude" = to pose (ballet jargon), not ordinary modern English
+attract	repaired	all 5 sentences were the identical placeholder "We attract every day."; rewrote all 5 with distinct senses and forms
+attraction	repaired	all 5 sentences were the identical placeholder "The attraction is important."; rewrote all 5 with distinct senses
+authority	repaired	all 5 sentences were the identical placeholder "The authority is important."; rewrote all 5 with distinct senses
+aware	repaired	all 5 sentences were the identical placeholder "It is aware."; rewrote all 5 using only adj senses in varied structures (aware that, aware of, more aware, most aware); skipped verb POS -- only sense is "to make aware", tagged nonstandard

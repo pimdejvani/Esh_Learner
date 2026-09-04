@@ -1,0 +1,90 @@
+@ lord
+1	64481	noun	lord	1	The old lord watched the harvest from the manor house.
+2	64481	noun	lord	0	She bowed deeply to the noble lord as he entered the hall.
+3	64481	noun	lord	0	The lord of the manor gave a speech at the village fair.
+4	64481	noun	lord	0	The king granted him the title of lord for his service to the crown.
+5	64481	noun	lord	0	The Scottish lord addressed the council before the vote.
+@ lower
+1	64507	adj	lower	1	The lower shelf holds the heavy books.
+2	64507	adj	lower	0	She placed the cup on the lower level of the serving cart.
+3	64507	adj	lower	0	The lower part of the hill is shaded.
+4	64507	adj	lower	0	He reached for the lower drawer.
+5	64507	adj	lower	0	The lower edge of the paper is torn.
+@ lung
+1	64503	noun	lungs	1	The doctor listened to my lungs with a stethoscope.
+2	64503	noun	lung	0	The X-ray showed a small shadow on his left lung.
+3	64503	noun	lungs	0	Smoking damages the lungs over time.
+4	64503	noun	lung	0	The lung expanded fully during the deep breath.
+5	64503	noun	lung	0	A healthy lung helps the body get oxygen efficiently.
+@ maintain
+1	64492	verb	maintain	1	The team worked hard to maintain their lead in the final minutes.
+2	64492	verb	maintain	0	She managed to maintain her balance on the narrow beam.
+3	64492	verb	maintain	0	They must maintain the garden throughout the summer.
+4	64492	verb	maintain	0	He promised to maintain a positive attitude during the challenge.
+5	64492	verb	maintain	0	The company aims to maintain high standards in customer service.
+@ majority
+1	64497	noun	majority	1	The majority of voters supported the new law.
+2	64497	noun	majority	0	A majority of the team arrived early for the meeting.
+3	64497	noun	majority	0	The majority of students passed the exam with high scores.
+4	64497	noun	majority	0	The majority of the population prefers public transportation.
+5	64497	noun	majority	0	The majority of the books were donated to the library.
+@ mass
+1	64544	noun	mass	1	The rock has a mass of two kilograms.
+2	64544	noun	mass	0	She used a laboratory balance to measure the sample's mass.
+3	64544	noun	mass	0	The object's mass remained unchanged during the experiment.
+4	64544	noun	mass	0	An object's mass affects how quickly it accelerates under a force.
+5	64544	noun	mass	0	The scientist calculated the planet's mass from its gravitational pull.
+@ massive
+1	64525	adj	massive	1	The massive oak tree blocked the entire driveway.
+2	64525	adj	massive	0	She carried a massive backpack full of books.
+3	64525	adj	massive	0	The massive mountain stood silently under the morning sun.
+4	64525	adj	massive	0	They built a massive wall around the old estate.
+5	64525	adj	massive	0	The massive storm damaged several homes in the valley.
+@ master
+1	64581	noun	master	1	The chess master won the tournament without losing a game.
+2	64581	noun	master	0	She became a master of three programming languages.
+3	64581	noun	master	0	He is a master at repairing antique clocks.
+4	64581	noun	master	0	The chef was a master of traditional French cooking.
+5	64581	noun	master	0	Her colleagues regarded her as a master of negotiation.
+@ matching
+1	64537	adj	matching	1	The bedroom had matching curtains and a bedspread in soft green.
+2	64537	adj	matching	0	She wore a matching dress and shoes to the party.
+3	64537	adj	matching	0	They chose matching jackets for the team event.
+4	64537	adj	matching	0	The table and chairs are a matching set.
+5	64537	adj	matching	0	He picked out matching socks and a belt.
+@ maximum
+1	64562	noun	maximum	1	The maximum allowed speed on this road is 60 km/h.
+2	64562	noun	maximum	0	The number of passengers reached the elevator's maximum capacity.
+3	64562	noun	maximum	0	The maximum number of guests is twenty for the event.
+4	64562	noun	maximum	0	He achieved the maximum score on the final test.
+5	64562	noun	maximum	0	The maximum temperature today will be 32 degrees Celsius.
+@ means
+1	64572	noun	means	1	The ladder was the only means to reach the roof.
+2	64572	noun	means	0	They used a drone as a means of surveying the area.
+3	64572	noun	means	0	A smartphone is a common means of communication.
+4	64572	noun	means	0	The new software became a means of improving efficiency.
+5	64572	noun	means	0	He found a means to fix the broken machine.
+@ measurement
+1	64616	noun	measurement	1	Careful measurement of the room took several minutes.
+2	64617	noun	measurement	0	She recorded the measurement in her notebook after the test.
+3	64617	noun	measurement	0	The measurement of the fabric was exact and consistent.
+4	64617	noun	measurement	0	The measurement from the new instrument was more precise.
+5	64617	noun	measurement	0	The temperature measurement rose rapidly after the heater was switched on.
+@ melt
+1	64624	verb	melt	1	The ice will melt if left in the sun.
+2	64624	verb	melt	0	She watched the chocolate slowly melt in the warm pan.
+3	64624	verb	melt	0	The snow began to melt after the morning sun appeared.
+4	64624	verb	melted	0	He left the ice cube on the table and it melted quickly.
+5	64624	verb	melt	0	The frozen juice will melt if you put it in warm water.
+@ military
+1	64647	adj	military	1	The soldier wore a military uniform with precise buttons and polished boots.
+2	64647	adj	military	0	Her military discipline helped her succeed in the demanding training program.
+3	64647	adj	military	0	He kept his room in military order, with everything neatly arranged.
+4	64647	adj	military	0	The officer's military bearing impressed everyone in the room.
+5	64647	adj	military	0	They followed a military routine of early wake-up and strict exercises.
+@ mineral
+1	64608	noun	mineral	1	The geologist studied the rare mineral under the microscope.
+2	64608	noun	mineral	0	This rock contains a small amount of a valuable mineral.
+3	64608	noun	mineral	0	Gold is a metallic mineral found in veins.
+4	64608	noun	mineral	0	The cave walls are lined with sparkling mineral deposits.
+5	64608	noun	mineral	0	Scientists identified a new mineral in the meteorite sample.

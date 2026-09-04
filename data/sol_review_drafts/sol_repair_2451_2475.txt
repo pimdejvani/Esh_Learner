@@ -1,0 +1,150 @@
+@ circumstance
+1	62230	noun	circumstances	1	The accident happened under unusual circumstances.
+2	62230	noun	circumstances	0	He explained that the delay was due to unforeseen circumstances.
+3	62230	noun	circumstance	0	The witness described the key circumstance in the case.
+4	62230	noun	circumstances	0	She acted quickly in response to the urgent circumstances.
+5	62230	noun	circumstance	0	The court considered every relevant circumstance.
+@ cite
+1	62120	verb	cited	1	The student cited a famous line from Shakespeare in her essay.
+2	62123	verb	cite	0	She will cite the original text when she writes her research paper.
+3	62120	verb	cited	0	He cited a line from the poem during the class discussion.
+4	62123	verb	cited	0	They cited the article to support their argument in the debate.
+5	62123	verb	cited	0	The author cited several sources to back up her claims.
+@ citizen
+1	62254	noun	citizen	1	The new citizen received a certificate after passing the test.
+2	62254	noun	citizen	0	Every citizen has the right to vote in the national election.
+3	62254	noun	citizen	0	She became a citizen after living in the country for five years.
+4	62254	noun	citizen	0	The citizen called the police when he saw the suspicious man.
+5	62254	noun	citizen	0	A citizen can apply for a passport at the government office.
+@ civil
+1	62235	adj	civil	1	Civil authorities took control after the military withdrew.
+2	62235	adj	civil	0	She works in civil administration for the local government.
+3	62235	adj	civil	0	The civil authorities coordinated the emergency response.
+4	62235	adj	civil	0	He joined the civil service after graduating from university.
+5	62235	adj	civil	0	The civil registry office manages birth and marriage records.
+@ classic
+1	62240	adj	classic	1	This novel is a classic work of English literature.
+2	62242	adj	classic	0	She wore a classic black dress to the formal event.
+3	62241	adj	classic	0	The painting is a classic example of Renaissance art.
+4	62244	adj	classic	0	He studied classic Greek philosophy in university.
+5	62244	adj	classic	0	The museum displays many classic sculptures from ancient Rome.
+@ closely
+1	62219	adv	closely	1	The researcher watched the two dogs closely as they played.
+2	62219	adv	closely	0	She watched the movie closely to catch every detail.
+3	62219	adv	closely	0	The children listened closely to the safety instructions.
+4	62219	adv	closely	0	He examined the painting closely under the bright light.
+5	62219	adv	closely	0	The team worked closely to finish the project on time.
+@ collapse
+1	62261	verb	collapse	1	The old wall began to collapse under the weight of the storm.
+2	62261	verb	collapse	0	The roof started to collapse after the heavy snowfall.
+3	62261	verb	collapsed	0	The building collapsed during the earthquake.
+4	62261	verb	collapsed	0	The tunnel collapsed after the mining accident.
+5	62261	verb	collapse	0	The dam began to collapse after days of flooding.
+@ combination
+1	62272	noun	combination	1	The combination of heat and humidity made the day unbearable.
+2	62272	noun	combination	0	She found a perfect combination of flavors in the new recipe.
+3	62272	noun	combination	0	The combination of light and shadow created a dramatic effect.
+4	62272	noun	combination	0	A successful combination of skills led to his promotion.
+5	62272	noun	combination	0	The combination of effort and luck brought them victory.
+@ comfort
+1	62313	noun	comfort	1	She found comfort in the quiet of the forest.
+2	62313	noun	comfort	0	The warm blanket gave him comfort on the cold night.
+3	62313	noun	comfort	0	After the long journey, the soft bed brought comfort.
+4	62313	noun	comfort	0	He sat in the armchair with a sense of comfort.
+5	62313	noun	comfort	0	The old book offered comfort during hard times.
+@ command
+1	62295	noun	command	1	The officer gave a clear command to advance.
+2	62295	noun	command	0	She followed the command without hesitation.
+3	62295	noun	command	0	The pilot received a command to land immediately.
+4	62295	noun	command	0	He obeyed the command to stand still.
+5	62295	noun	command	0	The soldier waited for the next command.
+@ commission
+1	62320	noun	commission	1	The priest's commission was to spread peace in the village.
+2	62322	noun	commission	0	Her commission to write the report began last Monday.
+3	62322	noun	commission	0	The scientist accepted the commission to study climate change.
+4	62322	noun	commission	0	The artist's commission was to paint a mural for the school.
+5	62322	noun	commission	0	His commission to lead the team started after the meeting.
+@ commitment
+1	62288	noun	commitment	1	Her commitment to the project ensured its success.
+2	62288	noun	commitment	0	The team's commitment to quality is evident in every product.
+3	62288	noun	commitment	0	His commitment to helping others began with small acts.
+4	62288	noun	commitment	0	The school's commitment to student safety is strong.
+5	62288	noun	commitment	0	A long-term commitment is needed for real change.
+@ committee
+1	62336	noun	committee	1	The school committee decided on new rules for the playground.
+2	62336	noun	committee	0	The city committee met to discuss the new park project.
+3	62336	noun	committee	0	Our class committee planned the end-of-year party.
+4	62336	noun	committee	0	The finance committee reviewed the annual budget.
+5	62336	noun	committee	0	The safety committee inspected the building for hazards.
+@ commonly
+1	62293	adv	commonly	1	People commonly forget their keys when rushing to work.
+2	62293	adv	commonly	0	This type of error commonly occurs in beginner programming.
+3	62293	adv	commonly	0	She commonly walks to school instead of taking the bus.
+4	62293	adv	commonly	0	Students commonly struggle with math word problems.
+5	62293	adv	commonly	0	The team commonly meets on Monday mornings.
+@ complicated
+1	62347	adj	complicated	1	The instructions for assembling the furniture were too complicated to follow.
+2	62347	adj	complicated	0	She gave a complicated explanation that confused everyone in the room.
+3	62347	adj	complicated	0	He struggled with the complicated math problem during the exam.
+4	62347	adj	complicated	0	The plot of the movie was so complicated it needed a second viewing.
+5	62347	adj	complicated	0	They faced a complicated decision about where to move next.
+@ component
+1	62332	noun	component	1	The battery is a key component of the smartphone.
+2	62332	noun	components	0	This circuit board contains several electronic components.
+3	62332	noun	component	0	The piston is an important component of the engine.
+4	62332	noun	component	0	A fan is a cooling component in the computer case.
+5	62332	noun	component	0	The motherboard is the central component of the PC.
+@ concentration
+1	62339	noun	concentration	1	The student's concentration improved after she stopped using her phone.
+2	62339	noun	concentration	0	The concentration of the solution was measured in milligrams per liter.
+3	62339	noun	concentration	0	She needed full concentration to solve the complex puzzle.
+4	62339	noun	concentration	0	The team maintained its concentration during the final minutes.
+5	62339	noun	concentration	0	His concentration on the task lasted for over two hours.
+@ concept
+1	62350	noun	concept	1	The artist's new concept for the sculpture amazed everyone.
+2	62350	noun	concept	0	She struggled to grasp the complex concept of time in physics.
+3	62350	noun	concept	0	This concept from the book changed how he thought about society.
+4	62350	noun	concept	0	The concept of justice varies across different cultures.
+5	62350	noun	concept	0	They debated the concept of freedom in their philosophy class.
+@ concern
+1	62357	noun	concern	1	Her mother's illness was a constant concern for the whole family.
+2	62357	noun	concern	0	The safety of the children is our main concern during the trip.
+3	62357	noun	concern	0	He expressed concern about the rising costs of living.
+4	62357	noun	concern	0	The team's performance was a growing concern for the coach.
+5	62357	noun	concern	0	We must address the concern about pollution in the river.
+@ concerned
+1	62354	adj	concerned	1	She looked concerned when she heard the loud noise.
+2	62354	adj	concerned	0	The teacher gave a concerned look as the student struggled with the test.
+3	62354	adj	concerned	0	He was concerned about the weather before the hike.
+4	62354	adj	concerned	0	The child's concerned expression made her mother worry.
+5	62354	adj	concerned	0	They were concerned about the safety of the building.
+@ conduct
+1	62374	noun	conduct	1	The teacher's conduct during the exam ensured fairness for all students.
+2	62372	noun	conduct	0	The conduct of the meeting was calm and well-organized.
+3	62374	noun	conduct	0	His conduct in the crisis showed great leadership.
+4	62372	noun	conduct	0	The conduct of the project was carefully planned from start to finish.
+5	62374	noun	conduct	0	Good conduct in the classroom helps everyone learn better.
+@ confidence
+1	62366	noun	confidence	1	She walked into the room with confidence.
+2	62366	noun	confidence	0	His growing confidence was clear to everyone on the team.
+3	62366	noun	confidence	0	The speaker spoke with confidence and clarity.
+4	62366	noun	confidence	0	He showed confidence when answering the tough questions.
+5	62366	noun	confidence	0	Her confidence grew after the successful presentation.
+@ conflict
+1	62404	noun	conflict	1	The conflict between the neighbors escalated after the argument.
+2	62404	noun	conflict	0	The conflict in the region has lasted for over a decade.
+3	62404	noun	conflict	0	A sudden conflict broke out during the peace talks.
+4	62404	noun	conflict	0	The conflict between the teams ended with a compromise.
+5	62404	noun	conflict	0	The conflict in the story was resolved through dialogue.
+@ confusing
+1	62370	adj	confusing	1	The instructions were so confusing that I gave up.
+2	62370	adj	confusing	0	She found the map confusing and couldn't find her way.
+3	62370	adj	confusing	0	The teacher's explanation was confusing and hard to follow.
+4	62370	adj	confusing	0	The layout of the website is confusing and hard to navigate.
+5	62370	adj	confusing	0	His notes were confusing, so I asked for help.
+@ conscious
+1	62386	adj	conscious	1	After the alarm, she was conscious within seconds.
+2	62386	adj	conscious	0	He opened his eyes and felt fully conscious again.
+3	62386	adj	conscious	0	The patient became conscious after the medicine took effect.
+4	62386	adj	conscious	0	She was conscious during the entire procedure.
+5	62386	adj	conscious	0	The child woke up and was conscious right away.

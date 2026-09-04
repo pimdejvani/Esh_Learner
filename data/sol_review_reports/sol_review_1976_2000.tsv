@@ -1,0 +1,25 @@
+historical	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+honest	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+horrible	repaired	Qwen used an obscure noun sense for all rows; replaced it with the common adjective sense and rewrote all five examples
+horror	repaired	Repaired ranks 3-5 for idiomatic naturalness; retained the two Qwen rows that passed
+host	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+hunt	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+hurricane	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+hurry	repaired	Repaired redundant or unnatural wording in ranks 3 and 5; retained the other reviewed Qwen rows
+identity	repaired	Qwen used the technical sameness sense; moved all rows to the learner-core personal and group identity sense
+ignore	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+illegal	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+imaginary	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+immediate	repaired	Repaired unnatural rank 3 wording; retained the other reviewed Qwen rows
+immigrant	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+impact	repaired	Repaired the non-idiomatic phrase in rank 3; retained the other reviewed Qwen rows
+import	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+importance	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+impression	repaired	Repaired awkward rank 3 wording; retained the other reviewed Qwen rows
+impressive	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+improvement	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+incredibly	repaired	Qwen attached intensifier usage to the wrong sense; repointed all rows to the common 'extremely' sense and repaired three examples
+indeed	repaired	Repaired awkward placement and punctuation in ranks 1, 3, and 5; retained the other reviewed Qwen rows
+indicate	repaired	Repaired subject-verb agreement in ranks 1 and 3; retained the other reviewed Qwen rows
+indirect	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay
+indoor	repaired	Qwen candidate passed human semantic, grammar, and naturalness review; approved as complete overlay

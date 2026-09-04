@@ -1,0 +1,90 @@
+@ shock
+1	66342	noun	shock	1	The car crash delivered a sharp shock to everyone inside.
+2	66343	noun	shock	0	Her unexpected resignation came as a shock to the entire team.
+3	66342	noun	shock	0	The hammer strike sent a shock through the metal frame.
+4	66348	noun	shock	0	He stood frozen in shock after hearing the unexpected news.
+5	66342	noun	shock	0	The explosion sent a powerful shock through the building.
+@ shocked
+1	66219	adj	shocked	1	She was shocked by the sudden news about her brother.
+2	66219	adj	shocked	0	They looked shocked when the door opened unexpectedly.
+3	66219	adj	shocked	0	The audience was shocked by the actor's bold performance.
+4	66219	adj	shocked	0	He was shocked after hearing the truth about the accident.
+5	66219	adj	shocked	0	The children were shocked by the loud thunder during the storm.
+@ shooting
+1	66296	adj	shooting	1	The shooting star raced across the night sky.
+2	66297	adj	shooting	0	She felt a shooting pain in her knee after the fall.
+3	66296	adj	shooting	0	Shooting flames rose from the dry grass.
+4	66296	adj	shooting	0	A shooting spray of water burst from the broken pipe.
+5	66296	adj	shooting	0	A shooting jet of water burst from the broken pipe.
+@ shot
+1	66411	adj	shot	1	After the long hike, I felt completely shot.
+2	66411	adj	shot	0	She felt completely shot after working overtime all week.
+3	66411	adj	shot	0	The team was shot after three back-to-back games.
+4	66411	adj	shot	0	He looked shot after the marathon finish.
+5	66411	adj	shot	0	We're all shot after the night shift.
+@ significant
+1	66396	adj	significant	1	The artist's smile was significant, showing she understood the joke.
+2	66396	adj	significant	0	A significant pause followed the unexpected announcement.
+3	66396	adj	significant	0	The judge gave the lawyer a significant glance before ruling.
+4	66396	adj	significant	0	The empty chair was significant because it showed that the leader had refused to attend.
+5	66396	adj	significant	0	The first frost was significant because it marked the end of the growing season.
+@ significantly
+1	66395	adv	significantly	1	The new policy has significantly reduced pollution in the city.
+2	66395	adv	significantly	0	Her performance improved significantly after the coaching session.
+3	66395	adv	significantly	0	The temperature dropped significantly during the night.
+4	66395	adv	significantly	0	The company's profits increased significantly last quarter.
+5	66395	adv	significantly	0	The results were significantly different from the previous study.
+@ silence
+1	66403	noun	silence	1	The silence in the room made everyone feel uneasy.
+2	66403	noun	silence	0	After the thunderstorm ended, a deep silence settled over the valley.
+3	66403	noun	silence	0	She stood in the quiet hallway, listening to the silence.
+4	66403	noun	silence	0	The silence between them was heavier than words.
+5	66403	noun	silence	0	He broke the silence with a single soft question.
+@ silk
+1	66444	noun	silk	1	The silkworm spun a thread of silk.
+2	66444	noun	silk	0	She collected silk from the cocoon.
+3	66444	noun	silk	0	The spider's web is made of natural silk.
+4	66444	noun	silk	0	Fine strands of silk remained attached to the old cocoon.
+5	66444	noun	silk	0	The caterpillar produced silk for its cocoon.
+@ sincere
+1	66441	adj	sincere	1	She made a sincere promise to visit every weekend.
+2	66441	adj	sincere	0	His sincere apology moved everyone in the room.
+3	66441	adj	sincere	0	The teacher appreciated the sincere effort from the student.
+4	66441	adj	sincere	0	He gave a sincere smile after the difficult test.
+5	66441	adj	sincere	0	The sincere words of the letter brought tears to her eyes.
+@ slave
+1	66557	noun	slave	1	The slave worked in the fields from dawn until dusk.
+2	66557	noun	slave	0	The slave was sold at the market without a word of protest.
+3	66557	noun	slave	0	The slave carried water every day to the master's house.
+4	66557	noun	slave	0	The slave was chained to the wall during the night.
+5	66557	noun	slave	0	The slave depended entirely on the owner for food and shelter.
+@ slide
+1	66567	verb	slid	1	She slid the book across the table.
+2	66567	verb	slid	0	The child slid the toy car on the floor.
+3	66567	verb	slid	0	He slid the tray slowly to the edge.
+4	66567	verb	slide	0	They slide the box down the ramp.
+5	66567	verb	slid	0	The dog slid the ball under the couch.
+@ slight
+1	66456	adj	slight	1	She noticed a slight change in his voice during the call.
+2	66456	adj	slight	0	A slight increase in salt gave the soup more flavor.
+3	66456	adj	slight	0	He gave the door a slight push to check if it was locked.
+4	66456	adj	slight	0	There was a slight delay in the train schedule this morning.
+5	66456	adj	slight	0	A slight breeze moved the curtains in the open window.
+@ slip
+1	66504	verb	slipped	1	She tried to walk on the icy path but slipped and fell on her knees.
+2	66504	verb	slipped	0	The boy slipped on the wet floor and landed with a thud.
+3	66504	verb	slipped	0	He reached for the railing but slipped on the moss-covered stone.
+4	66504	verb	slipped	0	The cat slipped on the polished kitchen floor and dashed under the table.
+5	66504	verb	slipped	0	They slipped on the rain-slicked sidewalk while crossing the street.
+@ slope
+1	66484	noun	slope	1	The path had a gentle slope leading up to the hilltop.
+2	66484	noun	slope	0	We stopped to rest on the steep slope near the trailhead.
+3	66484	noun	slope	0	The garden was built on a natural slope for drainage.
+4	66484	noun	slope	0	The snowboarder carved down the icy slope with ease.
+5	66484	noun	slope	0	The car rolled slowly down the grassy slope.
+@ solar
+1	66476	adj	solar	1	Solar energy powers the small village.
+2	66476	adj	solar	0	Solar radiation grew stronger as noon approached.
+3	66476	adj	solar	0	The solar system includes eight planets.
+4	66476	adj	solar	0	We installed solar panels on the roof.
+5	66476	adj	solar	0	The solar eclipse was visible across the region.

@@ -1,0 +1,150 @@
+@ opposite
+1	37365	adj	opposite	1	The bakery stood on the opposite side of the busy road.
+2	37379	prep	opposite	0	There is a bus stop opposite the school gate.
+3	37365	adj	opposite	0	They sat at opposite ends of the table.
+4	37365	adj	opposite	0	The opposite wall has a mirror.
+5	37365	adj	opposite	0	Our rooms are on opposite sides.
+@ or
+1	37382	conj	or	1	Take an umbrella or you will get soaked on the walk home.
+2	37385	conj	or	0	Hurry up, or you will miss the bus.
+3	37382	conj	or	0	Would you like tea or coffee?
+4	37382	conj	or	0	We can walk or take the bus.
+5	37382	conj	or	0	Choose red or blue paint.
+@ orange
+1	37393	noun	orange	1	An orange tree shaded the bench outside Grandma's kitchen.
+2	37394	noun	oranges	0	She peeled two oranges and shared them with her brother.
+3	37404	adj	orange	0	He wore a bright orange jacket to the party.
+4	37393	noun	orange	0	He planted an orange tree by the wall.
+5	37396	noun	orange	0	The sunset turned the sky a deep orange.
+@ order
+1	37407	noun	order	1	The children lined up in order before the museum opened.
+2	37436	verb	order	0	She will order a pizza for dinner tonight.
+3	37407	noun	order	0	Put the pictures in order.
+4	37407	noun	order	0	The files are in alphabetical order.
+5	37407	noun	order	0	The steps must be done in order.
+@ other
+1	37438	adj	other	1	The other glove was still buried in the snow.
+2	37444	noun	other	0	One shoe was clean, but the other was covered in mud.
+3	37438	adj	other	0	Try the other door.
+4	37438	adj	other	0	Where is the other shoe?
+5	37438	adj	other	0	The other team scored first.
+@ our
+1	37449	det	Our	1	Our little boat reached the shore just before dark.
+2	37451	det	our	0	Every March, our school celebrates sports day with games.
+3	37449	det	Our	0	Our teacher gave us homework.
+4	37449	det	our	0	This is our house.
+5	37449	det	Our	0	Our friends arrived early.
+@ out
+1	37459	adv	out	1	The kitten slipped out through the open gate before breakfast.
+2	37473	prep	out	0	She looked out the window at the falling snow.
+3	37459	adv	out	0	Please take the rubbish out.
+4	37459	adv	out	0	He ran out of the room.
+5	37459	adv	out	0	The bird flew out of its cage.
+@ outside
+1	37518	noun	outside	1	Rain drummed on the outside of the tent all night.
+2	37536	adv	outside	0	The children played outside until it got dark.
+3	37518	noun	outside	0	The outside of the cup felt hot.
+4	37518	noun	outside	0	Paint the outside of the fence.
+5	37518	noun	outside	0	The outside was covered with dust.
+@ over
+1	37545	adj	over	1	When the race was over, the children hugged their coach.
+2	37580	prep	over	0	A rainbow appeared over the mountains after the storm.
+3	37545	adj	over	0	The film is over now.
+4	37545	adj	over	0	Lunch was over by one o'clock.
+5	37545	adj	over	0	The storm is finally over.
+@ own
+1	37607	adj	own	1	After years of saving, she bought her own little bakery.
+2	37611	verb	owns	0	My uncle owns a small farm near the river.
+3	37607	adj	own	0	He has his own room.
+4	37607	adj	own	0	We packed our own lunch.
+5	37607	adj	own	0	The child tied her own shoes.
+@ page
+1	37626	noun	page	1	A pressed flower fell from the page of Grandma's old book.
+2	37631	noun	page	0	She clicked a link and a new page opened on her phone.
+3	37626	noun	page	0	Turn to page ten.
+4	37626	noun	page	0	The page has a picture of a whale.
+5	37626	noun	page	0	She wrote her name at the top of the page.
+@ paint
+1	37649	noun	paint	1	Blue paint covered the mural after the school festival.
+2	37659	verb	painted	0	Dad and I painted the fence white last weekend.
+3	37649	noun	paint	0	The paint dried before lunch.
+4	37649	noun	paint	0	We mixed red and white paint.
+5	37649	noun	paint	0	The paint smelled strong.
+@ painting
+1	37670	noun	painting	1	The painting of the sea made the quiet room feel brighter.
+2	37672	noun	painting	0	She studies painting at the art college in the city.
+3	37670	noun	painting	0	Her painting won first prize.
+4	37670	noun	painting	0	The painting hangs above the sofa.
+5	37670	noun	painting	0	We admired the painting at the gallery.
+@ pair
+1	37674	noun	pair	1	A pair of muddy boots stood by the front door.
+2	37691	verb	pair	0	You need to pair your phone with the speaker using Bluetooth.
+3	37674	noun	pair	0	She bought a pair of gloves.
+4	37674	noun	pair	0	This pair of socks is warm.
+5	37674	noun	pair	0	The pair of birds built a nest.
+@ paper
+1	37698	noun	paper	1	The paper boat floated across the puddle after the rain.
+2	37714	adj	paper	0	We used paper cups and plates for the picnic.
+3	37698	noun	paper	0	Write your answer on paper.
+4	37698	noun	paper	0	The paper tore easily.
+5	37698	noun	paper	0	He folded the paper in half.
+@ paragraph
+1	37727	noun	paragraph	1	The final paragraph made everyone understand why the hero left.
+2	37727	noun	paragraph	0	The teacher asked us to write a paragraph about our summer holiday.
+3	37727	noun	paragraph	0	Start a new paragraph here.
+4	37727	noun	paragraph	0	Read the first paragraph aloud.
+5	37727	noun	paragraph	0	Her paragraph begins with a question.
+@ parent
+1	37733	noun	parent	1	Each parent waited outside the hall after the school show.
+2	37744	verb	parent	0	She learned how to parent by watching her own mother.
+3	37733	noun	parent	0	Her parent signed the form.
+4	37733	noun	parent	0	Every parent received a letter.
+5	37733	noun	parent	0	The parent comforted the crying child.
+@ park
+1	37746	noun	park	1	Children chased bubbles through the park after the picnic.
+2	37759	verb	park	0	Dad had to park the car far from the entrance.
+3	37746	noun	park	0	We walked through the park.
+4	37746	noun	park	0	The park has a playground.
+5	37746	noun	park	0	They met at the park.
+@ part
+1	37771	noun	part	1	The missing part stopped the old clock from working.
+2	37773	noun	part	0	The engine is the most important part of a car.
+3	37771	noun	part	0	This part goes at the top.
+4	37771	noun	part	0	He repaired the broken part.
+5	37771	noun	part	0	Only one part was missing.
+@ partner
+1	37804	noun	partner	1	Her partner caught her hand before she slipped on the wet path.
+2	37808	noun	partners	0	They have been dance partners for three years.
+3	37804	noun	partner	0	Choose a partner for the game.
+4	37804	noun	partner	0	My partner reads the next line.
+5	37804	noun	partner	0	Each partner has a different job.
+@ party
+1	37825	noun	party	1	Balloons filled the garden for her sister's tenth birthday party.
+2	37824	noun	party	0	A party of six waited for a table at the restaurant.
+3	37825	noun	party	0	We are having a party on Saturday night.
+4	37831	verb	partied	0	They partied all night after the exam finished.
+5	37825	noun	party	0	Everyone wore costumes to the Halloween party.
+@ passport
+1	37840	noun	passport	1	Her passport was safe in a pocket when the train left the station.
+2	37840	noun	passport	0	He forgot his passport and missed the flight to Rome.
+3	37840	noun	passport	0	Show your passport at the border.
+4	37840	noun	passport	0	His passport expires next year.
+5	37840	noun	passport	0	Keep your passport in a safe place.
+@ past
+1	37847	noun	past	1	The old photograph gave us a glimpse of the village's past.
+2	37855	prep	past	0	It's quarter past three, so we should leave now.
+3	37847	noun	past	0	We cannot change the past.
+4	37847	noun	past	0	She spoke about her past.
+5	37847	noun	past	0	The past teaches useful lessons.
+@ pay
+1	37860	verb	pay	1	Mum stopped to pay for the medicine before the shop closed.
+2	37869	noun	pay	0	Her weekly pay was not enough to cover the rent.
+3	37860	verb	pay	0	Please pay at the counter.
+4	37860	verb	paid	0	He paid for lunch with his new card.
+5	37860	verb	pays	0	She pays her rent online every month.
+@ pen
+1	37878	noun	pen	1	She lost her favorite pen just before the exam started.
+2	37874	noun	pen	0	The sheep hurried into their pen when the rain began.
+3	37878	noun	pen	0	Please use a blue or black pen to fill out the form.
+4	37874	noun	pen	0	Two goats slept in the pen.
+5	37874	noun	pen	0	The gate of the pen was open.

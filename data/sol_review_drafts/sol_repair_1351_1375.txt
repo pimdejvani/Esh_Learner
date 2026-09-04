@@ -1,0 +1,161 @@
+@ sad
+1	39382	adj	sad	1	She felt sad for days after her cat disappeared.
+2	39383	adj	sad	0	My brother looks sad because his balloon flew away.
+3	39382	adj	sadder	0	I feel sadder today than I did last week.
+4	39384	adj	sad	0	We watched a sad film about a lost dog.
+5	39384	adj	saddest	0	That was the saddest goodbye I have ever seen.
+
+@ salad
+1	39396	noun	salad	1	My grandmother makes a huge salad every Sunday for the whole family.
+2	39397	noun	salad	0	Wash the salad carefully before you put it on the plate.
+3	39396	noun	salads	0	They made two big salads for the school picnic.
+4	39398	noun	salad	0	She ordered a fruit salad with mango and grapes.
+5	39396	noun	salad	0	This salad tastes fresh because the tomatoes came from our garden.
+
+@ salt
+1	39399	noun	salt	1	He added too much salt and the whole soup was ruined.
+2	39399	noun	salt	0	A little salt makes the vegetables taste much better.
+3	39420	verb	salted	0	She salted the eggs and passed them around the table.
+4	39420	verb	salting	0	The cook is salting the potatoes for tonight's dinner.
+5	39412	adj	salt	0	Do not drink salt water even when you feel very thirsty.
+
+@ same
+1	39434	adj	same	1	The twins arrived at the party wearing exactly the same dress.
+2	39434	adj	same	0	Our two answers were the same, so the teacher smiled.
+3	39435	adj	same	0	Every day feels the same when you never leave the house.
+4	39439	adv	same	0	He treats his younger sister the same as his older brother.
+5	39440	pron	same	0	I ordered coffee and my friend asked for the same.
+
+@ sandwich
+1	39445	noun	sandwich	1	He was so hungry that he ate a whole sandwich in one minute.
+2	39445	noun	sandwiches	0	We bought two sandwiches to eat on the train.
+3	39449	verb	Sandwich	0	Sandwich the cheese between two slices of warm bread.
+4	39449	verb	sandwiched	0	She sandwiched the note between the pages of his book.
+5	39450	verb	sandwiching	0	The teacher is sandwiching a short break between the two tests.
+
+@ saturday
+1	67704	noun	Saturday	1	Every Saturday my father takes me fishing at the old lake.
+2	67704	noun	Saturdays	0	The little shop only opens on Saturdays during the winter.
+3	67705	adv	Saturday	0	I will call you Saturday and tell you the news.
+4	67704	noun	Saturday	0	Saturday comes after Friday, so we still have one school day.
+5	67704	noun	Saturday	0	We finished all the homework before Saturday so we could rest.
+
+@ say
+1	39457	verb	say	1	He wanted to say sorry but the words would not come out.
+2	39455	verb	say	0	Please say your full name slowly so I can write it.
+3	39457	verb	said	0	She said hello to everyone in the room this morning.
+4	39458	verb	says	0	The sign says the museum closes at five o'clock.
+5	39457	verb	saying	0	I could not hear what the teacher was saying at the back.
+
+@ school
+1	39471	noun	school	1	On his first day at school he cried and held his mother's hand.
+2	39472	noun	school	0	The school has a big library and a football field.
+3	39471	noun	schools	0	The city built three new schools last year.
+4	39481	verb	school	0	Some parents school their children at home instead of sending them away.
+5	39481	verb	schooled	0	The old coach schooled the young players in basic passing.
+
+@ science
+1	39487	noun	Science	1	Science explains why the sky turns red just before the sun sets.
+2	39488	noun	science	0	We have a science class every Tuesday morning.
+3	39487	noun	sciences	0	The sciences help us understand the world around us.
+4	39488	noun	science	0	My sister reads science books about space and rockets.
+5	39487	noun	science	0	He wants to study science at university next year.
+
+@ scientist
+1	39498	noun	scientist	1	The young scientist shouted with joy when her experiment finally worked.
+2	39498	noun	Scientists	0	Scientists test new ideas again and again before they agree.
+3	39498	noun	scientist	0	A scientist asked us many questions about our garden plants.
+4	39498	noun	scientist	0	My sister wants to be a scientist when she grows up.
+5	39498	noun	scientist	0	The scientist works in a lab near the river.
+
+@ sea
+1	39500	noun	sea	1	The storm made the sea so rough that no boat left the harbour.
+2	39500	noun	sea	0	We swam in the sea until our fingers went cold.
+3	39501	noun	Sea	0	The Mediterranean Sea is warm enough for swimming in October.
+4	39499	noun	seas	0	The old ship crossed many seas before it reached home.
+5	39499	noun	sea	0	A calm sea shone silver under the morning light.
+
+@ second
+1	39530	noun	second	1	For one second the whole crowd went completely silent.
+2	39530	noun	seconds	0	The traffic light changed after about ten seconds.
+3	39510	adj	second	0	This is my second cup of tea this morning.
+4	39514	adv	second	0	She finished second in the swimming race yesterday.
+5	39527	verb	seconded	0	Someone seconded her idea, so the group voted on it.
+
+@ section
+1	39543	noun	section	1	The first section of the book made me cry on the bus.
+2	39541	noun	section	0	This section of the museum is about wild animals.
+3	39541	noun	sections	0	The store is divided into three sections.
+4	39563	verb	section	0	Please section the cake into eight equal pieces.
+5	39563	verb	sectioned	0	She sectioned the orange and gave a piece to each child.
+
+@ see
+1	39567	verb	see	1	From the hilltop we could see the whole city glowing at night.
+2	39567	verb	sees	0	My cat sees a bird outside and jumps at the window.
+3	39578	verb	seeing	0	She is seeing the doctor today about her sore throat.
+4	39569	verb	saw	0	We saw a funny film at the cinema yesterday.
+5	39567	verb	seen	0	Have you seen my school bag anywhere?
+
+@ sell
+1	39592	verb	sell	1	He had to sell his old guitar to pay for the trip.
+2	39592	verb	sells	0	This little shop sells books and cheap notebooks.
+3	39592	verb	sold	0	She sold her camera last week and bought a phone.
+4	39592	verb	selling	0	He is selling cookies at school to help the animal shelter.
+5	39593	verb	sell	0	Warm coats always sell quickly when the weather turns cold.
+
+@ send
+1	39607	verb	send	1	She promised to send a postcard from every city she visited.
+2	39607	verb	send	0	Please send me the photo you took at the party.
+3	39607	verb	sends	0	My dad sends me a message every evening.
+4	39607	verb	sent	0	She sent flowers to her friend in the hospital.
+5	39607	verb	sending	0	They are sending the package by train tomorrow morning.
+
+@ september
+1	67699	name	September	1	Every September the whole street smells of new books and pencils.
+2	67699	name	September	0	My birthday is in September, just after the rain stops.
+3	67699	name	September	0	School begins in September for most children here.
+4	67699	name	Septembers	0	We still remember the warm Septembers of our childhood.
+5	67699	name	September	0	Next September we will travel to see our cousins.
+
+@ seven
+1	67909	num	seven	1	She blew out seven candles and made a secret wish.
+2	67909	num	seven	0	There are seven days in every week.
+3	67909	num	seven	0	The bus comes at seven, so we must hurry.
+4	39640	noun	sevens	0	The teacher wrote two sevens on the blackboard.
+5	39640	noun	seven	0	My lucky number is seven, like my grandfather's.
+
+@ seventeen
+1	67736	num	seventeen	1	My cousin turned seventeen and got her first pair of skates.
+2	67736	num	seventeen	0	We need seventeen chairs for tonight's meeting.
+3	67736	num	seventeen	0	She got seventeen points and won the game.
+4	67736	num	seventeen	0	There are seventeen pages left to read before Friday.
+5	67736	num	Seventeen	0	Seventeen students joined the trip to the mountains.
+
+@ share
+1	39648	verb	share	1	She was hungry too, but she still chose to share her lunch.
+2	39643	noun	share	0	Everyone in the family gets an equal share of the cake.
+3	39648	verb	shares	0	She shares her toys with her little sister.
+4	39649	verb	shared	0	The two brothers shared a small bedroom for many years.
+5	39651	verb	sharing	0	He is sharing the news with everyone at work.
+
+@ she
+1	39655	pron	she	1	When the music started, she danced until everyone clapped.
+2	39655	pron	She	0	She likes to sing loudly in the shower.
+3	39655	pron	she	0	Where is she going with that heavy bag?
+4	39655	pron	her	0	I gave her the last ticket before the train left.
+5	39661	noun	she	0	The little cat is a she, not a he.
+
+@ shirt
+1	39672	noun	shirt	1	He spilled orange juice on his white shirt right before the photo.
+2	39672	noun	shirt	0	My favourite shirt is blue with small silver buttons.
+3	39672	noun	shirts	0	The shop sells school shirts at a very low price.
+4	39672	noun	shirt	0	She ironed his shirt carefully before the job interview.
+5	39672	noun	shirt	0	Wear a warm shirt because the wind is cold today.
+
+@ shoe
+1	39676	noun	shoes	1	Her new shoes hurt so much that she walked home barefoot.
+2	39676	noun	shoes	0	Put your shoes by the door before you come in.
+3	39676	noun	shoe	0	This shoe is too small for my left foot.
+4	39695	verb	shoe	0	The blacksmith will shoe the horse tomorrow morning.
+5	39695	verb	shoeing	0	He is shoeing the grey horse in the yard.
+

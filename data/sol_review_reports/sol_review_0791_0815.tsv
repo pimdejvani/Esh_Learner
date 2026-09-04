@@ -1,0 +1,25 @@
+bedroom	pass	all 5 rows solid, core sense, no changes needed
+beer	pass	noun rows solid; skipped verb POS (senses untagged but "to beer" is not natural modern usage)
+before	repaired	rank1 was only 5 words (thin); added adv/conj senses for real POS coverage
+begin	repaired	added form variety (began/begins/beginning); noun POS skipped (only RARE sense)
+beginning	repaired	fixed sense_id mismatch (rows used abstract sense 29392 but sentences meant "initial portion" 29395); added adj/verb coverage
+behind	repaired	added adj/adv coverage with real senses; skipped noun POS (buttocks/slang-adjacent senses)
+believe	repaired	added form variety (believed/believes/believing); r2 repointed to "believe a person" sense
+below	repaired	added adv coverage; fixed r5 sense_id (value sense, not spatial)
+best	repaired	rank3 was a flat template; added noun/adv/verb coverage
+better	repaired	added adv/verb coverage; skipped noun POS (archaic/rare-alt-spelling senses only)
+between	pass	solid prep rows; noun sense is irrelevant sewing-needle jargon, correctly skipped
+bicycle	repaired	added verb coverage; strengthened rank1 vividness
+big	repaired	added adv coverage (win big); verb POS skipped (all senses archaic/dialectal)
+bike	repaired	fixed sense_id (all rows used RARE:abbreviation sense; repointed to plain untagged sense); added verb coverage
+bill	repaired	fixed sense_id mismatch (rows used obsolete "written list" sense; repointed to invoice sense matching restaurant context); added verb coverage
+bird	pass	solid noun rows; adj/verb POS skipped (jargon/insider birdwatcher usage)
+birthday	pass	solid noun rows; verb POS skipped ("to birthday" is not real natural usage despite lacking a tag)
+black	pass	already a strong multi-POS block (adj x3 senses, noun, verb), all well-matched
+blog	repaired	added verb coverage
+blonde	repaired	compromise word: only usable sense is tagged RARE:alternative (cross-ref to "blond"); kept by judgment since "blonde" is standard modern English; stupid/naive adjective and technical lamp noun senses rejected as inappropriate/jargon
+blue	repaired	added noun coverage; verb POS skipped (technical/dated senses only)
+boat	repaired	added verb coverage
+body	pass	solid noun rows; verb POS skipped ("body/bodied" as bare verb is uncommon; "embody" is the natural word)
+book	repaired	added verb coverage
+boot	repaired	added verb coverage

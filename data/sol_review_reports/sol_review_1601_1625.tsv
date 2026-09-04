@@ -1,0 +1,25 @@
+contain	repaired	five verb rows across three senses (hold, include, restrain); inflections contain/contains/contained/containing all agree correctly
+context	repaired	two noun senses of surrounding circumstances and surrounding text; singular and plural forms used naturally
+continent	repaired	landmass senses plus one figurative continent-of-cloud row matching its extended-expanse sense; agreement correct throughout
+continue	repaired	four verb rows plus resume and remain senses; all inflections well formed, though rank 3 path continues fits the extend/abide sense only loosely
+control	repaired	three verb rows and two noun rows; POS tags match the slots and singular/plural controls are used correctly
+cooker	repaired	single cooking-appliance sense across two ids; plain domestic sentences, all natural British usage
+copy	repaired	noun duplicate, magazine-issue and imitation senses plus two verb rows; POS split is correct
+corner	repaired	four noun senses (angle, street corner, secluded spot, edges) plus one verb row cornered a mouse matching its sense
+correctly	repaired	one adverb sense across all five rows; each verb it modifies differs, and no agreement problems
+count	repaired	enumerate, matter and tally senses; four verb rows plus a noun a count of five correctly tagged
+couple	repaired	pair, romantic pair and small-number senses plus one transitive verb row coupling two train cars
+cover	repaired	three distinct noun senses (lid, book cover, shelter) and two verb rows including the be-enough-money sense
+crazy	repaired	four adjective senses (mad, wildly excited, enthusiastic, absurd) plus a well-formed comparative crazier
+creative	repaired	adjective rows plus two noun rows for a person in a creative role; singular and plural both natural
+credit	repaired	recognition, film credits and deferred-payment nouns plus two verb rows; agreement correct
+crime	repaired	specific offence, criminal activity, habitual crime and the figurative should-be-a-crime sense; all natural
+criminal	repaired	noun offender rows and adjective rows for criminal record, criminal act and criminal case; POS matches every slot
+cross	repaired	verb traverse with two inflections, two noun senses (mark, pendant) and the adjective cross with me; all correct
+crowd	repaired	mass-of-people and social-set nouns plus two verb rows; plural crowds fill agrees correctly
+crowded	repaired	four adjective rows in predicative and attributive position plus one past-tense verb row; no agreement errors
+cry	repaired	weep verb with cry/cried/crying plus noun a good cry and plural cries for help
+cupboard	repaired	storage-cupboard sense in four rows plus a coat-cupboard row; plural cupboards are empty agrees
+curly	repaired	curled adjective with comparative curlier plus the typographic curly-quotes sense; all natural
+cycle	repaired	three noun senses of a repeating sequence plus two bicycle-verb rows; tenses correct
+daily	repaired	attributive adjective rows, one adverb row, and singular/plural newspaper nouns; POS split is clean

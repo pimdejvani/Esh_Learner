@@ -1,0 +1,102 @@
+@ high
+1	34424	adj	high	1	The eagle nested on a high cliff, far above the raging river.
+2	34443	adj	high	0	The price of this bag is too high.
+3	34453	adv	high	0	The bird climbed high into the sky.
+4	34424	adj	higher	0	The shelf is higher than I can reach.
+5	34456	noun	highs	0	The team celebrated the highs and learned from the lows.
+@ him
+1	34465	pron	him	1	I gave him a warm hug.
+2	34465	pron	him	0	Please call him after dinner.
+3	34465	pron	him	0	The teacher helped him with math.
+4	34465	pron	him	0	We waited for him at the gate.
+5	34474	noun	him	0	The vet checked and said the kitten was a him, not a her.
+@ his
+1	34475	det	His	1	His father hugged him tightly after the long, tearful goodbye.
+2	34475	det	his	0	I borrowed his blue pen.
+3	34475	det	His	0	His room is very clean.
+4	34479	pron	his	0	That red bag is his.
+5	34479	pron	his	0	The last cookie is his.
+@ history
+1	34483	noun	History	1	History helps us understand the past.
+2	34483	noun	history	0	We read about Thai history at school.
+3	34483	noun	history	0	My family has a long history here.
+4	34489	noun	history	0	Please clear your browser history before you sell the computer.
+5	34483	noun	histories	0	The museum shares local histories.
+@ hobby
+1	34494	noun	hobby	1	Painting became her favorite hobby after she retired from teaching.
+2	34494	noun	hobby	0	Her hobby is growing flowers.
+3	34494	noun	hobby	0	A hobby can help you relax.
+4	34494	noun	hobbies	0	Our hobbies are very different.
+5	34494	noun	hobbies	0	They talked about their hobbies.
+@ home
+1	34507	noun	home	1	After the long journey, she finally felt safe at home again.
+2	34507	noun	home	0	After years abroad, this small apartment finally feels like home.
+3	34529	adv	home	0	Please come home early.
+4	34528	adj	home	0	The fans roared when the home team scored the winning goal.
+5	34507	noun	homes	0	The street has small homes.
+@ hospital
+1	34595	noun	hospital	1	The doctor works at the hospital.
+2	34595	noun	hospital	0	We took Grandpa to the hospital.
+3	34595	noun	hospital	0	She stayed in hospital for two days.
+4	34595	noun	hospitals	0	The city has three large hospitals.
+5	34595	noun	hospital	0	My grandmother stayed in the hospital for a week after her surgery.
+@ hot
+1	34599	adj	hot	1	The soup is too hot to eat.
+2	34599	adj	hot	0	It is hot outside today.
+3	34599	adj	hotter	0	Today is hotter than yesterday.
+4	34599	adj	hottest	0	April is the hottest month here.
+5	34631	adv	hot	0	Serve the soup hot, right after you finish cooking it.
+@ hour
+1	34644	noun	hour	1	The concert lasted just one hour, but it felt unforgettable.
+2	34644	noun	hour	0	I study for an hour every day.
+3	34644	noun	hours	0	The shop opens for eight hours.
+4	34644	noun	hour	0	We waited an hour for the bus.
+5	34644	noun	hours	0	It takes two hours to get there.
+@ how
+1	34687	adv	How	1	How many hours did you sleep after the long flight?
+2	34687	adv	How	0	How did you make this cake?
+3	34687	adv	How	0	How far is the station?
+4	34701	conj	how	0	She explained how her flight had been delayed for hours.
+5	34702	noun	hows	0	We discussed the hows of the plan.
+@ however
+1	34705	adv	however	1	It was raining; however, we went out.
+2	34705	adv	However	0	The room is small. However, it is clean.
+3	34713	conj	However	0	However tired you are, eat something.
+4	34705	adv	however	0	I wanted to help; however, I was late.
+5	34713	conj	However	0	However hard he tried, the door would not open.
+@ hundred
+1	67826	num	hundred	1	More than a hundred people gathered to watch the fireworks explode over the bay.
+2	67826	num	hundred	0	She invited about a hundred guests to her wedding.
+3	67826	num	hundred	0	The old book has exactly one hundred pages.
+4	67826	num	hundred	0	Only a hundred tickets were left when the doors opened.
+5	34714	noun	hundred	0	He paid the taxi driver with a hundred and waited for change.
+@ husband
+1	34724	noun	husband	1	Her husband cooked a big dinner to celebrate her promotion.
+2	34724	noun	husband	0	My husband works from home.
+3	34724	noun	husbands	0	The husbands waited outside.
+4	34724	noun	husbands	0	Many husbands help with cooking and cleaning at home.
+5	34724	noun	husband	0	Her husband surprised her with flowers on their anniversary.
+@ ice
+1	34739	noun	ice	1	The children skated on the ice.
+2	34739	noun	ice	0	Put some ice in my drink.
+3	34746	noun	ices	0	The shop sells fruit ices.
+4	34754	verb	iced	0	The lake iced over last night.
+5	34756	verb	ices	0	The road often ices before dawn during the coldest weeks of winter.
+@ idea
+1	34767	noun	idea	1	She had a brilliant idea for surprising her sister on her birthday.
+2	34767	noun	idea	0	I have an idea for dinner.
+3	34766	noun	idea	0	Her idea solved the problem.
+4	34766	noun	ideas	0	We shared our ideas in class.
+5	34767	noun	idea	0	I like your idea better.
+@ if
+1	34771	conj	If	1	If it rains, we will stay home.
+2	34771	conj	if	0	Call me if you need help.
+3	34771	conj	if	0	I do not know if he is ready.
+4	34781	noun	ifs	0	There are too many ifs in this plan.
+5	34771	conj	If	0	If you hurry, you can catch the bus.
+@ imagine
+1	34782	verb	Imagine	1	Imagine a quiet beach at sunset.
+2	34782	verb	imagine	0	I cannot imagine life without music.
+3	34782	verb	imagined	0	She imagined a better future.
+4	34782	verb	imagining	0	He is imagining a new game.
+5	34782	verb	imagines	0	My brother imagines living on Mars.

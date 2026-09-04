@@ -41,7 +41,7 @@ PILOT_JSON = ROOT / "data" / "pilot_100.json"
 # Test scaffolding: 30 harder multi-POS words used to exercise the Flashcard back
 # and the Dictionary while content is being built.  Rows land in the content DB
 # with is_test_only=1 and must be dropped from the pipeline before the app ships
-# (after_revocab.md item 7).
+# (docs/legacy/REVOCAB_PILOT_2026-08.md §3 (after_revocab) item 7).
 HARD_TEST_JSON = ROOT / "data" / "hard_test_30.json"
 THAI_DIR = ROOT / "data" / "content_th"
 OUT_DB = ROOT / "data" / "content_v2.db"
@@ -194,9 +194,9 @@ def content_words() -> list[dict]:
     return words
 
 
-def load_drafts(headwords: set[str]) -> dict[str, list[dict]]:
+def load_drafts(headwords: set[str], draft_dir: Path = DRAFT_DIR) -> dict[str, list[dict]]:
     entries: dict[str, list[dict]] = {}
-    for path in sorted(DRAFT_DIR.glob("*.txt")):
+    for path in sorted(draft_dir.glob("*.txt")):
         parsed, errors = compact.parse_file(path)
         if errors:
             raise SystemExit(f"{path.name}: {errors[0]}")
@@ -212,10 +212,10 @@ def cloze_span(en_text: str, target: str) -> tuple[int, int]:
     return (start, start + len(target)) if start >= 0 else (-1, -1)
 
 
-def build(out_path: Path) -> int:
+def build(out_path: Path, draft_dir: Path = DRAFT_DIR) -> int:
     words = content_words()
     headwords = {word["headword"].casefold() for word in words}
-    drafts = load_drafts(headwords)
+    drafts = load_drafts(headwords, draft_dir)
     missing_drafts = sorted(headwords - set(drafts))
     if missing_drafts:
         raise SystemExit(f"no draft for: {', '.join(missing_drafts)}")
@@ -478,7 +478,9 @@ def build(out_path: Path) -> int:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, default=OUT_DB)
-    return build(parser.parse_args().out)
+    parser.add_argument("--draft-dir", type=Path, default=DRAFT_DIR)
+    args = parser.parse_args()
+    return build(args.out, args.draft_dir)
 
 
 if __name__ == "__main__":

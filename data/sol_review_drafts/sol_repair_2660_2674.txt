@@ -1,0 +1,90 @@
+@ inform
+1	64141	verb	inform	1	She will inform the teacher about the missing homework.
+2	64141	verb	informed	0	He informed the manager that the report was late.
+3	64141	verb	inform	0	Please inform me if you see the lost keys.
+4	64141	verb	inform	0	The witness will inform the police about the incident.
+5	64141	verb	informed	0	They informed the staff about the new schedule.
+@ initial
+1	64155	adj	initial	1	The initial meeting was short but very productive.
+2	64155	adj	initial	0	She felt initial hesitation before speaking in front of the crowd.
+3	64155	adj	initial	0	His initial attempt at cooking failed, but he tried again.
+4	64155	adj	initial	0	The initial results of the experiment were surprising.
+5	64155	adj	initial	0	They reached an initial agreement after the first round of negotiations.
+@ initially
+1	64121	adv	initially	1	Initially, I struggled with the new job but adapted quickly.
+2	64121	adv	initially	0	Initially, the plan seemed impossible, but it worked out.
+3	64121	adv	initially	0	Initially, the dog was shy around strangers.
+4	64121	adv	initially	0	Initially, we thought the meeting would be short.
+5	64121	adv	initially	0	Initially, the weather was cold, but it warmed up.
+@ initiative
+1	64150	adj	initiative	1	California is an initiative state where voters can propose new laws directly.
+2	64150	adj	initiative	0	In initiative states, citizens can start legislation through ballot measures.
+3	64150	adj	initiative	0	State law makes Oregon an initiative state.
+4	64150	adj	initiative	0	Voters in initiative states can propose changes to the constitution.
+5	64150	adj	initiative	0	This initiative state lets residents vote on new tax rules directly.
+@ inner
+1	64161	adj	inner	1	The inner wall of the tube was smooth and cool to touch.
+2	64161	adj	inner	0	She opened the inner door to find the quiet room.
+3	64161	adj	inner	0	The inner layer of the jacket kept him warm.
+4	64161	adj	inner	0	The inner surface of the bowl had a shiny finish.
+5	64161	adj	inner	0	The inner chamber of the vault remained locked.
+@ insight
+1	64173	noun	insight	1	She gained a deep insight into her own behavior after reading the psychology book.
+2	64173	noun	insight	0	The detective's insight into the suspect's motives revealed a hidden pattern.
+3	64173	noun	insight	0	His insight into the team's dynamics helped solve the conflict.
+4	64173	noun	insight	0	The artist shared an insight into how she creates her abstract paintings.
+5	64173	noun	insight	0	Through meditation, she gained insight into her inner thoughts.
+@ insist
+1	64179	verb	insisted	1	She insisted on her right to speak at the meeting.
+2	64179	verb	insisted	0	He insisted that the report be reviewed before approval.
+3	64179	verb	insisted	0	The student insisted on finishing the test alone.
+4	64179	verb	insisted	0	They insisted on their version of the story.
+5	64179	verb	insisted	0	The manager insisted on a full explanation.
+@ inspire
+1	64183	verb	inspired	1	The teacher's words inspired hope in every student.
+2	64183	verb	inspired	0	Her courage inspired everyone to keep trying.
+3	64183	verb	inspired	0	The painting inspired deep thoughts in the audience.
+4	64183	verb	inspired	0	A quiet moment in nature inspired his new poem.
+5	64183	verb	inspired	0	The leader's speech inspired unity among the team.
+@ install
+1	64188	verb	install	1	The technician will install the new router in the basement.
+2	64188	verb	install	0	We need to install the software before the meeting starts.
+3	64188	verb	install	0	She decided to install a security camera at the back door.
+4	64188	verb	installed	0	They installed the shelves in the kitchen last weekend.
+5	64188	verb	install	0	He plans to install solar panels on the roof this spring.
+@ instance
+1	64200	noun	instance	1	That was the first instance of him losing his temper at work.
+2	64200	noun	instance	0	This is the third instance of his being late this week.
+3	64199	noun	instance	0	The teacher gave an instance of how to solve the problem.
+4	64200	noun	instance	0	Each time he forgot his keys was an instance of carelessness.
+5	64199	noun	instance	0	The meeting was an instance of poor planning.
+@ institute
+1	64209	noun	institute	1	She joined a climate research institute last year.
+2	64209	noun	institute	0	The new science institute opened in the city center.
+3	64209	noun	institute	0	They funded a medical institute to study rare diseases.
+4	64209	noun	institute	0	Our university has a well-known education institute.
+5	64209	noun	institute	0	He works at an environmental institute in Berlin.
+@ institution
+1	64226	noun	institution	1	The local library is a respected institution in our town.
+2	64226	noun	institution	0	She works at a medical institution that serves the poor.
+3	64226	noun	institution	0	The school is an important institution in the community.
+4	64226	noun	institutions	0	Several local institutions cooperate to provide social services.
+5	64226	noun	institution	0	The university is a major institution in the region.
+@ insurance
+1	64220	noun	insurance	1	She bought insurance for her new bike.
+2	64220	noun	insurance	0	The policy provides insurance against the cost of medical emergencies.
+3	64220	noun	insurance	0	He paid extra for insurance on the new laptop.
+4	64220	noun	insurance	0	We need insurance before we can register the car.
+5	64220	noun	insurance	0	The company offers insurance for travel delays.
+@ intended
+1	64237	adj	intended	1	The project was intended to help local farmers.
+2	64237	adj	intended	0	She gave the gift to her brother, the intended recipient.
+3	64237	adj	intended	0	The message was intended for you alone.
+4	64237	adj	intended	0	The intended change to the schedule was never made.
+5	64237	adj	intended	0	The plan was intended to reduce costs.
+@ intense
+1	64241	adj	intense	1	The heat in the desert was intense, making it hard to walk.
+2	64241	adj	intense	0	The storm brought intense rain that flooded the streets.
+3	64241	adj	intense	0	She faced intense pressure to finish the project before midnight.
+4	64241	adj	intense	0	The sunlight through the window was intense and bright.
+5	64241	adj	intense	0	The pain from the burn was intense and sharp.

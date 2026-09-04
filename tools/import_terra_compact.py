@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Import compact, tab-separated Terra cloze drafts without an API call.
 
-Format v2 is documented in ``terra_compact_format.md``. A word header is
+Format v2 is documented in ``docs/formats/terra_compact_format.md``. A word header is
 ``@ headword``.  Each following sentence has eight tab-separated fields:
 rank, source_senses.id, POS, target, emotional 0|1, English, Thai, explanation.
 """

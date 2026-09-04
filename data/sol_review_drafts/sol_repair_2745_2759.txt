@@ -1,0 +1,90 @@
+@ opening
+1	64917	adj	opening	1	The opening minutes of the movie were full of suspense.
+2	64917	adj	opening	0	She gave an opening speech at the conference.
+3	64917	adj	opening	0	The opening scene of the play shocked the audience.
+4	64917	adj	opening	0	The opening round of the tournament was intense.
+5	64917	adj	opening	0	An opening statement was made by the lawyer.
+@ operate
+1	64940	verb	operate	1	The factory workers operate heavy machines every day.
+2	64940	verb	operate	0	She knows how to operate the new printer at work.
+3	64933	verb	operates	0	The team operates efficiently under pressure.
+4	64940	verb	operate	0	They operate a small business in the city center.
+5	64933	verb	operates	0	The old engine still operates without any trouble.
+@ opponent
+1	64941	noun	opponent	1	The new player was a tough opponent in the final match.
+2	64941	noun	opponent	0	She faced her opponent with confidence during the debate.
+3	64941	noun	opponent	0	He trained hard to beat his opponent in the boxing tournament.
+4	64941	noun	opponent	0	The team's opponent scored first in the second half.
+5	64941	noun	opponent	0	They argued fiercely with their opponent over the rules.
+@ oppose
+1	64948	verb	oppose	1	The protesters tried to oppose the new law with peaceful demonstrations.
+2	64948	verb	oppose	0	She will not oppose the decision if it benefits everyone.
+3	64948	verb	oppose	0	The team must oppose the enemy's advance at all costs.
+4	64948	verb	oppose	0	He refused to oppose the proposal despite pressure.
+5	64948	verb	oppose	0	They gathered to oppose the construction of the factory.
+@ opposed
+1	64907	adj	opposed	1	The two teams remained opposed over how to solve the problem.
+2	64907	adj	opposed	0	She was opposed to the new policy and spoke out against it.
+3	64907	adj	opposed	0	The two speakers were firmly opposed on the main issue.
+4	64907	adj	opposed	0	They remained opposed to the plan despite the evidence.
+5	64907	adj	opposed	0	The two candidates were opposed on environmental issues.
+@ opposition
+1	64952	noun	opposition	1	The community's opposition to the new factory was loud and clear.
+2	64952	noun	opposition	0	Her opposition to the plan caused a heated debate in the council.
+3	64952	noun	opposition	0	The government faced growing opposition after the tax increase.
+4	64952	noun	opposition	0	There was strong opposition to the proposed law from scientists.
+5	64952	noun	opposition	0	The team's opposition to the decision surprised many members.
+@ organ
+1	64973	noun	organ	1	The liver is a vital organ in the human body.
+2	64973	noun	organ	0	Doctors studied how the heart functions as a key organ.
+3	64973	noun	organ	0	Each organ in the body has a specific role to play.
+4	64973	noun	organs	0	The lungs are essential organs for breathing.
+5	64973	noun	organs	0	Scientists examined how the brain controls other organs.
+@ origin
+1	64967	noun	origin	1	The story has its origin in a legend from a forgotten village.
+2	64967	noun	origin	0	Scientists traced the origin of the virus to a wet market.
+3	64967	noun	origin	0	The origin of the conflict lies in a land dispute.
+4	64967	noun	origin	0	Her interest in art has its origin in childhood.
+5	64967	noun	origin	0	The idea had its origin in a vivid dream.
+@ otherwise
+1	64963	adv	otherwise	1	She argued that the plan was flawed, but I think otherwise.
+2	64963	adv	otherwise	0	The report says the project failed, but the data suggests otherwise.
+3	64963	adv	otherwise	0	He thought the plan would fail, but the team voted otherwise.
+4	64963	adv	otherwise	0	She wanted to stay home, but her friends insisted otherwise.
+5	64963	adv	otherwise	0	They said the meeting was canceled, but I heard otherwise.
+@ outcome
+1	64959	noun	outcome	1	The outcome of the experiment surprised everyone.
+2	64959	noun	outcome	0	Careful planning improved the outcome of the project.
+3	64959	noun	outcome	0	The outcome of the meeting was a new agreement.
+4	64959	noun	outcome	0	The outcome of the vote was unexpected.
+5	64959	noun	outcome	0	The final outcome depended on how quickly the team acted.
+@ outer
+1	64983	adj	outer	1	The outer layer of the onion was dry and flaky.
+2	64983	adj	outer	0	She placed the book in the outer pocket of her bag.
+3	64983	adj	outer	0	The outer door of the shed was painted blue.
+4	64983	adj	outer	0	He wore a thick coat with an outer layer of waterproof fabric.
+5	64983	adj	outer	0	The outer wall of the building had cracks from the storm.
+@ outline
+1	65004	noun	outline	1	The artist drew a clear outline of the mountain against the sky.
+2	65004	noun	outline	0	She traced the outline of her hand on the paper with a pencil.
+3	65004	noun	outline	0	The outline of the building stood sharp in the moonlight.
+4	65004	noun	outline	0	He used a marker to draw the outline of the animal.
+5	65004	noun	outline	0	The outline of the tree was visible through the fog.
+@ overall
+1	64996	adj	overall	1	The overall design of the building impressed everyone who saw it.
+2	64996	adj	overall	0	She gave an overall assessment of the project's progress.
+3	64996	adj	overall	0	The overall mood in the room was calm and focused.
+4	64996	adj	overall	0	His overall performance in the competition was excellent.
+5	64996	adj	overall	0	The overall cost of the trip was higher than expected.
+@ owe
+1	65001	verb	owe	1	I owe my teacher a thank-you note for the help she gave me.
+2	65001	verb	owes	0	She owes her friend a ride to the train station tomorrow.
+3	65001	verb	owe	0	They owe the library a book that was due last week.
+4	65001	verb	owe	0	You owe your brother a call after missing his birthday.
+5	65001	verb	owe	0	We owe the team a full explanation for the delay.
+@ pace
+1	65038	noun	pace	1	She took one careful pace forward into the dark room.
+2	65038	noun	pace	0	The old man counted each pace as he walked slowly.
+3	65038	noun	paces	0	He measured the distance in exact paces from the gate.
+4	65038	noun	pace	0	The dog took a cautious pace toward the unfamiliar gate.
+5	65038	noun	pace	0	Every pace she took echoed softly on the stone floor.

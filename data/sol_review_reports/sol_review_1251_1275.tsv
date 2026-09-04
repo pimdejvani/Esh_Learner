@@ -1,0 +1,25 @@
+opposite	repaired	rank2 was definitional filler ("Opposite means..."); replaced with real prep sense for POS variety
+or	repaired	rank2 was definitional filler; replaced with real conj usage ("Hurry up, or...")
+orange	repaired	all 5 rows used only the tree sense; added the fruit sense and the color adj sense a learner meets first
+order	repaired	rank2 was definitional filler; added verb sense (order food) for POS coverage
+other	repaired	rank2 was definitional filler; added noun sense ("the other") for variety
+our	repaired	rank2 was definitional filler; also fixed target casing to "Our" on rows 1/3/5 where our is sentence-initial
+out	repaired	rank2 was definitional filler; added prep sense ("out the window")
+outside	repaired	rank2 was definitional filler; added adv sense ("played outside")
+over	repaired	rank2 was definitional filler; added prep sense ("over the mountains")
+own	repaired	rank2 was definitional filler; added verb sense ("owns")
+page	repaired	rank2 was definitional filler; replaced with the common web-page noun sense
+paint	repaired	rank2 was definitional filler; added verb sense ("painted the fence")
+painting	repaired	rank2 was definitional filler; replaced with the painting-as-art-form noun sense
+pair	repaired	rank2 was definitional filler; added verb sense ("pair your phone")
+paper	repaired	rank2 was definitional filler; added adj sense ("paper cups")
+paragraph	repaired	rank2 was definitional filler, rewritten; skipped verb POS (sort text into paragraphs) as too technical for A1
+parent	repaired	rank2 was definitional filler; added verb sense ("to parent")
+park	repaired	rank2 was definitional filler; added verb sense ("park the car"), the most common A1 use of the word
+part	repaired	rank2 was definitional filler, rewritten; skipped adj/adv/verb POS as formal/literary, not natural A1 usage
+partner	repaired	rank2 was definitional filler; added dance-partner sense for variety; skipped verb POS as too formal for A1
+party	repaired	FULL REWRITE: all 5 rows sat on the archaic/legal "party to a case" sense; the learner-core celebration sense was entirely missing
+passport	repaired	rank2 was semi-definitional, rewritten to real usage; skipped verb POS (bureaucratic/technical, not A1)
+past	repaired	rank2 was definitional filler; added prep sense (telling time, "quarter past three")
+pay	repaired	rank2 was definitional filler; added noun sense and diversified verb forms (pay/paid/pays) for form variety
+pen	repaired	FULL REWRITE: all 5 rows used only the animal-enclosure sense; added the far more common writing-instrument sense

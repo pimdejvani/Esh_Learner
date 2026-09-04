@@ -1,0 +1,120 @@
+@ shop
+1	39697	noun	shop	1	The little corner shop stayed open late when my mother needed medicine.
+2	39697	noun	shops	0	Many shops close at six in our town.
+3	39706	verb	shop	0	We shop at the market before it gets crowded.
+4	39706	verb	shopping	0	She is shopping for a dress for the party.
+5	39706	verb	shopped	0	They shopped for school books yesterday afternoon.
+@ shopping
+1	39714	noun	shopping	1	My grandmother took me shopping whenever I felt sad.
+2	39714	noun	shopping	0	I went shopping after work yesterday.
+3	39714	noun	shopping	0	Her shopping list is very long today.
+4	39713	verb	shopping	0	They are shopping online for a new lamp.
+5	39715	noun	shopping	0	She put the shopping on the kitchen table.
+@ short
+1	39719	adj	short	1	My little brother was too short to reach the shelf, so he cried.
+2	39720	adj	short	0	We watched a short movie after dinner.
+3	39718	adj	shorter	0	This road is shorter than that one.
+4	39718	adj	shortest	0	Take the shortest path home before dark.
+5	39736	adv	short	0	The car stopped short when a cat ran across the road.
+@ should
+1	39764	verb	should	1	You should drink more water when the weather is this hot.
+2	39763	verb	should	0	We should leave early to catch the train.
+3	39766	verb	should	0	Do you think I should call her now?
+4	39767	verb	should	0	The train should arrive in ten minutes.
+5	39764	verb	should	0	You should not worry about the test.
+@ show
+1	39777	verb	show	1	Please show me the photo of your grandmother before she leaves.
+2	39797	noun	show	0	We watched a music show on television.
+3	39778	verb	shows	0	This map shows the way home.
+4	39777	verb	showed	0	She showed us her new bag at school.
+5	39777	verb	shown	0	He has shown the class his best drawing.
+@ shower
+1	39817	noun	shower	1	After the long hot match, a cold shower felt wonderful.
+2	39816	noun	shower	0	A short shower cooled the street this afternoon.
+3	39817	noun	showers	0	The hotel showers are cleaned every morning.
+4	39829	verb	showering	0	She is showering after the football game.
+5	39828	verb	showered	0	The children showered the dog with water and laughed.
+@ sick
+1	39835	adj	sick	1	I felt so sick that I could not finish my birthday cake.
+2	39835	adj	sick	0	She stayed home because she was sick.
+3	39837	adj	sick	0	The smell of the boat made him sick.
+4	39835	adj	sicker	0	He looks sicker than he did yesterday.
+5	39840	adj	sick	0	I am sick of waiting for the bus every morning.
+@ similar
+1	39849	adj	similar	1	The twins looked so similar that even their teacher mixed them up.
+2	39849	adj	similar	0	We have similar ideas about the school trip.
+3	39849	adj	similar	0	My phone is similar to yours but older.
+4	39849	adj	similar	0	The two brothers have similar voices on the phone.
+5	39849	adj	similar	0	She bought a similar bag in a different colour.
+@ sing
+1	39854	verb	sing	1	My grandmother used to sing to me whenever I felt afraid.
+2	39854	verb	sings	0	My sister sings beautifully in the shower.
+3	39854	verb	singing	0	They are singing together on the stage.
+4	39854	verb	sang	0	He sang a funny song at the party.
+5	39854	verb	sung	0	She has sung that song many times before.
+@ sister
+1	39875	noun	sister	1	My sister held my hand when I was scared.
+2	39875	noun	sister	0	Her sister studies at the same school.
+3	39875	noun	sisters	0	The two sisters share a small room.
+4	39879	noun	sister	0	She calls her best friend sister because they grew up together.
+5	39875	noun	sisters	0	My sisters cook dinner together every Sunday evening.
+@ sit
+1	39889	verb	sit	1	Please sit with me until I feel better.
+2	39890	verb	sit	0	The teacher asked us to sit down near the window.
+3	39889	verb	sat	0	We sat under the tree during lunch.
+4	39889	verb	sitting	0	The baby is sitting on the floor.
+5	39889	verb	sits	0	My cat sits by the door every morning.
+@ six
+1	39922	noun	six	1	I woke up at six to catch the school bus.
+2	67911	num	six	0	We need six chairs for the dinner table.
+3	39919	noun	sixes	0	The child wrote several sixes on the page.
+4	67911	num	six	0	Our team lost six games this season.
+5	39920	noun	six	0	She played the six of hearts and won the game.
+@ sixty
+1	67912	num	sixty	1	My grandfather turned sixty and cried when we sang for him.
+2	67912	num	sixty	0	There are sixty students in the school hall.
+3	67912	num	sixty	0	The bus ride takes sixty minutes on a good day.
+4	67912	num	sixty	0	She counted to sixty before opening her eyes.
+5	67912	num	sixty	0	My mother paid sixty baht for the fruit.
+@ skill
+1	39929	noun	skill	1	Your drawing skill is getting better every single week.
+2	39929	noun	skill	0	Cooking is a useful skill for everyone.
+3	39929	noun	skills	0	She learned new computer skills at school.
+4	39929	noun	skills	0	Good listening skills help you make friends quickly.
+5	39929	noun	skill	0	He practises every day to improve his football skill.
+@ slow
+1	39972	adj	slow	1	The old dog was too slow to follow us up the hill.
+2	39978	adj	slow	0	The shop is slow on rainy days.
+3	39972	adj	slower	0	This computer is slower than the old one.
+4	39979	verb	slowed	0	The bus slowed near the school gate.
+5	39984	adv	slow	0	Please drive slow on this wet road.
+@ small
+1	39985	adj	small	1	A small kind act can change someone's whole day.
+2	39988	adj	small	0	Remember the games we played when we were small?
+3	39985	adj	smaller	0	This box is smaller than that one.
+4	39985	adj	smallest	0	The smallest child sat in the front row.
+5	39995	adv	small	0	Do not write so small, I cannot read it.
+@ snake
+1	40005	noun	snake	1	A long snake crossed the path and everyone froze in fear.
+2	40005	noun	snakes	0	Some snakes live deep in the forest.
+3	40006	noun	snake	0	He was a snake who lied to his own friends.
+4	40018	verb	snaked	0	The road snaked through the green hills.
+5	40018	verb	snakes	0	The river snakes across the wide field.
+@ snow
+1	40025	noun	snow	1	The first snow of winter made the children shout with joy.
+2	40025	noun	snow	0	Deep snow covered the road this morning.
+3	40026	noun	snow	0	We stayed home because of the heavy snow.
+4	40043	verb	snowing	0	It is snowing outside our window now.
+5	40043	verb	snowed	0	It snowed all night and school was closed.
+@ so
+1	40054	conj	so	1	I was very tired, so my friend walked me home.
+2	40058	adv	so	0	The soup is so hot that I cannot eat it.
+3	40063	adv	so	0	She loves mangoes and so does her brother.
+4	40053	conj	so	0	Speak clearly so everyone at the back can hear.
+5	40069	pron	so	0	If that is what you mean, just say so.
+@ some
+1	40078	det	some	1	I asked some friends to help me carry the heavy box.
+2	40080	det	some	0	Would you like some water with your rice?
+3	40074	pron	some	0	I liked some of the songs, but not all of them.
+4	40086	adv	some	0	There were some thirty people at the party last night.
+5	40079	det	some	0	She bought some apples at the market.

@@ -1,0 +1,55 @@
+@ cooking
+1	31131	noun	cooking	1	The smell of cooking filled the house before the family arrived.
+2	31131	noun	Cooking	0	Cooking uses heat to prepare food.
+3	31137	adj	cooking	0	I filled the cooking pot with water for dinner.
+4	31140	verb	cooking	0	My mother is cooking dinner in the kitchen right now.
+5	31133	noun	cooking	0	My cooking isn't very good, but I always try my best.
+
+@ cool
+1	31141	adj	cool	1	A cool breeze crossed the field after the hot afternoon.
+2	31141	adj	cool	0	The evening became cool after sunset.
+3	31141	adj	cooler	0	The room feels cooler than it did yesterday.
+4	31157	verb	cooled	0	The soup cooled quickly in the cold kitchen.
+5	31154	noun	cool	0	We took a walk in the cool of the morning.
+
+@ correct
+1	31163	adj	correct	1	After checking every number twice, Imani felt proud to give the correct answer.
+2	31163	adj	correct	0	Your answer is correct.
+3	31163	adj	correct	0	Choose the correct door.
+4	31167	verb	correct	0	The teacher asked him to correct his mistake before the test.
+5	31165	adv	correct	0	I hope I spelled her name correct this time.
+
+@ cost
+1	31171	verb	cost	1	The broken phone cost Ravi a month of savings, but he learned to back up his work.
+2	31171	verb	cost	0	The ticket cost ten dollars.
+3	31171	verb	cost	0	How much does this bag cost?
+4	31176	noun	cost	0	The cost of the repair surprised everyone in the family.
+5	31176	noun	costs	0	Grocery costs rise every winter in our town.
+
+@ country
+1	31191	noun	country	1	After years abroad, he cried when the plane finally touched down in his country.
+2	31191	noun	country	0	Japan is an island country.
+3	31191	noun	country	0	Each country has its own laws.
+4	31191	noun	country	0	They traveled across the country by train.
+5	31200	adj	country	0	They live in a small country house near the hills.
+
+@ course
+1	31203	noun	course	1	A sudden storm changed the course of their boat, but they reached shore safely.
+2	31203	noun	course	0	The river changed its course after the flood.
+3	31207	noun	course	0	I need to take a French course next semester.
+4	31211	noun	course	0	We had soup as the first course of the meal.
+5	31229	verb	coursed	0	Tears coursed down her face as she said goodbye.
+
+@ cow
+1	31248	noun	cow	1	At dawn, the cow stood quietly beside her newborn calf.
+2	31248	noun	cow	0	The cow eats grass in the field.
+3	31248	noun	cow	0	A cow gives milk on the farm.
+4	31248	noun	cow	0	The farmer led the cow into the barn.
+5	31257	verb	cowed	0	The loud thunder cowed the frightened puppy into silence.
+
+@ cream
+1	31260	noun	cream	1	Grandma stirred cream into the soup until it became smooth and rich.
+2	31260	noun	Cream	0	Cream rises to the top of milk.
+3	31271	adj	cream	0	She wore a beautiful cream dress to the wedding.
+4	31278	verb	cream	0	First, cream the butter and sugar together in a bowl.
+5	31260	noun	cream	0	She whipped the cream for dessert.

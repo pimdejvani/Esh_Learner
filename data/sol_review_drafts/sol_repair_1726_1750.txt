@@ -1,0 +1,108 @@
+@ finger
+1	46509	noun	finger	1	A splinter in my finger hurt whenever I touched it.
+2	46509	noun	finger	0	A finger is one of the long parts of a hand.
+3	46509	noun	finger	0	Raise one finger to answer.
+4	46509	noun	finger	0	He wore a ring on his finger.
+5	46549	verb	fingered	0	He fingered the coins in his pocket, counting them by touch.
+@ fit
+1	46562	adj	fit	1	This waterproof coat is fit for a rainy walk.
+2	46564	adj	fit	0	Grandpa still feels fit enough to hike every weekend.
+3	46563	adj	fittest	0	Only the fittest climbers reach the summit safely.
+4	46581	noun	fit	0	These jeans are a tight fit around my waist.
+5	46572	verb	fitted	0	The tailor fitted my suit before the wedding.
+@ fix
+1	46600	verb	fix	1	After the storm, workers rushed to fix the broken power lines.
+2	46600	verb	fixed	0	My dad fixed the leaking tap in ten minutes.
+3	46602	verb	fixing	0	She was fixing a quick breakfast before school.
+4	46613	noun	fix	0	That plumber's fix is much better than the first one's.
+5	46614	noun	fix	0	We were really in a fix when the car broke down.
+@ flying
+1	46625	adj	flying	1	We watched a flying kite rise above the beach.
+2	46632	verb	flying	0	She is flying to New York tomorrow morning.
+3	46634	noun	flying	0	Her fear of flying kept her off planes for years.
+4	46625	adj	flying	0	A flying bird crossed the moon.
+5	46631	adj	flying	0	The flying squirrel glided smoothly between the trees.
+@ focus
+1	46640	noun	focus	1	During the exam, she lost her focus when the fire alarm rang.
+2	46641	noun	focus	0	Her main focus this year is passing the final exams.
+3	46651	verb	focuses	0	He always focuses hard before an important match.
+4	46650	verb	focused	0	The teacher focused her attention on the quiet students.
+5	46636	noun	focus	0	The camera lens brought the picture into sharp focus.
+@ following
+1	46655	adj	following	1	Read the following page before answering the question.
+2	46658	prep	Following	0	Following the storm, the town lost power for two days.
+3	46664	verb	following	0	The dog is following its owner around the park.
+4	46655	adj	following	0	The following day was sunny.
+5	46662	noun	following	0	The following are the three most important rules to remember.
+@ fork
+1	46694	noun	fork	1	Use a fork to lift the hot noodles from the bowl.
+2	46694	noun	fork	0	A fork is a tool used for eating food.
+3	46694	noun	fork	0	Put your fork beside the plate.
+4	46694	noun	forks	0	There are four forks on the table.
+5	46720	verb	forked	0	The path forked just past the old bridge.
+@ formal
+1	46732	adj	formal	1	The guests wore formal clothes to the award ceremony.
+2	46737	adj	formal	0	Our new boss is always so formal with everyone.
+3	46732	adj	formal	0	She wrote a formal letter.
+4	46732	adj	formal	0	The meeting was formal.
+5	46742	noun	formal	0	She bought a new dress for the school formal.
+@ monkey
+1	48800	noun	monkey	1	The mischievous monkey stole a banana right from my hand.
+2	48800	noun	monkeys	0	We saw two monkeys playing at the zoo.
+3	48800	noun	monkey	0	The monkey ate a banana.
+4	48821	verb	monkey	0	Do not monkey with the wires.
+5	48804	noun	monkey	0	Stop being such a little monkey and eat your dinner!
+@ mostly
+1	48839	adv	mostly	1	On weekdays, I mostly eat at home instead of going out.
+2	48839	adv	mostly	0	The class is mostly quiet.
+3	48839	adv	mostly	0	She mostly wears blue.
+4	48839	adv	mostly	0	It is mostly sunny today.
+5	48839	adv	mostly	0	We mostly agree.
+@ motorcycle
+1	48842	noun	motorcycle	1	After the accident, he was too scared to ride his motorcycle again.
+2	48842	noun	motorcycle	0	The motorcycle is very fast.
+3	48842	noun	motorcycles	0	Two motorcycles were parked outside the cafe.
+4	48843	verb	motorcycle	0	They motorcycle to the beach every summer.
+5	48842	noun	motorcycle	0	Park the motorcycle outside.
+@ musical
+1	48857	adj	musical	1	Even as a young child, she showed clear musical talent at the piano.
+2	48855	adj	musical	0	She plays a musical instrument every evening after school.
+3	48856	adj	musical	0	His voice was soft and musical, almost like singing.
+4	48859	noun	musical	0	The musical starts at seven.
+5	48855	adj	musical	0	We watched a musical show.
+@ musician
+1	48861	noun	musician	1	The street musician played her violin so beautifully that a crowd gathered.
+2	48861	noun	musician	0	My uncle is a talented musician who plays the drums.
+3	48861	noun	musician	0	The musician sang well.
+4	48861	noun	musician	0	We met a musician.
+5	48861	noun	musician	0	That musician is famous.
+@ myself
+1	48862	pron	myself	1	I fixed the broken chair myself without asking anyone for help.
+2	48862	pron	myself	0	I hurt myself today.
+3	48862	pron	myself	0	I need time for myself.
+4	48862	pron	myself	0	I taught myself English.
+5	48862	pron	myself	0	I saw myself in the mirror.
+@ narrow
+1	48868	adj	narrow	1	The car barely fit through the narrow mountain pass at night.
+2	48868	adj	narrower	0	This road is much narrower than the highway we took yesterday.
+3	48868	adj	narrow	0	We walked through a narrow door.
+4	48880	verb	narrow	0	The road will narrow just past the bridge.
+5	48878	noun	narrows	0	The narrows of the river are dangerous to cross by boat.
+@ nearly
+1	48904	adv	nearly	1	After walking for hours, we were nearly home when it started raining.
+2	48904	adv	nearly	0	It is nearly time.
+3	48904	adv	nearly	0	She nearly fell.
+4	48904	adv	nearly	0	The glass is nearly full.
+5	48904	adv	nearly	0	I nearly forgot.
+@ necessary
+1	48909	adj	necessary	1	After the flood, it became absolutely necessary to rebuild the bridge quickly.
+2	48909	adj	necessary	0	It is necessary to rest.
+3	48909	adj	necessary	0	Bring necessary books.
+4	48910	adj	necessary	0	Missing the last train made an overnight stay necessary.
+5	48909	adj	necessary	0	A passport is necessary.
+@ neck
+1	48914	noun	neck	1	After the fall, sharp pain shot through her neck and shoulders.
+2	48914	noun	necks	0	The two friends wrapped scarves around their necks before going outside.
+3	48916	noun	neck	0	The shirt has a high neck.
+4	48920	noun	neck	0	A narrow neck of land connects the island to the mainland.
+5	48914	noun	neck	0	Turn your neck slowly.

@@ -1,0 +1,76 @@
+@ about
+1	28379	prep	about	1	My grandfather told exciting stories about pirates when I was young.
+2	28374	prep	about	0	The children stood about the teacher.
+3	28388	adv	about	0	Dinner will be ready in about ten minutes.
+4	28385	adv	about	0	Toys were scattered about the floor after playtime.
+5	28397	adj	about	0	After his illness, he was finally up and about again.
+
+@ above
+1	28402	prep	above	1	The eagle soared above the mountains, riding waves of warm air.
+2	28402	prep	above	0	Hang the picture above the sofa.
+3	28402	prep	above	0	A shelf sits above the sink.
+4	28421	adv	above	0	It was ten degrees above zero this morning.
+5	28417	adv	above	0	The children played in the room above.
+
+@ across
+1	28429	prep	across	1	We walked across the old bridge at sunset.
+2	28429	prep	across	0	The shop is across the road.
+3	28429	prep	across	0	She swam across the pool.
+4	28429	prep	across	0	A path leads across the field.
+5	28438	adv	across	0	The river is nearly a mile across at this point.
+
+@ action
+1	28443	noun	action	1	Quick action saved the puppy from the road.
+2	28446	noun	action	0	The movie was full of action and adventure.
+3	28443	noun	action	0	The doctor took action right away.
+4	28468	verb	action	0	The team will action the customer's complaint today.
+5	28443	noun	action	0	We need action before the rain starts.
+
+@ activity
+1	28472	noun	activity	1	Painting together was our favourite rainy-day activity when we were kids.
+2	28472	noun	activity	0	Swimming is a healthy activity for the whole family.
+3	28472	noun	activity	0	The class chose hiking as their outdoor activity.
+4	28470	noun	activity	0	The street was full of activity on market day.
+5	28471	noun	activity	0	This activity takes about ten minutes to finish.
+
+@ actor
+1	28479	noun	actor	1	The actor forgot his lines and froze in front of a thousand people.
+2	28479	noun	actor	0	My little brother wants to be an actor when he grows up.
+3	28479	noun	actor	0	The actor practiced his lines every night before the show.
+4	28479	noun	actor	0	A famous actor signed autographs outside the theater.
+5	28479	noun	actor	0	The actor waved to the crowd after the play ended.
+
+@ add
+1	28485	verb	add	1	She decided to add a splash of lemon juice to brighten the sauce.
+2	28486	verb	added	0	The cashier added up all the prices at the register.
+3	28491	verb	adds	0	My daughter adds numbers quickly in her head.
+4	28489	verb	adding	0	He finished the letter by adding a friendly note at the end.
+5	28485	verb	add	0	Please add your name to the list before you leave.
+
+@ address
+1	28504	noun	address	1	The delivery driver got lost because we gave him the wrong address.
+2	28504	noun	address	0	Please write your address clearly on the envelope.
+3	28504	noun	address	0	Can you tell me your home address?
+4	28521	verb	addressed	0	She addressed the letter to her grandmother in Chiang Mai.
+5	28520	verb	address	0	The mayor will address the crowd at noon.
+
+@ adult
+1	28529	noun	adult	1	When she turned eighteen, she finally felt like a real adult, ready for the world.
+2	28529	noun	adults	0	Only adults are allowed to enter this club.
+3	28528	noun	adult	0	The baby bird finally grew into an adult.
+4	28531	adj	adult	0	Children go free, but adult tickets cost ten dollars.
+5	28529	noun	adult	0	Every adult in the room stood up to help.
+
+@ after
+1	28554	prep	After	1	After the long flight, she finally hugged her family at the airport.
+2	28554	prep	after	0	We went for a walk after dinner.
+3	28568	conj	After	0	After we finished our homework, we watched a movie.
+4	28553	adv	after	0	She arrived soon after.
+5	28553	adv	after	0	I might come next month, or the month after.
+
+@ afternoon
+1	28572	noun	afternoon	1	That afternoon, my father called to say he was proud of me.
+2	28572	noun	afternoons	0	We play football on Saturday afternoons.
+3	28574	noun	afternoon	0	The club hosted a lively afternoon of games for new members.
+4	28573	noun	afternoon	0	In the afternoon of his career, he began to teach.
+5	28572	noun	afternoon	0	I will call you this afternoon.

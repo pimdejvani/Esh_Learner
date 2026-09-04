@@ -1,0 +1,60 @@
+@ expression
+1	46220	noun	expression	1	His worried expression told us that something was wrong.
+2	46217	noun	expression	0	An expression is a way of showing a thought or feeling.
+3	46220	noun	expression	0	Her expression changed suddenly.
+4	46219	noun	expression	0	The phrase is a common expression.
+5	46220	noun	expression	0	He had a calm expression.
+@ extreme
+1	46229	adj	extreme	1	He felt extreme pain after twisting his ankle on the stairs.
+2	46231	adj	extreme	0	The doctor took extreme measures to save her life.
+3	46232	adj	extreme	0	My brother loves extreme sports like skydiving and rock climbing.
+4	46230	adj	extreme	0	His extreme shyness made it hard to make new friends.
+5	46228	adj	extreme	0	They live in an extreme northern village.
+@ factor
+1	46247	noun	factor	1	Rising fuel prices were a major factor in the shop closing down.
+2	46247	noun	factor	0	Price is often the biggest factor when people choose a phone.
+3	46248	noun	factors	0	Two and three are both factors of six.
+4	46248	noun	factors	0	The factors of twelve include two, three, and four, and six.
+5	46247	noun	factors	0	Good teamwork was one of the factors behind their victory.
+@ fail
+1	46269	verb	failed	1	The old brakes suddenly failed as the car raced down the hill.
+2	46266	verb	fail	0	Many small restaurants fail within their first year of business.
+3	46267	verb	fail	0	Do not fail to lock the door before you leave.
+4	46271	verb	fails	0	She fails her driving test every time she takes it.
+5	46274	verb	failed	0	The crops failed after months without any rain.
+@ fair
+1	46290	adj	fair	1	After the referee's fair decision, both teams shook hands and smiled.
+2	46293	adj	fair	0	The weather was fair, so we decided to have a picnic.
+3	46289	adj	fair	0	She has fair hair and blue eyes.
+4	46289	adj	fair	0	The baby has fair skin that burns easily in the sun.
+5	46291	adj	fair	0	His performance in the exam was only fair, not excellent.
+@ fan
+1	46337	noun	fan	1	My little brother is such a huge fan of dinosaurs that he owns fifty toy ones.
+2	46319	noun	fan	0	We turned on the fan to cool the hot bedroom.
+3	46318	noun	fan	0	Grandma waved a paper fan to cool herself.
+4	46337	noun	fans	0	Thousands of fans waited outside the stadium to see the team.
+5	46326	verb	fanned	0	She fanned herself with a magazine on the hot afternoon train.
+@ feature
+1	46369	noun	feature	1	The roaring waterfall was the most spectacular feature of the whole park.
+2	46368	noun	feature	0	A comfortable seat is an important feature of a good chair.
+3	46373	noun	feature	0	His warm smile is his most memorable feature.
+4	46373	noun	features	0	The portrait captured the delicate features of her face.
+5	46369	noun	features	0	Long battery life and a bright screen are the phone's best features.
+@ feed
+1	46385	verb	feed	1	Please feed the rabbit before you leave for school.
+2	46385	verb	feeds	0	Every morning, my sister feeds the chickens before breakfast.
+3	46385	verb	fed	0	Grandma always fed the birds crumbs from her kitchen window.
+4	46385	verb	feeding	0	The zookeeper was feeding the elephants when we arrived.
+5	46387	verb	feeds	0	She feeds the leftover bread to the ducks in the park.
+@ fight
+1	46463	verb	fought	1	The two brothers fought fiercely over who would sit in the front seat.
+2	46466	verb	fight	0	Many people fight for equal rights every day.
+3	46460	verb	fight	0	Do not fight at school.
+4	46464	verb	fighting	0	The two boxers have been fighting for more than half an hour.
+5	46469	noun	fight	0	He got a black eye after the fight.
+@ figure
+1	46483	noun	figure	1	She was shocked when she saw the final figure on her electricity bill.
+2	46476	noun	figures	0	The figures in the textbook show how blood flows through the heart.
+3	46484	noun	figure	0	A dark figure stood silently in the doorway, frightening the children.
+4	46493	verb	figure	0	I couldn't figure why the printer had suddenly stopped working.
+5	46492	verb	figured	0	He quickly figured the total cost of the groceries in his head.

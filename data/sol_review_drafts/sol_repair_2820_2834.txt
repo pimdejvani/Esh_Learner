@@ -1,0 +1,90 @@
+@ remark
+1	65741	noun	remark	1	She made a sharp remark about the manager's decision.
+2	65741	noun	remark	0	His remark about the food was polite, not critical.
+3	65741	noun	remark	0	The teacher made a brief remark on the student's essay.
+4	65741	noun	remark	0	A single remark from the manager changed the entire team's mood.
+5	65741	noun	remark	0	The guest's remark about the painting surprised everyone in the room.
+@ representative
+1	65755	adj	representative	1	This painting is representative of the artist's early style.
+2	65755	adj	representative	0	The sample was representative of the entire batch.
+3	65755	adj	representative	0	Her answer was representative of the views expressed by most respondents.
+4	65755	adj	representative	0	The model car is representative of 1950s American design.
+5	65755	adj	representative	0	The test results were representative of performance across the entire class.
+@ reputation
+1	65754	noun	reputation	1	Her reputation for honesty earned her a promotion.
+2	65754	noun	reputation	0	The company's reputation for quality has lasted decades.
+3	65754	noun	reputation	0	He built a reputation as a reliable mechanic.
+4	65754	noun	reputation	0	The school has a strong reputation for academic excellence.
+5	65754	noun	reputation	0	A good reputation helps in job interviews.
+@ requirement
+1	65751	noun	requirement	1	The job has a strict requirement for a college degree.
+2	65751	noun	requirement	0	She met the requirement by submitting her documents on time.
+3	65751	noun	requirement	0	Regular attendance is a requirement for completing the course.
+4	65751	noun	requirement	0	This project has a new requirement from the client.
+5	65751	noun	requirement	0	The safety requirement must be followed at all times.
+@ rescue
+1	65769	verb	rescue	1	The firefighter managed to rescue the child from the burning house.
+2	65769	verb	rescue	0	The team worked hard to rescue the hikers stranded in the storm.
+3	65769	verb	rescue	0	They used a helicopter to rescue the climbers from the mountain.
+4	65769	verb	rescue	0	The navy sent a boat to rescue the sailors after the ship sank.
+5	65769	verb	rescue	0	A dog helped rescue the lost tourist from the forest.
+@ reserve
+1	65802	noun	reserve	1	The company kept a large reserve of cash for emergencies.
+2	65802	noun	reserve	0	The country's oil reserve is one of the largest in the world.
+3	65802	noun	reserve	0	We need to protect our water reserve for future generations.
+4	65802	noun	reserve	0	The hospital keeps a reserve of medicine for emergencies.
+5	65802	noun	reserve	0	The school maintains a reserve of textbooks for new students.
+@ resident
+1	65789	noun	resident	1	The fox is a resident of the forest near our village.
+2	65789	noun	resident	0	A rare bird is a resident of the wetlands in the north.
+3	65789	noun	resident	0	The squirrel is a resident of the old oak tree.
+4	65789	noun	resident	0	This butterfly is a resident of the garden all year.
+5	65789	noun	resident	0	The deer is a resident of the mountain valley.
+@ resist
+1	65784	verb	resist	1	The child tried to resist the urge to eat the candy.
+2	65784	verb	resist	0	She had to resist the temptation to check her phone during the meeting.
+3	65784	verb	resist	0	He managed to resist the pressure to lie about the results.
+4	65784	verb	resist	0	The team worked hard to resist the enemy's advance.
+5	65784	verb	resist	0	We must resist the idea that failure is the end of everything.
+@ resolve
+1	65825	verb	resolve	1	The team will resolve the conflict before the meeting starts.
+2	65825	verb	resolve	0	She knew she had to resolve the issue quickly.
+3	65825	verb	resolve	0	They worked together to resolve the misunderstanding.
+4	65825	verb	resolve	0	Can you resolve the technical problem with the printer?
+5	65825	verb	resolve	0	He promised to resolve the problem causing the delay by tomorrow.
+@ resort
+1	65846	noun	resort	1	We stayed at a seaside resort with a pool and a beach.
+2	65846	noun	resort	0	The mountain resort offers skiing and cozy cabins.
+3	65846	noun	resort	0	She booked a weekend at a tropical resort.
+4	65846	noun	resort	0	The family vacation included a week at a ski resort.
+5	65846	noun	resort	0	They chose a quiet resort for their honeymoon.
+@ retain
+1	65861	verb	retain	1	The company offered higher pay to retain experienced staff.
+2	65861	verb	retain	0	She managed to retain her balance during the sudden wind gust.
+3	65861	verb	retain	0	Please retain your receipt as proof of purchase.
+4	65861	verb	retained	0	The team retained possession of the ball for most of the match.
+5	65863	verb	retained	0	The renovated building retained its original stone entrance.
+@ reveal
+1	65821	noun	reveal	1	The architect admired the smooth reveal of the old oak door.
+2	65821	noun	reveal	0	The stone window reveal was carefully carved to match the building's style.
+3	65821	noun	reveal	0	She pointed to the reveal where the frame met the wall.
+4	65821	noun	reveal	0	The reveal on the front door had chipped paint from years of weather.
+5	65821	noun	reveal	0	The reveal around the window was lined with decorative molding.
+@ revolution
+1	65878	noun	revolution	1	The people's revolution overthrew the old king and established a new government.
+2	65878	noun	revolution	0	After years of protest, the revolution brought democracy to the country.
+3	65878	noun	revolution	0	The revolution began in the capital and quickly spread to the provinces.
+4	65878	noun	revolution	0	Historians study the revolution to understand how power changed hands.
+5	65878	noun	revolution	0	She joined the revolution to fight for equal rights and justice.
+@ reward
+1	65895	noun	reward	1	She received a reward for returning the lost wallet.
+2	65895	noun	reward	0	The reward for finding the missing dog was fifty dollars.
+3	65895	noun	reward	0	He earned a reward after helping the police solve the case.
+4	65895	noun	reward	0	A reward was offered for information about the stolen car.
+5	65895	noun	reward	0	The reward for completing the challenge was a gift card.
+@ rhythm
+1	65886	noun	rhythm	1	The drumbeat kept a steady rhythm throughout the song.
+2	65886	noun	rhythm	0	She danced with perfect rhythm to the fast music.
+3	65888	noun	rhythm	0	The rhythm of the waves calmed him as he sat on the shore.
+4	65886	noun	rhythm	0	He tapped his fingers in time with the rhythm of the piano.
+5	65888	noun	rhythm	0	The rhythm of the city changed at nightfall.

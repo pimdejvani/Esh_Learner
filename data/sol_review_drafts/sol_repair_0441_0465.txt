@@ -23,7 +23,7 @@
 4	51221	noun	serve	0	His serve was fast.
 5	51224	verb	serve	0	We serve dinner at six.
 @ shake
-1	51285	verb	shake	1	Shake the bottle well.
+1	51285	verb	Shake	1	Shake the bottle well.
 2	51285	verb	shake	0	My hands shake when cold.
 3	51285	verb	shake	0	Please shake my hand.
 4	51296	noun	shake	0	The earthquake gave a shake.
@@ -36,7 +36,7 @@
 5	51651	verb	skiing	0	The children are skiing on the gentle slope.
 @ skiing
 1	51653	verb	skiing	1	We skiing every day.
-2	51654	noun	skiing	0	Skiing is a popular winter sport in the mountains.
+2	51654	noun	Skiing	0	Skiing is a popular winter sport in the mountains.
 3	51653	verb	skiing	0	Maya is skiing down the beginner slope.
 4	51654	noun	skiing	0	Safe skiing requires warm clothes and proper equipment.
 5	51653	verb	skiing	0	They were skiing when the snow began to fall.
@@ -84,9 +84,9 @@
 5	51741	verb	smoking	0	The wet wood is smoking but not burning well.
 @ smoking
 1	51759	verb	smoking	1	We smoking every day.
-2	51765	noun	smoking	0	Smoking can seriously damage your health.
+2	51765	noun	Smoking	0	Smoking can seriously damage your health.
 3	51760	adj	smoking	0	Firefighters watched the smoking roof carefully.
-4	51767	noun	smoking	0	Smoking gives the cheese a rich flavor.
+4	51767	noun	Smoking	0	Smoking gives the cheese a rich flavor.
 5	51759	verb	smoking	0	He is smoking a fish over a small fire.
 @ soap
 1	51769	noun	soap	1	The nurse used soap and clean water to wash the injured child's hands.

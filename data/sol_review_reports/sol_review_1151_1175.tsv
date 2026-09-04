@@ -1,0 +1,25 @@
+little	pass	all 5 rows genuine, correct senses, no template
+live	repaired	r1 rewritten (thin, sense mismatch: fish live in water read as reside not be-alive)
+local	repaired	r5 target field fixed from non-supplied "more local" to supplied form "local"
+long	repaired	r1 rewritten (thin, <6 words); r3 repointed off rare/dated tall sense to ordinary length sense
+look	repaired	r1 rewritten (thin) and repointed to noun sense for POS coverage (facial expression)
+lose	repaired	r1 rewritten (thin, 5 words)
+lot	repaired	r4 rewritten off rare/dated verb sense (to allot) to common noun sense the whole lot
+love	pass	all 5 rows genuine, correct senses, no template
+lunch	repaired	r1 rewritten (thin, 5 words)
+machine	repaired	r1 rewritten (thin); r3 repointed off rare/dated vehicle sense to general device sense; r4 form varied to machined
+magazine	pass	all 5 rows genuine, correct senses
+main	repaired	r1 rewritten (thin); r3 rewritten to natural gaming-slang context matching sense
+man	repaired	r2 repointed off rare/dated person-regardless-of-gender sense to ordinary adult male; r3 replaced with verb sense for POS coverage
+many	repaired	r1 rewritten (thin, 4 words)
+map	repaired	r1 rewritten (flat rank1, no vivid situation)
+march	pass	all 5 rows genuine, correct senses
+market	repaired	r4 repointed from to-sell sense to to-promote sense matching the advertising-campaign sentence
+married	repaired	r1 rewritten (thin, 4 words)
+match	repaired	r1 rewritten (thin); r3/r4 sense swap between transitive/intransitive match senses to fit each sentence precisely
+may	repaired	r1 rewritten (thin); r4 repointed off obsolete to-be-able sense to ordinary possibility sense; r5 replaced rare botanical-noun row with concessive may-but verb sense
+maybe	repaired	r1 rewritten (thin); r3 repointed off ironic certainly sense to plain possibility sense; r5 repointed to neither-yes-nor-no answer sense matching the tally sentence
+me	repaired	r1 rewritten (thin, 5 words)
+meal	pass	all 5 rows genuine, correct senses, verb POS correctly skipped (only rare senses)
+meaning	repaired	r5 rewritten - "she is meaning every word" was unnatural stative-verb progressive; replaced with natural been-meaning-to idiom
+meat	repaired	r1 rewritten (thin, 5 words)

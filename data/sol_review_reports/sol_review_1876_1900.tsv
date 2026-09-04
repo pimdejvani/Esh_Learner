@@ -1,0 +1,25 @@
+cruel	repaired	rank1/r3 were templates; added harsh/severe sense and comparative forms; adv/noun/verb POS all RARE, skipped
+cultural	pass	all rows genuine, single common sense sufficient, no template
+currency	pass	all rows genuine and natural
+current	repaired	adj sense (current events/affairs) was entirely missing; added 2 adj rows, kept 3 noun rows
+currently	pass	all rows genuine, single sense
+curtain	pass	verb POS ("to curtain a window") is uncommon phrasing, skipped
+custom	repaired	adj custom-made sense was missing; added 2 adj rows; verb POS all archaic/obsolete, skipped
+damage	repaired	verb sense was entirely missing; added 3 verb rows, kept 2 noun rows
+decade	repaired	sense_id mismatch: all rows pointed at collective/military sense 55409 while sentences meant "ten years"; repointed to 55411
+decorate	repaired	only 1 form used across all 5 rows; diversified forms/senses (honor sense added); adj POS archaic, skipped
+enemy	pass	verb POS ("to make an enemy of") rare/awkward, skipped
+engaged	repaired	core "engaged to be married" adj sense was missing entirely; all rows were verb "engage=hire/involve"
+engineering	repaired	core "field of engineering" noun sense was missing entirely; rows only used gerund-of-verb form
+entertain	repaired	only 1 form used; diversified verb forms/senses; noun POS obsolete, skipped
+entertainment	pass	all rows genuine, single sense
+entrance	repaired	physical "doorway" sense was missing; added 2 rows, kept abstract "act of entering" rows
+entry	pass	all rows genuine, no template
+environmental	pass	noun POS is narrow hardware/IT jargon, skipped
+episode	pass	all rows genuine, single sense
+equal	repaired	verb sense ("equals") was entirely missing; added 2 verb rows, kept 3 adj rows
+equally	pass	all rows genuine
+escape	repaired	only 2 forms used; added noun sense and diversified verb forms to 4 distinct forms
+essential	repaired	noun sense ("the essentials") was missing; added 1 noun row, kept 4 adj rows
+eventually	pass	all rows genuine
+examine	repaired	only 2 forms used; diversified to 4 distinct verb forms/senses; noun POS weak, skipped

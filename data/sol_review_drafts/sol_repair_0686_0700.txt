@@ -1,0 +1,90 @@
+@ diagram
+1	55503	noun	diagram	1	The teacher drew a diagram on the board to explain how the heart pumps blood.
+2	55503	noun	Diagrams	0	Diagrams in the manual show how to assemble the shelf step by step.
+3	55504	noun	diagram	0	This diagram shows how the company's sales grew over five years.
+4	55507	verb	diagram	0	Can you diagram the sentence to show its subject and verb?
+5	55507	verb	diagrammed	0	She diagrammed the plan on a napkin so everyone could understand it.
+@ diamond
+1	55510	noun	diamond	1	He knelt down in the park and slipped a diamond onto her finger as she cried with joy.
+2	55515	noun	diamonds	0	The scarf had a pattern of red and blue diamonds woven across it.
+3	55518	noun	diamond	0	The players ran around the diamond after the winning home run.
+4	55519	noun	diamonds	0	She had three diamonds and two hearts left in her hand.
+5	55522	adj	diamond	0	My grandmother left me a diamond necklace that once belonged to her mother.
+@ difficulty
+1	55527	noun	difficulty	1	After the accident, she had great difficulty walking up even a single flight of stairs.
+2	55528	noun	difficulty	0	We ran into a difficulty when the printer broke right before the deadline.
+3	55528	noun	difficulties	0	The company faced serious financial difficulties during its first two years.
+4	55529	noun	difficulty	0	The swimmer got into difficulty far from shore and had to be rescued.
+5	55527	noun	difficulties	0	Many students have difficulties concentrating after a full day of classes.
+@ directly
+1	55536	adv	directly	1	The ambulance arrived directly outside our house just two minutes after we called for help.
+2	55533	adv	directly	0	He drove directly to the hospital without stopping anywhere along the way.
+3	55533	adv	more directly	0	You can compare the two designs more directly by placing them side by side.
+4	55535	adv	directly	0	I told my boss directly that I disagreed with the new schedule.
+5	55534	adv	directly	0	You can buy the vegetables directly from the farmer at the weekend market.
+@ dirt
+1	55541	noun	dirt	1	The children came home covered in dirt after playing in the garden all afternoon.
+2	55542	noun	dirt	0	Please wipe the dirt off your shoes before you come inside.
+3	55543	noun	dirt	0	The tabloids paid a former assistant to dig up dirt on the actress.
+4	55541	noun	dirt	0	Farmers mix compost into the dirt to help the plants grow.
+5	55542	noun	dirt	0	There was dirt all over the kitchen floor after the party.
+@ disadvantage
+1	55549	noun	disadvantage	1	Not knowing anyone in the new city was a huge disadvantage when she started her job search.
+2	55550	noun	disadvantage	0	Being the shortest player on the team put him at a disadvantage during matches.
+3	55551	noun	disadvantages	0	Missing the first week of class was one of several disadvantages she faced that term.
+4	55552	verb	disadvantage	0	The new rule could disadvantage small farmers who can't afford the extra equipment.
+5	55552	verb	disadvantaged	0	Critics said the policy disadvantaged families with lower incomes.
+@ disappointed
+1	55553	adj	disappointed	1	I was so disappointed when I opened the box and found it broken on my birthday.
+2	55553	adj	more disappointed	0	I've never felt more disappointed than when the concert was cancelled at the last minute.
+3	55555	adj	disappointed	0	She sighed in a disappointed voice when she heard the trip was cancelled.
+4	55556	verb	disappointed	0	The team's poor performance disappointed the fans who had traveled far to watch them.
+5	55553	adj	most disappointed	0	Losing the final match by one point left them the most disappointed they had ever been.
+@ disappointing
+1	55557	adj	disappointing	1	The final exam results were so disappointing that half the class began to cry.
+2	55557	adj	more disappointing	0	Losing the championship was even more disappointing than losing the semifinal last year.
+3	55557	adj	most disappointing	0	This has been the most disappointing season the team has had in ten years.
+4	55557	adj	disappointing	0	The sequel was a disappointing follow-up to such a brilliant first film.
+5	55558	verb	disappointing	0	Nothing seemed capable of disappointing him after such a wonderful trip.
+@ discount
+1	55559	verb	discount	1	The store manager agreed to discount the damaged sofa by half just so we'd take it away that day.
+2	55559	verb	discounted	0	The airline discounted tickets by thirty percent during the off season.
+3	55561	verb	discount	0	Doctors shouldn't discount a patient's pain just because tests come back normal.
+4	55565	noun	discounts	0	Students get big discounts on tickets during the summer sale.
+5	55570	adj	discount	0	We found cheap sneakers at the discount store near the mall.
+@ dislike
+1	55575	verb	dislike	1	I secretly dislike my neighbor's dog because it barks all night and keeps me awake.
+2	55571	noun	dislike	0	She couldn't hide her dislike for the smell of cigarette smoke.
+3	55572	noun	dislikes	0	Tell me about your likes and dislikes before we plan the trip.
+4	55576	verb	disliked	0	Thousands of viewers disliked the video within the first hour it was posted.
+5	55573	noun	dislike	0	Each dislike on the post reduced its chances of appearing in more feeds.
+@ divide
+1	55577	verb	divide	1	After their father died, the two brothers argued for months about how to divide the family farm.
+2	55579	verb	divide	0	Let's divide the pizza into six equal slices so everyone gets some.
+3	55580	verb	divides	0	The new tax law divides opinion sharply between rich and poor neighborhoods.
+4	55581	verb	divided	0	If you divided twenty by four, you would get five.
+5	55592	noun	divide	0	There is a growing divide between people who trust the news and people who don't.
+@ documentary
+1	55598	noun	documentary	1	We stayed up all night watching a documentary about a family surviving alone in the wild.
+2	55598	noun	documentary	0	The teacher showed us a documentary about climate change in science class.
+3	55598	noun	documentaries	0	She has directed several award-winning documentaries about ocean life.
+4	55597	adj	documentary	0	The film uses a documentary style to make the story feel real.
+5	55595	adj	documentary	0	The lawyer asked for documentary evidence before she would believe his story.
+@ donate
+1	55600	verb	donate	1	After the earthquake destroyed their town, thousands of strangers rushed to donate blood at the hospital.
+2	55600	verb	donated	0	He donated his old bicycle to a children's charity last spring.
+3	55600	verb	donates	0	Every December, our company donates a portion of its profits to local schools.
+4	55600	verb	donating	0	She spent the weekend donating clothes she no longer wore.
+5	55600	verb	donate	0	Please donate any spare change to help build the new library.
+@ doubt
+1	55601	verb	doubt	1	I doubt she'll ever forgive him after what he did to her family.
+2	55601	verb	doubted	0	Nobody doubted that the storm would cause serious damage to the coast.
+3	55602	verb	doubts	0	He always doubts my judgment, even when I turn out to be right.
+4	55606	noun	doubt	0	There is no doubt in my mind that she will pass the exam.
+5	55606	noun	doubts	0	He had serious doubts about moving to a new country alone.
+@ dressed
+1	55609	verb	dressed	1	She dressed quickly in the dark, terrified she would miss the last train home.
+2	55609	verb	dressed	0	He dressed the wound carefully before wrapping it in a clean bandage.
+3	55611	adj	dressed	0	The dressed crab was served with a wedge of lemon on the side.
+4	55612	adj	dressed	0	Everyone at the funeral was dressed in black to show respect.
+5	55612	adj	dressed	0	The well-dressed man at the front desk greeted every guest with a smile.

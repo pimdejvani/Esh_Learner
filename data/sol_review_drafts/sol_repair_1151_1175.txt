@@ -1,0 +1,139 @@
+@ live
+1	35741	verb	live	1	Doctors were amazed that the tiny kitten managed to live.
+2	35742	verb	live	0	We live near the park.
+3	35744	verb	lived	0	The old tree lived through the storm.
+4	35747	verb	living	0	She is living a simple life.
+5	35755	adj	live	0	The plant is still live.
+
+@ local
+1	35779	adj	local	1	We buy local fruit at the market.
+2	35793	noun	local	0	A local showed us the way.
+3	35779	adj	local	0	This is a local bus route.
+4	35793	noun	locals	0	The locals know the best food stalls.
+5	35779	adj	local	0	This shop feels more local than the mall.
+
+@ long
+1	35803	adj	long	1	The bridge stretched impossibly long across the misty river.
+2	35810	adj	long	0	It was a long day at school.
+3	35803	adj	long	0	She has long, dark hair that reaches her waist.
+4	35803	adj	longer	0	This road is longer than the old road.
+5	35810	adj	longest	0	Sunday was the longest day of the trip.
+
+@ look
+1	35860	noun	look	1	Her mother gave her a disappointed look when she lied.
+2	35845	verb	look	0	You look tired today.
+3	35847	verb	look	0	I will look for my glasses.
+4	35842	verb	looked	0	She looked out of the window.
+5	35842	verb	looking	0	The baby is looking at the lamp.
+
+@ lose
+1	35861	verb	lose	1	Many travelers feel a wave of panic if they lose their passport abroad.
+2	35868	verb	lose	0	Our team may lose the game.
+3	35863	verb	lose	0	He wants to lose weight.
+4	35861	verb	lost	0	I lost my pencil at school.
+5	35861	verb	losing	0	She is losing her keys again.
+
+@ lot
+1	35878	noun	lot	1	There are a lot of stars tonight.
+2	35882	noun	lot	0	They built a house on an empty lot.
+3	35883	noun	lot	0	It was his lot to work late.
+4	35888	noun	lot	0	After the party, the children ate the whole lot of cake.
+5	35878	noun	Lots	0	Lots of people came to the show.
+
+@ lunch
+1	35919	noun	lunch	1	Every Friday, my grandmother packs a delicious lunch for the whole family.
+2	35923	verb	lunch	0	They lunch near the office.
+3	35924	verb	lunched	0	My aunt lunched us after the meeting.
+4	35919	noun	lunches	0	The school provides healthy lunches.
+5	35921	noun	lunch	0	We had a light lunch with friends.
+
+@ machine
+1	35925	noun	machine	1	The old washing machine rattled loudly every time it started.
+2	35928	noun	machine	0	My laptop is a useful machine.
+3	35925	noun	machine	0	The old machine needs fuel.
+4	35936	verb	machined	0	The factory workers machined the metal parts by hand.
+5	35925	noun	machines	0	The factory has many machines.
+
+@ main
+1	35949	adj	main	1	Firefighters rushed through the main entrance as smoke filled the hallway.
+2	35950	adj	main	0	Rice is the main part of this meal.
+3	35959	noun	main	0	After months of practice, my gaming main finally reached the highest level.
+4	35962	noun	main	0	The water main broke last night.
+5	35963	noun	main	0	I chose fish for my main.
+
+@ man
+1	36035	noun	man	1	The man is waiting for the bus.
+2	36035	noun	man	0	Every man deserves respect.
+3	36062	verb	man	0	Soldiers were ordered to man the checkpoint through the night.
+4	36035	noun	men	0	The men carried the boxes.
+5	36035	noun	man	0	That man knows the answer.
+
+@ many
+1	36067	det	Many	1	Many families lost their homes when the terrible flood hit the village.
+2	36069	pron	Many	0	Many were happy about the news.
+3	36072	adj	many	0	There are many reasons to smile.
+4	36070	noun	many	0	The many waited outside.
+5	36067	det	many	0	How many cookies do you want?
+
+@ map
+1	36073	noun	map	1	Lost in the mountains, the hikers used a torn map to find their way back.
+2	36074	noun	map	0	The chart is a map of our plan.
+3	36080	verb	map	0	They map the new walking path.
+4	36081	verb	mapped	0	The team mapped the forest last year.
+5	36073	noun	maps	0	The guide carries two maps.
+
+@ market
+1	36100	noun	market	1	We buy fruit at the market.
+2	36103	noun	market	0	Teenagers are the market for this game.
+3	36108	verb	market	0	They market toys online.
+4	36109	verb	marketed	0	The company marketed the new phone with a huge advertising campaign.
+5	36100	noun	markets	0	Street markets open on weekends.
+
+@ married
+1	36113	adj	married	1	After thirty happy years, my grandparents are still married and deeply in love.
+2	36115	verb	married	0	They married in a small garden.
+3	36114	adj	married	0	He is married to his work.
+4	36116	noun	married	0	The married sat together at dinner.
+5	36113	adj	married	0	They have been married for ten years.
+
+@ match
+1	36117	noun	match	1	The whole town cheered wildly when our team won the final match.
+2	36125	noun	match	0	These socks are a good match.
+3	36129	verb	match	0	Your shoes match your bag.
+4	36128	verb	matched	0	The colors matched perfectly.
+5	36117	noun	matches	0	The team won two matches.
+
+@ may
+1	36143	verb	may	1	Dark clouds gathered quickly, and the pilot warned that the flight may be delayed.
+2	36141	verb	May	0	May I use your pen?
+3	36145	verb	May	0	May you have a happy day.
+4	36143	verb	may	0	She may be able to help us.
+5	36144	verb	may	0	You may be tired now, but you will feel better after a walk.
+
+@ maybe
+1	36151	adv	maybe	1	After failing twice, he wondered if maybe he would never pass the exam.
+2	36152	adv	Maybe	0	Maybe, but I am not sure.
+3	36151	adv	Maybe	0	Maybe that is exactly right.
+4	36154	adj	maybe	0	The plan is still maybe.
+5	36156	noun	maybe	0	We have one yes and one maybe.
+
+@ me
+1	36158	pron	me	1	When I fell off my bike, my brother ran quickly to help me.
+2	36158	pron	me	0	My sister called me last night.
+3	36158	pron	me	0	Can you help me with this bag?
+4	36158	pron	me	0	The teacher gave me a book.
+5	36168	noun	me	0	I need some time for me today.
+
+@ meaning
+1	36217	noun	meaning	1	I know the meaning of this sign.
+2	36217	noun	meaning	0	Please explain the meaning of the story.
+3	36217	noun	meaning	0	The song has a deep meaning.
+4	36217	noun	meanings	0	Some words have two meanings.
+5	36221	verb	meaning	0	I have been meaning to call my grandmother for weeks.
+
+@ meat
+1	36224	noun	meat	1	The hunters proudly carried fresh meat back to the hungry village.
+2	36224	noun	meat	0	This soup has meat and vegetables.
+3	36224	noun	meat	0	He does not eat meat.
+4	36224	noun	meats	0	The market sells many meats.
+5	36224	noun	meat	0	The meat is fresh today.

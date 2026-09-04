@@ -1,0 +1,25 @@
+prevent	repaired	rank1 was 4 words, rewrote for length and vividness
+print	repaired	only adj POS covered; added noun and verb rows for common senses
+printer	repaired	sense_id pointed at "one who makes prints" while all sentences meant the device; repointed to device sense, rewrote rank1
+prison	repaired	target casing risk on rank1 (sentence-initial "Prison"); rewrote rank1 to avoid it; skipped verb POS (see notes)
+prize	repaired	sense_id pointed at "captured booty" sense while sentences meant "reward"; repointed to reward sense; added adj and verb rows
+process	repaired	rank1 was 4 words; only noun POS covered; added verb rows
+produce	repaired	rank1 was 4 words; only verb POS covered; added noun row for grocery sense
+professional	repaired	rank2 was a banned template ("She is a professional."); rank1 was 5 words; only noun POS covered; added adj row
+professor	repaired	rank1 was 5 words, rewrote for length and vividness
+profile	repaired	sense_id pointed at "outermost shape of object" while sentences meant online profile; repointed to correct noun sense; added verb row
+program	repaired	rank2/rank4 sense_id mismatched (software/broadcast senses vs generic sense); rank1 was 5 words; added verb row
+progress	repaired	rank1 was 5 words; only noun POS covered; added verb row
+promise	repaired	only noun POS covered; replaced weakest row with a verb-sense sentence
+protect	repaired	rank1 was 4 words, rewrote for length and vividness
+provide	repaired	sense_id pointed at "make a living/earn money" sense while every sentence meant "supply/give"; repointed all rows to correct verb sense; rank1 was 3 words and used B2 word "shade"
+pub	repaired	rank1 was 5 words, rewrote for length and vividness; skipped verb POS (see notes)
+public	repaired	rank1/2 sense_id pointed at "known/seen by everyone" while sentences meant "open to the community" (library/park); repointed; added noun row; skipped verb POS (see notes)
+publish	repaired	rank1 was 4 words, rewrote for length and vividness
+separate	repaired	only one target form ("separate") used across all rows; rank4 noun sentence was unnatural; rewrote for form variety and fixed rank1 length
+series	repaired	rank1 was 5 words, rewrote for length and vividness
+serious	repaired	rank4 used the RARE dialectal adverb sense with broken grammar ("She is serious tired"); replaced with a good adj-sense row; rank1 was 5 words
+service	repaired	only one target form ("service") used across all rows; rank1 was 5 words; diversified forms (serviced, services)
+several	repaired	rank3/rank5 sense_id pointed at obsolete senses; repointed to modern senses; fixed sentence-initial target casing; rank1 was 4 words; skipped adv and noun POS (see notes)
+shall	repaired	rank2/3/4 sense_id did not match the actual usage (question vs 2nd-person vs 1st-person future); repointed; fixed sentence-initial target casing; rank1 was 4 words
+shape	repaired	sense_id pointed at "condition/status" while sentences meant the geometric-shape sense; repointed; rank4/5 used the RARE verb sense "to create"; replaced with the common "give shape" sense; fixed sentence-initial target casing; diversified forms

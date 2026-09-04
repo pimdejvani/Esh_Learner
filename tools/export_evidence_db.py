@@ -4,7 +4,7 @@
 The full source DB is 377 MB, but 232 MB of that is raw harvest payload
 (``source_documents``), Thai translation candidates and association candidates
 that the English generation and review passes never read.  Sol only needs the
-exact senses, forms and examples (see ``sol_subagent.md``), and
+exact senses, forms and examples (see ``docs/legacy/REVOCAB_PILOT_2026-08.md`` §7), and
 ``translate_vocab_content.validate_entry`` only reads ``words``,
 ``source_senses`` and ``source_forms``.
 

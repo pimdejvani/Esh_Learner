@@ -1,0 +1,150 @@
+@ policeman
+1	38395	noun	policeman	1	A policeman helped the frightened child find her parents at the station.
+2	38395	noun	policeman	0	A policeman stopped our car and asked my father for his licence.
+3	38395	noun	policeman	0	The policeman directed traffic in the heavy afternoon rain.
+4	38395	noun	policemen	0	Two policemen guarded the gate during the parade.
+5	38395	noun	policemen	0	We asked the policemen for the way to the bus station.
+@ pool
+1	38399	noun	pool	1	A clear pool reflected the mountains at the end of the trail.
+2	38404	noun	pool	0	A pool of water spread across the kitchen floor.
+3	38399	noun	pool	0	Frogs sat at the edge of the shallow pool.
+4	38406	verb	pooled	0	Rain water pooled at the bottom of the steps.
+5	38420	verb	pooling	0	The neighbours are pooling their tools to fix the old fence.
+@ poor
+1	38422	adj	poor	1	The poor family shared their last meal with the lost traveller.
+2	38422	adj	poor	0	Many poor families cannot pay for heating in winter.
+3	38423	adj	poor	0	The photo is poor because the room was too dark.
+4	38422	adj	poorer	0	My grandparents grew up in a poorer village than ours.
+5	38428	noun	poor	0	The charity gives free meals to the poor every Sunday.
+@ popular
+1	38441	adj	popular	1	The popular song played from every shop during the festival.
+2	38441	adj	popular	0	This game is popular with children at our school.
+3	38441	adj	popular	0	The cafe became popular after the newspaper wrote about it.
+4	38441	adj	popular	0	Football is the most popular sport in our town.
+5	38441	adj	popular	0	She writes popular books for young readers.
+@ positive
+1	38452	adj	positive	1	Her positive smile gave the whole team hope before the final match.
+2	38449	adj	positive	0	I am positive that I locked the door this morning.
+3	38452	adj	positive	0	Try to keep a positive attitude during hard weeks.
+4	38452	adj	positive	0	My teacher wrote positive comments on my homework.
+5	38449	adj	positive	0	Are you positive that the shop opens on Sunday?
+@ possible
+1	38478	adj	possible	1	It was possible that the bridge would close if the river rose.
+2	38479	adj	possible	0	It is possible for anyone to learn to swim.
+3	38478	adj	possible	0	Is it possible to leave school early today?
+4	38478	adj	possible	0	A win is still possible if we score twice.
+5	38478	adj	possible	0	We chose the safest possible route through the forest.
+@ post
+1	38485	noun	post	1	The dog waited beside the post at the edge of the farm.
+2	38485	noun	post	0	Tie the rope to the post before the wind starts.
+3	38517	verb	post	0	Please post this letter on your way to work.
+4	38517	verb	posted	0	She posted the birthday card three days too late.
+5	38498	verb	posting	0	The school is posting the exam results tomorrow morning.
+@ potato
+1	38529	noun	potato	1	I dropped the hot potato and everyone at the table laughed.
+2	38529	noun	potato	0	I baked a potato for dinner last night.
+3	38530	noun	potato	0	The potato grows under the ground in soft soil.
+4	38529	noun	potatoes	0	We need three potatoes for the soup.
+5	38529	noun	potato	0	Cut the potato into small pieces before boiling.
+@ practise
+1	38585	verb	practise	1	My sister had to practise the same song until her fingers hurt.
+2	38585	verb	practise	0	We practise spelling every day before lunch.
+3	38585	verb	practised	0	He practised for the show all weekend.
+4	38585	verb	practising	0	She is practising the song for the school concert.
+5	38588	verb	practises	0	My aunt practises medicine in a small village hospital.
+@ prefer
+1	38595	verb	prefer	1	I prefer tea to coffee on cold winter mornings.
+2	38595	verb	prefer	0	They prefer to walk home instead of taking the bus.
+3	38595	verb	preferred	0	She preferred the blue dress to the red one.
+4	38595	verb	prefers	0	My cat prefers fish to any other food.
+5	38595	verb	prefer	0	Which film do you prefer, the old one or the new one?
+@ prepare
+1	38599	verb	prepare	1	We had one hour to prepare the room before the guests arrived.
+2	38600	verb	prepare	0	My mother and I prepare dinner together on Sundays.
+3	38599	verb	prepared	0	She prepared carefully for the important test.
+4	38601	verb	preparing	0	He is preparing for his first day at the new school.
+5	38599	verb	prepares	0	My dad prepares breakfast before anyone else wakes up.
+@ price
+1	38653	noun	price	1	The price on the ticket shocked her, so she left the shop.
+2	38653	noun	price	0	What is the price of this book?
+3	38653	noun	prices	0	Food prices are rising again this year.
+4	38656	verb	priced	0	The store priced the bag fairly.
+5	38657	verb	pricing	0	We are pricing a few laptops before we choose one.
+@ probably
+1	38661	adv	probably	1	The train will probably be late again because of the heavy snow.
+2	38661	adv	probably	0	It will probably rain later this afternoon.
+3	38661	adv	probably	0	She is probably at home with her sister.
+4	38661	adv	probably	0	You have probably seen this film before.
+5	38661	adv	probably	0	We will probably meet them at the station.
+@ problem
+1	38662	noun	problem	1	The broken bus was a real problem for everyone going to work.
+2	38662	noun	problem	0	We can solve this problem together after class.
+3	38662	noun	problems	0	She has no problems with her new school.
+4	38664	noun	problem	0	The teacher wrote a maths problem on the board.
+5	38662	noun	problems	0	Small problems can become big ones if you wait.
+@ product
+1	38672	noun	product	1	The new product sold out in the first hour of the sale.
+2	38679	noun	product	0	This product is easy to use and cheap.
+3	38672	noun	products	0	They make food products in that factory.
+4	38672	noun	product	0	The product arrived this morning in a large box.
+5	38676	noun	product	0	The product of three and four is twelve.
+@ programme
+1	38683	noun	programme	1	I watched a funny programme last night and could not stop laughing.
+2	38683	noun	programme	0	The school has a music programme for young children.
+3	38683	noun	programmes	0	These programmes help children learn to read.
+4	38685	verb	programme	0	They programme the robot to move around the room.
+5	38685	verb	programmed	0	She programmed the game on her computer yesterday.
+@ project
+1	38686	noun	project	1	Our science project fell apart the morning before the school fair.
+2	38686	noun	project	0	We finished the project on time.
+3	38686	noun	projects	0	The class chose two projects for this term.
+4	38695	verb	project	0	They project a busy summer for the new shop.
+5	38693	verb	projected	0	The teacher projected the photo onto the white wall.
+@ purple
+1	38716	adj	purple	1	Her purple umbrella was the only bright thing on the grey street.
+2	38704	noun	purple	0	My favourite colour for winter clothes is purple.
+3	38716	adj	purple	0	He painted the door a soft purple last weekend.
+4	38716	adj	purple	0	She wore a purple dress to the village wedding.
+5	38716	adj	purpler	0	The evening sky grew purpler as the sun went down.
+@ put
+1	38726	verb	put	1	She put her hand on my shoulder and told me not to worry.
+2	38726	verb	put	0	Please put the milk in the fridge.
+3	38726	verb	puts	0	He puts his phone on the desk every morning.
+4	38726	verb	putting	0	She is putting on her shoes by the door.
+5	38727	verb	put	0	Do not put the blame on me for the broken window.
+@ quarter
+1	38744	noun	quarter	1	He ate a quarter of the cake before anyone noticed it was gone.
+2	38751	noun	quarter	0	The film starts at a quarter past seven.
+3	38744	noun	quarters	0	Cut the apple into quarters for the children.
+4	38773	adj	quarter	0	We waited a quarter hour for the next bus.
+5	38775	verb	quartered	0	She quartered the orange and gave us each a piece.
+@ question
+1	38783	noun	question	1	Nobody answered my question, and the whole room went quiet.
+2	38783	noun	question	0	Please answer this question in English.
+3	38783	noun	questions	0	The students asked many questions after the lesson.
+4	38789	verb	questioned	0	The police questioned the driver for an hour.
+5	38790	verb	question	0	Some parents question the new school rule.
+@ quick
+1	38793	adj	quick	1	The rabbit was too quick for the dog and vanished into the hedge.
+2	38794	adj	quick	0	We had a quick meal before the train left.
+3	38793	adj	quicker	0	This route is quicker than the old one.
+4	38793	adj	quickest	0	She was the quickest runner in our class.
+5	38807	adv	quick	0	Come quick, the bus is already leaving!
+@ quickly
+1	38817	adv	quickly	1	She ran so quickly that her hat flew off in the wind.
+2	38817	adv	quickly	0	He quickly closed the door behind him.
+3	38817	adv	quickly	0	The ice melted quickly in the hot sun.
+4	38818	adv	quickly	0	If we take this road, we will get there quickly.
+5	38817	adv	quickly	0	Please walk quickly or we will miss the film.
+@ quiet
+1	38819	adj	quiet	1	The house was so quiet that I could hear my own heart.
+2	38819	adj	quiet	0	Please be quiet during the test.
+3	38819	adj	quieter	0	This room is quieter than that one.
+4	38827	noun	quiet	0	I enjoy the quiet of the early morning.
+5	38825	verb	quieted	0	The mother quieted the baby with a soft song.
+@ quite
+1	38833	adv	quite	1	The water was quite cold, but the children jumped in anyway.
+2	38839	adv	quite	0	I am quite ready to leave now.
+3	38830	adv	quite	0	That is quite true, and I agree with you.
+4	38833	adv	quite	0	The test was quite easy for most students.
+5	38833	adv	quite	0	We are quite close to home now.

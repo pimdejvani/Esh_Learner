@@ -1,0 +1,150 @@
+@ neither
+1	48937	pron	neither	1	The twins were frightened, and neither of them wanted to sleep alone.
+2	48935	det	neither	0	I read both letters, but neither answer was clear.
+3	48936	conj	neither	0	She likes neither coffee nor tea in the morning.
+4	48938	adv	neither	0	My brother cannot swim, and neither can I.
+5	48937	pron	neither	0	He offered me two seats, but I chose neither.
+@ nervous
+1	48949	adj	nervous	1	Her hands shook and her voice went quiet because she felt nervous before the exam.
+2	48948	adj	nervous	0	The little dog gets nervous when a stranger walks into the room.
+3	48949	adj	nervous	0	I always feel nervous about speaking in front of the whole class.
+4	48946	adj	nervous	0	The doctor explained how the nervous system carries messages to the brain.
+5	48948	adj	nervous	0	He gave a nervous smile while waiting for his exam results.
+@ network
+1	48951	noun	network	1	After she lost her job, her network of old friends helped her find work.
+2	48953	noun	network	0	All the school computers are joined to one network.
+3	48950	noun	networks	0	The city bus and train networks connect every neighbourhood.
+4	48955	verb	networking	0	She is networking at the conference to find new customers.
+5	48956	verb	networked	0	The technician networked the printers so everyone could use them.
+@ noisy
+1	48972	adj	noisy	1	The classroom was so noisy that the teacher could not hear my question.
+2	48973	adj	noisy	0	We could not sleep because our hotel stood beside a noisy bar.
+3	48972	adj	noisier	0	The market gets noisier as more people arrive in the morning.
+4	48972	adj	noisiest	0	That old bus is the noisiest one in the whole city.
+5	48972	adj	noisy	0	A noisy group of children ran past our window.
+@ none
+1	48976	pron	none	1	She opened the fridge hoping for milk, but there was none left.
+2	48976	pron	none	0	I asked three friends, but none of them knew the answer.
+3	48977	pron	none	0	Of all the runners, none was faster than my sister.
+4	48980	adv	none	0	He was tired but felt none the worse after the long walk.
+5	48981	adv	none	0	The manager was none too pleased about the late delivery.
+@ normal
+1	48987	adj	normal	1	It felt strange to return to normal life after three weeks in hospital.
+2	48987	adj	normal	0	It is normal to feel tired after a long flight.
+3	48986	adj	normal	0	The nurse said my temperature was completely normal.
+4	49013	noun	normal	0	Working from home has become the new normal for many families.
+5	48986	adj	normal	0	A normal school day here starts at eight and ends at three.
+@ normally
+1	49014	adv	normally	1	I normally walk to school, but the heavy rain made me take the bus.
+2	49014	adv	normally	0	She normally wakes up before the sun rises.
+3	49014	adv	normally	0	The little shop normally opens at nine in the morning.
+4	49015	adv	normally	0	After the medicine, he could breathe normally again.
+5	49015	adv	normally	0	The washing machine is working normally after the repair.
+@ novel
+1	49032	noun	novel	1	She stayed up until midnight because the novel was too exciting to put down.
+2	49031	adj	novel	0	The team found a novel way to save water in the garden.
+3	49032	noun	novels	0	He borrowed three novels from the library last Saturday.
+4	49030	adj	novel	0	This novel design lets the phone charge in ten minutes.
+5	49032	noun	novel	0	The teacher read the first page of the novel aloud.
+@ nowhere
+1	49036	adv	nowhere	1	We searched the whole house, but my grandmother's ring was nowhere to be found.
+2	49036	adv	nowhere	0	There was nowhere to sit on the crowded evening train.
+3	49037	adv	nowhere	0	The traffic was terrible and we were going nowhere fast.
+4	49037	adv	nowhere	0	After an hour of arguing, the meeting had gone nowhere.
+5	49039	noun	nowhere	0	They bought a small house in the middle of nowhere.
+@ nut
+1	49040	noun	nut	1	The squirrel buried a nut under the tree before the first snow fell.
+2	49040	noun	nuts	0	She put chopped nuts on top of the chocolate cake.
+3	49042	noun	nut	0	My father tightened the nut on the bike wheel with a spanner.
+4	49045	noun	nut	0	My uncle is a football nut and never misses a match.
+5	49040	noun	nut	0	This nut has a hard shell that is difficult to crack.
+@ ocean
+1	49068	noun	ocean	1	Standing on the cliff, we watched the ocean turn gold at sunset.
+2	49068	noun	ocean	0	From the top of the hill you can see the ocean.
+3	49069	noun	ocean	0	The island is surrounded by warm ocean on every side.
+4	49068	noun	oceans	0	The oceans cover most of the surface of our planet.
+5	49070	noun	ocean	0	An ocean of yellow flowers filled the field behind the school.
+@ offer
+1	49077	verb	offered	1	A stranger offered me his umbrella while I waited in the cold rain.
+2	49072	noun	offer	0	I thought carefully before I accepted her offer of help.
+3	49073	noun	offers	0	We received two offers for the old family car.
+4	49075	verb	offer	0	My neighbours always offer to look after our cat.
+5	49078	verb	offers	0	The bakery offers fresh bread every morning at six.
+@ officer
+1	49087	noun	officer	1	The police officer carried the lost child back to her crying mother.
+2	49088	noun	officer	0	Excuse me, officer, could you tell me the way to the station?
+3	49087	noun	officers	0	Two officers came to the school to talk about road safety.
+4	49091	noun	officer	0	Her grandfather was an officer in the navy for twenty years.
+5	49089	noun	officer	0	The town chose a new officer to look after the parks.
+@ oil
+1	49094	noun	oil	1	The hot oil jumped out of the pan and burned my hand.
+2	49096	noun	oil	0	Many countries sell oil to make fuel for cars and planes.
+3	49094	noun	oils	0	The shop sells olive and sunflower oils from many countries.
+4	49099	verb	oiled	0	My father oiled the squeaky gate so it would open quietly.
+5	49100	verb	oiling	0	She is oiling the baking tin before adding the cake mixture.
+@ onto
+1	49103	prep	onto	1	The frightened cat jumped onto my bed during the loud thunderstorm.
+2	49103	prep	onto	0	She climbed onto the roof to fix the broken tile.
+3	49103	prep	onto	0	The children ran onto the beach as soon as the bus stopped.
+4	49104	prep	onto	0	The police were onto the thieves before they left the town.
+5	49103	prep	onto	0	A new phone has just come onto the market this week.
+@ opportunity
+1	49107	noun	opportunity	1	Winning the scholarship gave her the opportunity to study abroad for a year.
+2	49108	noun	opportunity	0	A rainy Sunday is a good opportunity to clean the house.
+3	49107	noun	opportunities	0	The new factory brought many job opportunities to our small town.
+4	49108	noun	opportunity	0	Meeting my old teacher was an opportunity to say thank you.
+5	49107	noun	opportunity	0	Do not waste this opportunity to ask the doctor your questions.
+@ option
+1	49110	noun	option	1	When the last train was cancelled, walking home was our only option.
+2	49111	noun	option	0	Students now have the option of studying music or art.
+3	49110	noun	options	0	The menu offers three options for people who do not eat meat.
+4	49110	noun	option	0	The cheapest option is to share a room with a friend.
+5	49111	noun	option	0	She kept the option to change her mind until Friday.
+@ ordinary
+1	49136	adj	ordinary	1	He looked so ordinary that nobody noticed him leaving the crowded station.
+2	49135	adj	ordinary	0	On an ordinary weekday I get up at six and make coffee.
+3	49136	adj	ordinary	0	The house looks ordinary from outside, but the garden is beautiful.
+4	49135	adj	ordinary	0	It was just an ordinary Tuesday until the telephone rang.
+5	49136	adj	ordinary	0	She wears ordinary clothes to work, nothing bright or expensive.
+@ organization
+1	49140	noun	organization	1	The small organization gave free meals to families after the flood.
+2	49138	noun	organization	0	Her careful organization of the shelves made everything easy to find.
+3	49139	noun	organization	0	The organization of the report makes it easy to read.
+4	49140	noun	organizations	0	Several organizations worked together to clean the river last weekend.
+5	49141	noun	organization	0	The neighbours' group slowly grew into a real organization.
+@ possession
+1	49722	noun	possession	1	Her grandmother's ring is her most prized possession.
+2	49722	noun	possessions	0	He packed all his possessions into two old suitcases.
+3	49723	noun	possession	0	The keys have been in my possession since Monday morning.
+4	49724	noun	possession	0	The island was once a possession of a European country.
+5	49727	noun	possession	0	Our team kept possession of the ball for most of the game.
+@ possibility
+1	49731	noun	possibility	1	The doctor said there is still a possibility that she will walk again.
+2	49732	noun	possibilities	0	The empty old house has many possibilities for a new owner.
+3	49733	noun	possibility	0	Moving to another city is one possibility for next year.
+4	49731	noun	possibility	0	Rain is a real possibility, so take your umbrella with you.
+5	49732	noun	possibility	0	We talked about the possibility of starting a small shop.
+@ poster
+1	49735	noun	poster	1	She kept the concert poster on her bedroom wall for ten years.
+2	49736	noun	poster	0	I saw a poster for the new film on the side of a bus.
+3	49735	noun	posters	0	The shop near the school sells posters of famous singers.
+4	49736	noun	poster	0	The class made a colourful poster about saving water.
+5	49737	noun	poster	0	Another poster answered my question on the forum within minutes.
+@ power
+1	49755	noun	power	1	The storm knocked down the lines and left the town without power for days.
+2	49744	noun	power	0	After the accident he lost the power to speak for months.
+3	49747	noun	power	0	The new mayor has the power to change the city rules.
+4	49767	verb	powered	0	The small radio is powered by two old batteries.
+5	49767	verb	powers	0	A single solar panel powers the lights in our garden.
+@ predict
+1	49772	verb	predicted	1	The old fisherman predicted the storm hours before the clouds arrived.
+2	49772	verb	predict	0	Nobody can predict what the weather will do tomorrow.
+3	49772	verb	predicts	0	The app predicts heavy traffic on the road to the airport.
+4	49772	verb	predicting	0	The news is predicting snow across the whole country tonight.
+5	49772	verb	predict	0	Experts predict that food prices will rise again next year.
+@ president
+1	49777	noun	president	1	The new president promised to build a school in every poor village.
+2	49778	noun	president	0	The president of the company visited our office last Friday.
+3	49777	noun	presidents	0	Two former presidents came to the ceremony in the capital.
+4	49779	noun	president	0	The president of the club opened the meeting at seven.
+5	49777	noun	president	0	She hopes to become the first female president of her country.

@@ -1,0 +1,90 @@
+@ kitchen
+1	35188	noun	kitchen	1	We cooked dinner together in the kitchen.
+2	35188	noun	kitchen	0	Please put the clean cups in the kitchen.
+3	35188	noun	kitchens	0	The two kitchens share one small garden.
+4	35188	noun	kitchen	0	My grandmother taught me to cook in her small kitchen every summer.
+5	35188	noun	kitchen	0	The restaurant's kitchen was busy all evening with orders.
+@ know
+1	35200	verb	know	1	I know you can do this difficult task.
+2	35204	verb	know	0	Do you know the new student in our class?
+3	35200	verb	knew	0	I knew the answer after reading the book.
+4	35207	verb	Knowing	0	Knowing two languages can help you travel.
+5	35200	verb	knows	0	She knows where the bus stops.
+@ language
+1	35246	noun	language	1	Learning a new language opens many doors.
+2	35247	noun	language	0	Children learn language by listening every day.
+3	35246	noun	languages	0	My cousin speaks three languages.
+4	35254	noun	language	0	The doctor used simple language with the child.
+5	35251	noun	language	0	Dolphins communicate using a language of clicks and whistles.
+@ large
+1	35258	adj	large	1	The large tree gave us cool shade.
+2	35268	noun	large	0	I need a large for this shirt.
+3	35258	adj	larger	0	This room is larger than my old room.
+4	35258	adj	largest	0	That is the largest cake in the shop.
+5	35258	adj	large	0	She made a large amount of soup for everyone.
+@ last
+1	35272	adj	last	1	This is the last bus home tonight.
+2	35279	det	last	0	I saw him last Friday.
+3	35282	verb	lasted	0	The movie lasted two hours.
+4	35282	verb	lasting	0	The rain is lasting longer than we thought.
+5	35280	adv	last	0	When I last saw her, she looked very happy.
+@ leave
+1	35333	verb	leave	1	I did not want to leave my friends so soon.
+2	35348	noun	leave	0	She took two weeks of leave to care for her sick mother.
+3	35333	verb	left	0	We left the restaurant at nine.
+4	35333	verb	leaving	0	They are leaving for the airport now.
+5	35333	verb	leaves	0	The bus leaves at seven every morning.
+@ left
+1	35360	adv	left	1	Turn left at the next traffic light.
+2	35362	noun	left	0	The shop is on the left of the bank.
+3	35360	adv	left	0	Look left before you cross the road.
+4	35354	adj	leftmost	0	Choose the leftmost door in the hall.
+5	35367	verb	left	0	She left her umbrella on the bus.
+@ leg
+1	35370	noun	leg	1	My leg felt tired after the long walk.
+2	35373	noun	leg	0	One leg of the chair is broken.
+3	35369	noun	legs	0	The dog has four strong legs.
+4	35375	noun	leg	0	The first leg of our trip was by train.
+5	35370	noun	legs	0	He hurt both legs while playing football.
+@ lesson
+1	35404	noun	lesson	1	Today's lesson helped me understand the story.
+2	35405	noun	lesson	0	I finished my math lesson before dinner.
+3	35404	noun	lessons	0	Our music lessons are on Wednesday.
+4	35407	noun	lesson	0	The broken phone taught him a useful lesson.
+5	35406	noun	lessons	0	The trip taught us many lessons about kindness.
+@ lie
+1	35447	verb	lie	1	Please lie down and rest for a while.
+2	35448	verb	lies	0	The small village lies at the foot of the mountain.
+3	35447	verb	lay	0	The cat lay on the warm floor.
+4	35464	noun	lie	0	Telling a lie can hurt people you trust.
+5	35461	verb	lied	0	He lied because he was afraid.
+@ life
+1	35468	noun	life	1	Family and friends make my life brighter.
+2	35475	noun	life	0	School is an important part of my life.
+3	35472	noun	lives	0	The firefighters saved two lives.
+4	35479	noun	life	0	During his long life, he traveled to over forty countries.
+5	35474	noun	life	0	Music gives life a special meaning.
+@ light
+1	35496	noun	light	1	The warm light from the window made me calm.
+2	35500	noun	light	0	Please turn off the light before you leave.
+3	35525	adj	light	0	My backpack feels very light today because it's almost empty.
+4	35517	verb	lit	0	He lit a candle during the power cut.
+5	35517	verb	lighting	0	She is lighting the candles for dinner.
+@ like
+1	35560	verb	like	1	I like studying with my best friend.
+2	35585	prep	like	0	My little sister looks just like our mother.
+3	35560	verb	liked	0	She liked the movie very much.
+4	35573	noun	likes	0	Tell me your likes and dislikes, please.
+5	35566	verb	likes	0	He likes every photo from the trip online.
+@ lion
+1	35669	noun	lion	1	The lion slept under a tree.
+2	35670	noun	lion	0	The male lion has a thick mane.
+3	35673	noun	lion	0	She is a lion in a difficult time.
+4	35671	noun	lion	0	A mountain lion was spotted near the hiking trail.
+5	35669	noun	lions	0	We saw two lions at the zoo.
+@ listen
+1	35712	verb	listen	1	Everyone stopped talking and started to listen carefully to the announcement.
+2	35712	verb	listened	0	We listened to music on the bus.
+3	35712	verb	listening	0	She is listening for the doorbell.
+4	35713	verb	listen	0	You should listen to your parents.
+5	35714	noun	listen	0	Give this song a quick listen.

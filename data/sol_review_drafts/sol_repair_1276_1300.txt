@@ -1,0 +1,146 @@
+@ pencil
+1	37893	noun	pencil	1	Her pencil snapped just before she finished the drawing.
+2	37893	noun	pencils	0	She sharpened a whole box of pencils before the exam.
+3	37893	noun	pencil	0	He drew a tree with a pencil.
+4	37900	verb	penciled	0	He penciled a quick reminder in the margin of his notebook.
+5	37901	verb	pencils	0	She always pencils small check marks next to finished tasks.
+
+@ pepper
+1	37914	noun	pepper	1	The chef sprinkled fresh pepper over the steaming soup, and its smell filled the kitchen.
+2	37915	noun	pepper	0	A pepper is a colorful fruit used in salads and stir-fries.
+3	37914	noun	pepper	0	Please pass the salt and pepper.
+4	37915	noun	peppers	0	She chopped red and green peppers for the salad.
+5	37920	verb	peppered	0	He peppered his soup before eating.
+
+@ perfect
+1	37928	adj	perfect	1	The perfect circle on her cake made the baker smile.
+2	37928	adj	perfect	0	Perfect means exactly right with no faults.
+3	37930	adj	perfect	0	Everything felt perfect on the day of her wedding.
+4	37950	verb	perfects	0	He never stops trying until he perfects every recipe he cooks.
+5	37950	verb	perfected	0	She practiced every day until she perfected her guitar skills.
+
+@ period
+1	37952	noun	period	1	During a quiet period, the nurse checked every sleeping patient.
+2	37952	noun	period	0	A period is a length of time.
+3	37954	noun	period	0	Put a period at the end of every sentence.
+4	67885	intj	period	0	You are not allowed to stay up late, period!
+5	37973	adj	period	0	The museum displayed a beautiful period costume from the 1800s.
+
+@ personal
+1	37993	adj	personal	1	Her personal letter made the distant grandmother feel close again.
+2	37993	adj	personal	0	Personal means connected with a particular person.
+3	37995	adj	personal	0	That is a personal question.
+4	37993	adj	personal	0	He kept his personal notes private.
+5	37993	adj	personal	0	The teacher gave personal advice.
+
+@ phone
+1	38005	noun	phone	1	Her phone rang just as the storm knocked out the lights.
+2	38005	noun	phone	0	A phone lets people speak across long distances.
+3	38005	noun	phone	0	Please charge your phone tonight.
+4	38007	verb	phoned	0	She phoned her mother as soon as she landed at the airport.
+5	38007	verb	phones	0	He usually phones his grandmother every Sunday evening.
+
+@ photo
+1	38010	noun	photo	1	The old photo showed Dad holding a tiny puppy.
+2	38010	noun	photo	0	A photo is a picture made with a camera.
+3	38010	noun	photo	0	She framed the photo.
+4	38010	noun	photos	0	Take some photos of us.
+5	38014	verb	photoed	0	She quickly photoed the receipt before throwing it away.
+
+@ photograph
+1	38015	noun	photograph	1	A faded photograph of the mountain hung above the fireplace.
+2	38015	noun	photograph	0	A photograph is an image captured by a camera.
+3	38015	noun	photograph	0	He developed the photograph at home.
+4	38016	verb	photographed	0	He photographed the sunset over the quiet lake.
+5	38018	verb	photographs	0	She always photographs beautifully in natural light.
+
+@ phrase
+1	38019	noun	phrase	1	The phrase on the postcard made Grandma laugh aloud.
+2	38019	noun	phrase	0	A phrase is a short group of spoken or written words.
+3	38019	noun	phrase	0	Write the phrase in your notebook.
+4	38024	verb	phrased	0	She carefully phrased her apology so it wouldn't sound rude.
+5	38024	verb	phrases	0	She phrases her requests very politely.
+
+@ picture
+1	38035	noun	picture	1	The picture of the missing cat helped neighbours search the streets.
+2	38035	noun	picture	0	A picture shows an image of a person, place, or thing.
+3	38035	noun	picture	0	Draw a picture of your house.
+4	38049	verb	pictured	0	She pictured herself living by the sea one day.
+5	38049	verb	pictures	0	He often pictures his future success before every big game.
+
+@ piece
+1	38051	noun	piece	1	One piece of the broken cup was still under the table.
+2	38051	noun	piece	0	A piece is a separate part of a larger thing.
+3	38051	noun	pieces	0	Cut the cake into six equal pieces.
+4	38051	noun	piece	0	He found a piece of glass.
+5	38072	verb	pieced	0	Detectives slowly pieced together clues from the crime scene.
+
+@ pig
+1	38076	noun	pig	1	The pig rolled happily in the mud after the morning rain.
+2	38076	noun	pig	0	A pig is a farm animal with a snout and hooves.
+3	38076	noun	pig	0	The pig ate the fallen apples.
+4	38076	noun	pigs	0	We heard the pigs squeal in the barn.
+5	38098	verb	pigged	0	They pigged out on pizza and cake at the birthday party.
+
+@ pink
+1	38104	noun	pink	1	A soft pink covered the sky just before the sun rose.
+2	38104	noun	pink	0	Pink is a pale red colour like some flowers.
+3	38115	adj	pink	0	She wore a pink dress to her sister's birthday party.
+4	38115	adj	pinker	0	The sky grew pinker as the sun continued to set.
+5	38121	verb	pinked	0	Her cheeks pinked slightly when everyone started singing to her.
+
+@ place
+1	38138	noun	place	1	They found a quiet place beside the river for their picnic.
+2	38138	noun	place	0	A place is a particular area or location.
+3	38138	noun	place	0	This is a safe place to rest.
+4	38164	verb	placed	0	She carefully placed the vase on the top shelf.
+5	38164	verb	places	0	He always places his keys in the same bowl by the door.
+
+@ plan
+1	38176	noun	plan	1	Their vacation plan fell apart when the flight was suddenly cancelled.
+2	38176	noun	plan	0	A plan is a set of actions to reach a goal.
+3	38175	noun	plan	0	The architect studied the plan before starting construction.
+4	38182	verb	planned	0	She planned to visit her grandmother next weekend.
+5	38183	verb	plans	0	He always plans his meals for the whole week ahead.
+
+@ plane
+1	38193	noun	plane	1	The plane shook violently as it flew through the storm clouds.
+2	38193	noun	plane	0	A plane is a large aircraft that flies people through the sky.
+3	38193	noun	plane	0	We took a plane to visit our cousins abroad.
+4	38193	noun	planes	0	Two planes landed at the airport within minutes of each other.
+5	38192	verb	planed	0	The carpenter planed the rough wood until it felt smooth.
+
+@ plant
+1	38200	noun	plant	1	The tiny plant pushed through the soil after three days of rain.
+2	38200	noun	plant	0	A plant is a living thing that usually grows from the ground.
+3	38200	noun	plant	0	Water the plant every morning.
+4	38219	verb	planted	0	She planted tomato seeds in her garden every spring.
+5	38219	verb	plants	0	He plants a new tree in his yard every year.
+
+@ play
+1	38228	verb	play	1	The children play in the garden until the dinner bell rings.
+2	38228	verb	play	0	Play means to do an activity for fun.
+3	38228	verb	playing	0	The children were playing happily in the garden when it started to rain.
+4	38262	noun	play	0	Children learn many valuable skills through play.
+5	38267	noun	plays	0	The coach drew up new plays for tonight's basketball game.
+
+@ please
+1	38297	adv	please	1	She quietly asked him to please close the door before the baby woke up.
+2	38297	adv	please	0	Please means a polite word used when asking for something.
+3	38297	adv	please	0	Please pass the salt when you get a chance.
+4	38295	verb	pleased	0	Her thoughtful gift pleased her mother very much.
+5	38295	verb	pleases	0	Nothing pleases him more than a quiet weekend at home.
+
+@ point
+1	38298	noun	point	1	A tiny point of light appeared at the end of the dark tunnel.
+2	38298	noun	point	0	A point is a small dot or mark.
+3	38298	noun	point	0	Mark the point on the map.
+4	38362	verb	points	0	The compass always points north no matter which way you turn.
+5	38361	verb	pointed	0	She pointed at the rainbow stretching across the sky.
+
+@ police
+1	38382	noun	police	1	The police found the lost child before the rain became heavy.
+2	38382	noun	police	0	Police are officers who enforce the law and keep people safe.
+3	38382	noun	police	0	Call the police after an accident.
+4	38382	noun	police	0	The police closed the road.
+5	38392	verb	policed	0	Extra guards policed the stadium during the championship game.

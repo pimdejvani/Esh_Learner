@@ -1,0 +1,108 @@
+@ friday
+1	67691	noun	Friday	1	We have art class on Friday.
+2	67693	adv	Friday	0	I will see you Friday.
+3	67691	noun	Friday	0	Friday comes after Thursday.
+4	67691	noun	Fridays	0	We play games on Fridays.
+5	67692	noun	Friday	0	For her, Friday is the last workday.
+@ friend
+1	33501	noun	friend	1	My best friend stayed by my side all night when I was scared.
+2	33501	noun	friends	0	We are friends from school.
+3	33502	noun	friend	0	A kind friend gave me advice.
+4	33513	verb	friend	0	Please friend me on the app.
+5	33513	verb	friended	0	She friended her new classmate online.
+@ friendly
+1	33514	adj	friendly	1	Even after our exhausting overnight flight, the stranger beside us stayed warm and friendly.
+2	33515	adj	friendly	0	She gave me a friendly smile.
+3	33517	adj	friendly	0	This bag is environment-friendly.
+4	33518	adj	friendly	0	The two teams had a friendly game.
+5	33522	noun	friendly	0	The coach used yesterday's friendly to test new players.
+@ fun
+1	33616	noun	fun	1	We had so much fun at the beach that we forgot the time completely.
+2	33618	adj	fun	0	The class was fun today.
+3	33616	noun	fun	0	The kids look for fun in every game they play.
+4	33618	adj	more fun	0	The park is more fun at night.
+5	33619	adj	fun	0	Her outfit was bright, fun, and full of colorful patterns.
+@ funny
+1	33621	adj	funny	1	That funny story made us laugh.
+2	33626	noun	funnies	0	My dad reads the funnies every Sunday morning in the newspaper.
+3	33622	adj	funny	0	I heard a funny noise outside.
+4	33621	adj	funnier	0	This film is funnier than the last one.
+5	33621	adj	funniest	0	It was the funniest moment of the trip.
+@ game
+1	33640	noun	game	1	We won the game at last.
+2	33642	noun	game	0	This game has simple rules.
+3	33644	noun	game	0	My brother plays a game after school.
+4	33664	adj	game	0	Are you game for a short walk?
+5	33668	verb	gaming	0	They are gaming in the living room.
+@ garden
+1	33672	noun	garden	1	The children played in the garden.
+2	33676	noun	garden	0	There is a small garden behind our house.
+3	33681	verb	garden	0	My grandparents garden every morning.
+4	33681	verb	gardening	0	She is gardening with her mother.
+5	33684	adj	garden	0	It was just a garden variety cold, nothing to worry about.
+@ geography
+1	33685	noun	geography	1	I fell in love with geography after seeing photos of the Amazon rainforest.
+2	33685	noun	geography	0	We learned about rivers in geography.
+3	33688	noun	geography	0	The geography of the island is very rocky.
+4	33688	noun	geography	0	The shop knows the local geography well.
+5	33685	noun	geography	0	The book compares how geography is taught in two countries.
+@ get
+1	33695	verb	get	1	I need to get some water.
+2	33696	verb	get	0	Did you get my message?
+3	33699	verb	got	0	It got cold very quickly last night.
+4	33709	verb	get	0	I do not get this question.
+5	33695	verb	getting	0	She is getting a new phone.
+@ girl
+1	33735	noun	girl	1	The girl found her lost cat.
+2	33736	noun	girl	0	The girl behind the counter smiled and handed me my coffee.
+3	33739	noun	girl	0	Their girl is only five years old.
+4	33735	noun	girls	0	The girls sang on the stage.
+5	33740	noun	girl	0	She went shopping with her girl friends.
+@ girlfriend
+1	33751	noun	girlfriend	1	He proposed to his girlfriend on the beach at sunset, and she said yes.
+2	33751	noun	girlfriend	0	He met his girlfriend after work.
+3	33751	noun	girlfriend	0	She invited her girlfriend to lunch.
+4	33752	noun	girlfriends	0	She always meets her girlfriends for coffee every Friday morning.
+5	33751	noun	girlfriend	0	Every night before bed, he calls his girlfriend just to say goodnight.
+@ glass
+1	33788	noun	glass	1	Be careful with that broken glass.
+2	33790	noun	glass	0	Can I have a glass of water?
+3	33790	noun	glasses	0	We need two clean glasses.
+4	33804	verb	glass	0	They will glass the new window tomorrow.
+5	33804	verb	glassed	0	The worker glassed the door carefully.
+@ go
+1	33814	verb	go	1	We should go home now before the storm gets worse.
+2	33814	verb	goes	0	This bus goes to the airport.
+3	33814	verb	went	0	They went to the zoo yesterday.
+4	33814	verb	going	0	I am going to the library.
+5	33896	noun	go	0	I've never surfed before, but I'll give it a go this weekend.
+@ good
+1	33932	adj	good	1	You did a good job today.
+2	33925	adj	good	0	This soup tastes good.
+3	33930	adj	good	0	It is a good idea to rest.
+4	67794	intj	Good	0	Good! I can leave now.
+5	33931	adj	better	0	I feel better after a short sleep.
+@ goodbye
+1	33960	noun	goodbye	1	We said goodbye at the station.
+2	33960	noun	goodbye	0	Her goodbye was quiet and sad.
+3	67795	intj	Goodbye	0	Goodbye! I will see you again soon.
+4	33960	noun	goodbyes	0	The airport is full of goodbyes.
+5	33960	noun	goodbye	0	She waved and said goodbye as the train pulled away.
+@ grandfather
+1	33962	noun	grandfather	1	My grandfather told me an amazing story about swimming across the river as a boy.
+2	33962	noun	grandfather	0	Her grandfather lives nearby.
+3	33963	noun	grandfather	0	He learned the recipe from his grandfather.
+4	33962	noun	grandfathers	0	Both grandfathers came to the party.
+5	33966	verb	grandfathering	0	The rule is grandfathering old members.
+@ grandmother
+1	33967	noun	grandmother	1	My grandmother always makes warm soup for us on cold winter days.
+2	33967	noun	grandmother	0	We visited our grandmother on Sunday.
+3	33968	noun	grandmother	0	She heard stories from her grandmother.
+4	33967	noun	grandmothers	0	The grandmothers sat together.
+5	33967	noun	grandmothers	0	Both of my grandmothers taught me how to bake bread.
+@ grandparent
+1	33970	noun	grandparent	1	Every summer, my grandparent tells us wonderful stories about growing up on a farm.
+2	33970	noun	grandparent	0	A grandparent picked him up from school.
+3	33970	noun	grandparents	0	Her grandparents live in the country.
+4	33970	noun	grandparent	0	Many children today live with a grandparent instead of their parents.
+5	33970	noun	Grandparents	0	Grandparents often spoil their grandchildren with treats and love.

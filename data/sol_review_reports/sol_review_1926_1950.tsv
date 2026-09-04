@@ -1,0 +1,25 @@
+flood	repaired	added verb coverage (flooded/floods), dropped flood-tide row
+flour	repaired	added verb coverage (Flour the pan)
+flow	repaired	added verb coverage (flows)
+fold	repaired	added noun row + verb form variety (folding)
+folk	repaired	fixed archaic-sense mismatch (56288->56289), added adj + relatives-noun coverage
+force	repaired	added verb coverage (force the door)
+forever	repaired	added adj (forever home) + noun (in forever) coverage
+frame	repaired	fixed sense mismatch (adapt->place-in-border), added noun row, verb form variety
+freeze	repaired	fixed transitive/intransitive sense mismatch, added noun coverage
+frequently	pass	all 5 rows already good, single POS
+friendship	pass	all 5 rows already good, single POS
+frighten	repaired	diversified verb forms (frightens/frightening)
+frightened	repaired	relabeled r5 to verb sense (dynamic passive was frightened by)
+frightening	repaired	added dynamic verb-sense row
+frozen	repaired	added dynamic passive verb-sense row
+fry	repaired	fixed transitive/intransitive sense mismatch on r2
+fuel	repaired	added verb coverage (fueled)
+function	repaired	added verb coverage (functions)
+fur	pass	all 5 rows already good; conj/prep/verb POS are junk or unused, skipped
+garage	repaired	added verb coverage (garaged)
+gather	repaired	fixed congregate-vs-collect sense mismatch, added form variety
+generally	repaired	fixed sense mismatch + case bug (Generally at sentence start)
+generation	repaired	fixed sense mismatches (abstract-creation vs family/tech/cultural generation)
+generous	pass	all 5 rows already good, defensible under existing sense
+gentle	repaired	fixed sense mismatches (character-trait vs mild/docile senses)

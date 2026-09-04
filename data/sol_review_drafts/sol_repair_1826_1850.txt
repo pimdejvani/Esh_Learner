@@ -1,0 +1,125 @@
+@ thick
+1	52639	adj	thick	1	The thick soup warmed us after the rainy hike.
+2	52641	adj	thick	0	We walked through thick fog near the river.
+3	52635	adj	thicker	0	Use a thicker notebook for your research notes.
+4	52653	noun	thick	0	She found her friend in the thick of the crowd.
+5	52651	adv	thick	0	Snow lay thick on the ground after the heavy storm.
+
+@ thin
+1	52661	adj	thin	1	The thin ice cracked when we stepped too close to the edge.
+2	52663	adj	thinner	0	After the long illness, he looked much thinner.
+3	52664	adj	thin	0	Add water slowly if the paint is too thin.
+4	52676	verb	thinning	0	The gardener is thinning the seedlings to give them more room.
+5	52674	verb	thinned	0	The crowd thinned after the concert ended.
+
+@ thinking
+1	52678	noun	thinking	1	Careful thinking helped her find a fair solution.
+2	52679	noun	thinking	0	That kind of thinking can improve teamwork.
+3	52680	verb	thinking	0	I am thinking about applying for the course.
+4	52678	noun	thinking	0	Quiet thinking time gave the team better questions to discuss.
+5	52679	noun	thinking	0	The book compares the political thinking behind each historical era.
+
+@ account
+1	53821	noun	account	1	She panicked when she forgot the password to her online account.
+2	53815	noun	account	0	He opened a savings account to save money for university.
+3	53818	noun	account	0	The witness gave a detailed account of the accident.
+4	53814	noun	accounts	0	The company must file its accounts every year.
+5	53831	verb	accounts	0	Heavy traffic accounts for his late arrival every morning.
+
+@ achievement
+1	53839	noun	achievement	1	Winning the scholarship was the proudest achievement of her life.
+2	53840	noun	achievement	0	Climbing the mountain alone was an incredible achievement.
+3	53842	noun	achievement	0	He unlocked a new achievement after finishing the difficult level.
+4	53839	noun	achievements	0	Her list of achievements included two swimming titles and a scholarship.
+5	53844	noun	achievement	0	The whole class celebrated the achievement of finishing the project on time.
+
+@ ad
+1	53845	noun	ad	1	The funny ad about a talking dog made everyone laugh out loud.
+2	53845	noun	ad	0	She skipped the ad before watching the video online.
+3	53845	noun	ad	0	The company posted a job ad on their website.
+4	53845	noun	ad	0	We saw the same ad three times during the show.
+5	53845	noun	Ads	0	Ads for the new phone appeared on every website she visited.
+
+@ addition
+1	53852	noun	addition	1	The new player was a great addition to the football team.
+2	53853	noun	addition	0	Children learn addition before they learn multiplication at school.
+3	53851	noun	addition	0	The addition of a new road eased the traffic problem.
+4	53852	noun	additions	0	The museum announced several additions to its art collection this year.
+5	53853	noun	addition	0	She checked her addition twice to make sure the total was correct.
+
+@ admire
+1	53859	verb	admire	1	I admire your courage for standing up against the bullies.
+2	53861	verb	admired	0	Her colleagues always admired her for finishing projects early.
+3	53859	verb	admiring	0	He stood admiring the sunset over the quiet beach.
+4	53861	verb	admires	0	She admires her grandmother's strength and kindness.
+5	53860	verb	admire	0	We admire the painting's bright colors and bold lines.
+
+@ admit
+1	53865	verb	admitted	1	She finally admitted that she had broken her mother's favorite vase.
+2	53863	verb	admits	0	This ticket admits two people into the museum.
+3	53868	verb	admitted	0	He was admitted to the hospital after the accident.
+4	53865	verb	admitting	0	By admitting her mistake, she earned everyone's respect.
+5	53863	verb	admit	0	One ticket does not admit more than two guests.
+
+@ advanced
+1	53873	adj	advanced	1	After years of practice, she became an advanced piano player.
+2	53871	adj	advanced	0	This is an advanced course, so bring your calculator.
+3	53869	verb	advanced	0	The soldiers advanced slowly through the thick forest.
+4	53869	verb	advanced	0	Technology has advanced quickly over the past ten years.
+5	53873	adj	advanced	0	The hospital bought advanced equipment to treat serious injuries.
+
+@ advise
+1	53876	verb	advised	1	The doctor advised her to rest for a full week after the surgery.
+2	53876	verb	advise	0	Teachers often advise students to review their notes every night.
+3	53878	verb	advised	0	The pilot advised passengers of the sudden turbulence ahead.
+4	53877	verb	advises	0	The nutritionist advises eating more vegetables and less sugar.
+5	53876	verb	advising	0	He is advising his younger brother about which university to choose.
+
+@ afford
+1	53885	verb	afford	1	After losing his job, he could no longer afford the rent on his apartment.
+2	53885	verb	afford	0	We can finally afford a family vacation this summer.
+3	53885	verb	afford	0	She couldn't afford the expensive concert tickets this year.
+4	53885	verb	afforded	0	They finally afforded a small trip to the coast last spring.
+5	53888	verb	affords	0	This part-time job barely affords him enough money for food.
+
+@ aged
+1	53889	adj	aged	1	The aged man walked slowly across the busy street, leaning on his cane.
+2	53890	adj	Aged	0	Aged eighteen, she left home to study abroad for the first time.
+3	53891	adj	aged	0	The aged cheese had a much stronger flavor than the fresh one.
+4	53892	noun	aged	0	The charity raises money to support housing for the aged.
+5	53893	verb	aged	0	The wine aged slowly in the dark cellar for many years.
+
+@ agent
+1	53897	noun	agent	1	The secret agent slipped through the crowd, disappearing before the police arrived.
+2	53895	noun	agent	0	Our travel agent booked us a hotel near the beach.
+3	53898	noun	agent	0	This cleaning agent removes stains from almost any fabric.
+4	53902	noun	agent	0	An FBI agent knocked on the door and showed his badge.
+5	53895	noun	agents	0	Real estate agents help buyers find the right home.
+
+@ agreement
+1	53904	noun	agreement	1	After a long negotiation, the two countries finally reached a peace agreement.
+2	53906	noun	agreement	0	Please read the rental agreement carefully before you sign it.
+3	53905	noun	agreement	0	The committee members were in complete agreement about the new plan.
+4	53907	noun	agreement	0	Subject-verb agreement means the verb must match its subject in number.
+5	53904	noun	agreements	0	The two companies signed several agreements last year.
+
+@ ahead
+1	53909	adv	ahead	1	She looked ahead and saw the finish line just beyond the hill.
+2	53910	adv	ahead	0	He finished the race two minutes ahead of everyone else.
+3	53911	adv	ahead	0	The manager warned us about difficult months ahead for the company.
+4	53909	adv	ahead	0	Drive straight ahead until you reach the old bridge.
+5	53912	adv	ahead	0	We need to set the clock ahead one hour for summer time.
+
+@ aim
+1	53917	noun	aim	1	Her aim was to become a doctor and help sick children in her village.
+2	53915	noun	aim	0	He took careful aim before shooting the arrow at the target.
+3	53918	noun	aim	0	The archer has excellent aim and rarely misses the target.
+4	53921	verb	aims	0	She aims to finish the marathon in under four hours.
+5	53920	verb	aimed	0	He aimed the camera at the beautiful sunset over the lake.
+
+@ alarm
+1	53930	noun	alarm	1	The loud crash filled the whole house with alarm and confusion.
+2	53928	noun	alarm	0	The fire alarm on the wall started ringing during class.
+3	53932	noun	alarm	0	Her alarm went off an hour early this morning.
+4	53934	verb	alarm	0	The strange noise outside began to alarm the whole family.
+5	53936	verb	alarm	0	His sudden scream seemed to alarm the sleeping baby.

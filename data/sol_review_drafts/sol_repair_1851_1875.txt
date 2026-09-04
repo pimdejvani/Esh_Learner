@@ -1,0 +1,150 @@
+@ album
+1	53939	noun	album	1	My grandmother cried when she opened the old photo album from her wedding.
+2	53939	noun	albums	0	She keeps all her baby pictures in two thick albums.
+3	53943	noun	album	0	The band released a new album last summer.
+4	53943	noun	albums	0	His albums are very popular with young listeners.
+5	53940	noun	album	0	The teacher made an album of the children's best poems.
+@ alcohol
+1	53946	noun	alcohol	1	My uncle finally gave up alcohol after his doctor warned him.
+2	53946	noun	alcohol	0	The restaurant does not serve alcohol to anyone under twenty.
+3	53946	noun	alcohol	0	This fruit drink contains no alcohol at all.
+4	53944	noun	alcohol	0	The nurse cleaned the small cut with alcohol before the injection.
+5	53944	noun	alcohols	0	Our science teacher explained that alcohols are used in medicine and fuel.
+@ alcoholic
+1	53948	noun	alcoholic	1	After twenty hard years, the alcoholic finally asked his family for help.
+2	53948	noun	alcoholics	0	The group meets every Friday to support recovering alcoholics.
+3	53951	adj	alcoholic	0	She ordered an alcoholic drink, but her sister chose juice.
+4	53950	adj	alcoholic	0	A strong alcoholic smell came from the empty glasses.
+5	53952	adj	alcoholic	0	His alcoholic father joined a treatment programme last year.
+@ amazed
+1	53953	adj	amazed	1	The children were amazed when the elephant lifted its huge foot.
+2	53953	adj	amazed	0	She stood amazed at the size of the waterfall.
+3	53953	adj	amazed	0	His amazed face made everyone in the room laugh.
+4	53954	verb	amazed	0	The young magician amazed the whole class with his card trick.
+5	53954	verb	amazed	0	Her quick answer amazed even the maths teacher.
+@ ambition
+1	53955	noun	ambition	1	Her ambition to become a doctor kept her studying late every night.
+2	53956	noun	ambition	0	My ambition is to own a small bookshop by the sea.
+3	53956	noun	ambitions	0	He talked about his ambitions for the football team.
+4	53958	noun	ambition	0	The new worker has plenty of ambition and never gives up.
+5	53957	noun	ambitions	0	Her parents had big ambitions for their only daughter.
+@ ambitious
+1	53961	adj	ambitious	1	She was so ambitious that she studied while everyone else slept.
+2	53961	adj	ambitious	0	My ambitious cousin wants to run her own company.
+3	53963	adj	ambitious	0	The city announced an ambitious plan to plant a million trees.
+4	53964	adj	ambitious	0	Finishing the whole book in one night was an ambitious goal.
+5	53962	adj	ambitious	0	He is ambitious for a place in the national team.
+@ analyse
+1	53965	verb	analyse	1	Doctors must analyse every blood sample before they tell the family anything.
+2	53965	verb	analysed	0	She analysed her mistakes after losing the chess match.
+3	53965	verb	analysing	0	He is analysing the survey answers for his school project.
+4	53965	verb	analyses	0	The computer analyses thousands of photographs every minute.
+5	53965	verb	analyse	0	Let us analyse the results together before the meeting tomorrow.
+@ analysis
+1	53966	noun	analysis	1	Careful analysis of the old letters revealed who really wrote them.
+2	53967	noun	analysis	0	Her analysis of the poem impressed the whole class.
+3	53966	noun	analyses	0	The team compared two analyses of the same data.
+4	53970	noun	analysis	0	The lab sent a water analysis showing no dangerous chemicals.
+5	53966	noun	analysis	0	We need a deeper analysis before deciding on the budget.
+@ announce
+1	53973	verb	announced	1	The head teacher announced the exam results in front of everyone.
+2	53973	verb	announce	0	They will announce the winner after the last race.
+3	53973	verb	announcing	0	The station is announcing delays on every platform this morning.
+4	53973	verb	announces	0	A loud bell announces the end of every lesson.
+5	53975	verb	announcing	0	He enjoys announcing the games at the local stadium.
+@ announcement
+1	53977	noun	announcement	1	She made the happy announcement that the baby was finally born.
+2	53977	noun	announcement	0	He raised his hand and asked to make an announcement.
+3	53978	noun	announcements	0	Important announcements are played twice at the airport.
+4	53979	noun	announcement	0	The announcement said the library would close early on Friday.
+5	53978	noun	announcement	0	A written announcement was pinned on the classroom door.
+@ consume
+1	55210	verb	consumed	1	Fire consumed the whole barn before the neighbours could reach it.
+2	55207	verb	consumes	0	This old heater consumes a lot of electricity.
+3	55208	verb	consume	0	Baby birds consume their own weight in food each day.
+4	55213	verb	consuming	0	Young people are consuming most of their news on phones.
+5	55209	verb	consumed	0	Worry about the exam consumed her all week.
+@ consumer
+1	55215	noun	consumer	1	Every consumer has the right to return a broken phone.
+2	55215	noun	consumers	0	Many consumers are choosing cheaper brands this year.
+3	55216	noun	consumers	0	Our consumers are mostly students under twenty-five.
+4	55214	noun	consumer	0	A big car is a heavy consumer of fuel and money.
+5	55215	noun	consumer	0	The shop treats each consumer politely, even at closing time.
+@ contact
+1	55229	verb	contacted	1	She contacted her brother the moment she landed safely.
+2	55219	noun	contact	0	I have not been in contact with her for years.
+3	55222	noun	contacts	0	The salesman keeps a folder full of useful contacts.
+4	55218	noun	contact	0	Avoid contact with the wet paint on the gate.
+5	55229	verb	contact	0	Please contact the office if your address changes.
+@ container
+1	55231	noun	container	1	She dropped the container and rice spilled across the kitchen floor.
+2	55231	noun	container	0	Put the soup in a clean container before freezing it.
+3	55232	noun	containers	0	Huge metal containers were lifted onto the ship.
+4	55231	noun	containers	0	We washed all the plastic containers after the picnic.
+5	55232	noun	container	0	The lorry carried one container full of new bicycles.
+@ content
+1	55240	adj	content	1	After the long walk, she sat by the fire feeling content.
+2	55240	adj	content	0	He looked content with his simple lunch and hot tea.
+3	55250	noun	content	0	The teacher liked the content of my essay, but not the spelling.
+4	55253	noun	content	0	This juice has a very high sugar content.
+5	55246	verb	content	0	You will have to content yourself with what you already have.
+@ continuous
+1	55257	adj	continuous	1	The continuous roar of the waterfall kept us awake all night.
+2	55257	adj	continuous	0	She needs continuous care after her heart operation.
+3	55258	adj	continuous	0	A continuous line of red lights stretched down the motorway.
+4	55262	adj	continuous	0	In English lessons we practise the present continuous every week.
+5	55257	adj	continuous	0	Three days of continuous rain ruined the school sports day.
+@ contrast
+1	55266	noun	contrast	1	The contrast between her happy voice and her sad eyes surprised me.
+2	55263	noun	contrast	0	The red and the orange have very little contrast between them.
+3	55266	noun	contrasts	0	Our teacher says India is a country of many contrasts.
+4	55271	verb	contrasts	0	Her white dress contrasts nicely with the black scarf.
+5	55270	verb	contrast	0	In the essay we must contrast city life with village life.
+@ convenient
+1	55272	adj	convenient	1	The little shop next door is convenient when it rains hard.
+2	55272	adj	convenient	0	Fast food might be convenient, but it is also unhealthy.
+3	55272	adj	convenient	0	Please choose a convenient time for our meeting next week.
+4	55272	adj	convenient	0	Studying online is convenient for people with small children.
+5	55273	adj	convenient	0	How convenient that you caught a cold the night before the exam!
+@ convince
+1	55275	verb	convinced	1	Her calm voice convinced the frightened boy to come down slowly.
+2	55275	verb	convince	0	These photographs will convince you that the story is true.
+3	55276	verb	convinces	0	Nothing convinces my father to take a holiday.
+4	55276	verb	convincing	0	She is convincing her parents to let her study abroad.
+5	55278	verb	convinced	0	The young actor never convinced us as an old king.
+@ costume
+1	55282	noun	costume	1	Her gorilla costume made everyone at the party laugh out loud.
+2	55282	noun	costumes	0	We wore matching costumes to the school Halloween party.
+3	55281	noun	costume	0	The dancers wore traditional costume from the north of the country.
+4	55283	noun	costume	0	My aunt wore a smart grey costume to the wedding.
+5	55284	noun	costume	0	Do not forget your swimming costume for the beach trip tomorrow.
+@ cottage
+1	55286	noun	cottage	1	Smoke rose from the tiny cottage at the edge of the forest.
+2	55286	noun	cottage	0	They rented a small cottage near the lake for a week.
+3	55287	noun	cottages	0	Most cottages in the area are larger than my own home.
+4	55286	noun	cottage	0	Her grandmother's cottage has a garden full of roses.
+5	55287	noun	cottage	0	Every August the family drives up to their summer cottage.
+@ cotton
+1	55304	adj	cotton	1	Her old cotton dress was thin but wonderfully cool in the heat.
+2	55293	noun	cotton	0	The nurse pressed a piece of cotton on my arm.
+3	55296	noun	cotton	0	Farmers here grow cotton and rice in the same fields.
+4	55299	noun	cotton	0	This shirt is made of pure cotton, so it washes well.
+5	55302	noun	cotton	0	Grandma sewed the button on with strong white cotton.
+@ countryside
+1	55320	noun	countryside	1	After the noisy city, the quiet countryside felt like another world.
+2	55320	noun	countryside	0	They moved to the countryside when their first child was born.
+3	55321	noun	countryside	0	We spent August in the Swedish countryside with my cousins.
+4	55322	noun	countryside	0	The painting shows green countryside under a wide blue sky.
+5	55320	noun	countryside	0	Buses to the countryside run only twice a day.
+@ court
+1	55334	noun	court	1	The whole family waited outside while the court decided his future.
+2	55333	noun	court	0	Many famous criminals have been tried in this old court.
+3	55323	noun	court	0	The girls were playing in the court behind the flats.
+4	55343	verb	courted	0	The driver courted danger by racing through the red light.
+5	55348	verb	courting	0	He spent a year courting her before they finally married.
+@ covered
+1	55353	verb	covered	1	She covered her little brother with a blanket during the storm.
+2	55349	adj	covered	0	The hilltops are all covered in snow this morning.
+3	55349	adj	covered	0	We ate lunch on a covered balcony while it rained.
+4	55350	adj	covered	0	With this insurance you are covered for earthquake damage.
+5	55353	verb	covered	0	Thick dust covered every shelf in the empty house.

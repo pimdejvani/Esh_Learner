@@ -1,0 +1,25 @@
+type	repaired	verb rows pointed at typewriter sense 41822, repointed to keyboard sense 41823; adv POS skipped (only rare/slang sense)
+uncle	repaired	verb POS senses are odd/unnatural ("uncle the old man", "uncled the family friend"), replaced with 2 more noun sentences; fixed target case Uncle vs uncle in r2
+under	repaired	r4 "The under shelf is empty" was unnatural phrasing, rewritten with evidence-backed adjective usage
+understand	repaired	rank1 was only 5 words, rewritten longer and more vivid
+university	pass	all rows solid, single common sense, no defects
+until	repaired	rank1 was only 3 words, rewritten longer and more vivid
+up	repaired	rank1 (3 words) rewritten; r3 adj sense/grammar mismatch fixed; r5 sense_id fixed from poetic 41949 to 41950 (increase)
+upstairs	repaired	rank1 was only 4 words, rewritten longer and more vivid
+us	repaired	rank1 was only 4 words, rewritten; r5 noun usage ("a strong us in this team") was unnatural, replaced with det usage
+useful	pass	all rows solid, single sense, comparative/superlative used correctly
+usually	repaired	r4/r5 used "more usually"/"most usually" which are not attested source forms; replaced with plain "usually" in new sentences
+vacation	pass	all rows solid, noun and verb senses both natural
+vegetable	repaired	all noun rows pointed at archaic "any plant" sense 42010 instead of the everyday sense 42011; fixed r1-r3,r5; adj r4 repointed to 42016; rank1 also lengthened
+very	repaired	rank1 was only 5 words, rewritten; r4 sense_id refined from "true/real" (42020) to "the same/identical" (42021)
+video	repaired	rank1 was only 5 words, rewritten longer and more vivid
+village	pass	all rows solid, single sense
+visit	repaired	verb rows pointed at an archaic/merged sense (42034); repointed to modern senses for people (42035, r2/r3/r5) and place (42041, r4); r1 kept
+wait	repaired	r2 sense_id pointed at archaic sense 42054 whose own gloss says it is superseded by "wait for"; repointed to 42052
+waiter	pass	all rows solid, "waitered/waitering" is informal but legitimate
+wake	repaired	r5 pointed at obsolete/poetic noun sense 42084 instead of the everyday "funeral wake" sense 42081; fixed
+walk	pass	all rows solid; noun POS (a walk) intentionally left uncovered, verb coverage already strong with 4 distinct forms
+wall	pass	all rows solid; verb POS intentionally left uncovered, existing noun rows already varied and natural
+want	repaired	r4 used unnatural stative-progressive "is wanting to try the game"; replaced with natural participial usage
+warm	repaired	r1 pointed at temperature sense but sentence meant "friendly" (warm smile), fixed sense_id; r5 rewritten to match its intransitive sense
+wash	pass	all rows solid, correct reflexive vs transitive senses

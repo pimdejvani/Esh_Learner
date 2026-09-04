@@ -50,7 +50,7 @@
 1	47179	adv	happily	1	We do it happily.
 2	47179	adv	happily	0	The children played happily beside the river.
 3	47181	adv	happily	0	I will happily help you look for your lost wallet.
-4	47180	adv	happily	0	Happily, everyone escaped from the building safely.
+4	47180	adv	Happily	0	Happily, everyone escaped from the building safely.
 5	47179	adv	more happily	0	She works more happily when music is playing.
 @ headache
 1	47183	noun	headache	1	After hours of worry, her headache disappeared when the doctor said the child was safe.
@@ -67,7 +67,7 @@
 @ heat
 1	47207	noun	heat	1	We carried the tired dog inside to protect it from the summer heat.
 2	47206	noun	heat	0	The engine produces enough heat to warm the room.
-3	47227	verb	heat	0	Heat the soup slowly on the stove.
+3	47227	verb	Heat	0	Heat the soup slowly on the stove.
 4	47228	verb	heating	0	A pot of water is heating in the kitchen.
 5	47227	verb	heated	0	She heated the milk before adding it to the coffee.
 @ heavy
@@ -75,7 +75,7 @@
 2	47233	adj	heavy	0	This suitcase is too heavy for me to lift alone.
 3	47233	adj	heavier	0	The blue box is heavier than the red one.
 4	47233	adj	heaviest	0	Put the heaviest bag on the floor of the car.
-5	47246	adj	heavy	0	Heavy rain flooded several roads last night.
+5	47246	adj	Heavy	0	Heavy rain flooded several roads last night.
 @ height
 1	47273	noun	height	1	Despite her fear of the height, Lina climbed the tower to rescue the frightened cat.
 2	47273	noun	height	0	Measure the height of the door before buying the shelf.
@@ -127,7 +127,7 @@
 @ hit
 1	47323	verb	hit	1	We hit every day.
 2	47325	verb	hit	0	The ball hit the fence and bounced back.
-3	47327	verb	hit	0	Hit the green button to start the machine.
+3	47327	verb	Hit	0	Hit the green button to start the machine.
 4	47323	verb	hitting	0	The child is hitting the drum with a wooden stick.
 5	47352	noun	hit	0	The band's new song became a worldwide hit.
 @ hockey
@@ -138,7 +138,7 @@
 5	47368	noun	hockey	0	The children practice hockey after school.
 @ hold
 1	47374	verb	hold	1	We hold every day.
-2	47374	verb	hold	0	Hold the handle firmly while you climb the steps.
+2	47374	verb	Hold	0	Hold the handle firmly while you climb the steps.
 3	47375	verb	holds	0	This bottle holds two liters of water.
 4	47374	verb	held	0	She held the baby's hand while crossing the road.
 5	47378	verb	holding	0	The hotel is holding a room for our late arrival.

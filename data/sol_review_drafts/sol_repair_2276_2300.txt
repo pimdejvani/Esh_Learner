@@ -1,0 +1,150 @@
+@ strongly
+1	60228	adv	strongly	1	I strongly recommend booking the tickets before Friday.
+2	60228	adv	strongly	0	She strongly believes that every child deserves a good education.
+3	60228	adv	strongly	0	Local residents strongly opposed the plan to close the park.
+4	60228	adv	strongly	0	The kitchen smelled strongly of garlic and onions.
+5	60228	adv	strongly	0	He felt strongly that the decision was unfair.
+@ studio
+1	60419	noun	studio	1	The painter's studio smelled of oil and canvas.
+2	60419	noun	studio	0	She spent hours in her small studio, painting every morning.
+3	60419	noun	studio	0	His studio had large windows that let in soft morning light.
+4	60419	noun	studio	0	The sculptor's studio was filled with half-finished pieces.
+5	60419	noun	studio	0	They found an old studio in the attic, full of dusty art supplies.
+@ stuff
+1	60430	noun	stuff	1	She packed her stuff in a big suitcase before the trip.
+2	60430	noun	stuff	0	I found some old stuff in the attic from my childhood.
+3	60430	noun	stuff	0	He left his stuff on the kitchen table after work.
+4	60430	noun	stuff	0	The backpack was full of my stuff and a few books.
+5	60430	noun	stuff	0	They shared their stuff during the camping trip.
+@ substance
+1	60460	noun	substance	1	The scientist studied the substance under the microscope.
+2	60460	noun	substance	0	This liquid is a chemical substance used in cleaning.
+3	60460	noun	substance	0	The substance was solid at room temperature.
+4	60460	noun	substance	0	A small amount of the substance spilled on the table.
+5	60460	noun	substance	0	The substance reacted quickly with water.
+@ successfully
+1	60424	adv	successfully	1	She completed the test successfully.
+2	60424	adv	successfully	0	The team worked together and finished the task successfully.
+3	60424	adv	successfully	0	He successfully completed the exam after weeks of studying.
+4	60424	adv	successfully	0	The technician successfully installed the new software.
+5	60424	adv	successfully	0	The rescue mission was carried out successfully in the dark.
+@ sudden
+1	60425	adj	sudden	1	The sudden noise made the dog jump up in alarm.
+2	60425	adj	sudden	0	She felt a sudden chill as the door creaked open.
+3	60425	adj	sudden	0	He made a sudden turn to avoid the falling branch.
+4	60425	adj	sudden	0	A sudden gust of wind blew the papers off the table.
+5	60425	adj	sudden	0	The sudden flash of lightning lit up the whole sky.
+@ suffer
+1	60475	verb	suffer	1	The hiker had to suffer through the cold night without a tent.
+2	60475	verb	suffer	0	She had to suffer the long delay at the airport.
+3	60475	verb	suffered	0	Small businesses suffered during the long power cut.
+4	60475	verb	suffered	0	He suffered in silence during the difficult recovery.
+5	60475	verb	suffered	0	Many families suffered through the unusually cold winter.
+@ suitable
+1	60470	adj	suitable	1	This chair is suitable for long study sessions.
+2	60470	adj	suitable	0	The weather was suitable for a picnic in the park.
+3	60470	adj	suitable	0	She found a suitable spot to place the new plant.
+4	60470	adj	suitable	0	The room was suitable for a small meeting.
+5	60470	adj	suitable	0	They chose a suitable time to discuss the project.
+@ summarize
+1	60468	verb	summarize	1	She will summarize the report before the meeting starts.
+2	60468	verb	summarize	0	He asked me to summarize the key points from the lecture.
+3	60468	verb	summarize	0	The teacher wants students to summarize the article in five sentences.
+4	60468	verb	summarize	0	Can you summarize the main idea of the story in one sentence?
+5	60468	verb	summarized	0	They summarized the findings in a short email to the team.
+@ summary
+1	60474	noun	summary	1	The report begins with a short summary of its main findings.
+2	60474	noun	summary	0	She gave us a clear summary of the project.
+3	60474	noun	summary	0	His notes contain a useful summary of the lecture.
+4	60474	noun	summary	0	The article offers a brief summary of the debate.
+5	60474	noun	summary	0	Please send me a summary of the meeting.
+@ supply
+1	60489	verb	supply	1	The company will supply fresh water to the village.
+2	60489	verb	supply	0	She will supply the classroom with new textbooks.
+3	60489	verb	supplies	0	The warehouse supplies food to local shelters.
+4	60489	verb	supply	0	They supply electricity to the entire town.
+5	60489	verb	supply	0	The factory will supply the materials by Friday.
+@ supporter
+1	60480	noun	supporter	1	The team's biggest supporter cheered loudly from the stands.
+2	60480	noun	supporter	0	She became a loyal supporter of the local environmental group.
+3	60480	noun	supporter	0	He was a quiet supporter of his friend's new business venture.
+4	60480	noun	supporters	0	The charity received many messages from dedicated supporters.
+5	60480	noun	supporter	0	Every fan in the stadium was a passionate supporter of the home team.
+@ surely
+1	60503	adv	surely	1	If we leave now, we will surely catch the train.
+2	60503	adv	surely	0	With enough help, she will surely finish the work by noon.
+3	60503	adv	surely	0	The package will surely arrive before the holiday.
+4	60503	adv	surely	0	He will surely call you when he reaches the hotel.
+5	60503	adv	surely	0	The meeting will surely end before lunchtime.
+@ surface
+1	60506	noun	surface	1	The surface of the stone was smooth and cool to touch.
+2	60506	noun	surface	0	The surface of the lake reflected the clouds above.
+3	60506	noun	surface	0	He cleaned the surface of the desk with a soft cloth.
+4	60506	noun	surface	0	The surface of the metal had a shiny finish.
+5	60506	noun	surface	0	The surface of the apple was covered in wax.
+@ survive
+1	60520	verb	survive	1	The hiker managed to survive the storm in the mountains.
+2	60520	verb	survived	0	After the fire, only one child survived in the house.
+3	60522	verb	survive	0	She was the only passenger to survive the shipwreck.
+4	60523	verb	survived	0	The old man survived his wife by ten years.
+5	60522	verb	survived	0	They were lost in the desert but survived for three days without help.
+@ switch
+1	60529	noun	switch	1	The light went out when the switch was turned off.
+2	60529	noun	switch	0	She flipped the switch to turn on the fan.
+3	60529	noun	switch	0	The switch on the wall controls the kitchen lights.
+4	60529	noun	switch	0	He pressed the switch to start the machine.
+5	60529	noun	switch	0	The old switch needed replacing after years of use.
+@ symptom
+1	60526	noun	symptom	1	The fever was the first symptom of the flu.
+2	60526	noun	symptoms	0	Headache and fatigue are common symptoms of illness.
+3	60526	noun	symptom	0	She noticed a sudden symptom of dizziness after standing up.
+4	60526	noun	symptom	0	The rash appeared as a symptom of the allergic reaction.
+5	60526	noun	symptom	0	Nausea is a symptom that often follows food poisoning.
+@ tail
+1	60605	noun	tail	1	The monkey swung from the tree using its long tail.
+2	60605	noun	tail	0	A fox's tail helps it balance while running.
+3	60605	noun	tail	0	The cat flicked its tail when it saw a bird.
+4	60605	noun	tail	0	The kangaroo used its tail to stand upright.
+5	60605	noun	tail	0	The lizard dropped its tail to escape the predator.
+@ talent
+1	60560	noun	talent	1	She has a natural talent for playing the piano.
+2	60560	noun	talent	0	His talent for solving puzzles amazed everyone in the room.
+3	60560	noun	talent	0	The young artist showed a rare talent for painting landscapes.
+4	60560	noun	talent	0	They discovered a hidden talent in the quiet student.
+5	60560	noun	talent	0	The music teacher recognized his talent at an early age.
+@ talented
+1	60528	adj	talented	1	The talented artist painted a beautiful landscape.
+2	60528	adj	talented	0	She is a talented student who excels in math and science.
+3	60528	adj	talented	0	The talented dancer won first prize in the competition.
+4	60528	adj	talented	0	He is a talented musician who plays three instruments.
+5	60528	adj	talented	0	The talented chef created a unique dish for the event.
+@ tape
+1	60565	noun	tape	1	She used a strip of tape to mend the ripped envelope.
+2	60565	noun	tape	0	The package was secured with strong packing tape.
+3	60565	noun	tape	0	He pulled a length of tape from the drawer to fix the box.
+4	60565	noun	tape	0	The student stuck the torn paper together with clear tape.
+5	60565	noun	tape	0	I need a roll of tape to wrap the gift neatly.
+@ tax
+1	60597	noun	tax	1	The government collects a tax on every purchase made in the store.
+2	60597	noun	tax	0	She paid her annual tax before the deadline arrived.
+3	60597	noun	tax	0	The new tax on fuel will increase the cost of driving.
+4	60597	noun	tax	0	Local businesses must pay a tax to support public schools.
+5	60597	noun	tax	0	A tax on imported electronics helps protect domestic manufacturers.
+@ technical
+1	60579	adj	technical	1	The lecture focused on technical details of quantum mechanics.
+2	60579	adj	technical	0	She gave a technical explanation of how the engine works.
+3	60579	adj	technical	0	This report includes technical data from the experiment.
+4	60579	adj	technical	0	The manual contains technical instructions for repair.
+5	60579	adj	technical	0	He used technical terms to describe the process.
+@ technique
+1	60594	noun	technique	1	The artist's technique in painting requires years of practice.
+2	60594	noun	technique	0	She used a new technique to improve her photography results.
+3	60594	noun	technique	0	The technique for solving math problems was taught in class.
+4	60594	noun	technique	0	He mastered the technique of playing difficult passages on the violin.
+5	60594	noun	technique	0	The cooking technique made the dish much more flavorful.
+@ tend
+1	60644	verb	tend	1	Young children tend to copy the behavior of older siblings.
+2	60644	verb	tend	0	Prices tend to rise during the holiday season.
+3	60644	verb	tends	0	This road tends to flood after heavy rain.
+4	60644	verb	tended	0	She tended to arrive early for important meetings.
+5	60644	verb	tending	0	The weather is tending to become warmer each year.

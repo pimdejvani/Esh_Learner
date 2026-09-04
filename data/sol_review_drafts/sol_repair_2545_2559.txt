@@ -1,0 +1,90 @@
+@ distribution
+1	63009	noun	distribution	1	The distribution of food to the homeless was organized by volunteers.
+2	63009	noun	distribution	0	The distribution of supplies took two hours due to the large number of recipients.
+3	63009	noun	distribution	0	The distribution of the new software was completed last week.
+4	63009	noun	distribution	0	A fair distribution of tasks ensured everyone worked efficiently.
+5	63009	noun	distribution	0	The distribution of grades was based on final exam performance.
+@ district
+1	63033	noun	districts	1	The city is divided into several districts for local government.
+2	63033	noun	district	0	Each district has its own council and mayor.
+3	63034	noun	district	0	The new school is located in the central district.
+4	63034	noun	district	0	We walked through the old district to see the historic buildings.
+5	63034	noun	district	0	The police officer patrols the downtown district every night.
+@ division
+1	63039	noun	division	1	The division of the cake was fair and equal.
+2	63039	noun	division	0	She explained the division of labor in the team.
+3	63039	noun	division	0	The division of responsibilities helped the project succeed.
+4	63039	noun	division	0	We need to plan the division of tasks carefully.
+5	63039	noun	division	0	The division of the group into smaller teams worked well.
+@ domestic
+1	63056	adj	domestic	1	She enjoys domestic chores like cooking and cleaning.
+2	63057	adj	domestic	0	The domestic cat curled up by the fireplace.
+3	63058	adj	domestic	0	He prefers domestic travel over international trips.
+4	63055	adj	domestic	0	The domestic kitchen has a modern stove and sink.
+5	63055	adj	domestic	0	They shared a domestic life filled with small routines.
+@ dominate
+1	63026	verb	dominate	1	The queen will dominate the kingdom with wise and fair decisions.
+2	63028	verb	dominates	0	The company dominates the market with its fast delivery service.
+3	63027	verb	dominates	0	She dominates the classroom with her confident voice and clear answers.
+4	63029	verb	dominates	0	The old castle dominates the small village from the hilltop.
+5	63027	verb	dominates	0	The teacher dominates the discussion with her deep knowledge of history.
+@ downwards
+1	63006	adv	downwards	1	The ball rolled downwards after the drop.
+2	63006	adv	downwards	0	She leaned forwards and slid downwards on the slope.
+3	63006	adv	downwards	0	The elevator moved downwards slowly to the basement.
+4	63006	adv	downwards	0	The river flows downwards through the valley.
+5	63006	adv	downwards	0	The path sloped downwards from the wall to the river.
+@ dozen
+1	63062	noun	dozen	1	She bought a dozen fresh strawberries at the market.
+2	63062	noun	dozen	0	The bakery had a dozen muffins ready for sale.
+3	63062	noun	dozen	0	He packed the bottles in boxes of a dozen for shipping.
+4	63062	noun	dozen	0	We need a dozen pencils for the classroom.
+5	63062	noun	dozen	0	The chef used a dozen eggs in the recipe.
+@ draft
+1	63169	verb	drafted	1	The coach drafted her onto the professional team.
+2	63166	verb	drafted	0	They drafted him to join the new project team.
+3	63166	verb	drafted	0	The school drafted in an experienced teacher to lead the science department.
+4	63166	verb	drafted	0	The company drafted a junior employee for the leadership program.
+5	63166	verb	drafted	0	The manager drafted her to handle the client presentation.
+@ drag
+1	63082	noun	drag	1	The airplane experiences less drag at high altitudes.
+2	63082	noun	drag	0	Engineers reduce drag by streamlining the car's shape.
+3	63082	noun	drag	0	Swimmers wear special suits to minimize drag in water.
+4	63082	noun	drag	0	The drone's design helps it fly with minimal drag.
+5	63082	noun	drag	0	A smooth surface reduces air drag on the bicycle.
+@ dramatic
+1	63067	adj	dramatic	1	The dramatic performance moved the entire audience to tears.
+2	63067	adj	dramatic	0	She studied dramatic literature at university.
+3	63067	adj	dramatic	0	The dramatic scene in the play was unforgettable.
+4	63067	adj	dramatic	0	He wrote a dramatic script for the school festival.
+5	63067	adj	dramatic	0	The dramatic arts program is very popular.
+@ edit
+1	63176	noun	edit	1	She made a small edit to correct the spelling error.
+2	63176	noun	edit	0	The editor's final edit improved the clarity of the report.
+3	63176	noun	edit	0	I need to review the last edit before submitting the paper.
+4	63176	noun	edit	0	His first edit removed an entire paragraph, so he revised it carefully.
+5	63176	noun	edit	0	The teacher approved the student's edit to the essay.
+@ edition
+1	63071	noun	edition	1	The new edition of the novel includes updated notes from the author.
+2	63071	noun	edition	0	This edition of the book was published in 2020 with corrections.
+3	63071	noun	edition	0	We bought the revised edition after reading the original.
+4	63071	noun	edition	0	The library has a rare first edition of the classic.
+5	63071	noun	edition	0	The 2023 edition features a new introduction.
+@ efficient
+1	63075	adj	efficient	1	The new software is efficient at processing large files.
+2	63075	adj	efficient	0	She uses an efficient method to organize her weekly tasks.
+3	63075	adj	efficient	0	This machine is efficient because it uses minimal power.
+4	63075	adj	efficient	0	An efficient worker finishes tasks without wasting any time.
+5	63075	adj	efficient	0	An efficient kitchen layout saves time and effort daily.
+@ elderly
+1	63191	adj	elderly	1	The elderly woman smiled warmly at the young children.
+2	63191	adj	elderly	0	He helped the elderly man cross the busy street.
+3	63191	adj	elderly	0	The elderly couple sat quietly on the park bench.
+4	63191	adj	elderly	0	She bought a gift for her elderly aunt.
+5	63191	adj	elderly	0	The elderly man needed glasses to read the newspaper.
+@ elect
+1	63198	verb	elect	1	The citizens will elect a new mayor next month.
+2	63198	verb	elected	0	The members elected her as their new club president.
+3	63198	verb	elect	0	Voters elect representatives to serve in the parliament.
+4	63198	verb	elected	0	The country elected its first female leader in 2019.
+5	63198	verb	elect	0	Each year the students elect a class captain.

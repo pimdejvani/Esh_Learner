@@ -1,0 +1,150 @@
+@ prevent
+1	49784	verb	prevent	1	Wearing a seatbelt can prevent serious injury in a sudden car crash.
+2	49784	verb	prevent	0	Locks prevent theft.
+3	49784	verb	prevented	0	Rain prevented the game.
+4	49784	verb	preventing	0	We are preventing waste.
+5	49784	verb	prevents	0	Sleep prevents stress.
+@ print
+1	49789	adj	print	1	She was thrilled to see her name in print for the first time in the school newspaper.
+2	49803	noun	print	0	The print is too small for me to read this contract.
+3	49792	verb	print	0	Please print your name clearly at the top of the form.
+4	49790	verb	printed	0	He printed the report before the meeting started.
+5	49793	verb	printing	0	The newspaper is printing an important story tomorrow.
+@ printer
+1	49818	noun	printer	1	I panicked when the printer jammed five minutes before my homework was due.
+2	49818	noun	printer	0	The printer has no paper.
+3	49818	noun	printers	0	The office has two printers.
+4	49818	noun	printer	0	Fix the printer please.
+5	49818	noun	printer	0	Our printer is new.
+@ prison
+1	49819	noun	prison	1	He spent ten long years in prison for a crime he didn't commit.
+2	49819	noun	prison	0	He worked near the prison.
+3	49819	noun	prisons	0	Some prisons teach skills.
+4	49819	noun	prison	0	The prison has high walls.
+5	49819	noun	prison	0	She visited the prison.
+@ prize
+1	49825	noun	prize	1	She burst into tears of joy when she won first prize at the science fair.
+2	49825	noun	prize	0	He won a prize for the best painting in his class.
+3	49825	noun	prizes	0	The children received prizes for finishing the race.
+4	49834	adj	prize	0	The farmer grew a prize pumpkin for the county fair.
+5	49830	verb	prized	0	She prized her grandmother's ring above all her other possessions.
+@ process
+1	49837	noun	process	1	The long process of adopting a child left them exhausted but overjoyed.
+2	49837	noun	process	0	Follow the process carefully to avoid mistakes.
+3	49837	noun	processes	0	We improved our processes after listening to customer feedback.
+4	49846	verb	process	0	It takes several days to process a passport application.
+5	49847	verb	processing	0	She was still processing the shocking news from her doctor.
+@ produce
+1	49859	noun	produce	1	The little market stall sold the freshest produce I had tasted in years.
+2	49851	verb	produce	0	We produce food here.
+3	49851	verb	produced	0	The farm produced rice.
+4	49851	verb	producing	0	They are producing books.
+5	49851	verb	produces	0	This machine produces heat.
+@ professional
+1	49862	noun	professional	1	When the pipes burst at midnight, we called a professional to fix them fast.
+2	49862	noun	professional	0	A professional checked the wiring before we moved into the house.
+3	49862	noun	professionals	0	Several professionals gave advice about her health problem.
+4	49871	adj	professional	0	My cousin became a professional footballer at just eighteen years old.
+5	49862	noun	professional	0	The professional arrived early to set up the equipment.
+@ professor
+1	49873	noun	professor	1	Students burst into applause when the professor announced her retirement after forty years.
+2	49873	noun	professor	0	Ask the professor a question.
+3	49873	noun	professors	0	The professors met today.
+4	49873	noun	professor	0	Our professor is kind.
+5	49873	noun	professor	0	The professor wrote a book.
+@ profile
+1	49882	noun	profile	1	She felt embarrassed when her old profile picture resurfaced during the job interview.
+2	49882	noun	profile	0	Update your profile today to include your new phone number.
+3	49882	noun	profiles	0	The dating app shows profiles of people nearby.
+4	49882	noun	profile	0	Read her profile before you send a message.
+5	49891	verb	profiled	0	The company profiled its customers to send better recommendations.
+@ program
+1	49896	noun	program	1	The school launched a program that helped hundreds of struggling readers improve fast.
+2	49900	noun	program	0	I clicked twice, but the program still wouldn't open.
+3	49899	noun	program	0	We stayed up late to watch the program about ocean life.
+4	49896	noun	programs	0	The school uses programs to support students with learning difficulties.
+5	49903	verb	programmed	0	He programmed the robot to move in a circle.
+@ progress
+1	49908	noun	progress	1	After months of painful physical therapy, her progress finally brought tears of joy.
+2	49908	noun	progress	0	We made progress today.
+3	49908	noun	progress	0	Track your progress.
+4	49913	verb	progressed	0	The patient progressed quickly after starting the new treatment.
+5	49908	noun	progress	0	Her progress is clear.
+@ promise
+1	49917	noun	promise	1	I made a promise to help.
+2	49917	noun	promise	0	Keep your promise.
+3	49917	noun	promises	0	He keeps his promises.
+4	49923	verb	promised	0	She promised to visit her grandmother before the holidays.
+5	49917	noun	promise	0	Her promise gave hope.
+@ protect
+1	49935	verb	protect	1	Firefighters risked their lives to protect the family trapped inside the burning house.
+2	49935	verb	protect	0	Helmets protect heads.
+3	49935	verb	protected	0	The wall protected us.
+4	49935	verb	protecting	0	She is protecting her cat.
+5	49935	verb	protects	0	This coat protects you.
+@ provide
+1	49940	verb	provide	1	During the flood, volunteers worked all night to provide food and blankets for families.
+2	49940	verb	provide	0	We provide food here for anyone who is hungry.
+3	49940	verb	provided	0	They provided help to the injured hikers.
+4	49940	verb	providing	0	She is providing water to the thirsty hikers.
+5	49940	verb	provides	0	The school provides books to every new student.
+@ pub
+1	49945	noun	pub	1	After the long football match, the fans gathered happily at the local pub.
+2	49945	noun	pub	0	They met at the pub.
+3	49945	noun	pubs	0	The town has two pubs.
+4	49945	noun	pub	0	The pub is busy.
+5	49945	noun	pub	0	We walked past the pub.
+@ public
+1	49952	adj	public	1	Thousands of cheering fans packed into the public park to watch the fireworks explode overhead.
+2	49952	adj	public	0	This is a public park where anyone can play.
+3	49952	adj	public	0	The mayor's public meeting starts soon, and everyone may attend.
+4	49964	noun	public	0	The museum finally opened its doors to the public this morning.
+5	49951	adj	public	0	Her public speech was broadcast live so everyone could watch.
+@ publish
+1	49974	verb	publish	1	After years of rejection, she finally got the chance to publish her first novel.
+2	49974	verb	publish	0	They publish a new book.
+3	49974	verb	published	0	She published her poem.
+4	49974	verb	publishing	0	He is publishing an article.
+5	49974	verb	publishes	0	The school publishes news.
+@ separate
+1	51196	verb	separate	1	During the fire drill, teachers quickly worked to separate younger children from older ones.
+2	51201	adj	separate	0	We have separate rooms so we can each study quietly.
+3	51199	verb	separates	0	The mixture separates if you don't stir it constantly.
+4	51203	noun	separates	0	She bought some cute separates like tops and skirts to mix and match.
+5	51198	verb	separated	0	The teacher separated the two boys after they started arguing.
+@ series
+1	51205	noun	series	1	We were so hooked on the series that we watched five episodes in one night.
+2	51205	noun	series	0	The series has ten episodes.
+3	51205	noun	series	0	This series is funny.
+4	51205	noun	series	0	She read a book series.
+5	51205	noun	series	0	The series starts tonight.
+@ serious
+1	51216	adj	serious	1	Her smile disappeared and her face turned serious when she heard the bad news.
+2	51216	adj	serious	0	He looks serious today.
+3	51217	adj	serious	0	The doctor gave serious advice about her heart condition.
+4	51218	adj	serious	0	Are you serious about moving to another country?
+5	51216	adj	serious	0	We need to have a serious talk about your grades.
+@ service
+1	51250	noun	service	1	We were amazed by the friendly service we received during our stay.
+2	51250	noun	service	0	This hotel has room service.
+3	51252	noun	service	0	Thank you for your service in the army.
+4	51268	verb	serviced	0	We had the car serviced before our long road trip.
+5	51250	noun	services	0	The phone company offers many services for families.
+@ several
+1	51279	det	several	1	I waited nervously outside the office for several long, anxious minutes.
+2	51279	det	Several	0	Several students are absent.
+3	51277	adj	several	0	The team considered several different solutions before choosing the best one.
+4	51279	det	several	0	We waited several minutes.
+5	51279	det	Several	0	Several of my friends moved to a different city this year.
+@ shall
+1	51314	verb	shall	1	I promise that we shall meet again very soon, no matter what happens.
+2	51316	verb	Shall	0	Shall I open the door?
+3	51315	verb	shall	0	You shall have a prize.
+4	51316	verb	Shall	0	Shall we start now?
+5	51314	verb	shall	0	I shall call you later.
+@ shape
+1	51320	noun	shape	1	The children gasped when they saw the strange shape of the falling meteor.
+2	51320	noun	shape	0	What shape is the table?
+3	51320	noun	shapes	0	The clouds formed strange shapes across the evening sky.
+4	51329	verb	Shape	0	Shape the dough into a small ball before baking it.
+5	51329	verb	shaped	0	The wind slowly shaped the rock into a strange arch.

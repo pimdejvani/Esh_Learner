@@ -5,7 +5,7 @@
 4	42792	noun	writer	0	Each writer submitted one short article to the magazine.
 5	42792	noun	writer	0	The film writer changed the final scene.
 @ writing
-1	42802	noun	writing	1	Writing a letter helped Ben say goodbye to his best friend.
+1	42802	noun	Writing	1	Writing a letter helped Ben say goodbye to his best friend.
 2	42804	noun	writing	0	The teacher could not read my writing.
 3	42801	noun	writing	0	Her writing about village life appeared in the newspaper.
 4	42806	verb	writing	0	Nina is writing a report about sea animals.
@@ -41,17 +41,17 @@
 4	42854	noun	yes	0	We need a clear yes before we begin the project.
 5	42854	noun	yes	0	His final answer was yes.
 @ yesterday
-1	42862	noun	yesterday	1	Yesterday was the happiest day of my life because my son came home safely.
+1	42862	noun	Yesterday	1	Yesterday was the happiest day of my life because my son came home safely.
 2	42864	adv	yesterday	0	I returned the library books yesterday.
-3	42862	noun	yesterday	0	Yesterday was rainy, but today the sky is clear.
+3	42862	noun	Yesterday	0	Yesterday was rainy, but today the sky is clear.
 4	42863	noun	yesterday	0	That slow computer belongs to the technology of yesterday.
 5	42864	adv	yesterday	0	The shop received a new delivery yesterday morning.
 @ you
 1	42866	pron	you	1	you are ready.
 2	42868	pron	you	0	I saved a seat for you beside the window.
-3	42870	pron	you	0	You can collect your package after lunch.
-4	42869	pron	you	0	You are all welcome to join the game.
-5	42872	pron	you	0	You never know when the weather will change.
+3	42870	pron	You	0	You can collect your package after lunch.
+4	42869	pron	You	0	You are all welcome to join the game.
+5	42872	pron	You	0	You never know when the weather will change.
 @ young
 1	42879	adj	young	1	It is young.
 2	42879	adj	young	0	The young puppy still sleeps beside its mother.
@@ -62,7 +62,7 @@
 1	42891	det	your	1	your book is here.
 2	42891	det	your	0	Please write your name at the top of the page.
 3	42891	det	your	0	Is this your blue jacket?
-4	42892	det	your	0	Your team must choose one person to speak for everyone.
+4	42892	det	Your	0	Your team must choose one person to speak for everyone.
 5	42891	det	your	0	Remember to bring your passport to the airport.
 @ yourself
 1	42895	pron	yourself	1	yourself are ready.

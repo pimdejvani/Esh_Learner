@@ -1,0 +1,25 @@
+teaching	pass	all 5 rows real, no templates, good sense coverage
+technology	pass	all 5 rows real, good distinct senses (machine, skill, study, device)
+teenage	pass	adj well covered; noun POS is rare/dialectal "brushwood" sense, correctly skipped
+temperature	pass	all 5 rows real, distinct senses including idiomatic "mood"
+term	pass	adj POS is narrow medical "term neonate", correctly skipped; noun/verb rows solid, common "termed" usage
+themselves	pass	both reflexive-pronoun senses covered naturally, no issues
+thick	repaired	r2 sense mismatch (fog=impenetrable-to-sight, not densely-crowded) repointed 52638->52641; r5 fabricated archaic verb "thicking" replaced with real adv sense 52651
+thief	pass	all 5 rows real, no templates
+thin	repaired	r5 sense mismatch: "the crowd thinned" is intransitive (become thin), repointed 52673->52674
+thinking	repaired	r5 used awkward plural "thinkings"; rewrote to natural singular, same sense
+account	repaired	full rewrite of bare templates; verb POS added via common "account for" sense 53831
+achievement	repaired	full rewrite; contained banned template "It was an achievement."
+ad	repaired	full rewrite of templates; kept noun sense 53845 (modern common word despite Wiktionary "abbreviation" tag); prep POS (Latin "ad") and tennis "advantage" senses skipped as jargon
+addition	repaired	full rewrite; contained banned template "It is an addition."; music/heraldry/chemistry senses skipped as jargon
+admire	repaired	full rewrite; ALL 5 rows were pointed at the obsolete sense 53858 while meaning modern "admire" -- repointed to 53859/53860/53861
+admit	repaired	full rewrite; contained banned template "He admitted it."
+advanced	repaired	full rewrite; adj POS was missing entirely, added common senses; kept verb sense
+advise	repaired	full rewrite; contained banned template "He is advising us."; noun POS (misspelling of advice) correctly skipped
+afford	repaired	full rewrite of bare templates; obsolete/rare senses (offer, yield produce) skipped, kept one legitimate "provide" use
+aged	repaired	full rewrite; all 5 rows under 6 words / bare adjective-noun template shape; added noun and verb POS
+agent	repaired	full rewrite of templates; used common senses (spy, travel agent, cleaning agent, law enforcement)
+agreement	repaired	full rewrite of templates; added grammar-agreement sense for variety
+ahead	repaired	full rewrite; rank1 was 3 words and r5 was banned template "She is ahead now."
+aim	repaired	full rewrite of templates; verb POS was missing entirely, added it
+alarm	repaired	full rewrite of templates; verb POS was missing entirely, added it

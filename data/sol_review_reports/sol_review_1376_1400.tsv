@@ -1,0 +1,25 @@
+shop	repaired	rank1 was a 5-word bare statement; skipped intj POS (only RARE dated sense)
+shopping	repaired	rank5 used unnatural plural shoppings; rank1 rewritten so target is not sentence-initial
+short	repaired	rank1 only 5 words; rank5 answered short unnatural; skipped noun/prep/verb POS (short circuit, short selling, cricket jargon)
+should	repaired	sense/content mismatch: all 5 canonical rows sat on 39761 simple past of shall while every sentence meant advice; skipped noun POS 39776 (meta usage)
+show	repaired	rank1 only 5 words; block lacked the past participle form
+shower	repaired	block used only 2 distinct forms; rank1 was a weak bare statement
+sick	repaired	rank1 only 4 words; skipped noun/verb POS (only vomit and sick-benefit senses)
+similar	repaired	rank1 only 5 words; rank5 used an unnatural noun sense; skipped noun POS
+sing	repaired	rank1 only 5 words; skipped noun POS 39869 (marginal)
+singer	pass	all five rows natural, correct sense and POS; rank1 is 6 words and states a situation
+sister	repaired	rank5 target case mismatch: target sister but sentence used Sister Anna as a title; skipped verb POS (joist-sistering jargon and obsolete sense)
+sit	repaired	rank2 target case mismatch: target sit but sentence began with capitalised Sit; skipped noun POS
+situation	pass	all five rows natural with distinct senses; rank1 is 7 words; only low-severity no-usage-example findings
+six	repaired	rank1 at six meant the clock sense not the digit sense; rank2 was the numeral not the noun; rank5 a happy six unnatural
+sixteen	pass	single numeral sense 67738; all five sentences natural and distinct; rank1 is 7 words
+sixty	repaired	learner-core sense missing entirely: all 5 canonical rows sat on noun 39928 a 60-second commercial; rewritten onto numeral 67912; skipped noun POS
+skill	repaired	rank4 used adj 39934 (RARE slang) and rank5 a niche AI-agent sense; skipped adj and verb POS
+skirt	pass	noun sense plus both verb senses all natural; rank1 is 7 words; only a form-variety advisory
+sleep	pass	all five rows natural with correct senses; rank1 is 6 words; only a late-sense advisory
+slow	repaired	POS label wrong for the grammar: rank1 drive slow is adverbial but was labelled adj; skipped noun POS
+small	repaired	rank5 used adv 39998 (obsolete) and rank2 a shop-jargon size sense; skipped noun/verb POS
+snake	repaired	block used only 2 distinct forms; rank2 used the narrow plumbing-tool sense
+snow	repaired	block used only 1 distinct form; rank4 deep snows unnatural; skipped adj POS 40051
+so	repaired	rank5 Is that so? is a fixed template; skipped noun POS (solfege syllable, Japanese dairy) and adj POS
+some	repaired	rank5 used adv 40088 (dialectal); rank1 rewritten so the target is not sentence-initial

@@ -22,7 +22,7 @@
 @ training
 1	53074	verb	training	1	We training every day.
 2	53074	verb	training	0	She is training for a long race.
-3	53074	verb	training	0	Training a new worker takes time.
+3	53074	verb	Training	0	Training a new worker takes time.
 4	53074	verb	training	0	They are training the dog to sit.
 5	53074	verb	training	0	He began training with the team last week.
 
@@ -36,7 +36,7 @@
 @ traveller
 1	53090	noun	traveller	1	A tired traveller found shelter in our home during the storm.
 2	53090	noun	traveller	0	The traveller crossed the desert alone.
-3	53090	noun	travellers	0	Travellers often stop at this village.
+3	53090	noun	Travellers	0	Travellers often stop at this village.
 4	53090	noun	traveller	0	She became an experienced traveller.
 5	53090	noun	travellers	0	The hotel welcomes travellers from distant countries.
 
@@ -84,9 +84,9 @@
 
 @ unfortunately
 1	53195	adv	unfortunately	1	We do it unfortunately.
-2	53195	adv	unfortunately	0	Unfortunately, the last bus had already left.
+2	53195	adv	Unfortunately	0	Unfortunately, the last bus had already left.
 3	53195	adv	unfortunately	0	The match was unfortunately canceled by rain.
-4	53195	adv	unfortunately	0	Unfortunately, she lost her keys on the journey.
+4	53195	adv	Unfortunately	0	Unfortunately, she lost her keys on the journey.
 5	53195	adv	unfortunately	0	Our flight was unfortunately delayed by the storm.
 
 @ unhappy
@@ -136,7 +136,7 @@
 2	53252	noun	user	0	Each user needs a password.
 3	53252	noun	users	0	The app has thousands of users.
 4	53252	noun	user	0	The guide helps a new user begin.
-5	53252	noun	users	0	Users can change these settings.
+5	53252	noun	Users	0	Users can change these settings.
 
 @ usual
 1	53258	adj	usual	1	It is usual.

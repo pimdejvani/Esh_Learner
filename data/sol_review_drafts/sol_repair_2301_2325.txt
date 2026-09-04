@@ -1,0 +1,150 @@
+@ tent
+1	60655	noun	tent	1	We set up the tent near the lake for the night.
+2	60655	noun	tent	0	The family packed their tent after the hike.
+3	60655	noun	tent	0	The children laughed while climbing inside the tent.
+4	60655	noun	tent	0	She checked the tent for leaks before sleeping.
+5	60655	noun	tent	0	They used a large tent for the outdoor party.
+@ theirs
+1	60653	pron	theirs	1	The red bike in the garage is theirs.
+2	60653	pron	theirs	0	Our tools are new, but theirs have been used for years.
+3	60653	pron	theirs	0	Our dog is quiet, while theirs barks at every visitor.
+4	60653	pron	theirs	0	That old car parked outside is theirs.
+5	60653	pron	theirs	0	The toys in the box belong to them, not us; those are theirs.
+@ theme
+1	60671	noun	theme	1	The artist chose nature as the theme for her latest painting.
+2	60671	noun	themes	0	In the novel, love and loss are central themes.
+3	60671	noun	theme	0	The theme of the conference was sustainable development.
+4	60671	noun	theme	0	He used the theme of silence to build tension in the story.
+5	60671	noun	theme	0	The theme of the song reminded her of her childhood.
+@ theory
+1	60686	noun	theory	1	The scientist's theory explains how the planets move around the sun.
+2	60686	noun	theory	0	Her theory about the accident was based on careful observation.
+3	60686	noun	theory	0	The theory of gravity helps us understand why things fall.
+4	60686	noun	theory	0	We tested the theory using real data from the experiment.
+5	60686	noun	theory	0	This theory about language development is widely accepted.
+@ therefore
+1	60699	adv	therefore	1	She forgot her keys; therefore, she could not enter the building.
+2	60699	adv	therefore	0	He missed the train; therefore, he arrived late.
+3	60699	adv	therefore	0	The weather was bad; therefore, we stayed inside all day.
+4	60699	adv	therefore	0	They had no food; therefore, they were very hungry.
+5	60699	adv	therefore	0	He did not study; therefore, he failed the test.
+@ though
+1	60704	adv	though	1	I do not usually like spicy food. This dish was delicious, though.
+2	60704	adv	though	0	She said she was tired. She kept working, though.
+3	60704	adv	though	0	He did not win the race. He ran very well, though.
+4	60704	adv	though	0	The weather was bad. We still went hiking, though.
+5	60704	adv	though	0	They arrived late. The meeting had not started, though.
+@ throat
+1	60709	noun	throat	1	She winced as the cold wind hit her throat.
+2	60709	noun	throat	0	He felt a sharp pain in his throat after eating spicy food.
+3	60709	noun	throat	0	The singer cleared her throat before beginning the song.
+4	60709	noun	throat	0	A dry throat made it hard to speak clearly.
+5	60709	noun	throat	0	The athlete drank water to soothe his sore throat.
+@ throughout
+1	60694	prep	throughout	1	The children played throughout the park without stopping.
+2	60694	prep	throughout	0	She checked the house throughout the night for any signs of danger.
+3	60694	prep	throughout	0	The new rules apply throughout the entire school.
+4	60694	prep	throughout	0	The team worked throughout the weekend to finish the project.
+5	60694	prep	throughout	0	The music played throughout the evening at the party.
+@ tight
+1	60722	adj	tight	1	The rope was so tight that it cut into her hands.
+2	60722	adj	tight	0	She pulled the knot tight before securing the package.
+3	60722	adj	tight	0	The door frame was too tight for the new door to fit.
+4	60722	adj	tight	0	He wore a tight sweater that made movement difficult.
+5	60722	adj	tight	0	The team kept a tight formation during the game.
+@ till
+1	60751	prep	till	1	I waited till the bus arrived at the stop.
+2	60751	prep	till	0	She stayed till the movie ended.
+3	60751	prep	till	0	He worked till midnight without a break.
+4	60751	prep	till	0	We played outside till the rain started.
+5	60751	prep	till	0	They waited till the teacher returned.
+@ tin
+1	60769	noun	tin	1	The metal in the old pipe was tin, resistant to rust and corrosion.
+2	60769	noun	tin	0	Scientists study tin because it does not corrode easily in air.
+3	60769	noun	tin	0	A small piece of tin was found in the ancient artifact.
+4	60769	noun	tin	0	Tin is used in solder because it melts at a low temperature.
+5	60769	noun	tin	0	The shiny surface of the tin block reflected the light.
+@ tiny
+1	60701	adj	tiny	1	She found a tiny spider on her windowpane.
+2	60701	adj	tiny	0	The tiny bird flew into the garden after the storm.
+3	60701	adj	tiny	0	He kept a tiny notebook in his pocket for notes.
+4	60701	adj	tiny	0	The tiny dog barked at the passing car.
+5	60701	adj	tiny	0	A tiny crack appeared in the old glass window.
+@ toe
+1	60784	noun	toe	1	She stubbed her toe on the coffee table.
+2	60784	noun	toe	0	The baby touched the water with one toe.
+3	60784	noun	toe	0	He injured his toe while playing football.
+4	60784	noun	toe	0	The dancer pointed her toe gracefully.
+5	60784	noun	toe	0	My toe itched after walking barefoot.
+@ tongue
+1	60806	noun	tongue	1	She used her tongue to push the food around her mouth.
+2	60806	noun	tongue	0	The baby learned to suckle using her tongue.
+3	60806	noun	tongue	0	He tasted the soup with the tip of his tongue.
+4	60806	noun	tongue	0	Move your tongue forward to pronounce this sound clearly.
+5	60806	noun	tongue	0	The cat licked the plate with her tongue.
+@ total
+1	60840	noun	total	1	The total cost of the tickets was thirty pounds.
+2	60840	noun	total	0	A total of 12 people attended the meeting.
+3	60840	noun	total	0	The total number of votes cast was 247.
+4	60840	noun	total	0	She added up the numbers to find the total.
+5	60840	noun	total	0	The total for the groceries came to $68.
+@ totally
+1	60803	adv	totally	1	She was totally focused on finishing the race.
+2	60803	adv	totally	0	The building was totally destroyed by the fire.
+3	60803	adv	totally	0	He totally agreed with the team's decision.
+4	60803	adv	totally	0	The room was totally empty after the move.
+5	60803	adv	totally	0	We were totally surprised by the sudden announcement.
+@ trade
+1	60910	noun	trade	1	Trade at the busy market begins before sunrise.
+2	60910	noun	trade	0	She works in international trade with Asian countries.
+3	60910	noun	trade	0	Local shops depend on trade from nearby residents.
+4	60910	noun	trade	0	The new store opened to attract more trade.
+5	60910	noun	trade	0	They discussed the future of trade in the region.
+@ translate
+1	60858	verb	translated	1	She translated the poem into Spanish with care.
+2	60858	verb	translate	0	The software can translate text between languages instantly.
+3	60858	verb	translated	0	He translated the instructions for the new machine.
+4	60858	verb	translated	0	They translated the story into a short film.
+5	60858	verb	translated	0	The artist translated the emotion into bold brushstrokes.
+@ translation
+1	60895	noun	translation	1	The translation of the poem took three days to complete.
+2	60895	noun	translation	0	She requested a professional translation of the legal document.
+3	60895	noun	translation	0	The translation from Spanish to French was accurate and clear.
+4	60895	noun	translation	0	His translation of the ancient text revealed new insights.
+5	60895	noun	translation	0	The translation of the instructions was done by a native speaker.
+@ treat
+1	60883	verb	treats	1	The teacher treats every student with patience and respect.
+2	60886	verb	treated	0	The doctor treated the cut before covering it with a bandage.
+3	60883	verb	treat	0	We should treat our neighbors with kindness.
+4	60887	verb	treats	0	The factory treats its wastewater before releasing it into the river.
+5	60884	verb	treat	0	I will treat you to dinner after the concert.
+@ treatment
+1	60851	noun	treatment	1	The teacher's fair treatment of all students earned their respect.
+2	60851	noun	treatment	0	His kind treatment of animals shows his gentle nature.
+3	60851	noun	treatment	0	The treatment of the elderly in that home is very poor.
+4	60851	noun	treatment	0	She received special treatment because of her illness.
+5	60852	noun	treatment	0	The patient responded well to the new treatment.
+@ trend
+1	60937	noun	trend	1	The sales figures show a steady upward trend.
+2	60937	noun	trend	0	There is a growing trend toward healthier eating habits.
+3	60937	noun	trend	0	The trend in temperature data suggests global warming.
+4	60937	noun	trend	0	A recent trend in education focuses on student well-being.
+5	60937	noun	trend	0	The trend in technology use has changed how we communicate.
+@ trick
+1	60951	noun	trick	1	The magician's latest trick fooled everyone in the audience.
+2	60951	noun	trick	0	She used a clever trick to get the prize without doing the work.
+3	60951	noun	trick	0	He claimed the deal was a trick to hide the real cost.
+4	60951	noun	trick	0	The scam was just a trick to steal people's passwords.
+5	60951	noun	trick	0	They played a trick on the new employee to test their reaction.
+@ truth
+1	60976	noun	truth	1	The truth is that she lied about the meeting time.
+2	60976	noun	truth	0	He told the truth when he said he did not see the keys.
+3	60976	noun	truth	0	The truth about the accident came out during the interview.
+4	60976	noun	truth	0	We need to face the truth about our team's performance.
+5	60976	noun	truth	0	The truth of the matter is that no one was late.
+@ tube
+1	60989	noun	tube	1	The plumber used a long tube to clear the clogged pipe.
+2	60989	noun	tube	0	She stored the rolled poster inside a cardboard tube.
+3	60989	noun	tube	0	The scientist placed the glass tube in the test rack.
+4	60989	noun	tube	0	He wrapped the wire around the metal tube tightly.
+5	60989	noun	tube	0	The cream comes in a small plastic tube.

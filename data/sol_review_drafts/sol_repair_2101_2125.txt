@@ -1,0 +1,96 @@
+@ photographer
+1	58119	noun	photographer	1	The photographer crouched in the grass to capture the fox at dawn.
+2	58119	noun	photographer	0	The photographer changed lenses before taking the next picture.
+3	58119	noun	photographer	0	The wedding photographer asked everyone to smile.
+4	58119	noun	photographer	0	Our photographer adjusted the lights before the portrait.
+5	58119	noun	photographer	0	The newspaper sent a photographer to the concert.
+@ photography
+1	58120	noun	photography	1	Her love of photography began when she borrowed her grandfather's old camera.
+2	58120	noun	photography	0	She improved her photography by practising in different kinds of light.
+3	58120	noun	photography	0	He studies photography at college.
+4	58120	noun	photography	0	Nature photography requires patience and good light.
+5	58120	noun	photography	0	The exhibition celebrates black-and-white photography.
+@ pipe
+1	58201	noun	pipe	1	A frozen pipe burst and flooded the kitchen overnight.
+2	58201	noun	pipe	0	Water flows into the house through this pipe.
+3	58201	noun	pipes	0	The plumber checked the pipes under the sink.
+4	58201	noun	pipe	0	Steam escaped from a crack in the metal pipe.
+5	58201	noun	pipe	0	They replaced the old pipe with a stronger one.
+@ pleasant
+1	58162	adj	pleasant	1	A pleasant breeze cooled us as we walked beside the lake.
+2	58162	adj	pleasant	0	We spent a pleasant evening talking with our neighbors.
+3	58162	adj	pleasant	0	We had a pleasant conversation over lunch.
+4	58162	adj	pleasant	0	The hotel staff were pleasant and helpful.
+5	58162	adj	pleasant	0	It was a pleasant place to sit and read.
+@ pleasure
+1	58172	noun	pleasure	1	She smiled with pleasure when the children opened their gifts.
+2	58172	noun	pleasure	0	He gets great pleasure from growing vegetables in his garden.
+3	58172	noun	pleasure	0	She takes great pleasure in cooking for friends.
+4	58172	noun	pleasures	0	Reading by the window is one of his simple pleasures.
+5	58172	noun	pleasure	0	It was a pleasure to meet your family.
+@ plenty
+1	58165	noun	plenty	1	We packed plenty of water before hiking under the hot sun.
+2	58165	noun	plenty	0	There was plenty of food left after the party.
+3	58165	noun	plenty	0	There is plenty of room for everyone at the table.
+4	58165	noun	plenty	0	The garden has plenty of tomatoes this year.
+5	58165	noun	plenty	0	Don't worry; we have plenty of time before the train leaves.
+@ plot
+1	58180	noun	plot	1	The plot became exciting when the missing key appeared in the attic.
+2	58180	noun	plot	0	The novel has a simple plot but memorable characters.
+3	58180	noun	plot	0	I liked the characters, but the plot was confusing.
+4	58180	noun	plot	0	The novel's plot follows two friends on a long journey.
+5	58180	noun	plot	0	She explained the plot of the movie without revealing the ending.
+@ poem
+1	58265	noun	poem	1	Her poem about the sea made the whole class quiet.
+2	58265	noun	poem	0	Each student wrote a short poem about the changing seasons.
+3	58265	noun	poem	0	He read a short poem at the school event.
+4	58265	noun	poem	0	The poem uses rhyme to create a musical sound.
+5	58265	noun	poem	0	She wrote a poem for her mother's birthday.
+@ poet
+1	58239	noun	poet	1	The poet stood onstage and read her newest work to the crowd.
+2	58239	noun	poet	0	The poet read several new works at the festival.
+3	58239	noun	poet	0	The famous poet visited our library.
+4	58239	noun	poet	0	Every poet has a different way of using words.
+5	58239	noun	poet	0	The young poet filled a notebook with verses.
+@ poetry
+1	58241	noun	poetry	1	We listened to poetry under the stars during the summer festival.
+2	58241	noun	poetry	0	The library holds a weekly reading of local poetry.
+3	58241	noun	poetry	0	She enjoys reading poetry before bed.
+4	58241	noun	poetry	0	The class discussed modern poetry today.
+5	58241	noun	poetry	0	His poetry often describes life in the city.
+@ poison
+1	58268	noun	poison	1	The warning label said the bright green liquid was poison.
+2	58268	noun	poison	0	The bottle of poison was locked in a cupboard.
+3	58268	noun	poison	0	Keep poison away from children and pets.
+4	58268	noun	poison	0	The detective suspected poison in the cup of tea.
+5	58268	noun	poison	0	Rat poison must be kept far away from food.
+@ poisonous
+1	58278	adj	poisonous	1	The guide warned us not to touch the poisonous berries by the trail.
+2	58278	adj	poisonous	0	The warning sign identifies which berries are poisonous.
+3	58278	adj	poisonous	0	That mushroom may be poisonous, so leave it alone.
+4	58278	adj	poisonous	0	The brightly colored frog may be poisonous, so do not touch it.
+5	58278	adj	poisonous	0	Poisonous chemicals must be stored safely.
+@ policy
+1	58293	noun	policy	1	The school's policy requires visitors to sign in at the office.
+2	58293	noun	policy	0	The new safety policy applies to every employee.
+3	58293	noun	policy	0	Our company policy allows employees to work from home on Fridays.
+4	58293	noun	policy	0	The library changed its policy on late fees.
+5	58293	noun	policy	0	Please read the return policy before buying the jacket.
+@ political
+1	58281	adj	political	1	The debate became political when the candidates discussed taxes and schools.
+2	58281	adj	political	0	The television channel hosted a political debate before the election.
+3	58281	adj	political	0	The newspaper printed a political cartoon on the front page.
+4	58281	adj	political	0	She avoids political arguments at family dinners.
+5	58281	adj	political	0	The group organized a political campaign before the election.
+@ politician
+1	58289	noun	politician	1	The politician shook hands with voters outside the town hall.
+2	58289	noun	politician	0	The politician promised to improve public transport.
+3	58289	noun	politician	0	The politician answered questions about the new law.
+4	58289	noun	politicians	0	Many politicians spoke at the public meeting.
+5	58289	noun	politician	0	A local politician visited the school to talk with students.
+@ politics
+1	58315	noun	politics	1	Politics filled the dinner conversation after the election results arrived.
+2	58315	noun	politics	0	He became interested in politics during the national election.
+3	58315	noun	politics	0	She studies politics because she wants to understand elections.
+4	58315	noun	politics	0	Local politics can affect bus routes and public parks.
+5	58315	noun	politics	0	They disagreed about politics but remained friends.

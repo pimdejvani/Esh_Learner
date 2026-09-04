@@ -1,0 +1,25 @@
+nose	repaired	added verb sense (nuzzle) for POS coverage, kept 4 good noun rows
+not	repaired	fixed r2 target case (Not), added conj sense for POS coverage
+note	repaired	fixed sense_id mismatch (abstract "symbol/annotation" sense repointed to the memo sense the sentences actually use), added verb sense
+nothing	repaired	fixed r1/r2 target case (Nothing), added intj sense for POS coverage
+november	pass	all 5 rows correct, no defects found
+now	repaired	fixed POS/sense mismatches (adv and noun content mislabeled as adj on 3 rows); full rewrite covering adj/adv/noun/conj
+number	repaired	fixed sense mismatches (phone/ticket-numeral senses vs generic "quantity" sense_id), added verb sense
+nurse	repaired	added verb sense (to nurse/care for), diversified noun form to plural
+object	repaired	added verb sense (to object/oppose), diversified noun form to plural
+october	pass	all 5 rows correct, no defects found
+of	repaired	all 5 rows pointed at an [obsolete,dialectal]-tagged sense; repointed to the untagged distance sense that matches the sentences
+off	repaired	fixed POS mislabeling (3 rows tagged adv were prepositional "off + NP" usage), added adj sense
+office	repaired	full rewrite: canonical used an obscure liturgical "church service" sense on all 5 rows; repointed to the common "workplace" and "hold office" senses
+often	repaired	fixed r2 target case (Often); rest unchanged
+oh	repaired	repointed 3 rows from noun to the intj senses that actually match interjection usage
+ok	repaired	fixed r2 target case (Ok); rest unchanged
+old	repaired	fixed r2 target case (Old), added noun sense ("the old")
+on	repaired	fixed r2 target case (On), added prep and adv senses for coverage
+once	repaired	fixed r2 target case (Once), added conj sense for coverage
+one	repaired	fixed POS mislabel on r1 (det, not pron, since "one lantern" has a following noun), added noun/adj senses for coverage
+onion	pass	all 5 rows correct, no defects found
+online	repaired	fixed r2 target case (Online), fixed POS mislabel (2 rows were adverbial "verb + online" tagged as adj)
+only	repaired	fixed r2 target case (Only), added adv sense for coverage
+open	repaired	fixed r2 target case (Open), added verb sense for coverage
+opinion	pass	all 5 rows correct, no defects found

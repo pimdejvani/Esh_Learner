@@ -1,0 +1,25 @@
+neither	repaired	rank1 4 words; four rows had sentence-initial Neither vs lowercase target; r4 "I do not like it neither" is ungrammatical double negative
+nervous	repaired	all 5 rows pointed at obsolete sense 48940 "of sinews and tendons" while sentences meant anxious; re-pointed to 48949/48948/48946
+network	repaired	thin rank1; only one target form used; added verb senses 48955/48956 and forms networks/networking/networked
+noisy	repaired	thin rank1 and two sub-6-word rows; added comparative/superlative forms and sense 48973
+none	repaired	r2 "None students came today" and r4 "I like it none" are not English; r3 used the religious-affiliation noun sense; rebuilt on pron 48976/48977 and adv 48980/48981
+normal	repaired	thin template rank1; r4 pointed at 49010 (perpendicular vector) while meaning the usual state; re-pointed to noun 49013
+normally	repaired	rank1 only 5 words; rewrote and added sense 49015 (in the customary manner) for variety
+novel	repaired	rank1 weak and non-vivid; rows repetitive with one form only; added novels and sense 49031
+nowhere	repaired	r1 "I can find my keys nowhere" is unnatural; r5 used the marginal adj sense; rebuilt on adv 49036/49037 plus noun 49039
+nut	repaired	rank1 odd situation; added hardware sense 49042 and enthusiast sense 49045; verb POS skipped
+ocean	repaired	target-case mismatch on r3 and r4 (sentence-initial Ocean/Oceans vs lowercase target); rank1 thin
+offer	repaired	verb POS entirely missing though senses 49075/49077/49078 are learner-core; r4 only 4 words
+officer	repaired	r2 3 words, r4 weak; added senses 49091/49089; verb POS skipped
+oil	repaired	r5 had sentence-initial Oil vs target oil; verb POS missing; added oils/oiled/oiling
+onto	repaired	rank1 not vivid; r2 "Put the book onto the table" is unnatural English; adj POS skipped
+opportunity	repaired	rank1 abstract and thin; r4 and r5 under 6 words; added plural form and sense 49108
+option	repaired	rank1 flat; r2 "Choosing is your option" unnatural; r5 4 words
+ordinary	repaired	full rewrite: all 5 rows used ecclesiastical/obsolete noun senses; the learner-core adjective (49135/49136) was absent entirely
+organization	repaired	thin rank1; r2 4 words; added plural form and sense 49141
+possession	repaired	all 5 rows on 49721 (control/occupancy) while sentences meant an owned thing; re-pointed to 49722/49723/49724/49727
+possibility	repaired	all 5 on 49731 though rows meant 49732/49733; r2 and r5 under 6 words
+poster	repaired	thin rank1 and repetitive rows all on 49735; added senses 49736/49737; verb POS skipped
+power	repaired	rank1 4 words; r2 meant electricity but pointed at 49744; re-pointed to 49755 and added verb 49767
+predict	repaired	rank1 5 words; r2/r3 too short and r5 "The map predicts traffic" unnatural; noun POS skipped
+president	repaired	r3, r4 and r5 all under 5 words; added senses 49778/49779; adj and verb POS skipped

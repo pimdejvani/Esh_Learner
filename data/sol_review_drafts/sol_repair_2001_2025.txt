@@ -1,0 +1,138 @@
+@ indoors
+1	57028	adv	indoors	1	When the storm began, the children went indoors.
+2	57028	adv	indoors	0	We stayed indoors during the heavy rain.
+3	57028	adv	indoors	0	The cat prefers to sleep indoors.
+4	57028	adv	indoors	0	Please keep the plants indoors tonight.
+5	57028	adv	indoors	0	When the temperature dropped, we went indoors to eat.
+@ influence
+1	57038	noun	influence	1	Her older sister had a strong influence on her music taste.
+2	57038	noun	influence	0	Parents can have a strong influence on a child's choices.
+3	57038	noun	influence	0	The coach's influence helped the team improve.
+4	57044	verb	influence	0	The film director tried to influence how people saw the war.
+5	57044	verb	influenced	0	Her kind words influenced the way he thought about school.
+@ ingredient
+1	57032	noun	ingredient	1	Garlic is the main ingredient in this soup.
+2	57032	noun	ingredient	0	Fresh ginger is an important ingredient in the curry.
+3	57032	noun	ingredient	0	Check each ingredient before you start cooking.
+4	57032	noun	ingredient	0	Each ingredient in this cake is simple.
+5	57032	noun	ingredient	0	Sugar is not an ingredient in this recipe.
+@ injure
+1	57047	verb	injured	1	The climber slipped on icy rocks and injured her ankle badly.
+2	57047	verb	injure	0	Wear thick gloves so you do not injure your hands.
+3	57047	verb	injure	0	A careless swing of the axe can injure the woodcutter's leg.
+4	57047	verb	Injuring	0	Injuring another player on purpose can get you sent off the field.
+5	57047	verb	injure	0	Fast cars can injure people who cross the road carelessly.
+@ injured
+1	57030	verb	injured	1	The player was injured during the final match.
+2	57031	adj	injured	0	The injured players sat quietly on the bench after the game.
+3	57030	verb	injured	0	She injured her knee while running in the park.
+4	57030	verb	injured	0	He injured his arm when he slipped on the wet floor.
+5	57030	verb	injured	0	I injured my back while moving the heavy furniture yesterday.
+@ intelligence
+1	57080	noun	intelligence	1	Her intelligence helped her solve the puzzle quickly.
+2	57080	noun	intelligence	0	The detective used her intelligence to connect the clues.
+3	57080	noun	intelligence	0	The test measured the child's intelligence.
+4	57080	noun	intelligence	0	His intelligence impressed the science teacher.
+5	57080	noun	intelligence	0	The research team valued both experience and intelligence.
+@ intend
+1	57050	verb	intend	1	I intend to call Grandma after school.
+2	57050	verb	intend	0	We intend to leave before noon.
+3	57050	verb	intended	0	She intended to surprise her friend, but he found out early.
+4	57050	verb	intends	0	He now intends to study law instead of business.
+5	57050	verb	intending	0	Not intending to be unkind, she simply forgot to reply.
+@ intention
+1	57059	noun	intention	1	My intention was to help, not to upset you.
+2	57059	noun	intention	0	Her intention is to study medicine.
+3	57059	noun	intention	0	He explained his intention before the meeting.
+4	57059	noun	intention	0	The plan failed, but the intention was good.
+5	57059	noun	intention	0	His intention was to save the money for college.
+@ invest
+1	57087	verb	invest	1	They decided to invest in better tools to save their struggling small farm.
+2	57087	verb	invested	0	Last year she invested her savings in a small bakery.
+3	57087	verb	investing	0	He is investing more time in learning English every day.
+4	57087	verb	invests	0	The company invests millions in new research each year.
+5	57087	verb	invest	0	We invest time in learning new skills together.
+@ investigate
+1	57067	verb	investigate	1	The teacher decided to investigate why the computer suddenly stopped working during the exam.
+2	57067	verb	investigated	0	Police investigated the crime scene carefully to find every clue.
+3	57067	verb	investigates	0	The company investigates every complaint before deciding what to do.
+4	57067	verb	investigating	0	Scientists are investigating the cause of the mysterious disease.
+5	57067	verb	investigate	0	We need to investigate this strange noise coming from the attic.
+@ involved
+1	57035	adj	involved	1	Everyone involved in the rescue received a medal.
+2	57035	adj	involved	0	She got involved in a school project about recycling.
+3	57035	adj	involved	0	Many students want to be involved in the drama club.
+4	57034	adj	involved	0	This is an involved process with several steps.
+5	57034	adj	involved	0	The instructions were too involved for the new student to follow.
+@ iron
+1	57102	noun	iron	1	The old gate was made of iron and had rusted.
+2	57102	noun	Iron	0	Iron is a metal used to make steel.
+3	57118	verb	ironed	0	She ironed her shirt carefully before the job interview.
+4	57118	verb	iron	0	He hates to iron his clothes on Sunday mornings.
+5	57117	adj	iron	0	He held on with an iron grip, refusing to let go.
+@ issue
+1	57152	noun	issue	1	The broken heater became a serious issue during the coldest week of winter.
+2	57152	noun	issue	0	Pollution is a major issue in many big cities.
+3	57135	noun	issue	0	She bought the latest issue of her favourite magazine.
+4	57173	verb	issue	0	The government will issue new passports next month.
+5	57173	verb	issued	0	The school issued new textbooks to every student.
+@ journal
+1	57176	noun	journal	1	Ella writes one good thing in her journal each night.
+2	57176	noun	journal	0	A journal is a daily written record.
+3	57176	noun	journal	0	He kept a travel journal during the trip.
+4	57176	noun	journal	0	The captain recorded the weather in the ship's journal.
+5	57181	verb	journals	0	She journals every night before bed to sort out her thoughts.
+@ judge
+1	57231	noun	judge	1	The judge listened quietly to both sides of the case.
+2	57231	noun	judge	0	A judge makes decisions in a court of law.
+3	57241	verb	judge	0	Please don't judge me before you know my story.
+4	57241	verb	judge	0	We shouldn't judge a book by its cover.
+5	57245	verb	judge	0	I judge from the dark clouds that it will rain soon.
+@ keyboard
+1	57194	noun	keyboard	1	She typed her name slowly on the computer keyboard.
+2	57194	noun	keyboard	0	A keyboard has keys for typing letters.
+3	57194	noun	keyboard	0	Crumbs fell between the keys of my keyboard.
+4	57194	noun	keyboard	0	The new keyboard is quieter than the old one.
+5	57194	noun	keyboard	0	I cleaned the dust from my keyboard before starting work.
+@ kick
+1	57248	verb	kicked	1	The boy kicked the ball so hard it flew over the fence and broke a window.
+2	57248	verb	kick	0	Do not kick the door when you are angry.
+3	57248	verb	kick	0	She can kick higher than her brother.
+4	57263	noun	kick	0	He felt a sharp kick to his shin during the football match.
+5	57248	verb	kicks	0	The horse kicks when it feels frightened.
+@ killing
+1	57191	noun	killing	1	News of the shocking killing spread quickly through the small town.
+2	57192	noun	killing	0	He made a killing on the stock market last year.
+3	57191	noun	killing	0	The police arrested a suspect after the killing.
+4	57191	noun	killing	0	The witness reported the killing to the police.
+5	57191	noun	killing	0	The newspaper described the killing as a tragic crime.
+@ kiss
+1	57291	verb	kissed	1	Before leaving the room, she leaned down and kissed her sleeping baby goodnight.
+2	57291	verb	kiss	0	People often kiss to show love.
+3	57295	noun	kiss	0	He gave his mother a gentle kiss on the cheek.
+4	57291	verb	kissed	0	The couple kissed at the train station before saying goodbye.
+5	57291	verb	Kissing	0	Kissing in public is common in some cultures but not others.
+@ label
+1	57214	noun	label	1	The label on the jar says it contains honey.
+2	57214	noun	label	0	The label lists every ingredient in the sauce.
+3	57214	noun	label	0	Read the label before washing the shirt.
+4	57214	noun	label	0	The label helps us find the right box.
+5	57227	verb	labeled	0	She labeled every box before the family moved to their new house.
+@ laboratory
+1	57212	noun	laboratory	1	The class wore safety glasses in the science laboratory.
+2	57212	noun	laboratory	0	Scientists examined the water sample in the laboratory.
+3	57212	noun	laboratory	0	The samples were tested in a laboratory.
+4	57212	noun	laboratory	0	No food is allowed in the laboratory.
+5	57212	noun	laboratory	0	The laboratory has special equipment for experiments.
+@ lack
+1	57283	noun	lack	1	A lack of sleep made him tired at school.
+2	57283	noun	lack	0	There was a lack of enthusiasm among the tired players.
+3	57283	noun	lack	0	The plant died from lack of water.
+4	57283	noun	lack	0	Their lack of money delayed the trip.
+5	57285	verb	lacks	0	This soup lacks flavor without a little salt and pepper.
+@ latest
+1	57302	adj	latest	1	Have you read the latest message from the teacher yet?
+2	57302	adj	latest	0	She bought the latest model of the phone.
+3	57302	adj	latest	0	This is the latest version of the map.
+4	57304	adv	latest	0	Please finish your homework by nine o'clock at the latest.
+5	57305	noun	latest	0	Have you heard the latest about the new school schedule?

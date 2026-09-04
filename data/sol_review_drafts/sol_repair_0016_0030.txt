@@ -27,7 +27,7 @@
 5	38564	verb	pounded	0	He pounded on the door.
 
 @ practice
-1	38573	noun	practice	1	Practice makes you better.
+1	38573	noun	Practice	1	Practice makes you better.
 2	38574	noun	practice	0	The team has practice after class.
 3	38584	verb	practice	0	We practice English every day.
 4	38583	noun	practices	0	Good practices keep us safe.
@@ -91,14 +91,14 @@
 
 @ sport
 1	40311	noun	sport	1	Football is my favorite sport.
-2	40311	noun	sport	0	Sport keeps us healthy.
+2	40311	noun	Sport	0	Sport keeps us healthy.
 3	40327	verb	sports	0	He sports a red hat.
 4	40311	noun	sports	0	She enjoys water sports.
 5	40327	verb	sported	0	They sported new shirts.
 
 @ spring
 1	40333	verb	spring	1	Cats spring onto the table.
-2	40373	noun	spring	0	Spring is my favorite season.
+2	40373	noun	Spring	0	Spring is my favorite season.
 3	40380	noun	spring	0	Water comes from the spring.
 4	40333	verb	sprang	0	The dog sprang into the room.
 5	40333	verb	springing	0	The child is springing around.

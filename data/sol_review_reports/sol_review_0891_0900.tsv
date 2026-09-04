@@ -1,0 +1,10 @@
+cooking	repaired	added adj/verb POS rows (cooking pot; is cooking) for coverage, kept vivid rank1
+cool	repaired	added verb/noun POS rows, diversified adj forms with comparative cooler
+correct	repaired	rank1 simplified to drop B2 word "confidence"; added verb+adv POS rows, skipped noun (unnatural "a correct" usage)
+cost	repaired	added noun POS rows (cost/costs) for coverage and form variety
+could	pass	all 5 rows already solid; sole finding is noun POS which is obscure "the coulds" -- skipped
+country	repaired	added adj row ("country house") for coverage
+course	repaired	replaced 2 duplicate-sense rows with distinct noun senses (class, meal course) and added a verb row; skipped adv (only sense is an abbreviation, rare)
+cousin	pass	all rows solid; verb senses for "cousin" are all rare/archaic -- skipped
+cow	repaired	added verb row ("cowed") for coverage
+cream	repaired	added adj + verb rows ("cream dress"; "cream the butter") for coverage

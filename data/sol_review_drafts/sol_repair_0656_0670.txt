@@ -1,0 +1,90 @@
+@ coloured
+1	55050	adj	coloured	1	The artist chose a brightly coloured scarf to lift her plain gray coat instantly.
+2	55050	adj	coloured	0	Our new curtains are a soft coloured fabric that matches the sofa.
+3	55050	adj	coloured	0	The coloured pencils spilled all over the classroom floor.
+4	55052	verb	coloured	0	She coloured the sunset orange and pink in her painting.
+5	55052	verb	coloured	0	He carefully coloured inside the lines with his crayons.
+@ combine
+1	55053	verb	combined	1	After the earthquake, neighbours combined their food and blankets to survive the freezing night.
+2	55053	verb	combine	0	You can combine milk and eggs to make pancake batter.
+3	55055	verb	combine	0	The two rivers combine just outside the city.
+4	55054	verb	combining	0	She is combining schoolwork with a part-time job this term.
+5	55058	noun	combine	0	The farmer drove his old red combine through the wheat field at dawn.
+@ commercial
+1	55065	noun	commercial	1	The little boy sang along loudly every time his favourite toy commercial came on TV.
+2	55065	noun	commercials	0	We had to sit through three commercials before the film started again.
+3	55069	adj	commercial	0	She opened a small commercial bakery after years of baking at home.
+4	55070	adj	commercial	0	The city built a new commercial airport to handle more passenger flights.
+5	55071	adj	commercial	0	Most travellers on this route choose commercial flights instead of private ones.
+@ commit
+1	55075	verb	committed	1	The masked robber committed the crime in broad daylight while shoppers watched in shock.
+2	55075	verb	commit	0	It is illegal to commit fraud when filling out a tax form.
+3	55076	verb	committed	0	She finally committed to running the marathon after months of hesitation.
+4	55076	verb	committing	0	He kept committing to plans and then cancelling at the last minute.
+5	55075	verb	commits	0	The company commits several safety violations every year, according to inspectors.
+@ communication
+1	55087	noun	communication	1	After the phone lines went down, communication with the trapped miners became impossible for six hours.
+2	55088	noun	communication	0	Good communication between doctors and patients can prevent many mistakes.
+3	55089	noun	communication	0	The manager sent a communication to all staff about the new office hours.
+4	55091	noun	communications	0	Their daily communications kept the two old friends close despite living on different continents.
+5	55087	noun	communication	0	Clear communication is the key to any successful team.
+@ comparison
+1	55098	noun	comparison	1	Standing next to her older sister's trophies, Mia felt like nothing in comparison.
+2	55097	noun	comparison	0	The comparison of the two phones took her almost an hour.
+3	55099	noun	comparison	0	There's no comparison between homemade bread and the bread from a shop.
+4	55100	noun	comparison	0	In English grammar, comparison shows if something is bigger or biggest.
+5	55097	noun	comparisons	0	The teacher asked us to write comparisons between the two novels.
+@ competitive
+1	55105	adj	competitive	1	Ben got so competitive during the family board game that he refused to speak to anyone who won.
+2	55104	adj	competitive	0	She joined a competitive swimming club after school.
+3	55106	adj	competitive	0	Our small bakery stays competitive by offering the freshest bread in town.
+4	55108	adj	competitive	0	The store offers competitive prices on all winter coats this month.
+5	55105	adj	competitive	0	He has always been competitive, even with his own little brother.
+@ competitor
+1	55110	noun	competitor	1	The young runner collapsed in tears when she beat every competitor to win her first gold medal.
+2	55109	noun	competitor	0	Our biggest competitor just lowered all of their prices.
+3	55110	noun	competitor	0	Each competitor had ninety seconds to finish the obstacle course.
+4	55109	noun	competitors	0	The company studies its competitors closely before launching a new product.
+5	55110	noun	competitors	0	All the competitors lined up nervously at the starting line.
+@ complaint
+1	55113	noun	complaint	1	After finding a mouse in her soup, the customer stormed to the manager with a furious complaint.
+2	55113	noun	complaint	0	He filed a complaint after his flight was cancelled without warning.
+3	55112	noun	complaint	0	Her constant complaint about the noise annoyed the neighbours.
+4	55113	noun	complaints	0	The hotel received several complaints about the broken air conditioning.
+5	55112	noun	complaints	0	Customers' complaints help the company improve its service.
+@ complex
+1	55117	adj	complex	1	The old clock's complex system of gears and springs amazed everyone who opened it up.
+2	55118	adj	complex	0	Filling out the visa application felt far more complex than she expected.
+3	55124	noun	complex	0	They moved into a new apartment complex near the train station.
+4	55129	noun	complex	0	Being teased about his height as a boy gave him a complex for years.
+5	55124	noun	complexes	0	The city built two new sports complexes for the summer games.
+@ concentrate
+1	55139	verb	concentrate	1	Even with the fire alarm blaring outside, she forced herself to concentrate on the final exam question.
+2	55139	verb	concentrating	0	I can't focus because the kids are so noisy I'm not concentrating at all.
+3	55138	verb	concentrate	0	Most of the city's best restaurants concentrate around the old market square.
+4	55137	verb	concentrated	0	The chef concentrated the sauce for an hour until it turned thick and rich.
+5	55141	noun	concentrates	0	The factory sells fruit concentrates to juice companies across the country.
+@ conclude
+1	55145	verb	concluded	1	After hours of arguing, the jury finally concluded that the man was innocent.
+2	55142	verb	concludes	0	The school year always concludes in the middle of June.
+3	55143	verb	concluding	0	The speaker finished by concluding his talk with a joke about scientists.
+4	55150	verb	concluded	0	From the muddy footprints, the detective concluded that someone had climbed through the window.
+5	55143	verb	conclude	0	Let's conclude today's meeting and continue tomorrow morning.
+@ conclusion
+1	55153	noun	conclusion	1	After days of searching her own heart, she reached the conclusion that she truly loved him.
+2	55151	noun	conclusion	0	In conclusion, recycling saves both money and the environment.
+3	55152	noun	conclusion	0	The conclusion of the experiment surprised even the scientists themselves.
+4	55153	noun	conclusions	0	Don't jump to conclusions before you hear both sides of the story.
+5	55154	noun	conclusion	0	Every good essay needs a clear conclusion that ties the ideas together.
+@ confident
+1	55160	adj	confident	1	Even though her hands were shaking, she walked on stage looking completely confident.
+2	55159	adj	confident	0	I'm confident that we'll finish the project on time.
+3	55160	adj	confident	0	He speaks three languages and always sounds confident in interviews.
+4	55159	adj	confident	0	The doctor seemed confident that the treatment would work.
+5	55160	adj	confident	0	After months of practice, she felt confident enough to perform alone.
+@ confirm
+1	55165	verb	confirmed	1	My hands trembled with relief when the doctor confirmed that the tumour was benign.
+2	55165	verb	confirm	0	Please confirm your appointment by replying to this email.
+3	55165	verb	confirms	0	The airline confirms every booking within twenty-four hours.
+4	55166	verb	confirmed	0	The committee confirmed her as the new team leader.
+5	55165	verb	confirming	0	We are still confirming the guest list for Saturday's party.

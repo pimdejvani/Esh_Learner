@@ -1,0 +1,25 @@
+danger	pass	only usable noun sense; verb POS all rare/obsolete, correctly skipped
+data	pass	correct sense and grammar throughout
+dead	pass	adj sense correct; other POS mostly rare/slang or lower priority, left as is
+deal	repaired	all 5 rows used the obsolete "portion/share" sense; rewrote with common noun senses (great deal, agreement, transaction, big deal) plus one verb sense (deals in)
+death	pass	correct sense, real sentences
+deep	pass	adj sense correct and varied; verb POS all rare/slang, skipped
+definitely	pass	correct sense and grammar
+degree	pass	correct sense (academic degree)
+dentist	pass	correct sense
+department	pass	correct sense
+depend	repaired	all rows used only the base form "depend"; rewrote with varied verb forms (depended, depend, depends, Depending) and added the trust/rely sense
+desert	repaired	added adj sense (desert island) and verb sense (deserted/abandon) alongside 3 kept noun rows
+designer	repaired	added adj sense (designer handbags) in place of one weak noun row
+destroy	repaired	all rows used only the base form "destroy"; rewrote with varied verb forms (destroyed, destroy, destroying, destroys)
+detective	pass	correct sense
+develop	repaired	all 5 rows used the archaic "discover/uncover" sense; rewrote with common senses (create, progress through stages, acquire, change/progress)
+device	pass	correct sense
+diary	pass	correct sense; verb "to diary" and the adj sense are obsolete/awkward, skipped
+differently	pass	correct sense and grammar
+digital	repaired	all 5 rows used the medical "finger" sense instead of the common computers/technology sense; rewrote entirely
+direct	repaired	added verb sense (directs/directed) in place of two adj rows, kept 3 good adj rows
+direction	pass	correct sense
+director	pass	correct sense
+disagree	repaired	all rows used only the base form "disagree"; rewrote with varied verb forms (disagreed, disagreeing, disagrees)
+disappear	repaired	all rows used only the base form "disappear"; rewrote with varied verb forms (disappeared, disappearing, disappears)

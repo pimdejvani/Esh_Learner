@@ -1,0 +1,25 @@
+age	repaired	form variety: replaced r5 with verb form "aged" for a 3rd distinct target form
+ago	repaired	full rewrite: only adj senses are archaic/dialectal and canonical rows used ago as a fabricated prenominal adjective; rewrote with the correct postpositive "[duration] ago" pattern
+agree	repaired	form variety: changed r3/r5 to "agreed"/"agrees" (block only used bare "agree")
+air	repaired	pos-coverage: added verb POS (ventilate a room; air a complaint) at r4-r5, kept noun r1-r3
+airport	pass	only one usable sense, sentences already real and vivid
+all	repaired	full rewrite: added det/pron/adv coverage with real senses; skipped adj (only "all gone; dead" dialectal) and conj (only obsolete "although")
+also	pass	pos-coverage suggested conj, but "also" is essentially never used as a true coordinating conjunction in modern English (overlaps with the adv sense); skipped, existing adv sentences are solid
+always	pass	sentences already real and non-template, single common POS fully covered
+amazing	repaired	full rewrite: canonical used only the verb participle sense (ambiguous, no editor examples, misleading for a word overwhelmingly taught as an adjective); switched to the two adj senses, skipped verb
+and	pass	noun/verb senses are all dialectal or narrow (rhythm jargon); skipped, conj sentences already solid
+angry	pass	sentences already real and vivid; noun ("an angry person") and verb ("to anger") senses both rare/obsolete, skipped
+animal	repaired	pos-coverage: added adj sense ("animal instincts") at r4
+another	repaired	pos-coverage: added pron usage at r4-r5
+answer	repaired	pos-coverage: added verb usage (answered a question; answer the phone) at r4-r5
+any	repaired	pos-coverage: added det and pron usage at r4-r5
+anyone	pass	sentences already real and distinct, single POS fully covered
+anything	repaired	pos-coverage: added adv usage ("not anything like") at r4; skipped noun (too narrow/rare) and verb (nonstandard placeholder verb)
+apartment	pass	only one usable sense (others archaic/obsolete/technical jargon), existing sentences already solid
+apple	pass	verb senses all dialectal/obscure ("to apple" = collect fir-cones etc.); skipped, noun sentences already solid
+april	repaired	fixed target-case bug on r1 (target was lowercase "april" but the word appears capitalized "April" in the sentence, matching r2-r5)
+area	pass	single usable POS, sentences already real and varied
+arm	repaired	pos-coverage: added verb usage (arm an alarm system; arm themselves) at r4-r5; skipped adj (only dialectal "poor")
+around	repaired	pos-coverage: added adj (r2) and adv (r3, r5) usage, kept prep at r1/r4
+arrive	repaired	form variety: diversified to arrived/arrives/arriving at r3-r5 (block only used bare "arrive")
+art	pass	verb sense is archaic "thou art" (=are); skipped, noun sentences already solid

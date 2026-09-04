@@ -1,0 +1,90 @@
+@ depressed
+1	62865	adj	depressed	1	She felt deeply depressed after losing her job.
+2	62865	adj	depressed	0	The man looked depressed during the long meeting.
+3	62865	adj	depressed	0	After the storm, the town felt depressed and quiet.
+4	62865	adj	depressed	0	He was depressed when his friend moved away.
+5	62865	adj	depressed	0	The child seemed depressed after the argument.
+@ depressing
+1	62881	adj	depressing	1	The movie was so depressing that I couldn't finish it.
+2	62881	adj	depressing	0	She found the news report depressing and turned away.
+3	62881	adj	depressing	0	His constant complaints made the atmosphere in the office depressing.
+4	62881	adj	depressing	0	The old house looked depressing with broken windows and overgrown grass.
+5	62881	adj	depressing	0	The story of the lost city was deeply depressing to everyone.
+@ depth
+1	62888	noun	depth	1	The depth of the well surprised us all.
+2	62888	noun	depth	0	We measured the depth of the river at the narrowest point.
+3	62888	noun	depth	0	The depth of the ocean floor is still unknown in some areas.
+4	62888	noun	depth	0	The depth of the trench was recorded by the research team.
+5	62888	noun	depth	0	She checked the depth of the pool before diving in.
+@ deserve
+1	62884	verb	deserved	1	She worked hard all year and finally deserved a vacation.
+2	62884	verb	deserved	0	After fixing the car, he deserved a good meal.
+3	62884	verb	deserve	0	These volunteers truly deserve our thanks for their hard work.
+4	62884	verb	deserved	0	They trained for months and deserved the championship.
+5	62884	verb	deserved	0	He stayed late to finish the project and deserved praise.
+@ desire
+1	62917	verb	desires	1	She desires to travel to Japan next summer.
+2	62917	verb	desires	0	He desires a better job and greater financial security.
+3	62917	verb	desire	0	They desire to understand the new rules before the test.
+4	62917	verb	desires	0	The child desires nothing more than to play outside after school.
+5	62917	verb	desire	0	We desire a peaceful solution to the dispute.
+@ desperate
+1	62903	adj	desperate	1	She was desperate for water after running in the hot sun.
+2	62903	adj	desperate	0	He looked desperate when he realized he had missed the last bus.
+3	62903	adj	desperate	0	The lost child was desperate to find her parents.
+4	62903	adj	desperate	0	They were desperate for help when the storm hit their village.
+5	62903	adj	desperate	0	I felt desperate when I realized I was lost in the forest.
+@ detailed
+1	62911	adj	detailed	1	The artist's detailed painting showed every tiny flower.
+2	62911	adj	detailed	0	She gave a detailed explanation of the steps in the experiment.
+3	62911	adj	detailed	0	The map has a detailed layout of the city streets.
+4	62911	adj	detailed	0	He wrote a detailed report about the project outcomes.
+5	62911	adj	detailed	0	The instructions were so detailed that no one got confused.
+@ detect
+1	62913	verb	detect	1	The scientist used a new tool to detect tiny particles in the air.
+2	62913	verb	detect	0	The security system can detect motion even in low light.
+3	62913	verb	detect	0	They used a machine to detect hidden chemicals in the soil.
+4	62913	verb	detect	0	The dog was trained to detect explosives at the airport.
+5	62913	verb	detect	0	Doctors use tests to detect diseases early in patients.
+@ dig
+1	62948	verb	dug	1	The gardener dug a deep hole to plant the new tree.
+2	62948	verb	dug	0	The construction crew dug a trench for the new pipeline.
+3	62948	verb	dig	0	She used a shovel to dig a hole in the sand.
+4	62948	verb	dug	0	The children dug a hole in the backyard to bury their time capsule.
+5	62948	verb	dug	0	He dug a hole in the frozen ground to set the fence post.
+@ disc
+1	62927	noun	disc	1	She placed the disc on the turntable carefully.
+2	62927	noun	disc	0	The disc spun slowly beneath the turntable's tonearm.
+3	62927	noun	disc	0	He found a small disc in the garden path.
+4	62927	noun	disc	0	The disc was made of polished metal.
+5	62927	noun	disc	0	A disc lay flat on the kitchen counter.
+@ discipline
+1	62970	noun	discipline	1	She showed great discipline by staying focused throughout the long exam.
+2	62970	noun	discipline	0	The athlete's discipline helped him win the race.
+3	62970	noun	discipline	0	He maintained his discipline even when he was tired.
+4	62970	noun	discipline	0	Her discipline allowed her to finish the project on time.
+5	62970	noun	discipline	0	The team's discipline improved their performance.
+@ dishonest
+1	62936	adj	dishonest	1	She gave a dishonest answer to avoid trouble.
+2	62936	adj	dishonest	0	The salesman made a dishonest claim about the car's history.
+3	62936	adj	dishonest	0	He was caught using a dishonest method to win the game.
+4	62936	adj	dishonest	0	The report revealed a dishonest attempt to cover up the mistake.
+5	62936	adj	dishonest	0	They were accused of dishonest dealings with the supplier.
+@ dismiss
+1	62940	verb	dismissed	1	The manager dismissed the employee after the mistake.
+2	62940	verb	dismissed	0	She was dismissed from her job last week.
+3	62940	verb	dismissed	0	The company dismissed him for poor performance.
+4	62940	verb	dismissed	0	He was dismissed from his position after repeated safety violations.
+5	62940	verb	dismissed	0	They dismissed the worker for breaking the rules.
+@ display
+1	62995	noun	display	1	The circus put on a dazzling display of fire and acrobatics.
+2	62995	noun	display	0	The city's annual festival features a spectacular light display.
+3	62995	noun	display	0	She gave a confident display of skill during the talent show.
+4	62995	noun	display	0	The museum staged a dramatic display of traditional sword fighting.
+5	62995	noun	display	0	The team's victory was a proud display of teamwork and effort.
+@ distribute
+1	62984	verb	distribute	1	The teacher will distribute the test papers to each student.
+2	62984	verb	distribute	0	She began to distribute the snacks among the children at the party.
+3	62984	verb	distribute	0	The manager asked us to distribute the flyers at the entrance.
+4	62984	verb	distribute	0	They will distribute the food to the homeless shelter.
+5	62984	verb	distribute	0	He needs to distribute the documents evenly among the team.

@@ -1,0 +1,90 @@
+@ internal
+1	64246	adj	internal	1	The internal parts of the engine were tightly packed.
+2	64247	adj	internal	0	The doctor found internal damage after the fall.
+3	64247	adj	internal	0	She felt an internal pressure building in her chest.
+4	64249	adj	internal	0	The company launched an internal review of the policy.
+5	64246	adj	internal	0	The internal structure of the building was weak.
+@ interpret
+1	64255	verb	interpret	1	She will interpret the data and share her findings with the team.
+2	64255	verb	interpreted	0	The researcher interpreted the results and changed the study design.
+3	64255	verb	interpreted	0	He interpreted the situation and chose to challenge the conclusion.
+4	64255	verb	interpreted	0	They interpreted the message and responded immediately.
+5	64255	verb	interpreted	0	The student interpreted the problem and developed a new solution.
+@ interrupt
+1	64260	verb	interrupt	1	She had to interrupt the meeting to answer an urgent call.
+2	64260	verb	interrupted	0	He interrupted the speaker with a loud question.
+3	64260	verb	interrupt	0	The teacher asked the student not to interrupt again.
+4	64260	verb	interrupted	0	A sudden noise interrupted the quiet afternoon.
+5	64260	verb	interrupted	0	The child interrupted the story with a silly joke.
+@ investigation
+1	64265	noun	investigation	1	The police launched a new investigation into the missing person case.
+2	64265	noun	investigation	0	The company is conducting an internal investigation after the data breach.
+3	64265	noun	investigation	0	A government investigation revealed serious flaws in the safety report.
+4	64265	noun	investigation	0	The journalist's investigation uncovered corruption in the city council.
+5	64265	noun	investigation	0	The court delayed the trial until the investigation into the evidence is complete.
+@ investment
+1	64266	noun	investment	1	She made a smart investment in renewable energy stocks.
+2	64266	noun	investment	0	The company's investment in new technology improved efficiency.
+3	64266	noun	investment	0	His investment in the startup paid off after two years.
+4	64266	noun	investment	0	A long-term investment in health leads to better well-being.
+5	64266	noun	investment	0	The family's investment in their home increased its value.
+@ joy
+1	64294	noun	joy	1	She felt pure joy when she opened her birthday gift.
+2	64294	noun	joy	0	The baby's first steps brought great joy to his parents.
+3	64294	noun	joy	0	After the long wait, the announcement brought joy to the team.
+4	64294	noun	joy	0	He smiled with joy as he saw his friend arrive.
+5	64294	noun	joy	0	The concert ended with a wave of joy from the crowd.
+@ judgement
+1	64264	noun	judgement	1	The judge made a fair judgement on the case.
+2	64264	noun	judgement	0	Her judgement was clear and well-reasoned.
+3	64264	noun	judgement	0	Good judgement is essential in leadership roles.
+4	64264	noun	judgement	0	He showed poor judgement during the meeting.
+5	64264	noun	judgement	0	The final judgement was announced by the court.
+@ junior
+1	64271	adj	junior	1	The junior team member followed the senior leader's instructions carefully.
+2	64271	adj	junior	0	She asked a junior colleague to prepare the notes for the meeting.
+3	64271	adj	junior	0	The junior officer reported directly to the captain.
+4	64271	adj	junior	0	He was promoted after proving himself as a capable junior manager.
+5	64271	adj	junior	0	The junior staff member was assigned the simplest tasks.
+@ justice
+1	64302	noun	justice	1	The court's decision showed true justice in action.
+2	64302	noun	justice	0	She believed in justice and always spoke up for the weak.
+3	64302	noun	justice	0	The new law aims to bring justice to victims of fraud.
+4	64302	noun	justice	0	He fought for justice after the accident was ignored.
+5	64302	noun	justice	0	Everyone deserves justice, no matter their background.
+@ justify
+1	64286	verb	justify	1	She had to justify her decision to the board.
+2	64286	verb	justify	0	He could not justify spending so much on a single meal.
+3	64286	verb	justify	0	The teacher asked the student to justify his answer.
+4	64286	verb	justify	0	No excuse can justify such a rude comment.
+5	64286	verb	justify	0	They failed to justify their actions in court.
+@ labour
+1	64312	noun	labour	1	She devoted many hours of labour to her handmade quilt.
+2	64312	noun	labour	0	The construction of the bridge required years of labour.
+3	64312	noun	labour	0	He was proud of the result of his labour on the project.
+4	64312	noun	labour	0	Maintaining the garden involved constant labour.
+5	64312	noun	labour	0	They shared the labour required to clean the old shed.
+@ landscape
+1	64328	noun	landscape	1	The mountainous landscape stretched far beyond the small village.
+2	64328	noun	landscape	0	The fertile landscape was dotted with farms and grazing livestock.
+3	64328	noun	landscape	0	The desert landscape was hot and dry under the midday sun.
+4	64328	noun	landscape	0	After the storm, the flooded landscape looked completely changed.
+5	64328	noun	landscape	0	The old stone bridge stood in a quiet rural landscape.
+@ largely
+1	64309	adv	largely	1	The crowd was made up largely of local students.
+2	64309	adv	largely	0	The damage was largely confined to the dry hills.
+3	64309	adv	largely	0	The new policy was largely welcomed by the community.
+4	64309	adv	largely	0	The mural was painted largely in bold reds and yellows.
+5	64309	adv	largely	0	The storm largely spared the village near the coast.
+@ launch
+1	64340	verb	launched	1	The boy launched the stone across the river with a quick flick of his wrist.
+2	64340	verb	launched	0	She launched the dart at the target with perfect aim.
+3	64340	verb	launched	0	He launched the ball hard toward the net during the game.
+4	64340	verb	launched	0	The catapult launched the stone over the castle wall.
+5	64340	verb	launched	0	They launched the javelin during the training session.
+@ leadership
+1	64337	noun	leadership	1	Her calm leadership helped the team stay focused during the crisis.
+2	64337	noun	leadership	0	Good leadership is essential for any successful project.
+3	64337	noun	leadership	0	The new manager showed strong leadership from day one.
+4	64337	noun	leadership	0	Effective leadership often comes from listening more than speaking.
+5	64337	noun	leadership	0	Team success depends on clear leadership and shared goals.

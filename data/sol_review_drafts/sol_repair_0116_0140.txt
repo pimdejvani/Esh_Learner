@@ -9,7 +9,7 @@
 1	43055	noun	advertising	1	Clever advertising turned the tiny cafe into a local favorite.
 2	43055	noun	advertising	0	The company spends a lot on advertising.
 3	43055	noun	advertising	0	Online advertising can reach customers quickly.
-4	43055	noun	advertising	0	Advertising influences what some people buy.
+4	43055	noun	Advertising	0	Advertising influences what some people buy.
 5	43055	noun	advertising	0	The store reduced its advertising costs.
 
 @ affect
@@ -91,10 +91,10 @@
 
 @ although
 1	43152	conj	although	1	I go, although it rains.
-2	43152	conj	although	0	Although it was cold, we went swimming.
+2	43152	conj	Although	0	Although it was cold, we went swimming.
 3	43152	conj	although	0	She smiled although she felt nervous.
 4	43152	conj	although	0	The team played well although it lost.
-5	43152	conj	although	0	Although the shop was busy, service was quick.
+5	43152	conj	Although	0	Although the shop was busy, service was quick.
 
 @ among
 1	43154	prep	among	1	We walk among home.
@@ -127,7 +127,7 @@
 @ anybody
 1	43188	pron	anybody	1	anybody is ready.
 2	43188	pron	anybody	0	Is anybody waiting outside?
-3	43188	pron	anybody	0	Anybody can join the class.
+3	43188	pron	Anybody	0	Anybody can join the class.
 4	43188	pron	anybody	0	I did not see anybody in the room.
 5	43188	pron	anybody	0	Does anybody know the answer?
 
@@ -168,7 +168,7 @@
 
 @ apply
 1	43218	verb	apply	1	We apply every day.
-2	43218	verb	apply	0	Apply cream to the dry skin.
+2	43218	verb	Apply	0	Apply cream to the dry skin.
 3	43218	verb	apply	0	Please apply pressure to the cut.
 4	43218	verb	apply	0	Nurses apply a clean bandage to the wound.
 5	43218	verb	apply	0	Use a brush to apply paint to the wall.

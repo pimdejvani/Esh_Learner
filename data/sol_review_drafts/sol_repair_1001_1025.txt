@@ -1,0 +1,78 @@
+@ find
+1	32922	verb	find	1	I hope you find the courage to ask for help when you need it.
+2	32918	verb	found	0	We found an old photo behind the bookshelf.
+3	32921	verb	find	0	Scientists hope to find a safer treatment.
+4	32926	verb	find	0	The court may find the company responsible.
+5	32933	noun	find	0	The coin was a valuable find from the field.
+@ fine
+1	32938	adj	fine	1	I'm fine, she said softly, though her eyes told a different story.
+2	32936	adj	fine	0	This restaurant serves fine food at a fair price.
+3	32946	adj	fine	0	The weather will be fine and sunny tomorrow.
+4	32964	noun	fine	0	He paid a parking fine after leaving his car in the wrong zone.
+5	32967	verb	fined	0	The driver was fined for parking in front of the gate.
+@ fire
+1	32990	noun	fire	1	Ancient humans learned to control fire and survive freezing winters.
+2	32991	noun	fire	0	They made a fire at the campsite.
+3	32992	noun	fire	0	The alarm rang because of a fire.
+4	33009	verb	fired	0	The workers fired the old bricks in a kiln.
+5	33013	verb	fires	0	The guard fires the starter pistol.
+@ five
+1	67786	num	five	1	My little sister proudly held up five fingers to show her age.
+2	33078	noun	five	0	Please write a five on the card.
+3	33081	noun	five	0	My sister is a happy five today.
+4	33082	noun	five	0	We meet at five after school.
+5	33079	noun	five	0	He paid with a five at the shop.
+@ flower
+1	33226	noun	flower	1	She smiled through tears as she picked the first flower of spring.
+2	33228	noun	flower	0	She grows a flower in a small pot.
+3	33229	noun	flowers	0	He gave her flowers on her birthday.
+4	33242	verb	flower	0	The trees flower in spring.
+5	33244	verb	flowered	0	Her talent flowered after practice.
+@ fly
+1	33258	verb	fly	1	We watched in wonder as the huge flock began to fly south for winter.
+2	33258	verb	flew	0	The plane flew over the city.
+3	33258	verb	flying	0	We saw a flying bird above us.
+4	33248	noun	fly	0	A fly landed on the window.
+5	33261	verb	flies	0	Time really flies when you spend the whole day with old friends.
+@ food
+1	33310	noun	food	1	After hours of hiking, we devoured the warm food with pure joy.
+2	33311	noun	food	0	Rice is a common food here.
+3	33312	noun	food	0	Books are food for the mind.
+4	33310	noun	food	0	We need food and clean water.
+5	33311	noun	foods	0	These foods are fresh today.
+@ foot
+1	33315	noun	foot	1	My left foot hurts after the walk.
+2	33314	noun	feet	0	The dog has four feet.
+3	33316	noun	foot	0	We went there on foot.
+4	33317	noun	foot	0	Write your name at the foot of the page.
+5	33341	verb	foot	0	My uncle offered to foot the bill for our entire wedding dinner.
+@ football
+1	33351	noun	football	1	Our whole street erupted in cheers when we scored in football after school.
+2	33350	noun	football	0	The football rolled into the goal.
+3	33349	noun	Football	0	Football needs teamwork and practice.
+4	33352	noun	football	0	The quarterback threw a long pass to win the big football game.
+5	33350	noun	footballs	0	The coach brought two footballs.
+@ forget
+1	33398	verb	forget	1	After the accident, she could not forget the sound of screeching tires.
+2	33399	verb	forgot	0	I forgot to call my aunt.
+3	33400	verb	forgotten	0	She has forgotten her bag at school.
+4	33398	verb	forgets	0	My grandpa forgets names sometimes.
+5	33398	verb	forgetting	0	He is forgetting the old story.
+@ form
+1	33423	noun	form	1	Her hands trembled as she filled in the final form to adopt the puppy.
+2	33405	noun	form	0	The cloud has a strange form.
+3	33415	noun	form	0	This is the usual form of the game.
+4	33432	verb	form	0	Dark clouds form before a storm.
+5	33435	verb	formed	0	The children formed a line.
+@ forty
+1	67788	num	forty	1	Grandma just turned forty and threw herself a huge, joyful party.
+2	67788	num	forty	0	There are forty students in our classroom this year.
+3	67788	num	forty	0	He can run forty meters in under six seconds.
+4	67788	num	forty	0	The recipe says to bake the bread for forty minutes.
+5	67788	num	forty	0	She saved forty dollars by using a discount coupon.
+@ four
+1	67790	num	four	1	Every Sunday, our family of four gathers around the table for dinner.
+2	33443	noun	four	0	Circle the four in the answer.
+3	33445	noun	four	0	The movie starts at four.
+4	33446	noun	four	0	My cousin is a busy four today.
+5	67790	num	four	0	The rope is four feet long.

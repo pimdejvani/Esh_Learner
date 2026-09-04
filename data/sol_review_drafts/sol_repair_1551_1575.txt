@@ -1,0 +1,60 @@
+@ cash
+1	44372	noun	cash	1	Grandma kept her cash in an old biscuit tin under the bed.
+2	44372	noun	cash	0	My uncle pays the workers in cash every Friday.
+3	44378	verb	cashed	0	She cashed the check at the bank.
+4	44372	noun	cash	0	Keep some cash in your bag for the bus.
+5	44378	verb	cashes	0	He cashes his pay cheque on the first day of the month.
+@ catch
+1	44399	noun	catch	1	The crowd jumped up and cheered after his one-handed catch.
+2	44406	noun	catch	0	The offer sounds perfect, but there must be a catch somewhere.
+3	44402	noun	catches	0	The fishermen showed us their catches from the morning.
+4	44443	verb	caught	0	She caught the ball with both hands.
+5	44425	verb	catching	0	She is catching the last train home tonight.
+@ certain
+1	44482	adj	certain	1	She was certain her brother would come back before dark.
+2	44483	adj	certain	0	It is certain that the shop closes at six.
+3	44487	adj	certain	0	A certain boy left his bag in the classroom.
+4	44482	adj	certain	0	Are you certain that you locked the front door?
+5	44492	det	certain	0	Some birds visit our garden at certain times of the year.
+@ chance
+1	44497	noun	chance	1	He begged the coach for one last chance to play.
+2	44498	noun	chance	0	We met by chance at the market.
+3	44499	noun	chance	0	There is a good chance of rain today.
+4	44507	verb	chanced	0	We chanced upon a tiny bookshop behind the station.
+5	44506	verb	chancing	0	He is chancing a swim in the cold sea.
+@ chat
+1	44532	verb	chatted	1	We chatted on the bus until my stop arrived.
+2	44537	noun	chat	0	We had a long chat about her new job.
+3	44532	verb	chat	0	I chat with my cousin every Sunday evening.
+4	44536	verb	chats	0	She chats with her friends online after homework.
+5	44532	verb	chatting	0	They were chatting while waiting for the rain to stop.
+@ chef
+1	44548	noun	chef	1	The chef planned a special dinner for the family in the large house.
+2	44549	noun	chef	0	The chef at that restaurant makes the best noodles.
+3	44548	noun	chef	0	A chef prepared lunch for the guests upstairs.
+4	44549	noun	chef	0	A famous chef opened a new restaurant near the station.
+5	44550	noun	chefs	0	The chefs shared their recipes with the students.
+@ chip
+1	44561	noun	chip	1	A chip of blue paint fell from the old door.
+2	44566	noun	chip	0	A tiny chip inside the phone stores all my photos.
+3	44569	noun	chips	0	We shared a bag of chips at the beach.
+4	44562	noun	chip	0	There is a small chip in the paint near the handle.
+5	44585	verb	chipped	0	He chipped the corner of the table with his heavy bag.
+@ circle
+1	44623	noun	circle	1	The children stood in a circle around the birthday cake.
+2	44621	noun	circle	0	A circle is round and has no corners.
+3	44621	noun	circles	0	The teacher drew two circles on the board.
+4	44626	noun	circle	0	She has a wide circle of friends at school.
+5	44640	verb	circled	0	The plane circled the airport before landing.
+@ classical
+1	44646	adj	classical	1	The museum displayed a classical painting that visitors admired.
+2	44647	adj	classical	0	The building follows a classical design with tall stone columns.
+3	44646	adj	classical	0	She studied the classical style of the famous artist.
+4	44649	adj	classical	0	My mother plays classical music while she cooks dinner.
+5	44650	adj	classical	0	We read stories from the classical world of Greece and Rome.
+@ clear
+1	44657	adj	clear	1	The lake was so clear that we could see stones at the bottom.
+2	44659	adj	clear	0	The road was clear after the snow was pushed aside.
+3	44662	adj	clear	0	The teacher gave clear instructions before the test.
+4	44681	verb	cleared	0	We cleared the table after dinner together.
+5	44684	verb	clearing	0	The sky is clearing after the heavy rain.

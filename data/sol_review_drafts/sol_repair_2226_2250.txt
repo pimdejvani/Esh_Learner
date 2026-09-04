@@ -1,0 +1,150 @@
+@ secondary
+1	59332	adj	secondary	1	The secondary school is located near the primary one.
+2	59332	adj	secondary	0	Cost was a secondary concern compared with safety.
+3	59332	adj	secondary	0	The secondary effects of the medicine appeared after a week.
+4	59332	adj	secondary	0	He took a secondary role in the team's project.
+5	59332	adj	secondary	0	The secondary market for used books is growing.
+@ security
+1	59393	noun	security	1	The locked door gives her a sense of security.
+2	59393	noun	security	0	The emergency shelter gave the family a sense of security after the storm.
+3	59393	noun	security	0	She found security in her grandmother's quiet presence.
+4	59393	noun	security	0	The safe room offered security during the earthquake.
+5	59393	noun	security	0	The familiar routine gave him a comforting sense of security.
+@ seed
+1	59418	noun	seed	1	She planted a single seed in the small pot.
+2	59418	noun	seeds	0	The garden grew from a few seeds he scattered last week.
+3	59418	noun	seed	0	A seed dropped from the tree landed in the soft soil.
+4	59418	noun	seed	0	He saved the seed from the apple to grow a new tree.
+5	59418	noun	seeds	0	The farmer collected seeds from the ripe plants.
+@ sensible
+1	59403	adj	sensible	1	She made a sensible choice during the team meeting.
+2	59403	adj	sensible	0	He gave a sensible explanation for his late arrival.
+3	59403	adj	sensible	0	The teacher offered a sensible suggestion to improve the class.
+4	59403	adj	sensible	0	They discussed a sensible plan for the weekend trip.
+5	59403	adj	sensible	0	His sensible advice helped calm the worried parents.
+@ seriously
+1	59413	adv	seriously	1	The doctor spoke seriously about the risks of the operation.
+2	59413	adv	seriously	0	She took the safety warning seriously.
+3	59413	adv	seriously	0	The teacher spoke seriously about the exam results.
+4	59413	adv	seriously	0	They seriously discussed whether to cancel the project.
+5	59413	adv	seriously	0	He answered the questions seriously and without joking.
+@ servant
+1	59448	noun	servant	1	The new servant arrived early to prepare breakfast for the family.
+2	59448	noun	servant	0	Each guest was greeted by a servant in formal attire.
+3	59448	noun	servant	0	The old servant remembered every detail of the estate.
+4	59448	noun	servant	0	A servant brought tea to the guests in the drawing room.
+5	59448	noun	servant	0	The servant cleaned the windows before the guests arrived.
+@ set
+1	59500	verb	set	1	She set the book on the table carefully.
+2	59500	verb	set	0	He set the cup down after drinking.
+3	59500	verb	set	0	The child set the toy on the floor.
+4	59500	verb	set	0	They set the basket near the door.
+5	59500	verb	set	0	I set my bag on the chair.
+@ setting
+1	59454	noun	setting	1	The story's setting is a small village in the mountains.
+2	59454	noun	setting	0	The setting of the film feels dark and mysterious.
+3	59454	noun	setting	0	We discussed the setting of the novel in class.
+4	59454	noun	setting	0	The setting of the painting shows a busy marketplace.
+5	59454	noun	setting	0	The setting of the scene was updated for the new version.
+@ sex
+1	59488	noun	sex	1	Biologists study how sex affects reproduction in different species.
+2	59488	noun	sex	0	In many animals, sex determines the type of gametes produced.
+3	59488	noun	sex	0	The sex of a newborn bird is determined by its chromosomes.
+4	59488	noun	sex	0	The form asks for the patient's age and sex.
+5	59488	noun	sex	0	Researchers recorded the sex of each animal in the study.
+@ sexual
+1	59466	adj	sexual	1	The law protects people from sexual harassment at work.
+2	59466	adj	sexual	0	Researchers examined sexual differences in the birds' behavior.
+3	59466	adj	sexual	0	She challenged the sexual norms in her community.
+4	59466	adj	sexual	0	The law prohibits sexual discrimination in the workplace.
+5	59466	adj	sexual	0	He spoke about the importance of sexual health awareness.
+@ sharp
+1	59658	adj	sharp	1	The kitchen knife is sharp and cuts through the tomato easily.
+2	59658	adj	sharp	0	After sharpening the blade, the scissors became sharp enough to cut paper cleanly.
+3	59658	adj	sharp	0	She used a sharp blade to slice the bread without crushing it.
+4	59658	adj	sharp	0	The pencil tip was so sharp it left a mark on the paper.
+5	59658	adj	sharp	0	The needle must be sharp to pierce the fabric smoothly.
+@ shelf
+1	59475	noun	shelf	1	She placed the book on the top shelf of the bookcase.
+2	59475	noun	shelves	0	The kitchen cabinet has three shelves for storing dishes.
+3	59475	noun	shelf	0	He reached up to grab the jar from the high shelf.
+4	59475	noun	shelves	0	The library uses metal shelves to hold heavy reference books.
+5	59475	noun	shelf	0	We organized the spices on a shelf near the stove.
+@ shell
+1	59707	noun	shell	1	The crab's shell protects it from predators.
+2	59707	noun	shell	0	A turtle moves slowly with its hard shell.
+3	59707	noun	shell	0	The snail carries its shell wherever it goes.
+4	59707	noun	shell	0	The hermit crab lives inside a discarded shell.
+5	59707	noun	shell	0	The sea urchin has a spiny shell around its body.
+@ shift
+1	59598	noun	shift	1	The shift to clean energy began last year.
+2	59598	noun	shift	0	She made a quick shift to the new plan.
+3	59598	noun	shift	0	There was a sudden shift in the weather.
+4	59598	noun	shift	0	The company announced a major shift in its hiring policy.
+5	59598	noun	shift	0	A small shift in focus changed everything.
+@ shine
+1	59638	verb	shone	1	The sun shone brightly through the window.
+2	59638	verb	shone	0	The moon shone softly in the night sky.
+3	59638	verb	shone	0	The lamp shone steadily on the book.
+4	59638	verb	shone	0	The metal surface shone under the light.
+5	59638	verb	shone	0	The stars shone clearly above the hill.
+@ shiny
+1	59481	adj	shiny	1	The car's paint looked shiny under the sunlight.
+2	59481	adj	shiny	0	She wore a shiny black dress to the party.
+3	59481	adj	shiny	0	The metal surface was shiny after polishing.
+4	59481	adj	shiny	0	His shoes were so shiny they reflected the room.
+5	59481	adj	shiny	0	The child picked up a shiny coin from the pavement.
+@ shoot
+1	59790	verb	shoot	1	The soldier learned to shoot accurately at the target.
+2	59790	verb	shot	0	She aimed carefully and shot the arrow into the center of the target.
+3	59790	verb	shoot	0	The boy tried to shoot the bottle off the fence with a slingshot.
+4	59790	verb	shot	0	He shot the ball through the hoop during the game.
+5	59790	verb	shot	0	The archer shot three arrows in quick succession.
+@ shy
+1	59757	adj	shy	1	The kitten was shy when the dog approached.
+2	59757	adj	shy	0	The shy student spoke very quietly to the class.
+3	59757	adj	shy	0	The rabbit became shy after the loud noise.
+4	59757	adj	shy	0	He was shy around new classmates.
+5	59757	adj	shy	0	The puppy looked shy at the vet's office.
+@ sight
+1	59774	noun	sight	1	She lost her sight after the accident and now uses a guide dog.
+2	59774	noun	sight	0	The doctor checked his sight with a standard eye chart.
+3	59774	noun	sight	0	He was born with perfect sight and never needed glasses.
+4	59774	noun	sight	0	The old man still has good sight despite his age.
+5	59774	noun	sight	0	The child's sight improved after the eye surgery.
+@ signal
+1	59852	noun	signal	1	The computer decoded the digital signal correctly.
+2	59852	noun	signal	0	A weak signal made the radio transmission unclear.
+3	59852	noun	signal	0	The satellite sent a strong signal to Earth.
+4	59852	noun	signal	0	The system failed to receive any signal from the device.
+5	59852	noun	signal	0	Each pulse in the wire is a signal in the network.
+@ silent
+1	59866	adj	silent	1	The library was silent after closing time.
+2	59866	adj	silent	0	She sat in the silent room, listening to the wind.
+3	59866	adj	silent	0	The forest was silent beneath the snow.
+4	59866	adj	silent	0	The nursery remained silent while the baby slept.
+5	59866	adj	silent	0	The old house stood silent in the moonlight.
+@ silly
+1	59880	adj	silly	1	She made a silly face to make everyone laugh.
+2	59880	adj	silly	0	The dog wore a silly hat and ran in circles.
+3	59880	adj	silly	0	He told a silly story about a dancing cat.
+4	59880	adj	silly	0	That was a silly mistake, but we all make them.
+5	59880	adj	silly	0	The children wore silly costumes for the party.
+@ similarity
+1	59848	noun	similarity	1	The similarity between the two paintings is striking.
+2	59848	noun	similarity	0	There is a strong similarity in style between the two artists.
+3	59848	noun	similarity	0	The similarity of their voices made it hard to tell them apart.
+4	59848	noun	similarity	0	We noticed a slight similarity between the two designs.
+5	59848	noun	similarity	0	The similarity in their handwriting is remarkable.
+@ similarly
+1	59789	adv	similarly	1	The first experiment failed; similarly, the second produced no useful results.
+2	59788	adv	similarly	0	She answered the question similarly to her brother.
+3	59789	adv	similarly	0	The two houses are similarly designed, with large windows and open kitchens.
+4	59788	adv	similarly	0	Both teams prepared similarly for the final match.
+5	59789	adv	similarly	0	Prices rose in May and increased similarly in June.
+@ simply
+1	59905	adv	simply	1	She explained the problem simply.
+2	59905	adv	simply	0	The instructions were written simply so that everyone could understand them.
+3	59905	adv	simply	0	He dressed simply in a plain shirt and dark trousers.
+4	59905	adv	simply	0	The room was simply furnished with a bed and a small table.
+5	59908	adv	simply	0	We simply do not have enough money to replace the roof.

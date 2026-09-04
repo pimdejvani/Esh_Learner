@@ -1,0 +1,25 @@
+fourteen	pass	all 5 rows correct noun sense, real sentences, no fixes needed
+fourth	pass	adj/noun senses correctly used; verb sense (thirded/fourthed) obsolete jargon, correctly absent
+free	pass	adj/verb senses correct incl. sense 33483 unoccupied-seat verified in DB; num/noun senses are jargon, correctly absent
+friday	repaired	r1 target case fixed: friday -> Friday to match sentence casing
+friend	repaired	rank1 rewritten (was 5 words); r4/r5 sense re-pointed from obsolete 33512 to correct modern 33513 (social-media friend)
+friendly	repaired	rank1 rewritten (was 5 words, thin); r5 swapped from duplicate adj to noun sense 33522 (exhibition match) for POS coverage
+from	pass	all 5 prep senses correct and distinct, incl. verified causal sense 33538
+fruit	pass	all rows correct; verb sense (tree fruits) is genuine untagged botanical usage, kept
+full	pass	adj-only coverage justified: adv/noun/verb senses are archaic/narrow/religious jargon
+fun	repaired	rank1 rewritten for vividness; r3 rewritten to unambiguous noun usage; r5 verb 'funning' (unnatural, brief's abused-verb pattern) replaced with adj sense 33619
+funny	repaired	r2 swapped to noun sense 33626 ('funnies' comic strip) for POS coverage, replacing a duplicate adj row
+future	pass	adj/noun senses correctly used, full POS coverage already present
+game	repaired	r3 sense re-pointed from rare abbreviation 33651 to correct sense 33644 (an instance of playing a game)
+garden	repaired	r5 swapped from duplicate noun to adj idiom sense 33684 ('garden variety') for POS coverage
+geography	repaired	rank1 rewritten (was 5 words); r4 sense re-pointed from business-jargon 33694 to terrain sense 33688; r5 rewritten to unambiguous 'study of geography' sense, fixing plural-form ambiguity
+get	repaired	r3 changed to past-tense form 'got' for form-variety (was only 2 distinct forms across the block)
+girl	repaired	r2 rewritten to unambiguously use the 'young woman' sense (33736) instead of overlapping with rank1's child sense
+girlfriend	repaired	r3-based dated sense clarified via r4 rewrite; r5 swapped off rare verb POS (both verb senses tagged rare) onto core noun sense in a new situation
+glass	repaired	r2/r3 sense re-pointed from technical 'amorphous solid' sense 33789 to correct drinking-vessel sense 33790
+go	repaired	rank1 rewritten (was 5 words); r5 swapped from duplicate verb form to noun idiom sense 33896 ('give it a go') for POS coverage
+good	repaired	r4 swapped from informal/nonstandard-flavored adv ('sing good') to the DB's intj sense 67794 (cleaner, standard); r5 re-pointed from an unusable truncated-gloss sense (33911) to correct 'healthful' sense 33931
+goodbye	repaired	r3 swapped off unnatural verb usage ('to goodbye someone', brief's abused-verb pattern) to intj sense 67795; r5 target 'bye' was not a supplied form for this headword, fixed to 'goodbye'
+grandfather	repaired	rank1 rewritten (was 5 words); r5 sense re-pointed from 'act as a grandfather' (33965) to the correct 'grandfather clause' sense 33966 that the sentence actually describes
+grandmother	repaired	rank1 rewritten (was 5 words); r5 target 'grand-mother' was not a supplied form, fixed to 'grandmothers'
+grandparent	repaired	rank1, r4, r5 rewritten: r4's verb usage ('grandparented') is unnatural fabricated-feeling usage matching the brief's abused-verb pattern, replaced with noun sense; r5 target 'grand-parent' was not a supplied form, fixed to 'Grandparents'

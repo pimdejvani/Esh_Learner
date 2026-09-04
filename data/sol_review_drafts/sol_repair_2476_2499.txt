@@ -1,0 +1,144 @@
+@ conservative
+1	62419	noun	conservative	1	The conservative in the meeting argued against changing the old rules.
+2	62419	noun	conservative	0	She is a conservative who values tradition and stability in society.
+3	62419	noun	conservatives	0	Many conservatives supported the candidate's plan to keep taxes low.
+4	62419	noun	conservative	0	He was labeled a conservative for opposing rapid social reforms.
+5	62419	noun	conservative	0	The conservative preferred familiar routines over new experiments.
+@ consideration
+1	62398	noun	consideration	1	After careful consideration, she chose the blue dress.
+2	62398	noun	consideration	0	The manager gave full consideration to the employee's request.
+3	62398	noun	consideration	0	We need more consideration before making such a big decision.
+4	62398	noun	consideration	0	The safety risks require further consideration.
+5	62398	noun	consideration	0	The committee gave serious consideration to the proposal.
+@ consistent
+1	62393	adj	consistent	1	Her morning routine is consistent, even on weekends.
+2	62393	adj	consistent	0	The team's performance has been consistent throughout the season.
+3	62393	adj	consistent	0	He gave a consistent answer every time we asked the same question.
+4	62393	adj	consistent	0	The weather in this region is consistent, with rain every afternoon.
+5	62393	adj	consistent	0	The machine's performance remained consistent throughout the test.
+@ constant
+1	62410	adj	constant	1	The constant noise from the road kept us awake.
+2	62410	adj	constant	0	She kept a constant watch over the children.
+3	62409	adj	constant	0	The constant temperature in the lab ensures accurate results.
+4	62410	adj	constant	0	He showed a constant interest in learning new languages.
+5	62409	adj	constant	0	The voltage remained constant throughout the experiment.
+@ constantly
+1	62435	adv	constantly	1	The alarm rang constantly throughout the night.
+2	62435	adv	constantly	0	She felt constantly tired after the long journey.
+3	62435	adv	constantly	0	The machine hummed constantly in the background.
+4	62435	adv	constantly	0	He checked his phone constantly during the meeting.
+5	62435	adv	constantly	0	The river flowed constantly toward the sea.
+@ construct
+1	62438	noun	construct	1	The model airplane was a clever construct of plastic and glue.
+2	62438	noun	construct	0	She admired the intricate construct made from recycled metal.
+3	62438	noun	construct	0	The sculpture was a surprising construct of wood and wire.
+4	62438	noun	construct	0	The bridge was a simple construct of wood and rope.
+5	62438	noun	construct	0	The toy was a simple construct of plastic pieces.
+@ construction
+1	62450	noun	construction	1	The construction of the new school began last month.
+2	62450	noun	construction	0	They are still in the early stages of construction.
+3	62450	noun	construction	0	Construction on the highway expansion is progressing slowly.
+4	62450	noun	construction	0	The construction site was closed for safety reasons.
+5	62450	noun	construction	0	Construction workers arrived early to start the project.
+@ contemporary
+1	62444	adj	contemporary	1	The two artists were contemporary, both active in the 1980s.
+2	62445	adj	contemporary	0	She studied ancient and contemporary art side by side.
+3	62444	adj	contemporary	0	The two ruins are contemporary, both dating from the period of Roman rule.
+4	62444	adj	contemporary	0	They were contemporary witnesses to the historic event.
+5	62444	adj	contemporary	0	The two philosophers were contemporary thinkers in Europe.
+@ contest
+1	62464	noun	contest	1	She entered a singing contest at the local theater.
+2	62464	noun	contest	0	Our team won the contest by a single point.
+3	62464	noun	contest	0	The newspaper held a photography contest for young readers.
+4	62464	noun	contest	0	The judges announced the winner of the contest on Friday.
+5	62464	noun	contest	0	The school organized a writing contest during the summer.
+@ contract
+1	62484	noun	contract	1	The company signed a new contract with the supplier.
+2	62484	noun	contract	0	She reviewed the contract before signing it.
+3	62484	noun	contract	0	They hired him on a short-term contract.
+4	62484	noun	contract	0	The contract was written in clear language.
+5	62484	noun	contract	0	He broke the contract by not showing up.
+@ contribute
+1	62449	verb	contribute	1	She will contribute her skills to the team project.
+2	62449	verb	contribute	0	The students contribute ideas during class discussions.
+3	62449	verb	contributed	0	He contributed a detailed report to the research team.
+4	62449	verb	contributes	0	The company contributes funds to local charities each year.
+5	62449	verb	contribute	0	Everyone must contribute to the success of the group.
+@ contribution
+1	62469	noun	contribution	1	Her contribution to the project made it much more successful.
+2	62469	noun	contribution	0	The team's contribution helped solve the problem quickly.
+3	62469	noun	contribution	0	His contribution to the charity was greatly appreciated.
+4	62469	noun	contribution	0	The student's contribution improved the class discussion.
+5	62469	noun	contribution	0	Every member's contribution matters in the group effort.
+@ convert
+1	62502	verb	converts	1	The machine converts plastic into fuel for the engine.
+2	62502	verb	converts	0	She uses a device that converts sunlight into electricity.
+3	62502	verb	converts	0	The reactor converts nuclear energy into power for homes.
+4	62502	verb	converts	0	This chemical process converts waste into usable gas.
+5	62502	verb	converts	0	The solar panel converts light into electrical current.
+@ convinced
+1	62460	adj	convinced	1	She was convinced the book would win the prize.
+2	62460	adj	convinced	0	He was convinced he had left the lights on.
+3	62460	adj	convinced	0	They were convinced the plan would work.
+4	62460	adj	convinced	0	I was convinced that she was telling the truth.
+5	62460	adj	convinced	0	We were convinced the team would win the match.
+@ core
+1	62525	noun	core	1	The core of the problem is poor communication between teams.
+2	62525	noun	core	0	Trust is at the core of their friendship.
+3	62525	noun	core	0	Environmental responsibility lies at the core of the debate.
+4	62525	noun	core	0	His core values were shaped by childhood experiences.
+5	62525	noun	core	0	Resilience and hope form the core of the story.
+@ corporate
+1	62473	adj	corporate	1	The corporate office is located in the downtown business district.
+2	62473	adj	corporate	0	She left a corporate chain to work for a small local shop.
+3	62473	adj	corporate	0	Corporate policies apply to every regional office.
+4	62473	adj	corporate	0	He preferred a small studio to a corporate workplace.
+5	62473	adj	corporate	0	The corporate culture emphasizes teamwork and professionalism.
+@ council
+1	62566	noun	council	1	The student council met to discuss the new school event.
+2	62566	noun	council	0	The city council approved the new park plan yesterday.
+3	62566	noun	council	0	Our neighborhood council organized a cleanup day.
+4	62566	noun	council	0	The school council decided on the dress code change.
+5	62566	noun	council	0	The town council voted to increase funding for libraries.
+@ county
+1	62562	noun	county	1	The county government built a new library in the central district.
+2	62562	noun	county	0	She moved to a small county in the Pacific Northwest.
+3	62562	noun	county	0	The county borders three others and has a varied landscape.
+4	62562	noun	county	0	They held a festival every summer in the historic county.
+5	62562	noun	county	0	The county council approved the new road construction plan.
+@ courage
+1	62611	noun	courage	1	She showed courage when she spoke up against injustice.
+2	62611	noun	courage	0	He lacked the courage to admit his mistake.
+3	62611	noun	courage	0	The firefighter acted with courage during the emergency.
+4	62611	noun	courage	0	It takes courage to stand alone in a crowd.
+5	62611	noun	courage	0	Her courage inspired everyone around her.
+@ crash
+1	62576	noun	crash	1	The music ended with a loud crash of cymbals.
+2	62576	noun	crash	0	After the thunderstorm came a sudden crash of thunder.
+3	62576	noun	crash	0	A sudden crash from upstairs woke everyone.
+4	62576	noun	crash	0	We heard the crash of breaking glass from the kitchen.
+5	62576	noun	crash	0	The metal door slammed shut with a crash.
+@ creation
+1	62600	noun	creation	1	The artist's latest creation is a stunning sculpture made of recycled metal.
+2	62600	noun	creation	0	She was proud of her first creation, a small wooden bird she carved by hand.
+3	62600	noun	creation	0	The designer displayed her latest creation at the technology fair.
+4	62600	noun	creation	0	His most useful creation was a device that cleaned polluted water.
+5	62600	noun	creation	0	The museum displayed the ancient creation, a clay pot from the Bronze Age.
+@ creature
+1	62571	noun	creature	1	The zookeeper fed the rare creature a banana.
+2	62571	noun	creature	0	Scientists studied the strange creature in the deep sea.
+3	62571	noun	creature	0	The child screamed at the shadowy creature in the woods.
+4	62571	noun	creature	0	A small creature scurried across the garden path.
+5	62571	noun	creature	0	The creature moved slowly through the misty forest.
+@ crew
+1	62617	noun	crew	1	The ship's crew worked all night to fix the engine.
+2	62617	noun	crew	0	The flight crew prepared the airplane for takeoff.
+3	62617	noun	crew	0	The research crew studied the deep-sea vents for weeks.
+4	62617	noun	crew	0	The space station crew communicated with mission control.
+5	62617	noun	crew	0	The factory crew maintained the production line.
+@ crisis
+1	62639	noun	crisis	1	The company faced a crisis when the CEO resigned unexpectedly.
+2	62639	noun	crisis	0	After the accident, the team was in crisis and needed immediate help.
+3	62639	noun	crisis	0	The doctor said the patient was in crisis and required urgent care.
+4	62639	noun	crisis	0	The country entered a political crisis after the election results were disputed.
+5	62639	noun	crisis	0	She faced a personal crisis when she suddenly lost her job.
