@@ -1,6 +1,24 @@
 # next_grammar — ส่งต่องานตรวจ Grammar
 
-อัปเดต 2026-09-03 (Asia/Bangkok) — อ่านไฟล์นี้ก่อนทำต่อ แล้วตรวจสถานะไฟล์จริงอีกครั้ง ห้ามถือว่าข้อความที่มีอยู่ใน `final.tsv` ผ่าน review แล้วทุกแถว
+อัปเดต 2026-09-05 (Asia/Bangkok) — อ่านไฟล์นี้ก่อนทำต่อ แล้วตรวจสถานะไฟล์จริงอีกครั้ง ห้ามถือว่าข้อความที่มีอยู่ใน `final.tsv` ผ่าน review แล้วทุกแถว
+
+> ## ✅ งาน review ในไฟล์นี้เสร็จแล้ว (2026-09-05)
+>
+> AI หลักตรวจ semantic ครบ 7,830 แถว ผ่าน second-pass gate และประกอบ candidate เสร็จแล้ว:
+> `staging/grammar_production_candidate_20260831-071557-grammar-26-2967-bd9cfe09ead9/merged/`
+> **2,948 คำ / 14,740 แถว** ทุกแถว 8 fields, field 7-8 เต็ม, reviewed 7,830 แถวตรง `final.tsv` 0 mismatch
+>
+> Legacy ถูกตัดออก 17 คำ (mis-binding แบบ coach — คำอธิบายผูกกับประโยคชุดเดิมที่หายไป)
+> ตัดทั้งคำเสมอเพื่อรักษา invariant 5 ranks/คำ
+>
+> **ค้างอยู่ที่เดียว: รอผู้ใช้อนุมัติก่อน promote** และยังไม่มี subcommand `promote`
+> ใน `grammar_production_merge.py` (มีแค่ snapshot/validate/merge/pack) ปลายทาง
+> `data/terra_translated_drafts/` ที่ `import_terra_compact.py` อ่านก็ยังไม่มีอยู่จริง
+>
+> หัวข้อ 4 ด้านล่างเป็นบันทึกจุดที่ค้างเมื่อ 2026-09-03 **ทำเสร็จหมดแล้ว อย่ารันซ้ำ**
+> ข้อห้ามในหัวข้อ 1 และ 9 ยังบังคับใช้อยู่ทั้งหมด
+>
+> สถานะรวมของทั้ง pipeline อยู่ที่ [`PRODUCTION.md`](PRODUCTION.md)
 
 ## 1. เป้าหมายและขอบเขต
 
@@ -57,7 +75,7 @@ SHA-256 ณ ส่งต่อ (working hashes จะเปลี่ยนเม
 
 ค่า final hash ที่ checkpoint จบ batch 40 เป็นค่าเก่าโดยตั้งใจ เพราะหลังจากนั้นแก้ partial batch 41 แล้ว อย่ากู้ทับไฟล์ล่าสุดเพียงเพราะไม่ตรง hash ของ checkpoint เก่า
 
-## 4. เริ่มงานต่อทันทีตรงไหน
+## 4. เริ่มงานต่อทันทีตรงไหน (ประวัติ — batch 41-63 ทำครบแล้วเมื่อ 2026-09-05 อย่ารันซ้ำ)
 
 1. ตรวจ `reviewed_batches.txt`, hashes และ partial checkpoint เทียบไฟล์จริงก่อน อย่า regenerate working set หรือ overwrite งานเก่า
 2. อ่าน source + candidate + final + effective sentence หลังใช้ overlay ของ seq 2422–2426 ครบทุก rank: `beg`, `being`, `bent`, `bet`, `beyond` รวม 25 แถว

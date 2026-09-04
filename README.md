@@ -12,6 +12,12 @@ UI font is bundled rather than fetched.
 The current build ships **130 words** (386 senses, 650 example sentences, 526
 related words) as a first real-device test set.
 
+> **Current status (2026-09-05).** Thai grammar explanations are complete and
+> verified for **2,948 words / 14,740 rows**, staged and awaiting approval to
+> promote. The remaining blocker for a larger shipped build is Thai lexical
+> content (word/sense/form/relation glosses), which still only covers ~130
+> words. See [`docs/pipeline/PRODUCTION.md`](docs/pipeline/PRODUCTION.md).
+
 ## Layout
 
 | Path | What it is |

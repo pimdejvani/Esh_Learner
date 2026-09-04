@@ -1439,3 +1439,42 @@ github.com/pimdejvani/Esh_Learner (public).
 **Scaffolding ที่ต้องลบก่อน ship** — `lib/domain/test_hooks.dart` (บังคับให้มีคำหลาย POS ใน
 flashcard ทุกรอบ) และคำชุดทดสอบ 30 คำ (`is_test_only=1`) · `export_app_seed.py` ตัดออกให้เป็น
 ค่าเริ่มต้นอยู่แล้ว ต้องใส่ `--include-test-words` เองถึงจะติดไป
+
+
+## 2026-09-05: คำอธิบายไวยากรณ์ครบ 2,948 คำ, docs ย้ายเข้า docs/, และตัวบล็อกที่เหลือจริง
+
+**ด่าน 3 ปิดแล้ว** — AI หลักตรวจ semantic รายแถวครบ 7,830 แถว (1,566 คำ x 5 ranks) ผ่าน
+second-pass gate แล้วรวมกับ legacy ที่ตรวจแล้วเป็น candidate **2,948 คำ / 14,740 แถว** ที่
+`staging/grammar_production_candidate_20260831-071557-grammar-26-2967-bd9cfe09ead9/merged/`
+ทุกแถวมี 8 fields, field 7 (แปลไทย) และ field 8 (คำอธิบายไวยากรณ์ไทย) เต็มครบ ·
+reviewed 7,830 แถวตรงกับ `final.tsv` ทุกแถว 0 mismatch · validate + policy + pack 0 error
+
+**แปล field 7** ด้วย Azure 14,590 แถว / DeepL fallback 165 แถว · Azure free tier ตัดการเชื่อมต่อ
+เป็นช่วงจนงานตายกลางคัน 2 รอบ แก้ด้วย SQLite translation cache (resume ได้) บวก retry wrapper
+ที่วนใหม่จนกว่าจะมีไฟล์ผลลัพธ์ครบ ไม่ใช่แก้ด้วยการลดขนาด batch
+
+**ตัด legacy ออก 17 คำ** — คำอธิบายชุดนี้เขียนไว้กับประโยคชุดเดิมที่ถูก regenerate ทับไปแล้ว
+(seq ~1576-1650) และประโยคชุดเดิมหายไปจริง ไม่มีใน git และไม่ตรงกับ evidence_packs ·
+มันผ่านการตรวจเชิงกลทุกด่านเพราะคำเป้าหมายยังอยู่ในประโยค **มีแต่การอ่านความหมายเท่านั้นที่จับได้**
+· ตัดทั้งคำเสมอ ไม่ตัดราย rank เพราะ `build_content_db` พึ่ง invariant 5 ranks ต่อคำ
+
+**Blocker B2 ปิดไปโดยไม่ได้ตั้งใจ** — `PRODUCTION.md` เคยสั่งให้เขียน `tools/merge_explanations.py`
+แต่ `tools/grammar_production_merge.py merge` ที่สร้างระหว่างทางทำงานนั้นอยู่แล้ว (อ่าน
+`sol_review_explanations/*.tsv` + `final.tsv` แล้วเติม field 8 โดยรักษา field 1-7 เป็น byte เดิม)
+· ไม่ต้องเขียน tool ใหม่
+
+**ตัวที่บล็อกจริงตอนนี้คือ Thai gloss ไม่ใช่คำอธิบายไวยากรณ์อีกแล้ว** — `data/content_th/` ยังมีแค่
+senses 390 / words 135 / forms 154 / relations 75 / groups 88 บรรทัด ซึ่งพอสำหรับ ~130 คำ ·
+ต้นทางมี 39,765 senses / 17,951 forms / 260,995 related candidates **ขั้นแรกคือคัด ไม่ใช่แปล**
+(pilot คัดเหลือ ~3.9 sense ต่อคำจาก ~13) · `forms_th.txt` คัดอัตโนมัติไม่ได้ ข้อมูลต้นทางจับ
+`window` เป็นตระกูลของ `wind` ซึ่งไม่สอนอะไรผู้เรียน
+
+**ยังไม่ promote** — ไม่มี subcommand `promote` ใน `grammar_production_merge.py` และปลายทาง
+`data/terra_translated_drafts/` ที่ `import_terra_compact.py` อ่านยังไม่มีอยู่จริง ต้องตัดสินก่อนว่า
+freeze ปลายทางไว้ตรงไหนและผูก hash อย่างไร รอผู้ใช้อนุมัติ
+
+**เอกสารย้ายเข้า `docs/`** — root เคยมี markdown 20 ไฟล์เรียงกันโดยไม่มีลำดับ จึงไม่มีอะไรบอกว่า
+ไฟล์ไหนยังใช้อยู่และไฟล์ไหนถูกแทนที่แล้ว · 8 ไฟล์ยุค re-vocab/pilot ถูกรวมเป็น
+`docs/legacy/REVOCAB_PILOT_2026-08.md` แบบคงข้อความเดิมทุกตัวอักษร ไม่ลบอะไร ·
+`README.md` เขียนใหม่เป็นสารบัญเอกสาร บอกว่าแต่ละไฟล์ตอบคำถามอะไร · `/staging/` (147 MB)
+กับ `/scratchpad/` เข้า `.gitignore` แล้ว
