@@ -236,7 +236,7 @@ settings(key TEXT PK, value TEXT)   -- new_card_cap, focus_topic, request_retent
 >
 > `tools/swow_cache.py` เก็บข้อมูล SWOW ที่กรองแล้วไว้ใน `data/swow_cache.json`
 > (สร้างครั้งเดียว) — ทั้ง selector และ builder ใช้ร่วมกัน จึงไม่ต้องอ่านไฟล์ 53 MB ซ้ำทุกครั้ง
-> และไม่มีโค้ด parse SWOW ซ้ำสองที่อีก · รายละเอียดคำที่มีอยู่จริงดู `done_vocab.md`
+> และไม่มีโค้ด parse SWOW ซ้ำสองที่อีก · รายละเอียดคำที่มีอยู่จริงดู `../legacy/REVOCAB_PILOT_2026-08.md` §4 (เดิม done_vocab.md)
 
 สคริปต์แยก (Python หรือ Dart CLI) รันตอน build ไม่ได้อยู่ในแอป:
 

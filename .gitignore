@@ -32,3 +32,9 @@ __pycache__/
 # iOS build artefacts — IPAs live on GitHub Releases, never in the repo
 *.ipa
 Payload/
+
+# Run-scoped review/production candidates (147 MB) and session scratch.
+# Local working state only: every candidate is reproducible from tools/ plus the
+# tracked drafts, and staging holds no source of truth.
+/staging/
+/scratchpad/
