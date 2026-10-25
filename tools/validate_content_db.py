@@ -16,6 +16,7 @@ import re
 import sqlite3
 import sys
 from pathlib import Path
+from cloze_utils import valid_cloze_span
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DB = ROOT / "data" / "content_v2.db"
@@ -27,7 +28,10 @@ EXPLANATION_MIN_CHARS = 12
 # An explanation that points at another sentence is unusable: a player may see
 # this sentence alone, in Cloze or on the card back.
 CROSS_REFERENCE = re.compile(
-    r"ประโยค(ที่|แรก|ที่สอง|ก่อนหน้า|ถัดไป|ด้านบน|ด้านล่าง)|ข้างต้น|ดังกล่าวข้างบน|ตัวอย่างที่ \d"
+    r"ประโยค(?:แรก|ก่อนหน้า|ถัดไป|ด้านบน|ด้านล่าง)|"
+    r"ประโยคที่\s*\d+|ตัวอย่างที่\s*\d+|ข้อที่\s*\d+|แถวที่\s*\d+|"
+    r"ข้างต้น|ดังกล่าวข้างบน|ต่างจากประโยค|\br[1-5]\b|rank\s*(?:[1-5]|อื่น)|"
+    r"(?:ต่างจาก|ต่างความหมายจาก|เหมือน|เช่นเดียวกับ)[^.!?]{0,24}แถว(?:อื่น|ที่(?:หนึ่ง|สอง|สาม|สี่|ห้า))"
 )
 THAI = re.compile(r"[ก-๙]")
 
@@ -117,7 +121,7 @@ def validate(db: sqlite3.Connection, source: sqlite3.Connection) -> Report:
         [row for row in db.execute(
             "SELECT w.headword, e.rank, e.en_text, e.cloze_target, e.cloze_start, e.cloze_end"
             " FROM example_sentences e JOIN words w ON w.id=e.word_id"
-        ) if row["en_text"][row["cloze_start"]:row["cloze_end"]].casefold() != row["cloze_target"].casefold()],
+        ) if not valid_cloze_span(row["en_text"], row["cloze_target"], row["cloze_start"], row["cloze_end"])],
         lambda row: f"{row['headword']} rank {row['rank']}: cloze span does not cover the target",
     )
     # The example must teach the sense it is filed under: a noun example cannot

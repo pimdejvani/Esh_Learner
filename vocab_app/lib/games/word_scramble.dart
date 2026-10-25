@@ -28,6 +28,9 @@ import 'package:vocab_app/widgets/word_result_card.dart';
 /// words of length <= 1, or made entirely of one repeated letter, can't
 /// produce a different permutation, so those are returned unscrambled
 /// rather than looping forever.
+bool canScrambleWord(String word) =>
+    word.length >= 3 && word.split('').toSet().length > 1;
+
 String scrambleWord(String word, {Random? random}) {
   if (word.length <= 1) return word;
   final rnd = random ?? Random();

@@ -98,6 +98,8 @@ class GrammarExplanationPipelineTests(unittest.TestCase):
 
     def test_rejects_expanded_cross_references_and_near_template_copy(self):
         self.assertIn("cross-reference", validate_text("คำนี้มีหน้าที่เหมือนประโยคแรกและใช้รูปตามโครงสร้างที่กล่าวไว้"))
+        self.assertIn("cross-reference", validate_text("คำนี้มีหน้าที่เหมือนแถวที่ 1 และใช้รูปตามโครงสร้างที่กล่าวไว้"))
+        self.assertNotIn("cross-reference", validate_text("คำนี้อยู่ในประโยคที่มีประธานเป็นเอกพจน์และใช้รูปกริยาที่สอดคล้องกัน"))
         self.assertIn("cross-reference", validate_text("คำนี้เป็นคำนามเหมือนใน previous sentence และอ้างรูปเดิมจากตัวอย่างนั้น"))
         raw = {"explanations": [
             {"rank": rank, "input_ok": True, "input_error": "",
@@ -191,6 +193,18 @@ class GrammarExplanationPipelineTests(unittest.TestCase):
 
         raw["explanations"][0]["explanation_th"] = (
             "bright เป็นคำคุณศัพท์ส่วนเติมเต็มประธานหลัง is เพื่อบอกลักษณะของ The sun"
+        )
+        _, errors = validate_explanations(raw, input_item=item)
+        self.assertNotIn("rank-1:predicate-adjective-not-complement", errors)
+
+    def test_attributive_adjective_after_be_is_not_a_predicate_complement(self):
+        item = self.make_item(headword="many")
+        item["sentences"][0].update({
+            "pos": "adj", "target": "many", "sentence": "There are many reasons to smile."
+        })
+        raw = json.loads(self.valid_response())
+        raw["explanations"][0]["explanation_th"] = (
+            "many เป็นคำคุณศัพท์บอกจำนวน ขยายคำนาม reasons ในประโยคนี้"
         )
         _, errors = validate_explanations(raw, input_item=item)
         self.assertNotIn("rank-1:predicate-adjective-not-complement", errors)

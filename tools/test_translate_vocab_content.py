@@ -4,6 +4,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import translate_vocab_content as subject
@@ -37,6 +38,72 @@ class TranslateVocabContentTest(unittest.TestCase):
             self.assertEqual(cache.get("deepl", one), "ธนาคารปิด")
             self.assertIsNone(cache.get("deepl", two))
             cache.close()
+
+    def test_provider_circuit_opens_after_consecutive_failures(self) -> None:
+        class FailingTranslator:
+            def translate(self, items):
+                raise RuntimeError("timeout")
+
+        class WorkingTranslator:
+            def translate(self, items):
+                return ["คำแปล"] * len(items)
+
+        calls = {"azure": 0, "deepl": 0}
+
+        def fake_provider(name, workers=1):
+            calls[name] += 1
+            return FailingTranslator() if name == "azure" else WorkingTranslator()
+
+        with tempfile.TemporaryDirectory() as directory:
+            cache = subject.TranslationCache(Path(directory) / "cache.db")
+            health = {}
+            with patch.object(subject, "provider", side_effect=fake_provider):
+                for number in range(3):
+                    item = subject.TranslationItem(f"Sentence {number}", "context")
+                    translated, _ = subject.translate_with_fallback(
+                        [item], ["azure", "deepl"], cache, health, failure_limit=2
+                    )
+                    self.assertEqual(translated, ["คำแปล"])
+            cache.close()
+
+        self.assertEqual(calls["azure"], 2)
+        self.assertEqual(calls["deepl"], 3)
+        self.assertTrue(health["azure"].disabled)
+
+    def test_deepl_workers_preserve_input_order(self) -> None:
+        items = [
+            subject.TranslationItem("one", "context one"),
+            subject.TranslationItem("two", "context two"),
+            subject.TranslationItem("three", "context three"),
+        ]
+
+        def fake_post_json(url, headers, payload):
+            text = payload["text"][0]
+            return {"translations": [{"text": f"แปล-{text}"}]}
+
+        with patch.dict("os.environ", {"DEEPL_AUTH_KEY": "test"}):
+            with patch.object(subject, "post_json", side_effect=fake_post_json):
+                translated = subject.DeepLTranslator(workers=3).translate(items)
+
+        self.assertEqual(translated, ["แปล-one", "แปล-two", "แปล-three"])
+
+    def test_azure_workers_preserve_order_across_batches(self) -> None:
+        items = [subject.TranslationItem(str(number), "context") for number in range(401)]
+
+        def fake_post_json(url, headers, payload):
+            return [
+                {"translations": [{"text": f"แปล-{row['Text']}"}]}
+                for row in payload
+            ]
+
+        with patch.dict("os.environ", {"AZURE_TRANSLATOR_KEY": "test"}):
+            with patch.object(subject, "post_json", side_effect=fake_post_json):
+                translated = subject.AzureTranslator(workers=3).translate(items)
+
+        self.assertEqual(
+            translated,
+            [f"แปล-{number}" for number in range(401)],
+        )
 
 
 if __name__ == "__main__":

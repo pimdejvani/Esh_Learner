@@ -57,6 +57,13 @@ jobs:
 
       - run: flutter pub get
 
+      - name: Test first install and reseed on an iOS simulator
+        run: |
+          DEVICE=$(xcrun simctl list devices available -j | python3 -c 'import json,sys; d=json.load(sys.stdin); print(next(v["udid"] for runtime,devices in d["devices"].items() if "iOS" in runtime for v in devices if "iPhone" in v["name"]))')
+          xcrun simctl boot "$DEVICE" || true
+          xcrun simctl bootstatus "$DEVICE" -b
+          flutter test integration_test/seed_install_test.dart -d "$DEVICE"
+
       # The version is the CI run number rather than pubspec's, so every push
       # produces a strictly higher version and SideStore sees an update without
       # anyone bumping a file by hand.
@@ -65,6 +72,10 @@ jobs:
           flutter build ios --release --no-codesign \
             --build-name=1.0.${{ github.run_number }} \
             --build-number=${{ github.run_number }}
+
+      - name: Verify the release app contains the reviewed seed
+        run: |
+          python3 ../tools/verify_packaged_seed.py build/ios/iphoneos/Runner.app --manifest build/ios/iphoneos/seed-manifest.json
 
       # No signing identity means `xcodebuild -exportArchive` cannot run, so the
       # IPA is assembled by hand. An IPA is just a zip with the .app inside a
@@ -81,7 +92,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: esh-ipa
-          path: vocab_app/build/ios/iphoneos/Esh.ipa
+          path: |
+            vocab_app/build/ios/iphoneos/Esh.ipa
+            vocab_app/build/ios/iphoneos/seed-manifest.json
           retention-days: 7
 
   publish:
@@ -98,7 +111,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "build-${{ github.run_number }}" dist/Esh.ipa \
+          gh release create "build-${{ github.run_number }}" dist/Esh.ipa dist/seed-manifest.json \
+            --target "${{ github.sha }}" \
             --title "Esh 1.0.${{ github.run_number }}" \
             --notes "Automated build from ${{ github.sha }}."
 

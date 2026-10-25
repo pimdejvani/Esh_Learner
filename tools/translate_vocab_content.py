@@ -10,6 +10,7 @@ separate directory; source drafts and content databases are never modified.
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import hashlib
 import json
 import os
@@ -54,6 +55,12 @@ class DraftSentence:
 class TranslationItem:
     text: str
     context: str
+
+
+@dataclass
+class ProviderHealth:
+    consecutive_failures: int = 0
+    disabled: bool = False
 
 
 def now() -> str:
@@ -167,7 +174,9 @@ def validate_entry(
 class TranslationCache:
     def __init__(self, path: Path):
         path.parent.mkdir(parents=True, exist_ok=True)
-        self.db = sqlite3.connect(path)
+        self.db = sqlite3.connect(path, timeout=30)
+        self.db.execute("PRAGMA journal_mode=WAL")
+        self.db.execute("PRAGMA busy_timeout=30000")
         self.db.execute(
             """CREATE TABLE IF NOT EXISTS translations (
             provider TEXT NOT NULL,
@@ -241,12 +250,13 @@ def post_json(url: str, headers: dict[str, str], payload: object) -> object:
 class AzureTranslator:
     name = "azure"
 
-    def __init__(self) -> None:
+    def __init__(self, workers: int = 1) -> None:
         self.key = os.environ.get("AZURE_TRANSLATOR_KEY", "")
         self.region = os.environ.get("AZURE_TRANSLATOR_REGION", "")
         self.endpoint = os.environ.get(
             "AZURE_TRANSLATOR_ENDPOINT", "https://api.cognitive.microsofttranslator.com"
         ).rstrip("/")
+        self.workers = workers
         if not self.key:
             raise RuntimeError("AZURE_TRANSLATOR_KEY is missing")
 
@@ -257,7 +267,7 @@ class AzureTranslator:
         headers = {"Ocp-Apim-Subscription-Key": self.key}
         if self.region:
             headers["Ocp-Apim-Subscription-Region"] = self.region
-        outputs: list[str] = []
+        batches: list[list[TranslationItem]] = []
         batch: list[TranslationItem] = []
         chars = 0
 
@@ -265,37 +275,45 @@ class AzureTranslator:
             nonlocal batch, chars
             if not batch:
                 return
-            result = post_json(url, headers, [{"Text": item.text} for item in batch])
-            if not isinstance(result, list) or len(result) != len(batch):
-                raise RuntimeError("Azure returned an unexpected response")
-            outputs.extend(str(row["translations"][0]["text"]) for row in result)
+            batches.append(batch)
             batch, chars = [], 0
 
+        # Smaller requests avoid the long timeouts seen near Azure's service
+        # limits. Independent requests can safely overlap and map preserves order.
         for item in items:
-            if batch and (len(batch) >= 1000 or chars + len(item.text) > 45_000):
+            if batch and (len(batch) >= 200 or chars + len(item.text) > 10_000):
                 flush()
             batch.append(item)
             chars += len(item.text)
         flush()
-        return outputs
+
+        def translate_batch(current: list[TranslationItem]) -> list[str]:
+            result = post_json(url, headers, [{"Text": item.text} for item in current])
+            if not isinstance(result, list) or len(result) != len(current):
+                raise RuntimeError("Azure returned an unexpected response")
+            return [str(row["translations"][0]["text"]) for row in result]
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=self.workers) as executor:
+            translated_batches = executor.map(translate_batch, batches)
+            return [text for translated in translated_batches for text in translated]
 
 
 class DeepLTranslator:
     name = "deepl"
 
-    def __init__(self) -> None:
+    def __init__(self, workers: int = 1) -> None:
         self.key = os.environ.get("DEEPL_AUTH_KEY", "")
         if not self.key:
             raise RuntimeError("DEEPL_AUTH_KEY is missing")
         self.endpoint = os.environ.get(
             "DEEPL_ENDPOINT", "https://api-free.deepl.com/v2/translate"
         )
+        self.workers = workers
 
     def translate(self, items: list[TranslationItem]) -> list[str]:
-        outputs: list[str] = []
         headers = {"Authorization": f"DeepL-Auth-Key {self.key}"}
-        # Context differs per sentence, so each fallback request is isolated.
-        for item in items:
+
+        def translate_one(item: TranslationItem) -> str:
             result = post_json(
                 self.endpoint,
                 headers,
@@ -306,24 +324,36 @@ class DeepLTranslator:
                     "context": item.context,
                 },
             )
-            outputs.append(str(result["translations"][0]["text"]))
-        return outputs
+            return str(result["translations"][0]["text"])
+
+        # Context differs per sentence, so each request remains isolated. Threads
+        # overlap network waits while executor.map preserves the input order.
+        with concurrent.futures.ThreadPoolExecutor(max_workers=self.workers) as executor:
+            return list(executor.map(translate_one, items))
 
 
-def provider(name: str):
+def provider(name: str, workers: int = 1):
     if name == "azure":
-        return AzureTranslator()
+        return AzureTranslator(workers)
     if name == "deepl":
-        return DeepLTranslator()
+        return DeepLTranslator(workers)
     raise ValueError(f"unknown provider: {name}")
 
 
 def translate_with_fallback(
-    items: list[TranslationItem], order: list[str], cache: TranslationCache
+    items: list[TranslationItem],
+    order: list[str],
+    cache: TranslationCache,
+    health: dict[str, ProviderHealth] | None = None,
+    failure_limit: int = 2,
+    workers: int = 1,
 ) -> tuple[list[str], dict[str, int]]:
+    if health is None:
+        health = {}
     results: list[str | None] = [None] * len(items)
     usage: dict[str, int] = {}
     for provider_name in order:
+        provider_health = health.setdefault(provider_name, ProviderHealth())
         pending: list[int] = []
         for index, item in enumerate(items):
             if results[index] is not None:
@@ -336,8 +366,10 @@ def translate_with_fallback(
                 pending.append(index)
         if not pending:
             break
+        if provider_health.disabled:
+            continue
         try:
-            engine = provider(provider_name)
+            engine = provider(provider_name, workers)
             translated = engine.translate([items[index] for index in pending])
             if len(translated) != len(pending):
                 raise RuntimeError("translation count mismatch")
@@ -348,8 +380,18 @@ def translate_with_fallback(
                 results[index] = value
                 cache.put(provider_name, items[index], value)
                 usage[provider_name] = usage.get(provider_name, 0) + 1
+            provider_health.consecutive_failures = 0
         except Exception as exc:  # provider failure must allow the next fallback
+            provider_health.consecutive_failures += 1
+            if provider_health.consecutive_failures >= failure_limit:
+                provider_health.disabled = True
             print(f"provider {provider_name} unavailable: {exc}", file=sys.stderr)
+            if provider_health.disabled:
+                print(
+                    f"provider {provider_name} circuit open after "
+                    f"{provider_health.consecutive_failures} consecutive failures",
+                    file=sys.stderr,
+                )
     missing = [i for i, value in enumerate(results) if value is None]
     if missing:
         raise RuntimeError(f"no translation provider completed {len(missing)} text items")
@@ -416,7 +458,31 @@ def main() -> int:
     )
     parser.add_argument("--include-test", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--provider-failure-limit",
+        type=int,
+        default=2,
+        help="disable a provider for the rest of this run after this many consecutive failures",
+    )
+    parser.add_argument(
+        "--batch-words",
+        type=int,
+        default=1,
+        help="number of vocabulary entries translated together in one resumable batch",
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=1,
+        help="maximum concurrent translation requests within a batch",
+    )
     args = parser.parse_args()
+    if args.provider_failure_limit < 1:
+        parser.error("--provider-failure-limit must be at least 1")
+    if args.batch_words < 1:
+        parser.error("--batch-words must be at least 1")
+    if args.workers < 1:
+        parser.error("--workers must be at least 1")
     load_dotenv(ROOT / ".env")
     provider_order = [value.strip().casefold() for value in args.providers.split(",") if value.strip()]
     if not provider_order:
@@ -465,13 +531,33 @@ def main() -> int:
     cache = TranslationCache(args.cache)
     rendered_by_file: dict[Path, list[str]] = {}
     usage_total: dict[str, int] = {}
+    provider_health: dict[str, ProviderHealth] = {}
     try:
-        for path, headword, rows, glosses in valid:
-            items = translation_items(headword, rows, glosses)
-            translated, usage = translate_with_fallback(items, provider_order, cache)
-            rendered_by_file.setdefault(path, []).append(render_entry(headword, rows, translated))
+        for offset in range(0, len(valid), args.batch_words):
+            batch = valid[offset:offset + args.batch_words]
+            item_counts: list[int] = []
+            items: list[TranslationItem] = []
+            for _, headword, rows, glosses in batch:
+                entry_items = translation_items(headword, rows, glosses)
+                item_counts.append(len(entry_items))
+                items.extend(entry_items)
+            translated, usage = translate_with_fallback(
+                items,
+                provider_order,
+                cache,
+                provider_health,
+                args.provider_failure_limit,
+                args.workers,
+            )
             for key, value in usage.items():
                 usage_total[key] = usage_total.get(key, 0) + value
+            cursor = 0
+            for (path, headword, rows, _), count in zip(batch, item_counts, strict=True):
+                entry_translations = translated[cursor:cursor + count]
+                cursor += count
+                rendered_by_file.setdefault(path, []).append(
+                    render_entry(headword, rows, entry_translations)
+                )
     finally:
         cache.close()
 

@@ -33,20 +33,17 @@ from pathlib import Path
 import generate_source_cloze as generator
 import import_terra_compact as compact
 import swow_cache
+from cloze_utils import cloze_span
+from editorial_corrections import apply_corrections
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE_DB = ROOT / "data" / "vocabulary_source.db"
 DRAFT_DIR = ROOT / "data" / "terra_translated_drafts"
-PILOT_JSON = ROOT / "data" / "pilot_100.json"
-# Test scaffolding: 30 harder multi-POS words used to exercise the Flashcard back
-# and the Dictionary while content is being built.  Rows land in the content DB
-# with is_test_only=1 and must be dropped from the pipeline before the app ships
-# (docs/legacy/REVOCAB_PILOT_2026-08.md §3 (after_revocab) item 7).
-HARD_TEST_JSON = ROOT / "data" / "hard_test_30.json"
+REVIEW_MANIFEST = ROOT / "data" / "sol_review_manifest.txt"
 THAI_DIR = ROOT / "data" / "content_th"
 OUT_DB = ROOT / "data" / "content_v2.db"
 
-CONTENT_VERSION = 2
+CONTENT_VERSION = 4
 SOURCE_LICENSE = "CC BY-SA 4.0 (Wiktionary via kaikki.org)"
 SWOW_LICENSE = "CC BY-NC 4.0 (SWOW-EN18)"
 
@@ -170,14 +167,14 @@ def now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
-def read_authored(name: str) -> list[dict[str, str]]:
+def read_authored(name: str, thai_dir: Path = THAI_DIR) -> list[dict[str, str]]:
     """Read an authored content file.
 
     The separator is ``|`` rather than a tab: these files are hand-edited and a
     tab that turns into spaces silently corrupts a column, while ``|`` never
     appears inside Thai or English learner text.
     """
-    path = THAI_DIR / name
+    path = thai_dir / name
     if not path.exists():
         return []
     with path.open(encoding="utf-8", newline="") as handle:
@@ -185,12 +182,37 @@ def read_authored(name: str) -> list[dict[str, str]]:
         return [{key: (value or "").strip() for key, value in row.items() if key} for row in rows]
 
 
-def content_words() -> list[dict]:
-    """The pilot subset, plus the hard test set flagged as test-only."""
-    words = [dict(word, is_test_only=0) for word in json.loads(PILOT_JSON.read_text(encoding="utf-8"))["words"]]
-    if HARD_TEST_JSON.exists():
-        words += [dict(word, is_test_only=1)
-                  for word in json.loads(HARD_TEST_JSON.read_text(encoding="utf-8"))["words"]]
+def content_words(manifest_path: Path = REVIEW_MANIFEST) -> list[dict]:
+    """Load the complete reviewed corpus in its immutable manifest order."""
+    words: list[dict] = []
+    seen_ids: set[int] = set()
+    seen_headwords: set[str] = set()
+    for line_number, line in enumerate(manifest_path.read_text(encoding="utf-8").splitlines(), 1):
+        if not line or line.startswith("#"):
+            continue
+        fields = line.split("\t", 5)
+        if len(fields) != 6:
+            raise ValueError(f"manifest line {line_number}: expected six fields")
+        seq_text, _priority, source_rank_text, headword, _source_file, _errors = fields
+        try:
+            seq = int(seq_text)
+            source_rank = int(source_rank_text)
+        except ValueError as exc:
+            raise ValueError(f"manifest line {line_number}: invalid seq or source_rank") from exc
+        if seq != len(words) + 1:
+            raise ValueError(f"manifest line {line_number}: expected seq {len(words) + 1}, got {seq}")
+        key = headword.casefold()
+        if not headword or source_rank in seen_ids or key in seen_headwords:
+            raise ValueError(f"manifest line {line_number}: empty or duplicate word mapping")
+        seen_ids.add(source_rank)
+        seen_headwords.add(key)
+        words.append({
+            "source_rank": source_rank,
+            "headword": headword,
+            "is_test_only": 0,
+        })
+    if not words:
+        raise ValueError("review manifest contains no words")
     return words
 
 
@@ -206,13 +228,11 @@ def load_drafts(headwords: set[str], draft_dir: Path = DRAFT_DIR) -> dict[str, l
     return entries
 
 
-def cloze_span(en_text: str, target: str) -> tuple[int, int]:
-    lowered, needle = en_text.casefold(), target.casefold()
-    start = lowered.find(needle)
-    return (start, start + len(target)) if start >= 0 else (-1, -1)
-
-
-def build(out_path: Path, draft_dir: Path = DRAFT_DIR) -> int:
+def build(
+    out_path: Path,
+    draft_dir: Path = DRAFT_DIR,
+    thai_dir: Path = THAI_DIR,
+) -> int:
     words = content_words()
     headwords = {word["headword"].casefold() for word in words}
     drafts = load_drafts(headwords, draft_dir)
@@ -220,21 +240,29 @@ def build(out_path: Path, draft_dir: Path = DRAFT_DIR) -> int:
     if missing_drafts:
         raise SystemExit(f"no draft for: {', '.join(missing_drafts)}")
 
-    thai_words = {row["headword"].casefold(): row for row in read_authored("words_th.txt")}
-    thai_senses = {int(row["source_sense_id"]): row for row in read_authored("senses_th.txt")}
-    thai_relations = {
-        (row["headword"].casefold(), row["related"].casefold()): row for row in read_authored("relations_th.txt")
+    thai_words = {
+        row["headword"].casefold(): row for row in read_authored("words_th.txt", thai_dir)
     }
-    thai_groups = {row["hub"].casefold(): row for row in read_authored("groups_th.txt")}
+    thai_senses = {
+        int(row["source_sense_id"]): row for row in read_authored("senses_th.txt", thai_dir)
+    }
+    thai_relations = {
+        (row["headword"].casefold(), row["related"].casefold()): row
+        for row in read_authored("relations_th.txt", thai_dir)
+    }
+    thai_groups = {
+        row["hub"].casefold(): row for row in read_authored("groups_th.txt", thai_dir)
+    }
     # Whitelist: a derived family member ships only when it has been curated with
     # a Thai meaning and a real POS. Kaikki's derived lists include words that
     # merely look like family ("aft" under afternoon, "window" under wind).
     thai_forms = {
         (row["headword"].casefold(), row["form"].casefold()): row
-        for row in read_authored("forms_th.txt")
+        for row in read_authored("forms_th.txt", thai_dir)
     }
 
     source = generator.connect()
+    apply_corrections(drafts, thai_senses, source, thai_words)
     if out_path.exists():
         out_path.unlink()
     db = sqlite3.connect(out_path)
@@ -245,10 +273,22 @@ def build(out_path: Path, draft_dir: Path = DRAFT_DIR) -> int:
     word_ids: dict[str, int] = {}
     sense_ids: dict[int, int] = {}
 
-    for rank, word in enumerate(words, 1):
+    for word in words:
         headword = word["headword"]
         key = headword.casefold()
-        row = source.execute("SELECT * FROM words WHERE id=?", (word["word_id"],)).fetchone()
+        row = source.execute(
+            "SELECT * FROM words WHERE source_rank=?", (word["source_rank"],)
+        ).fetchone()
+        if (
+            row is None
+            or row["headword"].casefold() != key
+            or row["source_rank"] != word["source_rank"]
+        ):
+            actual = row["headword"] if row else "missing"
+            raise SystemExit(
+                f"review manifest source mismatch for {headword}: "
+                f"source rank {word['source_rank']} is {actual}"
+            )
         ipa = source.execute(
             "SELECT ipa FROM source_pronunciations WHERE word_id=? ORDER BY id LIMIT 1", (row["id"],)
         ).fetchone()
@@ -258,7 +298,7 @@ def build(out_path: Path, draft_dir: Path = DRAFT_DIR) -> int:
         db.execute(
             "INSERT INTO words (headword,cefr,freq_rank,ipa,thai_reading,stress_index,is_test_only,"
             "source_word_id) VALUES (?,?,?,?,?,?,?,?)",
-            (headword, row["cefr_first"], rank, ipa["ipa"] if ipa else None,
+            (headword, row["cefr_first"], word["source_rank"], ipa["ipa"] if ipa else None,
              thai.get("thai_reading") or None,
              int(thai["stress_index"]) if thai.get("stress_index") else None,
              word["is_test_only"], row["id"]),
@@ -308,7 +348,8 @@ def build(out_path: Path, draft_dir: Path = DRAFT_DIR) -> int:
                 " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
                 (word_id, sense_id, sentence["rank"], sentence["en_text"], sentence["th_text"],
                  sentence["cloze_target"], start, end, sentence["cloze_target"],
-                 int(sentence["is_emotional"]), sentence["explanation_th"], "terra-source-cloze-v1"),
+                 int(sentence["is_emotional"]), sentence["explanation_th"],
+                 sentence.get("explanation_source", "terra-source-cloze-v1")),
             )
 
     # Forms: inflections from source_forms, derived family from source derived
@@ -357,6 +398,29 @@ def build(out_path: Path, draft_dir: Path = DRAFT_DIR) -> int:
                 (word_id, text, pos, relation,
                  int(not text.casefold().startswith(headword_key)), "kaikki", SOURCE_LICENSE),
             )
+        # Every cloze form must be represented, including attested analytic
+        # comparatives ("more famous") and short forms ("Feb.") that the
+        # general single-token form filter intentionally omits.
+        for target in used_targets[headword_key] - {headword_key}:
+            for attested in source.execute(
+                "SELECT form_text,pos,tags_json FROM source_forms WHERE word_id=? "
+                "AND lower(form_text)=? ORDER BY id", (source_word_id, target),
+            ):
+                used_pos = {
+                    sentence["pos"] for sentence in drafts[headword_key]
+                    if sentence["cloze_target"].casefold() == target
+                }
+                if attested["pos"] not in used_pos:
+                    continue
+                tags = set(json.loads(attested["tags_json"] or "[]"))
+                relation = " ".join(tag for tag in INFLECTION_TAGS if tag in tags)
+                db.execute(
+                    "INSERT OR IGNORE INTO word_forms "
+                    "(word_id,form_text,form_type,pos,relation,is_irregular,source_name,source_license) "
+                    "VALUES (?,?,'inflection',?,?,0,?,?)",
+                    (word_id, attested["form_text"], attested["pos"],
+                     relation or "used-in-reviewed-example", "kaikki", SOURCE_LICENSE),
+                )
         family: dict[str, tuple[str, int]] = {}
         for candidate in source.execute(
             "SELECT candidate,pos FROM source_related_candidates WHERE word_id=? AND candidate_type='derived'"
@@ -432,7 +496,9 @@ def build(out_path: Path, draft_dir: Path = DRAFT_DIR) -> int:
             continue
         thai = thai_groups.get(headword_key)
         if thai is None:
-            gaps.append(f"groups_th.txt missing category/explanation for hub {headword_key}")
+            # Curated groups are optional game inventory, unlike words, senses,
+            # and examples.  Shipping only authored groups avoids manufacturing
+            # vague categories merely because a SWOW hub has three neighbours.
             continue
         db.execute(
             "INSERT INTO relation_groups (hub_word_id,category,explanation_th,source_name) VALUES (?,?,?,?)",
@@ -479,8 +545,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, default=OUT_DB)
     parser.add_argument("--draft-dir", type=Path, default=DRAFT_DIR)
+    parser.add_argument("--thai-dir", type=Path, default=THAI_DIR)
     args = parser.parse_args()
-    return build(args.out, args.draft_dir)
+    return build(args.out, args.draft_dir, args.thai_dir)
 
 
 if __name__ == "__main__":

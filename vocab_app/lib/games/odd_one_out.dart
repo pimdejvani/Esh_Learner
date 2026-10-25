@@ -85,6 +85,9 @@ OddOneOutRound? buildOddOneOutRound({
 
   final candidates = <(double, OddOneOutRound)>[];
   for (final hub in relatedByWord.entries) {
+    // When authored groups are available, only use hubs whose category and
+    // explanation can be shown on the answer reveal.
+    if (groupsByHub.isNotEmpty && !groupsByHub.containsKey(hub.key)) continue;
     if (hub.key == target.id) continue;
     if (hub.value.any((r) => r.relatedWordId == target.id)) {
       continue; // target IS related to this hub -> not a fair "odd one"

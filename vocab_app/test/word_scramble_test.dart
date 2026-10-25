@@ -6,6 +6,13 @@ import 'package:vocab_app/games/word_scramble.dart';
 import 'package:vocab_app/models/srs_state.dart';
 
 void main() {
+  test('only words with a useful letter puzzle are eligible', () {
+    expect(canScrambleWord('i'), isFalse);
+    expect(canScrambleWord('go'), isFalse);
+    expect(canScrambleWord('aaa'), isFalse);
+    expect(canScrambleWord('and'), isTrue);
+  });
+
   group('scrambleWord', () {
     test('returns a permutation with the same letters', () {
       final scrambled = scrambleWord('answer', random: Random(1));

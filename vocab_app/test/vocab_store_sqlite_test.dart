@@ -10,7 +10,10 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:vocab_app/data/content_reseed.dart';
 import 'package:vocab_app/data/migrations/migration_runner.dart';
 
-const String kSeedPath = 'assets/seed/vocab.db';
+const String kSeedPath = String.fromEnvironment(
+  'SEED_DB_PATH',
+  defaultValue: 'assets/seed/vocab.db',
+);
 
 Future<String> copySeed(String label) async {
   final path =
@@ -35,7 +38,7 @@ void main() {
 
     final version = await db.query('content_meta',
         where: 'key = ?', whereArgs: ['content_version']);
-    expect(version.single['value'], '2');
+    expect(version.single['value'], '4');
 
     final words = await db.query('words');
     expect(words.length, greaterThanOrEqualTo(100));
@@ -145,7 +148,7 @@ void main() {
     );
     expect(outcome.reseeded, isTrue);
     expect(outcome.fromVersion, 1);
-    expect(outcome.toVersion, 2);
+    expect(outcome.toVersion, 4);
     expect(outcome.rowsDropped, 1, reason: 'the unknown word cannot be kept');
 
     final fresh = await databaseFactory.openDatabase(installed);
@@ -162,7 +165,7 @@ void main() {
       (await fresh.query('content_meta',
               where: 'key = ?', whereArgs: ['content_version']))
           .single['value'],
-      '2',
+      '4',
     );
 
     await fresh.close();
@@ -183,5 +186,44 @@ void main() {
     expect(File('$installed.reseed').existsSync(), isFalse);
 
     await File(installed).delete();
+  });
+
+  test('the shipped 130-word v2 seed upgrades without losing player history', () async {
+    final directory = await Directory.systemTemp.createTemp('vocab_v2_upgrade_');
+    final path = '${directory.path}/vocab.db';
+    try {
+      await File('test/fixtures/seed_v2.db').copy(path);
+      var db = await databaseFactory.openDatabase(path);
+      expect((await db.query('words')).length, 130);
+      await runMigrations(db);
+      final word = (await db.query('words', where: 'is_test_only=0', limit: 1)).single;
+      final headword = word['headword'];
+      await db.insert('srs_state', {
+        'word_id': word['id'], 'state': 'review', 'stability': 14.5,
+        'difficulty': 5.0, 'due_at': 1234567890, 'reps': 4, 'lapses': 1,
+      });
+      await db.insert('reviews_log', {
+        'word_id': word['id'], 'ts': 1234567890, 'rating': 'good',
+        'game_type': 'flashcard', 'direction': 'en_th',
+      });
+      await db.insert('settings', {'key': 'new_card_cap', 'value': '6'});
+      await db.close();
+      final result = await reseedIfNeeded(path,
+        writeSeed: (target) async => File(kSeedPath).copy(target).then((_) {}),
+      );
+      expect(result.fromVersion, 2);
+      expect(result.toVersion, 4);
+      db = await databaseFactory.openDatabase(path);
+      final words = await db.query('words');
+      expect(words.length, 2967);
+      final newWord = words.singleWhere((row) => row['headword'] == headword);
+      expect((await db.query('srs_state')).single['word_id'], newWord['id']);
+      expect((await db.query('srs_state')).single['stability'], 14.5);
+      expect((await db.query('reviews_log')).single['word_id'], newWord['id']);
+      expect((await db.query('settings', where: 'key=?', whereArgs: ['new_card_cap'])).single['value'], '6');
+      await db.close();
+    } finally {
+      await directory.delete(recursive: true);
+    }
   });
 }

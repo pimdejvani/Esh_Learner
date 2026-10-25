@@ -13,10 +13,12 @@ import json
 import os
 import re
 import shutil
+import sqlite3
 import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from editorial_corrections import verify_corrections
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -24,14 +26,14 @@ STAGING_ROOT = ROOT / "staging" / "production_pipeline"
 PROGRESS = re.compile(r"reviewed=(\d+)/(\d+).*errors=(\d+)")
 
 
-def run(command: list[str], *, env: dict[str, str], log: Path) -> None:
+def run(command: list[str], *, env: dict[str, str], log: Path, cwd: Path = ROOT) -> None:
     display = subprocess.list2cmdline(command)
     print(f"> {display}", flush=True)
     with log.open("a", encoding="utf-8") as handle:
         handle.write(f"> {display}\n")
         process = subprocess.Popen(
             command,
-            cwd=ROOT,
+            cwd=cwd,
             env=env,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
@@ -74,6 +76,62 @@ def digest(path: Path) -> str:
     return hasher.hexdigest()
 
 
+def verify_prepared_content(english: Path, translated: Path, thai_dir: Path) -> None:
+    """Bind checkpointed Thai content to the current reviewed English snapshot."""
+    sys.path.insert(0, str(ROOT / "tools"))
+    import import_terra_compact as compact
+    import translate_vocab_content as drafts
+
+    if not thai_dir.joinpath("words_th.txt").is_file() or not thai_dir.joinpath("senses_th.txt").is_file():
+        raise SystemExit("prepared Thai metadata is incomplete")
+    manifest_path = translated.parent / "manifest.json"
+    if not manifest_path.is_file():
+        raise SystemExit("prepared explanations have no completion manifest")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if not manifest.get("complete") or manifest.get("counts", {}).get("quarantine"):
+        raise SystemExit("prepared explanation manifest is not complete")
+    expected_files = {path.name for path in english.glob("*.txt")}
+    if {path.name for path in translated.glob("*.txt")} != expected_files:
+        raise SystemExit("prepared translation file set differs from reviewed English")
+    counts = {"words": 0, "sentences": 0}
+    for name in sorted(expected_files):
+        if digest(translated / name) != manifest.get("output_files", {}).get(name):
+            raise SystemExit(f"prepared explanation checksum mismatch: {name}")
+        source, errors = drafts.parse_draft(english / name)
+        prepared, parse_errors = compact.parse_file(translated / name)
+        if errors or parse_errors or set(source) != set(prepared):
+            raise SystemExit(f"prepared translation parse or word mismatch: {name}")
+        for headword, rows in source.items():
+            actual = prepared[headword]
+            if len(rows) != 5 or len(actual) != 5:
+                raise SystemExit(f"prepared translation rank count mismatch: {headword}")
+            for left, right in zip(sorted(rows, key=lambda row: row.rank),
+                                   sorted(actual, key=lambda row: row["rank"])):
+                if (left.rank, left.sense_id, left.pos, left.target,
+                    int(left.memorable), left.en_text) != (
+                    int(right["rank"]), int(right["sense_id"]), right["pos"],
+                    right["cloze_target"], int(right["is_emotional"]), right["en_text"]):
+                    raise SystemExit(f"prepared explanation is stale: {headword} rank {left.rank}")
+                if not right["th_text"].strip() or not right["explanation_th"].strip():
+                    raise SystemExit(f"prepared Thai text missing: {headword} rank {left.rank}")
+                counts["sentences"] += 1
+            counts["words"] += 1
+    if counts != {"words": 2967, "sentences": 14835}:
+        raise SystemExit(f"prepared corpus has unexpected scope: {counts}")
+
+
+def verify_full_db(path: Path) -> None:
+    with sqlite3.connect(f"file:{path}?mode=ro", uri=True) as db:
+        counts = {
+            table: db.execute(f"SELECT count(*) FROM {table}").fetchone()[0]
+            for table in ("words", "example_sentences")
+        }
+        test_words = db.execute("SELECT count(*) FROM words WHERE is_test_only=1").fetchone()[0]
+        if counts != {"words": 2967, "example_sentences": 14835} or test_words:
+            raise SystemExit(f"full-corpus gate failed: counts={counts} test_words={test_words}")
+        verify_corrections(db)
+
+
 def promote(staged_content: Path, staged_seed: Path, content: Path, seed: Path) -> None:
     """Replace both production files, restoring backups if the second replace fails."""
     content.parent.mkdir(parents=True, exist_ok=True)
@@ -103,7 +161,11 @@ def promote(staged_content: Path, staged_seed: Path, content: Path, seed: Path) 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--providers", default="azure,deepl")
+    parser.add_argument("--providers", default="azure")
+    parser.add_argument("--translation-batch-words", type=int, default=200)
+    parser.add_argument("--translation-workers", type=int, default=4)
+    parser.add_argument("--prepared-translated-dir", type=Path)
+    parser.add_argument("--thai-dir", type=Path, default=ROOT / "data" / "content_th")
     parser.add_argument("--content-db", type=Path, default=ROOT / "data" / "content_v2.db")
     parser.add_argument(
         "--seed-db", type=Path, default=ROOT / "vocab_app" / "assets" / "seed" / "vocab.db"
@@ -141,29 +203,50 @@ def main() -> int:
             return 0
 
         english = run_dir / "english_reviewed"
-        translated = run_dir / "translated"
+        translated = args.prepared_translated_dir or run_dir / "translated"
         content = run_dir / "content_v2.db"
         seed = run_dir / "vocab.db"
         python = sys.executable
         run([python, "tools/build_vocab_library.py", "validate"], env=env, log=log)
         run([python, "tools/build_reviewed_english_drafts.py", "--output-dir", str(english)], env=env, log=log)
         run([python, "tools/translate_vocab_content.py", "--input-dir", str(english), "--dry-run"], env=env, log=log)
-        run(
-            [python, "tools/translate_vocab_content.py", "--input-dir", str(english),
-             "--output-dir", str(translated), "--providers", args.providers],
-            env=env,
-            log=log,
-        )
-        run([python, "tools/build_content_db.py", "--draft-dir", str(translated), "--out", str(content)], env=env, log=log)
+        if args.prepared_translated_dir:
+            verify_prepared_content(english, translated, args.thai_dir)
+        else:
+            run(
+                [python, "tools/translate_vocab_content.py", "--input-dir", str(english),
+                 "--output-dir", str(translated), "--providers", args.providers,
+                 "--batch-words", str(args.translation_batch_words),
+                 "--workers", str(args.translation_workers)],
+                env=env,
+                log=log,
+            )
+        run([python, "tools/build_content_db.py", "--draft-dir", str(translated),
+             "--thai-dir", str(args.thai_dir), "--out", str(content)], env=env, log=log)
+        verify_full_db(content)
         run([python, "tools/validate_content_db.py", "--db", str(content)], env=env, log=log)
         run([python, "tools/export_app_seed.py", "--content-db", str(content), "--out", str(seed)], env=env, log=log)
+        verify_full_db(seed)
+        flutter = shutil.which("flutter")
+        if flutter is None:
+            raise SystemExit("Flutter is required for the staged app seed gate")
+        run(
+            [flutter, "test", f"--dart-define=SEED_DB_PATH={seed.resolve()}",
+             "test/seed_playable_test.dart", "test/vocab_store_sqlite_test.dart"],
+            env=env, log=log, cwd=ROOT / "vocab_app",
+        )
 
         manifest = {
             "run_id": run_id,
             "review_gate": detail,
             "providers": args.providers,
+            "translation_batch_words": args.translation_batch_words,
+            "translation_workers": args.translation_workers,
+            "prepared_translated_dir": str(translated.resolve()) if args.prepared_translated_dir else None,
+            "thai_dir": str(args.thai_dir.resolve()),
             "content_sha256": digest(content),
             "seed_sha256": digest(seed),
+            "editorial_corrections_sha256": digest(ROOT / "content" / "editorial_corrections.json"),
             "production_content": str(args.content_db.resolve()),
             "production_seed": str(args.seed_db.resolve()),
         }

@@ -140,20 +140,26 @@ source, and the phone offers the new version.
 The seed at `vocab_app/assets/seed/vocab.db` is produced by the `tools/` chain:
 
 ```bash
-python tools/build_vocab_library.py
-python tools/select_pilot_100.py
-python tools/build_content_db.py
-python tools/translate_vocab_content.py
-python tools/validate_content_db.py
-python tools/export_app_seed.py
+python tools/run_production_after_review.py --prepared-translated-dir staging/production_finish_20260917/explanations_flash/merged --thai-dir staging/production_finish_20260917/content_th
 ```
 
-The current seed is the 100-word pilot set plus a 30-word hard fixture used for
-testing. Before any release beyond personal use, re-export without the fixture
-(`export_app_seed.py` without `--include-test-words`); the fixture's origin and
-purpose are recorded in
-[`docs/legacy/REVOCAB_PILOT_2026-08.md`](docs/legacy/REVOCAB_PILOT_2026-08.md) §5
-(formerly `test.md`).
+The command above reuses this workspace's completed local checkpoints and source
+data. These checkpoints are untracked; a fresh clone builds the app from the
+committed seed directly and does not need to regenerate or retranslate content.
+
+The bundled production seed now contains 2,967 words and 14,835 examples,
+content version 4, with no test-only words. Installation copies this offline
+asset to the app's writable database. Upgrading content preserves player
+history by matching headwords. The former 130-word version-2 seed is retained
+only under `vocab_app/test/fixtures/` for the upgrade regression test.
+
+See [production.md](production.md) for current build inputs and verification.
+[Editorial corrections](content/editorial_corrections.json) are guarded against
+changed English or lexical evidence and applied by the builder, so a rebuild
+retains reviewed fixes. The [quality audit](docs/quality/SEED_REVIEW_2026-10-25.md)
+records the original findings; linguistic review covered 75 sampled words,
+not every sentence in the corpus. CI tests native first installation/reseeding
+and checks the exact packaged seed before publishing the IPA.
 
 ## Licence note
 

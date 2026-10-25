@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 THAI_RE = re.compile(r"[\u0e01-\u0e5b]")
 CROSS_REF_RE = re.compile(
     r"ประโยคก่อนหน้า|ประโยคถัดไป|ประโยค(?:แรก|ด้านบน|ด้านล่าง)|"
-    r"ตัวอย่างที่\s*\d|ประโยคที่\s*\d|ข้อที่\s*\d|ข้างต้น|"
+    r"ตัวอย่างที่\s*\d|ประโยคที่\s*\d|ข้อที่\s*\d|แถวที่\s*\d|ข้างต้น|ต่างจากประโยค|"
     r"\b(?:rank|example)\s*\d+\b|\b(?:previous|next|above|below)\s+(?:sentence|example)\b",
     re.IGNORECASE,
 )
@@ -218,7 +218,8 @@ def validate_explanations(raw: Any, validator_rules: dict[str, Any] | None = Non
                         errors.append(f"rank-{rank}:unsupported-token-one")
                     target = re.escape(source["target"])
                     predicate_adjective = re.search(
-                        rf"\b(?:am|is|are|was|were)\s+(?:(?:too|very|quite|rather|so)\s+)?{target}\b",
+                        rf"\b(?:am|is|are|was|were)\s+(?:(?:too|very|quite|rather|so)\s+)?{target}\b"
+                        r"(?=\s*(?:[.!?,;:]|$|\b(?:to|than|for|with|about|of|that|because|and|but|today|yesterday|tomorrow|now|then|still|already|again|here|there|enough)\b))",
                         sentence,
                         re.I,
                     )

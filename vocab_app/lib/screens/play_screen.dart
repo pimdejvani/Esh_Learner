@@ -428,6 +428,15 @@ class _PlayScreenState extends State<PlayScreen> {
     // Everything else (intro / flashcard / cloze / word scramble /
     // dictation) just needs one WordBundle.
     final bundle = await widget.store.loadWordBundle(item.wordId);
+    if (item.gameType == GameType.wordScramble &&
+        !canScrambleWord(bundle.word.headword)) {
+      _queue[0] = SessionItem(
+        wordId: item.wordId,
+        gameType: GameType.dictation,
+        direction: item.direction,
+        source: item.source,
+      );
+    }
     if (_multiPosHookPending && item.gameType == GameType.flashcard) {
       _multiPosHookPending = false;
     }

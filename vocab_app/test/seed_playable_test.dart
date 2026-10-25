@@ -9,9 +9,13 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:vocab_app/data/migrations/migration_runner.dart';
 import 'package:vocab_app/domain/session_engine.dart';
 import 'package:vocab_app/games/odd_one_out.dart';
+import 'package:vocab_app/games/word_scramble.dart';
 import 'package:vocab_app/models/word.dart';
 
-const String kSeedPath = 'assets/seed/vocab.db';
+const String kSeedPath = String.fromEnvironment(
+  'SEED_DB_PATH',
+  defaultValue: 'assets/seed/vocab.db',
+);
 
 void main() {
   sqfliteFfiInit();
@@ -159,18 +163,16 @@ void main() {
   test('Scramble and Dictation have usable prompts', () async {
     final rows = await db.query(
       'words',
-      columns: ['headword', 'thai_reading', 'is_test_only'],
+      columns: ['headword', 'thai_reading'],
     );
     for (final row in rows) {
       final headword = row['headword'] as String;
       // Dictation reads the Thai back as a hint, so every word needs one.
       expect((row['thai_reading'] as String?) ?? '', isNotEmpty, reason: headword);
-      // Scramble only has a puzzle once a word has three letters. The real word
-      // list clears this; the hard fixture set contains "go", which scrambles to
-      // the one other order and is trivially easy — acceptable for scaffolding
-      // that never ships.
-      if ((row['is_test_only'] as int) == 1) continue;
-      expect(headword.length, greaterThanOrEqualTo(3), reason: headword);
+      // Short or non-permutable words route to Dictation in PlayScreen.
+      if (canScrambleWord(headword)) {
+        expect(scrambleWord(headword), isNot(headword), reason: headword);
+      }
     }
   });
 
