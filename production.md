@@ -54,12 +54,29 @@ otherwise it fails. The production runner and package verifier check that every
 reviewed field survives rebuilding/exporting. Version 4 triggers content reseed
 for existing version-3 installations while preserving player progress.
 
-The existing release destination is the iOS IPA on GitHub Releases and the
-SideStore manifest `apps.json`. The workflow now tests native first installation
-and reseeding on an iOS simulator and verifies the seed inside `Runner.app`
-before packaging and publishing. An accompanying `seed-manifest.json` records
-the seed and editorial-data hashes. Release completion must be confirmed from
-the workflow/release; a successful local build alone is not publication proof.
+Released **Esh 1.0.2 / build-2** from commit
+`385872ee4bfc865ce5c674046487d84c85ab69d5`:
+
+- [Published IPA and seed manifest](https://github.com/pimdejvani/Esh_Learner/releases/tag/build-2).
+- [iOS CI run 40211549234](https://github.com/pimdejvani/Esh_Learner/actions/runs/40211549234):
+  Flutter tests/analysis, native first installation and reseeding on an iPhone
+  simulator, unsigned device build, packaged-seed gate, and publication all passed.
+- [Vocabulary CI run 40211549223](https://github.com/pimdejvani/Esh_Learner/actions/runs/40211549223):
+  passed after publishing the previously missing
+  [review-only evidence asset](https://github.com/pimdejvani/Esh_Learner/releases/tag/vocab-evidence-v1).
+- Downloaded the published IPA again and inspected its embedded SQLite seed:
+  2,967 words, 14,835 sentences, version 4. Its seed hash matches the committed
+  seed and published `seed-manifest.json`:
+  `6c7de6196a0ad5eef872cc56119441a5186ff1b6bbaafa43328fc67584cb6b14`.
+- IPA SHA-256:
+  `4a376a55c3a952298a21037018faa956ef9c70955808bbf8c57e96c3739fe23f`;
+  size 11,779,139 bytes, matching the generated SideStore `apps.json` for 1.0.2.
+
+The simulator test uses actual iOS asset, filesystem, path-provider, and SQLite
+plugins. The host regression separately upgrades the actual 130-word version-2
+seed fixture and verifies retained reviews/settings. No physical-phone install
+was performed in this workspace. The unsigned IPA is delivered through the
+existing SideStore signing/installation workflow documented in README.md.
 
 The app now builds Odd One Out rounds only from explainable authored groups
 when groups exist. Words too short or otherwise unable to form a useful

@@ -1,5 +1,10 @@
 # NOTES — build log
 
+Current delivery status (2026-10-25): the complete 2,967-word version-4 seed is
+committed and published in Esh 1.0.2. See [production.md](../production.md) for
+current evidence, quality-review scope, and release links. The older status
+entries below remain historical build notes.
+
 Working dir: `C:\Users\pimde\Desktop\pimdej\English`. This is the single doc to read to
 understand what happened. It covers: what data sources were actually used vs.
 approximated, what's built/tested, what's explicitly deferred, and

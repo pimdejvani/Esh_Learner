@@ -9,14 +9,15 @@ Everything runs on-device. There is no account, no server, and no network call
 at runtime — the vocabulary ships as a SQLite seed inside the app bundle and the
 UI font is bundled rather than fetched.
 
-The current build ships **130 words** (386 senses, 650 example sentences, 526
-related words) as a first real-device test set.
+The current release, [Esh 1.0.2](https://github.com/pimdejvani/Esh_Learner/releases/tag/build-2),
+ships **2,967 words**, 6,306 senses, 14,835 example sentences and 16,886
+related-word rows, with no test-only words. Its bundled seed has content version 4.
 
-> **Current status (2026-09-05).** Thai grammar explanations are complete and
-> verified for **2,948 words / 14,740 rows**, staged and awaiting approval to
-> promote. The remaining blocker for a larger shipped build is Thai lexical
-> content (word/sense/form/relation glosses), which still only covers ~130
-> words. See [`docs/pipeline/PRODUCTION.md`](docs/pipeline/PRODUCTION.md).
+> **Current status (2026-10-25).** The complete seed is committed and released.
+> Reviewed fixes, token-safe cloze construction, native iOS installation/reseed
+> tests, and packaged-seed verification are in place. Linguistic review covered
+> 75 sampled words plus targeted searches; it was not a human review of every
+> sentence. See [production.md](production.md) for evidence and scope.
 
 ## Layout
 
